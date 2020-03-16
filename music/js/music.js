@@ -1,3 +1,757 @@
-// build time:Fri Mar 06 2020 00:43:44 GMT+0800 (GMT+08:00)
-(function(i,a){var t={};t.music=function(e){var n={width:230,height:58,hasBlur:true,blur:8,left:15,right:"auto",bottom:90,top:"top",isCenter:false,btnBackground:"rgba(0,0,0,0.2)",iconColor:"rgba(250,250,250.0.2)",hasSelect:true,hasAjax:true,selectClassName:"select-type",musicType:["纯音乐","华语","欧美","霉霉","电音","韩国","爱乐之城","网络歌曲"],source:[{name:"余情未了",singer:"魏新雨",url:"/music/song/yvqingweiliao.mp3",img_url:"/img/timg.jpeg"},{name:"悠殇叹",singer:"阿悠悠",url:"/music/song/youshangtan.mp3",img_url:"/img/timg.jpeg"},{name:"出山",singer:"野小马/胖胖胖",url:"/music/song/chushan.mp3",img_url:"/img/timg.jpeg"},{name:"我的将军啊",singer:"叶洛洛",url:"/music/song/wodejiangjuna.flac",img_url:"/img/timg.jpeg"},{name:"一曲相思",singer:"阿悠悠",url:"/music/song/yiquxiangsi.mp3",img_url:"/img/timg.jpeg"},{name:"浪子回头",singer:"王玉萌",url:"/music/song/langzihuitou.mp3",img_url:"/img/timg.jpeg"}],durationBg:"rgba(255,255,255,0)",progressBg:[{position:0,color:"#FB3232"},{position:1,color:"#FC8F3F"}],beforeMusicPlay:function(){},afterMusicLoading:function(){},musicChanged:function(){},getMusicInfo:function(){}};var s=this;var o=i.extend(n,e||{});var c=0;var r=0;var l="";n._init=function(){if(o.isCenter){s.cpt_music=i('<div class="cpt-dw-music music-div active"><div id="music-bg"><div class="music-mask"></div></div></div>').css({width:o.width,height:o.height,bottom:o.bottom,left:o.left,right:o.right,top:o.top,"-webkit-transform":"translate3d(-50%,-50%,0)","-moz-transform":"translate3d(-50%,-50%,0)",transform:"translate3d(-50%,-50%,0)","-webkit-transform":"translate(-50%,-50%)","-moz-transform":"translate(-50%,-50%)",transform:"translate(-50%,-50%)"}).appendTo(i("body"))}else{s.cpt_music=i('<div class="cpt-dw-music music-div active"></div>').css({width:o.width,height:o.height,bottom:o.bottom,left:o.left,right:o.right,top:o.top,"-webkit-transform":"translate3d(-50%,-50%,0)","-moz-transform":"translate3d(-50%,-50%,0)",transform:"translate3d(-50%,-50%,0)","-webkit-transform":"translate(-50%,-50%)","-moz-transform":"translate(-50%,-50%)",transform:"translate(-50%,-50%)"}).appendTo(i("body"))}s.music_play=i('<div class="music-play-div"></div>').appendTo(s.cpt_music);if(o.hasSelect&&o.hasAjax){s.music_typeSelect=i('<div class="music-typeSelect"></div>').appendTo(s.cpt_music);s.music_all=i('<div class="music-all music-typeSelect" data-type="">全部</div>').appendTo(s.music_typeSelect);s.music_typeList=i('<div class="music-random-typeSelect music-typeSelect" data-type="纯音乐">纯音乐</div><div class="music-random-typeSelect music-typeSelect" data-type="华语">华语</div>').appendTo(s.music_typeSelect);s.music_refresh=i('<div class="music-refresh">刷新</div>').appendTo(s.music_typeSelect)}if(o.hasBlur){s.music_blur=i('<div class="filterBg"></div>').css({"-webkit-filter":"blur("+o.blur+"px)","-moz-filter":"blur("+o.blur+"px)","-ms-filter":"blur("+o.blur+"px)",filter:"progid:DXImageTransform.Microsoft.Blur(PixelRadius="+o.blur+", MakeShadow=false)"}).appendTo(s.cpt_music)}s.music_status=i('<div class="pauseplay"><i class="dw-icon-play"></i></div>').appendTo(s.music_play);s.music_next=i('<div class="next"><i class="dw-icon-next"></i></div>').appendTo(s.music_play);s.music_info=i('<div class="music-info"></div>').appendTo(s.music_play);s.music_name=i('<p class="music-name">悠殇叹</p>').appendTo(s.music_info);s.music_singer=i('<p class="music-singer">music plugin</p>').appendTo(s.music_info);s.music_logo=i('<div class="music-div-logo"></div>').appendTo(s.cpt_music);s.music_img=i('<img class="music-logo" src="../img/timg.jpeg" alt="">').appendTo(s.music_logo);s.music_progress=i('<canvas id="music_canvas" style="position:absolute;top:0;left:0;zoom:0.25"></canvas>').appendTo(s.music_logo);s.audio=i('<audio id="cpt_dw_music" src=""></audio>').appendTo(i("body"));o.beforeMusicPlay();n._selectEvent();n._selectByClass()};n._selectEvent=function(){if(o.hasSelect&&o.hasAjax){n._randomSelect(2);s.music_typeSelect.find(".music-typeSelect").on("click",function(a){var t=i(this).attr("data-type");a.stopPropagation();s.music_typeSelect.remove();n._dataType(t)});s.music_refresh.on("click",function(i){i.stopPropagation();n._randomSelect(2)})}else{n._dataType()}};n._randomSelect=function(i){var a=o.musicType;var t=n.getRandomElementFromArr(a,i);for(var e=0;e<i;e++){s.music_typeSelect.find(".music-typeSelect").eq(e+1).text(t[e]).attr("data-type",t[e])}};n._clickEvent=function(){s.music_status.off().on("click",function(i){i.stopPropagation();n._playPause()});s.music_next.off().on("click",function(i){i.stopPropagation();n._playNext()});s.cpt_music.off().on("click",function(){i(this).toggleClass("circle")});i(".li-music-list").off().on("click",function(){var a=i(this);var t=a.attr("data-index");n._playIndex(t)})};n._showMusicLoading=function(a){if(i(".music-div").find(".cpt_loading_mask").length>0){return}var a=a||"music";i(".music-div").loading({name:a,title:"",discription:"",originDivWidth:30,originDivHeight:30,flexCenter:true,originWidth:5,originHeight:5,loadingWidth:o.width+20,loadingHeight:o.height,originBg:"rgba(34,222,44,0.5)"})};n._pause=function(){s.audio[0].pause();s.music_img.removeClass("active");s.music_status.find("i").removeClass("dw-icon-pause").addClass("dw-icon-play")};n._play=function(){s.audio[0].play();s.music_img.addClass("active");s.music_status.find("i").removeClass("dw-icon-play").addClass("dw-icon-pause")};n._playPause=function(){try{if(s.audio[0].paused){s.audio[0].play()}else{s.audio[0].pause()}}catch(i){t.showMessage(i.name+": "+i.message)}};n._onended=function(){s.audio.on("ended",function(){if(s.audio[0].loop){s.audio[0].load();s.audio[0].play()}else{n._playNext()}})};n._onplaying=function(){s.audio.on("playing",function(){t.removeLoading("music_waiting")});var i=document.getElementById("cpt_dw_music");i.addEventListener("canplay",function(){n._showLoading(i)})};n._onwaiting=function(){s.audio.on("waiting",function(){n._showMusicLoading("music_waiting")})};n._onpause=function(){s.audio.on("pause",function(){s.music_img.removeClass("active");s.music_status.find("i").removeClass("dw-icon-pause").addClass("dw-icon-play")})};n._onplay=function(){s.audio.on("play",function(){s.music_img.addClass("active");s.music_status.find("i").removeClass("dw-icon-play").addClass("dw-icon-pause")})};n._keyPress=function(){document.onkeydown=function(t){var e=t.which||a.event.keyCode;if(e==32&&!i("input").is(":focus")){n._playPause()}if(e==39||e==40&&!i("input").is(":focus")){n._playNext()}if(e==37||e==38&&!i("input").is(":focus")){n._playPrev()}}};n._selectByClass=function(){var a=o.selectClassName;i("."+a).on("click",function(){var a=i(this).attr("data-type");n._pause();n._dataType(a)})};n._playPrev=function(){var a=s.audio.attr("data-index")*1-1;if(a<0){a=r-1}n._insertData(l,a);n._playPause();if(i(".cpt-selectScrollMenu").length){i(".cpt-selectScrollMenu").find("li").eq(a).css({background:o.scrollActiveBg}).siblings().css({background:"#fff"})}};n._playNext=function(){var a=s.audio.attr("data-index")*1+1;if(a>=r){a=0}n._insertData(l,a);n._playPause();if(i(".cpt-selectScrollMenu").length){i(".cpt-selectScrollMenu").find("li").eq(a).css({background:o.scrollActiveBg}).siblings().css({background:"#fff"})}};n._playIndex=function(i){var i=i;if(i>=r){i=0}n._insertData(l,i);n._playPause()};n._musicListener=function(){if(s.audio[0].readyState===3){o.afterMusicLoading();t.removeLoading("music_waiting")}n._clickEvent();n._onended();n._onplaying();n._onwaiting();n._onpause();n._onplay();n._keyPress()};n._insertData=function(i,a){var t=i[a].img_url||"../img/timg.jpeg";var e=i[a].name||"悠殇叹";var n=i[a].url||"../music/song/youshangtan.mp3";var c=i[a].singer||"默认音乐";var r=i[a].sort_index||0;s.music_name.text(e).attr("title",e);s.music_singer.text(c).attr("title",c);s.music_img.attr("src",t);if(o.hasBlur){var l=("url("+t+")center right no-repeat").toString();s.music_blur.css({background:l,"background-size":"cover"})}var d={index:a,data:i,url:n};o.musicPlayByWebAudio(d);o.musicChanged(d);s.audio.attr("src",n);s.audio.attr("data-index",r)};n._getMusicInfo=function(){r=l.length;for(var i=0;i<r;i++){l[i].sort_index=i}if(r){o.getMusicInfo(l);n._insertData(l,0);n._musicListener()}else{return}};n.getRandomElementFromArr=function(i,a){var t=new Array;for(var e in i){t.push(i[e])}var n=new Array;for(var s=0;s<a;s++){if(t.length>0){var e=Math.floor(Math.random()*t.length);n.push(t[e]);t.splice(e,1)}else{return}}return n};n._dataType=function(i){var a=i||"";if(o.hasAjax){n._ajax(a)}else{n._localData()}};n._localData=function(){l=o.source;n._getMusicInfo()};n._showLoading=function(i){var a=i||"";c=a.duration;var t=document.getElementById("music_canvas");t.width=(o.height+2)*4;t.height=(o.height+2)*4;var e=t.getContext("2d");var n=o.height/2+1;var s=o.height/2+1;var r=0;var l=(Math.PI*2/c).toFixed(5);a.ontimeupdate=function(i){i=a.currentTime;e.clearRect(0,0,o.height,o.height);u();d(i);if(i>=c)i=0};function d(i){e.save();console.log(i);var a=e.createLinearGradient(0,0,o.height,o.height);console.log(a);for(var t=0;t<o.progressBg.length;t++){a.addColorStop(o.progressBg[t].position,o.progressBg[t].color)}e.translate(.5,.5);e.lineCap="round";e.strokeStyle=a;e.lineWidth=3.5;e.scale(4,4);e.beginPath();e.arc(n,s,o.height/2,-Math.PI/2,-Math.PI/2+i*l,false);e.stroke();e.closePath();e.restore()}function u(){e.save();e.scale(4,4);e.beginPath();e.strokeStyle=o.durationBg;e.lineWidth=3.5;e.arc(n,s,o.height/2,0,Math.PI*2,false);e.stroke();e.closePath();e.restore()}};n._init();return s};i.fn.loading=function(a){var t=i(this);var e=this;return this.each(function(){var n="";var s={direction:"column",animateStyle:"fadeInNoTransform",title:"请稍等...",name:"loadingName",type:"origin",discription:"这是一个描述",titleColor:"rgba(255,255,255,0.7)",discColor:"rgba(255,255,255,0.7)",loadingWidth:260,loadingBg:"rgba(0, 0, 0, 0.6);",borderRadius:12,loadingMaskBg:"transparent",zIndex:1000001,originDivWidth:60,originDivHeight:60,originWidth:8,originHeight:8,originBg:"#fefefe",smallLoading:false,imgSrc:"http://www.daiwei.org/index/images/logo/dw.png",imgDivWidth:80,imgDivHeight:80,flexCenter:false,flexDirection:"row",mustRelative:false};var o=i.extend(s,a||{});if(t.selector=="body"){i("body,html").css({overflow:"hidden"});n="fixed"}else if(o.mustRelative){t.css({position:"relative"});n="absolute"}else{n="absolute"}var c=function(){var a=o.smallLoading?0:"-10px";if(o.direction=="row"){a="-6px"}e.cpt_loading_mask=i('<div class="cpt-loading-mask animated '+o.animateStyle+" "+o.direction+'" data-name="'+o.name+'"></div>').css({background:o.loadingMaskBg,"z-index":o.zIndex,position:n}).appendTo(t);e.div_loading=i('<div class="div-loading"></div>').css({background:o.loadingBg,width:o.loadingWidth,height:o.loadingHeight,"-webkit-border-radius":o.borderRadius,"-moz-border-radius":o.borderRadius,"border-radius":o.borderRadius}).appendTo(e.cpt_loading_mask);if(o.flexCenter){e.div_loading.css({display:"-webkit-flex",display:"flex","-webkit-flex-direction":o.flexDirection,"flex-direction":o.flexDirection,"-webkit-align-items":"center","align-items":"center","-webkit-justify-content":"center","justify-content":"center"})}e.loading_title=i('<p class="loading-title txt-textOneRow"></p>').css({color:o.titleColor}).html(o.title).appendTo(e.div_loading);e.loading=i('<div class="loading '+o.type+'"></div>').css({width:o.originDivWidth,height:o.originDivHeight}).appendTo(e.div_loading);e.loading_discription=i('<p class="loading-discription txt-textOneRow"></p>').css({color:o.discColor}).html(o.discription).appendTo(e.div_loading);if(o.type=="origin"){e.loadingOrigin=i('<div class="div-loadingOrigin"><span></span></div><div class="div-loadingOrigin"><span></span></div><div class="div_loadingOrigin"><span></span></div><div class="div_loadingOrigin"><span></span></div><div class="div_loadingOrigin"><span></span></div>').appendTo(e.loading);e.loadingOrigin.children().css({"margin-top":a,"margin-left":a,width:o.originWidth,height:o.originHeight,background:o.originBg})}if(o.type=="pic"){e.loadingPic=i('<img src="'+o.imgSrc+'" alt="loading" />').appendTo(e.loading)}e.cpt_loading_mask.on("touchstart touchend touchmove click",function(i){i.stopPropagation();i.preventDefault()})};function r(){if(i(".cpt-loading-mask[data-name="+o.name+"]").length>0){return}c()}r()})};t.removeLoading=function(a){var a=a||"";i("body,html").css({overflow:"auto"});if(a==""){i(".cpt-loading-mask").remove()}else{var t=a||"loadingName";i(".cpt-loading-mask[data-name="+t+"]").remove()}};a.MC=t})(jQuery,window);
-//rebuild by neat 
+// 音乐播放插件 
+// 只包括播放暂停，下一曲  以及显示歌曲名称 歌手以及 实时进度
+// github： https://github.com/IFmiss/music
+
+(function($,window){
+    var DW = {};
+    //音乐播放器插件
+    DW.music = function(options) {
+        var musicValue = {
+            width:                  230,                        //宽度
+            height:                 58,                         //高度
+            hasBlur:                true,                       //是否显示模糊效果
+            blur:                   8,                          //模糊的数值
+            left:                   15,                     //音乐的位置 :left
+            right:                  'auto',                     //音乐的位置 :right
+            bottom:                 90,                     //音乐的位置 :bottom
+            top:                    'top',                     //音乐的位置 :top
+            isCenter:               false,                       //是否居中显示  translate
+            btnBackground:          'rgba(0,0,0,0.2)',          //按钮背景色
+            iconColor:              'rgba(250,250,250.0.2)',    //图标背景色
+            hasSelect:              true,                       //是否可选择音乐类型
+            hasAjax:                true,                       //是否是ajax请求数据
+            selectClassName:        'select-type',              //选择类型按钮的className名称
+            musicType:              ['纯音乐','华语','欧美','霉霉','电音','韩国','爱乐之城','网络歌曲'],         //音乐的类型  （需要随机显示）这是结合我自己后台数据库使用的 如果不是用ajax请求是不会显示这个类型的;
+            source:                 [
+                                       {
+                                            name:'余情未了',
+                                            singer:'魏新雨',
+                                            url:'/music/song/yvqingweiliao.mp3',
+                                            img_url:'/img/timg.jpeg',
+                                       },
+                                       {
+                                            name:'悠殇叹',
+                                            singer:'阿悠悠',
+                                            url:'/music/song/youshangtan.mp3',
+                                            img_url:'/img/timg.jpeg',
+                                        },
+                                        {
+                                            name:'出山',
+                                            singer:'野小马/胖胖胖',
+                                            url:'/music/song/chushan.mp3',
+                                            img_url:'/img/timg.jpeg',
+                                        },
+                                        {
+                                            name:'我的将军啊',
+                                            singer:'叶洛洛',
+                                            url:'/music/song/wodejiangjuna.flac',
+                                            img_url:'/img/timg.jpeg',
+                                        },
+                                        {
+                                            name:'一曲相思',
+                                            singer:'阿悠悠',
+                                            url:'/music/song/yiquxiangsi.mp3',
+                                            img_url:'/img/timg.jpeg',
+                                        },
+                                        {
+                                            name:'浪子回头',
+                                            singer:'王玉萌',
+                                            url:'/music/song/langzihuitou.mp3',
+                                            img_url:'/img/timg.jpeg',
+                                        }
+                                    ],
+
+            //进度信息
+            durationBg:             'rgba(255,255,255,0)',
+
+            // 线性渐变的颜色
+            progressBg:             [{
+                                        position:0,         //0 是起点, 1为终点   范围为  0 - 1 之间
+                                        color:'#FB3232',    //起点的颜色   
+                                    },{
+                                        position:1,
+                                        color:'#FC8F3F',
+                                    }],
+            //滚动列表正在播放的背景色  //配合长按事件使用
+            // scrollActiveBg:         'rgba(224, 189, 134, 0.298039)',
+
+            beforeMusicPlay:function(){},                               //音乐加载之前   可以播放之前
+            afterMusicLoading:function(){},                             //音乐加载成功  可播之后
+            musicChanged:function(){},                                  //音乐切换之后，类似切歌
+            getMusicInfo:function(){},                                  //获取所有音乐信息
+        }
+
+
+        var _this = this;
+        var opt = $.extend(musicValue,options || {});
+
+        var music_duration = 0;
+        var musicLenth = 0;
+        var musicData = '';
+
+        //音乐dom初始化
+        musicValue._init = function(){
+            if(opt.isCenter){
+                _this.cpt_music = $('<div class="cpt-dw-music music-div active"><div id="music-bg"><div class="music-mask"></div></div></div>').css({
+                    width:opt.width,
+                    height:opt.height,
+                    bottom:opt.bottom,
+                    left:opt.left,
+                    right:opt.right,
+                    top:opt.top,
+                    '-webkit-transform':'translate3d(-50%,-50%,0)',
+                    '-moz-transform':'translate3d(-50%,-50%,0)',
+                    'transform':'translate3d(-50%,-50%,0)',
+                    '-webkit-transform':'translate(-50%,-50%)',
+                    '-moz-transform':'translate(-50%,-50%)',
+                    'transform':'translate(-50%,-50%)',
+                }).appendTo($('body'));
+            }else{
+                _this.cpt_music = $('<div class="cpt-dw-music music-div active"></div>').css({
+                    width:opt.width,
+                    height:opt.height,
+                    bottom:opt.bottom,
+                    left:opt.left,
+                    right:opt.right,
+                    top:opt.top,
+                    '-webkit-transform':'translate3d(-50%,-50%,0)',
+                    '-moz-transform':'translate3d(-50%,-50%,0)',
+                    'transform':'translate3d(-50%,-50%,0)',
+                    '-webkit-transform':'translate(-50%,-50%)',
+                    '-moz-transform':'translate(-50%,-50%)',
+                    'transform':'translate(-50%,-50%)',
+                }).appendTo($('body'));
+            }
+            _this.music_play = $('<div class="music-play-div"></div>').appendTo(_this.cpt_music);
+
+            if(opt.hasSelect && opt.hasAjax){
+                //选择音乐类型
+                _this.music_typeSelect = $('<div class="music-typeSelect"></div>').appendTo(_this.cpt_music);
+                _this.music_all = $('<div class="music-all music-typeSelect" data-type="">全部</div>').appendTo(_this.music_typeSelect);
+                _this.music_typeList = $('<div class="music-random-typeSelect music-typeSelect" data-type="纯音乐">纯音乐</div><div class="music-random-typeSelect music-typeSelect" data-type="华语">华语</div>').appendTo(_this.music_typeSelect);
+                _this.music_refresh = $('<div class="music-refresh">刷新</div>').appendTo(_this.music_typeSelect);
+            }
+
+            if(opt.hasBlur){
+                _this.music_blur = $('<div class="filterBg"></div>').css({
+                    '-webkit-filter': 'blur('+opt.blur+'px)',
+                    '-moz-filter': 'blur('+opt.blur+'px)',
+                    '-ms-filter': 'blur('+opt.blur+'px)',
+                    'filter': 'progid:DXImageTransform.Microsoft.Blur(PixelRadius='+opt.blur+', MakeShadow=false)', /* IE6~IE9 */
+                }).appendTo(_this.cpt_music);
+            }
+
+            _this.music_status = $('<div class="pauseplay"><i class="dw-icon-play"></i></div>').appendTo(_this.music_play);
+            _this.music_next = $('<div class="next"><i class="dw-icon-next"></i></div>').appendTo(_this.music_play);
+            _this.music_info = $('<div class="music-info"></div>').appendTo(_this.music_play);
+            _this.music_name = $('<p class="music-name">悠殇叹</p>').appendTo(_this.music_info);
+            _this.music_singer = $('<p class="music-singer">music plugin</p>').appendTo(_this.music_info);
+
+            _this.music_logo = $('<div class="music-div-logo"></div>').appendTo(_this.cpt_music);
+            // _this.music_shadow = $('<div class="music-logo-shadow"></div>').appendTo(_this.music_logo);
+            _this.music_img = $('<img class="music-logo" src="../img/timg.jpeg" alt="">').appendTo(_this.music_logo);
+            _this.music_progress = $('<canvas id="music_canvas" style="position:absolute;top:0;left:0;zoom:0.25"></canvas>').appendTo(_this.music_logo );
+
+            _this.audio = $('<audio id="cpt_dw_music" src=""></audio>').appendTo($('body'));
+
+            opt.beforeMusicPlay();
+            
+
+            //监听选择类型事件
+            musicValue._selectEvent();
+
+            musicValue._selectByClass();
+        }
+
+        //给类型选择列表加监听事件
+        musicValue._selectEvent = function(){
+            if(opt.hasSelect && opt.hasAjax){
+                musicValue._randomSelect(2);
+
+                _this.music_typeSelect.find('.music-typeSelect').on('click',function(event){
+                    var text = $(this).attr('data-type');
+                    event.stopPropagation();
+                    _this.music_typeSelect.remove();
+                    //获取数据
+                    musicValue._dataType(text);
+                });
+
+                _this.music_refresh.on('click',function(event){
+                    event.stopPropagation();
+                    musicValue._randomSelect(2);
+                });
+            }else{
+                musicValue._dataType();
+            }
+        };
+
+        //随机设置类型
+        musicValue._randomSelect = function(index){
+            var arr = opt.musicType;
+            var new_arr = musicValue.getRandomElementFromArr(arr,index);
+            for(var i = 0;i < index; i++){
+                _this.music_typeSelect.find('.music-typeSelect').eq(i+1).text(new_arr[i]).attr('data-type',new_arr[i]);
+            };
+        };
+
+        //音乐播放的点击事件
+        musicValue._clickEvent = function(){
+            _this.music_status.off().on('click',function(event){
+                event.stopPropagation();
+                musicValue._playPause();
+            });
+
+            _this.music_next.off().on('click',function(event){
+                event.stopPropagation();
+                musicValue._playNext();
+            });
+
+            _this.cpt_music.off().on('click',function(){
+                $(this).toggleClass('circle');
+            });
+
+            $(".li-music-list").off().on('click',function(){
+                var _this = $(this);
+                var index = _this.attr('data-index');
+                musicValue._playIndex(index);
+            })
+
+        };
+
+        //显示加载的loading   需引用loading插件
+        musicValue._showMusicLoading = function(name){
+            if($('.music-div').find('.cpt_loading_mask').length > 0){
+                return;
+            }
+            var name = name || 'music';
+            //添加加载浮层
+            $('.music-div').loading({
+                name:name,
+                title:'',
+                discription:'',
+                originDivWidth:30,
+                originDivHeight:30,
+                flexCenter:true,
+                originWidth:5,
+                originHeight:5,
+                loadingWidth:opt.width + 20,
+                loadingHeight:opt.height,
+                originBg:'rgba(34,222,44,0.5)'
+            });
+        };
+
+        //暂停
+        musicValue._pause = function(){
+            _this.audio[0].pause();
+             _this.music_img.removeClass('active');
+             _this.music_status.find('i').removeClass('dw-icon-pause').addClass('dw-icon-play');
+        };
+
+        //播放
+        musicValue._play = function(){
+            _this.audio[0].play();
+            _this.music_img.addClass('active');
+            _this.music_status.find('i').removeClass('dw-icon-play').addClass('dw-icon-pause');
+        };
+
+        //播放暂停效果
+        musicValue._playPause = function(){
+            try{
+                if(_this.audio[0].paused){
+                    _this.audio[0].play();
+                }else{
+                    _this.audio[0].pause();
+                }
+            } catch (e){
+                DW.showMessage(e.name + ": " + e.message);
+            }
+        };
+
+        //音频播放结束事件
+        musicValue._onended = function(){
+            _this.audio.on('ended',function(){
+                if(_this.audio[0].loop){
+                    _this.audio[0].load();
+                    _this.audio[0].play();
+                }else{
+                    musicValue._playNext();
+                }
+            });
+        };
+
+        //音频处于播放状态的事件
+        musicValue._onplaying = function(){
+            _this.audio.on('playing',function(){
+                DW.removeLoading('music_waiting');
+            });
+
+            //实时显示canvas进度
+            var dw_audio = document.getElementById('cpt_dw_music');
+            dw_audio.addEventListener('canplay',function(){
+                musicValue._showLoading(dw_audio);
+            });
+        };
+
+        //音频需要加载之后才播放事件
+        musicValue._onwaiting = function(){
+            _this.audio.on('waiting',function(){
+                musicValue._showMusicLoading('music_waiting');
+            });
+        };
+
+        //监听音乐是否暂停
+        musicValue._onpause = function(){
+            _this.audio.on('pause',function(){
+                _this.music_img.removeClass('active');
+                _this.music_status.find('i').removeClass('dw-icon-pause').addClass('dw-icon-play');
+            })
+        };
+
+        //监听音乐是否暂停
+        musicValue._onplay = function(){
+            _this.audio.on('play',function(){
+                _this.music_img.addClass('active');
+                _this.music_status.find('i').removeClass('dw-icon-play').addClass('dw-icon-pause');
+            })
+        };
+
+        //跳动进度的时候执行
+        // musicValue._seeked = function(){
+
+        // };
+
+        musicValue._keyPress = function(){
+            document.onkeydown = function(e) {
+                var keycode = e.which || window.event.keyCode;
+                if(keycode == 32 && !$('input').is(':focus')){
+                    musicValue._playPause();
+                }
+
+                if(keycode == 39 || keycode == 40 && !$('input').is(':focus')){
+                    musicValue._playNext();
+                }
+
+                if(keycode == 37 || keycode == 38 && !$('input').is(':focus')){
+                    musicValue._playPrev();
+                }
+            }
+        };
+
+        //自定义选择音乐类型事件 
+        musicValue._selectByClass = function () {
+            var typeClass = opt.selectClassName;
+            $('.'+typeClass).on('click',function(){
+                var type = $(this).attr('data-type');
+                musicValue._pause();
+                musicValue._dataType(type);
+            })
+        };
+
+        //播放上一首音乐
+        musicValue._playPrev = function(){
+            //通过data-index+1来播放下一集
+            var index = _this.audio.attr('data-index')*1 - 1;
+            if(index < 0){
+                index = musicLenth-1;
+            }
+
+            musicValue._insertData(musicData,index);
+            musicValue._playPause();
+
+            if($('.cpt-selectScrollMenu').length){
+                $('.cpt-selectScrollMenu').find('li').eq(index).css({
+                    background:opt.scrollActiveBg,
+                    // color:'#fff',
+                }).siblings().css({
+                    background:'#fff',
+                    // color:'#fff',
+                });
+            }
+        };
+
+        //点击下一首音乐事件
+        musicValue._playNext = function(){
+            //通过data-index+1来播放下一集
+            var index = _this.audio.attr('data-index')*1 + 1;
+            if(index >= musicLenth){
+                index = 0;
+            }
+
+            musicValue._insertData(musicData,index);
+            musicValue._playPause();
+
+            if($('.cpt-selectScrollMenu').length){
+                $('.cpt-selectScrollMenu').find('li').eq(index).css({
+                    background:opt.scrollActiveBg,
+                    // color:'#fff',
+                }).siblings().css({
+                    background:'#fff',
+                    // color:'#fff',
+                });
+            }
+        };
+
+        musicValue._playIndex = function(index){
+            //通过data-index+1来播放下一集
+            var index = index;
+            if(index >= musicLenth){
+                index = 0;
+            }
+
+            musicValue._insertData(musicData,index);
+            musicValue._playPause();
+        };
+
+        //写入音乐的事件监听
+        musicValue._musicListener = function(){
+            if(_this.audio[0].readyState === 3){
+                opt.afterMusicLoading();
+                //删除加载浮层
+                DW.removeLoading('music_waiting');
+            }
+
+            //注册点击事件
+            musicValue._clickEvent();
+
+            //音乐播放结束事件
+            musicValue._onended();
+
+            // 音乐处于播放或中途中暂停的状态
+            musicValue._onplaying();
+
+            //当媒介已停止播放但打算继续播放时运行脚本
+            musicValue._onwaiting();
+
+            //音乐暂停会触发事件   主要是图标的改动
+            musicValue._onpause();
+
+            //音乐暂停会触发事件   主要是图标的改动
+            musicValue._onplay();
+
+            //按键事件  控制音乐播放
+            musicValue._keyPress();
+        };
+
+        //给dom装填数据
+        musicValue._insertData = function(data,index){
+            var music_imgUrl = data[index].img_url || '../img/timg.jpeg';
+            var music_name = data[index].name || '悠殇叹';
+            var music_url = data[index].url || '../music/song/youshangtan.mp3';
+            var music_singer = data[index].singer || '默认音乐';
+            var music_sortIndex = data[index].sort_index || 0;
+            _this.music_name.text(music_name).attr('title',music_name);
+            _this.music_singer.text(music_singer).attr('title',music_singer);
+            _this.music_img.attr('src',music_imgUrl);
+            if(opt.hasBlur){
+                var blur_bg = ('url('+ music_imgUrl +')center right no-repeat').toString();
+                _this.music_blur.css({
+                    background:blur_bg,
+                    'background-size':'cover',
+                });
+            };
+
+            var ret = {
+                index:index,
+                data:data,
+                url:music_url,
+            };
+
+            opt.musicPlayByWebAudio(ret);
+            opt.musicChanged(ret);
+            
+            _this.audio.attr('src',music_url);
+            _this.audio.attr('data-index',music_sortIndex);
+        };
+
+        //获取数据之后的操作  添加sort_index属性
+        musicValue._getMusicInfo = function(){
+            //给获取的音乐添加sortindex 索引   添加属性
+            musicLenth = musicData.length;
+
+            for(var i = 0; i < musicLenth; i++){
+                musicData[i].sort_index = i;
+            }
+
+            if(musicLenth){
+                opt.getMusicInfo(musicData);
+
+                musicValue._insertData(musicData,0);
+
+                //监听状态
+                musicValue._musicListener();
+            }else{
+                return;
+            }
+        };
+
+        musicValue.getRandomElementFromArr = function(arr,num){
+            var test_arr = new Array();
+            for(var index in arr){
+                test_arr.push(arr[index]);    //创建新的arr  为了不改变原来的arr值
+            };
+
+            var result_arr = new Array();
+            for(var i = 0;i < num; i++) {
+                if(test_arr.length>0){
+                    var index = Math.floor(Math.random() * test_arr.length);
+                    result_arr.push(test_arr[index]);
+                    test_arr.splice(index,1);
+                }else{
+                    return;
+                }
+            }
+            return result_arr;
+        }
+
+        //选择获取数据类型  本地 or ajax
+        musicValue._dataType = function(text){
+            var value = text || '';
+            if(opt.hasAjax){
+                musicValue._ajax(value);
+                // parseData = JSON.parse(data);
+            }else{
+                // parseData = opt.source;
+                musicValue._localData();
+            }
+        };
+
+        //执行本地数据
+        musicValue._localData = function() {
+            musicData = opt.source;
+            musicValue._getMusicInfo();
+        };
+
+        // musicValue._showMusicList = function() {
+
+        // };
+
+
+        //显示canvas进度
+        musicValue._showLoading = function(audio) {
+            var music_ele = audio || '';
+            // var myAudio = document.getElementById('music_canvas');
+            music_duration = music_ele.duration;
+            
+            // init canvas
+            var canvas = document.getElementById('music_canvas');
+            canvas.width = (opt.height + 2) * 4;
+            canvas.height = (opt.height + 2) * 4;
+            var context = canvas.getContext('2d');
+
+            var centerX = opt.height / 2 + 1;
+            var centerY = opt.height / 2 + 1;
+
+            var currnt = 0;
+            var rate = (Math.PI * 2 / music_duration).toFixed(5);
+
+            //音频播放事件
+            music_ele.ontimeupdate = function(currnt){
+                currnt = music_ele.currentTime;
+                context.clearRect(0, 0, opt.height, opt.height);
+                durationCircle();
+                // text(Math.floor(currnt/duration*100));
+                progressCircle(currnt);
+                if(currnt >= music_duration) currnt = 0;
+            };
+            
+
+
+            function progressCircle(currnt) {
+                context.save();
+                console.log(currnt);
+                var grd = context.createLinearGradient(0,0,opt.height,opt.height);
+                console.log(grd);
+                for(var i = 0;i<opt.progressBg.length;i++){
+                    grd.addColorStop(opt.progressBg[i].position,opt.progressBg[i].color);
+                }
+
+                context.translate(0.5, 0.5);
+                context.lineCap="round";
+                context.strokeStyle = grd;  //设置描边样式
+                context.lineWidth = 3.5;     //设置线宽
+                context.scale(4,4);
+                context.beginPath();   //路径开始
+                context.arc(centerX,centerY,opt.height / 2,-Math.PI/2, -Math.PI/2 +currnt*rate, false);   //用于绘制圆弧context.arc(x坐标，y坐标，半径，起始角度，终止角度，顺时针/逆时针)
+                context.stroke(); //绘制
+                context.closePath(); //路径结束
+                context.restore();
+            }
+
+            //绘制白色外圈
+            function durationCircle(){
+                context.save();
+                context.scale(4,4);
+                context.beginPath();
+                context.strokeStyle = opt.durationBg;
+                context.lineWidth = 3.5;
+                context.arc(centerX, centerY, opt.height / 2 , 0, Math.PI*2, false);
+                context.stroke();
+                context.closePath();
+                context.restore();
+            }  
+        }
+
+        musicValue._init();
+        return _this;
+    }
+
+    $.fn.loading = function(options){
+        var $this = $(this);
+        var _this = this;
+        return this.each(function(){
+            var loadingPosition ='';
+            var defaultProp = {
+                direction:              'column',                                               //方向，column纵向   row 横向
+                animateStyle:           'fadeInNoTransform',                                    //进入类型
+                title:                  '请稍等...',                                           //显示什么内容
+                name:                   'loadingName',                                          //loading的data-name的属性值  用于删除loading需要的参数
+                type:                   'origin',                                               //pic   origin  
+                discription:            '这是一个描述',                                       //loading的描述
+                titleColor:             'rgba(255,255,255,0.7)',                                //title文本颜色
+                discColor:              'rgba(255,255,255,0.7)',                                //disc文本颜色
+                loadingWidth:           260,                                                    //中间的背景宽度width
+                loadingBg:              'rgba(0, 0, 0, 0.6);',                                  //中间的背景色
+                borderRadius:           12,                                                     //中间的背景色的borderRadius
+                loadingMaskBg:          'transparent',                                          //背景遮罩层颜色
+                zIndex:                 1000001,                                                //层级
+
+                // 这是圆形旋转的loading样式    （originLoading）
+                originDivWidth:         60,                                                     //loadingDiv的width
+                originDivHeight:        60,                                                     //loadingDiv的Height
+
+                originWidth:            8,                                                      //小圆点width
+                originHeight:           8,                                                      //小圆点Height
+                originBg:               '#fefefe',                                              //小圆点背景色
+                smallLoading:           false,                                                  //显示小的loading
+
+                // 这是图片的样式   (pic)
+                imgSrc:                 'http://www.daiwei.org/index/images/logo/dw.png',       //默认的图片地址
+                imgDivWidth:            80,                                                     //imgDiv的width
+                imgDivHeight:           80,                                                     //imgDiv的Height
+
+                flexCenter:             false,                                                  //是否用flex布局让loading-div垂直水平居中
+                flexDirection:          'row',                                                  //row column  flex的方向   横向 和 纵向             
+                mustRelative:           false,                                                  //$this是否规定relative
+            };
+
+
+            var opt = $.extend(defaultProp,options || {});
+
+            if($this.selector == 'body'){
+                $('body,html').css({
+                    overflow:'hidden',
+                });
+                loadingPosition = 'fixed';
+            }else if(opt.mustRelative){
+                $this.css({
+                    position:'relative',
+                });
+                loadingPosition = 'absolute';
+            }else{
+                loadingPosition = 'absolute';
+            }
+
+            var _showOriginLoading = function(){
+                var smallLoadingMargin = opt.smallLoading ? 0 : '-10px';
+                if(opt.direction == 'row'){smallLoadingMargin='-6px'}
+
+                //悬浮层
+                _this.cpt_loading_mask = $('<div class="cpt-loading-mask animated '+opt.animateStyle+' '+opt.direction+'" data-name="'+opt.name+'"></div>').css({
+                    'background':opt.loadingMaskBg,
+                    'z-index':opt.zIndex,
+                    'position':loadingPosition,
+                }).appendTo($this);
+
+                //中间的显示层
+                _this.div_loading = $('<div class="div-loading"></div>').css({
+                    'background':opt.loadingBg,
+                    'width':opt.loadingWidth,
+                    'height':opt.loadingHeight,
+                    '-webkit-border-radius':opt.borderRadius,
+                    '-moz-border-radius':opt.borderRadius,
+                    'border-radius':opt.borderRadius,
+                }).appendTo(_this.cpt_loading_mask);
+
+                if(opt.flexCenter){
+                    _this.div_loading.css({
+                        "display": "-webkit-flex",
+                        "display": "flex",
+                        "-webkit-flex-direction":opt.flexDirection,
+                        "flex-direction":opt.flexDirection,
+                        "-webkit-align-items": "center",
+                        "align-items": "center",
+                        "-webkit-justify-content": "center",
+                        "justify-content":"center",
+                    });
+                }
+
+                //loading标题
+                _this.loading_title = $('<p class="loading-title txt-textOneRow"></p>').css({
+                    color:opt.titleColor,
+                }).html(opt.title).appendTo(_this.div_loading);
+
+                //loading中间的内容  可以是图片或者转动的小圆球
+                _this.loading = $('<div class="loading '+opt.type+'"></div>').css({
+                    'width':opt.originDivWidth,
+                    'height':opt.originDivHeight,
+                }).appendTo(_this.div_loading);
+
+                //描述
+                _this.loading_discription = $('<p class="loading-discription txt-textOneRow"></p>').css({
+                    color:opt.discColor,
+                }).html(opt.discription).appendTo(_this.div_loading);
+
+                if(opt.type == 'origin'){
+                    _this.loadingOrigin = $('<div class="div-loadingOrigin"><span></span></div><div class="div-loadingOrigin"><span></span></div><div class="div_loadingOrigin"><span></span></div><div class="div_loadingOrigin"><span></span></div><div class="div_loadingOrigin"><span></span></div>').appendTo(_this.loading);
+                    _this.loadingOrigin.children().css({
+                        "margin-top":smallLoadingMargin,
+                        "margin-left":smallLoadingMargin,
+                        "width":opt.originWidth,
+                        "height":opt.originHeight,
+                        "background":opt.originBg,
+                    });
+                }   
+
+                if(opt.type == 'pic'){
+                    _this.loadingPic = $('<img src="'+opt.imgSrc+'" alt="loading" />').appendTo(_this.loading);
+                }         
+
+
+                //关闭事件冒泡  和默认的事件
+                _this.cpt_loading_mask.on('touchstart touchend touchmove click',function(e){
+                    e.stopPropagation();
+                    e.preventDefault();
+                });
+            };
+
+            function createLoading(){
+                //不能生成两个loading data-name 一样的loading
+                if($(".cpt-loading-mask[data-name="+opt.name+"]").length > 0){
+                    // console.error('loading mask cant has same date-name('+opt.name+'), you cant set "date-name" prop when you create it');
+                    return
+                }
+                
+                _showOriginLoading();
+            };
+
+            createLoading();
+        });
+    }
+
+    //关闭Loading
+    DW.removeLoading = function(loadingName){
+        var loadingName = loadingName || '';
+        $('body,html').css({
+            overflow:'auto',
+        });
+
+        if(loadingName == ''){
+            $(".cpt-loading-mask").remove();
+        }else{
+            var name = loadingName || 'loadingName';
+            $(".cpt-loading-mask[data-name="+name+"]").remove();        
+        }
+    }
+
+    window.MC = DW;
+})(jQuery,window)
