@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://erik.xyz/"/>
-  <updated>2020-03-25T18:22:27.224Z</updated>
+  <updated>2020-03-25T18:28:46.000Z</updated>
   <id>https://erik.xyz/</id>
   
   <author>
@@ -21,18 +21,19 @@
     <link href="https://erik.xyz/2020/03/26/openresty-desc/"/>
     <id>https://erik.xyz/2020/03/26/openresty-desc/</id>
     <published>2020-03-25T17:56:00.000Z</published>
-    <updated>2020-03-25T18:22:27.224Z</updated>
+    <updated>2020-03-25T18:28:46.000Z</updated>
     
-    <content type="html"><![CDATA[<p>今天给一家公司投简历，问我用过openresty没，确实没用过，回答后没结果了。这就查了查。</p><p>官方介绍如下：</p><pre><code>        OpenResty® 是一个基于 Nginx 与 Lua 的高性能 Web 平台，其内部集成了大量精良的 Lua 库、第三方模块以及大多数的依赖项。用于方便地搭建能够处理超高并发、扩展性极高的动态 Web 应用、Web 服务和动态网关。OpenResty® 通过汇聚各种设计精良的 Nginx 模块（主要由 OpenResty 团队自主开发），从而将 Nginx 有效地变成一个强大的通用 Web 应用平台。这样，Web 开发人员和系统工程师可以使用 Lua 脚本语言调动 Nginx 支持的各种 C 以及 Lua 模块，快速构造出足以胜任 10K 乃至 1000K 以上单机并发连接的高性能 Web 应用系统。OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充分利用 Nginx 的非阻塞 I/O 模型，不仅仅对 HTTP 客户端请求,甚至于对远程后端诸如 MySQL、PostgreSQL、Memcached 以及 Redis 等都进行一致的高性能响应。</code></pre><p>  另外还有一篇博客专门介绍了一下<a href="https://blog.openresty.com.cn/cn/how-or-alloc-mem" target="_blank" rel="external nofollow noopener noreferrer">OpenResty 和 Nginx 如何分配和管理内存</a></p><p>  因为我用的是kali在官方提供的方法里安装源不支持，只能用包编译安装。</p><p>  这里是下载不同系统和不同版本的页面 <a href="https://openresty.org/cn/download.html" target="_blank" rel="external nofollow noopener noreferrer">openresty</a><br>  <img src="https://erik.xyz/img/202003/2020-03-26_020859.jpg" alt="版本图片"></p><p>  源配置教程 <a href="https://openresty.org/en/linux-packages.html" target="_blank" rel="external nofollow noopener noreferrer">openresty</a></p><p>  <img src="https://erik.xyz/img/202003/yum.jpg" alt="源图片"></p><p>  我<a href="https://openresty.org/download/openresty-1.15.8.3.tar.gz" target="_blank" rel="external nofollow noopener noreferrer">下载</a>的编译包</p><p>  解压，后进入目录,执行如下命令（参数根据自己需要来添加）</p><pre><code>./configure --prefix=/opt/openresty --with-pcre-jit --with-ipv6 --without-http_redis2_module --with-http_iconv_module --with-http_postgres_module -j8 --with-luajit</code></pre><p>然后执行</p><ul><li><p>如果电脑支持多核 make 工作的特性就用</p><pre><code>make j2</code></pre></li><li><p>否则用</p><pre><code>make</code></pre></li></ul><p>以上执行完毕后，执行</p><pre><code>sudo make install</code></pre><p>然后测试是否安装成功</p><p>在任意目录创建work文件</p><p>我是在/home/project/下创建文件work，并在work文件中创建conf和logs文件</p><p>然后，在conf目录创建nginx.conf，并放入一下代码</p><pre><code>worker_processes  1;error_log logs/error.log;events {    worker_connections 1024;}http {    server {        listen 8080;        location / {            default_type text/html;            content_by_lua_block {                ngx.say(&quot;&lt;p&gt;https://erik.xyz&lt;/p&gt;&quot;)            }        }    }}</code></pre><p>根据我的安装在work目录下，执行：/opt/openresty/nginx/sbin/nginx -p <code>pwd</code>/ -c conf/nginx.conf</p><p>启动nginx，然后浏览器或者用curl命令访问本地8080端口，就可以看到定义好输出的网址。</p>]]></content>
+    <content type="html"><![CDATA[<p>今天给一家公司投简历，问我用过openresty没，确实没用过，回答后没结果了。这就查了查。</p><p>官方介绍如下：</p><pre><code>        OpenResty® 是一个基于 Nginx 与 Lua 的高性能 Web 平台，其内部集成了大量精良的 Lua 库、第三方模块以及大多数的依赖项。用于方便地搭建能够处理超高并发、扩展性极高的动态 Web 应用、Web 服务和动态网关。OpenResty® 通过汇聚各种设计精良的 Nginx 模块（主要由 OpenResty 团队自主开发），从而将 Nginx 有效地变成一个强大的通用 Web 应用平台。这样，Web 开发人员和系统工程师可以使用 Lua 脚本语言调动 Nginx 支持的各种 C 以及 Lua 模块，快速构造出足以胜任 10K 乃至 1000K 以上单机并发连接的高性能 Web 应用系统。OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充分利用 Nginx 的非阻塞 I/O 模型，不仅仅对 HTTP 客户端请求,甚至于对远程后端诸如 MySQL、PostgreSQL、Memcached 以及 Redis 等都进行一致的高性能响应。</code></pre>  <a id="more"></a><p>  另外还有一篇博客专门介绍了一下<a href="https://blog.openresty.com.cn/cn/how-or-alloc-mem" target="_blank" rel="external nofollow noopener noreferrer">OpenResty 和 Nginx 如何分配和管理内存</a></p><p>  因为我用的是kali在官方提供的方法里安装源不支持，只能用包编译安装。</p><p>  这里是下载不同系统和不同版本的页面 <a href="https://openresty.org/cn/download.html" target="_blank" rel="external nofollow noopener noreferrer">openresty</a><br>  <img src="https://erik.xyz/img/202003/2020-03-26_020859.jpg" alt="版本图片"></p><p>  源配置教程 <a href="https://openresty.org/en/linux-packages.html" target="_blank" rel="external nofollow noopener noreferrer">openresty</a></p><p>  <img src="https://erik.xyz/img/202003/yum.jpg" alt="源图片"></p><p>  我<a href="https://openresty.org/download/openresty-1.15.8.3.tar.gz" target="_blank" rel="external nofollow noopener noreferrer">下载</a>的编译包</p><p>  解压，后进入目录,执行如下命令（参数根据自己需要来添加）</p><pre><code>./configure --prefix=/opt/openresty --with-pcre-jit --with-ipv6 --without-http_redis2_module --with-http_iconv_module --with-http_postgres_module -j8 --with-luajit</code></pre><p>然后执行</p><ul><li><p>如果电脑支持多核 make 工作的特性就用</p><pre><code>make j2</code></pre></li><li><p>否则用</p><pre><code>make</code></pre></li></ul><p>以上执行完毕后，执行</p><pre><code>sudo make install</code></pre><p>然后测试是否安装成功</p><p>在任意目录创建work文件</p><p>我是在/home/project/下创建文件work，并在work文件中创建conf和logs文件</p><p>然后，在conf目录创建nginx.conf，并放入一下代码</p><pre><code>worker_processes  1;error_log logs/error.log;events {    worker_connections 1024;}http {    server {        listen 8080;        location / {            default_type text/html;            content_by_lua_block {                ngx.say(&quot;&lt;p&gt;https://erik.xyz&lt;/p&gt;&quot;)            }        }    }}</code></pre><p>根据我的安装在work目录下，执行：/opt/openresty/nginx/sbin/nginx -p <code>pwd</code>/ -c conf/nginx.conf</p><p>启动nginx，然后浏览器或者用curl命令访问本地8080端口，就可以看到定义好输出的网址。</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;今天给一家公司投简历，问我用过openresty没，确实没用过，回答后没结果了。这就查了查。&lt;/p&gt;
+      &lt;p&gt;今天给一家公司投简历，问我用过openresty没，确实没用过，回答后没结果了。这就查了查。&lt;/p&gt;
 &lt;p&gt;官方介绍如下：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;        OpenResty® 是一个基于 Nginx 与 Lua 的高性能 Web 平台，其内部集成了大量精良的
-      
+&lt;pre&gt;&lt;code&gt;        OpenResty® 是一个基于 Nginx 与 Lua 的高性能 Web 平台，其内部集成了大量精良的 Lua 库、第三方模块以及大多数的依赖项。用于方便地搭建能够处理超高并发、扩展性极高的动态 Web 应用、Web 服务和动态网关。
+
+OpenResty® 通过汇聚各种设计精良的 Nginx 模块（主要由 OpenResty 团队自主开发），从而将 Nginx 有效地变成一个强大的通用 Web 应用平台。这样，Web 开发人员和系统工程师可以使用 Lua 脚本语言调动 Nginx 支持的各种 C 以及 Lua 模块，快速构造出足以胜任 10K 乃至 1000K 以上单机并发连接的高性能 Web 应用系统。
+
+OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充分利用 Nginx 的非阻塞 I/O 模型，不仅仅对 HTTP 客户端请求,甚至于对远程后端诸如 MySQL、PostgreSQL、Memcached 以及 Redis 等都进行一致的高性能响应。&lt;/code&gt;&lt;/pre&gt;
     
     </summary>
     
@@ -3461,11 +3462,11 @@
       <category term="转载" scheme="https://erik.xyz/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
-      <category term="js" scheme="https://erik.xyz/tags/js/"/>
-    
       <category term="css" scheme="https://erik.xyz/tags/css/"/>
     
       <category term="web" scheme="https://erik.xyz/tags/web/"/>
+    
+      <category term="js" scheme="https://erik.xyz/tags/js/"/>
     
   </entry>
   
@@ -3520,9 +3521,9 @@ alert(document.getElementById(&amp;quot;foo&amp;quot;).onerror);
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -3608,9 +3609,9 @@ alert(document.getElementById(&amp;quot;foo&amp;quot;).onerror);
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -3828,9 +3829,9 @@ alert(document.getElementById(&amp;quot;foo&amp;quot;).onerror);
       <category term="转载" scheme="https://erik.xyz/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
-      <category term="js" scheme="https://erik.xyz/tags/js/"/>
-    
       <category term="php" scheme="https://erik.xyz/tags/php/"/>
+    
+      <category term="js" scheme="https://erik.xyz/tags/js/"/>
     
       <category term="flash" scheme="https://erik.xyz/tags/flash/"/>
     
@@ -3856,9 +3857,9 @@ alert(document.getElementById(&amp;quot;foo&amp;quot;).onerror);
       <category term="转载" scheme="https://erik.xyz/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -3988,9 +3989,9 @@ function readable_random_string($length = 6){
       <category term="转载" scheme="https://erik.xyz/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="可穿戴设备" scheme="https://erik.xyz/tags/%E5%8F%AF%E7%A9%BF%E6%88%B4%E8%AE%BE%E5%A4%87/"/>
     
@@ -4301,9 +4302,9 @@ function readable_random_string($length = 6){
       <category term="转载" scheme="https://erik.xyz/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="phone" scheme="https://erik.xyz/tags/phone/"/>
     
@@ -4460,9 +4461,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -4544,9 +4545,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -4573,9 +4574,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -4602,9 +4603,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -4631,9 +4632,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -4660,9 +4661,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -4950,9 +4951,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -5456,9 +5457,9 @@ function readable_random_string($length = 6){
       <category term="Developer" scheme="https://erik.xyz/categories/Developer/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -5480,9 +5481,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -5604,9 +5605,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
-    
       <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
+    
+      <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
