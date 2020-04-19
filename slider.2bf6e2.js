@@ -107,6 +107,8 @@
 				tools: false,
 				friends: false,
 				aboutme: false,
+				blackCompany: false,
+				blackPeople: false,
 				items: [],
 				jsonFail: false,
 				showTags: false,
@@ -139,6 +141,8 @@
 					app.$set('tools', false);
 					app.$set('friends', false);
 					app.$set('aboutme', false);
+					app.$set('blackCompany', false);
+					app.$set('blackPeople', false);
 					app.$set(type, true);
 					app.$set('isShow', true);
 					app.$set('isCtnShow', true);
@@ -259,6 +263,8 @@
 				app.$set('innerArchive', true);
 				app.$set('friends', false);
 				app.$set('aboutme', false);
+				app.$set('blackCompany', false);
+				app.$set('blackPeople', false);
 				app.$set('isShow', true);
 				app.$set('isCtnShow', true);
 				app.$set('search', '#' + $em.innerHTML);
