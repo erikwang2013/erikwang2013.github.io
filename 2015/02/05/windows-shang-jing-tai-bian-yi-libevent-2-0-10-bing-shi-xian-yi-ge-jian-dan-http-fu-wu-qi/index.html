@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://erik.xyz">
   <title>Windows 上静态编译 Libevent 2.0.10 并实现一个简单 HTTP 服务器 | 艾瑞可erik</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="description" content="[文章作者：张宴 ] 本文介绍了如何在 Windows 操作系统中，利用微软 Visual Studio 2005 编译生成 Libevent 2.0.10 静态链接库，并利用 Libevent 静态链接库，实现一个简单的 HTTP Web服务器程序：httpd.exe。 假设 Visual Studio 2005 的安装路径为“D:\Program Files\Microsoft Visual">
-<meta name="keywords" content="php服务器,http,http服务器">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows 上静态编译 Libevent 2.0.10 并实现一个简单 HTTP 服务器">
 <meta property="og:url" content="https://erik.xyz/2015/02/05/windows-shang-jing-tai-bian-yi-libevent-2-0-10-bing-shi-xian-yi-ge-jian-dan-http-fu-wu-qi/index.html">
 <meta property="og:site_name" content="艾瑞可erik">
 <meta property="og:description" content="[文章作者：张宴 ] 本文介绍了如何在 Windows 操作系统中，利用微软 Visual Studio 2005 编译生成 Libevent 2.0.10 静态链接库，并利用 Libevent 静态链接库，实现一个简单的 HTTP Web服务器程序：httpd.exe。 假设 Visual Studio 2005 的安装路径为“D:\Program Files\Microsoft Visual">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://zyan.cc/attachment/201103/libevent/libevent1.png">
 <meta property="og:image" content="http://zyan.cc/attachment/201103/libevent/libevent2.png">
 <meta property="og:image" content="http://zyan.cc/attachment/201103/libevent/libevent3.png">
@@ -42,10 +41,13 @@
 <meta property="og:image" content="http://zyan.cc/attachment/201103/libevent/libevent23.png">
 <meta property="og:image" content="http://zyan.cc/template/RuiPai/images/download.gif">
 <meta property="og:image" content="http://zyan.cc/template/RuiPai/images/download.gif">
-<meta property="og:updated_time" content="2020-01-22T12:53:38.592Z">
+<meta property="article:published_time" content="2015-02-05T15:51:00.000Z">
+<meta property="article:modified_time" content="2020-01-22T12:53:38.592Z">
+<meta property="article:author" content="艾瑞可erik">
+<meta property="article:tag" content="php服务器">
+<meta property="article:tag" content="http">
+<meta property="article:tag" content="http服务器">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Windows 上静态编译 Libevent 2.0.10 并实现一个简单 HTTP 服务器">
-<meta name="twitter:description" content="[文章作者：张宴 ] 本文介绍了如何在 Windows 操作系统中，利用微软 Visual Studio 2005 编译生成 Libevent 2.0.10 静态链接库，并利用 Libevent 静态链接库，实现一个简单的 HTTP Web服务器程序：httpd.exe。 假设 Visual Studio 2005 的安装路径为“D:\Program Files\Microsoft Visual">
 <meta name="twitter:image" content="http://zyan.cc/attachment/201103/libevent/libevent1.png">
   
     <link rel="alternative" href="/atom.xml" title="艾瑞可erik" type="application/atom+xml">
@@ -84,10 +86,10 @@ var _hmt = _hmt || [];
 </script>
 
 
-</head>
-</html>
+<meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
 <body>
-  <div id="container" q-class="show:isCtnShow">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
@@ -220,7 +222,15 @@ var _hmt = _hmt || [];
 				</li>
 		        
 				 <li class="dib">
-					<a  target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
+					<a  target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="tuchong">
+					<svg class="icon svg-icon" aria-hidden="true">
+					  <use xlink:href="#icon-tuchong"></use>
+					</svg>
+					</a>
+				</li>
+		        
+				 <li class="dib">
+					<a  target="_blank" href="https://ycg.qq.com/person/works/2415382" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
 					<svg class="icon svg-icon" aria-hidden="true">
 					  <use xlink:href="#icon-web"></use>
 					</svg>
@@ -333,7 +343,15 @@ var _hmt = _hmt || [];
 						</li>
 			        
 					 <li class="dib">
-						<a class="web" target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
+						<a class="tuchong" target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="tuchong">
+							<svg class="icon svg-icon" aria-hidden="true">
+							  <use xlink:href="#icon-tuchong"></use>
+							</svg>
+						</a>
+						</li>
+			        
+					 <li class="dib">
+						<a class="web" target="_blank" href="https://ycg.qq.com/person/works/2415382" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
 							<svg class="icon svg-icon" aria-hidden="true">
 							  <use xlink:href="#icon-web"></use>
 							</svg>
@@ -423,7 +441,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>[文章作者：张宴 ] 本文介绍了如何在 Windows 操作系统中，利用微软 Visual Studio 2005 编译生成 <a href="http://monkey.org/%7Eprovos/libevent/" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">Libevent</a> 2.0.10 静态链接库，并利用 <a href="http://monkey.org/%7Eprovos/libevent/" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">Libevent</a> 静态链接库，实现一个简单的 HTTP Web服务器程序：httpd.exe。 假设 Visual Studio 2005 的安装路径为“D:\Program Files\Microsoft Visual Studio 8\”，<a href="http://monkey.org/%7Eprovos/libevent/" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">Libevent</a> 2.0.10 解压后的路径为“D:\libevent-2.0.10-stable”。</p>
+        <p>[文章作者：张宴 ] 本文介绍了如何在 Windows 操作系统中，利用微软 Visual Studio 2005 编译生成 <a href="http://monkey.org/%7Eprovos/libevent/" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Libevent</a> 2.0.10 静态链接库，并利用 <a href="http://monkey.org/%7Eprovos/libevent/" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Libevent</a> 静态链接库，实现一个简单的 HTTP Web服务器程序：httpd.exe。 假设 Visual Studio 2005 的安装路径为“D:\Program Files\Microsoft Visual Studio 8\”，<a href="http://monkey.org/%7Eprovos/libevent/" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Libevent</a> 2.0.10 解压后的路径为“D:\libevent-2.0.10-stable”。</p>
 <a id="more"></a>
 <hr>
 <p><strong>一、编译生成 Libevent 2.0.10 静态链接库。</strong> </p>
@@ -432,23 +450,23 @@ var _hmt = _hmt || [];
 <p>#define _WIN32_WINNT 0x0500</p>
 </li>
 <li><p>鼠标点击Windows左下角的【开始】-【所有程序】，找到【Microsoft Visual Studio 2005】，执行下图中的脚本： </p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent1.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent1.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent1.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent1.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
 </li>
-<li><p>按照下图中的方法编译Libevent 2.0.10：<br><a href="http://zyan.cc/attachment/201103/libevent/libevent2.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent2.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<li><p>按照下图中的方法编译Libevent 2.0.10：<br><a href="http://zyan.cc/attachment/201103/libevent/libevent2.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent2.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
 </li>
-<li><p>生成的“libevent.lib”、“libevent_core.lib”、“libevent_extras.lib”三个文件就是我们需要的 Libevent 静态链接库。<br><a href="http://zyan.cc/attachment/201103/libevent/libevent3.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent3.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a></p>
+<li><p>生成的“libevent.lib”、“libevent_core.lib”、“libevent_extras.lib”三个文件就是我们需要的 Libevent 静态链接库。<br><a href="http://zyan.cc/attachment/201103/libevent/libevent3.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent3.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a></p>
 </li>
 </ol>
 <hr>
 <p><strong>二、利用 Libevent 静态链接库，实现一个简单的 HTTP Web服务器程序</strong> </p>
 <ol>
-<li><p>打开 Visual Studio 2005，新建一个项目<br><a href="http://zyan.cc/attachment/201103/libevent/libevent4.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent4.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a></p>
+<li><p>打开 Visual Studio 2005，新建一个项目<br><a href="http://zyan.cc/attachment/201103/libevent/libevent4.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent4.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a></p>
 </li>
-<li><p>选择在“d:\test”目录内创建一个“Win32 控制台应用程序”<br><a href="http://zyan.cc/attachment/201103/libevent/libevent5.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent5.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<li><p>选择在“d:\test”目录内创建一个“Win32 控制台应用程序”<br><a href="http://zyan.cc/attachment/201103/libevent/libevent5.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent5.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
 </li>
-<li><p>按照下图进行选择<br><a href="http://zyan.cc/attachment/201103/libevent/libevent6.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent6.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<li><p>按照下图进行选择<br><a href="http://zyan.cc/attachment/201103/libevent/libevent6.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent6.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
 </li>
-<li><p>创建完成项目后，会自动生成“d:\test\httpd\”目录，在该目录内创建一个“httpd.c”文件，内容如下：<br> <a href="http://zyan.cc/#" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">view plain</a><a href="http://zyan.cc/#" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">print</a><a href="http://zyan.cc/#" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">?</a></p>
+<li><p>创建完成项目后，会自动生成“d:\test\httpd\”目录，在该目录内创建一个“httpd.c”文件，内容如下：<br> <a href="http://zyan.cc/#" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">view plain</a><a href="http://zyan.cc/#" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">print</a><a href="http://zyan.cc/#" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">?</a></p>
 </li>
 </ol>
 <pre><code>#include &lt;stdio.h&gt;
@@ -514,43 +532,43 @@ var _hmt = _hmt || [];
       WSACleanup();
         return 0;
  }</code></pre><p>5、回到 Visual Studio 2005，在左侧的【源文件】中选择【添加】-【现有项】，将上一步创建的“httpd.c”文件添加进来。</p>
-<p> <a href="http://zyan.cc/attachment/201103/libevent/libevent7.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent7.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p> <a href="http://zyan.cc/attachment/201103/libevent/libevent7.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent7.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
 <p>6、在【解决方案“httpd”】上点击鼠标右键，选择【属性】 </p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent8.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent8.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent8.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent8.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
 <p>7、将【配置】改为“Release”</p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent9.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent9.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent9.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent9.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
 <p>8、将“D:\libevent-2.0.10-stable\include”整个目录复制到“D:\test\httpd\include”；将 “D:\libevent-2.0.10-stable\WIN32-Code”目录内的“tree.h”文件和“event2”子目录，复制到“D: \test\httpd\include\”内；将“D:\libevent-2.0.10-stable\”目录内的所有“*.h”头文件复制到“D: \test\httpd\include\”内。可以在Windows左下角的【开始】-【运行】中输入“cmd”回车，在命令行窗口中执行以下命令，完 成复制过程。</p>
 <p>mkdir D:\test\httpd\include\ xcopy /E /H /R D:\libevent-2.0.10-stable\include\* D:\test\httpd\include\ xcopy /E /H /R D:\libevent-2.0.10-stable\WIN32-Code\* D:\test\httpd\include\ xcopy /E /H /R D:\libevent-2.0.10-stable\*.h D:\test\httpd\include\</p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent10.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent10.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a></p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent11.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent11.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent10.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent10.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a></p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent11.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent11.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
 <p>9、回到 Visual Studio 2005，在左侧菜单中【解决方案“httpd”】下面一行【httpd】上点击鼠标邮件，选择【属性】，对每项内容进行修改。下图中红框内的数据即为修改后的数据。 </p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent12.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent12.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent13.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent13.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent14.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent14.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent15.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent15.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a></p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent12.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent12.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent13.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent13.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent14.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent14.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent15.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent15.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a></p>
 <p>注：下图中，附加依赖项填写：</p>
 <pre><code>ws2\_32.lib wsock32.lib libevent.lib libevent\_core.lib libevent_extras.lib</code></pre><p>忽略特定库填写：</p>
 <p>libc.lib;msvcrt.lib;libcd.lib;libcmtd.lib;msvcrtd.lib</p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent16.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent16.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a></p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent16.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent16.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a></p>
 <p>10、完成设置后，在【解决方案“httpd”】上点击鼠标右键，选择【生成解决方案】。如果是重新编译，可以选择【重新生成解决方案】。生成成功后，“d:\test\httpd\Release”目录内的“httpd.exe”即为生成的可执行文件。 </p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent17.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent17.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
-<p>11、双击“httpd.exe”运行后，打开浏览器，访问“<a href="http://127.0.0.1:8505/" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">http://127.0.0.1:8505/</a>”，则可以看到以下信息：一个简单的 HTTP Web Server 输出的内容。</p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent18.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent18.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent17.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent17.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p>11、双击“httpd.exe”运行后，打开浏览器，访问“<a href="http://127.0.0.1:8505/" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">http://127.0.0.1:8505/</a>”，则可以看到以下信息：一个简单的 HTTP Web Server 输出的内容。</p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent18.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent18.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
 <p>12、如果你觉得像DOS程序一样的“httpd.exe”可执行文件图标不好看、没有显示版本信息，那么，你可以按照下图步骤，添加ICO图标文件。 </p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent19.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent19.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent20.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent20.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent19.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent19.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent20.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent20.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
 <p>13、添加版本信息 </p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent21.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent21.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
-<p><a href="http://zyan.cc/attachment/201103/libevent/libevent22.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent22.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
-<p>14、大功告成，下面显示的是带有自定义图标、版本信息的“httpd.exe”可执行程序。 <a href="http://zyan.cc/attachment/201103/libevent/libevent23.png" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent23.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a></p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent21.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent21.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p><a href="http://zyan.cc/attachment/201103/libevent/libevent22.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent22.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a> </p>
+<p>14、大功告成，下面显示的是带有自定义图标、版本信息的“httpd.exe”可执行程序。 <a href="http://zyan.cc/attachment/201103/libevent/libevent23.png" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://zyan.cc/attachment/201103/libevent/libevent23.png" alt="点击在新窗口中浏览此图片" title="点击在新窗口中浏览此图片"></a></p>
 <hr>
 <p><strong>附1：编译好的 Libevent 2.0.10 静态链接库与 httpd 的 Visual Studio 2005 工程源代码下载</strong></p>
-<p><img src="http://zyan.cc/template/RuiPai/images/download.gif" alt>下载文件</p>
-<p><a href="http://blog.zyan.cc/attachment/201103/libevent/httpd.zip" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">点击这里下载文件</a></p>
+<p><img src="http://zyan.cc/template/RuiPai/images/download.gif" alt="">下载文件</p>
+<p><a href="http://blog.zyan.cc/attachment/201103/libevent/httpd.zip" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">点击这里下载文件</a></p>
 <p><strong>附2：ICO图标制作工具下载</strong></p>
-<p><img src="http://zyan.cc/template/RuiPai/images/download.gif" alt>下载文件</p>
-<p><a href="http://blog.zyan.cc/attachment/201103/libevent/iconxp.zip" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">点击这里下载文件</a></p>
-<p>转载请注明原文链接：<a href="http://blog.zyan.cc/libevent_windows/" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">http://blog.zyan.cc/libevent_windows/</a></p>
+<p><img src="http://zyan.cc/template/RuiPai/images/download.gif" alt="">下载文件</p>
+<p><a href="http://blog.zyan.cc/attachment/201103/libevent/iconxp.zip" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">点击这里下载文件</a></p>
+<p>转载请注明原文链接：<a href="http://blog.zyan.cc/libevent_windows/" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">http://blog.zyan.cc/libevent_windows/</a></p>
 
       
 
@@ -566,11 +584,11 @@ var _hmt = _hmt || [];
     <br>
     <strong>版权声明：</strong>
     本作品采用
-    <a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    <a rel="license noopener external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
     进行许可。转载请注明出处！
     
       <br>
-      <a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+      <a rel="license noopener external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
     
   </div>
 
@@ -875,7 +893,7 @@ MathJax.Hub.Queue(function() {
     
     
 
-    <ul style="width: 100%">
+    <ul style="width: 70%">
     
     
       
@@ -924,26 +942,6 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">css</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">web</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">代码</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">压缩</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">jquery</a>
               </li>
              
@@ -953,22 +951,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">转载</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -988,6 +970,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -997,6 +983,38 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">代码</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">压缩</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1016,10 +1034,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -1032,11 +1046,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">centos</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1064,34 +1090,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">centos</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">摘要</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">文章</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">seo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">优化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">游记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">克莱姆法则</a>
               </li>
              
@@ -1104,11 +1102,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ca证书</a>
+                <a href="javascript:void(0)" class="js-tag color4">seo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">证书生成</a>
+                <a href="javascript:void(0)" class="js-tag color3">优化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">摘要</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">文章</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">游记</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1124,19 +1134,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">centos安装chromium报错</a>
+                <a href="javascript:void(0)" class="js-tag color5">ca证书</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">chromium安装报错</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">svn</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">代码提交</a>
+                <a href="javascript:void(0)" class="js-tag color5">证书生成</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1149,6 +1151,22 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">西伯利亚熊</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">svn</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">代码提交</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">centos安装chromium报错</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">chromium安装报错</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1192,14 +1210,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">centos6.5</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">linux系统</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">centos7安装Redis Desktop Manager</a>
               </li>
              
@@ -1224,6 +1234,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">centos6.5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">linux系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">root密码</a>
               </li>
              
@@ -1236,6 +1254,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">memcache</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">memcached</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">生活手记</a>
               </li>
              
@@ -1244,11 +1270,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">memcache</a>
+                <a href="javascript:void(0)" class="js-tag color4">cphalcon</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">memcached</a>
+                <a href="javascript:void(0)" class="js-tag color1">cphalcon报错</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1272,14 +1298,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">cphalcon</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">cphalcon报错</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">proxy代理搭建</a>
               </li>
              
@@ -1289,6 +1307,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">proxy服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">css中的em</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">响应式字体</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">响应式布局样式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1312,14 +1342,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">docker</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php安装</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">dns</a>
               </li>
              
@@ -1332,11 +1354,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">ecshop</a>
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">框架</a>
+                <a href="javascript:void(0)" class="js-tag color1">php安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1344,19 +1366,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">css中的em</a>
+                <a href="javascript:void(0)" class="js-tag color2">ecshop</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">响应式字体</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">响应式布局样式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">免费</a>
+                <a href="javascript:void(0)" class="js-tag color3">框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1369,6 +1383,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">新闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">免费</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1400,6 +1418,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">吐槽</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">hadoop</a>
               </li>
              
@@ -1424,7 +1446,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">吐槽</a>
+                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1436,19 +1462,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">会话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">会话原理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http1.1</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http2.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">会话</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">会话原理</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1468,6 +1494,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">素材</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">jq</a>
               </li>
              
@@ -1477,26 +1511,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">侧边导航</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">图片</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">素材</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">kali右键汉化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">kali桌面右键汉化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">kali右键创建文件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1520,23 +1534,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">劳动纠纷</a>
+                <a href="javascript:void(0)" class="js-tag color4">kali右键汉化</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">追缴工资</a>
+                <a href="javascript:void(0)" class="js-tag color1">kali桌面右键汉化</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">申请仲裁</a>
+                <a href="javascript:void(0)" class="js-tag color1">kali右键创建文件</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
+                <a href="javascript:void(0)" class="js-tag color4">区块链</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1549,6 +1559,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">劳动纠纷</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">追缴工资</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">申请仲裁</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1572,18 +1594,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">区块链</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">分库分表</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">高级缓存配置</a>
               </li>
              
@@ -1592,15 +1602,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql消息</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql队列</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">mysql高并发</a>
+                <a href="javascript:void(0)" class="js-tag color5">分库分表</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1613,6 +1619,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">mysql瓶颈解决办法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mysql消息</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mysql队列</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">mysql高并发</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1648,15 +1666,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">onethink</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">深圳劳动法服务部门</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">非关系型数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">onethink</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1696,6 +1714,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">php对接微信支付</a>
               </li>
              
@@ -1712,19 +1734,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">php随机数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">php获取闰年</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">闰年.php时间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php随机数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php设计模式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1748,15 +1766,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php数学函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">php面试题</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">php面向对象</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">面向对象</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php面试题</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1788,10 +1810,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php数学函数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">PHP数组</a>
               </li>
              
@@ -1804,11 +1822,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php过滤</a>
+                <a href="javascript:void(0)" class="js-tag color1">PHP算法</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">过滤</a>
+                <a href="javascript:void(0)" class="js-tag color1">php递归</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">递归</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1817,6 +1839,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">phpunit安装</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php过滤</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">过滤</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1844,15 +1874,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PHP算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php递归</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">递归</a>
+                <a href="javascript:void(0)" class="js-tag color2">php字符串</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1868,10 +1890,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php字符串</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">a标签</a>
               </li>
              
@@ -1884,11 +1902,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">响应慢</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">页面优化</a>
+                <a href="javascript:void(0)" class="js-tag color4">R语言</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1924,7 +1938,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">seajs</a>
+                <a href="javascript:void(0)" class="js-tag color4">响应慢</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">页面优化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1940,7 +1958,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">R语言</a>
+                <a href="javascript:void(0)" class="js-tag color1">seajs</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1956,7 +1978,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">session</a>
+                <a href="javascript:void(0)" class="js-tag color2">深圳政府电话</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">深圳电话</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">特区电话</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2000,6 +2030,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php正则</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">正则</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">shodan</a>
               </li>
              
@@ -2016,26 +2054,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">深圳政府电话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">深圳电话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">特区电话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">可视化数据</a>
               </li>
              
@@ -2045,6 +2063,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据表</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2088,10 +2118,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql设置超时，超时</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
@@ -2116,15 +2142,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+                <a href="javascript:void(0)" class="js-tag color3">mysql设置超时，超时</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2152,6 +2174,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">域名合并</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">wpscan</a>
               </li>
              
@@ -2160,11 +2186,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">域名合并</a>
+                <a href="javascript:void(0)" class="js-tag color1">无限极分类</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" class="js-tag color2">php无限极</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">分类tree</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">无限极分类树型</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2200,31 +2234,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">无限极分类</a>
+                <a href="javascript:void(0)" class="js-tag color3">3D</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php无限极</a>
+                <a href="javascript:void(0)" class="js-tag color3">动画</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">分类tree</a>
+                <a href="javascript:void(0)" class="js-tag color3">平台</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">无限极分类树型</a>
+                <a href="javascript:void(0)" class="js-tag color3">游戏</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">储蓄卡免年费</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">银行卡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">银行卡免年费</a>
+                <a href="javascript:void(0)" class="js-tag color3">虚幻4引擎编辑</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2241,6 +2267,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">邮件函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">储蓄卡免年费</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">银行卡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">银行卡免年费</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2284,31 +2322,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">3D</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">动画</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">平台</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">游戏</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">虚幻4引擎编辑</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">mysql函数</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php中mysql函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">互联网时代</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">开源技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2320,7 +2350,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
+                <a href="javascript:void(0)" class="js-tag color1">邮箱服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">正则表达式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2333,22 +2367,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">谷歌搜索</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">互联网时代</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">开源技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">正则表达式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">邮箱服务器</a>
               </li>
             
             <div class="clearfix"></div>
@@ -2642,19 +2660,19 @@ MathJax.Hub.Queue(function() {
         <ul class="search-ul">
           
             <li class="search-li">
-                  <a href="/dujiabanna/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杜嘉班纳（D&amp;G）</a>
+              <a href="/dujiabanna/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杜嘉班纳（D&amp;G）</a>
             </li>
           
             <li class="search-li">
-                  <a href="/balishijia/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>巴黎世家(Balenciaga)</a>
+              <a href="/balishijia/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>巴黎世家(Balenciaga)</a>
             </li>
           
             <li class="search-li">
-                  <a href="/jppap/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>日本APA</a>
+              <a href="/jppap/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>日本APA</a>
             </li>
           
             <li class="search-li">
-                  <a href="/huaerjieribao/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>华尔街日报</a>
+              <a href="/huaerjieribao/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>华尔街日报</a>
             </li>
           
         </ul>
@@ -2662,25 +2680,26 @@ MathJax.Hub.Queue(function() {
       </section>
     
 
-    
+
+        
       <section class="tools-section tools-section-blackPeople" q-show="blackPeople">
       
         <ul class="search-ul">
           
             <li class="search-li">
-             <a href="/fanjiayang/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>樊嘉扬</a>
+              <a href="/fanjiayang/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>樊嘉扬</a>
             </li>
           
             <li class="search-li">
-             <a href="/yangshuping/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杨舒平</a>
+              <a href="/yangshuping/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杨舒平</a>
             </li>
           
             <li class="search-li">
-             <a href="/xukexin/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>许可馨</a>
+              <a href="/xukexin/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>许可馨</a>
             </li>
           
             <li class="search-li">
-             <a href="/huangjiayi/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>黄嘉毅</a>
+              <a href="/huangjiayi/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>黄嘉毅</a>
             </li>
           
         </ul>
@@ -2757,6 +2776,23 @@ MathJax.Hub.Queue(function() {
     </div>
 
 </div>
-  </div>
+  </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 </body>
 </html>

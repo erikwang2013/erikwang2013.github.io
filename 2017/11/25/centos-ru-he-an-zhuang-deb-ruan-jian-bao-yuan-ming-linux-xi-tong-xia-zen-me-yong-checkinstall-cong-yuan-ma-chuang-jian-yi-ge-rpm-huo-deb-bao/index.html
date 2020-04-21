@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://erik.xyz">
   <title>centos如何安装deb软件包/rpm转换成deb(原名：Linux系统下怎么用CheckInstall从源码创建一个RPM或DEB包) | 艾瑞可erik</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="description" content="正如我确信，你们一定知道Linux下的多种软件安装方式：使用发行版所提供的包管理系统（aptitude，yum，或者zypper，还可以举很多例子），从源码编译（尽管现在很少用了，但在Linux发展早期却是唯一可用的方法），或者使用各自的低级工具dpkg用于.deb，以及rpm用于.rpm，预编译包，如此这般。">
-<meta name="keywords" content="centos,deb,deb&#x2F;rpm互转,deb转rpm,rpm互转">
 <meta property="og:type" content="article">
 <meta property="og:title" content="centos如何安装deb软件包&#x2F;rpm转换成deb(原名：Linux系统下怎么用CheckInstall从源码创建一个RPM或DEB包)">
 <meta property="og:url" content="https://erik.xyz/2017/11/25/centos-ru-he-an-zhuang-deb-ruan-jian-bao-yuan-ming-linux-xi-tong-xia-zen-me-yong-checkinstall-cong-yuan-ma-chuang-jian-yi-ge-rpm-huo-deb-bao/index.html">
 <meta property="og:site_name" content="艾瑞可erik">
 <meta property="og:description" content="正如我确信，你们一定知道Linux下的多种软件安装方式：使用发行版所提供的包管理系统（aptitude，yum，或者zypper，还可以举很多例子），从源码编译（尽管现在很少用了，但在Linux发展早期却是唯一可用的方法），或者使用各自的低级工具dpkg用于.deb，以及rpm用于.rpm，预编译包，如此这般。">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://www.linuxidc.com/upload/2015_09/150902085681941.png">
 <meta property="og:image" content="http://www.linuxidc.com/upload/2015_09/150902085681942.png">
 <meta property="og:image" content="http://www.linuxidc.com/upload/2015_09/150902085681943.png">
@@ -29,10 +28,15 @@
 <meta property="og:image" content="http://www.linuxidc.com/upload/2015_09/1509020856819410.png">
 <meta property="og:image" content="http://www.linuxidc.com/upload/2015_09/1509020856819412.png">
 <meta property="og:image" content="http://www.linuxidc.com/upload/2015_09/1509020856819411.png">
-<meta property="og:updated_time" content="2020-01-22T12:53:38.592Z">
+<meta property="article:published_time" content="2017-11-25T02:38:00.000Z">
+<meta property="article:modified_time" content="2020-01-22T12:53:38.592Z">
+<meta property="article:author" content="艾瑞可erik">
+<meta property="article:tag" content="centos">
+<meta property="article:tag" content="deb">
+<meta property="article:tag" content="deb&#x2F;rpm互转">
+<meta property="article:tag" content="deb转rpm">
+<meta property="article:tag" content="rpm互转">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="centos如何安装deb软件包&#x2F;rpm转换成deb(原名：Linux系统下怎么用CheckInstall从源码创建一个RPM或DEB包)">
-<meta name="twitter:description" content="正如我确信，你们一定知道Linux下的多种软件安装方式：使用发行版所提供的包管理系统（aptitude，yum，或者zypper，还可以举很多例子），从源码编译（尽管现在很少用了，但在Linux发展早期却是唯一可用的方法），或者使用各自的低级工具dpkg用于.deb，以及rpm用于.rpm，预编译包，如此这般。">
 <meta name="twitter:image" content="http://www.linuxidc.com/upload/2015_09/150902085681941.png">
   
     <link rel="alternative" href="/atom.xml" title="艾瑞可erik" type="application/atom+xml">
@@ -71,10 +75,10 @@ var _hmt = _hmt || [];
 </script>
 
 
-</head>
-</html>
+<meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
 <body>
-  <div id="container" q-class="show:isCtnShow">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
@@ -207,7 +211,15 @@ var _hmt = _hmt || [];
 				</li>
 		        
 				 <li class="dib">
-					<a  target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
+					<a  target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="tuchong">
+					<svg class="icon svg-icon" aria-hidden="true">
+					  <use xlink:href="#icon-tuchong"></use>
+					</svg>
+					</a>
+				</li>
+		        
+				 <li class="dib">
+					<a  target="_blank" href="https://ycg.qq.com/person/works/2415382" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
 					<svg class="icon svg-icon" aria-hidden="true">
 					  <use xlink:href="#icon-web"></use>
 					</svg>
@@ -320,7 +332,15 @@ var _hmt = _hmt || [];
 						</li>
 			        
 					 <li class="dib">
-						<a class="web" target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
+						<a class="tuchong" target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="tuchong">
+							<svg class="icon svg-icon" aria-hidden="true">
+							  <use xlink:href="#icon-tuchong"></use>
+							</svg>
+						</a>
+						</li>
+			        
+					 <li class="dib">
+						<a class="web" target="_blank" href="https://ycg.qq.com/person/works/2415382" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
 							<svg class="icon svg-icon" aria-hidden="true">
 							  <use xlink:href="#icon-web"></use>
 							</svg>
@@ -410,16 +430,16 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>正如我确信，你们一定知道Linux下的多种软件安装方式：使用发行版所提供的包管理系统（<a href="http://www.tecmint.com/linux-package-management/" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">aptitude，yum，或者zypper</a>，还可以举很多例子），从源码编译（尽管现在很少用了，但在Linux发展早期却是唯一可用的方法），或者使用各自的低级工具dpkg用于.deb，以及rpm用于.rpm，预编译包，如此这般。</p>
+        <p>正如我确信，你们一定知道Linux下的多种软件安装方式：使用发行版所提供的包管理系统（<a href="http://www.tecmint.com/linux-package-management/" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">aptitude，yum，或者zypper</a>，还可以举很多例子），从源码编译（尽管现在很少用了，但在Linux发展早期却是唯一可用的方法），或者使用各自的低级工具dpkg用于.deb，以及rpm用于.rpm，预编译包，如此这般。</p>
 <p><img src="http://www.linuxidc.com/upload/2015_09/150902085681941.png" alt="Convert RPM to DEB and DEB to RPM"></p>
 <a id="more"></a>
 <p><em>使用Alien将RPM转换成DEB以及将DEB转换成RPM</em></p>
-<p>在本文中，我们将为你介绍alien，一个用于在各种不同的Linux包格式相互转换的工具，其最常见的用法是将.rpm转换成.deb（或者反过来）。 如果你需要某个特定类型的包，而你只能找到其它格式的包的时候，该工具迟早能派得上用场——即使是其作者不再维护，并且在其网站声明：alien将可能永远维持在实验状态。 例如，有一次，我正查找一个用于喷墨打印机的.deb驱动，但是却没有找到——生产厂家只提供.rpm包，这时候alien拯救了我。我安装了alien，将包进行转换，不久之后我就可以使用我的打印机了，没有任何问题。 即便如此，我们也必须澄清一下，这个工具不应当用来转换重要的系统文件和库，因为它们在不同的发行版中有不同的配置。只有在前面说的那种情况下所建议的安装方法根本不适合时，alien才能作为最后手段使用。 最后一项要点是，我们必须注意，虽然我们在本文中使用<a href="http://www.linuxidc.com/topicnews.aspx?tid=14" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="CentOS">CentOS</a>和Debian，除了前两个发行版及其各自的家族体系外，据我们所知，alien可以工作在Slackware中，甚至Solaris中。  </p>
+<p>在本文中，我们将为你介绍alien，一个用于在各种不同的Linux包格式相互转换的工具，其最常见的用法是将.rpm转换成.deb（或者反过来）。 如果你需要某个特定类型的包，而你只能找到其它格式的包的时候，该工具迟早能派得上用场——即使是其作者不再维护，并且在其网站声明：alien将可能永远维持在实验状态。 例如，有一次，我正查找一个用于喷墨打印机的.deb驱动，但是却没有找到——生产厂家只提供.rpm包，这时候alien拯救了我。我安装了alien，将包进行转换，不久之后我就可以使用我的打印机了，没有任何问题。 即便如此，我们也必须澄清一下，这个工具不应当用来转换重要的系统文件和库，因为它们在不同的发行版中有不同的配置。只有在前面说的那种情况下所建议的安装方法根本不适合时，alien才能作为最后手段使用。 最后一项要点是，我们必须注意，虽然我们在本文中使用<a href="http://www.linuxidc.com/topicnews.aspx?tid=14" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer" title="CentOS">CentOS</a>和Debian，除了前两个发行版及其各自的家族体系外，据我们所知，alien可以工作在Slackware中，甚至Solaris中。  </p>
 <h4 id="步骤1：安装Alien及其依赖包"><a href="#步骤1：安装Alien及其依赖包" class="headerlink" title="步骤1：安装Alien及其依赖包"></a>步骤1：安装Alien及其依赖包</h4><p>要安装alien到CentOS/RHEL 7中，你需要启用EPEL和Nux Dextop（是的，是Dextop——不是Desktop）仓库，顺序如下：</p>
 <ol>
 <li><code># yum install epel-release</code></li>
 </ol>
-<p>启用Nux Dextop仓库的包的当前最新版本是0.5（2015年8月10日发布），在安装之前你可以查看<a href="http://li.nux.ro/download/nux/dextop/el7/x86_64/" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">http://li.nux.ro/download/nux/dextop/el7/x86_64/</a>上是否有更新的版本。</p>
+<p>启用Nux Dextop仓库的包的当前最新版本是0.5（2015年8月10日发布），在安装之前你可以查看<a href="http://li.nux.ro/download/nux/dextop/el7/x86_64/" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">http://li.nux.ro/download/nux/dextop/el7/x86_64/</a>上是否有更新的版本。</p>
 <ol>
 <li><code># rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro</code></li>
 <li><code># rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm</code></li>
@@ -428,7 +448,7 @@ var _hmt = _hmt || [];
 <ol>
 <li><code># yum update &amp;&amp; yum install alien</code></li>
 </ol>
-<p>在<a href="http://www.linuxidc.com/topicnews.aspx?tid=5" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="Fedora">Fedora</a>中，你只需要运行上面的命令即可。 在Debian及其衍生版中，只需要：</p>
+<p>在<a href="http://www.linuxidc.com/topicnews.aspx?tid=5" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer" title="Fedora">Fedora</a>中，你只需要运行上面的命令即可。 在Debian及其衍生版中，只需要：</p>
 <ol>
 <li><code># aptitude install alien</code></li>
 </ol>
@@ -505,7 +525,7 @@ var _hmt = _hmt || [];
 </ol>
 <p><img src="http://www.linuxidc.com/upload/2015_09/1509020856819411.png" alt="Confirm Installed Zsh Package"></p>
 <p><em>确认安装的Zsh包</em></p>
-<p>转载：<a href="http://www.linuxidc.com/Linux/2015-09/122573.htm" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">http://www.linuxidc.com/Linux/2015-09/122573.htm</a> 本文地址：<a href="http://erik.xyz/?p=1398">http://erik.xyz/?p=1398</a></p>
+<p>转载：<a href="http://www.linuxidc.com/Linux/2015-09/122573.htm" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">http://www.linuxidc.com/Linux/2015-09/122573.htm</a> 本文地址：<a href="http://erik.xyz/?p=1398">http://erik.xyz/?p=1398</a></p>
 
       
 
@@ -521,11 +541,11 @@ var _hmt = _hmt || [];
     <br>
     <strong>版权声明：</strong>
     本作品采用
-    <a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    <a rel="license noopener external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
     进行许可。转载请注明出处！
     
       <br>
-      <a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+      <a rel="license noopener external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
     
   </div>
 
@@ -838,7 +858,7 @@ MathJax.Hub.Queue(function() {
     
     
 
-    <ul style="width: 100%">
+    <ul style="width: 70%">
     
     
       
@@ -887,26 +907,6 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">css</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">web</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">代码</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">压缩</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">jquery</a>
               </li>
              
@@ -916,22 +916,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">转载</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -951,6 +935,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -960,6 +948,38 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">代码</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">压缩</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -979,10 +999,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -995,11 +1011,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">centos</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1027,34 +1055,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">centos</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">摘要</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">文章</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">seo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">优化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">游记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">克莱姆法则</a>
               </li>
              
@@ -1067,11 +1067,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ca证书</a>
+                <a href="javascript:void(0)" class="js-tag color4">seo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">证书生成</a>
+                <a href="javascript:void(0)" class="js-tag color3">优化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">摘要</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">文章</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">游记</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1087,19 +1099,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">centos安装chromium报错</a>
+                <a href="javascript:void(0)" class="js-tag color5">ca证书</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">chromium安装报错</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">svn</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">代码提交</a>
+                <a href="javascript:void(0)" class="js-tag color5">证书生成</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1112,6 +1116,22 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">西伯利亚熊</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">svn</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">代码提交</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">centos安装chromium报错</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">chromium安装报错</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1155,14 +1175,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">centos6.5</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">linux系统</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">centos7安装Redis Desktop Manager</a>
               </li>
              
@@ -1187,6 +1199,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">centos6.5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">linux系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">root密码</a>
               </li>
              
@@ -1199,6 +1219,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">memcache</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">memcached</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">生活手记</a>
               </li>
              
@@ -1207,11 +1235,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">memcache</a>
+                <a href="javascript:void(0)" class="js-tag color4">cphalcon</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">memcached</a>
+                <a href="javascript:void(0)" class="js-tag color1">cphalcon报错</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1235,14 +1263,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">cphalcon</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">cphalcon报错</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">proxy代理搭建</a>
               </li>
              
@@ -1252,6 +1272,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">proxy服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">css中的em</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">响应式字体</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">响应式布局样式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1275,14 +1307,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">docker</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php安装</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">dns</a>
               </li>
              
@@ -1295,11 +1319,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">ecshop</a>
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">框架</a>
+                <a href="javascript:void(0)" class="js-tag color1">php安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1307,19 +1331,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">css中的em</a>
+                <a href="javascript:void(0)" class="js-tag color2">ecshop</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">响应式字体</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">响应式布局样式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">免费</a>
+                <a href="javascript:void(0)" class="js-tag color3">框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1332,6 +1348,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">新闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">免费</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1363,6 +1383,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">吐槽</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">hadoop</a>
               </li>
              
@@ -1387,7 +1411,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">吐槽</a>
+                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1399,19 +1427,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">会话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">会话原理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http1.1</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http2.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">会话</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">会话原理</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1431,6 +1459,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">素材</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">jq</a>
               </li>
              
@@ -1440,26 +1476,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">侧边导航</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">图片</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">素材</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">kali右键汉化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">kali桌面右键汉化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">kali右键创建文件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1483,23 +1499,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">劳动纠纷</a>
+                <a href="javascript:void(0)" class="js-tag color4">kali右键汉化</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">追缴工资</a>
+                <a href="javascript:void(0)" class="js-tag color1">kali桌面右键汉化</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">申请仲裁</a>
+                <a href="javascript:void(0)" class="js-tag color1">kali右键创建文件</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
+                <a href="javascript:void(0)" class="js-tag color4">区块链</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1512,6 +1524,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">劳动纠纷</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">追缴工资</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">申请仲裁</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1535,18 +1559,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">区块链</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">分库分表</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">高级缓存配置</a>
               </li>
              
@@ -1555,15 +1567,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql消息</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql队列</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">mysql高并发</a>
+                <a href="javascript:void(0)" class="js-tag color5">分库分表</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1576,6 +1584,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">mysql瓶颈解决办法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mysql消息</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mysql队列</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">mysql高并发</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1611,15 +1631,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">onethink</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">深圳劳动法服务部门</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">非关系型数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">onethink</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1659,6 +1679,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">php对接微信支付</a>
               </li>
              
@@ -1675,19 +1699,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">php随机数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">php获取闰年</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">闰年.php时间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php随机数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php设计模式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1711,15 +1731,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php数学函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">php面试题</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">php面向对象</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">面向对象</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php面试题</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1751,10 +1775,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php数学函数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">PHP数组</a>
               </li>
              
@@ -1767,11 +1787,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php过滤</a>
+                <a href="javascript:void(0)" class="js-tag color1">PHP算法</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">过滤</a>
+                <a href="javascript:void(0)" class="js-tag color1">php递归</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">递归</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1780,6 +1804,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">phpunit安装</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php过滤</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">过滤</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1807,15 +1839,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PHP算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php递归</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">递归</a>
+                <a href="javascript:void(0)" class="js-tag color2">php字符串</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1831,10 +1855,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php字符串</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">a标签</a>
               </li>
              
@@ -1847,11 +1867,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">响应慢</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">页面优化</a>
+                <a href="javascript:void(0)" class="js-tag color4">R语言</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1887,7 +1903,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">seajs</a>
+                <a href="javascript:void(0)" class="js-tag color4">响应慢</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">页面优化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1903,7 +1923,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">R语言</a>
+                <a href="javascript:void(0)" class="js-tag color1">seajs</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1919,7 +1943,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">session</a>
+                <a href="javascript:void(0)" class="js-tag color2">深圳政府电话</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">深圳电话</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">特区电话</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1963,6 +1995,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php正则</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">正则</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">shodan</a>
               </li>
              
@@ -1979,26 +2019,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">深圳政府电话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">深圳电话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">特区电话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">可视化数据</a>
               </li>
              
@@ -2008,6 +2028,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据表</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2051,10 +2083,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql设置超时，超时</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
@@ -2079,15 +2107,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+                <a href="javascript:void(0)" class="js-tag color3">mysql设置超时，超时</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2115,6 +2139,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">域名合并</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">wpscan</a>
               </li>
              
@@ -2123,11 +2151,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">域名合并</a>
+                <a href="javascript:void(0)" class="js-tag color1">无限极分类</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" class="js-tag color2">php无限极</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">分类tree</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">无限极分类树型</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2163,31 +2199,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">无限极分类</a>
+                <a href="javascript:void(0)" class="js-tag color3">3D</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php无限极</a>
+                <a href="javascript:void(0)" class="js-tag color3">动画</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">分类tree</a>
+                <a href="javascript:void(0)" class="js-tag color3">平台</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">无限极分类树型</a>
+                <a href="javascript:void(0)" class="js-tag color3">游戏</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">储蓄卡免年费</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">银行卡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">银行卡免年费</a>
+                <a href="javascript:void(0)" class="js-tag color3">虚幻4引擎编辑</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2204,6 +2232,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">邮件函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">储蓄卡免年费</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">银行卡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">银行卡免年费</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2247,31 +2287,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">3D</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">动画</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">平台</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">游戏</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">虚幻4引擎编辑</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">mysql函数</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php中mysql函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">互联网时代</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">开源技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2283,7 +2315,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
+                <a href="javascript:void(0)" class="js-tag color1">邮箱服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">正则表达式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2296,22 +2332,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">谷歌搜索</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">互联网时代</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">开源技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">正则表达式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">邮箱服务器</a>
               </li>
             
             <div class="clearfix"></div>
@@ -2605,19 +2625,19 @@ MathJax.Hub.Queue(function() {
         <ul class="search-ul">
           
             <li class="search-li">
-                  <a href="/dujiabanna/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杜嘉班纳（D&amp;G）</a>
+              <a href="/dujiabanna/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杜嘉班纳（D&amp;G）</a>
             </li>
           
             <li class="search-li">
-                  <a href="/balishijia/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>巴黎世家(Balenciaga)</a>
+              <a href="/balishijia/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>巴黎世家(Balenciaga)</a>
             </li>
           
             <li class="search-li">
-                  <a href="/jppap/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>日本APA</a>
+              <a href="/jppap/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>日本APA</a>
             </li>
           
             <li class="search-li">
-                  <a href="/huaerjieribao/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>华尔街日报</a>
+              <a href="/huaerjieribao/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>华尔街日报</a>
             </li>
           
         </ul>
@@ -2625,25 +2645,26 @@ MathJax.Hub.Queue(function() {
       </section>
     
 
-    
+
+        
       <section class="tools-section tools-section-blackPeople" q-show="blackPeople">
       
         <ul class="search-ul">
           
             <li class="search-li">
-             <a href="/fanjiayang/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>樊嘉扬</a>
+              <a href="/fanjiayang/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>樊嘉扬</a>
             </li>
           
             <li class="search-li">
-             <a href="/yangshuping/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杨舒平</a>
+              <a href="/yangshuping/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杨舒平</a>
             </li>
           
             <li class="search-li">
-             <a href="/xukexin/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>许可馨</a>
+              <a href="/xukexin/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>许可馨</a>
             </li>
           
             <li class="search-li">
-             <a href="/huangjiayi/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>黄嘉毅</a>
+              <a href="/huangjiayi/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>黄嘉毅</a>
             </li>
           
         </ul>
@@ -2720,6 +2741,23 @@ MathJax.Hub.Queue(function() {
     </div>
 
 </div>
-  </div>
+  </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 </body>
 </html>

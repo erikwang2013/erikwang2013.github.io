@@ -451,6 +451,7 @@ i {
 .icon-weixin:before {
   content: "\E61F"; }
 
+
 .icon-qzone:before {
   content: "\E680"; }
 
@@ -582,7 +583,7 @@ html, body, #container {
     .left-col #header .header-smart-menu {
       font-size: 12px;
       margin-bottom: 20px; 
-          text-align: left;
+      text-align: left;
     }
       .left-col #header .header-smart-menu a:after {
         content: '/'; }
@@ -1388,10 +1389,6 @@ pre .css ~ * .id {
   .tools-col .tools-section-tools {
     padding-top: 30px; }
   .tools-col .tools-section-friends {
-    padding-top: 30px; }
-     .tools-col .tools-section-blackCompany {
-    padding-top: 30px; }
-     .tools-col .tools-section-blackPeople {
     padding-top: 30px; }
   .tools-col .aboutme-wrap {
     display: -ms-flexbox;

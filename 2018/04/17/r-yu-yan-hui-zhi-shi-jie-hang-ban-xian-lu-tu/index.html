@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://erik.xyz">
   <title>利用R语言绘制世界航班路线图 | 艾瑞可erik</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="作者简介Introduction taoyan：伪码农，R语言爱好者，爱开源。 个人博客: https://ytlogos.github.io/ 、  **一、 简介** 本文基于NASA的夜间地图（https://www.nasa.gov/specials/blackmarble/2016/globalmaps/BlackMarble_2016_01deg.jpg）的基础上进行世界航班路线可视化">
-<meta name="keywords" content="转载,R语言">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="作者简介Introduction taoyan：伪码农，R语言爱好者，爱开源。 个人博客: https:&#x2F;&#x2F;ytlogos.github.io&#x2F; 、  **一、 简介** 本文基于NASA的夜间地图（https:&#x2F;&#x2F;www.nasa.gov&#x2F;specials&#x2F;blackmarble&#x2F;2016&#x2F;globalmaps&#x2F;BlackMarble_2016_01deg.jpg）的基础上进行世界航班路线可视化">
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用R语言绘制世界航班路线图">
 <meta property="og:url" content="https://erik.xyz/2018/04/17/r-yu-yan-hui-zhi-shi-jie-hang-ban-xian-lu-tu/index.html">
 <meta property="og:site_name" content="艾瑞可erik">
-<meta property="og:description" content="作者简介Introduction taoyan：伪码农，R语言爱好者，爱开源。 个人博客: https://ytlogos.github.io/ 、  **一、 简介** 本文基于NASA的夜间地图（https://www.nasa.gov/specials/blackmarble/2016/globalmaps/BlackMarble_2016_01deg.jpg）的基础上进行世界航班路线可视化">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:description" content="作者简介Introduction taoyan：伪码农，R语言爱好者，爱开源。 个人博客: https:&#x2F;&#x2F;ytlogos.github.io&#x2F; 、  **一、 简介** 本文基于NASA的夜间地图（https:&#x2F;&#x2F;www.nasa.gov&#x2F;specials&#x2F;blackmarble&#x2F;2016&#x2F;globalmaps&#x2F;BlackMarble_2016_01deg.jpg）的基础上进行世界航班路线可视化">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz_gif/y2fhgP4leThJiaFzTDexmxpianqLyez0XSGmbKia8GfeJutxnAkGiciaevwnP89eqI8icjVCYia0GG98ribmFhhGrKemtQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1">
 <meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz_png/y2fhgP4leTgLwP9BJYtDFtibfby9doVLqwWicgVQzvia8NvwesibRu3UXCV4ib88icOd6Y3EFjUsaVMk9eGEZTicdtOag/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1">
 <meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
@@ -25,10 +24,12 @@
 <meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
 <meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
 <meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
-<meta property="og:updated_time" content="2020-01-22T12:53:38.600Z">
+<meta property="article:published_time" content="2018-04-17T11:03:00.000Z">
+<meta property="article:modified_time" content="2020-01-22T12:53:38.600Z">
+<meta property="article:author" content="艾瑞可erik">
+<meta property="article:tag" content="转载">
+<meta property="article:tag" content="R语言">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="利用R语言绘制世界航班路线图">
-<meta name="twitter:description" content="作者简介Introduction taoyan：伪码农，R语言爱好者，爱开源。 个人博客: https://ytlogos.github.io/ 、  **一、 简介** 本文基于NASA的夜间地图（https://www.nasa.gov/specials/blackmarble/2016/globalmaps/BlackMarble_2016_01deg.jpg）的基础上进行世界航班路线可视化">
 <meta name="twitter:image" content="http://mmbiz.qpic.cn/mmbiz_gif/y2fhgP4leThJiaFzTDexmxpianqLyez0XSGmbKia8GfeJutxnAkGiciaevwnP89eqI8icjVCYia0GG98ribmFhhGrKemtQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1">
   
     <link rel="alternative" href="/atom.xml" title="艾瑞可erik" type="application/atom+xml">
@@ -67,10 +68,10 @@ var _hmt = _hmt || [];
 </script>
 
 
-</head>
-</html>
+<meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
 <body>
-  <div id="container" q-class="show:isCtnShow">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
@@ -203,7 +204,15 @@ var _hmt = _hmt || [];
 				</li>
 		        
 				 <li class="dib">
-					<a  target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
+					<a  target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="tuchong">
+					<svg class="icon svg-icon" aria-hidden="true">
+					  <use xlink:href="#icon-tuchong"></use>
+					</svg>
+					</a>
+				</li>
+		        
+				 <li class="dib">
+					<a  target="_blank" href="https://ycg.qq.com/person/works/2415382" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
 					<svg class="icon svg-icon" aria-hidden="true">
 					  <use xlink:href="#icon-web"></use>
 					</svg>
@@ -316,7 +325,15 @@ var _hmt = _hmt || [];
 						</li>
 			        
 					 <li class="dib">
-						<a class="web" target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
+						<a class="tuchong" target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="tuchong">
+							<svg class="icon svg-icon" aria-hidden="true">
+							  <use xlink:href="#icon-tuchong"></use>
+							</svg>
+						</a>
+						</li>
+			        
+					 <li class="dib">
+						<a class="web" target="_blank" href="https://ycg.qq.com/person/works/2415382" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
 							<svg class="icon svg-icon" aria-hidden="true">
 							  <use xlink:href="#icon-web"></use>
 							</svg>
@@ -407,16 +424,16 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong>作者简介Introduction</strong></p>
-<p><strong>taoyan：</strong>伪码农，R语言爱好者，爱开源。 个人博客: <a href="https://ytlogos.github.io/" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">https://ytlogos.github.io/</a> <strong>、</strong></p>
-<p><img src="http://mmbiz.qpic.cn/mmbiz_gif/y2fhgP4leThJiaFzTDexmxpianqLyez0XSGmbKia8GfeJutxnAkGiciaevwnP89eqI8icjVCYia0GG98ribmFhhGrKemtQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt title="烟花"></p>
-<p><img src="http://mmbiz.qpic.cn/mmbiz_png/y2fhgP4leTgLwP9BJYtDFtibfby9doVLqwWicgVQzvia8NvwesibRu3UXCV4ib88icOd6Y3EFjUsaVMk9eGEZTicdtOag/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1" alt>**<br>一、 简介**</p>
-<p>本文基于NASA的夜间地图（<a href="https://www.nasa.gov/specials/blackmarble/2016/globalmaps/BlackMarble_2016_01deg.jpg）的基础上进行世界航班路线可视化，参考多篇博客以及可视化案例。" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">https://www.nasa.gov/specials/blackmarble/2016/globalmaps/BlackMarble_2016_01deg.jpg）的基础上进行世界航班路线可视化，参考多篇博客以及可视化案例。</a> <strong>1. 包加载</strong> 本博客使用的包较多，利用pacman包里的<strong>p_load()</strong>函数进行加载。<a id="more"></a></p>
+<p><strong>taoyan：</strong>伪码农，R语言爱好者，爱开源。 个人博客: <a href="https://ytlogos.github.io/" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">https://ytlogos.github.io/</a> <strong>、</strong></p>
+<p><img src="http://mmbiz.qpic.cn/mmbiz_gif/y2fhgP4leThJiaFzTDexmxpianqLyez0XSGmbKia8GfeJutxnAkGiciaevwnP89eqI8icjVCYia0GG98ribmFhhGrKemtQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1" alt="" title="烟花"></p>
+<p><img src="http://mmbiz.qpic.cn/mmbiz_png/y2fhgP4leTgLwP9BJYtDFtibfby9doVLqwWicgVQzvia8NvwesibRu3UXCV4ib88icOd6Y3EFjUsaVMk9eGEZTicdtOag/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1" alt="">**<br>一、 简介**</p>
+<p>本文基于NASA的夜间地图（<a href="https://www.nasa.gov/specials/blackmarble/2016/globalmaps/BlackMarble_2016_01deg.jpg）的基础上进行世界航班路线可视化，参考多篇博客以及可视化案例。" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">https://www.nasa.gov/specials/blackmarble/2016/globalmaps/BlackMarble_2016_01deg.jpg）的基础上进行世界航班路线可视化，参考多篇博客以及可视化案例。</a> <strong>1. 包加载</strong> 本博客使用的包较多，利用pacman包里的<strong>p_load()</strong>函数进行加载。<a id="more"></a></p>
 <blockquote>
 <p>library(pacman) p_load(tidyverse, data.table, geosphere, grid, jpeg, plyr)</p>
 </blockquote>
-<p>  <strong>2. 数据准备</strong> 使用的数据来自于OpenFlights.org（<a href="https://openflights.org/data.html）。" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">https://openflights.org/data.html）。</a> <strong>3.数据下载</strong></p>
+<p>  <strong>2. 数据准备</strong> 使用的数据来自于OpenFlights.org（<a href="https://openflights.org/data.html）。" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">https://openflights.org/data.html）。</a> <strong>3.数据下载</strong></p>
 <blockquote>
-<p>download.file(“<a href="https://raw.githubusercontent.com/jpatokal/openflights/master/data/airlines.dat" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">https://raw.githubusercontent.com/jpatokal/openflights/master/data/airlines.dat”,destfile</a> = “airlines.dat”, mode = “wb”) download.file(“<a href="https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat”,destfile</a> = “airports.dat”, mode = “wb”) download.file(“<a href="https://raw.githubusercontent.com/jpatokal/openflights/master/data/routes.dat" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">https://raw.githubusercontent.com/jpatokal/openflights/master/data/routes.dat”,destfile</a> = “routes.dat”, mode = “wb”)</p>
+<p>download.file(“<a href="https://raw.githubusercontent.com/jpatokal/openflights/master/data/airlines.dat" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">https://raw.githubusercontent.com/jpatokal/openflights/master/data/airlines.dat”,destfile</a> = “airlines.dat”, mode = “wb”) download.file(“<a href="https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">https://raw.githubusercontent.com/jpatokal/openflights/master/data/airports.dat”,destfile</a> = “airports.dat”, mode = “wb”) download.file(“<a href="https://raw.githubusercontent.com/jpatokal/openflights/master/data/routes.dat" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">https://raw.githubusercontent.com/jpatokal/openflights/master/data/routes.dat”,destfile</a> = “routes.dat”, mode = “wb”)</p>
 </blockquote>
 <p><strong>4.数据导入</strong></p>
 <blockquote>
@@ -425,40 +442,40 @@ var _hmt = _hmt || [];
 <p><strong>5. 数据整理</strong></p>
 <blockquote>
 <h1 id="添加列名colnames-airlines-lt-c-“airline-id”-“name”-“alias”-“iata”-“icao”-“callisign”-“country”-“active”-colnames-airports-lt-c-“airport-id”-“name”-“city”-“country”-”iata”-“icao”-“latitude”-“longitude”-”altitude”-“timezone”-”dst”-”tz-database-time-zone”-”type”-“source”-colnames-routes-lt-c-“airline”-“airline-id”-“source-airport”-“source-airport-id”-”destination-airport”-”destination-airport-id”-”codeshare”-“stops”-”equipment”"><a href="#添加列名colnames-airlines-lt-c-“airline-id”-“name”-“alias”-“iata”-“icao”-“callisign”-“country”-“active”-colnames-airports-lt-c-“airport-id”-“name”-“city”-“country”-”iata”-“icao”-“latitude”-“longitude”-”altitude”-“timezone”-”dst”-”tz-database-time-zone”-”type”-“source”-colnames-routes-lt-c-“airline”-“airline-id”-“source-airport”-“source-airport-id”-”destination-airport”-”destination-airport-id”-”codeshare”-“stops”-”equipment”" class="headerlink" title="添加列名colnames(airlines) &lt;- c(“airline_id”, “name”, “alias”, “iata”, “icao”, “callisign”, “country”, “active”) colnames(airports) &lt;- c(“airport_id”, “name”, “city”, “country”,”iata”, “icao”, “latitude”, “longitude”,”altitude”, “timezone”,”dst”,”tz_database_time_zone”,”type”, “source”) colnames(routes) &lt;- c(“airline”, “airline_id”, “source_airport”, “source_airport_id”,”destination_airport”,”destination_airport_id”,”codeshare”, “stops”,”equipment”)"></a>添加列名colnames(airlines) &lt;- c(“airline_id”, “name”, “alias”, “iata”, “icao”, “callisign”, “country”, “active”) colnames(airports) &lt;- c(“airport_id”, “name”, “city”, “country”,”iata”, “icao”, “latitude”, “longitude”,”altitude”, “timezone”,”dst”,”tz_database_time_zone”,”type”, “source”) colnames(routes) &lt;- c(“airline”, “airline_id”, “source_airport”, “source_airport_id”,”destination_airport”,”destination_airport_id”,”codeshare”, “stops”,”equipment”)</h1><h1 id="类型转换-routes-airline-id-lt-as-numeric-routes-airline-id"><a href="#类型转换-routes-airline-id-lt-as-numeric-routes-airline-id" class="headerlink" title="类型转换 routes$airline_id &lt;- as.numeric(routes$airline_id)"></a>类型转换 routes$airline_id &lt;- as.numeric(routes$airline_id)</h1><h1 id="airlines与routes数据融合-flights-lt-left-join-routes-airlines-by-”airline-id”"><a href="#airlines与routes数据融合-flights-lt-left-join-routes-airlines-by-”airline-id”" class="headerlink" title="airlines与routes数据融合 flights &lt;- left_join(routes, airlines, by=”airline_id”)"></a>airlines与routes数据融合 flights &lt;- left_join(routes, airlines, by=”airline_id”)</h1><h1 id="flights与airports数据融合-airports-orig-lt-airports-c-5-7-8-colnames-airports-orig-lt-c-“source-airport”-”source-airport-lat”-“source-airport-long”-airports-dest-lt-airports-c-5-7-8-colnames-airports-dest-lt-c-“destination-airport”-“destination-airport-lat”-“destination-airport-long”-flights-lt-left-join-flights-airports-orig-by-“source-airport”-flights-lt-left-join-flights-airports-dest-by-“destination-airport”"><a href="#flights与airports数据融合-airports-orig-lt-airports-c-5-7-8-colnames-airports-orig-lt-c-“source-airport”-”source-airport-lat”-“source-airport-long”-airports-dest-lt-airports-c-5-7-8-colnames-airports-dest-lt-c-“destination-airport”-“destination-airport-lat”-“destination-airport-long”-flights-lt-left-join-flights-airports-orig-by-“source-airport”-flights-lt-left-join-flights-airports-dest-by-“destination-airport”" class="headerlink" title="flights与airports数据融合 airports_orig &lt;- airports[,c(5,7,8)] colnames(airports_orig) &lt;- c(“source_airport”,”source_airport_lat”, “source_airport_long”) airports_dest &lt;- airports[, c(5, 7, 8)] colnames(airports_dest) &lt;- c(“destination_airport”, “destination_airport_lat”, “destination_airport_long”) flights &lt;- left_join(flights, airports_orig, by = “source_airport”) flights &lt;- left_join(flights, airports_dest, by = “destination_airport”)"></a>flights与airports数据融合 airports_orig &lt;- airports[,c(5,7,8)] colnames(airports_orig) &lt;- c(“source_airport”,”source_airport_lat”, “source_airport_long”) airports_dest &lt;- airports[, c(5, 7, 8)] colnames(airports_dest) &lt;- c(“destination_airport”, “destination_airport_lat”, “destination_airport_long”) flights &lt;- left_join(flights, airports_orig, by = “source_airport”) flights &lt;- left_join(flights, airports_dest, by = “destination_airport”)</h1><h1 id="剔除缺失值-flights-lt-na-omit-flights-cols-c-“source-airport-long”-“source-airport-lat”-“destination-airport-long”-“destination-airport-lat”"><a href="#剔除缺失值-flights-lt-na-omit-flights-cols-c-“source-airport-long”-“source-airport-lat”-“destination-airport-long”-“destination-airport-lat”" class="headerlink" title="剔除缺失值 flights &lt;- na.omit(flights, cols = c(“source_airport_long”, “source_airport_lat”, “destination_airport_long”, “destination_airport_lat”))"></a>剔除缺失值 flights &lt;- na.omit(flights, cols = c(“source_airport_long”, “source_airport_lat”, “destination_airport_long”, “destination_airport_lat”))</h1><h1 id="最后数据如下-head-flights-c-1-5"><a href="#最后数据如下-head-flights-c-1-5" class="headerlink" title="最后数据如下 head(flights[,c(1:5)])"></a>最后数据如下 head(flights[,c(1:5)])</h1></blockquote>
-<p>  <strong>6. 下面就是准备地理信息数据</strong> 本文主要是可视化地理信息上的点与点之间的连接，这可以通过geosphere包里的函数gcIntermediate()很轻松实现。具体使用方法可以参考这里（<a href="http://flowingdata.com/2011/05/11/how-to-map-connections-with-great-circles/）。" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">http://flowingdata.com/2011/05/11/how-to-map-connections-with-great-circles/）。</a></p>
+<p>  <strong>6. 下面就是准备地理信息数据</strong> 本文主要是可视化地理信息上的点与点之间的连接，这可以通过geosphere包里的函数gcIntermediate()很轻松实现。具体使用方法可以参考这里（<a href="http://flowingdata.com/2011/05/11/how-to-map-connections-with-great-circles/）。" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">http://flowingdata.com/2011/05/11/how-to-map-connections-with-great-circles/）。</a></p>
 <blockquote>
 <h1 id="按航空公司拆分数据集-flights-split-lt-split-flights-flights-name"><a href="#按航空公司拆分数据集-flights-split-lt-split-flights-flights-name" class="headerlink" title="按航空公司拆分数据集 flights_split &lt;- split(flights, flights$name)"></a>按航空公司拆分数据集 flights_split &lt;- split(flights, flights$name)</h1><h1 id="Calculate-intermediate-points-between-each-two-locations-flights-all-lt-lapply-flights-split-function-x-gcIntermediate-x-c-“source-airport-long”-“source-airport-lat”-x-c-“destination-airport-long”-“destination-airport-lat”-n-100-breakAtDateLine-FALSE-addStartEnd-TRUE-sp-TRUE"><a href="#Calculate-intermediate-points-between-each-two-locations-flights-all-lt-lapply-flights-split-function-x-gcIntermediate-x-c-“source-airport-long”-“source-airport-lat”-x-c-“destination-airport-long”-“destination-airport-lat”-n-100-breakAtDateLine-FALSE-addStartEnd-TRUE-sp-TRUE" class="headerlink" title="Calculate intermediate points between each two locations flights_all &lt;- lapply(flights_split, function(x) gcIntermediate(x[, c(“source_airport_long”, “source_airport_lat”)], x[, c(“destination_airport_long”, “destination_airport_lat”)], n=100, breakAtDateLine = FALSE, addStartEnd = TRUE, sp = TRUE))"></a>Calculate intermediate points between each two locations flights_all &lt;- lapply(flights_split, function(x) gcIntermediate(x[, c(“source_airport_long”, “source_airport_lat”)], x[, c(“destination_airport_long”, “destination_airport_lat”)], n=100, breakAtDateLine = FALSE, addStartEnd = TRUE, sp = TRUE))</h1><h1 id="转换为数据框-flights-fortified-lt-lapply-flights-all-function-x-ldply-x-lines-fortify"><a href="#转换为数据框-flights-fortified-lt-lapply-flights-all-function-x-ldply-x-lines-fortify" class="headerlink" title="转换为数据框 flights_fortified &lt;- lapply(flights_all, function(x) ldply(x@lines, fortify))"></a>转换为数据框 flights_fortified &lt;- lapply(flights_all, function(x) ldply(x@lines, fortify))</h1><h1 id="Unsplit-lists-flights-fortified-lt-do-call-“rbind”-flights-fortified"><a href="#Unsplit-lists-flights-fortified-lt-do-call-“rbind”-flights-fortified" class="headerlink" title="Unsplit lists flights_fortified &lt;- do.call(“rbind”, flights_fortified)"></a>Unsplit lists flights_fortified &lt;- do.call(“rbind”, flights_fortified)</h1><h1 id="Add-and-clean-column-with-airline-names-flights-fortified-name-lt-rownames-flights-fortified-flights-fortified-name-lt-gsub-“-”-“”-flights-fortified-name"><a href="#Add-and-clean-column-with-airline-names-flights-fortified-name-lt-rownames-flights-fortified-flights-fortified-name-lt-gsub-“-”-“”-flights-fortified-name" class="headerlink" title="Add and clean column with airline names flights_fortified$name &lt;- rownames(flights_fortified) flights_fortified$name &lt;- gsub(“..*”, “”, flights_fortified$name)"></a>Add and clean column with airline names flights_fortified$name &lt;- rownames(flights_fortified) flights_fortified$name &lt;- gsub(“..*”, “”, flights_fortified$name)</h1></blockquote>
 <blockquote>
 <h1 id="Extract-first-and-last-observations-for-plotting-source-and-destination-points-i-e-airports-flights-points-lt-flights-fortified-gt-group-by-group-gt-filter-row-number-1-row-number-n"><a href="#Extract-first-and-last-observations-for-plotting-source-and-destination-points-i-e-airports-flights-points-lt-flights-fortified-gt-group-by-group-gt-filter-row-number-1-row-number-n" class="headerlink" title="Extract first and last observations for plotting source and destination points (i.e., airports) flights_points &lt;- flights_fortified %&gt;% group_by(group) %&gt;% filter(row_number() == 1 | row_number() == n())"></a>Extract first and last observations for plotting source and destination points (i.e., airports) flights_points &lt;- flights_fortified %&gt;% group_by(group) %&gt;% filter(row_number() == 1 | row_number() == n())</h1></blockquote>
 <p>  <strong>二、 可视化</strong> 接下来就是进行可视化了，前面讲了我们只是在NASA提供的夜间地球图上面进行数据映射，所以第一我们需要获取该背景地图。 <strong>1. 图片获取并渲染</strong></p>
 <blockquote>
-<p>#下载图片 download.file(“<a href="https://www.nasa.gov/specials/blackmarble/2016/globalmaps/BlackMarble_2016_01deg.jpg" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">https://www.nasa.gov/specials/blackmarble/2016/globalmaps/BlackMarble_2016_01deg.jpg”,destfile</a> = “BlackMarble_2016_01deg.jpg”, mode = “wb”)</p>
+<p>#下载图片 download.file(“<a href="https://www.nasa.gov/specials/blackmarble/2016/globalmaps/BlackMarble_2016_01deg.jpg" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">https://www.nasa.gov/specials/blackmarble/2016/globalmaps/BlackMarble_2016_01deg.jpg”,destfile</a> = “BlackMarble_2016_01deg.jpg”, mode = “wb”)</p>
 <h1 id="加载并渲染图片-earth-lt-readJPEG-“BlackMarble-2016-01deg-jpg”-native-TRUE-earth-lt-rasterGrob-earth-interpolate-TRUE"><a href="#加载并渲染图片-earth-lt-readJPEG-“BlackMarble-2016-01deg-jpg”-native-TRUE-earth-lt-rasterGrob-earth-interpolate-TRUE" class="headerlink" title="加载并渲染图片 earth &lt;- readJPEG(“BlackMarble_2016_01deg.jpg”, native = TRUE) earth &lt;- rasterGrob(earth, interpolate = TRUE)"></a>加载并渲染图片 earth &lt;- readJPEG(“BlackMarble_2016_01deg.jpg”, native = TRUE) earth &lt;- rasterGrob(earth, interpolate = TRUE)</h1></blockquote>
 <p><strong>2. 数据映射</strong> 由于航空公司十分多，就挑选几个有名的航空公司进行可视化。 <strong>(1) Lufthansa(德国汉莎航空公司)</strong></p>
 <blockquote>
 <p>ggplot() + annotation_custom(earth, xmin = -180, xmax = 180, ymin = -90, ymax = 90) + geom_path(aes(long, lat, group = id, color = name), alpha = 0.0, size = 0.0, data = flights_fortified) + geom_path(aes(long, lat, group = id, color = name), alpha = 0.2, size = 0.3, color = “#f9ba00”, data = flights_fortified[flights_fortified$name == “Lufthansa”, ]) + geom_point(data = flights_points[flights_points$name == “Lufthansa”, ], aes(long, lat), alpha = 0.8, size = 0.1, colour = “white”) + theme(panel.background = element_rect(fill = “#05050f”, colour = “#05050f”),panel.grid.major = element_blank(),panel.grid.minor = element_blank(),axis.title = element_blank(),axis.text = element_blank(),axis.ticks.length = unit(0, “cm”),legend.position = “none”) +annotate(“text”, x = -150, y = -18, hjust = 0, size = 14,label = paste(“Lufthansa”), color = “#f9ba00”, family = “Helvetica Black”) + annotate(“text”, x = -150, y = -26, hjust = 0, size = 8, label = paste(“Flight routes”), color = “white”) + annotate(“text”, x = -150, y = -30, hjust = 0, size = 7, label = paste(“ytlogos.github.io || NASA.gov || OpenFlights.org”), color = “white”, alpha = 0.5) + coord_equal()</p>
 </blockquote>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt> <strong>(2) Emirates(阿联酋航空公司)</strong></p>
+<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt=""> <strong>(2) Emirates(阿联酋航空公司)</strong></p>
 <blockquote>
 <p>ggplot() + annotation_custom(earth, xmin = -180, xmax = 180, ymin = -90, ymax = 90) + geom_path(aes(long, lat, group = id, color = name), alpha = 0.0, size = 0.0, data = flights_fortified) + geom_path(aes(long, lat, group = id, color = name), alpha = 0.2, size = 0.3, color = “#ff0000”, data = flights_fortified[flights_fortified$name == “Emirates”, ]) + geom_point(data = flights_points[flights_points$name == “Emirates”, ], aes(long, lat), alpha = 0.8, size = 0.1, colour = “white”) + theme(panel.background = element_rect(fill = “#05050f”, colour = “#05050f”), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.title = element_blank(), axis.text = element_blank(), axis.ticks.length = unit(0, “cm”), legend.position = “none”) + annotate(“text”, x = -150, y = -18, hjust = 0, size = 14, label = paste(“Emirates”), color = “#ff0000”, family = “Fontin”) + annotate(“text”, x = -150, y = -26, hjust = 0, size = 8, label = paste(“Flight routes”), color = “white”) + annotate(“text”, x = -150, y = -30, hjust = 0, size = 7, label = paste(“ytlogos.github.io || NASA.gov || OpenFlights.org”), color = “white”, alpha = 0.5) + coord_equal()</p>
 </blockquote>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt> <strong>(3) British Airways(英国航空公司)</strong></p>
+<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt=""> <strong>(3) British Airways(英国航空公司)</strong></p>
 <blockquote>
 <p>ggplot() + annotation_custom(earth, xmin = -180, xmax = 180, ymin = -90, ymax = 90) + geom_path(aes(long, lat, group = id, color = name), alpha = 0.0, size = 0.0, data = flights_fortified) + geom_path(aes(long, lat, group = id, color = name), alpha = 0.2, size = 0.3, color = “#075aaa”, data = flights_fortified[flights_fortified$name == “British Airways”, ]) + geom_point(data = flights_points[flights_points$name == “British Airways”, ], aes(long, lat), alpha = 0.8, size = 0.1, colour = “white”) + theme(panel.background = element_rect(fill = “#05050f”, colour = “#05050f”), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.title = element_blank(), axis.text = element_blank(), axis.ticks.length = unit(0, “cm”), legend.position = “none”) + annotate(“text”, x = -150, y = -18, hjust = 0, size = 14, label = paste(“BRITISH AIRWAYS”), color = “#075aaa”, family = “Baker Signet Std”) + annotate(“text”, x = -150, y = -26, hjust = 0, size = 8, label = paste(“Flight routes”), color = “white”) + annotate(“text”, x = -150, y = -30, hjust = 0, size = 7, label = paste(“ytlogos.github.io || NASA.gov || OpenFlights.org”), color = “white”, alpha = 0.5) + coord_equal()</p>
 </blockquote>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt> <strong>(4) Air China(中国国航)</strong></p>
+<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt=""> <strong>(4) Air China(中国国航)</strong></p>
 <blockquote>
 <p>ggplot() + annotation_custom(earth, xmin = -180, xmax = 180, ymin = -90, ymax = 90) + geom_path(aes(long, lat, group = id, color = name), alpha = 0.0, size = 0.0, data = flights_fortified) + geom_path(aes(long, lat, group = id, color = name), alpha = 0.2, size = 0.3, color = “#F70C15”, data = flights_fortified[flights_fortified$name == “Air China”, ]) + geom_point(data = flights_points[flights_points$name == “Air China”, ], aes(long, lat), alpha = 0.8, size = 0.1, colour = “white”) + theme(panel.background = element_rect(fill = “#05050f”, colour = “#05050f”), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.title = element_blank(), axis.text = element_blank(), axis.ticks.length = unit(0, “cm”), legend.position = “none”) + annotate(“text”, x = -150, y = -18, hjust = 0, size = 14, label = paste(“Air China”), color = “#F70C15”, family = “Times New Roman”) + annotate(“text”, x = -150, y = -26, hjust = 0, size = 8, label = paste(“Flight routes”), color = “white”) + annotate(“text”, x = -150, y = -30, hjust = 0, size = 7, label = paste(“ytlogos.github.io || NASA.gov || OpenFlights.org”), color = “white”, alpha = 0.5) + coord_equal()</p>
 </blockquote>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt> <strong>(5) China Southern Airlines(中国南航)</strong></p>
+<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt=""> <strong>(5) China Southern Airlines(中国南航)</strong></p>
 <blockquote>
 <p>ggplot() + annotation_custom(earth, xmin = -180, xmax = 180, ymin = -90, ymax = 90) + geom_path(aes(long, lat, group = id, color = name), alpha = 0.0, size = 0.0, data = flights_fortified) + geom_path(aes(long, lat, group = id, color = name), alpha = 0.2, size = 0.3, color = “#004D9D”, data = flights_fortified[flights_fortified$name == “China Southern Airlines”, ]) + geom_point(data = flights_points[flights_points$name == “China Southern Airlines”, ], aes(long, lat), alpha = 0.8, size = 0.1, colour = “white”) + theme(panel.background = element_rect(fill = “#05050f”, colour = “#05050f”), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.title = element_blank(), axis.text = element_blank(), axis.ticks.length = unit(0, “cm”), legend.position = “none”) + annotate(“text”, x = -150, y = -18, hjust = 0, size = 14, label = paste(“China Southern Airlines”), color = “#004D9D”, family = “Times New Roman”) + annotate(“text”, x = -150, y = -26, hjust = 0, size = 8, label = paste(“Flight routes”), color = “white”) + annotate(“text”, x = -150, y = -30, hjust = 0, size = 7, label = paste(“ytlogos.github.io || NASA.gov || OpenFlights.org”), color = “white”, alpha = 0.5) + coord_equal()</p>
 </blockquote>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt> <strong>(6) 一次性映射多家航空公司航行路线</strong></p>
+<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt=""> <strong>(6) 一次性映射多家航空公司航行路线</strong></p>
 <blockquote>
 <p>#抽取数据集 flights_subset &lt;- c(“Lufthansa”, “Emirates”, “British Airways”) flights_subset &lt;- flights_fortified[flights_fortified$name %in% flights_subset, ] flights_subset_points &lt;- flights_subset%&gt;% group_by(group)%&gt;% filter(row_number()==1|row_number()==n())</p>
 <h1 id="可视化-ggplot-annotation-custom-earth-xmin-180-xmax-180-ymin-90-ymax-90-geom-path-aes-long-lat-group-id-color-name-alpha-0-2-size-0-3-data-flights-subset-geom-point-data-flights-subset-points-aes-long-lat-alpha-0-8-size-0-1-colour-“white”-scale-color-manual-values-c-“-f9ba00”-“-ff0000”-“-075aaa”-theme-panel-background-element-rect-fill-“-05050f”-colour-“-05050f”-panel-grid-major-element-blank-panel-grid-minor-element-blank-axis-title-element-blank-axis-text-element-blank-axis-ticks-length-unit-0-“cm”-legend-position-“none”-annotate-“text”-x-150-y-4-hjust-0-size-14-label-paste-“Lufthansa”-color-“-f9ba00”-family-“Helvetica-Black”-annotate-“text”-x-150-y-11-hjust-0-size-14-label-paste-“Emirates”-color-“-ff0000”-family-“Fontin”-annotate-“text”-x-150-y-18-hjust-0-size-14-label-paste-“BRITISH-AIRWAYS”-color-“-075aaa”-family-“Baker-Signet-Std”-annotate-“text”-x-150-y-30-hjust-0-size-8-label-paste-“Flight-routes”-color-“white”-annotate-“text”-x-150-y-34-hjust-0-size-7-label-paste-“ytlogos-github-io-NASA-gov-OpenFlights-org”-color-“white”-alpha-0-5-coord-equal"><a href="#可视化-ggplot-annotation-custom-earth-xmin-180-xmax-180-ymin-90-ymax-90-geom-path-aes-long-lat-group-id-color-name-alpha-0-2-size-0-3-data-flights-subset-geom-point-data-flights-subset-points-aes-long-lat-alpha-0-8-size-0-1-colour-“white”-scale-color-manual-values-c-“-f9ba00”-“-ff0000”-“-075aaa”-theme-panel-background-element-rect-fill-“-05050f”-colour-“-05050f”-panel-grid-major-element-blank-panel-grid-minor-element-blank-axis-title-element-blank-axis-text-element-blank-axis-ticks-length-unit-0-“cm”-legend-position-“none”-annotate-“text”-x-150-y-4-hjust-0-size-14-label-paste-“Lufthansa”-color-“-f9ba00”-family-“Helvetica-Black”-annotate-“text”-x-150-y-11-hjust-0-size-14-label-paste-“Emirates”-color-“-ff0000”-family-“Fontin”-annotate-“text”-x-150-y-18-hjust-0-size-14-label-paste-“BRITISH-AIRWAYS”-color-“-075aaa”-family-“Baker-Signet-Std”-annotate-“text”-x-150-y-30-hjust-0-size-8-label-paste-“Flight-routes”-color-“white”-annotate-“text”-x-150-y-34-hjust-0-size-7-label-paste-“ytlogos-github-io-NASA-gov-OpenFlights-org”-color-“white”-alpha-0-5-coord-equal" class="headerlink" title="可视化 ggplot() + annotation_custom(earth, xmin = -180, xmax = 180, ymin = -90, ymax = 90) + geom_path(aes(long, lat, group = id, color = name), alpha = 0.2, size = 0.3, data = flights_subset) + geom_point(data = flights_subset_points, aes(long, lat), alpha = 0.8, size = 0.1, colour = “white”) + scale_color_manual(values = c(“#f9ba00”, “#ff0000”, “#075aaa”)) + theme(panel.background = element_rect(fill = “#05050f”, colour = “#05050f”), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.title = element_blank(), axis.text = element_blank(), axis.ticks.length = unit(0, “cm”), legend.position = “none”) + annotate(“text”, x = -150, y = -4, hjust = 0, size = 14, label = paste(“Lufthansa”), color = “#f9ba00”, family = “Helvetica Black”) + annotate(“text”, x = -150, y = -11, hjust = 0, size = 14, label = paste(“Emirates”), color = “#ff0000”, family = “Fontin”) + annotate(“text”, x = -150, y = -18, hjust = 0, size = 14, label = paste(“BRITISH AIRWAYS”), color = “#075aaa”, family = “Baker Signet Std”) + annotate(“text”, x = -150, y = -30, hjust = 0, size = 8, label = paste(“Flight routes”), color = “white”) + annotate(“text”, x = -150, y = -34, hjust = 0, size = 7, label = paste(“ytlogos.github.io || NASA.gov || OpenFlights.org”), color = “white”, alpha = 0.5) + coord_equal()"></a>可视化 ggplot() + annotation_custom(earth, xmin = -180, xmax = 180, ymin = -90, ymax = 90) + geom_path(aes(long, lat, group = id, color = name), alpha = 0.2, size = 0.3, data = flights_subset) + geom_point(data = flights_subset_points, aes(long, lat), alpha = 0.8, size = 0.1, colour = “white”) + scale_color_manual(values = c(“#f9ba00”, “#ff0000”, “#075aaa”)) + theme(panel.background = element_rect(fill = “#05050f”, colour = “#05050f”), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.title = element_blank(), axis.text = element_blank(), axis.ticks.length = unit(0, “cm”), legend.position = “none”) + annotate(“text”, x = -150, y = -4, hjust = 0, size = 14, label = paste(“Lufthansa”), color = “#f9ba00”, family = “Helvetica Black”) + annotate(“text”, x = -150, y = -11, hjust = 0, size = 14, label = paste(“Emirates”), color = “#ff0000”, family = “Fontin”) + annotate(“text”, x = -150, y = -18, hjust = 0, size = 14, label = paste(“BRITISH AIRWAYS”), color = “#075aaa”, family = “Baker Signet Std”) + annotate(“text”, x = -150, y = -30, hjust = 0, size = 8, label = paste(“Flight routes”), color = “white”) + annotate(“text”, x = -150, y = -34, hjust = 0, size = 7, label = paste(“ytlogos.github.io || NASA.gov || OpenFlights.org”), color = “white”, alpha = 0.5) + coord_equal()</h1></blockquote>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt> <strong>三、 SessionInfo</strong></p>
+<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt=""> <strong>三、 SessionInfo</strong></p>
 <blockquote>
 <p>sessionInfo()&gt; R version 3.4.3 (2017-11-30) Platform: x86_64-w64-mingw32/x64 (64-bit) Running under: Windows &gt;= 8 x64 (build 9200) Matrix products: default locale: [1] LC_COLLATE=Chinese (Simplified)_China.936  LC_CTYPE=Chinese (Simplified)_China.936 [3] LC_MONETARY=Chinese (Simplified)_China.936 LC_NUMERIC=C [5] LC_TIME=Chinese (Simplified)_China.936 attached base packages: [1] grid      stats     graphics  grDevices utils     datasets  methods   base other attached packages: [1] plyr_1.8.4          jpeg_0.1-8          geosphere_1.5-7     data.table_1.10.4-3 [5] forcats_0.2.0       stringr_1.2.0       dplyr_0.7.4         purrr_0.2.4 [9] readr_1.1.1         tidyr_0.8.0         tibble_1.4.2        ggplot2_2.2.1.9000 [13] tidyverse_1.2.1     pacman_0.4.6 loaded via a namespace (and not attached): [1] Rcpp_0.12.15      cellranger_1.1.0  pillar_1.1.0      compiler_3.4.3    bindr_0.1 [6] tools_3.4.3       lubridate_1.7.1   jsonlite_1.5      nlme_3.1-131      gtable_0.2.0 [11] lattice_0.20-35   pkgconfig_2.0.1   rlang_0.1.6       psych_1.7.8       cli_1.0.0 [16] rstudioapi_0.7    yaml_2.1.16       parallel_3.4.3    haven_1.1.1       bindrcpp_0.2 [21] xml2_1.2.0        httr_1.3.1        knitr_1.19        hms_0.4.1         glue_1.2.0 [26] R6_2.2.2          readxl_1.0.0      foreign_0.8-69    sp_1.2-7          modelr_0.1.1 [31] reshape2_1.4.3    magrittr_1.5      scales_0.5.0.9000 rvest_0.3.2     assertthat_0.2.0 [36] mnormt_1.5-5      colorspace_1.3-2  stringi_1.1.6     lazyeval_0.2.1    munsell_0.4.3 [41] broom_0.4.3       crayon_1.3.4</p>
 </blockquote>
@@ -477,11 +494,11 @@ var _hmt = _hmt || [];
     <br>
     <strong>版权声明：</strong>
     本作品采用
-    <a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    <a rel="license noopener external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
     进行许可。转载请注明出处！
     
       <br>
-      <a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+      <a rel="license noopener external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
     
   </div>
 
@@ -782,7 +799,7 @@ MathJax.Hub.Queue(function() {
     
     
 
-    <ul style="width: 100%">
+    <ul style="width: 70%">
     
     
       
@@ -831,26 +848,6 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">css</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">web</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">代码</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">压缩</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">jquery</a>
               </li>
              
@@ -860,22 +857,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">转载</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -895,6 +876,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -904,6 +889,38 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">代码</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">压缩</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -923,10 +940,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -939,11 +952,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">centos</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -971,34 +996,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">centos</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">摘要</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">文章</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">seo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">优化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">游记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">克莱姆法则</a>
               </li>
              
@@ -1011,11 +1008,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ca证书</a>
+                <a href="javascript:void(0)" class="js-tag color4">seo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">证书生成</a>
+                <a href="javascript:void(0)" class="js-tag color3">优化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">摘要</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">文章</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">游记</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1031,19 +1040,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">centos安装chromium报错</a>
+                <a href="javascript:void(0)" class="js-tag color5">ca证书</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">chromium安装报错</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">svn</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">代码提交</a>
+                <a href="javascript:void(0)" class="js-tag color5">证书生成</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1056,6 +1057,22 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">西伯利亚熊</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">svn</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">代码提交</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">centos安装chromium报错</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">chromium安装报错</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1099,14 +1116,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">centos6.5</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">linux系统</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">centos7安装Redis Desktop Manager</a>
               </li>
              
@@ -1131,6 +1140,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">centos6.5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">linux系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">root密码</a>
               </li>
              
@@ -1143,6 +1160,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">memcache</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">memcached</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">生活手记</a>
               </li>
              
@@ -1151,11 +1176,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">memcache</a>
+                <a href="javascript:void(0)" class="js-tag color4">cphalcon</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">memcached</a>
+                <a href="javascript:void(0)" class="js-tag color1">cphalcon报错</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1179,14 +1204,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">cphalcon</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">cphalcon报错</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">proxy代理搭建</a>
               </li>
              
@@ -1196,6 +1213,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">proxy服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">css中的em</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">响应式字体</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">响应式布局样式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1219,14 +1248,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">docker</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php安装</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">dns</a>
               </li>
              
@@ -1239,11 +1260,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">ecshop</a>
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">框架</a>
+                <a href="javascript:void(0)" class="js-tag color1">php安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1251,19 +1272,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">css中的em</a>
+                <a href="javascript:void(0)" class="js-tag color2">ecshop</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">响应式字体</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">响应式布局样式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">免费</a>
+                <a href="javascript:void(0)" class="js-tag color3">框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1276,6 +1289,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">新闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">免费</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1307,6 +1324,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">吐槽</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">hadoop</a>
               </li>
              
@@ -1331,7 +1352,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">吐槽</a>
+                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1343,19 +1368,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">会话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">会话原理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http1.1</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http2.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">会话</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">会话原理</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1375,6 +1400,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">素材</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">jq</a>
               </li>
              
@@ -1384,26 +1417,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">侧边导航</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">图片</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">素材</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">kali右键汉化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">kali桌面右键汉化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">kali右键创建文件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1427,23 +1440,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">劳动纠纷</a>
+                <a href="javascript:void(0)" class="js-tag color4">kali右键汉化</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">追缴工资</a>
+                <a href="javascript:void(0)" class="js-tag color1">kali桌面右键汉化</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">申请仲裁</a>
+                <a href="javascript:void(0)" class="js-tag color1">kali右键创建文件</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
+                <a href="javascript:void(0)" class="js-tag color4">区块链</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1456,6 +1465,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">劳动纠纷</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">追缴工资</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">申请仲裁</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1479,18 +1500,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">区块链</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">分库分表</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">高级缓存配置</a>
               </li>
              
@@ -1499,15 +1508,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql消息</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql队列</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">mysql高并发</a>
+                <a href="javascript:void(0)" class="js-tag color5">分库分表</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1520,6 +1525,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">mysql瓶颈解决办法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mysql消息</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mysql队列</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">mysql高并发</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1555,15 +1572,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">onethink</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">深圳劳动法服务部门</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">非关系型数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">onethink</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1603,6 +1620,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">php对接微信支付</a>
               </li>
              
@@ -1619,19 +1640,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">php随机数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">php获取闰年</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">闰年.php时间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php随机数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php设计模式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1655,15 +1672,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php数学函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">php面试题</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">php面向对象</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">面向对象</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php面试题</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1695,10 +1716,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php数学函数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">PHP数组</a>
               </li>
              
@@ -1711,11 +1728,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php过滤</a>
+                <a href="javascript:void(0)" class="js-tag color1">PHP算法</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">过滤</a>
+                <a href="javascript:void(0)" class="js-tag color1">php递归</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">递归</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1724,6 +1745,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">phpunit安装</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php过滤</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">过滤</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1751,15 +1780,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PHP算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php递归</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">递归</a>
+                <a href="javascript:void(0)" class="js-tag color2">php字符串</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1775,10 +1796,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php字符串</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">a标签</a>
               </li>
              
@@ -1791,11 +1808,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">响应慢</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">页面优化</a>
+                <a href="javascript:void(0)" class="js-tag color4">R语言</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1831,7 +1844,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">seajs</a>
+                <a href="javascript:void(0)" class="js-tag color4">响应慢</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">页面优化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1847,7 +1864,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">R语言</a>
+                <a href="javascript:void(0)" class="js-tag color1">seajs</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1863,7 +1884,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">session</a>
+                <a href="javascript:void(0)" class="js-tag color2">深圳政府电话</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">深圳电话</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">特区电话</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1907,6 +1936,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php正则</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">正则</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">shodan</a>
               </li>
              
@@ -1923,26 +1960,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">深圳政府电话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">深圳电话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">特区电话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">可视化数据</a>
               </li>
              
@@ -1952,6 +1969,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据表</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1995,10 +2024,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql设置超时，超时</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
@@ -2023,15 +2048,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+                <a href="javascript:void(0)" class="js-tag color3">mysql设置超时，超时</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2059,6 +2080,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">域名合并</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">wpscan</a>
               </li>
              
@@ -2067,11 +2092,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">域名合并</a>
+                <a href="javascript:void(0)" class="js-tag color1">无限极分类</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" class="js-tag color2">php无限极</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">分类tree</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">无限极分类树型</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2107,31 +2140,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">无限极分类</a>
+                <a href="javascript:void(0)" class="js-tag color3">3D</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php无限极</a>
+                <a href="javascript:void(0)" class="js-tag color3">动画</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">分类tree</a>
+                <a href="javascript:void(0)" class="js-tag color3">平台</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">无限极分类树型</a>
+                <a href="javascript:void(0)" class="js-tag color3">游戏</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">储蓄卡免年费</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">银行卡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">银行卡免年费</a>
+                <a href="javascript:void(0)" class="js-tag color3">虚幻4引擎编辑</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2148,6 +2173,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">邮件函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">储蓄卡免年费</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">银行卡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">银行卡免年费</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2191,31 +2228,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">3D</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">动画</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">平台</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">游戏</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">虚幻4引擎编辑</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">mysql函数</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php中mysql函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">互联网时代</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">开源技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2227,7 +2256,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
+                <a href="javascript:void(0)" class="js-tag color1">邮箱服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">正则表达式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2240,22 +2273,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">谷歌搜索</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">互联网时代</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">开源技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">正则表达式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">邮箱服务器</a>
               </li>
             
             <div class="clearfix"></div>
@@ -2549,19 +2566,19 @@ MathJax.Hub.Queue(function() {
         <ul class="search-ul">
           
             <li class="search-li">
-                  <a href="/dujiabanna/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杜嘉班纳（D&amp;G）</a>
+              <a href="/dujiabanna/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杜嘉班纳（D&amp;G）</a>
             </li>
           
             <li class="search-li">
-                  <a href="/balishijia/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>巴黎世家(Balenciaga)</a>
+              <a href="/balishijia/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>巴黎世家(Balenciaga)</a>
             </li>
           
             <li class="search-li">
-                  <a href="/jppap/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>日本APA</a>
+              <a href="/jppap/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>日本APA</a>
             </li>
           
             <li class="search-li">
-                  <a href="/huaerjieribao/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>华尔街日报</a>
+              <a href="/huaerjieribao/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>华尔街日报</a>
             </li>
           
         </ul>
@@ -2569,25 +2586,26 @@ MathJax.Hub.Queue(function() {
       </section>
     
 
-    
+
+        
       <section class="tools-section tools-section-blackPeople" q-show="blackPeople">
       
         <ul class="search-ul">
           
             <li class="search-li">
-             <a href="/fanjiayang/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>樊嘉扬</a>
+              <a href="/fanjiayang/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>樊嘉扬</a>
             </li>
           
             <li class="search-li">
-             <a href="/yangshuping/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杨舒平</a>
+              <a href="/yangshuping/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杨舒平</a>
             </li>
           
             <li class="search-li">
-             <a href="/xukexin/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>许可馨</a>
+              <a href="/xukexin/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>许可馨</a>
             </li>
           
             <li class="search-li">
-             <a href="/huangjiayi/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>黄嘉毅</a>
+              <a href="/huangjiayi/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>黄嘉毅</a>
             </li>
           
         </ul>
@@ -2664,6 +2682,23 @@ MathJax.Hub.Queue(function() {
     </div>
 
 </div>
-  </div>
+  </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 </body>
 </html>

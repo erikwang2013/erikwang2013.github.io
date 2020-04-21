@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://erik.xyz">
   <title>深入理解JavaScript定时机制 | 艾瑞可erik</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="容易欺骗别人感情的JavaScript定时器 JavaScript的setTimeout与setInterval是两个很容易欺骗别人感情的方法,因为我们开始常常以为调用了就会按既定的方式执行, 我想不少人都深有同感, 例如 1234setTimeout(function() &amp;#123;    alert(&amp;apos;你好!&amp;apos;);&amp;#125;, 0);setInterval(callba">
-<meta name="keywords" content="js,javascript">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="容易欺骗别人感情的JavaScript定时器 JavaScript的setTimeout与setInterval是两个很容易欺骗别人感情的方法,因为我们开始常常以为调用了就会按既定的方式执行, 我想不少人都深有同感, 例如 1234setTimeout(function() &amp;#123;    alert(&#39;你好!&#39;);&amp;#125;, 0);setInterval(callback">
 <meta property="og:type" content="article">
 <meta property="og:title" content="深入理解JavaScript定时机制">
 <meta property="og:url" content="https://erik.xyz/2015/01/07/shen-ru-li-jie-javascript-ding-shi-ji-zhi/index.html">
 <meta property="og:site_name" content="艾瑞可erik">
-<meta property="og:description" content="容易欺骗别人感情的JavaScript定时器 JavaScript的setTimeout与setInterval是两个很容易欺骗别人感情的方法,因为我们开始常常以为调用了就会按既定的方式执行, 我想不少人都深有同感, 例如 1234setTimeout(function() &amp;#123;    alert(&amp;apos;你好!&amp;apos;);&amp;#125;, 0);setInterval(callba">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:description" content="容易欺骗别人感情的JavaScript定时器 JavaScript的setTimeout与setInterval是两个很容易欺骗别人感情的方法,因为我们开始常常以为调用了就会按既定的方式执行, 我想不少人都深有同感, 例如 1234setTimeout(function() &amp;#123;    alert(&#39;你好!&#39;);&amp;#125;, 0);setInterval(callback">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://laruence-wordpress.stor.sinaapp.com/uploads/jstimer.jpg">
-<meta property="og:updated_time" content="2020-01-22T12:53:38.600Z">
+<meta property="article:published_time" content="2015-01-07T14:38:00.000Z">
+<meta property="article:modified_time" content="2020-01-22T12:53:38.600Z">
+<meta property="article:author" content="艾瑞可erik">
+<meta property="article:tag" content="js">
+<meta property="article:tag" content="javascript">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="深入理解JavaScript定时机制">
-<meta name="twitter:description" content="容易欺骗别人感情的JavaScript定时器 JavaScript的setTimeout与setInterval是两个很容易欺骗别人感情的方法,因为我们开始常常以为调用了就会按既定的方式执行, 我想不少人都深有同感, 例如 1234setTimeout(function() &amp;#123;    alert(&amp;apos;你好!&amp;apos;);&amp;#125;, 0);setInterval(callba">
 <meta name="twitter:image" content="http://laruence-wordpress.stor.sinaapp.com/uploads/jstimer.jpg">
   
     <link rel="alternative" href="/atom.xml" title="艾瑞可erik" type="application/atom+xml">
@@ -60,10 +61,10 @@ var _hmt = _hmt || [];
 </script>
 
 
-</head>
-</html>
+<meta name="generator" content="Hexo 4.2.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
 <body>
-  <div id="container" q-class="show:isCtnShow">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
@@ -196,7 +197,15 @@ var _hmt = _hmt || [];
 				</li>
 		        
 				 <li class="dib">
-					<a  target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
+					<a  target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="tuchong">
+					<svg class="icon svg-icon" aria-hidden="true">
+					  <use xlink:href="#icon-tuchong"></use>
+					</svg>
+					</a>
+				</li>
+		        
+				 <li class="dib">
+					<a  target="_blank" href="https://ycg.qq.com/person/works/2415382" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
 					<svg class="icon svg-icon" aria-hidden="true">
 					  <use xlink:href="#icon-web"></use>
 					</svg>
@@ -309,7 +318,15 @@ var _hmt = _hmt || [];
 						</li>
 			        
 					 <li class="dib">
-						<a class="web" target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
+						<a class="tuchong" target="_blank" href="https://erik.tuchong.com" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="tuchong">
+							<svg class="icon svg-icon" aria-hidden="true">
+							  <use xlink:href="#icon-tuchong"></use>
+							</svg>
+						</a>
+						</li>
+			        
+					 <li class="dib">
+						<a class="web" target="_blank" href="https://ycg.qq.com/person/works/2415382" target="_blank" target="_blank" rel="external nofollow noopener noreferrer" title="web">
 							<svg class="icon svg-icon" aria-hidden="true">
 							  <use xlink:href="#icon-web"></use>
 							</svg>
@@ -400,20 +417,16 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <p>容易欺骗别人感情的JavaScript定时器 JavaScript的setTimeout与setInterval是两个很容易欺骗别人感情的方法,因为我们开始常常以为调用了就会按既定的方式执行, 我想不少人都深有同感, 例如</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(function() &#123;</span><br><span class="line">    alert(&apos;你好!&apos;);</span><br><span class="line">&#125;, 0);</span><br><span class="line">setInterval(callbackFunction, 100);</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(function() &#123;</span><br><span class="line">    alert(&#39;你好!&#39;);</span><br><span class="line">&#125;, 0);</span><br><span class="line">setInterval(callbackFunction, 100);</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 
 <p>认为setTimeout中的问候方法会立即被执行,因为这并不是凭空而说,而是JavaScript API文档明确定义第二个参数意义为隔多少毫秒后,回调方法就会被执行. 这里设成0毫秒,理所当然就立即被执行了. 同理对setInterval的callbackFunction方法每间隔100毫秒就立即被执行深信不疑! 但随着JavaScript应用开发经验不断的增加和丰富,有一天你发现了一段怪异的代码而百思不得其解:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">div.onclick = function()&#123;</span><br><span class="line">        setTimeout(function() &#123;</span><br><span class="line">                document.getElementById(&apos;inputField&apos;).focus();</span><br><span class="line">        &#125;, 0);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">div.onclick &#x3D; function()&#123;</span><br><span class="line">        setTimeout(function() &#123;</span><br><span class="line">                document.getElementById(&#39;inputField&#39;).focus();</span><br><span class="line">        &#125;, 0);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>既然是0毫秒后执行,那么还用setTimeout干什么, 此刻, 坚定的信念已开始动摇. 直到最后某一天 , 你不小心写了一段糟糕的代码:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(function() &#123;</span><br><span class="line">        while (true) &#123;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;, 100);</span><br><span class="line">setTimeout(function() &#123;</span><br><span class="line">        alert(&apos;你好!&apos;);</span><br><span class="line">&#125;, 200);</span><br><span class="line">setInterval(callbackFunction, 200);</span><br></pre></td></tr></table></figure>
-
-<p>第一行代码进入了死循环,但不久你就会发现,第二,第三行并不是预料中的事情,alert问候未见出现,callbacKFunction也杳无音讯! 这时你彻底迷惘了,这种情景是难以接受的,因为改变长久以来既定的认知去接受新思想的过程是痛苦的,但情事实摆在眼前,对JavaScript真理的探求并不会因为痛苦而停止,下面让我们来展开JavaScript线程和定时器探索之旅! 拔开云雾见月明 出现上面所有误区的最主要一个原因是:潜意识中认为,JavaScript引擎有多个线程在执行,JavaScript的定时器回调函数是异步执行的. 而事实上的,JavaScript使用了障眼法,在多数时候骗过了我们的眼睛,这里背光得澄清一个事实: JavaScript引擎是单线程运行的,浏览器无论在什么时候都只且只有一个线程在运行JavaScript程序. JavaScript引擎用单线程运行也是有意义的,单线程不必理会线程同步这些复杂的问题,问题得到简化. 那么单线程的JavaScript引擎是怎么配合浏览器内核处理这些定时器和响应浏览器事件的呢? 下面结合浏览器内核处理方式简单说明. 浏览器内核实现允许多个线程异步执行,这些线程在内核制控下相互配合以保持同步.假如某一浏览器内核的实现至少有三个常驻线 程:javascript引擎线程,界面渲染线程,浏览器事件触发线程,除些以外,也有一些执行完就终止的线程,如Http请求线程,这些异步线程都会产 生不同的异步事件,下面通过一个图来阐明单线程的JavaScript引擎与另外那些线程是怎样互动通信的.虽然每个浏览器内核实现细节不同,但这其中的 调用原理都是大同小异. <a href="http://laruence-wordpress.stor.sinaapp.com/uploads/jstimer.jpg" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer"><img src="http://laruence-wordpress.stor.sinaapp.com/uploads/jstimer.jpg" alt="Js线程图示" title="jstimer"></a> 由图可看出,浏览器中的JavaScript引擎是基于事件驱动的,这里的事件可看作是浏览器派给它的各种任务,这些任务可以源自 JavaScript引擎当前执行的代码块,如调用setTimeout添加一个任务,也可来自浏览器内核的其它线程,如界面元素鼠标点击事件,定时触发 器时间到达通知,异步请求状态变更通知等.从代码角度看来任务实体就是各种回调函数,JavaScript引擎一直等待着任务队列中任务的到来.由于单线 程关系,这些任务得进行排队,一个接着一个被引擎处理. 上图t1-t2..tn表示不同的时间点,tn下面对应的小方块代表该时间点的任务,假设现在是t1时刻,引擎运行在t1对应的任务方块代码内,在这个时间点内,我们来描述一下浏览器内核其它线程的状态. t1时刻: GUI渲染线程: 该线程负责渲染浏览器界面HTML元素,当界面需要重绘(Repaint)或由于某种操作引发回流(reflow)时,该线程就会执行.本文虽然重 点解释JavaScript定时机制,但这时有必要说说渲染线程,因为该线程与JavaScript引擎线程是互斥的,这容易理解,因为 JavaScript脚本是可操纵DOM元素,在修改这些元素属性同时渲染界面,那么渲染线程前后获得的元素数据就可能不一致了. 在JavaScript引擎运行脚本期间,浏览器渲染线程都是处于挂起状态的,也就是说被”冻结”了. 所以,在脚本中执行对界面进行更新操作,如添加结点,删除结点或改变结点的外观等更新并不会立即体现出来,这些操作将保存在一个队列中,待JavaScript引擎空闲时才有机会渲染出来. GUI事件触发线程: JavaScript脚本的执行不影响html元素事件的触发,在t1时间段内,首先是用户点击了一个鼠标键,点击被浏览器事件触发线程捕捉后形成 一个鼠标点击事件,由图可知,对于JavaScript引擎线程来说,这事件是由其它线程异步传到任务队列尾的,由于引擎正在处理t1时的任务,这个鼠标 点击事件正在等待处理. 定时触发线程: 注意这里的浏览器模型定时计数器并不是由JavaScript引擎计数的,因为JavaScript引擎是单线程的,如果处于阻塞线程状态就计不了时,它必须依赖外部来计时并触发定时,所以队列中的定时事件也是异步事件. 由图可知,在这t1的时间段内,继鼠标点击事件触发后,先前已设置的setTimeout定时也到达了,此刻对JavaScript引擎来说,定时触发线程产生了一个异步定时事件并放到任务队列中, 该事件被排到点击事件回调之后,等待处理. 同理, 还是在t1时间段内,接下来某个setInterval定时器也被添加了,由于是间隔定时,在t1段内连续被触发了两次,这两个事件被排到队尾等待处理. 可见,假如时间段t1非常长,远大于setInterval的定时间隔,那么定时触发线程就会源源不断的产生异步定时事件并放到任务队列尾而不管它 们是否已被处理,但一旦t1和最先的定时事件前面的任务已处理完,这些排列中的定时事件就依次不间断的被执行,这是因为,对于JavaScript引擎来 说,在处理队列中的各任务处理方式都是一样的,只是处理的次序不同而已. t1过后,也就是说当前处理的任务已返回,JavaScript引擎会检查任务队列,发现当前队列非空,就取出t2下面对应的任务执行,其它时间依此类推,由此看来: 如果队列非空,引擎就从队列头取出一个任务,直到该任务处理完,即返回后引擎接着运行下一个任务,在任务没返回前队列中的其它任务是没法被执行的. 相信您现在已经很清楚JavaScript是否可多线程,也了解理解JavaScript定时器运行机制了,下面我们来对一些案例进行分析: 案例1:setTimeout与setInterval</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(function() &#123;</span><br><span class="line">        /\* 代码块... */</span><br><span class="line">        setTimeout(arguments.callee, 10);</span><br><span class="line">&#125;, 10);</span><br><span class="line"></span><br><span class="line">setInterval(function()&#123;</span><br><span class="line">        /*代码块... */</span><br><span class="line">&#125;, 10);</span><br></pre></td></tr></table></figure>
-
-<p>这两段代码看一起效果一样,其实非也,第一段中回调函数内的setTimeout是JavaScript引擎执行后再设置新的setTimeout 定时, 假定上一个回调处理完到下一个回调开始处理为一个时间间隔,理论两个setTimeout回调执行时间间隔&gt;=10ms .第二段自setInterval设置定时后,定时触发线程就会源源不断的每隔十秒产生异步定时事件并放到任务队列尾,理论上两个setInterval 回调执行时间间隔&lt;=10. 案例2:ajax异步请求是否真的异步? 很多同学朋友搞不清楚,既然说JavaScript是单线程运行的,那么XMLHttpRequest在连接后是否真的异步? 其实请求确实是异步的,不过这请求是由浏览器新开一个线程请求(参见上图),当请求的状态变更时,如果先前已设置回调,这异步线程就产生状态变更事件放到 JavaScript引擎的处理队列中等待处理,当任务被处理时,JavaScript引擎始终是单线程运行回调函数,具体点即还是单线程运行 onreadystatechange所设置的函数. 转帖地址:<a href="http://www.9demo.com/archives/341" target="_blank" target="_blank" target="_blank" target="_blank" rel="external nofollow noopener noreferrer">http://www.9demo.com/archives/341</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(function() &#123;</span><br><span class="line">        while (true) &#123;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;, 100);</span><br><span class="line">setTimeout(function() &#123;</span><br><span class="line">        alert(&#39;你好!&#39;);</span><br><span class="line">&#125;, 200);</span><br><span class="line">setInterval(callbackFunction, 200);</span><br></pre></td></tr></table></figure>
+<p>第一行代码进入了死循环,但不久你就会发现,第二,第三行并不是预料中的事情,alert问候未见出现,callbacKFunction也杳无音讯! 这时你彻底迷惘了,这种情景是难以接受的,因为改变长久以来既定的认知去接受新思想的过程是痛苦的,但情事实摆在眼前,对JavaScript真理的探求并不会因为痛苦而停止,下面让我们来展开JavaScript线程和定时器探索之旅! 拔开云雾见月明 出现上面所有误区的最主要一个原因是:潜意识中认为,JavaScript引擎有多个线程在执行,JavaScript的定时器回调函数是异步执行的. 而事实上的,JavaScript使用了障眼法,在多数时候骗过了我们的眼睛,这里背光得澄清一个事实: JavaScript引擎是单线程运行的,浏览器无论在什么时候都只且只有一个线程在运行JavaScript程序. JavaScript引擎用单线程运行也是有意义的,单线程不必理会线程同步这些复杂的问题,问题得到简化. 那么单线程的JavaScript引擎是怎么配合浏览器内核处理这些定时器和响应浏览器事件的呢? 下面结合浏览器内核处理方式简单说明. 浏览器内核实现允许多个线程异步执行,这些线程在内核制控下相互配合以保持同步.假如某一浏览器内核的实现至少有三个常驻线 程:javascript引擎线程,界面渲染线程,浏览器事件触发线程,除些以外,也有一些执行完就终止的线程,如Http请求线程,这些异步线程都会产 生不同的异步事件,下面通过一个图来阐明单线程的JavaScript引擎与另外那些线程是怎样互动通信的.虽然每个浏览器内核实现细节不同,但这其中的 调用原理都是大同小异. <a href="http://laruence-wordpress.stor.sinaapp.com/uploads/jstimer.jpg" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer"><img src="http://laruence-wordpress.stor.sinaapp.com/uploads/jstimer.jpg" alt="Js线程图示" title="jstimer"></a> 由图可看出,浏览器中的JavaScript引擎是基于事件驱动的,这里的事件可看作是浏览器派给它的各种任务,这些任务可以源自 JavaScript引擎当前执行的代码块,如调用setTimeout添加一个任务,也可来自浏览器内核的其它线程,如界面元素鼠标点击事件,定时触发 器时间到达通知,异步请求状态变更通知等.从代码角度看来任务实体就是各种回调函数,JavaScript引擎一直等待着任务队列中任务的到来.由于单线 程关系,这些任务得进行排队,一个接着一个被引擎处理. 上图t1-t2..tn表示不同的时间点,tn下面对应的小方块代表该时间点的任务,假设现在是t1时刻,引擎运行在t1对应的任务方块代码内,在这个时间点内,我们来描述一下浏览器内核其它线程的状态. t1时刻: GUI渲染线程: 该线程负责渲染浏览器界面HTML元素,当界面需要重绘(Repaint)或由于某种操作引发回流(reflow)时,该线程就会执行.本文虽然重 点解释JavaScript定时机制,但这时有必要说说渲染线程,因为该线程与JavaScript引擎线程是互斥的,这容易理解,因为 JavaScript脚本是可操纵DOM元素,在修改这些元素属性同时渲染界面,那么渲染线程前后获得的元素数据就可能不一致了. 在JavaScript引擎运行脚本期间,浏览器渲染线程都是处于挂起状态的,也就是说被”冻结”了. 所以,在脚本中执行对界面进行更新操作,如添加结点,删除结点或改变结点的外观等更新并不会立即体现出来,这些操作将保存在一个队列中,待JavaScript引擎空闲时才有机会渲染出来. GUI事件触发线程: JavaScript脚本的执行不影响html元素事件的触发,在t1时间段内,首先是用户点击了一个鼠标键,点击被浏览器事件触发线程捕捉后形成 一个鼠标点击事件,由图可知,对于JavaScript引擎线程来说,这事件是由其它线程异步传到任务队列尾的,由于引擎正在处理t1时的任务,这个鼠标 点击事件正在等待处理. 定时触发线程: 注意这里的浏览器模型定时计数器并不是由JavaScript引擎计数的,因为JavaScript引擎是单线程的,如果处于阻塞线程状态就计不了时,它必须依赖外部来计时并触发定时,所以队列中的定时事件也是异步事件. 由图可知,在这t1的时间段内,继鼠标点击事件触发后,先前已设置的setTimeout定时也到达了,此刻对JavaScript引擎来说,定时触发线程产生了一个异步定时事件并放到任务队列中, 该事件被排到点击事件回调之后,等待处理. 同理, 还是在t1时间段内,接下来某个setInterval定时器也被添加了,由于是间隔定时,在t1段内连续被触发了两次,这两个事件被排到队尾等待处理. 可见,假如时间段t1非常长,远大于setInterval的定时间隔,那么定时触发线程就会源源不断的产生异步定时事件并放到任务队列尾而不管它 们是否已被处理,但一旦t1和最先的定时事件前面的任务已处理完,这些排列中的定时事件就依次不间断的被执行,这是因为,对于JavaScript引擎来 说,在处理队列中的各任务处理方式都是一样的,只是处理的次序不同而已. t1过后,也就是说当前处理的任务已返回,JavaScript引擎会检查任务队列,发现当前队列非空,就取出t2下面对应的任务执行,其它时间依此类推,由此看来: 如果队列非空,引擎就从队列头取出一个任务,直到该任务处理完,即返回后引擎接着运行下一个任务,在任务没返回前队列中的其它任务是没法被执行的. 相信您现在已经很清楚JavaScript是否可多线程,也了解理解JavaScript定时器运行机制了,下面我们来对一些案例进行分析: 案例1:setTimeout与setInterval</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(function() &#123;</span><br><span class="line">        &#x2F;\* 代码块... *&#x2F;</span><br><span class="line">        setTimeout(arguments.callee, 10);</span><br><span class="line">&#125;, 10);</span><br><span class="line"></span><br><span class="line">setInterval(function()&#123;</span><br><span class="line">        &#x2F;*代码块... *&#x2F;</span><br><span class="line">&#125;, 10);</span><br></pre></td></tr></table></figure>
+<p>这两段代码看一起效果一样,其实非也,第一段中回调函数内的setTimeout是JavaScript引擎执行后再设置新的setTimeout 定时, 假定上一个回调处理完到下一个回调开始处理为一个时间间隔,理论两个setTimeout回调执行时间间隔&gt;=10ms .第二段自setInterval设置定时后,定时触发线程就会源源不断的每隔十秒产生异步定时事件并放到任务队列尾,理论上两个setInterval 回调执行时间间隔&lt;=10. 案例2:ajax异步请求是否真的异步? 很多同学朋友搞不清楚,既然说JavaScript是单线程运行的,那么XMLHttpRequest在连接后是否真的异步? 其实请求确实是异步的,不过这请求是由浏览器新开一个线程请求(参见上图),当请求的状态变更时,如果先前已设置回调,这异步线程就产生状态变更事件放到 JavaScript引擎的处理队列中等待处理,当任务被处理时,JavaScript引擎始终是单线程运行回调函数,具体点即还是单线程运行 onreadystatechange所设置的函数. 转帖地址:<a href="http://www.9demo.com/archives/341" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">http://www.9demo.com/archives/341</a></p>
 
       
 
@@ -429,11 +442,11 @@ var _hmt = _hmt || [];
     <br>
     <strong>版权声明：</strong>
     本作品采用
-    <a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    <a rel="license noopener external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
     进行许可。转载请注明出处！
     
       <br>
-      <a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+      <a rel="license noopener external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" target="_blank" target="_blank" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
     
   </div>
 
@@ -734,7 +747,7 @@ MathJax.Hub.Queue(function() {
     
     
 
-    <ul style="width: 100%">
+    <ul style="width: 70%">
     
     
       
@@ -783,26 +796,6 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">css</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">web</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">代码</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">压缩</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">jquery</a>
               </li>
              
@@ -812,22 +805,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">转载</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -847,6 +824,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -856,6 +837,38 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">代码</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">压缩</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -875,10 +888,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">漏洞</a>
               </li>
              
@@ -891,11 +900,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">kali</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">kali安装</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">centos</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -923,34 +944,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">centos</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">摘要</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">文章</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">seo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">优化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">游记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">克莱姆法则</a>
               </li>
              
@@ -963,11 +956,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">ca证书</a>
+                <a href="javascript:void(0)" class="js-tag color4">seo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">证书生成</a>
+                <a href="javascript:void(0)" class="js-tag color3">优化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">摘要</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">文章</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">游记</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -983,19 +988,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">centos安装chromium报错</a>
+                <a href="javascript:void(0)" class="js-tag color5">ca证书</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">chromium安装报错</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">svn</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">代码提交</a>
+                <a href="javascript:void(0)" class="js-tag color5">证书生成</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1008,6 +1005,22 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">西伯利亚熊</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">svn</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">代码提交</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">centos安装chromium报错</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">chromium安装报错</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1051,14 +1064,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">centos6.5</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">linux系统</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">centos7安装Redis Desktop Manager</a>
               </li>
              
@@ -1083,6 +1088,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">centos6.5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">linux系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">root密码</a>
               </li>
              
@@ -1095,6 +1108,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">memcache</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">memcached</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">生活手记</a>
               </li>
              
@@ -1103,11 +1124,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">memcache</a>
+                <a href="javascript:void(0)" class="js-tag color4">cphalcon</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">memcached</a>
+                <a href="javascript:void(0)" class="js-tag color1">cphalcon报错</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1131,14 +1152,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">cphalcon</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">cphalcon报错</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">proxy代理搭建</a>
               </li>
              
@@ -1148,6 +1161,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">proxy服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">css中的em</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">响应式字体</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">响应式布局样式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1171,14 +1196,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">docker</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php安装</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">dns</a>
               </li>
              
@@ -1191,11 +1208,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">ecshop</a>
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">框架</a>
+                <a href="javascript:void(0)" class="js-tag color1">php安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1203,19 +1220,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">css中的em</a>
+                <a href="javascript:void(0)" class="js-tag color2">ecshop</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">响应式字体</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">响应式布局样式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">免费</a>
+                <a href="javascript:void(0)" class="js-tag color3">框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1228,6 +1237,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">新闻</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">免费</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1259,6 +1272,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">吐槽</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">hadoop</a>
               </li>
              
@@ -1283,7 +1300,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">吐槽</a>
+                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1295,19 +1316,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">会话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">会话原理</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http1.1</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http2.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">会话</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">会话原理</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1327,6 +1348,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">素材</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">jq</a>
               </li>
              
@@ -1336,26 +1365,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">侧边导航</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">图片</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">素材</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">kali右键汉化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">kali桌面右键汉化</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">kali右键创建文件</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1379,23 +1388,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">劳动纠纷</a>
+                <a href="javascript:void(0)" class="js-tag color4">kali右键汉化</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">追缴工资</a>
+                <a href="javascript:void(0)" class="js-tag color1">kali桌面右键汉化</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">申请仲裁</a>
+                <a href="javascript:void(0)" class="js-tag color1">kali右键创建文件</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
+                <a href="javascript:void(0)" class="js-tag color4">区块链</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1408,6 +1413,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">劳动纠纷</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">追缴工资</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">申请仲裁</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1431,18 +1448,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">区块链</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">分库分表</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">高级缓存配置</a>
               </li>
              
@@ -1451,15 +1456,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql消息</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql队列</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">mysql高并发</a>
+                <a href="javascript:void(0)" class="js-tag color5">分库分表</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1472,6 +1473,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">mysql瓶颈解决办法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mysql消息</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mysql队列</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">mysql高并发</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1507,15 +1520,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">onethink</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">深圳劳动法服务部门</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">非关系型数据库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">onethink</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1555,6 +1568,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php设计模式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">php对接微信支付</a>
               </li>
              
@@ -1571,19 +1588,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">php随机数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">php获取闰年</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">闰年.php时间</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php随机数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php设计模式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1607,15 +1620,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php数学函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">php面试题</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">php面向对象</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">面向对象</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php面试题</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1647,10 +1664,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php数学函数</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">PHP数组</a>
               </li>
              
@@ -1663,11 +1676,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php过滤</a>
+                <a href="javascript:void(0)" class="js-tag color1">PHP算法</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">过滤</a>
+                <a href="javascript:void(0)" class="js-tag color1">php递归</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">递归</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1676,6 +1693,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">phpunit安装</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php过滤</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">过滤</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1703,15 +1728,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">PHP算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php递归</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">递归</a>
+                <a href="javascript:void(0)" class="js-tag color2">php字符串</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1727,10 +1744,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php字符串</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">a标签</a>
               </li>
              
@@ -1743,11 +1756,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">响应慢</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">页面优化</a>
+                <a href="javascript:void(0)" class="js-tag color4">R语言</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1783,7 +1792,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">seajs</a>
+                <a href="javascript:void(0)" class="js-tag color4">响应慢</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">页面优化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1799,7 +1812,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">R语言</a>
+                <a href="javascript:void(0)" class="js-tag color1">seajs</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1815,7 +1832,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">session</a>
+                <a href="javascript:void(0)" class="js-tag color2">深圳政府电话</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">深圳电话</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">特区电话</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1859,6 +1884,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php正则</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">正则</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">shodan</a>
               </li>
              
@@ -1875,26 +1908,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">深圳政府电话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">深圳电话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">特区电话</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">可视化数据</a>
               </li>
              
@@ -1904,6 +1917,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据表</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">socket</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1947,10 +1972,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql设置超时，超时</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">js插件</a>
               </li>
              
@@ -1975,15 +1996,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">socket通信</a>
+                <a href="javascript:void(0)" class="js-tag color3">mysql设置超时，超时</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">socket多进程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">socket</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2011,6 +2028,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">域名合并</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">wpscan</a>
               </li>
              
@@ -2019,11 +2040,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">域名合并</a>
+                <a href="javascript:void(0)" class="js-tag color1">无限极分类</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" class="js-tag color2">php无限极</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">分类tree</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">无限极分类树型</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2059,31 +2088,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">无限极分类</a>
+                <a href="javascript:void(0)" class="js-tag color3">3D</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">php无限极</a>
+                <a href="javascript:void(0)" class="js-tag color3">动画</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">分类tree</a>
+                <a href="javascript:void(0)" class="js-tag color3">平台</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">无限极分类树型</a>
+                <a href="javascript:void(0)" class="js-tag color3">游戏</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">储蓄卡免年费</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">银行卡</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">银行卡免年费</a>
+                <a href="javascript:void(0)" class="js-tag color3">虚幻4引擎编辑</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2100,6 +2121,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">邮件函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">储蓄卡免年费</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">银行卡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">银行卡免年费</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2143,31 +2176,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">3D</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">动画</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">平台</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">游戏</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">虚幻4引擎编辑</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">mysql函数</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php中mysql函数</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">互联网时代</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">开源技术</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2179,7 +2204,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
+                <a href="javascript:void(0)" class="js-tag color1">邮箱服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">正则表达式</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2192,22 +2221,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">谷歌搜索</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">互联网时代</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">开源技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">正则表达式</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">邮箱服务器</a>
               </li>
             
             <div class="clearfix"></div>
@@ -2501,19 +2514,19 @@ MathJax.Hub.Queue(function() {
         <ul class="search-ul">
           
             <li class="search-li">
-                  <a href="/dujiabanna/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杜嘉班纳（D&amp;G）</a>
+              <a href="/dujiabanna/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杜嘉班纳（D&amp;G）</a>
             </li>
           
             <li class="search-li">
-                  <a href="/balishijia/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>巴黎世家(Balenciaga)</a>
+              <a href="/balishijia/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>巴黎世家(Balenciaga)</a>
             </li>
           
             <li class="search-li">
-                  <a href="/jppap/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>日本APA</a>
+              <a href="/jppap/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>日本APA</a>
             </li>
           
             <li class="search-li">
-                  <a href="/huaerjieribao/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>华尔街日报</a>
+              <a href="/huaerjieribao/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>华尔街日报</a>
             </li>
           
         </ul>
@@ -2521,25 +2534,26 @@ MathJax.Hub.Queue(function() {
       </section>
     
 
-    
+
+        
       <section class="tools-section tools-section-blackPeople" q-show="blackPeople">
       
         <ul class="search-ul">
           
             <li class="search-li">
-             <a href="/fanjiayang/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>樊嘉扬</a>
+              <a href="/fanjiayang/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>樊嘉扬</a>
             </li>
           
             <li class="search-li">
-             <a href="/yangshuping/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杨舒平</a>
+              <a href="/yangshuping/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>杨舒平</a>
             </li>
           
             <li class="search-li">
-             <a href="/xukexin/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>许可馨</a>
+              <a href="/xukexin/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>许可馨</a>
             </li>
           
             <li class="search-li">
-             <a href="/huangjiayi/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>黄嘉毅</a>
+              <a href="/huangjiayi/index.html" target="_blank" class="search-title"><i class="icon-link icon"></i>黄嘉毅</a>
             </li>
           
         </ul>
@@ -2616,6 +2630,23 @@ MathJax.Hub.Queue(function() {
     </div>
 
 </div>
-  </div>
+  </div><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config("");
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 </body>
 </html>
