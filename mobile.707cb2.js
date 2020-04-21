@@ -11071,10 +11071,10 @@
 		// 由于hexo分页不支持，手工美化
 		var $nav = document.querySelector('#page-nav');
 		if ($nav && !document.querySelector('#page-nav .extend.prev')) {
-			$nav.innerHTML = '<a class="extend prev disabled" rel="prev">&laquo; 上一页</a>' + $nav.innerHTML;
+			$nav.innerHTML = '<a class="extend prev disabled" rel="prev"> &lt; 上一页</a>' + $nav.innerHTML;
 		}
 		if ($nav && !document.querySelector('#page-nav .extend.next')) {
-			$nav.innerHTML = $nav.innerHTML + '<a class="extend next disabled" rel="next">下一页 &raquo;</a>';
+			$nav.innerHTML = $nav.innerHTML + '<a class="extend next disabled" rel="next">下一页 &gt; </a>';
 		}
 
 		// 新窗口打开
