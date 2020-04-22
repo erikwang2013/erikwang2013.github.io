@@ -1,0 +1,593 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://erik.xyz</id>
+    <title>艾瑞可erik • Posts by &#34;工具&#34; tag</title>
+    <link href="https://erik.xyz" />
+    <updated>2019-10-20T13:54:00.000Z</updated>
+    <category term="jquery" />
+    <category term="jquery插件" />
+    <category term="js" />
+    <category term="css" />
+    <category term="php" />
+    <category term="web" />
+    <category term="代码" />
+    <category term="压缩" />
+    <category term="说说" />
+    <category term="趣闻" />
+    <category term="php服务器" />
+    <category term="随笔" />
+    <category term="php实例" />
+    <category term="php库" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
+    <category term="转载" />
+    <category term="工具" />
+    <category term="数据库" />
+    <category term="hbase安装教程" />
+    <category term="hbase" />
+    <category term="漏洞" />
+    <category term="php应用" />
+    <category term="浮点" />
+    <category term="javascript" />
+    <category term="kali" />
+    <category term="kali安装" />
+    <category term="apache优化" />
+    <category term="apache隐藏index" />
+    <category term="nginx优化" />
+    <category term="nginx隐藏index" />
+    <category term="centos" />
+    <category term="linux" />
+    <category term="克莱姆法则" />
+    <category term="行列式" />
+    <category term="n阶行列式" />
+    <category term="seo" />
+    <category term="优化" />
+    <category term="http" />
+    <category term="http服务器" />
+    <category term="摘要" />
+    <category term="文章" />
+    <category term="游记" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
+    <category term="ca证书" />
+    <category term="证书生成" />
+    <category term="二战" />
+    <category term="二战熊" />
+    <category term="西伯利亚熊" />
+    <category term="centos安装chromium报错" />
+    <category term="chromium安装报错" />
+    <category term="svn" />
+    <category term="代码提交" />
+    <category term="centos7安装steam" />
+    <category term="centos安装steam" />
+    <category term="centos安装吃鸡steam" />
+    <category term="linux安装steam" />
+    <category term="steam安装" />
+    <category term="centos软件安装" />
+    <category term="deb" />
+    <category term="deb/rpm互转" />
+    <category term="deb转rpm" />
+    <category term="rpm互转" />
+    <category term="centos6.5" />
+    <category term="linux系统" />
+    <category term="centos7安装Redis Desktop Manager" />
+    <category term="centos7安装redis桌面" />
+    <category term="centos安装redis桌面" />
+    <category term="linux安装centos7安装Redis Desktop Manager" />
+    <category term="Redis Desktop Manager" />
+    <category term="redis桌面" />
+    <category term="root密码" />
+    <category term="root密码重置" />
+    <category term="忘记root密码" />
+    <category term="生活手记" />
+    <category term="艾瑞可erik" />
+    <category term="memcache" />
+    <category term="memcached" />
+    <category term="centos7" />
+    <category term="centos7-wine" />
+    <category term="wine" />
+    <category term="wine安装" />
+    <category term="程序员" />
+    <category term="cphalcon" />
+    <category term="cphalcon报错" />
+    <category term="开源云" />
+    <category term="容器" />
+    <category term="cncf" />
+    <category term="监控" />
+    <category term="查找" />
+    <category term="排序" />
+    <category term="快速排序" />
+    <category term="冒泡排序" />
+    <category term="二分查找" />
+    <category term="proxy代理搭建" />
+    <category term="代理服务器搭建" />
+    <category term="proxy服务器" />
+    <category term="dns" />
+    <category term="域名监测" />
+    <category term="网站监测" />
+    <category term="docker" />
+    <category term="php安装" />
+    <category term="css中的em" />
+    <category term="响应式字体" />
+    <category term="响应式布局样式" />
+    <category term="杂谈" />
+    <category term="ecshop" />
+    <category term="框架" />
+    <category term="免费" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
+    <category term="随笔吐槽" />
+    <category term="ping" />
+    <category term="ping服务器" />
+    <category term="各大网站ping" />
+    <category term="搜引擎ping服务器" />
+    <category term="归" />
+    <category term="算法" />
+    <category term="吐槽" />
+    <category term="hadoop" />
+    <category term="hadoop2.8.0" />
+    <category term="hadoop安装教程" />
+    <category term="hadoop安装详细教程" />
+    <category term="hadoop教程" />
+    <category term="hadoop部署" />
+    <category term="http1.1" />
+    <category term="http2.0" />
+    <category term="hadoop3" />
+    <category term="hadoop配置" />
+    <category term="会话" />
+    <category term="会话原理" />
+    <category term="jenkins" />
+    <category term="jetbtrains" />
+    <category term="phpstorm" />
+    <category term="搜索引擎" />
+    <category term="jq" />
+    <category term="jq侧边导航" />
+    <category term="侧边导航" />
+    <category term="图片" />
+    <category term="素材" />
+    <category term="js判断浏览器" />
+    <category term="js判断浏览器版本" />
+    <category term="判断浏览器" />
+    <category term="浏览器版本判断" />
+    <category term="获取浏览器信息" />
+    <category term="kali右键汉化" />
+    <category term="kali桌面右键汉化" />
+    <category term="kali右键创建文件" />
+    <category term="php大全" />
+    <category term="php资料" />
+    <category term="lanmp" />
+    <category term="php环境独立配置" />
+    <category term="服务器" />
+    <category term="劳动纠纷" />
+    <category term="追缴工资" />
+    <category term="申请仲裁" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="linux报错" />
+    <category term="linux中update-command-not-found" />
+    <category term="linux运行命令报错" />
+    <category term="高级缓存配置" />
+    <category term="mysql" />
+    <category term="分库分表" />
+    <category term="mysql应对千万级" />
+    <category term="mysql瓶颈" />
+    <category term="mysql瓶颈解决办法" />
+    <category term="可穿戴设备" />
+    <category term="mysql消息" />
+    <category term="mysql队列" />
+    <category term="mysql高并发" />
+    <category term="mysql存储" />
+    <category term="mysql引擎" />
+    <category term="mysql数据表设计选择" />
+    <category term="内网支付" />
+    <category term="内网穿透" />
+    <category term="支付接口本地化开发" />
+    <category term="本地挂网" />
+    <category term="穿透" />
+    <category term="深圳劳动法服务部门" />
+    <category term="onethink" />
+    <category term="非关系型数据库" />
+    <category term="区块链" />
+    <category term="openresty" />
+    <category term="openvas" />
+    <category term="openvas安装" />
+    <category term="oop" />
+    <category term="php基本类型" />
+    <category term="php数据类型" />
+    <category term="php变量" />
+    <category term="php超级全局变量" />
+    <category term="php超级变量" />
+    <category term="php对接微信支付" />
+    <category term="微信支付" />
+    <category term="微信支付回调" />
+    <category term="php函数" />
+    <category term="php随机数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
+    <category term="php设计模式" />
+    <category term="php环境" />
+    <category term="php集成环境" />
+    <category term="服务器集成环境" />
+    <category term="数组函数" />
+    <category term="数组排序函数" />
+    <category term="php面向对象" />
+    <category term="面向对象" />
+    <category term="php倒计时" />
+    <category term="php时间" />
+    <category term="倒计时" />
+    <category term="计算时间" />
+    <category term="php面试题" />
+    <category term="php数学函数" />
+    <category term="php-zookeeper" />
+    <category term="zookeeper3.5.5" />
+    <category term="php-zookeeper扩展" />
+    <category term="php过滤" />
+    <category term="过滤" />
+    <category term="PHP算法" />
+    <category term="php递归" />
+    <category term="递归" />
+    <category term="PHP数组" />
+    <category term="字符串函数" />
+    <category term="排序函数" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php中if" />
+    <category term="php中if判断" />
+    <category term="php的if" />
+    <category term="php7中sphinx" />
+    <category term="php7中sphinx扩展" />
+    <category term="sphinx扩展" />
+    <category term="php字符串" />
+    <category term="a标签" />
+    <category term="a标签虚线" />
+    <category term="虚线框" />
+    <category term="队列" />
+    <category term="栈" />
+    <category term="顺序表" />
+    <category term="链表" />
+    <category term="数据结构" />
+    <category term="线性结构" />
+    <category term="响应慢" />
+    <category term="页面优化" />
+    <category term="任意金额输入" />
+    <category term="10元、5元、2元" />
+    <category term="seajs" />
+    <category term="js编辑" />
+    <category term="runjs" />
+    <category term="在线编辑" />
+    <category term="R语言" />
+    <category term="免费服务器" />
+    <category term="空间" />
+    <category term="资源" />
+    <category term="居住证" />
+    <category term="居住证签注" />
+    <category term="深圳新居住证" />
+    <category term="session" />
+    <category term="世界那么大" />
+    <category term="国庆骑行" />
+    <category term="深圳珠海骑行" />
+    <category term="骑行" />
+    <category term="css3" />
+    <category term="css在线生成工具" />
+    <category term="css工具" />
+    <category term="深圳政府电话" />
+    <category term="深圳电话" />
+    <category term="特区电话" />
+    <category term="shodan" />
+    <category term="黑谷歌" />
+    <category term="黒帽搜素" />
+    <category term="shopex" />
+    <category term="php正则" />
+    <category term="正则" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
+    <category term="config" />
+    <category term="thinkphp" />
+    <category term="配置文件" />
+    <category term="可视化数据" />
+    <category term="数据" />
+    <category term="数据表" />
+    <category term="树" />
+    <category term="二叉树" />
+    <category term="js插件" />
+    <category term="mysql设置超时，超时" />
+    <category term="socket通信" />
+    <category term="socket多进程" />
+    <category term="socket" />
+    <category term="web自适应" />
+    <category term="响应式布局" />
+    <category term="响应式所有分辨率" />
+    <category term="自适应布局" />
+    <category term="自适应所有分辨率" />
+    <category term="wget" />
+    <category term="wget抓取" />
+    <category term="网站抓取" />
+    <category term="我在" />
+    <category term="wordpress" />
+    <category term="wordpress标签" />
+    <category term="wpscan" />
+    <category term="usbrip" />
+    <category term="域名合并" />
+    <category term="markdown" />
+    <category term="携程" />
+    <category term="携程攻击" />
+    <category term="携程网站瘫痪" />
+    <category term="物理删除" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
+    <category term="无限极分类" />
+    <category term="php无限极" />
+    <category term="分类tree" />
+    <category term="无限极分类树型" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
+    <category term="生成唯一id" />
+    <category term="生成id" />
+    <category term="储蓄卡免年费" />
+    <category term="银行卡" />
+    <category term="银行卡免年费" />
+    <category term="composer" />
+    <category term="composer安装" />
+    <category term="composer配置" />
+    <category term="项目创建composer" />
+    <category term="3D" />
+    <category term="动画" />
+    <category term="平台" />
+    <category term="游戏" />
+    <category term="虚幻4引擎编辑" />
+    <category term="mysql优化" />
+    <category term="mysql读写优化" />
+    <category term="数据库优化，mysql语句优化" />
+    <category term="php加密" />
+    <category term="php技术" />
+    <category term="夕阳" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
+    <category term="php抓取图片" />
+    <category term="php批量抓取页面图片" />
+    <category term="web框架" />
+    <category term="翻墙" />
+    <category term="谷歌" />
+    <category term="谷歌搜索" />
+    <category term="正则表达式" />
+    <category term="邮箱服务器" />
+    <entry>
+        <id>https://erik.xyz/2019/10/20/jenks-install/</id>
+        <title>Jenkins安装及使用</title>
+        <link rel="alternate" href="https://erik.xyz/2019/10/20/jenks-install/"/>
+        <content type="html">&lt;p&gt;作者：回首笑人间，高级Java工程师一枚，热爱研究开源技术，架构师社区合伙人！&lt;br&gt;目录&lt;/p&gt;
+&lt;p&gt;什么是持续集成&lt;br&gt;Jenkins简介&lt;br&gt;Jenkins安装与启动&lt;br&gt;Jenkins插件安装&lt;br&gt;全局工具配置&lt;br&gt;自动安装&lt;br&gt;本地安装&lt;br&gt;代码上传至Git服务器&lt;br&gt;任务的创建与执行&lt;br&gt;Go项目&lt;br&gt;JAVA项目&lt;br&gt;什么是持续集成&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;br&gt;持续集成 Continuous integration ，简称CI&lt;/p&gt;
+&lt;p&gt;随着软件开发复杂度的不断提高，团队开发成员间如何更好地协同工作以确保软件开发的质量已经慢慢成为开发过程中不可回避的问题。尤其是近些年来，敏捷（Agile） 在软件工程领域越来越红火，如何能在不断变化的需求中快速适应和保证软件的质量也显得尤其的重要。&lt;/p&gt;
+&lt;p&gt;持续集成正是针对这一类问题的一种软件开发实践。它倡导团队开发成员必须经常集成他们的工作，甚至每天都可能发生多次集成。而每次的集成都是通过自动化的构建来验证，包括自动编译、发布和测试，从而尽快地发现集成错误，让团队能够更快的开发内聚的软件。&lt;/p&gt;
+&lt;p&gt;持续集成具有的特点：&lt;/p&gt;
+&lt;p&gt;它是一个自动化的周期性的集成测试过程，从检出代码、编译构建、运行测试、结果记录、测试统计等都是自动完成的，无需人工干预；&lt;br&gt;需要有专门的集成服务器来执行集成构建；&lt;br&gt;需要有代码托管工具支持，例如Git以及可视化界面Gogs的使用&lt;br&gt;持续集成的作用：&lt;/p&gt;
+&lt;p&gt;保证团队开发人员提交代码的质量，减轻了软件发布时的压力；&lt;br&gt;持续集成中的任何一个环节都是自动完成的，无需太多的人工干预，有利于减少重复过程以节省时间、费用和工作量；&lt;br&gt;Jenkins简介&lt;br&gt;Jenkins，原名Hudson，2011年改为现在的名字，它 是一个开源的实现持续集成的软件工具。官方网站：&lt;a href=&#34;http://jenkins-ci.org/。&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;http://jenkins-ci.org/。&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Jenkins 能实施监控集成中存在的错误，提供详细的日志文件和提醒功能，还能用图表的形式形象地展示项目构建的趋势和稳定性。&lt;/p&gt;
+&lt;p&gt;特点：&lt;/p&gt;
+&lt;p&gt;易安装：仅仅两个docker命令即可从官网下载直接运行，无需额外的安装，更无需安装数据库；&lt;br&gt;易配置：提供友好的GUI配置界面；&lt;br&gt;变更支持：Jenkins能从代码仓库（Subversion/CVS）中获取并产生代码更新列表并输出到编译输出信息中；&lt;br&gt;支持永久链接：用户是通过web来访问Jenkins的，而这些web页面的链接地址都是永久链接地址，因此，你可以在各种文档中直接使用该链接；&lt;br&gt;集成E-Mail/RSS/IM：当完成一次集成时，可通过这些工具实时告诉你集成结果（据我所知，构建一次集成需要花费一定时间，有了这个功能，你就可以在等待结果过程中，干别的事情）；&lt;br&gt;JUnit/TestNG测试报告：也就是用以图表等形式提供详细的测试报表功能；&lt;br&gt;支持分布式构建：Jenkins可以把集成构建等工作分发到多台计算机中完成；&lt;br&gt;文件指纹信息：Jenkins会保存哪次集成构建产生了哪些jars文件，哪一次集成构建使用了哪个版本的jars文件等构建记录；&lt;br&gt;支持第三方插件：使得 Jenkins 变得越来越强大&lt;br&gt;Jenkins安装与启动&lt;br&gt;（1）执行安装命令,下载jenkins&lt;/p&gt;
+&lt;p&gt;docker pull jenkins/jenkins&lt;br&gt;（2）启动服务&lt;/p&gt;
+&lt;p&gt;docker run -p 8080:8080 -p 50000:50000 -v /mnt/data/jenkins:/var/jenkins_home –name “jenkins” jenkins/jenkins&lt;/p&gt;
+&lt;p&gt;若报错如下:&lt;/p&gt;
+&lt;p&gt;touch: cannot touch ‘/var/jenkins_home/copy_reference_file.log’: Permission denied&lt;br&gt;Can not write to /var/jenkins_home/copy_reference_file.log. Wrong volume permissions?&lt;br&gt;需要修改下目录权限, 因为当映射本地数据卷时，/mnt/data/jenkins目录的拥有者为root用户，而容器中jenkins user的uid为1000&lt;/p&gt;
+&lt;p&gt;sudo chown -R 1000:1000 /mnt/data/jenkins&lt;br&gt;（3）访问链接 &lt;a href=&#34;http://10.20.29.151:8080&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;http://10.20.29.151:8080&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;若密码忘记，可进入容器，执行cat /var/lib/jenkins/secrets/initialAdminPassword获取初始密码串。&lt;br&gt;若目录不存在，可使用find / -name “initialAdminPassword” -depth -print命令查找。&lt;/p&gt;
+&lt;p&gt;（4）安装插件&lt;/p&gt;
+&lt;p&gt;（5）新建用户&lt;/p&gt;
+&lt;p&gt;完成安装进入主界面&lt;/p&gt;
+&lt;p&gt;Jenkins插件安装&lt;br&gt;我们以安装maven插件为例，演示插件的安装&lt;/p&gt;
+&lt;p&gt;（1）点击左侧的“系统管理”菜单 ,然后点击&lt;/p&gt;
+&lt;p&gt;（2）选择“可选插件”选项卡，搜索maven，在列表中选择Maven Integration ，点击“直接安装”按钮&lt;/p&gt;
+&lt;p&gt;看到如下图时，表示已经完成&lt;/p&gt;
+&lt;p&gt;注:如果你的项目是GitHub、GitLib或是Go语言等项目，那么我想你都需要这么一个对应的插件来帮你干活。&lt;br&gt;全局工具配置&lt;br&gt;选择系统管理，全局工具配置&lt;/p&gt;
+&lt;p&gt;自动安装&lt;/p&gt;
+&lt;p&gt;Jenkins提供了两种工具配置的方式，我们还是以maven为例&lt;/p&gt;
+&lt;p&gt;第一种如上图，只需要选择自动安装和版本号就可以，同时Jenkins在右上角给出了一个解疑按键，可以通过该键看到说明和示例。&lt;/p&gt;
+&lt;p&gt;本地安装&lt;/p&gt;
+&lt;p&gt;相较于第一种方式，第二种方式相对麻烦一些，但好处是可以在以后打包的时候不必重新下载，缩短打包的时间。&lt;/p&gt;
+&lt;p&gt;下面就来教大家如何安装Maven与本地仓库：&lt;/p&gt;
+&lt;p&gt;（1）将Maven压缩包上传至服务器（虚拟机）&lt;/p&gt;
+&lt;p&gt;（2）解压&lt;/p&gt;
+&lt;p&gt;tar zxvf apache-maven-3.5.4-bin.tar.gz&lt;br&gt;（3）移动目录&lt;/p&gt;
+&lt;p&gt;mv apache-maven-3.5.4 /usr/local/maven&lt;br&gt;（4）编辑setting.xml配置文件vi /usr/local/maven/conf/settings.xml，配置本地仓库目录,内容如下&lt;/p&gt;
+&lt;p&gt;&lt;localRepository&gt;/usr/local/repository&lt;/localRepository&gt;&lt;br&gt;（5）将开发环境的本地仓库上传至服务器（虚拟机）并移动到/usr/local/repository 。&lt;/p&gt;
+&lt;p&gt;mv reponsitory_boot /usr/local/repository&lt;br&gt;其他示例:&lt;/p&gt;
+&lt;p&gt;（1）JDK配置&lt;/p&gt;
+&lt;p&gt;设置javahome为 /usr/java/jdk1.8.0_171-amd64&lt;/p&gt;
+&lt;p&gt;（2）Git配置 （本地已经安装了Git软件）&lt;/p&gt;
+&lt;p&gt;（3）Maven配置&lt;/p&gt;
+&lt;p&gt;代码上传至Git服务器&lt;br&gt;步骤：&lt;/p&gt;
+&lt;p&gt;（1）在本地安装git(Windows版本)&lt;/p&gt;
+&lt;p&gt;（2）在IDEA中选择菜单 : File – settings , 在窗口中选择Version Control – Git&lt;/p&gt;
+&lt;p&gt;（3）选择菜单VCS –&amp;gt; Enable Version Control Integration…&lt;/p&gt;
+&lt;p&gt;选择Git&lt;/p&gt;
+&lt;p&gt;（4）设置远程地址: 右键点击工程选择菜单 Git –&amp;gt; Repository –&amp;gt;Remotes…&lt;/p&gt;
+&lt;p&gt;（5）右键点击工程选择菜单 Git –&amp;gt; Add&lt;/p&gt;
+&lt;p&gt;（6）右键点击工程选择菜单 Git –&amp;gt; Commit Directory…&lt;/p&gt;
+&lt;p&gt;（7）右键点击工程选择菜单 Git –&amp;gt; Repository –&amp;gt; Push …&lt;/p&gt;
+&lt;p&gt;任务的创建与执行&lt;br&gt;我们以最火的Java项目和Go项目为例，给大家分别演示如何构建项目和执行&lt;/p&gt;
+&lt;p&gt;Go项目&lt;/p&gt;
+&lt;p&gt;（1）回到首页，点击新建按钮 .如下图，输入名称，选择创建一个自由风格的项目，点击OK&lt;/p&gt;
+&lt;p&gt;（2）General管理，可以添加项目描述和GitHub项目路径，以及一些配置&lt;/p&gt;
+&lt;p&gt;（3）源码管理，选择GitHub&lt;/p&gt;
+&lt;p&gt;（4）构建触发器，配置触发规则，这里以定时和轮询为示例，配别设置为&lt;/p&gt;
+&lt;p&gt;定时构建：定时构建1次任务&lt;/p&gt;
+&lt;p&gt;轮询SCM:定时查看源码管理的代码是否更新，有更新则构建，否则不会构建&lt;/p&gt;
+&lt;p&gt;如图所示，定时构建为每间隔10分钟定时构建一次，轮询SCM为每5分钟轮询检测一次。&lt;/p&gt;
+&lt;p&gt;时间*号规则为: 分 时 日 月 周&lt;br&gt;（5）构建环境，配置控制台输出时间戳和指定Go语言版本&lt;/p&gt;
+&lt;p&gt;（6）构建，使用Shell脚本测试代码上传后的项目是否有效&lt;/p&gt;
+&lt;p&gt;Shell如下:&lt;/p&gt;
+&lt;p&gt;export GOPATH=$WORKSPACE/../                    # 指定GOPATH路径，Go语言执行必须有GOPATH路径&lt;br&gt;export GOWORK=$GOPATH/src/github.com/Jenkins    # 创建项目执行时的目录依赖结构&lt;br&gt;cp -rf $WORKSPACE/* $GOWORK/                    # 使测试运行数据和源数据隔离&lt;br&gt;cd $GOWORK &amp;amp;&amp;amp; go build                          # 进入项目目录并执行&lt;br&gt;命令解说：&lt;/p&gt;
+&lt;p&gt;$GOPATH Go 运行需要指定 GOPATH 也即项目运行路径&lt;br&gt;$WORKSPACE /var/jenkins_home/workspace/Jenkins&lt;br&gt;GOWORK 创建符合代码依赖的执行目录&lt;br&gt;注:下载Go的插件在构建时，会自动为我们设置GOROOT,但不会指定GOPATH，因此需要指定&lt;br&gt;最后点击“保存”按钮&lt;/p&gt;
+&lt;p&gt;（7）执行构建，控制台查看输出&lt;/p&gt;
+&lt;p&gt;构建成功，也输出了WORKSPACE、GOPATH、GOROOT目录，说明配置生效。进入docker容器或是挂载目录查看是否有可执行文件：&lt;/p&gt;
+&lt;p&gt;除了上述方法，也可以通过shell配置docker等方式构建、部署、运行项目，还可以将项目配置到当前/其他服务器运行，更多配置方式就不一一陈述了，请自行挖掘。&lt;/p&gt;
+&lt;p&gt;JAVA项目&lt;/p&gt;
+&lt;p&gt;（1）回到首页，点击新建按钮 .如下图，输入名称，选择创建一个Maven项目，点击OK&lt;/p&gt;
+&lt;p&gt;（2）源码管理，选择Git&lt;/p&gt;
+&lt;p&gt;（3）Build&lt;/p&gt;
+&lt;p&gt;命令:&lt;/p&gt;
+&lt;p&gt;clean package docker:build -DpushImage&lt;br&gt;用于清除、打包，构建docker镜像&lt;/p&gt;
+&lt;p&gt;最后点击“保存”按钮&lt;/p&gt;
+&lt;p&gt;（4）执行任务&lt;/p&gt;
+&lt;p&gt;后续请参照Go项目的执行步骤。&lt;br&gt;原创地址：&lt;a href=&#34;https://mp.weixin.qq.com/s/PEupc5YIKuctZO1Tivy_ug&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;https://mp.weixin.qq.com/s/PEupc5YIKuctZO1Tivy_ug&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <category term="jenkins" />
+        <updated>2019-10-20T13:54:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2019/10/01/jetbrains-code-plugin/</id>
+        <title>jetbrains全系列，激活使用</title>
+        <link rel="alternate" href="https://erik.xyz/2019/10/01/jetbrains-code-plugin/"/>
+        <content type="html">&lt;p&gt;通用破解永久版本，安装插件即可，支持2019.2版本的大部分ide&lt;/p&gt;
+&lt;p&gt;pycharm2019.2  phpstorm2019.2 intelli2019.2 gloand2019.2 clion2019.2 webstorm2019.2&lt;/p&gt;
+&lt;p&gt;注意，不要用于商业用途，个人使用练习即可。&lt;/p&gt;
+&lt;p&gt;下载平破解插件jetbrainsCrack.jar放到已安装的ide工具目录下的bin目录&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;链接: &lt;a href=&#34;https://pan.baidu.com/s/16KTQF7pOJUhEGnA9EYQbQA&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;https://pan.baidu.com/s/16KTQF7pOJUhEGnA9EYQbQA&lt;/a&gt;  密码: 3h5e&lt;/p&gt;
+&lt;p&gt;在bin目录中编辑&lt;em&gt;.vmoptions和&lt;/em&gt;64.vmoptions文件，引入插件&lt;br&gt;-javaagent:插件地址&lt;/p&gt;
+&lt;p&gt;例如我的linux系统格式如下：&lt;br&gt;-javaagent:/opt/phpstorm/bin/jetbrainsCrack.jar&lt;/p&gt;
+&lt;p&gt;如果之前有填过激活码就需要删除激活码，还有hosts的地址也删除。&lt;br&gt;linux系统需要直接删除当前用户目录下的已生成ide缓存文件&lt;/p&gt;
+&lt;p&gt;启动ide工具后填入下面激活码即可。&lt;/p&gt;
+&lt;p&gt;激活一&lt;/p&gt;
+&lt;div style=&#34;overflow:scroll&#34;&gt;
+
+&lt;pre&gt;&lt;code&gt;KNBB2QUUR1-eyJsaWNlbnNlSWQiOiJLTkJCMlFVVVIxIiwibGljZW5zZWVOYW1lIjoiZ2hib2tlIiwiYXNzaWduZWVOYW1lIjoiIiwiYXNzaWduZWVFbWFpbCI6IiIsImxpY2Vuc2VSZXN0cmljdGlvbiI6IiIsImNoZWNrQ29uY3VycmVudFVzZSI6ZmFsc2UsInByb2R1Y3RzIjpbeyJjb2RlIjoiSUkiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiQUMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiRFBOIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IlBTIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkdPIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkRNIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkNMIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IlJTMCIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSQyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSRCIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJQQyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSTSIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJXUyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJEQiIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJEQyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSU1UiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In1dLCJoYXNoIjoiMTI3OTY4NzcvMCIsImdyYWNlUGVyaW9kRGF5cyI6NywiYXV0b1Byb2xvbmdhdGVkIjpmYWxzZSwiaXNBdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlfQ==-1iV7BA/baNqv0Q5yUnAphUmh66QhkDRX+qPL09ICuEicBqiPOBxmVLLCVUpkxhrNyfmOtat2LcHwcX/NHkYXdoW+6aS0S388xe1PV2oodiPBhFlEaOac42UQLgP4EidfGQSvKwC9tR1zL5b2CJPQKZ7iiHh/iKBQxP6OBMUP1T7j3Fe1rlxfYPc92HRZf6cO+C0+buJP5ERZkyIn5ZrVM4TEnWrRHbpL8SVNq4yqfc+NwoRzRSNC++81VDS3AXv9c91YeZJz6JXO7AokIk54wltr42FLNuKbozvB/HCxV9PA5vIiM+kZY1K0w5ytgxEYKqA87adA7R5xL/crpaMxHQ==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ndaik1GD0nyTdqkZgURQZGW+RGxCdBITPXIwpjhhaD0SXGa4XSZBEBoiPdY6XV6pOfUJeyfi9dXsY4MmT0D+sKoST3rSw96xaf9FXPvOjn4prMTdj3Ji3CyQrGWeQU2nzYqFrp1QYNLAbaViHRKuJrYHI6GCvqCbJe0LQ8qqUiVMA9wG/PQwScpNmTF9Kp2Iej+Z5OUxF33zzm+vg/nYV31HLF7fJUAplI/1nM+ZG8K+AXWgYKChtknl3sW9PCQa3a3imPL9GVToUNxc0wcuTil8mqveWcSQCHYxsIaUajWLpFzoO2AhK4mfYBSStAqEjoXRTuj17mo8Q6M2SHOcwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQBonMu8oa3vmNAa4RQP8gPGlX3SQaA3WCRUAj6Zrlk8AesKV1YSkh5D2l+yUk6njysgzfr1bIR5xF8eup5xXc4/G7NtVYRSMvrd6rfQcHOyK5UFJLm+8utmyMIDrZOzLQuTsT8NxFpbCVCfV5wNRu4rChrCuArYVGaKbmp9ymkw1PU6+HoO5i2wU3ikTmRv8IRjrlSStyNzXpnPTwt7bja19ousk56r40SmlmC04GdDHErr0ei2UbjUua5kw71Qn9g02tL9fERI2sSRjQrvPbn9INwRWl5+k05mlKekbtbu2ev2woJFZK4WEXAd/GaAdeZZdumv8T2idDFL7cAirJwcrbfpawPeXr52oKTPnXfi0l5+g9Gnt/wfiXCrPElX6ycTR6iL3GC2VR4jTz6YatT4Ntz59/THOT7NJQhr6AyLkhhJCdkzE2cob/KouVp4ivV7Q3Fc6HX7eepHAAF/DpxwgOrg9smX6coXLgfp0b1RU2u/tUNID04rpNxTMueTtrT8WSskqvaJd3RH8r7cnRj6Y2hltkja82HlpDURDxDTRvv+krbwMr26SB/40BjpMUrDRCeKuiBahC0DCoU/4+ze1l94wVUhdkCfL0GpJrMSCDEK+XEurU18Hb7WT+ThXbkdl6VpFdHsRvqAnhR2g4b+Qzgidmuky5NUZVfEaZqV/g==&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+激活二
+&lt;div style=&#34;overflow:scroll&#34;&gt;
+
+&lt;pre&gt;&lt;code&gt;3AGXEJXFK9-eyJsaWNlbnNlSWQiOiIzQUdYRUpYRks5IiwibGljZW5zZWVOYW1lIjoiaHR0cHM6Ly96aGlsZS5pbyIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkFDIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkRQTiIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJQUyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJHTyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJETSIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJDTCIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSUzAiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUkMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUkQiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUEMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUk0iLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiV1MiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiREIiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiREMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUlNVIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9XSwiaGFzaCI6IjEyNzk2ODc3LzAiLCJncmFjZVBlcmlvZERheXMiOjcsImF1dG9Qcm9sb25nYXRlZCI6ZmFsc2UsImlzQXV0b1Byb2xvbmdhdGVkIjpmYWxzZX0=-WGTHs6XpDhr+uumvbwQPOdlxWnQwgnGaL4eRnlpGKApEEkJyYvNEuPWBSrQkPmVpim/8Sab6HV04Dw3IzkJT0yTc29sPEXBf69+7y6Jv718FaJu4MWfsAk/ZGtNIUOczUQ0iGKKnSSsfQ/3UoMv0q/yJcfvj+me5Zd/gfaisCCMUaGjB/lWIPpEPzblDtVJbRexB1MALrLCEoDv3ujcPAZ7xWb54DiZwjYhQvQ+CvpNNF2jeTku7lbm5v+BoDsdeRq7YBt9ANLUKPr2DahcaZ4gctpHZXhG96IyKx232jYq9jQrFDbQMtVr3E+GsCekMEWSD//dLT+HuZdc1sAIYrw==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ndaik1GD0nyTdqkZgURQZGW+RGxCdBITPXIwpjhhaD0SXGa4XSZBEBoiPdY6XV6pOfUJeyfi9dXsY4MmT0D+sKoST3rSw96xaf9FXPvOjn4prMTdj3Ji3CyQrGWeQU2nzYqFrp1QYNLAbaViHRKuJrYHI6GCvqCbJe0LQ8qqUiVMA9wG/PQwScpNmTF9Kp2Iej+Z5OUxF33zzm+vg/nYV31HLF7fJUAplI/1nM+ZG8K+AXWgYKChtknl3sW9PCQa3a3imPL9GVToUNxc0wcuTil8mqveWcSQCHYxsIaUajWLpFzoO2AhK4mfYBSStAqEjoXRTuj17mo8Q6M2SHOcwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQBonMu8oa3vmNAa4RQP8gPGlX3SQaA3WCRUAj6Zrlk8AesKV1YSkh5D2l+yUk6njysgzfr1bIR5xF8eup5xXc4/G7NtVYRSMvrd6rfQcHOyK5UFJLm+8utmyMIDrZOzLQuTsT8NxFpbCVCfV5wNRu4rChrCuArYVGaKbmp9ymkw1PU6+HoO5i2wU3ikTmRv8IRjrlSStyNzXpnPTwt7bja19ousk56r40SmlmC04GdDHErr0ei2UbjUua5kw71Qn9g02tL9fERI2sSRjQrvPbn9INwRWl5+k05mlKekbtbu2ev2woJFZK4WEXAd/GaAdeZZdumv8T2idDFL7cAirJwcrbfpawPeXr52oKTPnXfi0l5+g9Gnt/wfiXCrPElX6ycTR6iL3GC2VR4jTz6YatT4Ntz59/THOT7NJQhr6AyLkhhJCdkzE2cob/KouVp4ivV7Q3Fc6HX7eepHAAF/DpxwgOrg9smX6coXLgfp0b1RU2u/tUNID04rpNxTMueTtrT8WSskqvaJd3RH8r7cnRj6Y2hltkja82HlpDURDxDTRvv+krbwMr26SB/40BjpMUrDRCeKuiBahC0DCoU/4+ze1l94wVUhdkCfL0GpJrMSCDEK+XEurU18Hb7WT+ThXbkdl6VpFdHsRvqAnhR2g4b+Qzgidmuky5NUZVfEaZqV/g==&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;激活三&lt;/p&gt;
+&lt;div style=&#34;overflow:scroll&#34;&gt;
+
+&lt;pre&gt;&lt;code&gt;A82DEE284F-eyJsaWNlbnNlSWQiOiJBODJERUUyODRGIiwibGljZW5zZWVOYW1lIjoiaHR0cHM6Ly96aGlsZS5pbyIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiJVbmxpbWl0ZWQgbGljZW5zZSB0aWxsIGVuZCBvZiB0aGUgY2VudHVyeS4iLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUlMwIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiV1MiLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSRCIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IlJDIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiREMiLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJEQiIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IlJNIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiRE0iLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJBQyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkRQTiIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkdPIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUFMiLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJDTCIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IlBDIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUlNVIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In1dLCJoYXNoIjoiODkwNzA3MC8wIiwiZ3JhY2VQZXJpb2REYXlzIjowLCJhdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlLCJpc0F1dG9Qcm9sb25nYXRlZCI6ZmFsc2V9-5epo90Xs7KIIBb8ckoxnB/AZQ8Ev7rFrNqwFhBAsQYsQyhvqf1FcYdmlecFWJBHSWZU9b41kvsN4bwAHT5PiznOTmfvGv1MuOzMO0VOXZlc+edepemgpt+t3GUHvfGtzWFYeKeyCk+CLA9BqUzHRTgl2uBoIMNqh5izlDmejIwUHLl39QOyzHiTYNehnVN7GW5+QUeimTr/koVUgK8xofu59Tv8rcdiwIXwTo71LcU2z2P+T3R81fwKkt34evy7kRch4NIQUQUno//Pl3V0rInm3B2oFq9YBygPUdBUbdH/KHROyohZRD8SaZJO6kUT0BNvtDPKF4mCT1saWM38jkw==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ndaik1GD0nyTdqkZgURQZGW+RGxCdBITPXIwpjhhaD0SXGa4XSZBEBoiPdY6XV6pOfUJeyfi9dXsY4MmT0D+sKoST3rSw96xaf9FXPvOjn4prMTdj3Ji3CyQrGWeQU2nzYqFrp1QYNLAbaViHRKuJrYHI6GCvqCbJe0LQ8qqUiVMA9wG/PQwScpNmTF9Kp2Iej+Z5OUxF33zzm+vg/nYV31HLF7fJUAplI/1nM+ZG8K+AXWgYKChtknl3sW9PCQa3a3imPL9GVToUNxc0wcuTil8mqveWcSQCHYxsIaUajWLpFzoO2AhK4mfYBSStAqEjoXRTuj17mo8Q6M2SHOcwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQBonMu8oa3vmNAa4RQP8gPGlX3SQaA3WCRUAj6Zrlk8AesKV1YSkh5D2l+yUk6njysgzfr1bIR5xF8eup5xXc4/G7NtVYRSMvrd6rfQcHOyK5UFJLm+8utmyMIDrZOzLQuTsT8NxFpbCVCfV5wNRu4rChrCuArYVGaKbmp9ymkw1PU6+HoO5i2wU3ikTmRv8IRjrlSStyNzXpnPTwt7bja19ousk56r40SmlmC04GdDHErr0ei2UbjUua5kw71Qn9g02tL9fERI2sSRjQrvPbn9INwRWl5+k05mlKekbtbu2ev2woJFZK4WEXAd/GaAdeZZdumv8T2idDFL7cAirJwcrbfpawPeXr52oKTPnXfi0l5+g9Gnt/wfiXCrPElX6ycTR6iL3GC2VR4jTz6YatT4Ntz59/THOT7NJQhr6AyLkhhJCdkzE2cob/KouVp4ivV7Q3Fc6HX7eepHAAF/DpxwgOrg9smX6coXLgfp0b1RU2u/tUNID04rpNxTMueTtrT8WSskqvaJd3RH8r7cnRj6Y2hltkja82HlpDURDxDTRvv+krbwMr26SB/40BjpMUrDRCeKuiBahC0DCoU/4+ze1l94wVUhdkCfL0GpJrMSCDEK+XEurU18Hb7WT+ThXbkdl6VpFdHsRvqAnhR2g4b+Qzgidmuky5NUZVfEaZqV/g==&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;以上方法禁止&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <category term="jetbtrains" />
+        <category term="phpstorm" />
+        <updated>2019-09-30T16:23:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2018/03/26/6-ge-kai-yuan-de-jia-ting-zi-dong-hua-gong-ju/</id>
+        <title>6 个开源的家庭自动化工具 | Linux 中国</title>
+        <link rel="alternate" href="https://erik.xyz/2018/03/26/6-ge-kai-yuan-de-jia-ting-zi-dong-hua-gong-ju/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_jpg/W9DqKgFsc68kmQVHxs2R2utqYWLOiaHYDEddFzdT4eicGgUKvt59X7syh7JNtwDmB0V0WUG1aNRbPhlUMBEsDkfg/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;用这些开源软件解决方案构建一个更智能的家庭。&lt;/p&gt;
+&lt;p&gt;– Jason Baker&lt;/p&gt;
+&lt;p&gt;有用的原文链接&lt;/p&gt;
+&lt;p&gt;请访问文末的“原文链接”获得可点击的文内链接、全尺寸原图和相关文章。&lt;/p&gt;
+&lt;p&gt;致谢&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+
+&lt;p&gt;编译自　|　&lt;a href=&#34;https://opensource.com/life/17/12/home-automation-tools&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;https://opensource.com/life/17/12/home-automation-tools&lt;/a&gt; 作者　|　Jason Baker 译者　|　qhwdw ? ? ? ? ? 共计翻译：87 篇 贡献时间：124 天&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;用这些开源软件解决方案构建一个更智能的家庭。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;物联网[1] 不仅是一个时髦词，在现实中，自 2016 年我们发布了一篇关于家庭自动化工具的评论文章以来，它也在迅速占领着我们的生活。在 2017，26.5% 的美国家庭[2] 已经使用了一些智能家居技术；预计五年内，这一数字还将翻倍。 随着这些数量持续增加的各种设备的使用，可以帮助你实现对家庭的自动化管理、安保、和监视，在家庭自动化方面，从来没有像现在这样容易和更加吸引人过。不论你是要远程控制你的 HVAC 系统，集成一个家庭影院，保护你的家免受盗窃、火灾、或是其它威胁，还是节省能源或只是控制几盏灯，现在都有无数的设备可以帮到你。 但同时，还有许多用户担心安装在他们家庭中的新设备带来的安全和隐私问题 —— 这是一个很现实也很 严肃的问题[3]。他们想要去控制有谁可以接触到这个重要的系统，这个系统管理着他们的应用程序，记录了他们生活中的点点滴滴。这种想法是可以理解的：毕竟在一个连你的冰箱都是智能设备的今天，你不想要一个基本的保证吗？甚至是如果你授权了设备可以与外界通讯，它是否是仅被授权的人访问它呢？ 对安全的担心[4] 是为什么开源对我们将来使用的互联设备至关重要的众多理由之一。由于源代码运行在他们自己的设备上，完全可以去搞明白控制你的家庭的程序，也就是说你可以查看它的代码，如果必要的话甚至可以去修改它。 虽然联网设备通常都包含它们专有的组件，但是将开源引入家庭自动化的第一步是确保你的设备和这些设备可以共同工作 —— 它们为你提供一个接口 —— 并且是开源的。幸运的是，现在有许多解决方案可供选择，从 PC 到树莓派，你可以在它们上做任何事情。 这里有几个我比较喜欢的。&lt;/p&gt;
+&lt;p&gt;Calaos&lt;/p&gt;
+&lt;p&gt;Calaos[5] 是一个设计为全栈的家庭自动化平台，包含一个服务器应用程序、触摸屏界面、Web 应用程序、支持 iOS 和 Android 的原生移动应用、以及一个运行在底层的预配置好的 Linux 操作系统。Calaos 项目出自一个法国公司，因此它的支持论坛以法语为主，不过大量的介绍资料和文档都已经翻译为英语了。 Calaos 使用的是 GPL[6] v3 的许可证，你可以在 GitHub 上查看它的源代码。&lt;/p&gt;
+&lt;p&gt;Domoticz&lt;/p&gt;
+&lt;p&gt;Domoticz[8] 是一个有大量设备库支持的家庭自动化系统，在它的项目网站上有大量的文档，从气象站到远程控制的烟雾探测器，以及大量的第三方 集成软件[9] 。它使用一个 HTML5 前端，可以从桌面浏览器或者大多数现代的智能手机上访问它，它是一个轻量级的应用，可以运行在像树莓派这样的低功耗设备上。 Domoticz 是用 C++ 写的，使用 GPLv3[10] 许可证。它的 源代码[11] 在 GitHub 上。&lt;/p&gt;
+&lt;p&gt;Home Assistant&lt;/p&gt;
+&lt;p&gt;Home Assistant[12] 是一个开源的家庭自动化平台，它可以轻松部署在任何能运行 Python 3 的机器上，从树莓派到网络存储（NAS），甚至可以使用 Docker 容器轻松地部署到其它系统上。它集成了大量的开源和商业的产品，允许你去连接它们，比如，IFTTT、天气信息、或者你的 Amazon Echo 设备，去控制从锁到灯的各种硬件。 Home Assistant 以 MIT 许可证[13] 发布，它的源代码可以从 GitHub[14] 上下载。&lt;/p&gt;
+&lt;p&gt;MisterHouse&lt;/p&gt;
+&lt;p&gt;从 2016 年起，MisterHouse[15] 取得了很多的进展，我们把它作为一个“可以考虑的另外选择”列在这个清单上。它使用 Perl 脚本去监视任何东西，它可以通过一台计算机来查询或者控制任何可以远程控制的东西。它可以响应语音命令，查询当前时间、天气、位置、以及其它事件，比如去打开灯、唤醒你、记下你喜欢的电视节目、通报呼入的来电、开门报警、记录你儿子上了多长时间的网、如果你女儿汽车超速它也可以告诉你等等。它可以运行在 Linux、macOS、以及 Windows 计算机上，它可以读/写很多的设备，包括安全系统、气象站、来电显示、路由器、机动车位置系统等等。 MisterHouse 使用 GPLv2[16] 许可证，你可以在 GitHub[17] 上查看它的源代码。&lt;/p&gt;
+&lt;p&gt;OpenHAB&lt;/p&gt;
+&lt;p&gt;OpenHAB[18]（开放家庭自动化总线的简称）是在开源爱好者中所熟知的家庭自动化工具，它拥有大量用户的社区以及支持和集成了大量的设备。它是用 Java 写的，OpenHAB 非常轻便，可以跨大多数主流操作系统使用，它甚至在树莓派上也运行的很好。支持成百上千的设备，OpenHAB 被设计为与设备无关的，这使开发者在系统中添加他们的设备或者插件很容易。OpenHAB 也支持通过 iOS 和 Android 应用来控制设备以及设计工具，因此，你可以为你的家庭系统创建你自己的 UI。 你可以在 GitHub 上找到 OpenHAB 的 源代码[19]，它使用 Eclipse 公共许可证[20]。&lt;/p&gt;
+&lt;p&gt;OpenMotics&lt;/p&gt;
+&lt;p&gt;OpenMotics[21] 是一个开源的硬件和软件家庭自动化系统。它的设计目标是为控制设备提供一个综合的系统，而不是从不同的供应商处将各种设备拼接在一起。不像其它的系统主要是为了方便改装而设计的，OpenMotics 专注于硬件解决方案。更多资料请查阅来自 OpenMotics 的后端开发者 Frederick Ryckbosch的 完整文章[22] 。 OpenMotics 使用 GPLv2[16] 许可证，它的源代码可以从 GitHub 上下载。 当然了，我们的选择不仅有这些。许多家庭自动化爱好者使用不同的解决方案，甚至是他们自己动手做。其它用户选择使用单独的智能家庭设备而无需集成它们到一个单一的综合系统中。 如果上面的解决方案并不能满足你的需求，下面还有一些潜在的替代者可以去考虑：&lt;/p&gt;
+&lt;p&gt;◈ EventGhost[24] 是一个开源的（GPL v2[25]）家庭影院自动化工具，它只能运行在 Microsoft Windows PC 上。它允许用户去控制多媒体电脑和连接的硬件，它通过触发宏指令的插件或者定制的 Python 脚本来使用。&lt;/p&gt;
+&lt;p&gt;◈ ioBroker[26] 是一个基于 JavaScript 的物联网平台，它能够控制灯、锁、空调、多媒体、网络摄像头等等。它可以运行在任何可以运行 Node.js 的硬件上，包括 Windows、Linux、以及 macOS，它使用 MIT 许可证[27]。&lt;/p&gt;
+&lt;p&gt;◈ Jeedom[28] 是一个由开源软件（GPL v2[25]）构成的家庭自动化平台，它可以控制灯、锁、多媒体等等。它包含一个移动应用程序（Android 和 iOS），并且可以运行在 Linux PC 上；该公司也销售 hub，它为配置家庭自动化提供一个现成的解决方案。&lt;/p&gt;
+&lt;p&gt;◈ LinuxMCE[29] 标称它是你的多媒体与电子设备之间的“数字粘合剂”。它运行在 Linux（包括树莓派）上，它基于 Pluto 开源 许可证[30] 发布，它可以用于家庭安全、电话（VoIP 和语音信箱）、A/V 设备、家庭自动化、以及玩视频游戏。&lt;/p&gt;
+&lt;p&gt;◈ OpenNetHome[31]，和这一类中的其它解决方案一样，是一个控制灯、报警、应用程序等等的一个开源软件。它基于 Java 和 Apache Maven，可以运行在 Windows、macOS、以及 Linux —— 包括树莓派，它以 GPLv3[32] 许可证发布。&lt;/p&gt;
+&lt;p&gt;◈ Smarthomatic[33] 是一个专注于硬件设备和软件的开源家庭自动化框架，而不仅是用户界面。它基于 GPLv3[34] 许可证，它可用于控制灯、电器、以及空调、检测温度、提醒给植物浇水。&lt;/p&gt;
+&lt;p&gt;现在该轮到你了：你已经准备好家庭自动化系统了吗？或者正在研究去设计一个。你对家庭自动化的新手有什么建议，你会推荐什么样的系统&lt;/p&gt;
+</content>
+        <category term="转载" />
+        <category term="工具" />
+        <updated>2018-03-26T11:08:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/11/27/zui-xin-ban-fan-qiang-liu-lan-qi/</id>
+        <title>最新版翻墙浏览器</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/27/zui-xin-ban-fan-qiang-liu-lan-qi/"/>
+        <content type="html">&lt;p&gt;最近一直在弄谷歌收录和解决网站被浏览器屏蔽问题，无奈得用到谷歌站长工具，国内无法登陆，只有翻墙。有了这款浏览器可以做谷歌推广，去国外网站查询资料，登录谷歌邮箱……   翻墙浏览器工具最新版，下载 &lt;a href=&#34;http://sourceforge.net/projects/erik1314/files/win_all/GAEChrome.zip/download&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34; title=&#34;翻墙浏览器工具&#34;&gt;翻墙浏览器工具&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <category term="翻墙" />
+        <category term="谷歌" />
+        <category term="谷歌搜索" />
+        <updated>2014-11-27T06:58:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/11/15/fang-ke-tong-ji-ji-shu-qi/</id>
+        <title>访客统计计数器</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/15/fang-ke-tong-ji-ji-shu-qi/"/>
+        <content type="html">&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-&amp;#x2F;&amp;#x2F;W3C&amp;#x2F;&amp;#x2F;DTD XHTML 1.0 Transitional&amp;#x2F;&amp;#x2F;EN&amp;quot; &amp;quot;http:&amp;#x2F;&amp;#x2F;www.w3.org&amp;#x2F;TR&amp;#x2F;xhtml1&amp;#x2F;DTD&amp;#x2F;xhtml1-transitional.dtd&amp;quot;&amp;gt; &amp;lt;html xmlns&amp;#x3D;&amp;quot;http:&amp;#x2F;&amp;#x2F;www.w3.org&amp;#x2F;1999&amp;#x2F;xhtml&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;meta http-equiv&amp;#x3D;&amp;quot;Content-Type&amp;quot; content&amp;#x3D;&amp;quot;text&amp;#x2F;html; charset&amp;#x3D;UTF-8&amp;quot; &amp;#x2F;&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;title&amp;gt;访客统计&amp;lt;&amp;#x2F;title&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;&amp;#x2F;head&amp;gt; &amp;lt;body&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;?php &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  if (!@$fp&amp;#x3D;fopen(&amp;quot;count.txt&amp;quot;, &amp;quot;r&amp;quot;))&amp;#123; &amp;#x2F;&amp;#x2F;以只读的方式打开文件，这步可要可不要根据实际情况来确定。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  		echo &amp;quot;count.txt文件创建成功！&amp;lt;br &amp;#x2F;&amp;gt;&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  @$num&amp;#x3D;fgets($fp,12);&amp;#x2F;&amp;#x2F;读取11位数字 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  if ($num&amp;#x3D;&amp;#x3D;&amp;quot;&amp;quot;)$num&amp;#x3D;0;&amp;#x2F;&amp;#x2F;如果文件count.txt内容为空，则初始化为0 $num++; &amp;#x2F;&amp;#x2F;浏览次数加1 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  @fclose($fp); $fp&amp;#x3D;fopen(&amp;quot;count.txt&amp;quot;, &amp;quot;w&amp;quot;);&amp;#x2F;&amp;#x2F;以只读的方式打开文件 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  fwrite($fp, $num); &amp;#x2F;&amp;#x2F;写入加1后结果 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  fclose($fp); &amp;#x2F;&amp;#x2F;关闭文件 echo &amp;quot;您是第&amp;quot;.$num.&amp;quot;位浏览者！&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ?&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;&amp;#x2F;body&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;&amp;#x2F;html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="php" />
+        <category term="代码" />
+        <category term="工具" />
+        <updated>2014-11-15T05:48:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/11/10/zend-studio-11-0-0-11-0-0-10-6-1-po-jie-bu-ding/</id>
+        <title>zend studio 11.0.0/11.0.0/10.6.1 补丁</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/10/zend-studio-11-0-0-11-0-0-10-6-1-po-jie-bu-ding/"/>
+        <content type="html">&lt;p&gt;无意间把我的zend studio 10.6.1升级成11.0.2了，又要重新破解。 悲催，只好百度求助，竟然让我找到了，在此分享一下。 补丁地址：&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8140777&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;http://download.csdn.net/download/w15875510692/8140777&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <updated>2014-11-10T03:41:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/11/01/filezilla-an-zhuang-de-wen-ti-glibcxx-3-4-15/</id>
+        <title>filezilla安装的问题GLIBCXX_3.4.15</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/01/filezilla-an-zhuang-de-wen-ti-glibcxx-3-4-15/"/>
+        <content type="html">&lt;p&gt;运行filezilla时，出现如下错误的提示信息： ./filezilla: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla) 如果是64位系统报错信息如下： ./filezilla: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla) 原因是没有GLIBCXX_3.4.15版本，或是更高的版本。&lt;br&gt;输入命令查询一下结果：&lt;br&gt;[root@localhost ~]# strings /usr/lib/libstdc++.so.6 | grep GLIBCXX GLIBCXX_3.4 GLIBCXX_3.4.1 GLIBCXX_3.4.2 GLIBCXX_3.4.3 GLIBCXX_3.4.4 GLIBCXX_3.4.5 GLIBCXX_3.4.6 GLIBCXX_3.4.7 GLIBCXX_3.4.8 GLIBCXX_3.4.9 GLIBCXX_3.4.10 GLIBCXX_3.4.11 GLIBCXX_3.4.12 GLIBCXX_3.4.13 GLIBCXX_FORCE_NEW GLIBCXX_DEBUG_MESSAGE_LENGTH 我们看到当前GCC版本中的确没有GLIBCXX_3.4.15。&lt;/p&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;p&gt;64位系统命令为： [root@localhost ~]# strings /usr/lib64/libstdc++.so.6 | grep GLIBCXX 下载新版本，地址：&lt;a href=&#34;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_i386.deb&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_i386.deb&lt;/a&gt; 或&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8481469&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;http://download.csdn.net/download/w15875510692/8481469&lt;/a&gt; 64位系统： &lt;a href=&#34;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_amd64.deb&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_amd64.deb&lt;/a&gt; 或&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8471575&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;http://download.csdn.net/download/w15875510692/8471575&lt;/a&gt;&lt;br&gt;假设下载的文件放在/data0/software/。&lt;br&gt;解压：&lt;br&gt;[root@localhost software]# ar -x libstdc++6_4.7.2-5_i386.deb &amp;amp;&amp;amp; tar xvf data.tar.gz&lt;br&gt;解压后出现/data0/software/usr目录；&lt;br&gt;[root@localhost software]# cd  /data0/software/usr/lib/i380-linux-gun&lt;br&gt;[root@localhost i386-linux-gnu]# cp libstdc++.so.6.0.17 /usr/lib&lt;br&gt;[root@localhost i386-linux-gnu]# /usr/lib&lt;br&gt;[root@localhost lib]# rm libstdc++.so.6&lt;br&gt;[root@localhost lib]# ln libstdc++.so.6.0.17 libstdc++.so.6&lt;br&gt;注意64位系统为&lt;br&gt;[root@localhost software]# cd  /data0/software/usr/lib/x86_64-linux-gnu&lt;br&gt;[root@localhost x86_64-linux-gnu]# cp libstdc++.so.6.0.17 /usr/lib64&lt;br&gt;[root@localhost x86_64-linux-gnu]#cd /usr/lib64&lt;br&gt;[root@localhost lib]# rm libstdc++.so.6&lt;br&gt;[root@localhost lib]# ln libstdc++.so.6.0.17 libstdc++.so.6&lt;br&gt;重新建立软连接，我们再输入命令查询一下结果：&lt;br&gt;[root@localhost lib]# strings /usr/lib/libstdc++.so.6 | grep GLIBCXX GLIBCXX_3.4 GLIBCXX_3.4.1 GLIBCXX_3.4.2 GLIBCXX_3.4.3 GLIBCXX_3.4.4 GLIBCXX_3.4.5 GLIBCXX_3.4.6 GLIBCXX_3.4.7 GLIBCXX_3.4.8 GLIBCXX_3.4.9 GLIBCXX_3.4.10 GLIBCXX_3.4.11 GLIBCXX_3.4.12 GLIBCXX_3.4.13 GLIBCXX_3.4.14 GLIBCXX_3.4.15 GLIBCXX_3.4.16 GLIBCXX_3.4.17 GLIBCXX_DEBUG_MESSAGE_LENGTH 已经安装好GLIBCXX_3.4.15啦。 重新切换到filezilla目录并运行，正常啦！./filezilla: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla)已经解决。&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <category term="免费" />
+        <updated>2014-11-01T04:35:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/10/23/fan-qiang-liu-lan-qi/</id>
+        <title>翻墙浏览器</title>
+        <link rel="alternate" href="https://erik.xyz/2014/10/23/fan-qiang-liu-lan-qi/"/>
+        <content type="html">&lt;p&gt;&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2jEpVaVXXXXbSXXXXXXXXXXXX_!!809419769.jpg&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2jEpVaVXXXXbSXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt;最近发现老版本的ChromeGAE不能翻墙了，很郁闷，谷歌站长又不能用了。 无奈百度了一下，找到最新的翻墙软件，感觉还可以吧。在这分享一下。 效果还是不错的 O(∩&lt;em&gt;∩)O哈哈~ [![艾瑞可erik](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX&lt;/a&gt;&lt;/em&gt;!!809419769.jpg)](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX_!!809419769.jpg&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX_!!809419769.jpg&lt;/a&gt;) 下载地址：&lt;a href=&#34;http://pan.baidu.com/s/1hqy1KaS&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;http://pan.baidu.com/s/1hqy1KaS&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <category term="软件" />
+        <updated>2014-10-23T08:29:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/10/06/chang-yong-gong-ju/</id>
+        <title>常用工具</title>
+        <link rel="alternate" href="https://erik.xyz/2014/10/06/chang-yong-gong-ju/"/>
+        <content type="html">&lt;p&gt;memcached 高速缓存工具（linux） wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;libevent-1.4.14b-stable.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;memcached-1.4.20.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34; target=&#34;_blank&#34; target=&#34;_blank&#34; rel=&#34;noopener external nofollow noopener noreferrer&#34;&gt;memcache-2.2.1.tgz&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <category term="软件" />
+        <category term="memcache" />
+        <category term="memcached" />
+        <updated>2014-10-06T10:12:00.000Z</updated>
+    </entry>
+</feed>

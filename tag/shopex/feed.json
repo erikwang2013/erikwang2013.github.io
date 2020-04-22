@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"shopex\" tag",
+    "description": "一只PHP开发的程序猿，偶尔搞搞摄影、画画、写作、顺便睡觉。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2014/10/29/shopex4-5-product-viewpic-xss-lou-dong-he-rao-guo-yan-zheng-ma-lou-dong-xiu-fu/",
+            "url": "https://erik.xyz/2014/10/29/shopex4-5-product-viewpic-xss-lou-dong-he-rao-guo-yan-zheng-ma-lou-dong-xiu-fu/",
+            "title": "shopex4.5 product viewpic XSS漏洞和绕过验证码漏洞修复",
+            "date_published": "2014-10-29T03:21:00.000Z",
+            "content_html": "<p>1.product viewpic XSS漏洞 原因： viewpic处未正确转义，形成漏洞，可以跨站脚本攻击 修复方法： 在core\\shop\\controller\\ctl.product.php，找到function viewpic($goodsid, $selected=’def’)，在其下面一行添加 $goodsid = intval($goodsid); 保存，问题解决 2.绕过验证码问题 原因： shopex后台登录的验证码在第一次检验未通过后，并没有清除第一次存在session中验证码，所以可以通过特定的程序来暴力重试破解。 修复方法： 在core/admin/controller/ctl.passport.php中找到</p>\n<figure class=\"highlight plain\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$_SESSION&#96;&#96;[&#96;&#96;&#39;loginmsg&#39;&#96;&#96;] &#x3D; __(“验证码输入错误!”);</span><br></pre></td></tr></table></figure>\n\n<p>在下面添加</p>\n<figure class=\"highlight plain\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">$_SESSION&#96;&#96;[&#96;&#96;&#39;RANDOM_CODE&#39;&#96;&#96;] &#x3D; ”;</span><br></pre></td></tr></table></figure>\n\n<p>保存，修复成功</p>\n",
+            "tags": [
+                "框架",
+                "shopex"
+            ]
+        }
+    ]
+}

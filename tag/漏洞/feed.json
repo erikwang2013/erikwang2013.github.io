@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"漏洞\" tag",
+    "description": "一只PHP开发的程序猿，偶尔搞搞摄影、画画、写作、顺便睡觉。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2014/12/25/php-unserialize-an-quan-lou-dong/",
+            "url": "https://erik.xyz/2014/12/25/php-unserialize-an-quan-lou-dong/",
+            "title": "PHP “Unserialize()”安全漏洞",
+            "date_published": "2014-12-25T02:27:00.000Z",
+            "content_html": "<p>来源：Linux社区  作者：Linux 受影响系统： PHP PHP &lt; 5.4.36 描述： CVE(CAN) ID: CVE-2014-8142 PHP是广泛使用的通用目的脚本语言，特别适合于Web开发，可嵌入到HTML中。 PHP 5.4.36之前版本，”process_nested_data()”函数在实现上存在释放后重利用漏洞，攻击者通过向”unserialize()” 函数传递构造的输入，利用此漏洞可破坏内存；”var_push_dtor()”函数在实现上存在空指针间接引用漏洞，攻击者通过 向”unserialize()”函数传递构造的输入，利用此漏洞可造成崩溃。成功利用这些漏洞可造成任意代码执行。 &lt;*来源：Stefan Esser 链接：<a href=\"http://secunia.com/advisories/61236/\" target=\"_blank\" target=\"_blank\" rel=\"noopener external nofollow noopener noreferrer\">http://secunia.com/advisories/61236/</a> *&gt; 建议： 厂商补丁： PHP — 目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： PHP: <a href=\"http://php.net/ChangeLog-5.php#5.4.36\" target=\"_blank\" target=\"_blank\" rel=\"noopener external nofollow noopener noreferrer\">http://php.net/ChangeLog-5.php#5.4.36</a> <a href=\"https://bugs.php.net/bug.php?id=68594\" target=\"_blank\" target=\"_blank\" rel=\"noopener external nofollow noopener noreferrer\">https://bugs.php.net/bug.php?id=68594</a> Charlie Eriksen: <a href=\"https://bugs.php.net/bug.php?id=68545\" target=\"_blank\" target=\"_blank\" rel=\"noopener external nofollow noopener noreferrer\">https://bugs.php.net/bug.php?id=68545</a> <a href=\"http://www.linuxidc.com/topicnews.aspx?tid=14\" target=\"_blank\" target=\"_blank\" rel=\"noopener external nofollow noopener noreferrer\" title=\"CentOS\">CentOS</a> 6.3 安装LNMP (PHP 5.4,MyySQL5.6) <a href=\"http://www.linuxidc.com/Linux/2013-04/82069.htm\" target=\"_blank\" target=\"_blank\" rel=\"noopener external nofollow noopener noreferrer\">http://www.linuxidc.com/Linux/2013-04/82069.htm</a> 在部署LNMP的时候遇到Nginx启动失败的2个问题 <a href=\"http://www.linuxidc.com/Linux/2013-03/81120.htm\" target=\"_blank\" target=\"_blank\" rel=\"noopener external nofollow noopener noreferrer\">http://www.linuxidc.com/Linux/2013-03/81120.htm</a> <a href=\"http://www.linuxidc.com/topicnews.aspx?tid=2\" target=\"_blank\" target=\"_blank\" rel=\"noopener external nofollow noopener noreferrer\" title=\"Ubuntu\">Ubuntu</a>安装Nginx php5-fpm MySQL(LNMP环境搭建) <a href=\"http://www.linuxidc.com/Linux/2012-10/72458.htm\" target=\"_blank\" target=\"_blank\" rel=\"noopener external nofollow noopener noreferrer\">http://www.linuxidc.com/Linux/2012-10/72458.htm</a></p>\n",
+            "tags": [
+                "php",
+                "php服务器",
+                "漏洞"
+            ]
+        }
+    ]
+}
