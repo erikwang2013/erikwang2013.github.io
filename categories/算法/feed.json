@@ -1,0 +1,31 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"算法\" categories",
+    "description": "一只PHP开发的程序猿，偶尔搞搞摄影、画画、写作、顺便睡觉。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2019/07/22/ren-yi-jin-e-fen-pei-de-saun-fa/",
+            "url": "https://erik.xyz/2019/07/22/ren-yi-jin-e-fen-pei-de-saun-fa/",
+            "title": "关于任意金额分配10元、5元、2元的算法",
+            "date_published": "2019-07-22T12:14:00.000Z",
+            "content_html": "<p>今天去一家做电商的公司面试，笔试题有个算法，如下：</p>\n<p>输入任意金额，计算分配出10元、5元、2元是否可以分配，如果可以分别分配几张。</p>\n<p>根据需求可知优先分配最高金额，根据最高金额计算出分配值，然后取整数。<a id=\"more\"></a>再用输入金额减去最高金额计算出的整数乘以最高金额，得出余额。一开始我想的是分别计算，嵌套多层if else后来发现不是很友好，还越来越乱。再加上是在a4纸上手写代码，很烦躁。</p>\n<p>晚上回家花了半个小时思索，写了这样的。</p>\n<pre><code>function findMoney($money = 0)\n{\n    $no_text = &quot;不能找回金额为&quot; . $money . &quot;的零钱。&quot;;\n    $text = &quot;可以找回金额为&quot; . $money . &quot;的零钱,其中&quot;;\n    if ($money &lt;= 0) {\n        echo $no_text;\n    }\n    $rand = [10, 5, 2];\n    for ($i = 0; $i &lt; count($rand); $i++) {\n        if ($rand[$i] &gt; 0) {\n            $number = floor($money / $rand[$i]);\n            $money = $money - $number * $rand[$i];\n            $text .= &quot;面额&quot; . $rand[$i] . &quot;元的&quot; . $number . &quot;张&quot; . &quot;,&quot;;\n            if ($money == 1) {\n                echo $no_text . PHP_EOL;\n                exit;\n            }\n        }\n    }\n    echo $text . PHP_EOL;\n}\nfindMoney(16);</code></pre><p><img src=\"/img/201907/2019-07-23_00-06.png\" alt=\"\"></p>\n<p>今天周二，昨晚弄得比较晚，急着睡。下午又想了想感觉不对。<br>输入6或者8的时候并不能分配。<br>对昨天的代码优化一番。</p>\n<p>如下</p>\n<pre><code>function findMoney($money = 0)\n{\n    $no_text = &quot;不能找回金额为&quot; . $money . &quot;的零钱。&quot;;\n    $text = &quot;可以找回金额为&quot; . $money . &quot;的零钱,其中&quot;;\n    if ($money &lt;= 0) {\n        echo $no_text;\n    }\n    $rand = [10, 5, 2];\n    for ($i = 0; $i &lt; count($rand); $i++) {\n        if ($rand[$i] &gt; 0) {\n            $number = floor($money / $rand[$i]);\n            $money = $money - $number * $rand[$i];\n            $text .= &quot;面额&quot; . $rand[$i] . &quot;元的&quot; . $number . &quot;张&quot; . &quot;,&quot;;\n            if ($money == 1) {\n                echo $no_text . PHP_EOL;\n                exit;\n            }\n        }\n    }\n    echo $text . PHP_EOL;\n}\nfindMoney(16);</code></pre><p>后续改进</p>\n<p>如下</p>\n<pre><code>function findMoney($money = 0)\n{\n    //print_r($money);exit;\n    $no_text = &quot;不能找回金额为&quot; . $money . &quot;的零钱。&quot;;\n    $text = &quot;可以找回金额为&quot; . $money . &quot;的零钱,其中&quot;;\n    if ($money &lt;= 0) {\n        echo $no_text;\n    }\n    $rand = [10, 5, 2];\n    $number = 0;\n    for ($i = 0; $i &lt; count($rand); $i++) {\n        if (isset($rand[$i])) {\n            //不能整除的情况\n            if (is_float($money / $rand[$i])) {\n                $number = $money / $rand[$i];\n                if ($money &gt; 0 &amp;&amp; $rand[$i] == 5 &amp;&amp; ceil($number) != $number) {\n                    $text .= &quot;面额&quot; . $rand[$i] . &quot;元的0张&quot; . &quot;,&quot;;\n                    $text .= getChildMoney($money);\n                }else{\n                    $number = is_float($number) == 1 ? floor($number) : $number;\n                    $money = $money - $number * $rand[$i];\n                    $text .= &quot;面额&quot; . $rand[$i] . &quot;元的&quot; . $number . &quot;张&quot; . &quot;,&quot;;\n                }\n            } else {\n                $number = $money / $rand[$i];\n                $money = $money - $number * $rand[$i];\n                $text .= &quot;面额&quot; . $rand[$i] . &quot;元的&quot; . $number . &quot;张&quot; . &quot;,&quot;;\n                if ($money == 0) {\n                    continue;\n                }\n            }\n        }\n    }\n    if ($money &gt; 0) {\n        echo $no_text . PHP_EOL;\n    } else {\n        echo $text . PHP_EOL;\n    }\n}\n\nfunction getChildMoney($money = 0)\n{\n    $number = $money / 2;\n    if (is_float($number)) {\n        return false;\n    }\n    $text = &quot;面额&quot; . $money . &quot;元的&quot; . $number . &quot;张&quot; . &quot;,&quot;;\n    return $text;\n}\n\nfindMoney(34);</code></pre><p>这样就是任意金额<br><img src=\"/img/201907/2019-07-23_20-09.png\" alt=\"\"></p>\n",
+            "tags": [
+                "算法",
+                "任意金额输入",
+                "10元、5元、2元"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2019/03/20/php-hong-bao-suan-fa/",
+            "url": "https://erik.xyz/2019/03/20/php-hong-bao-suan-fa/",
+            "title": "php红包算法",
+            "date_published": "2019-03-20T04:28:00.000Z",
+            "content_html": "<p>今天去参见一个面试，结尾时，面试官问了个红包如何随机分配实现问题。这个确实没搞过，也想不出来。回头自己研究了一下，发现也就这么回事。。<a id=\"more\"></a></p>\n<p>参考文章 <a href=\"https://www.cnblogs.com/dreign/p/4610766.html\" target=\"_blank\" target=\"_blank\" rel=\"noopener external nofollow noopener noreferrer\">https://www.cnblogs.com/dreign/p/4610766.html</a><br>得到一个正态分布的方法，反复比较其他几种，最后选择了这个。<br>分析一下需求如下：</p>\n<blockquote>\n</blockquote>\n<p> 一个用户发100元红包，分成100份。那么每份金额随机。而分成100份的金额之和刚好等于100元。那首先每个用户至少分到0.01元红包，那每个用户分得最大红包是总金额减去分出去用户的金额，剩余用户的平均金额。<br> 由此，便清晰了。那每取一个随机金额肯定在最小金额和最大金额之间。</p>\n<p>上代码试试。</p>\n<blockquote>\n</blockquote>\n<p>假如有100元要分给100个人，100个红包随机生成。代码如下：</p>\n<p><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_160135.jpg\" alt=\"\"></p>\n<blockquote>\n<p>输出结果</p>\n</blockquote>\n<p><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_162419.jpg\" alt=\"\"></p>\n",
+            "tags": [
+                "算法",
+                "php随机数"
+            ]
+        }
+    ]
+}
