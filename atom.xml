@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://erik.xyz/"/>
-  <updated>2020-04-10T21:08:32.099Z</updated>
+  <updated>2020-04-22T00:52:13.637Z</updated>
   <id>https://erik.xyz/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>开源云原生项目</title>
+    <link href="https://erik.xyz/2020/04/22/common-cncf-project/"/>
+    <id>https://erik.xyz/2020/04/22/common-cncf-project/</id>
+    <published>2020-04-22T00:28:00.000Z</published>
+    <updated>2020-04-22T00:52:13.637Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p><a href="https://kubernetes.io" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Kubernetes</a>  容器编排平台</p><ul><li><p><a href="https://github.com/kubernetes/kubernetes" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">github</a></p><p>Kubernetes! 说起云原生应用，怎么能不提 Kubernetes 呢？Google 发明的 Kubernetes 无疑是最著名的基于容器的应用程序的容器编排平台，而且它还是一个开源工具。</p><p>什么是容器编排平台？通常，一个容器引擎本身可以管理几个容器。但是，当你谈论数千个容器和数百个服务时，管理这些容器变得非常复杂。这就是容器编排引擎的用武之地。容器编排引擎通过自动化容器的部署、管理、网络和可用性来帮助管理大量的容器。</p><p>Docker Swarm 和 Mesosphere Marathon 也是容器编排引擎，但是可以肯定地说，Kubernetes 已经赢得了这场比赛（至少现在是这样）。Kubernetes 还催生了像 OKD 这样的容器即服务（CaaS）平台，它是 Kubernetes 的 Origin 社区发行版，并成了 Red Hat OpenShift 的一部分。</p><a id="more"></a></li></ul></li><li><p><a href="https://prometheus.io" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Prometheus</a>    系统和服务监控工具</p><ul><li><p><a href="https://github.com/prometheus/prometheus" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">github</a></p><p>Prometheus 是 2012 年在 SoundCloud 上构建的一个开源的系统监控和告警工具。之后，许多公司和组织都采用了 Prometheus，并且该项目拥有非常活跃的开发者和用户群体。现在，它已经成为一个独立的开源项目，独立于公司之外进行维护。<br>理解 Prometheus 的最简单方法是可视化一个生产系统，该系统需要 24（小时）x 365（天）都可以正常运行。没有哪个系统是完美的，也有减少故障的技术（称为容错系统），但是，如果出现问题，最重要的是尽快发现问题。这就是像 Prometheus 这样的监控工具的用武之地。Prometheus 不仅仅是一个容器监控工具，但它在云原生应用公司中最受欢迎。此外，其他开源监视工具，包括 Grafana，都借助了 Prometheus。</p></li></ul></li><li><p><a href="https://www.envoyproxy.io" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Envoy</a>        边缘和服务代理</p><ul><li><p><a href="https://github.com/envoyproxy/envoy" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">github</a></p><p>Envoy（或 Envoy 代理）是专为云原生应用设计的开源的边缘代理和服务代理。由 Lyft 创建的 Envoy 是为单一服务和应用而设计的高性能的 C++ 开发的分布式代理，同时也是为由大量微服务组成的服务网格架构而设计的通信总线和通用数据平面。Envoy 建立在 Nginx、HAProxy、硬件负载均衡器和云负载均衡器等解决方案的基础上，Envoy 与每个应用相伴（并行）运行，并通过提供平台无关的方式提供通用特性来抽象网络。</p><p>当基础设施中的所有服务流量都经过 Envoy 网格时，很容易就可以通过一致的可观测性来可视化问题域，调整整体性能，并在单个位置添加基础功能。基本上，Envoy 代理是一个可帮助组织为生产环境构建容错系统的服务网格工具。</p><p>服务网格应用有很多替代方案，例如 Uber 的 Linkerd（下面会讨论）和 Istio。Istio 通过将其部署为 Sidecar 并利用了 Mixer 的配置模型，实现了对 Envoy 的扩展。Envoy 的显著特性有：</p><p>◈ 包括所有的“入场筹码(table stakes)（LCTT 译注：引申为基础必备特性）”特性（与 Istio 这样的控制平面组合时）</p><p>◈ 带载运行时 99% 数据可达到低延时</p><p>◈ 可以作为核心的 L3/L4 过滤器，提供了开箱即用的 L7 过滤器</p><p>◈ 支持 gRPC 和 HTTP/2（上行/下行）</p><p>◈ 由 API 驱动，并支持动态配置和热重载</p><p>◈ 重点关注指标收集、跟踪和整体可监测性</p></li></ul></li></ul><ul><li><p><a href="https://coreos.com/rkt/docs/latest" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">rkt</a>        Pod 原生的容器引擎</p><ul><li><p><a href="https://github.com/rkt/rkt" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">github</a></p><p>rkt, 读作“rocket”，是一个 Pod 原生的容器引擎。它有一个命令行接口用来在 Linux 上运行容器。从某种意义上讲，它和其他容器如 Podman、Docker 和 CRI-O 相似。</p></li></ul></li></ul><ul><li><p><a href="https://www.jaegertracing.io" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Jaeger</a>        分布式跟踪系统</p><ul><li><p><a href="https://github.com/jaegertracing/jaeger" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">github</a></p><p>Jaeger 是一个开源的端到端的分布式追踪系统，适用于云端应用。在某种程度上，它是像 Prometheus 这样的监控解决方案。但它有所不同，因为其使用场景有所扩展：</p><p>◈ 分布式事务监控</p><p>◈ 性能和延时优化</p><p>◈ 根因分析</p><p>◈ 服务依赖性分析</p><p>◈ 分布式上下文传播</p></li></ul></li><li><p><a href="https://linkerd.io" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Linkerd</a>    透明服务网格</p><ul><li><p><a href="https://github.com/linkerd/linkerd" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">github</a></p><p>像创建 Envoy 代理的 Lyft 一样，Uber 开发了 Linkerd 开源解决方案用于生产级的服务维护。在某些方面，Linkerd 就像 Envoy 一样，因为两者都是服务网格工具，旨在提供平台级的可观测性、可靠性和安全性，而无需进行配置或代码更改。</p><p>但是，两者之间存在一些细微的差异。尽管 Envoy 和 Linkerd 充当代理并可以通过所连接的服务进行上报，但是 Envoy 并不像 Linkerd 那样被设计为 Kubernetes Ingress 控制器。Linkerd 的显著特点包括：</p><p>◈ 支持多种平台（Docker、Kubernetes、DC/OS、Amazon ECS 或任何独立的机器）</p><p>◈ 内置服务发现抽象，可以将多个系统联合在一起</p><p>◈ 支持 gRPC、HTTP/2 和 HTTP/1.x请 求和所有的 TCP 流量</p></li></ul></li><li><p><a href="https://helm.sh" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Helm</a>        Kubernetes 包管理器</p><ul><li><p><a href="https://github.com/helm/helm" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">github</a></p><p>Helm 基本上就是 Kubernetes 的包管理器。如果你使用过 Apache Maven、Maven Nexus 或类似的服务，你就会理解 Helm 的作用。Helm 可帮助你管理 Kubernetes 应用程序。它使用“Helm Chart”来定义、安装和升级最复杂的 Kubernetes 应用程序。Helm 并不是实现此功能的唯一方法；另一个流行的概念是 Kubernetes Operators，它被 Red Hat OpenShift 4 所使用。</p></li></ul></li><li><p><a href="https://etcd.io" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Etcd</a>        分布式键值存储</p><ul><li><p><a href="https://github.com/etcd-io/etcd" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">github</a></p><p>Etcd 是一个分布式的、可靠的键值存储，用于存储分布式系统中最关键的数据。其主要特性有：</p><p>◈ 定义明确的、面向用户的 API（gRPC）</p><p>◈ 自动 TLS，可选的客户端证书验证</p><p>◈ 速度（可达每秒 10,000 次写入）</p><p>◈ 可靠性（使用 Raft 实现分布式）</p><p>Etcd 是 Kubernetes 和许多其他技术的默认的内置数据存储方案。也就是说，它很少独立运行或作为单独的服务运行；相反，它以集成到 Kubernetes、OKD/OpenShift 或其他服务中的形式来运作。还有一个 etcd Operator 可以用来管理其生命周期并解锁其 API 管理功能</p></li></ul></li><li><p><a href="https://github.com/cri-o/cri-o/blob/master/awesome.md" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">CRI-O</a>    专门用于 Kubernetes 的轻量级运行时环境</p><ul><li><p><a href="https://github.com/cri-o/cri-o" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">github</a></p><p>CRI-O 是 Kubernetes 运行时接口的 OCI 兼容实现。CRI-O 用于各种功能，包括：</p><p>◈ 使用 runc（或遵从 OCI 运行时规范的任何实现）和 OCI 运行时工具运行</p><p>◈ 使用容器/镜像进行镜像管理</p><p>◈ 使用容器/存储来存储和管理镜像层</p><p>◈ 通过容器网络接口（CNI）来提供网络支持</p></li></ul></li></ul><p>原文章地址：<a href="https://mp.weixin.qq.com/s/t4bXqZLtvm_Xc1RiPq7rEw" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">https://mp.weixin.qq.com/s/t4bXqZLtvm_Xc1RiPq7rEw</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://kubernetes.io&quot; target=&quot;_blank&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noopener noreferrer&quot;&gt;Kubernetes&lt;/a&gt;  容器编排平台&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/kubernetes/kubernetes&quot; target=&quot;_blank&quot; target=&quot;_blank&quot; rel=&quot;noopener external nofollow noopener noreferrer&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kubernetes! 说起云原生应用，怎么能不提 Kubernetes 呢？Google 发明的 Kubernetes 无疑是最著名的基于容器的应用程序的容器编排平台，而且它还是一个开源工具。&lt;/p&gt;
+&lt;p&gt;什么是容器编排平台？通常，一个容器引擎本身可以管理几个容器。但是，当你谈论数千个容器和数百个服务时，管理这些容器变得非常复杂。这就是容器编排引擎的用武之地。容器编排引擎通过自动化容器的部署、管理、网络和可用性来帮助管理大量的容器。&lt;/p&gt;
+&lt;p&gt;Docker Swarm 和 Mesosphere Marathon 也是容器编排引擎，但是可以肯定地说，Kubernetes 已经赢得了这场比赛（至少现在是这样）。Kubernetes 还催生了像 OKD 这样的容器即服务（CaaS）平台，它是 Kubernetes 的 Origin 社区发行版，并成了 Red Hat OpenShift 的一部分。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="转载" scheme="https://erik.xyz/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+      <category term="开源云" scheme="https://erik.xyz/tags/%E5%BC%80%E6%BA%90%E4%BA%91/"/>
+    
+      <category term="容器" scheme="https://erik.xyz/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+      <category term="cncf" scheme="https://erik.xyz/tags/cncf/"/>
+    
+      <category term="监控" scheme="https://erik.xyz/tags/%E7%9B%91%E6%8E%A7/"/>
+    
+  </entry>
   
   <entry>
     <title>openvas的小故事</title>
@@ -3631,11 +3666,11 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
       <category term="转载" scheme="https://erik.xyz/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
+      <category term="js" scheme="https://erik.xyz/tags/js/"/>
+    
       <category term="css" scheme="https://erik.xyz/tags/css/"/>
     
       <category term="web" scheme="https://erik.xyz/tags/web/"/>
-    
-      <category term="js" scheme="https://erik.xyz/tags/js/"/>
     
   </entry>
   
@@ -3692,9 +3727,9 @@ alert(document.getElementById(&amp;quot;foo&amp;quot;).onerror);
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -3783,9 +3818,9 @@ alert(document.getElementById(&amp;quot;foo&amp;quot;).onerror);
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -3844,9 +3879,9 @@ alert(document.getElementById(&amp;quot;foo&amp;quot;).onerror);
       <category term="转载" scheme="https://erik.xyz/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
-      <category term="css" scheme="https://erik.xyz/tags/css/"/>
-    
       <category term="php" scheme="https://erik.xyz/tags/php/"/>
+    
+      <category term="css" scheme="https://erik.xyz/tags/css/"/>
     
       <category term="web" scheme="https://erik.xyz/tags/web/"/>
     
@@ -4011,9 +4046,9 @@ alert(document.getElementById(&amp;quot;foo&amp;quot;).onerror);
       <category term="转载" scheme="https://erik.xyz/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
-      <category term="php" scheme="https://erik.xyz/tags/php/"/>
-    
       <category term="js" scheme="https://erik.xyz/tags/js/"/>
+    
+      <category term="php" scheme="https://erik.xyz/tags/php/"/>
     
       <category term="flash" scheme="https://erik.xyz/tags/flash/"/>
     
@@ -4040,9 +4075,9 @@ alert(document.getElementById(&amp;quot;foo&amp;quot;).onerror);
       <category term="转载" scheme="https://erik.xyz/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -4176,9 +4211,9 @@ function readable_random_string($length = 6){
       <category term="转载" scheme="https://erik.xyz/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="可穿戴设备" scheme="https://erik.xyz/tags/%E5%8F%AF%E7%A9%BF%E6%88%B4%E8%AE%BE%E5%A4%87/"/>
     
@@ -4266,9 +4301,9 @@ function readable_random_string($length = 6){
     
       <category term="php" scheme="https://erik.xyz/tags/php/"/>
     
-      <category term="web" scheme="https://erik.xyz/tags/web/"/>
-    
       <category term="php服务器" scheme="https://erik.xyz/tags/php%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="web" scheme="https://erik.xyz/tags/web/"/>
     
   </entry>
   
@@ -4500,9 +4535,9 @@ function readable_random_string($length = 6){
       <category term="转载" scheme="https://erik.xyz/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="phone" scheme="https://erik.xyz/tags/phone/"/>
     
@@ -4665,9 +4700,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -4724,9 +4759,9 @@ function readable_random_string($length = 6){
       <category term="css" scheme="https://erik.xyz/categories/css/"/>
     
     
-      <category term="css" scheme="https://erik.xyz/tags/css/"/>
-    
       <category term="php" scheme="https://erik.xyz/tags/php/"/>
+    
+      <category term="css" scheme="https://erik.xyz/tags/css/"/>
     
   </entry>
   
@@ -4752,9 +4787,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -4782,9 +4817,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -4812,9 +4847,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -4842,9 +4877,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -4872,9 +4907,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -5172,9 +5207,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -5697,9 +5732,9 @@ function readable_random_string($length = 6){
       <category term="Developer" scheme="https://erik.xyz/categories/Developer/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
   </entry>
   
@@ -5722,9 +5757,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
@@ -5851,9 +5886,9 @@ function readable_random_string($length = 6){
       <category term="生活手记" scheme="https://erik.xyz/categories/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/"/>
     
     
-      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
-    
       <category term="随笔" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="说说" scheme="https://erik.xyz/tags/%E8%AF%B4%E8%AF%B4/"/>
     
       <category term="随笔吐槽" scheme="https://erik.xyz/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/"/>
     
