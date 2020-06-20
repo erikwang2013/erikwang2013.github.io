@@ -191,8 +191,8 @@
             "date_published": "2015-09-05T11:46:00.000Z",
             "content_html": "<p><a href=\"http://tietuku.com/f23c99b541e6483e\" target=\"_blank\" target=\"_blank\" rel=\"noopener external nofollow noopener noreferrer\"><img src=\"http://i3.tietuku.com/f23c99b541e6483e.jpg\" alt=\"\"></a><br>apt-get clean &amp;&amp; apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get dist-upgrade -y<br><strong>更新、升级和发行版升级</strong> </p>\n<p>apt-get install alsa-utils -y     <strong>确保启动时发出声音</strong> </p>\n<p>apt-get install unrar unace rar unrar p7zip zip unzip p7zip-full p7zip-rar file-roller -y     <strong>安装File Roller（归档管理器）</strong> <a id=\"more\"></a></p>\n<p>apt-get install tor    <strong>安装Tor</strong> </p>\n<p>apt-get install filezilla filezilla-common -y   <strong>安装Filezilla FTP客户端</strong></p>\n<p>apt-get install htop nethogs -y     <strong>安装HTOP和NetHogs</strong> </p>\n<p>apt-get install fcitx-table-wbpy ttf-wqy-microhei ttf-wqy-zenhei      <strong>安装中文小企鹅输入法</strong> </p>\n<p>apt-get install gtk-recordmydesktop recordmydesktop remmina -y     <strong>安装Recordmydesktop和Reminna远程桌面客户端</strong></p>\n<p>apt-get upgrade  升级已存在的包 出现无法所锁定目录错误执行以下命令 </p>\n<p>sudo rm /var/cache/apt/archives/lock</p>\n<p>sudo rm /var/lib/dpkg/lock proxychains msfconsole </p>\n<p>用proxychains程序,启动msfconsole <a href=\"http://www.turnkeylinux.org\" target=\"_blank\" target=\"_blank\" rel=\"noopener external nofollow noopener noreferrer\">www.turnkeylinux.org</a>   </p>\n<p>基于乌班图的linux发行版，他把一些好的开源程序集成到完备可用的解决方案中。</p>\n",
             "tags": [
-                "kali",
-                "linux"
+                "linux",
+                "kali"
             ]
         },
         {
