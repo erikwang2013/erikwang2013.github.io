@@ -108,7 +108,7 @@ var _hmt = _hmt || [];
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">
     			文章
     			
-    			(213)
+    			(214)
     			
     			</a>
     			
@@ -373,6 +373,139 @@ var _hmt = _hmt || [];
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-shang-chuan-jin-du-zhi-chi-Upload-progress-in-sessions" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/19/shang-chuan-jin-du-zhi-chi-upload-progress-in-sessions/">上传进度支持(Upload progress in sessions)</a>
+    </h1>
+  
+
+        
+        <a href="/2014/12/19/shang-chuan-jin-du-zhi-chi-upload-progress-in-sessions/" class="archive-article-date">
+  	<time datetime="2014-12-19T13:08:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-19</time>
+</a>
+            <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">829字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">3分</span>
+      </span>
+    </span>
+    
+    
+</div>
+
+          
+        <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>作者: <a href="http://www.laruence.com" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Laruence</a></li>
+</ul>
+<p>文件上传进度反馈, 这个需求在当前是越来越普遍, 比如大附件邮件. 在PHP5.4以前, 我们可以通过<a href="http://www.php.net/manual/zh/apc.configuration.php#ini.apc.rfc1867" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">APC</a>提供的功能来实现. 或者使用PECL扩展<a href="http://pecl.php.net/package/uploadprogress" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">uploadprogress</a>来实现. 虽然说, 它们能很好的解决现在的问题, 但是也有很明显的不足:</p>
+<ul>
+<li><p>1. 他们都需要额外安装(我们并没有打算把APC加入PHP5.4)</p>
+</li>
+<li><p>2. 它们都使用本地机制来存储这些信息, APC使用共享内存, 而uploadprogress使用文件系统(不考虑NFS), 这在多台前端机的时候会造成麻烦.</p>
+        
+        <!--
+          <a class="article-more-a" href="/2014/12/19/shang-chuan-jin-du-zhi-chi-upload-progress-in-sessions/#more">more >></a>
+          -->
+        
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">php服务器</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">php函数</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-category icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/转载//" class="article-tag-list-link color3">转载</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2014/12/19/shang-chuan-jin-du-zhi-chi-upload-progress-in-sessions/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-zai-yi-ci-bu-yao-shi-yong-include-require-once" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -1493,129 +1626,6 @@ var _hmt = _hmt || [];
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2014/12/06/zhuan-shu-ju-ku-biao-fen-ge-ji-shu-qian-xi/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-onethink-zhong-lu-jing-qu-diao-home" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12/03/onethink-zhong-lu-jing-qu-diao-home/">onethink中路径去掉home</a>
-    </h1>
-  
-
-        
-        <a href="/2014/12/03/onethink-zhong-lu-jing-qu-diao-home/" class="archive-article-date">
-  	<time datetime="2014-12-03T10:33:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-03</time>
-</a>
-            <!-- 需要添加的位置 -->
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">259字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-    
-    
-</div>
-
-          
-        <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-
-        
-<p>最近一直在开发一个中型项目，就用onethink了，后来发现路径优化问题老是困扰，反复百度查询后，今早突然变好了。 反复分析一下原因，原来是没清楚缓存。 具体更改方法如下 首先找到公共config.php文件，在项目Application\Common\Conf下，在 代码如下 </p>
-<pre><code>&apos;MODULE\_ALLOW\_LIST&apos;  =&gt; array(&apos;Home&apos;,&apos;Admin&apos;), 
-&apos;URL\_ROUTER\_ON&apos; =&gt; true, 
-&apos;URL\_ROUTE\_RULES&apos;=&gt;array( 
-&apos;index&apos; =&gt; &apos;Index/index&apos;, //首页 
-&apos;article/:id\\d$&apos; =&gt; &apos;Article/detail&apos;, //文章页 
-&apos;:category$&apos;=&gt; &apos;Article/lists&apos; //列表页 ),</code></pre><p>然后在找到URL_MODEL把后面的3改为2，同时复制这一行代码 粘贴到Application\Home\Conf下的confi.php 代码如下 </p>
-<pre><code>&apos;URL\_MODEL&apos;            =&gt; 2, //URL模式         </code></pre><p>然后清空缓存，缓存位置在项目Runtime\Cache\Home文件下删除所有的文件 刷新浏览器后路径中home不见了。 笔者在这想说onethink框架还是不错的，基于thinkphp3.2开发的，非常便捷。</p>
-
-      
-
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">onethink</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-category icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/php//" class="article-tag-list-link color4">php</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2014/12/03/onethink-zhong-lu-jing-qu-diao-home/">展开全文 >></a>
         </p>
       
 
@@ -3293,6 +3303,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">邮箱服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">linux命令</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">linux命令汇总</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">常用命令</a>
               </li>
             
             <div class="clearfix"></div>

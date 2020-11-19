@@ -108,7 +108,7 @@ var _hmt = _hmt || [];
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">
     			文章
     			
-    			(213)
+    			(214)
     			
     			</a>
     			
@@ -373,6 +373,129 @@ var _hmt = _hmt || [];
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-onethink-zhong-lu-jing-qu-diao-home" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/03/onethink-zhong-lu-jing-qu-diao-home/">onethink中路径去掉home</a>
+    </h1>
+  
+
+        
+        <a href="/2014/12/03/onethink-zhong-lu-jing-qu-diao-home/" class="archive-article-date">
+  	<time datetime="2014-12-03T10:33:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-03</time>
+</a>
+            <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">259字</span>
+      </span>
+    </span>
+
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text">  阅读时长: </span>
+        <span class="post-count">1分</span>
+      </span>
+    </span>
+    
+    
+</div>
+
+          
+        <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+
+        
+<p>最近一直在开发一个中型项目，就用onethink了，后来发现路径优化问题老是困扰，反复百度查询后，今早突然变好了。 反复分析一下原因，原来是没清楚缓存。 具体更改方法如下 首先找到公共config.php文件，在项目Application\Common\Conf下，在 代码如下 </p>
+<pre><code>&apos;MODULE\_ALLOW\_LIST&apos;  =&gt; array(&apos;Home&apos;,&apos;Admin&apos;), 
+&apos;URL\_ROUTER\_ON&apos; =&gt; true, 
+&apos;URL\_ROUTE\_RULES&apos;=&gt;array( 
+&apos;index&apos; =&gt; &apos;Index/index&apos;, //首页 
+&apos;article/:id\\d$&apos; =&gt; &apos;Article/detail&apos;, //文章页 
+&apos;:category$&apos;=&gt; &apos;Article/lists&apos; //列表页 ),</code></pre><p>然后在找到URL_MODEL把后面的3改为2，同时复制这一行代码 粘贴到Application\Home\Conf下的confi.php 代码如下 </p>
+<pre><code>&apos;URL\_MODEL&apos;            =&gt; 2, //URL模式         </code></pre><p>然后清空缓存，缓存位置在项目Runtime\Cache\Home文件下删除所有的文件 刷新浏览器后路径中home不见了。 笔者在这想说onethink框架还是不错的，基于thinkphp3.2开发的，非常便捷。</p>
+
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">onethink</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-category icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/php//" class="article-tag-list-link color4">php</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2014/12/03/onethink-zhong-lu-jing-qu-diao-home/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-php-lei-de-sheng-ming" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -1451,130 +1574,6 @@ var _hmt = _hmt || [];
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2014/11/21/gao-jiao-hui/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-wu-zhen-hu-lian-wang-da-hui" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/11/19/wu-zhen-hu-lian-wang-da-hui/">乌镇互联网大会</a>
-    </h1>
-  
-
-        
-        <a href="/2014/11/19/wu-zhen-hu-lian-wang-da-hui/" class="archive-article-date">
-  	<time datetime="2014-11-19T12:47:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-11-19</time>
-</a>
-            <!-- 需要添加的位置 -->
-        <!-- 开始添加字数统计-->
-        
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">295字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
-      </span>
-    </span>
-    
-    
-</div>
-
-          
-        <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-
-        
-<p>乌镇，中国历史上的千年古镇。旅游的好地方，咋看和互联网大会不找边啊，几千年留下的历史建筑同现在科技结合在一起岸，给太多的疑惑了。跟着这些疑惑先去百度一下。 <img src="http://i1.tietuku.com/2d6c4e9df4ed6e87.png" alt="百度截图"> 百度只给了这个简单的介绍，介绍后面提到互联网大会。还是有点晕乎，到底为什么在乌镇举行互联网大会，为什么不是北上广深任一城市？后来才发现，原来乌镇是全国最早、最快运用互联网、互联网经济最发达的地方，当然也有主办方有意让互联网大会坐落在一个小镇上。第一节世界互联网大会就这么在乌镇开始了，没有柏油路，没有玻璃窗，所有的原貌依旧，一种古老的气息同店铺里扫描支付、石板路上的无线高速wi-fi显得格外有意思。 互联网大会将聚集十几个国家地区的公司代表，为期三天，共同探讨世界互联网发展。第一届就这么开始了。</p>
-
-      
-
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">说说</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">随笔吐槽</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-category icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/生活手记//" class="article-tag-list-link color5">生活手记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2014/11/19/wu-zhen-hu-lian-wang-da-hui/">展开全文 >></a>
         </p>
       
 
@@ -3252,6 +3251,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">邮箱服务器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">linux命令</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">linux命令汇总</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">常用命令</a>
               </li>
             
             <div class="clearfix"></div>
