@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)/slim/start/web-servers.html -->
+<html lang="zh-CN" class="wf-brandongrotesque-n7-active wf-brandongrotesque-n3-active wf-active translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Web 服务器 - slim框架</title>
+                <meta name="description" content="Slim 是一个 PHP 微型框架，可帮助您快速编写简单但功能强大的 Web 应用程序和 API。Slim 的核心是一个调度程序，它接收 HTTP 请求、调用适当的回调例程并返回 HTTP 响应。就是这样。">
+        <meta name="keywords" content="slim中文文档,slim,slimframework,Slim Framework,/slim,Slim中文文档,Slim">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Web Servers">
+        <meta property="og:site_name" content="Slim Framework">
+        <meta property="og:url" content="/slim/start/web-servers.html">
+        <meta property="og:description" content="">
+        <meta property="og:type" content="website">
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <link rel="stylesheet" href="./web-servers._files/all.css">
+        <link rel="stylesheet" href="./web-servers._files/docsearch.min.css">
+        <link rel="shortcut icon" href="assets/images/favicon.png">
+        <link rel="stylesheet" href="./web-servers._files/font-awesome.min.css">
+        <link href="./web-servers._files/css" rel="stylesheet">
+        <script id="twitter-wjs" src="./web-servers._files/widgets.js"></script><script type="text/javascript" async="" src="./web-servers._files/ga.js"></script><script src="./web-servers._files/yjz4fyo.js"></script>
+        <style type="text/css">.tk-brandon-grotesque{font-family:"brandon-grotesque",sans-serif;}</style><style type="text/css">@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/a417c9/0000000000000000000132e3/23/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/a417c9/0000000000000000000132e3/23/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/a417c9/0000000000000000000132e3/23/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/9569d1/0000000000000000000132dd/23/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/9569d1/0000000000000000000132dd/23/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/9569d1/0000000000000000000132dd/23/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load();}catch(e){}</script>
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-19430723-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="./web-servers._files/m=el_main_css"></head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">切换导航</font></font></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo" href="https://www.slimframework.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">slim</font></font></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://erik.xyz"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾瑞可erik</font></font></a></li>
+                    <li class="active"><a href="https://www.slimframework.com/docs/v4/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">slim文档</font></font></a></li>
+                        <li><a href="/slim/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中文文档</font></font></a></li>
+                    </ul>
+
+
+
+
+
+
+
+
+                                <div class="navbar-documentation-version-badge">
+                                    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">v4 文档</font></font></span>
+                                </div>
+
+
+
+                </div>
+            </div>
+        </nav>
+
+<div class="wrapper docs">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="toc-nav-toggle">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tocNav" aria-expanded="false" aria-controls="tocNav"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                        切换导航
+                    </font></font></button>
+                </div>
+                <div class="collapse toc-nav-collapse" id="tocNav">
+
+
+
+                    <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></h3>
+<div class="svg-icons" style="height: 0; width: 0; position: absolute; visibility: hidden">
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="sbx-icon-clear-3" viewBox="0 0 40 40"><path d="M16.228 20L1.886 5.657 0 3.772 3.772 0l1.885 1.886L20 16.228 34.343 1.886 36.228 0 40 3.772l-1.886 1.885L23.772 20l14.342 14.343L40 36.228 36.228 40l-1.885-1.886L20 23.772 5.657 38.114 3.772 40 0 36.228l1.886-1.885L16.228 20z" fill-rule="evenodd"></path></symbol>
+        <symbol id="sbx-icon-search-13" viewBox="0 0 40 40"><path d="M26.806 29.012a16.312 16.312 0 0 1-10.427 3.746C7.332 32.758 0 25.425 0 16.378 0 7.334 7.333 0 16.38 0c9.045 0 16.378 7.333 16.378 16.38 0 3.96-1.406 7.593-3.746 10.426L39.547 37.34c.607.608.61 1.59-.004 2.203a1.56 1.56 0 0 1-2.202.004L26.807 29.012zm-10.427.627c7.322 0 13.26-5.938 13.26-13.26 0-7.324-5.938-13.26-13.26-13.26-7.324 0-13.26 5.936-13.26 13.26 0 7.322 5.936 13.26 13.26 13.26z" fill-rule="evenodd"></path></symbol>
+    </svg>
+</div>
+<form novalidate="novalidate" onsubmit="return false;" class="searchbox" style="visibility:hidden;height:0;margin-bottom:30px">
+    <div role="search" class="searchbox__wrapper">
+        <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input id="docsearch" type="search" name="search" placeholder="在文档中搜索" autocomplete="off" required="required" class="searchbox__input ds-input" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-label="搜索输入" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+        <button type="submit" title="提交您的搜索查询。" class="searchbox__submit">
+            <svg role="img" aria-label="搜索">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-13"></use>
+            </svg>
+        </button>
+        <button type="reset" title="清除搜索查询。" class="searchbox__reset hide">
+            <svg role="img" aria-label="重置">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+            </svg>
+        </button>
+    </div>
+</form>
+
+
+
+                        <h3 class="toc-title active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开始</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/home.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">家</font></font></a></li>
+
+
+                                <li><a href="/slim/start/installation.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a></li>
+
+
+                                <li><a href="/slim/start/upgrade.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">升级指南</font></font></a></li>
+
+
+                                <li><a href="/slim/start/web-servers.html" class="active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络服务器</font></font></a></li>
+
+
+                                <li><a href="/slim/deployment/deployment.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概念</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/concepts/life-cycle.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应用生命周期</font></font></a></li>
+
+
+                                <li><a href="/slim/concepts/value-objects.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PSR-7</font></font></a></li>
+
+
+                                <li><a href="/slim/concepts/middleware.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中间件</font></font></a></li>
+
+
+                                <li><a href="/slim/concepts/di.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">依赖容器</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应用程序</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/objects/application.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/application.html#advanced-notices-and-warnings-handling"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通知和警告处理</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要求</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/objects/request.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/request.html#the-request-method"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">方法</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/request.html#the-request-headers"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标头</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/request.html#the-request-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">身体</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/request.html#uploaded-files"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上传的文件</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/request.html#request-helpers"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">帮手</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/request.html#route-object"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路由对象</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">响应</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/objects/response.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/response.html#the-response-status"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">地位</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/response.html#the-response-headers"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标头</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/response.html#the-response-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">身体</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/response.html#returning-json"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JSON</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路由</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/objects/routing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#how-to-create-routes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建路线</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-callbacks"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回调</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-strategies"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">攻略</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-placeholders"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">占位符</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-names"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">名称</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-groups"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">团体</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-middleware"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中间件</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-expressions-caching"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">缓存</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#container-resolution"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">容器分辨率</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打包中间件</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/middleware/routing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路由</font></font></a></li>
+
+
+                                <li><a href="/slim/middleware/error-handling.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">错误处理</font></font></a></li>
+
+
+                                <li><a href="/slim/middleware/method-overriding.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">方法覆盖</font></font></a></li>
+
+
+                                <li><a href="/slim/middleware/output-buffering.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输出缓冲</font></font></a></li>
+
+
+                                <li><a href="/slim/middleware/body-parsing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">正文解析</font></font></a></li>
+
+
+                                <li><a href="/slim/middleware/content-length.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容长度</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">烹饪书</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/cookbook/route-patterns.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尾随/在路线</font></font></a></li>
+
+
+                                <li><a href="/slim/cookbook/retrieving-current-route.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检索当前路线</font></font></a></li>
+
+
+                                <li><a href="/slim/cookbook/database-doctrine.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 Doctrine 与 Slim 结合使用</font></font></a></li>
+
+
+                                <li><a href="/slim/cookbook/enable-cors.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启用 CORS</font></font></a></li>
+
+
+                                <li><a href="/slim/cookbook/uploading-files.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 POST 表单上传文件</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">附加组件</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/features/templates.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></a></li>
+
+                        </ul>
+
+
+
+
+                </div>
+            </div>
+
+            <div class="col-md-8 docs-content">
+                <h1 class="page-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络服务器</font></font></h1>
+                <div class="edit-panel" style="margin: 0 0 1em 0;">
+                    <a href="https://github.com/slimphp/Slim-Website/tree/gh-pages/docs/v4/start/web-servers.md" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-github"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑这个页面</font></font></a>
+                </div>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通常使用前端控制器模式将 Web 服务器接收到的适当 HTTP 请求汇集到单个 PHP 文件中。</font><font style="vertical-align: inherit;">下面的说明解释了如何告诉您的 Web 服务器将 HTTP 请求发送到您的 PHP 前端控制器文件。</font></font></p>
+
+<h2 id="php-built-in-server"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PHP内置服务器</font></font></h2>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在终端中运行以下命令以启动 localhost Web 服务器，假设</font></font><code class="language-plaintext highlighter-rouge">./public/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是带有文件的公共可访问目录</font></font><code class="language-plaintext highlighter-rouge">index.php</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash">cd public<span class="token operator">/</span>
+php <span class="token operator">-</span>S localhost<span class="token punctuation">:</span><span class="token number">8888</span>
+</code></pre></div></div>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果你不使用</font></font><code class="language-plaintext highlighter-rouge">index.php</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作为你的入口点然后适当地改变。</font></font></p>
+
+<blockquote>
+  <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">警告：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内置网络服务器旨在帮助应用程序开发。</font><font style="vertical-align: inherit;">它还可用于测试目的或用于在受控环境中运行的应用程序演示。</font><font style="vertical-align: inherit;">它无意成为功能齐全的 Web 服务器。</font><font style="vertical-align: inherit;">它不应该在公共网络上使用。</font></font></p>
+</blockquote>
+
+<h2 id="apache-configuration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿帕奇配置</font></font></h2>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">确保</font></font><code class="language-plaintext highlighter-rouge">mod_rewrite</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装并启用了 Apache 模块。</font><font style="vertical-align: inherit;">为了启用，</font></font><code class="language-plaintext highlighter-rouge">mod_rewrite</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以在终端中键入以下命令：</font></font></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash">sudo a2enmod rewrite<font></font>
+sudo a2enmod actions<font></font>
+</code></pre></div></div>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">确保您的</font></font><code class="language-plaintext highlighter-rouge">.htaccess</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code class="language-plaintext highlighter-rouge">index.php</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件位于同一个可公开访问的目录中。</font><font style="vertical-align: inherit;">该</font></font><code class="language-plaintext highlighter-rouge">.htaccess</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件应包含以下代码：</font></font></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash">RewriteEngine On<font></font>
+RewriteCond <span class="token operator">%</span><span class="token punctuation">{</span>REQUEST_FILENAME<span class="token punctuation">}</span> <span class="token operator">!</span><span class="token operator">-</span>f<font></font>
+RewriteCond <span class="token operator">%</span><span class="token punctuation">{</span>REQUEST_FILENAME<span class="token punctuation">}</span> <span class="token operator">!</span><span class="token operator">-</span>d<font></font>
+RewriteRule <span class="token operator">^</span> index<span class="token punctuation">.</span>php <span class="token punctuation">[</span>QSA<span class="token punctuation">,</span>L<span class="token punctuation">]</span>
+</code></pre></div></div>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为确保该</font></font><code class="language-plaintext highlighter-rouge">public/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录不会出现在 URL 中，您应该</font><font style="vertical-align: inherit;">
+使用以下内部重定向规则在目录</font></font><code class="language-plaintext highlighter-rouge">.htaccess</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上方添加第二个文件：</font></font><code class="language-plaintext highlighter-rouge">public/</code><font style="vertical-align: inherit;"></font></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash">RewriteEngine on<font></font>
+RewriteRule <span class="token operator">^</span>$ public<span class="token operator">/</span> <span class="token punctuation">[</span>L<span class="token punctuation">]</span>
+RewriteRule <span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token operator">*</span><span class="token punctuation">)</span> public<span class="token operator">/</span><span class="token property">$1</span> <span class="token punctuation">[</span>L<span class="token punctuation">]</span>
+</code></pre></div></div>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这些</font></font><code class="language-plaintext highlighter-rouge">.htaccess</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件需要重写 URL。</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">确保启用 Apache 的</font></font><code class="language-plaintext highlighter-rouge">mod_rewrite</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模块，并且您的虚拟主机配置了该</font></font><code class="language-plaintext highlighter-rouge">AllowOverride</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">选项，以便</font></font><code class="language-plaintext highlighter-rouge">.htaccess</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以使用重写规则：为此，</font></font><code class="language-plaintext highlighter-rouge">/etc/apache2/apache2.conf</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">必须在具有 root 权限的编辑器中打开文件。</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将</font></font><code class="language-plaintext highlighter-rouge">&lt;Directory ...&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">指令从更改</font></font><code class="language-plaintext highlighter-rouge">AllowOveride None</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为</font></font><code class="language-plaintext highlighter-rouge">AllowOveride All</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+
+<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例子</font></font></strong></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash"><span class="token operator">&lt;</span>Directory <span class="token operator">/</span>var<span class="token operator">/</span>www<span class="token operator">/</span><span class="token operator">&gt;</span><font></font>
+    Options Indexes FollowSymLinks<font></font>
+    AllowOverride All<font></font>
+    Require all granted<font></font>
+<span class="token operator">&lt;</span><span class="token operator">/</span>Directory<span class="token operator">&gt;</span>
+</code></pre></div></div>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最后，必须重新加载 Apache 的配置。</font><font style="vertical-align: inherit;">要重新启动 Apache Web 服务器，请输入：</font></font></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash">sudo service apache2 restart
+</code></pre></div></div>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此命令适用于大多数 Debian/Ubuntu 变体。</font><font style="vertical-align: inherit;">对于所有其他 Linux 发行版，请查阅特定 Linux 发行版的文档以了解如何重新启动 Apache。</font></font></p>
+
+<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在子目录中运行</font></font></strong></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此示例假定前端控制器位于</font></font><code class="language-plaintext highlighter-rouge">public/index.php</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要将子目录“重定向”到前端控制器，请
+在目录</font></font><code class="language-plaintext highlighter-rouge">.htaccess</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上方创建第二个文件</font></font><code class="language-plaintext highlighter-rouge">public/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第二个</font></font><code class="language-plaintext highlighter-rouge">.htaccess</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件应包含以下代码：</font></font></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash">RewriteEngine on<font></font>
+RewriteRule <span class="token operator">^</span>$ public<span class="token operator">/</span> <span class="token punctuation">[</span>L<span class="token punctuation">]</span>
+RewriteRule <span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token operator">*</span><span class="token punctuation">)</span> public<span class="token operator">/</span><span class="token property">$1</span> <span class="token punctuation">[</span>L<span class="token punctuation">]</span>
+</code></pre></div></div>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还可以设置基本路径，以便路由器可以将来自浏览器的 URL 与路由注册中设置的路径相匹配。</font><font style="vertical-align: inherit;">这是通过</font></font><code class="language-plaintext highlighter-rouge">setBasePath()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">方法完成的。</font></font></p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight language-php"><code class=" language-php"><span class="token variable">$app</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setBasePath<span class="token punctuation">(</span></span><span class="token string">'/myapp'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div>
+
+<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阅读更多</font></font></strong></p>
+
+<ul>
+  <li><a href="https://akrabat.com/running-slim-4-in-a-subdirectory/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在子目录中运行 Slim 4</font></font></a></li>
+  <li><a href="https://github.com/selective-php/basepath"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Slim 4 基本路径中间件</font></font></a></li>
+</ul>
+
+<h2 id="nginx-configuration"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nginx 配置</font></font></h2>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是域的 Nginx 虚拟主机配置示例</font></font><code class="language-plaintext highlighter-rouge">example.com</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">它在端口 80 上侦听入站 HTTP 连接。它假设 PHP-FPM 服务器在端口 9123 上运行。您应该</font><font style="vertical-align: inherit;">使用您自己的值更新</font></font><code class="language-plaintext highlighter-rouge">server_name</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code class="language-plaintext highlighter-rouge">error_log</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、
+</font></font><code class="language-plaintext highlighter-rouge">access_log</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和指令。</font></font><code class="language-plaintext highlighter-rouge">root</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该</font></font><code class="language-plaintext highlighter-rouge">root</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">指令是您应用程序的公共文档根目录的路径；</font><font style="vertical-align: inherit;">你的 Slim 应用程序的
+</font></font><code class="language-plaintext highlighter-rouge">index.php</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">前端控制器文件应该在这个目录中。</font></font></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash">server <span class="token punctuation">{</span>
+    listen <span class="token number">80</span><span class="token punctuation">;</span>
+    server_name example<span class="token punctuation">.</span>com<span class="token punctuation">;</span>
+    index index<span class="token punctuation">.</span>php<span class="token punctuation">;</span>
+    error_log <span class="token operator">/</span>path<span class="token operator">/</span>to<span class="token operator">/</span>example<span class="token punctuation">.</span>error<span class="token punctuation">.</span>log<span class="token punctuation">;</span>
+    access_log <span class="token operator">/</span>path<span class="token operator">/</span>to<span class="token operator">/</span>example<span class="token punctuation">.</span>access<span class="token punctuation">.</span>log<span class="token punctuation">;</span>
+    root <span class="token operator">/</span>path<span class="token operator">/</span>to<span class="token operator">/</span>public<span class="token punctuation">;</span><font></font>
+<font></font>
+    location <span class="token operator">/</span> <span class="token punctuation">{</span>
+        try_files <span class="token property">$uri</span> <span class="token operator">/</span>index<span class="token punctuation">.</span>php<span class="token property">$is_args</span><span class="token property">$args</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><font></font>
+<font></font>
+    location <span class="token operator">~</span> \<span class="token punctuation">.</span>php <span class="token punctuation">{</span>
+        try_files <span class="token property">$uri</span> <span class="token operator">=</span><span class="token number">404</span><span class="token punctuation">;</span>
+        fastcgi_split_path_info <span class="token operator">^</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token operator">+</span>\<span class="token punctuation">.</span>php<span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token operator">/</span><span class="token punctuation">.</span><span class="token operator">+</span><span class="token punctuation">)</span>$<span class="token punctuation">;</span>
+        include fastcgi_params<span class="token punctuation">;</span>
+        fastcgi_param SCRIPT_FILENAME <span class="token property">$document_root</span><span class="token property">$fastcgi_script_name</span><span class="token punctuation">;</span>
+        fastcgi_param SCRIPT_NAME <span class="token property">$fastcgi_script_name</span><span class="token punctuation">;</span>
+        fastcgi_index index<span class="token punctuation">.</span>php<span class="token punctuation">;</span>
+        fastcgi_pass <span class="token number">127.0</span><span class="token punctuation">.</span><span class="token number">0.1</span><span class="token punctuation">:</span><span class="token number">9123</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div>
+
+<h2 id="caddy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">球童</font></font></h2>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Caddy 配置位于</font></font><code class="language-plaintext highlighter-rouge">/etc/caddy/Caddyfile</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">Caddy 需要</font></font><code class="language-plaintext highlighter-rouge">php-fpm</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并运行 FPM 服务器。</font><font style="vertical-align: inherit;">假设 FPM 套接字位于</font></font><code class="language-plaintext highlighter-rouge">/var/run/php/php-fpm.sock</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，而您的应用程序位于</font></font><code class="language-plaintext highlighter-rouge">/var/www</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，以下配置应该开箱即用。</font></font></p>
+
+<h3 id="http-configuration-listening-for-any-request"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">监听任何请求的 HTTP 配置</font></font></h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash"><span class="token punctuation">:</span><span class="token number">80</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true"># Set-up the FCGI location
+</span>        php_fastcgi unix<span class="token operator">/</span><span class="token operator">/</span>var<span class="token operator">/</span>run<span class="token operator">/</span>php<span class="token operator">/</span>php<span class="token operator">-</span>fpm<span class="token punctuation">.</span>sock
+        <span class="token comment" spellcheck="true"># Set this path to your site's directory.
+</span>        root <span class="token operator">*</span> <span class="token operator">/</span>var<span class="token operator">/</span>www<span class="token operator">/</span>public
+<span class="token punctuation">}</span>
+</code></pre></div></div>
+
+<h3 id="https-configuration-with-self-signed-certificate"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用自签名证书的 HTTPS 配置</font></font></h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash"><span class="token punctuation">:</span><span class="token number">443</span> <span class="token punctuation">{</span><font></font>
+        tls internal<font></font>
+        <span class="token comment" spellcheck="true"># Set-up the FCGI location
+</span>        php_fastcgi unix<span class="token operator">/</span><span class="token operator">/</span>var<span class="token operator">/</span>run<span class="token operator">/</span>php<span class="token operator">/</span>php<span class="token operator">-</span>fpm<span class="token punctuation">.</span>sock
+        <span class="token comment" spellcheck="true"># Set this path to your site's directory.
+</span>        root <span class="token operator">*</span> <span class="token operator">/</span>var<span class="token operator">/</span>www<span class="token operator">/</span>public
+<span class="token punctuation">}</span>
+</code></pre></div></div>
+
+<h2 id="iis"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">信息系统</font></font></h2>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">确保</font></font><code class="language-plaintext highlighter-rouge">Web.config</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code class="language-plaintext highlighter-rouge">index.php</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件位于同一公共可访问目录中。</font><font style="vertical-align: inherit;">该</font></font><code class="language-plaintext highlighter-rouge">Web.config</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件应包含以下代码：</font></font></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash"><span class="token operator">&lt;</span><span class="token operator">?</span>xml version<span class="token operator">=</span><span class="token string">"1.0"</span> encoding<span class="token operator">=</span><span class="token string">"UTF-8"</span><span class="token operator">?</span><span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>configuration<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>system<span class="token punctuation">.</span>webServer<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>rewrite<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>rules<span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span>rule name<span class="token operator">=</span><span class="token string">"slim"</span> patternSyntax<span class="token operator">=</span><span class="token string">"Wildcard"</span><span class="token operator">&gt;</span>
+                    <span class="token operator">&lt;</span>match url<span class="token operator">=</span><span class="token string">"*"</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+                    <span class="token operator">&lt;</span>conditions<span class="token operator">&gt;</span>
+                        <span class="token operator">&lt;</span>add input<span class="token operator">=</span><span class="token string">"{REQUEST_FILENAME}"</span> matchType<span class="token operator">=</span><span class="token string">"IsFile"</span> negate<span class="token operator">=</span><span class="token string">"true"</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+                        <span class="token operator">&lt;</span>add input<span class="token operator">=</span><span class="token string">"{REQUEST_FILENAME}"</span> matchType<span class="token operator">=</span><span class="token string">"IsDirectory"</span> negate<span class="token operator">=</span><span class="token string">"true"</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+                    <span class="token operator">&lt;</span><span class="token operator">/</span>conditions<span class="token operator">&gt;</span>
+                    <span class="token operator">&lt;</span>action type<span class="token operator">=</span><span class="token string">"Rewrite"</span> url<span class="token operator">=</span><span class="token string">"index.php"</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+                <span class="token operator">&lt;</span><span class="token operator">/</span>rule<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span><span class="token operator">/</span>rules<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>rewrite<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>system<span class="token punctuation">.</span>webServer<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>configuration<span class="token operator">&gt;</span>
+</code></pre></div></div>
+
+<h2 id="lighttpd"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lighttpd</font></font></h2>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您的 lighttpd 配置文件应该包含此代码（以及您可能需要的其他设置）。</font><font style="vertical-align: inherit;">此代码需要 lighttpd &gt;= 1.4.24。</font></font></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash">url<span class="token punctuation">.</span>rewrite<span class="token operator">-</span><span class="token keyword">if</span><span class="token operator">-</span>not<span class="token operator">-</span>file <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">"(.*)"</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">"/index.php/<span class="token property">$0</span>"</span><span class="token punctuation">)</span>
+</code></pre></div></div>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这假定 Slim</font></font><code class="language-plaintext highlighter-rouge">index.php</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">位于项目的根文件夹中（www root）。</font></font></p>
+
+<h2 id="run-from-a-sub-directory"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从子目录运行</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想从服务器根目录中的子目录运行您的 Slim 应用程序而不是创建虚拟主机，您可以</font></font><code class="language-plaintext highlighter-rouge">$app-&gt;setBasePath('path-to-your-app')</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在</font></font><code class="language-plaintext highlighter-rouge">AppFactory::create()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">假设您的服务器的根目录是</font></font><code class="language-plaintext highlighter-rouge">/var/www/html/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并且您的 Slim 应用程序的路径是</font></font><code class="language-plaintext highlighter-rouge">/var/www/html/my-slim-app</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以将基本路径设置为</font></font><code class="language-plaintext highlighter-rouge">$app-&gt;setBasePath('/my-slim-app')</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight language-php"><code class=" language-php"><span class="token delimiter">&lt;?php</span>
+<span class="token keyword">use</span> <span class="token package">Slim<span class="token punctuation">\</span>Factory<span class="token punctuation">\</span>AppFactory</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Slim<span class="token punctuation">\</span>Middleware<span class="token punctuation">\</span>OutputBufferingMiddleware</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">
+// ...
+</span><span class="token variable">$app</span> <span class="token operator">=</span> <span class="token scope">AppFactory<span class="token punctuation">::</span></span><span class="token function">create<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$app</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setBasePath<span class="token punctuation">(</span></span><span class="token string">'/my-slim-app'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">
+// ...
+</span><span class="token variable">$app</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">run<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div>
+
+
+                <nav>
+                    <ul class="nav pager">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <li class="previous">
+                                            <a href="/slim/start/upgrade.html" rel="prev"><i class="fa fa-arrow-left"></i> <small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门：</font></font></small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">升级指南</font></font></a>
+                                        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="next">
+                                        <a href="/slim/deployment/deployment.html" rel="next"><small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开始：</font></font></small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font><i class="fa fa-arrow-right"></i></a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <footer class="site-footer">
+    <p><font style="vertical-align: inherit;"></font><br>
+        <a href="http://joshlockhart.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由Josh Lockhart</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、
+         </font></font><a href="https://www.donielsmith.com/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Andrew Smith</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、
+         </font></font><a href="http://akrabat.com/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rob Allen</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、
+         </font></font><a href="http://www.lgse.com/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pierre Bérubé</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和
+        </font><a href="https://github.com/orgs/slimphp/people" target="_blank"><font style="vertical-align: inherit;">Slim Framework 团队</font></a><font style="vertical-align: inherit;">
+        创建和维护</font></font><a href="https://github.com/orgs/slimphp/people" target="_blank"><font style="vertical-align: inherit;"></font></a>
+    </p>
+       <p>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <span id="busuanzi_container_page_pv">&nbsp;本文总阅读量<span id="busuanzi_value_page_pv">0</span>次</span>
+</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="margin: 0; padding-top: 20px">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="9YRVXHRZT6H3L">
+        <input type="image" src="./web-servers._files/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - 更安全、更轻松的在线支付方式！">
+        <img alt="" border="0" src="./web-servers._files/pixel.gif" width="1" height="1">
+    </form>
+</footer>
+
+    </div>
+</div>
+        <script src="./web-servers._files/jquery.min.js"></script>
+        <script src="./web-servers._files/bootstrap.min.js"></script>
+        <script src="./web-servers._files/production.min.js"></script>
+
+        <script src="./web-servers._files/docsearch.min.js"></script>
+        <script>
+          docsearch({
+            apiKey: '8ed5262aecf5240c6d66dbba260f3e51',
+            appId: 'KS0N5YSBFY',
+            indexName: 'slim-docs',
+            inputSelector: '#docsearch',
+            debug: true,
+            transformData: function (suggestions) {
+              for (var i = 0; i < suggestions.length; i++) {
+                var suggestion = suggestions[i];
+
+                var docVersion = null;
+                var urlFragments = suggestion.url.split("/");
+                if (urlFragments.length >= 3 && urlFragments[1] === "docs") {
+                  docVersion = urlFragments[2];
+                }
+
+                if (suggestion.hierarchy.lvl0 === null) {
+                  suggestions[i].hierarchy.lvl0 = docVersion ? "Slim " + docVersion + " - " + suggestion.title : suggestion.title
+                }
+              }
+              return suggestions;
+            },
+          });
+        </script>
+
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./web-servers._files/widget_iframe.2b2d73daf636805223fb11d48f3e94f7.html" title="Twitter 设置 iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./web-servers._files/saved_resource.html"></iframe></body></html>

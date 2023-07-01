@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)/zola/content/syntax-highlighting/ -->
+<html lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Everything you need to make a static site engine in one binary.">
+               <meta name="author" content="Vincent Prouillet">
+        <meta name="description" content="Zola 是一个静态站点生成器 (SSG)，类似于Hugo、Pelican和Jekyll（有关 SSG 的完整列表，请参阅Jamstack）。它用Rust编写并使用Tera模板引擎，类似于Jinja2、Django 模板、Liquid和Twig">
+        <meta name="keywords" content="Zola中文文档,zola,Zola,https://erik.xyz/zola,zola中文文档">
+        <title>语法高亮 |  Zola</title>
+        <link rel="stylesheet" href="./syntax-highlighting_files/site.css">
+        <link rel="icon" href="https://www.getzola.org/favicon.ico">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="./syntax-highlighting_files/m=el_main_css"></head>
+    <body>
+
+        <header>
+            <nav class="">
+                <a class="white" href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola中文文档</font></font></a>
+                <a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾瑞可erik</font></font></a>
+                <a class="header__logo white" href="https://www.getzola.org/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola </font></font></a>
+                <a class="white" href="https://www.getzola.org/documentation/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docs</font></font></a>
+                <a class="white" href="https://github.com/getzola/zola" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></a>
+
+                <div class="search-container">
+                    <input id="search" type="search" placeholder="🔎 搜索文档">
+
+                    <div class="search-results">
+                        <div class="search-results__items"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content content--reversed">
+
+
+<div class="documentation">
+    <aside class="documentation__sidebar">
+        <ul>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/installation.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/cli-usage.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CLI 用法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/directory-structure.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录结构</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/configuration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/content/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/section.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/page.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/shortcodes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简码</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/linking.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内部链接和深度链接</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/table-of-contents.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></a>
+                        </li>
+
+                        <li class="active">
+                            <a href="/zola/content/syntax-highlighting.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语法高亮</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/search.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/sass.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sass</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/image-processing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图像处理</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/multilingual.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多语言网站</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/templates/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pages-sections.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">章节和页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pagination.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/feeds.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提要</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/sitemap.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站地图</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/robots.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">机器人.txt</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/404.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">404错误页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/archive.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">档案</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主题</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/themes/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/installing-and-using-themes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装和使用主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/creating-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/extending-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展主题</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/deployment/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/sourcehut.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sourcehut 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/netlify.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络化</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/github-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/gitlab-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitLab 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/edgio.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Edgio</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/vercel.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vercel</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/cloudflare-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cloudflare 页面</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+        </ul>
+    </aside>
+    <div class="documentation__content">
+
+    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语法高亮</font></font></h1>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola 带有内置的语法高亮，但你首先需要在</font></font><a href="/zola/getting-started/configuration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中启用它。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">完成此操作后，Zola 将自动突出显示您内容中的所有代码块。</font><font style="vertical-align: inherit;">Markdown 中的代码块如下所示：</font></font></p>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>```rust
+</span><span>let highlight = true;
+</span><span>```
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以替换</font></font><code>rust</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为另一种语言或不放置任何内容以使文本被解释为纯文本。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下是受支持语言及其简称的完整列表：</font></font></p>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>- ActionScript -&gt; ["as"]
+</span><span>- Advanced CSV -&gt; ["csv", "tsv"]
+</span><span>- AppleScript -&gt; ["applescript", "script editor"]
+</span><span>- ASP -&gt; ["asa"]
+</span><span>- Assembly x86 (NASM) -&gt; ["asm", "inc", "nasm"]
+</span><span>- AWK -&gt; ["awk"]
+</span><span>- Batch File -&gt; ["bat", "cmd"]
+</span><span>- BibTeX -&gt; ["bib"]
+</span><span>- Bourne Again Shell (bash) -&gt; [".bash_aliases", ".bash_completions", ".bash_functions", ".bash_login", ".bash_logout", ".bash_profile", ".bash_variables", ".bashrc", ".ebuild", ".eclass", ".profile", ".textmate_init", ".zlogin", ".zlogout", ".zprofile", ".zshenv", ".zshrc", "PKGBUILD", "ash", "bash", "sh", "zsh"]
+</span><span>- C -&gt; ["c", "h"]
+</span><span>- C# -&gt; ["cs", "csx"]
+</span><span>- C++ -&gt; ["C", "c++", "cc", "cp", "cpp", "cxx", "h", "h++", "hh", "hpp", "hxx", "inl", "ipp"]
+</span><span>- Clojure -&gt; ["clj", "cljc", "cljs", "edn"]
+</span><span>- ClojureC -&gt; ["boot", "clj", "cljc", "cljs", "cljx"]
+</span><span>- CMake -&gt; ["CMakeLists.txt", "cmake"]
+</span><span>- CMake C Header -&gt; ["h.in"]
+</span><span>- CMake C++ Header -&gt; ["h++.in", "hh.in", "hpp.in", "hxx.in"]
+</span><span>- CMakeCache -&gt; ["CMakeCache.txt"]
+</span><span>- Crystal -&gt; ["cr"]
+</span><span>- CSS -&gt; ["css", "css.erb", "css.liquid"]
+</span><span>- D -&gt; ["d", "di"]
+</span><span>- Dart -&gt; ["dart"]
+</span><span>- Diff -&gt; ["diff", "patch"]
+</span><span>- Dockerfile -&gt; ["Dockerfile", "dockerfile"]
+</span><span>- EDN -&gt; ["edn"]
+</span><span>- Elixir -&gt; ["ex", "exs"]
+</span><span>- Elm -&gt; ["elm"]
+</span><span>- Erlang -&gt; ["Emakefile", "emakefile", "erl", "escript", "hrl"]
+</span><span>- F# -&gt; ["fs", "fsi", "fsx"]
+</span><span>- Fortran (Fixed Form) -&gt; ["F", "F77", "FOR", "FPP", "f", "f77", "for", "fpp"]
+</span><span>- Fortran (Modern) -&gt; ["F03", "F08", "F90", "F95", "f03", "f08", "f90", "f95"]
+</span><span>- Fortran Namelist -&gt; ["namelist"]
+</span><span>- Friendly Interactive Shell (fish) -&gt; ["fish"]
+</span><span>- GDScript (Godot Engine) -&gt; ["gd"]
+</span><span>- Generic Config -&gt; [".dircolors", ".gitattributes", ".gitignore", ".gitmodules", ".inputrc", "Doxyfile", "cfg", "conf", "config", "dircolors", "gitattributes", "gitignore", "gitmodules", "ini", "inputrc", "mak", "mk", "pro"]
+</span><span>- Git Attributes -&gt; [".gitattributes", "attributes", "gitattributes"]
+</span><span>- Git Commit -&gt; ["COMMIT_EDITMSG", "MERGE_MSG", "TAG_EDITMSG"]
+</span><span>- Git Config -&gt; [".gitconfig", ".gitmodules", "gitconfig"]
+</span><span>- Git Ignore -&gt; [".gitignore", "exclude", "gitignore"]
+</span><span>- Git Link -&gt; [".git"]
+</span><span>- Git Log -&gt; ["gitlog"]
+</span><span>- Git Mailmap -&gt; [".mailmap", "mailmap"]
+</span><span>- Git Rebase Todo -&gt; ["git-rebase-todo"]
+</span><span>- GLSL -&gt; ["comp", "frag", "fs", "fsh", "fshader", "geom", "glsl", "gs", "gsh", "gshader", "tesc", "tese", "vert", "vs", "vsh", "vshader"]
+</span><span>- Go -&gt; ["go"]
+</span><span>- GraphQL -&gt; ["gql", "graphql", "graphqls"]
+</span><span>- Graphviz (DOT) -&gt; ["DOT", "dot", "gv"]
+</span><span>- Groovy -&gt; ["Jenkinsfile", "gradle", "groovy", "gvy"]
+</span><span>- Handlebars -&gt; ["handlebars", "handlebars.html", "hbr", "hbrs", "hbs", "hdbs", "hjs", "mu", "mustache", "rac", "stache", "template", "tmpl"]
+</span><span>- Haskell -&gt; ["hs"]
+</span><span>- HTML -&gt; ["htm", "html", "shtml", "xhtml"]
+</span><span>- HTML (ASP) -&gt; ["asp"]
+</span><span>- HTML (EEx) -&gt; ["html.eex", "html.leex"]
+</span><span>- HTML (Erlang) -&gt; ["yaws"]
+</span><span>- HTML (Jinja2) -&gt; ["htm.j2", "html.j2", "xhtml.j2", "xml.j2"]
+</span><span>- HTML (Rails) -&gt; ["erb", "html.erb", "rails", "rhtml"]
+</span><span>- HTML (Tcl) -&gt; ["adp"]
+</span><span>- Java -&gt; ["bsh", "java"]
+</span><span>- Java Properties -&gt; ["properties"]
+</span><span>- Java Server Page (JSP) -&gt; ["jsp"]
+</span><span>- JavaScript -&gt; ["htc", "js"]
+</span><span>- JavaScript (Rails) -&gt; ["js.erb"]
+</span><span>- Jinja2 -&gt; ["j2", "jinja", "jinja2"]
+</span><span>- JSON -&gt; ["Pipfile.lock", "ipynb", "json", "sublime-build", "sublime-color-scheme", "sublime-commands", "sublime-completions", "sublime-keymap", "sublime-macro", "sublime-menu", "sublime-mousemap", "sublime-project", "sublime-settings", "sublime-theme"]
+</span><span>- Julia -&gt; ["jl"]
+</span><span>- Kotlin -&gt; ["kt", "kts"]
+</span><span>- LaTeX -&gt; ["ltx", "tex"]
+</span><span>- Less -&gt; ["css.less", "less"]
+</span><span>- Linker Script -&gt; ["ld"]
+</span><span>- Lisp -&gt; ["cl", "clisp", "el", "fasl", "l", "lisp", "lsp", "mud", "scm", "ss"]
+</span><span>- Literate Haskell -&gt; ["lhs"]
+</span><span>- lrc -&gt; ["lrc", "lyric"]
+</span><span>- Lua -&gt; ["lua"]
+</span><span>- Makefile -&gt; ["GNUmakefile", "Makefile", "Makefile.am", "Makefile.in", "OCamlMakefile", "mak", "make", "makefile", "makefile.am", "makefile.in", "mk"]
+</span><span>- Markdown -&gt; ["markdn", "markdown", "md", "mdown"]
+</span><span>- MATLAB -&gt; ["matlab"]
+</span><span>- MiniZinc (MZN) -&gt; ["dzn", "mzn"]
+</span><span>- NAnt Build File -&gt; ["build"]
+</span><span>- Nim -&gt; ["nim", "nims"]
+</span><span>- Nix -&gt; ["nix"]
+</span><span>- Objective-C -&gt; ["h", "m"]
+</span><span>- Objective-C++ -&gt; ["M", "h", "mm"]
+</span><span>- OCaml -&gt; ["ml", "mli"]
+</span><span>- OCamllex -&gt; ["mll"]
+</span><span>- OCamlyacc -&gt; ["mly"]
+</span><span>- Pascal -&gt; ["dpr", "p", "pas"]
+</span><span>- Perl -&gt; ["pc", "pl", "pm", "pmc", "pod", "t"]
+</span><span>- PHP -&gt; ["php", "php3", "php4", "php5", "php7", "phps", "phpt", "phtml"]
+</span><span>- Plain Text -&gt; ["txt"]
+</span><span>- PowerShell -&gt; ["ps1", "psd1", "psm1"]
+</span><span>- Protocol Buffer -&gt; ["proto", "protodevel"]
+</span><span>- Protocol Buffer (TEXT) -&gt; ["pb.txt", "pbtxt", "proto.text", "prototxt", "textpb"]
+</span><span>- PureScript -&gt; ["purs"]
+</span><span>- Python -&gt; ["SConscript", "SConstruct", "Sconstruct", "Snakefile", "bazel", "bzl", "cpy", "gyp", "gypi", "pxd", "pxd.in", "pxi", "pxi.in", "py", "py3", "pyi", "pyw", "pyx", "pyx.in", "rpy", "sconstruct", "vpy", "wscript"]
+</span><span>- R -&gt; ["R", "Rprofile", "r"]
+</span><span>- Racket -&gt; ["rkt"]
+</span><span>- Rd (R Documentation) -&gt; ["rd"]
+</span><span>- Reason -&gt; ["re", "rei"]
+</span><span>- Regular Expression -&gt; ["re"]
+</span><span>- Regular Expressions (Elixir) -&gt; ["ex.re"]
+</span><span>- reStructuredText -&gt; ["rest", "rst"]
+</span><span>- Ruby -&gt; ["Appfile", "Appraisals", "Berksfile", "Brewfile", "Cheffile", "Deliverfile", "Fastfile", "Gemfile", "Guardfile", "Podfile", "Rakefile", "Rantfile", "Scanfile", "Snapfile", "Thorfile", "Vagrantfile", "capfile", "cgi", "config.ru", "fcgi", "gemspec", "irbrc", "jbuilder", "podspec", "prawn", "rabl", "rake", "rb", "rbx", "rjs", "ruby.rail", "simplecov", "thor"]
+</span><span>- Ruby Haml -&gt; ["haml", "sass"]
+</span><span>- Ruby on Rails -&gt; ["builder", "rxml"]
+</span><span>- Rust -&gt; ["rs"]
+</span><span>- Sass -&gt; ["sass"]
+</span><span>- Scala -&gt; ["sbt", "sc", "scala"]
+</span><span>- SCSS -&gt; ["scss"]
+</span><span>- SQL -&gt; ["ddl", "dml", "sql"]
+</span><span>- SQL (Rails) -&gt; ["erbsql", "sql.erb"]
+</span><span>- srt -&gt; ["srt", "subrip"]
+</span><span>- Stylus -&gt; ["styl", "stylus"]
+</span><span>- SWI-Prolog -&gt; ["pro"]
+</span><span>- Swift -&gt; ["swift"]
+</span><span>- Tcl -&gt; ["tcl"]
+</span><span>- TeX -&gt; ["cls", "sty"]
+</span><span>- Textile -&gt; ["textile"]
+</span><span>- TOML -&gt; ["Cargo.lock", "Gopkg.lock", "Pipfile", "tml", "toml"]
+</span><span>- TypeScript -&gt; ["ts"]
+</span><span>- TypeScriptReact -&gt; ["tsx"]
+</span><span>- VimL -&gt; ["vim"]
+</span><span>- XML -&gt; ["dtml", "opml", "rng", "rss", "svg", "tld", "xml", "xsd", "xslt"]
+</span><span>- YAML -&gt; ["sublime-syntax", "yaml", "yml"]
+</span><span>- Zig -&gt; ["zig"]
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：由于 JavaScript 语法的一些问题，将改用 TypeScript 语法。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想突出显示不在此列表中的语言，请在</font></font><a href="https://github.com/getzola/zola"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola repo</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上打开一个问题或一个拉取请求。</font><font style="vertical-align: inherit;">或者，</font></font><code>extra_syntaxes_and_themes</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置选项可用于添加额外的语法（和主题）文件。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您的站点源布局如下：</font></font></p>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>.
+</span><span>├── config.toml
+</span><span>├── content/
+</span><span>│&nbsp;&nbsp; └── ...
+</span><span>├── static/
+</span><span>│&nbsp;&nbsp; └── ...
+</span><span>├── syntaxes/
+</span><span>│&nbsp;&nbsp; ├── Sublime-Language1/
+</span><span>│&nbsp;&nbsp; │&nbsp;&nbsp; └── lang1.sublime-syntax
+</span><span>│&nbsp;&nbsp; └── lang2.sublime-syntax
+</span><span>└── templates/
+</span><span>    └── ...
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">你会设置你</font></font><code>extra_syntaxes_and_themes</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的</font></font><code>["syntaxes", "syntaxes/Sublime-Language1"]</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加载</font></font><code>lang1.sublime-syntax</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>lang2.sublime-syntax</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p><font style="vertical-align: inherit;"></font><a href="/zola/getting-started/configuration/#syntax-highlighting"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以在配置页面</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上看到可用主题的列表</font><font style="vertical-align: inherit;">。</font></font></p>
+<h2 id="inline-vs-classed-highlighting"><a class="zola-anchor" href="/zola/content/syntax-highlighting/#inline-vs-classed-highlighting" aria-label="锚链接：inline-vs-classed-highlighting"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内联 VS 分类高亮</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果你使用像这样的高亮方案</font></font></p>
+<pre data-lang="toml" style="background-color:#383838;color:#e6e1dc;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#e8bf6a;">highlight_theme </span><span>= </span><span style="color:#c1be91;">"base16-ocean-dark"
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于像这样的代码块</font></font></p>
+<pre data-lang="md" style="background-color:#383838;color:#e6e1dc;" class="language-md "><code class="language-md" data-lang="md"><span>```</span><span style="color:#6d9cbe;">rs
+</span><span>let highlight = true;
+</span><span>```
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">你得到直接编码在 html 文件中的颜色。</font></font></p>
+<pre data-lang="html" style="background-color:#383838;color:#e6e1dc;" class="language-html "><code class="language-html" data-lang="html"><span>&lt;</span><span style="color:#e8bf6a;">pre class</span><span style="color:#86c20e;">=</span><span>"</span><span style="color:#c1be91;">language-rs</span><span>" </span><span style="color:#e8bf6a;">style</span><span style="color:#86c20e;">=</span><span>"</span><span style="font-style:italic;color:#6e9cbe;">background-color</span><span>:</span><span style="color:#6d9cbe;">#2b303b</span><span>;"&gt;
+</span><span>    &lt;</span><span style="color:#e8bf6a;">code class</span><span style="color:#86c20e;">=</span><span>"</span><span style="color:#c1be91;">language-rs</span><span>"&gt;
+</span><span>        &lt;</span><span style="color:#e8bf6a;">span style</span><span style="color:#86c20e;">=</span><span>"</span><span style="font-style:italic;color:#6e9cbe;">color</span><span>:</span><span style="color:#6d9cbe;">#b48ead</span><span>;"&gt;let&lt;/</span><span style="color:#e8bf6a;">span</span><span>&gt;
+</span><span>        &lt;</span><span style="color:#e8bf6a;">span style</span><span style="color:#86c20e;">=</span><span>"</span><span style="font-style:italic;color:#6e9cbe;">color</span><span>:</span><span style="color:#6d9cbe;">#c0c5ce</span><span>;"&gt; highlight = &lt;/</span><span style="color:#e8bf6a;">span</span><span>&gt;
+</span><span>        &lt;</span><span style="color:#e8bf6a;">span style</span><span style="color:#86c20e;">=</span><span>"</span><span style="font-style:italic;color:#6e9cbe;">color</span><span>:</span><span style="color:#6d9cbe;">#d08770</span><span>;"&gt;true&lt;/</span><span style="color:#e8bf6a;">span</span><span>&gt;
+</span><span>        &lt;</span><span style="color:#e8bf6a;">span style</span><span style="color:#86c20e;">=</span><span>"</span><span style="font-style:italic;color:#6e9cbe;">color</span><span>:</span><span style="color:#6d9cbe;">#c0c5ce</span><span>;"&gt;;
+</span><span>    &lt;/</span><span style="color:#e8bf6a;">span</span><span>&gt;
+</span><span>  &lt;/</span><span style="color:#e8bf6a;">code</span><span>&gt;
+</span><span>&lt;/</span><span style="color:#e8bf6a;">pre</span><span>&gt;
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这很好，因为如果所有内容都在一个文件中，您的页面加载速度会更快。</font><font style="vertical-align: inherit;">但是如果你想让用户从列表中选择一个主题，或者对深色/浅色配色方案使用不同的配色方案，你需要一个不同的解决方案。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果你使用特殊</font></font><code>css</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配色方案</font></font></p>
+<pre data-lang="toml" style="background-color:#383838;color:#e6e1dc;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#e8bf6a;">highlight_theme </span><span>= </span><span style="color:#c1be91;">"css"
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">相反，您会得到 CSS 类定义。</font></font></p>
+<pre data-lang="html" style="background-color:#383838;color:#e6e1dc;" class="language-html "><code class="language-html" data-lang="html"><span>&lt;</span><span style="color:#e8bf6a;">pre class</span><span style="color:#86c20e;">=</span><span>"</span><span style="color:#c1be91;">language-rs</span><span>"&gt;
+</span><span>    &lt;</span><span style="color:#e8bf6a;">code class</span><span style="color:#86c20e;">=</span><span>"</span><span style="color:#c1be91;">language-rs</span><span>"&gt;
+</span><span>        &lt;</span><span style="color:#e8bf6a;">span class</span><span style="color:#86c20e;">=</span><span>"</span><span style="color:#c1be91;">z-source z-rust</span><span>"&gt;
+</span><span>            &lt;</span><span style="color:#e8bf6a;">span class</span><span style="color:#86c20e;">=</span><span>"</span><span style="color:#c1be91;">z-storage z-type z-rust</span><span>"&gt;let&lt;/</span><span style="color:#e8bf6a;">span</span><span>&gt; highlight
+</span><span>            &lt;</span><span style="color:#e8bf6a;">span class</span><span style="color:#86c20e;">=</span><span>"</span><span style="color:#c1be91;">z-keyword z-operator z-assignment z-rust</span><span>"&gt;=&lt;/</span><span style="color:#e8bf6a;">span</span><span>&gt;
+</span><span>            &lt;</span><span style="color:#e8bf6a;">span class</span><span style="color:#86c20e;">=</span><span>"</span><span style="color:#c1be91;">z-constant z-language z-rust</span><span>"&gt;true&lt;/</span><span style="color:#e8bf6a;">span</span><span>&gt;
+</span><span>            &lt;</span><span style="color:#e8bf6a;">span class</span><span style="color:#86c20e;">=</span><span>"</span><span style="color:#c1be91;">z-punctuation z-terminator z-rust</span><span>"&gt;;&lt;/</span><span style="color:#e8bf6a;">span</span><span>&gt;
+</span><span>        &lt;/</span><span style="color:#e8bf6a;">span</span><span>&gt;
+</span><span>    &lt;/</span><span style="color:#e8bf6a;">code</span><span>&gt;
+</span><span>&lt;/</span><span style="color:#e8bf6a;">pre</span><span>&gt;
+</span></code></pre>
+<p><font style="vertical-align: inherit;"></font><code>static</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola 可以使用该选项</font><font style="vertical-align: inherit;">为目录中的主题输出一个 css 文件</font></font><code>highlight_themes_css</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<pre data-lang="toml" style="background-color:#383838;color:#e6e1dc;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#e8bf6a;">highlight_themes_css </span><span>= [
+</span><span>  { </span><span style="color:#e8bf6a;">theme </span><span>= </span><span style="color:#c1be91;">"base16-ocean-dark"</span><span>, </span><span style="color:#e8bf6a;">filename </span><span>= </span><span style="color:#c1be91;">"syntax-theme-dark.css" </span><span>},
+</span><span>  { </span><span style="color:#e8bf6a;">theme </span><span>= </span><span style="color:#c1be91;">"base16-ocean-light"</span><span>, </span><span style="color:#e8bf6a;">filename </span><span>= </span><span style="color:#c1be91;">"syntax-theme-light.css" </span><span>},
+</span><span>]
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">然后你可以像这样支持明暗模式：</font></font></p>
+<pre data-lang="css" style="background-color:#383838;color:#e6e1dc;" class="language-css "><code class="language-css" data-lang="css"><span style="color:#cc7833;">@import </span><span style="color:#da4939;">url</span><span>(</span><span style="color:#c1be91;">"syntax-theme-dark.css"</span><span>) (prefers-</span><span style="font-style:italic;color:#6e9cbe;">color</span><span>-scheme: dark);
+</span><span style="color:#cc7833;">@import </span><span style="color:#da4939;">url</span><span>(</span><span style="color:#c1be91;">"syntax-theme-light.css"</span><span>) (prefers-</span><span style="font-style:italic;color:#6e9cbe;">color</span><span>-scheme: light);
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者，您可以在基本模板中引用样式表以减少请求链：</font></font></p>
+<pre data-lang="html" style="background-color:#383838;color:#e6e1dc;" class="language-html "><code class="language-html" data-lang="html"><span>&lt;</span><span style="color:#e8bf6a;">head</span><span>&gt;
+</span><span>  </span><span style="color:#95815e;">&lt;!-- Other content --&gt;
+</span><span>  &lt;</span><span style="color:#e8bf6a;">link </span><span style="color:#86c20e;">rel=</span><span>"</span><span style="color:#c1be91;">stylesheet</span><span>" </span><span style="color:#86c20e;">type=</span><span>"</span><span style="color:#c1be91;">text/css</span><span>" </span><span style="color:#86c20e;">href=</span><span>"</span><span style="color:#c1be91;">/syntax-theme-dark.css</span><span>" </span><span style="color:#86c20e;">media=</span><span>"</span><span style="color:#c1be91;">(prefers-color-scheme: dark)</span><span>" /&gt;
+</span><span>  &lt;</span><span style="color:#e8bf6a;">link </span><span style="color:#86c20e;">rel=</span><span>"</span><span style="color:#c1be91;">stylesheet</span><span>" </span><span style="color:#86c20e;">type=</span><span>"</span><span style="color:#c1be91;">text/css</span><span>" </span><span style="color:#86c20e;">href=</span><span>"</span><span style="color:#c1be91;">/syntax-theme-light.css</span><span>" </span><span style="color:#86c20e;">media=</span><span>"</span><span style="color:#c1be91;">(prefers-color-scheme: light)</span><span>" /&gt;
+</span><span>&lt;/</span><span style="color:#e8bf6a;">head</span><span>&gt;
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主题可以有条件地包含代码高亮样式表</font></font><code>&lt;link&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标签，方法是将它们包装在条件中：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">if </span><span style="color:#d0d0ff;">config</span><span>.</span><span style="color:#d0d0ff;">markdown</span><span>.</span><span style="color:#d0d0ff;">highlight_code </span><span style="color:#cc7833;">and </span><span style="color:#d0d0ff;">config</span><span>.</span><span style="color:#d0d0ff;">markdown</span><span>.</span><span style="color:#d0d0ff;">highlight_theme </span><span style="color:#cc7833;">== </span><span style="color:#c1be91;">"css" </span><span>%}
+</span><span>&lt;link rel="stylesheet" type="text/css" href="/syntax-theme-dark.css" media="(prefers-color-scheme: dark)" /&gt;
+</span><span>&lt;link rel="stylesheet" type="text/css" href="/syntax-theme-light.css" media="(prefers-color-scheme: light)" /&gt;
+</span><span>{% </span><span style="color:#cc7833;">endif </span><span>%}
+</span></code></pre>
+<h2 id="annotations"><a class="zola-anchor" href="/zola/content/syntax-highlighting/#annotations" aria-label="锚链接：注解"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注释</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以使用其他注释来自定义代码块的显示方式：</font></font></p>
+<ul>
+<li><code>linenos</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启用行编号。</font></font></li>
+</ul>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>```rust,linenos
+</span><span>use highlighter::highlight;
+</span><span>let code = "...";
+</span><span>highlight(code);
+</span><span>```
+</span></code></pre>
+<ul>
+<li><code>linenostart</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">指定第一行的数字（默认为 1）</font></font></li>
+</ul>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>```rust,linenos,linenostart=20
+</span><span>use highlighter::highlight;
+</span><span>let code = "...";
+</span><span>highlight(code);
+</span><span>```
+</span></code></pre>
+<ul>
+<li><code>hl_lines</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">突出线条。</font><font style="vertical-align: inherit;">您必须指定要突出显示的行的包含范围列表，以</font></font><code> </code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（空格）分隔。</font><font style="vertical-align: inherit;">范围是从 1 开始索引的并且</font></font><code>linenostart</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不影响值，它总是指代码块行号。</font></font></li>
+</ul>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>```rust,hl_lines=1 3-5 9
+</span><span>use highlighter::highlight;
+</span><span>let code = "...";
+</span><span>highlight(code);
+</span><span>```
+</span></code></pre>
+<ul>
+<li><code>hide_lines</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">隐藏线条。</font><font style="vertical-align: inherit;">您必须指定要隐藏的行的包含范围列表，以</font></font><code> </code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（空格）分隔。</font><font style="vertical-align: inherit;">范围是 1 索引的。</font></font></li>
+</ul>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>```rust,hide_lines=1-2
+</span><span>use highlighter::highlight;
+</span><span>let code = "...";
+</span><span>highlight(code);
+</span><span>```
+</span></code></pre>
+<h2 id="styling-codeblocks"><a class="zola-anchor" href="/zola/content/syntax-highlighting/#styling-codeblocks" aria-label="锚链接：样式代码块"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">样式代码块</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">根据所使用的注释，一些代码块在没有任何 CSS 的情况下将难以阅读。</font><font style="vertical-align: inherit;">我们建议在您的网站中使用以下代码段：</font></font></p>
+<pre data-lang="scss" style="background-color:#383838;color:#e6e1dc;" class="language-scss "><code class="language-scss" data-lang="scss"><span style="color:#e8bf6a;">pre </span><span>{
+</span><span>  </span><span style="font-style:italic;color:#6e9cbe;">padding</span><span>: </span><span style="color:#a5c261;">1</span><span style="color:#cc7833;">rem</span><span>;
+</span><span>  </span><span style="font-style:italic;color:#6e9cbe;">overflow</span><span>: </span><span style="color:#86c20e;">auto</span><span>;
+</span><span>}
+</span><span style="color:#95815e;">// The line numbers already provide some kind of left/right padding
+</span><span style="color:#e8bf6a;">pre</span><span>[</span><span style="color:#e8bf6a;">data-linenos</span><span>] {
+</span><span>  </span><span style="font-style:italic;color:#6e9cbe;">padding</span><span>: </span><span style="color:#a5c261;">1</span><span style="color:#cc7833;">rem </span><span style="color:#a5c261;">0</span><span>;
+</span><span>}
+</span><span style="color:#e8bf6a;">pre table td </span><span>{
+</span><span>  </span><span style="font-style:italic;color:#6e9cbe;">padding</span><span>: </span><span style="color:#a5c261;">0</span><span>;
+</span><span>}
+</span><span style="color:#95815e;">// The line number cells
+</span><span style="color:#e8bf6a;">pre table td</span><span>:nth-of-type(</span><span style="color:#a5c261;">1</span><span>) {
+</span><span>  </span><span style="font-style:italic;color:#6e9cbe;">text-align</span><span>: </span><span style="color:#86c20e;">center</span><span>;
+</span><span>  </span><span style="font-style:italic;color:#6e9cbe;">user-select</span><span>: </span><span style="color:#86c20e;">none</span><span>;
+</span><span>}
+</span><span style="color:#e8bf6a;">pre mark </span><span>{
+</span><span>  </span><span style="color:#95815e;">// If you want your highlights to take the full width.
+</span><span>  </span><span style="font-style:italic;color:#6e9cbe;">display</span><span>: </span><span style="color:#86c20e;">block</span><span>;
+</span><span>  </span><span style="color:#95815e;">// The default background colour of a mark is bright yellow
+</span><span>  </span><span style="font-style:italic;color:#6e9cbe;">background-color</span><span>: </span><span style="color:#da4939;">rgba</span><span>(</span><span style="color:#a5c261;">254</span><span>, </span><span style="color:#a5c261;">252</span><span>, </span><span style="color:#a5c261;">232</span><span>, </span><span style="color:#a5c261;">0.9</span><span>);
+</span><span>}
+</span><span style="color:#e8bf6a;">pre table </span><span>{
+</span><span>  </span><span style="font-style:italic;color:#6e9cbe;">width</span><span>: </span><span style="color:#a5c261;">100</span><span style="color:#cc7833;">%</span><span>;
+</span><span>  </span><span style="font-style:italic;color:#6e9cbe;">border-collapse</span><span>: </span><span style="color:#86c20e;">collapse</span><span>;
+</span><span>}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此代码段使突出显示在整个宽度上起作用，并确保用户无需选择行号即可复制内容。</font><font style="vertical-align: inherit;">显然，您可能需要调整它以适应您的网站风格。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是一个使用了所有选项的示例：</font></font><code>scss, linenos, linenostart=10, hl_lines=3-4 8-9, hide_lines=2 7</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上面的代码片段。</font></font></p>
+<pre data-linenos="" data-lang="scss" style="background-color:#383838;color:#e6e1dc;" class="language-scss "><code class="language-scss" data-lang="scss"><table><tbody><tr><td>10</td><td><span style="color:#e8bf6a;">pre mark </span><span>{
+</span></td></tr><tr><td><mark style="background-color:#60606080;">12</mark></td><td><mark style="background-color:#60606080;"><span>  </span><span style="font-style:italic;color:#6e9cbe;">display</span><span>: </span><span style="color:#86c20e;">block</span><span>;
+</span></mark></td></tr><tr><td><mark style="background-color:#60606080;">13</mark></td><td><mark style="background-color:#60606080;"><span>  </span><span style="font-style:italic;color:#6e9cbe;">color</span><span>: </span><span style="color:#86c20e;">currentcolor</span><span>;
+</span></mark></td></tr><tr><td>14</td><td><span>}
+</span></td></tr><tr><td>15</td><td><span style="color:#e8bf6a;">pre table td</span><span>:nth-of-type(</span><span style="color:#a5c261;">1</span><span>) {
+</span></td></tr><tr><td><mark style="background-color:#60606080;">17</mark></td><td><mark style="background-color:#60606080;"><span>  </span><span style="font-style:italic;color:#6e9cbe;">color</span><span>: </span><span style="color:#6d9cbe;">#6b6b6b</span><span>;
+</span></mark></td></tr><tr><td><mark style="background-color:#60606080;">18</mark></td><td><mark style="background-color:#60606080;"><span>  </span><span style="font-style:italic;color:#6e9cbe;">font-style</span><span>: </span><span style="color:#86c20e;">italic</span><span>;
+</span></mark></td></tr><tr><td>19</td><td><span>}
+</span></td></tr></tbody></table></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第 2 行和第 7 行是最终输出中未显示的注释。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当行号处于活动状态时，代码块将变成一个包含一行和两个单元格的表格。</font><font style="vertical-align: inherit;">第一个单元格包含行号，第二个单元格包含代码。</font><font style="vertical-align: inherit;">突出显示是通过</font></font><code>&lt;mark&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTML 标记完成的。</font><font style="vertical-align: inherit;">当突出显示带有行号的行时，</font></font><code>&lt;mark&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将创建两个标签：一个围绕行号，一个围绕代码。</font></font></p>
+<h2 id="custom-highlighting-themes"><a class="zola-anchor" href="/zola/content/syntax-highlighting/#custom-highlighting-themes" aria-label="锚链接：自定义突出显示主题"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自定义高亮主题</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语法突出显示的默认</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主题</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">称为</font></font><code>base16-ocean-dark</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，您可以使用配置选项从内置的突出显示主题集中选择另一个主题</font></font><code>highlight_theme</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">例如，此文档站点当前使用</font></font><code>kronuz</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内置的主题。</font></font></p>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>[markdown]
+</span><span>highlight_code = true
+</span><span>highlight_theme = "kronuz"
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者，</font></font><code>extra_syntaxes_and_themes</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置选项可用于添加其他主题文件。</font><font style="vertical-align: inherit;">您可以从 TextMate 文件加载自己的突出显示主题</font></font><code>.tmTheme</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它的工作方式与添加额外语法的方式相同。</font><font style="vertical-align: inherit;">它应该包含指向包含您要包含的 .tmTheme 文件的文件夹的路径列表。</font><font style="vertical-align: inherit;">然后您将设置</font></font><code>highlight_theme</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为这些文件之一的名称，不带</font></font><code>.tmTheme</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展名。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您的站点源布局如下：</font></font></p>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>.
+</span><span>├── config.toml
+</span><span>├── content/
+</span><span>│&nbsp;&nbsp; └── ...
+</span><span>├── static/
+</span><span>│&nbsp;&nbsp; └── ...
+</span><span>├── highlight_themes/
+</span><span>│&nbsp;&nbsp; ├── MyGroovyTheme/
+</span><span>│&nbsp;&nbsp; │&nbsp;&nbsp; └── theme1.tmTheme
+</span><span>│&nbsp;&nbsp; ├── theme2.tmTheme
+</span><span>└── templates/
+</span><span>    └── ...
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">你会设置你</font></font><code>extra_syntaxes_and_themes</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的</font></font><code>["highlight_themes", "highlight_themes/MyGroovyTheme"]</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加载</font></font><code>theme1.tmTheme</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>theme2.tmTheme</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">然后通过设置选择其中一个来使用，比如theme1 </font></font><code>highlight_theme = theme1</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+
+
+    </div>
+</div>
+
+        </div>
+        <footer>
+<p>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">©2017-2023 — </font></font>
+<a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">艾瑞可erik</font></font></a>、
+<a class="white" href="https://vincentprouillet.com/">
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vincent Prouillet</font>
+</font>
+</a>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font>
+<a class="white" href="https://github.com/getzola/zola/graphs/contributors"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">贡献者</font>
+</font>
+</a>
+</p>
+<p>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <span id="busuanzi_container_page_pv">&nbsp;本文总阅读量<span id="busuanzi_value_page_pv">0</span>次</span>
+</p>
+</footer>
+
+        <script type="text/javascript" src="./syntax-highlighting_files/elasticlunr.min.js"></script>
+        <script type="text/javascript" src="./syntax-highlighting_files/search.js"></script>
+
+
+</body></html>

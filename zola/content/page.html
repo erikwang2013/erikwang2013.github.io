@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)/zola/content/page/ -->
+<html lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Everything you need to make a static site engine in one binary.">
+               <meta name="author" content="Vincent Prouillet">
+        <meta name="description" content="Zola 是一个静态站点生成器 (SSG)，类似于Hugo、Pelican和Jekyll（有关 SSG 的完整列表，请参阅Jamstack）。它用Rust编写并使用Tera模板引擎，类似于Jinja2、Django 模板、Liquid和Twig">
+        <meta name="keywords" content="Zola中文文档,zola,Zola,https://erik.xyz/zola,zola中文文档">
+        <title>页|  Zola</title>
+        <link rel="stylesheet" href="./page_files/site.css">
+        <link rel="icon" href="https://www.getzola.org/favicon.ico">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="./page_files/m=el_main_css"></head>
+    <body>
+
+        <header>
+            <nav class="">
+                <a class="white" href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola中文文档</font></font></a>
+                <a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾瑞可erik</font></font></a>
+                <a class="header__logo white" href="https://www.getzola.org/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola </font></font></a>
+                <a class="white" href="https://www.getzola.org/documentation/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docs</font></font></a>
+                <a class="white" href="https://github.com/getzola/zola" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></a>
+
+                <div class="search-container">
+                    <input id="search" type="search" placeholder="🔎 搜索文档">
+
+                    <div class="search-results">
+                        <div class="search-results__items"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content content--reversed">
+
+
+<div class="documentation">
+    <aside class="documentation__sidebar">
+        <ul>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/installation.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/cli-usage.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CLI 用法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/directory-structure.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录结构</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/configuration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/content/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/section.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分</font></font></a>
+                        </li>
+
+                        <li class="active">
+                            <a href="/zola/content/page.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/shortcodes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简码</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/linking.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内部链接和深度链接</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/table-of-contents.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/syntax-highlighting.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语法高亮</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/search.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/sass.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sass</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/image-processing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图像处理</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/multilingual.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多语言网站</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/templates/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pages-sections.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">章节和页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pagination.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/feeds.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提要</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/sitemap.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站地图</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/robots.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">机器人.txt</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/404.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">404错误页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/archive.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">档案</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主题</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/themes/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/installing-and-using-themes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装和使用主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/creating-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/extending-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展主题</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/deployment/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/sourcehut.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sourcehut 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/netlify.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络化</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/github-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/gitlab-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitLab 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/edgio.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Edgio</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/vercel.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vercel</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/cloudflare-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cloudflare 页面</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+        </ul>
+    </aside>
+    <div class="documentation__content">
+
+    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页</font></font></h1>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页是目录</font></font><code>.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中以 结尾的任何文件</font></font><code>content</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，但名为</font></font><code>_index.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面文件名不能</font></font><code>_index.</code> <a href="https://github.com/getzola/zola/pull/1694"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">包含</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果以 结尾的文件</font></font><code>.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">名为</font></font><code>index.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，它将生成一个具有其目录名称的页面（例如，</font></font><code>/content/about/index.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将在 处创建一个页面</font></font><code>[base_url]/about</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）。</font><font style="vertical-align: inherit;">（请注意缺少下划线；如果文件名为</font></font><code>_index.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，那么它会</font><font style="vertical-align: inherit;">在 处创建一个</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分</font></font></strong><font style="vertical-align: inherit;"></font><code>[base_url]/about</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，如本文档前面部分所讨论的那样。相反，命名文件将</font><font style="vertical-align: inherit;">在 处</font></font><code>index.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建一个</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面</font></font></strong><font style="vertical-align: inherit;"></font><code>[base_url]/about</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果文件被赋予除</font><font style="vertical-align: inherit;">或</font><font style="vertical-align: inherit;">之外</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任何名称，那么它将创建一个具有该名称（不带</font><font style="vertical-align: inherit;">）的页面。</font><font style="vertical-align: inherit;">例如，在您的内容目录的根目录中命名</font><font style="vertical-align: inherit;">一个文件将在</font><font style="vertical-align: inherit;">.</font></font><code>index.md</code><font style="vertical-align: inherit;"></font><code>_index.md</code><font style="vertical-align: inherit;"></font><code>.md</code><font style="vertical-align: inherit;"></font><code>about.md</code><font style="vertical-align: inherit;"></font><code>[base_url]/about</code><font style="vertical-align: inherit;"></font></p>
+<p><font style="vertical-align: inherit;"></font><a href="https://www.ietf.org/rfc/rfc3339.txt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此规则的另一个例外是以日期时间（YYYY-mm-dd 或RFC3339 日期时间</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）开头后跟下划线 ( </font></font><code>_</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">) 或破折号 ( )</font><font style="vertical-align: inherit;">的文件名将</font></font><code>-</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用该日期作为页面日期，除非已在前面设置事情。</font><font style="vertical-align: inherit;">页面名称将是</font></font><code>_</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/之后的任何内容</font></font><code>-</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，因此该文件</font></font><code>2018-10-10-hello-world.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将在</font></font><code>[base_url]/hello-world</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">请注意，完整的 RFC3339 日期时间包含冒号，这在 Windows 上不是文件名中的有效字符。</font></font><code>slugify.paths_keep_date</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可以通过设置为</font></font><code>true</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（默认为）</font><font style="vertical-align: inherit;">来禁用此行为</font></font><code>false</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">请注意，</font></font><code>_</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分隔日期的 a 将被 slugified 为</font></font><code>-</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认值为</font></font><code>slugify.paths</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">of的 a </font></font><code>"on"</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如您所见，创建</font></font><code>about.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件等同于创建
+</font></font><code>about/index.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件。</font><font style="vertical-align: inherit;">这两种方法之间的唯一区别是创建</font></font><code>about</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录允许您使用资产共置，如
+</font></font><a href="/zola/content/overview/#asset-colocation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分所述。</font></font></p>
+<h2 id="output-paths"><a class="zola-anchor" href="/zola/content/page/#output-paths" aria-label="锚链接：输出路径"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输出路径</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于内容文件夹中的任何页面，其输出路径将定义为：</font></font></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它的</font></font><code>slug</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">前键</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它的文件名</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无论哪种方式，这些建议的路径都将在使用前进行清理。</font><font style="vertical-align: inherit;">如果</font><font style="vertical-align: inherit;">在站点的配置中</font></font><code>slugify.paths</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置为- 默认 - 路径是</font><a href="https://en.wikipedia.org/wiki/Clean_URL#Slug"><font style="vertical-align: inherit;">slugified</font></a><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">如果设置为，</font><font style="vertical-align: inherit;">则</font><font style="vertical-align: inherit;">仅执行清理，并删除以下字符：</font><font style="vertical-align: inherit;">, </font><font style="vertical-align: inherit;">, </font><font style="vertical-align: inherit;">, </font><font style="vertical-align: inherit;">, </font><font style="vertical-align: inherit;">, </font><font style="vertical-align: inherit;">, </font><font style="vertical-align: inherit;">, </font><font style="vertical-align: inherit;">, </font><font style="vertical-align: inherit;">, , </font><font style="vertical-align: inherit;">, </font><font style="vertical-align: inherit;">,</font><font style="vertical-align: inherit;">以及换行符和制表符。</font><font style="vertical-align: inherit;">这确保路径可以在所有操作系统上表示。</font><font style="vertical-align: inherit;">此外，尾随的空格和点被删除，空格被替换为</font><font style="vertical-align: inherit;">.</font></font><code>"on"</code><font style="vertical-align: inherit;"></font><a href="https://en.wikipedia.org/wiki/Clean_URL#Slug"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><code>"safe"</code><font style="vertical-align: inherit;"></font><code>&lt;</code><font style="vertical-align: inherit;"></font><code>&gt;</code><font style="vertical-align: inherit;"></font><code>:</code><font style="vertical-align: inherit;"></font><code>/</code><font style="vertical-align: inherit;"></font><code>|</code><font style="vertical-align: inherit;"></font><code>?</code><font style="vertical-align: inherit;"></font><code>*</code><font style="vertical-align: inherit;"></font><code>#</code><font style="vertical-align: inherit;"></font><code>\\</code><font style="vertical-align: inherit;"></font><code>(</code><font style="vertical-align: inherit;"></font><code>)</code><font style="vertical-align: inherit;"></font><code>[</code><font style="vertical-align: inherit;"></font><code>]</code><font style="vertical-align: inherit;"></font><code>_</code><font style="vertical-align: inherit;"></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果</font></font><code>slugify.paths</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置为</font></font><code>"off"</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，则不进行任何修改。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想要包含非 ASCII 字符的 URL，</font></font><code>slugify.paths</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">需要设置为</font></font><code>"safe"</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><code>"off"</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h3 id="path-from-frontmatter"><a class="zola-anchor" href="/zola/content/page/#path-from-frontmatter" aria-label="锚链接：path-from-frontmatter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">来自 frontmatter 的路径</font></font></h3>
+<p><font style="vertical-align: inherit;"></font><code>slug</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面的输出路径将首先从页面的 frontmatter 中的键</font><font style="vertical-align: inherit;">中读取。</font></font></p>
+<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">示例：（</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件</font></font><code>content/zines/mlf-kurdistan.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></p>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>+++
+</span><span>title = "Le mouvement des Femmes Libres, à la tête de la libération kurde"
+</span><span>slug = "femmes-libres-libération-kurde"
+</span><span>+++
+</span><span>This is my article.
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此 frontmatter 会将文章输出到</font><font style="vertical-align: inherit;">设置为</font></font><code>[base_url]/zines/femmes-libres-libération-kurde</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">or</font><font style="vertical-align: inherit;">和</font><font style="vertical-align: inherit;">to并设置为</font><font style="vertical-align: inherit;">of</font><font style="vertical-align: inherit;">的默认值</font><font style="vertical-align: inherit;">。</font></font><code>slugify.paths</code><font style="vertical-align: inherit;"></font><code>"safe"</code><font style="vertical-align: inherit;"></font><code>"off"</code><font style="vertical-align: inherit;"></font><code>[base_url]/zines/femmes-libres-liberation-kurde</code><font style="vertical-align: inherit;"></font><code>slugify.paths</code><font style="vertical-align: inherit;"></font><code>"on"</code><font style="vertical-align: inherit;"></font></p>
+<h3 id="path-from-filename"><a class="zola-anchor" href="/zola/content/page/#path-from-filename" aria-label="锚链接：path-from-filename"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">来自文件名的路径</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当文章的输出路径没有在 frontmatter 中指定时，它是从 content 文件夹中的文件路径中提取的。</font><font style="vertical-align: inherit;">考虑一个文件</font></font><code>content/foo/bar/thing.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">构建输出路径：</font></font></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果文件名为</font></font><code>index.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，则其父文件夹名称 ( </font></font><code>bar</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">) 用作输出路径</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">否则，输出路径是从</font></font><code>thing</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp;（不带扩展名的文件名</font></font><code>.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）中提取的</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果找到的路径以日期时间字符串（</font></font><code>YYYY-mm-dd</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><a href="https://www.ietf.org/rfc/rfc3339.txt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">RFC3339 日期时间</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）开头，后跟可选的空格，然后是下划线 ( </font></font><code>_</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">) 或破折号 ( </font></font><code>-</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)，则此日期将从输出路径中删除并将用作页面日期（除非已经设置在最前面）。</font><font style="vertical-align: inherit;">请注意，完整的 RFC3339 日期时间包含冒号，这在 Windows 上不是文件名中的有效字符。</font></font></p>
+<p><font style="vertical-align: inherit;"></font><code>slugify.paths</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如前所述，</font><font style="vertical-align: inherit;">根据配置，从文件路径中提取的输出路径是否被 slugified 。</font></font></p>
+<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">示例：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+该文件</font></font><code>content/blog/2018-10-10-hello-world.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将在 产生一个页面</font></font><code>[base_url]/blog/hello-world</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">使用可选的空格，文件</font></font><code>content/blog/2021-01-23 -hello new world.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将产生一个页面</font></font><code>[base_url]/blog/hello-new-world</code></p>
+<h2 id="front-matter"><a class="zola-anchor" href="/zola/content/page/#front-matter" aria-label="锚链接：front-matter"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">前言</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TOML front matter 是一组嵌入文件中的元数据，位于文件的开头，由三重加号 ( </font></font><code>+++</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">) 括起来。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尽管前面的变量都不是强制性的，但打开和关闭</font></font><code>+++</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是必需的。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，尽管鼓励使用 TOML，但也支持 YAML front matter 以简化遗留内容的移植。</font><font style="vertical-align: inherit;">在这种情况下，嵌入的元数据必须包含在三重负数 ( </font></font><code>---</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">) 中。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这是一个包含所有可用变量的示例页面。</font><font style="vertical-align: inherit;">下面提供的值是默认值。</font></font></p>
+<pre data-lang="toml" style="background-color:#383838;color:#e6e1dc;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#e8bf6a;">title </span><span>= </span><span style="color:#c1be91;">""
+</span><span style="color:#e8bf6a;">description </span><span>= </span><span style="color:#c1be91;">""
+</span><span>
+</span><span style="color:#95815e;"># The date of the post.
+</span><span style="color:#95815e;"># Two formats are allowed: YYYY-MM-DD (2012-10-02) and RFC3339 (2002-10-02T15:00:00Z).
+</span><span style="color:#95815e;"># Do not wrap dates in quotes; the line below only indicates that there is no default date.
+</span><span style="color:#95815e;"># If the section variable `sort_by` is set to `date`, then any page that lacks a `date`
+</span><span style="color:#95815e;"># will not be rendered.
+</span><span style="color:#95815e;"># Setting this overrides a date set in the filename.
+</span><span style="color:#e8bf6a;">date </span><span>=
+</span><span>
+</span><span style="color:#95815e;"># The last updated date of the post, if different from the date.
+</span><span style="color:#95815e;"># Same format as `date`.
+</span><span style="color:#e8bf6a;">updated </span><span>=
+</span><span>
+</span><span style="color:#95815e;"># The weight as defined on the Section page of the documentation.
+</span><span style="color:#95815e;"># If the section variable `sort_by` is set to `weight`, then any page that lacks a `weight`
+</span><span style="color:#95815e;"># will not be rendered.
+</span><span style="color:#e8bf6a;">weight </span><span>= </span><span style="color:#a5c261;">0
+</span><span>
+</span><span style="color:#95815e;"># A draft page is only loaded if the `--drafts` flag is passed to `zola build`, `zola serve` or `zola check`.
+</span><span style="color:#e8bf6a;">draft </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span style="color:#95815e;"># If set, this slug will be used instead of the filename to make the URL.
+</span><span style="color:#95815e;"># The section path will still be used.
+</span><span style="color:#e8bf6a;">slug </span><span>= </span><span style="color:#c1be91;">""
+</span><span>
+</span><span style="color:#95815e;"># The path the content will appear at.
+</span><span style="color:#95815e;"># If set, it cannot be an empty string and will override both `slug` and the filename.
+</span><span style="color:#95815e;"># The sections' path won't be used.
+</span><span style="color:#95815e;"># It should not start with a `/` and the slash will be removed if it does.
+</span><span style="color:#e8bf6a;">path </span><span>= </span><span style="color:#c1be91;">""
+</span><span>
+</span><span style="color:#95815e;"># Use aliases if you are moving content but want to redirect previous URLs to the
+</span><span style="color:#95815e;"># current one. This takes an array of paths, not URLs.
+</span><span style="color:#e8bf6a;">aliases </span><span>= []
+</span><span>
+</span><span style="color:#95815e;"># A list of page authors. If a site feed is enabled, the first author (if any)
+</span><span style="color:#95815e;"># will be used as the page's author in the default feed template.
+</span><span style="color:#e8bf6a;">authors </span><span>= []
+</span><span>
+</span><span style="color:#95815e;"># When set to "true", the page will be in the search index. This is only used if
+</span><span style="color:#95815e;"># `build_search_index` is set to "true" in the Zola configuration and the parent section
+</span><span style="color:#95815e;"># hasn't set `in_search_index` to "false" in its front matter.
+</span><span style="color:#e8bf6a;">in_search_index </span><span>= </span><span style="color:#6e9cbe;">true
+</span><span>
+</span><span style="color:#95815e;"># Template to use to render this page.
+</span><span style="color:#e8bf6a;">template </span><span>= </span><span style="color:#c1be91;">"page.html"
+</span><span>
+</span><span style="color:#95815e;"># The taxonomies for this page. The keys need to be the same as the taxonomy
+</span><span style="color:#95815e;"># names configured in `config.toml` and the values are an array of String objects. For example,
+</span><span style="color:#95815e;"># tags = ["rust", "web"].
+</span><span>[</span><span style="color:#e8bf6a;">taxonomies</span><span>]
+</span><span>
+</span><span style="color:#95815e;"># Your own data.
+</span><span>[</span><span style="color:#e8bf6a;">extra</span><span>]
+</span></code></pre>
+<h2 id="summary"><a class="zola-anchor" href="/zola/content/page/#summary" aria-label="锚链接：摘要"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总结</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例如，如果您只想在列表中显示页面内容的第一段，您可以要求 Zola 创建摘要。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为此，请</font></font><code>&lt;!-- more --&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在您希望摘要结束的位置添加您的内容。</font><font style="vertical-align: inherit;">到那时为止的内容将
+</font><font style="vertical-align: inherit;">通过单独在</font></font><a href="/zola/templates/pages-sections/#page-variables"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></a><font style="vertical-align: inherit;"></font><code>page.summary</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中提供。</font></font></p>
+<p><font style="vertical-align: inherit;"></font><code>continue-reading</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在此位置创建</font><font style="vertical-align: inherit;">一个带有 id 的 span 元素，因此如果需要，您可以直接链接到它。</font><font style="vertical-align: inherit;">例如：
+ </font></font><code>&lt;a href="{{ page.permalink }}#continue-reading"&gt;Continue Reading&lt;/a&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+
+
+    </div>
+</div>
+
+        </div>
+        <footer>
+<p>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">©2017-2023 — </font></font>
+<a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">艾瑞可erik</font></font></a>、
+<a class="white" href="https://vincentprouillet.com/">
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vincent Prouillet</font>
+</font>
+</a>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font>
+<a class="white" href="https://github.com/getzola/zola/graphs/contributors"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">贡献者</font>
+</font>
+</a>
+</p>
+<p>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <span id="busuanzi_container_page_pv">&nbsp;本文总阅读量<span id="busuanzi_value_page_pv">0</span>次</span>
+</p>
+</footer>
+
+        <script type="text/javascript" src="./page_files/elasticlunr.min.js"></script>
+        <script type="text/javascript" src="./page_files/search.js"></script>
+
+
+</body></html>

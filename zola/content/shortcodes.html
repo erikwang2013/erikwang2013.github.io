@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)/zola/content/shortcodes/ -->
+<html lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Everything you need to make a static site engine in one binary.">
+               <meta name="author" content="Vincent Prouillet">
+        <meta name="description" content="Zola 是一个静态站点生成器 (SSG)，类似于Hugo、Pelican和Jekyll（有关 SSG 的完整列表，请参阅Jamstack）。它用Rust编写并使用Tera模板引擎，类似于Jinja2、Django 模板、Liquid和Twig">
+        <meta name="keywords" content="Zola中文文档,zola,Zola,https://erik.xyz/zola,zola中文文档">
+        <title>简码 |  Zola</title>
+        <link rel="stylesheet" href="./shortcodes_files/site.css">
+        <link rel="icon" href="https://www.getzola.org/favicon.ico">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="./shortcodes_files/m=el_main_css"></head>
+    <body>
+
+        <header>
+            <nav class="">
+                <a class="white" href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola中文文档</font></font></a>
+                <a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾瑞可erik</font></font></a>
+                <a class="header__logo white" href="https://www.getzola.org/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola </font></font></a>
+                <a class="white" href="https://www.getzola.org/documentation/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docs</font></font></a>
+                <a class="white" href="https://github.com/getzola/zola" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></a>
+
+                <div class="search-container">
+                    <input id="search" type="search" placeholder="🔎 搜索文档">
+
+                    <div class="search-results">
+                        <div class="search-results__items"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content content--reversed">
+
+
+<div class="documentation">
+    <aside class="documentation__sidebar">
+        <ul>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/installation.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/cli-usage.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CLI 用法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/directory-structure.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录结构</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/configuration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/content/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/section.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/page.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页</font></font></a>
+                        </li>
+
+                        <li class="active">
+                            <a href="/zola/content/shortcodes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简码</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/linking.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内部链接和深度链接</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/table-of-contents.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/syntax-highlighting.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语法高亮</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/search.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/sass.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sass</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/image-processing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图像处理</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/multilingual.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多语言网站</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/templates/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pages-sections.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">章节和页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pagination.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/feeds.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提要</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/sitemap.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站地图</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/robots.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">机器人.txt</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/404.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">404错误页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/archive.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">档案</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主题</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/themes/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/installing-and-using-themes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装和使用主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/creating-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/extending-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展主题</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/deployment/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/sourcehut.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sourcehut 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/netlify.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络化</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/github-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/gitlab-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitLab 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/edgio.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Edgio</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/vercel.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vercel</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/cloudflare-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cloudflare 页面</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+        </ul>
+    </aside>
+    <div class="documentation__content">
+
+    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简码</font></font></h1>
+    <p><font style="vertical-align: inherit;"></font><a href="https://codex.wordpress.org/Shortcode_API"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola 从 WordPress 中借用了短代码</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的概念</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">在我们的例子中，短代码对应于目录中定义的模板</font></font><code>templates/shortcodes</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，可以在 Markdown 文件中使用。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从广义上讲，Zola 的短代码涵盖两个不同的用例：</font></font></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注入更复杂的 HTML：Markdown 适合编写，但当您需要添加内联 HTML 或样式时，它就不是很好了。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简化基于重复数据的任务：当您有</font><font style="vertical-align: inherit;">要在页面正文中显示的</font></font><a href="/zola/templates/overview/#load-data"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">外部数据时。</font></font></a><font style="vertical-align: inherit;"></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">后者也可以通过编写 HTML 来解决，但是 Zola 允许使用</font></font><code>.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+以</font></font><code>.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">如果您想在
+</font></font><a href="/zola/content/table-of-contents.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中包含由短代码生成的标题，这可能特别有用。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果你想在模板中使用类似于短代码的东西，你可以使用</font></font><a href="https://tera.netlify.com/docs#macros"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tera macros</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">它们是您可以调用以返回一些文本的函数或组件。</font></font></p>
+<h2 id="writing-a-shortcode"><a class="zola-anchor" href="/zola/content/shortcodes/#writing-a-shortcode" aria-label="锚链接：编写简码"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编写简码</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">让我们编写一个简码来嵌入 YouTube 视频作为示例。</font></font><code>youtube.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在目录中</font><font style="vertical-align: inherit;">调用的文件中</font></font><code>templates/shortcodes</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，粘贴以下内容：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>&lt;div {% </span><span style="color:#cc7833;">if </span><span style="color:#d0d0ff;">class </span><span>%}class="{{</span><span style="color:#d0d0ff;">class</span><span>}}"{% </span><span style="color:#cc7833;">endif </span><span>%}&gt;
+</span><span>    &lt;iframe
+</span><span>        src="https://www.youtube.com/embed/{{</span><span style="color:#d0d0ff;">id</span><span>}}{% </span><span style="color:#cc7833;">if </span><span style="color:#d0d0ff;">autoplay </span><span>%}?autoplay=1{% </span><span style="color:#cc7833;">endif </span><span>%}"
+</span><span>        webkitallowfullscreen
+</span><span>        mozallowfullscreen
+</span><span>        allowfullscreen&gt;
+</span><span>    &lt;/iframe&gt;
+</span><span>&lt;/div&gt;
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这个模板非常简单：一个指向 YouTube 嵌入 URL 的 iframe，包裹在一个</font></font><code>&lt;div&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">在输入方面，此短代码至少需要一个变量：</font></font><code>id</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">因为其他变量在</font></font><code>if</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语句中，所以它们是可选的。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">就是这样。</font></font><code>youtube</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola 现在会将此模板识别为名为（文件名减去扩展名）</font><font style="vertical-align: inherit;">的简码</font></font><code>.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Markdown 渲染器会将一个内联 HTML 节点（例如</font></font><code>&lt;a&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或 ）包装</font></font><code>&lt;span&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">到一个段落中。</font><font style="vertical-align: inherit;">如果您想禁用此行为，请将您的简码包装在一个</font></font><code>&lt;div&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基于 Markdown 的短代码将被视为返回的内容是页面正文的一部分。</font><font style="vertical-align: inherit;">例如</font><font style="vertical-align: inherit;">，如果我们创建
+</font></font><code>books.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font><code>templates/shortcodes</code><font style="vertical-align: inherit;"></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">data </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">load_data</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#d0d0ff;">path</span><span>) -%}
+</span><span>{% </span><span style="color:#cc7833;">for </span><span style="color:#d0d0ff;">book </span><span style="color:#cc7833;">in </span><span style="color:#d0d0ff;">data</span><span>.</span><span style="color:#d0d0ff;">books </span><span>%}
+</span><span>### {{ </span><span style="color:#d0d0ff;">book</span><span>.</span><span style="color:#d0d0ff;">title </span><span>}}
+</span><span>
+</span><span>{{ </span><span style="color:#d0d0ff;">book</span><span>.</span><span style="color:#d0d0ff;">description </span><span>| </span><span style="color:#d0d0ff;">safe </span><span>}}
+</span><span>{% </span><span style="color:#cc7833;">endfor </span><span>%}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这将创建一个短代码</font></font><code>books</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，其参数</font></font><code>path</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">指向一个</font></font><code>.toml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件，在该文件中加载带有标题和描述的书籍列表。</font><font style="vertical-align: inherit;">它们将与被调用的文档的其余部分一起流动</font></font><code>books</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简码在解析页面的 Markdown 之前呈现，因此它们无权访问页面的目录。</font><font style="vertical-align: inherit;">因此，您也不能使用</font><font style="vertical-align: inherit;">// /</font></font><a href="/zola/templates/overview/#get-page"><code>get_page</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">全局</font></font><a href="/zola/templates/overview/#get-section"><code>get_section</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">函数</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">它可能在运行时工作</font><font style="vertical-align: inherit;">，因为它已被加载，但在</font><font style="vertical-align: inherit;">.</font></font><a href="/zola/templates/overview/#get-taxonomy"><code>get_taxonomy</code></a><font style="vertical-align: inherit;"></font><a href="/zola/templates/overview/#get-taxonomy-term"><code>get_taxonomy_term</code></a><font style="vertical-align: inherit;"></font><code>zola serve</code><font style="vertical-align: inherit;"></font><code>zola build</code><font style="vertical-align: inherit;"></font></p>
+<h2 id="using-shortcodes"><a class="zola-anchor" href="/zola/content/shortcodes/#using-shortcodes" aria-label="锚链接：using-shortcodes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用简码</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">短代码有​​两种：</font></font></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">那些不带身体的，比如上面的 YouTube 例子</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">那些做的，比如一个引用的样式</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在这两种情况下，参数都必须命名，并且它们都将传递给模板。</font><font style="vertical-align: inherit;">即使没有参数，括号也是强制性的。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最后，短代码名称（以及相应的</font></font><code>.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件）以及参数名称只能包含数字、字母和下划线，或者在正则表达式中</font></font><code>[0-9A-Za-z_]</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">虽然理论上参数名称可以是数字，但不可能在模板中使用这样的参数。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参数值可以是五种类型之一：</font></font></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">字符串：用双引号、单引号或反引号括起来</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">布尔值：</font></font><code>true</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><code>false</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">float：带小数点的数字（例如，1.2）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">整数：整数或其负数对应物（例如，3）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数组：任何类型值的数组，数组除外</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">格式错误的值将被忽略。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">两种类型的简码也将获得 a</font></font><code>page</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><code>section</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变量，具体取决于它们的使用位置和</font></font><code>config</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变量。</font><font style="vertical-align: inherit;">这些值将覆盖传递给短代码的任何参数，因此这些变量名称不应用作短代码中的参数名称。</font></font></p>
+<h3 id="shortcodes-without-body"><a class="zola-anchor" href="/zola/content/shortcodes/#shortcodes-without-body" aria-label="锚链接：shortcodes-without-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">没有正文的简码</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">只需调用短代码，就好像它是变量块中的 Tera 函数一样。</font></font></p>
+<pre data-lang="md" style="background-color:#383838;color:#e6e1dc;" class="language-md "><code class="language-md" data-lang="md"><span>Here is a YouTube video:
+</span><span>
+</span><span>{{ youtube(id="dQw4w9WgXcQ") }}
+</span><span>
+</span><span>{{ youtube(id="dQw4w9WgXcQ", autoplay=true) }}
+</span><span>
+</span><span>An inline {{ youtube(id="dQw4w9WgXcQ", autoplay=true, class="youtube") }} shortcode
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，如果您想要一些看起来像短代码但不让 Zola 尝试呈现它的内容，您将需要使用</font></font><code>{{/*</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">and</font></font><code>*/}}</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">而不是</font></font><code>{{</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">and来转义它</font></font><code>}}</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h3 id="shortcodes-with-body"><a class="zola-anchor" href="/zola/content/shortcodes/#shortcodes-with-body" aria-label="锚链接：shortcodes-with-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">带正文的简码</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">假设我们有以下短代码</font></font><code>quote.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>&lt;blockquote&gt;
+</span><span>    {{ </span><span style="color:#d0d0ff;">body </span><span>}} &lt;br&gt;
+</span><span>    -- {{ </span><span style="color:#d0d0ff;">author</span><span>}}
+</span><span>&lt;/blockquote&gt;
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们可以像这样在我们的 Markdown 文件中使用它：</font></font></p>
+<pre data-lang="md" style="background-color:#383838;color:#e6e1dc;" class="language-md "><code class="language-md" data-lang="md"><span>As someone said:
+</span><span>
+</span><span>{% quote(author="Vincent") %}
+</span><span>A quote
+</span><span>{% end %}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">短代码的主体将作为</font></font><code>body</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变量自动传递到渲染上下文，并且需要换行。</font></font></p>
+<h3 id="shortcodes-with-no-arguments"><a class="zola-anchor" href="/zola/content/shortcodes/#shortcodes-with-no-arguments" aria-label="锚链接： shortcodes-with-no-arguments"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">没有参数的简码</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，对于这两种情况，短代码的括号都是必需的。</font><font style="vertical-align: inherit;">没有括号的短代码将呈现为纯文本，并且不会发出警告。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例如，这是如何</font></font><code>aside</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定义一个没有参数的短代码</font></font><code>aside.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>&lt;aside&gt;
+</span><span>    {{ </span><span style="color:#d0d0ff;">body </span><span>}}
+</span><span>&lt;/aside&gt;
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们可以像这样在我们的 Markdown 文件中使用它：</font></font></p>
+<pre data-lang="md" style="background-color:#383838;color:#e6e1dc;" class="language-md "><code class="language-md" data-lang="md"><span>Readers can refer to the aside for more information.
+</span><span>
+</span><span>{% aside() %}
+</span><span>An aside
+</span><span>{% end %}
+</span></code></pre>
+<h3 id="content-similar-to-shortcodes"><a class="zola-anchor" href="/zola/content/shortcodes/#content-similar-to-shortcodes" aria-label="锚链接：内容类似于简码"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">类似于简码的内容</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果你想要一些看起来像短代码的内容但 Zola 不尝试渲染它，你将需要使用</font></font><code>{%/*</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">and</font></font><code>*/%}</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">而不是</font></font><code>{%</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">and来转义它</font></font><code>%}</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">在结束标记之前，您不需要转义任何其他内容。</font></font></p>
+<h2 id="shortcode-context"><a class="zola-anchor" href="/zola/content/shortcodes/#shortcode-context" aria-label="锚链接：shortcode-context"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简码上下文</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">除了您作为参数显式传递的内容之外，每个短代码都可以访问一些变量。</font><font style="vertical-align: inherit;">这些变量在以下小节中解释：</font></font></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">调用次数 ( </font></font><code>nth</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当前语言 ( </font></font><code>lang</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)，除非从</font></font><code>markdown</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板过滤器中调用（在这种情况下，它将始终与配置中的值相同</font></font><code>default_language</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，或者</font></font><code>en</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当它未设置时）</font></font></li>
+<li><code>colocated_path</code></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当这些变量之一与作为参数传递的变量冲突时，将使用参数值。</font></font></p>
+<h3 id="nth-invocation-count"><a class="zola-anchor" href="/zola/content/shortcodes/#nth-invocation-count" aria-label="锚链接：nth-​​invocation-count"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>nth</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : 调用次数</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每个短代码上下文都在一个名为的变量中传递，</font></font><code>nth</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该变量跟踪在当前 Markdown 文件中调用特定短代码的次数。</font><font style="vertical-align: inherit;">给定一个简码</font></font><code>true_statement.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>&lt;p id="number{{ </span><span style="color:#d0d0ff;">nth </span><span>}}"&gt;{{ </span><span style="color:#d0d0ff;">value </span><span>}} is equal to {{ </span><span style="color:#d0d0ff;">nth </span><span>}}.&lt;/p&gt;
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它可以在我们的 Markdown 中使用，如下所示：</font></font></p>
+<pre data-lang="md" style="background-color:#383838;color:#e6e1dc;" class="language-md "><code class="language-md" data-lang="md"><span>{{ true_statement(value=1) }}
+</span><span>{{ true_statement(value=2) }}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这在为旁注或尾注等功能实现自定义标记时很有用。</font></font></p>
+<h3 id="lang-current-language"><a class="zola-anchor" href="/zola/content/shortcodes/#lang-current-language" aria-label="锚链接：lang-current-language"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>lang</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : 当前语言</font></font></h3>
+<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从模板过滤器中调用短代码时</font></font><code>markdown</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，</font></font><code>lang</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变量将始终为</font></font><code>en</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">如果您觉得需要，请考虑改用模板宏。</font><font style="vertical-align: inherit;">如果你真的需要它，你可以重写你的 Markdown 内容以作为</font></font><code>lang</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参数传递给短代码。</font></font></p>
+<p><font style="vertical-align: inherit;"></font><code>lang</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">每个短代码都可以访问上下文变量</font><font style="vertical-align: inherit;">中的当前语言。</font><font style="vertical-align: inherit;">这对于根据每种语言的方式在简码中呈现/过滤信息很有用。</font><font style="vertical-align: inherit;">例如，要在名为 的短代码中显示当前页面的每种语言的书籍封面</font></font><code>bookcover.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>![Book cover in {{ </span><span style="color:#d0d0ff;">lang </span><span>}}](cover.{{ </span><span style="color:#d0d0ff;">lang </span><span>}}.png)
+</span></code></pre>
+<h3 id="page-or-section"><a class="zola-anchor" href="/zola/content/shortcodes/#page-or-section" aria-label="锚链接：页面或部分"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>page</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><code>section</code></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以访问普通模板中等效变量的略微精简版本。</font><font style="vertical-align: inherit;">以下属性将为空：</font></font></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">翻译</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">反向链接</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页数</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（注意：这是因为 markdown 的渲染是在填充部分之前完成的）</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">短代码中一个有用的属性</font></font><code>page</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是</font></font><code>colocated_path</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">当您想将某些资产的名称传递给短代码而不重复完整的文件夹路径时，可以使用此方法。</font></font><code>load_data</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">与or</font><font style="vertical-align: inherit;">组合时最有用</font></font><code>resize_image</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">resized </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">resize_image</span><span>(</span><span style="color:#d0d0ff;">format</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"jpg"</span><span>, </span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#d0d0ff;">page</span><span>.</span><span style="color:#d0d0ff;">colocated_path</span><span> ~ </span><span style="color:#d0d0ff;">img_name</span><span>, </span><span style="color:#d0d0ff;">width</span><span style="color:#cc7833;">=</span><span style="color:#d0d0ff;">width</span><span>, </span><span style="color:#d0d0ff;">op</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"fit_width"</span><span>) %}
+</span><span>&lt;img alt="{{ </span><span style="color:#d0d0ff;">alt </span><span>}}" src="{{ </span><span style="color:#d0d0ff;">resized</span><span>.</span><span style="color:#d0d0ff;">url </span><span>| </span><span style="color:#d0d0ff;">safe </span><span>}}" /&gt;
+</span></code></pre>
+<h2 id="examples"><a class="zola-anchor" href="/zola/content/shortcodes/#examples" aria-label="锚链接：示例"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">例子</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这里有一些灵感的简码。</font></font></p>
+<h3 id="youtube"><a class="zola-anchor" href="/zola/content/shortcodes/#youtube" aria-label="锚链接：youtube"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> YouTube</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为 YouTube 视频嵌入响应式播放器。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">论点是：</font></font></p>
+<ul>
+<li><code>id</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：视频ID（必填）</font></font></li>
+<li><code>playlist</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: 播放列表 ID（可选）</font></font></li>
+<li><code>class</code><font style="vertical-align: inherit;"></font><code>&lt;div&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: 添加到iframe 周围的</font><font style="vertical-align: inherit;">类</font></font></li>
+<li><code>autoplay</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：设置为“true”时，视频会在加载时自动播放</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">代码：</font></font></p>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>&lt;div {% if class %}class="{{class}}"{% endif %}&gt;
+</span><span>    &lt;iframe src="https://www.youtube-nocookie.com/embed/{{id}}{% if playlist %}?list={{playlist}}{% endif %}{% if autoplay %}?autoplay=1{% endif %}" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+</span><span>&lt;/div&gt;
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用示例：</font></font></p>
+<pre data-lang="md" style="background-color:#383838;color:#e6e1dc;" class="language-md "><code class="language-md" data-lang="md"><span>{{ youtube(id="dCKeXuVHl1o") }}
+</span><span>
+</span><span>{{ youtube(id="dCKeXuVHl1o", playlist="RDdQw4w9WgXcQ") }}
+</span><span>
+</span><span>{{ youtube(id="dCKeXuVHl1o", autoplay=true) }}
+</span><span>
+</span><span>{{ youtube(id="dCKeXuVHl1o", autoplay=true, class="youtube") }}
+</span></code></pre>
+<h3 id="image-gallery"><a class="zola-anchor" href="/zola/content/shortcodes/#image-gallery" aria-label="锚链接：图片库"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图片库</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关代码和示例，</font><font style="vertical-align: inherit;">请参见</font></font><a href="/zola/content/image-processing/#creating-picture-galleries"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容处理页面。</font></font></a><font style="vertical-align: inherit;"></font></p>
+
+
+    </div>
+</div>
+
+        </div>
+        <footer>
+<p>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">©2017-2023 — </font></font>
+<a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">艾瑞可erik</font></font></a>、
+<a class="white" href="https://vincentprouillet.com/">
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vincent Prouillet</font>
+</font>
+</a>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font>
+<a class="white" href="https://github.com/getzola/zola/graphs/contributors"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">贡献者</font>
+</font>
+</a>
+</p>
+<p>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <span id="busuanzi_container_page_pv">&nbsp;本文总阅读量<span id="busuanzi_value_page_pv">0</span>次</span>
+</p>
+</footer>
+
+        <script type="text/javascript" src="./shortcodes_files/elasticlunr.min.js"></script>
+        <script type="text/javascript" src="./shortcodes_files/search.js"></script>
+
+
+</body></html>

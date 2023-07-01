@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)/zola/content/sass/ -->
+<html lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Everything you need to make a static site engine in one binary.">
+               <meta name="author" content="Vincent Prouillet">
+        <meta name="description" content="Zola 是一个静态站点生成器 (SSG)，类似于Hugo、Pelican和Jekyll（有关 SSG 的完整列表，请参阅Jamstack）。它用Rust编写并使用Tera模板引擎，类似于Jinja2、Django 模板、Liquid和Twig">
+        <meta name="keywords" content="Zola中文文档,zola,Zola,https://erik.xyz/zola,zola中文文档">
+        <title>Sass |  Zola</title>
+        <link rel="stylesheet" href="./sass_files/site.css">
+        <link rel="icon" href="https://www.getzola.org/favicon.ico">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="./sass_files/m=el_main_css"></head>
+    <body>
+
+        <header>
+            <nav class="">
+                <a class="white" href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola中文文档</font></font></a>
+                <a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾瑞可erik</font></font></a>
+                <a class="header__logo white" href="https://www.getzola.org/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola </font></font></a>
+                <a class="white" href="https://www.getzola.org/documentation/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docs</font></font></a>
+                <a class="white" href="https://github.com/getzola/zola" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></a>
+
+                <div class="search-container">
+                    <input id="search" type="search" placeholder="🔎 搜索文档">
+
+                    <div class="search-results">
+                        <div class="search-results__items"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content content--reversed">
+
+
+<div class="documentation">
+    <aside class="documentation__sidebar">
+        <ul>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/installation.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/cli-usage.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CLI 用法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/directory-structure.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录结构</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/configuration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/content/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/section.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/page.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/shortcodes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简码</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/linking.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内部链接和深度链接</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/table-of-contents.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/syntax-highlighting.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语法高亮</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/search.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></a>
+                        </li>
+
+                        <li class="active">
+                            <a href="/zola/content/sass.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sass</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/image-processing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图像处理</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/multilingual.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多语言网站</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/templates/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pages-sections.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">章节和页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pagination.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/feeds.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提要</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/sitemap.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站地图</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/robots.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">机器人.txt</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/404.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">404错误页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/archive.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">档案</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主题</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/themes/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/installing-and-using-themes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装和使用主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/creating-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/extending-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展主题</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/deployment/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/sourcehut.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sourcehut 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/netlify.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络化</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/github-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/gitlab-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitLab 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/edgio.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Edgio</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/vercel.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vercel</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/cloudflare-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cloudflare 页面</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+        </ul>
+    </aside>
+    <div class="documentation__content">
+
+    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sass</font></font></h1>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sass 是一种流行的 CSS 预处理器，它添加了特殊功能（例如，变量、嵌套规则）以促进大型 CSS 规则集的维护。</font><font style="vertical-align: inherit;">如果您对 Sass 是什么以及为什么它对您的静态站点样式有用感到好奇，您可能会对以下链接感兴趣：</font></font></p>
+<ul>
+<li><font style="vertical-align: inherit;"><a href="https://sass-lang.com/"><font style="vertical-align: inherit;">Sass 官方</font></a><font style="vertical-align: inherit;">网站</font></font><a href="https://sass-lang.com/"><font style="vertical-align: inherit;"></font></a></li>
+<li><a href="https://alistapart.com/article/why-sass"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为什么是Sass？</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, 丹·塞德霍尔姆</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它目前使用</font></font><a href="https://github.com/connorskees/grass"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">grass</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，一种 Sass 的 Rust 实现，大致相当于 dart-sass。</font></font></p>
+<h2 id="using-sass-in-zola"><a class="zola-anchor" href="/zola/content/sass/#using-sass-in-zola" aria-label="锚链接：using-sass-in-zola"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Zola 中使用 Sass</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola 处理文件夹中</font><font style="vertical-align: inherit;">带有</font></font><code>sass</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或扩展名的任何文件</font><font style="vertical-align: inherit;">
+，并将处理后的输出放入</font><font style="vertical-align: inherit;">文件夹中具有相同文件夹结构和基本名称的</font><font style="vertical-align: inherit;">文件中：</font></font><code>scss</code><font style="vertical-align: inherit;"></font><code>sass</code><font style="vertical-align: inherit;"></font><code>css</code><font style="vertical-align: inherit;"></font><code>public</code><font style="vertical-align: inherit;"></font></p>
+<pre data-lang="bash" style="background-color:#383838;color:#e6e1dc;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#da4939;">.
+</span><span>└── sass
+</span><span>    ├── style.scss // -</span><span style="color:#cc7833;">&gt;</span><span> ./public/style.css
+</span><span>    ├── indented_style.sass // -</span><span style="color:#cc7833;">&gt;</span><span> ./public/indented_style.css
+</span><span>    ├── _include.scss </span><span style="font-style:italic;color:#7c7865;"># This file won't get put into the `public` folder, but other files can @import it.
+</span><span>    ├── assets
+</span><span>    │   ├── fancy.scss // -</span><span style="color:#cc7833;">&gt;</span><span> ./public/assets/fancy.css
+</span><span>    │   ├── same_name.scss // -</span><span style="color:#cc7833;">&gt;</span><span> ./public/assets/same_name.css
+</span><span>    │   ├── same_name.sass </span><span style="font-style:italic;color:#7c7865;"># CONFLICT! This has the same base name as the file above, so Zola will return an error.
+</span><span>    │   └── _common_mixins.scss </span><span style="font-style:italic;color:#7c7865;"># This file won't get put into the `public` folder, but other files can @import it.
+</span><span>    └── secret-side-project
+</span><span>        └── style.scss // -</span><span style="color:#cc7833;">&gt;</span><span> ./public/secret-side-project/style.css
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">名称中带有前导下划线的文件不会放入</font></font><code>public</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+文件夹中，但仍可用作</font></font><code>@import</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">依赖项。</font></font><a href="https://sass-lang.com/guide"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关更多信息，请参阅Sass Basics</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的“Partials”部分
+</font><font style="vertical-align: inherit;">。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">具有扩展名的文件</font></font><code>scss</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用“Sassy CSS”语法，而具有</font></font><code>sass</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展名的文件使用“缩进”语法：</font></font><a href="https://sass-lang.com/documentation/syntax"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://sass-lang.com/documentation/syntax</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><code>scss</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果同一个文件夹中存在具有相同基本名称的文件</font><font style="vertical-align: inherit;">，Zola 将返回错误</font></font><code>sass</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以避免混淆——参见上面的示例。</font></font></p>
+
+
+    </div>
+</div>
+
+        </div>
+        <footer>
+<p>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">©2017-2023 — </font></font>
+<a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">艾瑞可erik</font></font></a>、
+<a class="white" href="https://vincentprouillet.com/">
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vincent Prouillet</font>
+</font>
+</a>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font>
+<a class="white" href="https://github.com/getzola/zola/graphs/contributors"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">贡献者</font>
+</font>
+</a>
+</p>
+<p>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <span id="busuanzi_container_page_pv">&nbsp;本文总阅读量<span id="busuanzi_value_page_pv">0</span>次</span>
+</p>
+</footer>
+
+        <script type="text/javascript" src="./sass_files/elasticlunr.min.js"></script>
+        <script type="text/javascript" src="./sass_files/search.js"></script>
+
+
+</body></html>

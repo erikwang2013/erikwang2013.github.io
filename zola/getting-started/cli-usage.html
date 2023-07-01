@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)/zola/getting-started/cli-usage/ -->
+<html lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Everything you need to make a static site engine in one binary.">
+               <meta name="author" content="Vincent Prouillet">
+        <meta name="description" content="Zola 是一个静态站点生成器 (SSG)，类似于Hugo、Pelican和Jekyll（有关 SSG 的完整列表，请参阅Jamstack）。它用Rust编写并使用Tera模板引擎，类似于Jinja2、Django 模板、Liquid和Twig">
+        <meta name="keywords" content="Zola中文文档,zola,Zola,https://erik.xyz/zola,zola中文文档">
+        <title>CLI 用法 |  Zola</title>
+        <link rel="stylesheet" href="./cli-usage_files/site.css">
+        <link rel="icon" href="https://www.getzola.org/favicon.ico">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="./cli-usage_files/m=el_main_css"></head>
+    <body>
+
+        <header>
+            <nav class="">
+                <a class="white" href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola中文文档</font></font></a>
+                <a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾瑞可erik</font></font></a>
+                <a class="header__logo white" href="https://www.getzola.org/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola </font></font></a>
+                <a class="white" href="https://www.getzola.org/documentation/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docs</font></font></a>
+                <a class="white" href="https://github.com/getzola/zola" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></a>
+
+                <div class="search-container">
+                    <input id="search" type="search" placeholder="🔎 搜索文档">
+
+                    <div class="search-results">
+                        <div class="search-results__items"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content content--reversed">
+
+
+<div class="documentation">
+    <aside class="documentation__sidebar">
+        <ul>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/installation.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a>
+                        </li>
+
+                        <li class="active">
+                            <a href="/zola/getting-started/cli-usage.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CLI 用法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/directory-structure.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录结构</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/configuration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/content/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/section.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/page.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/shortcodes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简码</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/linking.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内部链接和深度链接</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/table-of-contents.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/syntax-highlighting.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语法高亮</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/search.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/sass.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sass</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/image-processing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图像处理</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/multilingual.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多语言网站</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/templates/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pages-sections.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">章节和页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pagination.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/feeds.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提要</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/sitemap.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站地图</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/robots.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">机器人.txt</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/404.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">404错误页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/archive.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">档案</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主题</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/themes/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/installing-and-using-themes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装和使用主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/creating-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/extending-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展主题</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/deployment/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/sourcehut.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sourcehut 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/netlify.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络化</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/github-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/gitlab-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitLab 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/edgio.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Edgio</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/vercel.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vercel</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/cloudflare-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cloudflare 页面</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+        </ul>
+    </aside>
+    <div class="documentation__content">
+
+    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CLI 用法</font></font></h1>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola 只有 4 个命令</font><font style="vertical-align: inherit;">：</font></font><code>init</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>build</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>serve</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><code>check</code><font style="vertical-align: inherit;"></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以通过运行查看整个程序的帮助</font></font><code>zola --help</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，通过运行查看特定命令的帮助</font></font><code>zola &lt;cmd&gt; --help</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h2 id="init"><a class="zola-anchor" href="/zola/getting-started/cli-usage/#init" aria-label="锚链接：init"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">初始化</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在询问一些基本配置问题后，在给定目录中创建 Zola 使用的目录结构。</font><font style="vertical-align: inherit;">在这些提示期间所做的任何选择都可以通过修改 轻松更改</font></font><code>config.toml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<pre data-lang="bash" style="background-color:#383838;color:#e6e1dc;" class="language-bash "><code class="language-bash" data-lang="bash"><span>$ zola init my_site
+</span><span>$ zola init
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果该</font></font><code>my_site</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录已经存在，Zola 只会在它只包含隐藏文件时填充它（忽略点文件）。</font><font style="vertical-align: inherit;">如果没有</font></font><code>my_site</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">传递参数，Zola 将尝试填充当前目录。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想尝试填充一个非空目录并且很勇敢，您可以使用</font></font><code>zola init --force</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">请注意，这不会</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">覆盖</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现有的文件夹或文件；</font><font style="vertical-align: inherit;">在这些情况下，你会得到一个</font></font><code>File exists (os error 17)</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">错误或类似的错误。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以直接从新文件夹中初始化 git 存储库和 Zola 站点：</font></font></p>
+<pre data-lang="bash" style="background-color:#383838;color:#e6e1dc;" class="language-bash "><code class="language-bash" data-lang="bash"><span>$ git init
+</span><span>$ zola init
+</span></code></pre>
+<h2 id="build"><a class="zola-anchor" href="/zola/getting-started/cli-usage/#build" aria-label="锚链接：构建"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">建造</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这将在该目录中构建整个站点</font></font><code>public</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（如果该目录已存在，则将其删除）。</font></font></p>
+<pre data-lang="bash" style="background-color:#383838;color:#e6e1dc;" class="language-bash "><code class="language-bash" data-lang="bash"><span>$ zola build
+</span></code></pre>
+<p><font style="vertical-align: inherit;"></font><code>base_url</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以通过将新 URL 传递给标志来</font><font style="vertical-align: inherit;">覆盖配置</font></font><code>base-url</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<pre data-lang="bash" style="background-color:#383838;color:#e6e1dc;" class="language-bash "><code class="language-bash" data-lang="bash"><span>$ zola build</span><span style="font-style:italic;color:#fd971f;"> --base-url </span><span>$</span><span style="color:#d0d0ff;">DEPLOY_URL
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这在您想要将站点的预览部署到动态 URL 时非常有用，例如 Netlify 部署预览。</font></font></p>
+<p><font style="vertical-align: inherit;"></font><code>public</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以通过将另一个值传递给标志来</font><font style="vertical-align: inherit;">覆盖默认输出目录</font></font><code>output-dir</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">如果该目录已经存在，会提示用户是否替换该文件夹；</font><font style="vertical-align: inherit;">您可以通过传递 --force 标志来覆盖此提示。</font></font></p>
+<pre data-lang="bash" style="background-color:#383838;color:#e6e1dc;" class="language-bash "><code class="language-bash" data-lang="bash"><span>$ zola build</span><span style="font-style:italic;color:#fd971f;"> --output-dir </span><span>$</span><span style="color:#d0d0ff;">DOCUMENT_ROOT
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">你可以指向一个不同于</font></font><code>config.toml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这样的配置文件（注意选项的位置</font></font><code>config</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">很重要）：</font></font></p>
+<pre data-lang="bash" style="background-color:#383838;color:#e6e1dc;" class="language-bash "><code class="language-bash" data-lang="bash"><span>$ zola</span><span style="font-style:italic;color:#fd971f;"> --config</span><span> config.staging.toml build
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还可以使用标志处理来自不同目录的项目</font></font><code>root</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">如果使用标志构建一个“树外”项目</font></font><code>root</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，您可能希望将它与</font></font><code>output-dir</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标志结合起来。</font><font style="vertical-align: inherit;">（注意like </font></font><code>config</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，位置很重要）：</font></font></p>
+<pre data-lang="bash" style="background-color:#383838;color:#e6e1dc;" class="language-bash "><code class="language-bash" data-lang="bash"><span>$ zola</span><span style="font-style:italic;color:#fd971f;"> --root</span><span> /path/to/project build
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，不会加载草稿。</font><font style="vertical-align: inherit;">如果您希望包括它们，请传递</font></font><code>--drafts</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标志。</font></font></p>
+<h2 id="serve"><a class="zola-anchor" href="/zola/getting-started/cli-usage/#serve" aria-label="锚链接：服务"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发球</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这将使用本地服务器构建站点并为其提供服务。</font><font style="vertical-align: inherit;">如果您想要与默认值 ( ) 不同的东西，您还可以指定要使用的接口/端口组合</font></font><code>127.0.0.1:1111</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p><font style="vertical-align: inherit;"></font><code>--interface</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还可以分别使用和</font></font><code>-u</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/</font><font style="vertical-align: inherit;">为接口和 base_url 指定不同的地址</font></font><code>--base-url</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，例如，如果您在 Docker 容器中运行 Zola。</font></font></p>
+<blockquote>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，来自本地网络的设备</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将无法</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">访问所提供的页面。</font><font style="vertical-align: inherit;">当您想在移动设备或平板电脑上测试页面交互和布局时，这可能很重要。</font><font style="vertical-align: inherit;">但是，如果您将接口设置为</font></font><code>0.0.0.0</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，本地网络中的设备将能够通过请求服务页面和所用端口的机器的本地 ip 地址来访问服务页面。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为了让一切正常工作，您可能还必须将</font></font><code>base-url</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标志更改为本地 ip 或将其设置为</font></font><code>/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用基于服务器的相对路径。</font></font></p>
+</blockquote>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用该</font></font><code>--open</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标志在您的 Web 浏览器中自动打开本地托管的实例。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在开始之前，Zola 将删除输出目录（默认情况下</font></font><code>public</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在项目根目录中）以从头开始。</font></font></p>
+<pre data-lang="bash" style="background-color:#383838;color:#e6e1dc;" class="language-bash "><code class="language-bash" data-lang="bash"><span>$ zola serve
+</span><span>$ zola serve</span><span style="font-style:italic;color:#fd971f;"> --port</span><span> 2000
+</span><span>$ zola serve</span><span style="font-style:italic;color:#fd971f;"> --interface</span><span> 0.0.0.0
+</span><span>$ zola serve</span><span style="font-style:italic;color:#fd971f;"> --interface</span><span> 0.0.0.0</span><span style="font-style:italic;color:#fd971f;"> --port</span><span> 2000
+</span><span>$ zola serve</span><span style="font-style:italic;color:#fd971f;"> --interface</span><span> 0.0.0.0</span><span style="font-style:italic;color:#fd971f;"> --base-url</span><span> 127.0.0.1
+</span><span>$ zola serve</span><span style="font-style:italic;color:#fd971f;"> --interface</span><span> 0.0.0.0</span><span style="font-style:italic;color:#fd971f;"> --base-url</span><span> /
+</span><span>$ zola serve</span><span style="font-style:italic;color:#fd971f;"> --interface</span><span> 0.0.0.0</span><span style="font-style:italic;color:#fd971f;"> --port</span><span> 2000</span><span style="font-style:italic;color:#fd971f;"> --output-dir</span><span> www/public
+</span><span>$ zola serve</span><span style="font-style:italic;color:#fd971f;"> --open
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">serve 命令将监视您的所有内容，并在可能的情况下提供实时重新加载而无需硬刷新。</font><font style="vertical-align: inherit;">如果您在 Windows 上使用 WSL2，请确保将网站存储在 WSL 文件系统上。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">某些更改无法自动处理，因此实时重新加载可能并不总是有效。</font><font style="vertical-align: inherit;">如果您看不到更改或出现错误，请尝试重新启动</font></font><code>zola serve</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">你也可以指向一个配置文件而不是像</font></font><code>config.toml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这样（注意选项的位置</font></font><code>config</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">很重要）：</font></font></p>
+<pre data-lang="bash" style="background-color:#383838;color:#e6e1dc;" class="language-bash "><code class="language-bash" data-lang="bash"><span>$ zola</span><span style="font-style:italic;color:#fd971f;"> --config</span><span> config.staging.toml serve
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，不会加载草稿。</font><font style="vertical-align: inherit;">如果您希望包括它们，请传递</font></font><code>--drafts</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标志。</font></font></p>
+<h2 id="check"><a class="zola-anchor" href="/zola/getting-started/cli-usage/#check" aria-label="锚链接：检查"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检查</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">check 子命令将尝试像构建命令一样构建所有页面，但不会将任何结果写入磁盘。</font><font style="vertical-align: inherit;">此外，它还会通过尝试获取 Markdown 文件中的所有外部链接来检查它们（不检查模板文件中的链接）。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，不会加载草稿。</font><font style="vertical-align: inherit;">如果您希望包括它们，请传递</font></font><code>--drafts</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标志。</font></font></p>
+<h2 id="colored-output"><a class="zola-anchor" href="/zola/getting-started/cli-usage/#colored-output" aria-label="锚链接：彩色输出"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">彩色输出</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您的终端支持，则使用彩色输出。</font></font></p>
+<p><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：当输出重定向到管道或文件时（即，当标准输出不是 TTY 时），着色会自动禁用。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以通过导出以下两个环境变量之一来禁用此行为：</font></font></p>
+<ul>
+<li><code>NO_COLOR</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（值无所谓）</font></font></li>
+<li><code>CLICOLOR=0</code></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要强制使用颜色，您可以设置以下环境变量：</font></font></p>
+<ul>
+<li><code>CLICOLOR_FORCE=1</code></li>
+</ul>
+
+
+    </div>
+</div>
+
+        </div>
+        <footer>
+<p>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">©2017-2023 — </font></font>
+<a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">艾瑞可erik</font></font></a>、
+<a class="white" href="https://vincentprouillet.com/">
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vincent Prouillet</font>
+</font>
+</a>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font>
+<a class="white" href="https://github.com/getzola/zola/graphs/contributors"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">贡献者</font>
+</font>
+</a>
+</p>
+<p>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <span id="busuanzi_container_page_pv">&nbsp;本文总阅读量<span id="busuanzi_value_page_pv">0</span>次</span>
+</p>
+</footer>
+
+        <script type="text/javascript" src="./cli-usage_files/elasticlunr.min.js"></script>
+        <script type="text/javascript" src="./cli-usage_files/search.js"></script>
+
+
+</body></html>

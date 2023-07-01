@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)/slim/cookbook/database-doctrine.html -->
+<html lang="zh-CN" class="wf-brandongrotesque-n7-active wf-brandongrotesque-n3-active wf-active translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Using Doctrine with Slim - Slim Framework</title>
+                <meta name="description" content="Slim 是一个 PHP 微型框架，可帮助您快速编写简单但功能强大的 Web 应用程序和 API。Slim 的核心是一个调度程序，它接收 HTTP 请求、调用适当的回调例程并返回 HTTP 响应。就是这样。">
+        <meta name="keywords" content="slim中文文档,slim,slimframework,Slim Framework,/slim,Slim中文文档,Slim">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Using Doctrine with Slim">
+        <meta property="og:site_name" content="Slim Framework">
+        <meta property="og:url" content="/slim/cookbook/database-doctrine.html">
+        <meta property="og:description" content="">
+        <meta property="og:type" content="website">
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <link rel="stylesheet" href="./database-doctrine_files/all.css">
+        <link rel="stylesheet" href="./database-doctrine_files/docsearch.min.css">
+        <link rel="shortcut icon" href="assets/images/favicon.png">
+        <link rel="stylesheet" href="./database-doctrine_files/font-awesome.min.css">
+        <link href="./database-doctrine_files/css" rel="stylesheet">
+        <script id="twitter-wjs" src="./database-doctrine_files/widgets.js"></script><script type="text/javascript" async="" src="./database-doctrine_files/ga.js"></script><script src="./database-doctrine_files/yjz4fyo.js"></script>
+        <style type="text/css">.tk-brandon-grotesque{font-family:"brandon-grotesque",sans-serif;}</style><style type="text/css">@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/a417c9/0000000000000000000132e3/23/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/a417c9/0000000000000000000132e3/23/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/a417c9/0000000000000000000132e3/23/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-stretch:normal;font-display:auto;}@font-face{font-family:brandon-grotesque;src:url(https://use.typekit.net/af/9569d1/0000000000000000000132dd/23/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/9569d1/0000000000000000000132dd/23/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/9569d1/0000000000000000000132dd/23/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-stretch:normal;font-display:auto;}</style><script>try{Typekit.load();}catch(e){}</script>
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-19430723-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="./database-doctrine_files/m=el_main_css"></head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-logo" href="https://www.slimframework.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">slim</font></font></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://erik.xyz"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾瑞可erik</font></font></a></li>
+                    <li class="active"><a href="https://www.slimframework.com/docs/v4/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">slim文档</font></font></a></li>
+                        <li><a href="/slim/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中文文档</font></font></a></li>
+                    </ul>
+
+
+
+
+
+
+
+
+                                <div class="navbar-documentation-version-badge">
+                                    <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">v4 文档</font></font></span>
+                                </div>
+
+
+
+                </div>
+            </div>
+        </nav>
+
+<div class="wrapper docs">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="toc-nav-toggle">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#tocNav" aria-expanded="false" aria-controls="tocNav">
+                        Toggle Navigation
+                    </button>
+                </div>
+                <div class="collapse toc-nav-collapse" id="tocNav">
+
+
+
+                    <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></h3>
+<div class="svg-icons" style="height: 0; width: 0; position: absolute; visibility: hidden">
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="sbx-icon-clear-3" viewBox="0 0 40 40"><path d="M16.228 20L1.886 5.657 0 3.772 3.772 0l1.885 1.886L20 16.228 34.343 1.886 36.228 0 40 3.772l-1.886 1.885L23.772 20l14.342 14.343L40 36.228 36.228 40l-1.885-1.886L20 23.772 5.657 38.114 3.772 40 0 36.228l1.886-1.885L16.228 20z" fill-rule="evenodd"></path></symbol>
+        <symbol id="sbx-icon-search-13" viewBox="0 0 40 40"><path d="M26.806 29.012a16.312 16.312 0 0 1-10.427 3.746C7.332 32.758 0 25.425 0 16.378 0 7.334 7.333 0 16.38 0c9.045 0 16.378 7.333 16.378 16.38 0 3.96-1.406 7.593-3.746 10.426L39.547 37.34c.607.608.61 1.59-.004 2.203a1.56 1.56 0 0 1-2.202.004L26.807 29.012zm-10.427.627c7.322 0 13.26-5.938 13.26-13.26 0-7.324-5.938-13.26-13.26-13.26-7.324 0-13.26 5.936-13.26 13.26 0 7.322 5.936 13.26 13.26 13.26z" fill-rule="evenodd"></path></symbol>
+    </svg>
+</div>
+<form novalidate="novalidate" onsubmit="return false;" class="searchbox" style="visibility:hidden;height:0;margin-bottom:30px">
+    <div role="search" class="searchbox__wrapper">
+        <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input id="docsearch" type="search" name="search" placeholder="在文档中搜索" autocomplete="off" required="required" class="searchbox__input ds-input" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-label="搜索输入" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+        <button type="submit" title="提交您的搜索查询。" class="searchbox__submit">
+            <svg role="img" aria-label="搜索">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-13"></use>
+            </svg>
+        </button>
+        <button type="reset" title="Clear the search query." class="searchbox__reset hide">
+            <svg role="img" aria-label="Reset">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+            </svg>
+        </button>
+    </div>
+</form>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开始</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/home.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">家</font></font></a></li>
+
+
+                                <li><a href="/slim/start/installation.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a></li>
+
+
+                                <li><a href="/slim/start/upgrade.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">升级指南</font></font></a></li>
+
+
+                                <li><a href="/slim/start/web-servers.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络服务器</font></font></a></li>
+
+
+                                <li><a href="/slim/deployment/deployment.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概念</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/concepts/life-cycle.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应用生命周期</font></font></a></li>
+
+
+                                <li><a href="/slim/concepts/value-objects.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PSR-7</font></font></a></li>
+
+
+                                <li><a href="/slim/concepts/middleware.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中间件</font></font></a></li>
+
+
+                                <li><a href="/slim/concepts/di.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">依赖容器</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应用程序</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/objects/application.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/application.html#advanced-notices-and-warnings-handling"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通知和警告处理</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要求</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/objects/request.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/request.html#the-request-method"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">方法</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/request.html#the-request-headers"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标头</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/request.html#the-request-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">身体</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/request.html#uploaded-files"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上传的文件</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/request.html#request-helpers"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">帮手</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/request.html#route-object"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路由对象</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">响应</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/objects/response.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/response.html#the-response-status"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">地位</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/response.html#the-response-headers"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标头</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/response.html#the-response-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">身体</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/response.html#returning-json"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JSON</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路由</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/objects/routing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#how-to-create-routes"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建路线</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-callbacks"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">回调</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-strategies"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">攻略</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-placeholders"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">占位符</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-names"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">名称</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-groups"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">团体</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-middleware"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中间件</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#route-expressions-caching"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">缓存</font></font></a></li>
+
+
+                                <li><a href="/slim/objects/routing.html#container-resolution"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">容器分辨率</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打包中间件</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/middleware/routing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">路由</font></font></a></li>
+
+
+                                <li><a href="/slim/middleware/error-handling.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">错误处理</font></font></a></li>
+
+
+                                <li><a href="/slim/middleware/method-overriding.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">方法覆盖</font></font></a></li>
+
+
+                                <li><a href="/slim/middleware/output-buffering.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输出缓冲</font></font></a></li>
+
+
+                                <li><a href="/slim/middleware/body-parsing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">正文解析</font></font></a></li>
+
+
+                                <li><a href="/slim/middleware/content-length.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容长度</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">烹饪书</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/cookbook/route-patterns.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尾随/在路线</font></font></a></li>
+
+
+                                <li><a href="/slim/cookbook/retrieving-current-route.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检索当前路线</font></font></a></li>
+
+
+                                <li><a href="/slim/cookbook/database-doctrine.html" class="active"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 Doctrine 与 Slim 结合使用</font></font></a></li>
+
+
+                                <li><a href="/slim/cookbook/enable-cors.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启用 CORS</font></font></a></li>
+
+
+                                <li><a href="/slim/cookbook/uploading-files.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 POST 表单上传文件</font></font></a></li>
+
+                        </ul>
+
+
+
+                        <h3 class="toc-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">附加组件</font></font></h3>
+                        <ul class="toc-links">
+
+
+                                <li><a href="/slim/features/templates.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></a></li>
+
+                        </ul>
+
+
+
+
+                </div>
+            </div>
+
+            <div class="col-md-8 docs-content">
+                <h1 class="page-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 Doctrine 与 Slim 结合使用</font></font></h1>
+                <div class="edit-panel" style="margin: 0 0 1em 0;">
+                    <a href="https://github.com/slimphp/Slim-Website/tree/gh-pages/docs/v4/cookbook/database-doctrine.md" target="_blank" class="btn btn-default btn-sm"><i class="fa fa-github"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑这个页面</font></font></a>
+                </div>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这个食谱条目描述了如何</font><font style="vertical-align: inherit;">从头开始将广泛使用的</font></font><a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Doctrine ORM集成到 Slim 4 应用程序中。</font></font></a><font style="vertical-align: inherit;"></font></p>
+
+<h2 id="adding-doctrine-to-your-application"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 Doctrine 添加到您的应用程序</font></font></h2>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">第一步是使用</font></font><a href="https://getcomposer.org/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">composer</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将 Doctrine ORM 导入到你的项目中。</font></font></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash">composer require doctrine<span class="token operator">/</span>orm symfony<span class="token operator">/</span>cache
+</code></pre></div></div>
+
+<p><font style="vertical-align: inherit;"></font><code class="language-plaintext highlighter-rouge">doctrine/cache</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，2021 年 4 月 30 日，Doctrine在发布 v2.0.0 版本时</font><font style="vertical-align: inherit;">正式弃用，该版本从该库中删除了所有缓存实现。</font><font style="vertical-align: inherit;">从那时起，他们建议改用</font></font><code class="language-plaintext highlighter-rouge">symfony/cache</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">符合 PSR-6 的实现。</font><font style="vertical-align: inherit;">如果你想在生产中缓存 Doctrine 元数据，你只需要它，但这样做没有任何缺点，所以我们将展示如何设置它。</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您还没有迁移到 PHP8 或者只是想继续使用传统的 PHPDoc 注释来注释您的实体，您还需要导入包，</font></font><code class="language-plaintext highlighter-rouge">doctrine/annotations</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它曾经是 PHP8 的依赖项，</font></font><code class="language-plaintext highlighter-rouge">doctrine/orm</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">但由于 2.10.0 是可选的：</font></font></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash">composer require doctrine<span class="token operator">/</span>annotations
+</code></pre></div></div>
+
+<h2 id="define-your-first-entity"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定义您的第一个实体</font></font></h2>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以跳过此步骤并改用您的实际 Doctrine 实体。</font><font style="vertical-align: inherit;">以下只是一个例子。</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，它使用 PHP8 属性，如果需要，请将它们转换为 PHPDoc 注释。</font></font></p>
+
+<figure>
+  <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight language-php"><code class=" language-php"><span class="token delimiter">&lt;?php</span>
+<span class="token comment" spellcheck="true">
+// src/Domain/User.php
+</span>
+<span class="token keyword">use</span> <span class="token package">DateTimeImmutable</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Doctrine<span class="token punctuation">\</span>ORM<span class="token punctuation">\</span>Mapping<span class="token punctuation">\</span>Column</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Doctrine<span class="token punctuation">\</span>ORM<span class="token punctuation">\</span>Mapping<span class="token punctuation">\</span>Entity</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Doctrine<span class="token punctuation">\</span>ORM<span class="token punctuation">\</span>Mapping<span class="token punctuation">\</span>GeneratedValue</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Doctrine<span class="token punctuation">\</span>ORM<span class="token punctuation">\</span>Mapping<span class="token punctuation">\</span>Id</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Doctrine<span class="token punctuation">\</span>ORM<span class="token punctuation">\</span>Mapping<span class="token punctuation">\</span>Table</span><span class="token punctuation">;</span><font></font>
+<font></font>
+<span class="token shell-comment comment">#[Entity, Table(name: </span><span class="token string">'users'</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token keyword">final</span> <span class="token keyword">class</span> <span class="token class-name">User</span>
+<span class="token punctuation">{</span>
+    <span class="token shell-comment comment">#[Id, Column(type: </span><span class="token string">'integer'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">GeneratedValue<span class="token punctuation">(</span></span>strategy<span class="token punctuation">:</span> <span class="token string">'AUTO'</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token keyword">private</span> int <span class="token variable">$id</span><span class="token punctuation">;</span><font></font>
+<font></font>
+    <span class="token shell-comment comment">#[Column(type: </span><span class="token string">'string'</span><span class="token punctuation">,</span> unique<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> nullable<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token keyword">private</span> string <span class="token variable">$email</span><span class="token punctuation">;</span><font></font>
+<font></font>
+    <span class="token shell-comment comment">#[Column(name: </span><span class="token string">'registered_at'</span><span class="token punctuation">,</span> type<span class="token punctuation">:</span> <span class="token string">'datetimetz_immutable'</span><span class="token punctuation">,</span> nullable<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+    <span class="token keyword">private</span> DateTimeImmutable <span class="token variable">$registeredAt</span><span class="token punctuation">;</span><font></font>
+<font></font>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct<span class="token punctuation">(</span></span>string <span class="token variable">$email</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token this">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">email</span> <span class="token operator">=</span> <span class="token variable">$email</span><span class="token punctuation">;</span>
+        <span class="token this">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">registeredAt</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DateTimeImmutable</span><span class="token punctuation">(</span><span class="token string">'now'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><font></font>
+<font></font>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getId<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">:</span> int
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token this">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">id</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><font></font>
+<font></font>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getEmail<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">:</span> string
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token this">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">email</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><font></font>
+<font></font>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getRegisteredAt<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">:</span> DateTimeImmutable
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token this">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">registeredAt</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div>  </div>
+  <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图 1：一个示例 Doctrine 实体。</font></font></figcaption>
+</figure>
+
+<h2 id="provide-database-credentials"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提供数据库凭据</font></font></h2>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">接下来，在您的 Slim 配置旁边添加 Doctrine 设置。</font></font></p>
+
+<figure>
+  <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight language-php"><code class=" language-php"><span class="token delimiter">&lt;?php</span>
+<span class="token comment" spellcheck="true">
+// settings.php
+</span>
+<span class="token function">define<span class="token punctuation">(</span></span><span class="token string">'APP_ROOT'</span><span class="token punctuation">,</span> <span class="token constant">__DIR__</span><span class="token punctuation">)</span><span class="token punctuation">;</span><font></font>
+<font></font>
+<span class="token keyword">return</span> <span class="token punctuation">[</span>
+    <span class="token string">'settings'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+        <span class="token string">'slim'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+           <span class="token comment" spellcheck="true"> // Returns a detailed HTML page with error details and
+</span>           <span class="token comment" spellcheck="true"> // a stack trace. Should be disabled in production.
+</span>            <span class="token string">'displayErrorDetails'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">true</span><span class="token punctuation">,</span><font></font>
+<font></font>
+           <span class="token comment" spellcheck="true"> // Whether to display errors on the internal PHP log or not.
+</span>            <span class="token string">'logErrors'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">true</span><span class="token punctuation">,</span><font></font>
+<font></font>
+           <span class="token comment" spellcheck="true"> // If true, display full errors with message and stack trace on the PHP log.
+</span>           <span class="token comment" spellcheck="true"> // If false, display only "Slim Application Error" on the PHP log.
+</span>           <span class="token comment" spellcheck="true"> // Doesn't do anything when 'logErrors' is false.
+</span>            <span class="token string">'logErrorDetails'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span><font></font>
+<font></font>
+        <span class="token string">'doctrine'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+           <span class="token comment" spellcheck="true"> // Enables or disables Doctrine metadata caching
+</span>           <span class="token comment" spellcheck="true"> // for either performance or convenience during development.
+</span>            <span class="token string">'dev_mode'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token boolean">true</span><span class="token punctuation">,</span><font></font>
+<font></font>
+           <span class="token comment" spellcheck="true"> // Path where Doctrine will cache the processed metadata
+</span>           <span class="token comment" spellcheck="true"> // when 'dev_mode' is false.
+</span>            <span class="token string">'cache_dir'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token constant">APP_ROOT</span> <span class="token punctuation">.</span> <span class="token string">'/var/doctrine'</span><span class="token punctuation">,</span><font></font>
+<font></font>
+           <span class="token comment" spellcheck="true"> // List of paths where Doctrine will search for metadata.
+</span>           <span class="token comment" spellcheck="true"> // Metadata can be either YML/XML files or PHP classes annotated
+</span>           <span class="token comment" spellcheck="true"> // with comments or PHP8 attributes.
+</span>            <span class="token string">'metadata_dirs'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span><span class="token constant">APP_ROOT</span> <span class="token punctuation">.</span> <span class="token string">'/src/Domain'</span><span class="token punctuation">]</span><span class="token punctuation">,</span><font></font>
+<font></font>
+           <span class="token comment" spellcheck="true"> // The parameters Doctrine needs to connect to your database.
+</span>           <span class="token comment" spellcheck="true"> // These parameters depend on the driver (for instance the 'pdo_sqlite' driver
+</span>           <span class="token comment" spellcheck="true"> // needs a 'path' parameter and doesn't use most of the ones shown in this example).
+</span>           <span class="token comment" spellcheck="true"> // Refer to the Doctrine documentation to see the full list
+</span>           <span class="token comment" spellcheck="true"> // of valid parameters: https://www.doctrine-project.org/projects/doctrine-dbal/en/current/reference/configuration.html
+</span>            <span class="token string">'connection'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">[</span>
+                <span class="token string">'driver'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'pdo_mysql'</span><span class="token punctuation">,</span>
+                <span class="token string">'host'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'localhost'</span><span class="token punctuation">,</span>
+                <span class="token string">'port'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token number">3306</span><span class="token punctuation">,</span>
+                <span class="token string">'dbname'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'mydb'</span><span class="token punctuation">,</span>
+                <span class="token string">'user'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'user'</span><span class="token punctuation">,</span>
+                <span class="token string">'password'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'secret'</span><span class="token punctuation">,</span>
+                <span class="token string">'charset'</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token string">'utf-8'</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div>  </div>
+  <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图 2：Slim 设置数组。</font></font></figcaption>
+</figure>
+
+<h2 id="define-the-entitymanager-service"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">定义 EntityManager 服务</font></font></h2>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">现在我们定义</font></font><code class="language-plaintext highlighter-rouge">EntityManager</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">服务，它是您代码中与 ORM 交互的主要点。</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Slim 4 要求您提供自己的 PSR-11 容器实现。</font><font style="vertical-align: inherit;">本示例使用</font></font><a href="https://github.com/1ma/dic"><code class="language-plaintext highlighter-rouge">uma/dic</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, 一个简洁明了的 PSR-11 容器。</font><font style="vertical-align: inherit;">使其适应您自己选择的容器。</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">传统上注解元数据读取器是最流行的，但从</font></font><code class="language-plaintext highlighter-rouge">doctrine/orm</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2.10.0 开始他们将依赖设为</font></font><code class="language-plaintext highlighter-rouge">doctrine/annotations</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可选，暗示该项目更愿意用户迁移到现代 PHP8 属性表示法。</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这里我们展示了如何使用 PHP8 属性配置元数据读取器。</font><font style="vertical-align: inherit;">如果您还没有迁移到 PHP8 或想使用传统的 PHPDoc 注释，您将需要使用</font></font><code class="language-plaintext highlighter-rouge">doctrine/annotations</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Composer 显式要求并调用，</font></font><code class="language-plaintext highlighter-rouge">Setup::createAnnotationMetadataConfiguration(...)</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">而不是像</font></font><code class="language-plaintext highlighter-rouge">Setup::createAttributeMetadataConfiguration(...)</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下面的示例那样。</font></font></p>
+
+<figure>
+  <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight language-php"><code class=" language-php"><span class="token delimiter">&lt;?php</span>
+<span class="token comment" spellcheck="true">
+// bootstrap.php
+</span>
+<span class="token keyword">use</span> <span class="token package">Doctrine<span class="token punctuation">\</span>Common<span class="token punctuation">\</span>Cache<span class="token punctuation">\</span>Psr6<span class="token punctuation">\</span>DoctrineProvider</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Doctrine<span class="token punctuation">\</span>ORM<span class="token punctuation">\</span>EntityManager</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Doctrine<span class="token punctuation">\</span>ORM<span class="token punctuation">\</span>Tools<span class="token punctuation">\</span>Setup</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Psr<span class="token punctuation">\</span>Container<span class="token punctuation">\</span>ContainerInterface</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Symfony<span class="token punctuation">\</span>Component<span class="token punctuation">\</span>Cache<span class="token punctuation">\</span>Adapter<span class="token punctuation">\</span>ArrayAdapter</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Symfony<span class="token punctuation">\</span>Component<span class="token punctuation">\</span>Cache<span class="token punctuation">\</span>Adapter<span class="token punctuation">\</span>FilesystemAdapter</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">UMA<span class="token punctuation">\</span>DIC<span class="token punctuation">\</span>Container</span><span class="token punctuation">;</span><font></font>
+<font></font>
+<span class="token keyword">require_once</span> <span class="token constant">__DIR__</span> <span class="token punctuation">.</span> <span class="token string">'/vendor/autoload.php'</span><span class="token punctuation">;</span><font></font>
+<font></font>
+<span class="token variable">$container</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Container</span><span class="token punctuation">(</span><span class="token keyword">require</span> <span class="token constant">__DIR__</span> <span class="token punctuation">.</span> <span class="token string">'/settings.php'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><font></font>
+<font></font>
+<span class="token variable">$container</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">set<span class="token punctuation">(</span></span><span class="token scope">EntityManager<span class="token punctuation">::</span></span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>Container <span class="token variable">$c</span><span class="token punctuation">)</span><span class="token punctuation">:</span> EntityManager <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">/** @var array $settings */</span>
+    <span class="token variable">$settings</span> <span class="token operator">=</span> <span class="token variable">$c</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">get<span class="token punctuation">(</span></span><span class="token string">'settings'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><font></font>
+<font></font>
+   <span class="token comment" spellcheck="true"> // Use the ArrayAdapter or the FilesystemAdapter depending on the value of the 'dev_mode' setting
+</span>   <span class="token comment" spellcheck="true"> // You can substitute the FilesystemAdapter for any other cache you prefer from the symfony/cache library
+</span>    <span class="token variable">$cache</span> <span class="token operator">=</span> <span class="token variable">$settings</span><span class="token punctuation">[</span><span class="token string">'doctrine'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'dev_mode'</span><span class="token punctuation">]</span> <span class="token operator">?</span>
+        <span class="token scope">DoctrineProvider<span class="token punctuation">::</span></span><span class="token function">wrap<span class="token punctuation">(</span></span><span class="token keyword">new</span> <span class="token class-name">ArrayAdapter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">:</span>
+        <span class="token scope">DoctrineProvider<span class="token punctuation">::</span></span><span class="token function">wrap<span class="token punctuation">(</span></span><span class="token keyword">new</span> <span class="token class-name">FilesystemAdapter</span><span class="token punctuation">(</span>directory<span class="token punctuation">:</span> <span class="token variable">$settings</span><span class="token punctuation">[</span><span class="token string">'doctrine'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'cache_dir'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><font></font>
+<font></font>
+    <span class="token variable">$config</span> <span class="token operator">=</span> <span class="token scope">Setup<span class="token punctuation">::</span></span><span class="token function">createAttributeMetadataConfiguration<span class="token punctuation">(</span></span>
+        <span class="token variable">$settings</span><span class="token punctuation">[</span><span class="token string">'doctrine'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'metadata_dirs'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token variable">$settings</span><span class="token punctuation">[</span><span class="token string">'doctrine'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'dev_mode'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token keyword">null</span><span class="token punctuation">,</span>
+        <span class="token variable">$cache</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span><font></font>
+<font></font>
+    <span class="token keyword">return</span> <span class="token scope">EntityManager<span class="token punctuation">::</span></span><span class="token function">create<span class="token punctuation">(</span></span><span class="token variable">$settings</span><span class="token punctuation">[</span><span class="token string">'doctrine'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'connection'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token variable">$config</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><font></font>
+<font></font>
+<span class="token keyword">return</span> <span class="token variable">$container</span><span class="token punctuation">;</span>
+</code></pre></div>  </div>
+  <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图 3：定义 EntityManager 服务。</font></font></figcaption>
+</figure>
+
+<h2 id="create-the-doctrine-console"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建 Doctrine 控制台</font></font></h2>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要运行数据库迁移、验证类注释等，您将使用</font></font><code class="language-plaintext highlighter-rouge">doctrine</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">已经存在于</font></font><code class="language-plaintext highlighter-rouge">vendor/bin</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">但是为了工作这个脚本需要一个</font></font><a href="http://docs.doctrine-project.org/en/latest/reference/configuration.html#setting-up-the-commandline-tool"><code class="language-plaintext highlighter-rouge">cli-config.php</code></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+位于项目根目录的文件告诉它如何找到</font></font><code class="language-plaintext highlighter-rouge">EntityManager</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们刚刚设置的。</font></font></p>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们</font></font><code class="language-plaintext highlighter-rouge">cli-config.php</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">只需要检索我们刚刚在容器中定义的 EntityManager 服务并将其传递给</font></font><code class="language-plaintext highlighter-rouge">ConsoleRunner::createHelperSet()</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+
+<figure>
+
+  <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight language-php"><code class=" language-php"><span class="token delimiter">&lt;?php</span>
+<span class="token comment" spellcheck="true">
+// cli-config.php
+</span>
+<span class="token keyword">use</span> <span class="token package">Doctrine<span class="token punctuation">\</span>ORM<span class="token punctuation">\</span>EntityManager</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Doctrine<span class="token punctuation">\</span>ORM<span class="token punctuation">\</span>Tools<span class="token punctuation">\</span>Console<span class="token punctuation">\</span>ConsoleRunner</span><span class="token punctuation">;</span>
+<span class="token keyword">use</span> <span class="token package">Slim<span class="token punctuation">\</span>Container</span><span class="token punctuation">;</span><font></font>
+<font></font>
+<span class="token comment" spellcheck="true">/** @var Container $container */</span>
+<span class="token variable">$container</span> <span class="token operator">=</span> <span class="token keyword">require_once</span> <span class="token constant">__DIR__</span> <span class="token punctuation">.</span> <span class="token string">'/bootstrap.php'</span><span class="token punctuation">;</span><font></font>
+<font></font>
+<span class="token keyword">return</span> <span class="token scope">ConsoleRunner<span class="token punctuation">::</span></span><span class="token function">createHelperSet<span class="token punctuation">(</span></span><span class="token variable">$container</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">get<span class="token punctuation">(</span></span><span class="token scope">EntityManager<span class="token punctuation">::</span></span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div>  </div>
+
+  <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图 4：启用 Doctrine 的控制台应用程序。</font></font></figcaption>
+</figure>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">花点时间验证控制台应用程序是否正常工作。</font><font style="vertical-align: inherit;">正确配置后，它的输出或多或少看起来像这样：</font></font></p>
+
+<figure>
+  <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight language-bash"><code class=" language-bash">$ php vendor<span class="token operator">/</span>bin<span class="token operator">/</span>doctrine<font></font>
+Doctrine Command Line Interface <span class="token class-name">2<span class="token punctuation">.</span>11<span class="token punctuation">.</span>0</span><font></font>
+<font></font>
+Usage<span class="token punctuation">:</span>
+  command <span class="token punctuation">[</span>options<span class="token punctuation">]</span> <span class="token punctuation">[</span>arguments<span class="token punctuation">]</span><font></font>
+<font></font>
+Options<span class="token punctuation">:</span>
+  <span class="token operator">-</span>h<span class="token punctuation">,</span> <span class="token operator">--</span>help            Display help <span class="token keyword">for</span> the given command<span class="token punctuation">.</span> When no command is given display help <span class="token keyword">for</span> the list command
+  <span class="token operator">-</span>q<span class="token punctuation">,</span> <span class="token operator">--</span>quiet           Do not output any message
+  <span class="token operator">-</span>V<span class="token punctuation">,</span> <span class="token operator">--</span>version         Display this application version
+      <span class="token operator">--</span>ansi<span class="token operator">|</span><span class="token operator">--</span>no<span class="token operator">-</span>ansi  Force <span class="token punctuation">(</span>or disable <span class="token operator">--</span>no<span class="token operator">-</span>ansi<span class="token punctuation">)</span> ANSI output
+  <span class="token operator">-</span>n<span class="token punctuation">,</span> <span class="token operator">--</span>no<span class="token operator">-</span>interaction  Do not ask any interactive question
+  <span class="token operator">-</span>v<span class="token operator">|</span>vv<span class="token operator">|</span>vvv<span class="token punctuation">,</span> <span class="token operator">--</span>verbose  Increase the verbosity of messages<span class="token punctuation">:</span> <span class="token number">1</span> <span class="token keyword">for</span> normal output<span class="token punctuation">,</span> <span class="token number">2</span> <span class="token keyword">for</span> more verbose output and <span class="token number">3</span> <span class="token keyword">for</span> debug<font></font>
+<font></font>
+Available commands<span class="token punctuation">:</span><font></font>
+  completion                         Dump the shell completion script<font></font>
+  help                               Display help <span class="token keyword">for</span> a command<font></font>
+  list                               List commands<font></font>
+ dbal<font></font>
+  dbal<span class="token punctuation">:</span>reserved<span class="token operator">-</span>words                Checks <span class="token keyword">if</span> the current database contains identifiers that are reserved<span class="token punctuation">.</span>
+  dbal<span class="token punctuation">:</span>run<span class="token operator">-</span>sql                       Executes arbitrary SQL directly from the command line<span class="token punctuation">.</span><font></font>
+ orm<font></font>
+  orm<span class="token punctuation">:</span>clear<span class="token operator">-</span>cache<span class="token punctuation">:</span>metadata           Clear all metadata cache of the various cache drivers<font></font>
+  orm<span class="token punctuation">:</span>clear<span class="token operator">-</span>cache<span class="token punctuation">:</span>query              Clear all query cache of the various cache drivers<font></font>
+  orm<span class="token punctuation">:</span>clear<span class="token operator">-</span>cache<span class="token punctuation">:</span>region<span class="token punctuation">:</span>collection  Clear a second<span class="token operator">-</span>level cache collection region<font></font>
+  orm<span class="token punctuation">:</span>clear<span class="token operator">-</span>cache<span class="token punctuation">:</span>region<span class="token punctuation">:</span>entity      Clear a second<span class="token operator">-</span>level cache entity region<font></font>
+  orm<span class="token punctuation">:</span>clear<span class="token operator">-</span>cache<span class="token punctuation">:</span>region<span class="token punctuation">:</span>query       Clear a second<span class="token operator">-</span>level cache query region<font></font>
+  orm<span class="token punctuation">:</span>clear<span class="token operator">-</span>cache<span class="token punctuation">:</span>result             Clear all result cache of the various cache drivers<font></font>
+  orm<span class="token punctuation">:</span>convert<span class="token operator">-</span>d1<span class="token operator">-</span>schema              <span class="token punctuation">[</span>orm<span class="token punctuation">:</span>convert<span class="token punctuation">:</span>d1<span class="token operator">-</span>schema<span class="token punctuation">]</span> Converts Doctrine <span class="token number">1</span><span class="token punctuation">.</span>x schema into a Doctrine <span class="token number">2</span><span class="token punctuation">.</span>x schema<font></font>
+  orm<span class="token punctuation">:</span>convert<span class="token operator">-</span>mapping                <span class="token punctuation">[</span>orm<span class="token punctuation">:</span>convert<span class="token punctuation">:</span>mapping<span class="token punctuation">]</span> Convert mapping information between supported formats<font></font>
+  orm<span class="token punctuation">:</span>ensure<span class="token operator">-</span>production<span class="token operator">-</span>settings     Verify that Doctrine is properly configured <span class="token keyword">for</span> a production environment<font></font>
+  orm<span class="token punctuation">:</span>generate<span class="token operator">-</span>entities              <span class="token punctuation">[</span>orm<span class="token punctuation">:</span>generate<span class="token punctuation">:</span>entities<span class="token punctuation">]</span> Generate entity classes and method stubs from your mapping information<font></font>
+  orm<span class="token punctuation">:</span>generate<span class="token operator">-</span>proxies               <span class="token punctuation">[</span>orm<span class="token punctuation">:</span>generate<span class="token punctuation">:</span>proxies<span class="token punctuation">]</span> Generates proxy classes <span class="token keyword">for</span> entity classes<font></font>
+  orm<span class="token punctuation">:</span>generate<span class="token operator">-</span>repositories          <span class="token punctuation">[</span>orm<span class="token punctuation">:</span>generate<span class="token punctuation">:</span>repositories<span class="token punctuation">]</span> Generate repository classes from your mapping information<font></font>
+  orm<span class="token punctuation">:</span>info                           Show basic information about all mapped entities<font></font>
+  orm<span class="token punctuation">:</span>mapping<span class="token punctuation">:</span>describe               Display information about mapped objects<font></font>
+  orm<span class="token punctuation">:</span>run<span class="token operator">-</span>dql                        Executes arbitrary DQL directly from the command line<font></font>
+  orm<span class="token punctuation">:</span>schema<span class="token operator">-</span>tool<span class="token punctuation">:</span>create             Processes the schema and either create it directly on EntityManager Storage Connection or generate the SQL output<font></font>
+  orm<span class="token punctuation">:</span>schema<span class="token operator">-</span>tool<span class="token punctuation">:</span>drop               Drop the complete database schema of EntityManager Storage Connection or generate the corresponding SQL output<font></font>
+  orm<span class="token punctuation">:</span>schema<span class="token operator">-</span>tool<span class="token punctuation">:</span>update             Executes <span class="token punctuation">(</span>or dumps<span class="token punctuation">)</span> the SQL needed to update the database schema to match the current mapping metadata<font></font>
+  orm<span class="token punctuation">:</span>validate<span class="token operator">-</span>schema                Validate the mapping files
+</code></pre></div>  </div>
+  <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图 5：完整性检查 Doctrine 的 CLI。</font></font></figcaption>
+</figure>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此时，您可以通过运行来初始化数据库并加载架构</font></font><code class="language-plaintext highlighter-rouge">php vendor/bin/doctrine orm:schema-tool:create</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+
+<h2 id="using-the-entitymanager-in-our-own-code"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在我们自己的代码中使用 EntityManager</font></font></h2>
+
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">恭喜！</font><font style="vertical-align: inherit;">您现在可以从命令行管理数据库，并</font></font><code class="language-plaintext highlighter-rouge">EntityManager</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在代码中需要的地方使用它。</font></font></p>
+
+<figure>
+  <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight language-php"><code class=" language-php"><span class="token comment" spellcheck="true">// bootstrap.php
+</span>
+<span class="token variable">$container</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">set<span class="token punctuation">(</span></span><span class="token scope">UserService<span class="token punctuation">::</span></span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>Container <span class="token variable">$c</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">UserService</span><span class="token punctuation">(</span><span class="token variable">$c</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">get<span class="token punctuation">(</span></span><span class="token scope">EntityManager<span class="token punctuation">::</span></span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">
+// src/UserService.php
+</span>
+<span class="token keyword">final</span> <span class="token keyword">class</span> <span class="token class-name">UserService</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">private</span> EntityManager <span class="token variable">$em</span><span class="token punctuation">;</span><font></font>
+<font></font>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct<span class="token punctuation">(</span></span>EntityManager <span class="token variable">$em</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token this">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">em</span> <span class="token operator">=</span> <span class="token variable">$em</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><font></font>
+<font></font>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">signUp<span class="token punctuation">(</span></span>string <span class="token variable">$email</span><span class="token punctuation">)</span><span class="token punctuation">:</span> User
+    <span class="token punctuation">{</span>
+        <span class="token variable">$newUser</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token variable">$email</span><span class="token punctuation">)</span><span class="token punctuation">;</span><font></font>
+<font></font>
+        <span class="token this">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">em</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">persist<span class="token punctuation">(</span></span><span class="token variable">$newUser</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token this">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">em</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">flush<span class="token punctuation">(</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span><font></font>
+<font></font>
+        <span class="token keyword">return</span> <span class="token variable">$newUser</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div>  </div>
+  <figcaption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图 6：在您自己的代码中使用 EntityManager 服务。</font></font></figcaption>
+</figure>
+
+<h2 id="other-resources"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他资源</font></font></h2>
+
+<ul>
+  <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">官方</font></font><a href="http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Doctrine ORM 文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+  <li><a href="https://github.com/1ma/Slim-Doctrine-Demo"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一个小而完整的项目中上述设置的</font><a href="https://github.com/1ma/Slim-Doctrine-Demo"><font style="vertical-align: inherit;">完整示例。</font></a></font></li>
+</ul>
+
+
+                <nav>
+                    <ul class="nav pager">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <li class="previous">
+                                            <a href="/slim/cookbook/retrieving-current-route.html" rel="prev"><i class="fa fa-arrow-left"></i> <small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">烹饪书：</font></font></small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">检索当前路线</font></font></a>
+                                        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    <li class="next">
+                                        <a href="/slim/cookbook/enable-cors.html" rel="next"><small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">烹饪书：</font></font></small><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启用 CORS</font></font><i class="fa fa-arrow-right"></i></a>
+                                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <footer class="site-footer">
+    <p><font style="vertical-align: inherit;"></font><br>
+        <a href="http://joshlockhart.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由Josh Lockhart</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、
+         </font></font><a href="https://www.donielsmith.com/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Andrew Smith</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、
+         </font></font><a href="http://akrabat.com/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rob Allen</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、
+         </font></font><a href="http://www.lgse.com/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pierre Bérubé</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和
+        </font><a href="https://github.com/orgs/slimphp/people" target="_blank"><font style="vertical-align: inherit;">Slim Framework 团队</font></a><font style="vertical-align: inherit;">
+        创建和维护</font></font><a href="https://github.com/orgs/slimphp/people" target="_blank"><font style="vertical-align: inherit;"></font></a>
+    </p>
+       <p>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <span id="busuanzi_container_page_pv">&nbsp;本文总阅读量<span id="busuanzi_value_page_pv">0</span>次</span>
+</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" style="margin: 0; padding-top: 20px">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="9YRVXHRZT6H3L">
+        <input type="image" src="./database-doctrine_files/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - 更安全、更轻松的在线支付方式！">
+        <img alt="" border="0" src="./database-doctrine_files/pixel.gif" width="1" height="1">
+    </form>
+</footer>
+
+    </div>
+</div>
+        <script src="./database-doctrine_files/jquery.min.js"></script>
+        <script src="./database-doctrine_files/bootstrap.min.js"></script>
+        <script src="./database-doctrine_files/production.min.js"></script>
+
+        <script src="./database-doctrine_files/docsearch.min.js"></script>
+        <script>
+          docsearch({
+            apiKey: '8ed5262aecf5240c6d66dbba260f3e51',
+            appId: 'KS0N5YSBFY',
+            indexName: 'slim-docs',
+            inputSelector: '#docsearch',
+            debug: true,
+            transformData: function (suggestions) {
+              for (var i = 0; i < suggestions.length; i++) {
+                var suggestion = suggestions[i];
+
+                var docVersion = null;
+                var urlFragments = suggestion.url.split("/");
+                if (urlFragments.length >= 3 && urlFragments[1] === "docs") {
+                  docVersion = urlFragments[2];
+                }
+
+                if (suggestion.hierarchy.lvl0 === null) {
+                  suggestions[i].hierarchy.lvl0 = docVersion ? "Slim " + docVersion + " - " + suggestion.title : suggestion.title
+                }
+              }
+              return suggestions;
+            },
+          });
+        </script>
+
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./database-doctrine_files/widget_iframe.2b2d73daf636805223fb11d48f3e94f7.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./database-doctrine_files/saved_resource.html"></iframe></body></html>

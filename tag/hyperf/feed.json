@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"hyperf\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔搞搞摄影、画画、写作、顺便睡觉。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2022/01/12/hyperf-errors/",
+            "url": "https://erik.xyz/2022/01/12/hyperf-errors/",
+            "title": "hyperf异常",
+            "date_published": "2022-01-12T07:30:00.000Z",
+            "content_html": "<ul>\n<li><p>Maximum function nesting level of ‘256’ reached, aborting</p>\n<pre><code>先跑了所有接口，发现都是这个报错。梳理新增加的接口方法后，直接屏蔽新接口所有方法逻辑，就恢复正常。依次排除法，最终发现在model里面封装的方法调用了service层的方法导致超负荷加载函数嵌套。\n</code></pre></li>\n</ul>\n<span id=\"more\"></span>",
+            "tags": [
+                "hyperf"
+            ]
+        }
+    ]
+}

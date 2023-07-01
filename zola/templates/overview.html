@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)/zola/templates/overview/ -->
+<html lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Everything you need to make a static site engine in one binary.">
+               <meta name="author" content="Vincent Prouillet">
+        <meta name="description" content="Zola 是一个静态站点生成器 (SSG)，类似于Hugo、Pelican和Jekyll（有关 SSG 的完整列表，请参阅Jamstack）。它用Rust编写并使用Tera模板引擎，类似于Jinja2、Django 模板、Liquid和Twig">
+        <meta name="keywords" content="Zola中文文档,zola,Zola,https://erik.xyz/zola,zola中文文档">
+        <title>概述 |  Zola</title>
+        <link rel="stylesheet" href="./overview_files/site.css">
+        <link rel="icon" href="https://www.getzola.org/favicon.ico">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="./overview_files/m=el_main_css"></head>
+    <body>
+
+        <header>
+            <nav class="">
+                <a class="white" href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola中文文档</font></font></a>
+                <a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾瑞可erik</font></font></a>
+                <a class="header__logo white" href="https://www.getzola.org/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola </font></font></a>
+                <a class="white" href="https://www.getzola.org/documentation/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docs</font></font></a>
+                <a class="white" href="https://github.com/getzola/zola" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></a>
+
+                <div class="search-container">
+                    <input id="search" type="search" placeholder="🔎 搜索文档">
+
+                    <div class="search-results">
+                        <div class="search-results__items"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content content--reversed">
+
+
+<div class="documentation">
+    <aside class="documentation__sidebar">
+        <ul>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/installation.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/cli-usage.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CLI 用法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/directory-structure.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录结构</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/configuration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/content/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/section.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/page.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/shortcodes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简码</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/linking.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内部链接和深度链接</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/table-of-contents.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/syntax-highlighting.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语法高亮</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/search.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/sass.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sass</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/image-processing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图像处理</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/multilingual.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多语言网站</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></span>
+                <ul>
+
+                        <li class="active">
+                            <a href="/zola/templates/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pages-sections.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">章节和页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pagination.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/feeds.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提要</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/sitemap.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站地图</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/robots.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">机器人.txt</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/404.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">404错误页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/archive.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">档案</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主题</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/themes/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/installing-and-using-themes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装和使用主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/creating-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/extending-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展主题</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/deployment/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/sourcehut.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sourcehut 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/netlify.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络化</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/github-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/gitlab-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitLab 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/edgio.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Edgio</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/vercel.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vercel</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/cloudflare-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cloudflare 页面</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+        </ul>
+    </aside>
+    <div class="documentation__content">
+
+    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></h1>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola 使用</font></font><a href="https://tera.netlify.com/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tera</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板引擎，这与 Jinja2、Liquid 和 Twig 非常相似。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由于本文档只会讨论模板在 Zola 中的工作方式，</font><font style="vertical-align: inherit;">如果您想先了解更多信息，请阅读</font></font><a href="https://tera.netlify.com/docs#templates"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tera 模板文档。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">所有模板都在</font></font><code>templates</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录中。</font><font style="vertical-align: inherit;">如果您不确定模板中有哪些变量可用，您可以</font></font><code>{{ __tera_context }}</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在模板中放置以打印整个上下文。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">除提要和站点地图外，所有模板均提供一些变量：</font></font></p>
+<ul>
+<li><code>config</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：语言感知</font></font><a href="/zola/getting-started/configuration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a></li>
+<li><code>current_path</code><font style="vertical-align: inherit;"></font><code>base_url</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">:当前页面的</font><font style="vertical-align: inherit;">路径（不带 的完整 URL ），始终以 a 开头</font></font><code>/</code></li>
+<li><code>current_url</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: 当前页面的完整 URL</font></font></li>
+<li><code>lang</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: 当前页面的语言</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置变量可以像在 HTML 中一样访问</font></font><code>config.variable</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，例如使用</font></font><code>{{ config.base_url }}</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">404模板没有get </font></font><code>current_path</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">and </font></font><code>current_url</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（这个信息无法确定）。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">除了</font></font><code>config</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上面提到的属性之外，它还获取</font></font><code>config.mode</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它是在</font></font><code>build</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">,</font></font><code>serve</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">还是 中运行</font></font><code>check</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<h2 id="standard-templates"><a class="zola-anchor" href="/zola/templates/overview/#standard-templates" aria-label="锚链接：标准模板"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标准模板</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，Zola 会寻找三个模板：</font></font><code>index.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，应用于网站主页；</font></font><code>section.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, 它适用于所有部分（通过在您的</font></font><code>content</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录中创建目录生成的任何 HTML 页面）；</font><font style="vertical-align: inherit;">和
+</font></font><code>page.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，它适用于所有页面（通过
+</font></font><code>.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在您的</font></font><code>content</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录中创建文件生成的任何 HTML 页面）。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主页始终是一个部分（无论它是否包含其他页面）。</font><font style="vertical-align: inherit;">因此，</font></font><code>index.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>section.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板都可以访问节变量。</font><font style="vertical-align: inherit;">该</font></font><code>page.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板可以访问页面变量。</font><font style="vertical-align: inherit;">下一节将更详细地描述页面和部分变量。</font></font></p>
+<h2 id="built-in-templates"><a class="zola-anchor" href="/zola/templates/overview/#built-in-templates" aria-label="锚链接：内置模板"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内置模板</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola 带有四个内置模板：</font></font><code>atom.xml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>rss.xml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（在
+</font></font><a href="/zola/templates/feeds.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Feeds</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中描述）、 （在</font><a href="/zola/templates/sitemap.html"><font style="vertical-align: inherit;">Sitemap</font></a></font><code>sitemap.xml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中描述</font><font style="vertical-align: inherit;">）和（在</font><a href="/zola/templates/robots.html"><font style="vertical-align: inherit;">Robots.txt</font></a><font style="vertical-align: inherit;">中描述</font><font style="vertical-align: inherit;">）。</font><font style="vertical-align: inherit;">此外，主题可以添加自己的模板，如果没有被覆盖，这些模板将被应用。</font><font style="vertical-align: inherit;">您可以通过在正确路径中创建具有相同名称的模板来覆盖内置或主题模板。</font><font style="vertical-align: inherit;">例如，您可以通过创建</font><font style="vertical-align: inherit;">文件来覆盖 Atom 模板。</font></font><a href="/zola/templates/sitemap.html"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><code>robots.txt</code><font style="vertical-align: inherit;"></font><a href="/zola/templates/robots.html"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><code>templates/atom.xml</code><font style="vertical-align: inherit;"></font></p>
+<h2 id="custom-templates"><a class="zola-anchor" href="/zola/templates/overview/#custom-templates" aria-label="锚链接：自定义模板"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自定义模板</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">除了标准的</font></font><code>index.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和模板之外，您还可以通过</font><font style="vertical-align: inherit;">在目录中</font><font style="vertical-align: inherit;">创建文件来创建自定义</font></font><code>section.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font><font style="vertical-align: inherit;">
+。</font><font style="vertical-align: inherit;">默认情况下不会使用这些自定义模板。</font><font style="vertical-align: inherit;">相反，</font><em><font style="vertical-align: inherit;">只有</font></em><font style="vertical-align: inherit;">当您通过将</font><font style="vertical-align: inherit;">front-matter 变量设置为该模板的路径（或者如果您</font><font style="vertical-align: inherit;">在另一个应用的模板中）来应用它时，才会使用自定义模板。</font><font style="vertical-align: inherit;">例如，如果您为站点的“关于”页面创建了一个名为 的自定义模板，您可以</font><font style="vertical-align: inherit;">通过在页面中包含以下前端内容来</font><font style="vertical-align: inherit;">将其应用于您的页面</font><font style="vertical-align: inherit;">：</font></font><code>page.html</code><font style="vertical-align: inherit;"></font><code>.html</code><font style="vertical-align: inherit;"></font><code>templates</code><font style="vertical-align: inherit;"></font><em><font style="vertical-align: inherit;"></font></em><font style="vertical-align: inherit;"></font><code>template</code><font style="vertical-align: inherit;"></font><code>include</code><font style="vertical-align: inherit;"></font><code>about.html</code><font style="vertical-align: inherit;"></font><code>about.md</code><font style="vertical-align: inherit;"></font><code>about.md</code><font style="vertical-align: inherit;"></font></p>
+<pre data-lang="md" style="background-color:#383838;color:#e6e1dc;" class="language-md "><code class="language-md" data-lang="md"><span>+++
+</span><span>title = "About Us"
+</span><span>template = "about.html"
+</span><span>+++
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自定义模板不需要位于</font></font><code>templates</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录的根目录中。</font><font style="vertical-align: inherit;">例如，</font></font><code>product_pages/with_pictures.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是一个有效的模板。</font></font></p>
+<h2 id="built-in-filters"><a class="zola-anchor" href="/zola/templates/overview/#built-in-filters" aria-label="锚链接：内置过滤器"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内置过滤器</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">除了Tera 中已有的过滤</font></font><a href="https://tera.netlify.com/docs/#filters"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">器</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">之外，Zola 添加了一些过滤器。</font></font></p>
+<h3 id="markdown"><a class="zola-anchor" href="/zola/templates/overview/#markdown" aria-label="锚链接：markdown"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">降价</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Markdown 将给定变量转换为 HTML。</font><font style="vertical-align: inherit;">与页面/部分 Markdown 呈现相比有一些差异：</font></font></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此过滤器评估的短代码无法访问当前呈现上下文：</font></font><code>config</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将可用，但访问</font></font><code>section</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><code>page</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（除其他外）来自过滤器内调用的短代码</font></font><code>markdown</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将阻止您的站点构建（请参阅</font></font><a href="https://github.com/getzola/zola/pull/1358"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此讨论</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）</font></font></li>
+<li><code>lang</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在短代码中将始终等于网站的</font></font><code>config.default_language</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（或</font></font><code>en</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其他）；</font><font style="vertical-align: inherit;">这应该不是问题，但如果在大多数情况下是这样，但是如果您需要在此过滤器中使用语言感知的简码，请参阅</font><font style="vertical-align: inherit;">文档的</font></font><a href="/zola/content/shortcodes/#shortcode-context"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简码上下文部分。</font></font></a><font style="vertical-align: inherit;"></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，过滤器会将所有文本包装在一个段落中。</font><font style="vertical-align: inherit;">要禁用此行为，您可以传递</font></font><code>true</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">给内联参数：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{{ </span><span style="color:#d0d0ff;">some_text </span><span>| </span><span style="color:#d0d0ff;">markdown</span><span>(</span><span style="color:#d0d0ff;">inline</span><span style="color:#cc7833;">=</span><span style="color:#6e9cbe;">true</span><span>) }}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您不需要将此过滤器与</font></font><code>page.content</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">or 一起使用</font></font><code>section.content</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，内容已经呈现。</font></font></p>
+<h3 id="base64-encode"><a class="zola-anchor" href="/zola/templates/overview/#base64-encode" aria-label="锚链接：base64-encode"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> base64_encode</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将变量编码为 base64。</font></font></p>
+<h3 id="base64-decode"><a class="zola-anchor" href="/zola/templates/overview/#base64-decode" aria-label="锚链接：base64-decode"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> base64_decode</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从 base64 解码变量。</font></font></p>
+<h3 id="num-format"><a class="zola-anchor" href="/zola/templates/overview/#num-format" aria-label="锚链接：num-format"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数字格式</font></font></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将数字格式化为其字符串表示形式。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{{ 1000000 | </span><span style="color:#d0d0ff;">num_format </span><span>}}
+</span><span>&lt;!-- 1,000,000 --&gt;
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，这将使用 config.toml 中设置的语言环境来格式化数字</font></font><code>config.default_language</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要为特定区域设置格式化数字，您可以使用参数</font></font><code>locale</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并传递所需区域设置的名称：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{{ 1000000 | </span><span style="color:#d0d0ff;">num_format</span><span>(</span><span style="color:#d0d0ff;">locale</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"en-IN"</span><span>) }}
+</span><span>&lt;!-- 10,00,000 --&gt;
+</span></code></pre>
+<h2 id="built-in-functions"><a class="zola-anchor" href="/zola/templates/overview/#built-in-functions" aria-label="锚链接：内置函数"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内置函数</font></font></h2>
+<p><font style="vertical-align: inherit;"></font><a href="https://tera.netlify.com/docs#built-in-functions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola在 Tera 的内置功能</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中添加了一些 Tera 功能</font><font style="vertical-align: inherit;">
+，以便更轻松地开发复杂的网站。</font></font></p>
+<h3 id="file-searching-logic"><a class="zola-anchor" href="/zola/templates/overview/#file-searching-logic" aria-label="锚链接：文件搜索逻辑"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件搜索逻辑</font></font></h3>
+<p><font style="vertical-align: inherit;"></font><code>get_page</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于通过和</font><font style="vertical-align: inherit;">以外的方式在磁盘上搜索文件的函数</font></font><code>get_section</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，适用以下逻辑。</font></font></p>
+<ol>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">基本目录是 Zola 根目录，</font></font><code>config.toml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">其中</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于给定的路径：如果它以 开头</font></font><code>@/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，则将其替换为</font></font><code>content/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">instead 并修剪任何前导</font></font><code>/</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">按此顺序搜索以下位置，返回文件存在的第一个位置：
+</font></font><ol>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$base_directory + $路径</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$base_directory + "静态/" + $路径</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$base_directory + "内容/" + $路径</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$base_directory + $output_path + $path</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$base_directory + "themes" + $theme + "static/" + $path （仅当使用主题时）</font></font></li>
+</ol>
+</li>
+</ol>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">实际上，这意味着</font></font><code>@/some/image.jpg</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">,</font></font><code>/content/some/image.jpg</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>content/some/image.jpg</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">将指向同一事物。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果路径在 Zola 目录之外，则会出错。</font></font></p>
+<h3 id="get-page"><a class="zola-anchor" href="/zola/templates/overview/#get-page" aria-label="锚链接：get-page"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>get_page</code></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取文件的路径</font></font><code>.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并返回关联的页面。</font><font style="vertical-align: inherit;">基本路径是</font></font><code>content</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">page </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">get_page</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"blog/page2.md"</span><span>) %}
+</span></code></pre>
+<h3 id="get-section"><a class="zola-anchor" href="/zola/templates/overview/#get-section" aria-label="锚链接：get-section"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>get_section</code></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取文件的路径</font></font><code>_index.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并返回关联的部分。</font><font style="vertical-align: inherit;">基本路径是</font></font><code>content</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">section </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">get_section</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"blog/_index.md"</span><span>) %}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果只需要该部分的元数据，则可以传递</font></font><code>metadata_only=true</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">给该函数：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">section </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">get_section</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"blog/_index.md"</span><span>, </span><span style="color:#d0d0ff;">metadata_only</span><span style="color:#cc7833;">=</span><span style="color:#6e9cbe;">true</span><span>) %}
+</span></code></pre>
+<h3 id="get-taxonomy-url"><a class="zola-anchor" href="/zola/templates/overview/#get-taxonomy-url" aria-label="锚链接：get-taxonomy-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>get_taxonomy_url</code></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取找到的分类项的永久链接。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">url </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">get_taxonomy_url</span><span>(</span><span style="color:#d0d0ff;">kind</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"categories"</span><span>, </span><span style="color:#d0d0ff;">name</span><span style="color:#cc7833;">=</span><span style="color:#d0d0ff;">page</span><span>.</span><span style="color:#d0d0ff;">taxonomies</span><span>.</span><span style="color:#d0d0ff;">category</span><span>, </span><span style="color:#d0d0ff;">lang</span><span style="color:#cc7833;">=</span><span style="color:#d0d0ff;">page</span><span>.</span><span style="color:#d0d0ff;">lang</span><span>) %}
+</span></code></pre>
+<p><code>name</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">几乎总是来自变量，但如果您想手动执行此操作，该值应与前面的值相同，而不是 slugified 版本。</font></font></p>
+<p><code>lang</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（可选）默认为</font></font><code>config.default_language</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">config.toml</font></font></p>
+<p><code>required</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（可选）如果定义了分类法但没有任何内容使用它则抛出错误。</font><font style="vertical-align: inherit;">默认为真。</font></font></p>
+<h3 id="get-taxonomy"><a class="zola-anchor" href="/zola/templates/overview/#get-taxonomy" aria-label="锚链接：get-taxonomy"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>get_taxonomy</code></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取特定种类的整个分类法。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">categories </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">get_taxonomy</span><span>(</span><span style="color:#d0d0ff;">kind</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"categories"</span><span>) %}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输出的类型是：</font></font></p>
+<pre data-lang="ts" style="background-color:#383838;color:#e6e1dc;" class="language-ts "><code class="language-ts" data-lang="ts"><span>kind: </span><span style="color:#d0d0ff;">TaxonomyConfig</span><span>;
+</span><span>items: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="color:#d0d0ff;">TaxonomyTerm</span><span style="color:#cc7833;">&gt;</span><span>;
+</span></code></pre>
+<p><code>lang</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（可选）默认为</font></font><code>config.default_language</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">config.toml</font></font></p>
+<p><code>required</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（可选）如果定义了分类法但没有任何内容使用它则抛出错误。</font><font style="vertical-align: inherit;">默认为真。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关这些类型的完整文档，</font><font style="vertical-align: inherit;">请参阅</font></font><a href="/zola/templates/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法文档。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<h3 id="get-taxonomy-term"><a class="zola-anchor" href="/zola/templates/overview/#get-taxonomy-term" aria-label="锚链接：get-taxonomy-term"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>get_taxonomy_term</code></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从特定种类的分类法中获取单个术语。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">categories </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">get_taxonomy_term</span><span>(</span><span style="color:#d0d0ff;">kind</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"categories"</span><span>, </span><span style="color:#d0d0ff;">term</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"term_name"</span><span>) %}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">输出的类型是单个</font></font><code>TaxonomyTerm</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目。</font></font></p>
+<p><code>lang</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（可选）默认为</font></font><code>config.default_language</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">config.toml</font></font></p>
+<p><code>include_pages</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（可选）默认为真。</font><font style="vertical-align: inherit;">如果为 false，</font></font><code>pages</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">则</font></font><code>TaxonomyTerm</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无论该术语实际存在哪些页面，该项目都将为空。</font></font><code>page_count</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在这两种情况下都将正确反映该术语的页数。</font></font></p>
+<p><code>required</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（可选）如果未找到分类法或术语。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关这些类型的完整文档，</font><font style="vertical-align: inherit;">请参阅</font></font><a href="/zola/templates/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法文档。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<h3 id="get-url"><a class="zola-anchor" href="/zola/templates/overview/#get-url" aria-label="锚链接：get-url"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>get_url</code></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取给定路径的永久链接。</font><font style="vertical-align: inherit;">如果路径以 开头</font></font><code>@/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，它将像 Markdown 中使用的那样被视为内部链接，从根</font></font><code>content</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录开始并经过验证。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">url </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">get_url</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"@/blog/_index.md"</span><span>) %}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它接受一个可选参数，</font></font><code>lang</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以便计算多语言网站中的</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语言感知 URL</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">假设</font></font><code>config.base_url</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">is </font></font><code>"http://example.com"</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，以下代码段将：</font></font></p>
+<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">返回</font></font><code>"http://example.com/blog/"</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果</font></font><code>config.default_language</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是</font></font><code>"en"</code></li>
+<li><font style="vertical-align: inherit;"></font><code>"http://example.com/en/blog/"</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果</font></font><code>config.default_language</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不是则</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">返回</font></font></strong> <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并</font></font><code>"en"</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">出现</font></font><code>"en"</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在</font></font><code>config.languages</code></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">否则失败，并显示错误消息</font></font><code>"'en' is not an authorized language (check config.languages)."</code></li>
+</ul>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">url </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">get_url</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"@/blog/_index.md"</span><span>, </span><span style="color:#d0d0ff;">lang</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"en"</span><span>) %}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这也可用于获取静态文件的永久链接，例如，如果您想链接到位于以下位置的文件</font></font><code>static/css/app.css</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{{ </span><span style="color:#d0d0ff;">get_url</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"css/app.css"</span><span>) }}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，链接不会有尾部斜线。</font></font><code>trailing_slash=true</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以通过传递给函数</font><font style="vertical-align: inherit;">来强制执行一个</font></font><code>get_url</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">一个例子是：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{{ </span><span style="color:#d0d0ff;">get_url</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"css/app.css"</span><span>, </span><span style="color:#d0d0ff;">trailing_slash</span><span style="color:#cc7833;">=</span><span style="color:#6e9cbe;">true</span><span>) }}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在非内部链接的情况下，您还可以通过传递</font><font style="vertical-align: inherit;">给</font></font><code>?h=&lt;sha256&gt;</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">函数在 URL 的末尾添加格式的缓存块</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">在这种情况下，路径将需要解析为实际文件。</font><font style="vertical-align: inherit;">有关详细信息，请参见</font><a href="/zola/templates/overview/#file-searching-logic"><font style="vertical-align: inherit;">文件搜索逻辑</font></a><font style="vertical-align: inherit;">。</font></font><code>cachebust=true</code><font style="vertical-align: inherit;"></font><code>get_url</code><font style="vertical-align: inherit;"></font><a href="/zola/templates/overview/#file-searching-logic"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p>
+<h3 id="get-hash"><a class="zola-anchor" href="/zola/templates/overview/#get-hash" aria-label="锚链接：get-hash"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>get_hash</code></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">返回文件或字符串文字的哈希摘要（SHA-256、SHA-384 或 SHA-512）。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它可以采用以下参数：</font></font></p>
+<ul>
+<li><code>path</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: 必填，详见</font><font style="vertical-align: inherit;">文件</font></font><a href="/zola/templates/overview/#file-searching-logic"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查找逻辑</font></font></a><font style="vertical-align: inherit;"></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">or</font></font></strong> <code>literal</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> : 强制，要散列的字符串值</font></font></li>
+<li><code>sha_type</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: 可选，</font></font><code>256</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">,</font></font><code>384</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或之一</font></font><code>512</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，默认为</font></font><code>384</code></li>
+<li><code>base64</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: 可选，</font></font><code>true</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者</font></font><code>false</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, 默认为</font></font><code>true</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">是否将哈希编码为base64</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要么</font></font><code>path</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要么</font></font><code>literal</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">必须给。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{{ </span><span style="color:#d0d0ff;">get_hash</span><span>(</span><span style="color:#d0d0ff;">literal</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"Hello World"</span><span>, </span><span style="color:#d0d0ff;">sha_type</span><span style="color:#cc7833;">=</span><span>256) }}
+</span><span>{{ </span><span style="color:#d0d0ff;">get_hash</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"static/js/app.js"</span><span>, </span><span style="color:#d0d0ff;">sha_type</span><span style="color:#cc7833;">=</span><span>256) }}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"></font><code>base64</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+当其参数设置为</font><font style="vertical-align: inherit;">时，该函数还可以输出 base64 编码的哈希值</font></font><code>true</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">这可用于实现</font></font><a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">子资源完整性</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>&lt;script src="{{ </span><span style="color:#d0d0ff;">get_url</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"static/js/app.js"</span><span>) }}"
+</span><span>  integrity="sha384-{{ </span><span style="color:#d0d0ff;">get_hash</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"static/js/app.js"</span><span>, </span><span style="color:#d0d0ff;">sha_type</span><span style="color:#cc7833;">=</span><span>384, </span><span style="color:#d0d0ff;">base64</span><span style="color:#cc7833;">=</span><span style="color:#6e9cbe;">true</span><span>) | </span><span style="color:#d0d0ff;">safe </span><span>}}"&gt;&lt;/script&gt;
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，子资源完整性通常在使用</font></font><code>get_hash</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不支持的外部脚本时使用。</font></font></p>
+<h3 id="get-image-metadata"><a class="zola-anchor" href="/zola/templates/overview/#get-image-metadata" aria-label="锚链接：get-image-metadata"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>get_image_metadata</code></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取图像的元数据。</font><font style="vertical-align: inherit;">这支持 JPEG、PNG、WebP、BMP、GIF 和 SVG 等常见格式。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它可以采用以下参数：</font></font></p>
+<ul>
+<li><code>path</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: 必填，详见</font><font style="vertical-align: inherit;">文件</font></font><a href="/zola/templates/overview/#file-searching-logic"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查找逻辑</font></font></a><font style="vertical-align: inherit;"></font></li>
+<li><code>allow_missing</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: 可选，</font></font><code>true</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者</font></font><code>false</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, 默认为</font></font><code>false</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">丢失的文件是否应该引发错误。</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该方法返回一个包含</font></font><code>width</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">,</font></font><code>height</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>format</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（小写值作为字符串）的映射。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>  {% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">meta </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">get_image_metadata</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"..."</span><span>) %}
+</span><span>  Our image (.{{</span><span style="color:#d0d0ff;">meta</span><span>.</span><span style="color:#d0d0ff;">format</span><span>}}) has format is {{ </span><span style="color:#d0d0ff;">meta</span><span>.</span><span style="color:#d0d0ff;">width </span><span>}}x{{ </span><span style="color:#d0d0ff;">meta</span><span>.</span><span style="color:#d0d0ff;">height </span><span>}}
+</span></code></pre>
+<h3 id="load-data"><a class="zola-anchor" href="/zola/templates/overview/#load-data" aria-label="锚链接：加载数据"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>load_data</code></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从文件、URL 或字符串文字加载数据。</font><font style="vertical-align: inherit;">支持的文件类型包括</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">toml</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">json</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">csv</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bibtex</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yaml</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> / </font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yml</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">xml</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并且仅支持 UTF-8 编码。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任何其他文件类型都将作为纯文本加载。</font></font></p>
+<p><font style="vertical-align: inherit;"><a href="/zola/templates/overview/#file-searching-logic"><font style="vertical-align: inherit;">根据文件搜索逻辑</font></a><font style="vertical-align: inherit;">，参数</font></font><code>path</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">指定本地数据文件的路径</font><font style="vertical-align: inherit;">。</font></font><a href="/zola/templates/overview/#file-searching-logic"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">data </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">load_data</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"content/blog/story/data.toml"</span><span>) %}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者，</font></font><code>url</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参数指定要加载的远程 URL 的位置。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">data </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">load_data</span><span>(</span><span style="color:#d0d0ff;">url</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"https://en.wikipedia.org/wiki/Commune_of_Paris"</span><span>) %}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者，</font></font><code>literal</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参数指定对象文字。</font><font style="vertical-align: inherit;">注意：如果</font></font><code>format</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未指定参数，则假定为纯文本。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">data </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">load_data</span><span>(</span><span style="color:#d0d0ff;">literal</span><span style="color:#cc7833;">=</span><span style="color:#a5c261;">'{"name": "bob"}'</span><span>, </span><span style="color:#d0d0ff;">format</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"json"</span><span>) %}
+</span><span>{{ </span><span style="color:#d0d0ff;">data</span><span>[</span><span style="color:#c1be91;">"name"</span><span>] }}
+</span></code></pre>
+<p><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意：</font></font><code>required</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参数与参数结合使用时无效</font></font><code>literal</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></em></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可选的</font></font><code>required</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">布尔参数可以设置为 false，这样丢失的数据（HTTP 错误或未找到本地文件）不会产生错误，而是返回空值。</font><font style="vertical-align: inherit;">但是，本地文件的权限问题和无法解析为请求的数据格式的无效数据仍然会产生错误，即使使用</font></font><code>required=false</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下面的代码片段从维基百科页面输出 HTML，如果页面无法访问或未返回成功的 HTTP 代码，则输出“未找到数据”：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">data </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">load_data</span><span>(</span><span style="color:#d0d0ff;">url</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"https://en.wikipedia.org/wiki/Commune_of_Paris"</span><span>, </span><span style="color:#d0d0ff;">required</span><span style="color:#cc7833;">=</span><span style="color:#6e9cbe;">false</span><span>) %}
+</span><span>{% </span><span style="color:#cc7833;">if </span><span style="color:#d0d0ff;">data </span><span>%}{{ </span><span style="color:#d0d0ff;">data </span><span>| </span><span style="color:#d0d0ff;">safe </span><span>}}{% </span><span style="color:#cc7833;">else </span><span>%}No data found{% </span><span style="color:#cc7833;">endif </span><span>%}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可选</font></font><code>format</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参数允许您指定和覆盖指定文件或 URL 中包含的数据类型。</font><font style="vertical-align: inherit;">有效</font><font style="vertical-align: inherit;">条目为</font></font><code>toml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>json</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>csv</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>bibtex</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><code>yaml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font></font><code>xml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font><code>plain</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果</font></font><code>format</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未指定参数，则使用路径扩展。</font><font style="vertical-align: inherit;">如果是文字，</font></font><code>plain</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">则假定为</font></font><code>format</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">未指定。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">data </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">load_data</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"content/blog/story/data.txt"</span><span>, </span><span style="color:#d0d0ff;">format</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"json"</span><span>) %}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"></font><code>plain</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当您的文件具有受支持的扩展名但您想将其作为纯文本加载时，</font><font style="vertical-align: inherit;">请使用该格式。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对于</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">toml</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">json</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yaml</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">xml</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，数据被加载到与原始数据文件匹配的结构中；</font><font style="vertical-align: inherit;">然而，对于</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">csv</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">来说，没有这种结构的原生概念。</font><font style="vertical-align: inherit;">相反，数据被分成包含</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">标题</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">记录的</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据结构。</font><font style="vertical-align: inherit;">请参阅下面的示例以了解其工作原理。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在模板中：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">data </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">load_data</span><span>(</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"content/blog/story/data.csv"</span><span>) %}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">content/blog/story/data.csv</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件中：</font></font></p>
+<pre data-lang="csv" style="background-color:#383838;color:#e6e1dc;" class="language-csv "><code class="language-csv" data-lang="csv"><span style="font-style:italic;color:#6e9cbe;">Number</span><span style="color:#cc7833;">, </span><span style="font-style:italic;color:#6e9cbe;">Title
+</span><span style="color:#a5c261;">1</span><span style="color:#cc7833;">,</span><span style="font-style:italic;color:#6e9cbe;">Gutenberg
+</span><span style="color:#a5c261;">2</span><span style="color:#cc7833;">,</span><span style="font-style:italic;color:#6e9cbe;">Printing
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">解析数据的等效 json 值将存储在</font></font><code>data</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板的变量中：</font></font></p>
+<pre data-lang="json" style="background-color:#383838;color:#e6e1dc;" class="language-json "><code class="language-json" data-lang="json"><span>{
+</span><span>    </span><span style="color:#c1be91;">"headers"</span><span>: [</span><span style="color:#c1be91;">"Number"</span><span>, </span><span style="color:#c1be91;">"Title"</span><span>],
+</span><span>    </span><span style="color:#c1be91;">"records"</span><span>: [
+</span><span>        [</span><span style="color:#c1be91;">"1"</span><span>, </span><span style="color:#c1be91;">"Gutenberg"</span><span>],
+</span><span>        [</span><span style="color:#c1be91;">"2"</span><span>, </span><span style="color:#c1be91;">"Printing"</span><span>]
+</span><span>    ],
+</span><span>}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该格式将数据加载到与</font><a href="https://crates.io/crates/nom-bibtex"><font style="vertical-align: inherit;">nom-bibtex crate</font></a></font><code>bibtex</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用的格式相匹配的结构中
+</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">以下是 bibtex 格式的数据示例：</font></font><a href="https://crates.io/crates/nom-bibtex"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></p>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>@preamble{"A bibtex preamble" # " this is."}
+</span><span>
+</span><span>@Comment{
+</span><span>    Here is a comment.
+</span><span>}
+</span><span>
+</span><span>Another comment!
+</span><span>
+</span><span>@string(name = "Vincent Prouillet")
+</span><span>@string(github = "https://github.com/getzola/zola")
+</span><span>
+</span><span>@misc {my_citation_key,
+</span><span>    author= name,
+</span><span>    title = "Zola",
+</span><span>    note = "github: " # github
+</span><span>}                                                    }
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下是生成的 bibtex 数据结构的 json 等效格式：</font></font></p>
+<pre data-lang="json" style="background-color:#383838;color:#e6e1dc;" class="language-json "><code class="language-json" data-lang="json"><span>{
+</span><span>    </span><span style="color:#c1be91;">"preambles"</span><span>: [</span><span style="color:#c1be91;">"A bibtex preamble this is."</span><span>],
+</span><span>    </span><span style="color:#c1be91;">"comments"</span><span>: [</span><span style="color:#c1be91;">"Here is a comment."</span><span>, </span><span style="color:#c1be91;">"Another comment!"</span><span>],
+</span><span>    </span><span style="color:#c1be91;">"variables"</span><span>: {
+</span><span>        </span><span style="color:#c1be91;">"name"</span><span>: </span><span style="color:#c1be91;">"Vincent Prouillet"</span><span>,
+</span><span>        </span><span style="color:#c1be91;">"github"</span><span>: </span><span style="color:#c1be91;">"https://github.com/getzola/zola"
+</span><span>    },
+</span><span>    </span><span style="color:#c1be91;">"bibliographies"</span><span>: [
+</span><span>        {
+</span><span>            </span><span style="color:#c1be91;">"entry_type"</span><span>: </span><span style="color:#c1be91;">"misc"</span><span>,
+</span><span>            </span><span style="color:#c1be91;">"citation_key"</span><span>: </span><span style="color:#c1be91;">"my_citation_key"</span><span>,
+</span><span>            </span><span style="color:#c1be91;">"tags"</span><span>: {
+</span><span>                </span><span style="color:#c1be91;">"author"</span><span>: </span><span style="color:#c1be91;">"Vincent Prouillet"</span><span>,
+</span><span>                </span><span style="color:#c1be91;">"title"</span><span>: </span><span style="color:#c1be91;">"Zola"</span><span>,
+</span><span>                </span><span style="color:#c1be91;">"note"</span><span>: </span><span style="color:#c1be91;">"github: https://github.com/getzola/zola"
+</span><span>            }
+</span><span>        }
+</span><span>    ]
+</span><span>}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">最后，可以从模板访问 bibtex 数据，如下所示：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">tags </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">data</span><span>.</span><span style="color:#d0d0ff;">bibliographies</span><span>[0].</span><span style="color:#d0d0ff;">tags </span><span>%}
+</span><span>This was generated using {{ </span><span style="color:#d0d0ff;">tags</span><span>.</span><span style="color:#d0d0ff;">title </span><span>}}, authored by {{ </span><span style="color:#d0d0ff;">tags</span><span>.</span><span style="color:#d0d0ff;">author </span><span>}}.
+</span></code></pre>
+<h4 id="remote-content"><a class="zola-anchor" href="/zola/templates/overview/#remote-content" aria-label="锚链接：远程内容"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">远程内容</font></font></h4>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以从远程 URL 加载数据，而不是使用文件。</font></font><code>url</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这可以通过指定参数而</font></font><code>load_data</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">不是 来</font><font style="vertical-align: inherit;">完成</font></font><code>path</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">response </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">load_data</span><span>(</span><span style="color:#d0d0ff;">url</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"https://api.github.com/repos/getzola/zola"</span><span>) %}
+</span><span>{{ </span><span style="color:#d0d0ff;">response </span><span>}}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，响应主体将不经解析返回。</font><font style="vertical-align: inherit;">这可以通过使用</font></font><code>format</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如下参数进行更改。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">response </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">load_data</span><span>(</span><span style="color:#d0d0ff;">url</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"https://api.github.com/repos/getzola/zola"</span><span>, </span><span style="color:#d0d0ff;">format</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"json"</span><span>) %}
+</span><span>{{ </span><span style="color:#d0d0ff;">response </span><span>}}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当没有指定其他参数时，将始终使用 HTTP GET 请求检索 URL。</font><font style="vertical-align: inherit;">使用参数</font></font><code>method</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，从 0.14.0 版本开始，您还可以选择使用 POST 请求检索 URL。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用时，</font></font><code>method="POST"</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还可以使用参数</font></font><code>body</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>content_type</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">参数体是POST请求中发送的实际内容。</font><font style="vertical-align: inherit;">该参数</font></font><code>content_type</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应该是正文的 mimetype。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此示例将向 kroki 服务发出 POST 请求以生成 SVG。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">postdata </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">load_data</span><span>(</span><span style="color:#d0d0ff;">url</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"https://kroki.io/blockdiag/svg"</span><span>, </span><span style="color:#d0d0ff;">format</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"plain"</span><span>, </span><span style="color:#d0d0ff;">method</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"POST" </span><span>,</span><span style="color:#d0d0ff;">content_type</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"text/plain"</span><span>, </span><span style="color:#d0d0ff;">body</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"blockdiag {
+</span><span style="color:#c1be91;">  'Doing POST' -&gt; 'using load_data'
+</span><span style="color:#c1be91;">  'using load_data' -&gt; 'can generate' -&gt; 'block diagrams';
+</span><span style="color:#c1be91;">  'using load_data' -&gt; is -&gt; 'very easy!';
+</span><span style="color:#c1be91;">
+</span><span style="color:#c1be91;">  'Doing POST' [color = 'greenyellow'];
+</span><span style="color:#c1be91;">  'block diagrams' [color = 'pink'];
+</span><span style="color:#c1be91;">  'very easy!' [color = 'orange'];
+</span><span style="color:#c1be91;">}"</span><span>)%}
+</span><span>{{</span><span style="color:#d0d0ff;">postdata</span><span>|</span><span style="color:#d0d0ff;">safe</span><span>}}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您需要对 HTTP 标头进行额外处理，则可以使用该</font></font><code>headers</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">参数。</font><font style="vertical-align: inherit;">当资源需要身份验证或需要通过特殊标头传递其他参数时，您可能需要此参数。</font><font style="vertical-align: inherit;">请注意，标头将附加到 Zola 本身设置的默认标头，而不是替换它们。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此示例将向 GitHub markdown 呈现服务发出 POST 请求。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">postdata </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">load_data</span><span>(</span><span style="color:#d0d0ff;">url</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"https://api.github.com/markdown"</span><span>, </span><span style="color:#d0d0ff;">format</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"plain"</span><span>, </span><span style="color:#d0d0ff;">method</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"POST"</span><span>, </span><span style="color:#d0d0ff;">content_type</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"application/json"</span><span>, </span><span style="color:#d0d0ff;">headers</span><span style="color:#cc7833;">=</span><span>[</span><span style="color:#c1be91;">"accept=application/vnd.github.v3+json"</span><span>], </span><span style="color:#d0d0ff;">body</span><span style="color:#cc7833;">=</span><span style="color:#a5c261;">'{"text":"headers support added in #1710, commit before it: b3918f124d13ec1bedad4860c15a060dd3751368","context":"getzola/zola","mode":"gfm"}'</span><span>)%}
+</span><span>{{</span><span style="color:#d0d0ff;">postdata</span><span>|</span><span style="color:#d0d0ff;">safe</span><span>}}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下示例显示如何将 GraphQL 查询发送到 GitHub（需要身份验证）。</font><font style="vertical-align: inherit;">如果你想在自己的机器上尝试这个例子，你需要提供一个GitHub PAT（Personal Access Token），你可以通过这个链接获取access token：https://github.com/settings/tokens 然后设置</font></font><code>GITHUB_TOKEN</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+环境变量到您获得的访问令牌。</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">token </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">get_env</span><span>(</span><span style="color:#d0d0ff;">name</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"GITHUB_TOKEN"</span><span>) %}
+</span><span>{% </span><span style="color:#cc7833;">set </span><span style="color:#d0d0ff;">postdata </span><span style="color:#cc7833;">= </span><span style="color:#d0d0ff;">load_data</span><span>(</span><span style="color:#d0d0ff;">url</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"https://api.github.com/graphql"</span><span>, </span><span style="color:#d0d0ff;">format</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"json"</span><span>, </span><span style="color:#d0d0ff;">method</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"POST" </span><span>,</span><span style="color:#d0d0ff;">content_type</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"application/json"</span><span>, </span><span style="color:#d0d0ff;">headers</span><span style="color:#cc7833;">=</span><span>[</span><span style="color:#c1be91;">"accept=application/vnd.github.v4.idl"</span><span>, </span><span style="color:#c1be91;">"authentication=Bearer "</span><span> ~ </span><span style="color:#d0d0ff;">token</span><span>], </span><span style="color:#d0d0ff;">body</span><span style="color:#cc7833;">=</span><span style="color:#a5c261;">'{"query":"query { viewer { login }}"}'</span><span>)%}
+</span><span>{{</span><span style="color:#d0d0ff;">postdata</span><span>|</span><span style="color:#d0d0ff;">safe</span><span>}}
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您需要指定多个具有相同名称的标头，您可以这样指定它们：</font></font></p>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>headers=["accept=application/json,text/html"]
+</span></code></pre>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">这相当于</font></font><code>Accept</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">带有</font></font><code>application/json</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和的两个标头</font></font><code>text/html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果它不起作用，您可以多次指定标头以达到类似的效果：</font></font></p>
+<pre style="background-color:#383838;color:#e6e1dc;"><code><span>headers=["accept=application/json", "accept=text/html"]
+</span></code></pre>
+<h4 id="data-caching"><a class="zola-anchor" href="/zola/templates/overview/#data-caching" aria-label="锚链接：数据缓存"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据缓存</font></font></h4>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据文件加载和远程请求在构建期间缓存在内存中，因此不会向同一端点发出多个请求。</font><font style="vertical-align: inherit;">URL根据URL进行缓存，数据文件根据文件修改时间进行缓存。</font><font style="vertical-align: inherit;">缓存时也会考虑格式，因此如果加载了两种不同的格式，请求将被发送两次。</font></font></p>
+<h3 id="trans"><a class="zola-anchor" href="/zola/templates/overview/#trans" aria-label="锚链接：反式"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>trans</code></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取给定的翻译</font></font><code>key</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，对于</font></font><code>default_language</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，</font></font><code>lang</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">给定的用法或活动语言：</font></font></p>
+<pre data-lang="jinja2" style="background-color:#383838;color:#e6e1dc;" class="language-jinja2 "><code class="language-jinja2" data-lang="jinja2"><span>{{ </span><span style="color:#d0d0ff;">trans</span><span>(</span><span style="color:#d0d0ff;">key</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"title"</span><span>) }}
+</span><span>{{ </span><span style="color:#d0d0ff;">trans</span><span>(</span><span style="color:#d0d0ff;">key</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"title"</span><span>, </span><span style="color:#d0d0ff;">lang</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"fr"</span><span>) }}
+</span><span>{{</span><span style="color:#cc7833;">/* </span><span style="color:#d0d0ff;">trans</span><span>(</span><span style="color:#d0d0ff;">key</span><span style="color:#cc7833;">=</span><span style="color:#c1be91;">"title"</span><span>, </span><span style="color:#d0d0ff;">lang</span><span style="color:#cc7833;">=</span><span style="color:#d0d0ff;">lang</span><span>) </span><span style="color:#cc7833;">*/</span><span>}}
+</span></code></pre>
+<h3 id="resize-image"><a class="zola-anchor" href="/zola/templates/overview/#resize-image" aria-label="锚链接：resize-image"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><code>resize_image</code></h3>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">调整图像文件的大小。</font><font style="vertical-align: inherit;">请参阅</font></font><a href="/zola/content/image-processing.html"><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容/图像处理</font></font></em></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取完整文档。</font></font></p>
+
+
+    </div>
+</div>
+
+        </div>
+        <footer>
+<p>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">©2017-2023 — </font></font>
+<a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">艾瑞可erik</font></font></a>、
+<a class="white" href="https://vincentprouillet.com/">
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vincent Prouillet</font>
+</font>
+</a>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font>
+<a class="white" href="https://github.com/getzola/zola/graphs/contributors"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">贡献者</font>
+</font>
+</a>
+</p>
+<p>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <span id="busuanzi_container_page_pv">&nbsp;本文总阅读量<span id="busuanzi_value_page_pv">0</span>次</span>
+</p>
+</footer>
+
+        <script type="text/javascript" src="./overview_files/elasticlunr.min.js"></script>
+        <script type="text/javascript" src="./overview_files/search.js"></script>
+
+
+</body></html>

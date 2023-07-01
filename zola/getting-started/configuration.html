@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)/zola/getting-started/configuration/ -->
+<html lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Everything you need to make a static site engine in one binary.">
+               <meta name="author" content="Vincent Prouillet">
+        <meta name="description" content="Zola 是一个静态站点生成器 (SSG)，类似于Hugo、Pelican和Jekyll（有关 SSG 的完整列表，请参阅Jamstack）。它用Rust编写并使用Tera模板引擎，类似于Jinja2、Django 模板、Liquid和Twig">
+        <meta name="keywords" content="Zola中文文档,zola,Zola,https://erik.xyz/zola,zola中文文档">
+        <title>配置 |  Zola</title>
+        <link rel="stylesheet" href="./configuration_files/site.css">
+        <link rel="icon" href="https://www.getzola.org/favicon.ico">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="./configuration_files/m=el_main_css"></head>
+    <body>
+
+        <header>
+            <nav class="">
+                <a class="white" href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola中文文档</font></font></a>
+                <a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾瑞可erik</font></font></a>
+                <a class="header__logo white" href="https://www.getzola.org/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola </font></font></a>
+                <a class="white" href="https://www.getzola.org/documentation/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docs</font></font></a>
+                <a class="white" href="https://github.com/getzola/zola" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></a>
+
+                <div class="search-container">
+                    <input id="search" type="search" placeholder="🔎 搜索文档">
+
+                    <div class="search-results">
+                        <div class="search-results__items"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content content--reversed">
+
+
+<div class="documentation">
+    <aside class="documentation__sidebar">
+        <ul>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/installation.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/cli-usage.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CLI 用法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/getting-started/directory-structure.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录结构</font></font></a>
+                        </li>
+
+                        <li class="active">
+                            <a href="/zola/getting-started/configuration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/content/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/section.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/page.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/shortcodes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简码</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/linking.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内部链接和深度链接</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/table-of-contents.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/syntax-highlighting.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语法高亮</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/search.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/sass.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sass</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/image-processing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图像处理</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/content/multilingual.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多语言网站</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/templates/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pages-sections.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">章节和页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/pagination.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/feeds.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提要</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/sitemap.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站地图</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/robots.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">机器人.txt</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/404.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">404错误页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/templates/archive.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">档案</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主题</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/themes/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/installing-and-using-themes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装和使用主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/creating-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/themes/extending-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展主题</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/zola/deployment/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/sourcehut.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sourcehut 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/netlify.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络化</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/github-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/gitlab-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitLab 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/edgio.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Edgio</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/vercel.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vercel</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/zola/deployment/cloudflare-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cloudflare 页面</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+        </ul>
+    </aside>
+    <div class="documentation__content">
+
+    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></h1>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认配置足以让 Zola 在本地运行，但仅此而已。</font><font style="vertical-align: inherit;">它遵循只为你需要的东西付费的理念，默认情况下几乎所有东西都是关闭的。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要更改配置，请编辑</font></font><code>config.toml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件。</font><font style="vertical-align: inherit;">如果您不熟悉 TOML，请查看</font></font><a href="https://github.com/toml-lang/toml"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TOML 规范</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⚠️ 如果你给你的添加key </font></font><code>config.toml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，一定要注意它属于哪个TOML section。</font><font style="vertical-align: inherit;">TOML 部分以标题开始，例如</font></font><code>[search]</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，并在下一个部分或 EOF 结束。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下是当前</font></font><code>config.toml</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分：</font></font></p>
+<ol>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主要（未命名）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">降价</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">链接检查器</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">打瞌睡</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">翻译</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语言</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">额外的</font></font></li>
+</ol>
+<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">只有</font></font><code>base_url</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变量是必需的</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">其他一切都是可选的。</font><font style="vertical-align: inherit;">下面列出了 Zola 使用的所有配置变量及其默认值：</font></font></p>
+<pre data-lang="toml" style="background-color:#383838;color:#e6e1dc;" class="language-toml "><code class="language-toml" data-lang="toml"><span style="color:#95815e;"># The base URL of the site; the only required configuration variable.
+</span><span style="color:#e8bf6a;">base_url </span><span>= </span><span style="color:#c1be91;">"mywebsite.com"
+</span><span>
+</span><span style="color:#95815e;"># The site title and description; used in feeds by default.
+</span><span style="color:#e8bf6a;">title </span><span>= </span><span style="color:#c1be91;">""
+</span><span style="color:#e8bf6a;">description </span><span>= </span><span style="color:#c1be91;">""
+</span><span>
+</span><span style="color:#95815e;"># The default language; used in feeds.
+</span><span style="color:#e8bf6a;">default_language </span><span>= </span><span style="color:#c1be91;">"en"
+</span><span>
+</span><span style="color:#95815e;"># The site theme to use.
+</span><span style="color:#e8bf6a;">theme </span><span>= </span><span style="color:#c1be91;">""
+</span><span>
+</span><span style="color:#95815e;"># For overriding the default output directory `public`, set it to another value (e.g.: "docs")
+</span><span style="color:#e8bf6a;">output_dir </span><span>= </span><span style="color:#c1be91;">"public"
+</span><span>
+</span><span style="color:#95815e;"># Whether dotfiles at the root level of the output directory are preserved when (re)building the site.
+</span><span style="color:#95815e;"># Enabling this also prevents the deletion of the output folder itself on rebuilds.
+</span><span style="color:#e8bf6a;">preserve_dotfiles_in_output </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span style="color:#95815e;"># When set to "true", the Sass files in the `sass` directory in the site root are compiled.
+</span><span style="color:#95815e;"># Sass files in theme directories are always compiled.
+</span><span style="color:#e8bf6a;">compile_sass </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span style="color:#95815e;"># When set to "true", the generated HTML files are minified.
+</span><span style="color:#e8bf6a;">minify_html </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span style="color:#95815e;"># A list of glob patterns specifying asset files to ignore when the content
+</span><span style="color:#95815e;"># directory is processed. Defaults to none, which means that all asset files are
+</span><span style="color:#95815e;"># copied over to the `public` directory.
+</span><span style="color:#95815e;"># Example:
+</span><span style="color:#95815e;">#     ignored_content = ["*.{graphml,xlsx}", "temp.*", "**/build_folder"]
+</span><span style="color:#e8bf6a;">ignored_content </span><span>= []
+</span><span>
+</span><span style="color:#95815e;"># When set to "true", a feed is automatically generated.
+</span><span style="color:#e8bf6a;">generate_feed </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span style="color:#95815e;"># The filename to use for the feed. Used as the template filename, too.
+</span><span style="color:#95815e;"># Defaults to "atom.xml", which has a built-in template that renders an Atom 1.0 feed.
+</span><span style="color:#95815e;"># There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
+</span><span style="color:#e8bf6a;">feed_filename </span><span>= </span><span style="color:#c1be91;">"atom.xml"
+</span><span>
+</span><span style="color:#95815e;"># The number of articles to include in the feed. All items are included if
+</span><span style="color:#95815e;"># this limit is not set (the default).
+</span><span style="color:#95815e;"># feed_limit = 20
+</span><span>
+</span><span style="color:#95815e;"># When set to "true", files in the `static` directory are hard-linked. Useful for large
+</span><span style="color:#95815e;"># static files. Note that for this to work, both `static` and the
+</span><span style="color:#95815e;"># output directory need to be on the same filesystem. Note that the theme's `static`
+</span><span style="color:#95815e;"># files are always copied, regardless of this setting.
+</span><span style="color:#e8bf6a;">hard_link_static </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span style="color:#95815e;"># The taxonomies to be rendered for the site and their configuration of the default languages
+</span><span style="color:#95815e;"># Example:
+</span><span style="color:#95815e;">#     taxonomies = [
+</span><span style="color:#95815e;">#       {name = "tags", feed = true}, # each tag will have its own feed
+</span><span style="color:#95815e;">#       {name = "tags"}, # you can have taxonomies with the same name in multiple languages
+</span><span style="color:#95815e;">#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
+</span><span style="color:#95815e;">#       {name = "authors"}, # Basic definition: no feed or pagination
+</span><span style="color:#95815e;">#     ]
+</span><span style="color:#95815e;">#
+</span><span style="color:#e8bf6a;">taxonomies </span><span>= []
+</span><span>
+</span><span style="color:#95815e;"># When set to "true", a search index is built from the pages and section
+</span><span style="color:#95815e;"># content for `default_language`.
+</span><span style="color:#e8bf6a;">build_search_index </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span style="color:#95815e;"># Configuration of the Markdown rendering
+</span><span>[</span><span style="color:#e8bf6a;">markdown</span><span>]
+</span><span style="color:#95815e;"># When set to "true", all code blocks are highlighted.
+</span><span style="color:#e8bf6a;">highlight_code </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span style="color:#95815e;"># A list of directories used to search for additional `.sublime-syntax` and `.tmTheme` files.
+</span><span style="color:#e8bf6a;">extra_syntaxes_and_themes </span><span>= []
+</span><span>
+</span><span style="color:#95815e;"># The theme to use for code highlighting.
+</span><span style="color:#95815e;"># See below for list of allowed values.
+</span><span style="color:#e8bf6a;">highlight_theme </span><span>= </span><span style="color:#c1be91;">"base16-ocean-dark"
+</span><span>
+</span><span style="color:#95815e;"># When set to "true", emoji aliases translated to their corresponding
+</span><span style="color:#95815e;"># Unicode emoji equivalent in the rendered Markdown files. (e.g.: :smile: =&gt; 😄)
+</span><span style="color:#e8bf6a;">render_emoji </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span style="color:#95815e;"># Whether external links are to be opened in a new tab
+</span><span style="color:#95815e;"># If this is true, a `rel="noopener"` will always automatically be added for security reasons
+</span><span style="color:#e8bf6a;">external_links_target_blank </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span style="color:#95815e;"># Whether to set rel="nofollow" for all external links
+</span><span style="color:#e8bf6a;">external_links_no_follow </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span style="color:#95815e;"># Whether to set rel="noreferrer" for all external links
+</span><span style="color:#e8bf6a;">external_links_no_referrer </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span style="color:#95815e;"># Whether smart punctuation is enabled (changing quotes, dashes, dots in their typographic form)
+</span><span style="color:#95815e;"># For example, `...` into `…`, `"quote"` into `“curly”` etc
+</span><span style="color:#e8bf6a;">smart_punctuation </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span style="color:#95815e;"># Configuration of the link checker.
+</span><span>[</span><span style="color:#e8bf6a;">link_checker</span><span>]
+</span><span style="color:#95815e;"># Skip link checking for external URLs that start with these prefixes
+</span><span style="color:#e8bf6a;">skip_prefixes </span><span>= [
+</span><span>    </span><span style="color:#c1be91;">"http://[2001:db8::]/"</span><span>,
+</span><span>]
+</span><span>
+</span><span style="color:#95815e;"># Skip anchor checking for external URLs that start with these prefixes
+</span><span style="color:#e8bf6a;">skip_anchor_prefixes </span><span>= [
+</span><span>    </span><span style="color:#c1be91;">"https://caniuse.com/"</span><span>,
+</span><span>]
+</span><span>
+</span><span style="color:#95815e;"># Treat internal link problems as either "error" or "warn", default is "error"
+</span><span style="color:#e8bf6a;">internal_level </span><span>= </span><span style="color:#c1be91;">"error"
+</span><span>
+</span><span style="color:#95815e;"># Treat external link problems as either "error" or "warn", default is "error"
+</span><span style="color:#e8bf6a;">external_level </span><span>= </span><span style="color:#c1be91;">"error"
+</span><span>
+</span><span style="color:#95815e;"># Various slugification strategies, see below for details
+</span><span style="color:#95815e;"># Defaults to everything being a slug
+</span><span>[</span><span style="color:#e8bf6a;">slugify</span><span>]
+</span><span style="color:#e8bf6a;">paths </span><span>= </span><span style="color:#c1be91;">"on"
+</span><span style="color:#e8bf6a;">taxonomies </span><span>= </span><span style="color:#c1be91;">"on"
+</span><span style="color:#e8bf6a;">anchors </span><span>= </span><span style="color:#c1be91;">"on"
+</span><span style="color:#95815e;"># Whether to remove date prefixes for page path slugs.
+</span><span style="color:#95815e;"># For example, content/posts/2016-10-08_a-post-with-dates.md =&gt; posts/a-post-with-dates
+</span><span style="color:#95815e;"># When true, content/posts/2016-10-08_a-post-with-dates.md =&gt; posts/2016-10-08-a-post-with-dates
+</span><span style="color:#e8bf6a;">paths_keep_dates </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span>
+</span><span>[</span><span style="color:#e8bf6a;">search</span><span>]
+</span><span style="color:#95815e;"># Whether to include the title of the page/section in the index
+</span><span style="color:#e8bf6a;">include_title </span><span>= </span><span style="color:#6e9cbe;">true
+</span><span style="color:#95815e;"># Whether to include the description of the page/section in the index
+</span><span style="color:#e8bf6a;">include_description </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span style="color:#95815e;"># Whether to include the path of the page/section in the index
+</span><span style="color:#e8bf6a;">include_path </span><span>= </span><span style="color:#6e9cbe;">false
+</span><span style="color:#95815e;"># Whether to include the rendered content of the page/section in the index
+</span><span style="color:#e8bf6a;">include_content </span><span>= </span><span style="color:#6e9cbe;">true
+</span><span style="color:#95815e;"># At which character to truncate the content to. Useful if you have a lot of pages and the index would
+</span><span style="color:#95815e;"># become too big to load on the site. Defaults to not being set.
+</span><span style="color:#95815e;"># truncate_content_length = 100
+</span><span>
+</span><span style="color:#95815e;"># Wether to produce the search index as a javascript file or as a JSON file
+</span><span style="color:#95815e;"># Accepted value "elasticlunr_javascript" or "elasticlunr_json"
+</span><span style="color:#e8bf6a;">index_format </span><span>= </span><span style="color:#c1be91;">"elasticlunr_javascript"
+</span><span>
+</span><span style="color:#95815e;"># Optional translation object for the default language
+</span><span style="color:#95815e;"># Example:
+</span><span style="color:#95815e;">#     default_language = "fr"
+</span><span style="color:#95815e;">#
+</span><span style="color:#95815e;">#     [translations]
+</span><span style="color:#95815e;">#     title = "Un titre"
+</span><span style="color:#95815e;">#
+</span><span>[</span><span style="color:#e8bf6a;">translations</span><span>]
+</span><span>
+</span><span style="color:#95815e;"># Additional languages definition
+</span><span style="color:#95815e;"># You can define language specific config values and translations:
+</span><span style="color:#95815e;"># title, description, generate_feed, feed_filename, taxonomies, build_search_index
+</span><span style="color:#95815e;"># as well as its own search configuration and translations (see above for details on those)
+</span><span>[</span><span style="color:#e8bf6a;">languages</span><span>]
+</span><span style="color:#95815e;"># For example
+</span><span style="color:#95815e;"># [languages.fr]
+</span><span style="color:#95815e;"># title = "Mon blog"
+</span><span style="color:#95815e;"># generate_feed = true
+</span><span style="color:#95815e;"># taxonomies = [
+</span><span style="color:#95815e;">#    {name = "auteurs"},
+</span><span style="color:#95815e;">#    {name = "tags"},
+</span><span style="color:#95815e;"># ]
+</span><span style="color:#95815e;"># build_search_index = false
+</span><span>
+</span><span style="color:#95815e;"># You can put any kind of data here. The data
+</span><span style="color:#95815e;"># will be accessible in all templates
+</span><span style="color:#95815e;"># Example:
+</span><span style="color:#95815e;">#     [extra]
+</span><span style="color:#95815e;">#     author = "Famous author"
+</span><span style="color:#95815e;">#
+</span><span style="color:#95815e;"># author value will be available using {{ config.extra.author }} in templates
+</span><span style="color:#95815e;">#
+</span><span>[</span><span style="color:#e8bf6a;">extra</span><span>]
+</span></code></pre>
+<h2 id="syntax-highlighting"><a class="zola-anchor" href="/zola/getting-started/configuration/#syntax-highlighting" aria-label="锚链接：语法高亮"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语法高亮</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola 目前有以下可用的亮点主题：</font></font></p>
+<ul>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/1337" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1337</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Agola%20Dark" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">阿戈拉黑暗</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Ascetic%20White" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">苦行白</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Axar" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">斧头</font></font></a></li>
+<li><a href="https://github.com/dempfi/ayu" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">香鱼</font></font></a></li>
+<li><a href="https://github.com/dempfi/ayu" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">香鱼光</font></font></a></li>
+<li><a href="https://github.com/dempfi/ayu" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">香鱼海市蜃楼</font></font></a></li>
+<li><a href="https://atelierbram.github.io/syntax-highlighting/atelier-schemes/dune/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">base16-atelierdune-light</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Base16%20Ocean%20Dark" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">base16-海洋-黑暗</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Base16%20Ocean%20Light" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">base16-海洋之光</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/BBEdit" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑器</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Boron" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">硼</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Charcoal" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">木炭</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Cheerfully%20Light" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">愉快地轻</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Classic%20Modified" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">经典改装</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Demain" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">保留</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Dimmed%20Fluid" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变暗流体</font></font></a></li>
+<li><a href="https://draculatheme.com/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">吸血鬼</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Gray%20Matter%20Dark" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">灰质暗</font></font></a></li>
+<li><a href="https://github.com/kristopherjohnson/MonochromeSublimeText" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">绿色的</font></font></a></li>
+<li><a href="https://github.com/morhetz/gruvbox" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">gruvbox-暗</font></font></a></li>
+<li><a href="https://github.com/morhetz/gruvbox" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">gruvbox灯</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/IDLE" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">闲置的</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Inspiredgithub" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">启发-github</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/IR_White" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">白色</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Kronuz" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">克罗努兹</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Material%20Dark" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">物质黑暗</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Material%20Light" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">材料光</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Monokai" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">物界</font></font></a></li>
+<li><a href="https://github.com/crabique/Nord-plist/tree/0d655b23d6b300e691676d9b90a68d92b267f7ec" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">北方</font></font></a></li>
+<li><a href="https://github.com/GalAster/vscode-theme-nyx" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nyx-粗体</font></font></a></li>
+<li><a href="https://github.com/andresmichel/one-dark-theme" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">单色</font></font></a></li>
+<li><a href="https://github.com/sonph/onehalf" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一半黑暗</font></font></a></li>
+<li><a href="https://github.com/sonph/onehalf" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">半光</font></font></a></li>
+<li><a href="https://github.com/tompave/rails_base_16" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">railsbase16-绿屏暗</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Solarized%20(dark)" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">晒黑</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Solarized%20(light)" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">日光灯</font></font></a></li>
+<li><a href="https://github.com/idleberg/Subway.tmTheme" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">马德里地铁</font></font></a></li>
+<li><a href="https://github.com/idleberg/Subway.tmTheme" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">莫斯科地铁</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Tomorrow" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">明天</font></font></a></li>
+<li><a href="https://github.com/erremauro/TwoDark" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">两暗</font></font></a></li>
+<li><a href="https://tmtheme-editor.glitch.me/#!/editor/theme/Visual%20Studio%20Dark" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">visual-studio-暗</font></font></a></li>
+<li><a href="https://github.com/colinta/zenburn" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">曾本</font></font></a></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola 使用 Sublime Text 主题，添加更多主题变得非常容易。</font><font style="vertical-align: inherit;">如果您想要上面未列出的主题，请在</font></font><a href="https://github.com/getzola/zola" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola 存储库</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上打开一个问题或一个拉取请求。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者，您可以使用</font></font><code>extra_syntaxes_and_themes</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置选项从 .tmTheme 文件加载您自己的自定义主题。</font><font style="vertical-align: inherit;">有关详细信息，</font><font style="vertical-align: inherit;">请参阅</font></font><a href="/zola/content/syntax-highlighting.html" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语法突出显示。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<h2 id="slugification-strategies"><a class="zola-anchor" href="/zola/getting-started/configuration/#slugification-strategies"  target="_blank" aria-label="锚链接：slugification-strategies"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Slugification 策略</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，Zola 会将每条路径、分类法和锚点转换为 slug，一种没有特殊字符的 ASCII 表示形式。</font><font style="vertical-align: inherit;">但是，如果您想在 URL 中使用 UTF-8 字符，您可以为每种项目更改该策略。</font><font style="vertical-align: inherit;">有3种策略：</font></font></p>
+<ul>
+<li><code>on</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：默认的，一切都变成了一个鼻涕虫</font></font></li>
+<li><code>safe</code><font style="vertical-align: inherit;"></font><code>&lt;&gt;:"/\|?*</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: 在 Windows ( ) 或 Unix ( )</font><font style="vertical-align: inherit;">上的文件中不能存在的字符</font></font><code>/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">被删除，其他一切都保留</font></font></li>
+<li><code>off</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: 没有任何改变，您的站点可能不会在某些操作系统上构建和/或破坏各种 URL 解析器</font></font></li>
+</ul>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">由于锚点没有文件名问题，因此在它们的情况下</font></font><code>safe</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><code>off</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">策略是相同的：唯一的变化是空间被替换为</font></font><code>_</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">因为空间在锚点中无效。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请注意，如果您使用的不是默认策略，则必须手动转义空格和 Markdown 标记才能链接到您的页面。</font><font style="vertical-align: inherit;">例如，指向名为 will 的文件的内部链接</font></font><code>some space.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">需要像</font></font><code>some%20space.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Markdown 文件中一样编写。</font></font></p>
+
+
+    </div>
+</div>
+
+        </div>
+        <footer>
+<p>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">©2017-2023 — </font></font>
+<a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">艾瑞可erik</font></font></a>、
+<a class="white" href="https://vincentprouillet.com/">
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vincent Prouillet</font>
+</font>
+</a>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font>
+<a class="white" href="https://github.com/getzola/zola/graphs/contributors"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">贡献者</font>
+</font>
+</a>
+</p>
+<p>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <span id="busuanzi_container_page_pv">&nbsp;本文总阅读量<span id="busuanzi_value_page_pv">0</span>次</span>
+</p>
+</footer>
+
+        <script type="text/javascript" src="./configuration_files/elasticlunr.min.js"></script>
+        <script type="text/javascript" src="./configuration_files/search.js"></script>
+
+
+</body></html>
