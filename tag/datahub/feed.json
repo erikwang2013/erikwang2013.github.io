@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"datahub\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2023/08/21/datahub-install/",
+            "url": "https://erik.xyz/2023/08/21/datahub-install/",
+            "title": "datahub安装教程",
+            "date_published": "2023-08-21T13:30:00.000Z",
+            "content_html": "<p>偶然发现datahub很不错，单机部署来了。</p>\n<ol>\n<li><p>本地安装docker，进入到opt目录或home目录，执行以下命令（国内锁了）：</p>\n<pre><code> git clone https://github.com/linkedin/datahub.git\n\n cd /opt/datahub/docker\n\n datahub docker quickstart -f ./quickstart/docker-compose-without-neo4j.quickstart.yml\n\n source ./quickstart.sh\n</code></pre></li>\n</ol>\n<span id=\"more\"></span>\n<ol>\n<li><p>执行以下命令</p>\n<pre><code> python3 -m pip install --upgrade pip wheel setuptools\n python3 -m pip uninstall datahub acryl-datahub || true \n python3 -m pip install --upgrade acryl-datahub\n datahub version\n datahub docker quickstart\n</code></pre><ul>\n<li><p>发现没有pip配置，果断下载<a href=\"https://bootstrap.pypa.io/get-pip.py -o get-pip.py\">get-pip.py</a>，然后执行以下命令安装pip</p>\n<p>  sudo python3 get-pip.py  </p>\n</li>\n<li><p>安装成功后，依次执行以上命令。结果如图</p>\n</li>\n</ul>\n</li>\n</ol>\n<p><img src=\"/img/202308/20230821213432.png\" alt=\"https://erik.xyz\"></p>\n<p>3.使用datahub导入数据</p>\n<pre><code>   pip install pymysql\n   cd /opt/datahub/docker/ingestion\n</code></pre><p><img src=\"/img/202308/20230821213951.png\" alt=\"https://erik.xyz\"></p>\n<ul>\n<li><p>复制一份sample_recipe.yml修改配置文件：</p>\n<pre><code>  vi recipe.yml\n</code></pre><p><img src=\"/img/202308/20230821214242.png\" alt=\"https://erik.xyz\"></p>\n</li>\n<li><p>编辑配置<br><img src=\"/img/202308/20230821214729.png\" alt=\"\"></p>\n<ul>\n<li>具体如下:</li>\n</ul>\n</li>\n</ul>\n<pre><code>source:\n  type: &quot;mysql&quot;\n  config:\n    username: &quot;root&quot;\n    password: &quot;root&quot;\n    database: &quot;games_paly&quot;\n    host_port: &quot;127.0.0.1:3306&quot;\nsink:\n  type: &quot;datahub-rest&quot;\n  config:\n    server: &#39;http://localhost:8080&#39;\n</code></pre><p>4.导入数据</p>\n<pre><code> datahub ingest -c recipe.yml\n</code></pre>",
+            "tags": [
+                "datahub",
+                "datahub安装"
+            ]
+        }
+    ]
+}

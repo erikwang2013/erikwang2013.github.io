@@ -3,29 +3,29 @@
     <id>https://erik.xyz</id>
     <title>艾瑞可erik • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
-    <updated>2023-07-01T14:27:00.000Z</updated>
-    <category term="日志" />
-    <category term="工具" />
+    <updated>2023-08-21T13:30:00.000Z</updated>
     <category term="php扩展" />
     <category term="php技巧" />
     <category term="php类库" />
     <category term="php资源" />
+    <category term="日志" />
+    <category term="工具" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
     <category term="css" />
     <category term="php" />
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="js" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
@@ -64,16 +64,16 @@
     <category term="chromium安装报错" />
     <category term="svn" />
     <category term="代码提交" />
+    <category term="deb" />
+    <category term="deb/rpm互转" />
+    <category term="deb转rpm" />
+    <category term="rpm互转" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
     <category term="linux安装steam" />
     <category term="steam安装" />
     <category term="centos软件安装" />
-    <category term="deb" />
-    <category term="deb/rpm互转" />
-    <category term="deb转rpm" />
-    <category term="rpm互转" />
     <category term="centos6.5" />
     <category term="linux系统" />
     <category term="centos7安装Redis Desktop Manager" />
@@ -86,11 +86,11 @@
     <category term="centos7-wine" />
     <category term="wine" />
     <category term="wine安装" />
+    <category term="memcache" />
+    <category term="memcached" />
     <category term="root密码" />
     <category term="root密码重置" />
     <category term="忘记root密码" />
-    <category term="memcache" />
-    <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
     <category term="程序员" />
@@ -111,6 +111,8 @@
     <category term="快速排序" />
     <category term="冒泡排序" />
     <category term="二分查找" />
+    <category term="datahub" />
+    <category term="datahub安装" />
     <category term="dns" />
     <category term="域名监测" />
     <category term="网站监测" />
@@ -119,17 +121,17 @@
     <category term="杂谈" />
     <category term="ecshop" />
     <category term="框架" />
-    <category term="elasticsearch" />
     <category term="beego数据分页" />
     <category term="分页" />
+    <category term="elasticsearch" />
     <category term="elasticsearch搭建" />
     <category term="elasticsearch集群" />
     <category term="phone" />
     <category term="手机" />
     <category term="新闻" />
     <category term="免费" />
-    <category term="随笔吐槽" />
     <category term="算法" />
+    <category term="随笔吐槽" />
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
@@ -318,13 +320,13 @@
     <category term="rust配置" />
     <category term="seajs" />
     <category term="session" />
+    <category term="免费服务器" />
+    <category term="空间" />
+    <category term="资源" />
     <category term="路由器烧录" />
     <category term="烧录" />
     <category term="极路由2烧录" />
     <category term="砖头烧录" />
-    <category term="免费服务器" />
-    <category term="空间" />
-    <category term="资源" />
     <category term="深圳政府电话" />
     <category term="深圳电话" />
     <category term="特区电话" />
@@ -347,12 +349,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="socket通信" />
-    <category term="socket多进程" />
-    <category term="socket" />
     <category term="json" />
     <category term="json数组" />
     <category term="json解析" />
+    <category term="socket通信" />
+    <category term="socket多进程" />
+    <category term="socket" />
     <category term="css3兼容360浏览器兼容模式" />
     <category term="css圆角" />
     <category term="结构体转map" />
@@ -424,6 +426,73 @@
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2023/08/21/datahub-install/</id>
+        <title>datahub安装教程</title>
+        <link rel="alternate" href="https://erik.xyz/2023/08/21/datahub-install/"/>
+        <content type="html">&lt;p&gt;偶然发现datahub很不错，单机部署来了。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;本地安装docker，进入到opt目录或home目录，执行以下命令（国内锁了）：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; git clone https://github.com/linkedin/datahub.git
+
+ cd /opt/datahub/docker
+
+ datahub docker quickstart -f ./quickstart/docker-compose-without-neo4j.quickstart.yml
+
+ source ./quickstart.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;执行以下命令&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; python3 -m pip install --upgrade pip wheel setuptools
+ python3 -m pip uninstall datahub acryl-datahub || true 
+ python3 -m pip install --upgrade acryl-datahub
+ datahub version
+ datahub docker quickstart
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;发现没有pip配置，果断下载&lt;a href=&#34;https://bootstrap.pypa.io/get-pip.py -o get-pip.py&#34;&gt;get-pip.py&lt;/a&gt;，然后执行以下命令安装pip&lt;/p&gt;
+&lt;p&gt;  sudo python3 get-pip.py  &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;安装成功后，依次执行以上命令。结果如图&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/202308/20230821213432.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;3.使用datahub导入数据&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;   pip install pymysql
+   cd /opt/datahub/docker/ingestion
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/img/202308/20230821213951.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;复制一份sample_recipe.yml修改配置文件：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  vi recipe.yml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/img/202308/20230821214242.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;编辑配置&lt;br&gt;&lt;img src=&#34;/img/202308/20230821214729.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;具体如下:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;source:
+  type: &amp;quot;mysql&amp;quot;
+  config:
+    username: &amp;quot;root&amp;quot;
+    password: &amp;quot;root&amp;quot;
+    database: &amp;quot;games_paly&amp;quot;
+    host_port: &amp;quot;127.0.0.1:3306&amp;quot;
+sink:
+  type: &amp;quot;datahub-rest&amp;quot;
+  config:
+    server: &amp;#39;http://localhost:8080&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.导入数据&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; datahub ingest -c recipe.yml
+&lt;/code&gt;&lt;/pre&gt;</content>
+        <category term="datahub" />
+        <category term="datahub安装" />
+        <updated>2023-08-21T13:30:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2023/07/01/new-year-read-moeny/</id>
         <title>红包算法</title>
@@ -1914,17 +1983,5 @@ func main() &amp;#123;
 &lt;/code&gt;&lt;/pre&gt;</content>
         <category term="go中限流" />
         <updated>2022-04-12T05:12:54.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2022/03/22/new-and-make-other/</id>
-        <title>new和make的区别</title>
-        <link rel="alternate" href="https://erik.xyz/2022/03/22/new-and-make-other/"/>
-        <content type="html">&lt;p&gt;go中我们往往要对变量分配内存，那么分配内存有两中方式分别是new和make。查了一些资料，顺便看我开发中用的几个地方。其实，很好理解。&lt;/p&gt;
-&lt;p&gt;new分配中内存，不做初始化，也就是不能直接赋值，必须初始化后才能赋值。&lt;/p&gt;
-&lt;p&gt;make分配好内存且已经&lt;/p&gt;
-</content>
-        <category term="go" />
-        <category term="new和make的区别" />
-        <updated>2022-03-22T01:27:00.000Z</updated>
     </entry>
 </feed>

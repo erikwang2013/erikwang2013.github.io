@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2023/08/21/datahub-install/",
+            "url": "https://erik.xyz/2023/08/21/datahub-install/",
+            "title": "datahub安装教程",
+            "date_published": "2023-08-21T13:30:00.000Z",
+            "content_html": "<p>偶然发现datahub很不错，单机部署来了。</p>\n<ol>\n<li><p>本地安装docker，进入到opt目录或home目录，执行以下命令（国内锁了）：</p>\n<pre><code> git clone https://github.com/linkedin/datahub.git\n\n cd /opt/datahub/docker\n\n datahub docker quickstart -f ./quickstart/docker-compose-without-neo4j.quickstart.yml\n\n source ./quickstart.sh\n</code></pre></li>\n</ol>\n<span id=\"more\"></span>\n<ol>\n<li><p>执行以下命令</p>\n<pre><code> python3 -m pip install --upgrade pip wheel setuptools\n python3 -m pip uninstall datahub acryl-datahub || true \n python3 -m pip install --upgrade acryl-datahub\n datahub version\n datahub docker quickstart\n</code></pre><ul>\n<li><p>发现没有pip配置，果断下载<a href=\"https://bootstrap.pypa.io/get-pip.py -o get-pip.py\">get-pip.py</a>，然后执行以下命令安装pip</p>\n<p>  sudo python3 get-pip.py  </p>\n</li>\n<li><p>安装成功后，依次执行以上命令。结果如图</p>\n</li>\n</ul>\n</li>\n</ol>\n<p><img src=\"/img/202308/20230821213432.png\" alt=\"https://erik.xyz\"></p>\n<p>3.使用datahub导入数据</p>\n<pre><code>   pip install pymysql\n   cd /opt/datahub/docker/ingestion\n</code></pre><p><img src=\"/img/202308/20230821213951.png\" alt=\"https://erik.xyz\"></p>\n<ul>\n<li><p>复制一份sample_recipe.yml修改配置文件：</p>\n<pre><code>  vi recipe.yml\n</code></pre><p><img src=\"/img/202308/20230821214242.png\" alt=\"https://erik.xyz\"></p>\n</li>\n<li><p>编辑配置<br><img src=\"/img/202308/20230821214729.png\" alt=\"\"></p>\n<ul>\n<li>具体如下:</li>\n</ul>\n</li>\n</ul>\n<pre><code>source:\n  type: &quot;mysql&quot;\n  config:\n    username: &quot;root&quot;\n    password: &quot;root&quot;\n    database: &quot;games_paly&quot;\n    host_port: &quot;127.0.0.1:3306&quot;\nsink:\n  type: &quot;datahub-rest&quot;\n  config:\n    server: &#39;http://localhost:8080&#39;\n</code></pre><p>4.导入数据</p>\n<pre><code> datahub ingest -c recipe.yml\n</code></pre>",
+            "tags": [
+                "datahub",
+                "datahub安装"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2023/07/01/new-year-read-moeny/",
             "url": "https://erik.xyz/2023/07/01/new-year-read-moeny/",
             "title": "红包算法",
@@ -209,17 +220,6 @@
             "content_html": "<p>限流器是后台服务中的非常重要的组件，可以用来限制请求速率，保护服务，以免服务过载。 限流器的实现方法有很多种，例如滑动窗口法、Token Bucket、Leaky Bucket等。</p>\n<p>其实golang标准库中就自带了限流算法的实现，即golang.org/x/time/rate。 该限流器是基于Token Bucket(令牌桶)实现的。</p>\n<p>简单来说，令牌桶就是想象有一个固定大小的桶，系统会以恒定速率向桶中放Token，桶满则暂时不放。 而用户则从桶中取Token，如果有剩余Token就可以一直取。如果没有剩余Token，则需要等到系统中被放置了Token才行。<br><span id=\"more\"></span><br>本文则主要集中介绍下该组件的具体使用方法：</p>\n<p>我们可以使用以下方法构造一个限流器对象：</p>\n<pre><code>limiter := NewLimiter(10, 1);\n</code></pre><p>这里有两个参数：</p>\n<ul>\n<li>第一个参数是r Limit。代表每秒可以向Token桶中产生多少token。Limit实际上是float64的别名。</li>\n<li>第二个参数是b int。b代表Token桶的容量大小。 那么，对于以上例子来说，其构造出的限流器含义为，其令牌桶大小为1, 以每秒10个Token的速率向桶中放置Token。</li>\n</ul>\n<p>除了直接指定每秒产生的Token个数外，还可以用Every方法来指定向Token桶中放置Token的间隔，例如：</p>\n<pre><code>limit := Every(100 * time.Millisecond);\nlimiter := NewLimiter(limit, 1);\n</code></pre><p>以上就表示每100ms往桶中放一个Token。本质上也就是一秒钟产生10个。</p>\n<p>Limiter提供了三类方法供用户消费Token，用户可以每次消费一个Token，也可以一次性消费多个Token。 而每种方法代表了当Token不足时，各自不同的对应手段。</p>\n<p> Wait/WaitN </p>\n<pre><code>func (lim *Limiter) Wait(ctx context.Context) (err error)\nfunc (lim *Limiter) WaitN(ctx context.Context, n int) (err error)\n</code></pre><p>Wait实际上就是WaitN(ctx,1)。</p>\n<p>当使用Wait方法消费Token时，如果此时桶内Token数组不足(小于N)，那么Wait方法将会阻塞一段时间，直至Token满足条件。如果充足则直接返回。</p>\n<p>这里可以看到，Wait方法有一个context参数。 我们可以设置context的Deadline或者Timeout，来决定此次Wait的最长时间。</p>\n<p>Allow/AllowN</p>\n<pre><code>func (lim *Limiter) Allow() bool\nfunc (lim *Limiter) AllowN(now time.Time, n int) bool\n</code></pre><p>Allow实际上就是AllowN(time.Now(),1)。</p>\n<p>AllowN方法表示，截止到某一时刻，目前桶中数目是否至少为n个，满足则返回true，同时从桶中消费n个token。 反之返回不消费Token，false。</p>\n<p>通常对应这样的线上场景，如果请求速率过快，就直接丢到某些请求。</p>\n<p> Reserve/ReserveN</p>\n<pre><code>func (lim *Limiter) Reserve() *Reservation\nfunc (lim *Limiter) ReserveN(now time.Time, n int) *Reservation\n</code></pre><p>Reserve相当于ReserveN(time.Now(), 1)。</p>\n<p>ReserveN的用法就相对来说复杂一些，当调用完成后，无论Token是否充足，都会返回一个Reservation*对象。</p>\n<p>你可以调用该对象的Delay()方法，该方法返回了需要等待的时间。如果等待时间为0，则说明不用等待。 必须等到等待时间之后，才能进行接下来的工作。</p>\n<p>或者，如果不想等待，可以调用Cancel()方法，该方法会将Token归还。</p>\n<p>举一个简单的例子，我们可以这么使用Reserve方法。</p>\n<pre><code>r := lim.Reserve()\nf !r.OK() &#123;\n    // Not allowed to act! Did you remember to set lim.burst to be &gt; 0 ?\n    return\n&#125;\ntime.Sleep(r.Delay())\nAct() // 执行相关逻辑\n</code></pre><p> 动态调整速率</p>\n<p>Limiter支持可以调整速率和桶大小：</p>\n<pre><code>SetLimit(Limit) 改变放入Token的速率\nSetBurst(int) 改变Token桶大小\n</code></pre><p>有了这两个方法，可以根据现有环境和条件，根据我们的需求，动态的改变Token桶大小和速率</p>\n<p>实例代码</p>\n<pre><code>package main\n\nimport (\n    &quot;context&quot;\n    &quot;log&quot;\n    &quot;time&quot;\n\n    &quot;golang.org/x/time/rate&quot;\n)\n\n//limit表示每秒产生token数，buret最多存token数\n//Allow判断当前是否可以取到token\n//Wait阻塞等待知道取到token\n//Reserve返回等待时间，再去取token\n\nfunc main() &#123;\n    l := rate.NewLimiter(1, 5)\n    log.Println(l.Limit(), l.Burst())\n    for i := 0; i &lt; 100; i++ &#123;\n        //阻塞等待直到，取到一个token\n        log.Println(&quot;before Wait&quot;)\n        c, _ := context.WithTimeout(context.Background(), time.Second*2)\n        if err := l.Wait(c); err != nil &#123;\n            log.Println(&quot;limiter wait err:&quot; + err.Error())\n        &#125;\n        log.Println(&quot;after Wait&quot;)\n\n        //返回需要等待多久才有新的token,这样就可以等待指定时间执行任务\n        r := l.Reserve()\n        log.Println(&quot;reserve Delay:&quot;, r.Delay())\n\n        //判断当前是否可以取到token\n        a := l.Allow()\n        log.Println(&quot;Allow:&quot;, a)\n    &#125;\n&#125;\n</code></pre>",
             "tags": [
                 "go中限流"
-            ]
-        },
-        {
-            "id": "https://erik.xyz/2022/03/22/new-and-make-other/",
-            "url": "https://erik.xyz/2022/03/22/new-and-make-other/",
-            "title": "new和make的区别",
-            "date_published": "2022-03-22T01:27:00.000Z",
-            "content_html": "<p>go中我们往往要对变量分配内存，那么分配内存有两中方式分别是new和make。查了一些资料，顺便看我开发中用的几个地方。其实，很好理解。</p>\n<p>new分配中内存，不做初始化，也就是不能直接赋值，必须初始化后才能赋值。</p>\n<p>make分配好内存且已经</p>\n",
-            "tags": [
-                "go",
-                "new和make的区别"
             ]
         }
     ]
