@@ -5,8 +5,8 @@
         <link>https://erik.xyz</link>
         <description>一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 13 Oct 2017 21:19:00 +0800</pubDate>
-        <lastBuildDate>Fri, 13 Oct 2017 21:19:00 +0800</lastBuildDate>
+        <pubDate>Sun, 12 Nov 2023 21:51:00 +0800</pubDate>
+        <lastBuildDate>Sun, 12 Nov 2023 21:51:00 +0800</lastBuildDate>
         <category>php扩展</category>
         <category>php技巧</category>
         <category>php类库</category>
@@ -54,9 +54,9 @@
         <category>优化</category>
         <category>摘要</category>
         <category>文章</category>
-        <category>游记</category>
         <category>ca证书</category>
         <category>证书生成</category>
+        <category>游记</category>
         <category>二战</category>
         <category>二战熊</category>
         <category>西伯利亚熊</category>
@@ -134,16 +134,16 @@
         <category>新闻</category>
         <category>免费</category>
         <category>随笔吐槽</category>
-        <category>算法</category>
         <category>ping</category>
         <category>ping服务器</category>
         <category>各大网站ping</category>
         <category>搜引擎ping服务器</category>
+        <category>算法</category>
         <category>go获取ip</category>
         <category>go中pdf生成</category>
         <category>go中限流</category>
-        <category>go对接快递签名</category>
         <category>go时间获取</category>
+        <category>go对接快递签名</category>
         <category>go类型转换</category>
         <category>微服务</category>
         <category>go-zero</category>
@@ -387,6 +387,11 @@
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
+        <category>xhprof</category>
+        <category>webman</category>
+        <category>laravel</category>
+        <category>composer</category>
+        <category>composer插件</category>
         <category>html</category>
         <category>响应式分辨率</category>
         <category>响应式调试</category>
@@ -407,7 +412,6 @@
         <category>储蓄卡免年费</category>
         <category>银行卡</category>
         <category>银行卡免年费</category>
-        <category>composer</category>
         <category>composer安装</category>
         <category>composer配置</category>
         <category>项目创建composer</category>
@@ -429,6 +433,20 @@
         <category>翻墙</category>
         <category>谷歌</category>
         <category>谷歌搜索</category>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2023/11/12/xhprof-plugs/</guid>
+            <title>xhprof插件开发</title>
+            <link>https://erik.xyz/2023/11/12/xhprof-plugs/</link>
+            <category>xhprof</category>
+            <category>webman</category>
+            <category>laravel</category>
+            <category>composer</category>
+            <category>composer插件</category>
+            <pubDate>Sun, 12 Nov 2023 21:51:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;  最近开发后总要测试接口性能，来定位接口问题，突然想到有xhprof扩展可以用。翻了翻发现大多说要不代码不更新，要不就是太繁琐，干脆自己开发以下。&lt;/p&gt;
+&lt;p&gt;   参考phacility/xhprof、phpxxb/xhprof的项目，自己下载了一份代码。于是就先做了webman的插件&lt;a href=&#34;https://github.com/erikwang2013/xhprof-webman&#34;&gt;xhprof-webman&lt;/a&gt;，磨蹭了一段时间就又弄了laravel版的插件&lt;a href=&#34;https://github.com/erikwang2013/xhprof-laravel&#34;&gt;xhprof-laravel&lt;/a&gt;。最新办已更新，大家有用到的去composer安装吧。&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://erik.xyz/2017/10/13/you-guan-composer/</guid>
             <title>有关composer</title>

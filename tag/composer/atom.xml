@@ -3,7 +3,7 @@
     <id>https://erik.xyz</id>
     <title>艾瑞可erik • Posts by &#34;composer&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
-    <updated>2017-10-13T13:19:00.000Z</updated>
+    <updated>2023-11-12T13:51:00.000Z</updated>
     <category term="php扩展" />
     <category term="php技巧" />
     <category term="php类库" />
@@ -51,9 +51,9 @@
     <category term="优化" />
     <category term="摘要" />
     <category term="文章" />
-    <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
+    <category term="游记" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
@@ -131,16 +131,16 @@
     <category term="新闻" />
     <category term="免费" />
     <category term="随笔吐槽" />
-    <category term="算法" />
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
     <category term="搜引擎ping服务器" />
+    <category term="算法" />
     <category term="go获取ip" />
     <category term="go中pdf生成" />
     <category term="go中限流" />
-    <category term="go对接快递签名" />
     <category term="go时间获取" />
+    <category term="go对接快递签名" />
     <category term="go类型转换" />
     <category term="微服务" />
     <category term="go-zero" />
@@ -384,6 +384,11 @@
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
+    <category term="xhprof" />
+    <category term="webman" />
+    <category term="laravel" />
+    <category term="composer" />
+    <category term="composer插件" />
     <category term="html" />
     <category term="响应式分辨率" />
     <category term="响应式调试" />
@@ -404,7 +409,6 @@
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
-    <category term="composer" />
     <category term="composer安装" />
     <category term="composer配置" />
     <category term="项目创建composer" />
@@ -426,6 +430,20 @@
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2023/11/12/xhprof-plugs/</id>
+        <title>xhprof插件开发</title>
+        <link rel="alternate" href="https://erik.xyz/2023/11/12/xhprof-plugs/"/>
+        <content type="html">&lt;p&gt;  最近开发后总要测试接口性能，来定位接口问题，突然想到有xhprof扩展可以用。翻了翻发现大多说要不代码不更新，要不就是太繁琐，干脆自己开发以下。&lt;/p&gt;
+&lt;p&gt;   参考phacility/xhprof、phpxxb/xhprof的项目，自己下载了一份代码。于是就先做了webman的插件&lt;a href=&#34;https://github.com/erikwang2013/xhprof-webman&#34;&gt;xhprof-webman&lt;/a&gt;，磨蹭了一段时间就又弄了laravel版的插件&lt;a href=&#34;https://github.com/erikwang2013/xhprof-laravel&#34;&gt;xhprof-laravel&lt;/a&gt;。最新办已更新，大家有用到的去composer安装吧。&lt;/p&gt;
+</content>
+        <category term="xhprof" />
+        <category term="webman" />
+        <category term="laravel" />
+        <category term="composer" />
+        <category term="composer插件" />
+        <updated>2023-11-12T13:51:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2017/10/13/you-guan-composer/</id>
         <title>有关composer</title>
