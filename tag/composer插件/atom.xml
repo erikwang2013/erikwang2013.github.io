@@ -51,9 +51,9 @@
     <category term="优化" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
-    <category term="游记" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
@@ -100,12 +100,12 @@
     <category term="监控" />
     <category term="cphalcon" />
     <category term="cphalcon报错" />
-    <category term="css中的em" />
-    <category term="响应式字体" />
-    <category term="响应式布局样式" />
     <category term="proxy代理搭建" />
     <category term="代理服务器搭建" />
     <category term="proxy服务器" />
+    <category term="css中的em" />
+    <category term="响应式字体" />
+    <category term="响应式布局样式" />
     <category term="查找" />
     <category term="排序" />
     <category term="快速排序" />
@@ -131,16 +131,16 @@
     <category term="新闻" />
     <category term="免费" />
     <category term="随笔吐槽" />
+    <category term="算法" />
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
     <category term="搜引擎ping服务器" />
-    <category term="算法" />
     <category term="go获取ip" />
     <category term="go中pdf生成" />
     <category term="go中限流" />
-    <category term="go时间获取" />
     <category term="go对接快递签名" />
+    <category term="go时间获取" />
     <category term="go类型转换" />
     <category term="微服务" />
     <category term="go-zero" />
@@ -178,11 +178,11 @@
     <category term="jetbtrains" />
     <category term="phpstorm" />
     <category term="搜索引擎" />
-    <category term="图片" />
-    <category term="素材" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
+    <category term="图片" />
+    <category term="素材" />
     <category term="js判断浏览器" />
     <category term="js判断浏览器版本" />
     <category term="判断浏览器" />
@@ -272,11 +272,11 @@
     <category term="PHP数组" />
     <category term="字符串函数" />
     <category term="排序函数" />
-    <category term="php的SPL" />
-    <category term="SPL手册" />
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
+    <category term="php的SPL" />
+    <category term="SPL手册" />
     <category term="phpunit" />
     <category term="phpunit安装" />
     <category term="php过滤" />
@@ -434,8 +434,8 @@
         <id>https://erik.xyz/2023/11/12/xhprof-plugs/</id>
         <title>xhprof插件开发</title>
         <link rel="alternate" href="https://erik.xyz/2023/11/12/xhprof-plugs/"/>
-        <content type="html">&lt;p&gt;  最近开发后总要测试接口性能，来定位接口问题，突然想到有xhprof扩展可以用。翻了翻发现大多说要不代码不更新，要不就是太繁琐，干脆自己开发以下。&lt;/p&gt;
-&lt;p&gt;   参考phacility/xhprof、phpxxb/xhprof的项目，自己下载了一份代码。于是就先做了webman的插件&lt;a href=&#34;https://github.com/erikwang2013/xhprof-webman&#34;&gt;xhprof-webman&lt;/a&gt;，磨蹭了一段时间就又弄了laravel版的插件&lt;a href=&#34;https://github.com/erikwang2013/xhprof-laravel&#34;&gt;xhprof-laravel&lt;/a&gt;。最新办已更新，大家有用到的去composer安装吧。&lt;/p&gt;
+        <content type="html">&lt;p&gt;最近开发后总要测试接口性能，来定位接口问题，突然想到有xhprof扩展可以用。翻了翻，发现多数要不代码不更新，要不就是太繁琐，干脆自己开发以下。&lt;/p&gt;
+&lt;p&gt;   参考phacility/xhprof、phpxxb/xhprof的项目，自己下载了一份代码。于是就先做了webman的插件&lt;a href=&#34;https://github.com/erikwang2013/xhprof-webman&#34;&gt;xhprof-webman&lt;/a&gt;，磨蹭了一段时间就又弄了laravel版的插件&lt;a href=&#34;https://github.com/erikwang2013/xhprof-laravel&#34;&gt;xhprof-laravel&lt;/a&gt;。最新版已更新，大家有用到的去composer安装吧。&lt;/p&gt;
 </content>
         <category term="xhprof" />
         <category term="webman" />
