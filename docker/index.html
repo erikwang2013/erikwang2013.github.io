@@ -12,15 +12,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="keywords" content="艾瑞可erik,erik,艾瑞可Erik,艾瑞可,https://erik.xyz,erik.xyz">
-  <meta name="description" content="查询进程并删除 ps -ef | grep WorkerMan | grep -v grep | awk &#39;&amp;#123;print $2&amp;#125;&#39; | xargs kill -9 强制杀死指定进程 pgrep -f &#39;WorkerMan&#39; | xargs kill -9 强制杀死端口进程 kill $(lsof -ti :$PORT) git修改提交消息  gi">
+  <meta name="description" content="进程操作 查询进程并删除   ps -ef | grep WorkerMan | grep -v grep | awk &#39;&amp;#123;print $2&amp;#125;&#39; | xargs kill -9    强制杀死指定进程   pgrep -f &#39;WorkerMan&#39; | xargs kill -9    强制杀死端口进程   kill $(lsof -ti :$PO">
 <meta property="og:type" content="website">
 <meta property="og:title" content="常用命令操作">
 <meta property="og:url" content="https://erik.xyz/docker/index.html">
 <meta property="og:site_name" content="艾瑞可erik">
-<meta property="og:description" content="查询进程并删除 ps -ef | grep WorkerMan | grep -v grep | awk &#39;&amp;#123;print $2&amp;#125;&#39; | xargs kill -9 强制杀死指定进程 pgrep -f &#39;WorkerMan&#39; | xargs kill -9 强制杀死端口进程 kill $(lsof -ti :$PORT) git修改提交消息  gi">
+<meta property="og:description" content="进程操作 查询进程并删除   ps -ef | grep WorkerMan | grep -v grep | awk &#39;&amp;#123;print $2&amp;#125;&#39; | xargs kill -9    强制杀死指定进程   pgrep -f &#39;WorkerMan&#39; | xargs kill -9    强制杀死端口进程   kill $(lsof -ti :$PO">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-06-26T13:24:10.000Z">
-<meta property="article:modified_time" content="2023-07-01T15:47:18.028Z">
+<meta property="article:modified_time" content="2024-02-24T06:44:56.558Z">
 <meta property="article:author" content="艾瑞可erik">
 <meta property="article:tag" content="艾瑞可erik,erik,艾瑞可Erik,艾瑞可,https:&#x2F;&#x2F;erik.xyz,erik.xyz">
 <meta name="twitter:card" content="summary">
@@ -371,7 +371,7 @@ var _hmt = _hmt || [];
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">811字</span>
+        <span class="post-count">919字</span>
       </span>
     </span>
 
@@ -396,20 +396,68 @@ var _hmt = _hmt || [];
       
 
         
-<p>查询进程并删除</p>
-<pre><code>ps -ef | grep WorkerMan | grep -v grep | awk &#39;&#123;print $2&#125;&#39; | xargs kill -9
-</code></pre><p>强制杀死指定进程</p>
-<pre><code>pgrep -f &#39;WorkerMan&#39; | xargs kill -9
-</code></pre><p>强制杀死端口进程</p>
-<pre><code>kill $(lsof -ti :$PORT)
-</code></pre><h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><p>修改提交消息 </p>
-<pre><code>git commit --amend --message=&#39;更新&#39;    
-</code></pre><p>强制推送</p>
-<pre><code>git push --force  
-</code></pre><p>取消提交本地权限</p>
-<pre><code>git config core.filemode false
-</code></pre><h3 id="手动生成ssl证书命令"><a href="#手动生成ssl证书命令" class="headerlink" title="手动生成ssl证书命令"></a>手动生成ssl证书命令</h3><pre><code>    certbot certonly --manual -d *.erik.xyz -d erik.xyz
-</code></pre><h3 id="docker相关"><a href="#docker相关" class="headerlink" title="docker相关"></a>docker相关</h3><ul>
+<h3 id="进程操作"><a href="#进程操作" class="headerlink" title="进程操作"></a>进程操作</h3><ul>
+<li><p>查询进程并删除</p>
+<pre><code>  ps -ef | grep WorkerMan | grep -v grep | awk &#39;&#123;print $2&#125;&#39; | xargs kill -9
+</code></pre></li>
+</ul>
+<ul>
+<li><p>强制杀死指定进程</p>
+<pre><code>  pgrep -f &#39;WorkerMan&#39; | xargs kill -9
+</code></pre></li>
+</ul>
+<ul>
+<li><p>强制杀死端口进程</p>
+<pre><code>  kill $(lsof -ti :$PORT)
+</code></pre></li>
+</ul>
+<h3 id="git"><a href="#git" class="headerlink" title="git"></a>git</h3><ul>
+<li><p>修改提交消息 </p>
+<pre><code>  git commit --amend --message=&#39;更新&#39;    
+</code></pre></li>
+</ul>
+<ul>
+<li><p>强制推送</p>
+<pre><code>  git push --force  
+</code></pre></li>
+</ul>
+<ul>
+<li><p>取消提交本地权限</p>
+<pre><code>  git config core.filemode false
+</code></pre></li>
+</ul>
+<h3 id="手动生成ssl证书命令"><a href="#手动生成ssl证书命令" class="headerlink" title="手动生成ssl证书命令"></a>手动生成ssl证书命令</h3><ul>
+<li><p>cerbot生成</p>
+<pre><code> certbot certonly --manual -d *.erik.xyz -d erik.xyz
+</code></pre></li>
+</ul>
+<ul>
+<li><p>acme生成</p>
+<pre><code>acme.sh --issue --dns -d erik.xyz -d *.erik.xyz --yes-I-know-dns-manual-mode-enough-go-ahead-please
+
+acme.sh --renew -d erik.xyz -d *.erik.xyz --yes-I-know-dns-manual-mode-enough-go-ahead-please
+</code></pre></li>
+<li><p>CA切换</p>
+<ul>
+<li><p>切换Let’s Encrypt</p>
+<pre><code>acme.sh --set-default-ca --server letsencrypt
+</code></pre></li>
+<li><p>切换Buypass</p>
+<pre><code>acme.sh --set-default-ca --server buypass
+</code></pre></li>
+<li><p>切换 ZeroSSL</p>
+<pre><code>acme.sh --set-default-ca --server zerossl
+</code></pre></li>
+<li><p>切换 SSL.com</p>
+<pre><code>acme.sh --set-default-ca --server ssl.com
+</code></pre></li>
+<li><p>切换 Google Public CA</p>
+<pre><code>acme.sh --set-default-ca --server google
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h3 id="docker相关"><a href="#docker相关" class="headerlink" title="docker相关"></a>docker相关</h3><ul>
 <li><p>运行容器</p>
 <pre><code> sudo docker run --privileged -ti -p 9056:9000 --name  php5.6-fpm -v /var/www:/var/www -d php:5.6-fpm
 
@@ -737,7 +785,7 @@ gitalk.render('gitalk-container')
 		</div>
 		<div id="footer-info">
 			<div class="footer-left">
-				&copy; 2014-2023
+				&copy; 2014-2024
 					艾瑞可erik |
 						<a href="https://beian.miit.gov.cn" target="_blank"
 							rel="external nofollow noopener noreferrer">粤ICP备2020136226号-1</a> |
