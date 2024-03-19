@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"随机化\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2024/03/19/randomization/",
+            "url": "https://erik.xyz/2024/03/19/randomization/",
+            "title": "数据随机化算法",
+            "date_published": "2024-03-19T14:39:00.000Z",
+            "content_html": "<p>开发卡牌游戏或者匹配游戏等等，需要重新洗牌或重新更换位置，这就需要清洗数据。那么就以最常见的扑克牌为例，来一个数据随机化算法。</p>\n<p>直接上代码：<br><span id=\"more\"></span></p>\n<pre><code> function new_rand($arr)&#123;\n    $len=count($arr);\n    $new_arr=[];\n    for($i=0;$i&lt;$len;$i++)&#123;\n        $new_arr[mt_rand()]=$arr[$i];\n    &#125;\n    ksort($new_arr);\n    return array_values($new_arr);\n&#125;\n\n$arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,\n17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,\n33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,\n49,50,51,52,53,54];\necho &quot;原始结果&quot;.PHP_EOL;\nprint_r(json_encode($arr));\n$get_arr=new_rand($arr);\necho PHP_EOL.&quot;最终结果&quot;.PHP_EOL;\nprint_r(json_encode($get_arr));\n</code></pre><p>最终结果如图：<img src=\"/img/2024/20240319223317.png\" alt=\"erik.xyz\"></p>\n",
+            "tags": [
+                "数据随机化算法",
+                "随机化"
+            ]
+        }
+    ]
+}

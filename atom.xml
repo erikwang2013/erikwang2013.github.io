@@ -3,7 +3,7 @@
     <id>https://erik.xyz</id>
     <title>艾瑞可erik • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
-    <updated>2023-11-12T13:51:00.000Z</updated>
+    <updated>2024-03-19T14:39:00.000Z</updated>
     <category term="php扩展" />
     <category term="php技巧" />
     <category term="php类库" />
@@ -100,12 +100,12 @@
     <category term="监控" />
     <category term="cphalcon" />
     <category term="cphalcon报错" />
-    <category term="proxy代理搭建" />
-    <category term="代理服务器搭建" />
-    <category term="proxy服务器" />
     <category term="css中的em" />
     <category term="响应式字体" />
     <category term="响应式布局样式" />
+    <category term="proxy代理搭建" />
+    <category term="代理服务器搭建" />
+    <category term="proxy服务器" />
     <category term="查找" />
     <category term="排序" />
     <category term="快速排序" />
@@ -149,20 +149,20 @@
     <category term="go解密" />
     <category term="归" />
     <category term="吐槽" />
-    <category term="php大全" />
-    <category term="php资料" />
     <category term="hadoop" />
     <category term="hadoop2.8.0" />
     <category term="hadoop安装教程" />
     <category term="hadoop安装详细教程" />
     <category term="hadoop教程" />
     <category term="hadoop部署" />
-    <category term="hadoop3" />
-    <category term="hadoop配置" />
+    <category term="php大全" />
+    <category term="php资料" />
     <category term="log4j2" />
     <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
+    <category term="hadoop3" />
+    <category term="hadoop配置" />
     <category term="http1.1" />
     <category term="http2.0" />
     <category term="会话" />
@@ -178,11 +178,11 @@
     <category term="jetbtrains" />
     <category term="phpstorm" />
     <category term="搜索引擎" />
+    <category term="图片" />
+    <category term="素材" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
-    <category term="图片" />
-    <category term="素材" />
     <category term="js判断浏览器" />
     <category term="js判断浏览器版本" />
     <category term="判断浏览器" />
@@ -272,11 +272,11 @@
     <category term="PHP数组" />
     <category term="字符串函数" />
     <category term="排序函数" />
+    <category term="php的SPL" />
+    <category term="SPL手册" />
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="php的SPL" />
-    <category term="SPL手册" />
     <category term="phpunit" />
     <category term="phpunit安装" />
     <category term="php过滤" />
@@ -297,6 +297,8 @@
     <category term="a标签虚线" />
     <category term="虚线框" />
     <category term="R语言" />
+    <category term="数据随机化算法" />
+    <category term="随机化" />
     <category term="redis" />
     <category term="redis总结" />
     <category term="redis命令" />
@@ -430,6 +432,37 @@
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2024/03/19/randomization/</id>
+        <title>数据随机化算法</title>
+        <link rel="alternate" href="https://erik.xyz/2024/03/19/randomization/"/>
+        <content type="html">&lt;p&gt;开发卡牌游戏或者匹配游戏等等，需要重新洗牌或重新更换位置，这就需要清洗数据。那么就以最常见的扑克牌为例，来一个数据随机化算法。&lt;/p&gt;
+&lt;p&gt;直接上代码：&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; function new_rand($arr)&amp;#123;
+    $len=count($arr);
+    $new_arr=[];
+    for($i=0;$i&amp;lt;$len;$i++)&amp;#123;
+        $new_arr[mt_rand()]=$arr[$i];
+    &amp;#125;
+    ksort($new_arr);
+    return array_values($new_arr);
+&amp;#125;
+
+$arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,
+17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,
+33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,
+49,50,51,52,53,54];
+echo &amp;quot;原始结果&amp;quot;.PHP_EOL;
+print_r(json_encode($arr));
+$get_arr=new_rand($arr);
+echo PHP_EOL.&amp;quot;最终结果&amp;quot;.PHP_EOL;
+print_r(json_encode($get_arr));
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;最终结果如图：&lt;img src=&#34;/img/2024/20240319223317.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="数据随机化算法" />
+        <category term="随机化" />
+        <updated>2024-03-19T14:39:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2023/11/12/xhprof-plugs/</id>
         <title>xhprof插件开发</title>
@@ -1872,42 +1905,5 @@ func GeneratePdf(filename string) error &amp;#123;
 &lt;/code&gt;&lt;/pre&gt;</content>
         <category term="go中pdf生成" />
         <updated>2022-05-22T02:57:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2022/05/10/get-http-address-ip/</id>
-        <title>go中获取HTTP请求的IP地址</title>
-        <link rel="alternate" href="https://erik.xyz/2022/05/10/get-http-address-ip/"/>
-        <content type="html">&lt;pre&gt;&lt;code&gt;package main
-
-import (
-    &amp;quot;encoding/json&amp;quot;
-    &amp;quot;net/http&amp;quot;
-)
-
-func main() &amp;#123;
-    http.HandleFunc(&amp;quot;/&amp;quot;, ExampleHandler)
-    if err := http.ListenAndServe(&amp;quot;:8080&amp;quot;, nil); err != nil &amp;#123;
-        panic(err)
-    &amp;#125;
-&amp;#125;
-
-func ExampleHandler(w http.ResponseWriter, r *http.Request) &amp;#123;
-    w.Header().Add(&amp;quot;Content-Type&amp;quot;, &amp;quot;application/json&amp;quot;)
-    resp, _ := json.Marshal(map[string]string&amp;#123;
-        &amp;quot;ip&amp;quot;: GetIP(r),
-    &amp;#125;)
-    w.Write(resp)
-&amp;#125;
-
-func GetIP(r *http.Request) string &amp;#123;
-    forwarded := r.Header.Get(&amp;quot;X-FORWARDED-FOR&amp;quot;)
-    if forwarded != &amp;quot;&amp;quot; &amp;#123;
-        return forwarded
-    &amp;#125;
-    return r.RemoteAddr
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;</content>
-        <category term="go获取ip" />
-        <updated>2022-05-10T12:12:31.000Z</updated>
     </entry>
 </feed>

@@ -5,8 +5,8 @@
         <link>https://erik.xyz</link>
         <description>一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Sat, 01 Jul 2023 22:27:00 +0800</pubDate>
-        <lastBuildDate>Sat, 01 Jul 2023 22:27:00 +0800</lastBuildDate>
+        <pubDate>Tue, 19 Mar 2024 22:39:00 +0800</pubDate>
+        <lastBuildDate>Tue, 19 Mar 2024 22:39:00 +0800</lastBuildDate>
         <category>php扩展</category>
         <category>php技巧</category>
         <category>php类库</category>
@@ -103,12 +103,12 @@
         <category>监控</category>
         <category>cphalcon</category>
         <category>cphalcon报错</category>
-        <category>proxy代理搭建</category>
-        <category>代理服务器搭建</category>
-        <category>proxy服务器</category>
         <category>css中的em</category>
         <category>响应式字体</category>
         <category>响应式布局样式</category>
+        <category>proxy代理搭建</category>
+        <category>代理服务器搭建</category>
+        <category>proxy服务器</category>
         <category>查找</category>
         <category>排序</category>
         <category>快速排序</category>
@@ -152,20 +152,20 @@
         <category>go解密</category>
         <category>归</category>
         <category>吐槽</category>
-        <category>php大全</category>
-        <category>php资料</category>
         <category>hadoop</category>
         <category>hadoop2.8.0</category>
         <category>hadoop安装教程</category>
         <category>hadoop安装详细教程</category>
         <category>hadoop教程</category>
         <category>hadoop部署</category>
-        <category>hadoop3</category>
-        <category>hadoop配置</category>
+        <category>php大全</category>
+        <category>php资料</category>
         <category>log4j2</category>
         <category>数据库</category>
         <category>hbase安装教程</category>
         <category>hbase</category>
+        <category>hadoop3</category>
+        <category>hadoop配置</category>
         <category>http1.1</category>
         <category>http2.0</category>
         <category>会话</category>
@@ -181,11 +181,11 @@
         <category>jetbtrains</category>
         <category>phpstorm</category>
         <category>搜索引擎</category>
+        <category>图片</category>
+        <category>素材</category>
         <category>jq</category>
         <category>jq侧边导航</category>
         <category>侧边导航</category>
-        <category>图片</category>
-        <category>素材</category>
         <category>js判断浏览器</category>
         <category>js判断浏览器版本</category>
         <category>判断浏览器</category>
@@ -275,11 +275,11 @@
         <category>PHP数组</category>
         <category>字符串函数</category>
         <category>排序函数</category>
+        <category>php的SPL</category>
+        <category>SPL手册</category>
         <category>PHP算法</category>
         <category>php递归</category>
         <category>递归</category>
-        <category>php的SPL</category>
-        <category>SPL手册</category>
         <category>phpunit</category>
         <category>phpunit安装</category>
         <category>php过滤</category>
@@ -300,6 +300,8 @@
         <category>a标签虚线</category>
         <category>虚线框</category>
         <category>R语言</category>
+        <category>数据随机化算法</category>
+        <category>随机化</category>
         <category>redis</category>
         <category>redis总结</category>
         <category>redis命令</category>
@@ -433,6 +435,37 @@
         <category>翻墙</category>
         <category>谷歌</category>
         <category>谷歌搜索</category>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2024/03/19/randomization/</guid>
+            <title>数据随机化算法</title>
+            <link>https://erik.xyz/2024/03/19/randomization/</link>
+            <category>数据随机化算法</category>
+            <category>随机化</category>
+            <pubDate>Tue, 19 Mar 2024 22:39:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;开发卡牌游戏或者匹配游戏等等，需要重新洗牌或重新更换位置，这就需要清洗数据。那么就以最常见的扑克牌为例，来一个数据随机化算法。&lt;/p&gt;
+&lt;p&gt;直接上代码：&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; function new_rand($arr)&amp;#123;
+    $len=count($arr);
+    $new_arr=[];
+    for($i=0;$i&amp;lt;$len;$i++)&amp;#123;
+        $new_arr[mt_rand()]=$arr[$i];
+    &amp;#125;
+    ksort($new_arr);
+    return array_values($new_arr);
+&amp;#125;
+
+$arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,
+17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,
+33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,
+49,50,51,52,53,54];
+echo &amp;quot;原始结果&amp;quot;.PHP_EOL;
+print_r(json_encode($arr));
+$get_arr=new_rand($arr);
+echo PHP_EOL.&amp;quot;最终结果&amp;quot;.PHP_EOL;
+print_r(json_encode($get_arr));
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;最终结果如图：&lt;img src=&#34;/img/2024/20240319223317.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://erik.xyz/2023/07/01/new-year-read-moeny/</guid>
             <title>红包算法</title>

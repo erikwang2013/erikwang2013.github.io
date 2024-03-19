@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2024/03/19/randomization/",
+            "url": "https://erik.xyz/2024/03/19/randomization/",
+            "title": "数据随机化算法",
+            "date_published": "2024-03-19T14:39:00.000Z",
+            "content_html": "<p>开发卡牌游戏或者匹配游戏等等，需要重新洗牌或重新更换位置，这就需要清洗数据。那么就以最常见的扑克牌为例，来一个数据随机化算法。</p>\n<p>直接上代码：<br><span id=\"more\"></span></p>\n<pre><code> function new_rand($arr)&#123;\n    $len=count($arr);\n    $new_arr=[];\n    for($i=0;$i&lt;$len;$i++)&#123;\n        $new_arr[mt_rand()]=$arr[$i];\n    &#125;\n    ksort($new_arr);\n    return array_values($new_arr);\n&#125;\n\n$arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,\n17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,\n33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,\n49,50,51,52,53,54];\necho &quot;原始结果&quot;.PHP_EOL;\nprint_r(json_encode($arr));\n$get_arr=new_rand($arr);\necho PHP_EOL.&quot;最终结果&quot;.PHP_EOL;\nprint_r(json_encode($get_arr));\n</code></pre><p>最终结果如图：<img src=\"/img/2024/20240319223317.png\" alt=\"erik.xyz\"></p>\n",
+            "tags": [
+                "数据随机化算法",
+                "随机化"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2023/07/01/new-year-read-moeny/",
             "url": "https://erik.xyz/2023/07/01/new-year-read-moeny/",
             "title": "红包算法",
@@ -224,16 +235,6 @@
                 "php7中sphinx",
                 "php7中sphinx扩展",
                 "sphinx扩展"
-            ]
-        },
-        {
-            "id": "https://erik.xyz/2017/09/01/php-zhong-xml-zhuan-huan-cheng-php-shu-zu/",
-            "url": "https://erik.xyz/2017/09/01/php-zhong-xml-zhuan-huan-cheng-php-shu-zu/",
-            "title": "php中xml转换成php数组",
-            "date_published": "2017-09-01T13:38:00.000Z",
-            "content_html": "<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br><span class=\"line\">10</span><br><span class=\"line\">11</span><br><span class=\"line\">12</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">public function xmlArray($xml)&#123; </span><br><span class=\"line\">  if(!$xml)&#123; </span><br><span class=\"line\">    $data=&quot;数据异常&quot;;</span><br><span class=\"line\">    error\\_log(&quot;数据错误&quot;.print\\_r($data).&quot;\\\\r\\\\n&quot;,3,&#x27;wx\\_error.log&#x27;);</span><br><span class=\"line\">    exit; </span><br><span class=\"line\">  &#125; </span><br><span class=\"line\">  //将XML转为array </span><br><span class=\"line\">  //禁止引用外部xml实体 </span><br><span class=\"line\">  libxml\\_disable\\_entity\\_loader(true);</span><br><span class=\"line\">  $data= json\\_decode(json\\_encode(simplexml\\_load\\_string($xml, &#x27;SimpleXMLElement&#x27;, LIBXML_NOCDATA)), true); </span><br><span class=\"line\">  return $data; </span><br><span class=\"line\">&#125;</span><br></pre></td></tr></table></figure>",
-            "tags": [
-                "php"
             ]
         }
     ]

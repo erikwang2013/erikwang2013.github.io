@@ -102,7 +102,7 @@ var _hmt = _hmt || [];
 								<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">
 									文章
 										
-											(248)
+											(249)
 												
 								</a>
 								
@@ -347,6 +347,148 @@ var _hmt = _hmt || [];
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-php-zhong-dan-yuan-ce-shi-an-zhuang-phpunit-win-linux" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/29/php-zhong-dan-yuan-ce-shi-an-zhuang-phpunit-win-linux/">php中单元测试安装phpunit(win+linux)</a>
+    </h1>
+  
+
+          
+            <a href="/2017/06/29/php-zhong-dan-yuan-ce-shi-an-zhuang-phpunit-win-linux/" class="archive-article-date">
+  	<time datetime="2017-06-29T05:36:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-29</time>
+</a>
+                <!-- 需要添加的位置 -->
+            <!-- 开始添加字数统计-->
+            
+            <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+
+        
+<p>要获取 PHPUnit，最简单的方法是下载 PHPUnit 的 <a class="ulink" href="http://php.net/phar" target="_blank" rel="external nofollow noopener noreferrer" target="_top">PHP 档案包 (PHAR)</a>，它将 PHPUnit 所需要的所有必要组件（以及某些可选组件）捆绑在单个文件中：</p>
+<p>要使用 PHP档案包(PHAR)需要有 <a class="ulink" href="http://php.net/manual/en/phar.installation.php" target="_blank" rel="external nofollow noopener noreferrer" target="_top">phar</a> 扩展。</p>
+<p>要使用 PHAR 的 <code class="literal">—self-update</code> 功能需要有 <a class="ulink" href="http://php.net/manual/en/openssl.installation.php" target="_blank" rel="external nofollow noopener noreferrer" target="_top">openssl</a> 扩展。</p>
+<p>如果启用了 <a class="ulink" href="http://suhosin.org/" target="_blank" rel="external nofollow noopener noreferrer" target="_top">Suhosin</a> 扩展，需要在 <code class="literal">php.ini</code> 中允许执行 PHAR：</p>
+<p><pre class="screen">suhosin.executor.include.whitelist = phar
+</pre><br>如果要全局安装 PHAR：</p>
+<p><pre class="screen"><code class="prompt">$</code> <strong class="userinput"><code>wget https://phar.phpunit.de/phpunit.phar</code></strong>
+<code class="prompt">$</code> <strong class="userinput"><code>chmod +x phpunit.phar</code></strong>
+<code class="prompt">$</code> <strong class="userinput"><code>sudo mv phpunit.phar /usr/local/bin/phpunit</code></strong>
+<code class="prompt">$</code> <strong class="userinput"><code>phpunit --version</code></strong>
+<code class="computeroutput">PHPUnit x.y.z by Sebastian Bergmann and contributors.</code>
+</pre><br>也可以直接使用下载的 PHAR 文件：</p>
+<p><pre class="screen"><code class="prompt">$</code> <strong class="userinput"><code>wget https://phar.phpunit.de/phpunit.phar</code></strong>
+<code class="prompt">$</code> <strong class="userinput"><code>php phpunit.phar --version</code></strong>
+<code class="computeroutput">PHPUnit x.y.z by Sebastian Bergmann and contributors.</code>
+</pre></p>
+<div class="section">
+<div class="titlepage">
+<div>
+<div>
+<h3 class="title"><a id="installation.phar.windows"></a>Windows</h3>
+</div>
+</div>
+</div>
+整体上说，在 Windows 下安装 PHAR 和手工<a class="ulink" href="https://getcomposer.org/doc/00-intro.md#installation-windows" target="_blank" rel="external nofollow noopener noreferrer" target="_top">在 Windows 下安装 Composer</a> 是一样的过程：
+<div class="orderedlist">
+<ol class="orderedlist" type="1">
+     <li class="listitem">为 PHP 的二进制可执行文件建立一个目录，例如 <code class="filename">C:\bin</code></li>
+     <li class="listitem">将 <strong class="userinput"><code>;C:\bin</code></strong> 附加到 <code class="varname">PATH</code> 环境变量中（<a class="ulink" href="http://stackoverflow.com/questions/6318156/adding-python-path-on-windows-7" target="_blank" rel="external nofollow noopener noreferrer" target="_top">相关帮助</a>）</li>
+     <li class="listitem">下载 <a class="ulink" href="https://phar.phpunit.de/phpunit.phar" target="_blank" rel="external nofollow noopener noreferrer" target="_top">https://phar.phpunit.de/phpunit.phar</a> 并将文件保存到 <code class="filename">C:\bin\phpunit.phar</code></li>
+     <li class="listitem">打开命令行（例如，按 <span class="keycap"><strong>Windows</strong></span>+<span class="keycap"><strong>R</strong></span> » 输入 <strong class="userinput"><code>cmd</code></strong> » <span class="keycap"><strong>ENTER</strong></span>)</li>
+     <li class="listitem">建立外包覆批处理脚本（最后得到 <code class="filename">C:\bin\phpunit.cmd</code>）：
+<pre class="screen"><code class="prompt">C:\Users\username&gt;</code><strong class="userinput"><code>cd C:\bin</code></strong><code class="prompt">C:\bin&gt;</code><strong class="userinput"><code>echo @php "%~dp0phpunit.phar" %* &gt; phpunit.cmd</code></strong><code class="prompt">C:\bin&gt;</code><strong class="userinput"><code>exit</code></strong></pre>
+</li>
+     <li class="listitem">新开一个命令行窗口，确认一下可以在任意路径下执行 PHPUnit：
+<pre class="screen"><code class="prompt">C:\Users\username&gt;</code><strong class="userinput"><code>phpunit --version</code></strong><code class="computeroutput">PHPUnit x.y.z by Sebastian Bergmann and contributors.</code></pre>
+</li>
+</ol>
+phpunit官方中文手册
+
+https://phpunit.de/manual/current/zh_cn/installation.html
+
+</div>
+下载地址：https://phar.phpunit.de/
+
+</div>
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">phpunit</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">phpunit安装</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-category icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/php//" class="article-tag-list-link color4">php</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/29/php-zhong-dan-yuan-ce-shi-an-zhuang-phpunit-win-linux/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-hadoop2-8-0-de-bu-shu-an-zhuang-jiao-cheng" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -1343,114 +1485,6 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-shi-yong-metasploit-shi-xian-shodan-sou-suo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/02/23/shi-yong-metasploit-shi-xian-shodan-sou-suo/">使用Metasploit实现shodan搜索</a>
-    </h1>
-  
-
-          
-            <a href="/2016/02/23/shi-yong-metasploit-shi-xian-shodan-sou-suo/" class="archive-article-date">
-  	<time datetime="2016-02-23T08:35:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-02-23</time>
-</a>
-                <!-- 需要添加的位置 -->
-            <!-- 开始添加字数统计-->
-            
-            <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>无意间发现shodan可以搜索任何联网的设备（不多解释，你懂的）。在kali系统中可以配置shodan,也就是说你不用去 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://www.shodan.io/官网上搜索了，在kali终端直接敲命令就可以了。" target="_blank">https://www.shodan.io/官网上搜索了，在kali终端直接敲命令就可以了。</a> 首先，在shodan注册个免费账户 NO.1 <img src="http://i13.tietuku.com/2cf5be0118b2f83f.jpg" alt=""><br>
-        
-        <!--
-          <a class="article-more-a" href="/2016/02/23/shi-yong-metasploit-shi-xian-shodan-sou-suo/#more">more >></a>
-          -->
-        
-      
-
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">kali</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">shodan</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">黑谷歌</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">黒帽搜素</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-category icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/linux//" class="article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/02/23/shi-yong-metasploit-shi-xian-shodan-sou-suo/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/11/">&lt; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/25/">25</a><a class="extend next" rel="next" href="/page/13/">下一页 &gt;</a>
@@ -1998,18 +2032,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">proxy代理搭建</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">代理服务器搭建</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">proxy服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">css中的em</a>
               </li>
              
@@ -2019,6 +2041,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">响应式布局样式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">proxy代理搭建</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">代理服务器搭建</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">proxy服务器</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2194,14 +2228,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">hadoop</a>
               </li>
              
@@ -2226,11 +2252,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">hadoop3</a>
+                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">hadoop配置</a>
+                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2247,6 +2273,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">hbase</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">hadoop3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">hadoop配置</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2310,6 +2344,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">素材</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">jq</a>
               </li>
              
@@ -2319,14 +2361,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">侧边导航</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">图片</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">素材</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2686,6 +2720,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php的SPL</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">SPL手册</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">PHP算法</a>
               </li>
              
@@ -2695,14 +2737,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">递归</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php的SPL</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">SPL手册</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2783,6 +2817,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">R语言</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">数据随机化算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">随机化</a>
               </li>
              
               <li class="article-tag-list-item">

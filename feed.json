@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2024/03/19/randomization/",
+            "url": "https://erik.xyz/2024/03/19/randomization/",
+            "title": "数据随机化算法",
+            "date_published": "2024-03-19T14:39:00.000Z",
+            "content_html": "<p>开发卡牌游戏或者匹配游戏等等，需要重新洗牌或重新更换位置，这就需要清洗数据。那么就以最常见的扑克牌为例，来一个数据随机化算法。</p>\n<p>直接上代码：<br><span id=\"more\"></span></p>\n<pre><code> function new_rand($arr)&#123;\n    $len=count($arr);\n    $new_arr=[];\n    for($i=0;$i&lt;$len;$i++)&#123;\n        $new_arr[mt_rand()]=$arr[$i];\n    &#125;\n    ksort($new_arr);\n    return array_values($new_arr);\n&#125;\n\n$arr=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,\n17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,\n33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,\n49,50,51,52,53,54];\necho &quot;原始结果&quot;.PHP_EOL;\nprint_r(json_encode($arr));\n$get_arr=new_rand($arr);\necho PHP_EOL.&quot;最终结果&quot;.PHP_EOL;\nprint_r(json_encode($get_arr));\n</code></pre><p>最终结果如图：<img src=\"/img/2024/20240319223317.png\" alt=\"erik.xyz\"></p>\n",
+            "tags": [
+                "数据随机化算法",
+                "随机化"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2023/11/12/xhprof-plugs/",
             "url": "https://erik.xyz/2023/11/12/xhprof-plugs/",
             "title": "xhprof插件开发",
@@ -214,16 +225,6 @@
             "content_html": "<p>一个简单但是非常实用的pdf生成器！</p>\n<p>安装：</p>\n<pre><code>go get github.com/jung-kurt/gofpdf\n</code></pre><span id=\"more\"></span>\n<p>代码：</p>\n<pre><code>package main\n\nimport (\n    &quot;github.com/jung-kurt/gofpdf&quot;\n)\n\nfunc main() &#123;\n    err := GeneratePdf(&quot;hello.pdf&quot;)\n    if err != nil &#123;\n        panic(err)\n    &#125;\n&#125;\n\nfunc GeneratePdf(filename string) error &#123;\n  pdf := gofpdf.New(&quot;P&quot;, &quot;mm&quot;, &quot;A4&quot;, &quot;&quot;)\n  pdf.AddPage()\n  pdf.SetFont(&quot;Arial&quot;, &quot;B&quot;, 16)\n  pdf.CellFormat(190, 7, &quot;Welcome to topgoer.com&quot;, &quot;0&quot;, 0, &quot;CM&quot;, false, 0, &quot;&quot;)\n\n  pdf.ImageOptions(\n      &quot;topgoer.png&quot;,\n      80, 20,\n      0, 0,\n      false,\n      gofpdf.ImageOptions&#123;ImageType: &quot;PNG&quot;, ReadDpi: true&#125;,\n      0,\n      &quot;&quot;,\n  )\n\n  return pdf.OutputFileAndClose(filename)\n  &#125;\n</code></pre>",
             "tags": [
                 "go中pdf生成"
-            ]
-        },
-        {
-            "id": "https://erik.xyz/2022/05/10/get-http-address-ip/",
-            "url": "https://erik.xyz/2022/05/10/get-http-address-ip/",
-            "title": "go中获取HTTP请求的IP地址",
-            "date_published": "2022-05-10T12:12:31.000Z",
-            "content_html": "<pre><code>package main\n\nimport (\n    &quot;encoding/json&quot;\n    &quot;net/http&quot;\n)\n\nfunc main() &#123;\n    http.HandleFunc(&quot;/&quot;, ExampleHandler)\n    if err := http.ListenAndServe(&quot;:8080&quot;, nil); err != nil &#123;\n        panic(err)\n    &#125;\n&#125;\n\nfunc ExampleHandler(w http.ResponseWriter, r *http.Request) &#123;\n    w.Header().Add(&quot;Content-Type&quot;, &quot;application/json&quot;)\n    resp, _ := json.Marshal(map[string]string&#123;\n        &quot;ip&quot;: GetIP(r),\n    &#125;)\n    w.Write(resp)\n&#125;\n\nfunc GetIP(r *http.Request) string &#123;\n    forwarded := r.Header.Get(&quot;X-FORWARDED-FOR&quot;)\n    if forwarded != &quot;&quot; &#123;\n        return forwarded\n    &#125;\n    return r.RemoteAddr\n&#125;\n</code></pre>",
-            "tags": [
-                "go获取ip"
             ]
         }
     ]
