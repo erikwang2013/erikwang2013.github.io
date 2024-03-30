@@ -23,8 +23,8 @@
     <category term="php实例" />
     <category term="说说" />
     <category term="趣闻" />
-    <category term="nginx" />
     <category term="转载" />
+    <category term="nginx" />
     <category term="php库" />
     <category term="javascript" />
     <category term="漏洞" />
@@ -130,6 +130,8 @@
     <category term="手机" />
     <category term="新闻" />
     <category term="免费" />
+    <category term="分布式" />
+    <category term="系统" />
     <category term="随笔吐槽" />
     <category term="算法" />
     <category term="ping" />
@@ -149,20 +151,20 @@
     <category term="go解密" />
     <category term="归" />
     <category term="吐槽" />
+    <category term="php大全" />
+    <category term="php资料" />
     <category term="hadoop" />
     <category term="hadoop2.8.0" />
     <category term="hadoop安装教程" />
     <category term="hadoop安装详细教程" />
     <category term="hadoop教程" />
     <category term="hadoop部署" />
-    <category term="php大全" />
-    <category term="php资料" />
+    <category term="hadoop3" />
+    <category term="hadoop配置" />
     <category term="log4j2" />
     <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
-    <category term="hadoop3" />
-    <category term="hadoop配置" />
     <category term="http1.1" />
     <category term="http2.0" />
     <category term="会话" />
@@ -231,6 +233,8 @@
     <category term="go" />
     <category term="new和make的区别" />
     <category term="红包算法" />
+    <category term="ip跳跃" />
+    <category term="ip漫游" />
     <category term="深圳劳动法服务部门" />
     <category term="非关系型数据库" />
     <category term="onethink" />
@@ -342,12 +346,12 @@
     <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
-    <category term="php正则" />
-    <category term="正则" />
     <category term="shodan" />
     <category term="黑谷歌" />
     <category term="黒帽搜素" />
     <category term="shopex" />
+    <category term="php正则" />
+    <category term="正则" />
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
@@ -462,6 +466,591 @@ print_r(json_encode($get_arr));
         <category term="数据随机化算法" />
         <category term="随机化" />
         <updated>2024-03-19T14:39:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2024/01/19/nginx-gaokeyongiptioayue/</id>
+        <title>Nginx高可用，如何实现IP跳跃/IP漫游？</title>
+        <link rel="alternate" href="https://erik.xyz/2024/01/19/nginx-gaokeyongiptioayue/"/>
+        <content type="html">&lt;p&gt;本文目录&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;尼恩说在前面&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;nginx-keepalived的高可用方案&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Keepalived是什么？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;VRRP虚拟路由冗余协议&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;VRRP协议的来源&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VRRP的核心概念&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;虚拟路由器&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VRRP路由器(物理实体)&lt;/li&gt;
+&lt;li&gt;虚拟路由器：&lt;/li&gt;
+&lt;li&gt;主控路由器主路由器（MASTER）：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;题外话：ARP协议&lt;ul&gt;
+&lt;li&gt;ARP协议工作过程&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;VRRP协议选举机制&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;选举流程&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Keepalived体系结构&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;IPVS内核模块&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Keepalived对服务器运行状态和故障隔离的工作原理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;网络层：&lt;/li&gt;
+&lt;li&gt;传输层：&lt;/li&gt;
+&lt;li&gt;应用层：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Keepalived + Nginx 系统架构&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;系统环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;keepalive的配置文件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;部署架构&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;离线部署keepalived&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;编写nginx的监控脚本&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;修改keepalived配置&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;重启 keepalive服务&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查看IP&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;访问高可用代理后的nacos&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;第2个节点，第3个节点离线部署keepalived&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;复制文件/并且安装&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;重启 keepalive服务&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查看IP地址&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;测试高可用&lt;/p&gt;
+&lt;p&gt;-访问vip的ng&lt;br&gt;-访问vip的nacos （假设已经安装nacos）&lt;br&gt;-访问高可用代理的minio（假设已经安装minio）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;说在最后&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;nginx-keepalived的高可用方案&#34;&gt;&lt;a href=&#34;#nginx-keepalived的高可用方案&#34; class=&#34;headerlink&#34; title=&#34;nginx-keepalived的高可用方案&#34;&gt;&lt;/a&gt;nginx-keepalived的高可用方案&lt;/h4&gt;&lt;p&gt;我们使用 nginx-keepalived双机热备机制，vip主机可以进行漂移，这样主机挂掉了，还有备用机可以顶上&lt;br&gt;具体的vip漂移架构图，如下：&lt;br&gt;&lt;img src=&#34;/img/2024/20240330084236.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;Keepalived是什么？&#34;&gt;&lt;a href=&#34;#Keepalived是什么？&#34; class=&#34;headerlink&#34; title=&#34;Keepalived是什么？&#34;&gt;&lt;/a&gt;Keepalived是什么？&lt;/h4&gt;&lt;p&gt;Keepalived起初是为LVS设计的，专门用来监控集群系统中各个服务节点的状态，&lt;br&gt;Keepalived 是一款轻量级HA集群应用，它的设计初衷是为了做LVS集群的HA，即探测LVS健康情况，从而进行主备切换，不仅如此，还能够探测LVS代理的后端主机的健康状况，动态修改LVS转发规则。&lt;br&gt;当LVS进行主备切换的时候，对外提供服务的IP是如何做到切换的呢？&lt;br&gt;这就依赖于keepalived 所应用的vrrp协议，即Virtual Reduntant Routing Protocol，虚拟冗余路由协议。简单来讲，此协议是将IP设置在虚拟接口之上，根据一定的规则实现IP在物理主机上流动，即哪台主机可以占有该IP。&lt;br&gt;而且keepalived具有脚本调用接口，可通过脚本完成拓展功能。&lt;br&gt;它根据TCP/IP参考模型的第三、第四层、第五层交换机制检测每个服务节点的状态，如果某个服务器节点出现异常，或者工作出现故障，Keepalived将检测到，并将出现的故障的服务器节点从集群系统中剔除，这些工作全部是自动完成的，不需要人工干涉，需要人工完成的只是修复出现故障的服务节点。&lt;br&gt;后来Keepalived又加入了VRRP的功能，VRRP（VritrualRouterRedundancyProtocol,虚拟路由冗余协议)出现的目的是解决静态路由出现的单点故障问题，通过VRRP可以实现网络不间断稳定运行，因此Keepalvied一方面具有服务器状态检测和故障隔离功能，另外一方面也有HAcluster功能。&lt;br&gt;健康检查和失败切换是keepalived的两大核心功能。所谓的健康检查，就是采用tcp三次握手，icmp请求，http请求，udp echo请求等方式对负载均衡器后面的实际的服务器(通常是承载真实业务的服务器)进行保活；而失败切换主要是应用于配置了主备模式的负载均衡器，利用VRRP维持主备负载均衡器的心跳，当主负载均衡器出现问题时，由备负载均衡器承载对应的业务，从而在最大限度上减少流量损失，并提供服务的稳定性。    &lt;/p&gt;
+&lt;h4 id=&#34;VRRP虚拟路由冗余协议&#34;&gt;&lt;a href=&#34;#VRRP虚拟路由冗余协议&#34; class=&#34;headerlink&#34; title=&#34;VRRP虚拟路由冗余协议&#34;&gt;&lt;/a&gt;VRRP虚拟路由冗余协议&lt;/h4&gt;&lt;p&gt;虚拟路由冗余协议(Virtual Router Redundancy Protocol，简称VRRP)是由IETF提出的解决局域网中配置静态网关出现单点失效现象的路由协议，1998年已推出正式的RFC2338协议标准。&lt;br&gt;VRRP广泛应用在边缘网络中，它的设计目标是支持特定情况下IP数据流量失败转移不会引起混乱，允许主机使用单路由器，以及即使在实际第一跳路由器使用失败的情形下仍能够维护路由器间的连通性。    &lt;/p&gt;
+&lt;h5 id=&#34;VRRP协议的来源&#34;&gt;&lt;a href=&#34;#VRRP协议的来源&#34; class=&#34;headerlink&#34; title=&#34;VRRP协议的来源&#34;&gt;&lt;/a&gt;VRRP协议的来源&lt;/h5&gt;&lt;p&gt;在现实的网络环境中。主机之间的通信都是通过配置静态路由或者(默认网关)来完成的，而主机之间的路由器一旦发生故障，通信就会失效，因此这种通信模式当中，路由器就成了一个单点瓶颈，为了解决这个问题，就引入了VRRP协议。    &lt;/p&gt;
+&lt;h5 id=&#34;VRRP的核心概念&#34;&gt;&lt;a href=&#34;#VRRP的核心概念&#34; class=&#34;headerlink&#34; title=&#34;VRRP的核心概念&#34;&gt;&lt;/a&gt;VRRP的核心概念&lt;/h5&gt;&lt;p&gt;VRRP是一种路由容错协议，也可以叫做备份路由协议。&lt;br&gt;在VRRP协议中，有两组重要的概念：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VRRP路由器和虚拟路由器&lt;/li&gt;
+&lt;li&gt;主控路由器和备份路由器    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;备份路由器（BACKUP）：虚拟路由器中的其他物理路由器不拥有对外的虚拟IP，也不对外提供网络功能，仅接受MASTER的VRRP状态通告信息，这些路由器被称为备份路由器。当主路由器失败时，处于BACKUP角色的备份路由器将重新进行选举，产生一个新的主路由器进入MASTER角色，继续提供对外服务，整个切换对用户来说是完全透明的。    &lt;/p&gt;
+&lt;h5 id=&#34;虚拟路由器&#34;&gt;&lt;a href=&#34;#虚拟路由器&#34; class=&#34;headerlink&#34; title=&#34;虚拟路由器&#34;&gt;&lt;/a&gt;虚拟路由器&lt;/h5&gt;&lt;p&gt;VRRP路由器(物理实体)&lt;br&gt;什么是VRRP路由器？&lt;br&gt;VRRP路由器是指运行VRRP的路由器，是物理实体；&lt;br&gt;虚拟路由器：&lt;br&gt;什么是虚拟路由器？&lt;br&gt;虚拟路由器是指VRRP协议创建的，是逻辑概念。一组VRRP路由器（物理实体）协同工作，共同构成一台虚拟路由器。该虚拟路由器对外表现为一个具有唯一固定的IP地址和MAC地址的逻辑路由器。    &lt;/p&gt;
+&lt;p&gt;虚拟路由器是VRRP备份组中所有路由器的集合，它是一个逻辑概念，并不是正真存在的。从备份组外面看备份组中的路由器，感觉组中的所有路由器就像一个 一样，可以理解为在一个组中： 主路由器+所有备份路由器=虚拟路由器。    &lt;/p&gt;
+&lt;p&gt;虚拟路由器有一个虚拟的IP地址和MAC地址。&lt;/p&gt;
+&lt;p&gt;主机将虚拟路由器当作默认网关。虚拟MAC地址的格式为00-00-5E-00-01-{VRID}。通常情况下，虚拟路由器回应ARP请求使用的是虚拟MAC地址，只有虚拟路由器做特殊配置的时候，才回应接口的真实MAC地址。&lt;br&gt;&lt;img src=&#34;/img/2024/20240330084718.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;主控路由器主路由器（MASTER）：&#34;&gt;&lt;a href=&#34;#主控路由器主路由器（MASTER）：&#34; class=&#34;headerlink&#34; title=&#34;主控路由器主路由器（MASTER）：&#34;&gt;&lt;/a&gt;主控路由器主路由器（MASTER）：&lt;/h5&gt;&lt;p&gt;什么是主控路由器？&lt;/p&gt;
+&lt;p&gt;处于同一个VRRP组中的路由器具有两种互斥的角色：主控路由器和备份路由器    &lt;/p&gt;
+&lt;p&gt;一个VRRP组中有且只有一台处于主控角色的路由器，可以有一个或者多个处于备份角色的路由器VRRP协议从路由器组中选出一台作为主控路由器，负责ARP解析和转发IP数据包，组中的其他路由器作为备份的角色并处于待命状态。    &lt;/p&gt;
+&lt;p&gt;虚拟路由器通过虚拟IP对外提供服务，而在虚拟路由器内部同一时间只有一台物理路由器对外提供服务，这台提供服务的物理路由器被称为主路由器。一般情况下Master是由选举算法产生，它拥有对外服务的虚拟IP，提供各种网络功能，如：ARP请求，ICMP数据转发等。&lt;br&gt;&lt;img src=&#34;/img/2024/20240330084853.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;当由于某种原因主控路由器发生故障时，其中的一台备份路由器能在瞬间的时延后升级为主控路由器，由于此切换非常迅速而且不用改变IP地址和MAC地址，故对终端使用者系统是透明的。&lt;br&gt;&lt;img src=&#34;/img/2024/20240330084925.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;一个局域网络内的所有主机都设置缺省路由，当网内主机发出的目的地址不在本网段时，报文将被通过缺省路由发往外部路由器，从而实现了主机与外部网络的通信。    &lt;/p&gt;
+&lt;p&gt;当缺省路由器down掉（即端口关闭）之后，内部主机将无法与外部通信，如果路由器设置了VRRP时，那么这时，虚拟路由将启用备份路由器，从而实现全网通信。&lt;/p&gt;
+&lt;h5 id=&#34;题外话：ARP协议&#34;&gt;&lt;a href=&#34;#题外话：ARP协议&#34; class=&#34;headerlink&#34; title=&#34;题外话：ARP协议&#34;&gt;&lt;/a&gt;题外话：ARP协议&lt;/h5&gt;&lt;p&gt;地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。    &lt;/p&gt;
+&lt;p&gt;主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址。&lt;br&gt;&lt;img src=&#34;/img/2024/20240330085059.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;arp缓存：收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约资源。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;地址解析协议是建立在网络中各个主机互相信任的基础上的，局域网络上的主机可以自主发送ARP应答消息，其他主机收到应答报文时不会检测该报文的真实性就会将其记入本机ARP缓存；由此攻击者就可以向某一主机发送伪ARP应答报文，使其发送的信息无法到达预期的主机或到达错误的主机，这就构成了一个ARP欺骗。    &lt;/p&gt;
+&lt;p&gt;ARP命令可用于查询本机ARP缓存中IP地址和MAC地址的对应关系、添加或删除静态对应关系等。    &lt;/p&gt;
+&lt;p&gt;相关协议有RARP、代理ARP。NDP用于在IPv6中代替地址解析协议。    &lt;/p&gt;
+&lt;h5 id=&#34;ARP协议工作过程&#34;&gt;&lt;a href=&#34;#ARP协议工作过程&#34; class=&#34;headerlink&#34; title=&#34;ARP协议工作过程&#34;&gt;&lt;/a&gt;ARP协议工作过程&lt;/h5&gt;&lt;p&gt;主机A的IP地址为192.168.1.1，MAC地址为0A-11-22-33-44-01；&lt;br&gt;主机B的IP地址为192.168.1.2，MAC地址为0A-11-22-33-44-02；&lt;br&gt;当主机A要与主机B通信时，地址解析协议可以将主机B的IP地址（192.168.1.2）解析成主机B的MAC地址，以下为工作流程：&lt;br&gt;第1步：根据主机A上的路由表内容，IP确定用于访问主机B的转发IP地址是192.168.1.2。然后A主机在自己的本地ARP缓存中检查主机B的匹配MAC地址。    &lt;/p&gt;
+&lt;p&gt;第2步：如果主机A在ARP缓存中没有找到映射，它将询问192.168.1.2的硬件地址，从而将ARP请求帧广播到本地网络上的所有主机。源主机A的IP地址和MAC地址都包括在ARP请求中。本地网络上的每台主机都接收到ARP请求并且检查是否与自己的IP地址匹配。如果主机发现请求的IP地址与自己的IP地址不匹配，它将丢弃ARP请求。    &lt;/p&gt;
+&lt;p&gt;第3步：主机B确定ARP请求中的IP地址与自己的IP地址匹配，则将主机A的IP地址和MAC地址映射添加到本地ARP缓存中。    &lt;/p&gt;
+&lt;p&gt;第4步：主机B将包含其MAC地址的ARP回复消息直接发送回主机A。    &lt;/p&gt;
+&lt;p&gt;第5步：当主机A收到从主机B发来的ARP回复消息时，会用主机B的IP和MAC地址映射更新ARP缓存。本机缓存是有生存期的，生存期结束后，将再次重复上面的过程。主机B的MAC地址一旦确定，主机A就能向主机B发送IP通信了。    &lt;/p&gt;
+&lt;h4 id=&#34;VRRP协议选举机制&#34;&gt;&lt;a href=&#34;#VRRP协议选举机制&#34; class=&#34;headerlink&#34; title=&#34;VRRP协议选举机制&#34;&gt;&lt;/a&gt;VRRP协议选举机制&lt;/h4&gt;&lt;p&gt;VRRP路由器在运行过程中有三种状态：&lt;/p&gt;
+&lt;p&gt;1.Initialize状态：&lt;br&gt; 系统启动后就进入Initialize，此状态下路由器不对VRRP报文做任何处理；&lt;/p&gt;
+&lt;p&gt;2.Master状态；&lt;br&gt;3.Backup状态；    &lt;/p&gt;
+&lt;p&gt;一般主路由器处于Master状态，备份路由器处于Backup状态。&lt;/p&gt;
+&lt;p&gt;VRRP使用选举机制来确定路由器的状态，优先级选举：    &lt;/p&gt;
+&lt;p&gt;1.VRRP组中IP拥有者。如果虚拟IP地址与VRRP组中的某台VRRP路由器IP地址相同，则此路由器为IP地址拥有者，这台路由器将被定位主路由器。 2.比较优先级。如果没有IP地址拥有者，则比较路由器的优先级，优先级的范围是0~255，优先级大的作为主路由器 3.比较IP地址。在没有Ip地址拥有者和优先级相同的情况下，IP地址大的作为主路由器。    &lt;/p&gt;
+&lt;p&gt;如下图所示，虚拟IP为10.1.1.254，在VRRP组中没有IP地址拥有者，则比较优先级，很明显RB和RA的优先级要大于RC，则比较RA和RB的IP地址，RB的IP地址大。&lt;br&gt;&lt;img src=&#34;/img/2024/20240330085457.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;所以RB为组中的主路由器。        &lt;/p&gt;
+&lt;h5 id=&#34;选举流程&#34;&gt;&lt;a href=&#34;#选举流程&#34; class=&#34;headerlink&#34; title=&#34;选举流程&#34;&gt;&lt;/a&gt;选举流程&lt;/h5&gt;&lt;p&gt;路由器使用VRRP 功能后，会根据优先级确定自己在备份组中的角色。优先级高的路由器成为Master 路由器，优先级低的成为Backup 路由器。    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Master 拥有对外服务的虚拟IP，提供各种网络功能，并定期发送VRRP 报文，通知备份组内的其他设备自己工作正常；&lt;/li&gt;
+&lt;li&gt;Backup 路由器只接收Master 发来的报文信息，用来监控Master 的运行状态。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;当Master 失效时，Backup 路由器进行选举，优先级高的Backup 将成为新的Master 。    &lt;/p&gt;
+&lt;p&gt;在抢占方式下，当Backup路由器收到VRRP 报文后，会将自己的优先级与报文中的优先级进行比较。如果大于通告报文中的优先级，则成为Master 路由器；否则将保持Backup状态；    &lt;/p&gt;
+&lt;p&gt;在非抢占方式下，只要Master 路由器没有出现故障，备份组中的路由器始终保持 Master 或Backup 状态，Backup 路由器即使随后被配置了更高的优先级也不会成为Master 路由器；    &lt;/p&gt;
+&lt;p&gt;如果Backup 路由器的定时器超时后仍未收到Master 路由器发送来的VRRP报文，则认为Master 路由器已经无法正常工作，此时Backup 路由器会认为自己是Master 路由器，并对外发送VRRP报文。    &lt;/p&gt;
+&lt;p&gt;备份组内的路由器根据优先级选举出Master 路由器，承担报文的转发功能。    &lt;/p&gt;
+&lt;h3 id=&#34;Keepalived体系结构&#34;&gt;&lt;a href=&#34;#Keepalived体系结构&#34; class=&#34;headerlink&#34; title=&#34;Keepalived体系结构&#34;&gt;&lt;/a&gt;Keepalived体系结构&lt;/h3&gt;&lt;p&gt;Keepalived起初是为LVS设计的，由于Keeplalived可以实现对集群节点的状态检测，而IPVS可以实现负载均衡功能，因此,Keepalived借助于第三方模块IPVS就可以很方便地搭建一套负载均衡系统。&lt;/p&gt;
+&lt;p&gt;在Keepalived当中IPVS模块是可配置的，如果需要负载均衡功能，可以在编译Keepalived时开打负载均衡功能，也可以通过编译参数关闭。&lt;br&gt;&lt;img src=&#34;/img/2024/20240330085718.jpg&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;keepalived运行时，会启动3个进程，分别为：core(核心进程)，check和vrrp - core：负责主进程的启动，维护和全局配置文件的加载； - check：负责健康检查 - vrrp：用来实现vrrp协议    &lt;/p&gt;
+&lt;p&gt;SchedulerI/OMultiplexer是一个I/O复用分发调度器，它负载安排Keepalived所有内部的任务请求；&lt;/p&gt;
+&lt;p&gt;Memory Mngt是一个内存管理机制，这个框架提供了访问内存的一些通用方法；&lt;/p&gt;
+&lt;p&gt;Control Plane 是keepalived的控制版面，可以实现对配置文件编译和解析；&lt;/p&gt;
+&lt;p&gt;Core componets 这部分主要包含了5个部分；&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Watchdog：是计算机可靠领域中极为简单又非常有效的检测工具，Keepalived正是通过它监控Checkers和VRRP进程的。&lt;/li&gt;
+&lt;li&gt;Checkers: 这是Keepalived最基础的功能，也是最主要的功能，可以实现对服务器运行状态检测和故障隔离。&lt;/li&gt;
+&lt;li&gt;VRRP Stack: 这是keepalived后来引用VRRP功能，可以实现HA集群中失败切换功能。负责负载均衡器之间的失败切换FailOver；&lt;/li&gt;
+&lt;li&gt;IPVS wrapper:这个是IPVS功能的一个实现，IPVSwarrper模块将可以设置好的IPVS规则发送的内核空间并且提供给IPVS模块，最终实现IPVS模块的负载功能。&lt;/li&gt;
+&lt;li&gt;Netlink Reflector：用来实现高可用集群Failover时虚拟IP(VIP)的设置和切换&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;IPVS内核模块&#34;&gt;&lt;a href=&#34;#IPVS内核模块&#34; class=&#34;headerlink&#34; title=&#34;IPVS内核模块&#34;&gt;&lt;/a&gt;IPVS内核模块&lt;/h4&gt;&lt;p&gt;此模块是此文的重点。&lt;/p&gt;
+&lt;p&gt;Linux 的 IPVS内核模块基本上是一种高效的Layer-4交换机，它提供负载平衡的功能。    &lt;/p&gt;
+&lt;p&gt;ipvs (IP Virtual Server) 实现了传输层负载均衡，也就是我们常说的4层LAN交换，作为 Linux 内核的一部分。    &lt;/p&gt;
+&lt;p&gt;ipvs运行在主机上，在真实服务器集群前充当负载均衡器。    &lt;/p&gt;
+&lt;p&gt;ipvs可以将基于TCP和UDP的服务请求转发到真实服务器上，并使真实服务器的服务在单个 IP 地址上显示为虚拟服务。    &lt;/p&gt;
+&lt;p&gt;当一个TCP连接的初始SYN报文到达时，IPVS就选择一台服务器，将报文转发给它。&lt;br&gt;此后通过查发报文的IP和TCP报文头地址，保证此连接的后继报文被转发到相同的服务器。这样，IPVS不用检查到请求的内容再选择服务器，这就要求后端的服务器组是提供相同的服务，不管请求被送到哪一台服务器，返回结果都应该是一样的。但是在有一些应用中后端的服务器可能功能不一，有的是提供HTML文档的Web服务器，有的是提供图片的Web服务器，有的是提供CGI的Web服务器。这时，就需要基于内容请求分发 (Content-Based Request Distribution)，同时基于内容请求分发可以提高后端服务器上访问的局部性。    &lt;/p&gt;
+&lt;p&gt;当一个TCP连接的初始SYN报文到达时，IPVS就选择一台服务器，将报文转发给它。此后通过查发报文的IP和TCP报文头地址，保证此连接的后继报文被转发到相同的服务器。这样，IPVS无法检查到请求的内容再选择服务器，这就要求后端的服务器组是提供相同的服务，不管请求被送到哪一台服务器，返回结果都应该是一样的。但是在有一些应用中后端&amp;gt;的服务器可能功能不一，有的是提供HTML文档的Web服务器，有的是提供图片的Web服务器，有的是提供CGI的Web服务器。这时，就需要基于内容请求分发 (Content-Based Request Distribution)，同时基于内容请求分发可以提高后端服务器上访问的局部性。    &lt;/p&gt;
+&lt;h4 id=&#34;Keepalived对服务器运行状态和故障隔离的工作原理&#34;&gt;&lt;a href=&#34;#Keepalived对服务器运行状态和故障隔离的工作原理&#34; class=&#34;headerlink&#34; title=&#34;Keepalived对服务器运行状态和故障隔离的工作原理&#34;&gt;&lt;/a&gt;Keepalived对服务器运行状态和故障隔离的工作原理&lt;/h4&gt;&lt;p&gt;Keepalived工作在TCP/IP参考模型的网络层/传输层/应用层：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;网络层：&lt;br&gt;Keepalived通过ICMP协议向服务器集群中的每一个节点发送一个ICMP数据包(有点类似与Ping的功能)，如果某个节点没有返回响应数据包，那么认为该节点发生了故障，Keepalived将报告这个节点失效，并从服务器集群中剔除故障节点。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;传输层：&lt;br&gt;Keepalived 在传输层里利用了TCP协议的端口连接和扫描技术来判断集群节点的端口是否正常，比如对于常见的WEB服务器80端口。或者SSH服务22端口，Keepalived一旦在传输层探测到这些端口号没有数据响应和数据返回，就认为这些端口发生异常，然后强制将这些端口所对应的节点从服务器集群中剔除掉。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;应用层：&lt;br&gt;Keepalived 的运行方式也更加全面化和复杂化，用户可以通过自定义Keepalived工作方式，例如：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;可以通过编写程序或者脚本来运行Keepalived，而Keepalived将根据用户的设定参数检测各种程序或者服务是否允许正常，如果Keepalived的检测结果和用户设定的不一致时，Keepalived将把对应的服务器从服务器集群中剔除。&lt;/p&gt;
+&lt;h4 id=&#34;Keepalived-Nginx-系统架构&#34;&gt;&lt;a href=&#34;#Keepalived-Nginx-系统架构&#34; class=&#34;headerlink&#34; title=&#34;Keepalived + Nginx 系统架构&#34;&gt;&lt;/a&gt;Keepalived + Nginx 系统架构&lt;/h4&gt;&lt;p&gt;在Keepalived + Nginx高可用负载均衡架构中，keepalived负责实现High-availability (HA) 功能控制前端机VIP（虚拟网络地址），当有设备发生故障时，热备服务器可以瞬间将VIP自动切换过来，实际运行中体验只有2秒钟切换时间，DNS服务可以负责前端VIP的负载均衡。    &lt;/p&gt;
+&lt;p&gt;nginx负责控制后端web服务器的负载均衡，将客户端的请求按照一定的算法转发给后端Real Server处理，而Real Server将响应直接返回给客户端。    &lt;/p&gt;
+&lt;h5 id=&#34;系统环境&#34;&gt;&lt;a href=&#34;#系统环境&#34; class=&#34;headerlink&#34; title=&#34;系统环境&#34;&gt;&lt;/a&gt;系统环境&lt;/h5&gt;&lt;p&gt;两台负载机器安装：centos7.5+docker+nginx+keepalived，分别命名为：NGINX_MASTER，NGINX_BACKUP。 后端web服务器，可以是提供web服务的任何架构，分别命名为：WEB_1，WEB_2。 后端数据库机器可任意架构，只要能提供数据库服务即可。    &lt;/p&gt;
+&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;服务器&lt;/th&gt;
+&lt;th&gt;操作系统&lt;/th&gt;
+&lt;th&gt;IP地址&lt;/th&gt;
+&lt;th&gt;安装软件&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;NGINX_MASTER&lt;/td&gt;
+&lt;td&gt;Centos 7.5 64位&lt;/td&gt;
+&lt;td&gt;192.168.2.228&lt;/td&gt;
+&lt;td&gt;docker+nginx+keepalived&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;NGINX_BACKUP&lt;/td&gt;
+&lt;td&gt;Centos 7.5 64位&lt;/td&gt;
+&lt;td&gt;192.168.2.229&lt;/td&gt;
+&lt;td&gt;docker+nginx+keepalived&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;WEB_1&lt;/td&gt;
+&lt;td&gt;Centos 7.5 64位&lt;/td&gt;
+&lt;td&gt;192.168.2.226&lt;/td&gt;
+&lt;td&gt;docker+springboot&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;WEB_2&lt;/td&gt;
+&lt;td&gt;Centos 7.5 64位&lt;/td&gt;
+&lt;td&gt;192.168.2.227&lt;/td&gt;
+&lt;td&gt;docker+springboot&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;数据库集群&lt;/td&gt;
+&lt;td&gt;Centos 7.5 64位&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;mysql集群&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h5 id=&#34;keepalive的配置文件&#34;&gt;&lt;a href=&#34;#keepalive的配置文件&#34; class=&#34;headerlink&#34; title=&#34;keepalive的配置文件&#34;&gt;&lt;/a&gt;keepalive的配置文件&lt;/h5&gt;&lt;p&gt;vim /etc/keepalived/keepalived.conf    &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vrrp_script chk_nginx &amp;#123;
+    script &amp;quot;/etc/keepalived/nginx_pid.sh&amp;quot;   # 检查nginx状态的脚本
+    interval 2
+    weight 3
+&amp;#125;
+
+vrrp_instance VI_1 &amp;#123;
+    state MASTER     #备份服务器上将MASTER改为BACKUP
+    interface ens32
+    virtual_router_id 51
+    priority 100       #备份服务上将100改为小于100，可配置成90
+    advert_int 1
+    authentication &amp;#123;
+        auth_type PASS
+        auth_pass 1111
+    &amp;#125;
+    virtual_ipaddress &amp;#123;
+        192.168.2.242    #有多个vip可在下面继续增加
+    &amp;#125;
+    track_script &amp;#123;
+        chk_nginx
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;Keepalived的配置文件可以分为三块：&#34;&gt;&lt;a href=&#34;#Keepalived的配置文件可以分为三块：&#34; class=&#34;headerlink&#34; title=&#34;Keepalived的配置文件可以分为三块：&#34;&gt;&lt;/a&gt;Keepalived的配置文件可以分为三块：&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;全局定义块：对整个 Keepalive 配置生效的，不管是否使用 LVS；&lt;/li&gt;
+&lt;li&gt;VRRP 实例定义块：是 Keepalived 的核心；&lt;/li&gt;
+&lt;li&gt;虚拟服务器（LVS）定义块：LVS 配置只在使用 Keepalived 来配置和管理 LVS 时才需要使用，如果仅仅使用 Keepalived做 HA，LVS 的配置完全是不需要的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;配置文件都是以块（block）形式组织的，每个块都在{和}包围的范围内。#和！开头的行都是注释。&lt;/p&gt;
+&lt;h5 id=&#34;部署架构&#34;&gt;&lt;a href=&#34;#部署架构&#34; class=&#34;headerlink&#34; title=&#34;部署架构&#34;&gt;&lt;/a&gt;部署架构&lt;/h5&gt;&lt;p&gt;目的： 进一步提高keepalived 可用性    &lt;/p&gt;
+&lt;p&gt;设计：有3台keepalived 服务器 192.168.1.106 192.168.1.107 192.168.1.108。    &lt;/p&gt;
+&lt;p&gt;vip 是192.168.1.249    &lt;/p&gt;
+&lt;p&gt;效果：只要有一台keepalive 运行正常。vip 就可以访问    &lt;/p&gt;
+&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;server&lt;/th&gt;
+&lt;th&gt;hostname&lt;/th&gt;
+&lt;th&gt;ip&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;keepalived&lt;/td&gt;
+&lt;td&gt;z6&lt;/td&gt;
+&lt;td&gt;192.168.1.106&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;keepalived&lt;/td&gt;
+&lt;td&gt;z7&lt;/td&gt;
+&lt;td&gt;192.168.1.107&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;keepalived&lt;/td&gt;
+&lt;td&gt;z8&lt;/td&gt;
+&lt;td&gt;192.168.1.108&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;非抢占模式 默认 是谁先开启vip 运行在哪台机器上的。如果发生故障转移，再比较priority    &lt;/p&gt;
+&lt;h5 id=&#34;离线部署keepalived&#34;&gt;&lt;a href=&#34;#离线部署keepalived&#34; class=&#34;headerlink&#34; title=&#34;离线部署keepalived&#34;&gt;&lt;/a&gt;离线部署keepalived&lt;/h5&gt;&lt;p&gt;首先安装keepalived，下载离线包的命令为&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;yum install --downloadonly --downloaddir=./ keepalived
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;已经提供了安装包，上传安装包到 linux，比如root目录&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;keepalived_rpm.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;解压缩，然后执行命令安装&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd /root/
+tar -zxvf   keepalived_rpm.tar.gz
+cd keepalived_rpm
+rpm -Uvh --force --nodeps *rpm
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  [root@localhost ~]# tar -zxvf   keepalived_rpm.tar.gz
+  keepalived_rpm/
+  keepalived_rpm/keepalived-1.3.5-19.el7.x86_64.rpm
+  keepalived_rpm/lm_sensors-libs-3.4.0-8.20160601gitf9185e5.el7.x86_64.rpm
+  keepalived_rpm/net-snmp-agent-libs-5.7.2-49.el7_9.1.x86_64.rpm
+  keepalived_rpm/net-snmp-libs-5.7.2-49.el7_9.1.x86_64.rpm
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;安装的输出&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  [root@localhost ~]# cd keepalived_rpm
+  [root@localhost keepalived_rpm]# rpm -Uvh --force --nodeps *rpm
+  warning: keepalived-1.3.5-19.el7.x86_64.rpm: Header V3 RSA/SHA256 Signature, key ID f4a80eb5: NOKEY
+  Preparing...                          ################################# [100%]
+  Updating / installing...
+     1:net-snmp-libs-1:5.7.2-49.el7_9.1 ################################# [ 25%]
+     2:lm_sensors-libs-3.4.0-8.20160601g################################# [ 50%]
+     3:net-snmp-agent-libs-1:5.7.2-49.el################################# [ 75%]
+     4:keepalived-1.3.5-19.el7          ################################# [100%]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;编写nginx的监控脚本&lt;br&gt;vi /etc/keepalived/check_nginx.sh&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+A=`ps -C haproxy --no-header |wc -l`
+if [ $A -eq 0 ];then
+systemctl stop keepalived
+fi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;添加检查nginx状态的脚本 /etc/keepalived/nginx_pid.sh&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+##检查nginx.pid文件是否存在
+if [ -e /usr/local/nginx/logs/nginx.pid ];then
+        echo &amp;quot;nginx 已经启动&amp;quot;
+else
+        /usr/local/nginx/sbin/nginx
+        if [ $? -eq 0 ];then
+                echo &amp;quot;nginx 已经启动&amp;quot;
+        fi
+fi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;或者&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+##使用ps -C nginx --no-header 来检测nginx 是否启动
+date=`date`
+nginx_status=`ps -C nginx --no-header|wc -l`
+if [ $nginx_status -eq 0 ];then
+        echo &amp;quot;nginx没有启动&amp;quot;
+        /usr/local/nginx/sbin/nginx
+        if [ $? -eq 0 ];then
+                echo &amp;quot;$date nginx已经成功启动&amp;quot;
+        fi
+else
+        echo &amp;quot;$date nginx 已经启动 &amp;quot;
+
+fi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;上传脚本，测试一下脚本&lt;/p&gt;
+&lt;p&gt;sh /etc/keepalived/check_nginx.sh&lt;/p&gt;
+&lt;h4 id=&#34;修改keepalived配置&#34;&gt;&lt;a href=&#34;#修改keepalived配置&#34; class=&#34;headerlink&#34; title=&#34;修改keepalived配置&#34;&gt;&lt;/a&gt;修改keepalived配置&lt;/h4&gt;&lt;p&gt;cat /etc/keepalived/keepalived.conf&lt;/p&gt;
+&lt;p&gt;cp /etc/keepalived/keepalived.conf /etc/keepalived/keepalived.conf.bak&lt;/p&gt;
+&lt;p&gt;复制 准备好的文件到离线环境，或者直接编辑。&lt;/p&gt;
+&lt;p&gt;vi /etc/keepalived/keepalived.conf&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;global_defs &amp;#123;   #全局定义部分
+   notification_email &amp;#123;  #设置警报邮箱
+     acassen@firewall.loc     #邮箱1
+     failover@firewall.loc    #邮箱2
+     sysadmin@firewall.loc 
+   &amp;#125; 
+   notification_email_from Alexandre.Cassen@firewall.loc    #设置发件人地址
+   smtp_server 127.0.0.1   #设置smtp server地址
+   smtp_connect_timeout 30   #设置smtp超时连接时间    以上参数可以不配置
+   router_id HA_HAPROXY    #是Keepalived服务器的路由标识在一个局域网内，这个标识（router_id）是唯一的
+&amp;#125; 
+
+vrrp_script check_nginx &amp;#123;
+    script &amp;quot;/etc/keepalived/check_nginx.sh&amp;quot;
+&amp;#125;
+
+vrrp_instance VI_1 &amp;#123;  #VRRP实例定义区块名字是VI_1
+    state BACKUP    #表示当前实例VI_1的角色状态这个状态只能有MASTER和BACKUP两种状态，并且需要大写这些字符, MASTER 为正式工作的状态，BACKUP为备用的状态
+    interface ens33    #绑定ens33网卡
+    virtual_router_id 101 # VRRP 路由 ID实例，每个实例是唯一的 
+    priority 90           # 优先级，备服务器设置 90 
+    advert_int 1           # 指定VRRP 心跳包通告间隔时间，默认1秒 ,MASTER与BACKUP之间通信检查的时间间隔，
+    authentication &amp;#123;   #authentication为权限认证配置不要改动,同一vrrp实例的MASTER与BACKUP使用相同的密码才能正常通信。
+        auth_type PASS      
+        auth_pass 1111 
+    &amp;#125;  
+    virtual_ipaddress &amp;#123;   #设置虚拟IP地址
+  #      192.168.31.60/24
+         172.18.8.231/24 
+    &amp;#125; 
+    track_script &amp;#123;
+        check_nginx
+    &amp;#125; 
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;Keepalived的配置文件可以分为三块：-1&#34;&gt;&lt;a href=&#34;#Keepalived的配置文件可以分为三块：-1&#34; class=&#34;headerlink&#34; title=&#34;Keepalived的配置文件可以分为三块：&#34;&gt;&lt;/a&gt;Keepalived的配置文件可以分为三块：&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;全局定义块：对整个 Keepalive 配置生效的，不管是否使用 LVS；&lt;/li&gt;
+&lt;li&gt;VRRP 实例定义块：是 Keepalived 的核心；&lt;/li&gt;
+&lt;li&gt;虚拟服务器（LVS）定义块：LVS 配置只在使用 Keepalived 来配置和管理 LVS 时才需要使用，如果仅仅使用 Keepalived做 HA，LVS 的配置完全是不需要的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;配置文件都是以块（block）形式组织的，每个块都在{和}包围的范围内。#和！开头的行都是注释。    &lt;/p&gt;
+&lt;p&gt;离线包里边有 第一个节点的 配置文件，复制到 /etc/keepalived/ 目录就行&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cp /home/docker-compose/keepalive-ha/keepalived01.conf   /etc/keepalived/keepalived.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[root@localhost keepalive-ha]# pwd
+/home/docker-compose/keepalive-ha
+[root@localhost keepalive-ha]# cp /home/docker-compose/keepalive-ha/keepalived01.conf   /etc/keepalived/keepalived.conf
+cp: overwrite ‘/etc/keepalived/keepalived.conf’? yes
+[root@localhost keepalive-ha]# cat /etc/keepalived/keepalived.conf
+global_defs &amp;#123;   
+   notification_email &amp;#123;  #
+     mail1@firewall.loc  
+     mail2@firewall.loc    
+
+   &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;重启-keepalive服务&#34;&gt;&lt;a href=&#34;#重启-keepalive服务&#34; class=&#34;headerlink&#34; title=&#34;重启 keepalive服务&#34;&gt;&lt;/a&gt;重启 keepalive服务&lt;/h5&gt;&lt;p&gt;命令如下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# systemctl enable keepalived
+
+# systemctl start keepalived
+
+# systemctl restart keepalived
+
+# systemctl status  keepalived
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[root@localhost ~]# systemctl enable keepalived
+Created symlink from /etc/systemd/system/multi-user.target.wants/keepalived.service to /usr/lib/systemd/system/keepalived.service.
+[root@localhost ~]# systemctl restart keepalived
+[root@localhost ~]#  systemctl status  keepalived
+● keepalived.service - LVS and VRRP High Availability Monitor
+   Loaded: loaded (/usr/lib/systemd/system/keepalived.service; enabled; vendor preset: disabled)
+   Active: active (running) since Fri 2021-11-05 13:28:30 CST; 19s ago
+  Process: 48837 ExecStart=/usr/sbin/keepalived $KEEPALIVED_OPTIONS (code=exited, status=0/SUCCESS)
+ Main PID: 48838 (keepalived)
+    Tasks: 3
+   Memory: 3.4M
+   CGroup: /system.slice/keepalived.service
+           ├─48838 /usr/sbin/keepalived -D
+           ├─48839 /usr/sbin/keepalived -D
+           └─48840 /usr/sbin/keepalived -D
+
+Nov 05 13:28:34 localhost.localdomain Keepalived_vrrp[48840]: Sending gratuitous ARP on ens33 for 192.168.31.60
+Nov 05 13:28:34 localhost.localdomain Keepalived_vrrp[48840]: Sending gratuitous ARP on ens33 for 192.168.31.60
+Nov 05 13:28:34 localhost.localdomain Keepalived_vrrp[48840]: Sending gratuitous ARP on ens33 for 192.168.31.60
+Nov 05 13:28:34 localhost.localdomain Keepalived_vrrp[48840]: Sending gratuitous ARP on ens33 for 192.168.31.60
+Nov 05 13:28:39 localhost.localdomain Keepalived_vrrp[48840]: Sending gratuitous ARP on ens33 for 192.168.31.60
+Nov 05 13:28:39 localhost.localdomain Keepalived_vrrp[48840]: VRRP_Instance(VI_1) Sending/queueing gratuitous ARPs on ens33 ...1.60
+Nov 05 13:28:39 localhost.localdomain Keepalived_vrrp[48840]: Sending gratuitous ARP on ens33 for 192.168.31.60
+Nov 05 13:28:39 localhost.localdomain Keepalived_vrrp[48840]: Sending gratuitous ARP on ens33 for 192.168.31.60
+Nov 05 13:28:39 localhost.localdomain Keepalived_vrrp[48840]: Sending gratuitous ARP on ens33 for 192.168.31.60
+Nov 05 13:28:39 localhost.localdomain Keepalived_vrrp[48840]: Sending gratuitous ARP on ens33 for 192.168.31.60
+Hint: Some lines were ellipsized, use -l to show in full.
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;查看IP&#34;&gt;&lt;a href=&#34;#查看IP&#34; class=&#34;headerlink&#34; title=&#34;查看IP&#34;&gt;&lt;/a&gt;查看IP&lt;/h5&gt;&lt;pre&gt;&lt;code&gt;[root@localhost ~]# ip a
+1: lo: &amp;lt;LOOPBACK,UP,LOWER_UP&amp;gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: ens33: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 00:0c:29:69:a4:84 brd ff:ff:ff:ff:ff:ff
+    inet 172.18.8.101/24 brd 172.18.8.255 scope global noprefixroute ens33
+       valid_lft forever preferred_lft forever
+    inet 172.18.8.231/24 scope global secondary ens33
+       valid_lft forever preferred_lft forever
+    inet6 fe80::b7be:346e:2f0f:859e/64 scope link noprefixroute
+       valid_lft forever preferred_lft forever
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;访问高可用代理后的nacos&#34;&gt;&lt;a href=&#34;#访问高可用代理后的nacos&#34; class=&#34;headerlink&#34; title=&#34;访问高可用代理后的nacos&#34;&gt;&lt;/a&gt;访问高可用代理后的nacos&lt;/h5&gt;&lt;p&gt;高可用代理&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;http://172.18.8.231:28848/nacos/#/configurationManagement?dataId=&amp;amp;group=&amp;amp;appName=&amp;amp;namespace=
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;用户名：nacos ，密码 nacos&lt;/p&gt;
+&lt;h4 id=&#34;第2个节点，第3个节点离线部署keepalived&#34;&gt;&lt;a href=&#34;#第2个节点，第3个节点离线部署keepalived&#34; class=&#34;headerlink&#34; title=&#34;第2个节点，第3个节点离线部署keepalived&#34;&gt;&lt;/a&gt;第2个节点，第3个节点离线部署keepalived&lt;/h4&gt;&lt;p&gt;复制文件/并且安装&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  scp /root/keepalived_rpm.tar.gz  root@172.18.8.103:/root
+  scp /root/keepalived_rpm.tar.gz  root@172.18.8.104:/root
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;解压缩，然后执行命令安装&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd /root/
+tar -zxvf   keepalived_rpm.tar.gz
+cd keepalived_rpm
+rpm -Uvh --force --nodeps *rpm
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;把离线包里的 keepalive-ha 传过去，然后复制到 /etc/keepalived/&lt;/p&gt;
+&lt;p&gt;第1个节点，执行&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cp /home/docker-compose/keepalive-ha/keepalived01.conf   /etc/keepalived/keepalived.conf
+cp /home/docker-compose/keepalive-ha/check_haproxy.sh   /etc/keepalived/
+
+cat /etc/keepalived/keepalived.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;第二个节点，执行&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cp /home/docker-compose/keepalive-ha/keepalived02.conf   /etc/keepalived/keepalived.conf
+cp /home/docker-compose/keepalive-ha/check_haproxy.sh   /etc/keepalived/
+
+
+cat /etc/keepalived/keepalived.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[root@localhost keepalive-ha]# cp /home/docker-compose/keepalive-ha/keepalived02.conf   /etc/keepalived/keepalived.conf
+cp: overwrite ‘/etc/keepalived/keepalived.conf’? yes
+[root@localhost keepalive-ha]# cp /home/docker-compose/keepalive-ha/check_haproxy.sh   /etc/keepalived/
+cp: overwrite ‘/etc/keepalived/check_haproxy.sh’? yes
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;第3个节点，执行&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cp /home/docker-compose/keepalive-ha/keepalived03.conf   /etc/keepalived/keepalived.conf
+cp /home/docker-compose/keepalive-ha/check_haproxy.sh   /etc/keepalived/
+
+
+cat /etc/keepalived/keepalived.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cp /home/docker-compose/keepalive-ha/keepalived03.conf   /etc/keepalived/keepalived.conf
+cp: overwrite ‘/etc/keepalived/keepalived.conf’? yes
+[root@k8s-master keepalived_rpm]# cp /home/docker-compose/keepalive-ha/check_haproxy.sh   /etc/keepalived/
+cp: overwrite ‘/etc/keepalived/check_haproxy.sh’? yes
+&lt;/code&gt;&lt;/pre&gt;&lt;h5 id=&#34;重启-keepalive服务-1&#34;&gt;&lt;a href=&#34;#重启-keepalive服务-1&#34; class=&#34;headerlink&#34; title=&#34;重启 keepalive服务&#34;&gt;&lt;/a&gt;重启 keepalive服务&lt;/h5&gt;&lt;p&gt;命令如下&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  systemctl enable keepalived
+
+  systemctl start keepalived
+
+  systemctl restart keepalived
+
+  systemctl status  keepalived
+
+  systemctl stop  keepalived
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;查看IP地址&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ip a
+
+ip a | grep ens33
+
+ifconfig ens33
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出结果&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[root@localhost ~]# ip a
+1: lo: &amp;lt;LOOPBACK,UP,LOWER_UP&amp;gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: ens33: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 00:0c:29:69:a4:84 brd ff:ff:ff:ff:ff:ff
+    inet 172.18.8.101/24 brd 172.18.8.255 scope global noprefixroute ens33
+       valid_lft forever preferred_lft forever
+    inet 172.18.8.231/24 scope global secondary ens33
+       valid_lft forever preferred_lft forever
+    inet6 fe80::b7be:346e:2f0f:859e/64 scope link noprefixroute
+       valid_lft forever preferred_lft forever
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;测试高可用&lt;/p&gt;
+&lt;p&gt;停止101上的haproxy&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; sh ./stop_node.sh
+ sh ./start_node.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[root@localhost haproxy-ha]# sh ./stop_node.sh
+===========stoping haproxy-ha .....================
+WARNING: Some services (ha_sit_proxy) use the &amp;#39;deploy&amp;#39; key, which will be ignored. Compose does not support &amp;#39;deploy&amp;#39; configuration - use `docker stack deploy` to deploy to a swarm.
+Stopping ha_sit_proxy ... done
+Removing ha_sit_proxy ... done
+Network ha-network-overlay is external, skipping
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;访问vip的ng&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;http://172.18.8.231:80/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;可以正常访问&lt;/p&gt;
+&lt;p&gt;访问vip的nacos （假设已经安装nacos）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;http://172.18.8.231:28848/nacos/#/login
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;可以正常访问&lt;/p&gt;
+&lt;p&gt;访问高可用代理的minio（假设已经安装minio）&lt;br&gt;高可用代理&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://172.18.8.231:29991/minio/&#34;&gt;http://172.18.8.231:29991/minio/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用户名：nacos ，密码 nacos&lt;/p&gt;
+&lt;p&gt;本文转载自：40岁老架构师尼恩&lt;/p&gt;
+</content>
+        <category term="nginx" />
+        <category term="ip跳跃" />
+        <category term="ip漫游" />
+        <updated>2024-01-19T00:39:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2023/12/22/five-fenbushi/</id>
+        <title>五种分布式事务解决方案</title>
+        <link rel="alternate" href="https://erik.xyz/2023/12/22/five-fenbushi/"/>
+        <content type="html">&lt;h1 id=&#34;01&#34;&gt;&lt;a href=&#34;#01&#34; class=&#34;headerlink&#34; title=&#34;01&#34;&gt;&lt;/a&gt;&lt;center&gt;01&lt;/center&gt;&lt;/h1&gt;&lt;h3 id=&#34;架构-—-思维&#34;&gt;&lt;a href=&#34;#架构-—-思维&#34; class=&#34;headerlink&#34; title=&#34;架构    —    思维&#34;&gt;&lt;/a&gt;&lt;center&gt;架构    —    思维&lt;/center&gt;&lt;/h3&gt;&lt;h4 id=&#34;分布式系统介绍&#34;&gt;&lt;a href=&#34;#分布式系统介绍&#34; class=&#34;headerlink&#34; title=&#34;分布式系统介绍&#34;&gt;&lt;/a&gt;&lt;center&gt;分布式系统介绍&lt;/center&gt;&lt;/h4&gt;&lt;h5 id=&#34;1-1-分布式系统的发展&#34;&gt;&lt;a href=&#34;#1-1-分布式系统的发展&#34; class=&#34;headerlink&#34; title=&#34;1.1 分布式系统的发展&#34;&gt;&lt;/a&gt;1.1 分布式系统的发展&lt;/h5&gt;&lt;p&gt;我们早期的集中式系统都是单体架构的，整个系统作为一个单体粒度的应用存在，所有的模块聚合在一起。明显的弊端就是不易扩展、发布冗重、服务稳定性治理不好做。&lt;br&gt;随着微服务架构的不断大规模应用，驱使我们把整个系统拆分成若干个具备独立运行能力的计算服务的集合，通过交互协作，完成庞大、复杂的业务流程，用户感知单一，但实际上，它是一个分布式服务的集合。    &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;分布式系统主要从以下几个方面进行裂变：&lt;br&gt;1、应用可以从业务领域拆分成多个module，单个module再按项目结构分成接口层、业务层、数据访问层；也可以按照用户领域区分，如对移动、桌面、Web端访问的入口流量拆分不同类型接口服务。参考我的这篇《微服务架构拆分策略》，&lt;br&gt;2、数据存储层可以按业务类型拆分成多个数据库实例，还可以对单库或单表进行更细粒度的分库分表；参考我的这篇《MySQL分库分表》&lt;br&gt;3、通过一些业务中间件的支撑来保证分布式系统的可用性，如分布式缓存、搜索服务、NoSQL数据库、文件服务、消息队列等中间件。&lt;/p&gt;
+&lt;h5 id=&#34;1-2-存在的优势和不足&#34;&gt;&lt;a href=&#34;#1-2-存在的优势和不足&#34; class=&#34;headerlink&#34; title=&#34;1.2 存在的优势和不足&#34;&gt;&lt;/a&gt;1.2 存在的优势和不足&lt;/h5&gt;&lt;p&gt;分布式系统可以解决集中式不便扩展的弊端，提供了便捷的扩展性、独立的服务治理，并提高了安全可靠性。随着微服务技术（Spring Cloud、Dubbo） 以及容器技术（Kubernetes、Docker）的大热，分布式技术发展非常迅速。&lt;br&gt;不足的地方：分布式系统虽好，也给系统带来了复杂性，如分布式事务、分布式锁、分布式session、数据一致性等都是现在分布式系统中需要解决的难题，虽然已经有很多成熟的方案，但都不完美。&lt;br&gt;分布式系统的便利，其实是牺牲了一些开发、测试、发布、运维、资源 成本的，让工作量增加了，所以分布式系统管理不好反而会变成一种负担。&lt;/p&gt;
+&lt;h1 id=&#34;02&#34;&gt;&lt;a href=&#34;#02&#34; class=&#34;headerlink&#34; title=&#34;02&#34;&gt;&lt;/a&gt;&lt;center&gt;02&lt;/center&gt;&lt;/h1&gt;&lt;h3 id=&#34;架构-—-思维-1&#34;&gt;&lt;a href=&#34;#架构-—-思维-1&#34; class=&#34;headerlink&#34; title=&#34;架构    —    思维&#34;&gt;&lt;/a&gt;&lt;center&gt;架构    —    思维&lt;/center&gt;&lt;/h3&gt;&lt;h4 id=&#34;分布式事务及应用场景&#34;&gt;&lt;a href=&#34;#分布式事务及应用场景&#34; class=&#34;headerlink&#34; title=&#34;分布式事务及应用场景&#34;&gt;&lt;/a&gt;&lt;center&gt;分布式事务及应用场景&lt;/center&gt;&lt;/h4&gt;&lt;h5 id=&#34;2-1-使用分布式事务解决问题&#34;&gt;&lt;a href=&#34;#2-1-使用分布式事务解决问题&#34; class=&#34;headerlink&#34; title=&#34;2.1 使用分布式事务解决问题&#34;&gt;&lt;/a&gt;2.1 使用分布式事务解决问题&lt;/h5&gt;&lt;p&gt;我们上面说了，分布式系统给业务带来了一些复杂性，所以，衍生出分布式事务来应对和解决这些问题。&lt;br&gt;分布式事务是指允许多个独立的事务资源参与到一个全局的事务中，其参与者、支持事务的服务器、资源服务器以及事务管理器分别位于分布式系统的不同节点之上。这些节点属于同一个Action行为，如果有一个节点的结果不同步，就会造成整体的数据不一致。分布式事务需要保证这些action要么全部成功，要么全部失败，从而保证单个完整操作的原子性，也保证了各节点数据的一致性。&lt;/p&gt;
+&lt;h5 id=&#34;2-2-CAP定理&#34;&gt;&lt;a href=&#34;#2-2-CAP定理&#34; class=&#34;headerlink&#34; title=&#34;2.2 CAP定理&#34;&gt;&lt;/a&gt;2.2 CAP定理&lt;/h5&gt;&lt;p&gt;CAP 定理（也称为 Brewer 定理），指的是在分布式计算环境下，有3个核心的需求：&lt;br&gt;1、一致性（Consistency）：再分布，所有实例节点同一时间看到是相同的数据&lt;br&gt;2、可用性（Availability）：不管是否成功，确保每一个请求都能接收到响应&lt;br&gt;3、分区容错性（Partition Tolerance）：系统任意分区后，在网络故障时，仍能操作&lt;br&gt;CAP理论告诉我们，分布式系统不可能同时满足以下三种。最多只能同时满足其中的两项，大多数分布式业务中P是必须的, 因此往往选择就在CP或者AP。    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CA: 放弃分区容错性。非分布式架构，比如关系数据库，因为没有分区，但是在分布式系统下，CA组合就不建议了。    &lt;/li&gt;
+&lt;li&gt;AP: 放弃强一致性。追求最终一致性，类似的场景比如转账，可以接受两小时后到账，Eureka的注册也是类似的做法。    &lt;/li&gt;
+&lt;li&gt;CP: 放弃可用性。zookeeper在leader宕机后，选举期间是不提供服务的。类似的场景比如支付完成之后出订单，必须一进一出都完成才行。    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt; 说明：在分布式系统中AP运用的最多，因为他放弃的是强一致性，追求的是最终一致性，性价比最高&lt;/strong&gt;&lt;br&gt;&lt;img src=&#34;/img/2024/20240330081635.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;2-3-分布式事务应用场景&#34;&gt;&lt;a href=&#34;#2-3-分布式事务应用场景&#34; class=&#34;headerlink&#34; title=&#34;2.3 分布式事务应用场景&#34;&gt;&lt;/a&gt;2.3 分布式事务应用场景&lt;/h5&gt;&lt;p&gt;&lt;strong&gt;2.3.1 典型支付场景&lt;/strong&gt;&lt;br&gt;这是最经典的场景。支付过程，要先对买家账户进行扣款，同时对卖家账户进行付款，像这类的操作，必须在一个事务中执行，保证原子性，要么都成功，要么都不成功。但是往往买家的支付平台和卖家的支付平台不一致，即使都在一个平台下，所属的业务服务和数据服务（归属不同表甚至不同库，比如卖家中心库、卖家中心库）也不是同一个。针对于不同的业务平台、不同的数据库做操作必然要引入分布式事务。    &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.3.2 在线下单场景&lt;/strong&gt;&lt;br&gt;同理，买家在电商平台下单，往往会涉及到两个动作，一个是扣库存，第二个是更新订单状态，库存和订单一般属于不同的数据库，需要使用分布式事务保证数据一致性。&lt;br&gt;&lt;img src=&#34;/img/2024/20240330081859.png&#34; alt=&#34;erik.xyz&#34;&gt;    &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.3.3 跨行转账场景&lt;/strong&gt;&lt;br&gt;跨行转账问题也是一个典型的分布式事务，用户A同学向B同学的账户转账500，要先进行A同学的账户-500，然后B同学的账户+500，既然是不同的银行，涉及不同的业务平台，为了保证这两个操作步骤的一致，分布式事务必然要被引入。&lt;br&gt;&lt;img src=&#34;/img/2024/20240330081928.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;03&#34;&gt;&lt;a href=&#34;#03&#34; class=&#34;headerlink&#34; title=&#34;03&#34;&gt;&lt;/a&gt;&lt;center&gt;03&lt;/center&gt;&lt;/h1&gt;&lt;h3 id=&#34;架构-—-思维-2&#34;&gt;&lt;a href=&#34;#架构-—-思维-2&#34; class=&#34;headerlink&#34; title=&#34;架构    —    思维&#34;&gt;&lt;/a&gt;&lt;center&gt;架构    —    思维&lt;/center&gt;&lt;/h3&gt;&lt;h4 id=&#34;分布式事务解决方案&#34;&gt;&lt;a href=&#34;#分布式事务解决方案&#34; class=&#34;headerlink&#34; title=&#34;分布式事务解决方案&#34;&gt;&lt;/a&gt;&lt;center&gt;分布式事务解决方案&lt;/center&gt;&lt;/h4&gt;&lt;p&gt;常见的分布式一致性保障有如下方案&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.1 XA 两阶段提交协议&lt;/strong&gt;&lt;br&gt;两阶段提交协议（Two-phase commit protocol，简称2PC）是一种分布式事务处理协议，旨在确保参与分布式事务的所有节点都能达成一致的结果。此协议被广泛应用于许多分布式关系型数据管理系统，以完成分布式事务。&lt;br&gt;它是一种强一致性设计，引入一个事务协调者的角色来协调管理各参与者的提交和回滚，二阶段分别指的是准备（投票）和提交两个阶段。&lt;br&gt;&lt;strong&gt;1、准备阶段（Prepare phase）&lt;/strong&gt;&lt;br&gt;在此阶段，协调者询问所有参与者是否可以提交事务。如果参与者的事务操作实际执行成功，则返回一个“同意”消息；如果执行失败，则返回一个“终止”消息。&lt;br&gt;下面是两个参与者都执行成功的结果：&lt;br&gt;&lt;img src=&#34;/img/2024/20240330082249.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;br&gt;准备阶段只要有一个参与者返回失败，那么协调者就会向所有参与者发送回滚事务的请求，即分布式事务执行失败。如下图:&lt;br&gt;&lt;img src=&#34;/img/2024/20240330082305.png&#34; alt=&#34;erik.xyz&#34;&gt;    &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2、提交阶段（Commit phase）&lt;/strong&gt;&lt;br&gt;协调者根据所有参与者的应答结果判定是否事务可以全局提交（Commit 请求），并通知所有参与者执行该决定。&lt;br&gt;如果所有参与者都同意提交，则协调者让所有参与者都提交事务，向事务协调者返回“完成”消息。整个分布式事务完成。&lt;br&gt;如果其中某个参与者终止提交，则协调者让所有参与者都回滚事务。&lt;br&gt;&lt;img src=&#34;/img/2024/20240330082455.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;br&gt;如果其中一个Commit 不成功，那其他的应该也是提交不成功的。&lt;br&gt;&lt;img src=&#34;/img/2024/20240330082513.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.2 XA三阶段提交&lt;/strong&gt;&lt;br&gt;三阶段提交：CanCommit 阶段、PreCommit 阶段、DoCommit 阶段，简称3PC&lt;br&gt;三阶段提交协议（Three-phase commit protocol，3PC），是二阶段提交（2PC）的改进版本。与两阶段提交不同的是，三阶段提交有两个改动点：在协调者和参与者中都引入超时机制，同时引入了预提交阶段。    &lt;/p&gt;
+&lt;p&gt;在第一阶段和第二阶段中插入的预提交阶段，保证了在最后提交阶段之前各参与节点的状态是一致的。&lt;br&gt;即 3PC 把 2PC 的准备阶段再次一分为二，这样三阶段提交就有 CanCommit、PreCommit、DoCommit 三个阶段。当 CanCommit、PreCommit、DoCommit的任意一个步骤失败或者等待超时，执行RollBack。&lt;br&gt;&lt;img src=&#34;/img/2024/20240330082659.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;通过引入PreCommit阶段，3PC在一定程度上解决了2PC中协调者单点故障的问题，因为即使协调者在PreCommit阶段后发生故障，参与者也可以根据自身的状态来决定是否提交事务。然而，3PC并不是完美的解决方案，它仍然有一些缺点，比如增加了协议的复杂性和可能的性能开销。因此，在选择是否使用3PC时，需要根据具体的业务场景和需求进行权衡。&lt;/p&gt;
+&lt;h5 id=&#34;3-3-MQ事务&#34;&gt;&lt;a href=&#34;#3-3-MQ事务&#34; class=&#34;headerlink&#34; title=&#34;3.3 MQ事务&#34;&gt;&lt;/a&gt;3.3 MQ事务&lt;/h5&gt;&lt;p&gt;利用消息中间件来异步完成事务的后半部分更新，实现系统的最终一致性。 这个方式避免了像XA协议那样的性能问题。&lt;br&gt;下面的图中，使用MQ完成事务在分布式的另外一个子系统上的操作，保证了动作一致性。所以整个消息的生产和消息的消费动作需要全部完成，才算一个事务结束&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/20240330082829.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;h5 id=&#34;3-4-TCC事务&#34;&gt;&lt;a href=&#34;#3-4-TCC事务&#34; class=&#34;headerlink&#34; title=&#34;3.4 TCC事务&#34;&gt;&lt;/a&gt;3.4 TCC事务&lt;/h5&gt;&lt;p&gt;TCC事务是Try、Confirm、Cancel三种指令的缩写，其逻辑模式类似于XA两阶段提交，但是实现方式是在代码层面人为实现。 2PC 和 3PC 都是数据库层面的，而 TCC 是业务层面的分布式事务。&lt;br&gt;这种事务模式特别适用于需要强一致性保证的分布式事务场景，除了上面提到的数据库层面的操作外,例如电商平台的订单系统、跨行转账、分布式资源预订系统以及金融交易处理等。&lt;br&gt;下图就是一个典型的分布式系统的原子性操作，涉及A、B、C三个服务的执行。 如果有一个服务 try 出问题，整个事务管理器就执行calcel，如果三个try都成功，才执行confirm做正式提交。&lt;br&gt;&lt;img src=&#34;/img/2024/20240330082849.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如图，TCC事务分为三个阶段执行：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Try阶段：主要是对业务系统做检测及资源预留。（执行2、3步骤）&lt;/li&gt;
+&lt;li&gt;Confirm阶段：确认执行业务操作。如果Try阶段成功，则执行Confirm操作，提交事务。（执行4、5步骤）&lt;/li&gt;
+&lt;li&gt;Cancel阶段：取消执行业务操作。如果Try阶段失败或超时，则执行Cancel操作，回滚事务。（执行4、5步骤）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;3-5-最终补偿机制，同于MQ事务&#34;&gt;&lt;a href=&#34;#3-5-最终补偿机制，同于MQ事务&#34; class=&#34;headerlink&#34; title=&#34;3.5 最终补偿机制，同于MQ事务&#34;&gt;&lt;/a&gt;3.5 最终补偿机制，同于MQ事务&lt;/h5&gt;&lt;p&gt;最后使用补偿机制做最后的一致性保障，MQ方案尽量使用补偿机制进行保障。&lt;br&gt;如下图，对于发送成功，消费失败的消息，进入Dead-Letter Queu，使用单独的作业服务进行独立处理，比如重新发送死信消息进行消费，避免生产和消费的不一致，保证了最终的原子性、一致性。&lt;br&gt;&lt;img src=&#34;/img/2024/20240330083135.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;本文转载自公众号：架构与思维&lt;/p&gt;
+</content>
+        <category term="分布式" />
+        <category term="系统" />
+        <updated>2023-12-22T00:03:00.000Z</updated>
     </entry>
     <entry>
         <id>https://erik.xyz/2023/11/12/xhprof-plugs/</id>
@@ -1806,104 +2395,5 @@ func DataToData(dataType string, data string) string &amp;#123;
 &lt;/code&gt;&lt;/pre&gt;</content>
         <category term="go时间获取" />
         <updated>2022-06-18T02:30:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2022/06/05/go-type-change/</id>
-        <title>go中类型转换</title>
-        <link rel="alternate" href="https://erik.xyz/2022/06/05/go-type-change/"/>
-        <content type="html">&lt;p&gt;go中类型转换的搜集&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;func StringToInt(a string) int &amp;#123;
-    d, _ := strconv.Atoi(a)
-    return d
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;pre&gt;&lt;code&gt;func StringToInt64(a string) int64 &amp;#123;
-    d, _ := strconv.ParseInt(a, 10, 64)
-    return d
-&amp;#125;
-
-func StringToUint64(a string) uint64 &amp;#123;
-    d, _ := strconv.ParseUint(a, 10, 64)
-    return d
-&amp;#125;
-
-
-func IntToString(a int) string &amp;#123;
-    str := strconv.Itoa(a)
-    return str
-&amp;#125;
-
-func Int64ToString(a int64) string &amp;#123;
-    str := strconv.FormatInt(a, 10)
-    return str
-&amp;#125;
-
-
-func FloatToString(f float64) string &amp;#123;
-    return strconv.FormatFloat(f, &amp;#39;f&amp;#39;, -1, 32)
-&amp;#125;
-
-
-func StringToFloat(s string) float64 &amp;#123;
-    f, _ := strconv.ParseFloat(s, 64)
-    return f
-&amp;#125;
-
-func StructToMap(obj interface&amp;#123;&amp;#125;) map[string]interface&amp;#123;&amp;#125; &amp;#123;
-    t := reflect.TypeOf(obj)
-    v := reflect.ValueOf(obj)
-    var data = make(map[string]interface&amp;#123;&amp;#125;)
-    for i := 0; i &amp;lt; t.NumField(); i++ &amp;#123;
-        data[t.Field(i).Name] = v.Field(i).Interface()
-    &amp;#125;
-    return data
-&amp;#125;
-&lt;/code&gt;&lt;/pre&gt;</content>
-        <category term="go类型转换" />
-        <updated>2022-06-05T13:59:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2022/05/22/go-add-pdf/</id>
-        <title>go中生成PDF</title>
-        <link rel="alternate" href="https://erik.xyz/2022/05/22/go-add-pdf/"/>
-        <content type="html">&lt;p&gt;一个简单但是非常实用的pdf生成器！&lt;/p&gt;
-&lt;p&gt;安装：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;go get github.com/jung-kurt/gofpdf
-&lt;/code&gt;&lt;/pre&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;p&gt;代码：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;package main
-
-import (
-    &amp;quot;github.com/jung-kurt/gofpdf&amp;quot;
-)
-
-func main() &amp;#123;
-    err := GeneratePdf(&amp;quot;hello.pdf&amp;quot;)
-    if err != nil &amp;#123;
-        panic(err)
-    &amp;#125;
-&amp;#125;
-
-func GeneratePdf(filename string) error &amp;#123;
-  pdf := gofpdf.New(&amp;quot;P&amp;quot;, &amp;quot;mm&amp;quot;, &amp;quot;A4&amp;quot;, &amp;quot;&amp;quot;)
-  pdf.AddPage()
-  pdf.SetFont(&amp;quot;Arial&amp;quot;, &amp;quot;B&amp;quot;, 16)
-  pdf.CellFormat(190, 7, &amp;quot;Welcome to topgoer.com&amp;quot;, &amp;quot;0&amp;quot;, 0, &amp;quot;CM&amp;quot;, false, 0, &amp;quot;&amp;quot;)
-
-  pdf.ImageOptions(
-      &amp;quot;topgoer.png&amp;quot;,
-      80, 20,
-      0, 0,
-      false,
-      gofpdf.ImageOptions&amp;#123;ImageType: &amp;quot;PNG&amp;quot;, ReadDpi: true&amp;#125;,
-      0,
-      &amp;quot;&amp;quot;,
-  )
-
-  return pdf.OutputFileAndClose(filename)
-  &amp;#125;
-&lt;/code&gt;&lt;/pre&gt;</content>
-        <category term="go中pdf生成" />
-        <updated>2022-05-22T02:57:00.000Z</updated>
     </entry>
 </feed>
