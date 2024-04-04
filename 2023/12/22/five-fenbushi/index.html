@@ -19,24 +19,24 @@
 <meta property="og:site_name" content="艾瑞可erik">
 <meta property="og:description" content="01架构    —    思维分布式系统介绍1.1 分布式系统的发展我们早期的集中式系统都是单体架构的，整个系统作为一个单体粒度的应用存在，所有的模块聚合在一起。明显的弊端就是不易扩展、发布冗重、服务稳定性治理不好做。随着微服务架构的不断大规模应用，驱使我们把整个系统拆分成若干个具备独立运行能力的计算服务的集合，通过交互协作，完成庞大、复杂的业务流程，用户感知单一，但实际上，它是一个分布式服务的集">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330081635.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330081859.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330081928.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330082249.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330082305.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330082455.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330082513.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330082659.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330082829.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330082849.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330083135.png">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330081635.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330081859.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330081928.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330082249.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330082305.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330082455.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330082513.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330082659.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330082829.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330082849.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330083135.webp">
 <meta property="article:published_time" content="2023-12-22T00:03:00.000Z">
-<meta property="article:modified_time" content="2024-03-30T00:37:51.367Z">
+<meta property="article:modified_time" content="2024-04-04T06:34:36.369Z">
 <meta property="article:author" content="艾瑞可erik">
 <meta property="article:tag" content="分布式">
 <meta property="article:tag" content="系统">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://erik.xyz/img/2024/20240330081635.png">
+<meta name="twitter:image" content="https://erik.xyz/img/2024/20240330081635.webp">
   
     <link rel="alternative" href="/rss.xml" title="艾瑞可erik" type="application/atom+xml">
   
@@ -421,26 +421,27 @@ var _hmt = _hmt || [];
 <li>AP: 放弃强一致性。追求最终一致性，类似的场景比如转账，可以接受两小时后到账，Eureka的注册也是类似的做法。    </li>
 <li>CP: 放弃可用性。zookeeper在leader宕机后，选举期间是不提供服务的。类似的场景比如支付完成之后出订单，必须一进一出都完成才行。    </li>
 </ul>
-<p><strong> 说明：在分布式系统中AP运用的最多，因为他放弃的是强一致性，追求的是最终一致性，性价比最高</strong><br><img src="/img/2024/20240330081635.png" alt="erik.xyz"></p>
+<p><strong> 说明：在分布式系统中AP运用的最多，因为他放弃的是强一致性，追求的是最终一致性，性价比最高</strong><br><img src="/img/2024/20240330081635.webp" alt="erik.xyz"></p>
 <h5 id="2-3-分布式事务应用场景"><a href="#2-3-分布式事务应用场景" class="headerlink" title="2.3 分布式事务应用场景"></a>2.3 分布式事务应用场景</h5><p><strong>2.3.1 典型支付场景</strong><br>这是最经典的场景。支付过程，要先对买家账户进行扣款，同时对卖家账户进行付款，像这类的操作，必须在一个事务中执行，保证原子性，要么都成功，要么都不成功。但是往往买家的支付平台和卖家的支付平台不一致，即使都在一个平台下，所属的业务服务和数据服务（归属不同表甚至不同库，比如卖家中心库、卖家中心库）也不是同一个。针对于不同的业务平台、不同的数据库做操作必然要引入分布式事务。    </p>
-<p><strong>2.3.2 在线下单场景</strong><br>同理，买家在电商平台下单，往往会涉及到两个动作，一个是扣库存，第二个是更新订单状态，库存和订单一般属于不同的数据库，需要使用分布式事务保证数据一致性。<br><img src="/img/2024/20240330081859.png" alt="erik.xyz">    </p>
-<p><strong>2.3.3 跨行转账场景</strong><br>跨行转账问题也是一个典型的分布式事务，用户A同学向B同学的账户转账500，要先进行A同学的账户-500，然后B同学的账户+500，既然是不同的银行，涉及不同的业务平台，为了保证这两个操作步骤的一致，分布式事务必然要被引入。<br><img src="/img/2024/20240330081928.png" alt="erik.xyz"></p>
+<p><strong>2.3.2 在线下单场景</strong><br>同理，买家在电商平台下单，往往会涉及到两个动作，一个是扣库存，第二个是更新订单状态，库存和订单一般属于不同的数据库，需要使用分布式事务保证数据一致性。<br><img src="/img/2024/20240330081859.webp" alt="erik.xyz">    </p>
+<p><strong>2.3.3 跨行转账场景</strong><br>跨行转账问题也是一个典型的分布式事务，用户A同学向B同学的账户转账500，要先进行A同学的账户-500，然后B同学的账户+500，既然是不同的银行，涉及不同的业务平台，为了保证这两个操作步骤的一致，分布式事务必然要被引入。<br><img src="/img/2024/20240330081928.webp" alt="erik.xyz"></p>
 <h1 id="03"><a href="#03" class="headerlink" title="03"></a><center>03</center></h1><h3 id="架构-—-思维-2"><a href="#架构-—-思维-2" class="headerlink" title="架构    —    思维"></a><center>架构    —    思维</center></h3><h4 id="分布式事务解决方案"><a href="#分布式事务解决方案" class="headerlink" title="分布式事务解决方案"></a><center>分布式事务解决方案</center></h4><p>常见的分布式一致性保障有如下方案</p>
-<p><strong>3.1 XA 两阶段提交协议</strong><br>两阶段提交协议（Two-phase commit protocol，简称2PC）是一种分布式事务处理协议，旨在确保参与分布式事务的所有节点都能达成一致的结果。此协议被广泛应用于许多分布式关系型数据管理系统，以完成分布式事务。<br>它是一种强一致性设计，引入一个事务协调者的角色来协调管理各参与者的提交和回滚，二阶段分别指的是准备（投票）和提交两个阶段。<br><strong>1、准备阶段（Prepare phase）</strong><br>在此阶段，协调者询问所有参与者是否可以提交事务。如果参与者的事务操作实际执行成功，则返回一个“同意”消息；如果执行失败，则返回一个“终止”消息。<br>下面是两个参与者都执行成功的结果：<br><img src="/img/2024/20240330082249.png" alt="erik.xyz"><br>准备阶段只要有一个参与者返回失败，那么协调者就会向所有参与者发送回滚事务的请求，即分布式事务执行失败。如下图:<br><img src="/img/2024/20240330082305.png" alt="erik.xyz">    </p>
-<p><strong>2、提交阶段（Commit phase）</strong><br>协调者根据所有参与者的应答结果判定是否事务可以全局提交（Commit 请求），并通知所有参与者执行该决定。<br>如果所有参与者都同意提交，则协调者让所有参与者都提交事务，向事务协调者返回“完成”消息。整个分布式事务完成。<br>如果其中某个参与者终止提交，则协调者让所有参与者都回滚事务。<br><img src="/img/2024/20240330082455.png" alt="erik.xyz"><br>如果其中一个Commit 不成功，那其他的应该也是提交不成功的。<br><img src="/img/2024/20240330082513.png" alt="erik.xyz"></p>
+<p><strong>3.1 XA 两阶段提交协议</strong><br>两阶段提交协议（Two-phase commit protocol，简称2PC）是一种分布式事务处理协议，旨在确保参与分布式事务的所有节点都能达成一致的结果。此协议被广泛应用于许多分布式关系型数据管理系统，以完成分布式事务。<br>它是一种强一致性设计，引入一个事务协调者的角色来协调管理各参与者的提交和回滚，二阶段分别指的是准备（投票）和提交两个阶段。<br><strong>1、准备阶段（Prepare phase）</strong><br>在此阶段，协调者询问所有参与者是否可以提交事务。如果参与者的事务操作实际执行成功，则返回一个“同意”消息；如果执行失败，则返回一个“终止”消息。<br>下面是两个参与者都执行成功的结果：<br><img src="/img/2024/20240330082249.webp" alt="erik.xyz"><br>准备阶段只要有一个参与者返回失败，那么协调者就会向所有参与者发送回滚事务的请求，即分布式事务执行失败。如下图:<br><img src="/img/2024/20240330082305.webp" alt="erik.xyz">    </p>
+<p><strong>2、提交阶段（Commit phase）</strong><br>协调者根据所有参与者的应答结果判定是否事务可以全局提交（Commit 请求），并通知所有参与者执行该决定。<br>如果所有参与者都同意提交，则协调者让所有参与者都提交事务，向事务协调者返回“完成”消息。整个分布式事务完成。<br>如果其中某个参与者终止提交，则协调者让所有参与者都回滚事务。<br><img src="/img/2024/20240330082455.webp" alt="erik.xyz"><br>如果其中一个Commit 不成功，那其他的应该也是提交不成功的。<br><img src="/img/2024/20240330082513.webp" alt="erik.xyz"></p>
 <p><strong>3.2 XA三阶段提交</strong><br>三阶段提交：CanCommit 阶段、PreCommit 阶段、DoCommit 阶段，简称3PC<br>三阶段提交协议（Three-phase commit protocol，3PC），是二阶段提交（2PC）的改进版本。与两阶段提交不同的是，三阶段提交有两个改动点：在协调者和参与者中都引入超时机制，同时引入了预提交阶段。    </p>
-<p>在第一阶段和第二阶段中插入的预提交阶段，保证了在最后提交阶段之前各参与节点的状态是一致的。<br>即 3PC 把 2PC 的准备阶段再次一分为二，这样三阶段提交就有 CanCommit、PreCommit、DoCommit 三个阶段。当 CanCommit、PreCommit、DoCommit的任意一个步骤失败或者等待超时，执行RollBack。<br><img src="/img/2024/20240330082659.png" alt="erik.xyz"></p>
+<p>在第一阶段和第二阶段中插入的预提交阶段，保证了在最后提交阶段之前各参与节点的状态是一致的。<br>即 3PC 把 2PC 的准备阶段再次一分为二，这样三阶段提交就有 CanCommit、PreCommit、DoCommit 三个阶段。当 CanCommit、PreCommit、DoCommit的任意一个步骤失败或者等待超时，执行RollBack。<br><img src="/img/2024/20240330082659.webp" alt="erik.xyz"></p>
 <p>通过引入PreCommit阶段，3PC在一定程度上解决了2PC中协调者单点故障的问题，因为即使协调者在PreCommit阶段后发生故障，参与者也可以根据自身的状态来决定是否提交事务。然而，3PC并不是完美的解决方案，它仍然有一些缺点，比如增加了协议的复杂性和可能的性能开销。因此，在选择是否使用3PC时，需要根据具体的业务场景和需求进行权衡。</p>
 <h5 id="3-3-MQ事务"><a href="#3-3-MQ事务" class="headerlink" title="3.3 MQ事务"></a>3.3 MQ事务</h5><p>利用消息中间件来异步完成事务的后半部分更新，实现系统的最终一致性。 这个方式避免了像XA协议那样的性能问题。<br>下面的图中，使用MQ完成事务在分布式的另外一个子系统上的操作，保证了动作一致性。所以整个消息的生产和消息的消费动作需要全部完成，才算一个事务结束</p>
-<p><img src="/img/2024/20240330082829.png" alt="erik.xyz"></p>
-<h5 id="3-4-TCC事务"><a href="#3-4-TCC事务" class="headerlink" title="3.4 TCC事务"></a>3.4 TCC事务</h5><p>TCC事务是Try、Confirm、Cancel三种指令的缩写，其逻辑模式类似于XA两阶段提交，但是实现方式是在代码层面人为实现。 2PC 和 3PC 都是数据库层面的，而 TCC 是业务层面的分布式事务。<br>这种事务模式特别适用于需要强一致性保证的分布式事务场景，除了上面提到的数据库层面的操作外,例如电商平台的订单系统、跨行转账、分布式资源预订系统以及金融交易处理等。<br>下图就是一个典型的分布式系统的原子性操作，涉及A、B、C三个服务的执行。 如果有一个服务 try 出问题，整个事务管理器就执行calcel，如果三个try都成功，才执行confirm做正式提交。<br><img src="/img/2024/20240330082849.png" alt="erik.xyz"></p>
+<p><img src="/img/2024/20240330082829.webp" alt="erik.xyz"></p>
+<h5 id="3-4-TCC事务"><a href="#3-4-TCC事务" class="headerlink" title="3.4 TCC事务"></a>3.4 TCC事务</h5><p>TCC事务是Try、Confirm、Cancel三种指令的缩写，其逻辑模式类似于XA两阶段提交，但是实现方式是在代码层面人为实现。 2PC 和 3PC 都是数据库层面的，而 TCC 是业务层面的分布式事务。<br>这种事务模式特别适用于需要强一致性保证的分布式事务场景，除了上面提到的数据库层面的操作外,例如电商平台的订单系统、跨行转账、分布式资源预订系统以及金融交易处理等。<br>下图就是一个典型的分布式系统的原子性操作，涉及A、B、C三个服务的执行。 如果有一个服务 try 出问题，整个事务管理器就执行calcel，如果三个try都成功，才执行confirm做正式提交。<br><img src="/img/2024/20240330082849.webp" alt="erik.xyz"></p>
 <p>如图，TCC事务分为三个阶段执行：</p>
 <ol>
 <li>Try阶段：主要是对业务系统做检测及资源预留。（执行2、3步骤）</li>
 <li>Confirm阶段：确认执行业务操作。如果Try阶段成功，则执行Confirm操作，提交事务。（执行4、5步骤）</li>
 <li>Cancel阶段：取消执行业务操作。如果Try阶段失败或超时，则执行Cancel操作，回滚事务。（执行4、5步骤）</li>
 </ol>
-<h5 id="3-5-最终补偿机制，同于MQ事务"><a href="#3-5-最终补偿机制，同于MQ事务" class="headerlink" title="3.5 最终补偿机制，同于MQ事务"></a>3.5 最终补偿机制，同于MQ事务</h5><p>最后使用补偿机制做最后的一致性保障，MQ方案尽量使用补偿机制进行保障。<br>如下图，对于发送成功，消费失败的消息，进入Dead-Letter Queu，使用单独的作业服务进行独立处理，比如重新发送死信消息进行消费，避免生产和消费的不一致，保证了最终的原子性、一致性。<br><img src="/img/2024/20240330083135.png" alt="erik.xyz"></p>
+<h5 id="3-5-最终补偿机制，同于MQ事务"><a href="#3-5-最终补偿机制，同于MQ事务" class="headerlink" title="3.5 最终补偿机制，同于MQ事务"></a>3.5 最终补偿机制，同于MQ事务</h5><p>最后使用补偿机制做最后的一致性保障，MQ方案尽量使用补偿机制进行保障。<br>如下图，对于发送成功，消费失败的消息，进入Dead-Letter Queu，使用单独的作业服务进行独立处理，比如重新发送死信消息进行消费，避免生产和消费的不一致，保证了最终的原子性、一致性。    </p>
+<p><img src="/img/2024/20240330083135.webp" alt="erik.xyz"></p>
 <p>本文转载自公众号：架构与思维</p>
 
       
@@ -982,6 +983,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日常</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">apache优化</a>
               </li>
              
@@ -995,10 +1000,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx隐藏index</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日常</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1054,19 +1055,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">centos安装chromium报错</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">chromium安装报错</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">svn</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">代码提交</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">centos安装chromium报错</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">chromium安装报错</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2963,10 +2964,6 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lichong.work" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>Ric&#39;s Blog</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://panzhixiang.cn" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>潘智祥</a>
             </li>
           
         </ul>

@@ -12,28 +12,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="keywords" content="艾瑞可erik,erik,艾瑞可Erik,艾瑞可,https://erik.xyz,erik.xyz">
-  <meta name="description" content="本文目录  尼恩说在前面  nginx-keepalived的高可用方案  Keepalived是什么？  VRRP虚拟路由冗余协议  VRRP协议的来源  VRRP的核心概念     虚拟路由器  VRRP路由器(物理实体) 虚拟路由器： 主控路由器主路由器（MASTER）：   题外话：ARP协议 ARP协议工作过程">
+  <meta name="description" content="本文目录  尼恩说在前面  nginx-keepalived的高可用方案  Keepalived是什么？  VRRP虚拟路由冗余协议  VRRP协议的来源">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Nginx高可用，如何实现IP跳跃&#x2F;IP漫游？">
 <meta property="og:url" content="https://erik.xyz/2024/01/19/nginx-gaokeyongiptioayue/index.html">
 <meta property="og:site_name" content="艾瑞可erik">
-<meta property="og:description" content="本文目录  尼恩说在前面  nginx-keepalived的高可用方案  Keepalived是什么？  VRRP虚拟路由冗余协议  VRRP协议的来源  VRRP的核心概念     虚拟路由器  VRRP路由器(物理实体) 虚拟路由器： 主控路由器主路由器（MASTER）：   题外话：ARP协议 ARP协议工作过程">
+<meta property="og:description" content="本文目录  尼恩说在前面  nginx-keepalived的高可用方案  Keepalived是什么？  VRRP虚拟路由冗余协议  VRRP协议的来源">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330084236.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330084718.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330084853.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330084925.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330085059.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330085457.png">
-<meta property="og:image" content="https://erik.xyz/img/2024/20240330085718.jpg">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330084236.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330084718.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330084853.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330084925.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330085059.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/202403300857181.webp">
+<meta property="og:image" content="https://erik.xyz/img/2024/20240330085718.webp">
 <meta property="article:published_time" content="2024-01-19T00:39:00.000Z">
-<meta property="article:modified_time" content="2024-03-30T01:20:38.908Z">
+<meta property="article:modified_time" content="2024-04-04T06:42:51.548Z">
 <meta property="article:author" content="艾瑞可erik">
 <meta property="article:tag" content="nginx">
 <meta property="article:tag" content="ip跳跃">
 <meta property="article:tag" content="ip漫游">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://erik.xyz/img/2024/20240330084236.png">
+<meta name="twitter:image" content="https://erik.xyz/img/2024/20240330084236.webp">
   
     <link rel="alternative" href="/rss.xml" title="艾瑞可erik" type="application/atom+xml">
   
@@ -418,7 +418,7 @@ var _hmt = _hmt || [];
 </li>
 <li><p>VRRP虚拟路由冗余协议</p>
 <ul>
-<li><p>VRRP协议的来源</p>
+<li>VRRP协议的来源<span id="more"></span>
 <ul>
 <li>VRRP的核心概念</li>
 </ul>
@@ -433,7 +433,7 @@ var _hmt = _hmt || [];
 </ul>
 </li>
 <li>题外话：ARP协议<ul>
-<li>ARP协议工作过程<span id="more"></span></li>
+<li>ARP协议工作过程</li>
 </ul>
 </li>
 <li><p>VRRP协议选举机制</p>
@@ -491,7 +491,7 @@ var _hmt = _hmt || [];
 </li>
 <li>说在最后</li>
 </ul>
-<h4 id="nginx-keepalived的高可用方案"><a href="#nginx-keepalived的高可用方案" class="headerlink" title="nginx-keepalived的高可用方案"></a>nginx-keepalived的高可用方案</h4><p>我们使用 nginx-keepalived双机热备机制，vip主机可以进行漂移，这样主机挂掉了，还有备用机可以顶上<br>具体的vip漂移架构图，如下：<br><img src="/img/2024/20240330084236.png" alt="erik.xyz"></p>
+<h4 id="nginx-keepalived的高可用方案"><a href="#nginx-keepalived的高可用方案" class="headerlink" title="nginx-keepalived的高可用方案"></a>nginx-keepalived的高可用方案</h4><p>我们使用 nginx-keepalived双机热备机制，vip主机可以进行漂移，这样主机挂掉了，还有备用机可以顶上<br>具体的vip漂移架构图，如下：<br><img src="/img/2024/20240330084236.webp" alt="erik.xyz"></p>
 <h4 id="Keepalived是什么？"><a href="#Keepalived是什么？" class="headerlink" title="Keepalived是什么？"></a>Keepalived是什么？</h4><p>Keepalived起初是为LVS设计的，专门用来监控集群系统中各个服务节点的状态，<br>Keepalived 是一款轻量级HA集群应用，它的设计初衷是为了做LVS集群的HA，即探测LVS健康情况，从而进行主备切换，不仅如此，还能够探测LVS代理的后端主机的健康状况，动态修改LVS转发规则。<br>当LVS进行主备切换的时候，对外提供服务的IP是如何做到切换的呢？<br>这就依赖于keepalived 所应用的vrrp协议，即Virtual Reduntant Routing Protocol，虚拟冗余路由协议。简单来讲，此协议是将IP设置在虚拟接口之上，根据一定的规则实现IP在物理主机上流动，即哪台主机可以占有该IP。<br>而且keepalived具有脚本调用接口，可通过脚本完成拓展功能。<br>它根据TCP/IP参考模型的第三、第四层、第五层交换机制检测每个服务节点的状态，如果某个服务器节点出现异常，或者工作出现故障，Keepalived将检测到，并将出现的故障的服务器节点从集群系统中剔除，这些工作全部是自动完成的，不需要人工干涉，需要人工完成的只是修复出现故障的服务节点。<br>后来Keepalived又加入了VRRP的功能，VRRP（VritrualRouterRedundancyProtocol,虚拟路由冗余协议)出现的目的是解决静态路由出现的单点故障问题，通过VRRP可以实现网络不间断稳定运行，因此Keepalvied一方面具有服务器状态检测和故障隔离功能，另外一方面也有HAcluster功能。<br>健康检查和失败切换是keepalived的两大核心功能。所谓的健康检查，就是采用tcp三次握手，icmp请求，http请求，udp echo请求等方式对负载均衡器后面的实际的服务器(通常是承载真实业务的服务器)进行保活；而失败切换主要是应用于配置了主备模式的负载均衡器，利用VRRP维持主备负载均衡器的心跳，当主负载均衡器出现问题时，由备负载均衡器承载对应的业务，从而在最大限度上减少流量损失，并提供服务的稳定性。    </p>
 <h4 id="VRRP虚拟路由冗余协议"><a href="#VRRP虚拟路由冗余协议" class="headerlink" title="VRRP虚拟路由冗余协议"></a>VRRP虚拟路由冗余协议</h4><p>虚拟路由冗余协议(Virtual Router Redundancy Protocol，简称VRRP)是由IETF提出的解决局域网中配置静态网关出现单点失效现象的路由协议，1998年已推出正式的RFC2338协议标准。<br>VRRP广泛应用在边缘网络中，它的设计目标是支持特定情况下IP数据流量失败转移不会引起混乱，允许主机使用单路由器，以及即使在实际第一跳路由器使用失败的情形下仍能够维护路由器间的连通性。    </p>
 <h5 id="VRRP协议的来源"><a href="#VRRP协议的来源" class="headerlink" title="VRRP协议的来源"></a>VRRP协议的来源</h5><p>在现实的网络环境中。主机之间的通信都是通过配置静态路由或者(默认网关)来完成的，而主机之间的路由器一旦发生故障，通信就会失效，因此这种通信模式当中，路由器就成了一个单点瓶颈，为了解决这个问题，就引入了VRRP协议。    </p>
@@ -504,16 +504,16 @@ var _hmt = _hmt || [];
 <h5 id="虚拟路由器"><a href="#虚拟路由器" class="headerlink" title="虚拟路由器"></a>虚拟路由器</h5><p>VRRP路由器(物理实体)<br>什么是VRRP路由器？<br>VRRP路由器是指运行VRRP的路由器，是物理实体；<br>虚拟路由器：<br>什么是虚拟路由器？<br>虚拟路由器是指VRRP协议创建的，是逻辑概念。一组VRRP路由器（物理实体）协同工作，共同构成一台虚拟路由器。该虚拟路由器对外表现为一个具有唯一固定的IP地址和MAC地址的逻辑路由器。    </p>
 <p>虚拟路由器是VRRP备份组中所有路由器的集合，它是一个逻辑概念，并不是正真存在的。从备份组外面看备份组中的路由器，感觉组中的所有路由器就像一个 一样，可以理解为在一个组中： 主路由器+所有备份路由器=虚拟路由器。    </p>
 <p>虚拟路由器有一个虚拟的IP地址和MAC地址。</p>
-<p>主机将虚拟路由器当作默认网关。虚拟MAC地址的格式为00-00-5E-00-01-{VRID}。通常情况下，虚拟路由器回应ARP请求使用的是虚拟MAC地址，只有虚拟路由器做特殊配置的时候，才回应接口的真实MAC地址。<br><img src="/img/2024/20240330084718.png" alt="erik.xyz"></p>
+<p>主机将虚拟路由器当作默认网关。虚拟MAC地址的格式为00-00-5E-00-01-{VRID}。通常情况下，虚拟路由器回应ARP请求使用的是虚拟MAC地址，只有虚拟路由器做特殊配置的时候，才回应接口的真实MAC地址。<br><img src="/img/2024/20240330084718.webp" alt="erik.xyz"></p>
 <h5 id="主控路由器主路由器（MASTER）："><a href="#主控路由器主路由器（MASTER）：" class="headerlink" title="主控路由器主路由器（MASTER）："></a>主控路由器主路由器（MASTER）：</h5><p>什么是主控路由器？</p>
 <p>处于同一个VRRP组中的路由器具有两种互斥的角色：主控路由器和备份路由器    </p>
 <p>一个VRRP组中有且只有一台处于主控角色的路由器，可以有一个或者多个处于备份角色的路由器VRRP协议从路由器组中选出一台作为主控路由器，负责ARP解析和转发IP数据包，组中的其他路由器作为备份的角色并处于待命状态。    </p>
-<p>虚拟路由器通过虚拟IP对外提供服务，而在虚拟路由器内部同一时间只有一台物理路由器对外提供服务，这台提供服务的物理路由器被称为主路由器。一般情况下Master是由选举算法产生，它拥有对外服务的虚拟IP，提供各种网络功能，如：ARP请求，ICMP数据转发等。<br><img src="/img/2024/20240330084853.png" alt="erik.xyz"></p>
-<p>当由于某种原因主控路由器发生故障时，其中的一台备份路由器能在瞬间的时延后升级为主控路由器，由于此切换非常迅速而且不用改变IP地址和MAC地址，故对终端使用者系统是透明的。<br><img src="/img/2024/20240330084925.png" alt="erik.xyz"></p>
+<p>虚拟路由器通过虚拟IP对外提供服务，而在虚拟路由器内部同一时间只有一台物理路由器对外提供服务，这台提供服务的物理路由器被称为主路由器。一般情况下Master是由选举算法产生，它拥有对外服务的虚拟IP，提供各种网络功能，如：ARP请求，ICMP数据转发等。<br><img src="/img/2024/20240330084853.webp" alt="erik.xyz"></p>
+<p>当由于某种原因主控路由器发生故障时，其中的一台备份路由器能在瞬间的时延后升级为主控路由器，由于此切换非常迅速而且不用改变IP地址和MAC地址，故对终端使用者系统是透明的。<br><img src="/img/2024/20240330084925.webp" alt="erik.xyz"></p>
 <p>一个局域网络内的所有主机都设置缺省路由，当网内主机发出的目的地址不在本网段时，报文将被通过缺省路由发往外部路由器，从而实现了主机与外部网络的通信。    </p>
 <p>当缺省路由器down掉（即端口关闭）之后，内部主机将无法与外部通信，如果路由器设置了VRRP时，那么这时，虚拟路由将启用备份路由器，从而实现全网通信。</p>
 <h5 id="题外话：ARP协议"><a href="#题外话：ARP协议" class="headerlink" title="题外话：ARP协议"></a>题外话：ARP协议</h5><p>地址解析协议，即ARP（Address Resolution Protocol），是根据IP地址获取物理地址的一个TCP/IP协议。    </p>
-<p>主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址。<br><img src="/img/2024/20240330085059.png" alt="erik.xyz"></p>
+<p>主机发送信息时将包含目标IP地址的ARP请求广播到局域网络上的所有主机，并接收返回消息，以此确定目标的物理地址。<br><img src="/img/2024/20240330085059.webp" alt="erik.xyz"></p>
 <pre><code>arp缓存：收到返回消息后将该IP地址和物理地址存入本机ARP缓存中并保留一定时间，下次请求时直接查询ARP缓存以节约资源。
 </code></pre><p>地址解析协议是建立在网络中各个主机互相信任的基础上的，局域网络上的主机可以自主发送ARP应答消息，其他主机收到应答报文时不会检测该报文的真实性就会将其记入本机ARP缓存；由此攻击者就可以向某一主机发送伪ARP应答报文，使其发送的信息无法到达预期的主机或到达错误的主机，这就构成了一个ARP欺骗。    </p>
 <p>ARP命令可用于查询本机ARP缓存中IP地址和MAC地址的对应关系、添加或删除静态对应关系等。    </p>
@@ -529,7 +529,8 @@ var _hmt = _hmt || [];
 <p>一般主路由器处于Master状态，备份路由器处于Backup状态。</p>
 <p>VRRP使用选举机制来确定路由器的状态，优先级选举：    </p>
 <p>1.VRRP组中IP拥有者。如果虚拟IP地址与VRRP组中的某台VRRP路由器IP地址相同，则此路由器为IP地址拥有者，这台路由器将被定位主路由器。 2.比较优先级。如果没有IP地址拥有者，则比较路由器的优先级，优先级的范围是0~255，优先级大的作为主路由器 3.比较IP地址。在没有Ip地址拥有者和优先级相同的情况下，IP地址大的作为主路由器。    </p>
-<p>如下图所示，虚拟IP为10.1.1.254，在VRRP组中没有IP地址拥有者，则比较优先级，很明显RB和RA的优先级要大于RC，则比较RA和RB的IP地址，RB的IP地址大。<br><img src="/img/2024/20240330085457.png" alt=""></p>
+<p>如下图所示，虚拟IP为10.1.1.254，在VRRP组中没有IP地址拥有者，则比较优先级，很明显RB和RA的优先级要大于RC，则比较RA和RB的IP地址，RB的IP地址大。</p>
+<p><img src="/img/2024/202403300857181.webp" alt=""></p>
 <p>所以RB为组中的主路由器。        </p>
 <h5 id="选举流程"><a href="#选举流程" class="headerlink" title="选举流程"></a>选举流程</h5><p>路由器使用VRRP 功能后，会根据优先级确定自己在备份组中的角色。优先级高的路由器成为Master 路由器，优先级低的成为Backup 路由器。    </p>
 <ul>
@@ -542,7 +543,7 @@ var _hmt = _hmt || [];
 <p>如果Backup 路由器的定时器超时后仍未收到Master 路由器发送来的VRRP报文，则认为Master 路由器已经无法正常工作，此时Backup 路由器会认为自己是Master 路由器，并对外发送VRRP报文。    </p>
 <p>备份组内的路由器根据优先级选举出Master 路由器，承担报文的转发功能。    </p>
 <h3 id="Keepalived体系结构"><a href="#Keepalived体系结构" class="headerlink" title="Keepalived体系结构"></a>Keepalived体系结构</h3><p>Keepalived起初是为LVS设计的，由于Keeplalived可以实现对集群节点的状态检测，而IPVS可以实现负载均衡功能，因此,Keepalived借助于第三方模块IPVS就可以很方便地搭建一套负载均衡系统。</p>
-<p>在Keepalived当中IPVS模块是可配置的，如果需要负载均衡功能，可以在编译Keepalived时开打负载均衡功能，也可以通过编译参数关闭。<br><img src="/img/2024/20240330085718.jpg" alt="erik.xyz"></p>
+<p>在Keepalived当中IPVS模块是可配置的，如果需要负载均衡功能，可以在编译Keepalived时开打负载均衡功能，也可以通过编译参数关闭。<br><img src="/img/2024/20240330085718.webp" alt="erik.xyz"></p>
 <p>keepalived运行时，会启动3个进程，分别为：core(核心进程)，check和vrrp - core：负责主进程的启动，维护和全局配置文件的加载； - check：负责健康检查 - vrrp：用来实现vrrp协议    </p>
 <p>SchedulerI/OMultiplexer是一个I/O复用分发调度器，它负载安排Keepalived所有内部的任务请求；</p>
 <p>Memory Mngt是一个内存管理机制，这个框架提供了访问内存的一些通用方法；</p>
@@ -1479,6 +1480,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日常</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">apache优化</a>
               </li>
              
@@ -1492,10 +1497,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx隐藏index</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日常</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1551,19 +1552,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">centos安装chromium报错</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">chromium安装报错</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">svn</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">代码提交</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">centos安装chromium报错</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">chromium安装报错</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3460,10 +3461,6 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lichong.work" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>Ric&#39;s Blog</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://panzhixiang.cn" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title"><i class="icon-link icon"></i>潘智祥</a>
             </li>
           
         </ul>
