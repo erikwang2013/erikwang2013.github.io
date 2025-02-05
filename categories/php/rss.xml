@@ -5,8 +5,12 @@
         <link>https://erik.xyz</link>
         <description>一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 03 Jan 2025 15:30:00 +0800</pubDate>
-        <lastBuildDate>Fri, 03 Jan 2025 15:30:00 +0800</lastBuildDate>
+        <pubDate>Sun, 12 Jan 2025 22:01:00 +0800</pubDate>
+        <lastBuildDate>Sun, 12 Jan 2025 22:01:00 +0800</lastBuildDate>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -17,18 +21,14 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
         <category>说说</category>
         <category>趣闻</category>
-        <category>nginx</category>
         <category>转载</category>
         <category>php库</category>
+        <category>nginx</category>
         <category>互联</category>
         <category>项目实战</category>
         <category>javascript</category>
@@ -40,6 +40,8 @@
         <category>http服务器</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>农业系统</category>
+        <category>系统设计</category>
         <category>克莱姆法则</category>
         <category>行列式</category>
         <category>n阶行列式</category>
@@ -56,9 +58,9 @@
         <category>优化</category>
         <category>摘要</category>
         <category>文章</category>
-        <category>游记</category>
         <category>ca证书</category>
         <category>证书生成</category>
+        <category>游记</category>
         <category>二战</category>
         <category>二战熊</category>
         <category>西伯利亚熊</category>
@@ -103,9 +105,11 @@
         <category>容器</category>
         <category>cncf</category>
         <category>监控</category>
+        <category>composer</category>
+        <category>composer部署</category>
+        <category>内网部署composer</category>
         <category>cphalcon</category>
         <category>cphalcon报错</category>
-        <category>composer</category>
         <category>css中的em</category>
         <category>响应式字体</category>
         <category>响应式布局样式</category>
@@ -163,14 +167,14 @@
         <category>go解密</category>
         <category>归</category>
         <category>吐槽</category>
-        <category>php大全</category>
-        <category>php资料</category>
         <category>hadoop</category>
         <category>hadoop2.8.0</category>
         <category>hadoop安装教程</category>
         <category>hadoop安装详细教程</category>
         <category>hadoop教程</category>
         <category>hadoop部署</category>
+        <category>php大全</category>
+        <category>php资料</category>
         <category>hadoop3</category>
         <category>hadoop配置</category>
         <category>log4j2</category>
@@ -211,11 +215,11 @@
         <category>lanmp</category>
         <category>php环境独立配置</category>
         <category>服务器</category>
-        <category>flash</category>
-        <category>表单</category>
         <category>劳动纠纷</category>
         <category>追缴工资</category>
         <category>申请仲裁</category>
+        <category>flash</category>
+        <category>表单</category>
         <category>linux报错</category>
         <category>linux中update-command-not-found</category>
         <category>linux运行命令报错</category>
@@ -453,10 +457,77 @@
         <category>php抓取图片</category>
         <category>php批量抓取页面图片</category>
         <category>邮箱服务器</category>
+        <category>正则表达式</category>
         <category>翻墙</category>
         <category>谷歌</category>
         <category>谷歌搜索</category>
-        <category>正则表达式</category>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2025/01/12/composer-intranet-deployment/</guid>
+            <title>composer内网部署</title>
+            <link>https://erik.xyz/2025/01/12/composer-intranet-deployment/</link>
+            <category>composer</category>
+            <category>composer部署</category>
+            <category>内网部署composer</category>
+            <pubDate>Sun, 12 Jan 2025 22:01:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;在内网环境中部署 Composer（PHP的依赖管理工具），通常是为了避免因外网访问限制而导致的依赖下载问题。内网部署 Composer 主要涉及配置一个 私有 Composer 仓库，或者使用 本地代理镜像 来加速和管理依赖。&lt;/p&gt;
+&lt;h3 id=&#34;1-使用-composer-json-设置依赖&#34;&gt;&lt;a href=&#34;#1-使用-composer-json-设置依赖&#34; class=&#34;headerlink&#34; title=&#34;1. 使用 composer.json 设置依赖&#34;&gt;&lt;/a&gt;&lt;b&gt;1. 使用 composer.json 设置依赖&lt;/b&gt;&lt;/h3&gt;&lt;p&gt;首先，确保你的 composer.json 文件包含所有项目依赖，并正确配置了包的版本和来源。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;name&amp;quot;: &amp;quot;vendor/project&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;require&amp;quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;quot;monolog/monolog&amp;quot;: &amp;quot;^2.0&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-使用代理镜像&#34;&gt;&lt;a href=&#34;#2-使用代理镜像&#34; class=&#34;headerlink&#34; title=&#34;2. 使用代理镜像&#34;&gt;&lt;/a&gt;&lt;b&gt;2. 使用代理镜像&lt;/b&gt;&lt;/h3&gt;&lt;p&gt;由于内网无法直接访问 Composer 官方的包仓库，常见的做法是使用国内镜像或搭建代理服务器，常见的方案包括使用 阿里云 Composer 镜像 或 私有镜像仓库。&lt;/p&gt;
+&lt;p&gt; &lt;b&gt;2.1 使用国内镜像源&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;你可以通过配置 Composer 使用国内镜像源来加速依赖包的下载。在 Composer 中，你可以使用下面的命令设置国内镜像：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;composer config repo.packagist composer https://mirrors.aliyun.com/composer/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;这个命令将 packagist.org 源更换为阿里云的镜像源。&lt;/p&gt;
+&lt;p&gt;你还可以通过在 composer.json 文件中进行设置，强制使用镜像源：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;repositories&amp;quot;: [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;quot;type&amp;quot;: &amp;quot;composer&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;quot;url&amp;quot;: &amp;quot;https://mirrors.aliyun.com/composer/&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这样每次执行 composer install 时，都会从阿里云的镜像源下载依赖。&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;2.2 配置自建 Composer 镜像代理&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;如果你想在企业内部完全控制包管理，可以搭建自己的 Composer 镜像代理。常见的选择包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Satis：一个官方提供的工具，用来搭建私有的 Composer 仓库。&lt;/li&gt;
+&lt;li&gt;Private Packagist：一个商业解决方案，专门用于在私有环境中管理 Composer 包。&lt;/li&gt;
+&lt;li&gt;Sinopia (npm 仓库代理工具)：可以作为私有的 Composer 仓库代理使用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;2.2.1 使用 Satis 搭建私有 Composer 仓库&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Satis 是 Composer 官方提供的一个轻量级工具，专门用于创建私有的 Composer 仓库。通过使用 Satis，你可以将内网环境下常用的依赖缓存下来，并提供给项目中使用。&lt;/p&gt;
+&lt;p&gt;步骤：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;安装 Satis：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;使用 Composer 安装 Satis：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;composer require composer/satis&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;配置 Satis：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在你的服务器上创建一个 satis.json 配置文件，指定你希望托管的包源。&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;name&amp;quot;: &amp;quot;my-private-repo&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;homepage&amp;quot;: &amp;quot;https://example.com/packages&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;repositories&amp;quot;: [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;quot;type&amp;quot;: &amp;quot;vcs&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;quot;url&amp;quot;: &amp;quot;https://github.com/some/package&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;quot;type&amp;quot;: &amp;quot;composer&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;quot;url&amp;quot;: &amp;quot;https://packagist.org&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ],&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;output-dir&amp;quot;: &amp;quot;/path/to/output&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;生成静态资源：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;运行以下命令生成静态的 Composer 包：&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;php bin/satis build satis.json /path/to/output&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;提供访问：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;你可以通过 Web 服务器（如 Nginx 或 Apache）提供访问静态资源。这样，其他项目就能通过你的内部 Satis 仓库获取依赖了。&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;2.2.2 配置 Composer 使用私有仓库&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;在 composer.json 中配置私有仓库（例如，你的公司内部搭建的 Satis 仓库）。&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;repositories&amp;quot;: [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;quot;type&amp;quot;: &amp;quot;composer&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;quot;url&amp;quot;: &amp;quot;http://your-internal-repository.com&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这样，Composer 会从你配置的私有仓库中拉取依赖。&lt;/p&gt;
+&lt;h3 id=&#34;3-离线安装-Composer-依赖&#34;&gt;&lt;a href=&#34;#3-离线安装-Composer-依赖&#34; class=&#34;headerlink&#34; title=&#34;3. 离线安装 Composer 依赖&#34;&gt;&lt;/a&gt;&lt;b&gt;3. 离线安装 Composer 依赖&lt;/b&gt;&lt;/h3&gt;&lt;p&gt;如果内网无法访问外部网络，也可以考虑在有外网访问权限的机器上下载依赖包，然后将它们导入到内网机器中进行安装。&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;3.1  在有外网的机器上下载依赖&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;在能够访问外网的机器上执行 composer install。&lt;br&gt;下载完成后，将 vendor 目录及 composer.lock 文件拷贝到内网服务器相同位置。&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;3.2 使用 —prefer-dist 参数&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;你还可以使用 composer install —prefer-dist 来下载 .tar.gz 或 .zip 格式的包，这样可以方便地进行离线安装。&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;3.3 配置 COMPOSER_HOME&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;如果你希望在内网机器上使用本地缓存的包，可以设置 COMPOSER_HOME 环境变量来指定 Composer 缓存目录。&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;export COMPOSER_HOME=/path/to/composer/cache&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后，将缓存目录复制到内网机器，确保 Composer 能够使用这些缓存。&lt;/p&gt;
+&lt;h3 id=&#34;4-其他考虑&#34;&gt;&lt;a href=&#34;#4-其他考虑&#34; class=&#34;headerlink&#34; title=&#34;4. 其他考虑&#34;&gt;&lt;/a&gt;&lt;b&gt;4. 其他考虑&lt;/b&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;代理配置：如果内网可以通过 HTTP 代理访问外网，确保 Composer 配置了代理。在 composer.json 中配置代理，或者使用环境变量来指定代理：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;export HTTP_PROXY=http://proxy.example.com:8080&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;export HTTPS_PROXY=http://proxy.example.com:8080&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;私有包的权限：如果你使用了私有 Composer 仓库或 GitHub 仓库，记得配置好认证方式（如使用 auth.json 文件存储 GitHub Token）。&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://erik.xyz/2025/01/03/php-serial-port-development/</guid>
             <title>php串口开发</title>
@@ -2487,18 +2558,6 @@ findMoney(34);
             <category>php技术</category>
             <pubDate>Fri, 10 Nov 2017 21:18:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;php加密，最早接触的是php5.3版本，zend的加密技术。解密还要安装扩展运行，解密后的代码不可运行。 php目前官方介绍了几种加密扩展： crack扩展，官方目前不扩绑在php中， caprng扩展，目前支持5.2以上版本, hash扩展， mcrypt扩展，php7.1.0废除，php7.2.0会移到pecl, mhash扩展， openssl扩展，opessl库来对称/非对称加解密，以及 PBKDF2、 PKCS7、 PKCS12、 X509 和其他加密操作, 密码散列算法 API 提供了简单易用的 &lt;a href=&#34;http://php.net/manual/zh/function.crypt.php&#34;&gt;crypt()&lt;/a&gt; 包装， 以一种简洁易用安全的方式创建和管理密码。 网友给出的加密技术： md5加密， crypt加密算法， sha1加密算法， url编码加密技术， Base64信息编码加密。 加密扩展呢，在官方文档里有介绍使用方法，这个大家自己可以去看看。   具体不详细介绍，参考php官方文档&lt;a href=&#34;http://php.net/manual/zh/&#34;&gt;http://php.net/manual/zh/&lt;/a&gt;&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://erik.xyz/2017/10/13/you-guan-composer/</guid>
-            <title>有关composer</title>
-            <link>https://erik.xyz/2017/10/13/you-guan-composer/</link>
-            <category>composer</category>
-            <category>composer安装</category>
-            <category>composer配置</category>
-            <category>项目创建composer</category>
-            <pubDate>Fri, 13 Oct 2017 21:19:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;composer是php5.3以上 的一个依赖管理工具。简单来说就是你在composer里面可以找到各种优秀的第三方扩展。可以丰富自己的项目节省开发时间。&lt;br&gt;首先要在你本地win电脑安装composer&lt;br&gt;安装成功后用命令窗口去安装打开目录执行：  echo @php “%~dp0composer.phar” %*&amp;gt;composer.bat&lt;br&gt;关闭命令窗口重新打开  执行 ： composer 结果如图&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg&#34; alt=&#34;有关composer&#34;&gt;&lt;/a&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;表示已经安装成功了。 然后把镜像地址换到国内&lt;br&gt;执行：composer config -g repo.packagist composer &lt;a href=&#34;https://packagist.phpcomposer.com&#34;&gt;https://packagist.phpcomposer.com&lt;/a&gt;&lt;br&gt;之后执行 composer install  全局安装。&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg&#34; alt=&#34;composer install&#34;&gt;&lt;/a&gt;&lt;br&gt;顺便再次执行：composer update   更新。&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/a306c860af2fae0as.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/a306c860af2fae0as.jpg&#34; alt=&#34;composer update&#34;&gt;&lt;/a&gt;&lt;br&gt;然后进入到你所在的项目目录执行： composer init  开始创建自己项目的composer.json&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg&#34; alt=&#34;有关composer&#34;&gt;&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

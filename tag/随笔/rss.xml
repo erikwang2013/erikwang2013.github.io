@@ -5,8 +5,12 @@
         <link>https://erik.xyz</link>
         <description>一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 23 Oct 2019 09:57:00 +0800</pubDate>
-        <lastBuildDate>Wed, 23 Oct 2019 09:57:00 +0800</lastBuildDate>
+        <pubDate>Wed, 05 Feb 2025 13:16:00 +0800</pubDate>
+        <lastBuildDate>Wed, 05 Feb 2025 13:16:00 +0800</lastBuildDate>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -17,18 +21,14 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
         <category>说说</category>
         <category>趣闻</category>
-        <category>nginx</category>
         <category>转载</category>
         <category>php库</category>
+        <category>nginx</category>
         <category>互联</category>
         <category>项目实战</category>
         <category>javascript</category>
@@ -40,6 +40,8 @@
         <category>http服务器</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>农业系统</category>
+        <category>系统设计</category>
         <category>克莱姆法则</category>
         <category>行列式</category>
         <category>n阶行列式</category>
@@ -56,9 +58,9 @@
         <category>优化</category>
         <category>摘要</category>
         <category>文章</category>
-        <category>游记</category>
         <category>ca证书</category>
         <category>证书生成</category>
+        <category>游记</category>
         <category>二战</category>
         <category>二战熊</category>
         <category>西伯利亚熊</category>
@@ -103,9 +105,11 @@
         <category>容器</category>
         <category>cncf</category>
         <category>监控</category>
+        <category>composer</category>
+        <category>composer部署</category>
+        <category>内网部署composer</category>
         <category>cphalcon</category>
         <category>cphalcon报错</category>
-        <category>composer</category>
         <category>css中的em</category>
         <category>响应式字体</category>
         <category>响应式布局样式</category>
@@ -163,14 +167,14 @@
         <category>go解密</category>
         <category>归</category>
         <category>吐槽</category>
-        <category>php大全</category>
-        <category>php资料</category>
         <category>hadoop</category>
         <category>hadoop2.8.0</category>
         <category>hadoop安装教程</category>
         <category>hadoop安装详细教程</category>
         <category>hadoop教程</category>
         <category>hadoop部署</category>
+        <category>php大全</category>
+        <category>php资料</category>
         <category>hadoop3</category>
         <category>hadoop配置</category>
         <category>log4j2</category>
@@ -211,11 +215,11 @@
         <category>lanmp</category>
         <category>php环境独立配置</category>
         <category>服务器</category>
-        <category>flash</category>
-        <category>表单</category>
         <category>劳动纠纷</category>
         <category>追缴工资</category>
         <category>申请仲裁</category>
+        <category>flash</category>
+        <category>表单</category>
         <category>linux报错</category>
         <category>linux中update-command-not-found</category>
         <category>linux运行命令报错</category>
@@ -453,10 +457,22 @@
         <category>php抓取图片</category>
         <category>php批量抓取页面图片</category>
         <category>邮箱服务器</category>
+        <category>正则表达式</category>
         <category>翻墙</category>
         <category>谷歌</category>
         <category>谷歌搜索</category>
-        <category>正则表达式</category>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2025/02/05/baimasi/</guid>
+            <title>白马寺</title>
+            <link>https://erik.xyz/2025/02/05/baimasi/</link>
+            <category>随笔</category>
+            <pubDate>Wed, 05 Feb 2025 13:16:00 +0800</pubDate>
+            <description><![CDATA[ &lt;pre&gt;&lt;code&gt;      白马寺
+
+千年风霜斑驳目，新出寰宇客来慕。
+佛丘已非今朝时，独得枯木逢春时。
+&lt;/code&gt;&lt;/pre&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://erik.xyz/2019/10/23/you-lifte-sun-money/</guid>
             <title>你有多土，就有多穷</title>
@@ -1340,22 +1356,6 @@ function resize_image($filename, $tmpname, $xmax, $ymax)
             <category>随笔吐槽</category>
             <pubDate>Wed, 19 Nov 2014 20:47:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;乌镇，中国历史上的千年古镇。旅游的好地方，咋看和互联网大会不找边啊，几千年留下的历史建筑同现在科技结合在一起岸，给太多的疑惑了。跟着这些疑惑先去百度一下。 &lt;img src=&#34;http://i1.tietuku.com/2d6c4e9df4ed6e87.png&#34; alt=&#34;百度截图&#34;&gt; 百度只给了这个简单的介绍，介绍后面提到互联网大会。还是有点晕乎，到底为什么在乌镇举行互联网大会，为什么不是北上广深任一城市？后来才发现，原来乌镇是全国最早、最快运用互联网、互联网经济最发达的地方，当然也有主办方有意让互联网大会坐落在一个小镇上。第一节世界互联网大会就这么在乌镇开始了，没有柏油路，没有玻璃窗，所有的原貌依旧，一种古老的气息同店铺里扫描支付、石板路上的无线高速wi-fi显得格外有意思。 互联网大会将聚集十几个国家地区的公司代表，为期三天，共同探讨世界互联网发展。第一届就这么开始了。&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://erik.xyz/2014/11/04/wei-ni-zai-gan-ma/</guid>
-            <title>喂，你在干嘛</title>
-            <link>https://erik.xyz/2014/11/04/wei-ni-zai-gan-ma/</link>
-            <category>随笔</category>
-            <category>说说</category>
-            <category>随笔吐槽</category>
-            <pubDate>Tue, 04 Nov 2014 18:21:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;不是春天也不是秋天，每年都是一个天。&lt;/p&gt;
-&lt;p&gt;没有妒忌，没有贪婪，只有静静的相伴&lt;/p&gt;
-&lt;p&gt;山不在有，路不再远，而我还是满脸无言&lt;/p&gt;
-&lt;p&gt;有着四季给予的抚爱，却总是缠缠绵绵&lt;/p&gt;
-&lt;p&gt;透过朦胧的小道，我看到门的边缘&lt;/p&gt;
-&lt;p&gt;其实，我在边，我的世界在变。&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
