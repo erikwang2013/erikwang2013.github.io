@@ -1,4 +1,4 @@
-// 音乐播放插件 
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>// 音乐播放插件 
 // 只包括播放暂停，下一曲  以及显示歌曲名称 歌手以及 实时进度
 // github： https://github.com/IFmiss/music
 
