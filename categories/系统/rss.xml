@@ -5,8 +5,8 @@
         <link>https://erik.xyz</link>
         <description>一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 23 Aug 2024 22:37:00 +0800</pubDate>
-        <lastBuildDate>Fri, 23 Aug 2024 22:37:00 +0800</lastBuildDate>
+        <pubDate>Fri, 27 Jun 2025 10:12:00 +0800</pubDate>
+        <lastBuildDate>Fri, 27 Jun 2025 10:12:00 +0800</lastBuildDate>
         <category>php扩展</category>
         <category>php技巧</category>
         <category>php类库</category>
@@ -26,36 +26,36 @@
         <category>php实例</category>
         <category>说说</category>
         <category>趣闻</category>
-        <category>nginx</category>
         <category>转载</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
         <category>javascript</category>
+        <category>nginx</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
         <category>http</category>
         <category>http服务器</category>
-        <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>负载均衡</category>
+        <category>克莱姆法则</category>
+        <category>行列式</category>
+        <category>n阶行列式</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>支付系统</category>
         <category>支付</category>
-        <category>克莱姆法则</category>
-        <category>行列式</category>
-        <category>n阶行列式</category>
         <category>centos</category>
         <category>linux</category>
         <category>apache优化</category>
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
+        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
-        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -121,12 +121,12 @@
         <category>快速排序</category>
         <category>冒泡排序</category>
         <category>二分查找</category>
+        <category>datahub</category>
+        <category>datahub安装</category>
         <category>deepin</category>
         <category>emergency</category>
         <category>emergency mode</category>
         <category>deepin黑屏</category>
-        <category>datahub</category>
-        <category>datahub安装</category>
         <category>清理系统</category>
         <category>清理c盘</category>
         <category>dns</category>
@@ -142,6 +142,9 @@
         <category>elasticsearch</category>
         <category>elasticsearch搭建</category>
         <category>elasticsearch集群</category>
+        <category>系统</category>
+        <category>emm</category>
+        <category>mdm</category>
         <category>phone</category>
         <category>手机</category>
         <category>新闻</category>
@@ -157,8 +160,8 @@
         <category>go获取ip</category>
         <category>im</category>
         <category>go中pdf生成</category>
-        <category>go中限流</category>
         <category>go对接快递签名</category>
+        <category>go中限流</category>
         <category>go时间获取</category>
         <category>go类型转换</category>
         <category>微服务</category>
@@ -184,9 +187,9 @@
         <category>hbase</category>
         <category>http1.1</category>
         <category>http2.0</category>
-        <category>hyperf</category>
         <category>会话</category>
         <category>会话原理</category>
+        <category>hyperf</category>
         <category>杂录</category>
         <category>新冠肺炎</category>
         <category>springboot</category>
@@ -464,6 +467,47 @@
         <category>翻墙</category>
         <category>谷歌</category>
         <category>谷歌搜索</category>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2025/06/27/emm-mdm-systems/</guid>
+            <title>EMM与MDM系统详解</title>
+            <link>https://erik.xyz/2025/06/27/emm-mdm-systems/</link>
+            <category>系统</category>
+            <category>emm</category>
+            <category>mdm</category>
+            <pubDate>Fri, 27 Jun 2025 10:12:00 +0800</pubDate>
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;EMM（Enterprise Mobility Management，企业移动化管理）和MDM（Mobile Device Management，移动设备管理）是企业用于安全管理移动设备、应用及数据的核心技术体系。下面从定义、功能、演进和应用场景等方面进行系统说明：&lt;/p&gt;
+&lt;p&gt;📱 一、核心概念&lt;br&gt;MDM（移动设备管理）&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;定义：专注于移动设备（如手机、平板）的全生命周期管理，包括注册、配置、监控、远程控制（如锁定/擦除）及停用146。&lt;/p&gt;
+&lt;p&gt;适用场景：适用于企业统一配发的设备（如物流手持终端、公司手机），需完全控制硬件和操作系统39。&lt;/p&gt;
+&lt;p&gt;EMM（企业移动化管理）&lt;/p&gt;
+&lt;p&gt;定义：MDM的扩展，是一套综合解决方案，除设备管理外，还包含移动应用管理（MAM）、移动内容管理（MCM）、移动身份管理（MIM）等组件，目标是在保障安全的前提下提升移动办公效率189。&lt;/p&gt;
+&lt;p&gt;核心能力：支持BYOD（自带设备办公），通过“容器化”技术隔离企业数据与个人数据，实现细粒度控制（如仅擦除企业应用数据）59。&lt;/p&gt;
+&lt;p&gt;⚙️ 二、核心功能组件&lt;br&gt;EMM通过以下模块协同工作：&lt;/p&gt;
+&lt;p&gt;MDM：设备注册、策略配置（密码复杂度、加密）、远程擦除16。&lt;/p&gt;
+&lt;p&gt;MAM（移动应用管理）：&lt;/p&gt;
+&lt;p&gt;企业应用商店分发、静默安装/更新；&lt;/p&gt;
+&lt;p&gt;控制应用权限（如禁止截屏/粘贴）19。&lt;/p&gt;
+&lt;p&gt;MCM（移动内容管理）：&lt;/p&gt;
+&lt;p&gt;安全分发企业文件（如合同、报表）；&lt;/p&gt;
+&lt;p&gt;数据加密存储，限制分享至非授权应用18。&lt;/p&gt;
+&lt;p&gt;MIM（移动身份管理）：&lt;/p&gt;
+&lt;p&gt;单点登录（SSO）、多因素认证；&lt;/p&gt;
+&lt;p&gt;基于角色/设备状态动态调整访问权限18。&lt;/p&gt;
+&lt;p&gt;📊 三、MDM与EMM的区别&lt;br&gt;维度    MDM    EMM&lt;br&gt;管理对象    设备硬件及操作系统    设备+应用+数据+身份&lt;br&gt;控制粒度    设备级（全盘控制）    应用/数据级（如仅管理企业容器）&lt;br&gt;适用场景    企业统一配发设备（COBO/COPE）    BYOD（员工个人设备）为主&lt;br&gt;隐私兼容性    低（需完全控制设备）    高（隔离企业数据，保护个人隐私）&lt;br&gt;演进关系    EMM的基础组件    MDM的扩展与升级&lt;br&gt;示例：在BYOD场景中，EMM允许员工用个人手机访问企业邮箱，但仅对企业邮箱App内的数据加密并远程擦除，不影响个人照片等隐私内容59。&lt;/p&gt;
+&lt;p&gt;⏳ 四、技术演进：从MDM到EMM&lt;br&gt;移动管理技术经历了三个阶段：&lt;/p&gt;
+&lt;p&gt;设备驱动阶段（2007-2012）：MDM主导，功能限于设备注册、密码策略、远程擦除210。&lt;/p&gt;
+&lt;p&gt;应用管理阶段（2011-2013）：MAM兴起，引入沙箱/容器隔离企业应用数据，适应BYOD需求25。&lt;/p&gt;
+&lt;p&gt;内容与身份融合阶段（2013至今）：&lt;/p&gt;
+&lt;p&gt;EMM整合MCM/MIM，实现基于角色、位置、设备状态的动态策略（如“出差时禁止访问财务系统”）10；&lt;/p&gt;
+&lt;p&gt;向UEM（统一端点管理）演进，覆盖PC、IoT等更多终端35。&lt;/p&gt;
+&lt;p&gt;🏢 五、企业应用价值&lt;br&gt;安全提升：防止数据泄露（如阻断企业文件保存至个人云盘）、抵御越狱/root设备风险16。&lt;/p&gt;
+&lt;p&gt;效率优化：&lt;/p&gt;
+&lt;p&gt;自动分发应用（如销售团队统一安装CRM工具）；&lt;/p&gt;
+&lt;p&gt;远程故障排查，减少现场支持成本9。&lt;/p&gt;
+&lt;p&gt;合规支持：满足GDPR等法规要求，审计日志记录敏感操作68。&lt;/p&gt;
+&lt;p&gt;💎 总结&lt;br&gt;MDM是移动管理的起点，聚焦设备控制；EMM是更成熟的解决方案，通过应用/数据/身份的精细管理，在安全与员工体验间取得平衡。随着远程办公普及，EMM已成为企业移动化转型的核心基础设施，并持续向跨终端、智能化的UEM方向演进358。&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://erik.xyz/2024/08/23/disk-cleanup/</guid>
             <title>清理c盘</title>
