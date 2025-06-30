@@ -1,0 +1,22 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"php集成环境\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2014/10/12/php-ji-cheng-huan-jing/",
+            "url": "https://erik.xyz/2014/10/12/php-ji-cheng-huan-jing/",
+            "title": "php集成环境",
+            "date_published": "2014-10-12T02:17:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>单独配置php环境比较浪费时间，用集成环境速度快，但是添加扩展比较麻烦，总之各有好处。</p>\n<h3 id=\"win系统中php集成环境\"><a href=\"#win系统中php集成环境\" class=\"headerlink\" title=\"win系统中php集成环境\"></a>win系统中php集成环境</h3><p>phpstudy这个集成目前算是比较优秀的基本上涵盖所有php版本和服务其配置，可以任意切换不同版本，相对于开发者来说，一些框架的特殊要求，不必再来回更换php版本。 下载地址 <a href=\"https://sourceforge.net/projects/erik1314/files/win_all/phpStudy-x64.zip\">phpStudy-x64.zip</a> <a href=\"https://sourceforge.net/projects/erik1314/files/win_all/phpStudy-install.zip\">phpStudy-install.zip</a> <a href=\"https://sourceforge.net/projects/erik1314/files/win_all/phpStudy2014.1404454619.rar\">phpStudy2014.1404454619.rar</a> <a href=\"https://sourceforge.net/projects/erik1314/files/win_all/phpStudy2013.zip\">phpStudy2013.zip</a> 默认mysql用户名密码都是root appserv集成环境也一般般，只是目前只看到32位的，不过也符合一些公司使用 下载地址 <a href=\"https://sourceforge.net/projects/erik1314/files/win_all/appserv-win32-2.5.10.exe\">appserv-win32-2.5.10.exe</a>  <span id=\"more\"></span></p>\n<h3 id=\"linux集成环境\"><a href=\"#linux集成环境\" class=\"headerlink\" title=\"linux集成环境\"></a>linux集成环境</h3><p>笔者刚开始接触php由于配置比较繁琐，花费时间量大，干脆在百度上找找看有没有集成环境，后来找到了。 wdlinux这是一款专注于linux集成的环境，对于配置大有好处，后台还有专门的管理界面，可以分站点建立多个网站 下载地址 <a href=\"https://sourceforge.net/projects/erik1314/files/linux_all/wdcp.sh\">wdlinux</a> wget <a href=\"https://sourceforge.net/projects/erik1314/files/linux_all/wdcp.sh\">https://sourceforge.net/projects/erik1314/files/linux_all/wdcp.sh</a> <a href=\"https://sourceforge.net/projects/erik1314/files/linux_all/lanmp_v2.5.tar.gz\">lanmp_v2.5.tar.gz</a> wget <a href=\"https://sourceforge.net/projects/erik1314/files/linux\\_all/lanmp\\_v2.5.tar.gz\">https://sourceforge.net/projects/erik1314/files/linux\\_all/lanmp\\_v2.5.tar.gz</a> wdcp管理系统后台访问地址 <a href=\"http://ip:8080\">http://ip:8080</a> 默认用户密码 admin wdlinux.cn mysql默认的用户密码 root wdlinux.cn phpstudy我就不过多介绍了，也有linux版本的 下载地址 <a href=\"https://sourceforge.net/projects/erik1314/files/linux_all/phpstudy.bin\">phpstudy</a> wget <a href=\"https://sourceforge.net/projects/erik1314/files/linux_all/phpstudy.bin\">https://sourceforge.net/projects/erik1314/files/linux_all/phpstudy.bin</a></p>\n",
+            "tags": [
+                "php",
+                "php服务器",
+                "php环境",
+                "php集成环境",
+                "服务器集成环境"
+            ]
+        }
+    ]
+}

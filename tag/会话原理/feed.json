@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"会话原理\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2017/10/20/hui-hua-yuan-li/",
+            "url": "https://erik.xyz/2017/10/20/hui-hua-yuan-li/",
+            "title": "会话原理",
+            "date_published": "2017-10-20T13:18:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>最近公司招聘新员工，面试中有提到会话原理，我懵了一下。 会话原理是什么？ 首先解释一下什么是会话。在计算机术语中，会话是指一个终端用户与交互系统进行通讯的过程，比如从输入账户密码进入操作系统到退出操作系统就是一个会话过程。会话较多用于网络上，TCP的三次握手就创建了一个会话，TCP关闭连接就是关闭会话。用平述的语言可以解释为：你拔打你女友的电话号码，你女友接听，然后一翻“亲爱的”，直到任何一方挂掉电话，这个过程就是一个会话。你挑逗一只小狗，它跟你互动，也是会话；它不鸟你，那就不形成会话。 这不是就是服务端与用户端的通信，或者说用户端登录服务端的认证。 她可以使服务器间的通信，浏览器与网站的通信…… 可以用传统的cookie、session机制实现。也可以用令牌认证实现。这其中包含：创建会话 、认证会话 、获取会话信息、会话时长限制、销毁会话。 通俗的就是一个用户登录到一网站，并浏览网站数据，然后离开的过程。 其实，就是登录认证服务。</p>\n",
+            "tags": [
+                "会话",
+                "会话原理"
+            ]
+        }
+    ]
+}

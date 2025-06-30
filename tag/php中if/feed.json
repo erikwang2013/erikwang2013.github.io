@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"php中if\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2017/08/08/php-zhong-if-zhu-yi-shi-xiang/",
+            "url": "https://erik.xyz/2017/08/08/php-zhong-if-zhu-yi-shi-xiang/",
+            "title": "php中if注意事项",
+            "date_published": "2017-08-08T03:59:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>最近偶然发现php中if有个自动处理比较的参数<br><img src=\"http://erik.xyz/wp-content/uploads/2017/08/11.jpg\" alt=\"\"><br>例如 </p>\n<ol>\n<li>$a=’adasds’; if($a==0){ echo “GGGG”; }else{ echo “KKKK”; } 结果输出 GGGG 这是if判断$a时会检测字符串中最开始有误数字，无数字就返回0 所以返回 GGGG</li>\n<li>$a=’55adasds’; if($a==55){ echo “GGGG”; }else{ echo “KKKK”; } 结果  GGGG if判断会检测$a中开头是否有数字，有数字就返回数字，所以结果 GGGG</li>\n<li>$a=’ad55asds’;或$a=’adasds55’; if($a==55){ echo “GGGG”; }else{ echo “KKKK”; } 结果 KKKK 说明if判断时检测$a不会检测中间和最后面是否有数字，且结果直接返回0； 综上示例 if判断时如果定义变量是整型就不会出现此问题，如果是字符串就要考虑示例1,2的存在。</li>\n</ol>\n",
+            "tags": [
+                "php中if",
+                "php中if判断",
+                "php的if"
+            ]
+        }
+    ]
+}

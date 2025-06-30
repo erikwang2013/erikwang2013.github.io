@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"微信支付回调\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2017/07/17/php-dui-jie-wei-xin-zhi-fu-wen-ti/",
+            "url": "https://erik.xyz/2017/07/17/php-dui-jie-wei-xin-zhi-fu-wen-ti/",
+            "title": "php对接微信支付问题",
+            "date_published": "2017-07-16T19:04:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>官方文档比较简略，demo教程基本没参数注释，看代码找吧。<br>支付 扫码支付 native.php<br>模式二</p>\n<p>$input-&gt;SetBody(“test”);  //描述 </p>\n<p>$input-&gt;SetAttach(“test”); //订单id 附件自定义数据，会会原样返回 </p>\n<p>$input-&gt;SetGoods_tag(“test”);  //代金券或立减优惠功能的参数 </p>\n<p>$input-&gt;SetNotify_url（‘url’); //指定回调地址 </p>\n<p>$input-&gt;SetProduct_id(‘test’); //商户订单号 如果用模式一就要去微信公众平台配置回调地址 ，模式二就不用配置   <span id=\"more\"></span></p>\n<p>回调 官方给出参考 notify.php 那就根据notify.php来自己定义回调地址 notify.php 中定位到WxPay.Api.php下 notify()方法 //获取通知的数据//获取通知的数据 </p>\n<p>$xml = $GLOBALS[‘HTTP_RAW_POST_DATA’]; </p>\n<p>但是 $GLOBALS[‘HTTP_RAW_POST_DATA’];</p>\n<p>无论怎么都获取不到数据 模拟环境也是如此 查查资料其实 $GLOBALS[‘HTTP_RAW_POST_DATA’] 就如同 file_get_contents(‘php://input’) 官方这个大概是14年左右的东西，而我服务器是php7果断换掉 结果数据获取正常 回调能获取数据以后，为了保证安全需要验证签名。总不能自己在搞一套验证吧，等着用呢。 </p>\n<p>从官方demo中找到蛛丝马迹，里面有已经写好的签名验证，直接调用 规则还是从WxPay.Api.php下的notify()方法 //如果返回成功则验证签名//如果返回成功则验证签名 try { $result = WxPayResults::Init($xml); } catch (WxPayException $e){ $msg = $e-&gt;errorMessage(); return false; } 至于文件怎么引入就不解释， 自己慢慢弄一遍吧。 有时间自己也试着写一套签名验证。</p>\n",
+            "tags": [
+                "php对接微信支付",
+                "微信支付",
+                "微信支付回调"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"centos软件安装\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2015/03/16/centos-zhong-ruan-jian-an-zhuang/",
+            "url": "https://erik.xyz/2015/03/16/centos-zhong-ruan-jian-an-zhuang/",
+            "title": "centos中软件安装",
+            "date_published": "2015-03-15T23:45:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>在centos中我们想要安装软件，一般都是用yum，在安装软件前首先是查询软件<br>例如安装 samba网上邻居<br>查询： rpm -qa | grep -i samba<br><a href=\"http://i2.tietuku.com/a8fca0536413f0a7.png\"><img src=\"http://i2.tietuku.com/a8fca0536413f0a7.png\" alt=\"\"></a><br>查询一下相关软件  yum search samba 找到后，就安装 yum install samba 安装完毕，<br>要修改配置文件，就需要找到文件路径 执行  rpm -qc samba samba-common<br><a href=\"http://i2.tietuku.com/17d07aa8d4d9d680.png\"><img src=\"http://i2.tietuku.com/17d07aa8d4d9d680.png\" alt=\"\"></a><br>接下来要启动软件，先查询一下启动方式 rpm -ql samba | grep ‘/etc’<br><a href=\"http://i2.tietuku.com/27c9d5d59ea177a5.png\"><img src=\"http://i2.tietuku.com/27c9d5d59ea177a5.png\" alt=\"\"></a><br>红线部分为启动路径 接下来就是具体启动操作<br><a href=\"http://i2.tietuku.com/80c44788d7448f95.png\"><img src=\"http://i2.tietuku.com/80c44788d7448f95.png\" alt=\"\"></a><br>加入开机启动 执行 vi /etc/profile 按下方向键到底部<br>然后按i键写入 /etc/init.d/smb start /etc/init.d/nmb start 然后保存并退出<br>执行 source /etc/profile  修改生效 重启一下软件就是开机启动</p>\n",
+            "tags": [
+                "centos",
+                "linux",
+                "centos软件",
+                "centos软件安装"
+            ]
+        }
+    ]
+}

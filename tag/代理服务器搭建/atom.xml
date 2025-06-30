@@ -1,0 +1,673 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://erik.xyz</id>
+    <title>艾瑞可erik • Posts by &#34;代理服务器搭建&#34; tag • Posts by &#34;undefined&#34; categories</title>
+    <link href="https://erik.xyz" />
+    <updated>2019-09-16T07:53:00.000Z</updated>
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
+    <category term="日志" />
+    <category term="工具" />
+    <category term="jquery" />
+    <category term="jquery插件" />
+    <category term="js" />
+    <category term="css" />
+    <category term="php" />
+    <category term="web" />
+    <category term="代码" />
+    <category term="压缩" />
+    <category term="说说" />
+    <category term="趣闻" />
+    <category term="php服务器" />
+    <category term="随笔" />
+    <category term="php实例" />
+    <category term="nginx" />
+    <category term="转载" />
+    <category term="php库" />
+    <category term="互联" />
+    <category term="项目实战" />
+    <category term="javascript" />
+    <category term="漏洞" />
+    <category term="php应用" />
+    <category term="浮点" />
+    <category term="http" />
+    <category term="http服务器" />
+    <category term="负载均衡" />
+    <category term="kali" />
+    <category term="kali安装" />
+    <category term="农业系统" />
+    <category term="系统设计" />
+    <category term="克莱姆法则" />
+    <category term="行列式" />
+    <category term="n阶行列式" />
+    <category term="支付系统" />
+    <category term="支付" />
+    <category term="centos" />
+    <category term="linux" />
+    <category term="apache优化" />
+    <category term="apache隐藏index" />
+    <category term="nginx优化" />
+    <category term="nginx隐藏index" />
+    <category term="日常" />
+    <category term="seo" />
+    <category term="优化" />
+    <category term="摘要" />
+    <category term="文章" />
+    <category term="游记" />
+    <category term="ca证书" />
+    <category term="证书生成" />
+    <category term="二战" />
+    <category term="二战熊" />
+    <category term="西伯利亚熊" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
+    <category term="centos安装chromium报错" />
+    <category term="chromium安装报错" />
+    <category term="svn" />
+    <category term="代码提交" />
+    <category term="deb" />
+    <category term="deb/rpm互转" />
+    <category term="deb转rpm" />
+    <category term="rpm互转" />
+    <category term="centos7安装steam" />
+    <category term="centos安装steam" />
+    <category term="centos安装吃鸡steam" />
+    <category term="linux安装steam" />
+    <category term="steam安装" />
+    <category term="centos软件安装" />
+    <category term="centos6.5" />
+    <category term="linux系统" />
+    <category term="centos7安装Redis Desktop Manager" />
+    <category term="centos7安装redis桌面" />
+    <category term="centos安装redis桌面" />
+    <category term="linux安装centos7安装Redis Desktop Manager" />
+    <category term="Redis Desktop Manager" />
+    <category term="redis桌面" />
+    <category term="centos7" />
+    <category term="centos7-wine" />
+    <category term="wine" />
+    <category term="wine安装" />
+    <category term="root密码" />
+    <category term="root密码重置" />
+    <category term="忘记root密码" />
+    <category term="memcache" />
+    <category term="memcached" />
+    <category term="生活手记" />
+    <category term="艾瑞可erik" />
+    <category term="程序员" />
+    <category term="开源云" />
+    <category term="容器" />
+    <category term="cncf" />
+    <category term="监控" />
+    <category term="composer" />
+    <category term="composer部署" />
+    <category term="内网部署composer" />
+    <category term="cphalcon" />
+    <category term="cphalcon报错" />
+    <category term="css中的em" />
+    <category term="响应式字体" />
+    <category term="响应式布局样式" />
+    <category term="proxy代理搭建" />
+    <category term="代理服务器搭建" />
+    <category term="proxy服务器" />
+    <category term="查找" />
+    <category term="排序" />
+    <category term="快速排序" />
+    <category term="冒泡排序" />
+    <category term="二分查找" />
+    <category term="datahub" />
+    <category term="datahub安装" />
+    <category term="deepin" />
+    <category term="emergency" />
+    <category term="emergency mode" />
+    <category term="deepin黑屏" />
+    <category term="清理系统" />
+    <category term="清理c盘" />
+    <category term="dns" />
+    <category term="域名监测" />
+    <category term="网站监测" />
+    <category term="docker" />
+    <category term="php安装" />
+    <category term="杂谈" />
+    <category term="ecshop" />
+    <category term="框架" />
+    <category term="beego数据分页" />
+    <category term="分页" />
+    <category term="elasticsearch" />
+    <category term="elasticsearch搭建" />
+    <category term="elasticsearch集群" />
+    <category term="系统" />
+    <category term="emm" />
+    <category term="mdm" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
+    <category term="免费" />
+    <category term="jenkis" />
+    <category term="jenkis教程" />
+    <category term="随笔吐槽" />
+    <category term="算法" />
+    <category term="ping" />
+    <category term="ping服务器" />
+    <category term="各大网站ping" />
+    <category term="搜引擎ping服务器" />
+    <category term="go获取ip" />
+    <category term="im" />
+    <category term="go中pdf生成" />
+    <category term="go中限流" />
+    <category term="go对接快递签名" />
+    <category term="go时间获取" />
+    <category term="go类型转换" />
+    <category term="微服务" />
+    <category term="go-zero" />
+    <category term="rpc" />
+    <category term="go加密" />
+    <category term="go解密" />
+    <category term="归" />
+    <category term="吐槽" />
+    <category term="php大全" />
+    <category term="php资料" />
+    <category term="hadoop" />
+    <category term="hadoop2.8.0" />
+    <category term="hadoop安装教程" />
+    <category term="hadoop安装详细教程" />
+    <category term="hadoop教程" />
+    <category term="hadoop部署" />
+    <category term="hadoop3" />
+    <category term="hadoop配置" />
+    <category term="log4j2" />
+    <category term="数据库" />
+    <category term="hbase安装教程" />
+    <category term="hbase" />
+    <category term="http1.1" />
+    <category term="http2.0" />
+    <category term="会话" />
+    <category term="会话原理" />
+    <category term="hyperf" />
+    <category term="杂录" />
+    <category term="新冠肺炎" />
+    <category term="springboot" />
+    <category term="springboot内网部署" />
+    <category term="linux恢复" />
+    <category term="linux误删" />
+    <category term="linux命令" />
+    <category term="linux命令汇总" />
+    <category term="jenkins" />
+    <category term="jetbtrains" />
+    <category term="phpstorm" />
+    <category term="搜索引擎" />
+    <category term="图片" />
+    <category term="素材" />
+    <category term="jq" />
+    <category term="jq侧边导航" />
+    <category term="侧边导航" />
+    <category term="js判断浏览器" />
+    <category term="js判断浏览器版本" />
+    <category term="判断浏览器" />
+    <category term="浏览器版本判断" />
+    <category term="获取浏览器信息" />
+    <category term="kali右键汉化" />
+    <category term="kali桌面右键汉化" />
+    <category term="kali右键创建文件" />
+    <category term="区块链" />
+    <category term="lanmp" />
+    <category term="php环境独立配置" />
+    <category term="服务器" />
+    <category term="劳动纠纷" />
+    <category term="追缴工资" />
+    <category term="申请仲裁" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="linux报错" />
+    <category term="linux中update-command-not-found" />
+    <category term="linux运行命令报错" />
+    <category term="web前端" />
+    <category term="web优化" />
+    <category term="撮合算法" />
+    <category term="撮合" />
+    <category term="php撮合算法" />
+    <category term="maven搭建库" />
+    <category term="maven" />
+    <category term="maven内网库" />
+    <category term="高级缓存配置" />
+    <category term="mongodb" />
+    <category term="mongodb权限" />
+    <category term="可穿戴设备" />
+    <category term="mysql" />
+    <category term="分库分表" />
+    <category term="mysql应对千万级" />
+    <category term="mysql瓶颈" />
+    <category term="mysql瓶颈解决办法" />
+    <category term="redis" />
+    <category term="数据一致性" />
+    <category term="mysql消息" />
+    <category term="mysql队列" />
+    <category term="mysql高并发" />
+    <category term="mysql存储" />
+    <category term="mysql引擎" />
+    <category term="mysql数据表设计选择" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
+    <category term="内网支付" />
+    <category term="内网穿透" />
+    <category term="支付接口本地化开发" />
+    <category term="本地挂网" />
+    <category term="穿透" />
+    <category term="go" />
+    <category term="new和make的区别" />
+    <category term="红包算法" />
+    <category term="深圳劳动法服务部门" />
+    <category term="非关系型数据库" />
+    <category term="onethink" />
+    <category term="oop" />
+    <category term="php管理系统" />
+    <category term="开放接口开发" />
+    <category term="开源工具" />
+    <category term="桌面共享工具" />
+    <category term="openresty" />
+    <category term="openvas" />
+    <category term="openvas安装" />
+    <category term="php变量" />
+    <category term="php超级全局变量" />
+    <category term="php超级变量" />
+    <category term="php基本类型" />
+    <category term="php数据类型" />
+    <category term="php设计模式" />
+    <category term="php对接微信支付" />
+    <category term="微信支付" />
+    <category term="微信支付回调" />
+    <category term="游戏" />
+    <category term="php函数" />
+    <category term="php随机数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
+    <category term="php环境" />
+    <category term="php集成环境" />
+    <category term="服务器集成环境" />
+    <category term="数组函数" />
+    <category term="数组排序函数" />
+    <category term="php数学函数" />
+    <category term="php面试题" />
+    <category term="php面向对象" />
+    <category term="面向对象" />
+    <category term="php-zookeeper" />
+    <category term="zookeeper3.5.5" />
+    <category term="php-zookeeper扩展" />
+    <category term="php串口开发" />
+    <category term="php倒计时" />
+    <category term="php时间" />
+    <category term="倒计时" />
+    <category term="计算时间" />
+    <category term="PHP数组" />
+    <category term="字符串函数" />
+    <category term="排序函数" />
+    <category term="php的SPL" />
+    <category term="SPL手册" />
+    <category term="PHP算法" />
+    <category term="php递归" />
+    <category term="递归" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
+    <category term="php过滤" />
+    <category term="过滤" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php中if" />
+    <category term="php中if判断" />
+    <category term="php的if" />
+    <category term="php字符串" />
+    <category term="php7中sphinx" />
+    <category term="php7中sphinx扩展" />
+    <category term="sphinx扩展" />
+    <category term="python" />
+    <category term="python库" />
+    <category term="a标签" />
+    <category term="a标签虚线" />
+    <category term="虚线框" />
+    <category term="R语言" />
+    <category term="数据随机化" />
+    <category term="redis总结" />
+    <category term="redis命令" />
+    <category term="redis监控" />
+    <category term="redis锁" />
+    <category term="redis分布式锁" />
+    <category term="任意金额输入" />
+    <category term="10元、5元、2元" />
+    <category term="队列" />
+    <category term="栈" />
+    <category term="顺序表" />
+    <category term="链表" />
+    <category term="数据结构" />
+    <category term="线性结构" />
+    <category term="浏览器禁止操作视频" />
+    <category term="禁止视频" />
+    <category term="响应慢" />
+    <category term="页面优化" />
+    <category term="js编辑" />
+    <category term="runjs" />
+    <category term="在线编辑" />
+    <category term="rust" />
+    <category term="rust配置" />
+    <category term="seajs" />
+    <category term="session" />
+    <category term="路由器烧录" />
+    <category term="烧录" />
+    <category term="极路由2烧录" />
+    <category term="砖头烧录" />
+    <category term="免费服务器" />
+    <category term="空间" />
+    <category term="资源" />
+    <category term="深圳政府电话" />
+    <category term="深圳电话" />
+    <category term="特区电话" />
+    <category term="居住证" />
+    <category term="居住证签注" />
+    <category term="深圳新居住证" />
+    <category term="国庆骑行" />
+    <category term="深圳珠海骑行" />
+    <category term="骑行" />
+    <category term="世界那么大" />
+    <category term="css3" />
+    <category term="css在线生成工具" />
+    <category term="css工具" />
+    <category term="php正则" />
+    <category term="正则" />
+    <category term="shodan" />
+    <category term="黑谷歌" />
+    <category term="黒帽搜素" />
+    <category term="shopex" />
+    <category term="可视化数据" />
+    <category term="数据" />
+    <category term="数据表" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
+    <category term="socket通信" />
+    <category term="socket多进程" />
+    <category term="socket" />
+    <category term="sql" />
+    <category term="sql优化" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
+    <category term="结构体转map" />
+    <category term="config" />
+    <category term="thinkphp" />
+    <category term="配置文件" />
+    <category term="树" />
+    <category term="二叉树" />
+    <category term="js插件" />
+    <category term="web自适应" />
+    <category term="响应式布局" />
+    <category term="响应式所有分辨率" />
+    <category term="自适应布局" />
+    <category term="自适应所有分辨率" />
+    <category term="webman" />
+    <category term="mysql设置超时，超时" />
+    <category term="markdown" />
+    <category term="wget" />
+    <category term="wget抓取" />
+    <category term="网站抓取" />
+    <category term="我在" />
+    <category term="wordpress" />
+    <category term="wordpress标签" />
+    <category term="wpscan" />
+    <category term="usbrip" />
+    <category term="无限极分类" />
+    <category term="php无限极" />
+    <category term="分类tree" />
+    <category term="无限极分类树型" />
+    <category term="域名合并" />
+    <category term="xhprof" />
+    <category term="laravel" />
+    <category term="composer插件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
+    <category term="携程" />
+    <category term="携程攻击" />
+    <category term="携程网站瘫痪" />
+    <category term="物理删除" />
+    <category term="3D" />
+    <category term="动画" />
+    <category term="平台" />
+    <category term="虚幻4引擎编辑" />
+    <category term="生成唯一id" />
+    <category term="生成id" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
+    <category term="储蓄卡免年费" />
+    <category term="银行卡" />
+    <category term="银行卡免年费" />
+    <category term="composer安装" />
+    <category term="composer配置" />
+    <category term="项目创建composer" />
+    <category term="mysql优化" />
+    <category term="mysql读写优化" />
+    <category term="数据库优化，mysql语句优化" />
+    <category term="php加密" />
+    <category term="php技术" />
+    <category term="夕阳" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
+    <category term="web框架" />
+    <category term="php抓取图片" />
+    <category term="php批量抓取页面图片" />
+    <category term="邮箱服务器" />
+    <category term="正则表达式" />
+    <category term="翻墙" />
+    <category term="谷歌" />
+    <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2019/09/16/dai-li-fu-wu-qi-da-jian/</id>
+        <title>代理服务搭建</title>
+        <link rel="alternate" href="https://erik.xyz/2019/09/16/dai-li-fu-wu-qi-da-jian/"/>
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;代理服务器（Proxy）主要是用户有因特网数据要求时，Proxy会帮用户去向目的地取得用户所需要的数据。&lt;/p&gt;
+&lt;h5 id=&#34;Proxy获取信息的工作流程&#34;&gt;&lt;a href=&#34;#Proxy获取信息的工作流程&#34; class=&#34;headerlink&#34; title=&#34;Proxy获取信息的工作流程&#34;&gt;&lt;/a&gt;Proxy获取信息的工作流程&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;当Proxy的缓存拥有用户所想要的数据时&lt;ul&gt;
+&lt;li&gt;Client端向Server端发送一个数据需求数据包。&lt;/li&gt;
+&lt;li&gt;Server端接收后，先比对这个数据包的来源与预计要前往的目标网站是否为可接受？如果来源与目标合法，或者说，来源与目标网站Proxy都能帮忙取得数据时，那么Server端会开始替Client取得数据。&lt;/li&gt;
+&lt;li&gt;Server首先会检查自己缓存数据，如果有Client所需的数据，那就将数据取出，而不经过向Internet要求数据的程序。&lt;/li&gt;
+&lt;li&gt;最后将数据发送给Client端。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;当Proxy的缓存没有用户所想要的数据时&lt;ul&gt;
+&lt;li&gt;Client端向Server端发送一个数据需求数据包。&lt;/li&gt;
+&lt;li&gt;Server端接收后，开始进行数据比对。&lt;/li&gt;
+&lt;li&gt;Server发现缓存并没有Client所需要的数据时，准备前往因特网获取数据。&lt;/li&gt;
+&lt;li&gt;Server开始向Internet发送要求与取得相关数据。&lt;/li&gt;
+&lt;li&gt;最后将数据回送给Client端。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+ &lt;font color=&#34;red&#34;&gt;
+ 注意：Proxy对于Cache的速度要求是很高的，而这个Cache就是硬盘。当然，硬盘容量必须要足够大，而且还有足够快。
+  &lt;/font&gt;
+
+
+&lt;p&gt; Proxy服务器可以作为上层代理，起到一定的分流作用。目前大部分Proxy已经停止对外开，仅针对自己网段内的用户提供服务。如果要自行设置Proxy，需要到当初申请的ISP搜寻一下，才能有效的设置好服务器。否则，设置错误的话，上层Proxy根本不提供服务。&lt;/p&gt;
+&lt;h5 id=&#34;代理服务器与NAT服务器的差异&#34;&gt;&lt;a href=&#34;#代理服务器与NAT服务器的差异&#34; class=&#34;headerlink&#34; title=&#34;代理服务器与NAT服务器的差异&#34;&gt;&lt;/a&gt;代理服务器与NAT服务器的差异&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;NAT服务器的功能&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;NAT的主要功能是通过数据包过滤的方式，并使用iptables的nat表格进行IP伪装（SNAT），让客户端自行前往因特网上的任何地方的一种方式。主要的运作行为是在OSI七层协议的二、三、四层。由于是通过数据包过滤与伪装，因此客户端可以使用的端口号码（第四层）弹性较大。
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Proxy服务器的功能&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  通过Proxy的服务程序（daemon）提供网络代理的任务，因此Proxy能不能进项某些工作，与该服务的程序功能有关。
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由上可知：NAT服务器是由较底层的网络去进行分析的工作。Proxy则主要是由一个daemon的功能实现的，所以必须要符合该daemon的需求，才能实现某些功能。&lt;/p&gt;
+&lt;h5 id=&#34;搭建代理服务器的用途与优缺点&#34;&gt;&lt;a href=&#34;#搭建代理服务器的用途与优缺点&#34; class=&#34;headerlink&#34; title=&#34;搭建代理服务器的用途与优缺点&#34;&gt;&lt;/a&gt;搭建代理服务器的用途与优缺点&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;用途&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;作为WWW的网页数据获取代理人。&lt;/li&gt;
+&lt;li&gt;作为内部局域网的单点对外防火墙系统。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;优点&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;节省单点对外的宽带网络，降低网络负载。&lt;/li&gt;
+&lt;li&gt;以较短的路径取得网络数据，有网络加速的感觉。&lt;/li&gt;
+&lt;li&gt;通过上层代理服务器的辅助，达到自动数据分流的效果。&lt;/li&gt;
+&lt;li&gt;提供防火墙内部的计算机连上Internet。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;font color=&#34;red&#34;&gt;
+注：如果是连接国外的网页，一定要使用ISP提供的代理服务器来帮忙，因为不但可以节省宽带，并且速度上会快上很多很多。
+&lt;/font&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;缺点&lt;ul&gt;
+&lt;li&gt;容易被内部局域网的人员滥用。&lt;/li&gt;
+&lt;li&gt;需要较高的配置技巧与排错程序。&lt;/li&gt;
+&lt;li&gt;可能会取得旧的错误数据。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;架设代理服务器的条件&#34;&gt;&lt;a href=&#34;#架设代理服务器的条件&#34; class=&#34;headerlink&#34; title=&#34;架设代理服务器的条件&#34;&gt;&lt;/a&gt;架设代理服务器的条件&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;Client端用户不少，而且大部分仅需要WWW这个网路服务而已。&lt;/li&gt;
+&lt;li&gt;Proxy还兼做防火墙的任务&lt;/li&gt;
+&lt;li&gt;Client端常常需要连接到传输速度很慢的网站。&lt;/li&gt;
+&lt;li&gt;Client端常常浏览的网站是静态网站，而不是动态网站&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;Proxy搭建&#34;&gt;&lt;a href=&#34;#Proxy搭建&#34; class=&#34;headerlink&#34; title=&#34;Proxy搭建&#34;&gt;&lt;/a&gt;Proxy搭建&lt;/h5&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;在centos中我用squid软件，在命令窗口执行安装&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; yum install squid
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;进入squid的配置目录（/etc/squid/）可以看到有以下配置文件&lt;br&gt;&lt;img src=&#34;/img/201909/2019-09-16_165357.jpg&#34; alt=&#34;配置文件目录&#34;&gt;&lt;/p&gt;
+&lt;p&gt; squid.conf是主要配置文件，所有squid需要的设置都是放在这个文件当中的&lt;/p&gt;
+&lt;p&gt; mime.conf是设置squid支持Internet上面的文件格式，默认配置就够了，一般不需要更改。&lt;/p&gt;
+&lt;p&gt; /usr/sbin/squid  提供squid的主程序&lt;/p&gt;
+&lt;p&gt; /var/spool/squid  默认的squid缓存存储目录&lt;/p&gt;
+&lt;p&gt; /usr/lib64/squid 提供squid额外的控制模块&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在centos中默认的squid特色&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;仅有本机来源可以使用这个squid功能。&lt;/li&gt;
+&lt;li&gt;squid所监听的Proxy服务端口在port 3128。&lt;/li&gt;
+&lt;li&gt;缓存目录所在的位置在/var/spool/squid/，且仅有100MB的磁盘高速缓存量。&lt;/li&gt;
+&lt;li&gt;除了squid程序所需要的基本内存之外，尚提供8MB的内存来给热门文件缓存在内存中。&lt;/li&gt;
+&lt;li&gt;默认启动squid程序的用户为squid这个账号。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;squid.conf配置文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;     #
+     # Recommended minimum configuration:
+     #
+
+     # Example rule allowing access from your local networks.
+     # Adapt to list your (internal) IP networks from where browsing
+     # should be allowed
+     # 信任用户与目标控制，定义可能使用proxy的外部用户（内网）
+     acl localnet src 10.0.0.0/8    # RFC1918 possible internal network
+     acl localnet src 172.16.0.0/12    # RFC1918 possible internal network
+     acl localnet src 192.168.0.0/16    # RFC1918 possible internal network
+     acl localnet src fc00::/7       # RFC 4193 local private network range
+     acl localnet src fe80::/10      # RFC 4291 link-local (directly plugged) machines
+
+     # 定义可取得的数据端口
+     acl SSL_ports port 443
+     acl Safe_ports port 80        # http
+     acl Safe_ports port 21        # ftp
+     acl Safe_ports port 443        # https
+     acl Safe_ports port 70        # gopher
+     acl Safe_ports port 210        # wais
+     acl Safe_ports port 1025-65535    # unregistered ports
+     acl Safe_ports port 280        # http-mgmt
+     acl Safe_ports port 488        # gss-http
+     acl Safe_ports port 591        # filemaker
+     acl Safe_ports port 777        # multiling http
+     acl CONNECT method CONNECT
+
+     #
+     # Recommended minimum Access Permission configuration:
+     #
+     # Deny requests to certain unsafe ports 
+     # 拒绝非正规的端口连接要求
+     http_access deny !Safe_ports 
+
+     # Deny CONNECT to other than secure SSL ports 
+     # 拒绝非正规的加密端口连接要求
+     http_access deny CONNECT !SSL_ports
+
+     # Only allow cachemgr access from localhost
+     # 放行管理本机的功能
+     http_access allow localhost manager
+
+     # 其他管理来源都予以拒绝
+     http_access deny manager
+
+     # We strongly recommend the following be uncommented to protect innocent
+     # web applications running on the proxy server who think the only
+     # one who can access services on &amp;quot;localhost&amp;quot; is a local user
+     #http_access deny to_localhost
+
+     #
+     # INSERT YOUR OWN RULE(S) HERE TO ALLOW ACCESS FROM YOUR CLIENTS
+     #
+
+     # Example rule allowing access from your local networks.
+     # Adapt localnet in the ACL section to list your (internal) IP networks
+     # from where browsing should be allowed
+     # 放行内部网络的用户来源
+     http_access allow localnet
+
+     # 放行本机的使用
+     http_access allow localhost
+
+     auth_param basic program /usr/lib64/squid/basic_ncsa_auth /etc/squid/passwd 
+     auth_param basic children 5 
+     auth_param basic realm hehe 
+     auth_param basic credentialsttl 2 hours 
+     acl myproxy proxy_auth REQUIRED 
+     http_access allow myproxy 
+
+     # And finally deny all other access to this proxy
+     # 全部予以拒绝
+     http_access deny all
+
+     # Squid normally listens to port 3128
+     # 默认监听客户端要求的端口
+     http_port 3128
+
+     # Uncomment and adjust the following to add a disk cache directory.
+     # 磁盘高速缓存，即放置缓存数据的目录所在与相关设置
+     cache_dir ufs /var/spool/squid 100 16 256
+
+     # Leave coredumps in the first cache dir
+     coredump_dir /var/spool/squid
+
+     #隐藏真实IP变成匿名ip
+     via off 
+     forwarded_for delete 
+     #
+     # Add any of your own refresh_pattern entries above these.
+     #
+     refresh_pattern ^ftp:        1440    20%    10080
+     refresh_pattern ^gopher:    1440    0%    1440
+     refresh_pattern -i (/cgi-bin/|\?) 0    0%    0
+     refresh_pattern .        0    20%    4320
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以上配置好后关闭squid&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;systemctl stop squid.service 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;执行初始化缓存&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;squid -z
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;启动squid&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;systemctl start squid.service 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;squid加入开机启动&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;systemctl enable squid.service 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;需要添加密码认证的就不做介绍了，如果想验证是否成功，可以通过浏览器代理或者本地代理验证操作。&lt;/p&gt;
+</content>
+        <category term="proxy代理搭建" />
+        <category term="代理服务器搭建" />
+        <category term="proxy服务器" />
+        <updated>2019-09-16T07:53:00.000Z</updated>
+    </entry>
+</feed>

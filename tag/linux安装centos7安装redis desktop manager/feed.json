@@ -1,0 +1,23 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"linux安装centos7安装redis desktop manager\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2017/11/24/centos7-an-zhuang-redis-desktop-manager-de-yi-bo-san-zhe/",
+            "url": "https://erik.xyz/2017/11/24/centos7-an-zhuang-redis-desktop-manager-de-yi-bo-san-zhe/",
+            "title": "centos7安装Redis Desktop Manager的一波三折",
+            "date_published": "2017-11-24T13:21:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>一波三折的centos7安装redis desktop 根据官方reids桌面去github下载对应的编译包，然而根目录下3rdparty好多空的文件夹，只好去git上一一对应下载 cd ./src ./configure 后会提示执行 qmake-qt5 如果你直接执行就会报错，找不到命令。与编译已经安装了，没有启用全局命令，你得到安装目录下执行。 例如我的 /usr/lib64/qt5/bin/qmake-qt5 然后执行 make 如果报错cahrts不存在就安装qtcharts<br><span id=\"more\"></span></p>\n<p>git clone <a href=\"https://github.com/erikaaron/qtcharts\">https://github.com/erikaaron/qtcharts</a></p>\n<p>cd qtcharts</p>\n<p><strong>git checkout</strong> <strong>5.7</strong></p>\n<p>qmake</p>\n<p>make</p>\n<p>sudo make install</p>\n<p>报错不存在 third_party/lss/linux_syscall_support.h<br><img src=\"http://erik.xyz/wp-content/uploads/2017/11/linux_syscall_support.png\" alt=\"\"> </p>\n<p>google搜索后找到这里<a href=\"https://chromium.googlesource.com/chromiumos/platform/google-breakpad/+/0.11.241.B/src/third\\_party/lss/linux\\_syscall_support.h\">https://chromium.googlesource.com/chromiumos/platform/google-breakpad/+/0.11.241.B/src/third\\_party/lss/linux\\_syscall_support.h</a> 直接提供了，复制下来本地目录创建相应文件报存。 执行 make clean &amp;&amp; make 又报错了 3rdparty/gbreakpad/src/client/linux/libbreakpad_client.a 文件找不到。<br><img src=\"http://erik.xyz/wp-content/uploads/2017/11/libbreakpad_client.a.png\" alt=\"\"> </p>\n<p>google搜索给出的方法是下载google-break包然后编译生成，搞了好久没弄成，感觉那里不对阿。 看看搜索结果好多说是编译break的 直接去3rdparty/gbreakpad  执行 ./configure &amp;&amp; make &amp;&amp; make install 然后 libbreakpad_client.a就出来了 在回到根文件下的src 执行 make clean &amp;&amp; make make 成功后会提示 make isntall 要指定那个目录<br><img src=\"http://erik.xyz/wp-content/uploads/2017/11/2017-11-23-14-54-17-的屏幕截图.png\" alt=\"\"> </p>\n<p>例如我的 make install -m 755 -p /home/linux/rdm/src/resources/qt.conf /usr/share/redis-desktop-manager/bin/ cd /usr/share/redis-desktop-manager/bin sudo mv qt.conf qt.backup 到此大功告成。<br><img src=\"http://erik.xyz/wp-content/uploads/2017/11/wc.png\" alt=\"\"> </p>\n<p>最新版更新处理源码  <a href=\"https://github.com/erikaaron/redis\\_desktop\\_manager\">https://github.com/erikaaron/redis\\_desktop\\_manager</a></p>\n",
+            "tags": [
+                "centos7安装Redis Desktop Manager",
+                "centos7安装redis桌面",
+                "centos安装redis桌面",
+                "linux安装centos7安装Redis Desktop Manager",
+                "Redis Desktop Manager",
+                "redis桌面"
+            ]
+        }
+    ]
+}

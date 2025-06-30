@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"清理c盘\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2024/08/23/disk-cleanup/",
+            "url": "https://erik.xyz/2024/08/23/disk-cleanup/",
+            "title": "清理c盘",
+            "date_published": "2024-08-23T14:37:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p><b>1. 使用磁盘清理工具</b></p>\n<p>Windows 10自带了一个磁盘清理工具，可以用来删除临时文件、系统文件和其他不必要的文件。</p>\n<ol>\n<li>打开磁盘清理工具：<ul>\n<li>点击开始菜单，输入“磁盘清理”，并选择搜索结果中的“磁盘清理”。</li>\n</ul>\n</li>\n</ol>\n<ul>\n<li>选择要清理的驱动器：<ul>\n<li>在弹出的窗口中，选择C盘（通常为系统盘），然后点击“确定”。</li>\n</ul>\n</li>\n<li>选择要删除的文件类型：<ul>\n<li>在磁盘清理窗口中，系统会列出可以删除的文件类型（如临时文件、系统缓存、回收站等）。你可以选择你想清理的文件类型。<br>点击“清理系统文件”按钮，允许清理更多系统文件（如Windows更新文件）。</li>\n</ul>\n</li>\n<li>确认删除：<ul>\n<li>点击“确定”后，系统将开始清理这些文件，清理完成后C盘的空间将得到释放。</li>\n</ul>\n</li>\n</ul>\n<p><b>2. 删除临时文件</b><br><span id=\"more\"></span><br>Windows 10允许你直接删除临时文件，这些文件可能积累过多，占用大量空间。</p>\n<ol>\n<li>打开“设置”应用，选择系统 &gt; 存储。</li>\n</ol>\n<ul>\n<li>在“本地磁盘 (C:)”下，点击临时文件。</li>\n<li>选择要删除的文件类型，例如缓存、下载的文件等。</li>\n<li>点击“删除文件”按钮。</li>\n</ul>\n<p><b>3. 卸载不需要的软件</b><br>有时一些不常用的程序占据了大量的磁盘空间。</p>\n<ol>\n<li>打开“设置”应用，选择应用 &gt; 应用和功能。</li>\n</ol>\n<ul>\n<li>查找不常用的程序，点击它，然后选择卸载。</li>\n</ul>\n<p><b>4. 清理浏览器缓存</b></p>\n<p>浏览器缓存也会占用不少空间，定期清理这些缓存有助于释放磁盘空间。</p>\n<ul>\n<li>Google Chrome：进入设置 &gt; 高级 &gt; 隐私与安全 &gt; 清除浏览数据。</li>\n<li>Microsoft Edge：设置 &gt; 隐私、搜索和服务 &gt; 清除浏览数据。</li>\n</ul>\n<p><b>5. 关闭休眠功能</b><br>如果你不需要休眠功能，可以关闭它，因为休眠文件（hiberfil.sys）占用的空间有时会很大。</p>\n<ol>\n<li>打开命令提示符（管理员），输入以下命令：</li>\n</ol>\n<p><code>powercfg -h off</code></p>\n<ul>\n<li>按回车键，这将禁用休眠功能并删除hiberfil.sys文件。</li>\n</ul>\n<p><b>6. 移动文件到其他驱动器</b></p>\n<p>如果C盘空间仍然紧张，你可以将大文件（如视频、图片和文档）移动到其他磁盘分区或外部硬盘。</p>\n<p><b>7. 使用第三方工具</b></p>\n<p>一些第三方工具也可以帮助你清理C盘并优化磁盘空间，例如：</p>\n<ul>\n<li>CCleaner：清理系统垃圾文件和注册表。</li>\n<li><a href=\"https://windirstat.net/download.html\">WinDirStat</a>：分析磁盘空间占用情况，找出大文件。</li>\n</ul>\n<p><b>8. 删除系统还原点</b></p>\n<p>如果你启用了系统还原，可能会存有很多还原点占用磁盘空间。</p>\n<ol>\n<li>右键点击此电脑，选择属性。</li>\n</ol>\n<ul>\n<li>点击系统保护，选择C盘，然后点击配置。</li>\n<li>在弹出的窗口中，点击“删除”来删除旧的还原点。</li>\n</ul>\n<p><b>9. 清理Windows更新文件</b></p>\n<p>Windows更新可能会留下不必要的安装文件。</p>\n<p>在磁盘清理工具中，点击“清理系统文件”，选择Windows更新清理，然后清理过时的更新文件。</p>\n<p>通过以上步骤，你可以释放C盘的空间，使你的Windows 10系统运行得更加顺畅。</p>\n",
+            "tags": [
+                "清理系统",
+                "清理c盘"
+            ]
+        }
+    ]
+}

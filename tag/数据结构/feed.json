@@ -1,0 +1,24 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"数据结构\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2020/01/29/review-points/",
+            "url": "https://erik.xyz/2020/01/29/review-points/",
+            "title": "算法、数据结构、线性结构、栈、队列",
+            "date_published": "2020-01-29T14:46:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><h3 id=\"算法\"><a href=\"#算法\" class=\"headerlink\" title=\"算法\"></a>算法</h3><p>1.算法的基本特征</p>\n<ul>\n<li>可行性<ul>\n<li>步骤实现，执行结果达到预期<ul>\n<li>确定性</li>\n</ul>\n</li>\n<li>步骤明确<ul>\n<li>有穷性</li>\n</ul>\n</li>\n<li>有限的时间完成<ul>\n<li>拥有足够的情报</li>\n</ul>\n</li>\n<li>拥有足够的输入信息和初始化信息<span id=\"more\"></span>\n</li>\n</ul>\n</li>\n</ul>\n<p>2.算法的复杂度</p>\n<ul>\n<li>时间复杂度<ul>\n<li>执行算法所需要的计算工作量</li>\n</ul>\n</li>\n<li>空间复杂度<ul>\n<li>执行算法所需要的内存空间</li>\n</ul>\n</li>\n</ul>\n<h3 id=\"数据结构\"><a href=\"#数据结构\" class=\"headerlink\" title=\"数据结构\"></a>数据结构</h3><ol>\n<li>定义：有关联的数据元素的集合就是数据结构。</li>\n</ol>\n<ul>\n<li>数据结构的概念<ul>\n<li>根节点<ul>\n<li>没有前件的节点</li>\n</ul>\n</li>\n<li>终端节点<ul>\n<li>没有后件的节点</li>\n</ul>\n</li>\n<li>内部节点<ul>\n<li>除了根节点和终端节点以外的节点</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<h3 id=\"线性结构与非线性结构\"><a href=\"#线性结构与非线性结构\" class=\"headerlink\" title=\"线性结构与非线性结构\"></a>线性结构与非线性结构</h3><p>1.线性结构</p>\n<ul>\n<li>有且只有一个根节点</li>\n<li>每个节点最多只有一个前件，也最多只有一个后件</li>\n</ul>\n<p>2.非线性结构：不满足线性结构的两个条件就是非线性结构</p>\n<ul>\n<li>树形结构</li>\n<li>网状结构</li>\n</ul>\n<h3 id=\"线性表\"><a href=\"#线性表\" class=\"headerlink\" title=\"线性表\"></a>线性表</h3><p>1.线性结构也被称为线性表</p>\n<p>2.非空线性表</p>\n<ul>\n<li>只有一个根节点</li>\n<li>有且只有一个终端节点</li>\n<li>除根节点与终端节点外，其他所有节点有且只有一个前件，也有且只有一个后件</li>\n</ul>\n<h3 id=\"线性表的顺序存储\"><a href=\"#线性表的顺序存储\" class=\"headerlink\" title=\"线性表的顺序存储\"></a>线性表的顺序存储</h3><p>1.定义：线性表的顺序存储是将线性表中的元素一个接一个地存储在一片相邻的存储区域中，这种线性表也叫顺序表</p>\n<p>2.顺序表特征</p>\n<ul>\n<li>线性表中所有元素所占的存储空间是连续的</li>\n<li>线性表中各数据元素在存储空间中是按逻辑顺序依次存放的</li>\n</ul>\n<h3 id=\"栈\"><a href=\"#栈\" class=\"headerlink\" title=\"栈\"></a>栈</h3><p>1.定义：栈是一种特殊的线性表，它所有的插入与删除都限定在表的同一端进行，允许插入与删除的一端称为栈顶，不允许插入与删除的另一端称为栈底。当栈中没有元素时，称为空栈。</p>\n<p>2.栈的修改原则是后进先出或先进后出</p>\n<p>3.栈的基本运算： 入栈、退栈、读栈顶元素</p>\n<h3 id=\"队列\"><a href=\"#队列\" class=\"headerlink\" title=\"队列\"></a>队列</h3><p>1.定义：允许在一端进行插入，而在另一端进行删除的线性表</p>\n<p>2.允许进行删除运算的一端称为队头，允许进行插入运算的一端称为队尾</p>\n<h3 id=\"顺序表和链表的对比\"><a href=\"#顺序表和链表的对比\" class=\"headerlink\" title=\"顺序表和链表的对比\"></a>顺序表和链表的对比</h3><p>1.顺序表</p>\n<ul>\n<li>优点<ul>\n<li>可随机存取表中的任意节点</li>\n<li>无需为表示节点间的逻辑关系额外增加存储空间</li>\n</ul>\n</li>\n<li>缺点<ul>\n<li>顺序表的插入和删除运算效率很低</li>\n<li>顺序表的存储空间不便扩充</li>\n<li>顺序表不便于对存储空间的动态分配</li>\n</ul>\n</li>\n</ul>\n<p>2.链表</p>\n<ul>\n<li>优点<ul>\n<li>在进行插入和删除运算时，只需要改变指针即可，不需要移动元素</li>\n<li>链表的存储空间易于扩充并且方便空间的动态分配</li>\n</ul>\n</li>\n<li><p>缺点</p>\n<ul>\n<li>需要额外的空间来表示数据元素之间的逻辑关系，存储密度比顺序表低</li>\n</ul>\n</li>\n<li><p>链表类型</p>\n<ul>\n<li>单向链表<ul>\n<li>链表的链接方向是单向的，对链表的访问要通过顺序读取从头部开始，链表是使用指针进行构造的列表；又称为结点列表</li>\n<li>单个结点创建非常方便，普通的线性内存通常在创建的时候就需要设定数据的大小</li>\n<li>结点的删除非常方便，不需要像线性结构那样移动剩下的数据</li>\n<li>结点的访问方便，可以通过循环或者递归的方法访问到任意数据，但是平均的访问效率低于线性表</li>\n</ul>\n</li>\n</ul>\n<ul>\n<li><p>双向链表</p>\n<ul>\n<li>每个数据结点中都有两个指针，分别指向直接后继和直接前驱。双向链表中的任意一个结点开始，都可以很方便地访问它的前驱结点和后继结点</li>\n</ul>\n</li>\n<li><p>环形链表</p>\n<ul>\n<li>最后一个结点指向头结点，形成一个环。从循环链表中的任何一个结点出发都能找到任何其他结点</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n",
+            "tags": [
+                "算法",
+                "队列",
+                "栈",
+                "顺序表",
+                "链表",
+                "数据结构",
+                "线性结构"
+            ]
+        }
+    ]
+}

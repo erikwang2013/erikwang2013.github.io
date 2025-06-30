@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"wget\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2017/09/29/wget-zhua-qu-wang-zhan/",
+            "url": "https://erik.xyz/2017/09/29/wget-zhua-qu-wang-zhan/",
+            "title": "wget抓取网站",
+            "date_published": "2017-09-29T13:23:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>最近需要套个模板，当然模板不需去购买。那就抓取一个，百度一下发现wget是个不错的用法。<br>wget -r -p -np -k  <a href=\"https://erik.xyz\">https://erik.xyz</a>   就可抓取整个站点模板到本地。</p>\n<p>然后打包压缩，拷贝到win电脑就可以修修改改。<br>顺便查查wget使用方法<br>-a&lt;日志文件&gt;：在指定的日志文件中记录资料的执行过程；</p>\n<p>-A&lt;后缀名&gt;：指定要下载文件的后缀名，多个后缀名之间使用逗号进行分隔； </p>\n<p>-b：进行后台的方式运行wget； <span id=\"more\"></span></p>\n<p>-B&lt;连接地址&gt;：设置参考的连接地址的基地地址； </p>\n<p>-c：继续执行上次终端的任务；</p>\n<p>-C&lt;标志&gt;：设置服务器数据块功能标志on为激活，off为关闭，默认值为on； </p>\n<p>-d：调试模式运行指令； </p>\n<p>-D&lt;域名列表&gt;：设置顺着的域名列表，域名之间用“，”分隔； </p>\n<p>-e&lt;指令&gt;：作为文件“.wgetrc”中的一部分执行指定的指令； </p>\n<p>-h：显示指令帮助信息；</p>\n<p>-i&lt;文件&gt;：从指定文件获取要下载的URL地址；</p>\n<p>-l&lt;目录列表&gt;：设置顺着的目录列表，多个目录用“，”分隔； </p>\n<p>-L：仅顺着关联的连接； </p>\n<p>-r：递归下载方式；</p>\n<p>-nc：文件存在时，下载文件不覆盖原有文件；</p>\n<p>-nv：下载时只显示更新和出错信息，不显示指令的详细执行过程； </p>\n<p>-q：不显示指令执行过程； </p>\n<p>-nh：不查询主机名称； </p>\n<p>-v：显示详细执行过程； </p>\n<p>-V：显示版本信息； </p>\n<p>—passive-ftp：使用被动模式PASV连接FTP服务器； </p>\n<p>—follow-ftp：从HTML文件中下载FTP连接文件。</p>\n",
+            "tags": [
+                "wget",
+                "wget抓取",
+                "网站抓取"
+            ]
+        }
+    ]
+}

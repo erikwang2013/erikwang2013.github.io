@@ -1,0 +1,21 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"php数组\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2016/03/07/php-shu-zu-han-shu-zi-fu-chuan-de-chang-shi/",
+            "url": "https://erik.xyz/2016/03/07/php-shu-zu-han-shu-zi-fu-chuan-de-chang-shi/",
+            "title": "PHP数组、函数、字符串的常识",
+            "date_published": "2016-03-07T14:34:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>php数组排序 </p>\n<p>sort()根据数组所包含元素进行升序排列 sort()函数是区分大小写。</p>\n<p>所有大写字母都在小写字母后面。 </p>\n<p>asort()函数和ksort()函数对关联数组排序 </p>\n<p>例如：$a=array(‘name’=&gt;100,’user’=&gt;200,’title’=&gt;300); </p>\n<p>函数asort()是根据数组$a的每个元素值进行排序。在数组$a中元素值为数字。 <span id=\"more\"></span></p>\n<p>函数ksort()是按数组的关键字按字母顺序排列。 </p>\n<p>数组反向排序 </p>\n<p>函数rsort()将一个一维数字索引数组按降序排列</p>\n<p>函数arsort()将一个一维关联数组按每个元素值的降序排序。 </p>\n<p>函数krsort()将根据数组元素的关键字将一维数组按照降序排列。</p>\n<p>对数组进行重新排序 函数shuffle()将数组各元素进行随机排序。 </p>\n<p>函数array_reverse()给出一个原来数组的反向排序。</p>\n<p>数组中浏览排序 函数prev()将一维数组降序排列。 </p>\n<p>函数each()在指针前移一个位置之前返回当前元素（即，返回当前元素的同时，输出一个数组）。 </p>\n<p>函数next()是将指针前移，然后再返回新的当前元素（即，返回当前元素）。</p>\n<p>函数array_walk()以相同的方式使用或者修改数组中的每一个元素。</p>\n<p>统计元素个数 函数array_count_values()统计每个特定的值在数组中出现过的次数。会返回一个包含频率的关联数组。 函数count()和sizeof()用法相同。 </p>\n<p>函数extract()可以把一个非数字索引数组，且该数组又有许多关键字值对，便可以转换成一系列的标量变量。 </p>\n<p>输出函数 echo和print都是将字符串输出到浏览器，但print()有返回值true或false printf()函数是将一个格式化的字符串输出到浏览器 </p>\n<p>sprintf()函数是返回一个格式化的字符串。</p>\n<p>分割函数 explode()函数根据一个指定的分隔符字符串将字符串本身分割为小块，将分割后的小块返回到一个数组中。 </p>\n<p>implode()函数（别名join）返回由数组元素组合成的字符串。 </p>\n<p>strtok()函数是一次只从字符串中取出一些片段。 </p>\n<p>substr()函数是获取一个字符串给定起点和终点的间字符串。 </p>\n<p>改变字符串中字母大小写 strtoupper()函数将字符串转换为大写。 </p>\n<p>strtolower()函数将字符串转换成小写。</p>\n<p>ucfirst()函数把字符串第一个字符是字母，就将该字符串第一个字母转换成大写。</p>\n<p>ucwords()函数将字符串每个单词的第一个字母转换成大写。 </p>\n<p>字符串比较 strcmp(str1, str2)函数，如果两个字符串相等就返回0，如果按字典顺序str1在str2后面（大于str2）就返回一个正数， 如果str1小于str2就返回一个负数。 </p>\n<p>strcasecmp()函数除了不区分大小写，其他和strcmp()一样。</p>\n<p>strnatcmp()函数除了不区分大小写，其他和strcmp()一样，当时strnatcmp()函数将按自然排序比较字符串。</p>\n<p>strlen()函数检查字符串的长度。 </p>\n<p>在字符串中查找字符串 strstr()函数是在一个较长的字符串中查找匹配的字符串或字符。 strchr()函数和strstr()函数一样。 stristr()函数和strstr()函数一样，只是不区分字符大小写。 </p>\n<p>strrchr()函数和strstr()函数一样，但会从最后出现目标关键字的位置的前面返回被搜索字符串。 查找字符串的位置 </p>\n<p>strpos()函数返回目标关键字子字符串在被搜索字符串中的位置。strpos()函数比strstr()函数运行速度快。 strrpos()函数返回的是被搜索字符串中最后一次出现目标关键字子字符串的位置。 </p>\n<p>如果不存在返回false 替换字符串 mixed str_replace(mixed needle, mixed new_needle, mixed haystack[, int &amp; count]);把字符串的一部分替换为另一个字符串 neddle需要处理的字符串，new_needle需要插入的字符串，haystack字符串开始位置，起始位置为0，count执行的替换操作次数。 </p>\n<p>substr_replace()函数用来在给定位置中查找和替换字符串中特定的子字符串。</p>\n",
+            "tags": [
+                "php函数",
+                "PHP数组",
+                "字符串函数",
+                "排序函数"
+            ]
+        }
+    ]
+}

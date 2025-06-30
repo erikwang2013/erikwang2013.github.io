@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"php获取闰年\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2015/05/13/php-huo-qu-zhi-ding-shi-jian-duan-de-run-nian/",
+            "url": "https://erik.xyz/2015/05/13/php-huo-qu-zhi-ding-shi-jian-duan-de-run-nian/",
+            "title": "php获取指定时间段的闰年",
+            "date_published": "2015-05-13T15:55:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>源码 <a href=\"http://i1.tietuku.com/c143e48c21880077.png\"><img src=\"http://i1.tietuku.com/c143e48c21880077.png\" alt=\"php闰年\"></a> &lt;?php /<strong> <em> 版权所有 木木夕互联网开发 <a href=\"http://www.erik.xyz\">http://www.erik.xyz</a> </em> 开发者：艾瑞可 <em> 2015年5月13日 下午11:50:36 </em> PHP */ header(“Content-Type:text/html;Charset=utf-8”); //计算2000到2030之间所有的闰年 /</strong> <em> 分析：闰年是除以4为整数的的年份，所以只要符合除以4没有余数的年份都是闰年 </em>/ $_POST[“sub”]=2000; //从2000年开始 if($_POST[“sub”]){ for($a=2000;$a&lt;=2030;$a++){ //定义循环变量 if($a%4==0){ //判断除以4为整数的年份 echo $a.”&nbsp;&nbsp;”; } } } ?&gt;   输出结果 <a href=\"http://i1.tietuku.com/da8ce81f6b455132.png\"><img src=\"http://i1.tietuku.com/da8ce81f6b455132.png\" alt=\"\"></a></p>\n",
+            "tags": [
+                "php获取闰年",
+                "闰年.php时间"
+            ]
+        }
+    ]
+}

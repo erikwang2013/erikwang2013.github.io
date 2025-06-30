@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"dns\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2014/10/10/dns-jian-ce-ruan-jian/",
+            "url": "https://erik.xyz/2014/10/10/dns-jian-ce-ruan-jian/",
+            "title": "dns监测软件",
+            "date_published": "2014-10-10T02:31:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/mm64s.png\" alt=\"木木夕logo\">由于我的网站是海外服务器，经常被联通给k掉，在家里用的长城宽带总是登录不上或者打不开网站，干脆就修改dns，试了试结果很令人满意。软件无意中得到 的来源于dnspod网站，测试本地可建立一个.txt文件，放入自己的顶级域名，打开软件，然后读取域名，就可以检测到域名，解析的dns.<br><span id=\"more\"></span><br>例如</p>\n<p>1.解压文件得到</p>\n<p>[caption id=”attachment_87” align=”alignnone” width=”211”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/1.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/1.png\" alt=\"1\"></a> dns监测开始步骤[/caption]</p>\n<p>2.</p>\n<p>[caption id=”attachment_88” align=”alignnone” width=”300”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/2.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/2-300x201.png\" alt=\"2\"></a> dns软件内容一览2[/caption]</p>\n<p>3.建立一个.txt的新文档（随便命名都可以）</p>\n<p>[caption id=”attachment_89” align=”alignnone” width=”300”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/3.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/3-300x232.png\" alt=\"3\"></a> 建立新文档[/caption]</p>\n<p>4.添加顶级域名</p>\n<p>[caption id=”attachment_90” align=”alignnone” width=”300”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/4.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/4-300x172.png\" alt=\"添加自己的顶级域名\"></a> 添加自己的顶级域名[/caption]</p>\n<p>5.读取域名</p>\n<p>[caption id=”attachment_91” align=”alignnone” width=”282”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/5.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/5-282x300.png\" alt=\"读取域名\"></a> 读取域名[/caption]</p>\n<p>6.读取域名详情</p>\n<p>[caption id=”attachment_92” align=”alignnone” width=”300”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/6.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/6-300x235.png\" alt=\"读取域名详情\"></a> 读取域名详情[/caption]</p>\n<p>7.执行结果</p>\n<p>[caption id=”attachment_93” align=”alignnone” width=”282”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/7.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/7-282x300.png\" alt=\"执行结果\"></a> 执行结果[/caption]</p>\n<p>下载软件，此软件仅适用于win系统，请勿用作商业目的，仅供参考。 下载：<a href=\"https://sourceforge.net/projects/erik1314/files/alls/dns.zip\">dns检测.zip</a></p>\n",
+            "tags": [
+                "dns",
+                "域名监测",
+                "网站监测"
+            ]
+        }
+    ]
+}

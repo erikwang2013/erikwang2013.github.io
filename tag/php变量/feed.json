@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"php变量\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2017/08/11/php-chao-ji-quan-ju-bian-liang/",
+            "url": "https://erik.xyz/2017/08/11/php-chao-ji-quan-ju-bian-liang/",
+            "title": "php超级全局变量",
+            "date_published": "2017-08-10T16:04:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>php用了那么久一些基础东西并不是很了解，今天开始就陆陆续续的学习一下。<br>php中超级全局变量： </p>\n<ul>\n<li>$GLOBALS 所有全局变量数组 </li>\n<li>$_SERVER 服务器环境变量数组 </li>\n<li>$_GET get传递给脚本的变量数组 </li>\n<li>$_POST post传给脚本的变量数组 </li>\n<li>$_COOKIE cookie变量数组 </li>\n<li>$_FILES   上传文件相关的变量数组 </li>\n<li>$_ENV  环境变量数组 </li>\n<li>$_REQUEST  所有输入用户的变量数组（包括$_GET $_POST $_COOKIE不包括$_FILES） $_SESSION   会话变量数组</li>\n</ul>\n",
+            "tags": [
+                "php变量",
+                "php超级全局变量",
+                "php超级变量"
+            ]
+        }
+    ]
+}

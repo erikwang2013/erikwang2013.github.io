@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"日志\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2021/08/22/10-logs-tools-total/",
+            "url": "https://erik.xyz/2021/08/22/10-logs-tools-total/",
+            "title": "10个Web日志安全性分析工具",
+            "date_published": "2021-08-22T13:30:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>首先，我们应该清楚的是，日志文件不仅可以帮助我们追踪入侵者的来源并找到其攻击路径，而且在正常的操作和维护中，日志还可以反映出许多安全攻击。<br>一个简单易用的Web日志分析工具可以大大提高效率。当前，行业中有许多日志分析工具。今天，我们推荐十种易于使用的Web日志安全性分析工具。</p>\n<span id=\"more\"></span>\n<p>1.360星图</p>\n<p>一个非常易于使用的网站访问日志分析工具，可以有效地识别Web漏洞攻击，CC攻击，恶意爬网程序扫描，异常访问和其他行为。一键式自动分析，输出安全性分析报告，支持iis / apache / nginx日志，支持自定义格式。</p>\n<p>2.LogForensics</p>\n<p>TSRC提供的日志分析工具可以从单个可疑线索开始，并遍历所有可疑URL（CGI）和源IP。</p>\n<p>3.GoAccess</p>\n<p>可视化Web日志分析工具，可通过* nix系统下的Web浏览器或终端程序进行访问。它可以为系统管理员提供快速而有价值的HTTP统计信息，并以在线可视化服务器的形式显示它们。</p>\n<p>4.AWStats</p>\n<p>强大的开源日志分析系统，可以图形方式生成高级Web，流媒体，ftp或邮件服务器统计信息。</p>\n<p>5.Logstalgia</p>\n<p>一个非常酷的可视化日志分析工具，可以直观地显示CC攻击和网站的日志分析，并以可视化的3D效果显示它。</p>\n<p>6.FinderWeb</p>\n<p>程序员用于监视日志的工具，支持tail，less，grep，并支持大文本文件。从几个M到几十个G的日志文件都是平滑且免费的。</p>\n<p>7.web-log-parser</p>\n<p>使用python语言开发的开源Web日志分析工具，具有灵活的日志格式配置。</p>\n<p>8.ELK</p>\n<p>用于开源实时日志分析的ELK平台包含三个开源项目，即ElasticSearch，Logstash和Kiabana，在企业级日志管理平台中非常常见。</p>\n<p>9.Splunk</p>\n<p>顶级日志分析软件，如果您经常使用grep，awk，sed，sort，uniq，tail，head来分析日志，则可以轻松过渡到Splunk。</p>\n<p>10.IBM QRadar</p>\n<p>Qradar具有免费的社区版本，其功能与商业版本没有太大区别，适用于小型日志和流量分析。</p>\n<p>文章转载：乌云安全</p>\n",
+            "tags": [
+                "日志",
+                "工具"
+            ]
+        }
+    ]
+}

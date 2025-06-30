@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"php随机数\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2019/03/20/php-hong-bao-suan-fa/",
+            "url": "https://erik.xyz/2019/03/20/php-hong-bao-suan-fa/",
+            "title": "php红包算法",
+            "date_published": "2019-03-20T04:28:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>今天去参见一个面试，结尾时，面试官问了个红包如何随机分配实现问题。这个确实没搞过，也想不出来。回头自己研究了一下，发现也就这么回事。。<span id=\"more\"></span></p>\n<p>参考文章 <a href=\"https://www.cnblogs.com/dreign/p/4610766.html\">https://www.cnblogs.com/dreign/p/4610766.html</a><br>得到一个正态分布的方法，反复比较其他几种，最后选择了这个。<br>分析一下需求如下：</p>\n<blockquote>\n</blockquote>\n<p> 一个用户发100元红包，分成100份。那么每份金额随机。而分成100份的金额之和刚好等于100元。那首先每个用户至少分到0.01元红包，那每个用户分得最大红包是总金额减去分出去用户的金额，剩余用户的平均金额。<br> 由此，便清晰了。那每取一个随机金额肯定在最小金额和最大金额之间。</p>\n<p>上代码试试。</p>\n<blockquote>\n</blockquote>\n<p>假如有100元要分给100个人，100个红包随机生成。代码如下：</p>\n<p><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_160135.jpg\" alt=\"\"></p>\n<blockquote>\n<p>输出结果</p>\n</blockquote>\n<p><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_162419.jpg\" alt=\"\"></p>\n",
+            "tags": [
+                "算法",
+                "php随机数"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"a标签虚线\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2015/05/08/qu-diao-a-biao-qian-dian-ji-hou-de-xu-xian-kuang/",
+            "url": "https://erik.xyz/2015/05/08/qu-diao-a-biao-qian-dian-ji-hou-de-xu-xian-kuang/",
+            "title": "去掉a标签点击后的虚线框",
+            "date_published": "2015-05-08T07:23:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>最近用bootstrap在做前端设计页面，突然发现a标签点击后出现虚线框，很郁闷啊。原因是css的outline属性 百度后找到网友给的解决办法是添加css样式 a:focus { outline: none; outline-style:none; -moz-outline:none; } 试试后貌似不起作用，肿么办。又找了一下才发现还有一个办法 在a标签里加入js控制，当a标签被聚焦时，强制取消焦点，这时候a标签自然不会有虚线框。 <strong><a href=\"#\" onfocus=\"this.blur();\">测试</a></strong> 搞定 <a href=\"http://www.erik.xyz/web_a\"><img src=\"http://i1.tietuku.com/3901561e8bc8d85b.jpg\" alt=\"展示图\"></a></p>\n",
+            "tags": [
+                "a标签",
+                "a标签虚线",
+                "虚线框"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"mysql瓶颈\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2016/03/01/mysql-ping-geng-de-ying-dui-cuo-shi/",
+            "url": "https://erik.xyz/2016/03/01/mysql-ping-geng-de-ying-dui-cuo-shi/",
+            "title": "mysql瓶颈的应对措施",
+            "date_published": "2016-03-01T11:40:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>mysql本身是存在瓶颈的，当数据量达到千万级别以上，无论mysql如何优化，其性能都显著降低（有专门团队开发并改进mysql的除外）。 那么就有以下几种办法解决。<br>1.增加mysql配置中buffer和cache的数值，增加服务器cpu数量和内存大小。<br>2.使用第三方引擎或衍生版本。例如：Percona、MariaDB、TokuDB 3.迁移到其他数据库。例如：PostgreSQL、Oracle</p>\n",
+            "tags": [
+                "mysql应对千万级",
+                "mysql瓶颈",
+                "mysql瓶颈解决办法"
+            ]
+        }
+    ]
+}

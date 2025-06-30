@@ -1,0 +1,23 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"html\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2015/06/18/xiang-ying-shi-bu-ju-ru-he-ce-shi-bu-tong-fen-bian-lv/",
+            "url": "https://erik.xyz/2015/06/18/xiang-ying-shi-bu-ju-ru-he-ce-shi-bu-tong-fen-bian-lv/",
+            "title": "响应式布局如何测试不同分辨率",
+            "date_published": "2015-06-17T16:04:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>最近在做响应式布局适应不同分辨率的屏幕，太痛苦了，摸着石头过河。之前没有做过这块，手机端又不是很在行，ipad/iphone/三星……一大堆不同的屏幕，如何测试呢，总不能买一大堆设备吧。</p>\n<p>偶然间发现谷歌浏览器(最新版)可以缩小来实现，这样又有问题了，分辨率是多少呢？发现新方法了，废话不多说了，直接上教程。 1.在谷歌浏览器打开你要测试的网页按键盘F12，打开网页调试   2.点击调试工具右上角形似菜单的图标   3.这时候你会发现紧挨着浏览器底部有一排英文菜单   4.把菜单往上拉出来，点击第三个菜单   5.点击打开菜单下面的手机标示   6.如此便是手机设计效果   7.有2个地方可以选择不同的分辨率及屏幕对应的像素   8.下次打开就直接点击F12，然后左上角的手机标示就可以切换</p>\n",
+            "tags": [
+                "css",
+                "web",
+                "html",
+                "响应式分辨率",
+                "响应式调试",
+                "自适应屏幕"
+            ]
+        }
+    ]
+}

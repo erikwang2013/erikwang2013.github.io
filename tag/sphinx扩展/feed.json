@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"sphinx扩展\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2017/09/15/php7-an-zhuang-sphinx-kuo-zhan/",
+            "url": "https://erik.xyz/2017/09/15/php7-an-zhuang-sphinx-kuo-zhan/",
+            "title": "php7安装sphinx扩展",
+            "date_published": "2017-09-15T13:17:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>在官方pecl库中只能找到支持5.2版本的sphinx扩展。php7出来好一段时间了，没有sphinx不太科学。根据网友给的提提示，在pecl库下的sphinx页面中，点击[ Browse Source ] 如下图： <img src=\"http://erik.xyz/wp-content/uploads/2017/08/1-1.jpg\" alt=\"\"> <span id=\"more\"></span><br>可以跳转到git页面在这里面你可以发下有支持php7的扩展文件 <img src=\"http://erik.xyz/wp-content/uploads/2017/08/2-1.jpg\" alt=\"\"> </p>\n<p>这时就好办多了。 点击 shortlog进入下载页面，下载扩展 sphinx所需源码下载地址 <a href=\"http://download.csdn.net/download/w15875510692/9931232\">http://download.csdn.net/download/w15875510692/9931232</a> </p>\n<p>最好浏览器下载  <a href=\"http://git.php.net/?p=pecl/search_engine/sphinx.git;a=snapshot;h=339e123acb0ce7beb2d9d4f9094d6f8bcf15fb54;sf=tgz\">http://git.php.net/?p=pecl/search_engine/sphinx.git;a=snapshot;h=339e123acb0ce7beb2d9d4f9094d6f8bcf15fb54;sf=tgz</a> 因为在安装sphinx扩展时总是报错libsphinxclient的错误，也就是缺少libsphinxclient。 那就需要下载coreseek，解压后进入csft-3.2.14/api/libsphinxclient目录下 ./configure make &amp;&amp; make install 安装libsphinxclient。如图安装成功。<br><img src=\"http://erik.xyz/wp-content/uploads/2017/08/core.jpg\" alt=\"\"></p>\n<p>接下来就是解压sphinx，并安装扩展。 进入sphinx目录 phpize ./configure —with-php-config=XXXX(php-config目录) make &amp;&amp; make install 安装成功，如图。 <img src=\"http://erik.xyz/wp-content/uploads/2017/08/sphinx.jpg\" alt=\"\"> </p>\n<p>然后在php.ini，添加扩展，重启php服务就可以在phpinfo中看到sphinx的扩展了。</p>\n",
+            "tags": [
+                "php7中sphinx",
+                "php7中sphinx扩展",
+                "sphinx扩展"
+            ]
+        }
+    ]
+}

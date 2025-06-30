@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"centos安装chromium报错\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2016/02/14/centos-an-zhuang-gu-ge-liu-lan-qi-yu-dao-de-wen-ti/",
+            "url": "https://erik.xyz/2016/02/14/centos-an-zhuang-gu-ge-liu-lan-qi-yu-dao-de-wen-ti/",
+            "title": "centos安装谷歌浏览器遇到的问题",
+            "date_published": "2016-02-14T06:12:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>突然发现centos自带的火狐浏览器好卡，打开网页速度太慢了。就尝试装个谷歌浏览器，结果报错。</p>\n<p>如下： <a href=\"http://dl.google.com/linux/rpm/stable/x86\\_64/repodata/repomd.xml\">http://dl.google.com/linux/rpm/stable/x86\\_64/repodata/repomd.xml</a>: [Errno 14] curl#7 - “Failed to connect to 2404:6800:4005:800::200e: 网络不可达” 反反复复换了几个地方都不行（网址被封了），干脆把镜像源换了。 <span id=\"more\"></span></p>\n<p>命令直接换： wget -O /etc/yum.repos.d/CentOS-Base.repo <a href=\"http://mirrors.aliyun.com/repo/Centos-7.repo\">http://mirrors.aliyun.com/repo/Centos-7.repo</a> 然后时候生成一下缓存 </p>\n<p>yum makecache 报错： 正在处理依赖关系 libudev.so.0()(64bit)，它被软件包 chromium-31.0.1650.63-2.el6.x86_64 </p>\n<p>需要执行：<br>yum install <a href=\"http://mirror.yandex.ru/fedora/russianfedora/russianfedora/nonfree/el/releases/7/Everything/x86\\_64/os/opera-developer-24.0.1558.21-3.el7.R.x86\\_64.rpm\">http://mirror.yandex.ru/fedora/russianfedora/russianfedora/nonfree/el/releases/7/Everything/x86\\_64/os/opera-developer-24.0.1558.21-3.el7.R.x86\\_64.rpm</a> </p>\n<p>问题解决，这不过是安装个opera浏览器</p>\n",
+            "tags": [
+                "centos安装chromium报错",
+                "chromium安装报错"
+            ]
+        }
+    ]
+}

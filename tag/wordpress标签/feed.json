@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"wordpress标签\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2014/10/04/wordpress-biao-qian-zi-ti-she-zhi/",
+            "url": "https://erik.xyz/2014/10/04/wordpress-biao-qian-zi-ti-she-zhi/",
+            "title": "wordpress标签字体设置",
+            "date_published": "2014-10-04T12:37:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>wordpres断断续续捣鼓了一段时间，总算有自己的网站了，今天算完全能用了，突然发现标签字体很模糊。</p>\n<p>从百度得到的答案是：</p>\n<p>WordPress 默认标签云的字体最小为8pt，最大为22pt，标签显示数量为45个，按标签名称升序排列。但是用火狐查到是修改style.css样式的，可是怎么找也找不到，怎么办……无奈的百度 <strong>修改 WordPress 标签云方法</strong> 打开 wp-includes/category-template.php 搜索 wp_tag_cloud 找到 ‘smallest’ =&gt; 8, ‘largest’ =&gt; 22, ‘unit’ =&gt; ‘pt’, ‘number’ =&gt; 45,‘format’ =&gt; ‘flat’, ‘separator’ =&gt; “\\n”, ‘orderby’ =&gt; ‘name’, ‘order’ =&gt; ‘ASC’, <strong>具体的参数说明：</strong> smallest – 定义标签的最小字号，默认为 8；largest – 定义标签的最大字号，默认为 22；unit – 设置字号类型，如 “pt” 或 “px” 等，默认为 “pt” 类型； number – 设置标签云数量，默认显示 45 个标签；orderby – 设置按 “name” 或 “count” 排序，默认为 “name” 方式；（注：orderby=count 表示按照标签使用次数排列）order – 设置按 “DESC” 或 “ASC” 升降序排列，默认为 “ASC” 升序。 根据自己需求修改 wp_tag_cloud 函数的具体参数即可实现标签云的自定义，然后把category-template.php文件上传到空间中替换原文件。</p>\n",
+            "tags": [
+                "wordpress",
+                "wordpress标签"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"支付接口本地化开发\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2017/08/07/nei-wang-chuan-tou-zhi-fu-jie-kou-ben-di-hua-kai-fa-ben-di-gua-wang-wai-wang-fang-wen/",
+            "url": "https://erik.xyz/2017/08/07/nei-wang-chuan-tou-zhi-fu-jie-kou-ben-di-hua-kai-fa-ben-di-gua-wang-wai-wang-fang-wen/",
+            "title": "内网穿透、支付接口本地化开发、本地挂网外网访问",
+            "date_published": "2017-08-07T15:58:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>在技术qq群偶然聊得最近想入手一台微型服务器，电脑装虚拟机多了感觉好卡，操作不太方便。 群友有提到利用内网穿透不必本地挂载linux服务器便可以很轻松实现。</p>\n<p>顺便就查查他们所说的ngrok，百度的解释如下：<br><img src=\"http://erik.xyz/wp-content/uploads/2017/08/1.jpg\" alt=\"\"> </p>\n<p>看来这是个不错的工具，减少挂载带来的资源占用。<span id=\"more\"></span></p>\n<p>ngrok 是一个开源程序,官网服务在国外,国内访问国外速度慢.</p>\n<p>国内有相应的ngrok服务natapp，frp，nat123端口映射，内网通 等</p>\n<p>国内ngrok网址：<a href=\"https://www.ngrok.cc/\">https://www.ngrok.cc/</a></p>\n<p>顺便查了一下群友强力推荐的frp</p>\n<p>网址 <a href=\"http://getfrp.yzxx-soft.com/\">http://getfrp.yzxx-soft.com/</a></p>\n<p><img src=\"http://erik.xyz/wp-content/uploads/2017/08/2.jpg\" alt=\"\"></p>\n<p>感觉比较不错哦。</p>\n<p>其实，可以自己买台微型服务器，放在家里挂个博客。没事可以搞搞硬件，研究一下服务器也是可以的。</p>\n",
+            "tags": [
+                "内网支付",
+                "内网穿透",
+                "支付接口本地化开发",
+                "本地挂网",
+                "穿透"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"emergency\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2024/11/15/deepin-not-login/",
+            "url": "https://erik.xyz/2024/11/15/deepin-not-login/",
+            "title": "deepin无法登录报错emergency mode",
+            "date_published": "2024-11-15T02:56:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>由于系统重启后，新安装的微信一直弹出框，卡在那难受。立马强制重启，开机后就一直显示You are in emergency mode……一堆东西，意思是说让进入root用户，查看报错并修复。</p>\n<p>  有点头大了。</p>\n<p>  系统命令可以显示，图形界面不显示。<br>  <span id=\"more\"></span><br>  果断拿出安装系统的u盘，使用u盘启动进入安装界面，按ctrl+alt+f4进入u盘命令界面。输入startx进入u盘图形界面。这下可以看到电脑的挂着盘。根据挂着的盘一个个找根目录盘。找到后使用u盘系统的命令窗口:<br><figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sudo vi /etc/fstab</span><br><span class=\"line\"></span><br></pre></td></tr></table></figure></p>\n<p> 注释掉home目录，重启系统。</p>\n<p> 重启后会显示个登录图形界面。这个是假的，没用。按ctrl+alt+f2进入命令界面。<br> 使用账号密码登录命令界面。</p>\n<p> 打开/etc/fstab文件取消home注释。（这里要看一下home挂载路径，比如我的/dev/sda6）</p>\n<p> 使用以下命令修复：<br> <figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sudo e2fsck /dev/sda6</span><br></pre></td></tr></table></figure></p>\n<p> 你会看到一堆修复，一个个确认后，等待修复完成就重启系统。</p>\n",
+            "tags": [
+                "deepin",
+                "emergency",
+                "emergency mode",
+                "deepin黑屏"
+            ]
+        }
+    ]
+}

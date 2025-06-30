@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"配置文件\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2015/02/27/thinkphp-de-zhong-xin-ren-shi-thinkphp-pei-zhi-wen-jian/",
+            "url": "https://erik.xyz/2015/02/27/thinkphp-de-zhong-xin-ren-shi-thinkphp-pei-zhi-wen-jian/",
+            "title": "thinkphp的重新认识-thinkphp配置文件",
+            "date_published": "2015-02-27T07:13:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>thinkphp开发做了有一年多了，怎么说呢，很菜…… 一直是用3.0以上的版本，查手册，调试，敲代码。无意间看到2.0的手册，彻底无语了 2.0手册全是基础，我竟然一直蒙着头用thinkphp，今天就好好看了一部分关于config.php的配置。官方给出的是这样的参考  <span id=\"more\"></span></p>\n<h3 id=\"惯例配置\"><a href=\"#惯例配置\" class=\"headerlink\" title=\"惯例配置\"></a>惯例配置</h3><p>惯例重于配置是ThinkPHP的一个重要思想，系统内置有一个惯例配置文件（位于Think\\Common\\convention.php），按照大多数的使用对常用参数进行了默认配置。所以，对于应用项目的配置文件，往往只需要配置和惯例配置不同的或者新增的配置参数，如果你完全采用默认配置，甚至可以不需要定义任何配置文件。 （如果需要了解惯例配置中的详细配置列表请参考附录的配置参考部分。）  </p>\n<p>看到这里就不能淡定了，原来thinkphp有提供配置好的参考配置，这下跳的坑大了。怪不得以前开发的同事上线项目都是开启调试模式，而不去关闭调试模式…… 找找看发现2.0的实在Common核心目录里，而且里面还提供了好多其他文档…… </p>\n<p>但是在3.0以上确实在conf目录里</p>\n<p>这些配置基本上涵盖了方方面面，另外还发现一些tp本身封装好的方法也是不错的，就是我没怎么用，净自己去封装了……</p>\n",
+            "tags": [
+                "config",
+                "thinkphp",
+                "配置文件"
+            ]
+        }
+    ]
+}

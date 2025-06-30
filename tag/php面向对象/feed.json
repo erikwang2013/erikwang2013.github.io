@@ -1,0 +1,21 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"php面向对象\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2014/11/14/php-mian-xiang-dui-xiang/",
+            "url": "https://erik.xyz/2014/11/14/php-mian-xiang-dui-xiang/",
+            "title": "php面向对象",
+            "date_published": "2014-11-14T07:18:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>__construct()构造函数，主要是通过关键字new生成实例的时候，它就会被调用执行。（构造函数不能返回值） __destructor()析构函数，它是在对象被销毁的时候被调用执行的。（对象被销毁时清空资源或者记录日志信息） __get(),__set()访问函数，类属性被访问和操作，访问函数都会被激发。oop思想不鼓励直接从类的外部访问类的属性，所以使用它们可以避免直接对类属性的访问。<span id=\"more\"></span> extends确认子类继承父类  格式class 子类 extends 父类{} final放在特定类前面，表示此类不能再被继承。如果放在某个类方法前面，表示此方法不能在继承后被“覆写”或重新定义。 implements指定使用接口 <a href=\"http://tietuku.com/cc26841c6b434585\" title=\"php接口示意图\"><img src=\"http://i2.tietuku.com/cc26841c6b434585.jpg\" alt=\"php接口示意图\"></a> interface可声明接口，并且单独设立接口方法 <a href=\"http://tietuku.com/9ce70457b5ef2e3b\" title=\"接口示意图\"><img src=\"http://i2.tietuku.com/9ce70457b5ef2e3b.jpg\" alt=\"接口示意图\"></a> 错误处理 <a href=\"http://tietuku.com/cce268d063bbd079\" title=\"错误处理\"><img src=\"http://i2.tietuku.com/cce268d063bbd079.jpg\" alt=\"错误处理\"></a></p>\n",
+            "tags": [
+                "php",
+                "php函数",
+                "php面向对象",
+                "面向对象"
+            ]
+        }
+    ]
+}

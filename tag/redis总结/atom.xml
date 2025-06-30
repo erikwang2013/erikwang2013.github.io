@@ -1,0 +1,1363 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://erik.xyz</id>
+    <title>艾瑞可erik • Posts by &#34;redis总结&#34; tag • Posts by &#34;undefined&#34; categories</title>
+    <link href="https://erik.xyz" />
+    <updated>2021-04-07T08:09:00.000Z</updated>
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
+    <category term="日志" />
+    <category term="工具" />
+    <category term="jquery" />
+    <category term="jquery插件" />
+    <category term="js" />
+    <category term="css" />
+    <category term="php" />
+    <category term="web" />
+    <category term="代码" />
+    <category term="压缩" />
+    <category term="说说" />
+    <category term="趣闻" />
+    <category term="php服务器" />
+    <category term="随笔" />
+    <category term="php实例" />
+    <category term="nginx" />
+    <category term="转载" />
+    <category term="php库" />
+    <category term="互联" />
+    <category term="项目实战" />
+    <category term="javascript" />
+    <category term="漏洞" />
+    <category term="php应用" />
+    <category term="浮点" />
+    <category term="http" />
+    <category term="http服务器" />
+    <category term="负载均衡" />
+    <category term="kali" />
+    <category term="kali安装" />
+    <category term="农业系统" />
+    <category term="系统设计" />
+    <category term="克莱姆法则" />
+    <category term="行列式" />
+    <category term="n阶行列式" />
+    <category term="支付系统" />
+    <category term="支付" />
+    <category term="centos" />
+    <category term="linux" />
+    <category term="apache优化" />
+    <category term="apache隐藏index" />
+    <category term="nginx优化" />
+    <category term="nginx隐藏index" />
+    <category term="日常" />
+    <category term="seo" />
+    <category term="优化" />
+    <category term="摘要" />
+    <category term="文章" />
+    <category term="游记" />
+    <category term="ca证书" />
+    <category term="证书生成" />
+    <category term="二战" />
+    <category term="二战熊" />
+    <category term="西伯利亚熊" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
+    <category term="centos安装chromium报错" />
+    <category term="chromium安装报错" />
+    <category term="svn" />
+    <category term="代码提交" />
+    <category term="deb" />
+    <category term="deb/rpm互转" />
+    <category term="deb转rpm" />
+    <category term="rpm互转" />
+    <category term="centos7安装steam" />
+    <category term="centos安装steam" />
+    <category term="centos安装吃鸡steam" />
+    <category term="linux安装steam" />
+    <category term="steam安装" />
+    <category term="centos软件安装" />
+    <category term="centos6.5" />
+    <category term="linux系统" />
+    <category term="centos7安装Redis Desktop Manager" />
+    <category term="centos7安装redis桌面" />
+    <category term="centos安装redis桌面" />
+    <category term="linux安装centos7安装Redis Desktop Manager" />
+    <category term="Redis Desktop Manager" />
+    <category term="redis桌面" />
+    <category term="centos7" />
+    <category term="centos7-wine" />
+    <category term="wine" />
+    <category term="wine安装" />
+    <category term="root密码" />
+    <category term="root密码重置" />
+    <category term="忘记root密码" />
+    <category term="memcache" />
+    <category term="memcached" />
+    <category term="生活手记" />
+    <category term="艾瑞可erik" />
+    <category term="程序员" />
+    <category term="开源云" />
+    <category term="容器" />
+    <category term="cncf" />
+    <category term="监控" />
+    <category term="composer" />
+    <category term="composer部署" />
+    <category term="内网部署composer" />
+    <category term="cphalcon" />
+    <category term="cphalcon报错" />
+    <category term="css中的em" />
+    <category term="响应式字体" />
+    <category term="响应式布局样式" />
+    <category term="proxy代理搭建" />
+    <category term="代理服务器搭建" />
+    <category term="proxy服务器" />
+    <category term="查找" />
+    <category term="排序" />
+    <category term="快速排序" />
+    <category term="冒泡排序" />
+    <category term="二分查找" />
+    <category term="datahub" />
+    <category term="datahub安装" />
+    <category term="deepin" />
+    <category term="emergency" />
+    <category term="emergency mode" />
+    <category term="deepin黑屏" />
+    <category term="清理系统" />
+    <category term="清理c盘" />
+    <category term="dns" />
+    <category term="域名监测" />
+    <category term="网站监测" />
+    <category term="docker" />
+    <category term="php安装" />
+    <category term="杂谈" />
+    <category term="ecshop" />
+    <category term="框架" />
+    <category term="beego数据分页" />
+    <category term="分页" />
+    <category term="elasticsearch" />
+    <category term="elasticsearch搭建" />
+    <category term="elasticsearch集群" />
+    <category term="系统" />
+    <category term="emm" />
+    <category term="mdm" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
+    <category term="免费" />
+    <category term="jenkis" />
+    <category term="jenkis教程" />
+    <category term="随笔吐槽" />
+    <category term="算法" />
+    <category term="ping" />
+    <category term="ping服务器" />
+    <category term="各大网站ping" />
+    <category term="搜引擎ping服务器" />
+    <category term="go获取ip" />
+    <category term="im" />
+    <category term="go中pdf生成" />
+    <category term="go中限流" />
+    <category term="go对接快递签名" />
+    <category term="go时间获取" />
+    <category term="go类型转换" />
+    <category term="微服务" />
+    <category term="go-zero" />
+    <category term="rpc" />
+    <category term="go加密" />
+    <category term="go解密" />
+    <category term="归" />
+    <category term="吐槽" />
+    <category term="php大全" />
+    <category term="php资料" />
+    <category term="hadoop" />
+    <category term="hadoop2.8.0" />
+    <category term="hadoop安装教程" />
+    <category term="hadoop安装详细教程" />
+    <category term="hadoop教程" />
+    <category term="hadoop部署" />
+    <category term="hadoop3" />
+    <category term="hadoop配置" />
+    <category term="log4j2" />
+    <category term="数据库" />
+    <category term="hbase安装教程" />
+    <category term="hbase" />
+    <category term="http1.1" />
+    <category term="http2.0" />
+    <category term="会话" />
+    <category term="会话原理" />
+    <category term="hyperf" />
+    <category term="杂录" />
+    <category term="新冠肺炎" />
+    <category term="springboot" />
+    <category term="springboot内网部署" />
+    <category term="linux恢复" />
+    <category term="linux误删" />
+    <category term="linux命令" />
+    <category term="linux命令汇总" />
+    <category term="jenkins" />
+    <category term="jetbtrains" />
+    <category term="phpstorm" />
+    <category term="搜索引擎" />
+    <category term="图片" />
+    <category term="素材" />
+    <category term="jq" />
+    <category term="jq侧边导航" />
+    <category term="侧边导航" />
+    <category term="js判断浏览器" />
+    <category term="js判断浏览器版本" />
+    <category term="判断浏览器" />
+    <category term="浏览器版本判断" />
+    <category term="获取浏览器信息" />
+    <category term="kali右键汉化" />
+    <category term="kali桌面右键汉化" />
+    <category term="kali右键创建文件" />
+    <category term="区块链" />
+    <category term="lanmp" />
+    <category term="php环境独立配置" />
+    <category term="服务器" />
+    <category term="劳动纠纷" />
+    <category term="追缴工资" />
+    <category term="申请仲裁" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="linux报错" />
+    <category term="linux中update-command-not-found" />
+    <category term="linux运行命令报错" />
+    <category term="web前端" />
+    <category term="web优化" />
+    <category term="撮合算法" />
+    <category term="撮合" />
+    <category term="php撮合算法" />
+    <category term="maven搭建库" />
+    <category term="maven" />
+    <category term="maven内网库" />
+    <category term="高级缓存配置" />
+    <category term="mongodb" />
+    <category term="mongodb权限" />
+    <category term="可穿戴设备" />
+    <category term="mysql" />
+    <category term="分库分表" />
+    <category term="mysql应对千万级" />
+    <category term="mysql瓶颈" />
+    <category term="mysql瓶颈解决办法" />
+    <category term="redis" />
+    <category term="数据一致性" />
+    <category term="mysql消息" />
+    <category term="mysql队列" />
+    <category term="mysql高并发" />
+    <category term="mysql存储" />
+    <category term="mysql引擎" />
+    <category term="mysql数据表设计选择" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
+    <category term="内网支付" />
+    <category term="内网穿透" />
+    <category term="支付接口本地化开发" />
+    <category term="本地挂网" />
+    <category term="穿透" />
+    <category term="go" />
+    <category term="new和make的区别" />
+    <category term="红包算法" />
+    <category term="深圳劳动法服务部门" />
+    <category term="非关系型数据库" />
+    <category term="onethink" />
+    <category term="oop" />
+    <category term="php管理系统" />
+    <category term="开放接口开发" />
+    <category term="开源工具" />
+    <category term="桌面共享工具" />
+    <category term="openresty" />
+    <category term="openvas" />
+    <category term="openvas安装" />
+    <category term="php变量" />
+    <category term="php超级全局变量" />
+    <category term="php超级变量" />
+    <category term="php基本类型" />
+    <category term="php数据类型" />
+    <category term="php设计模式" />
+    <category term="php对接微信支付" />
+    <category term="微信支付" />
+    <category term="微信支付回调" />
+    <category term="游戏" />
+    <category term="php函数" />
+    <category term="php随机数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
+    <category term="php环境" />
+    <category term="php集成环境" />
+    <category term="服务器集成环境" />
+    <category term="数组函数" />
+    <category term="数组排序函数" />
+    <category term="php数学函数" />
+    <category term="php面试题" />
+    <category term="php面向对象" />
+    <category term="面向对象" />
+    <category term="php-zookeeper" />
+    <category term="zookeeper3.5.5" />
+    <category term="php-zookeeper扩展" />
+    <category term="php串口开发" />
+    <category term="php倒计时" />
+    <category term="php时间" />
+    <category term="倒计时" />
+    <category term="计算时间" />
+    <category term="PHP数组" />
+    <category term="字符串函数" />
+    <category term="排序函数" />
+    <category term="php的SPL" />
+    <category term="SPL手册" />
+    <category term="PHP算法" />
+    <category term="php递归" />
+    <category term="递归" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
+    <category term="php过滤" />
+    <category term="过滤" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php中if" />
+    <category term="php中if判断" />
+    <category term="php的if" />
+    <category term="php字符串" />
+    <category term="php7中sphinx" />
+    <category term="php7中sphinx扩展" />
+    <category term="sphinx扩展" />
+    <category term="python" />
+    <category term="python库" />
+    <category term="a标签" />
+    <category term="a标签虚线" />
+    <category term="虚线框" />
+    <category term="R语言" />
+    <category term="数据随机化" />
+    <category term="redis总结" />
+    <category term="redis命令" />
+    <category term="redis监控" />
+    <category term="redis锁" />
+    <category term="redis分布式锁" />
+    <category term="任意金额输入" />
+    <category term="10元、5元、2元" />
+    <category term="队列" />
+    <category term="栈" />
+    <category term="顺序表" />
+    <category term="链表" />
+    <category term="数据结构" />
+    <category term="线性结构" />
+    <category term="浏览器禁止操作视频" />
+    <category term="禁止视频" />
+    <category term="响应慢" />
+    <category term="页面优化" />
+    <category term="js编辑" />
+    <category term="runjs" />
+    <category term="在线编辑" />
+    <category term="rust" />
+    <category term="rust配置" />
+    <category term="seajs" />
+    <category term="session" />
+    <category term="路由器烧录" />
+    <category term="烧录" />
+    <category term="极路由2烧录" />
+    <category term="砖头烧录" />
+    <category term="免费服务器" />
+    <category term="空间" />
+    <category term="资源" />
+    <category term="深圳政府电话" />
+    <category term="深圳电话" />
+    <category term="特区电话" />
+    <category term="居住证" />
+    <category term="居住证签注" />
+    <category term="深圳新居住证" />
+    <category term="国庆骑行" />
+    <category term="深圳珠海骑行" />
+    <category term="骑行" />
+    <category term="世界那么大" />
+    <category term="css3" />
+    <category term="css在线生成工具" />
+    <category term="css工具" />
+    <category term="php正则" />
+    <category term="正则" />
+    <category term="shodan" />
+    <category term="黑谷歌" />
+    <category term="黒帽搜素" />
+    <category term="shopex" />
+    <category term="可视化数据" />
+    <category term="数据" />
+    <category term="数据表" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
+    <category term="socket通信" />
+    <category term="socket多进程" />
+    <category term="socket" />
+    <category term="sql" />
+    <category term="sql优化" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
+    <category term="结构体转map" />
+    <category term="config" />
+    <category term="thinkphp" />
+    <category term="配置文件" />
+    <category term="树" />
+    <category term="二叉树" />
+    <category term="js插件" />
+    <category term="web自适应" />
+    <category term="响应式布局" />
+    <category term="响应式所有分辨率" />
+    <category term="自适应布局" />
+    <category term="自适应所有分辨率" />
+    <category term="webman" />
+    <category term="mysql设置超时，超时" />
+    <category term="markdown" />
+    <category term="wget" />
+    <category term="wget抓取" />
+    <category term="网站抓取" />
+    <category term="我在" />
+    <category term="wordpress" />
+    <category term="wordpress标签" />
+    <category term="wpscan" />
+    <category term="usbrip" />
+    <category term="无限极分类" />
+    <category term="php无限极" />
+    <category term="分类tree" />
+    <category term="无限极分类树型" />
+    <category term="域名合并" />
+    <category term="xhprof" />
+    <category term="laravel" />
+    <category term="composer插件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
+    <category term="携程" />
+    <category term="携程攻击" />
+    <category term="携程网站瘫痪" />
+    <category term="物理删除" />
+    <category term="3D" />
+    <category term="动画" />
+    <category term="平台" />
+    <category term="虚幻4引擎编辑" />
+    <category term="生成唯一id" />
+    <category term="生成id" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
+    <category term="储蓄卡免年费" />
+    <category term="银行卡" />
+    <category term="银行卡免年费" />
+    <category term="composer安装" />
+    <category term="composer配置" />
+    <category term="项目创建composer" />
+    <category term="mysql优化" />
+    <category term="mysql读写优化" />
+    <category term="数据库优化，mysql语句优化" />
+    <category term="php加密" />
+    <category term="php技术" />
+    <category term="夕阳" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
+    <category term="web框架" />
+    <category term="php抓取图片" />
+    <category term="php批量抓取页面图片" />
+    <category term="邮箱服务器" />
+    <category term="正则表达式" />
+    <category term="翻墙" />
+    <category term="谷歌" />
+    <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2021/04/07/redis-about-all/</id>
+        <title>关于redis的总结</title>
+        <link rel="alternate" href="https://erik.xyz/2021/04/07/redis-about-all/"/>
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;基础数据结构&#34;&gt;&lt;a href=&#34;#基础数据结构&#34; class=&#34;headerlink&#34; title=&#34;基础数据结构&#34;&gt;&lt;/a&gt;基础数据结构&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;字符串（string）&#34;&gt;&lt;a href=&#34;#字符串（string）&#34; class=&#34;headerlink&#34; title=&#34;字符串（string）&#34;&gt;&lt;/a&gt;字符串（string）&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;字符串、整数、浮点数&lt;/li&gt;
+&lt;li&gt;对整个字符串或者字符串的其中一部分执行操作，对整数和浮点数执行自增或自减操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;哈希列表（hash）&#34;&gt;&lt;a href=&#34;#哈希列表（hash）&#34; class=&#34;headerlink&#34; title=&#34;哈希列表（hash）&#34;&gt;&lt;/a&gt;哈希列表（hash）&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;包含键值对的无序散列表&lt;/li&gt;
+&lt;li&gt;添加、获取、移除单个键值对，获取所有键值对，检查某个键是否存在&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;列表（list）&#34;&gt;&lt;a href=&#34;#列表（list）&#34; class=&#34;headerlink&#34; title=&#34;列表（list）&#34;&gt;&lt;/a&gt;列表（list）&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;链表&lt;/li&gt;
+&lt;li&gt;从两端压入或者弹出元素，读取单个或者多个元素进行修剪，只保留一个范围内的元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;集合（set）&#34;&gt;&lt;a href=&#34;#集合（set）&#34; class=&#34;headerlink&#34; title=&#34;集合（set）&#34;&gt;&lt;/a&gt;集合（set）&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;无序集合&lt;/li&gt;
+&lt;li&gt;添加、获取、移除单个元素，检查一个元素是否存在与集合中，计算交集、并集、差集，从集合里面随机获取元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;有序集合（sort-set）&#34;&gt;&lt;a href=&#34;#有序集合（sort-set）&#34; class=&#34;headerlink&#34; title=&#34;有序集合（sort set）&#34;&gt;&lt;/a&gt;有序集合（sort set）&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;有序集合&lt;/li&gt;
+&lt;li&gt;添加、获取、删除元素，根据分值范围或者成员来获取元素，计算一个键的排名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;复杂的数据结构&#34;&gt;&lt;a href=&#34;#复杂的数据结构&#34; class=&#34;headerlink&#34; title=&#34;复杂的数据结构&#34;&gt;&lt;/a&gt;复杂的数据结构&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;位图（bitmaps）&#34;&gt;&lt;a href=&#34;#位图（bitmaps）&#34; class=&#34;headerlink&#34; title=&#34;位图（bitmaps）&#34;&gt;&lt;/a&gt;位图（bitmaps）&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Bitmap 在 Redis 中不是一种实际的数据类型，而是一种将 String 作为 Bitmap 使用的方法。可以理解为将 String 转换为 bit 数组。使用 Bitmap 来存储 true/false 类型的简单数据极为节省空间。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;算法数据结构（hyperloglogs）&#34;&gt;&lt;a href=&#34;#算法数据结构（hyperloglogs）&#34; class=&#34;headerlink&#34; title=&#34;算法数据结构（hyperloglogs）&#34;&gt;&lt;/a&gt;算法数据结构（hyperloglogs）&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;HyperLogLogs 是一种主要用于数量统计的数据结构，它和 Set 类似，维护一个不可重复的 String 集合，但是 HyperLogLogs 并不维护具体的 member 内容，只维护 member 的个数。也就是说，HyperLogLogs 只能用于计算一个集合中不重复的元素数量，所以它比 Set 要节省很多内存空间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;地理空间（geo）&#34;&gt;&lt;a href=&#34;#地理空间（geo）&#34; class=&#34;headerlink&#34; title=&#34;地理空间（geo）&#34;&gt;&lt;/a&gt;地理空间（geo）&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;地理空间索引半径查询&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;布隆过滤（bloomfilter）&#34;&gt;&lt;a href=&#34;#布隆过滤（bloomfilter）&#34; class=&#34;headerlink&#34; title=&#34;布隆过滤（bloomfilter）&#34;&gt;&lt;/a&gt;布隆过滤（bloomfilter）&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;非分布式场景下Redis应用的备份与容灾&#34;&gt;&lt;a href=&#34;#非分布式场景下Redis应用的备份与容灾&#34; class=&#34;headerlink&#34; title=&#34;非分布式场景下Redis应用的备份与容灾&#34;&gt;&lt;/a&gt;非分布式场景下Redis应用的备份与容灾&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;方案一&#34;&gt;&lt;a href=&#34;#方案一&#34; class=&#34;headerlink&#34; title=&#34;方案一&#34;&gt;&lt;/a&gt;方案一&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;一个Master节点，两个Slave节点。客户端写数据的时候是写Master节点，读的时候，是读取两个Slave，这样实现读的扩展，减轻了Master节点读负载。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;方案二&#34;&gt;&lt;a href=&#34;#方案二&#34; class=&#34;headerlink&#34; title=&#34;方案二&#34;&gt;&lt;/a&gt;方案二&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Master和Slave1使用keepalived进行VIP转移。Client连接Master的时候是通过VIP进行连接的。避免了方案一IP更改的情况。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;Redis-Sentinel架构&#34;&gt;&lt;a href=&#34;#Redis-Sentinel架构&#34; class=&#34;headerlink&#34; title=&#34;Redis Sentinel架构&#34;&gt;&lt;/a&gt;Redis Sentinel架构&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Sentinel集群对自身和Redis主从复制进行监控。当发现Master节点出现故障时，会经过如下步骤：&lt;ul&gt;
+&lt;li&gt;Sentinel之间进行选举，选举出一个leader，由选举出的leader进行failover&lt;/li&gt;
+&lt;li&gt;Sentinel leader选取slave节点中的一个slave作为新的Master节点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;客户端工具&#34;&gt;&lt;a href=&#34;#客户端工具&#34; class=&#34;headerlink&#34; title=&#34;客户端工具&#34;&gt;&lt;/a&gt;客户端工具&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;使用socket连接redis服务器&#34;&gt;&lt;a href=&#34;#使用socket连接redis服务器&#34; class=&#34;headerlink&#34; title=&#34;使用socket连接redis服务器&#34;&gt;&lt;/a&gt;使用socket连接redis服务器&lt;/h3&gt;&lt;pre&gt;&lt;code&gt; redis-cli -s /tmp/redis.sock
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;不使用socket连接redis服务器&#34;&gt;&lt;a href=&#34;#不使用socket连接redis服务器&#34; class=&#34;headerlink&#34; title=&#34;不使用socket连接redis服务器&#34;&gt;&lt;/a&gt;不使用socket连接redis服务器&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;redis-cli
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;性能测试工具&#34;&gt;&lt;a href=&#34;#性能测试工具&#34; class=&#34;headerlink&#34; title=&#34;性能测试工具&#34;&gt;&lt;/a&gt;性能测试工具&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;使用默认参数测试&#34;&gt;&lt;a href=&#34;#使用默认参数测试&#34; class=&#34;headerlink&#34; title=&#34;使用默认参数测试&#34;&gt;&lt;/a&gt;使用默认参数测试&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;redis-benchmark
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;自定义参数测试&#34;&gt;&lt;a href=&#34;#自定义参数测试&#34; class=&#34;headerlink&#34; title=&#34;自定义参数测试&#34;&gt;&lt;/a&gt;自定义参数测试&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;redis-benchmark -n 1000000 --csv
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;雪球-rdr：&#34;&gt;&lt;a href=&#34;#雪球-rdr：&#34; class=&#34;headerlink&#34; title=&#34;雪球 rdr：&#34;&gt;&lt;/a&gt;雪球 rdr：&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;  https://github.com/xueqiu/rdr
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;redis-rdb-tools：&#34;&gt;&lt;a href=&#34;#redis-rdb-tools：&#34; class=&#34;headerlink&#34; title=&#34;redis-rdb-tools：&#34;&gt;&lt;/a&gt;redis-rdb-tools：&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;https://github.com/sripathikrishnan/redis-rdb-tools
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;工具命令&#34;&gt;&lt;a href=&#34;#工具命令&#34; class=&#34;headerlink&#34; title=&#34;工具命令&#34;&gt;&lt;/a&gt;工具命令&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;指定配置文件启动服务&#34;&gt;&lt;a href=&#34;#指定配置文件启动服务&#34; class=&#34;headerlink&#34; title=&#34;指定配置文件启动服务&#34;&gt;&lt;/a&gt;指定配置文件启动服务&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;redis-server redis.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;指定端口启动服务&#34;&gt;&lt;a href=&#34;#指定端口启动服务&#34; class=&#34;headerlink&#34; title=&#34;指定端口启动服务&#34;&gt;&lt;/a&gt;指定端口启动服务&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;redis-server --port 6379
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;检查修复本地数据文件工具&#34;&gt;&lt;a href=&#34;#检查修复本地数据文件工具&#34; class=&#34;headerlink&#34; title=&#34;检查修复本地数据文件工具&#34;&gt;&lt;/a&gt;检查修复本地数据文件工具&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;redis-check-dump dump.rdb
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;检查修复AOF日志文件工具&#34;&gt;&lt;a href=&#34;#检查修复AOF日志文件工具&#34; class=&#34;headerlink&#34; title=&#34;检查修复AOF日志文件工具&#34;&gt;&lt;/a&gt;检查修复AOF日志文件工具&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;redis-check-aof appendonly.aof
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;基础命令&#34;&gt;&lt;a href=&#34;#基础命令&#34; class=&#34;headerlink&#34; title=&#34;基础命令&#34;&gt;&lt;/a&gt;基础命令&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;keys&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;列出Redis所有的key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;del&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;删除一个或多个key，多个key之间用空格分隔，其返回值为整数，表示成功删除了多少个存在的key，因此，如果只删除一个key，则可以从返回值中判断是否成功，如果删除多个key，则只能得到删除成功的数量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;exists&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;exists命令用于判断一个或多个key是否存在，判断多个key时，key之间用空格分隔,exists的返回值为整数，表示当前判断有多少个key是存在的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;expire/pexpire&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;expire设置key在多少秒之后过期，pexpire设置key在多少毫秒之后过期,成功返回1，失败返回0。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ttl/pttl&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ttl和pttl命令用于获取key的过期时间，其返回值为整型&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;当key不存在或过期时间，返回-2。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当key存在且永久有效时，返回-1。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当key有设置过期时间时，返回为剩下的秒数(pttl为毫秒数)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;expireat/pexpireat&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;设置key在某个时间戳过期,expreat参数时间戳用秒表示，而pexpireat则用毫秒表示，与expire和pexpire功能类似，返回1表示成功，0表示失败。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;persist&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;移除key的过期时间，将key设置为永久有效，当key设置了过期时间，使用persist命令移除后返回1，如果key不存在或本身就是永久有效的，则返回0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;type&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;判断key是什么类型的数据结构,返回值为string,list,set,hash,zset,分别表示我们前面介绍的Redis的5种基础数据结构。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;geo,hyperloglog,bitmaps等复杂的数据结构，都是在这五种基础数据结构上实现，比如geo是zset类型，hyperloglog和bitmaps都为string。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;auth &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Redis认证命令，执行其他命令前，必须先进行认证&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ping&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;测试客户端和服务器之间的联通，返回值为PONG,表示联通&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;config get * &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;获取所有配置参数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;config set config_name config_value&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;设置配置参数值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;info&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;返回服务器信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;select &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;切换数据库，redis默认的数据库是0-15，共16个数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;move&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将当前库的键移动到其他数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;dbsize&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;获取当前库中所有键的数量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;flushdb&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;删除当前库中的所有key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;flushall&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;删除所有库中的所有key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;save&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建当前库的备份&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;bgsave&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同save,但是是后台备份，不阻塞主进程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;eval&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;执行lua脚本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;string&#34;&gt;&lt;a href=&#34;#string&#34; class=&#34;headerlink&#34; title=&#34;string&#34;&gt;&lt;/a&gt;string&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;set&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为一个 key 设置 value，可以配合 EX/PX 参数指定 key 的有效期&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;get&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;获取某个 key 对应的 value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;getset&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为一个 key 设置 value，并返回该 key 的原 value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;incr/decr &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;自增/自减(前提是键值是整型)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;incrby/decrby &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;指定步长增加减少(q前提是键值是整型)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;mset&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;为多个 key 设置 value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;msetnx&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同 MSET，如果指定的 key 中有任意一个已存在，则不进行任何操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;mget&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;获取多个 key 对应的 value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;strlen &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;获取键的长度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;append &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;向指定键追加值，返回字符串长度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;setnx &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;判断键是否存在，存在返回0，否则返回1，不会覆盖原来值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;getrange &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;根据指定下标获取键的值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;list&#34;&gt;&lt;a href=&#34;#list&#34; class=&#34;headerlink&#34; title=&#34;list&#34;&gt;&lt;/a&gt;list&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;lpush&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;向指定 List 的左侧（即头部）插入 1 个或多个元素，返回插入后的 List 长度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;rpush&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同 lpush，向指定 List 的右侧（即尾部）插入 1 或多个元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;lpushx/rpushx&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;与 lpush/rpush类似，区别在于，lpushx/rpushx操作的 key 如果不存在，则不会进行任何操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;lrange&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;返回指定 List 中指定范围的元素（双端包含，即 lrange key 0 10 会返回 11 个元素），时间复杂度 O(N)。应尽可能控制一次获取的元素数量，一次获取过大范围的 List 元素会导致延迟，同时对长度不可预知的 List，避免使用 lrange key 0 -1 这样的完整遍历操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;lindex&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;返回指定 List 指定 index 上的元素，如果 index 越界，返回 nil。index 数值是回环的，即 - 1 代表 List 最后一个位置，-2 代表 List 倒数第二个位置。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;linsert&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;向指定 List 中指定元素之前 / 之后插入一个新元素，并返回操作后的 List 长度。如果指定的元素不存在，返回 - 1。如果指定 key 不存在，不会进行任何操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;lset&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;将指定 List 指定 index 上的元素设置为 value&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果 index 越界则返回错误，时间复杂度 O(N)，&lt;/li&gt;
+&lt;li&gt;如果操作的是头 / 尾部的元素，则时间复杂度为 O(1)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;lpop&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;从指定 List 的左侧（即头部）移除一个元素并返回&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;rpop&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同 lpop，从指定 List 的右侧（即尾部）移除 1 个元素并返回&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;llen&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;返回指定 List 的长度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hash&#34;&gt;&lt;a href=&#34;#hash&#34; class=&#34;headerlink&#34; title=&#34;hash&#34;&gt;&lt;/a&gt;hash&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;hset&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将 key 对应的 Hash 中的 field 设置为 value。如果该 Hash 不存在，会自动创建一个。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hget&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;返回指定 Hash 中 field 字段的值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hsetnx&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同 HSET，但如 field 已经存在，HSETNX 不会进行任何操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hexists&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;判断指定 Hash 中 field 是否存在，存在返回 1，不存在返回 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hincrby&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同 incrby命令，对指定 Hash 中的一个 field 进行 incrby&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hmset/hmget&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同 HSET 和 HGET，可以批量操作同一个 key 下的多个 field&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hdel&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;删除指定 Hash 中的 field（1 个或多个）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hgetall&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;返回指定 Hash 中所有的 field-value 对。返回结果为数组，数组中 field 和 value 交替出现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hkeys/hvals&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;返回指定 Hash 中所有的 field/value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;hlen &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;返回指定hash 表中field中的数量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;set&#34;&gt;&lt;a href=&#34;#set&#34; class=&#34;headerlink&#34; title=&#34;set&#34;&gt;&lt;/a&gt;set&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;scard&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;返回指定 Set 中的 member 个数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;sismember&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;判断指定的 value 是否存在于指定 Set 中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;smove&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将指定 member 从一个 Set 移至另一个 Set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;sadd&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;向指定 Set 中添加 1 个或多个 member，如果指定 Set 不存在，会自动创建一个。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;srem&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;从指定 Set 中移除 1 个或多个 member&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;srandmember&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;从指定 Set 中随机返回 1 个或多个 member&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;spop&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;从指定 Set 中随机移除并返回 count 个 member&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;smembers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;返回指定 Hash 中所有的 member&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;sunion/sunionstore&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;计算多个 Set 的并集并返回 / 存储至另一个 Set 中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;sinter/sinterstore&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;计算多个 Set 的交集并返回 / 存储至另一个 Set 中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;sdiff/sinterstore&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;计算 1 个 Set 与 1 或多个 Set 的差集并返回 / 存储至另一个 Set 中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;zset&#34;&gt;&lt;a href=&#34;#zset&#34; class=&#34;headerlink&#34; title=&#34;zset&#34;&gt;&lt;/a&gt;zset&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;zadd&lt;/li&gt;
+&lt;li&gt;zrem&lt;/li&gt;
+&lt;li&gt;zcard&lt;/li&gt;
+&lt;li&gt;zcount&lt;/li&gt;
+&lt;li&gt;zscore&lt;/li&gt;
+&lt;li&gt;zrank/zrevrank&lt;/li&gt;
+&lt;li&gt;zincrby&lt;/li&gt;
+&lt;li&gt;zrange/zrevrange&lt;/li&gt;
+&lt;li&gt;zrangebyscore/zrevragebyscore&lt;/li&gt;
+&lt;li&gt;zremrangebyrank/zremrangebyscore&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;事物&#34;&gt;&lt;a href=&#34;#事物&#34; class=&#34;headerlink&#34; title=&#34;事物&#34;&gt;&lt;/a&gt;事物&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;multi &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;开启一个事务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;exec &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;执行事务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;discard &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;撤销事务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;watch &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;监视数据库键，若发生改变，返回空&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;复制&#34;&gt;&lt;a href=&#34;#复制&#34; class=&#34;headerlink&#34; title=&#34;复制&#34;&gt;&lt;/a&gt;复制&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;info replication&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;获取复制信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;slaveof&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;建立复制关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;sync &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同步&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;订阅发布&#34;&gt;&lt;a href=&#34;#订阅发布&#34; class=&#34;headerlink&#34; title=&#34;订阅发布&#34;&gt;&lt;/a&gt;订阅发布&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;subscribe&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;订阅一个或多个频道&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;publish &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;向某一频道发送信息&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;性能调优&#34;&gt;&lt;a href=&#34;#性能调优&#34; class=&#34;headerlink&#34; title=&#34;性能调优&#34;&gt;&lt;/a&gt;性能调优&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;避免存储-bigkey&#34;&gt;&lt;a href=&#34;#避免存储-bigkey&#34; class=&#34;headerlink&#34; title=&#34;避免存储 bigkey&#34;&gt;&lt;/a&gt;避免存储 bigkey&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;使用-pipelining-将连续执行的命令组合执行&#34;&gt;&lt;a href=&#34;#使用-pipelining-将连续执行的命令组合执行&#34; class=&#34;headerlink&#34; title=&#34;使用 pipelining 将连续执行的命令组合执行&#34;&gt;&lt;/a&gt;使用 pipelining 将连续执行的命令组合执行&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;操作系统的-Transparent-huge-pages-功能必须关闭&#34;&gt;&lt;a href=&#34;#操作系统的-Transparent-huge-pages-功能必须关闭&#34; class=&#34;headerlink&#34; title=&#34;操作系统的 Transparent huge pages 功能必须关闭&#34;&gt;&lt;/a&gt;操作系统的 Transparent huge pages 功能必须关闭&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;  echo never &amp;gt; /sys/kernel/mm/transparent_hugepage/enabled
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;使用物理机部署-Redis&#34;&gt;&lt;a href=&#34;#使用物理机部署-Redis&#34; class=&#34;headerlink&#34; title=&#34;使用物理机部署 Redis&#34;&gt;&lt;/a&gt;使用物理机部署 Redis&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Redis 在做数据持久化时，采用创建子进程的方式进行。&lt;br&gt;而创建子进程会调用操作系统的 fork 系统调用，这个系统调用的执行耗时，与系统环境有关。&lt;br&gt;虚拟机环境执行 fork 的耗时，要比物理机慢得多，所以你的 Redis 应该尽可能部署在物理机上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;检查数据持久化策略&#34;&gt;&lt;a href=&#34;#检查数据持久化策略&#34; class=&#34;headerlink&#34; title=&#34;检查数据持久化策略&#34;&gt;&lt;/a&gt;检查数据持久化策略&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;考虑引入读写分离机制&#34;&gt;&lt;a href=&#34;#考虑引入读写分离机制&#34; class=&#34;headerlink&#34; title=&#34;考虑引入读写分离机制&#34;&gt;&lt;/a&gt;考虑引入读写分离机制&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;开启-lazy-free-机制&#34;&gt;&lt;a href=&#34;#开启-lazy-free-机制&#34; class=&#34;headerlink&#34; title=&#34;开启 lazy-free 机制&#34;&gt;&lt;/a&gt;开启 lazy-free 机制&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;如果你无法避免存储 bigkey，那么我建议你开启 Redis 的 lazy-free 机制。（4.0+版本支持）&lt;br&gt;当开启这个机制后，Redis 在删除一个 bigkey 时，释放内存的耗时操作，将会放到后台线程中去执行，这样可以在最大程度上，避免对主线程的影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;不使用复杂度过高的命令&#34;&gt;&lt;a href=&#34;#不使用复杂度过高的命令&#34; class=&#34;headerlink&#34; title=&#34;不使用复杂度过高的命令&#34;&gt;&lt;/a&gt;不使用复杂度过高的命令&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;避免执行例如 SORT、SINTER、SINTERSTORE、ZUNIONSTORE、ZINTERSTORE 等聚合类命令。&lt;br&gt;对于这种聚合类操作，我建议你把它放到客户端来执行，不要让 Redis 承担太多的计算工作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;执行-O-N-命令时，关注-N-的大&#34;&gt;&lt;a href=&#34;#执行-O-N-命令时，关注-N-的大&#34; class=&#34;headerlink&#34; title=&#34;执行 O(N) 命令时，关注 N 的大&#34;&gt;&lt;/a&gt;执行 O(N) 命令时，关注 N 的大&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;查询数据时，遵循原则&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;先查询数据元素的数量（LLEN/HLEN/SCARD/ZCARD）&lt;/li&gt;
+&lt;li&gt;元素数量较少，可一次性查询全量数据&lt;/li&gt;
+&lt;li&gt;元素数量非常多，分批查询数据（LRANGE/HASCAN/SSCAN/ZSCAN）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;关注-DEL-时间复杂度&#34;&gt;&lt;a href=&#34;#关注-DEL-时间复杂度&#34; class=&#34;headerlink&#34; title=&#34;关注 DEL 时间复杂度&#34;&gt;&lt;/a&gt;关注 DEL 时间复杂度&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;删除一个 key，其元素数量越多，执行 DEL 也就越慢&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;List类型：执行多次 LPOP/RPOP，直到所有元素都删除完成&lt;/li&gt;
+&lt;li&gt;Hash/Set/ZSet类型：先执行 HSCAN/SSCAN/SCAN 查询元素，再执行 HDEL/SREM/ZREM 依次删除每个元素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;批量命令代替单个命令&#34;&gt;&lt;a href=&#34;#批量命令代替单个命令&#34; class=&#34;headerlink&#34; title=&#34;批量命令代替单个命令&#34;&gt;&lt;/a&gt;批量命令代替单个命令&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;批量操作相比于多次单个操作的优势在于，可以显著减少客户端、服务端的来回网络 IO 次数&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;String / Hash 使用 MGET/MSET 替代 GET/SET，HMGET/HMSET 替代 HGET/HSET&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;其它数据类型使用 Pipeline，打包一次性发送多个命令到服务端执行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;避免集中过期-key&#34;&gt;&lt;a href=&#34;#避免集中过期-key&#34; class=&#34;headerlink&#34; title=&#34;避免集中过期 key&#34;&gt;&lt;/a&gt;避免集中过期 key&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;如果你的业务存在大量 key 集中过期的情况，那么 Redis 在清理过期 key 时，也会有阻塞主线程的风险&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在设置过期时间时，增加一个随机时间，把这些 key 的过期时间打散，从而降低集中过期对主线程的影响&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;使用长连接操作-Redis，合理配置连接池&#34;&gt;&lt;a href=&#34;#使用长连接操作-Redis，合理配置连接池&#34; class=&#34;headerlink&#34; title=&#34;使用长连接操作 Redis，合理配置连接池&#34;&gt;&lt;/a&gt;使用长连接操作 Redis，合理配置连接池&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;你的业务应该使用长连接操作 Redis，避免短连接&lt;/li&gt;
+&lt;li&gt;当使用短连接操作 Redis 时，每次都需要经过 TCP 三次握手、四次挥手，这个过程也会增加操作耗时&lt;/li&gt;
+&lt;li&gt;同时，你的客户端应该使用连接池的方式访问 Redis，并设置合理的参数，长时间不操作 Redis 时，需及时释放连接资源&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;只使用-db0&#34;&gt;&lt;a href=&#34;#只使用-db0&#34; class=&#34;headerlink&#34; title=&#34;只使用 db0&#34;&gt;&lt;/a&gt;只使用 db0&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;在一个连接上操作多个 db 数据时，每次都需要先执行 SELECT，这会给 Redis 带来额外的压力&lt;/li&gt;
+&lt;li&gt;使用多个 db 的目的是，按不同业务线存储数据，那为何不拆分多个实例存储呢？拆分多个实例部署，多个业务线不会互相影响，还能提高 Redis 的访问性能&lt;/li&gt;
+&lt;li&gt;Redis Cluster 只支持 db0，如果后期你想要迁移到 Redis Cluster，迁移成本高&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;使用读写分离-分片集群&#34;&gt;&lt;a href=&#34;#使用读写分离-分片集群&#34; class=&#34;headerlink&#34; title=&#34;使用读写分离 + 分片集群&#34;&gt;&lt;/a&gt;使用读写分离 + 分片集群&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;如果你的业务读请求量很大，那么可以采用部署多个从库的方式，实现读写分离，让 Redis 的从库分担读压力，进而提升性能&lt;/li&gt;
+&lt;li&gt;如果你的业务写请求量很大，单个 Redis 实例已无法支撑这么大的写流量，那么此时你需要使用分片集群，分担写压力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;不开启-AOF-或-AOF-配置为每秒刷盘&#34;&gt;&lt;a href=&#34;#不开启-AOF-或-AOF-配置为每秒刷盘&#34; class=&#34;headerlink&#34; title=&#34;不开启 AOF 或 AOF 配置为每秒刷盘&#34;&gt;&lt;/a&gt;不开启 AOF 或 AOF 配置为每秒刷盘&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;如果对于丢失数据不敏感的业务，我建议你不开启 AOF，避免 AOF 写磁盘拖慢 Redis 的性能&lt;/li&gt;
+&lt;li&gt;如果确实需要开启 AOF，那么我建议你配置为 appendfsync everysec，把数据持久化的刷盘操作，放到后台线程中去执行，尽量降低 Redis 写磁盘对性能的影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;长耗时命令&#34;&gt;&lt;a href=&#34;#长耗时命令&#34; class=&#34;headerlink&#34; title=&#34;长耗时命令&#34;&gt;&lt;/a&gt;长耗时命令&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;避免在使用这些-O-N-命令&#34;&gt;&lt;a href=&#34;#避免在使用这些-O-N-命令&#34; class=&#34;headerlink&#34; title=&#34;避免在使用这些 O(N) 命令&#34;&gt;&lt;/a&gt;避免在使用这些 O(N) 命令&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;不要把 List 当做列表使用，仅当做队列来使用&lt;/li&gt;
+&lt;li&gt;通过机制严格控制 Hash、Set、Sorted Set 的大小&lt;/li&gt;
+&lt;li&gt;可能的话，将排序、并集、交集等操作放在客户端执行&lt;/li&gt;
+&lt;li&gt;绝对禁止使用 keys 命令&lt;/li&gt;
+&lt;li&gt;避免一次性遍历集合类型的所有成员，而应使用 scan 类的命令进行分批的，游标式的遍历&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;Slow-Log-功能，自动记录耗时较长的命令&#34;&gt;&lt;a href=&#34;#Slow-Log-功能，自动记录耗时较长的命令&#34; class=&#34;headerlink&#34; title=&#34;Slow Log 功能，自动记录耗时较长的命令&#34;&gt;&lt;/a&gt;Slow Log 功能，自动记录耗时较长的命令&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;slowlog-log-slower-than xxxms  #执行时间慢于xxx毫秒的命令计入  。                              Slow Logslowlog-max-len xxx  #Slow Log的长度，即最大纪录多少条Slow Log&lt;/li&gt;
+&lt;li&gt;使用 slowlog get [number] 命令，可以输出最近进入 Slow Log 的 number 条命令。&lt;br&gt;使用 slowlog reset 命令，可以重置 Slow Log&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;网络引发的延迟&#34;&gt;&lt;a href=&#34;#网络引发的延迟&#34; class=&#34;headerlink&#34; title=&#34;网络引发的延迟&#34;&gt;&lt;/a&gt;网络引发的延迟&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;尽可能使用长连接或连接池，避免频繁创建销毁连接&lt;/li&gt;
+&lt;li&gt;客户端进行的批量数据操作，应使用 Pipeline 特性在一次交互中完成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;数据持久化引发的延迟&#34;&gt;&lt;a href=&#34;#数据持久化引发的延迟&#34; class=&#34;headerlink&#34; title=&#34;数据持久化引发的延迟&#34;&gt;&lt;/a&gt;数据持久化引发的延迟&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;要根据数据的安全级别和性能要求制定合理的持久化策略&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AOF + fsync always 的设置虽然能够绝对确保数据安全，但每个操作都会触发一次 fsync，会对 Redis 的性能有比较明显的影响&lt;/li&gt;
+&lt;li&gt;AOF + fsync every second 是比较好的折中方案，每秒 fsync 一次&lt;/li&gt;
+&lt;li&gt;AOF + fsync never 会提供 AOF 持久化方案下的最优性能&lt;br&gt;使用 RDB 持久化通常会提供比使用 AOF 更高的性能，但需要注意 RDB 的策略配置&lt;/li&gt;
+&lt;li&gt;每一次 RDB 快照和 AOF Rewrite 都需要 Redis 主进程进行 fork 操作。fork 操作本身可能会产生较高的耗时，与 CPU 和 Redis 占用的内存大小有关。根据具体的情况合理配置 RDB 快照和 AOF Rewrite 时机，避免过于频繁的 fork 带来的延迟&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;Swap-引发的延迟&#34;&gt;&lt;a href=&#34;#Swap-引发的延迟&#34; class=&#34;headerlink&#34; title=&#34;Swap 引发的延迟&#34;&gt;&lt;/a&gt;Swap 引发的延迟&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;当 Linux 将 Redis 所用的内存分页移至 swap 空间时，将会阻塞 Redis 进程，导致 Redis 出现不正常的延迟。Swap 通常在物理内存不足或一些进程在进行大量 I/O 操作时发生，应尽可能避免上述两种情况的出现。&lt;br&gt;/proc//smaps 文件中会保存进程的 swap 记录，通过查看这个文件，能够判断 Redis 的延迟是否由 Swap 产生。如果这个文件中记录了较大的 Swap size，则说明延迟很有可能是 Swap 造成的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;数据淘汰引发的延迟&lt;br&gt;当同一秒内有大量 key 过期时，也会引发 Redis 的延迟。在使用时应尽量将 key 的失效时间错开。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;主从复制与集群分片&#34;&gt;&lt;a href=&#34;#主从复制与集群分片&#34; class=&#34;headerlink&#34; title=&#34;主从复制与集群分片&#34;&gt;&lt;/a&gt;主从复制与集群分片&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;主从复制&#34;&gt;&lt;a href=&#34;#主从复制&#34; class=&#34;headerlink&#34; title=&#34;主从复制&#34;&gt;&lt;/a&gt;主从复制&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Redis 支持一主多从的主从复制架构。一个 Master 实例负责处理所有的写请求，Master 将写操作同步至所有 Slave。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;借助 Redis 的主从复制，可以实现读写分离和高可用&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;实时性要求不是特别高的读请求，可以在 Slave 上完成，提升效率。特别是一些周期性执行的统计任务，这些任务可能需要执行一些长耗时的 Redis 命令，可以专门规划出 1 个或几个 Slave 用于服务这些统计任务&lt;/li&gt;
+&lt;li&gt;借助 Redis Sentinel 可以实现高可用，当 Master crash 后，Redis Sentinel 能够自动将一个 Slave 晋升为 Master，继续提供服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Sentinel 做自动 failover&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Redis 的主从复制功能本身只是做数据同步，并不提供监控和自动 failover 能力，要通过主从复制功能来实现 Redis 的高可用，还需要引入一个组件：Redis Sentinel&lt;br&gt;Redis Sentinel 是 Redis 官方开发的监控组件，可以监控 Redis 实例的状态，通过 Master 节点自动发现 Slave 节点，并在监测到 Master 节点失效时选举出一个新的 Master，并向所有 Redis 实例推送新的主从配置&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;sentinel monitor mymaster 127.0.0.1 6379 2  #Master实例的IP、端口，以及选举需要的赞成票数&lt;/li&gt;
+&lt;li&gt;sentinel down-after-milliseconds mymaster 60000  #多长时间没有响应视为Master失效&lt;/li&gt;
+&lt;li&gt;sentinel failover-timeout mymaster 180000  #两次failover尝试间的间隔时长&lt;/li&gt;
+&lt;li&gt;sentinel parallel-syncs mymaster 1  #如果有多个Slave，可以通过此配置指定同时从新Master进行数据同步的Slave数，避免所有Slave同时进行数据同步导致查询服务也不可用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;集群分片&#34;&gt;&lt;a href=&#34;#集群分片&#34; class=&#34;headerlink&#34; title=&#34;集群分片&#34;&gt;&lt;/a&gt;集群分片&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Redis 中存储的数据量大，一台主机的物理内存已经无法容纳&lt;/li&gt;
+&lt;li&gt;Redis 的写请求并发量大，一个 Redis 实例以无法承载&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;缺点&#34;&gt;&lt;a href=&#34;#缺点&#34; class=&#34;headerlink&#34; title=&#34;缺点&#34;&gt;&lt;/a&gt;缺点&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;缓存和数据库双写一致性问题&#34;&gt;&lt;a href=&#34;#缓存和数据库双写一致性问题&#34; class=&#34;headerlink&#34; title=&#34;缓存和数据库双写一致性问题&#34;&gt;&lt;/a&gt;缓存和数据库双写一致性问题&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;降低不一致发生的概率，无法完全避免&lt;/li&gt;
+&lt;li&gt;只能保证最终一致性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;首先，采取正确更新策略，先更新数据库，再删缓存。其次，因为可能存在删除缓存失败的问题，提供一个补偿措施即可，例如利用消息队列。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;缓存雪崩问题&#34;&gt;&lt;a href=&#34;#缓存雪崩问题&#34; class=&#34;headerlink&#34; title=&#34;缓存雪崩问题&#34;&gt;&lt;/a&gt;缓存雪崩问题&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;缓存雪崩，即缓存同一时间大面积的失效，这个时候又来了一波请求，结果请求都怼到数据库上，从而导致数据库连接异常&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;缓存穿透&#34;&gt;&lt;a href=&#34;#缓存穿透&#34; class=&#34;headerlink&#34; title=&#34;缓存穿透&#34;&gt;&lt;/a&gt;缓存穿透&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;缓存穿透，即黑客故意去请求缓存中不存在的数据，导致所有的请求都怼到数据库上，从而数据库连接异常&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;缓存击穿问题&#34;&gt;&lt;a href=&#34;#缓存击穿问题&#34; class=&#34;headerlink&#34; title=&#34;缓存击穿问题&#34;&gt;&lt;/a&gt;缓存击穿问题&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;在第一个查询数据的请求上使用一个互斥锁来锁住它。其他的线程走到这一步拿不到锁就等着，等第一个线程查询到了数据，然后做缓存。后面的线程进来发现已经有缓存了，就直接走缓存。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;优点&#34;&gt;&lt;a href=&#34;#优点&#34; class=&#34;headerlink&#34; title=&#34;优点&#34;&gt;&lt;/a&gt;优点&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;纯内存操作&#34;&gt;&lt;a href=&#34;#纯内存操作&#34; class=&#34;headerlink&#34; title=&#34;纯内存操作&#34;&gt;&lt;/a&gt;纯内存操作&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Redis将所有数据放在内存中，非数据同步正常工作中，是不需要从磁盘读取数据的，0次IO。内存响应时间大约为100纳秒&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;单线程操作，避免了频繁的上下文切换&#34;&gt;&lt;a href=&#34;#单线程操作，避免了频繁的上下文切换&#34; class=&#34;headerlink&#34; title=&#34;单线程操作，避免了频繁的上下文切换&#34;&gt;&lt;/a&gt;单线程操作，避免了频繁的上下文切换&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;第一，单线程简化算法的实现，并发的数据结构实现不但困难且测试也麻烦。第二，单线程避免了线程切换以及加锁释放锁带来的消耗，对于服务端开发来说，锁和线程切换通常是性能杀手。当然了，单线程也会有它的缺点，也是Redis的噩梦：阻塞。如果执行一个命令过长，那么会造成其他命令的阻塞，对于Redis是十分致命的，所以Redis是面向快速执行场景的数据库。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;采用了非阻塞I-O多路复用机制&#34;&gt;&lt;a href=&#34;#采用了非阻塞I-O多路复用机制&#34; class=&#34;headerlink&#34; title=&#34;采用了非阻塞I/O多路复用机制&#34;&gt;&lt;/a&gt;采用了非阻塞I/O多路复用机制&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;当使用read或者write对某一文件描述符（File Descriptor FD）进行读写的时候，如果数据没有收到，那么该线程会被挂起，直到收到数据&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I/O多路复用实际上是指多个连接的管理可以在同一进程。多路是指网络连接，复用只是同一个线程&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Redis使用epoll作为I/O多路复用技术的实现，再加上Redis自身的事件处理模型将epoll的read、write、close等都转换成事件，不在网络I/O上浪费过多的时间。实现对多个FD读写的监控，提高性能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;策略以及内存淘汰机制&#34;&gt;&lt;a href=&#34;#策略以及内存淘汰机制&#34; class=&#34;headerlink&#34; title=&#34;策略以及内存淘汰机制&#34;&gt;&lt;/a&gt;策略以及内存淘汰机制&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;删除机制&#34;&gt;&lt;a href=&#34;#删除机制&#34; class=&#34;headerlink&#34; title=&#34;删除机制&#34;&gt;&lt;/a&gt;删除机制&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;定期删除&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用一个定时器来负责监视key,过期则自动删除。虽然内存及时释放，但是十分消耗CPU资源。在大并发请求下，CPU要将时间应用在处理请求，而不是删除key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;惰性删除策略&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;所谓惰性策略就是在客户端访问这个 key 的时候，redis 对 key 的过期时间进行检查，如果过期了就立即删除，不会给你返回任何东西。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;内存淘汰策略&#34;&gt;&lt;a href=&#34;#内存淘汰策略&#34; class=&#34;headerlink&#34; title=&#34;内存淘汰策略&#34;&gt;&lt;/a&gt;内存淘汰策略&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;noeviction&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当内存不足以容纳新写入数据时，新写入操作会报错&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;allkeys-lru&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当内存不足以容纳新写入数据时，在键空间中，移除最近最少使用的key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;allkeys-random&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当内存不足以容纳新写入数据时，在键空间中，随机移除某个key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;volatile-lru&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当内存不足以容纳新写入数据时，在设置了过期时间的键空间中，移除最近最少使用的key。不推荐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;volatile-random&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当内存不足以容纳新写入数据时，在设置了过期时间的键空间中，随机移除某个key。不推荐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;volatile-ttl&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;当内存不足以容纳新写入数据时，在设置了过期时间的键空间中，有更早过期时间的key优先移除。不推荐&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;持久化策略&#34;&gt;&lt;a href=&#34;#持久化策略&#34; class=&#34;headerlink&#34; title=&#34;持久化策略&#34;&gt;&lt;/a&gt;持久化策略&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;快照（RDB）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;快照是内存数据的二进制序列化形式，在存储上非常紧凑&lt;/li&gt;
+&lt;li&gt;RDB是通过Redis主进程fork子进程，让子进程执行磁盘 IO 操作来进行 RDB 持久化。RDB记录的是数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;日志追加（AOF）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AOF 日志是连续的增量备份，在长期的运行过程中会变的无比庞大，数据库重启时需要加载 AOF 日志进行指令重放，这个时间就会无比漫长&lt;/li&gt;
+&lt;li&gt;AOF 日志存储的是 Redis 服务器的顺序指令序列，AOF 日志只记录对内存进行修改的指令记录。AOF记录的是指令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;节省内存&#34;&gt;&lt;a href=&#34;#节省内存&#34; class=&#34;headerlink&#34; title=&#34;节省内存&#34;&gt;&lt;/a&gt;节省内存&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;控制-key-的长度&#34;&gt;&lt;a href=&#34;#控制-key-的长度&#34; class=&#34;headerlink&#34; title=&#34;控制 key 的长度&#34;&gt;&lt;/a&gt;控制 key 的长度&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;避免存储-bigkey-1&#34;&gt;&lt;a href=&#34;#避免存储-bigkey-1&#34; class=&#34;headerlink&#34; title=&#34;避免存储 bigkey&#34;&gt;&lt;/a&gt;避免存储 bigkey&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;String：大小控制在 10KB 以下&lt;/li&gt;
+&lt;li&gt;List/Hash/Set/ZSet：元素数量控制在 1 万以下&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;选择合适的数据类型&#34;&gt;&lt;a href=&#34;#选择合适的数据类型&#34; class=&#34;headerlink&#34; title=&#34;选择合适的数据类型&#34;&gt;&lt;/a&gt;选择合适的数据类型&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;String、Set：尽可能存储 int 类型数据&lt;/li&gt;
+&lt;li&gt;Hash、ZSet：存储的元素数量控制在转换阈值之下，以压缩列表存储，节约内存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;把-Redis-当作缓存使用&#34;&gt;&lt;a href=&#34;#把-Redis-当作缓存使用&#34; class=&#34;headerlink&#34; title=&#34;把 Redis 当作缓存使用&#34;&gt;&lt;/a&gt;把 Redis 当作缓存使用&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;实例设置-maxmemory-淘汰策略&#34;&gt;&lt;a href=&#34;#实例设置-maxmemory-淘汰策略&#34; class=&#34;headerlink&#34; title=&#34;实例设置 maxmemory + 淘汰策略&#34;&gt;&lt;/a&gt;实例设置 maxmemory + 淘汰策略&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;volatile-lru / allkeys-lru：优先保留最近访问过的数据&lt;/li&gt;
+&lt;li&gt;volatile-lfu / allkeys-lfu：优先保留访问次数最频繁的数据（4.0+版本支持）&lt;/li&gt;
+&lt;li&gt;volatile-ttl ：优先淘汰即将过期的数据&lt;/li&gt;
+&lt;li&gt;volatile-random / allkeys-random：随机淘汰数据&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;数据压缩后写入-Redis&#34;&gt;&lt;a href=&#34;#数据压缩后写入-Redis&#34; class=&#34;headerlink&#34; title=&#34;数据压缩后写入 Redis&#34;&gt;&lt;/a&gt;数据压缩后写入 Redis&lt;/h3&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;可靠性&#34;&gt;&lt;a href=&#34;#可靠性&#34; class=&#34;headerlink&#34; title=&#34;可靠性&#34;&gt;&lt;/a&gt;可靠性&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;按业务线部署实例&#34;&gt;&lt;a href=&#34;#按业务线部署实例&#34; class=&#34;headerlink&#34; title=&#34;按业务线部署实例&#34;&gt;&lt;/a&gt;按业务线部署实例&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;提升可靠性的第一步，就是「资源隔离」。&lt;br&gt;你最好按不同的业务线来部署 Redis 实例，这样当其中一个实例发生故障时，不会影响到其它业务。&lt;br&gt;这种资源隔离的方案，实施成本是最低的，但成效却是非常大的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;部署主从集群&#34;&gt;&lt;a href=&#34;#部署主从集群&#34; class=&#34;headerlink&#34; title=&#34;部署主从集群&#34;&gt;&lt;/a&gt;部署主从集群&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;如果你只使用单机版 Redis，那么就会存在机器宕机服务不可用的风险。&lt;br&gt;所以，你需要部署「多副本」实例，即主从集群，这样当主库宕机后，依旧有从库可以使用，避免了数据丢失的风险，也降低了服务不可用的时间。&lt;br&gt;在部署主从集群时，你还需要注意，主从库需要分布在不同机器上，避免交叉部署。&lt;br&gt;这么做的原因在于，通常情况下，Redis 的主库会承担所有的读写流量，所以我们一定要优先保证主库的稳定性，即使从库机器异常，也不要对主库造成影响。&lt;br&gt;而且，有时我们需要对 Redis 做日常维护，例如数据定时备份等操作，这时你就可以只在从库上进行，这只会消耗从库机器的资源，也避免了对主库的影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;合理配置主从复制参数&#34;&gt;&lt;a href=&#34;#合理配置主从复制参数&#34; class=&#34;headerlink&#34; title=&#34;合理配置主从复制参数&#34;&gt;&lt;/a&gt;合理配置主从复制参数&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;不合理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;主从复制中断&lt;/li&gt;
+&lt;li&gt;从库发起全量复制，主库性能受到影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;合理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;设置合理的 repl-backlog 参数：过小的 repl-backlog 在写流量比较大的场景下，主从复制中断会引发全量复制数据的风险&lt;/li&gt;
+&lt;li&gt;设置合理的 slave client-output-buffer-limit：当从库复制发生问题时，过小的 buffer 会导致从库缓冲区溢出，从而导致复制中断&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;部署哨兵集群，实现故障自动切换&#34;&gt;&lt;a href=&#34;#部署哨兵集群，实现故障自动切换&#34; class=&#34;headerlink&#34; title=&#34;部署哨兵集群，实现故障自动切换&#34;&gt;&lt;/a&gt;部署哨兵集群，实现故障自动切换&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;只部署了主从节点，但故障发生时是无法自动切换的，所以，你还需要部署哨兵集群，实现故障的「自动切换」。&lt;br&gt;而且，多个哨兵节点需要分布在不同机器上，实例为奇数个，防止哨兵选举失败，影响切换时间&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;日常运维&#34;&gt;&lt;a href=&#34;#日常运维&#34; class=&#34;headerlink&#34; title=&#34;日常运维&#34;&gt;&lt;/a&gt;日常运维&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;禁止使用-KEYS-FLUSHALL-FLUSHDB-命令&#34;&gt;&lt;a href=&#34;#禁止使用-KEYS-FLUSHALL-FLUSHDB-命令&#34; class=&#34;headerlink&#34; title=&#34;禁止使用 KEYS/FLUSHALL/FLUSHDB 命令&#34;&gt;&lt;/a&gt;禁止使用 KEYS/FLUSHALL/FLUSHDB 命令&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;执行这些命令，会长时间阻塞 Redis 主线程，危害极大&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SCAN 替换 KEYS&lt;/li&gt;
+&lt;li&gt;4.0+版本可使用 FLUSHALL/FLUSHDB ASYNC，清空数据的操作放在后台线程执行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;扫描线上实例时，设置休眠时间&#34;&gt;&lt;a href=&#34;#扫描线上实例时，设置休眠时间&#34; class=&#34;headerlink&#34; title=&#34;扫描线上实例时，设置休眠时间&#34;&gt;&lt;/a&gt;扫描线上实例时，设置休眠时间&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;不管你是使用 SCAN 扫描线上实例，还是对实例做 bigkey 统计分析，我建议你在扫描时一定记得设置休眠时间。&lt;br&gt;防止在扫描过程中，实例 OPS 过高对 Redis 产生性能抖动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;慎用-MONITOR-命令&#34;&gt;&lt;a href=&#34;#慎用-MONITOR-命令&#34; class=&#34;headerlink&#34; title=&#34;慎用 MONITOR 命令&#34;&gt;&lt;/a&gt;慎用 MONITOR 命令&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;有时在排查 Redis 问题时，你会使用 MONITOR 查看 Redis 正在执行的命令。&lt;br&gt;但如果你的 Redis OPS 比较高，那么在执行 MONITOR 会导致 Redis 输出缓冲区的内存持续增长，这会严重消耗 Redis 的内存资源，甚至会导致实例内存超过 maxmemory，引发数据淘汰，这种情况你需要格外注意&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;从库必须设置为-slave-read-only&#34;&gt;&lt;a href=&#34;#从库必须设置为-slave-read-only&#34; class=&#34;headerlink&#34; title=&#34;从库必须设置为 slave-read-only&#34;&gt;&lt;/a&gt;从库必须设置为 slave-read-only&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;你的从库必须设置为 slave-read-only 状态，避免从库写入数据，导致主从数据不一致。&lt;br&gt;除此之外，从库如果是非 read-only 状态，如果你使用的是 4.0 以下的 Redis，它存在这样的 Bug：&lt;br&gt;从库写入了有过期时间的数据，不会做定时清理和释放内存。&lt;br&gt;这会造成从库的内存泄露！这个问题直到 4.0 版本才修复，你在配置从库时需要格外注意&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;合理配置-timeout-和-tcp-keepalive-参数&#34;&gt;&lt;a href=&#34;#合理配置-timeout-和-tcp-keepalive-参数&#34; class=&#34;headerlink&#34; title=&#34;合理配置 timeout 和 tcp-keepalive 参数&#34;&gt;&lt;/a&gt;合理配置 timeout 和 tcp-keepalive 参数&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;如果因为网络原因，导致你的大量客户端连接与 Redis 意外中断，恰好你的 Redis 配置的 maxclients 参数比较小，此时有可能导致客户端无法与服务端建立新的连接（服务端认为超过了 maxclients）。&lt;br&gt;造成这个问题原因在于，客户端与服务端每建立一个连接，Redis 都会给这个客户端分配了一个 client fd。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;当客户端与服务端网络发生问题时，服务端并不会立即释放这个 client fd。&lt;/p&gt;
+&lt;p&gt;什么时候释放呢？&lt;/p&gt;
+&lt;p&gt;Redis 内部有一个定时任务，会定时检测所有 client 的空闲时间是否超过配置的 timeout 值。&lt;br&gt;如果 Redis 没有开启 tcp-keepalive 的话，服务端直到配置的 timeout 时间后，才会清理释放这个 client fd。&lt;/p&gt;
+&lt;p&gt;在没有清理之前，如果还有大量新连接进来，就有可能导致 Redis 服务端内部持有的 client fd 超过了 maxclients，这时新连接就会被拒绝。&lt;/p&gt;
+&lt;p&gt;针对这种情况，我给你的优化建议是：&lt;br&gt;不要配置过高的 timeout：让服务端尽快把无效的 client fd 清理掉&lt;br&gt;Redis 开启 tcp-keepalive：这样服务端会定时给客户端发送 TCP 心跳包，检测连接连通性，当网络异常时，可以尽快清理僵尸 client fd&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;调整-maxmemory-时，注意主从库的调整顺序&#34;&gt;&lt;a href=&#34;#调整-maxmemory-时，注意主从库的调整顺序&#34; class=&#34;headerlink&#34; title=&#34;调整 maxmemory 时，注意主从库的调整顺序&#34;&gt;&lt;/a&gt;调整 maxmemory 时，注意主从库的调整顺序&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;从库内存如果超过了 maxmemory，也会触发数据淘汰。&lt;br&gt;在某些场景下，从库是可能优先主库达到 maxmemory 的（例如在从库执行 MONITOR 命令，输出缓冲区占用大量内存），那么此时从库开始淘汰数据，主从库就会产生不一致。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;要想避免此问题，在调整 maxmemory 时，一定要注意主从库的修改顺序：&lt;/p&gt;
+&lt;p&gt;调大 maxmemory：先修改从库，再修改主库&lt;/p&gt;
+&lt;p&gt;调小 maxmemory：先修改主库，再修改从库&lt;/p&gt;
+&lt;p&gt;直到 Redis 5.0，Redis 才增加了一个配置 replica-ignore-maxmemory，默认从库超过 maxmemory 不会淘汰数据，才解决了此问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;预防-Redis-问题&#34;&gt;&lt;a href=&#34;#预防-Redis-问题&#34; class=&#34;headerlink&#34; title=&#34;预防 Redis 问题&#34;&gt;&lt;/a&gt;预防 Redis 问题&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;合理的资源规划&#34;&gt;&lt;a href=&#34;#合理的资源规划&#34; class=&#34;headerlink&#34; title=&#34;合理的资源规划&#34;&gt;&lt;/a&gt;合理的资源规划&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;保证机器有足够的 CPU、内存、带宽、磁盘资源&lt;/li&gt;
+&lt;li&gt;提前做好容量规划，主库机器预留一半内存资源，防止主从机器网络故障，引发大面积全量同步，导致主库机器内存不足的问题&lt;/li&gt;
+&lt;li&gt;单个实例内存建议控制在 10G 以下，大实例在主从全量同步、RDB 备份时有阻塞风险&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;h3 id=&#34;完善的监控预警&#34;&gt;&lt;a href=&#34;#完善的监控预警&#34; class=&#34;headerlink&#34; title=&#34;完善的监控预警&#34;&gt;&lt;/a&gt;完善的监控预警&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;做好机器 CPU、内存、带宽、磁盘监控，资源不足时及时报警，任意资源不足都会影响 Redis 性能&lt;/li&gt;
+&lt;li&gt;设置合理的 slowlog 阈值，并对其进行监控，slowlog 过多及时报警&lt;/li&gt;
+&lt;li&gt;监控组件采集 Redis INFO 信息时，采用长连接，避免频繁的短连接&lt;/li&gt;
+&lt;li&gt;做好实例运行时监控，重点关注 expired_keys、evicted_keys、latest_fork_usec 指标，这些指标短时突增可能会有阻塞风险&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上命令，应尽量避免传递 [0 -1] 或 [-inf +inf] 这样的参数，来对 Sorted Set 做一次性的完整遍历，特别是在 Sorted Set 的尺寸不可预知的情况下。可以通过 ZSCAN 命令来进行游标式的遍历，或通过 LIMIT 参数来限制返回 member 的数量（适用于 ZRANGEBYSCORE 和 ZREVRANGEBYSCORE 命令），以实现游标式的遍历&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; 时间复杂度为O(N)，N随着redis中key的数量增加而增加，因此redis有大量的key,keys命令会执行很长时间，而由于Redis是单线程，某个命令耗费过长时间，则会导致后面的的所有请求无法得到响应&lt;/p&gt;
+&lt;p&gt; &lt;img src=&#34;/img/202104/redis.svg&#34; alt=&#34;reids总结图&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="redis" />
+        <category term="redis总结" />
+        <category term="redis命令" />
+        <updated>2021-04-07T08:09:00.000Z</updated>
+    </entry>
+</feed>

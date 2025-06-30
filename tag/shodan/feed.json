@@ -1,0 +1,21 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"shodan\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2016/02/23/shi-yong-metasploit-shi-xian-shodan-sou-suo/",
+            "url": "https://erik.xyz/2016/02/23/shi-yong-metasploit-shi-xian-shodan-sou-suo/",
+            "title": "使用Metasploit实现shodan搜索",
+            "date_published": "2016-02-23T08:35:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>无意间发现shodan可以搜索任何联网的设备（不多解释，你懂的）。在kali系统中可以配置shodan,也就是说你不用去 <a href=\"https://www.shodan.io/官网上搜索了，在kali终端直接敲命令就可以了。\">https://www.shodan.io/官网上搜索了，在kali终端直接敲命令就可以了。</a> 首先，在shodan注册个免费账户 NO.1 <img src=\"http://i13.tietuku.com/2cf5be0118b2f83f.jpg\" alt=\"\"><br><span id=\"more\"></span><br>NO.2 <img src=\"http://i13.tietuku.com/eae2acb719b4d0bd.jpg\" alt=\"\"> NO.3 <img src=\"http://i13.tietuku.com/bae48a11a9ee68f4.jpg\" alt=\"\"> 注册成功后在个人中心获得APIkey 然后在kali终端执行以下命令 <img src=\"http://i12.tietuku.com/dcfdf50a1c661f83.jpg\" alt=\"\"> 可以选择模块并查看该模块下可配置的参数 <img src=\"http://i12.tietuku.com/4245447745108237.jpg\" alt=\"\"> 配置QUERY和SHODAN_APIKEY选项参数（其中SHODAN_APIKEY就是你在shodan注册后个人中给的APIkey,画红线处改成你自己的密匙） <img src=\"http://i12.tietuku.com/7ad2c99eea0c50bc.jpg\" alt=\"\"> 接下来就可以操作命令扫描主机信息 <img src=\"http://i11.tietuku.com/37d6893c5c6aa77a.jpg\" alt=\"\"></p>\n",
+            "tags": [
+                "kali",
+                "shodan",
+                "黑谷歌",
+                "黒帽搜素"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"php倒计时\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2015/05/06/php-shi-jian-dao-ji-shi/",
+            "url": "https://erik.xyz/2015/05/06/php-shi-jian-dao-ji-shi/",
+            "title": "PHP时间倒计时",
+            "date_published": "2015-05-06T15:32:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>在网站或者商城需要做一次活动，到某个时间结束，这就用到倒计时。 首先，获取当前时区的时间，然后，获取结束日期的时间，两个时间相减就是活动时间。 <a href=\"http://www.erik.xyz/phptime\"><img src=\"http://i1.tietuku.com/2f9c2daabed1d1a4.png\" alt=\"倒计时\"></a></p>\n",
+            "tags": [
+                "php",
+                "php倒计时",
+                "php时间",
+                "倒计时",
+                "计算时间"
+            ]
+        }
+    ]
+}

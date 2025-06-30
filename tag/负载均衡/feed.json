@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"负载均衡\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2021/12/29/about-centos-load-balacnig/",
+            "url": "https://erik.xyz/2021/12/29/about-centos-load-balacnig/",
+            "title": "负载均衡-初谈",
+            "date_published": "2021-12-29T04:41:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>当一个项目沉淀一段时间后，随着用户量的提升，用户群体庞大起来。这时候就会出现过多的用户访问导致服务器（单机）供应不足。那么，负载均衡就出现了。<br><span id=\"more\"></span></p>\n<ul>\n<li>假设我有60w的用户量，那么负载如下图：</li>\n</ul>\n<pre class=\"mermaid\">graph TD;\n    A[\"nginx入口服务器\"]-->B1[\"nginx负载1(20w)\"];\n    A-->B2[\"nginx负载2(20w)\"];\n    A-->B3[\"nginx负载3(20w)\"];</pre>\n\n<p>此时分配负载是正确的。但是，某个时间段突然用户量飙升，超过了60w的访问量。这个时候增加服务器就来不及。这就又回到初始问题，服务器宕机。因此，要对负载服务器做限流，超过访问量就禁止访问。</p>\n<ul>\n<li>假设我有160w的用户量，那么负载如下图：</li>\n</ul>\n<pre class=\"mermaid\">graph TD;\n    A[\"nginx主服务器\"]-->A1;\n    A-->A2;\n    A-->A3;\n    A1[\"nginx入口服务器（55w）\"]-->B11[\"nginx负载1(20w)\"];\n    A1-->B12[\"nginx负载2(20w)\"];\n    A1-->B13[\"nginx负载3(20w)\"];\n    A2[\"nginx入口服务器（55w）\"]-->B21[\"nginx负载1(20w)\"];\n    A2-->B22[\"nginx负载2(20w)\"];\n    A2-->B23[\"nginx负载3(20w)\"];\n    A3[\"nginx入口服务器（55w）\"]-->B31[\"nginx负载1(20w)\"];\n    A3-->B32[\"nginx负载2(20w)\"];\n    A3-->B33[\"nginx负载3(20w)\"];</pre>\n\n<ul>\n<li>假设我有500w用户，要做个抽奖活动。</li>\n</ul>\n<p>这个就需要考虑一下，假如活动真有500w或者500w以上，超过服务器负载了。那么就会导致一部分负载服务器拦截，而被拦截的用户转而调到另外的负载服务器。很显然，这样持续下去会导致整个服务全部崩溃。这个时候就要考虑把抽奖活动单独部署出来，而活动服务器只是短期的伸缩服务器。那么，负载如图：</p>\n<pre class=\"mermaid\">graph TD;\n    A[\"nginx主服务器\"]-->A1;\n    A-->A2;\n    A-->A3;\n    A[\"nginx主服务器\"]-->H1[\"活动服务器(30w)\"];\n    A-->H2[\"活动服务器(30w)\"];\n    A-->H3[\"活动服务器(30w)\"];\n    A-->H4[\"活动服务器(30w)\"];\n    A-->H5[\"活动服务器(30w)\"];\n    A-->H6[\"活动服务器(30w)\"];\n    A-->H7[\"活动服务器(30w)\"];\n    A1[\"nginx入口服务器（55w）\"]-->B11[\"nginx负载1(20w)\"];\n    A1-->B12[\"nginx负载2(20w)\"];\n    A1-->B13[\"nginx负载3(20w)\"];\n    A2[\"nginx入口服务器（55w）\"]-->B21[\"nginx负载1(20w)\"];\n    A2-->B22[\"nginx负载2(20w)\"];\n    A2-->B23[\"nginx负载3(20w)\"];\n    A3[\"nginx入口服务器（55w）\"]-->B31[\"nginx负载1(20w)\"];\n    A3-->B32[\"nginx负载2(20w)\"];\n    A3-->B33[\"nginx负载3(20w)\"];</pre>\n\n<ul>\n<li><p>假设不因一个异常而导致其他服务不可用</p>\n<p> 那就考虑服务分化部署，即微服务</p>\n</li>\n</ul>\n<pre class=\"mermaid\">graph TD;\n    A(入口)-->B1(用户层);\n    A-->B2(订单);\n    A-->B3(活动);\n    A-->B4(商品);\n    A-->B5(物流);\n    A-->B6(日志);\n    A-->B7(客服);\n    A-->B8(支付);\n    B1-->C1(用户信息);\n    B1-->C2(用户任务);\n    B2-->D1(订单生成);\n    B2-->D2(订单支付);\n    B2-->D3(购物车);\n    B3-->E1(秒杀);\n    B3-->E2(团购);\n    B3-->E3(竞拍);\n    B4-->F1(商品搜索);\n    B4-->F2(商品详情);\n    B4-->F3(商品推荐);\n    B5-->G1(信息更新);\n    B5-->G2(服务商对接);\n    B6-->H1(请求日志);\n    B6-->H2(交易日志);\n    B6-->H3(浏览日志);\n    B7-->I1(纠纷处理);\n    B7-->I2(订单处理);\n    B7-->I3(投诉处理);\n    B8-->J1(支付宝);\n    B8-->J2(微信);\n    B8-->J3(银联);\n    B8-->J4(paypal);\n    B8-->J5(第三方支付);</pre>",
+            "tags": [
+                "负载均衡"
+            ]
+        }
+    ]
+}

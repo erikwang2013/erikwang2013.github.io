@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"foreach\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2015/10/28/php-zhong-foreach-cuo-wu-ti-shi-warning-invalid-argument-supplied-for-foreach/",
+            "url": "https://erik.xyz/2015/10/28/php-zhong-foreach-cuo-wu-ti-shi-warning-invalid-argument-supplied-for-foreach/",
+            "title": "php中foreach()错误提示Warning: Invalid argument supplied for foreach()",
+            "date_published": "2015-10-28T08:42:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>foreach两层嵌套报错,</p>\n<h1 id=\"Warning-Invalid-argument-supplied-for-foreach\"><a href=\"#Warning-Invalid-argument-supplied-for-foreach\" class=\"headerlink\" title=\"Warning: Invalid argument supplied for foreach()\"></a>Warning: Invalid argument supplied for foreach()</h1><p>无效参数。 自己调试好久没解决。 在百度中找到网友给的答案 $array =array(); if (is_array($array) &amp;&amp; count($array)&gt;0 ){ foreach($array as $val){ } } 给 foreach做个判断，一切问题解决。</p>\n",
+            "tags": [
+                "foreach",
+                "foreach报错",
+                "php中foreach报错"
+            ]
+        }
+    ]
+}

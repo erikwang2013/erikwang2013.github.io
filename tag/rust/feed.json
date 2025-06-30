@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"rust\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2022/09/15/rust-dev-test/",
+            "url": "https://erik.xyz/2022/09/15/rust-dev-test/",
+            "title": "初识rust语言",
+            "date_published": "2022-09-15T12:51:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>去年在刷招聘网站的时候，偶然认识了rust开发语言，留了个心眼，刚好这段时间不太忙，就先初步认识一下。</p>\n<p>官方网站是这样介绍的：<br>一个赋予每个人构建可靠且高效软件能力的语言。<br><span id=\"more\"></span><br>首先，本地安装环境</p>\n<p>我的是linux系统，就执行下面的命令<br><figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">curl --proto &#x27;=https&#x27; --tlsv1.3 https://sh.rustup.rs -sSf | sh</span><br></pre></td></tr></table></figure></p>\n<p>安装好后，在命令窗口输入</p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">rustc -V</span><br></pre></td></tr></table></figure>\n<p>你就会看到</p>\n<p><img src=\"/img/202209/20221116105814.jpg\" alt=\"\"></p>\n<p>表示安装成功了</p>\n<p>安装成的同时也会安装cargo</p>\n<p>Cargo 是 Rust 的构建系统和包管理器。大多数 Rustacean 们使用 Cargo 来管理他们的 Rust 项目，因为它可以为你处理很多任务，比如构建代码、下载依赖库并编译这些库</p>\n<p>如果你在终端任意位置输入rust -V或cargo —version没有响应，那就是你需要把安装好的这个两个命令软连接到/usr/local/bin或/usr/bin中，这样才能全局使用。</p>\n<p>至此rust环境配置好了。</p>\n<p>接下来通过<a href=\"https://kaisery.github.io/trpl-zh-cn/ch02-00-guessing-game-tutorial.html\">文档</a>来开发一个猜数字小游戏，代码如下<br><img src=\"/img/202209/20221116110422.jpg\" alt=\"\"></p>\n<p>最后的成品效果<br><img src=\"/img/202209/20221116110639.jpg\" alt=\"\"></p>\n",
+            "tags": [
+                "rust",
+                "rust配置"
+            ]
+        }
+    ]
+}

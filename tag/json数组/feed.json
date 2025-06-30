@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"json数组\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2015/09/21/son-shu-zu-shu-chu-de-si-kao/",
+            "url": "https://erik.xyz/2015/09/21/son-shu-zu-shu-chu-de-si-kao/",
+            "title": "json数组输出的思考",
+            "date_published": "2015-09-20T16:25:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>最近在弄快递对接这块json提交数据，并返回json数据，如下   显示的是一个json数组，头顿时大了，以前只json数据，json数组…… 各种尝试data.kind有数据，data.track_data缺没数据，很奇怪。json数组看来不是这样就能解析的。 接下来尝试用for循环，还是木用。 时间不能浪费在这，果断用度娘（谷歌vpn封了），终于找了好久找到答案了$.each，官方手册是这样解释它的：each(callback)</p>\n<p>以每一个匹配的元素作为上下文来执行一个函数。 先第一次执行 $.each(data.teack_data,function(a,b){ $.each(b,function(a1,b1){  //第二次执行 alet(b1.info);   //你需要的数据 }); });</p>\n",
+            "tags": [
+                "json",
+                "json数组",
+                "json解析"
+            ]
+        }
+    ]
+}

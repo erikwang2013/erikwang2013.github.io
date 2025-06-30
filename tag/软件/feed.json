@@ -1,0 +1,44 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"软件\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2015/02/24/centos-an-zhuang-di-san-fang-yum-ruan-jian-cang-ku/",
+            "url": "https://erik.xyz/2015/02/24/centos-an-zhuang-di-san-fang-yum-ruan-jian-cang-ku/",
+            "title": "centos安装第三方yum软件仓库",
+            "date_published": "2015-02-24T11:12:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>因为需要配置centos一些功能，系统自带yum仓库不全面很麻烦，百度一下就找到了第三方yum仓库。</p>\n<ol>\n<li><p>安装第三方EPEL软件库</p>\n<pre><code> rpm -ivh http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm\n</code></pre></li>\n<li><p>导入key(不导入的话会出错)</p>\n<pre><code> rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6\n</code></pre></li>\n<li><p>把服务器的包信息下载到本地电脑缓存起来<span id=\"more\"></span></p>\n<pre><code> yum makecache\n</code></pre><p>漫长等待…… </p>\n</li>\n<li><p>安装yum-plugin-priorities 插件 这个插件用来保证安装软件时候软件仓库先后次序，一般是默认先从官方base或者镜像安装，然后从社区用户contribute的软件中安装，再从第三方软件仓库中安装。</p>\n<pre><code> yum install yum-plugin-priorities\n</code></pre></li>\n</ol>\n<p>开启功能：</p>\n<pre><code>    vim /etc/yum/pluginconf.d/priorities.conf\n\n    [main] enabled=1\n</code></pre><p>设置优先级规则</p>\n<pre><code>[base], [addons], [updates], [extras] ... priority=1\n [centosplus] priority=1 (same priority as base and updates) but should be left disabled [contrib] ... priority=2\n Third Party Repos ... priority=N (where N is &gt; 10 and based on your preference)\n</code></pre><p>编辑/etc/yum.repos.d/CentOS-Base.repo 文件，按照上述规则添加。 </p>\n<p>然后编辑/etc/yum.repos.d/epel.repo文件，[epel]最后一行添加priority=11，priority数字越低，优先级越高。 里面软件包还挺齐全的。。</p>\n",
+            "tags": [
+                "centos软件",
+                "yum仓库",
+                "软件"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2014/10/23/fan-qiang-liu-lan-qi/",
+            "url": "https://erik.xyz/2014/10/23/fan-qiang-liu-lan-qi/",
+            "title": "翻墙浏览器",
+            "date_published": "2014-10-23T08:29:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p><a href=\"http://img03.taobaocdn.com/imgextra/i3/809419769/TB2jEpVaVXXXXbSXXXXXXXXXXXX_!!809419769.jpg\"><img src=\"http://img03.taobaocdn.com/imgextra/i3/809419769/TB2jEpVaVXXXXbSXXXXXXXXXXXX_!!809419769.jpg\" alt=\"艾瑞可erik\"></a>最近发现老版本的ChromeGAE不能翻墙了，很郁闷，谷歌站长又不能用了。 无奈百度了一下，找到最新的翻墙软件，感觉还可以吧。在这分享一下。 效果还是不错的 O(∩<em>∩)O哈哈~ [![艾瑞可erik](<a href=\"http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX\">http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX</a></em>!!809419769.jpg)](<a href=\"http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX_!!809419769.jpg\">http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX_!!809419769.jpg</a>) 下载地址：<a href=\"http://pan.baidu.com/s/1hqy1KaS\">http://pan.baidu.com/s/1hqy1KaS</a></p>\n",
+            "tags": [
+                "工具",
+                "软件"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2014/10/06/chang-yong-gong-ju/",
+            "url": "https://erik.xyz/2014/10/06/chang-yong-gong-ju/",
+            "title": "常用工具",
+            "date_published": "2014-10-06T10:12:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>memcached 高速缓存工具（linux） wget <a href=\"https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz\">https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz</a> wget <a href=\"https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz\">https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz</a> wget <a href=\"https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz\">https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz</a> <a href=\"https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz\">libevent-1.4.14b-stable.tar.gz</a> <a href=\"https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz\">memcached-1.4.20.tar.gz</a> <a href=\"https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz\">memcache-2.2.1.tgz</a></p>\n",
+            "tags": [
+                "工具",
+                "软件",
+                "memcache",
+                "memcached"
+            ]
+        }
+    ]
+}

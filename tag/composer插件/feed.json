@@ -1,0 +1,22 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"composer插件\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2023/11/12/xhprof-plugs/",
+            "url": "https://erik.xyz/2023/11/12/xhprof-plugs/",
+            "title": "xhprof插件开发",
+            "date_published": "2023-11-12T13:51:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>最近开发后总要测试接口性能，来定位接口问题，突然想到有xhprof扩展可以用。翻了翻，发现多数要不代码不更新，要不就是太繁琐，干脆自己开发以下。</p>\n<p>   参考phacility/xhprof、phpxxb/xhprof的项目，自己下载了一份代码。于是就先做了webman的插件<a href=\"https://github.com/erikwang2013/xhprof-webman\">xhprof-webman</a>，磨蹭了一段时间就又弄了laravel版的插件<a href=\"https://github.com/erikwang2013/xhprof-laravel\">xhprof-laravel</a>。最新版已更新，大家有用到的去composer安装吧。</p>\n",
+            "tags": [
+                "composer",
+                "webman",
+                "xhprof",
+                "laravel",
+                "composer插件"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"自适应所有分辨率\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2015/07/27/web-qian-duan-xiang-ying-shi-bu-ju-zi-shi-ying-suo-you-fen-bian-lv/",
+            "url": "https://erik.xyz/2015/07/27/web-qian-duan-xiang-ying-shi-bu-ju-zi-shi-ying-suo-you-fen-bian-lv/",
+            "title": "web前端响应式布局，自适应所有分辨率",
+            "date_published": "2015-07-26T16:13:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>写phpd的我。最近公司要弄个app关键是没有web开发，而我有比较闲，那就扛枪上阵吧。 响应式布局，web端的？php我一直都是用tp框架，对于web首先想到的是bootstrap框架。只是简单了解过，没真正实践啊，bootstrap比我想象的要好用的多。关键是，关键来了…… app端是只有手机的，pc基本上木有。那就是说只能按照手机端开发，那么boostrap响应式布局就不适用于app了（反正我是做了一套半成品，被推翻了）。不能愉快的工作了，好不淡定的时间。。百度，百又问问同事，发现了amaze ui也就是妹子框架，终于可以省事了，太高兴了。 amaze框架下载后是一套让人极其郁闷的示例包，文件引入是分开来介绍的，如果你不仔细看文档，会很痛苦的（因为我就是如此，好折磨人）。 好了附上amaze的引入文件，仅供大伙参考。 <a href=\"http://tietuku.com/b84e74496e36a7e0\"><img src=\"http://i1.tietuku.com/b84e74496e36a7e0.jpg\" alt=\"\"></a> 对了手机端要在头部加上这句话<span id=\"more\"></span><br><figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; </span><br></pre></td></tr></table></figure><br>一切就绪，那就直奔主题。 手机端目前最低宽度是300.不过说实话智能手机300的屏幕估计是木有，那就按iphone4的320来设计web。那么问题来了，设计给的参考图示640的肿么办，所有的像素除以2，一切解决。 使用amaze框架并不能很好的解决不同分辨率的像素问题，而且最苦逼的就是要设置好多@media only screen and (min-width:320px) and (max-width:480px) {}屏幕范围样式。太痛苦了，受不了。。有木有一种可以控制的方法呢，京东是怎么弄的？小米又是怎么弄的？百度吧，一切从度娘中找答案。 <a href=\"http://tietuku.com/64ab3ce5b39e08f0\"><img src=\"http://i1.tietuku.com/64ab3ce5b39e08f0.jpg\" alt=\"\"></a>   答案好多，慢慢筛选吧……   于是找到这段代码 <a href=\"http://tietuku.com/f5a3689aabbb0f21\"><img src=\"http://i3.tietuku.com/f5a3689aabbb0f21.jpg\" alt=\"\"></a>   那么问题来了，这只是页面的，我想要所有的地方在不同尺寸的浏览器都能自适应，怎解决？ clientwidth是获取屏幕显示的宽度，设定最小屏幕为320，以320为基础，那么最小最字体就是12px。于是就有了改动。 <a href=\"http://tietuku.com/234327da825807f4\"><img src=\"http://i3.tietuku.com/234327da825807f4.jpg\" alt=\"\"></a>   好了这下子无论什么浏览器都是以最宽320，最小12px为基准。接着还有个问题，所有布局改用什么单位？px/em/pt/rem px是最精确的单位,固定值。em值不固定，继承父元素。rem在设定元素时仍是相对大小，但相对的是html根元素。pt就是印刷业上的单位，不过app开发中也用到。 那么好了，该用哪种的呢，我们先来看看上面的自适应js执行效果。 <a href=\"http://tietuku.com/c68b6fbfed3d6b9c\"><img src=\"http://i1.tietuku.com/c68b6fbfed3d6b9c.jpg\" alt=\"\"></a> 在html元素中生成了一个行内字体样式，答案就有了吧。</p>\n",
+            "tags": [
+                "web自适应",
+                "响应式布局",
+                "响应式所有分辨率",
+                "自适应布局",
+                "自适应所有分辨率"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"分库分表\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2019/04/23/mysql-fen-ku-fen-biao/",
+            "url": "https://erik.xyz/2019/04/23/mysql-fen-ku-fen-biao/",
+            "title": "mysql分库分表",
+            "date_published": "2019-04-23T04:28:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p><strong>分库分表</strong></p>\n<blockquote>\n</blockquote>\n<p>php工作5年了,大部分场景都是业务层。说白了就是增删改查。也知道数据库大数据处理分库分表，一般是水平分表和垂直分表，实操是不可能的，今天看了一篇文章<a href=\"https://mp.weixin.qq.com/s/QFlUPS8X0errMwpxdBMHvg\">《分库分表？如何做到永不迁移数据和避免热点？》</a>，思路一下顺畅了。</p>\n<blockquote>\n</blockquote>\n<p> 一般来说mysql一个表大概数据量在100W查询速度跟不上了。<span id=\"more\"></span>如果每天的数据量有100W那数据这个块就要做处理了。我之前的思路是这样想的：</p>\n<blockquote>\n</blockquote>\n<p> 一个表固定分100w数据，每个表用数据id做范围分配。然后查询的时候根据id找表，但是这样有个问题，如果同一个用户数据在不同的表里，这时要查询用户的所有数据，就要连表查询，实际上分表查询是有时间和范围限制的，不存在一次性拿出所有数据的情况。（而我参加面试的时候有个面试官直接给了一个这样的问题：<br> “我这有一亿数据，一次性拿出来，用mysql如何实现。”我顿时懵逼了，没法实现，代码层可能实现，数据库查询我还真不知道。）</p>\n<blockquote>\n</blockquote>\n<p>  <strong>根据上面我看的文章介绍这是range范围方案</strong><br>   <img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_170042.jpg\" alt=\"\"></p>\n<p>   除了查询问题，还有一个热点问题。某个时间段数据量大增的情况，一个表就扛不住了。</p>\n<blockquote>\n</blockquote>\n<p>  <em>_文章中还介绍了hash取模法 </em>_<br>   <img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_171040.jpg\" alt=\"\"></p>\n<p>   hash取模法容易导致数据迁移问题，如果数据量大迁移的成本是比较高的。</p>\n<p>   <strong>根据文章介绍可以先做个范围分组，然后根据分组在用hash取模分表放数据</strong><br>   <img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_180531.jpg\" alt=\"\"></p>\n<p>   <em>_最终表的设计如 </em>_<br>   <img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_180824.jpg\" alt=\"\"></p>\n",
+            "tags": [
+                "mysql",
+                "分库分表"
+            ]
+        }
+    ]
+}

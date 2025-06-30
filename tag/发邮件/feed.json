@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"发邮件\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2015/01/19/yi-ge-fa-song-html-you-jian-de-php-han-shu/",
+            "url": "https://erik.xyz/2015/01/19/yi-ge-fa-song-html-you-jian-de-php-han-shu/",
+            "title": "一个发送HTML邮件的PHP函数",
+            "date_published": "2015-01-19T14:54:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>by <a href=\"http://zyan.cc/user/2/\">张宴</a> 写了一个简单的发送HTML邮件的PHP函数。 函数说明：send_mail(“发件人地址”, “收件人地址”, “邮件主题”, “邮件正文”); 示例：send_mail($from, “info@zyan.cc”, “这是邮件的主题”, “<html><head></head><body><p><font color=red>这是邮件正文</font></p></body></html>“); 代码如下：</p>\n<p><a href=\"http://zyan.cc/#\">view plain</a><a href=\"http://zyan.cc/#\">print</a><a href=\"http://zyan.cc/#\">?</a><span id=\"more\"></span><br><figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br><span class=\"line\">10</span><br><span class=\"line\">11</span><br><span class=\"line\">12</span><br><span class=\"line\">13</span><br><span class=\"line\">14</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">&lt;?php</span><br><span class=\"line\">function send_mail($from, $to, $subject, $message)</span><br><span class=\"line\">&#123;</span><br><span class=\"line\">    if ($from == &quot;&quot;)</span><br><span class=\"line\">    &#123;</span><br><span class=\"line\">        $from = &#x27;回忆未来 &lt;webmaster@zyan.cc&gt;&#x27;;//发件人地址</span><br><span class=\"line\">    &#125;</span><br><span class=\"line\">    $headers = &#x27;MIME-Version: 1.0&#x27; . &quot;\\\\r\\\\n&quot;;</span><br><span class=\"line\">    $headers .= &#x27;Content-type: text/html; charset=gb2312&#x27; . &quot;\\\\r\\\\n&quot;;</span><br><span class=\"line\">    $headers .= &#x27;From: &#x27; . $from . &quot;\\\\r\\\\n&quot;;</span><br><span class=\"line\">    mail($to, $subject, $message, $headers);</span><br><span class=\"line\">&#125;</span><br><span class=\"line\">?&gt;</span><br><span class=\"line\"></span><br></pre></td></tr></table></figure></p>\n",
+            "tags": [
+                "php服务器",
+                "发邮件",
+                "邮件函数"
+            ]
+        }
+    ]
+}

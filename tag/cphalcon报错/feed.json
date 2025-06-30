@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"cphalcon报错\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2019/10/07/cphalcon-make-errors/",
+            "url": "https://erik.xyz/2019/10/07/cphalcon-make-errors/",
+            "title": "cphalcon编译报错",
+            "date_published": "2019-10-07T14:22:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>我下载的是<a href=\"https://codeload.github.com/dreamsxin/cphalcon7/tar.gz/Dao7-1.3.3-Stable-0\">稳定版本</a> 就是1.3.3-Stable-0版本<br>结果还是编译报错，后来查查资料才知道有坑。</p>\n<p>我的本地gcc版本是gcc version 9.2.1 20190909 (Debian 9.2.1-8)，比较新，所以格式比较严格。作者的版本估计是旧版，所以有点不兼容。</p>\n<span id=\"more\"></span>\n<ul>\n<li><p>this ‘for’ clause does not guard… [-Werror=misleading-indentation]<br>158 |                 for (i = 0; i &lt; 1000000; i  );</p>\n<p>这个报错一般是在kernel/time.h的158行，for循环后边冒号去掉，估计作者不太严谨，没去，新版的gcc编译不了。</p>\n</li>\n</ul>\n<ul>\n<li><p>xhprof.c:132:19: error: ‘digits’ defined but not used [-Werror=unused-const-variable=]<br>132 | static const char digits[] = “0123456789abcdef”;<br>  这个可以注释掉，新版的gcc编译，定义好的方法声明没有使用，就会报错。</p>\n</li>\n<li><p>debug.c:123:24: error: ‘arginfo_phalcon_debug_setcharset’ defined but not used [-Werror=unused-const-variable=]</p>\n<p>  同上，一样的报错。注释掉</p>\n</li>\n<li><p>mvc/model/query.c:190:24: error: ‘arginfo_phalcon_mvc_model_query_setmergebindtypes’ defined but not used [-Werror=unused-const-variable=]</p>\n<p>  还是同上报错。</p>\n</li>\n<li><p>adapter/sql.c:75:24: error: ‘arginfo_phalcon_paginator_adapter_sql_setlimit’ defined but not used [-Werror=unused-const-variable=]</p>\n<p>  同上。哎呀，这么多了</p>\n</li>\n<li><p>security.c:166:24: error: ‘arginfo_phalcon_security_pbkdf2’ defined but not used [-Werror=unused-const-variable=]</p>\n<p>  同上。脑壳痛</p>\n</li>\n<li><p>好多地方……报错defined but not used的都去注释掉吧</p>\n</li>\n</ul>\n<p>最后附上我自己弄好的一份:<a href=\"https://github.com/erikaaron/cphalcon7-1.3.3-Stable-0\">下载</a></p>\n",
+            "tags": [
+                "cphalcon",
+                "cphalcon报错"
+            ]
+        }
+    ]
+}

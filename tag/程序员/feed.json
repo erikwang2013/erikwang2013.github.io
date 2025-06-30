@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"程序员\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2019/12/09/code-author/",
+            "url": "https://erik.xyz/2019/12/09/code-author/",
+            "title": "老鸟程序员才知道的40个小技巧",
+            "date_published": "2019-12-09T14:53:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>来源：知乎，作者：大狐狸</p>\n<p>链接：<a href=\"https://www.zhihu.com/question/36426051/answer/76031743\">https://www.zhihu.com/question/36426051/answer/76031743</a></p>\n<p>1.重构是程序员的主力技能。</p>\n<p>2.工作日志能提升脑容量。</p>\n<p>3.先用profiler调查，才有脸谈优化。</p>\n<p>4.注释贵精不贵多。杜绝大姨妈般的“例注”。漫山遍野的碎碎念注释，实际就是背景噪音。</p>\n<p>5.普通程序员+google=超级程序员。</p>\n<span id=\"more\"></span>\n<p>6.单元测试总是合算的。</p>\n<p>7.不要先写框架再写实现。最好反过来，从原型中提炼框架。</p>\n<p>8.代码结构清晰，其它问题都不算事儿。</p>\n<p>9.好的项目作风硬派，一键测试，一键发布，一键部署；烂的项目生性猥琐，口口相传，不立文字，神神秘秘。</p>\n<p>10.编码不要畏惧变化，要拥抱变化。</p>\n<p>11.常充电。程序员只有一种死法：土死的。</p>\n<ol>\n<li>编程之事，隔离是方向，起名是关键，测试是主角，调试是补充，版本控制是后悔药。</li>\n</ol>\n<ol>\n<li>一行代码一个兵。形成建制才能有战斗力。单位规模不宜过大，千人班，万人排易成万人坑。</li>\n</ol>\n<ol>\n<li>重构/优化/修复Bug，同时只能作一件。</li>\n</ol>\n<ol>\n<li>简单模块注意封装，复杂模块注意分层。</li>\n</ol>\n<ol>\n<li>人脑性能有限，整洁胜于杂乱。读不懂的代码，尝试整理下格式；不好用的接口，尝试重新封装下。</li>\n</ol>\n<ol>\n<li>迭代速度决定工作强度。想多快好省，就从简化开发流程，加快迭代速度开始。</li>\n</ol>\n<ol>\n<li>忘掉优化写代码，过早优化等同恶意破坏；忘掉代码作优化，优化要基于性能测试，而不是纠结于字里行间。</li>\n</ol>\n<ol>\n<li>最好的工具是纸笔；其次好的是markdown。</li>\n</ol>\n<ol>\n<li>leader问任务时间，若答不上来，可能是任务拆分还不够细。</li>\n</ol>\n<ol>\n<li>宁可多算一周，不可少估一天。过于“乐观”容易让boss受惊吓。</li>\n</ol>\n<ol>\n<li>最有用的语言是English。其次的可能是Python。</li>\n</ol>\n<ol>\n<li>百闻不如一见。画出结果，一目了然。调试耗时将大大缩短。</li>\n</ol>\n<ol>\n<li>资源、代码应一道受版本管理。资源匹配错误远比代码匹配错误更难排查。</li>\n</ol>\n<ol>\n<li>不要基于想象开发， 要基于原型开发。原型的价值是快速验证想法，帮大家节省时间。</li>\n</ol>\n<ol>\n<li>序列化首选明文文本 。诸如二进制、混淆、加密、压缩等等有需要时再加。</li>\n</ol>\n<ol>\n<li>编译器永远比你懂微观优化。只能向它不擅长的方向努力。</li>\n</ol>\n<ol>\n<li>不要定过大、过远、过细的计划。即使定了也没有用。</li>\n</ol>\n<ol>\n<li>至少半数时间将花在集成上。时间，时间，时间总是不够。</li>\n</ol>\n<ol>\n<li>与主流意见/方法/风格/习惯相悖时，先检讨自己最可靠。</li>\n</ol>\n<ol>\n<li>出现bug主动查，不管是不是你的。这能让你业务能力猛涨、个人形象飙升; 如果你的bug被别人揪出来…..呵呵，那你会很被动～≧﹏≦</li>\n</ol>\n<ol>\n<li>不知怎么选技术书时就挑薄的。起码不会太贵，且你能看完。</li>\n</ol>\n<ol>\n<li>git是最棒的。简单，可靠，免费。</li>\n</ol>\n<ol>\n<li>仅对“可预测的非理性”抛断言。</li>\n</ol>\n<ol>\n<li>Log要写时间与分类。并且要能重定向输出。</li>\n</ol>\n<ol>\n<li>注释是稍差的文档。更好的是清晰的命名。让代码讲自己的故事。</li>\n</ol>\n<ol>\n<li>造轮子是很好的锻炼方法。前提是你见过别的轮子。</li>\n</ol>\n<ol>\n<li>code review最好以小组/结对的形式。对业务有一定了解，建议会更有价值（但不绝对）。而且不会成为负担。管理员个人review则很容易成team的瓶颈。</li>\n</ol>\n<ol>\n<li>提问前先做调研。问不到点上既被鄙视，又浪费自己的时间。</li>\n</ol>\n<ol>\n<li>永远别小看程序媛(╯3╰)</li>\n</ol>\n",
+            "tags": [
+                "程序员"
+            ]
+        }
+    ]
+}

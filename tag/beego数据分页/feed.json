@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"beego数据分页\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2022/07/30/eego-zhong-shu-ju-ku-fen-ye/",
+            "url": "https://erik.xyz/2022/07/30/eego-zhong-shu-ju-ku-fen-ye/",
+            "title": "beego中数据库分页",
+            "date_published": "2022-07-30T02:43:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>beego中数据库分页</p>\n<pre><code>  func PageDB(limit int, page int, count int64) (int, int) &#123;\n      pageSetNum := limit // 每页条数\n\n      pageCount := math.Ceil((float64(count)) / (float64(pageSetNum))) // 总页数\n      pageNum := page                                                  // 当前页码\n\n      if pageNum &gt; int(pageCount) &#123; // 如果传入的页码超出范围\n          pageNum = int(pageCount)\n      &#125;\n      offset := pageSetNum * (pageNum - 1)\n      if offset &lt; 0 &#123;\n          offset = 0\n      &#125;\n      return pageSetNum, offset\n  &#125;\n</code></pre>",
+            "tags": [
+                "beego数据分页",
+                "分页"
+            ]
+        }
+    ]
+}

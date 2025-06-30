@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"go获取ip\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2022/05/10/get-http-address-ip/",
+            "url": "https://erik.xyz/2022/05/10/get-http-address-ip/",
+            "title": "go中获取HTTP请求的IP地址",
+            "date_published": "2022-05-10T12:12:31.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><pre><code>package main\n\nimport (\n    &quot;encoding/json&quot;\n    &quot;net/http&quot;\n)\n\nfunc main() &#123;\n    http.HandleFunc(&quot;/&quot;, ExampleHandler)\n    if err := http.ListenAndServe(&quot;:8080&quot;, nil); err != nil &#123;\n        panic(err)\n    &#125;\n&#125;\n\nfunc ExampleHandler(w http.ResponseWriter, r *http.Request) &#123;\n    w.Header().Add(&quot;Content-Type&quot;, &quot;application/json&quot;)\n    resp, _ := json.Marshal(map[string]string&#123;\n        &quot;ip&quot;: GetIP(r),\n    &#125;)\n    w.Write(resp)\n&#125;\n\nfunc GetIP(r *http.Request) string &#123;\n    forwarded := r.Header.Get(&quot;X-FORWARDED-FOR&quot;)\n    if forwarded != &quot;&quot; &#123;\n        return forwarded\n    &#125;\n    return r.RemoteAddr\n&#125;\n</code></pre>",
+            "tags": [
+                "go获取ip"
+            ]
+        }
+    ]
+}

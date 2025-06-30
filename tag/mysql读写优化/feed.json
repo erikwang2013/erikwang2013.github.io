@@ -1,0 +1,21 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"mysql读写优化\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2016/03/01/you-guan-mysql-you-hua-de-zhun-ze/",
+            "url": "https://erik.xyz/2016/03/01/you-guan-mysql-you-hua-de-zhun-ze/",
+            "title": "有关mysql优化的准则",
+            "date_published": "2016-03-01T09:29:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>前辈们总结的经验，学习、学习。 </p>\n<p>1.尽量避免在列上进行运算，这样会导致索引失效。 </p>\n<p>例如：SELECT <em> FROM t WHERE YEAR(d) &gt;=2011; 优化为：SELECT </em> FROM t WHERE d &gt;=’2011-01-01’;</p>\n<p>2.使用JOIN时，应该用小结果集驱动大结果集。</p>\n<p>同时把复杂的JOIN查询拆分成多个QUERY。因为JOIN多个 表时，可能导致更多的锁定和堵塞。 SELECT * FROM a JOIN b ON a.id=b.id LEFT JOIN c ON c.time=a.date LEFT JOIN d ON c.pid=d.aid LEFT JOIN e ON e.cid=a.did<br><span id=\"more\"></span></p>\n<p>3.LIKE模糊查询的使用，避免%% </p>\n<p>例如：SELECT <em> FROM t WHERE name LIKE ‘%de%’; 优化为：SELECT </em> FROM t WHERE name &gt;=’de’ AND name&lt;’df’; </p>\n<p>4.仅列出需要查询的字段，这对速度不会有明显影响，主要考虑节省内存。 </p>\n<p>5.使用批量插入语句节省交互 </p>\n<p>例如： INTO t (id,name) VALUES (1,’a’); INSERT INTO t (id,name) VALUES (2,’b’); INSERT INTO t (id,name) VALUES (3,’c’); 优化：INSERT INTO t (id,name) VALUES (1,’a’),(2,’b’),(3,’c’); </p>\n<p>6.limit的基数比较大时使用between </p>\n<p>SELECT <em> FROM article AS article ORDER BY id LIMIT 100000,10; 优化：SELECT </em> FROM article AS article WHERE id BETWEEN 100000 AND 100010 ORDER BY id; </p>\n<p>7.不要使用rand函数获取多条随机记录 </p>\n<p>SELECT <em> FROM table ORDER BY rand() LIMIT 20; 优化： SELECT </em> FROM ‘table’ AS t1 JOIN (SELECT ROUND (RAND() * ((SELECT MAX(id) FROM ‘table’)-(SELECT MIN(id) FROM ‘table’ )) + (SELECT MIN(id) FROM ‘table’ )) AS id) AS t2 WHERE t1.id&gt;=t2.id ORDER BY t1.id LIMIT 1; </p>\n<p>8.避免使用NULL </p>\n<p>9.不要使用count(id),而应该是count(*) </p>\n<p>10.不要做无谓的排序，而应尽可能在索引中完成排序。</p>\n",
+            "tags": [
+                "mysql",
+                "mysql优化",
+                "mysql读写优化",
+                "数据库优化，mysql语句优化"
+            ]
+        }
+    ]
+}

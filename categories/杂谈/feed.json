@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"杂谈\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2022/01/05/review-go-gin-framework/",
+            "url": "https://erik.xyz/2022/01/05/review-go-gin-framework/",
+            "title": "重温go的gin框架",
+            "date_published": "2022-01-05T07:55:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p><img src=\"/img/202201/2022-01-05_161242.jpg\" alt=\"\"><br><span id=\"more\"></span><br>快两年没有用过go了，这几天磨磨蹭蹭的把本地环境搭建好。分别装上了gin和beego框架。尝试性的按照php的几个框架分目录来使用gin框架，却发现除了语法、函数、包的差异，写项目的思路何其的相似。</p>\n<p> gin框架引入后，也可以分目录放置接口、中间件、控制器、模型等等，就是写代码的过程中需要熟悉语法和函数。而成熟的php框架都已经分配好了，直接撸代码就是。</p>\n<p> 相比较两种语言来说，php上手是相当容易的。但是，会了php之后，再去用go也是相当快的（这是我的感觉）。不同就是两种语言一个是脚本，一个是静态、编译语言。然而go却比c更容易上手，加上生态圈的晚上，各种包的引入，开发效率自然也提高很多。有编程基础的，可以先看看go手册，然后尝试折腾一下gin、beego框架。实在折腾不明白的，上b站找点相关的视频，过重点。</p>\n",
+            "tags": [
+                "go"
+            ]
+        }
+    ]
+}
