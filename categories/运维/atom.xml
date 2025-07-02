@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;运维&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2024-04-06T01:04:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2024/04/06/five-jenkis/</id>
         <title>5分钟搞定Jenkis</title>
         <link rel="alternate" href="https://erik.xyz/2024/04/06/five-jenkis/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;什么是持续集成&#34;&gt;&lt;a href=&#34;#什么是持续集成&#34; class=&#34;headerlink&#34; title=&#34;什么是持续集成&#34;&gt;&lt;/a&gt;什么是持续集成&lt;/h4&gt;&lt;p&gt;持续集成 Continuous integration ，简称CI随着软件开发复杂度的不断提高，团队开发成员间如何更好地协同工作以确保软件开发的质量已经慢慢成为开发过程中不可回避的问题。尤其是近些年来，敏捷（Agile） 在软件工程领域越来越红火，如何能在不断变化的需求中快速适应和保证软件的质量也显得尤其的重要。持续集成正是针对这一类问题的一种软件开发实践。它倡导团队开发成员必须经常集成他们的工作，甚至每天都可能发生多次集成。而每次的集成都是通过自动化的构建来验证，包括自动编译、发布和测试，从而尽快地发现集成错误，让团队能够更快的开发内聚的软件。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;持续集成具有的特点：&lt;/p&gt;
+        <content type="html">&lt;h4 id=&#34;什么是持续集成&#34;&gt;&lt;a href=&#34;#什么是持续集成&#34; class=&#34;headerlink&#34; title=&#34;什么是持续集成&#34;&gt;&lt;/a&gt;什么是持续集成&lt;/h4&gt;&lt;p&gt;持续集成 Continuous integration ，简称CI随着软件开发复杂度的不断提高，团队开发成员间如何更好地协同工作以确保软件开发的质量已经慢慢成为开发过程中不可回避的问题。尤其是近些年来，敏捷（Agile） 在软件工程领域越来越红火，如何能在不断变化的需求中快速适应和保证软件的质量也显得尤其的重要。持续集成正是针对这一类问题的一种软件开发实践。它倡导团队开发成员必须经常集成他们的工作，甚至每天都可能发生多次集成。而每次的集成都是通过自动化的构建来验证，包括自动编译、发布和测试，从而尽快地发现集成错误，让团队能够更快的开发内聚的软件。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;持续集成具有的特点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;它是一个自动化的周期性的集成测试过程，从检出代码、编译构建、运行测试、结果记录、测试统计等都是自动完成的，无需人工干预；&lt;/p&gt;
 &lt;/li&gt;
@@ -563,7 +563,7 @@
         <id>https://erik.xyz/2021/08/22/10-logs-tools-total/</id>
         <title>10个Web日志安全性分析工具</title>
         <link rel="alternate" href="https://erik.xyz/2021/08/22/10-logs-tools-total/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;首先，我们应该清楚的是，日志文件不仅可以帮助我们追踪入侵者的来源并找到其攻击路径，而且在正常的操作和维护中，日志还可以反映出许多安全攻击。&lt;br&gt;一个简单易用的Web日志分析工具可以大大提高效率。当前，行业中有许多日志分析工具。今天，我们推荐十种易于使用的Web日志安全性分析工具。&lt;/p&gt;
+        <content type="html">&lt;p&gt;首先，我们应该清楚的是，日志文件不仅可以帮助我们追踪入侵者的来源并找到其攻击路径，而且在正常的操作和维护中，日志还可以反映出许多安全攻击。&lt;br&gt;一个简单易用的Web日志分析工具可以大大提高效率。当前，行业中有许多日志分析工具。今天，我们推荐十种易于使用的Web日志安全性分析工具。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;p&gt;1.360星图&lt;/p&gt;
 &lt;p&gt;一个非常易于使用的网站访问日志分析工具，可以有效地识别Web漏洞攻击，CC攻击，恶意爬网程序扫描，异常访问和其他行为。一键式自动分析，输出安全性分析报告，支持iis / apache / nginx日志，支持自定义格式。&lt;/p&gt;
@@ -595,7 +595,7 @@
         <id>https://erik.xyz/2021/07/15/linux-tools-system/</id>
         <title>Linux 运维必备的13款实用工具</title>
         <link rel="alternate" href="https://erik.xyz/2021/07/15/linux-tools-system/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;1、查看进程占用带宽情况-Nethogs&lt;/p&gt;
+        <content type="html">&lt;p&gt;1、查看进程占用带宽情况-Nethogs&lt;/p&gt;
 &lt;p&gt;Nethogs 是一个终端下的网络流量监控工具可以直观的显示每个进程占用的带宽。&lt;br&gt;下载：&lt;a href=&#34;http://sourceforge.net/projects/nethogs/files/nethogs/0.8/nethogs-0.8.0.tar.gz/download&#34;&gt;http://sourceforge.net/projects/nethogs/files/nethogs/0.8/nethogs-0.8.0.tar.gz/download&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;yum -y install libpcap-devel ncurses-devel
 tar zxvf nethogs-0.8.0.tar.gz

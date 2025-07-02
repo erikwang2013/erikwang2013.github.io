@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Fri, 12 Dec 2014 13:11:00 +0800</pubDate>
         <lastBuildDate>Fri, 12 Dec 2014 13:11:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>数据</category>
             <category>数据表</category>
             <pubDate>Fri, 12 Dec 2014 13:11:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者： &lt;a href=&#34;http://www.ruanyifeng.com&#34;&gt;阮一峰&lt;/a&gt; “数据可视化”可以帮助用户理解数据，一直是热门方向。 图表是”数据可视化”的常用手段，其中又以基本图表——柱状图、折线图、饼图等等——最为常用。 &lt;img src=&#34;http://image.beekka.com/blog/2014/bg2014112901.png&#34; alt=&#34;&#34;&gt; 用户非常熟悉这些图表，但如果被问道，它们的特点是什么，最适用怎样的场合（数据集）？恐怕答得上来的人就不多了。 本文是电子书&lt;a href=&#34;http://jsdatav.is/intro.html&#34;&gt;《Data Visualization with JavaScript》&lt;/a&gt;第一章的笔记，总结了六种基本图表的特点和适用场合，非常好地回答了上面的问题。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;作者： &lt;a href=&#34;http://www.ruanyifeng.com&#34;&gt;阮一峰&lt;/a&gt; “数据可视化”可以帮助用户理解数据，一直是热门方向。 图表是”数据可视化”的常用手段，其中又以基本图表——柱状图、折线图、饼图等等——最为常用。 &lt;img src=&#34;http://image.beekka.com/blog/2014/bg2014112901.png&#34; alt=&#34;&#34;&gt; 用户非常熟悉这些图表，但如果被问道，它们的特点是什么，最适用怎样的场合（数据集）？恐怕答得上来的人就不多了。 本文是电子书&lt;a href=&#34;http://jsdatav.is/intro.html&#34;&gt;《Data Visualization with JavaScript》&lt;/a&gt;第一章的笔记，总结了六种基本图表的特点和适用场合，非常好地回答了上面的问题。&lt;/p&gt;
 &lt;h2 id=&#34;零、序言&#34;&gt;&lt;a href=&#34;#零、序言&#34; class=&#34;headerlink&#34; title=&#34;零、序言&#34;&gt;&lt;/a&gt;零、序言&lt;/h2&gt;&lt;p&gt;进入正题之前，先纠正一种误解。 有人觉得，基本图表太简单、太原始，不高端，不大气，因此追求更复杂的图表。但是，越简单的图表，越容易理解，而快速易懂地理解数据，不正是”数据可视化”的最重要目的和最高追求吗？ 所以，请不要小看这些基本图表。因为用户最熟悉它们，所以只要是适用的场合，就应该考虑优先使用。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;一、柱状图（Bar-Chart）&#34;&gt;&lt;a href=&#34;#一、柱状图（Bar-Chart）&#34; class=&#34;headerlink&#34; title=&#34;一、柱状图（Bar Chart）&#34;&gt;&lt;/a&gt;一、柱状图（Bar Chart）&lt;/h2&gt;&lt;p&gt;柱状图是最常见的图表，也最容易解读。 &lt;img src=&#34;http://image.beekka.com/blog/2014/bg2014112902.png&#34; alt=&#34;&#34;&gt; 它的适用场合是二维数据集（每个数据点包括两个值x和y），但只有一个维度需要比较。年销售额就是二维数据，”年份”和”销售额”就是它的两个维度，但只需要比较”销售额”这一个维度。 柱状图利用柱子的高度，反映数据的差异。肉眼对高度差异很敏感，辨识效果非常好。柱状图的局限在于只适用中小规模的数据集。 通常来说，柱状图的X轴是时间维，用户习惯性认为存在时间趋势。如果遇到X轴不是时间维的情况，建议用颜色区分每根柱子，改变用户对时间趋势的关注。 &lt;img src=&#34;http://image.beekka.com/blog/2014/bg2014112903.png&#34; alt=&#34;&#34;&gt; 上图是英国足球联赛某个年度各队的赢球场数，X轴代表不同球队，Y轴代表赢球数。&lt;/p&gt;
 &lt;h2 id=&#34;二、折线图（Line-Chart）数据&#34;&gt;&lt;a href=&#34;#二、折线图（Line-Chart）数据&#34; class=&#34;headerlink&#34; title=&#34;二、折线图（Line Chart）数据&#34;&gt;&lt;/a&gt;二、折线图（Line Chart）数据&lt;/h2&gt;&lt;p&gt;折线图适合二维的大数据集，尤其是那些趋势比单个数据点更重要的场合。 &lt;img src=&#34;http://image.beekka.com/blog/2014/bg2014112904.png&#34; alt=&#34;&#34;&gt; 它还适合多个二维数据集的比较。 &lt;img src=&#34;http://image.beekka.com/blog/2014/bg2014112905.png&#34; alt=&#34;&#34;&gt; 上图是两个二维数据集（大气中二氧化碳浓度，地表平均气温）的折线图。&lt;/p&gt;

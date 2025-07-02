@@ -9,7 +9,7 @@
             "url": "https://erik.xyz/2016/03/01/mysql-shu-ju-ku-ru-he-xuan-ze-cun-chu-yin-qing/",
             "title": "mysql数据库如何选择存储引擎",
             "date_published": "2016-03-01T09:50:00.000Z",
-            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>针对不同的业务需求来选择mysql存储引擎。 1.采用MyISAM引擎</p>\n<ul>\n<li>R/W&gt;100:1且updae相对较少。</li>\n<li>并发不高，不需要事务。</li>\n<li>表数据量小。</li>\n<li>硬件资源有限。</li>\n</ul>\n<p>2.采用InnoDB引擎<span id=\"more\"></span></p>\n<ul>\n<li>R/W比较小，频繁更新大字段。</li>\n<li>表数据量超过1000W,并发高。</li>\n<li>安全性和可用性要求高。</li>\n</ul>\n<p>3.采用Memory引擎</p>\n<ul>\n<li>有足够的内存。</li>\n<li>对数据一致性要求不高，如在线人数和Session等应用。</li>\n<li>需要定期归档的数据。</li>\n</ul>\n",
+            "content_html": "<p>针对不同的业务需求来选择mysql存储引擎。 1.采用MyISAM引擎</p>\n<ul>\n<li>R/W&gt;100:1且updae相对较少。</li>\n<li>并发不高，不需要事务。</li>\n<li>表数据量小。</li>\n<li>硬件资源有限。</li>\n</ul>\n<p>2.采用InnoDB引擎<span id=\"more\"></span></p>\n<ul>\n<li>R/W比较小，频繁更新大字段。</li>\n<li>表数据量超过1000W,并发高。</li>\n<li>安全性和可用性要求高。</li>\n</ul>\n<p>3.采用Memory引擎</p>\n<ul>\n<li>有足够的内存。</li>\n<li>对数据一致性要求不高，如在线人数和Session等应用。</li>\n<li>需要定期归档的数据。</li>\n</ul>\n",
             "tags": [
                 "mysql",
                 "mysql存储",

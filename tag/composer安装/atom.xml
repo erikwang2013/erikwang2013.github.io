@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;composer安装&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2017-10-13T13:19:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2017/10/13/you-guan-composer/</id>
         <title>有关composer</title>
         <link rel="alternate" href="https://erik.xyz/2017/10/13/you-guan-composer/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;composer是php5.3以上 的一个依赖管理工具。简单来说就是你在composer里面可以找到各种优秀的第三方扩展。可以丰富自己的项目节省开发时间。&lt;br&gt;首先要在你本地win电脑安装composer&lt;br&gt;安装成功后用命令窗口去安装打开目录执行：  echo @php “%~dp0composer.phar” %*&amp;gt;composer.bat&lt;br&gt;关闭命令窗口重新打开  执行 ： composer 结果如图&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg&#34; alt=&#34;有关composer&#34;&gt;&lt;/a&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;表示已经安装成功了。 然后把镜像地址换到国内&lt;br&gt;执行：composer config -g repo.packagist composer &lt;a href=&#34;https://packagist.phpcomposer.com&#34;&gt;https://packagist.phpcomposer.com&lt;/a&gt;&lt;br&gt;之后执行 composer install  全局安装。&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg&#34; alt=&#34;composer install&#34;&gt;&lt;/a&gt;&lt;br&gt;顺便再次执行：composer update   更新。&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/a306c860af2fae0as.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/a306c860af2fae0as.jpg&#34; alt=&#34;composer update&#34;&gt;&lt;/a&gt;&lt;br&gt;然后进入到你所在的项目目录执行： composer init  开始创建自己项目的composer.json&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg&#34; alt=&#34;有关composer&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;composer是php5.3以上 的一个依赖管理工具。简单来说就是你在composer里面可以找到各种优秀的第三方扩展。可以丰富自己的项目节省开发时间。&lt;br&gt;首先要在你本地win电脑安装composer&lt;br&gt;安装成功后用命令窗口去安装打开目录执行：  echo @php “%~dp0composer.phar” %*&amp;gt;composer.bat&lt;br&gt;关闭命令窗口重新打开  执行 ： composer 结果如图&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg&#34; alt=&#34;有关composer&#34;&gt;&lt;/a&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;表示已经安装成功了。 然后把镜像地址换到国内&lt;br&gt;执行：composer config -g repo.packagist composer &lt;a href=&#34;https://packagist.phpcomposer.com&#34;&gt;https://packagist.phpcomposer.com&lt;/a&gt;&lt;br&gt;之后执行 composer install  全局安装。&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg&#34; alt=&#34;composer install&#34;&gt;&lt;/a&gt;&lt;br&gt;顺便再次执行：composer update   更新。&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/a306c860af2fae0as.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/a306c860af2fae0as.jpg&#34; alt=&#34;composer update&#34;&gt;&lt;/a&gt;&lt;br&gt;然后进入到你所在的项目目录执行： composer init  开始创建自己项目的composer.json&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg&#34; alt=&#34;有关composer&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
         <category term="composer" />
         <category term="composer安装" />

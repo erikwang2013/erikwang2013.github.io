@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;转载&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2024-11-11T01:58:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2024/11/11/mysql-redis-consistency/</id>
         <title>如何下保证MySQL数据库与Redis缓存数据一致性？</title>
         <link rel="alternate" href="https://erik.xyz/2024/11/11/mysql-redis-consistency/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;有时候感觉MySQL我们懂了，Redis我们懂了，但是面试的时候一直答不好，经常被难住，问题在哪呢？&lt;/p&gt;
+        <content type="html">&lt;p&gt;有时候感觉MySQL我们懂了，Redis我们懂了，但是面试的时候一直答不好，经常被难住，问题在哪呢？&lt;/p&gt;
 &lt;p&gt;答案是：面试官考的不是专项能力，而是多项技术结合应用能力。&lt;/p&gt;
 &lt;p&gt;就拿&lt;strong&gt;并发场景下如何保证MySQL与Redis缓存一致性？&lt;/strong&gt;这个面试官常见的拷打考点举例。&lt;/p&gt;
 &lt;p&gt;对于读多写少并且要求高性能的业务逻辑，我们通常在应用服务器访问MySQL数据库的中间加上一层&lt;strong&gt;Redis缓存层&lt;/strong&gt;，以提高数据的查询效率，减轻MySQL数据库的压力，避免在MySQL出现性能瓶颈。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;img src=&#34;/img/2024/2024111101.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
@@ -552,7 +552,7 @@
         <id>https://erik.xyz/2024/09/22/internet-practice/</id>
         <title>史上最详细的互联网项目管理实战图解</title>
         <link rel="alternate" href="https://erik.xyz/2024/09/22/internet-practice/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;img src=&#34;/img/2024/640.jpeg&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;&lt;img src=&#34;/img/2024/640.jpeg&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
 &lt;p&gt;如何系统的掌握互联网项目管理知识和经验，我搜罗世面上基本没有介绍这方面的图书，为此咱们去年年初，组织咱们前沿社区的众多大咖联合电子工业出版社出版了这本新书《互联网项目管理实战指南》希望可以助大家一臂之力！今天把文章的思维导图干货一起分享给大家！&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;img src=&#34;/img/2024/640.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/2024/641.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/2024/642.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
@@ -585,7 +585,7 @@
         <id>https://erik.xyz/2024/07/22/sql-performance-optimization/</id>
         <title>SQL性能优化的47个小技巧，果断收藏！</title>
         <link rel="alternate" href="https://erik.xyz/2024/07/22/sql-performance-optimization/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;strong&gt;1、先了解MySQL的执行过程&lt;/strong&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;&lt;strong&gt;1、先了解MySQL的执行过程&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;了解了MySQL的执行过程，我们才知道如何进行sql优化。&lt;/p&gt;
 &lt;p&gt;1.客户端发送一条查询语句到服务器；&lt;/p&gt;
 &lt;p&gt;2.服务器先查询缓存，如果命中缓存，则立即返回存储在缓存中的数据；&lt;/p&gt;
@@ -857,7 +857,7 @@
         <id>https://erik.xyz/2024/06/12/loading-zero-copy/</id>
         <title>使用懒加载 + 零拷贝后，程序的秒开率提升至99.99%</title>
         <link rel="alternate" href="https://erik.xyz/2024/06/12/loading-zero-copy/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;一、5秒钟加载一个页面的真相&#34;&gt;&lt;a href=&#34;#一、5秒钟加载一个页面的真相&#34; class=&#34;headerlink&#34; title=&#34;一、5秒钟加载一个页面的真相&#34;&gt;&lt;/a&gt;一、5秒钟加载一个页面的真相&lt;/h4&gt;&lt;p&gt;今天在修改前端页面的时候，发现程序中有一个页面的加载速度很慢，差不多需要5秒，这其实是难以接受的，我也不知道为什么上线这么长时间了，没人提过这个事儿。&lt;/p&gt;
+        <content type="html">&lt;h4 id=&#34;一、5秒钟加载一个页面的真相&#34;&gt;&lt;a href=&#34;#一、5秒钟加载一个页面的真相&#34; class=&#34;headerlink&#34; title=&#34;一、5秒钟加载一个页面的真相&#34;&gt;&lt;/a&gt;一、5秒钟加载一个页面的真相&lt;/h4&gt;&lt;p&gt;今天在修改前端页面的时候，发现程序中有一个页面的加载速度很慢，差不多需要5秒，这其实是难以接受的，我也不知道为什么上线这么长时间了，没人提过这个事儿。&lt;/p&gt;
 &lt;p&gt;我记得有一个词儿，叫秒开率。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;秒开率是指能够在1秒内完成页面的加载。&lt;br&gt;&lt;img src=&#34;/img/2024/20240501.webp&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
 &lt;p&gt;查询的时候，会访问后台数据库，查询前20条数据，按道理来说，这应该很快才对。追踪代码，看看啥问题，最后发现问题有三：&lt;/p&gt;
 &lt;p&gt;1.表中有一个BLOB大字段，存储着一个PDF模板，也就是上图中的运费模板；&lt;/p&gt;
@@ -990,7 +990,7 @@
         <id>https://erik.xyz/2024/05/06/index-asynchrony-landing/</id>
         <title>增加索引 + 异步 + 不落地后，从 12h 优化到 15 min</title>
         <link rel="alternate" href="https://erik.xyz/2024/05/06/index-asynchrony-landing/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;在开发中，我们经常会遇到这样的需求，将数据库中的图片导出到本地，再传给别人。&lt;/p&gt;
+        <content type="html">&lt;p&gt;在开发中，我们经常会遇到这样的需求，将数据库中的图片导出到本地，再传给别人。&lt;/p&gt;
 &lt;h4 id=&#34;一、一般我会这样做：&#34;&gt;&lt;a href=&#34;#一、一般我会这样做：&#34; class=&#34;headerlink&#34; title=&#34;一、一般我会这样做：&#34;&gt;&lt;/a&gt;一、一般我会这样做：&lt;/h4&gt;&lt;p&gt;1.通过接口或者定时任务的形式&lt;/p&gt;
 &lt;p&gt;2.读取Oracle或者MySQL数据库&lt;/p&gt;
 &lt;p&gt;3.通过FileOutputStream将Base64解密后的byte[]存储到本地&lt;/p&gt;
@@ -1141,7 +1141,7 @@
         <id>https://erik.xyz/2024/04/06/five-jenkis/</id>
         <title>5分钟搞定Jenkis</title>
         <link rel="alternate" href="https://erik.xyz/2024/04/06/five-jenkis/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;什么是持续集成&#34;&gt;&lt;a href=&#34;#什么是持续集成&#34; class=&#34;headerlink&#34; title=&#34;什么是持续集成&#34;&gt;&lt;/a&gt;什么是持续集成&lt;/h4&gt;&lt;p&gt;持续集成 Continuous integration ，简称CI随着软件开发复杂度的不断提高，团队开发成员间如何更好地协同工作以确保软件开发的质量已经慢慢成为开发过程中不可回避的问题。尤其是近些年来，敏捷（Agile） 在软件工程领域越来越红火，如何能在不断变化的需求中快速适应和保证软件的质量也显得尤其的重要。持续集成正是针对这一类问题的一种软件开发实践。它倡导团队开发成员必须经常集成他们的工作，甚至每天都可能发生多次集成。而每次的集成都是通过自动化的构建来验证，包括自动编译、发布和测试，从而尽快地发现集成错误，让团队能够更快的开发内聚的软件。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;持续集成具有的特点：&lt;/p&gt;
+        <content type="html">&lt;h4 id=&#34;什么是持续集成&#34;&gt;&lt;a href=&#34;#什么是持续集成&#34; class=&#34;headerlink&#34; title=&#34;什么是持续集成&#34;&gt;&lt;/a&gt;什么是持续集成&lt;/h4&gt;&lt;p&gt;持续集成 Continuous integration ，简称CI随着软件开发复杂度的不断提高，团队开发成员间如何更好地协同工作以确保软件开发的质量已经慢慢成为开发过程中不可回避的问题。尤其是近些年来，敏捷（Agile） 在软件工程领域越来越红火，如何能在不断变化的需求中快速适应和保证软件的质量也显得尤其的重要。持续集成正是针对这一类问题的一种软件开发实践。它倡导团队开发成员必须经常集成他们的工作，甚至每天都可能发生多次集成。而每次的集成都是通过自动化的构建来验证，包括自动编译、发布和测试，从而尽快地发现集成错误，让团队能够更快的开发内聚的软件。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;持续集成具有的特点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;它是一个自动化的周期性的集成测试过程，从检出代码、编译构建、运行测试、结果记录、测试统计等都是自动完成的，无需人工干预；&lt;/p&gt;
 &lt;/li&gt;
@@ -1236,7 +1236,7 @@
         <id>https://erik.xyz/2023/05/15/mysql-top-log/</id>
         <title>MYSQL 最朴素的监控方式</title>
         <link rel="alternate" href="https://erik.xyz/2023/05/15/mysql-top-log/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;对于当前数据库的监控方式有很多，分为数据库自带、商用、开源三大类，每一种都有各自的特色；而对于 mysql 数据库由于其有很高的社区活跃度，监控方式更是多种多样，不管哪种监控方式最核心的就是监控数据，获取得到全面的监控数据后就是灵活的展示部分。那我们今天就介绍一下完全采用 mysql 自有方式采集获取监控数据，在单体下达到最快速、方便、损耗最小。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;本次文章完全使用 mysql 自带的 show 命令实现获取，从 connects、buffercache、lock、SQL、statement、Database throughputs、serverconfig7 大方面全面获取监控数据。&lt;/p&gt;
+        <content type="html">&lt;p&gt;对于当前数据库的监控方式有很多，分为数据库自带、商用、开源三大类，每一种都有各自的特色；而对于 mysql 数据库由于其有很高的社区活跃度，监控方式更是多种多样，不管哪种监控方式最核心的就是监控数据，获取得到全面的监控数据后就是灵活的展示部分。那我们今天就介绍一下完全采用 mysql 自有方式采集获取监控数据，在单体下达到最快速、方便、损耗最小。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;本次文章完全使用 mysql 自带的 show 命令实现获取，从 connects、buffercache、lock、SQL、statement、Database throughputs、serverconfig7 大方面全面获取监控数据。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;连接数（Connects）&lt;/p&gt;
 &lt;ul&gt;
@@ -1356,7 +1356,7 @@
         <id>https://erik.xyz/2023/04/05/all-pay-system/</id>
         <title>通用的支付系统该如何设计</title>
         <link rel="alternate" href="https://erik.xyz/2023/04/05/all-pay-system/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;支付永远是一个公司的核心领域，因为这是一个有交易属性公司的命脉。那么，支付系统到底长什么样，又是怎么运行交互的呢?抛开带有支付牌照的金融公司的支付架构，下述链路和系统组成基本上符合绝大多数支付场景。其实整体可以看成是交易核心+支付核心 两个大系统。交易系统关联了业务场景和底层支付，而支付系统完成了调用支付工具到对账清算等一系列相关操作。下面我们就来一起看下各个系统的核心组成和交互。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;支付永远是一个公司的核心领域，因为这是一个有交易属性公司的命脉。那么，支付系统到底长什么样，又是怎么运行交互的呢?抛开带有支付牌照的金融公司的支付架构，下述链路和系统组成基本上符合绝大多数支付场景。其实整体可以看成是交易核心+支付核心 两个大系统。交易系统关联了业务场景和底层支付，而支付系统完成了调用支付工具到对账清算等一系列相关操作。下面我们就来一起看下各个系统的核心组成和交互。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;支付系统总览&lt;/li&gt;
 &lt;/ol&gt;
@@ -1449,7 +1449,7 @@
         <id>https://erik.xyz/2023/01/11/hand-and-hand-log4j/</id>
         <title>手把手教你复现 Log4j2 漏洞</title>
         <link rel="alternate" href="https://erik.xyz/2023/01/11/hand-and-hand-log4j/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;1-简介&#34;&gt;&lt;a href=&#34;#1-简介&#34; class=&#34;headerlink&#34; title=&#34;1.简介&#34;&gt;&lt;/a&gt;1.简介&lt;/h4&gt;&lt;p&gt;ApacheLog4j2是一个开源的Java日志框架，被广泛地应用在中间件、开发框架与Web应用中。&lt;/p&gt;
+        <content type="html">&lt;h4 id=&#34;1-简介&#34;&gt;&lt;a href=&#34;#1-简介&#34; class=&#34;headerlink&#34; title=&#34;1.简介&#34;&gt;&lt;/a&gt;1.简介&lt;/h4&gt;&lt;p&gt;ApacheLog4j2是一个开源的Java日志框架，被广泛地应用在中间件、开发框架与Web应用中。&lt;/p&gt;
 &lt;h4 id=&#34;2-漏洞概述&#34;&gt;&lt;a href=&#34;#2-漏洞概述&#34; class=&#34;headerlink&#34; title=&#34;2.漏洞概述&#34;&gt;&lt;/a&gt;2.漏洞概述&lt;/h4&gt;&lt;p&gt;该漏洞是由于Apache Log4j2某些功能存在递归解析功能，未经身份验证的攻击者通过发送特定恶意数据包，可在目标服务器上执行任意代码。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h4 id=&#34;3-影响范围&#34;&gt;&lt;a href=&#34;#3-影响范围&#34; class=&#34;headerlink&#34; title=&#34;3.影响范围&#34;&gt;&lt;/a&gt;3.影响范围&lt;/h4&gt;&lt;p&gt;Apache Log4j 2.x &amp;lt;= 2.15.0-rc1&lt;/p&gt;
 &lt;h4 id=&#34;4-环境搭建&#34;&gt;&lt;a href=&#34;#4-环境搭建&#34; class=&#34;headerlink&#34; title=&#34;4.环境搭建&#34;&gt;&lt;/a&gt;4.环境搭建&lt;/h4&gt;&lt;p&gt;1、创建一个新的maven项目，并导入Log4j的依赖包&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;groupId&amp;gt;org.apache.logging.log4j&amp;lt;/groupId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;artifactId&amp;gt;log4j-core&amp;lt;/artifactId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;version&amp;gt;2.14.1&amp;lt;/version&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -1480,7 +1480,7 @@
         <id>https://erik.xyz/2022/05/22/go-add-pdf/</id>
         <title>go中生成PDF</title>
         <link rel="alternate" href="https://erik.xyz/2022/05/22/go-add-pdf/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;一个简单但是非常实用的pdf生成器！&lt;/p&gt;
+        <content type="html">&lt;p&gt;一个简单但是非常实用的pdf生成器！&lt;/p&gt;
 &lt;p&gt;安装：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;go get github.com/jung-kurt/gofpdf
 &lt;/code&gt;&lt;/pre&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
@@ -1524,7 +1524,7 @@ func GeneratePdf(filename string) error &amp;#123;
         <id>https://erik.xyz/2022/05/10/get-http-address-ip/</id>
         <title>go中获取HTTP请求的IP地址</title>
         <link rel="alternate" href="https://erik.xyz/2022/05/10/get-http-address-ip/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;pre&gt;&lt;code&gt;package main
+        <content type="html">&lt;pre&gt;&lt;code&gt;package main
 
 import (
     &amp;quot;encoding/json&amp;quot;
@@ -1561,7 +1561,7 @@ func GetIP(r *http.Request) string &amp;#123;
         <id>https://erik.xyz/2022/04/12/go-limit-open/</id>
         <title>go中限流器</title>
         <link rel="alternate" href="https://erik.xyz/2022/04/12/go-limit-open/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;限流器是后台服务中的非常重要的组件，可以用来限制请求速率，保护服务，以免服务过载。 限流器的实现方法有很多种，例如滑动窗口法、Token Bucket、Leaky Bucket等。&lt;/p&gt;
+        <content type="html">&lt;p&gt;限流器是后台服务中的非常重要的组件，可以用来限制请求速率，保护服务，以免服务过载。 限流器的实现方法有很多种，例如滑动窗口法、Token Bucket、Leaky Bucket等。&lt;/p&gt;
 &lt;p&gt;其实golang标准库中就自带了限流算法的实现，即golang.org/x/time/rate。 该限流器是基于Token Bucket(令牌桶)实现的。&lt;/p&gt;
 &lt;p&gt;简单来说，令牌桶就是想象有一个固定大小的桶，系统会以恒定速率向桶中放Token，桶满则暂时不放。 而用户则从桶中取Token，如果有剩余Token就可以一直取。如果没有剩余Token，则需要等到系统中被放置了Token才行。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;本文则主要集中介绍下该组件的具体使用方法：&lt;/p&gt;
 &lt;p&gt;我们可以使用以下方法构造一个限流器对象：&lt;/p&gt;
@@ -1653,7 +1653,7 @@ func main() &amp;#123;
         <id>https://erik.xyz/2021/08/22/10-logs-tools-total/</id>
         <title>10个Web日志安全性分析工具</title>
         <link rel="alternate" href="https://erik.xyz/2021/08/22/10-logs-tools-total/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;首先，我们应该清楚的是，日志文件不仅可以帮助我们追踪入侵者的来源并找到其攻击路径，而且在正常的操作和维护中，日志还可以反映出许多安全攻击。&lt;br&gt;一个简单易用的Web日志分析工具可以大大提高效率。当前，行业中有许多日志分析工具。今天，我们推荐十种易于使用的Web日志安全性分析工具。&lt;/p&gt;
+        <content type="html">&lt;p&gt;首先，我们应该清楚的是，日志文件不仅可以帮助我们追踪入侵者的来源并找到其攻击路径，而且在正常的操作和维护中，日志还可以反映出许多安全攻击。&lt;br&gt;一个简单易用的Web日志分析工具可以大大提高效率。当前，行业中有许多日志分析工具。今天，我们推荐十种易于使用的Web日志安全性分析工具。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;p&gt;1.360星图&lt;/p&gt;
 &lt;p&gt;一个非常易于使用的网站访问日志分析工具，可以有效地识别Web漏洞攻击，CC攻击，恶意爬网程序扫描，异常访问和其他行为。一键式自动分析，输出安全性分析报告，支持iis / apache / nginx日志，支持自定义格式。&lt;/p&gt;
@@ -1685,7 +1685,7 @@ func main() &amp;#123;
         <id>https://erik.xyz/2021/07/15/linux-tools-system/</id>
         <title>Linux 运维必备的13款实用工具</title>
         <link rel="alternate" href="https://erik.xyz/2021/07/15/linux-tools-system/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;1、查看进程占用带宽情况-Nethogs&lt;/p&gt;
+        <content type="html">&lt;p&gt;1、查看进程占用带宽情况-Nethogs&lt;/p&gt;
 &lt;p&gt;Nethogs 是一个终端下的网络流量监控工具可以直观的显示每个进程占用的带宽。&lt;br&gt;下载：&lt;a href=&#34;http://sourceforge.net/projects/nethogs/files/nethogs/0.8/nethogs-0.8.0.tar.gz/download&#34;&gt;http://sourceforge.net/projects/nethogs/files/nethogs/0.8/nethogs-0.8.0.tar.gz/download&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;yum -y install libpcap-devel ncurses-devel
 tar zxvf nethogs-0.8.0.tar.gz
@@ -1820,7 +1820,7 @@ httperf --hog --server=192.168.0.202 --uri=/index.html --num-conns=10000 --wsess
         <id>https://erik.xyz/2020/06/20/mongodb-user-rbc/</id>
         <title>MongoDB权限说明</title>
         <link rel="alternate" href="https://erik.xyz/2020/06/20/mongodb-user-rbc/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;权限误区  并不是说下面的排序就证明权限越来越大除了readWrite权限用户外(root权限用户也包括)，其它用户都不具备对数据库的写入权限，除 read 权限外，其它用户都不具备对数据库中的读权限，每个权限的功能各不一样(除root外)&lt;/p&gt;
+        <content type="html">&lt;p&gt;权限误区  并不是说下面的排序就证明权限越来越大除了readWrite权限用户外(root权限用户也包括)，其它用户都不具备对数据库的写入权限，除 read 权限外，其它用户都不具备对数据库中的读权限，每个权限的功能各不一样(除root外)&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;h4 id=&#34;普通用户&#34;&gt;&lt;a href=&#34;#普通用户&#34; class=&#34;headerlink&#34; title=&#34;普通用户&#34;&gt;&lt;/a&gt;普通用户&lt;/h4&gt;&lt;p&gt;普通用户只是拥有下面的读写权限&lt;/p&gt;
 &lt;div class=&#34;table-container&#34;&gt;
@@ -2150,7 +2150,7 @@ httperf --hog --server=192.168.0.202 --uri=/index.html --num-conns=10000 --wsess
         <id>https://erik.xyz/2020/06/20/redis-top/</id>
         <title>Redis性能指标监控</title>
         <link rel="alternate" href="https://erik.xyz/2020/06/20/redis-top/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h5 id=&#34;监控指标&#34;&gt;&lt;a href=&#34;#监控指标&#34; class=&#34;headerlink&#34; title=&#34;监控指标&#34;&gt;&lt;/a&gt;监控指标&lt;/h5&gt;&lt;ul&gt;
+        <content type="html">&lt;h5 id=&#34;监控指标&#34;&gt;&lt;a href=&#34;#监控指标&#34; class=&#34;headerlink&#34; title=&#34;监控指标&#34;&gt;&lt;/a&gt;监控指标&lt;/h5&gt;&lt;ul&gt;
 &lt;li&gt;性能指标：Performance&lt;/li&gt;
 &lt;li&gt;内存指标: Memory&lt;/li&gt;
 &lt;li&gt;基本活动指标：Basic activity&lt;/li&gt;
@@ -2365,7 +2365,7 @@ sync_partial_err:1
         <id>https://erik.xyz/2020/06/18/elasticsearch-curd/</id>
         <title>Elasticsearch基本CURD操作</title>
         <link rel="alternate" href="https://erik.xyz/2020/06/18/elasticsearch-curd/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;当我们的ES集群搭建完成以后，我怎么能看到集群中各个节点状态以及主节点和健康情况呢，如下讲解使用curl命令来与ES集群进行交互、分别有查询主节点情况、集群状态、以及创建索引查看索引、查看分片以及对ES集群进行查询请求等操作。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;CURL语法讲解&lt;/p&gt;
+        <content type="html">&lt;p&gt;当我们的ES集群搭建完成以后，我怎么能看到集群中各个节点状态以及主节点和健康情况呢，如下讲解使用curl命令来与ES集群进行交互、分别有查询主节点情况、集群状态、以及创建索引查看索引、查看分片以及对ES集群进行查询请求等操作。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;CURL语法讲解&lt;/p&gt;
 &lt;p&gt;RESTful API:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;    curl  -X&amp;lt;VERB&amp;gt; &amp;#39;&amp;lt;PROTOCOL&amp;gt;://&amp;lt;HOST&amp;gt;:&amp;lt;PORT&amp;gt;/&amp;lt;PATH&amp;gt;?&amp;lt;QUERY_STRING&amp;gt;&amp;#39; -d &amp;#39;&amp;lt;BODY&amp;gt;&amp;#39;
     -X：指定请求方式
@@ -2529,7 +2529,7 @@ sync_partial_err:1
         <id>https://erik.xyz/2020/04/22/common-cncf-project/</id>
         <title>开源云原生项目</title>
         <link rel="alternate" href="https://erik.xyz/2020/04/22/common-cncf-project/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;ul&gt;
+        <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://kubernetes.io&#34;&gt;Kubernetes&lt;/a&gt;  容器编排平台&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/kubernetes/kubernetes&#34;&gt;github&lt;/a&gt;&lt;/p&gt;
@@ -2638,7 +2638,7 @@ sync_partial_err:1
         <id>https://erik.xyz/2019/12/09/code-author/</id>
         <title>老鸟程序员才知道的40个小技巧</title>
         <link rel="alternate" href="https://erik.xyz/2019/12/09/code-author/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;来源：知乎，作者：大狐狸&lt;/p&gt;
+        <content type="html">&lt;p&gt;来源：知乎，作者：大狐狸&lt;/p&gt;
 &lt;p&gt;链接：&lt;a href=&#34;https://www.zhihu.com/question/36426051/answer/76031743&#34;&gt;https://www.zhihu.com/question/36426051/answer/76031743&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;1.重构是程序员的主力技能。&lt;/p&gt;
 &lt;p&gt;2.工作日志能提升脑容量。&lt;/p&gt;
@@ -2747,7 +2747,7 @@ sync_partial_err:1
         <id>https://erik.xyz/2019/12/03/docker-long/</id>
         <title>容器发展史</title>
         <link rel="alternate" href="https://erik.xyz/2019/12/03/docker-long/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;一、缘起&lt;/p&gt;
+        <content type="html">&lt;p&gt;一、缘起&lt;/p&gt;
 &lt;p&gt;1.1、鸿蒙&lt;/p&gt;
 &lt;p&gt;在上古时期，天地初开，一群称之为 “运维” 的人们每天在一种叫作 “服务器” 的神秘盒子中创造属于他们的世界；他们在这个世界中每日劳作，一遍又一遍的写入他们的历史，比如搭建一个 nginx、布署一个 java web 应用…&lt;/p&gt;
 &lt;p&gt;大多数人其实并没有那么聪明，他们所 “创造” 的事实上可能是有人已经创造过的东西，他们可能每天都在做着重复的劳动；久而久之，一些人厌倦了、疲惫了…又过了一段时间，一些功力深厚的老前辈创造了一些批量布署工具来帮助人们做一些重复性的劳动，这些工具被起名为 “Asible”、”Chef”、”Puppet” 等等…&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;而随着时代的发展，”世界” 变得越来越复杂，运维们需要处理的事情越来越多，比如各种网络、磁盘环境的隔离，各种应用服务的高可用…在时代的洪流下，运维们急需要一种简单高效的布署工具，既能有一定的隔离性，又能方便使用，并且最大程度降低重复劳动来提升效率。&lt;/p&gt;

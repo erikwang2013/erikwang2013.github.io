@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Thu, 30 Oct 2014 18:32:00 +0800</pubDate>
         <lastBuildDate>Thu, 30 Oct 2014 18:32:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -474,7 +474,7 @@
             <category>php</category>
             <category>php面试题</category>
             <pubDate>Thu, 30 Oct 2014 18:32:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;//1.用php打印前一天的时间格式是2006-5-10 22:21:22&lt;br&gt;//方法1&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;date\_default\_timezone\_set(&amp;#x27;Asia/Shanghai&amp;#x27;); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$times=time()-86400; echo date(&amp;#x27;Y-m-d H:i:s&amp;#x27;,$times).&amp;quot;&amp;lt;br /&amp;gt;&amp;quot;; //方法2 echo date(&amp;#x27;Y-m-d H:i:s&amp;#x27;, strtotime(&amp;#x27;-1 days&amp;#x27;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;2.echo(),print,print_r()的区别 echo 只能打印字符串 print 可以打印字符串和数组中指定的值 print_r 打印数组中所有的值，不能打印字符串&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;//1.用php打印前一天的时间格式是2006-5-10 22:21:22&lt;br&gt;//方法1&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;date\_default\_timezone\_set(&amp;#x27;Asia/Shanghai&amp;#x27;); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$times=time()-86400; echo date(&amp;#x27;Y-m-d H:i:s&amp;#x27;,$times).&amp;quot;&amp;lt;br /&amp;gt;&amp;quot;; //方法2 echo date(&amp;#x27;Y-m-d H:i:s&amp;#x27;, strtotime(&amp;#x27;-1 days&amp;#x27;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;2.echo(),print,print_r()的区别 echo 只能打印字符串 print 可以打印字符串和数组中指定的值 print_r 打印数组中所有的值，不能打印字符串&lt;/p&gt;
 &lt;p&gt;//3.如何实现字符串翻转 echo “&lt;br /&gt;“;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$str=qrewwewe;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$st=Strrev($str);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo $st; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;4.amp实现最大负载大方法 采用缓存机制：静态缓存，memcache等。根据事务处理机制，采用innDB表或mylsam表。 优化sql语句，优化表字段机构。&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;echo &amp;quot;&amp;lt;br /&amp;gt;&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$b=201; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$c=40; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$a=$b&amp;gt;$c?4:5;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 在php中如果？前的值为真，那么结果就取:前的值，否则，取:后面的值 echo $a; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;5.php中传值和引用的区别 传值只是把某一个变量的值传给了另一个变量，而引用则说明两者指向了同一个地方。&lt;/p&gt;
 &lt;p&gt;6.在php中error_reporting这个函数有什么作用？ error_reporting()用于指定php程序过程中的错误报告的严重程度&lt;/p&gt;
 &lt;p&gt;7.请写一个函数验证电子邮件的格式是否正确&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;function CheckMaiAdr($str)&amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;return(eregi(&amp;quot;^\[\_.0-9a-z\]+@(\[0-9a-z\]\[0-9a-z\]+.)+\[a-z\]&amp;#123;2,3&amp;#125;$&amp;quot;,$str)); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;或者&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;function CheckMaiAdr($str)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;return(eregi(&amp;quot;^\[A-Za-z0-9_.\]+@(\[A-Za-z0-9_\]+\\.\[A-Za-z0-9.\]+&amp;#123;2,3&amp;#125;$&amp;quot;,$str));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;

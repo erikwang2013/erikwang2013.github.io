@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;网站监测&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2014-10-10T02:31:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2014/10/10/dns-jian-ce-ruan-jian/</id>
         <title>dns监测软件</title>
         <link rel="alternate" href="https://erik.xyz/2014/10/10/dns-jian-ce-ruan-jian/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/mm64s.png&#34; alt=&#34;木木夕logo&#34;&gt;由于我的网站是海外服务器，经常被联通给k掉，在家里用的长城宽带总是登录不上或者打不开网站，干脆就修改dns，试了试结果很令人满意。软件无意中得到 的来源于dnspod网站，测试本地可建立一个.txt文件，放入自己的顶级域名，打开软件，然后读取域名，就可以检测到域名，解析的dns.&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;例如&lt;/p&gt;
+        <content type="html">&lt;p&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/mm64s.png&#34; alt=&#34;木木夕logo&#34;&gt;由于我的网站是海外服务器，经常被联通给k掉，在家里用的长城宽带总是登录不上或者打不开网站，干脆就修改dns，试了试结果很令人满意。软件无意中得到 的来源于dnspod网站，测试本地可建立一个.txt文件，放入自己的顶级域名，打开软件，然后读取域名，就可以检测到域名，解析的dns.&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;例如&lt;/p&gt;
 &lt;p&gt;1.解压文件得到&lt;/p&gt;
 &lt;p&gt;[caption id=”attachment_87” align=”alignnone” width=”211”]&lt;a href=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/1.png&#34;&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/1.png&#34; alt=&#34;1&#34;&gt;&lt;/a&gt; dns监测开始步骤[/caption]&lt;/p&gt;
 &lt;p&gt;2.&lt;/p&gt;

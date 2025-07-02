@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;php7中sphinx扩展&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2017-09-15T13:17:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2017/09/15/php7-an-zhuang-sphinx-kuo-zhan/</id>
         <title>php7安装sphinx扩展</title>
         <link rel="alternate" href="https://erik.xyz/2017/09/15/php7-an-zhuang-sphinx-kuo-zhan/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;在官方pecl库中只能找到支持5.2版本的sphinx扩展。php7出来好一段时间了，没有sphinx不太科学。根据网友给的提提示，在pecl库下的sphinx页面中，点击[ Browse Source ] 如下图： &lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/08/1-1.jpg&#34; alt=&#34;&#34;&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;可以跳转到git页面在这里面你可以发下有支持php7的扩展文件 &lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/08/2-1.jpg&#34; alt=&#34;&#34;&gt; &lt;/p&gt;
+        <content type="html">&lt;p&gt;在官方pecl库中只能找到支持5.2版本的sphinx扩展。php7出来好一段时间了，没有sphinx不太科学。根据网友给的提提示，在pecl库下的sphinx页面中，点击[ Browse Source ] 如下图： &lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/08/1-1.jpg&#34; alt=&#34;&#34;&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;可以跳转到git页面在这里面你可以发下有支持php7的扩展文件 &lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/08/2-1.jpg&#34; alt=&#34;&#34;&gt; &lt;/p&gt;
 &lt;p&gt;这时就好办多了。 点击 shortlog进入下载页面，下载扩展 sphinx所需源码下载地址 &lt;a href=&#34;http://download.csdn.net/download/w15875510692/9931232&#34;&gt;http://download.csdn.net/download/w15875510692/9931232&lt;/a&gt; &lt;/p&gt;
 &lt;p&gt;最好浏览器下载  &lt;a href=&#34;http://git.php.net/?p=pecl/search_engine/sphinx.git;a=snapshot;h=339e123acb0ce7beb2d9d4f9094d6f8bcf15fb54;sf=tgz&#34;&gt;http://git.php.net/?p=pecl/search_engine/sphinx.git;a=snapshot;h=339e123acb0ce7beb2d9d4f9094d6f8bcf15fb54;sf=tgz&lt;/a&gt; 因为在安装sphinx扩展时总是报错libsphinxclient的错误，也就是缺少libsphinxclient。 那就需要下载coreseek，解压后进入csft-3.2.14/api/libsphinxclient目录下 ./configure make &amp;amp;&amp;amp; make install 安装libsphinxclient。如图安装成功。&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/08/core.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;接下来就是解压sphinx，并安装扩展。 进入sphinx目录 phpize ./configure —with-php-config=XXXX(php-config目录) make &amp;amp;&amp;amp; make install 安装成功，如图。 &lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/08/sphinx.jpg&#34; alt=&#34;&#34;&gt; &lt;/p&gt;

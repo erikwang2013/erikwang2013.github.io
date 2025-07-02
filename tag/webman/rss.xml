@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Mon, 26 May 2025 21:55:00 +0800</pubDate>
         <lastBuildDate>Mon, 26 May 2025 21:55:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>hyperf</category>
             <category>webman</category>
             <pubDate>Mon, 26 May 2025 21:55:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;好的，我们来深入探讨一下 &lt;code&gt;webman&lt;/code&gt;、&lt;code&gt;Hyperf&lt;/code&gt; 的底层原理以及 PHP 中注解（Annotations）的实现原理。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;好的，我们来深入探讨一下 &lt;code&gt;webman&lt;/code&gt;、&lt;code&gt;Hyperf&lt;/code&gt; 的底层原理以及 PHP 中注解（Annotations）的实现原理。&lt;/p&gt;
 &lt;h2 id=&#34;1-webman-底层原理&#34;&gt;&lt;a href=&#34;#1-webman-底层原理&#34; class=&#34;headerlink&#34; title=&#34;1. webman 底层原理&#34;&gt;&lt;/a&gt;1. webman 底层原理&lt;/h2&gt;&lt;p&gt;&lt;code&gt;webman&lt;/code&gt; 的核心设计理念是 &lt;strong&gt;轻量、高性能、易用&lt;/strong&gt;。它构建在强大的异步事件驱动网络库 &lt;strong&gt;Workerman&lt;/strong&gt; 之上，充分利用了 PHP 的 CLI（命令行接口）模式和事件循环机制，摒弃了传统的 PHP-FPM 模式，从而实现了高性能和高并发。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;h3 id=&#34;核心原理剖析&#34;&gt;&lt;a href=&#34;#核心原理剖析&#34; class=&#34;headerlink&#34; title=&#34;核心原理剖析&#34;&gt;&lt;/a&gt;核心原理剖析&lt;/h3&gt;&lt;ol&gt;
@@ -710,7 +710,7 @@
             <category>laravel</category>
             <category>composer插件</category>
             <pubDate>Sun, 12 Nov 2023 21:51:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;最近开发后总要测试接口性能，来定位接口问题，突然想到有xhprof扩展可以用。翻了翻，发现多数要不代码不更新，要不就是太繁琐，干脆自己开发以下。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;最近开发后总要测试接口性能，来定位接口问题，突然想到有xhprof扩展可以用。翻了翻，发现多数要不代码不更新，要不就是太繁琐，干脆自己开发以下。&lt;/p&gt;
 &lt;p&gt;   参考phacility/xhprof、phpxxb/xhprof的项目，自己下载了一份代码。于是就先做了webman的插件&lt;a href=&#34;https://github.com/erikwang2013/xhprof-webman&#34;&gt;xhprof-webman&lt;/a&gt;，磨蹭了一段时间就又弄了laravel版的插件&lt;a href=&#34;https://github.com/erikwang2013/xhprof-laravel&#34;&gt;xhprof-laravel&lt;/a&gt;。最新版已更新，大家有用到的去composer安装吧。&lt;/p&gt;
  ]]></description>
         </item>

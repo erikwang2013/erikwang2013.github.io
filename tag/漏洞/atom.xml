@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;漏洞&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2023-01-11T14:19:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2023/01/11/hand-and-hand-log4j/</id>
         <title>手把手教你复现 Log4j2 漏洞</title>
         <link rel="alternate" href="https://erik.xyz/2023/01/11/hand-and-hand-log4j/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;1-简介&#34;&gt;&lt;a href=&#34;#1-简介&#34; class=&#34;headerlink&#34; title=&#34;1.简介&#34;&gt;&lt;/a&gt;1.简介&lt;/h4&gt;&lt;p&gt;ApacheLog4j2是一个开源的Java日志框架，被广泛地应用在中间件、开发框架与Web应用中。&lt;/p&gt;
+        <content type="html">&lt;h4 id=&#34;1-简介&#34;&gt;&lt;a href=&#34;#1-简介&#34; class=&#34;headerlink&#34; title=&#34;1.简介&#34;&gt;&lt;/a&gt;1.简介&lt;/h4&gt;&lt;p&gt;ApacheLog4j2是一个开源的Java日志框架，被广泛地应用在中间件、开发框架与Web应用中。&lt;/p&gt;
 &lt;h4 id=&#34;2-漏洞概述&#34;&gt;&lt;a href=&#34;#2-漏洞概述&#34; class=&#34;headerlink&#34; title=&#34;2.漏洞概述&#34;&gt;&lt;/a&gt;2.漏洞概述&lt;/h4&gt;&lt;p&gt;该漏洞是由于Apache Log4j2某些功能存在递归解析功能，未经身份验证的攻击者通过发送特定恶意数据包，可在目标服务器上执行任意代码。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h4 id=&#34;3-影响范围&#34;&gt;&lt;a href=&#34;#3-影响范围&#34; class=&#34;headerlink&#34; title=&#34;3.影响范围&#34;&gt;&lt;/a&gt;3.影响范围&lt;/h4&gt;&lt;p&gt;Apache Log4j 2.x &amp;lt;= 2.15.0-rc1&lt;/p&gt;
 &lt;h4 id=&#34;4-环境搭建&#34;&gt;&lt;a href=&#34;#4-环境搭建&#34; class=&#34;headerlink&#34; title=&#34;4.环境搭建&#34;&gt;&lt;/a&gt;4.环境搭建&lt;/h4&gt;&lt;p&gt;1、创建一个新的maven项目，并导入Log4j的依赖包&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;groupId&amp;gt;org.apache.logging.log4j&amp;lt;/groupId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;artifactId&amp;gt;log4j-core&amp;lt;/artifactId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;version&amp;gt;2.14.1&amp;lt;/version&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -499,7 +499,7 @@
         <id>https://erik.xyz/2014/12/25/php-unserialize-an-quan-lou-dong/</id>
         <title>PHP “Unserialize()”安全漏洞</title>
         <link rel="alternate" href="https://erik.xyz/2014/12/25/php-unserialize-an-quan-lou-dong/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;来源：Linux社区  作者：Linux 受影响系统： PHP PHP &amp;lt; 5.4.36 描述： CVE(CAN) ID: CVE-2014-8142 PHP是广泛使用的通用目的脚本语言，特别适合于Web开发，可嵌入到HTML中。 PHP 5.4.36之前版本，”process_nested_data()”函数在实现上存在释放后重利用漏洞，攻击者通过向”unserialize()” 函数传递构造的输入，利用此漏洞可破坏内存；”var_push_dtor()”函数在实现上存在空指针间接引用漏洞，攻击者通过 向”unserialize()”函数传递构造的输入，利用此漏洞可造成崩溃。成功利用这些漏洞可造成任意代码执行。 &amp;lt;&lt;em&gt;来源：Stefan Esser 链接：&lt;a href=&#34;http://secunia.com/advisories/61236/&#34;&gt;http://secunia.com/advisories/61236/&lt;/a&gt; &lt;/em&gt;&gt; 建议： 厂商补丁： PHP —- 目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： PHP: &lt;a href=&#34;http://php.net/ChangeLog-5.php#5.4.36&#34;&gt;http://php.net/ChangeLog-5.php#5.4.36&lt;/a&gt; &lt;a href=&#34;https://bugs.php.net/bug.php?id=68594&#34;&gt;https://bugs.php.net/bug.php?id=68594&lt;/a&gt; Charlie Eriksen: &lt;a href=&#34;https://bugs.php.net/bug.php?id=68545&#34;&gt;https://bugs.php.net/bug.php?id=68545&lt;/a&gt; &lt;a href=&#34;http://www.linuxidc.com/topicnews.aspx?tid=14&#34; title=&#34;CentOS&#34;&gt;CentOS&lt;/a&gt; 6.3 安装LNMP (PHP 5.4,MyySQL5.6) &lt;a href=&#34;http://www.linuxidc.com/Linux/2013-04/82069.htm&#34;&gt;http://www.linuxidc.com/Linux/2013-04/82069.htm&lt;/a&gt; 在部署LNMP的时候遇到Nginx启动失败的2个问题 &lt;a href=&#34;http://www.linuxidc.com/Linux/2013-03/81120.htm&#34;&gt;http://www.linuxidc.com/Linux/2013-03/81120.htm&lt;/a&gt; &lt;a href=&#34;http://www.linuxidc.com/topicnews.aspx?tid=2&#34; title=&#34;Ubuntu&#34;&gt;Ubuntu&lt;/a&gt;安装Nginx php5-fpm MySQL(LNMP环境搭建) &lt;a href=&#34;http://www.linuxidc.com/Linux/2012-10/72458.htm&#34;&gt;http://www.linuxidc.com/Linux/2012-10/72458.htm&lt;/a&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;来源：Linux社区  作者：Linux 受影响系统： PHP PHP &amp;lt; 5.4.36 描述： CVE(CAN) ID: CVE-2014-8142 PHP是广泛使用的通用目的脚本语言，特别适合于Web开发，可嵌入到HTML中。 PHP 5.4.36之前版本，”process_nested_data()”函数在实现上存在释放后重利用漏洞，攻击者通过向”unserialize()” 函数传递构造的输入，利用此漏洞可破坏内存；”var_push_dtor()”函数在实现上存在空指针间接引用漏洞，攻击者通过 向”unserialize()”函数传递构造的输入，利用此漏洞可造成崩溃。成功利用这些漏洞可造成任意代码执行。 &amp;lt;&lt;em&gt;来源：Stefan Esser 链接：&lt;a href=&#34;http://secunia.com/advisories/61236/&#34;&gt;http://secunia.com/advisories/61236/&lt;/a&gt; &lt;/em&gt;&gt; 建议： 厂商补丁： PHP —- 目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： PHP: &lt;a href=&#34;http://php.net/ChangeLog-5.php#5.4.36&#34;&gt;http://php.net/ChangeLog-5.php#5.4.36&lt;/a&gt; &lt;a href=&#34;https://bugs.php.net/bug.php?id=68594&#34;&gt;https://bugs.php.net/bug.php?id=68594&lt;/a&gt; Charlie Eriksen: &lt;a href=&#34;https://bugs.php.net/bug.php?id=68545&#34;&gt;https://bugs.php.net/bug.php?id=68545&lt;/a&gt; &lt;a href=&#34;http://www.linuxidc.com/topicnews.aspx?tid=14&#34; title=&#34;CentOS&#34;&gt;CentOS&lt;/a&gt; 6.3 安装LNMP (PHP 5.4,MyySQL5.6) &lt;a href=&#34;http://www.linuxidc.com/Linux/2013-04/82069.htm&#34;&gt;http://www.linuxidc.com/Linux/2013-04/82069.htm&lt;/a&gt; 在部署LNMP的时候遇到Nginx启动失败的2个问题 &lt;a href=&#34;http://www.linuxidc.com/Linux/2013-03/81120.htm&#34;&gt;http://www.linuxidc.com/Linux/2013-03/81120.htm&lt;/a&gt; &lt;a href=&#34;http://www.linuxidc.com/topicnews.aspx?tid=2&#34; title=&#34;Ubuntu&#34;&gt;Ubuntu&lt;/a&gt;安装Nginx php5-fpm MySQL(LNMP环境搭建) &lt;a href=&#34;http://www.linuxidc.com/Linux/2012-10/72458.htm&#34;&gt;http://www.linuxidc.com/Linux/2012-10/72458.htm&lt;/a&gt;&lt;/p&gt;
 </content>
         <category term="php" />
         <category term="php服务器" />

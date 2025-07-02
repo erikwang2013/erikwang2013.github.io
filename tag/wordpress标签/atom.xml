@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;wordpress标签&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2014-10-04T12:37:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2014/10/04/wordpress-biao-qian-zi-ti-she-zhi/</id>
         <title>wordpress标签字体设置</title>
         <link rel="alternate" href="https://erik.xyz/2014/10/04/wordpress-biao-qian-zi-ti-she-zhi/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;wordpres断断续续捣鼓了一段时间，总算有自己的网站了，今天算完全能用了，突然发现标签字体很模糊。&lt;/p&gt;
+        <content type="html">&lt;p&gt;wordpres断断续续捣鼓了一段时间，总算有自己的网站了，今天算完全能用了，突然发现标签字体很模糊。&lt;/p&gt;
 &lt;p&gt;从百度得到的答案是：&lt;/p&gt;
 &lt;p&gt;WordPress 默认标签云的字体最小为8pt，最大为22pt，标签显示数量为45个，按标签名称升序排列。但是用火狐查到是修改style.css样式的，可是怎么找也找不到，怎么办……无奈的百度 &lt;strong&gt;修改 WordPress 标签云方法&lt;/strong&gt; 打开 wp-includes/category-template.php 搜索 wp_tag_cloud 找到 ‘smallest’ =&amp;gt; 8, ‘largest’ =&amp;gt; 22, ‘unit’ =&amp;gt; ‘pt’, ‘number’ =&amp;gt; 45,‘format’ =&amp;gt; ‘flat’, ‘separator’ =&amp;gt; “\n”, ‘orderby’ =&amp;gt; ‘name’, ‘order’ =&amp;gt; ‘ASC’, &lt;strong&gt;具体的参数说明：&lt;/strong&gt; smallest – 定义标签的最小字号，默认为 8；largest – 定义标签的最大字号，默认为 22；unit – 设置字号类型，如 “pt” 或 “px” 等，默认为 “pt” 类型； number – 设置标签云数量，默认显示 45 个标签；orderby – 设置按 “name” 或 “count” 排序，默认为 “name” 方式；（注：orderby=count 表示按照标签使用次数排列）order – 设置按 “DESC” 或 “ASC” 升降序排列，默认为 “ASC” 升序。 根据自己需求修改 wp_tag_cloud 函数的具体参数即可实现标签云的自定义，然后把category-template.php文件上传到空间中替换原文件。&lt;/p&gt;
 </content>

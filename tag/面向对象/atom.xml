@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;面向对象&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2014-11-14T07:18:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2014/11/14/php-mian-xiang-dui-xiang/</id>
         <title>php面向对象</title>
         <link rel="alternate" href="https://erik.xyz/2014/11/14/php-mian-xiang-dui-xiang/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;__construct()构造函数，主要是通过关键字new生成实例的时候，它就会被调用执行。（构造函数不能返回值） __destructor()析构函数，它是在对象被销毁的时候被调用执行的。（对象被销毁时清空资源或者记录日志信息） __get(),__set()访问函数，类属性被访问和操作，访问函数都会被激发。oop思想不鼓励直接从类的外部访问类的属性，所以使用它们可以避免直接对类属性的访问。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; extends确认子类继承父类  格式class 子类 extends 父类{} final放在特定类前面，表示此类不能再被继承。如果放在某个类方法前面，表示此方法不能在继承后被“覆写”或重新定义。 implements指定使用接口 &lt;a href=&#34;http://tietuku.com/cc26841c6b434585&#34; title=&#34;php接口示意图&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/cc26841c6b434585.jpg&#34; alt=&#34;php接口示意图&#34;&gt;&lt;/a&gt; interface可声明接口，并且单独设立接口方法 &lt;a href=&#34;http://tietuku.com/9ce70457b5ef2e3b&#34; title=&#34;接口示意图&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/9ce70457b5ef2e3b.jpg&#34; alt=&#34;接口示意图&#34;&gt;&lt;/a&gt; 错误处理 &lt;a href=&#34;http://tietuku.com/cce268d063bbd079&#34; title=&#34;错误处理&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/cce268d063bbd079.jpg&#34; alt=&#34;错误处理&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;__construct()构造函数，主要是通过关键字new生成实例的时候，它就会被调用执行。（构造函数不能返回值） __destructor()析构函数，它是在对象被销毁的时候被调用执行的。（对象被销毁时清空资源或者记录日志信息） __get(),__set()访问函数，类属性被访问和操作，访问函数都会被激发。oop思想不鼓励直接从类的外部访问类的属性，所以使用它们可以避免直接对类属性的访问。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; extends确认子类继承父类  格式class 子类 extends 父类{} final放在特定类前面，表示此类不能再被继承。如果放在某个类方法前面，表示此方法不能在继承后被“覆写”或重新定义。 implements指定使用接口 &lt;a href=&#34;http://tietuku.com/cc26841c6b434585&#34; title=&#34;php接口示意图&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/cc26841c6b434585.jpg&#34; alt=&#34;php接口示意图&#34;&gt;&lt;/a&gt; interface可声明接口，并且单独设立接口方法 &lt;a href=&#34;http://tietuku.com/9ce70457b5ef2e3b&#34; title=&#34;接口示意图&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/9ce70457b5ef2e3b.jpg&#34; alt=&#34;接口示意图&#34;&gt;&lt;/a&gt; 错误处理 &lt;a href=&#34;http://tietuku.com/cce268d063bbd079&#34; title=&#34;错误处理&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/cce268d063bbd079.jpg&#34; alt=&#34;错误处理&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
         <category term="php" />
         <category term="php函数" />

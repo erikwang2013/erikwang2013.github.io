@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Fri, 29 May 2015 18:32:00 +0800</pubDate>
         <lastBuildDate>Fri, 29 May 2015 18:32:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>jquery插件</category>
             <category>js</category>
             <pubDate>Fri, 29 May 2015 18:32:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;strong&gt;QMeter&lt;/strong&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;strong&gt;QMeter&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://s6.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul1YGSTw_AAABnpCBMYME808.jpg&#34;&gt;&lt;img src=&#34;http://s6.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul1YGSTw_AAABnpCBMYME808.jpg&#34; alt=&#34;2015年4月15个免费的jQuery插件中文详解&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;jQMeter是一款简便的轻量化jQuery插件，允许大家以动画方式显示横向或者纵向进程表。其目前提供目标及具体数量的增长或完成显示效果，大家也可以点击此处查看其它可选功能。 &lt;strong&gt;Prism Effect Slider&lt;/strong&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://s4.51cto.com/wyfs02/M01/5D/DD/wKiom1Ul1PXTE-j1AACjqWKfedE195.jpg&#34;&gt;&lt;img src=&#34;http://s4.51cto.com/wyfs02/M01/5D/DD/wKiom1Ul1PXTE-j1AACjqWKfedE195.jpg&#34; alt=&#34;2015年4月15个免费的jQuery插件中文详解&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -516,7 +516,7 @@
             <category>jquery</category>
             <category>jquery插件</category>
             <pubDate>Tue, 06 Jan 2015 23:15:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;jQuery简单易学，但如果你想写出更漂亮更简洁高效的代码，总需要一些技巧。本文就为你总结了&lt;strong&gt;14条改善jQuery代码的技巧&lt;/strong&gt;。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;jQuery简单易学，但如果你想写出更漂亮更简洁高效的代码，总需要一些技巧。本文就为你总结了&lt;strong&gt;14条改善jQuery代码的技巧&lt;/strong&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;1-测试并提升你的jQuery选择器水平&#34;&gt;&lt;a href=&#34;#1-测试并提升你的jQuery选择器水平&#34; class=&#34;headerlink&#34; title=&#34;1.测试并提升你的jQuery选择器水平&#34;&gt;&lt;/a&gt;1.测试并提升你的jQuery选择器水平&lt;/h3&gt;&lt;p&gt;这个&lt;a href=&#34;http://codylindley.com/jqueryselectors/&#34;&gt;jQuery选择器实验室&lt;/a&gt;非常酷，它能在线免费使用，当然你也能下来到本地离线使用。这个测试页面包含复杂的HTML组合字段，然后你能尝试预定义使用各种jQuery选择器。如果这还不够你也可以自定义选择器。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;2-测试jQuery包装集是否包含某些元素&#34;&gt;&lt;a href=&#34;#2-测试jQuery包装集是否包含某些元素&#34; class=&#34;headerlink&#34; title=&#34;2.测试jQuery包装集是否包含某些元素&#34;&gt;&lt;/a&gt;2.测试jQuery包装集是否包含某些元素&lt;/h3&gt;&lt;p&gt;如果你想测试一下某个jQuery包装集中是否包含某些元素，你首先可以尝试使用验证首个元素是否存在：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;if($(selector)[0])&amp;#123;...&amp;#125;
@@ -747,7 +747,7 @@ equals( true, true, &amp;quot;passing test&amp;quot; );
             <category>jquery插件</category>
             <category>js</category>
             <pubDate>Tue, 30 Dec 2014 21:47:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 倒计时功能在很多项目中都会使用到，比如维修页面、团购网站和下载限时网站等等。通过使用jQuery倒计时插件，你可以简化你的工作量，却同样创造出超酷的jQuery倒计时功能。本文为你介绍10款jQuery倒计时插件。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 倒计时功能在很多项目中都会使用到，比如维修页面、团购网站和下载限时网站等等。通过使用jQuery倒计时插件，你可以简化你的工作量，却同样创造出超酷的jQuery倒计时功能。本文为你介绍10款jQuery倒计时插件。&lt;/p&gt;
 &lt;h3 id=&#34;1-jQuery-Countdown&#34;&gt;&lt;a href=&#34;#1-jQuery-Countdown&#34; class=&#34;headerlink&#34; title=&#34;1. jQuery Countdown&#34;&gt;&lt;/a&gt;1. &lt;a href=&#34;http://keith-wood.name/countdown.html&#34;&gt;jQuery Countdown&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;这个jQuery插件可以让你设置一个div或span元素来显示倒计时，它拥有一堆的选项可以实现你的各种需求。 &lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://paranimage.com/wp-content/uploads/2011/06/image93.jpg&#34; alt=&#34;&#34;&gt; &lt;a href=&#34;http://keith-wood.name/countdown.html&#34;&gt;Demo&lt;/a&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;2-jQuery-Countdown-with-Background-and-Overlay&#34;&gt;&lt;a href=&#34;#2-jQuery-Countdown-with-Background-and-Overlay&#34; class=&#34;headerlink&#34; title=&#34;2. jQuery Countdown with Background and Overlay&#34;&gt;&lt;/a&gt;2. &lt;a href=&#34;http://tenseveninteractive.com/content/jquery-countdown-background-and-overlay&#34;&gt;jQuery Countdown with Background and Overlay&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;很酷的jQuery倒计时脚本，下载包含Javascript, 图片和CSS文件等。 &lt;/p&gt;

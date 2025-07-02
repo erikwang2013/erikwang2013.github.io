@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;数组排序函数&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2014-11-12T08:42:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2014/11/12/php-kai-fa-zhong-shu-zu-han-shu/</id>
         <title>php开发中数组函数</title>
         <link rel="alternate" href="https://erik.xyz/2014/11/12/php-kai-fa-zhong-shu-zu-han-shu/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;php开发中数组是经常性的用到 那就介绍一下一维数组中的排序函数 sort()函数，默认排序从低到高排列 asort()函数，根据数组元素的值升序排列 ksort()函数，根据数组元素的键值，也就是关键字的升序排列 rsort()函数正好和sort()函数相反 arsort()函数正好和asort()函数相反 krsort()函数正好和ksort()函数相反   array_unshift()函数，向数组中与添加元素   array_unshift(目标数组,要添加的元素) array_push()函数，向数组中添加元素，以实现先进先出  array_unshift(目标数组,要添加的元素) array_shift()函数，删除目标数组的头一个数组元素  array_shift(目标数组) array_pop()函数，删除目标数组的最后一个数组元素   array_pop(目标数组)   array_key_exists()函数专门针对联合数组的‘键名’进行查询 array_search()函数专门针对联合数组的‘元素值’进行查询 array_keys()函数是取得数组‘键值’ array_values()函数是取得数组‘元素值’   count()函数，为统计数组的元素个数 array_count_values()函数，为统计数组的元素值个数（只能用于一维数组） array_unique()函数实现数组中元素的唯一性，也就是去掉数组中重复的元素 array_flip()函数调换数组中的键值和元素值位置，如果有重复的键值则覆盖键值，显示最后一次赋值的键值   serialize()函数，数组序列化 unserialize()函数，数组反序列化&lt;/p&gt;
+        <content type="html">&lt;p&gt;php开发中数组是经常性的用到 那就介绍一下一维数组中的排序函数 sort()函数，默认排序从低到高排列 asort()函数，根据数组元素的值升序排列 ksort()函数，根据数组元素的键值，也就是关键字的升序排列 rsort()函数正好和sort()函数相反 arsort()函数正好和asort()函数相反 krsort()函数正好和ksort()函数相反   array_unshift()函数，向数组中与添加元素   array_unshift(目标数组,要添加的元素) array_push()函数，向数组中添加元素，以实现先进先出  array_unshift(目标数组,要添加的元素) array_shift()函数，删除目标数组的头一个数组元素  array_shift(目标数组) array_pop()函数，删除目标数组的最后一个数组元素   array_pop(目标数组)   array_key_exists()函数专门针对联合数组的‘键名’进行查询 array_search()函数专门针对联合数组的‘元素值’进行查询 array_keys()函数是取得数组‘键值’ array_values()函数是取得数组‘元素值’   count()函数，为统计数组的元素个数 array_count_values()函数，为统计数组的元素值个数（只能用于一维数组） array_unique()函数实现数组中元素的唯一性，也就是去掉数组中重复的元素 array_flip()函数调换数组中的键值和元素值位置，如果有重复的键值则覆盖键值，显示最后一次赋值的键值   serialize()函数，数组序列化 unserialize()函数，数组反序列化&lt;/p&gt;
 </content>
         <category term="php" />
         <category term="php函数" />

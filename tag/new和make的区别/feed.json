@@ -9,7 +9,7 @@
             "url": "https://erik.xyz/2022/03/22/new-and-make-other/",
             "title": "new和make的区别",
             "date_published": "2022-03-22T01:27:00.000Z",
-            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>go中我们往往要对变量分配内存，那么分配内存有两中方式分别是new和make。查了一些资料，顺便看我开发中用的几个地方。其实，很好理解。</p>\n<p>new分配中内存，不做初始化，也就是不能直接赋值，必须初始化后才能赋值。</p>\n<p>make分配好内存且已经</p>\n",
+            "content_html": "<p>go中我们往往要对变量分配内存，那么分配内存有两中方式分别是new和make。查了一些资料，顺便看我开发中用的几个地方。其实，很好理解。</p>\n<p>new分配中内存，不做初始化，也就是不能直接赋值，必须初始化后才能赋值。</p>\n<p>make分配好内存且已经</p>\n",
             "tags": [
                 "go",
                 "new和make的区别"

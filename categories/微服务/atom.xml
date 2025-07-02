@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;微服务&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2022-08-09T13:48:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2022/08/09/go-zero-list-1/</id>
         <title>go-zero微服务试用</title>
         <link rel="alternate" href="https://erik.xyz/2022/08/09/go-zero-list-1/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;参考地址：&lt;a href=&#34;https://go-zero.dev/cn/docs/quick-start/micro-service#%E5%88%9B%E5%BB%BAuser-rpc%E6%9C%8D%E5%8A%A1&#34;&gt;https://go-zero.dev/cn/docs/quick-start/micro-service#%E5%88%9B%E5%BB%BAuser-rpc%E6%9C%8D%E5%8A%A1&lt;/a&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;参考地址：&lt;a href=&#34;https://go-zero.dev/cn/docs/quick-start/micro-service#%E5%88%9B%E5%BB%BAuser-rpc%E6%9C%8D%E5%8A%A1&#34;&gt;https://go-zero.dev/cn/docs/quick-start/micro-service#%E5%88%9B%E5%BB%BAuser-rpc%E6%9C%8D%E5%8A%A1&lt;/a&gt;&lt;/p&gt;
 &lt;h4 id=&#34;go-zero介绍&#34;&gt;&lt;a href=&#34;#go-zero介绍&#34; class=&#34;headerlink&#34; title=&#34;go-zero介绍&#34;&gt;&lt;/a&gt;go-zero介绍&lt;/h4&gt;&lt;p&gt;go-zero（收录于 CNCF 云原生技术全景图：&lt;a href=&#34;https://landscape.cncf.io/?selected=go-zero）是一个集成了各种工程实践的&#34;&gt;https://landscape.cncf.io/?selected=go-zero）是一个集成了各种工程实践的&lt;/a&gt; web 和 rpc 框架。通过弹性设计保障了大并发服务端的稳定性，经受了充分的实战检验。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;go-zero 包含极简的 API 定义和生成工具 goctl，可以根据定义的 api 文件一键生成 Go, iOS, Android, Kotlin, Dart, TypeScript, JavaScript 代码，并可直接运行。&lt;/p&gt;
 &lt;p&gt;使用 go-zero 的好处：&lt;/p&gt;
 &lt;ul&gt;

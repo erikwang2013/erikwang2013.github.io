@@ -9,7 +9,7 @@
             "url": "https://erik.xyz/2015/05/06/php-zhong-ding-yi-han-shu-guo-lv-zi-fu-chuan/",
             "title": "php中定义函数过虑字符串",
             "date_published": "2015-05-05T23:11:00.000Z",
-            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>在php网站开发过程中，经常会遇到过滤评论或者文章内容。在后台可控制，前台调用数据库，以便及时修改，控制提交的数据进行过滤。 这边我所接触到的原理是把禁用语句保存在数组，用分割函数来拆分数组，然后用正则表达式函数对禁用语句判断。 <a href=\"http://www.erik.xyz/phpstr/\"><img src=\"http://i2.tietuku.com/ee70d81e2a5caeb7.png\" alt=\"php过滤\"></a></p>\n",
+            "content_html": "<p>在php网站开发过程中，经常会遇到过滤评论或者文章内容。在后台可控制，前台调用数据库，以便及时修改，控制提交的数据进行过滤。 这边我所接触到的原理是把禁用语句保存在数组，用分割函数来拆分数组，然后用正则表达式函数对禁用语句判断。 <a href=\"http://www.erik.xyz/phpstr/\"><img src=\"http://i2.tietuku.com/ee70d81e2a5caeb7.png\" alt=\"php过滤\"></a></p>\n",
             "tags": [
                 "php过滤",
                 "过滤"

@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;服务器集成环境&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2014-10-12T02:17:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2014/10/12/php-ji-cheng-huan-jing/</id>
         <title>php集成环境</title>
         <link rel="alternate" href="https://erik.xyz/2014/10/12/php-ji-cheng-huan-jing/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;单独配置php环境比较浪费时间，用集成环境速度快，但是添加扩展比较麻烦，总之各有好处。&lt;/p&gt;
+        <content type="html">&lt;p&gt;单独配置php环境比较浪费时间，用集成环境速度快，但是添加扩展比较麻烦，总之各有好处。&lt;/p&gt;
 &lt;h3 id=&#34;win系统中php集成环境&#34;&gt;&lt;a href=&#34;#win系统中php集成环境&#34; class=&#34;headerlink&#34; title=&#34;win系统中php集成环境&#34;&gt;&lt;/a&gt;win系统中php集成环境&lt;/h3&gt;&lt;p&gt;phpstudy这个集成目前算是比较优秀的基本上涵盖所有php版本和服务其配置，可以任意切换不同版本，相对于开发者来说，一些框架的特殊要求，不必再来回更换php版本。 下载地址 &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/win_all/phpStudy-x64.zip&#34;&gt;phpStudy-x64.zip&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/win_all/phpStudy-install.zip&#34;&gt;phpStudy-install.zip&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/win_all/phpStudy2014.1404454619.rar&#34;&gt;phpStudy2014.1404454619.rar&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/win_all/phpStudy2013.zip&#34;&gt;phpStudy2013.zip&lt;/a&gt; 默认mysql用户名密码都是root appserv集成环境也一般般，只是目前只看到32位的，不过也符合一些公司使用 下载地址 &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/win_all/appserv-win32-2.5.10.exe&#34;&gt;appserv-win32-2.5.10.exe&lt;/a&gt;  &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;linux集成环境&#34;&gt;&lt;a href=&#34;#linux集成环境&#34; class=&#34;headerlink&#34; title=&#34;linux集成环境&#34;&gt;&lt;/a&gt;linux集成环境&lt;/h3&gt;&lt;p&gt;笔者刚开始接触php由于配置比较繁琐，花费时间量大，干脆在百度上找找看有没有集成环境，后来找到了。 wdlinux这是一款专注于linux集成的环境，对于配置大有好处，后台还有专门的管理界面，可以分站点建立多个网站 下载地址 &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/linux_all/wdcp.sh&#34;&gt;wdlinux&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/linux_all/wdcp.sh&#34;&gt;https://sourceforge.net/projects/erik1314/files/linux_all/wdcp.sh&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/linux_all/lanmp_v2.5.tar.gz&#34;&gt;lanmp_v2.5.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/linux\_all/lanmp\_v2.5.tar.gz&#34;&gt;https://sourceforge.net/projects/erik1314/files/linux\_all/lanmp\_v2.5.tar.gz&lt;/a&gt; wdcp管理系统后台访问地址 &lt;a href=&#34;http://ip:8080&#34;&gt;http://ip:8080&lt;/a&gt; 默认用户密码 admin wdlinux.cn mysql默认的用户密码 root wdlinux.cn phpstudy我就不过多介绍了，也有linux版本的 下载地址 &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/linux_all/phpstudy.bin&#34;&gt;phpstudy&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/linux_all/phpstudy.bin&#34;&gt;https://sourceforge.net/projects/erik1314/files/linux_all/phpstudy.bin&lt;/a&gt;&lt;/p&gt;
 </content>

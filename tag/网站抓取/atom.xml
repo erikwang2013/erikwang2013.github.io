@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;网站抓取&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2017-09-29T13:23:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2017/09/29/wget-zhua-qu-wang-zhan/</id>
         <title>wget抓取网站</title>
         <link rel="alternate" href="https://erik.xyz/2017/09/29/wget-zhua-qu-wang-zhan/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;最近需要套个模板，当然模板不需去购买。那就抓取一个，百度一下发现wget是个不错的用法。&lt;br&gt;wget -r -p -np -k  &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;   就可抓取整个站点模板到本地。&lt;/p&gt;
+        <content type="html">&lt;p&gt;最近需要套个模板，当然模板不需去购买。那就抓取一个，百度一下发现wget是个不错的用法。&lt;br&gt;wget -r -p -np -k  &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;   就可抓取整个站点模板到本地。&lt;/p&gt;
 &lt;p&gt;然后打包压缩，拷贝到win电脑就可以修修改改。&lt;br&gt;顺便查查wget使用方法&lt;br&gt;-a&amp;lt;日志文件&amp;gt;：在指定的日志文件中记录资料的执行过程；&lt;/p&gt;
 &lt;p&gt;-A&amp;lt;后缀名&amp;gt;：指定要下载文件的后缀名，多个后缀名之间使用逗号进行分隔； &lt;/p&gt;
 &lt;p&gt;-b：进行后台的方式运行wget； &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;

@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;数据一致性&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2024-11-11T01:58:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2024/11/11/mysql-redis-consistency/</id>
         <title>如何下保证MySQL数据库与Redis缓存数据一致性？</title>
         <link rel="alternate" href="https://erik.xyz/2024/11/11/mysql-redis-consistency/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;有时候感觉MySQL我们懂了，Redis我们懂了，但是面试的时候一直答不好，经常被难住，问题在哪呢？&lt;/p&gt;
+        <content type="html">&lt;p&gt;有时候感觉MySQL我们懂了，Redis我们懂了，但是面试的时候一直答不好，经常被难住，问题在哪呢？&lt;/p&gt;
 &lt;p&gt;答案是：面试官考的不是专项能力，而是多项技术结合应用能力。&lt;/p&gt;
 &lt;p&gt;就拿&lt;strong&gt;并发场景下如何保证MySQL与Redis缓存一致性？&lt;/strong&gt;这个面试官常见的拷打考点举例。&lt;/p&gt;
 &lt;p&gt;对于读多写少并且要求高性能的业务逻辑，我们通常在应用服务器访问MySQL数据库的中间加上一层&lt;strong&gt;Redis缓存层&lt;/strong&gt;，以提高数据的查询效率，减轻MySQL数据库的压力，避免在MySQL出现性能瓶颈。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;img src=&#34;/img/2024/2024111101.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;

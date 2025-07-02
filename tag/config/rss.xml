@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Fri, 27 Feb 2015 15:13:00 +0800</pubDate>
         <lastBuildDate>Fri, 27 Feb 2015 15:13:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>thinkphp</category>
             <category>配置文件</category>
             <pubDate>Fri, 27 Feb 2015 15:13:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;thinkphp开发做了有一年多了，怎么说呢，很菜…… 一直是用3.0以上的版本，查手册，调试，敲代码。无意间看到2.0的手册，彻底无语了 2.0手册全是基础，我竟然一直蒙着头用thinkphp，今天就好好看了一部分关于config.php的配置。官方给出的是这样的参考  &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;thinkphp开发做了有一年多了，怎么说呢，很菜…… 一直是用3.0以上的版本，查手册，调试，敲代码。无意间看到2.0的手册，彻底无语了 2.0手册全是基础，我竟然一直蒙着头用thinkphp，今天就好好看了一部分关于config.php的配置。官方给出的是这样的参考  &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;惯例配置&#34;&gt;&lt;a href=&#34;#惯例配置&#34; class=&#34;headerlink&#34; title=&#34;惯例配置&#34;&gt;&lt;/a&gt;惯例配置&lt;/h3&gt;&lt;p&gt;惯例重于配置是ThinkPHP的一个重要思想，系统内置有一个惯例配置文件（位于Think\Common\convention.php），按照大多数的使用对常用参数进行了默认配置。所以，对于应用项目的配置文件，往往只需要配置和惯例配置不同的或者新增的配置参数，如果你完全采用默认配置，甚至可以不需要定义任何配置文件。 （如果需要了解惯例配置中的详细配置列表请参考附录的配置参考部分。）  &lt;/p&gt;
 &lt;p&gt;看到这里就不能淡定了，原来thinkphp有提供配置好的参考配置，这下跳的坑大了。怪不得以前开发的同事上线项目都是开启调试模式，而不去关闭调试模式…… 找找看发现2.0的实在Common核心目录里，而且里面还提供了好多其他文档…… &lt;/p&gt;
 &lt;p&gt;但是在3.0以上确实在conf目录里&lt;/p&gt;

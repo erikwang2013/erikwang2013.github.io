@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Wed, 11 Jan 2023 22:19:00 +0800</pubDate>
         <lastBuildDate>Wed, 11 Jan 2023 22:19:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -474,7 +474,7 @@
             <category>漏洞</category>
             <category>log4j2</category>
             <pubDate>Wed, 11 Jan 2023 22:19:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;1-简介&#34;&gt;&lt;a href=&#34;#1-简介&#34; class=&#34;headerlink&#34; title=&#34;1.简介&#34;&gt;&lt;/a&gt;1.简介&lt;/h4&gt;&lt;p&gt;ApacheLog4j2是一个开源的Java日志框架，被广泛地应用在中间件、开发框架与Web应用中。&lt;/p&gt;
+            <description><![CDATA[ &lt;h4 id=&#34;1-简介&#34;&gt;&lt;a href=&#34;#1-简介&#34; class=&#34;headerlink&#34; title=&#34;1.简介&#34;&gt;&lt;/a&gt;1.简介&lt;/h4&gt;&lt;p&gt;ApacheLog4j2是一个开源的Java日志框架，被广泛地应用在中间件、开发框架与Web应用中。&lt;/p&gt;
 &lt;h4 id=&#34;2-漏洞概述&#34;&gt;&lt;a href=&#34;#2-漏洞概述&#34; class=&#34;headerlink&#34; title=&#34;2.漏洞概述&#34;&gt;&lt;/a&gt;2.漏洞概述&lt;/h4&gt;&lt;p&gt;该漏洞是由于Apache Log4j2某些功能存在递归解析功能，未经身份验证的攻击者通过发送特定恶意数据包，可在目标服务器上执行任意代码。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h4 id=&#34;3-影响范围&#34;&gt;&lt;a href=&#34;#3-影响范围&#34; class=&#34;headerlink&#34; title=&#34;3.影响范围&#34;&gt;&lt;/a&gt;3.影响范围&lt;/h4&gt;&lt;p&gt;Apache Log4j 2.x &amp;lt;= 2.15.0-rc1&lt;/p&gt;
 &lt;h4 id=&#34;4-环境搭建&#34;&gt;&lt;a href=&#34;#4-环境搭建&#34; class=&#34;headerlink&#34; title=&#34;4.环境搭建&#34;&gt;&lt;/a&gt;4.环境搭建&lt;/h4&gt;&lt;p&gt;1、创建一个新的maven项目，并导入Log4j的依赖包&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;groupId&amp;gt;org.apache.logging.log4j&amp;lt;/groupId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;artifactId&amp;gt;log4j-core&amp;lt;/artifactId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;version&amp;gt;2.14.1&amp;lt;/version&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -506,7 +506,7 @@
             <category>php服务器</category>
             <category>漏洞</category>
             <pubDate>Thu, 25 Dec 2014 10:27:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;来源：Linux社区  作者：Linux 受影响系统： PHP PHP &amp;lt; 5.4.36 描述： CVE(CAN) ID: CVE-2014-8142 PHP是广泛使用的通用目的脚本语言，特别适合于Web开发，可嵌入到HTML中。 PHP 5.4.36之前版本，”process_nested_data()”函数在实现上存在释放后重利用漏洞，攻击者通过向”unserialize()” 函数传递构造的输入，利用此漏洞可破坏内存；”var_push_dtor()”函数在实现上存在空指针间接引用漏洞，攻击者通过 向”unserialize()”函数传递构造的输入，利用此漏洞可造成崩溃。成功利用这些漏洞可造成任意代码执行。 &amp;lt;&lt;em&gt;来源：Stefan Esser 链接：&lt;a href=&#34;http://secunia.com/advisories/61236/&#34;&gt;http://secunia.com/advisories/61236/&lt;/a&gt; &lt;/em&gt;&gt; 建议： 厂商补丁： PHP —- 目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： PHP: &lt;a href=&#34;http://php.net/ChangeLog-5.php#5.4.36&#34;&gt;http://php.net/ChangeLog-5.php#5.4.36&lt;/a&gt; &lt;a href=&#34;https://bugs.php.net/bug.php?id=68594&#34;&gt;https://bugs.php.net/bug.php?id=68594&lt;/a&gt; Charlie Eriksen: &lt;a href=&#34;https://bugs.php.net/bug.php?id=68545&#34;&gt;https://bugs.php.net/bug.php?id=68545&lt;/a&gt; &lt;a href=&#34;http://www.linuxidc.com/topicnews.aspx?tid=14&#34; title=&#34;CentOS&#34;&gt;CentOS&lt;/a&gt; 6.3 安装LNMP (PHP 5.4,MyySQL5.6) &lt;a href=&#34;http://www.linuxidc.com/Linux/2013-04/82069.htm&#34;&gt;http://www.linuxidc.com/Linux/2013-04/82069.htm&lt;/a&gt; 在部署LNMP的时候遇到Nginx启动失败的2个问题 &lt;a href=&#34;http://www.linuxidc.com/Linux/2013-03/81120.htm&#34;&gt;http://www.linuxidc.com/Linux/2013-03/81120.htm&lt;/a&gt; &lt;a href=&#34;http://www.linuxidc.com/topicnews.aspx?tid=2&#34; title=&#34;Ubuntu&#34;&gt;Ubuntu&lt;/a&gt;安装Nginx php5-fpm MySQL(LNMP环境搭建) &lt;a href=&#34;http://www.linuxidc.com/Linux/2012-10/72458.htm&#34;&gt;http://www.linuxidc.com/Linux/2012-10/72458.htm&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;来源：Linux社区  作者：Linux 受影响系统： PHP PHP &amp;lt; 5.4.36 描述： CVE(CAN) ID: CVE-2014-8142 PHP是广泛使用的通用目的脚本语言，特别适合于Web开发，可嵌入到HTML中。 PHP 5.4.36之前版本，”process_nested_data()”函数在实现上存在释放后重利用漏洞，攻击者通过向”unserialize()” 函数传递构造的输入，利用此漏洞可破坏内存；”var_push_dtor()”函数在实现上存在空指针间接引用漏洞，攻击者通过 向”unserialize()”函数传递构造的输入，利用此漏洞可造成崩溃。成功利用这些漏洞可造成任意代码执行。 &amp;lt;&lt;em&gt;来源：Stefan Esser 链接：&lt;a href=&#34;http://secunia.com/advisories/61236/&#34;&gt;http://secunia.com/advisories/61236/&lt;/a&gt; &lt;/em&gt;&gt; 建议： 厂商补丁： PHP —- 目前厂商已经发布了升级补丁以修复这个安全问题，请到厂商的主页下载： PHP: &lt;a href=&#34;http://php.net/ChangeLog-5.php#5.4.36&#34;&gt;http://php.net/ChangeLog-5.php#5.4.36&lt;/a&gt; &lt;a href=&#34;https://bugs.php.net/bug.php?id=68594&#34;&gt;https://bugs.php.net/bug.php?id=68594&lt;/a&gt; Charlie Eriksen: &lt;a href=&#34;https://bugs.php.net/bug.php?id=68545&#34;&gt;https://bugs.php.net/bug.php?id=68545&lt;/a&gt; &lt;a href=&#34;http://www.linuxidc.com/topicnews.aspx?tid=14&#34; title=&#34;CentOS&#34;&gt;CentOS&lt;/a&gt; 6.3 安装LNMP (PHP 5.4,MyySQL5.6) &lt;a href=&#34;http://www.linuxidc.com/Linux/2013-04/82069.htm&#34;&gt;http://www.linuxidc.com/Linux/2013-04/82069.htm&lt;/a&gt; 在部署LNMP的时候遇到Nginx启动失败的2个问题 &lt;a href=&#34;http://www.linuxidc.com/Linux/2013-03/81120.htm&#34;&gt;http://www.linuxidc.com/Linux/2013-03/81120.htm&lt;/a&gt; &lt;a href=&#34;http://www.linuxidc.com/topicnews.aspx?tid=2&#34; title=&#34;Ubuntu&#34;&gt;Ubuntu&lt;/a&gt;安装Nginx php5-fpm MySQL(LNMP环境搭建) &lt;a href=&#34;http://www.linuxidc.com/Linux/2012-10/72458.htm&#34;&gt;http://www.linuxidc.com/Linux/2012-10/72458.htm&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

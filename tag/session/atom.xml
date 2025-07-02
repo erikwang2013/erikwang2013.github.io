@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;session&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2015-03-02T15:31:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2015/03/02/session-de-xiang-guan-jie-shao/</id>
         <title>session的相关介绍</title>
         <link rel="alternate" href="https://erik.xyz/2015/03/02/session-de-xiang-guan-jie-shao/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;1-定义编辑&#34;&gt;&lt;a href=&#34;#1-定义编辑&#34; class=&#34;headerlink&#34; title=&#34;1. 定义编辑&#34;&gt;&lt;/a&gt;1. 定义&lt;a href=&#34;http://baike.baidu.com/link?url=3RezpYuQm0DV1grMlJF2U_u-VWQGhfCvgeD-ExVozR5FmZHNXaif1M8O-UJFFOZsQtw35jixGG5KN2KGL6vImK#&#34; title=&#34;编辑本段&#34;&gt;编辑&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Session直接翻译成中文比较困难，一般都译成时域。在&lt;a href=&#34;http://baike.baidu.com/view/3314.htm&#34;&gt;计算机&lt;/a&gt;专业术语中，Session是指一个终端用户与交互系统进行通信的时间间隔，通常指从注册进入系统到注销退出系统之间所经过的时间。以及如果需要的话，可能还有一定的操作空间。&lt;/p&gt;
+        <content type="html">&lt;h2 id=&#34;1-定义编辑&#34;&gt;&lt;a href=&#34;#1-定义编辑&#34; class=&#34;headerlink&#34; title=&#34;1. 定义编辑&#34;&gt;&lt;/a&gt;1. 定义&lt;a href=&#34;http://baike.baidu.com/link?url=3RezpYuQm0DV1grMlJF2U_u-VWQGhfCvgeD-ExVozR5FmZHNXaif1M8O-UJFFOZsQtw35jixGG5KN2KGL6vImK#&#34; title=&#34;编辑本段&#34;&gt;编辑&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Session直接翻译成中文比较困难，一般都译成时域。在&lt;a href=&#34;http://baike.baidu.com/view/3314.htm&#34;&gt;计算机&lt;/a&gt;专业术语中，Session是指一个终端用户与交互系统进行通信的时间间隔，通常指从注册进入系统到注销退出系统之间所经过的时间。以及如果需要的话，可能还有一定的操作空间。&lt;/p&gt;
 &lt;p&gt;具体到Web中的Session指的就是用户在浏览某个网站时，从进入网站到关闭这个网站所经过的这段时间，也就是用户浏览这个网站所花费的时间。因此从上述的定义中我们可以看到，Session实际上是一个特定的时间概念。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;需要注意的是，一个Session的概念需要包括特定的&lt;a href=&#34;http://baike.baidu.com/view/930.htm&#34;&gt;客户端&lt;/a&gt;，特定的&lt;a href=&#34;http://baike.baidu.com/view/899.htm&#34;&gt;服务器&lt;/a&gt;端以及不中断的操作时间。A用户和C&lt;a href=&#34;http://baike.baidu.com/view/899.htm&#34;&gt;服务器&lt;/a&gt;建立连接时所处的Session同B用户和C服务器建立连接时所处的Session是两个不同的Session。&lt;/p&gt;
 &lt;p&gt;session的工作原理&lt;/p&gt;

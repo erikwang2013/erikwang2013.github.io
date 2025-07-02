@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;可穿戴设备&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2014-12-27T12:13:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2014/12/27/mu-qian-hai-shi-wan-wu-ke-chuan-dai-shi-she-bei-bao-gao-jie-xi/</id>
         <title>目前还是玩物——可穿戴式设备报告解析</title>
         <link rel="alternate" href="https://erik.xyz/2014/12/27/mu-qian-hai-shi-wan-wu-ke-chuan-dai-shi-she-bei-bao-gao-jie-xi/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;by &lt;a href=&#34;http://www.zoopda.com/author/637681&#34;&gt;maomaobear&lt;/a&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;by &lt;a href=&#34;http://www.zoopda.com/author/637681&#34;&gt;maomaobear&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/8520cc3bc0a952ed24958ef3ba47c7e0_w_680_h_425.jpg&#34; alt=&#34;目前还是玩物——可穿戴式设备报告解析&#34;&gt;&lt;/p&gt;
 &lt;p&gt;日前，腾讯对穿戴式设备做了一个调查，样本数量达到了 24877 个，而且做了配比处理，可信度颇高。数据显示了一些很有意思的现象，我们来看一下。&lt;/p&gt;
 &lt;h2 id=&#34;一、穿戴式设备雷声大雨点小&#34;&gt;&lt;a href=&#34;#一、穿戴式设备雷声大雨点小&#34; class=&#34;headerlink&#34; title=&#34;一、穿戴式设备雷声大雨点小&#34;&gt;&lt;/a&gt;一、穿戴式设备雷声大雨点小&lt;/h2&gt;&lt;p&gt;数据现实，在互联网群体中，知道穿戴式设备的人还是很多的，但是肯使用的只有 2.9% 了，这个比例还是比较低的。一方面说明这个市场的潜力还很大，另外一方面，说明现在的穿戴式设备还没有找到人们的需求痛点，能用到的人太少。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/d8b02a85f7fff3856b9dad807b6d0469_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;目前还是玩物——可穿戴式设备报告解析 - 1.jpg&#34; title=&#34;目前还是玩物——可穿戴式设备报告解析&#34;&gt; 从使用的种类看，还是什么能买到就用什么。而且和手机密切相关。智能眼睛很热闹，买不到啊。三星的智能手表，小米的智能手环跟着手机卖，用户加钱拿一个很方便。所以这两种还是占数量优势。 &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/2d6f787aa177215c3ac1e15c824e7891_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;目前还是玩物——可穿戴式设备报告解析 - 2.jpg&#34; title=&#34;目前还是玩物——可穿戴式设备报告解析&#34;&gt; &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/62a7e2da310bdb98fb0b60102a6876e2_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;目前还是玩物——可穿戴式设备报告解析 - 3.jpg&#34; title=&#34;目前还是玩物——可穿戴式设备报告解析&#34;&gt;&lt;/p&gt;

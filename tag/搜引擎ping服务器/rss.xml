@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Sat, 10 Jan 2015 21:21:00 +0800</pubDate>
         <lastBuildDate>Sat, 10 Jan 2015 21:21:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -476,7 +476,7 @@
             <category>搜引擎ping服务器</category>
             <category>搜索引擎</category>
             <pubDate>Sat, 10 Jan 2015 21:21:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者：张宴 前言： 2008年7月，我写过一篇文章《&lt;a href=&#34;http://blog.zyan.cc/post/360/&#34;&gt;基于Sphinx+MySQL的千万级数据全文检索（搜索引擎）架构设计&lt;/a&gt;》。有不少网友希望阅读全文，我将该文档整理了一下，分享出来。文档解压后大小为7.33M，共19页。 &lt;strong&gt;本站下载地址：&lt;/strong&gt; &lt;a href=&#34;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&#34;&gt;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&lt;/a&gt; &lt;strong&gt;新浪下载分流：&lt;/strong&gt; &lt;a href=&#34;http://ishare.iask.sina.com.cn/f/6728201.html&#34;&gt;http://ishare.iask.sina.com.cn/f/6728201.html&lt;/a&gt; 上述文档架构存在的局限，我在2008年12月的文章《&lt;a href=&#34;http://blog.zyan.cc/post/385/&#34;&gt;亿级数据的高并发通用搜索引擎架构设计&lt;/a&gt;》 中已经指出：一是MySQL本身的并发能力有限，在200～300个并发连接下，查询和更新就比较慢了；二是由于MySQL表的主键与Sphinx索引的 ID一一对应，从而无法跨多表建立整站查询，而且新增加类别还得修改配置文件，比较麻烦；三是因为和MySQL集成，无法发挥出Sphinx的优势。虽然 如此，但对于一些写入量不大的搜索应用，已经足够了，或许对很多人会有帮助。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;作者：张宴 前言： 2008年7月，我写过一篇文章《&lt;a href=&#34;http://blog.zyan.cc/post/360/&#34;&gt;基于Sphinx+MySQL的千万级数据全文检索（搜索引擎）架构设计&lt;/a&gt;》。有不少网友希望阅读全文，我将该文档整理了一下，分享出来。文档解压后大小为7.33M，共19页。 &lt;strong&gt;本站下载地址：&lt;/strong&gt; &lt;a href=&#34;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&#34;&gt;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&lt;/a&gt; &lt;strong&gt;新浪下载分流：&lt;/strong&gt; &lt;a href=&#34;http://ishare.iask.sina.com.cn/f/6728201.html&#34;&gt;http://ishare.iask.sina.com.cn/f/6728201.html&lt;/a&gt; 上述文档架构存在的局限，我在2008年12月的文章《&lt;a href=&#34;http://blog.zyan.cc/post/385/&#34;&gt;亿级数据的高并发通用搜索引擎架构设计&lt;/a&gt;》 中已经指出：一是MySQL本身的并发能力有限，在200～300个并发连接下，查询和更新就比较慢了；二是由于MySQL表的主键与Sphinx索引的 ID一一对应，从而无法跨多表建立整站查询，而且新增加类别还得修改配置文件，比较麻烦；三是因为和MySQL集成，无法发挥出Sphinx的优势。虽然 如此，但对于一些写入量不大的搜索应用，已经足够了，或许对很多人会有帮助。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;正文： 在这之后，本人基于《&lt;a href=&#34;http://blog.zyan.cc/post/385/&#34;&gt;亿级数据的高并发通用搜索引擎架构设计&lt;/a&gt;》开发的Sphinx分布式通用站内搜索引擎平台，已经在生产环境运行9个月以上，经过运营中的不断完善与改进，目前已形成了一套可扩展的分布式通用站内搜索引擎框架。CMS、视频、论坛等产品发生的增、删、改操作，文本内容实时写入自行开发的 &lt;a href=&#34;http://blog.zyan.cc/httpsqs&#34;&gt;HTTPSQS&lt;/a&gt; 高性能简单消息队列服务，通过队列控制器更新索引和存储。提供支持XML、JSON的API查询接口，支持亿级数据的索引、分布式、中文分词、高亮显示、自动摘要、准实时（1分钟内）增量索引更新。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://zyan.cc/attachment/201002/search_system.png&#34;&gt;&lt;img src=&#34;http://zyan.cc/attachment/201002/search_system.png&#34; alt=&#34;点击在新窗口中浏览此图片&#34; title=&#34;点击在新窗口中浏览此图片&#34;&gt;&lt;/a&gt; &lt;/p&gt;
@@ -523,7 +523,7 @@
             <category>各大网站ping</category>
             <category>搜引擎ping服务器</category>
             <pubDate>Sun, 12 Oct 2014 07:46:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;[caption id=”attachment_118” align=”alignnone” width=”300”]&lt;a href=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/meng400.jpg&#34;&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/meng400-300x300.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;艾瑞可erik开发者。[/caption]&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;[caption id=”attachment_118” align=”alignnone” width=”300”]&lt;a href=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/meng400.jpg&#34;&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/meng400-300x300.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;艾瑞可erik开发者。[/caption]&lt;/p&gt;
 &lt;p&gt;需要及时提供网站收录量，查询了一下方法找到一些ping服务器器，可以提高收录速度，仅共分享、参考&lt;/p&gt;
 &lt;p&gt;，部分地址可能会不准确&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://rpc.pingomatic.com/&#34;&gt;http://rpc.pingomatic.com/&lt;/a&gt; &lt;a href=&#34;http://lusongsong.com/daohang/login.asp&#34;&gt;http://lusongsong.com/daohang/login.asp&lt;/a&gt; &lt;a href=&#34;http://open.panguso.com/data/resource/url/new&#34;&gt;http://open.panguso.com/data/resource/url/new&lt;/a&gt; &lt;a href=&#34;http://blogsearch.google.com/ping/RPC2&#34;&gt;http://blogsearch.google.com/ping/RPC2&lt;/a&gt; &lt;a href=&#34;http://ping.baidu.com/ping/RPC2&#34;&gt;http://ping.baidu.com/ping/RPC2&lt;/a&gt; &lt;a href=&#34;http://www.feedsky.com/api/RPC2&#34;&gt;http://www.feedsky.com/api/RPC2&lt;/a&gt; &lt;a href=&#34;http://blog.youdao.com/ping/RPC2&#34;&gt;http://blog.youdao.com/ping/RPC2&lt;/a&gt; &lt;a href=&#34;http://www.zhuaxia.com/rpc/server.php&#34;&gt;http://www.zhuaxia.com/rpc/server.php&lt;/a&gt; &lt;a href=&#34;http://www.xianguo.com/xmlrpc/ping.php&#34;&gt;http://www.xianguo.com/xmlrpc/ping.php&lt;/a&gt; &lt;a href=&#34;http://api.my.yahoo.com/RPC2&#34;&gt;http://api.my.yahoo.com/RPC2&lt;/a&gt; &lt;a href=&#34;http://api.my.yahoo.com/rss/ping&#34;&gt;http://api.my.yahoo.com/rss/ping&lt;/a&gt; &lt;a href=&#34;http://ping.feedburner.com&#34;&gt;http://ping.feedburner.com&lt;/a&gt; &lt;a href=&#34;http://blogsearch.google.com/ping&#34;&gt;http://blogsearch.google.com/ping&lt;/a&gt; &lt;a href=&#34;http://blog.iask.com/ping.php&#34;&gt;http://blog.iask.com/ping.php&lt;/a&gt; &lt;a href=&#34;http://so.blog.qihoo.com/pingblog.htm&#34;&gt;http://so.blog.qihoo.com/pingblog.htm&lt;/a&gt; &lt;a href=&#34;http://www.sogou.com/feedback/blogfeedback.php&#34;&gt;http://www.sogou.com/feedback/blogfeedback.php&lt;/a&gt; &lt;a href=&#34;http://tellbot.yodao.com/report?type=BLOG&amp;amp;keyFrom=help&#34;&gt;http://tellbot.yodao.com/report?type=BLOG&amp;amp;keyFrom=help&lt;/a&gt; &lt;a href=&#34;http://www.yahoo.cn/ex/blog\_rss/rss\_input.php&#34;&gt;http://www.yahoo.cn/ex/blog\_rss/rss\_input.php&lt;/a&gt;&lt;/p&gt;

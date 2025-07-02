@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Mon, 12 Jan 2015 20:40:00 +0800</pubDate>
         <lastBuildDate>Mon, 12 Jan 2015 20:40:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -477,7 +477,7 @@
             <category>代码</category>
             <category>压缩</category>
             <pubDate>Mon, 12 Jan 2015 20:40:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 我们已看过&lt;a href=&#34;http://paranimage.com/8-online-css-optimizer/&#34;&gt;8个在线CSS优化工具&lt;/a&gt;和&lt;a href=&#34;http://paranimage.com/css-code-streamlined-tools-and-tricks/&#34;&gt;CSS代码精简技巧&lt;/a&gt;，本文则为你带来&lt;strong&gt;18个CSS精简压缩工具和技巧&lt;/strong&gt;。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 我们已看过&lt;a href=&#34;http://paranimage.com/8-online-css-optimizer/&#34;&gt;8个在线CSS优化工具&lt;/a&gt;和&lt;a href=&#34;http://paranimage.com/css-code-streamlined-tools-and-tricks/&#34;&gt;CSS代码精简技巧&lt;/a&gt;，本文则为你带来&lt;strong&gt;18个CSS精简压缩工具和技巧&lt;/strong&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;压缩还是不压缩&#34;&gt;&lt;a href=&#34;#压缩还是不压缩&#34; class=&#34;headerlink&#34; title=&#34;压缩还是不压缩&#34;&gt;&lt;/a&gt;压缩还是不压缩&lt;/h3&gt;&lt;p&gt;在我们讨论如何压缩CSS之前，需要注意一下在压缩和代码的易读性上常常要有个平衡。很多编码者以其CSS组织清晰为傲，而且并不希望自己的代码被 通过压缩器去掉注释和断行。作为一个设计师，你应该分析你所编写的代码的目标。如果你要创建一个小的只需要几行CSS的网站，可能就没有必要做额外的压 缩。同样，如果你在编写需要和一个开放团队分享的代码，插入额外的注释和断行可以节省你的同事的大量时间并获得他们真心的感谢。然而，如果你在设计一个需 要大量CSS的大型网站，你肯定要注意你的文件大小并进你所能保持其最小。 可能在寻找压缩和可能性之间的完美结合上面需要花一些时间，但是它们都值得挖掘而且实现它们的平衡可以让你的工作变得容易很多。同时，很明显并不是说压缩一定会导致可读性的降低。很多可用于压缩代码的技术都能生成更好更有组织的代码。 考虑到这一点儿，让我们开始了解一些技术已保持CSS文件最小化吧。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;空白样式定义&#34;&gt;&lt;a href=&#34;#空白样式定义&#34; class=&#34;headerlink&#34; title=&#34;空白样式定义&#34;&gt;&lt;/a&gt;空白样式定义&lt;/h3&gt;&lt;p&gt;让我们从明显的开始。如果你有一个空白样式，丢掉它。不要借口稍后或许会用到，你也知道它们是杂乱的。除非你有一个合理的理由，否则不要添加它们。&lt;/p&gt;
 &lt;h3 id=&#34;缩写&#34;&gt;&lt;a href=&#34;#缩写&#34; class=&#34;headerlink&#34; title=&#34;缩写&#34;&gt;&lt;/a&gt;缩写&lt;/h3&gt;&lt;p&gt;CSS缩写是一种将多行CSS合并到单行的方法。 养成使用你知道的所有缩写技巧的习惯可以明显的减少你最终写出的代码的行数。这里是个例子： 长写版本:&lt;/p&gt;
@@ -503,7 +503,7 @@
             <category>php</category>
             <category>代码</category>
             <pubDate>Sat, 15 Nov 2014 13:48:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt; &amp;lt;html xmlns=&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html; charset=UTF-8&amp;quot; /&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;title&amp;gt;访客统计&amp;lt;/title&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;?php &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  if (!@$fp=fopen(&amp;quot;count.txt&amp;quot;, &amp;quot;r&amp;quot;))&amp;#123; //以只读的方式打开文件，这步可要可不要根据实际情况来确定。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  		echo &amp;quot;count.txt文件创建成功！&amp;lt;br /&amp;gt;&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  @$num=fgets($fp,12);//读取11位数字 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  if ($num==&amp;quot;&amp;quot;)$num=0;//如果文件count.txt内容为空，则初始化为0 $num++; //浏览次数加1 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  @fclose($fp); $fp=fopen(&amp;quot;count.txt&amp;quot;, &amp;quot;w&amp;quot;);//以只读的方式打开文件 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  fwrite($fp, $num); //写入加1后结果 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  fclose($fp); //关闭文件 echo &amp;quot;您是第&amp;quot;.$num.&amp;quot;位浏览者！&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ?&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/body&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+            <description><![CDATA[ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt; &amp;lt;html xmlns=&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html; charset=UTF-8&amp;quot; /&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;title&amp;gt;访客统计&amp;lt;/title&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;?php &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  if (!@$fp=fopen(&amp;quot;count.txt&amp;quot;, &amp;quot;r&amp;quot;))&amp;#123; //以只读的方式打开文件，这步可要可不要根据实际情况来确定。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  		echo &amp;quot;count.txt文件创建成功！&amp;lt;br /&amp;gt;&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  @$num=fgets($fp,12);//读取11位数字 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  if ($num==&amp;quot;&amp;quot;)$num=0;//如果文件count.txt内容为空，则初始化为0 $num++; //浏览次数加1 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  @fclose($fp); $fp=fopen(&amp;quot;count.txt&amp;quot;, &amp;quot;w&amp;quot;);//以只读的方式打开文件 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  fwrite($fp, $num); //写入加1后结果 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  fclose($fp); //关闭文件 echo &amp;quot;您是第&amp;quot;.$num.&amp;quot;位浏览者！&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ?&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/body&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
     </channel>
 </rss>

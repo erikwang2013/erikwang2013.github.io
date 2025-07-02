@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Sat, 06 Apr 2024 09:04:00 +0800</pubDate>
         <lastBuildDate>Sat, 06 Apr 2024 09:04:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>jenkis</category>
             <category>jenkis教程</category>
             <pubDate>Sat, 06 Apr 2024 09:04:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;什么是持续集成&#34;&gt;&lt;a href=&#34;#什么是持续集成&#34; class=&#34;headerlink&#34; title=&#34;什么是持续集成&#34;&gt;&lt;/a&gt;什么是持续集成&lt;/h4&gt;&lt;p&gt;持续集成 Continuous integration ，简称CI随着软件开发复杂度的不断提高，团队开发成员间如何更好地协同工作以确保软件开发的质量已经慢慢成为开发过程中不可回避的问题。尤其是近些年来，敏捷（Agile） 在软件工程领域越来越红火，如何能在不断变化的需求中快速适应和保证软件的质量也显得尤其的重要。持续集成正是针对这一类问题的一种软件开发实践。它倡导团队开发成员必须经常集成他们的工作，甚至每天都可能发生多次集成。而每次的集成都是通过自动化的构建来验证，包括自动编译、发布和测试，从而尽快地发现集成错误，让团队能够更快的开发内聚的软件。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;持续集成具有的特点：&lt;/p&gt;
+            <description><![CDATA[ &lt;h4 id=&#34;什么是持续集成&#34;&gt;&lt;a href=&#34;#什么是持续集成&#34; class=&#34;headerlink&#34; title=&#34;什么是持续集成&#34;&gt;&lt;/a&gt;什么是持续集成&lt;/h4&gt;&lt;p&gt;持续集成 Continuous integration ，简称CI随着软件开发复杂度的不断提高，团队开发成员间如何更好地协同工作以确保软件开发的质量已经慢慢成为开发过程中不可回避的问题。尤其是近些年来，敏捷（Agile） 在软件工程领域越来越红火，如何能在不断变化的需求中快速适应和保证软件的质量也显得尤其的重要。持续集成正是针对这一类问题的一种软件开发实践。它倡导团队开发成员必须经常集成他们的工作，甚至每天都可能发生多次集成。而每次的集成都是通过自动化的构建来验证，包括自动编译、发布和测试，从而尽快地发现集成错误，让团队能够更快的开发内聚的软件。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;持续集成具有的特点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;它是一个自动化的周期性的集成测试过程，从检出代码、编译构建、运行测试、结果记录、测试统计等都是自动完成的，无需人工干预；&lt;/p&gt;
 &lt;/li&gt;
@@ -570,7 +570,7 @@
             <category>杂录</category>
             <category>新冠肺炎</category>
             <pubDate>Fri, 16 Dec 2022 09:54:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;这段时间，各地新冠感染人数都在暴增，&lt;strong&gt;大家出门记得戴口罩&lt;/strong&gt;。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;这段时间，各地新冠感染人数都在暴增，&lt;strong&gt;大家出门记得戴口罩&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;这几天，咱编辑部也充满了风雨欲来的危机感，不过，办公室刚出现病例，咱们就迅速进行了一个居家办公，所以目前情况还不错。&lt;/p&gt;
 &lt;p&gt;但即便如此，我们每天讨论最多的话题，仍然是新冠，不仅仅是编辑部，差评君在的大部分群聊里也是这个状况。&lt;/p&gt;
 &lt;p&gt;“ 听说现在新冠跟流感一样了？”&lt;/p&gt;
@@ -655,7 +655,7 @@
             <category>转载</category>
             <category>杂谈</category>
             <pubDate>Tue, 03 Dec 2019 23:52:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;一、缘起&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;一、缘起&lt;/p&gt;
 &lt;p&gt;1.1、鸿蒙&lt;/p&gt;
 &lt;p&gt;在上古时期，天地初开，一群称之为 “运维” 的人们每天在一种叫作 “服务器” 的神秘盒子中创造属于他们的世界；他们在这个世界中每日劳作，一遍又一遍的写入他们的历史，比如搭建一个 nginx、布署一个 java web 应用…&lt;/p&gt;
 &lt;p&gt;大多数人其实并没有那么聪明，他们所 “创造” 的事实上可能是有人已经创造过的东西，他们可能每天都在做着重复的劳动；久而久之，一些人厌倦了、疲惫了…又过了一段时间，一些功力深厚的老前辈创造了一些批量布署工具来帮助人们做一些重复性的劳动，这些工具被起名为 “Asible”、”Chef”、”Puppet” 等等…&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;而随着时代的发展，”世界” 变得越来越复杂，运维们需要处理的事情越来越多，比如各种网络、磁盘环境的隔离，各种应用服务的高可用…在时代的洪流下，运维们急需要一种简单高效的布署工具，既能有一定的隔离性，又能方便使用，并且最大程度降低重复劳动来提升效率。&lt;/p&gt;
@@ -684,7 +684,7 @@
             <category>ca证书</category>
             <category>证书生成</category>
             <pubDate>Fri, 16 Aug 2019 14:09:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;想要从商业 CA 获取数字证书需要向其支付一定的金钱，不过我们不用那么破费，可以自己成为 root CA，为自己发布证书。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;想要从商业 CA 获取数字证书需要向其支付一定的金钱，不过我们不用那么破费，可以自己成为 root CA，为自己发布证书。&lt;/p&gt;
 &lt;p&gt;在本实验中，我们将成为 root CA，并为该 CA 生成证书。不像其他 CA 需要被另外的 CA 认证， root CA 的证书是自己为自己认证的，一般 Root CA 的证书都已事先加载在大多数操作系统，浏览器或者依赖 PKI 的软件之中了。Root CA 的证书是被无条件信任的。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;配置文件：openssl.conf&lt;/p&gt;
 &lt;p&gt;为了使用 openssl 生成证书，我们首先需要进行配置，配置文件扩展名为.cnf。openssl 的 ca， req， x509 命令常常会用到这份配置文件。你可以从 /usr/lib/ssl/openssl.cnf 获得一份拷贝。将文件拷贝到工作目录后，创建以下在配置文件中指定的子文件夹（详情查看配置文件[CA default]处）&lt;br&gt;首先我们新建一个工作目录：&lt;/p&gt;
@@ -725,7 +725,7 @@
             <category>正则</category>
             <category>正则表达式</category>
             <pubDate>Wed, 27 Mar 2019 19:05:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;很多不太懂正则的朋友，在遇到需要用正则校验数据时，往往是在网上去找很久，结果找来的还是不很符合要求。所以我最近把开发中常用的一些正则表达式整理了一下，包括校验数字、字符、一些特殊的需求等等。给自己留个底，也给朋友们做个参考。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;很多不太懂正则的朋友，在遇到需要用正则校验数据时，往往是在网上去找很久，结果找来的还是不很符合要求。所以我最近把开发中常用的一些正则表达式整理了一下，包括校验数字、字符、一些特殊的需求等等。给自己留个底，也给朋友们做个参考。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;一、校验数字的表达式&lt;/strong&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;*   数字：^[0-9]*$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   n位的数字：^d&amp;#123;n&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   至少n位的数字：^d&amp;#123;n,&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   m-n位的数字：^d&amp;#123;m,n&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   零和非零开头的数字：^(0|[1-9][0-9]*)$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   非零开头的最多带两位小数的数字：^([1-9][0-9]*)+(.[0-9]&amp;#123;1,2&amp;#125;)?$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   带1-2位小数的正数或负数：^(-)?d+(.d&amp;#123;1,2&amp;#125;)?$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   正数、负数、和小数：^(-|+)?d+(.d+)?$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   有两位小数的正实数：^[0-9]+(.[0-9]&amp;#123;2&amp;#125;)?$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   有1~3位小数的正实数：^[0-9]+(.[0-9]&amp;#123;1,3&amp;#125;)?$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   非零的正整数：^[1-9]d_$ 或 ^([1-9][0-9]_)&amp;#123;1,3&amp;#125;$ 或 ^+?[1-9][0-9]*$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   非零的负整数：^-[1-9][]0-9″_$ 或 ^-[1-9]d_$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   非负整数：^d+$ 或 ^[1-9]d*|0$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   非正整数：^-[1-9]d*|0$ 或 ^((-d+)|(0+))$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   非负浮点数：^d+(.d+)?$ 或 ^[1-9]d_.d_|0.d_[1-9]d_|0?.0+|0$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   非正浮点数：^((-d+(.d+)?)|(0+(.0+)?))$ 或 ^(-([1-9]d_.d_|0.d_[1-9]d_))|0?.0+|0$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   正浮点数：^[1-9]d_.d_|0.d_[1-9]d_$ 或 ^(([0-9]+.[0-9]_[1-9][0-9]_)|([0-9]_[1-9][0-9]_.[0-9]+)|([0-9]_[1-9][0-9]_))$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   负浮点数：^-([1-9]d_.d_|0.d_[1-9]d_)$ 或 ^(-(([0-9]+.[0-9]_[1-9][0-9]_)|([0-9]_[1-9][0-9]_.[0-9]+)|([0-9]_[1-9][0-9]_)))$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   浮点数：^(-?d+)(.d+)?$ 或 ^-?([1-9]d_.d_|0.d_[1-9]d_|0?.0+|0)$&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;strong&gt;二、校验字符的表达式&lt;/strong&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;*   汉字：^[一-龥]&amp;#123;0,&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   英文和数字：^[A-Za-z0-9]+$ 或 ^[A-Za-z0-9]&amp;#123;4,40&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   长度为3-20的所有字符：^.&amp;#123;3,20&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   由26个英文字母组成的字符串：^[A-Za-z]+$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   由26个大写英文字母组成的字符串：^[A-Z]+$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   由26个小写英文字母组成的字符串：^[a-z]+$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   由数字和26个英文字母组成的字符串：^[A-Za-z0-9]+$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   由数字、26个英文字母或者下划线组成的字符串：^w+$ 或 ^w&amp;#123;3,20&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   中文、英文、数字包括下划线：^[一-龥A-Za-z0-9_]+$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   中文、英文、数字但不包括下划线等符号：^[一-龥A-Za-z0-9]+$ 或 ^[一-龥A-Za-z0-9]&amp;#123;2,20&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   可以输入含有^%&amp;amp;’,;=?$”等字符：[^%&amp;amp;’,;=?$”]+&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   禁止输入含有&amp;lt;del&amp;gt;的字符：[^&amp;lt;/del&amp;gt;“]+&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;strong&gt;三、特殊需求表达式&lt;/strong&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;*   Email地址：^w+([-+.]w+)_@w+([-.]w+)_.w+([-.]w+)*$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   域名：[a-zA-Z0-9][-a-zA-Z0-9]&amp;#123;0,62&amp;#125;(/.[a-zA-Z0-9][-a-zA-Z0-9]&amp;#123;0,62&amp;#125;)+/.?&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   InternetURL：[a-zA-z]+://[^s]* 或 ^http://([w-]+.)+[w-]+(/[w-./?%&amp;amp;=]*)?$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   手机号码：^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])d&amp;#123;8&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   电话号码(“XXX-XXXXXXX”、”XXXX-XXXXXXXX”、”XXX-XXXXXXX”、”XXX-XXXXXXXX”、”XXXXXXX”和”XXXXXXXX)：^($$d&amp;#123;3,4&amp;#125;-)|d&amp;#123;3.4&amp;#125;-)?d&amp;#123;7,8&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   国内电话号码(0511-4405222、021-87888822)：d&amp;#123;3&amp;#125;-d&amp;#123;8&amp;#125;|d&amp;#123;4&amp;#125;-d&amp;#123;7&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   身份证号(15位、18位数字)：^d&amp;#123;15&amp;#125;|d&amp;#123;18&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   短身份证号码(数字、字母x结尾)：^([0-9])&amp;#123;7,18&amp;#125;(x|X)?$ 或 ^d&amp;#123;8,18&amp;#125;|[0-9x]&amp;#123;8,18&amp;#125;|[0-9X]&amp;#123;8,18&amp;#125;?$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   帐号是否合法(字母开头，允许5-16字节，允许字母数字下划线)：^[a-zA-Z][a-zA-Z0-9_]&amp;#123;4,15&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   密码(以字母开头，长度在6~18之间，只能包含字母、数字和下划线)：^[a-zA-Z]w&amp;#123;5,17&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   强密码(必须包含大小写字母和数字的组合，不能使用特殊字符，长度在8-10之间)：^(?=._d)(?=._[a-z])(?=.*[A-Z]).&amp;#123;8,10&amp;#125;$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   日期格式：^d&amp;#123;4&amp;#125;-d&amp;#123;1,2&amp;#125;-d&amp;#123;1,2&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   一年的12个月(01～09和1～12)：^(0?[1-9]|1[0-2])$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   一个月的31天(01～09和1～31)：^((0?[1-9])|((1|2)[0-9])|30|31)$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   钱的输入格式：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        *   有四种钱的表示形式我们可以接受:”10000.00″ 和 “10,000.00″, 和没有 “分” 的 “10000″ 和 “10,000″：^[1-9][0-9]*$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    *   这表示任意一个不以0开头的数字，但是，这也意味着一个字符”0″不通过，所以我们采用下面的形式：^(0|[1-9][0-9]*)$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                *   一个0或者一个不以0开头的数字.我们还可以允许开头有一个负号：^(0|-?[1-9][0-9]*)$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    *   这表示一个0或者一个可能为负的开头不为0的数字.让用户以0开头好了.把负号的也去掉，因为钱总不能是负的吧.下面我们要加的是说明可能的小数部分：^[0-9]+(.[0-9]+)?$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    *   必须说明的是，小数点后面至少应该有1位数，所以”10.”是不通过的，但是 “10″ 和 “10.2″ 是通过的：^[0-9]+(.[0-9]&amp;#123;2&amp;#125;)?$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    *   这样我们规定小数点后面必须有两位，如果你认为太苛刻了，可以这样：^[0-9]+(.[0-9]&amp;#123;1,2&amp;#125;)?$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    *   这样就允许用户只写一位小数。下面我们该考虑数字中的逗号了，我们可以这样：^[0-9]&amp;#123;1,3&amp;#125;(,[0-9]&amp;#123;3&amp;#125;)*(.[0-9]&amp;#123;1,2&amp;#125;)?$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    *   1到3个数字，后面跟着任意个 逗号+3个数字，逗号成为可选，而不是必须：^([0-9]+|[0-9]&amp;#123;1,3&amp;#125;(,[0-9]&amp;#123;3&amp;#125;)*)(.[0-9]&amp;#123;1,2&amp;#125;)?$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    *   备注：这就是最终结果了，别忘了”+”可以用”*”替代。如果你觉得空字符串也可以接受的话(奇怪，为什么?)最后，别忘了在用函数时去掉去掉那个反斜杠，一般的错误都在这里&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   xml文件：^([a-zA-Z]+-?)+[a-zA-Z0-9]+.[x|X][m|M][l|L]$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   中文字符的正则表达式：[一-龥]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   双字节字符：[^-ÿ] (包括汉字在内，可以用来计算字符串的长度(一个双字节字符长度计2，ASCII字符计1))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   空白行的正则表达式：s* (可以用来删除空白行)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   HTML标记的正则表达式：``&amp;lt;(S_?)[^&amp;gt;]_&amp;gt;._?&amp;lt;/&amp;gt;|&amp;lt;._? /&amp;gt;`` (网上流传的版本太糟糕，上面这个也仅仅能部分，对于复杂的嵌套标记依旧无能为力)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   首尾空白字符的正则表达式：^s_|s_$或(^s_)|(s_$) (可以用来删除行首行尾的空白字符(包括空格、制表符、换页符等等)，非常有用的表达式)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   腾讯QQ号：[1-9][0-9]&amp;#123;4,&amp;#125; (腾讯QQ号从10000开始)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   中国邮政编码：[1-9]d&amp;#123;5&amp;#125;(?!d) (中国邮政编码为6位数字)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   IP地址：d+.d+.d+.d+ (提取IP地址时有用)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*   IP地址：((?:(?:25[0-5]|2[0-4]d|[01]?d?d).)&amp;#123;3&amp;#125;(?:25[0-5]|2[0-4]d|[01]?d?d)) (由@飞龙三少 提供，感谢共享)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;作者：zxin&lt;/p&gt;
  ]]></description>
         </item>
@@ -736,7 +736,7 @@
             <category>转载</category>
             <category>R语言</category>
             <pubDate>Tue, 17 Apr 2018 19:03:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;strong&gt;作者简介Introduction&lt;/strong&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;strong&gt;作者简介Introduction&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;taoyan：&lt;/strong&gt;伪码农，R语言爱好者，爱开源。 个人博客: &lt;a href=&#34;https://ytlogos.github.io/&#34;&gt;https://ytlogos.github.io/&lt;/a&gt; &lt;strong&gt;、&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_gif/y2fhgP4leThJiaFzTDexmxpianqLyez0XSGmbKia8GfeJutxnAkGiciaevwnP89eqI8icjVCYia0GG98ribmFhhGrKemtQ/640?wx_fmt=gif&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34; title=&#34;烟花&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_png/y2fhgP4leTgLwP9BJYtDFtibfby9doVLqwWicgVQzvia8NvwesibRu3UXCV4ib88icOd6Y3EFjUsaVMk9eGEZTicdtOag/640?wx_fmt=png&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt;&lt;strong&gt;&lt;br&gt;一、 简介&lt;/strong&gt;&lt;/p&gt;
@@ -797,7 +797,7 @@
             <category>转载</category>
             <category>算法</category>
             <pubDate>Wed, 11 Apr 2018 19:07:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
+            <description><![CDATA[ &lt;blockquote&gt;
 &lt;p&gt;傅里叶变换在物理学、数论、组合数学、信号处理、概率论、统计学、密码学、声学、光学、海洋学、结构动力学等领域都有着广泛的应用（例如在信号处理中，傅里叶变换的典型用途是将信号分解成幅值分量和频率分量）。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;傅里叶变换能将满足一定条件的某个函数表示成三角函数（正弦和/或余弦函数）或者它们的积分的线性组合。在不同的研究领域，傅里叶变换具有多种不同的变体形式，如连续傅里叶变换和离散傅里叶变换。 &lt;/p&gt;
@@ -864,7 +864,7 @@
             <category>转载</category>
             <category>算法</category>
             <pubDate>Thu, 05 Apr 2018 19:07:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h5 id=&#34;简介&#34;&gt;&lt;a href=&#34;#简介&#34; class=&#34;headerlink&#34; title=&#34;简介&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#简介&#34; title=&#34;简介&#34;&gt;&lt;/a&gt;&lt;strong&gt;简介&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;给定 {1, 2, 3, , , n}，其全排列为 n! 个，这是最基础的高中组合数学知识。我们以 n=4 为例，其全部排列如下图（以字典序树形式来呈现）： &lt;strong&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_jpg/QtPIxk7nOVeuubKtEibM6oB480VFniccK5af8JucQelsiaaZGdebJ5Tw2Fuzia4cyuX95Hl2iawtq6DFQoTTnv089WA/640?wx_fmt=jpeg&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt;&lt;/strong&gt; 我们很容易想到用递归来求出它的所有全排列。 仔细观察上图， 以 1 开头，下面跟着 {2, 3, 4} 的全排列； 以 2 开头，下面跟着 {1, 3, 4} 的全排列； 以 3 开头，下面跟着 {1, 2, 4} 的全排列； 以 4 开头，下面跟着 {1, 2, 3} 的全排列。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;strong&gt;代码如下：&lt;/strong&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h5 id=&#34;简介&#34;&gt;&lt;a href=&#34;#简介&#34; class=&#34;headerlink&#34; title=&#34;简介&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#简介&#34; title=&#34;简介&#34;&gt;&lt;/a&gt;&lt;strong&gt;简介&lt;/strong&gt;&lt;/h5&gt;&lt;p&gt;给定 {1, 2, 3, , , n}，其全排列为 n! 个，这是最基础的高中组合数学知识。我们以 n=4 为例，其全部排列如下图（以字典序树形式来呈现）： &lt;strong&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_jpg/QtPIxk7nOVeuubKtEibM6oB480VFniccK5af8JucQelsiaaZGdebJ5Tw2Fuzia4cyuX95Hl2iawtq6DFQoTTnv089WA/640?wx_fmt=jpeg&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt;&lt;/strong&gt; 我们很容易想到用递归来求出它的所有全排列。 仔细观察上图， 以 1 开头，下面跟着 {2, 3, 4} 的全排列； 以 2 开头，下面跟着 {1, 3, 4} 的全排列； 以 3 开头，下面跟着 {1, 2, 4} 的全排列； 以 4 开头，下面跟着 {1, 2, 3} 的全排列。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;strong&gt;代码如下：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;/&lt;em&gt;* &lt;/em&gt; &lt;em&gt; author : 刘毅（Limer） &lt;/em&gt; date   : 2017-05-31 &lt;em&gt; mode   : C++ &lt;/em&gt;/   #include&lt;iostream&gt; #include&lt;algorithm&gt;   using namespacestd;   voidFullPermutation(intarray[],intleft,intright) { if(left == right) { for(inti = 0;i &amp;lt; 4;i++) cout &amp;lt;&amp;lt; array[i] &amp;lt;&amp;lt; “ “; cout &amp;lt;&amp;lt; endl; } else { for(inti = left;i &amp;lt;= right;i++) { swap(array[i],array[left]); FullPermutation(array,left + 1,right); swap(array[i],array[left]); } } }   intmain() {   intarray[4] = {1,2,3,4};   FullPermutation(array,0,3);   return0; }&lt;/algorithm&gt;&lt;/iostream&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -886,7 +886,7 @@
             <category>工具</category>
             <category>转载</category>
             <pubDate>Mon, 26 Mar 2018 19:08:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_jpg/W9DqKgFsc68kmQVHxs2R2utqYWLOiaHYDEddFzdT4eicGgUKvt59X7syh7JNtwDmB0V0WUG1aNRbPhlUMBEsDkfg/640?wx_fmt=jpeg&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_jpg/W9DqKgFsc68kmQVHxs2R2utqYWLOiaHYDEddFzdT4eicGgUKvt59X7syh7JNtwDmB0V0WUG1aNRbPhlUMBEsDkfg/640?wx_fmt=jpeg&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;用这些开源软件解决方案构建一个更智能的家庭。&lt;/p&gt;
 &lt;p&gt;— Jason Baker&lt;/p&gt;
 &lt;p&gt;有用的原文链接&lt;/p&gt;

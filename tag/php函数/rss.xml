@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Tue, 15 Oct 2019 23:13:00 +0800</pubDate>
         <lastBuildDate>Tue, 15 Oct 2019 23:13:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -474,7 +474,7 @@
             <category>php函数</category>
             <category>php数学函数</category>
             <pubDate>Tue, 15 Oct 2019 23:13:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;ul&gt;
+            <description><![CDATA[ &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;bccomp — 比较两个任意精度的数字&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;bccomp ( string $left_operand , string $right_operand [, int $scale = int ] ) : int&lt;/li&gt;
@@ -702,7 +702,7 @@
             <category>字符串函数</category>
             <category>排序函数</category>
             <pubDate>Mon, 07 Mar 2016 22:34:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;php数组排序 &lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;php数组排序 &lt;/p&gt;
 &lt;p&gt;sort()根据数组所包含元素进行升序排列 sort()函数是区分大小写。&lt;/p&gt;
 &lt;p&gt;所有大写字母都在小写字母后面。 &lt;/p&gt;
 &lt;p&gt;asort()函数和ksort()函数对关联数组排序 &lt;/p&gt;
@@ -750,7 +750,7 @@
             <category>php服务器</category>
             <category>php函数</category>
             <pubDate>Fri, 19 Dec 2014 21:08:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;ul&gt;
+            <description><![CDATA[ &lt;ul&gt;
 &lt;li&gt;作者: &lt;a href=&#34;http://www.laruence.com&#34;&gt;Laruence&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;文件上传进度反馈, 这个需求在当前是越来越普遍, 比如大附件邮件. 在PHP5.4以前, 我们可以通过&lt;a href=&#34;http://www.php.net/manual/zh/apc.configuration.php#ini.apc.rfc1867&#34;&gt;APC&lt;/a&gt;提供的功能来实现. 或者使用PECL扩展&lt;a href=&#34;http://pecl.php.net/package/uploadprogress&#34;&gt;uploadprogress&lt;/a&gt;来实现. 虽然说, 它们能很好的解决现在的问题, 但是也有很明显的不足:&lt;/p&gt;
@@ -816,7 +816,7 @@
             <category>php服务器</category>
             <category>php函数</category>
             <pubDate>Thu, 18 Dec 2014 21:50:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;ul&gt;
+            <description><![CDATA[ &lt;ul&gt;
 &lt;li&gt;作者: &lt;a href=&#34;http://www.laruence.com&#34;&gt;Laruence&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;最近关于apc.include_once_override的去留, 我们做了几次讨论, 这个APC的配置项一直一来就没有被很好的实现过. 在这里, 我想和大家在此分享下, 这个问题的原因, 以及对我们的一些启示. 关于使用include还是include_once(以下,都包含require_once), 这个讨论很长了, 结论也一直有, 就是尽量使用include, 而不是include_once, 以前最多的理由的是, include_once需要查询一遍已加载的文件列表, 确认是否存在, 然后再加载. 诚然, 这个理由是对的, 不过, 我今天要说的, 是另外一个的原因. 我们知道, PHP去判断一个文件是否被加载, 是需要得到这个文件的opened_path的, 意思是说, 比如:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;set\_include\_path(&amp;quot;/tmp/:/tmp2/&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;include_once(&amp;quot;2.php&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;当PHP看到include_once “2.php”的时候, 他并不知道这个文件的实际路径是什么, 也就无法从已加载的文件列表去判断是否已经加载, 所以在include_once的实现中, 会首先尝试解析这个文件的真实路径(对于普通文件这个解析仅仅类似是检查getcwd和文件路径, 所以如果是相对路径, 一般是不会成功), 如果解析成功, 则查找EG(include_files), 如果存在则说明包含过了, 返回, 否则open这个文件, 从而得到这个文件的opened_path. 比如上面的例子, 这个文件存在于 “/tmp2/2.php”. 然后, 得到了这个opened_path以后, PHP去已加载的文件列表去查找, 是否已经包含, 如果没有包含, 那么就直接compile, 不再需要open file了.&lt;/p&gt;
@@ -840,7 +840,7 @@
             <category>php面向对象</category>
             <category>面向对象</category>
             <pubDate>Fri, 14 Nov 2014 15:18:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;__construct()构造函数，主要是通过关键字new生成实例的时候，它就会被调用执行。（构造函数不能返回值） __destructor()析构函数，它是在对象被销毁的时候被调用执行的。（对象被销毁时清空资源或者记录日志信息） __get(),__set()访问函数，类属性被访问和操作，访问函数都会被激发。oop思想不鼓励直接从类的外部访问类的属性，所以使用它们可以避免直接对类属性的访问。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; extends确认子类继承父类  格式class 子类 extends 父类{} final放在特定类前面，表示此类不能再被继承。如果放在某个类方法前面，表示此方法不能在继承后被“覆写”或重新定义。 implements指定使用接口 &lt;a href=&#34;http://tietuku.com/cc26841c6b434585&#34; title=&#34;php接口示意图&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/cc26841c6b434585.jpg&#34; alt=&#34;php接口示意图&#34;&gt;&lt;/a&gt; interface可声明接口，并且单独设立接口方法 &lt;a href=&#34;http://tietuku.com/9ce70457b5ef2e3b&#34; title=&#34;接口示意图&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/9ce70457b5ef2e3b.jpg&#34; alt=&#34;接口示意图&#34;&gt;&lt;/a&gt; 错误处理 &lt;a href=&#34;http://tietuku.com/cce268d063bbd079&#34; title=&#34;错误处理&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/cce268d063bbd079.jpg&#34; alt=&#34;错误处理&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;__construct()构造函数，主要是通过关键字new生成实例的时候，它就会被调用执行。（构造函数不能返回值） __destructor()析构函数，它是在对象被销毁的时候被调用执行的。（对象被销毁时清空资源或者记录日志信息） __get(),__set()访问函数，类属性被访问和操作，访问函数都会被激发。oop思想不鼓励直接从类的外部访问类的属性，所以使用它们可以避免直接对类属性的访问。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; extends确认子类继承父类  格式class 子类 extends 父类{} final放在特定类前面，表示此类不能再被继承。如果放在某个类方法前面，表示此方法不能在继承后被“覆写”或重新定义。 implements指定使用接口 &lt;a href=&#34;http://tietuku.com/cc26841c6b434585&#34; title=&#34;php接口示意图&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/cc26841c6b434585.jpg&#34; alt=&#34;php接口示意图&#34;&gt;&lt;/a&gt; interface可声明接口，并且单独设立接口方法 &lt;a href=&#34;http://tietuku.com/9ce70457b5ef2e3b&#34; title=&#34;接口示意图&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/9ce70457b5ef2e3b.jpg&#34; alt=&#34;接口示意图&#34;&gt;&lt;/a&gt; 错误处理 &lt;a href=&#34;http://tietuku.com/cce268d063bbd079&#34; title=&#34;错误处理&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/cce268d063bbd079.jpg&#34; alt=&#34;错误处理&#34;&gt;&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -850,7 +850,7 @@
             <category>php</category>
             <category>php函数</category>
             <pubDate>Thu, 13 Nov 2014 17:51:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;date_default_timezone_set();设置默认时区时间 strtotime()函数，将任何英文文本的日期时间描述解析为 Unix 时间戳 getdate()函数，把生成的时间戳转化为一个数组，包含各个部分。 checkdate()函数，检查日期的有效性 格式  checkdate(月份,日期,年份) mktime()函数，取得一个日期的时间戳  格式 mktime(小时,分钟,秒,月份,日期,年份) strftime()函数，把时间戳格式化为日期和时间    格式 strftime(格式,时间戳) gmstrftime()函数和strftime()函数用法一致，只是gmstrftime()函数是显示标准的GMT时间 笔者遇到过日期和时间格式符，%Z显示的中文编码为GBK而我主体用的是utf8，所以只能转码用 iconv()函数 格式 iconv(原字符编码,要转换成的字符编码,转换目标) &lt;a href=&#34;http://tietuku.com/580195791180cf87&#34; title=&#34;php时间函数&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/580195791180cf87.jpg&#34; alt=&#34;php时间函数&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;date_default_timezone_set();设置默认时区时间 strtotime()函数，将任何英文文本的日期时间描述解析为 Unix 时间戳 getdate()函数，把生成的时间戳转化为一个数组，包含各个部分。 checkdate()函数，检查日期的有效性 格式  checkdate(月份,日期,年份) mktime()函数，取得一个日期的时间戳  格式 mktime(小时,分钟,秒,月份,日期,年份) strftime()函数，把时间戳格式化为日期和时间    格式 strftime(格式,时间戳) gmstrftime()函数和strftime()函数用法一致，只是gmstrftime()函数是显示标准的GMT时间 笔者遇到过日期和时间格式符，%Z显示的中文编码为GBK而我主体用的是utf8，所以只能转码用 iconv()函数 格式 iconv(原字符编码,要转换成的字符编码,转换目标) &lt;a href=&#34;http://tietuku.com/580195791180cf87&#34; title=&#34;php时间函数&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/580195791180cf87.jpg&#34; alt=&#34;php时间函数&#34;&gt;&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -862,7 +862,7 @@
             <category>数组函数</category>
             <category>数组排序函数</category>
             <pubDate>Wed, 12 Nov 2014 16:42:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;php开发中数组是经常性的用到 那就介绍一下一维数组中的排序函数 sort()函数，默认排序从低到高排列 asort()函数，根据数组元素的值升序排列 ksort()函数，根据数组元素的键值，也就是关键字的升序排列 rsort()函数正好和sort()函数相反 arsort()函数正好和asort()函数相反 krsort()函数正好和ksort()函数相反   array_unshift()函数，向数组中与添加元素   array_unshift(目标数组,要添加的元素) array_push()函数，向数组中添加元素，以实现先进先出  array_unshift(目标数组,要添加的元素) array_shift()函数，删除目标数组的头一个数组元素  array_shift(目标数组) array_pop()函数，删除目标数组的最后一个数组元素   array_pop(目标数组)   array_key_exists()函数专门针对联合数组的‘键名’进行查询 array_search()函数专门针对联合数组的‘元素值’进行查询 array_keys()函数是取得数组‘键值’ array_values()函数是取得数组‘元素值’   count()函数，为统计数组的元素个数 array_count_values()函数，为统计数组的元素值个数（只能用于一维数组） array_unique()函数实现数组中元素的唯一性，也就是去掉数组中重复的元素 array_flip()函数调换数组中的键值和元素值位置，如果有重复的键值则覆盖键值，显示最后一次赋值的键值   serialize()函数，数组序列化 unserialize()函数，数组反序列化&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;php开发中数组是经常性的用到 那就介绍一下一维数组中的排序函数 sort()函数，默认排序从低到高排列 asort()函数，根据数组元素的值升序排列 ksort()函数，根据数组元素的键值，也就是关键字的升序排列 rsort()函数正好和sort()函数相反 arsort()函数正好和asort()函数相反 krsort()函数正好和ksort()函数相反   array_unshift()函数，向数组中与添加元素   array_unshift(目标数组,要添加的元素) array_push()函数，向数组中添加元素，以实现先进先出  array_unshift(目标数组,要添加的元素) array_shift()函数，删除目标数组的头一个数组元素  array_shift(目标数组) array_pop()函数，删除目标数组的最后一个数组元素   array_pop(目标数组)   array_key_exists()函数专门针对联合数组的‘键名’进行查询 array_search()函数专门针对联合数组的‘元素值’进行查询 array_keys()函数是取得数组‘键值’ array_values()函数是取得数组‘元素值’   count()函数，为统计数组的元素个数 array_count_values()函数，为统计数组的元素值个数（只能用于一维数组） array_unique()函数实现数组中元素的唯一性，也就是去掉数组中重复的元素 array_flip()函数调换数组中的键值和元素值位置，如果有重复的键值则覆盖键值，显示最后一次赋值的键值   serialize()函数，数组序列化 unserialize()函数，数组反序列化&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -874,7 +874,7 @@
             <category>php函数</category>
             <category>php字符串</category>
             <pubDate>Mon, 10 Nov 2014 18:43:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;字符串统计&#34;&gt;&lt;a href=&#34;#字符串统计&#34; class=&#34;headerlink&#34; title=&#34;字符串统计&#34;&gt;&lt;/a&gt;&lt;strong&gt;字符串统计&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;计算字符串长度在php开发中经常遇到，需要使用的函数是strlen() 字符串单词统计函数 str_word_count() (只对ASCII的英文单词起作用)&lt;/p&gt;
+            <description><![CDATA[ &lt;h4 id=&#34;字符串统计&#34;&gt;&lt;a href=&#34;#字符串统计&#34; class=&#34;headerlink&#34; title=&#34;字符串统计&#34;&gt;&lt;/a&gt;&lt;strong&gt;字符串统计&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;计算字符串长度在php开发中经常遇到，需要使用的函数是strlen() 字符串单词统计函数 str_word_count() (只对ASCII的英文单词起作用)&lt;/p&gt;
 &lt;h4 id=&#34;清除空格&#34;&gt;&lt;a href=&#34;#清除空格&#34; class=&#34;headerlink&#34; title=&#34;清除空格&#34;&gt;&lt;/a&gt;&lt;strong&gt;清除空格&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;php开发在很多情况下要考虑客户使用便捷，比如输入用户名不小心多了一个空格，怎么办。那就用清楚空格函数 ltrim()函数是从左清除字符串头部的空格 rtrim()函数是从右清除字符串头部的空格 trim()函数是两边同时去除头部和尾部的空格 这三个函数大家可以找一下规律，trim是左右清楚，那么，ltrim中l就好比left左边，所以是左边清除。同理，右边也是。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h4 id=&#34;字符串切分&#34;&gt;&lt;a href=&#34;#字符串切分&#34; class=&#34;headerlink&#34; title=&#34;字符串切分&#34;&gt;&lt;/a&gt;&lt;strong&gt;字符串切分&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;在php函数中常用到字符串切分，即explode()和strtok()函数。implode()函数是按照一定间隔标准组合成一个字符串。 implode()别名又用作join()功能都是一致的。在其中explode()函数用的较多，大部分是用作，邮箱、网址、文件等分割。strtok()函数与explode()相比能记住分割后的新字符串在原字符串中的位置，以便继续分割。  &lt;/p&gt;
 &lt;h4 id=&#34;字符串截取&#34;&gt;&lt;a href=&#34;#字符串截取&#34; class=&#34;headerlink&#34; title=&#34;字符串截取&#34;&gt;&lt;/a&gt;&lt;strong&gt;字符串截取&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;注：每个中文占2个字符 在php开发中也会遇到截取字符串，那便用到substr()函数。其中目标字符串是某个字符串变量的变量名，起始位置和截取长度都是整数。如果都是正数，起始位置的整数必须小于街区长度的整数，否则函数返回值为假。如果截取长度为负数，则意味着，是从起始位置开始往后，除去从目标字符串结尾算起的长度的字符串以外的所有字符。 格式：substr(目标字符串,起始位置,截取长度)&lt;/p&gt;
@@ -890,7 +890,7 @@
             <category>php</category>
             <category>php函数</category>
             <pubDate>Fri, 07 Nov 2014 11:36:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;?php &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  $arr\[0\]\[0\]=10;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  $arr\[0\]\[1\]=22; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  $arr\[1\]\[0\]=1E+05; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  $arr\[1\]\[1\]=&amp;quot;这不是来了&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  for($i=0;$i&amp;lt;count($arr);$i++)&amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    for($k=0;$k&amp;lt;count($arr\[$i\]);$k++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      $arr1=each($arr\[$i\]); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      echo &amp;quot;$arr1\[value\]&amp;lt;br /&amp;gt;&amp;quot;; &amp;#125; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      //php向函数传递参数 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      function totalneedtopay($days,$roomprice)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      $totalcost=$days*$roomprice; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      echo &amp;quot;需要支付的总价：$totalcost&amp;quot;.&amp;quot;元&amp;lt;br /&amp;gt;&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    $rentdays=3; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    $roomprice=168; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    totalneedtopay($rentdays, $roomprice); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    totalneedtopay(5,198); //php向函数中传递参数引用 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    $fee=300; $serviceprice=50; function totalfee(&amp;amp;$fee,$serviceprice)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    $fee=$fee+$serviceprice; echo &amp;quot;需要支付的总价：$fee&amp;quot;.&amp;quot;元&amp;lt;br /&amp;gt;&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  totalfee($fee, $serviceprice); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  totalfee($fee, $serviceprice); //php从函数中返回值&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  function totalneedtopay1($days1, $roomprice1)&amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  	return $days1*$roomprice1; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  $rentdays1=3; $roomprice1=168; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  echo totalneedtopay1($rentdays1, $roomprice1); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;?&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+            <description><![CDATA[ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;?php &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  $arr\[0\]\[0\]=10;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  $arr\[0\]\[1\]=22; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  $arr\[1\]\[0\]=1E+05; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  $arr\[1\]\[1\]=&amp;quot;这不是来了&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  for($i=0;$i&amp;lt;count($arr);$i++)&amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    for($k=0;$k&amp;lt;count($arr\[$i\]);$k++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      $arr1=each($arr\[$i\]); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      echo &amp;quot;$arr1\[value\]&amp;lt;br /&amp;gt;&amp;quot;; &amp;#125; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      //php向函数传递参数 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      function totalneedtopay($days,$roomprice)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      $totalcost=$days*$roomprice; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      echo &amp;quot;需要支付的总价：$totalcost&amp;quot;.&amp;quot;元&amp;lt;br /&amp;gt;&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    $rentdays=3; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    $roomprice=168; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    totalneedtopay($rentdays, $roomprice); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    totalneedtopay(5,198); //php向函数中传递参数引用 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    $fee=300; $serviceprice=50; function totalfee(&amp;amp;$fee,$serviceprice)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    $fee=$fee+$serviceprice; echo &amp;quot;需要支付的总价：$fee&amp;quot;.&amp;quot;元&amp;lt;br /&amp;gt;&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  totalfee($fee, $serviceprice); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  totalfee($fee, $serviceprice); //php从函数中返回值&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  function totalneedtopay1($days1, $roomprice1)&amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  	return $days1*$roomprice1; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  $rentdays1=3; $roomprice1=168; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  echo totalneedtopay1($rentdays1, $roomprice1); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;?&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
     </channel>
 </rss>

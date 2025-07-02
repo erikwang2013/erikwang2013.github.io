@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;centos软件安装&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2015-03-15T23:45:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2015/03/16/centos-zhong-ruan-jian-an-zhuang/</id>
         <title>centos中软件安装</title>
         <link rel="alternate" href="https://erik.xyz/2015/03/16/centos-zhong-ruan-jian-an-zhuang/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;在centos中我们想要安装软件，一般都是用yum，在安装软件前首先是查询软件&lt;br&gt;例如安装 samba网上邻居&lt;br&gt;查询： rpm -qa | grep -i samba&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/a8fca0536413f0a7.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/a8fca0536413f0a7.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;查询一下相关软件  yum search samba 找到后，就安装 yum install samba 安装完毕，&lt;br&gt;要修改配置文件，就需要找到文件路径 执行  rpm -qc samba samba-common&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/17d07aa8d4d9d680.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/17d07aa8d4d9d680.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;接下来要启动软件，先查询一下启动方式 rpm -ql samba | grep ‘/etc’&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/27c9d5d59ea177a5.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/27c9d5d59ea177a5.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;红线部分为启动路径 接下来就是具体启动操作&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/80c44788d7448f95.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/80c44788d7448f95.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;加入开机启动 执行 vi /etc/profile 按下方向键到底部&lt;br&gt;然后按i键写入 /etc/init.d/smb start /etc/init.d/nmb start 然后保存并退出&lt;br&gt;执行 source /etc/profile  修改生效 重启一下软件就是开机启动&lt;/p&gt;
+        <content type="html">&lt;p&gt;在centos中我们想要安装软件，一般都是用yum，在安装软件前首先是查询软件&lt;br&gt;例如安装 samba网上邻居&lt;br&gt;查询： rpm -qa | grep -i samba&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/a8fca0536413f0a7.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/a8fca0536413f0a7.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;查询一下相关软件  yum search samba 找到后，就安装 yum install samba 安装完毕，&lt;br&gt;要修改配置文件，就需要找到文件路径 执行  rpm -qc samba samba-common&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/17d07aa8d4d9d680.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/17d07aa8d4d9d680.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;接下来要启动软件，先查询一下启动方式 rpm -ql samba | grep ‘/etc’&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/27c9d5d59ea177a5.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/27c9d5d59ea177a5.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;红线部分为启动路径 接下来就是具体启动操作&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/80c44788d7448f95.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/80c44788d7448f95.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;加入开机启动 执行 vi /etc/profile 按下方向键到底部&lt;br&gt;然后按i键写入 /etc/init.d/smb start /etc/init.d/nmb start 然后保存并退出&lt;br&gt;执行 source /etc/profile  修改生效 重启一下软件就是开机启动&lt;/p&gt;
 </content>
         <category term="centos" />
         <category term="linux" />

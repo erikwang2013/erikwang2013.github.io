@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;chromium安装报错&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2016-02-14T06:12:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2016/02/14/centos-an-zhuang-gu-ge-liu-lan-qi-yu-dao-de-wen-ti/</id>
         <title>centos安装谷歌浏览器遇到的问题</title>
         <link rel="alternate" href="https://erik.xyz/2016/02/14/centos-an-zhuang-gu-ge-liu-lan-qi-yu-dao-de-wen-ti/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;突然发现centos自带的火狐浏览器好卡，打开网页速度太慢了。就尝试装个谷歌浏览器，结果报错。&lt;/p&gt;
+        <content type="html">&lt;p&gt;突然发现centos自带的火狐浏览器好卡，打开网页速度太慢了。就尝试装个谷歌浏览器，结果报错。&lt;/p&gt;
 &lt;p&gt;如下： &lt;a href=&#34;http://dl.google.com/linux/rpm/stable/x86\_64/repodata/repomd.xml&#34;&gt;http://dl.google.com/linux/rpm/stable/x86\_64/repodata/repomd.xml&lt;/a&gt;: [Errno 14] curl#7 - “Failed to connect to 2404:6800:4005:800::200e: 网络不可达” 反反复复换了几个地方都不行（网址被封了），干脆把镜像源换了。 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;命令直接换： wget -O /etc/yum.repos.d/CentOS-Base.repo &lt;a href=&#34;http://mirrors.aliyun.com/repo/Centos-7.repo&#34;&gt;http://mirrors.aliyun.com/repo/Centos-7.repo&lt;/a&gt; 然后时候生成一下缓存 &lt;/p&gt;
 &lt;p&gt;yum makecache 报错： 正在处理依赖关系 libudev.so.0()(64bit)，它被软件包 chromium-31.0.1650.63-2.el6.x86_64 &lt;/p&gt;

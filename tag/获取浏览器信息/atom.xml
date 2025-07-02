@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;获取浏览器信息&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2015-05-12T01:51:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2015/05/12/js-pan-duan-liu-lan-qi-lei-xing-ji-ban-ben/</id>
         <title>JS判断浏览器类型及版本</title>
         <link rel="alternate" href="https://erik.xyz/2015/05/12/js-pan-duan-liu-lan-qi-lei-xing-ji-ban-ben/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;摘自：&lt;a href=&#34;http://www.cnblogs.com/gowhy/&#34;&gt;&lt;img src=&#34;http://www.cnblogs.com/Skins/custom/images/logo.gif&#34; alt=&#34;返回主页&#34;&gt;&lt;/a&gt;&lt;a href=&#34;http://www.cnblogs.com/gowhy/&#34;&gt;狼-志&lt;/a&gt; 你知道世界上有多少种浏览器吗？除了我们熟知的IE, Firefox, Opera, Safari四大浏览器之外，世界上还有近百种浏览器。 几天前，浏览器家族有刚诞生了一位小王子，就是Google推出的Chrome浏览器。由于Chrome出生名门，尽管他还是个小家伙，没有人敢小看他。以后，咱们常说浏览器的“四大才子”就得改称为“五朵金花”了。 在网站前端开发中，浏览器兼容性问题本已让我们手忙脚乱，Chrome的出世不知道又要给我们添多少乱子。虽然说现在有一些WEB技术（AJAX、ExtJS等）已经帮我们处理不同浏览器的兼容问题，但是有时候自己来解决岂不是更好，浏览器兼容性是前端开发框架要解决的第一个问题，要解决兼容性问题就得首先准确判断出浏览器的类型及其版本。 JavaScript是前端开发的主要语言，我们可以通过编写JavaScript程序来判断浏览器的类型及版本。JavaScript判断浏览器类型一般有两种办法，一种是根据各种浏览器独有的属性来分辨，另一种是通过分析浏览器的userAgent属性来判断的。在许多情况下，值判断出浏览器类型之后，还需判断浏览器版本才能处理兼容性问题，而判断浏览器的版本一般只能通过分析浏览器的userAgent才能知道。 我们先来分析一下各种浏览器的特征及其userAgent。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;strong&gt;IE&lt;/strong&gt; 只有IE支持创建ActiveX控件，因此她有一个其他浏览器没有的东西，就是ActiveXObject函数。只要判断window对象存在 ActiveXObject函数，就可以明确判断出当前浏览器是IE。而IE各个版本典型的userAgent如下：     Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)     Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)     Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)     Mozilla/4.0 (compatible; MSIE 5.0; Windows NT) 其中，版本号是MSIE之后的数字。 &lt;strong&gt;Firefox&lt;/strong&gt; Firefox中的DOM元素都有一个getBoxObjectFor函数，用来获取该DOM元素的位置和大小（IE对应的中是 getBoundingClientRect函数）。这是Firefox独有的，判断它即可知道是当前浏览器是Firefox。Firefox几个版本的 userAgent大致如下：     Mozilla/5.0 (Windows; U; Windows NT 5.2) Gecko/2008070208 Firefox/3.0.1     Mozilla/5.0 (Windows; U; Windows NT 5.1) Gecko/20070309 Firefox/2.0.0.3     Mozilla/5.0 (Windows; U; Windows NT 5.1) Gecko/20070803 Firefox/1.5.0.12 其中，版本号是Firefox之后的数字。 &lt;strong&gt;Opera&lt;/strong&gt; Opera提供了专门的浏览器标志，就是window.opera属性。Opera典型的userAgent如下：     Opera/9.27 (Windows NT 5.2; U; zh-cn)     Opera/8.0 (Macintosh; PPC Mac OS X; U; en)     Mozilla/5.0 (Macintosh; PPC Mac OS X; U; en) Opera 8.0     其中，版本号是靠近Opera的数字。 &lt;strong&gt;Safari&lt;/strong&gt; Safari浏览器中有一个其他浏览器没有的openDatabase函数，可做为判断Safari的标志。Safari典型的userAgent如下：     Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.13     Mozilla/5.0 (iPhone; U; CPU like Mac OS X) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/4A93 Safari/419.3 其版本号是Version之后的数字。 &lt;strong&gt;Chrome&lt;/strong&gt; Chrome有一个MessageEvent函数，但Firefox也有。不过，好在Chrome并没有Firefox的getBoxObjectFor 函数，根据这个条件还是可以准确判断出Chrome浏览器的。目前，Chrome的userAgent是：     Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13 其中，版本号在Chrome只后的数字。 有趣的是，Chrome的userAgent还包含了Safari的特征，也许这就是Chrome可以运行所有Apple浏览器应用的基础吧。 只要了解了以上信息，我们就可以根基这些特征来判断浏览器类型及其版本了。我们会将判断的结果保存在Sys名字空间中，成为前端框架的基本标志信息，供今后的程序来读取。如果判断出谋种浏览器，Sys名字空间将有一个该浏览器名称的属性，其值为该浏览器的版本号。例如，如果判断出IE 7.0，则Sys.ie的值为7.0；如果判断出Firefox 3.0，则Sys.firefox的值为3.0。下面是判断浏览器的代码：  &lt;/p&gt;
+        <content type="html">&lt;p&gt;摘自：&lt;a href=&#34;http://www.cnblogs.com/gowhy/&#34;&gt;&lt;img src=&#34;http://www.cnblogs.com/Skins/custom/images/logo.gif&#34; alt=&#34;返回主页&#34;&gt;&lt;/a&gt;&lt;a href=&#34;http://www.cnblogs.com/gowhy/&#34;&gt;狼-志&lt;/a&gt; 你知道世界上有多少种浏览器吗？除了我们熟知的IE, Firefox, Opera, Safari四大浏览器之外，世界上还有近百种浏览器。 几天前，浏览器家族有刚诞生了一位小王子，就是Google推出的Chrome浏览器。由于Chrome出生名门，尽管他还是个小家伙，没有人敢小看他。以后，咱们常说浏览器的“四大才子”就得改称为“五朵金花”了。 在网站前端开发中，浏览器兼容性问题本已让我们手忙脚乱，Chrome的出世不知道又要给我们添多少乱子。虽然说现在有一些WEB技术（AJAX、ExtJS等）已经帮我们处理不同浏览器的兼容问题，但是有时候自己来解决岂不是更好，浏览器兼容性是前端开发框架要解决的第一个问题，要解决兼容性问题就得首先准确判断出浏览器的类型及其版本。 JavaScript是前端开发的主要语言，我们可以通过编写JavaScript程序来判断浏览器的类型及版本。JavaScript判断浏览器类型一般有两种办法，一种是根据各种浏览器独有的属性来分辨，另一种是通过分析浏览器的userAgent属性来判断的。在许多情况下，值判断出浏览器类型之后，还需判断浏览器版本才能处理兼容性问题，而判断浏览器的版本一般只能通过分析浏览器的userAgent才能知道。 我们先来分析一下各种浏览器的特征及其userAgent。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;strong&gt;IE&lt;/strong&gt; 只有IE支持创建ActiveX控件，因此她有一个其他浏览器没有的东西，就是ActiveXObject函数。只要判断window对象存在 ActiveXObject函数，就可以明确判断出当前浏览器是IE。而IE各个版本典型的userAgent如下：     Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)     Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)     Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)     Mozilla/4.0 (compatible; MSIE 5.0; Windows NT) 其中，版本号是MSIE之后的数字。 &lt;strong&gt;Firefox&lt;/strong&gt; Firefox中的DOM元素都有一个getBoxObjectFor函数，用来获取该DOM元素的位置和大小（IE对应的中是 getBoundingClientRect函数）。这是Firefox独有的，判断它即可知道是当前浏览器是Firefox。Firefox几个版本的 userAgent大致如下：     Mozilla/5.0 (Windows; U; Windows NT 5.2) Gecko/2008070208 Firefox/3.0.1     Mozilla/5.0 (Windows; U; Windows NT 5.1) Gecko/20070309 Firefox/2.0.0.3     Mozilla/5.0 (Windows; U; Windows NT 5.1) Gecko/20070803 Firefox/1.5.0.12 其中，版本号是Firefox之后的数字。 &lt;strong&gt;Opera&lt;/strong&gt; Opera提供了专门的浏览器标志，就是window.opera属性。Opera典型的userAgent如下：     Opera/9.27 (Windows NT 5.2; U; zh-cn)     Opera/8.0 (Macintosh; PPC Mac OS X; U; en)     Mozilla/5.0 (Macintosh; PPC Mac OS X; U; en) Opera 8.0     其中，版本号是靠近Opera的数字。 &lt;strong&gt;Safari&lt;/strong&gt; Safari浏览器中有一个其他浏览器没有的openDatabase函数，可做为判断Safari的标志。Safari典型的userAgent如下：     Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.13     Mozilla/5.0 (iPhone; U; CPU like Mac OS X) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/4A93 Safari/419.3 其版本号是Version之后的数字。 &lt;strong&gt;Chrome&lt;/strong&gt; Chrome有一个MessageEvent函数，但Firefox也有。不过，好在Chrome并没有Firefox的getBoxObjectFor 函数，根据这个条件还是可以准确判断出Chrome浏览器的。目前，Chrome的userAgent是：     Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13 其中，版本号在Chrome只后的数字。 有趣的是，Chrome的userAgent还包含了Safari的特征，也许这就是Chrome可以运行所有Apple浏览器应用的基础吧。 只要了解了以上信息，我们就可以根基这些特征来判断浏览器类型及其版本了。我们会将判断的结果保存在Sys名字空间中，成为前端框架的基本标志信息，供今后的程序来读取。如果判断出谋种浏览器，Sys名字空间将有一个该浏览器名称的属性，其值为该浏览器的版本号。例如，如果判断出IE 7.0，则Sys.ie的值为7.0；如果判断出Firefox 3.0，则Sys.firefox的值为3.0。下面是判断浏览器的代码：  &lt;/p&gt;
 &lt;pre&gt;&lt;code&gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
     var Sys = &amp;#123;&amp;#125;;
 

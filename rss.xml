@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Fri, 27 Jun 2025 10:12:00 +0800</pubDate>
         <lastBuildDate>Fri, 27 Jun 2025 10:12:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>emm</category>
             <category>mdm</category>
             <pubDate>Fri, 27 Jun 2025 10:12:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;EMM（Enterprise Mobility Management，企业移动化管理）和MDM（Mobile Device Management，移动设备管理）是企业用于安全管理移动设备、应用及数据的核心技术体系。下面从定义、功能、演进和应用场景等方面进行系统说明：&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;EMM（Enterprise Mobility Management，企业移动化管理）和MDM（Mobile Device Management，移动设备管理）是企业用于安全管理移动设备、应用及数据的核心技术体系。下面从定义、功能、演进和应用场景等方面进行系统说明：&lt;/p&gt;
 &lt;p&gt;📱 一、核心概念&lt;br&gt;MDM（移动设备管理）&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;定义：专注于移动设备（如手机、平板）的全生命周期管理，包括注册、配置、监控、远程控制（如锁定/擦除）及停用146。&lt;/p&gt;
 &lt;p&gt;适用场景：适用于企业统一配发的设备（如物流手持终端、公司手机），需完全控制硬件和操作系统39。&lt;/p&gt;
@@ -515,7 +515,7 @@
             <category>php</category>
             <category>游戏</category>
             <pubDate>Tue, 10 Jun 2025 23:09:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;使用PHP开发捕鱼游戏涉及前后端协作，以下是核心实现思路和代码示例：&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;使用PHP开发捕鱼游戏涉及前后端协作，以下是核心实现思路和代码示例：&lt;/p&gt;
 &lt;h3 id=&#34;一、系统设计&#34;&gt;&lt;a href=&#34;#一、系统设计&#34; class=&#34;headerlink&#34; title=&#34;一、系统设计&#34;&gt;&lt;/a&gt;一、系统设计&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;前端&lt;/strong&gt;：HTML5 Canvas + JavaScript 绘制游戏场景&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;后端&lt;/strong&gt;：PHP 处理游戏逻辑和数据库操作&lt;/li&gt;
@@ -575,7 +575,7 @@
             <category>hyperf</category>
             <category>webman</category>
             <pubDate>Mon, 26 May 2025 21:55:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;好的，我们来深入探讨一下 &lt;code&gt;webman&lt;/code&gt;、&lt;code&gt;Hyperf&lt;/code&gt; 的底层原理以及 PHP 中注解（Annotations）的实现原理。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;好的，我们来深入探讨一下 &lt;code&gt;webman&lt;/code&gt;、&lt;code&gt;Hyperf&lt;/code&gt; 的底层原理以及 PHP 中注解（Annotations）的实现原理。&lt;/p&gt;
 &lt;h2 id=&#34;1-webman-底层原理&#34;&gt;&lt;a href=&#34;#1-webman-底层原理&#34; class=&#34;headerlink&#34; title=&#34;1. webman 底层原理&#34;&gt;&lt;/a&gt;1. webman 底层原理&lt;/h2&gt;&lt;p&gt;&lt;code&gt;webman&lt;/code&gt; 的核心设计理念是 &lt;strong&gt;轻量、高性能、易用&lt;/strong&gt;。它构建在强大的异步事件驱动网络库 &lt;strong&gt;Workerman&lt;/strong&gt; 之上，充分利用了 PHP 的 CLI（命令行接口）模式和事件循环机制，摒弃了传统的 PHP-FPM 模式，从而实现了高性能和高并发。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;h3 id=&#34;核心原理剖析&#34;&gt;&lt;a href=&#34;#核心原理剖析&#34; class=&#34;headerlink&#34; title=&#34;核心原理剖析&#34;&gt;&lt;/a&gt;核心原理剖析&lt;/h3&gt;&lt;ol&gt;
@@ -806,7 +806,7 @@
             <link>https://erik.xyz/2025/04/11/python-backstage-project/</link>
             <category>python</category>
             <pubDate>Fri, 11 Apr 2025 21:24:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;Python 后端管理框架主要用于快速构建后台管理系统（如数据管理、用户权限控制等）。以下是常见的 Python 后端管理框架分类及代表工具：&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;Python 后端管理框架主要用于快速构建后台管理系统（如数据管理、用户权限控制等）。以下是常见的 Python 后端管理框架分类及代表工具：&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;1-基于-Django-的框架&#34;&gt;&lt;a href=&#34;#1-基于-Django-的框架&#34; class=&#34;headerlink&#34; title=&#34;1. 基于 Django 的框架&#34;&gt;&lt;/a&gt;&lt;strong&gt;1. 基于 Django 的框架&lt;/strong&gt;&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Django Admin&lt;/strong&gt;  &lt;ul&gt;
@@ -902,7 +902,7 @@
             <category>php</category>
             <category>im</category>
             <pubDate>Sat, 22 Mar 2025 10:01:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;以下是 GitHub 上当前活跃且功能强大的开源即时通讯（IM）项目，涵盖企业级解决方案、轻量级应用和创新型平台，适合不同开发需求：&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;以下是 GitHub 上当前活跃且功能强大的开源即时通讯（IM）项目，涵盖企业级解决方案、轻量级应用和创新型平台，适合不同开发需求：&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;🔧-一、企业级解决方案（高可用、可扩展）&#34;&gt;&lt;a href=&#34;#🔧-一、企业级解决方案（高可用、可扩展）&#34; class=&#34;headerlink&#34; title=&#34;🔧 一、企业级解决方案（高可用、可扩展）&#34;&gt;&lt;/a&gt;🔧 &lt;strong&gt;一、企业级解决方案（高可用、可扩展）&lt;/strong&gt;&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;OpenIM&lt;/strong&gt;  &lt;ul&gt;
@@ -1015,7 +1015,7 @@
             <category>开源工具</category>
             <category>桌面共享工具</category>
             <pubDate>Thu, 13 Feb 2025 21:35:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;1-xrdp&#34;&gt;&lt;a href=&#34;#1-xrdp&#34; class=&#34;headerlink&#34; title=&#34;1. xrdp&#34;&gt;&lt;/a&gt;1. &lt;a href=&#34;https://github.com/neutrinolabs/xrdp&#34;&gt;xrdp&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;1-xrdp&#34;&gt;&lt;a href=&#34;#1-xrdp&#34; class=&#34;headerlink&#34; title=&#34;1. xrdp&#34;&gt;&lt;/a&gt;1. &lt;a href=&#34;https://github.com/neutrinolabs/xrdp&#34;&gt;xrdp&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：xrdp 是一个开源的远程桌面协议 (RDP) 服务器，允许 Linux 系统通过 Windows 的 RDP 客户端远程访问。它与 Microsoft RDP 协议兼容，能够让你从 Windows 客户端连接到 Linux 系统。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;安装&lt;/strong&gt;：通常可以通过 Linux 的包管理器安装，例如在 Ubuntu 上使用命令：&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install xrdp&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -1060,7 +1060,7 @@
             <link>https://erik.xyz/2025/02/05/baimasi/</link>
             <category>随笔</category>
             <pubDate>Wed, 05 Feb 2025 13:16:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;pre&gt;&lt;code&gt;      白马寺
+            <description><![CDATA[ &lt;pre&gt;&lt;code&gt;      白马寺
 
 千年风霜斑驳目，新出寰宇客来慕。
 佛丘已非今朝时，独得枯木逢春时。
@@ -1074,7 +1074,7 @@
             <category>composer部署</category>
             <category>内网部署composer</category>
             <pubDate>Sun, 12 Jan 2025 22:01:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;在内网环境中部署 Composer（PHP的依赖管理工具），通常是为了避免因外网访问限制而导致的依赖下载问题。内网部署 Composer 主要涉及配置一个 私有 Composer 仓库，或者使用 本地代理镜像 来加速和管理依赖。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;在内网环境中部署 Composer（PHP的依赖管理工具），通常是为了避免因外网访问限制而导致的依赖下载问题。内网部署 Composer 主要涉及配置一个 私有 Composer 仓库，或者使用 本地代理镜像 来加速和管理依赖。&lt;/p&gt;
 &lt;h3 id=&#34;1-使用-composer-json-设置依赖&#34;&gt;&lt;a href=&#34;#1-使用-composer-json-设置依赖&#34; class=&#34;headerlink&#34; title=&#34;1. 使用 composer.json 设置依赖&#34;&gt;&lt;/a&gt;&lt;b&gt;1. 使用 composer.json 设置依赖&lt;/b&gt;&lt;/h3&gt;&lt;p&gt;首先，确保你的 composer.json 文件包含所有项目依赖，并正确配置了包的版本和来源。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;name&amp;quot;: &amp;quot;vendor/project&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;require&amp;quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;quot;monolog/monolog&amp;quot;: &amp;quot;^2.0&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;2-使用代理镜像&#34;&gt;&lt;a href=&#34;#2-使用代理镜像&#34; class=&#34;headerlink&#34; title=&#34;2. 使用代理镜像&#34;&gt;&lt;/a&gt;&lt;b&gt;2. 使用代理镜像&lt;/b&gt;&lt;/h3&gt;&lt;p&gt;由于内网无法直接访问 Composer 官方的包仓库，常见的做法是使用国内镜像或搭建代理服务器，常见的方案包括使用 阿里云 Composer 镜像 或 私有镜像仓库。&lt;/p&gt;
 &lt;p&gt; &lt;b&gt;2.1 使用国内镜像源&lt;/b&gt;&lt;/p&gt;
@@ -1140,7 +1140,7 @@
             <category>农业系统</category>
             <category>系统设计</category>
             <pubDate>Fri, 10 Jan 2025 22:34:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;b&gt;农业检测系统设计&lt;/b&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;b&gt;农业检测系统设计&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;根据你的需求，我们将设计一个智能农业系统，通过多种技术手段实现温湿度、光照度监测、设备控制和远程管理。系统的核心功能包括：智能节点监控环境数据、手动和自动控制模式、通过 LoRa 和 4G 通信传输数据、以及通过手机或电脑端进行远程控制。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h4 id=&#34;1-系统模块概述&#34;&gt;&lt;a href=&#34;#1-系统模块概述&#34; class=&#34;headerlink&#34; title=&#34;1. 系统模块概述&#34;&gt;&lt;/a&gt;&lt;b&gt;1. 系统模块概述&lt;/b&gt;&lt;/h4&gt;&lt;p&gt;该农业检测系统包括以下几个主要模块：&lt;/p&gt;
 &lt;ol&gt;
@@ -1339,7 +1339,7 @@
             <category>php</category>
             <category>php串口开发</category>
             <pubDate>Fri, 03 Jan 2025 15:30:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;使用外置设备，通过串口发送和接收数据。那么，就要在php端有个串口的操作代码。&lt;br&gt;PHP 的 dio 扩展（Direct I/O）提供了对底层 I/O 操作的访问，包括串口通信。通过 dio 扩展，你可以直接操作串口设备文件（如 /dev/ttyUSB0 或 COM1）来实现串口通信。&lt;br&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;使用外置设备，通过串口发送和接收数据。那么，就要在php端有个串口的操作代码。&lt;br&gt;PHP 的 dio 扩展（Direct I/O）提供了对底层 I/O 操作的访问，包括串口通信。通过 dio 扩展，你可以直接操作串口设备文件（如 /dev/ttyUSB0 或 COM1）来实现串口通信。&lt;br&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;1-安装-dio-扩展&#34;&gt;&lt;a href=&#34;#1-安装-dio-扩展&#34; class=&#34;headerlink&#34; title=&#34;1. 安装 dio 扩展&#34;&gt;&lt;/a&gt;1. 安装 dio 扩展&lt;/h3&gt;&lt;p&gt;dio 扩展是 PHP 的一个 PECL 扩展。你可以通过以下步骤安装：&lt;/p&gt;
 &lt;p&gt;在 Linux 上安装：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install php-dev  # 安装 PHP 开发工具&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo pecl install dio         # 安装 dio 扩展&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;安装完成后，在 php.ini 文件中启用扩展：&lt;/p&gt;
@@ -1390,7 +1390,7 @@
             <category>maven</category>
             <category>maven内网库</category>
             <pubDate>Wed, 18 Dec 2024 20:55:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;1-搭建-Maven-私有仓库&#34;&gt;&lt;a href=&#34;#1-搭建-Maven-私有仓库&#34; class=&#34;headerlink&#34; title=&#34;1. 搭建 Maven 私有仓库&#34;&gt;&lt;/a&gt;1. 搭建 Maven 私有仓库&lt;/h4&gt;&lt;p&gt;首先，需要在内网环境中搭建一个 Maven 仓库，常用的私有 Maven 仓库工具有：&lt;/p&gt;
+            <description><![CDATA[ &lt;h4 id=&#34;1-搭建-Maven-私有仓库&#34;&gt;&lt;a href=&#34;#1-搭建-Maven-私有仓库&#34; class=&#34;headerlink&#34; title=&#34;1. 搭建 Maven 私有仓库&#34;&gt;&lt;/a&gt;1. 搭建 Maven 私有仓库&lt;/h4&gt;&lt;p&gt;首先，需要在内网环境中搭建一个 Maven 仓库，常用的私有 Maven 仓库工具有：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Nexus Repository：Sonatype Nexus 是最流行的私有 Maven 仓库管理工具。&lt;/li&gt;
 &lt;li&gt;Artifactory：JFrog Artifactory 是另一种流行的构建管理工具，提供了私有仓库的支持。&lt;/li&gt;
@@ -1444,7 +1444,7 @@
             <category>springboot</category>
             <category>springboot内网部署</category>
             <pubDate>Thu, 12 Dec 2024 18:22:18 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;1-准备环境&#34;&gt;&lt;a href=&#34;#1-准备环境&#34; class=&#34;headerlink&#34; title=&#34;1. 准备环境&#34;&gt;&lt;/a&gt;1. 准备环境&lt;/h4&gt;&lt;p&gt;确保内网中的服务器或机器具备运行 Spring Boot 应用的基本环境：&lt;/p&gt;
+            <description><![CDATA[ &lt;h4 id=&#34;1-准备环境&#34;&gt;&lt;a href=&#34;#1-准备环境&#34; class=&#34;headerlink&#34; title=&#34;1. 准备环境&#34;&gt;&lt;/a&gt;1. 准备环境&lt;/h4&gt;&lt;p&gt;确保内网中的服务器或机器具备运行 Spring Boot 应用的基本环境：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;JDK：确保服务器安装了合适版本的 JDK（通常建议使用 Java 8 及以上版本）。&lt;/li&gt;
 &lt;li&gt;Maven/Gradle：根据项目使用的构建工具安装 Maven 或 Gradle。&lt;/li&gt;
@@ -1509,7 +1509,7 @@
             <category>emergency mode</category>
             <category>deepin黑屏</category>
             <pubDate>Fri, 15 Nov 2024 10:56:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;由于系统重启后，新安装的微信一直弹出框，卡在那难受。立马强制重启，开机后就一直显示You are in emergency mode……一堆东西，意思是说让进入root用户，查看报错并修复。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;由于系统重启后，新安装的微信一直弹出框，卡在那难受。立马强制重启，开机后就一直显示You are in emergency mode……一堆东西，意思是说让进入root用户，查看报错并修复。&lt;/p&gt;
 &lt;p&gt;  有点头大了。&lt;/p&gt;
 &lt;p&gt;  系统命令可以显示，图形界面不显示。&lt;br&gt;  &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;  果断拿出安装系统的u盘，使用u盘启动进入安装界面，按ctrl+alt+f4进入u盘命令界面。输入startx进入u盘图形界面。这下可以看到电脑的挂着盘。根据挂着的盘一个个找根目录盘。找到后使用u盘系统的命令窗口:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo vi /etc/fstab&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt; 注释掉home目录，重启系统。&lt;/p&gt;
@@ -1527,7 +1527,7 @@
             <category>redis</category>
             <category>数据一致性</category>
             <pubDate>Mon, 11 Nov 2024 09:58:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;有时候感觉MySQL我们懂了，Redis我们懂了，但是面试的时候一直答不好，经常被难住，问题在哪呢？&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;有时候感觉MySQL我们懂了，Redis我们懂了，但是面试的时候一直答不好，经常被难住，问题在哪呢？&lt;/p&gt;
 &lt;p&gt;答案是：面试官考的不是专项能力，而是多项技术结合应用能力。&lt;/p&gt;
 &lt;p&gt;就拿&lt;strong&gt;并发场景下如何保证MySQL与Redis缓存一致性？&lt;/strong&gt;这个面试官常见的拷打考点举例。&lt;/p&gt;
 &lt;p&gt;对于读多写少并且要求高性能的业务逻辑，我们通常在应用服务器访问MySQL数据库的中间加上一层&lt;strong&gt;Redis缓存层&lt;/strong&gt;，以提高数据的查询效率，减轻MySQL数据库的压力，避免在MySQL出现性能瓶颈。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;img src=&#34;/img/2024/2024111101.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
@@ -1610,7 +1610,7 @@
             <category>浏览器禁止操作视频</category>
             <category>禁止视频</category>
             <pubDate>Wed, 23 Oct 2024 20:27:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;b&gt;1. 禁止暂停、快进等操作&lt;/b&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;b&gt;1. 禁止暂停、快进等操作&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;可以通过将 controls 属性从 &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt;元素中移除，防止用户通过控制条进行操作。然后通过 JavaScript 强制控制视频播放的状态，不允许用户暂停或快进。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;video id=&amp;quot;myVideo&amp;quot; width=&amp;quot;100%&amp;quot; autoplay loop&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;source src=&amp;quot;your-video.mp4&amp;quot; type=&amp;quot;video/mp4&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Your browser does not support the video tag.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/video&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  var video = document.getElementById(&amp;quot;myVideo&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 禁止暂停、快进等操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.controls = false; // 禁用控件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.play(); // 强制播放&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 监听时间更新事件，确保视频不被暂停或快进&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.addEventListener(&amp;#x27;play&amp;#x27;, function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    video.currentTime = 0; // 重置视频时间，避免用户快进&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.addEventListener(&amp;#x27;seeked&amp;#x27;, function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    video.currentTime = 0; // 重置视频时间，避免用户跳跃&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // 监听点击暂停等操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  video.addEventListener(&amp;#x27;pause&amp;#x27;, function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    video.play(); // 禁止暂停&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;b&gt;2. 使用 pointer-events 禁止点击操作&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;你还可以通过 CSS 来禁止用户与视频控件进行交互。通过 pointer-events: none; 可以使用户无法点击视频，进而禁止播放、暂停等交互操作。&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;video id=&amp;quot;myVideo&amp;quot; width=&amp;quot;100%&amp;quot; autoplay loop&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;source src=&amp;quot;your-video.mp4&amp;quot; type=&amp;quot;video/mp4&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Your browser does not support the video tag.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/video&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  #myVideo &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    pointer-events: none; /* 禁止用户交互 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -1628,7 +1628,7 @@
             <category>互联</category>
             <category>项目实战</category>
             <pubDate>Sun, 22 Sep 2024 08:46:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;img src=&#34;/img/2024/640.jpeg&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;img src=&#34;/img/2024/640.jpeg&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
 &lt;p&gt;如何系统的掌握互联网项目管理知识和经验，我搜罗世面上基本没有介绍这方面的图书，为此咱们去年年初，组织咱们前沿社区的众多大咖联合电子工业出版社出版了这本新书《互联网项目管理实战指南》希望可以助大家一臂之力！今天把文章的思维导图干货一起分享给大家！&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;img src=&#34;/img/2024/640.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/2024/641.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/2024/642.png&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
@@ -1661,7 +1661,7 @@
             <category>清理系统</category>
             <category>清理c盘</category>
             <pubDate>Fri, 23 Aug 2024 22:37:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;b&gt;1. 使用磁盘清理工具&lt;/b&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;b&gt;1. 使用磁盘清理工具&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;Windows 10自带了一个磁盘清理工具，可以用来删除临时文件、系统文件和其他不必要的文件。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;打开磁盘清理工具：&lt;ul&gt;
@@ -1744,7 +1744,7 @@
             <category>sql</category>
             <category>sql优化</category>
             <pubDate>Mon, 22 Jul 2024 12:44:34 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;strong&gt;1、先了解MySQL的执行过程&lt;/strong&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;strong&gt;1、先了解MySQL的执行过程&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;了解了MySQL的执行过程，我们才知道如何进行sql优化。&lt;/p&gt;
 &lt;p&gt;1.客户端发送一条查询语句到服务器；&lt;/p&gt;
 &lt;p&gt;2.服务器先查询缓存，如果命中缓存，则立即返回存储在缓存中的数据；&lt;/p&gt;
@@ -2016,7 +2016,7 @@
             <category>web前端</category>
             <category>web优化</category>
             <pubDate>Wed, 12 Jun 2024 10:00:56 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;一、5秒钟加载一个页面的真相&#34;&gt;&lt;a href=&#34;#一、5秒钟加载一个页面的真相&#34; class=&#34;headerlink&#34; title=&#34;一、5秒钟加载一个页面的真相&#34;&gt;&lt;/a&gt;一、5秒钟加载一个页面的真相&lt;/h4&gt;&lt;p&gt;今天在修改前端页面的时候，发现程序中有一个页面的加载速度很慢，差不多需要5秒，这其实是难以接受的，我也不知道为什么上线这么长时间了，没人提过这个事儿。&lt;/p&gt;
+            <description><![CDATA[ &lt;h4 id=&#34;一、5秒钟加载一个页面的真相&#34;&gt;&lt;a href=&#34;#一、5秒钟加载一个页面的真相&#34; class=&#34;headerlink&#34; title=&#34;一、5秒钟加载一个页面的真相&#34;&gt;&lt;/a&gt;一、5秒钟加载一个页面的真相&lt;/h4&gt;&lt;p&gt;今天在修改前端页面的时候，发现程序中有一个页面的加载速度很慢，差不多需要5秒，这其实是难以接受的，我也不知道为什么上线这么长时间了，没人提过这个事儿。&lt;/p&gt;
 &lt;p&gt;我记得有一个词儿，叫秒开率。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;秒开率是指能够在1秒内完成页面的加载。&lt;br&gt;&lt;img src=&#34;/img/2024/20240501.webp&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
 &lt;p&gt;查询的时候，会访问后台数据库，查询前20条数据，按道理来说，这应该很快才对。追踪代码，看看啥问题，最后发现问题有三：&lt;/p&gt;
 &lt;p&gt;1.表中有一个BLOB大字段，存储着一个PDF模板，也就是上图中的运费模板；&lt;/p&gt;
@@ -2148,7 +2148,7 @@
             <category>web</category>
             <category>优化</category>
             <pubDate>Mon, 06 May 2024 11:44:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;在开发中，我们经常会遇到这样的需求，将数据库中的图片导出到本地，再传给别人。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;在开发中，我们经常会遇到这样的需求，将数据库中的图片导出到本地，再传给别人。&lt;/p&gt;
 &lt;h4 id=&#34;一、一般我会这样做：&#34;&gt;&lt;a href=&#34;#一、一般我会这样做：&#34; class=&#34;headerlink&#34; title=&#34;一、一般我会这样做：&#34;&gt;&lt;/a&gt;一、一般我会这样做：&lt;/h4&gt;&lt;p&gt;1.通过接口或者定时任务的形式&lt;/p&gt;
 &lt;p&gt;2.读取Oracle或者MySQL数据库&lt;/p&gt;
 &lt;p&gt;3.通过FileOutputStream将Base64解密后的byte[]存储到本地&lt;/p&gt;

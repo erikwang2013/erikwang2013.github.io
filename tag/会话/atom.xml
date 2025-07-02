@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;会话&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2017-10-20T13:18:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2017/10/20/hui-hua-yuan-li/</id>
         <title>会话原理</title>
         <link rel="alternate" href="https://erik.xyz/2017/10/20/hui-hua-yuan-li/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;最近公司招聘新员工，面试中有提到会话原理，我懵了一下。 会话原理是什么？ 首先解释一下什么是会话。在计算机术语中，会话是指一个终端用户与交互系统进行通讯的过程，比如从输入账户密码进入操作系统到退出操作系统就是一个会话过程。会话较多用于网络上，TCP的三次握手就创建了一个会话，TCP关闭连接就是关闭会话。用平述的语言可以解释为：你拔打你女友的电话号码，你女友接听，然后一翻“亲爱的”，直到任何一方挂掉电话，这个过程就是一个会话。你挑逗一只小狗，它跟你互动，也是会话；它不鸟你，那就不形成会话。 这不是就是服务端与用户端的通信，或者说用户端登录服务端的认证。 她可以使服务器间的通信，浏览器与网站的通信…… 可以用传统的cookie、session机制实现。也可以用令牌认证实现。这其中包含：创建会话 、认证会话 、获取会话信息、会话时长限制、销毁会话。 通俗的就是一个用户登录到一网站，并浏览网站数据，然后离开的过程。 其实，就是登录认证服务。&lt;/p&gt;
+        <content type="html">&lt;p&gt;最近公司招聘新员工，面试中有提到会话原理，我懵了一下。 会话原理是什么？ 首先解释一下什么是会话。在计算机术语中，会话是指一个终端用户与交互系统进行通讯的过程，比如从输入账户密码进入操作系统到退出操作系统就是一个会话过程。会话较多用于网络上，TCP的三次握手就创建了一个会话，TCP关闭连接就是关闭会话。用平述的语言可以解释为：你拔打你女友的电话号码，你女友接听，然后一翻“亲爱的”，直到任何一方挂掉电话，这个过程就是一个会话。你挑逗一只小狗，它跟你互动，也是会话；它不鸟你，那就不形成会话。 这不是就是服务端与用户端的通信，或者说用户端登录服务端的认证。 她可以使服务器间的通信，浏览器与网站的通信…… 可以用传统的cookie、session机制实现。也可以用令牌认证实现。这其中包含：创建会话 、认证会话 、获取会话信息、会话时长限制、销毁会话。 通俗的就是一个用户登录到一网站，并浏览网站数据，然后离开的过程。 其实，就是登录认证服务。&lt;/p&gt;
 </content>
         <category term="会话" />
         <category term="会话原理" />

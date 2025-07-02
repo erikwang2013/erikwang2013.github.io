@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;javascript&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2015-01-27T14:56:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2015/01/27/guan-yu-javascript-de-lia-ge-you-qu-de-tan-tao/</id>
         <title>关于Javascript的俩个有趣的探讨</title>
         <link rel="alternate" href="https://erik.xyz/2015/01/27/guan-yu-javascript-de-lia-ge-you-qu-de-tan-tao/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;作者-Laruence&#34;&gt;&lt;a href=&#34;#作者-Laruence&#34; class=&#34;headerlink&#34; title=&#34;作者: Laruence&#34;&gt;&lt;/a&gt;作者: &lt;a href=&#34;http://www.laruence.com&#34;&gt;Laruence&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&#34;关于事件处理函数引用的一个佐证&#34;&gt;&lt;a href=&#34;#关于事件处理函数引用的一个佐证&#34; class=&#34;headerlink&#34; title=&#34;关于事件处理函数引用的一个佐证&#34;&gt;&lt;/a&gt;关于事件处理函数引用的一个佐证&lt;/h3&gt;&lt;p&gt;之前, 我在分析Javascript的This关键字的时候, 说过, 当使用inline的方式写dom元素的事件处理函数的时候, 采用的是引用的方式. 刚好nullbyte童鞋给我提供了一个很有意思的Case:&lt;/p&gt;
+        <content type="html">&lt;h3 id=&#34;作者-Laruence&#34;&gt;&lt;a href=&#34;#作者-Laruence&#34; class=&#34;headerlink&#34; title=&#34;作者: Laruence&#34;&gt;&lt;/a&gt;作者: &lt;a href=&#34;http://www.laruence.com&#34;&gt;Laruence&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&#34;关于事件处理函数引用的一个佐证&#34;&gt;&lt;a href=&#34;#关于事件处理函数引用的一个佐证&#34; class=&#34;headerlink&#34; title=&#34;关于事件处理函数引用的一个佐证&#34;&gt;&lt;/a&gt;关于事件处理函数引用的一个佐证&lt;/h3&gt;&lt;p&gt;之前, 我在分析Javascript的This关键字的时候, 说过, 当使用inline的方式写dom元素的事件处理函数的时候, 采用的是引用的方式. 刚好nullbyte童鞋给我提供了一个很有意思的Case:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  &amp;lt;img id=&amp;quot;foo&amp;quot; src=&amp;quot;xxx&amp;quot; onerror=&amp;quot; alert(&amp;#39;error&amp;#39;);
   &amp;#125; function foobar() &amp;#123;
   alert(&amp;#39;www.laruence.com&amp;#39;); &amp;quot; /&amp;gt;
@@ -497,7 +497,7 @@ FF3: 28秒
         <id>https://erik.xyz/2015/01/07/shen-ru-li-jie-javascript-ding-shi-ji-zhi/</id>
         <title>深入理解JavaScript定时机制</title>
         <link rel="alternate" href="https://erik.xyz/2015/01/07/shen-ru-li-jie-javascript-ding-shi-ji-zhi/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;容易欺骗别人感情的JavaScript定时器 JavaScript的setTimeout与setInterval是两个很容易欺骗别人感情的方法,因为我们开始常常以为调用了就会按既定的方式执行, 我想不少人都深有同感, 例如&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    alert(&amp;#x27;你好!&amp;#x27;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;, 0);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setInterval(callbackFunction, 100);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;容易欺骗别人感情的JavaScript定时器 JavaScript的setTimeout与setInterval是两个很容易欺骗别人感情的方法,因为我们开始常常以为调用了就会按既定的方式执行, 我想不少人都深有同感, 例如&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    alert(&amp;#x27;你好!&amp;#x27;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;, 0);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setInterval(callbackFunction, 100);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;认为setTimeout中的问候方法会立即被执行,因为这并不是凭空而说,而是JavaScript API文档明确定义第二个参数意义为隔多少毫秒后,回调方法就会被执行. 这里设成0毫秒,理所当然就立即被执行了. 同理对setInterval的callbackFunction方法每间隔100毫秒就立即被执行深信不疑! 但随着JavaScript应用开发经验不断的增加和丰富,有一天你发现了一段怪异的代码而百思不得其解:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;div.onclick = function()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                document.getElementById(&amp;#x27;inputField&amp;#x27;).focus();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;, 0);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;既然是0毫秒后执行,那么还用setTimeout干什么, 此刻, 坚定的信念已开始动摇. 直到最后某一天 , 你不小心写了一段糟糕的代码:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        while (true) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;, 100);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        alert(&amp;#x27;你好!&amp;#x27;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;, 200);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setInterval(callbackFunction, 200);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;第一行代码进入了死循环,但不久你就会发现,第二,第三行并不是预料中的事情,alert问候未见出现,callbacKFunction也杳无音讯! 这时你彻底迷惘了,这种情景是难以接受的,因为改变长久以来既定的认知去接受新思想的过程是痛苦的,但情事实摆在眼前,对JavaScript真理的探求并不会因为痛苦而停止,下面让我们来展开JavaScript线程和定时器探索之旅! 拔开云雾见月明 出现上面所有误区的最主要一个原因是:潜意识中认为,JavaScript引擎有多个线程在执行,JavaScript的定时器回调函数是异步执行的. 而事实上的,JavaScript使用了障眼法,在多数时候骗过了我们的眼睛,这里背光得澄清一个事实: JavaScript引擎是单线程运行的,浏览器无论在什么时候都只且只有一个线程在运行JavaScript程序. JavaScript引擎用单线程运行也是有意义的,单线程不必理会线程同步这些复杂的问题,问题得到简化. 那么单线程的JavaScript引擎是怎么配合浏览器内核处理这些定时器和响应浏览器事件的呢? 下面结合浏览器内核处理方式简单说明. 浏览器内核实现允许多个线程异步执行,这些线程在内核制控下相互配合以保持同步.假如某一浏览器内核的实现至少有三个常驻线 程:javascript引擎线程,界面渲染线程,浏览器事件触发线程,除些以外,也有一些执行完就终止的线程,如Http请求线程,这些异步线程都会产 生不同的异步事件,下面通过一个图来阐明单线程的JavaScript引擎与另外那些线程是怎样互动通信的.虽然每个浏览器内核实现细节不同,但这其中的 调用原理都是大同小异. &lt;a href=&#34;http://laruence-wordpress.stor.sinaapp.com/uploads/jstimer.jpg&#34;&gt;&lt;img src=&#34;http://laruence-wordpress.stor.sinaapp.com/uploads/jstimer.jpg&#34; alt=&#34;Js线程图示&#34; title=&#34;jstimer&#34;&gt;&lt;/a&gt; 由图可看出,浏览器中的JavaScript引擎是基于事件驱动的,这里的事件可看作是浏览器派给它的各种任务,这些任务可以源自 JavaScript引擎当前执行的代码块,如调用setTimeout添加一个任务,也可来自浏览器内核的其它线程,如界面元素鼠标点击事件,定时触发 器时间到达通知,异步请求状态变更通知等.从代码角度看来任务实体就是各种回调函数,JavaScript引擎一直等待着任务队列中任务的到来.由于单线 程关系,这些任务得进行排队,一个接着一个被引擎处理. 上图t1-t2..tn表示不同的时间点,tn下面对应的小方块代表该时间点的任务,假设现在是t1时刻,引擎运行在t1对应的任务方块代码内,在这个时间点内,我们来描述一下浏览器内核其它线程的状态. t1时刻: GUI渲染线程: 该线程负责渲染浏览器界面HTML元素,当界面需要重绘(Repaint)或由于某种操作引发回流(reflow)时,该线程就会执行.本文虽然重 点解释JavaScript定时机制,但这时有必要说说渲染线程,因为该线程与JavaScript引擎线程是互斥的,这容易理解,因为 JavaScript脚本是可操纵DOM元素,在修改这些元素属性同时渲染界面,那么渲染线程前后获得的元素数据就可能不一致了. 在JavaScript引擎运行脚本期间,浏览器渲染线程都是处于挂起状态的,也就是说被”冻结”了. 所以,在脚本中执行对界面进行更新操作,如添加结点,删除结点或改变结点的外观等更新并不会立即体现出来,这些操作将保存在一个队列中,待JavaScript引擎空闲时才有机会渲染出来. GUI事件触发线程: JavaScript脚本的执行不影响html元素事件的触发,在t1时间段内,首先是用户点击了一个鼠标键,点击被浏览器事件触发线程捕捉后形成 一个鼠标点击事件,由图可知,对于JavaScript引擎线程来说,这事件是由其它线程异步传到任务队列尾的,由于引擎正在处理t1时的任务,这个鼠标 点击事件正在等待处理. 定时触发线程: 注意这里的浏览器模型定时计数器并不是由JavaScript引擎计数的,因为JavaScript引擎是单线程的,如果处于阻塞线程状态就计不了时,它必须依赖外部来计时并触发定时,所以队列中的定时事件也是异步事件. 由图可知,在这t1的时间段内,继鼠标点击事件触发后,先前已设置的setTimeout定时也到达了,此刻对JavaScript引擎来说,定时触发线程产生了一个异步定时事件并放到任务队列中, 该事件被排到点击事件回调之后,等待处理. 同理, 还是在t1时间段内,接下来某个setInterval定时器也被添加了,由于是间隔定时,在t1段内连续被触发了两次,这两个事件被排到队尾等待处理. 可见,假如时间段t1非常长,远大于setInterval的定时间隔,那么定时触发线程就会源源不断的产生异步定时事件并放到任务队列尾而不管它 们是否已被处理,但一旦t1和最先的定时事件前面的任务已处理完,这些排列中的定时事件就依次不间断的被执行,这是因为,对于JavaScript引擎来 说,在处理队列中的各任务处理方式都是一样的,只是处理的次序不同而已. t1过后,也就是说当前处理的任务已返回,JavaScript引擎会检查任务队列,发现当前队列非空,就取出t2下面对应的任务执行,其它时间依此类推,由此看来: 如果队列非空,引擎就从队列头取出一个任务,直到该任务处理完,即返回后引擎接着运行下一个任务,在任务没返回前队列中的其它任务是没法被执行的. 相信您现在已经很清楚JavaScript是否可多线程,也了解理解JavaScript定时器运行机制了,下面我们来对一些案例进行分析: 案例1:setTimeout与setInterval&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        /\* 代码块... */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        setTimeout(arguments.callee, 10);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;, 10);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setInterval(function()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        /*代码块... */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;, 10);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;这两段代码看一起效果一样,其实非也,第一段中回调函数内的setTimeout是JavaScript引擎执行后再设置新的setTimeout 定时, 假定上一个回调处理完到下一个回调开始处理为一个时间间隔,理论两个setTimeout回调执行时间间隔&amp;gt;=10ms .第二段自setInterval设置定时后,定时触发线程就会源源不断的每隔十秒产生异步定时事件并放到任务队列尾,理论上两个setInterval 回调执行时间间隔&amp;lt;=10. 案例2:ajax异步请求是否真的异步? 很多同学朋友搞不清楚,既然说JavaScript是单线程运行的,那么XMLHttpRequest在连接后是否真的异步? 其实请求确实是异步的,不过这请求是由浏览器新开一个线程请求(参见上图),当请求的状态变更时,如果先前已设置回调,这异步线程就产生状态变更事件放到 JavaScript引擎的处理队列中等待处理,当任务被处理时,JavaScript引擎始终是单线程运行回调函数,具体点即还是单线程运行 onreadystatechange所设置的函数. 转帖地址:&lt;a href=&#34;http://www.9demo.com/archives/341&#34;&gt;http://www.9demo.com/archives/341&lt;/a&gt;&lt;/p&gt;
 </content>
         <category term="js" />
@@ -508,7 +508,7 @@ FF3: 28秒
         <id>https://erik.xyz/2015/01/05/javascript-yuan-xing-lian-he-yuan-xing-de-yi-ge-wu-qu/</id>
         <title>Javascript原型链和原型的一个误区</title>
         <link rel="alternate" href="https://erik.xyz/2015/01/05/javascript-yuan-xing-lian-he-yuan-xing-de-yi-ge-wu-qu/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者: &lt;a href=&#34;http://www.laruence.com&#34;&gt;Laruence&lt;/a&gt; 之前我对Javascript的原型链中, 原型继承与标识符查找有些迷惑, 如, 如下的代码:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;function Foo() &amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;var foo = new Foo();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Foo.prototype.label = &amp;quot;laruence&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(foo.label); //output: laruence&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(Foo.label);//output: undefined&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;今天看到了如下这个图:&lt;br&gt;&lt;a href=&#34;http://laruence-wordpress.stor.sinaapp.com/uploads/javascript_object_layout.jpg&#34;&gt;&lt;img src=&#34;http://laruence-wordpress.stor.sinaapp.com/uploads/javascript_object_layout.jpg&#34; alt=&#34;Javascript object layout&#34; title=&#34;javascript_object_layout&#34;&gt;&lt;/a&gt; &lt;/p&gt;
+        <content type="html">&lt;p&gt;作者: &lt;a href=&#34;http://www.laruence.com&#34;&gt;Laruence&lt;/a&gt; 之前我对Javascript的原型链中, 原型继承与标识符查找有些迷惑, 如, 如下的代码:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;function Foo() &amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;var foo = new Foo();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Foo.prototype.label = &amp;quot;laruence&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(foo.label); //output: laruence&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(Foo.label);//output: undefined&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;今天看到了如下这个图:&lt;br&gt;&lt;a href=&#34;http://laruence-wordpress.stor.sinaapp.com/uploads/javascript_object_layout.jpg&#34;&gt;&lt;img src=&#34;http://laruence-wordpress.stor.sinaapp.com/uploads/javascript_object_layout.jpg&#34; alt=&#34;Javascript object layout&#34; title=&#34;javascript_object_layout&#34;&gt;&lt;/a&gt; &lt;/p&gt;
 &lt;p&gt;另外, 在&lt;a href=&#34;http://www.mollypages.org/misc/js.mp&#34;&gt;Javascript Object Hierarchy&lt;/a&gt;看到:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The prototype is only used for properties inherited by objects/instances created by that function. The function itself does not use the associated prototype.&lt;/p&gt;

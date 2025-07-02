@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Mon, 22 Dec 2014 21:03:00 +0800</pubDate>
         <lastBuildDate>Mon, 22 Dec 2014 21:03:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -476,7 +476,7 @@
             <category>mysql</category>
             <category>mysql设置超时，超时</category>
             <pubDate>Mon, 22 Dec 2014 21:03:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者: &lt;a href=&#34;http://www.laruence.com&#34;&gt;Laruence&lt;/a&gt; 昨天有人在群里问, MySQL是否可以设置读写超时(非连接超时), 如果可以就可以避免一条SQL执行过慢, 导致PHP超时错误. 这个, 其实可以有. 只不过稍微要麻烦点. 首先, 在libmysql中, 是提供了MYSQL_OPT_READ_TIMEOUT设置项的, 并且libmysql中提供了设置相关设置项的API, mysql_options:&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;作者: &lt;a href=&#34;http://www.laruence.com&#34;&gt;Laruence&lt;/a&gt; 昨天有人在群里问, MySQL是否可以设置读写超时(非连接超时), 如果可以就可以避免一条SQL执行过慢, 导致PHP超时错误. 这个, 其实可以有. 只不过稍微要麻烦点. 首先, 在libmysql中, 是提供了MYSQL_OPT_READ_TIMEOUT设置项的, 并且libmysql中提供了设置相关设置项的API, mysql_options:&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;int STDCALL&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  mysql_options(MYSQL *mysql,enum mysql_option option, const void *arg)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DBUG_ENTER(&amp;quot;mysql_option&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    DBUG_PRINT(&amp;quot;enter&amp;quot;,(&amp;quot;option: %d&amp;quot;,(int) option));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    switch (option) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    case MYSQL\_OPT\_CONNECT_TIMEOUT:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      mysql-&amp;gt;options.connect_timeout= *(uint*) arg;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      break;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    /\*\* 读超时时间 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   case MYSQL\_OPT\_READ_TIMEOUT:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      mysql-&amp;gt;options.read_timeout= *(uint*) arg;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      break;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    case MYSQL\_OPT\_WRITE_TIMEOUT:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      mysql-&amp;gt;options.write_timeout= *(uint*) arg;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      break;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    case MYSQL\_OPT\_COMPRESS:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      mysql-&amp;gt;options.compress= 1;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     /\* 以下省略 */&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;但是, 可惜的是, 目前只有mysqli扩展, 把mysql_options完全暴露给了PHP:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;PHP_FUNCTION(mysqli_options)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; /\*\* 有省略 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     switch (Z\_TYPE\_PP(mysql_value)) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        /\*\* 没有任何限制, 直接传递给mysql_options */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        case IS_STRING:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            ret = mysql_options(mysql-&amp;gt;mysql, mysql_option, Z\_STRVAL\_PP(mysql_value));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            break;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         default:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            convert\_to\_long_ex(mysql_value);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;             l_value = Z\_LVAL\_PP(mysql_value);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            ret = mysql_options(mysql-&amp;gt;mysql, mysql_option, (char *)&amp;amp;l_value);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            break;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    RETURN_BOOL(!ret);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;但是因为Mysqli并没有导出这个常量, 所以我们需要通过查看MySQL的代码, 得到MYSQL_OPT_READ_TIMEOUT的实际值, 然后直接调用mysql_options:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;enum mysql_option&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  MYSQL\_OPT\_CONNECT_TIMEOUT, MYSQL\_OPT\_COMPRESS, MYSQL\_OPT\_NAMED_PIPE,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  MYSQL\_INIT\_COMMAND, MYSQL\_READ\_DEFAULT_FILE, MYSQL\_READ\_DEFAULT_GROUP,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  MYSQL\_SET\_CHARSET_DIR, MYSQL\_SET\_CHARSET_NAME, MYSQL\_OPT\_LOCAL_INFILE,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   MYSQL\_OPT\_PROTOCOL, MYSQL\_SHARED\_MEMORY\_BASE\_NAME, MYSQL\_OPT\_READ_TIMEOUT,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  MYSQL\_OPT\_WRITE_TIMEOUT, MYSQL\_OPT\_USE_RESULT,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  MYSQL\_OPT\_USE\_REMOTE\_CONNECTION, MYSQL\_OPT\_USE\_EMBEDDED\_CONNECTION,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  MYSQL\_OPT\_GUESS_CONNECTION, MYSQL\_SET\_CLIENT_IP, MYSQL\_SECURE\_AUTH,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  MYSQL\_REPORT\_DATA_TRUNCATION, MYSQL\_OPT\_RECONNECT,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  MYSQL\_OPT\_SSL\_VERIFY\_SERVER_CERT&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;可以看到, MYSQL_OPT_READ_TIMEOUT为11. 现在, 我们就可以设置查询超时了:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$mysqli = mysqli_init();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$mysqli-&amp;gt;options(11 /\*MYSQL\_OPT\_READ_TIMEOUT\*/, 1);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$mysql-&amp;gt;real_connect(***);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;不过, 因为在libmysql中有重试机制(尝试一次, 重试俩次), 所以, 最终我们设置的超时阈值都会三倍于我们设置的值. 也就是说, 如果我们设置了MYSQL_OPT_READ_TIMEOUT为1, 最终会在3s以后超时结束. 也就是说, 我们目前能设置的最短超时时, 就是3秒… 虽说大了点,, 不过总比没有好, 呵呵 PS: 写了一半的时候, 就发现小黑已经写过一篇了, 所以大家也可以参看这篇&lt;a href=&#34;http://blog.csdn.net/heiyeshuwu/archive/2010/09/08/5869813.aspx&#34;&gt;PHP访问MySQL查询超时处理&lt;/a&gt;&lt;/p&gt;
  ]]></description>
@@ -489,7 +489,7 @@
             <category>linux</category>
             <category>centos6.5</category>
             <pubDate>Sun, 02 Nov 2014 15:59:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/lxchywjjy/&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/bf358fa2f81bc07d.jpg&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt;&lt;br&gt;&lt;strong&gt;1.以.a为扩展名的文件:&lt;/strong&gt; #tar xv file.a&lt;br&gt;&lt;strong&gt;2.以.z为扩展名的文件: &lt;/strong&gt; #uncompress file.Z&lt;br&gt;&lt;strong&gt;3.以.gz为扩展名的文件: &lt;/strong&gt; #gunzip file.gz&lt;br&gt;&lt;strong&gt;4.以.bz2为扩展名的文件: &lt;/strong&gt; #bunzip2 file.bz2&lt;br&gt;&lt;strong&gt;5.以.tar.Z为扩展名的文件: &lt;/strong&gt; #tar xvZf file.tar.Z 或 #compress -dc file.tar.Z | tar xvf&lt;br&gt;&lt;strong&gt;6.以.tar.gz/.tgz为扩展名的文件: &lt;/strong&gt; #tar xvzf file.tar.gz 或 gzip -dc file.tar.gz | tar xvf -&lt;br&gt;&lt;strong&gt;7.以.tar.bz2为扩展名的文件: &lt;/strong&gt; #tar xvIf file.tar.bz2 或 bzip2 -dc file.tar.bz2 | xvf –&lt;br&gt;&lt;strong&gt;8.以.cpio.gz/.cgz为扩展名的文件: &lt;/strong&gt; #gzip -dc file.cgz | cpio -div&lt;br&gt;&lt;strong&gt;9.以.cpio/cpio为扩展名的文件: &lt;/strong&gt; #cpio -div file.cpio 或cpio -divc file.cpio&lt;br&gt;&lt;strong&gt;10.以.rpm为扩展名的文件安装: &lt;/strong&gt; #rpm -i file.rpm&lt;br&gt;&lt;strong&gt;11.以.rpm为扩展名的文件解压缩： &lt;/strong&gt; #rpm2cpio file.rpm | cpio -div&lt;br&gt;&lt;strong&gt;12.以.deb为扩展名的文件安装： &lt;/strong&gt; #dpkg -i file.deb&lt;br&gt;&lt;strong&gt;13.以.deb为扩展名的文件解压缩: &lt;/strong&gt; #dpkg-deb —fsys-tarfile file.deb | tar xvf - ar p file.deb data.tar.gz | tar xvzf –&lt;br&gt;&lt;strong&gt;14.以.zip为扩展名的文件: &lt;/strong&gt; #unzip file.zip&lt;br&gt;&lt;strong&gt;15.在linux下解压Winzip格式的文件：&lt;/strong&gt; 要是装了jdk的话，可以用jar命令；还可以使用unzip命令。&lt;br&gt;&lt;strong&gt;16.直接解压.tar.gz文件：&lt;/strong&gt; xxxx.tar.gz文件使用tar带zxvf参数，可以一次解压开。XXXX为文件名。 例如：$tar zxvf xxxx.tar.gz 各种压缩文件的解压（安装方法）&lt;br&gt;&lt;strong&gt;17.文件扩展名解压（安装方法）：&lt;/strong&gt; .a ar xv file.a .Z uncompress file.Z .gz gunzip file.gz .bz2 bunzip2 file.bz2 .tar.Z tar xvZf file.tar.Z compress -dc file.tar.Z | tar xvf - .tar.gz/.tgz tar xvzf file.tar.gz gzip -dc file.tar.gz | tar xvf - .tar.bz2 tar xvIf file.tar.bz2 bzip2 -dc file.tar.bz2 | xvf - .cpio.gz/.cgz gzip -dc file.cgz | cpio -div .cpio/cpio cpio -div file.cpio cpio -divc file.cpio .rpm/install rpm -i file.rpm .rpm/extract rpm2cpio file.rpm | cpio -div .deb/install dpkg -i file.deb .deb/exrtact dpkg-deb —fsys-tarfile file.deb | tar xvf - ar p file.deb data.tar.gz | tar xvzf - .zip unzip file.zip bzip2 -d myfile.tar.bz2 | tar xvf &lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/lxchywjjy/&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/bf358fa2f81bc07d.jpg&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt;&lt;br&gt;&lt;strong&gt;1.以.a为扩展名的文件:&lt;/strong&gt; #tar xv file.a&lt;br&gt;&lt;strong&gt;2.以.z为扩展名的文件: &lt;/strong&gt; #uncompress file.Z&lt;br&gt;&lt;strong&gt;3.以.gz为扩展名的文件: &lt;/strong&gt; #gunzip file.gz&lt;br&gt;&lt;strong&gt;4.以.bz2为扩展名的文件: &lt;/strong&gt; #bunzip2 file.bz2&lt;br&gt;&lt;strong&gt;5.以.tar.Z为扩展名的文件: &lt;/strong&gt; #tar xvZf file.tar.Z 或 #compress -dc file.tar.Z | tar xvf&lt;br&gt;&lt;strong&gt;6.以.tar.gz/.tgz为扩展名的文件: &lt;/strong&gt; #tar xvzf file.tar.gz 或 gzip -dc file.tar.gz | tar xvf -&lt;br&gt;&lt;strong&gt;7.以.tar.bz2为扩展名的文件: &lt;/strong&gt; #tar xvIf file.tar.bz2 或 bzip2 -dc file.tar.bz2 | xvf –&lt;br&gt;&lt;strong&gt;8.以.cpio.gz/.cgz为扩展名的文件: &lt;/strong&gt; #gzip -dc file.cgz | cpio -div&lt;br&gt;&lt;strong&gt;9.以.cpio/cpio为扩展名的文件: &lt;/strong&gt; #cpio -div file.cpio 或cpio -divc file.cpio&lt;br&gt;&lt;strong&gt;10.以.rpm为扩展名的文件安装: &lt;/strong&gt; #rpm -i file.rpm&lt;br&gt;&lt;strong&gt;11.以.rpm为扩展名的文件解压缩： &lt;/strong&gt; #rpm2cpio file.rpm | cpio -div&lt;br&gt;&lt;strong&gt;12.以.deb为扩展名的文件安装： &lt;/strong&gt; #dpkg -i file.deb&lt;br&gt;&lt;strong&gt;13.以.deb为扩展名的文件解压缩: &lt;/strong&gt; #dpkg-deb —fsys-tarfile file.deb | tar xvf - ar p file.deb data.tar.gz | tar xvzf –&lt;br&gt;&lt;strong&gt;14.以.zip为扩展名的文件: &lt;/strong&gt; #unzip file.zip&lt;br&gt;&lt;strong&gt;15.在linux下解压Winzip格式的文件：&lt;/strong&gt; 要是装了jdk的话，可以用jar命令；还可以使用unzip命令。&lt;br&gt;&lt;strong&gt;16.直接解压.tar.gz文件：&lt;/strong&gt; xxxx.tar.gz文件使用tar带zxvf参数，可以一次解压开。XXXX为文件名。 例如：$tar zxvf xxxx.tar.gz 各种压缩文件的解压（安装方法）&lt;br&gt;&lt;strong&gt;17.文件扩展名解压（安装方法）：&lt;/strong&gt; .a ar xv file.a .Z uncompress file.Z .gz gunzip file.gz .bz2 bunzip2 file.bz2 .tar.Z tar xvZf file.tar.Z compress -dc file.tar.Z | tar xvf - .tar.gz/.tgz tar xvzf file.tar.gz gzip -dc file.tar.gz | tar xvf - .tar.bz2 tar xvIf file.tar.bz2 bzip2 -dc file.tar.bz2 | xvf - .cpio.gz/.cgz gzip -dc file.cgz | cpio -div .cpio/cpio cpio -div file.cpio cpio -divc file.cpio .rpm/install rpm -i file.rpm .rpm/extract rpm2cpio file.rpm | cpio -div .deb/install dpkg -i file.deb .deb/exrtact dpkg-deb —fsys-tarfile file.deb | tar xvf - ar p file.deb data.tar.gz | tar xvzf - .zip unzip file.zip bzip2 -d myfile.tar.bz2 | tar xvf &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;18.tar xvfz myfile.tar.bz2&lt;/strong&gt; x 是解压 v 是复杂输出 f 是指定文件 z gz格式&lt;br&gt;&lt;strong&gt;19.gzip&lt;/strong&gt; gzip[选项]要压缩（或解压缩）的文件名 -c将输出写到标准输出上，并保留原有文件。 -d将压缩文件压缩。 -l对每个压缩文件，显示下列字段：压缩文件的大小，未压缩文件的大小、压缩比、未压缩文件的名字 -r递归式地查找指定目录并压缩或压缩其中的所有文件。 -t测试压缩文件是正完整。 -v对每一个压缩和解压缩的文件，显示其文件名和压缩比。 -num-用指定的数字调整压缩的速度。&lt;br&gt;&lt;strong&gt;20.举例：&lt;/strong&gt; 把/usr目录并包括它的子目录在内的全部文件做一备份，备份文件名为usr.tar tar cvf usr.tar /home 把/usr 目录并包括它的子目录在内的全部文件做一备份并进行压缩，备份文件名是usr.tar.gz tar czvf usr.tar.gz /usr 压缩一组文件，文件的后缀为tar.gz #tar cvf back.tar /back/ #gzip -q back.tar or #tar cvfz back.tar.gz /back/ 释放一个后缀为tar.gz的文件。 #tar zxvf back.tar.gz #gzip back.tar.gz #tar xvf back.tar&lt;/p&gt;
  ]]></description>
         </item>
@@ -502,7 +502,7 @@
             <category>centos6.5</category>
             <category>linux系统</category>
             <pubDate>Tue, 07 Oct 2014 09:54:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/logo.png&#34;&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/logo-300x300.png&#34; alt=&#34;logo.png&#34;&gt;&lt;/a&gt; CentOS-6.5-x86_64-LiveCD.iso CentOS-6.5-x86_64-LiveDVD.iso CentOS-6.5-x86_64-bin-DVD1.iso （比较全的系统，有大部分软件） CentOS-6.5-x86_64-bin-DVD2.iso  （对上DVD1的补充） 下载：&lt;a href=&#34;http://yunpan.cn/cgnqyggJJvYaD&#34;&gt;http://yunpan.cn/cgnqyggJJvYaD&lt;/a&gt; 提取码 54b2 CentOS-6.5-i386-LiveDVD.iso CentOS-6.5-i386-LiveCD.iso CentOS-6.5-i386-bin-DVD2.iso（对上DVD1的补充） CentOS-6.5-i386-bin-DVD1.iso（比较全的系统，有大部分软件） 下载：&lt;a href=&#34;http://yunpan.cn/cgnYNATiGayCM&#34;&gt;http://yunpan.cn/cgnYNATiGayCM&lt;/a&gt; 提取码 d567&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/logo.png&#34;&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/logo-300x300.png&#34; alt=&#34;logo.png&#34;&gt;&lt;/a&gt; CentOS-6.5-x86_64-LiveCD.iso CentOS-6.5-x86_64-LiveDVD.iso CentOS-6.5-x86_64-bin-DVD1.iso （比较全的系统，有大部分软件） CentOS-6.5-x86_64-bin-DVD2.iso  （对上DVD1的补充） 下载：&lt;a href=&#34;http://yunpan.cn/cgnqyggJJvYaD&#34;&gt;http://yunpan.cn/cgnqyggJJvYaD&lt;/a&gt; 提取码 54b2 CentOS-6.5-i386-LiveDVD.iso CentOS-6.5-i386-LiveCD.iso CentOS-6.5-i386-bin-DVD2.iso（对上DVD1的补充） CentOS-6.5-i386-bin-DVD1.iso（比较全的系统，有大部分软件） 下载：&lt;a href=&#34;http://yunpan.cn/cgnYNATiGayCM&#34;&gt;http://yunpan.cn/cgnYNATiGayCM&lt;/a&gt; 提取码 d567&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

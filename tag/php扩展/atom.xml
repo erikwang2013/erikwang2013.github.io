@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;php扩展&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2021-06-08T03:12:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2021/06/08/php-extension/</id>
         <title>php扩展</title>
         <link rel="alternate" href="https://erik.xyz/2021/06/08/php-extension/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;ul&gt;
+        <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://pecl.php.net/package/yar&#34;&gt;yar&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Yar(Yet Another RPC framework)是一个轻量级支持并行调用的PHP RPC框架
 学习地址 https://www.laruence.com/2020/03/16/5578.html
@@ -499,15 +499,15 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="php扩展" />
         <category term="php" />
+        <category term="php扩展" />
         <updated>2021-06-08T03:12:00.000Z</updated>
     </entry>
     <entry>
         <id>https://erik.xyz/2017/09/08/100-ge-chang-yong-de-php-lei-ku-zi-yuan-he-ji-qiao-xiao-jie/</id>
         <title>100个常用的 PHP 类库、资源和技巧小结</title>
         <link rel="alternate" href="https://erik.xyz/2017/09/08/100-ge-chang-yong-de-php-lei-ku-zi-yuan-he-ji-qiao-xiao-jie/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;本文转载自：&lt;a href=&#34;http://www.scutephp.com/topic-id1325.html&#34;&gt;http://www.scutephp.com/topic-id1325.html&lt;/a&gt; 收集整理一些常用的&lt;a href=&#34;http://lib.csdn.net/base/php&#34; title=&#34;PHP知识库&#34;&gt;PHP&lt;/a&gt;类库, 资源以及技巧. 以便在工作中迅速的查找所需… &lt;img src=&#34;http://www.scutephp.com/upload/md5/9da1b650056beafcd43ca64d57579dd8.jpg&#34; alt=&#34;100个常用的 PHP 类库、资源和技巧小结&#34;&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;本文转载自：&lt;a href=&#34;http://www.scutephp.com/topic-id1325.html&#34;&gt;http://www.scutephp.com/topic-id1325.html&lt;/a&gt; 收集整理一些常用的&lt;a href=&#34;http://lib.csdn.net/base/php&#34; title=&#34;PHP知识库&#34;&gt;PHP&lt;/a&gt;类库, 资源以及技巧. 以便在工作中迅速的查找所需… &lt;img src=&#34;http://www.scutephp.com/upload/md5/9da1b650056beafcd43ca64d57579dd8.jpg&#34; alt=&#34;100个常用的 PHP 类库、资源和技巧小结&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;学习资源&#34;&gt;&lt;a href=&#34;#学习资源&#34; class=&#34;headerlink&#34; title=&#34;学习资源&#34;&gt;&lt;/a&gt;学习资源&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;http://lib.csdn.net/base/php&#34; title=&#34;PHP知识库&#34;&gt;php&lt;/a&gt;相关的有参考价值的社区,博客,网站,文章,书籍,视频等资源&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;PHP网站(PHP Websites)&lt;ul&gt;

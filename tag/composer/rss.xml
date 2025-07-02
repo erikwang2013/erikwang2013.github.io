@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Sun, 12 Jan 2025 22:01:00 +0800</pubDate>
         <lastBuildDate>Sun, 12 Jan 2025 22:01:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>composer部署</category>
             <category>内网部署composer</category>
             <pubDate>Sun, 12 Jan 2025 22:01:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;在内网环境中部署 Composer（PHP的依赖管理工具），通常是为了避免因外网访问限制而导致的依赖下载问题。内网部署 Composer 主要涉及配置一个 私有 Composer 仓库，或者使用 本地代理镜像 来加速和管理依赖。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;在内网环境中部署 Composer（PHP的依赖管理工具），通常是为了避免因外网访问限制而导致的依赖下载问题。内网部署 Composer 主要涉及配置一个 私有 Composer 仓库，或者使用 本地代理镜像 来加速和管理依赖。&lt;/p&gt;
 &lt;h3 id=&#34;1-使用-composer-json-设置依赖&#34;&gt;&lt;a href=&#34;#1-使用-composer-json-设置依赖&#34; class=&#34;headerlink&#34; title=&#34;1. 使用 composer.json 设置依赖&#34;&gt;&lt;/a&gt;&lt;b&gt;1. 使用 composer.json 设置依赖&lt;/b&gt;&lt;/h3&gt;&lt;p&gt;首先，确保你的 composer.json 文件包含所有项目依赖，并正确配置了包的版本和来源。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;name&amp;quot;: &amp;quot;vendor/project&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;require&amp;quot;: &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;quot;monolog/monolog&amp;quot;: &amp;quot;^2.0&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;2-使用代理镜像&#34;&gt;&lt;a href=&#34;#2-使用代理镜像&#34; class=&#34;headerlink&#34; title=&#34;2. 使用代理镜像&#34;&gt;&lt;/a&gt;&lt;b&gt;2. 使用代理镜像&lt;/b&gt;&lt;/h3&gt;&lt;p&gt;由于内网无法直接访问 Composer 官方的包仓库，常见的做法是使用国内镜像或搭建代理服务器，常见的方案包括使用 阿里云 Composer 镜像 或 私有镜像仓库。&lt;/p&gt;
 &lt;p&gt; &lt;b&gt;2.1 使用国内镜像源&lt;/b&gt;&lt;/p&gt;
@@ -544,7 +544,7 @@
             <category>laravel</category>
             <category>composer插件</category>
             <pubDate>Sun, 12 Nov 2023 21:51:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;最近开发后总要测试接口性能，来定位接口问题，突然想到有xhprof扩展可以用。翻了翻，发现多数要不代码不更新，要不就是太繁琐，干脆自己开发以下。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;最近开发后总要测试接口性能，来定位接口问题，突然想到有xhprof扩展可以用。翻了翻，发现多数要不代码不更新，要不就是太繁琐，干脆自己开发以下。&lt;/p&gt;
 &lt;p&gt;   参考phacility/xhprof、phpxxb/xhprof的项目，自己下载了一份代码。于是就先做了webman的插件&lt;a href=&#34;https://github.com/erikwang2013/xhprof-webman&#34;&gt;xhprof-webman&lt;/a&gt;，磨蹭了一段时间就又弄了laravel版的插件&lt;a href=&#34;https://github.com/erikwang2013/xhprof-laravel&#34;&gt;xhprof-laravel&lt;/a&gt;。最新版已更新，大家有用到的去composer安装吧。&lt;/p&gt;
  ]]></description>
         </item>
@@ -557,7 +557,7 @@
             <category>composer配置</category>
             <category>项目创建composer</category>
             <pubDate>Fri, 13 Oct 2017 21:19:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;composer是php5.3以上 的一个依赖管理工具。简单来说就是你在composer里面可以找到各种优秀的第三方扩展。可以丰富自己的项目节省开发时间。&lt;br&gt;首先要在你本地win电脑安装composer&lt;br&gt;安装成功后用命令窗口去安装打开目录执行：  echo @php “%~dp0composer.phar” %*&amp;gt;composer.bat&lt;br&gt;关闭命令窗口重新打开  执行 ： composer 结果如图&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg&#34; alt=&#34;有关composer&#34;&gt;&lt;/a&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;表示已经安装成功了。 然后把镜像地址换到国内&lt;br&gt;执行：composer config -g repo.packagist composer &lt;a href=&#34;https://packagist.phpcomposer.com&#34;&gt;https://packagist.phpcomposer.com&lt;/a&gt;&lt;br&gt;之后执行 composer install  全局安装。&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg&#34; alt=&#34;composer install&#34;&gt;&lt;/a&gt;&lt;br&gt;顺便再次执行：composer update   更新。&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/a306c860af2fae0as.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/a306c860af2fae0as.jpg&#34; alt=&#34;composer update&#34;&gt;&lt;/a&gt;&lt;br&gt;然后进入到你所在的项目目录执行： composer init  开始创建自己项目的composer.json&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg&#34; alt=&#34;有关composer&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;composer是php5.3以上 的一个依赖管理工具。简单来说就是你在composer里面可以找到各种优秀的第三方扩展。可以丰富自己的项目节省开发时间。&lt;br&gt;首先要在你本地win电脑安装composer&lt;br&gt;安装成功后用命令窗口去安装打开目录执行：  echo @php “%~dp0composer.phar” %*&amp;gt;composer.bat&lt;br&gt;关闭命令窗口重新打开  执行 ： composer 结果如图&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg&#34; alt=&#34;有关composer&#34;&gt;&lt;/a&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;表示已经安装成功了。 然后把镜像地址换到国内&lt;br&gt;执行：composer config -g repo.packagist composer &lt;a href=&#34;https://packagist.phpcomposer.com&#34;&gt;https://packagist.phpcomposer.com&lt;/a&gt;&lt;br&gt;之后执行 composer install  全局安装。&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg&#34; alt=&#34;composer install&#34;&gt;&lt;/a&gt;&lt;br&gt;顺便再次执行：composer update   更新。&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/a306c860af2fae0as.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/a306c860af2fae0as.jpg&#34; alt=&#34;composer update&#34;&gt;&lt;/a&gt;&lt;br&gt;然后进入到你所在的项目目录执行： composer init  开始创建自己项目的composer.json&lt;br&gt;&lt;a href=&#34;http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg&#34;&gt;&lt;img src=&#34;http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg&#34; alt=&#34;有关composer&#34;&gt;&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

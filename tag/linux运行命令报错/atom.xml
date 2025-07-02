@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;linux运行命令报错&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2019-05-30T04:28:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2019/05/30/linux-yun-xing-bu-cun-zai-de-bao-cuo-ming-ling/</id>
         <title>linux运行不存在的命令报错</title>
         <link rel="alternate" href="https://erik.xyz/2019/05/30/linux-yun-xing-bu-cun-zai-de-bao-cuo-ming-ling/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h6 id=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;a href=&#34;#在Linux中运行一个命令尝试是否存在，突然报错了&#34; class=&#34;headerlink&#34; title=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#在Linux中运行一个命令尝试是否存在，突然报错了&#34; title=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;/a&gt;在Linux中运行一个命令尝试是否存在，突然报错了&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-48.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&amp;gt; Could not find the database of available applications, run update-command-not-found as root to fix this&lt;/p&gt;
+        <content type="html">&lt;h6 id=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;a href=&#34;#在Linux中运行一个命令尝试是否存在，突然报错了&#34; class=&#34;headerlink&#34; title=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#在Linux中运行一个命令尝试是否存在，突然报错了&#34; title=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;/a&gt;在Linux中运行一个命令尝试是否存在，突然报错了&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-48.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&amp;gt; Could not find the database of available applications, run update-command-not-found as root to fix this&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Sorry, command-not-found has crashed! Please file a bug report at:&lt;br&gt;&lt;a href=&#34;http://www.debian.org/Bugs/Reporting&#34;&gt;http://www.debian.org/Bugs/Reporting&lt;/a&gt;&lt;br&gt;Please include the following information with the report:&amp;gt; command-not-found version: 0.3&lt;br&gt;Python version: 3.7.3 candidate 1&lt;br&gt;Distributor ID:    Kali&lt;br&gt;Description:    Kali GNU/Linux Rolling&lt;br&gt;Release:    2019.2&lt;br&gt;Codename:    n/a&lt;br&gt;Exception information:&amp;gt; local variable ‘cnf’ referenced before assignment&lt;br&gt;Traceback (most recent call last):&lt;br&gt;  File “/usr/share/command-not-found/CommandNotFound/util.py”, line 23, in crash_guard&lt;br&gt;    callback()&lt;br&gt;  File “/usr/lib/command-not-found”, line 93, in main&lt;br&gt;    if not cnf.advise(args[0], options.ignore_installed) and not options.no_failure_msg:&lt;br&gt;UnboundLocalError: local variable ‘cnf’ referenced before assignment&amp;gt; 根据报错提示需要以root用户运行update-commond-not-found&amp;gt; 结果又报错了&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-49.png&#34; alt=&#34;&#34;&gt;&amp;gt; 根据报错提示执行编辑报错文件&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-50_1.png&#34; alt=&#34;&#34;&gt;&amp;gt; 打开报错文件找到如图&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-51.png&#34; alt=&#34;&#34;&gt;&amp;gt; 如有同样报错，继续编辑报错文件，添加所报错的缺失项&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-49_1.png&#34; alt=&#34;&#34;&gt;&amp;gt; 最后执行自己的测试命令，就不存在错误了&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-52.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;

@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;wpscan&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2020-03-28T06:21:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2020/03/28/wpscan-and-usbrip/</id>
         <title>wpscan版本3.7.11和usbrip的使用</title>
         <link rel="alternate" href="https://erik.xyz/2020/03/28/wpscan-and-usbrip/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;偶然研究一下攻击wordpress的工具wpscan根据网上示范的教程，发现坑特别多。&lt;br&gt; 大部分都是老版本的教程，最新版命令有所改动，已经剔除—wordlist改为-P。&lt;br&gt;需要在官方网站注册生成密钥，本地使用。&lt;br&gt;另外密码字典需要自己用crunch生成,大部分弱密码都可以爆破。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;偶然研究一下攻击wordpress的工具wpscan根据网上示范的教程，发现坑特别多。&lt;br&gt; 大部分都是老版本的教程，最新版命令有所改动，已经剔除—wordlist改为-P。&lt;br&gt;需要在官方网站注册生成密钥，本地使用。&lt;br&gt;另外密码字典需要自己用crunch生成,大部分弱密码都可以爆破。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;安装&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;    sudo pip3 install usbrip

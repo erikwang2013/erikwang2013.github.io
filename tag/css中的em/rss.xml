@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Wed, 20 May 2015 23:12:00 +0800</pubDate>
         <lastBuildDate>Wed, 20 May 2015 23:12:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>响应式字体</category>
             <category>响应式布局样式</category>
             <pubDate>Wed, 20 May 2015 23:12:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;使用CSS也好久了，但一直都是在使用“px”来设置Web元素的相关属性，未敢使用“em”。主要原因是，对其并不什么了解，只知道一点概念性的东西，前段时间在项目中要求使用“em”作为单位设置元素，所以从头对“em”学习了一回。稍为有一点理解，今天特意整理了一份博文与大家一起分享，希望对童子们有些许的帮助。 这篇教程将引导大家如何使用“em”来创建一个基本的弹性布局，从而学习其如何计算？又是如何使用“em”对层进行弹性扩展？又是如何扩展文本和图像等内容？下在我们就一起带着这些问题开始今天的“em”之行。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;使用CSS也好久了，但一直都是在使用“px”来设置Web元素的相关属性，未敢使用“em”。主要原因是，对其并不什么了解，只知道一点概念性的东西，前段时间在项目中要求使用“em”作为单位设置元素，所以从头对“em”学习了一回。稍为有一点理解，今天特意整理了一份博文与大家一起分享，希望对童子们有些许的帮助。 这篇教程将引导大家如何使用“em”来创建一个基本的弹性布局，从而学习其如何计算？又是如何使用“em”对层进行弹性扩展？又是如何扩展文本和图像等内容？下在我们就一起带着这些问题开始今天的“em”之行。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h4 id=&#34;什么是弹性布局？&#34;&gt;&lt;a href=&#34;#什么是弹性布局？&#34; class=&#34;headerlink&#34; title=&#34;什么是弹性布局？&#34;&gt;&lt;/a&gt;什么是弹性布局？&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;用户的文字大小与弹性布局&lt;/strong&gt; 用户的浏览器默认渲染的文字大小是“16px”，换句话说，Web页面中“body”的文字大小在用户浏览器下默认渲染是“16px”。当然，如果用户愿意他可以改变这种字体大小的设置，用户可以通过&lt;a href=&#34;http://www.w3cplus.com/css/href=&#34;&gt;UI控件&lt;/a&gt;来改变浏览器默认的字体大小。 弹性设计有一个关键地方&lt;strong&gt;Web页面中所有元素都使用“em”单位值&lt;/strong&gt;。“em”是一个&lt;a href=&#34;http://www.w3.org/TR/CSS2/fonts.html#value-def-relative-size&#34; title=&#34;CSS2 Specification on relative size&#34;&gt;相对&lt;/a&gt;的大小，我们可以这样来设置&lt;strong&gt;1em，0.5em，1.5em&lt;/strong&gt;等，而且“em”还可以指定到小数点后三位，比如“1.365em”。而其中“相对”的意思是：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;相对的计算必然会一个参考物，那么这里相对所指的是相对于元素父元素的&lt;strong&gt;font-size&lt;/strong&gt;。比如说：如果在一个&lt;div&gt;&lt;a href=&#34;http://www.w3.org/TR/CSS2/cascade.html#computed-value&#34; title=&#34;CSS2 Specification on computed values&#34;&gt;设置字体大小&lt;/a&gt;为“16px”，此时这个&lt;div&gt;的后代元素教程了是将&lt;a href=&#34;http://www.w3.org/TR/CSS2/cascade.html#inheritance&#34; title=&#34;CSS2 Specification on inheritance&#34;&gt;继承&lt;/a&gt;他的字体大小，除非重新在其后代元素中进行过显示的设置。此时，如果你将其子元素的字体大小设置为“0.75em”，那么其字体大小计算出来后就相当于“0.75 X 16px = 12px”；&lt;/li&gt;

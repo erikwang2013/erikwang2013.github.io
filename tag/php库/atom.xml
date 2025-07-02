@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;php库&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2014-12-28T12:44:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2014/12/28/9-ge-php-ku-jian-jie-he-xia-zai/</id>
         <title>9个PHP库简介和下载</title>
         <link rel="alternate" href="https://erik.xyz/2014/12/28/9-ge-php-ku-jian-jie-he-xia-zai/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 9个非常有用的PHP类库，相信一定可以为你的WEB开发提供更好和更为快速的方法。&lt;/p&gt;
+        <content type="html">&lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 9个非常有用的PHP类库，相信一定可以为你的WEB开发提供更好和更为快速的方法。&lt;/p&gt;
 &lt;h3 id=&#34;1-ReCAPTCHA&#34;&gt;&lt;a href=&#34;#1-ReCAPTCHA&#34; class=&#34;headerlink&#34; title=&#34;1. ReCAPTCHA&#34;&gt;&lt;/a&gt;1. ReCAPTCHA&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;http://recaptcha.net/plugins/php/&#34;&gt;The reCAPTCHA&lt;/a&gt; 库让你可以为网站创建高级的 CAPTCHA 系统，这个系统其实是用来生成验证信息的，甚至包括语音验证。当然还有 reCAPTCHA 服务可以使用，其提供易用的免费 API，值得在你的网站试试。 &lt;a href=&#34;http://code.google.com/p/recaptcha/downloads/list?q=label:phplib-Latest&#34;&gt;下载 ReCAPTCHA&lt;/a&gt; | &lt;a href=&#34;http://recaptcha.net/api/getkey?app=php&#34;&gt;获得 API Key&lt;/a&gt; | &lt;a href=&#34;http://recaptcha.net/plugins/php/&#34;&gt;文档&lt;/a&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;2-Akismet&#34;&gt;&lt;a href=&#34;#2-Akismet&#34; class=&#34;headerlink&#34; title=&#34;2. Akismet&#34;&gt;&lt;/a&gt;2. Akismet&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;http://akismet.com/&#34;&gt;Akismet&lt;/a&gt; 是个供小站点使用的免费服务，用来修改规范将加入数据库的评论（防止恶意评论）。这个库一直在改善。 &lt;a href=&#34;http://net.tutsplus.com/tutorials/tools-and-tips/the-best-ways-to-fight-spam/&#34;&gt;详细参考 Akismet 介绍&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;3-Services-JSON&#34;&gt;&lt;a href=&#34;#3-Services-JSON&#34; class=&#34;headerlink&#34; title=&#34;3. Services_JSON&#34;&gt;&lt;/a&gt;3. Services_JSON&lt;/h3&gt;&lt;p&gt;JSON 是人类能容易理解的信息传递格式。不过如果你并未使用 5.2.0 以后版本的 PHP（从那以后 PHP 有了 JSON 官方支持），那么就应该试试这个库。 &lt;a href=&#34;http://pear.php.net/package/Services_JSON&#34;&gt;查看 Services_JSON&lt;/a&gt;&lt;/p&gt;

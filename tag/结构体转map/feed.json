@@ -9,7 +9,7 @@
             "url": "https://erik.xyz/2022/02/11/structtomap/",
             "title": "结构体转map",
             "date_published": "2022-02-11T03:55:10.000Z",
-            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>在go中往redis的hash写数据的时候遇到了结构体数组写入时无法写入，看了看写入数据要求是map[string]interface，而我的是struct。因此，无法写入的。<br>那么就是转格式呗</p>\n<pre><code>type order struct&#123;\n    Id int64 `json:&quot;id&quot;`\n    orderSn int64 `json:&quot;order_sn&quot;`          \n&#125;\n\norders:=order&#123;\n    Id:2022032034566\n    OrderSn:20220320122444\n&#125;\n\njsonData,_:=json.Marshal(orders)\n\nvar redisData map[string]interface&#123;&#125;\n\njson.Unmarshal([]byte(jsonData),&amp;redisData)\n\nlog.Info(redisData)\n</code></pre><p>以上就是转化过程。</p>\n",
+            "content_html": "<p>在go中往redis的hash写数据的时候遇到了结构体数组写入时无法写入，看了看写入数据要求是map[string]interface，而我的是struct。因此，无法写入的。<br>那么就是转格式呗</p>\n<pre><code>type order struct&#123;\n    Id int64 `json:&quot;id&quot;`\n    orderSn int64 `json:&quot;order_sn&quot;`          \n&#125;\n\norders:=order&#123;\n    Id:2022032034566\n    OrderSn:20220320122444\n&#125;\n\njsonData,_:=json.Marshal(orders)\n\nvar redisData map[string]interface&#123;&#125;\n\njson.Unmarshal([]byte(jsonData),&amp;redisData)\n\nlog.Info(redisData)\n</code></pre><p>以上就是转化过程。</p>\n",
             "tags": [
                 "go",
                 "结构体转map"

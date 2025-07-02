@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;hyperf&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2025-05-26T13:55:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2025/05/26/webman-hyperf-change/</id>
         <title>webman和hyperf对比解析</title>
         <link rel="alternate" href="https://erik.xyz/2025/05/26/webman-hyperf-change/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;好的，我们来深入探讨一下 &lt;code&gt;webman&lt;/code&gt;、&lt;code&gt;Hyperf&lt;/code&gt; 的底层原理以及 PHP 中注解（Annotations）的实现原理。&lt;/p&gt;
+        <content type="html">&lt;p&gt;好的，我们来深入探讨一下 &lt;code&gt;webman&lt;/code&gt;、&lt;code&gt;Hyperf&lt;/code&gt; 的底层原理以及 PHP 中注解（Annotations）的实现原理。&lt;/p&gt;
 &lt;h2 id=&#34;1-webman-底层原理&#34;&gt;&lt;a href=&#34;#1-webman-底层原理&#34; class=&#34;headerlink&#34; title=&#34;1. webman 底层原理&#34;&gt;&lt;/a&gt;1. webman 底层原理&lt;/h2&gt;&lt;p&gt;&lt;code&gt;webman&lt;/code&gt; 的核心设计理念是 &lt;strong&gt;轻量、高性能、易用&lt;/strong&gt;。它构建在强大的异步事件驱动网络库 &lt;strong&gt;Workerman&lt;/strong&gt; 之上，充分利用了 PHP 的 CLI（命令行接口）模式和事件循环机制，摒弃了传统的 PHP-FPM 模式，从而实现了高性能和高并发。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;h3 id=&#34;核心原理剖析&#34;&gt;&lt;a href=&#34;#核心原理剖析&#34; class=&#34;headerlink&#34; title=&#34;核心原理剖析&#34;&gt;&lt;/a&gt;核心原理剖析&lt;/h3&gt;&lt;ol&gt;
@@ -701,7 +701,7 @@
         <id>https://erik.xyz/2022/01/12/hyperf-errors/</id>
         <title>hyperf异常</title>
         <link rel="alternate" href="https://erik.xyz/2022/01/12/hyperf-errors/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;ul&gt;
+        <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Maximum function nesting level of ‘256’ reached, aborting&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;先跑了所有接口，发现都是这个报错。梳理新增加的接口方法后，直接屏蔽新接口所有方法逻辑，就恢复正常。依次排除法，最终发现在model里面封装的方法调用了service层的方法导致超负荷加载函数嵌套。
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;

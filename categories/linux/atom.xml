@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;linux&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2025-02-13T13:35:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2025/02/13/open-source-esktop-sharing-tool/</id>
         <title>开源桌面共享工具</title>
         <link rel="alternate" href="https://erik.xyz/2025/02/13/open-source-esktop-sharing-tool/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;1-xrdp&#34;&gt;&lt;a href=&#34;#1-xrdp&#34; class=&#34;headerlink&#34; title=&#34;1. xrdp&#34;&gt;&lt;/a&gt;1. &lt;a href=&#34;https://github.com/neutrinolabs/xrdp&#34;&gt;xrdp&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+        <content type="html">&lt;h2 id=&#34;1-xrdp&#34;&gt;&lt;a href=&#34;#1-xrdp&#34; class=&#34;headerlink&#34; title=&#34;1. xrdp&#34;&gt;&lt;/a&gt;1. &lt;a href=&#34;https://github.com/neutrinolabs/xrdp&#34;&gt;xrdp&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：xrdp 是一个开源的远程桌面协议 (RDP) 服务器，允许 Linux 系统通过 Windows 的 RDP 客户端远程访问。它与 Microsoft RDP 协议兼容，能够让你从 Windows 客户端连接到 Linux 系统。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;安装&lt;/strong&gt;：通常可以通过 Linux 的包管理器安装，例如在 Ubuntu 上使用命令：&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install xrdp&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -515,7 +515,7 @@
         <id>https://erik.xyz/2025/01/03/php-serial-port-development/</id>
         <title>php串口开发</title>
         <link rel="alternate" href="https://erik.xyz/2025/01/03/php-serial-port-development/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;使用外置设备，通过串口发送和接收数据。那么，就要在php端有个串口的操作代码。&lt;br&gt;PHP 的 dio 扩展（Direct I/O）提供了对底层 I/O 操作的访问，包括串口通信。通过 dio 扩展，你可以直接操作串口设备文件（如 /dev/ttyUSB0 或 COM1）来实现串口通信。&lt;br&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;使用外置设备，通过串口发送和接收数据。那么，就要在php端有个串口的操作代码。&lt;br&gt;PHP 的 dio 扩展（Direct I/O）提供了对底层 I/O 操作的访问，包括串口通信。通过 dio 扩展，你可以直接操作串口设备文件（如 /dev/ttyUSB0 或 COM1）来实现串口通信。&lt;br&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;1-安装-dio-扩展&#34;&gt;&lt;a href=&#34;#1-安装-dio-扩展&#34; class=&#34;headerlink&#34; title=&#34;1. 安装 dio 扩展&#34;&gt;&lt;/a&gt;1. 安装 dio 扩展&lt;/h3&gt;&lt;p&gt;dio 扩展是 PHP 的一个 PECL 扩展。你可以通过以下步骤安装：&lt;/p&gt;
 &lt;p&gt;在 Linux 上安装：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install php-dev  # 安装 PHP 开发工具&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo pecl install dio         # 安装 dio 扩展&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;安装完成后，在 php.ini 文件中启用扩展：&lt;/p&gt;
@@ -565,7 +565,7 @@
         <id>https://erik.xyz/2024/12/18/maven-intranet-library/</id>
         <title>maven内网库</title>
         <link rel="alternate" href="https://erik.xyz/2024/12/18/maven-intranet-library/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;1-搭建-Maven-私有仓库&#34;&gt;&lt;a href=&#34;#1-搭建-Maven-私有仓库&#34; class=&#34;headerlink&#34; title=&#34;1. 搭建 Maven 私有仓库&#34;&gt;&lt;/a&gt;1. 搭建 Maven 私有仓库&lt;/h4&gt;&lt;p&gt;首先，需要在内网环境中搭建一个 Maven 仓库，常用的私有 Maven 仓库工具有：&lt;/p&gt;
+        <content type="html">&lt;h4 id=&#34;1-搭建-Maven-私有仓库&#34;&gt;&lt;a href=&#34;#1-搭建-Maven-私有仓库&#34; class=&#34;headerlink&#34; title=&#34;1. 搭建 Maven 私有仓库&#34;&gt;&lt;/a&gt;1. 搭建 Maven 私有仓库&lt;/h4&gt;&lt;p&gt;首先，需要在内网环境中搭建一个 Maven 仓库，常用的私有 Maven 仓库工具有：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Nexus Repository：Sonatype Nexus 是最流行的私有 Maven 仓库管理工具。&lt;/li&gt;
 &lt;li&gt;Artifactory：JFrog Artifactory 是另一种流行的构建管理工具，提供了私有仓库的支持。&lt;/li&gt;
@@ -620,7 +620,7 @@
         <id>https://erik.xyz/2024/12/12/intranet-spring-boot-install/</id>
         <title>spring boot内网部署</title>
         <link rel="alternate" href="https://erik.xyz/2024/12/12/intranet-spring-boot-install/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;1-准备环境&#34;&gt;&lt;a href=&#34;#1-准备环境&#34; class=&#34;headerlink&#34; title=&#34;1. 准备环境&#34;&gt;&lt;/a&gt;1. 准备环境&lt;/h4&gt;&lt;p&gt;确保内网中的服务器或机器具备运行 Spring Boot 应用的基本环境：&lt;/p&gt;
+        <content type="html">&lt;h4 id=&#34;1-准备环境&#34;&gt;&lt;a href=&#34;#1-准备环境&#34; class=&#34;headerlink&#34; title=&#34;1. 准备环境&#34;&gt;&lt;/a&gt;1. 准备环境&lt;/h4&gt;&lt;p&gt;确保内网中的服务器或机器具备运行 Spring Boot 应用的基本环境：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;JDK：确保服务器安装了合适版本的 JDK（通常建议使用 Java 8 及以上版本）。&lt;/li&gt;
 &lt;li&gt;Maven/Gradle：根据项目使用的构建工具安装 Maven 或 Gradle。&lt;/li&gt;
@@ -683,7 +683,7 @@
         <id>https://erik.xyz/2024/11/15/deepin-not-login/</id>
         <title>deepin无法登录报错emergency mode</title>
         <link rel="alternate" href="https://erik.xyz/2024/11/15/deepin-not-login/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;由于系统重启后，新安装的微信一直弹出框，卡在那难受。立马强制重启，开机后就一直显示You are in emergency mode……一堆东西，意思是说让进入root用户，查看报错并修复。&lt;/p&gt;
+        <content type="html">&lt;p&gt;由于系统重启后，新安装的微信一直弹出框，卡在那难受。立马强制重启，开机后就一直显示You are in emergency mode……一堆东西，意思是说让进入root用户，查看报错并修复。&lt;/p&gt;
 &lt;p&gt;  有点头大了。&lt;/p&gt;
 &lt;p&gt;  系统命令可以显示，图形界面不显示。&lt;br&gt;  &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;  果断拿出安装系统的u盘，使用u盘启动进入安装界面，按ctrl+alt+f4进入u盘命令界面。输入startx进入u盘图形界面。这下可以看到电脑的挂着盘。根据挂着的盘一个个找根目录盘。找到后使用u盘系统的命令窗口:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo vi /etc/fstab&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt; 注释掉home目录，重启系统。&lt;/p&gt;
@@ -702,7 +702,7 @@
         <id>https://erik.xyz/2021/12/29/about-centos-load-balacnig/</id>
         <title>负载均衡-初谈</title>
         <link rel="alternate" href="https://erik.xyz/2021/12/29/about-centos-load-balacnig/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;当一个项目沉淀一段时间后，随着用户量的提升，用户群体庞大起来。这时候就会出现过多的用户访问导致服务器（单机）供应不足。那么，负载均衡就出现了。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;当一个项目沉淀一段时间后，随着用户量的提升，用户群体庞大起来。这时候就会出现过多的用户访问导致服务器（单机）供应不足。那么，负载均衡就出现了。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;假设我有60w的用户量，那么负载如下图：&lt;/li&gt;
 &lt;/ul&gt;
@@ -799,7 +799,7 @@
         <id>https://erik.xyz/2021/11/15/reids-info-lock/</id>
         <title>细说Redis分布式锁</title>
         <link rel="alternate" href="https://erik.xyz/2021/11/15/reids-info-lock/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;谈起Redis锁，下面三个，算是出现最多的高频词汇：&lt;/p&gt;
+        <content type="html">&lt;p&gt;谈起Redis锁，下面三个，算是出现最多的高频词汇：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Setnx&lt;/li&gt;
 &lt;li&gt;Redlock&lt;/li&gt;
@@ -931,7 +931,7 @@ end
         <id>https://erik.xyz/2021/04/07/redis-about-all/</id>
         <title>关于redis的总结</title>
         <link rel="alternate" href="https://erik.xyz/2021/04/07/redis-about-all/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;基础数据结构&#34;&gt;&lt;a href=&#34;#基础数据结构&#34; class=&#34;headerlink&#34; title=&#34;基础数据结构&#34;&gt;&lt;/a&gt;基础数据结构&lt;/h2&gt;&lt;ul&gt;
+        <content type="html">&lt;h2 id=&#34;基础数据结构&#34;&gt;&lt;a href=&#34;#基础数据结构&#34; class=&#34;headerlink&#34; title=&#34;基础数据结构&#34;&gt;&lt;/a&gt;基础数据结构&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;h3 id=&#34;字符串（string）&#34;&gt;&lt;a href=&#34;#字符串（string）&#34; class=&#34;headerlink&#34; title=&#34;字符串（string）&#34;&gt;&lt;/a&gt;字符串（string）&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;字符串、整数、浮点数&lt;/li&gt;
 &lt;li&gt;对整个字符串或者字符串的其中一部分执行操作，对整数和浮点数执行自增或自减操作&lt;/li&gt;
@@ -1827,7 +1827,7 @@ end
         <id>https://erik.xyz/2020/09/19/inux-doc-lists/</id>
         <title>常用的Linux命令汇总</title>
         <link rel="alternate" href="https://erik.xyz/2020/09/19/inux-doc-lists/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;一.文件和目录&lt;/p&gt;
+        <content type="html">&lt;p&gt;一.文件和目录&lt;/p&gt;
 &lt;p&gt;1.&lt;br&gt;cd命令，用于切换当前目录，它的参数是要切换到的目录的路径，可以是绝对路径，也可以是相对路径。&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  cd /home    进入 &amp;#39;/ home&amp;#39; 目录
   cd ..            返回上一级目录 
@@ -2059,7 +2059,7 @@ killall命令，向一个命令启动的进程发送一个信号，用于杀死�
         <id>https://erik.xyz/2020/08/04/inux-delete-restore/</id>
         <title>linux上恢复误删除的文件或目录</title>
         <link rel="alternate" href="https://erik.xyz/2020/08/04/inux-delete-restore/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;Linux不像windows有那么显眼的回收站，不是简单的还原就可以了。 linux删除文件还原可以分为两种情况，一种是删除以后在进程存在删除信息，一种是删除以后进程都找不到，只有借助于工具还原，这里分别检查介绍下。&lt;/p&gt;
+        <content type="html">&lt;p&gt;Linux不像windows有那么显眼的回收站，不是简单的还原就可以了。 linux删除文件还原可以分为两种情况，一种是删除以后在进程存在删除信息，一种是删除以后进程都找不到，只有借助于工具还原，这里分别检查介绍下。&lt;/p&gt;
 &lt;p&gt;一、误删除文件进程还在的情况。&lt;/p&gt;
 &lt;p&gt;这种一般是有活动的进程存在持续标准输入或输出，到时文件被删除后，进程PID还是存在。这也就是有些服务器删除一些文件但是磁盘不释放的原因。比如当前举例说明： 通过一个shell终端对一个测试文件做cat追加操作：&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;[root@21yunwei_backup ~]# echo  &amp;quot;hello  py&amp;quot; &amp;gt; testdelete.py
@@ -2206,7 +2206,7 @@ tcpdump:x:72:72::/:/sbin/nologin
         <id>https://erik.xyz/2020/05/07/elasticsearch-node/</id>
         <title>linux系统里elasticsearch集群搭建</title>
         <link rel="alternate" href="https://erik.xyz/2020/05/07/elasticsearch-node/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;1-在容器中搜索elasticsearch镜像-如图结果，一般选择最上面的一个。&#34;&gt;&lt;a href=&#34;#1-在容器中搜索elasticsearch镜像-如图结果，一般选择最上面的一个。&#34; class=&#34;headerlink&#34; title=&#34;1.在容器中搜索elasticsearch镜像,如图结果，一般选择最上面的一个。&#34;&gt;&lt;/a&gt;1.在容器中搜索elasticsearch镜像,如图结果，一般选择最上面的一个。&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;    sudo docker search elasticsearch
+        <content type="html">&lt;h2 id=&#34;1-在容器中搜索elasticsearch镜像-如图结果，一般选择最上面的一个。&#34;&gt;&lt;a href=&#34;#1-在容器中搜索elasticsearch镜像-如图结果，一般选择最上面的一个。&#34; class=&#34;headerlink&#34; title=&#34;1.在容器中搜索elasticsearch镜像,如图结果，一般选择最上面的一个。&#34;&gt;&lt;/a&gt;1.在容器中搜索elasticsearch镜像,如图结果，一般选择最上面的一个。&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;    sudo docker search elasticsearch
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://erik.xyz/img/202005/07/2020-05-07_114446.jpg&#34; alt=&#34;&amp;#39;es图&amp;#39;&#34;&gt;&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;h2 id=&#34;2-到elasticsearch官方网站查询elasticsearch的版本，我用的是最新版7-6-2&#34;&gt;&lt;a href=&#34;#2-到elasticsearch官方网站查询elasticsearch的版本，我用的是最新版7-6-2&#34; class=&#34;headerlink&#34; title=&#34;2.到elasticsearch官方网站查询elasticsearch的版本，我用的是最新版7.6.2&#34;&gt;&lt;/a&gt;2.到elasticsearch官方网站查询elasticsearch的版本，我用的是最新版7.6.2&lt;/h2&gt;&lt;h2 id=&#34;3-拉镜像到本地&#34;&gt;&lt;a href=&#34;#3-拉镜像到本地&#34; class=&#34;headerlink&#34; title=&#34;3.拉镜像到本地&#34;&gt;&lt;/a&gt;3.拉镜像到本地&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;    sudo docker pull elasticsearch:7.6.2
@@ -2419,7 +2419,7 @@ xpack.monitoring.ui.container.elasticsearch.enabled: true
         <id>https://erik.xyz/2020/03/26/openresty-desc/</id>
         <title>openresty的介绍</title>
         <link rel="alternate" href="https://erik.xyz/2020/03/26/openresty-desc/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;今天给一家公司投简历，问我用过openresty没，确实没用过，回答后没结果了。这就查了查。&lt;/p&gt;
+        <content type="html">&lt;p&gt;今天给一家公司投简历，问我用过openresty没，确实没用过，回答后没结果了。这就查了查。&lt;/p&gt;
 &lt;p&gt;官方介绍如下：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;        OpenResty® 是一个基于 Nginx 与 Lua 的高性能 Web 平台，其内部集成了大量精良的 Lua 库、第三方模块以及大多数的依赖项。用于方便地搭建能够处理超高并发、扩展性极高的动态 Web 应用、Web 服务和动态网关。
 
@@ -2477,7 +2477,7 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
         <id>https://erik.xyz/2019/09/16/dai-li-fu-wu-qi-da-jian/</id>
         <title>代理服务搭建</title>
         <link rel="alternate" href="https://erik.xyz/2019/09/16/dai-li-fu-wu-qi-da-jian/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;代理服务器（Proxy）主要是用户有因特网数据要求时，Proxy会帮用户去向目的地取得用户所需要的数据。&lt;/p&gt;
+        <content type="html">&lt;p&gt;代理服务器（Proxy）主要是用户有因特网数据要求时，Proxy会帮用户去向目的地取得用户所需要的数据。&lt;/p&gt;
 &lt;h5 id=&#34;Proxy获取信息的工作流程&#34;&gt;&lt;a href=&#34;#Proxy获取信息的工作流程&#34; class=&#34;headerlink&#34; title=&#34;Proxy获取信息的工作流程&#34;&gt;&lt;/a&gt;Proxy获取信息的工作流程&lt;/h5&gt;&lt;ul&gt;
 &lt;li&gt;当Proxy的缓存拥有用户所想要的数据时&lt;ul&gt;
 &lt;li&gt;Client端向Server端发送一个数据需求数据包。&lt;/li&gt;
@@ -2683,7 +2683,7 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
         <id>https://erik.xyz/2019/06/18/kali-zhuo-mian-you-jian-han-hua/</id>
         <title>kali桌面右键汉化</title>
         <link rel="alternate" href="https://erik.xyz/2019/06/18/kali-zhuo-mian-you-jian-han-hua/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;本来用了好久的kali自己笔记本已经配置的比较完美，老项目用的是php5.6。用自己的笔记本，然后各种折腾，结果系统根本不支持php5.6。我的完美系统被搞砸了，熬夜折腾回来一部分，php5.6只好用docker安装。最近离职了，彻底离职了。kali右键不显示中文问题还没解决，今天处理一下。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;本来用了好久的kali自己笔记本已经配置的比较完美，老项目用的是php5.6。用自己的笔记本，然后各种折腾，结果系统根本不支持php5.6。我的完美系统被搞砸了，熬夜折腾回来一部分，php5.6只好用docker安装。最近离职了，彻底离职了。kali右键不显示中文问题还没解决，今天处理一下。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt; 根据搜索引擎得到的结果，桌面图标有两种解决方法安装desktop-icons-enhanced或者nemo插件之前用过nemo隐隐约约记得是用nemo解决的。今天就试试。&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install nemo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt; 安装nemo。然后创建desktop并编辑&lt;/p&gt;
@@ -2702,7 +2702,7 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
         <id>https://erik.xyz/2019/05/30/linux-yun-xing-bu-cun-zai-de-bao-cuo-ming-ling/</id>
         <title>linux运行不存在的命令报错</title>
         <link rel="alternate" href="https://erik.xyz/2019/05/30/linux-yun-xing-bu-cun-zai-de-bao-cuo-ming-ling/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h6 id=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;a href=&#34;#在Linux中运行一个命令尝试是否存在，突然报错了&#34; class=&#34;headerlink&#34; title=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#在Linux中运行一个命令尝试是否存在，突然报错了&#34; title=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;/a&gt;在Linux中运行一个命令尝试是否存在，突然报错了&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-48.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&amp;gt; Could not find the database of available applications, run update-command-not-found as root to fix this&lt;/p&gt;
+        <content type="html">&lt;h6 id=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;a href=&#34;#在Linux中运行一个命令尝试是否存在，突然报错了&#34; class=&#34;headerlink&#34; title=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#在Linux中运行一个命令尝试是否存在，突然报错了&#34; title=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;/a&gt;在Linux中运行一个命令尝试是否存在，突然报错了&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-48.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&amp;gt; Could not find the database of available applications, run update-command-not-found as root to fix this&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Sorry, command-not-found has crashed! Please file a bug report at:&lt;br&gt;&lt;a href=&#34;http://www.debian.org/Bugs/Reporting&#34;&gt;http://www.debian.org/Bugs/Reporting&lt;/a&gt;&lt;br&gt;Please include the following information with the report:&amp;gt; command-not-found version: 0.3&lt;br&gt;Python version: 3.7.3 candidate 1&lt;br&gt;Distributor ID:    Kali&lt;br&gt;Description:    Kali GNU/Linux Rolling&lt;br&gt;Release:    2019.2&lt;br&gt;Codename:    n/a&lt;br&gt;Exception information:&amp;gt; local variable ‘cnf’ referenced before assignment&lt;br&gt;Traceback (most recent call last):&lt;br&gt;  File “/usr/share/command-not-found/CommandNotFound/util.py”, line 23, in crash_guard&lt;br&gt;    callback()&lt;br&gt;  File “/usr/lib/command-not-found”, line 93, in main&lt;br&gt;    if not cnf.advise(args[0], options.ignore_installed) and not options.no_failure_msg:&lt;br&gt;UnboundLocalError: local variable ‘cnf’ referenced before assignment&amp;gt; 根据报错提示需要以root用户运行update-commond-not-found&amp;gt; 结果又报错了&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-49.png&#34; alt=&#34;&#34;&gt;&amp;gt; 根据报错提示执行编辑报错文件&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-50_1.png&#34; alt=&#34;&#34;&gt;&amp;gt; 打开报错文件找到如图&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-51.png&#34; alt=&#34;&#34;&gt;&amp;gt; 如有同样报错，继续编辑报错文件，添加所报错的缺失项&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-49_1.png&#34; alt=&#34;&#34;&gt;&amp;gt; 最后执行自己的测试命令，就不存在错误了&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-52.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2717,7 +2717,7 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
         <id>https://erik.xyz/2017/12/01/centos-shang-ru-he-an-zhuang-steam/</id>
         <title>centos上如何安装steam</title>
         <link rel="alternate" href="https://erik.xyz/2017/12/01/centos-shang-ru-he-an-zhuang-steam/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;最近想把win系统的东西统统转到centos上，偶然发现爱你deepin竟然之steam。去官网查到steam有deb的安装包。 然后就自己尝试把deb转成rpm好像能安装成功就是，总是报错GPU无法渲染，痛苦。&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-11-27-46-的屏幕截图.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;意外的发现steam有一个安装yum支持。 添加安装源 yum-config-manager —add-repo&lt;/p&gt;
+        <content type="html">&lt;p&gt;最近想把win系统的东西统统转到centos上，偶然发现爱你deepin竟然之steam。去官网查到steam有deb的安装包。 然后就自己尝试把deb转成rpm好像能安装成功就是，总是报错GPU无法渲染，痛苦。&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-11-27-46-的屏幕截图.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;意外的发现steam有一个安装yum支持。 添加安装源 yum-config-manager —add-repo&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAsZOF0aZ3nolIs4smsi7XcaVy9iE2/DAeMYM23XArLL/Pcg4iOwT6wY4qa+xKqX1jFqj6RVAA1ROAXD85Awz94K2uSdvSjzCTeuIai3OgnuzBVWKO/W++3xWZWJPUQllzP0RWHiYm/X80/TKe9kSg+odj2oeHoEzTI=&#34; alt=&#34;http://negativo17.org/repos/epel-steam.repo&#34;&gt;  &lt;/p&gt;
 &lt;p&gt;执行安装steam yum -y install steam 直接提示报错&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-12-47-57-的屏幕截图.png&#34; alt=&#34;&#34;&gt; &lt;/p&gt;
 &lt;p&gt;那就去软件仓库搜索一下 &lt;a href=&#34;https://www.rpmfind.net/linux/rpm2html/search.php?query=libva-intel-driver&amp;amp;submit=Search+...&amp;amp;system=&amp;amp;arch=&#34;&gt;https://www.rpmfind.net/linux/rpm2html/search.php?query=libva-intel-driver&amp;amp;submit=Search+...&amp;amp;system=&amp;amp;arch=&lt;/a&gt;&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-12-52-12-的屏幕截图.png&#34; alt=&#34;&#34;&gt; &lt;/p&gt;
@@ -2735,7 +2735,7 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
         <id>https://erik.xyz/2017/11/25/centos-ru-he-an-zhuang-deb-ruan-jian-bao-yuan-ming-linux-xi-tong-xia-zen-me-yong-checkinstall-cong-yuan-ma-chuang-jian-yi-ge-rpm-huo-deb-bao/</id>
         <title>centos如何安装deb软件包/rpm转换成deb(原名：Linux系统下怎么用CheckInstall从源码创建一个RPM或DEB包)</title>
         <link rel="alternate" href="https://erik.xyz/2017/11/25/centos-ru-he-an-zhuang-deb-ruan-jian-bao-yuan-ming-linux-xi-tong-xia-zen-me-yong-checkinstall-cong-yuan-ma-chuang-jian-yi-ge-rpm-huo-deb-bao/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;正如我确信，你们一定知道Linux下的多种软件安装方式：使用发行版所提供的包管理系统（&lt;a href=&#34;http://www.tecmint.com/linux-package-management/&#34;&gt;aptitude，yum，或者zypper&lt;/a&gt;，还可以举很多例子），从源码编译（尽管现在很少用了，但在Linux发展早期却是唯一可用的方法），或者使用各自的低级工具dpkg用于.deb，以及rpm用于.rpm，预编译包，如此这般。&lt;/p&gt;
+        <content type="html">&lt;p&gt;正如我确信，你们一定知道Linux下的多种软件安装方式：使用发行版所提供的包管理系统（&lt;a href=&#34;http://www.tecmint.com/linux-package-management/&#34;&gt;aptitude，yum，或者zypper&lt;/a&gt;，还可以举很多例子），从源码编译（尽管现在很少用了，但在Linux发展早期却是唯一可用的方法），或者使用各自的低级工具dpkg用于.deb，以及rpm用于.rpm，预编译包，如此这般。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://www.linuxidc.com/upload/2015_09/150902085681941.png&#34; alt=&#34;Convert RPM to DEB and DEB to RPM&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;em&gt;使用Alien将RPM转换成DEB以及将DEB转换成RPM&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;在本文中，我们将为你介绍alien，一个用于在各种不同的Linux包格式相互转换的工具，其最常见的用法是将.rpm转换成.deb（或者反过来）。 如果你需要某个特定类型的包，而你只能找到其它格式的包的时候，该工具迟早能派得上用场——即使是其作者不再维护，并且在其网站声明：alien将可能永远维持在实验状态。 例如，有一次，我正查找一个用于喷墨打印机的.deb驱动，但是却没有找到——生产厂家只提供.rpm包，这时候alien拯救了我。我安装了alien，将包进行转换，不久之后我就可以使用我的打印机了，没有任何问题。 即便如此，我们也必须澄清一下，这个工具不应当用来转换重要的系统文件和库，因为它们在不同的发行版中有不同的配置。只有在前面说的那种情况下所建议的安装方法根本不适合时，alien才能作为最后手段使用。 最后一项要点是，我们必须注意，虽然我们在本文中使用&lt;a href=&#34;http://www.linuxidc.com/topicnews.aspx?tid=14&#34; title=&#34;CentOS&#34;&gt;CentOS&lt;/a&gt;和Debian，除了前两个发行版及其各自的家族体系外，据我们所知，alien可以工作在Slackware中，甚至Solaris中。  &lt;/p&gt;
 &lt;h4 id=&#34;步骤1：安装Alien及其依赖包&#34;&gt;&lt;a href=&#34;#步骤1：安装Alien及其依赖包&#34; class=&#34;headerlink&#34; title=&#34;步骤1：安装Alien及其依赖包&#34;&gt;&lt;/a&gt;步骤1：安装Alien及其依赖包&lt;/h4&gt;&lt;p&gt;要安装alien到CentOS/RHEL 7中，你需要启用EPEL和Nux Dextop（是的，是Dextop——不是Desktop）仓库，顺序如下：&lt;/p&gt;
@@ -2841,7 +2841,7 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
         <id>https://erik.xyz/2017/11/24/centos7-an-zhuang-redis-desktop-manager-de-yi-bo-san-zhe/</id>
         <title>centos7安装Redis Desktop Manager的一波三折</title>
         <link rel="alternate" href="https://erik.xyz/2017/11/24/centos7-an-zhuang-redis-desktop-manager-de-yi-bo-san-zhe/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;一波三折的centos7安装redis desktop 根据官方reids桌面去github下载对应的编译包，然而根目录下3rdparty好多空的文件夹，只好去git上一一对应下载 cd ./src ./configure 后会提示执行 qmake-qt5 如果你直接执行就会报错，找不到命令。与编译已经安装了，没有启用全局命令，你得到安装目录下执行。 例如我的 /usr/lib64/qt5/bin/qmake-qt5 然后执行 make 如果报错cahrts不存在就安装qtcharts&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;一波三折的centos7安装redis desktop 根据官方reids桌面去github下载对应的编译包，然而根目录下3rdparty好多空的文件夹，只好去git上一一对应下载 cd ./src ./configure 后会提示执行 qmake-qt5 如果你直接执行就会报错，找不到命令。与编译已经安装了，没有启用全局命令，你得到安装目录下执行。 例如我的 /usr/lib64/qt5/bin/qmake-qt5 然后执行 make 如果报错cahrts不存在就安装qtcharts&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;git clone &lt;a href=&#34;https://github.com/erikaaron/qtcharts&#34;&gt;https://github.com/erikaaron/qtcharts&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;cd qtcharts&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;git checkout&lt;/strong&gt; &lt;strong&gt;5.7&lt;/strong&gt;&lt;/p&gt;
@@ -2866,7 +2866,7 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
         <id>https://erik.xyz/2017/09/29/wget-zhua-qu-wang-zhan/</id>
         <title>wget抓取网站</title>
         <link rel="alternate" href="https://erik.xyz/2017/09/29/wget-zhua-qu-wang-zhan/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;最近需要套个模板，当然模板不需去购买。那就抓取一个，百度一下发现wget是个不错的用法。&lt;br&gt;wget -r -p -np -k  &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;   就可抓取整个站点模板到本地。&lt;/p&gt;
+        <content type="html">&lt;p&gt;最近需要套个模板，当然模板不需去购买。那就抓取一个，百度一下发现wget是个不错的用法。&lt;br&gt;wget -r -p -np -k  &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;   就可抓取整个站点模板到本地。&lt;/p&gt;
 &lt;p&gt;然后打包压缩，拷贝到win电脑就可以修修改改。&lt;br&gt;顺便查查wget使用方法&lt;br&gt;-a&amp;lt;日志文件&amp;gt;：在指定的日志文件中记录资料的执行过程；&lt;/p&gt;
 &lt;p&gt;-A&amp;lt;后缀名&amp;gt;：指定要下载文件的后缀名，多个后缀名之间使用逗号进行分隔； &lt;/p&gt;
 &lt;p&gt;-b：进行后台的方式运行wget； &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -2899,7 +2899,7 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
         <id>https://erik.xyz/2017/06/29/hadoop2-8-0-de-bu-shu-an-zhuang-jiao-cheng/</id>
         <title>hadoop2.8.0的部署安装教程</title>
         <link rel="alternate" href="https://erik.xyz/2017/06/29/hadoop2-8-0-de-bu-shu-an-zhuang-jiao-cheng/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;Hadoop部署准备 本地vmware安装 Linux系统家族中 centos7 下载地址&lt;a href=&#34;http://101.110.118.58/isoredirect.centos.org/centos/7/isos/x86\_64/CentOS-7-x86\_64-Minimal-1611.iso&#34;&gt;http://101.110.118.58/isoredirect.centos.org/centos/7/isos/x86\_64/CentOS-7-x86\_64-Minimal-1611.iso&lt;/a&gt;   Java对应版本1.8.0_121   Hadoop版本2.8.0下载地址 &lt;a href=&#34;http://mirror.bit.edu.cn/apache/hadoop/common/&#34;&gt;http://mirror.bit.edu.cn/apache/hadoop/common/&lt;/a&gt; 可以根据自己喜好的版本下载&lt;/p&gt;
+        <content type="html">&lt;p&gt;Hadoop部署准备 本地vmware安装 Linux系统家族中 centos7 下载地址&lt;a href=&#34;http://101.110.118.58/isoredirect.centos.org/centos/7/isos/x86\_64/CentOS-7-x86\_64-Minimal-1611.iso&#34;&gt;http://101.110.118.58/isoredirect.centos.org/centos/7/isos/x86\_64/CentOS-7-x86\_64-Minimal-1611.iso&lt;/a&gt;   Java对应版本1.8.0_121   Hadoop版本2.8.0下载地址 &lt;a href=&#34;http://mirror.bit.edu.cn/apache/hadoop/common/&#34;&gt;http://mirror.bit.edu.cn/apache/hadoop/common/&lt;/a&gt; 可以根据自己喜好的版本下载&lt;/p&gt;
 &lt;h1 id=&#34;1-基本配置&#34;&gt;&lt;a href=&#34;#1-基本配置&#34; class=&#34;headerlink&#34; title=&#34;1.基本配置&#34;&gt;&lt;/a&gt;1.基本配置&lt;/h1&gt;&lt;p&gt;首先安装一个centos7并配置好java Java环境配置 我的java安装地址 /usr/java/ jdk1.8.0_121   编辑java环境 vi ~/.bash_profile 添加或修改 export JAVA_HOME=/usr/java/jdk1.8.0_121 export PATH=$JAVA_HOME/bin:$PATH 执行 . ~/.bash_profile 使变量生效  &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&#34;2-ssh配置&#34;&gt;&lt;a href=&#34;#2-ssh配置&#34; class=&#34;headerlink&#34; title=&#34;2.ssh配置&#34;&gt;&lt;/a&gt;2.ssh配置&lt;/h1&gt;&lt;p&gt;先 yum install ssh  安装   然后执行 ssh-keygen -t dsa -P ‘’ -f ~/.ssh/id_dsa 生成密匙&lt;/p&gt;
 &lt;h1 id=&#34;3-hadoop配置&#34;&gt;&lt;a href=&#34;#3-hadoop配置&#34; class=&#34;headerlink&#34; title=&#34;3.hadoop配置&#34;&gt;&lt;/a&gt;3.hadoop配置&lt;/h1&gt;&lt;p&gt;把下载好的hadoop解压出来。（我的地址在/roo目录,即完整地址/root/hadoop）   配置环境变量 vi ~/.bash_profile export HADOOP_HOME=/root/hadoop export PATH=$JAVA_HOME/bin:$PATH:$HOME/bin:$HADOOP_HOME/bin 执行 . ~/.bash_profile 使变量生效  &lt;/p&gt;

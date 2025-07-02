@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Thu, 11 Jul 2019 19:13:00 +0800</pubDate>
         <lastBuildDate>Thu, 11 Jul 2019 19:13:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>生成唯一id</category>
             <category>生成id</category>
             <pubDate>Thu, 11 Jul 2019 19:13:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;开发的大多数项目并未接触到百万级并发，但是一直以来有个id生成的纠结。我一般就是年月日+随机数生成唯一id,一般来说生成一个备用随机数据，不重复每次一次取值隔天重新从第一个开始取。虽然是可以解决，总感觉这个有点繁琐，仔细查查资料研究了一下，&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;在&lt;a href=&#34;https://blog.csdn.net/hero272285642/article/details/79168601z&#34;&gt;这里&lt;/a&gt;有提到uuid、Vesta、Twitter-Snowflake等。从文章中uuid在php中已经有专门的扩展或者写法生成唯一字符串在大并发数据中处理效率还是不够好。其他几中方法有用到数据库……&lt;br&gt;  这对雪花算法我查了查资料发现还是值得操作一番。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;开发的大多数项目并未接触到百万级并发，但是一直以来有个id生成的纠结。我一般就是年月日+随机数生成唯一id,一般来说生成一个备用随机数据，不重复每次一次取值隔天重新从第一个开始取。虽然是可以解决，总感觉这个有点繁琐，仔细查查资料研究了一下，&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;在&lt;a href=&#34;https://blog.csdn.net/hero272285642/article/details/79168601z&#34;&gt;这里&lt;/a&gt;有提到uuid、Vesta、Twitter-Snowflake等。从文章中uuid在php中已经有专门的扩展或者写法生成唯一字符串在大并发数据中处理效率还是不够好。其他几中方法有用到数据库……&lt;br&gt;  这对雪花算法我查了查资料发现还是值得操作一番。&lt;/p&gt;
 &lt;p&gt;雪花算法的基本描述&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;1.最高位是符号位，始终为0，不可用。 2.41位的时间序列，精确到毫秒级，41位的长度可以使用69年。时间位还有一个很重要的作用是可以根据时间进行排序。3.10位的机器标识，10位的长度最多支持部署1024个节点。4.12位的计数序列号，序列号即一系列的自增id，可以支持同一节点同一毫秒生成多个ID序号，12位的计数序列号支持每个节点每毫秒产生4096个ID序号。
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;根据以上描述及参考&lt;a href=&#34;https://blog.csdn.net/jerryyang_2017/article/details/80334580&#34;&gt;雪花算法及运用PHP&lt;/a&gt;、&lt;a href=&#34;https://blog.csdn.net/u013636118/article/details/91042838&#34;&gt;基于php的雪花算法&lt;/a&gt;等内容我的本地测试&lt;br&gt;代码如下：&lt;/p&gt;

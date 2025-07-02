@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;搜索引擎&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2015-01-10T13:21:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2015/01/10/ji-yu-sphinx-gou-jian-zhun-shi-shi-geng-xin-de-fen-bu-shi-tong-yong-sou-suo-yin-qing-ping-tai/</id>
         <title>基于Sphinx构建准实时更新的分布式通用搜索引擎平台</title>
         <link rel="alternate" href="https://erik.xyz/2015/01/10/ji-yu-sphinx-gou-jian-zhun-shi-shi-geng-xin-de-fen-bu-shi-tong-yong-sou-suo-yin-qing-ping-tai/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者：张宴 前言： 2008年7月，我写过一篇文章《&lt;a href=&#34;http://blog.zyan.cc/post/360/&#34;&gt;基于Sphinx+MySQL的千万级数据全文检索（搜索引擎）架构设计&lt;/a&gt;》。有不少网友希望阅读全文，我将该文档整理了一下，分享出来。文档解压后大小为7.33M，共19页。 &lt;strong&gt;本站下载地址：&lt;/strong&gt; &lt;a href=&#34;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&#34;&gt;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&lt;/a&gt; &lt;strong&gt;新浪下载分流：&lt;/strong&gt; &lt;a href=&#34;http://ishare.iask.sina.com.cn/f/6728201.html&#34;&gt;http://ishare.iask.sina.com.cn/f/6728201.html&lt;/a&gt; 上述文档架构存在的局限，我在2008年12月的文章《&lt;a href=&#34;http://blog.zyan.cc/post/385/&#34;&gt;亿级数据的高并发通用搜索引擎架构设计&lt;/a&gt;》 中已经指出：一是MySQL本身的并发能力有限，在200～300个并发连接下，查询和更新就比较慢了；二是由于MySQL表的主键与Sphinx索引的 ID一一对应，从而无法跨多表建立整站查询，而且新增加类别还得修改配置文件，比较麻烦；三是因为和MySQL集成，无法发挥出Sphinx的优势。虽然 如此，但对于一些写入量不大的搜索应用，已经足够了，或许对很多人会有帮助。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;作者：张宴 前言： 2008年7月，我写过一篇文章《&lt;a href=&#34;http://blog.zyan.cc/post/360/&#34;&gt;基于Sphinx+MySQL的千万级数据全文检索（搜索引擎）架构设计&lt;/a&gt;》。有不少网友希望阅读全文，我将该文档整理了一下，分享出来。文档解压后大小为7.33M，共19页。 &lt;strong&gt;本站下载地址：&lt;/strong&gt; &lt;a href=&#34;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&#34;&gt;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&lt;/a&gt; &lt;strong&gt;新浪下载分流：&lt;/strong&gt; &lt;a href=&#34;http://ishare.iask.sina.com.cn/f/6728201.html&#34;&gt;http://ishare.iask.sina.com.cn/f/6728201.html&lt;/a&gt; 上述文档架构存在的局限，我在2008年12月的文章《&lt;a href=&#34;http://blog.zyan.cc/post/385/&#34;&gt;亿级数据的高并发通用搜索引擎架构设计&lt;/a&gt;》 中已经指出：一是MySQL本身的并发能力有限，在200～300个并发连接下，查询和更新就比较慢了；二是由于MySQL表的主键与Sphinx索引的 ID一一对应，从而无法跨多表建立整站查询，而且新增加类别还得修改配置文件，比较麻烦；三是因为和MySQL集成，无法发挥出Sphinx的优势。虽然 如此，但对于一些写入量不大的搜索应用，已经足够了，或许对很多人会有帮助。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;正文： 在这之后，本人基于《&lt;a href=&#34;http://blog.zyan.cc/post/385/&#34;&gt;亿级数据的高并发通用搜索引擎架构设计&lt;/a&gt;》开发的Sphinx分布式通用站内搜索引擎平台，已经在生产环境运行9个月以上，经过运营中的不断完善与改进，目前已形成了一套可扩展的分布式通用站内搜索引擎框架。CMS、视频、论坛等产品发生的增、删、改操作，文本内容实时写入自行开发的 &lt;a href=&#34;http://blog.zyan.cc/httpsqs&#34;&gt;HTTPSQS&lt;/a&gt; 高性能简单消息队列服务，通过队列控制器更新索引和存储。提供支持XML、JSON的API查询接口，支持亿级数据的索引、分布式、中文分词、高亮显示、自动摘要、准实时（1分钟内）增量索引更新。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://zyan.cc/attachment/201002/search_system.png&#34;&gt;&lt;img src=&#34;http://zyan.cc/attachment/201002/search_system.png&#34; alt=&#34;点击在新窗口中浏览此图片&#34; title=&#34;点击在新窗口中浏览此图片&#34;&gt;&lt;/a&gt; &lt;/p&gt;

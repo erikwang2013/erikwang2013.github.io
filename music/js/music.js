@@ -1,8 +1,6 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>// 音乐播放插件 
+// 音乐播放插件 
 // 只包括播放暂停，下一曲  以及显示歌曲名称 歌手以及 实时进度
-// github： https://github.com/IFmiss/music
 
-(function($,window){
     var DW = {};
     //音乐播放器插件
     DW.music = function(options) {
@@ -99,13 +97,7 @@
                     left:opt.left,
                     right:opt.right,
                     top:opt.top,
-                    '-webkit-transform':'translate3d(-50%,-50%,0)',
-                    '-moz-transform':'translate3d(-50%,-50%,0)',
-                    'transform':'translate3d(-50%,-50%,0)',
-                    '-webkit-transform':'translate(-50%,-50%)',
-                    '-moz-transform':'translate(-50%,-50%)',
-                    'transform':'translate(-50%,-50%)',
-                }).appendTo($('body'));
+                }).appendTo($('.music-song'));
             }else{
                 _this.cpt_music = $('<div class="cpt-dw-music music-div active"></div>').css({
                     width:opt.width,
@@ -114,16 +106,9 @@
                     left:opt.left,
                     right:opt.right,
                     top:opt.top,
-                    '-webkit-transform':'translate3d(-50%,-50%,0)',
-                    '-moz-transform':'translate3d(-50%,-50%,0)',
-                    'transform':'translate3d(-50%,-50%,0)',
-                    '-webkit-transform':'translate(-50%,-50%)',
-                    '-moz-transform':'translate(-50%,-50%)',
-                    'transform':'translate(-50%,-50%)',
-                }).appendTo($('body'));
+                }).appendTo($('.music-song'));
             }
             _this.music_play = $('<div class="music-play-div"></div>').appendTo(_this.cpt_music);
-
             if(opt.hasSelect && opt.hasAjax){
                 //选择音乐类型
                 _this.music_typeSelect = $('<div class="music-typeSelect"></div>').appendTo(_this.cpt_music);
@@ -753,5 +738,4 @@
         }
     }
 
-    window.MC = DW;
-})(jQuery,window)
+ 

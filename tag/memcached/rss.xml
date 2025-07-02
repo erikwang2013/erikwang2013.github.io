@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Mon, 06 Oct 2014 18:12:00 +0800</pubDate>
         <lastBuildDate>Mon, 06 Oct 2014 18:12:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -476,7 +476,7 @@
             <category>memcache</category>
             <category>memcached</category>
             <pubDate>Mon, 06 Oct 2014 18:12:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;memcached 高速缓存工具（linux） wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;libevent-1.4.14b-stable.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;memcached-1.4.20.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;memcache-2.2.1.tgz&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;memcached 高速缓存工具（linux） wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;libevent-1.4.14b-stable.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;memcached-1.4.20.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;memcache-2.2.1.tgz&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -486,7 +486,7 @@
             <category>memcached</category>
             <category>高级缓存配置</category>
             <pubDate>Mon, 06 Oct 2014 17:37:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;memcached配置好久没怎么搞懂，今天就试试还真弄成了 首先，下载文件 wget  &lt;a href=&#34;http://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;http://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&lt;/a&gt; wget  &lt;a href=&#34;http://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;http://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&lt;/a&gt; wget  &lt;a href=&#34;http://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;http://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&lt;/a&gt; 如果新手不太懂命令下载可以直接点击下面的下载到本地。然后再用ftp上传到服务器 &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;libevent-1.4.14b-stable.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;memcached-1.4.20.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;memcache-2.2.1.tgz&lt;/a&gt; 因为考虑到文件的完整性建议最好在服务器上解压 解压文件 tar xzfv  libevent-1.4.14b-stable.tar.gz 给权限 chmod -R 777 libevent-1.4.14b-stable 进入文件 cd libevent-1.4.14b-stable 一次编译安装 ./configure   (这里也可以指定，目录根据自己实际情况来选择) make &amp;amp;&amp;amp; make install 笔者默认安装到&lt;strong&gt;/usr/local/lib/&lt;/strong&gt;目录&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;memcached配置好久没怎么搞懂，今天就试试还真弄成了 首先，下载文件 wget  &lt;a href=&#34;http://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;http://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&lt;/a&gt; wget  &lt;a href=&#34;http://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;http://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&lt;/a&gt; wget  &lt;a href=&#34;http://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;http://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&lt;/a&gt; 如果新手不太懂命令下载可以直接点击下面的下载到本地。然后再用ftp上传到服务器 &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;libevent-1.4.14b-stable.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;memcached-1.4.20.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;memcache-2.2.1.tgz&lt;/a&gt; 因为考虑到文件的完整性建议最好在服务器上解压 解压文件 tar xzfv  libevent-1.4.14b-stable.tar.gz 给权限 chmod -R 777 libevent-1.4.14b-stable 进入文件 cd libevent-1.4.14b-stable 一次编译安装 ./configure   (这里也可以指定，目录根据自己实际情况来选择) make &amp;amp;&amp;amp; make install 笔者默认安装到&lt;strong&gt;/usr/local/lib/&lt;/strong&gt;目录&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;安装memcached&#34;&gt;&lt;a href=&#34;#安装memcached&#34; class=&#34;headerlink&#34; title=&#34;安装memcached&#34;&gt;&lt;/a&gt;安装memcached&lt;/h3&gt;&lt;p&gt;如上依次解压 memcached-1.4.20.tar.gz tar zxvf memcached-1.4.20.tar.gz chmod -R 777 memcached-1.4.20 ./configure  —prefix=/local/memcached   (这里笔者指定了安装目录) make &amp;amp;&amp;amp; make install 然后启动一下 ./memcached -d -u nobody -m 512 127.0.0.1 -p 11211&lt;/p&gt;
 &lt;h3 id=&#34;安装memcache-php模块&#34;&gt;&lt;a href=&#34;#安装memcache-php模块&#34; class=&#34;headerlink&#34; title=&#34;安装memcache php模块&#34;&gt;&lt;/a&gt;安装memcache php模块&lt;/h3&gt;&lt;p&gt;tar zxvf memcache-2.2.1.tgz chmod -R 777 memcache-2.2.1 cd memcache-2.2.1 找一下phpize 一般是在php目录下的bin里面，笔者目录是/alidata/php/bin/phpize 输入 /alidata/php/bin/phpize ./configure —enable-memcache=/alidata/memcache/bin/memcached —with-php-config=/alidata/php/bin/php-config make &amp;amp;&amp;amp; make install 然后修改php.ini vi /alidata/php/etc/php.ini 把extension_dir = “./“ 修改为extension_dir = “/alidata/php/lib/php/extensions/no-debug-non-zts-20060613”  （一般自动都生成了） 然后在下一行添加 extension=”memcache.so”   重启httpd，在phpinfo.php中就可以看到 [caption id=”attachment_48” align=”alignnone” width=”300”]&lt;a href=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/20141006180621.png&#34;&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/20141006180621-300x177.png&#34; alt=&#34;memcache安装成功图片&#34;&gt;&lt;/a&gt; memcache安装成功图片[/caption]&lt;/p&gt;
  ]]></description>

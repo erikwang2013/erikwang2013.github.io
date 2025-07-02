@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Fri, 29 May 2015 18:32:00 +0800</pubDate>
         <lastBuildDate>Fri, 29 May 2015 18:32:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>jquery插件</category>
             <category>js</category>
             <pubDate>Fri, 29 May 2015 18:32:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;strong&gt;QMeter&lt;/strong&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;strong&gt;QMeter&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://s6.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul1YGSTw_AAABnpCBMYME808.jpg&#34;&gt;&lt;img src=&#34;http://s6.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul1YGSTw_AAABnpCBMYME808.jpg&#34; alt=&#34;2015年4月15个免费的jQuery插件中文详解&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;jQMeter是一款简便的轻量化jQuery插件，允许大家以动画方式显示横向或者纵向进程表。其目前提供目标及具体数量的增长或完成显示效果，大家也可以点击此处查看其它可选功能。 &lt;strong&gt;Prism Effect Slider&lt;/strong&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://s4.51cto.com/wyfs02/M01/5D/DD/wKiom1Ul1PXTE-j1AACjqWKfedE195.jpg&#34;&gt;&lt;img src=&#34;http://s4.51cto.com/wyfs02/M01/5D/DD/wKiom1Ul1PXTE-j1AACjqWKfedE195.jpg&#34; alt=&#34;2015年4月15个免费的jQuery插件中文详解&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -516,7 +516,7 @@
             <category>js</category>
             <category>js插件</category>
             <pubDate>Tue, 14 Apr 2015 23:18:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;Bootstrap是基于HTML，CSS和JavaScript的简洁灵活的流行前端框架及交互组件集，由微博先驱Twitter在2011年8 月开源的整套前端解决解决方案，拥有非常完备和详尽的开发文档，有了它，Web开发人员能够轻松搭建出清爽风格的界面以及实现良好的交互效果。 Twitter Boostrap的口号是适用于任何场景，适用于每一个人，如今越来越多的开发者开始积极使用Boostrap，就在几周前，Bootstrap发布了最 新版本，改进了许多新特性。Bootstrap是迄今为止最全面的前端框架及真正适用于快速成型和后端/CMS开发工具。本文收集了13款非常不错的 Twitter bootstrap JavaScript扩展插件，利用Boostrap开发者可以节省大量的时间修复跨浏览器布局问题，实现各种形式的Web界面。 &lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;Bootstrap是基于HTML，CSS和JavaScript的简洁灵活的流行前端框架及交互组件集，由微博先驱Twitter在2011年8 月开源的整套前端解决解决方案，拥有非常完备和详尽的开发文档，有了它，Web开发人员能够轻松搭建出清爽风格的界面以及实现良好的交互效果。 Twitter Boostrap的口号是适用于任何场景，适用于每一个人，如今越来越多的开发者开始积极使用Boostrap，就在几周前，Bootstrap发布了最 新版本，改进了许多新特性。Bootstrap是迄今为止最全面的前端框架及真正适用于快速成型和后端/CMS开发工具。本文收集了13款非常不错的 Twitter bootstrap JavaScript扩展插件，利用Boostrap开发者可以节省大量的时间修复跨浏览器布局问题，实现各种形式的Web界面。 &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1. Fuel UX&lt;/strong&gt; &lt;img src=&#34;http://upload.chinaz.com/2015/0123/1422004996870.jpg&#34; alt=&#34;&#34;&gt; Fuel UX是Twitter Bootstrap的一款轻量级插件。组件包括ComboBox, Datagrid, Pillbox, Search 和Spinner等一些实用的插件。 &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; &lt;strong&gt;BootMetro&lt;/strong&gt; &lt;img src=&#34;http://upload.chinaz.com/2015/0123/1422004996686.jpg&#34; alt=&#34;&#34;&gt; BootMetro可以将bootstrap转换成Microsoft Metro UI。此外，BootMetro附带的JavaScript插件能够很好的支持Metro性能。 &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt; &lt;strong&gt;WYSIHTML5&lt;/strong&gt; &lt;img src=&#34;http://upload.chinaz.com/2015/0123/1422004996269.jpg&#34; alt=&#34;&#34;&gt; WYSIWYG HTML5非常漂亮的一款Web编辑器，拥有比较全面的配置和事件能够满足你的需求。&lt;/p&gt;
@@ -540,7 +540,7 @@
             <category>css</category>
             <category>web</category>
             <pubDate>Thu, 29 Jan 2015 22:06:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;by &lt;a href=&#34;http://www.zhangxinxu.com/&#34;&gt;zhangxinxu&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;by &lt;a href=&#34;http://www.zhangxinxu.com/&#34;&gt;zhangxinxu&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;一、何为列表元素的两端对齐布局&#34;&gt;&lt;a href=&#34;#一、何为列表元素的两端对齐布局&#34; class=&#34;headerlink&#34; title=&#34;一、何为列表元素的两端对齐布局&#34;&gt;&lt;/a&gt;一、何为列表元素的两端对齐布局&lt;/h3&gt;&lt;p&gt;首先说说何为两端对齐。下面这个截图是word中一段英文左对齐的右边缘截图：&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_214827.png&#34; alt=&#34;word中文字左对齐截图 张鑫旭-鑫空间-鑫生活&#34; title=&#34;word中文字左对齐截图 张鑫旭-鑫空间-鑫生活&#34;&gt; &lt;/p&gt;
 &lt;p&gt;可以看到右侧是参差不起的，现在，选中文字，点击word上方的两端对齐按钮，如下图：&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_215036.png&#34; alt=&#34;点击word中两端对齐按钮 张鑫旭-鑫空间-鑫生活&#34; title=&#34;点击word中两端对齐按钮 张鑫旭-鑫空间-鑫生活&#34;&gt; &lt;/p&gt;
 &lt;p&gt;结果文字的右边缘就成了这样：&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_215318.png&#34; alt=&#34;word中两端对齐效果截图 张鑫旭-鑫空间-鑫生活&#34; title=&#34;word中两端对齐效果截图 张鑫旭-鑫空间-鑫生活&#34;&gt; &lt;/p&gt;
@@ -640,7 +640,7 @@
             <category>js</category>
             <category>javascript</category>
             <pubDate>Tue, 27 Jan 2015 22:56:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;作者-Laruence&#34;&gt;&lt;a href=&#34;#作者-Laruence&#34; class=&#34;headerlink&#34; title=&#34;作者: Laruence&#34;&gt;&lt;/a&gt;作者: &lt;a href=&#34;http://www.laruence.com&#34;&gt;Laruence&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&#34;关于事件处理函数引用的一个佐证&#34;&gt;&lt;a href=&#34;#关于事件处理函数引用的一个佐证&#34; class=&#34;headerlink&#34; title=&#34;关于事件处理函数引用的一个佐证&#34;&gt;&lt;/a&gt;关于事件处理函数引用的一个佐证&lt;/h3&gt;&lt;p&gt;之前, 我在分析Javascript的This关键字的时候, 说过, 当使用inline的方式写dom元素的事件处理函数的时候, 采用的是引用的方式. 刚好nullbyte童鞋给我提供了一个很有意思的Case:&lt;/p&gt;
+            <description><![CDATA[ &lt;h3 id=&#34;作者-Laruence&#34;&gt;&lt;a href=&#34;#作者-Laruence&#34; class=&#34;headerlink&#34; title=&#34;作者: Laruence&#34;&gt;&lt;/a&gt;作者: &lt;a href=&#34;http://www.laruence.com&#34;&gt;Laruence&lt;/a&gt;&lt;/h3&gt;&lt;h3 id=&#34;关于事件处理函数引用的一个佐证&#34;&gt;&lt;a href=&#34;#关于事件处理函数引用的一个佐证&#34; class=&#34;headerlink&#34; title=&#34;关于事件处理函数引用的一个佐证&#34;&gt;&lt;/a&gt;关于事件处理函数引用的一个佐证&lt;/h3&gt;&lt;p&gt;之前, 我在分析Javascript的This关键字的时候, 说过, 当使用inline的方式写dom元素的事件处理函数的时候, 采用的是引用的方式. 刚好nullbyte童鞋给我提供了一个很有意思的Case:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  &amp;lt;img id=&amp;quot;foo&amp;quot; src=&amp;quot;xxx&amp;quot; onerror=&amp;quot; alert(&amp;#39;error&amp;#39;);
   &amp;#125; function foobar() &amp;#123;
   alert(&amp;#39;www.laruence.com&amp;#39;); &amp;quot; /&amp;gt;
@@ -671,7 +671,7 @@ FF3: 28秒
             <category>runjs</category>
             <category>在线编辑</category>
             <pubDate>Tue, 13 Jan 2015 23:26:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;摘自runjs&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;摘自runjs&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;h3 id=&#34;RunJS-是什么？&#34;&gt;&lt;a href=&#34;#RunJS-是什么？&#34; class=&#34;headerlink&#34; title=&#34;RunJS 是什么？&#34;&gt;&lt;/a&gt;RunJS 是什么？&lt;/h3&gt;&lt;p&gt;RunJS 是一个在线的 HTML、Javascript、CSS 等 web 前端代码的编辑分享平台，拥有实时预览、高亮显示、代码格式化等功能，我们提供 OSChina、微博、qq、github、google、yahoo、hotmail这七种登录方式，你只需要有七种任意一个帐号就可以点击右上角的登 录按钮来立即体验RunJS。 &lt;img src=&#34;http://runjs.cn/img/help/index.png&#34; alt=&#34;&#34;&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/li&gt;
@@ -772,7 +772,7 @@ FF3: 28秒
             <category>js</category>
             <category>javascript</category>
             <pubDate>Wed, 07 Jan 2015 22:38:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;容易欺骗别人感情的JavaScript定时器 JavaScript的setTimeout与setInterval是两个很容易欺骗别人感情的方法,因为我们开始常常以为调用了就会按既定的方式执行, 我想不少人都深有同感, 例如&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    alert(&amp;#x27;你好!&amp;#x27;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;, 0);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setInterval(callbackFunction, 100);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;容易欺骗别人感情的JavaScript定时器 JavaScript的setTimeout与setInterval是两个很容易欺骗别人感情的方法,因为我们开始常常以为调用了就会按既定的方式执行, 我想不少人都深有同感, 例如&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    alert(&amp;#x27;你好!&amp;#x27;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;, 0);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setInterval(callbackFunction, 100);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;认为setTimeout中的问候方法会立即被执行,因为这并不是凭空而说,而是JavaScript API文档明确定义第二个参数意义为隔多少毫秒后,回调方法就会被执行. 这里设成0毫秒,理所当然就立即被执行了. 同理对setInterval的callbackFunction方法每间隔100毫秒就立即被执行深信不疑! 但随着JavaScript应用开发经验不断的增加和丰富,有一天你发现了一段怪异的代码而百思不得其解:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;div.onclick = function()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                document.getElementById(&amp;#x27;inputField&amp;#x27;).focus();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;, 0);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;既然是0毫秒后执行,那么还用setTimeout干什么, 此刻, 坚定的信念已开始动摇. 直到最后某一天 , 你不小心写了一段糟糕的代码:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        while (true) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;, 100);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        alert(&amp;#x27;你好!&amp;#x27;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;, 200);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setInterval(callbackFunction, 200);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;第一行代码进入了死循环,但不久你就会发现,第二,第三行并不是预料中的事情,alert问候未见出现,callbacKFunction也杳无音讯! 这时你彻底迷惘了,这种情景是难以接受的,因为改变长久以来既定的认知去接受新思想的过程是痛苦的,但情事实摆在眼前,对JavaScript真理的探求并不会因为痛苦而停止,下面让我们来展开JavaScript线程和定时器探索之旅! 拔开云雾见月明 出现上面所有误区的最主要一个原因是:潜意识中认为,JavaScript引擎有多个线程在执行,JavaScript的定时器回调函数是异步执行的. 而事实上的,JavaScript使用了障眼法,在多数时候骗过了我们的眼睛,这里背光得澄清一个事实: JavaScript引擎是单线程运行的,浏览器无论在什么时候都只且只有一个线程在运行JavaScript程序. JavaScript引擎用单线程运行也是有意义的,单线程不必理会线程同步这些复杂的问题,问题得到简化. 那么单线程的JavaScript引擎是怎么配合浏览器内核处理这些定时器和响应浏览器事件的呢? 下面结合浏览器内核处理方式简单说明. 浏览器内核实现允许多个线程异步执行,这些线程在内核制控下相互配合以保持同步.假如某一浏览器内核的实现至少有三个常驻线 程:javascript引擎线程,界面渲染线程,浏览器事件触发线程,除些以外,也有一些执行完就终止的线程,如Http请求线程,这些异步线程都会产 生不同的异步事件,下面通过一个图来阐明单线程的JavaScript引擎与另外那些线程是怎样互动通信的.虽然每个浏览器内核实现细节不同,但这其中的 调用原理都是大同小异. &lt;a href=&#34;http://laruence-wordpress.stor.sinaapp.com/uploads/jstimer.jpg&#34;&gt;&lt;img src=&#34;http://laruence-wordpress.stor.sinaapp.com/uploads/jstimer.jpg&#34; alt=&#34;Js线程图示&#34; title=&#34;jstimer&#34;&gt;&lt;/a&gt; 由图可看出,浏览器中的JavaScript引擎是基于事件驱动的,这里的事件可看作是浏览器派给它的各种任务,这些任务可以源自 JavaScript引擎当前执行的代码块,如调用setTimeout添加一个任务,也可来自浏览器内核的其它线程,如界面元素鼠标点击事件,定时触发 器时间到达通知,异步请求状态变更通知等.从代码角度看来任务实体就是各种回调函数,JavaScript引擎一直等待着任务队列中任务的到来.由于单线 程关系,这些任务得进行排队,一个接着一个被引擎处理. 上图t1-t2..tn表示不同的时间点,tn下面对应的小方块代表该时间点的任务,假设现在是t1时刻,引擎运行在t1对应的任务方块代码内,在这个时间点内,我们来描述一下浏览器内核其它线程的状态. t1时刻: GUI渲染线程: 该线程负责渲染浏览器界面HTML元素,当界面需要重绘(Repaint)或由于某种操作引发回流(reflow)时,该线程就会执行.本文虽然重 点解释JavaScript定时机制,但这时有必要说说渲染线程,因为该线程与JavaScript引擎线程是互斥的,这容易理解,因为 JavaScript脚本是可操纵DOM元素,在修改这些元素属性同时渲染界面,那么渲染线程前后获得的元素数据就可能不一致了. 在JavaScript引擎运行脚本期间,浏览器渲染线程都是处于挂起状态的,也就是说被”冻结”了. 所以,在脚本中执行对界面进行更新操作,如添加结点,删除结点或改变结点的外观等更新并不会立即体现出来,这些操作将保存在一个队列中,待JavaScript引擎空闲时才有机会渲染出来. GUI事件触发线程: JavaScript脚本的执行不影响html元素事件的触发,在t1时间段内,首先是用户点击了一个鼠标键,点击被浏览器事件触发线程捕捉后形成 一个鼠标点击事件,由图可知,对于JavaScript引擎线程来说,这事件是由其它线程异步传到任务队列尾的,由于引擎正在处理t1时的任务,这个鼠标 点击事件正在等待处理. 定时触发线程: 注意这里的浏览器模型定时计数器并不是由JavaScript引擎计数的,因为JavaScript引擎是单线程的,如果处于阻塞线程状态就计不了时,它必须依赖外部来计时并触发定时,所以队列中的定时事件也是异步事件. 由图可知,在这t1的时间段内,继鼠标点击事件触发后,先前已设置的setTimeout定时也到达了,此刻对JavaScript引擎来说,定时触发线程产生了一个异步定时事件并放到任务队列中, 该事件被排到点击事件回调之后,等待处理. 同理, 还是在t1时间段内,接下来某个setInterval定时器也被添加了,由于是间隔定时,在t1段内连续被触发了两次,这两个事件被排到队尾等待处理. 可见,假如时间段t1非常长,远大于setInterval的定时间隔,那么定时触发线程就会源源不断的产生异步定时事件并放到任务队列尾而不管它 们是否已被处理,但一旦t1和最先的定时事件前面的任务已处理完,这些排列中的定时事件就依次不间断的被执行,这是因为,对于JavaScript引擎来 说,在处理队列中的各任务处理方式都是一样的,只是处理的次序不同而已. t1过后,也就是说当前处理的任务已返回,JavaScript引擎会检查任务队列,发现当前队列非空,就取出t2下面对应的任务执行,其它时间依此类推,由此看来: 如果队列非空,引擎就从队列头取出一个任务,直到该任务处理完,即返回后引擎接着运行下一个任务,在任务没返回前队列中的其它任务是没法被执行的. 相信您现在已经很清楚JavaScript是否可多线程,也了解理解JavaScript定时器运行机制了,下面我们来对一些案例进行分析: 案例1:setTimeout与setInterval&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;setTimeout(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        /\* 代码块... */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        setTimeout(arguments.callee, 10);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;, 10);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;setInterval(function()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        /*代码块... */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;, 10);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;这两段代码看一起效果一样,其实非也,第一段中回调函数内的setTimeout是JavaScript引擎执行后再设置新的setTimeout 定时, 假定上一个回调处理完到下一个回调开始处理为一个时间间隔,理论两个setTimeout回调执行时间间隔&amp;gt;=10ms .第二段自setInterval设置定时后,定时触发线程就会源源不断的每隔十秒产生异步定时事件并放到任务队列尾,理论上两个setInterval 回调执行时间间隔&amp;lt;=10. 案例2:ajax异步请求是否真的异步? 很多同学朋友搞不清楚,既然说JavaScript是单线程运行的,那么XMLHttpRequest在连接后是否真的异步? 其实请求确实是异步的,不过这请求是由浏览器新开一个线程请求(参见上图),当请求的状态变更时,如果先前已设置回调,这异步线程就产生状态变更事件放到 JavaScript引擎的处理队列中等待处理,当任务被处理时,JavaScript引擎始终是单线程运行回调函数,具体点即还是单线程运行 onreadystatechange所设置的函数. 转帖地址:&lt;a href=&#34;http://www.9demo.com/archives/341&#34;&gt;http://www.9demo.com/archives/341&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
@@ -783,7 +783,7 @@ FF3: 28秒
             <category>js</category>
             <category>javascript</category>
             <pubDate>Mon, 05 Jan 2015 21:45:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者: &lt;a href=&#34;http://www.laruence.com&#34;&gt;Laruence&lt;/a&gt; 之前我对Javascript的原型链中, 原型继承与标识符查找有些迷惑, 如, 如下的代码:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;function Foo() &amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;var foo = new Foo();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Foo.prototype.label = &amp;quot;laruence&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(foo.label); //output: laruence&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(Foo.label);//output: undefined&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;今天看到了如下这个图:&lt;br&gt;&lt;a href=&#34;http://laruence-wordpress.stor.sinaapp.com/uploads/javascript_object_layout.jpg&#34;&gt;&lt;img src=&#34;http://laruence-wordpress.stor.sinaapp.com/uploads/javascript_object_layout.jpg&#34; alt=&#34;Javascript object layout&#34; title=&#34;javascript_object_layout&#34;&gt;&lt;/a&gt; &lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;作者: &lt;a href=&#34;http://www.laruence.com&#34;&gt;Laruence&lt;/a&gt; 之前我对Javascript的原型链中, 原型继承与标识符查找有些迷惑, 如, 如下的代码:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;function Foo() &amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;var foo = new Foo();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Foo.prototype.label = &amp;quot;laruence&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(foo.label); //output: laruence&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;alert(Foo.label);//output: undefined&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;今天看到了如下这个图:&lt;br&gt;&lt;a href=&#34;http://laruence-wordpress.stor.sinaapp.com/uploads/javascript_object_layout.jpg&#34;&gt;&lt;img src=&#34;http://laruence-wordpress.stor.sinaapp.com/uploads/javascript_object_layout.jpg&#34; alt=&#34;Javascript object layout&#34; title=&#34;javascript_object_layout&#34;&gt;&lt;/a&gt; &lt;/p&gt;
 &lt;p&gt;另外, 在&lt;a href=&#34;http://www.mollypages.org/misc/js.mp&#34;&gt;Javascript Object Hierarchy&lt;/a&gt;看到:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The prototype is only used for properties inherited by objects/instances created by that function. The function itself does not use the associated prototype.&lt;/p&gt;
@@ -800,7 +800,7 @@ FF3: 28秒
             <category>flash</category>
             <category>表单</category>
             <pubDate>Sat, 03 Jan 2015 21:19:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;[ 作者：张宴] 最近的一个项目中，需要通过 JavaScript 提交表单数据到另一个域名下的PHP接口（因为数据较大，需要HTTP POST方式提交），并获取PHP接口的返回值，在页面无刷新、无跳转的情况下，更新div标签内的内容。 浏览器出于安全考虑，是不允许JavaScript代码进行跨域操作。JavaScript 和 AJAX 跨域访问分为两大类，一是本域和子域的交互，二是本域和其他域的交互。 一、本域和子域的交互：&lt;a href=&#34;http://www.zyan.cc&#34;&gt;www.zyan.cc&lt;/a&gt; 和 blog.zyan.cc 二、本域和其他域的交互：blog.zyan.cc 和 api.bz 本域和子域的交互，可以通过iframe设置两个域名document.domain = “zyan.cc”，实现统一zyan.cc域下的跨域访问。 本域和其他域的交互，可以通过iframe、代理、JS创建动态脚本等几种方法来实现，&lt;a href=&#34;http://www.phpchina.com/html/48/n-33848.html&#34;&gt;这里有篇文章对几种方法作了简要的介绍&lt;/a&gt;。 iframe、JS创建动态脚本这两种方法，需要开发者能控制两个域，两端都要编写相应的代码，非常麻烦。在本域服务器上用PHP写个代理中转程序，让 本域PHP程序去读取远程其他域的数据再返回给自己，是常用的方法。但是，在本域“前端是CDN或Squid缓存服务器，后端才是PHP应用程序服务器” 的系统架构下，穿透CDN或Squid去访问不能被缓存的PHP代理中转程序，效率是很低的。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;[ 作者：张宴] 最近的一个项目中，需要通过 JavaScript 提交表单数据到另一个域名下的PHP接口（因为数据较大，需要HTTP POST方式提交），并获取PHP接口的返回值，在页面无刷新、无跳转的情况下，更新div标签内的内容。 浏览器出于安全考虑，是不允许JavaScript代码进行跨域操作。JavaScript 和 AJAX 跨域访问分为两大类，一是本域和子域的交互，二是本域和其他域的交互。 一、本域和子域的交互：&lt;a href=&#34;http://www.zyan.cc&#34;&gt;www.zyan.cc&lt;/a&gt; 和 blog.zyan.cc 二、本域和其他域的交互：blog.zyan.cc 和 api.bz 本域和子域的交互，可以通过iframe设置两个域名document.domain = “zyan.cc”，实现统一zyan.cc域下的跨域访问。 本域和其他域的交互，可以通过iframe、代理、JS创建动态脚本等几种方法来实现，&lt;a href=&#34;http://www.phpchina.com/html/48/n-33848.html&#34;&gt;这里有篇文章对几种方法作了简要的介绍&lt;/a&gt;。 iframe、JS创建动态脚本这两种方法，需要开发者能控制两个域，两端都要编写相应的代码，非常麻烦。在本域服务器上用PHP写个代理中转程序，让 本域PHP程序去读取远程其他域的数据再返回给自己，是常用的方法。但是，在本域“前端是CDN或Squid缓存服务器，后端才是PHP应用程序服务器” 的系统架构下，穿透CDN或Squid去访问不能被缓存的PHP代理中转程序，效率是很低的。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;国外有人尝试用 Flash 做 JavaScript 和 AJAX 跨域访问中转，无疑是一个好方法。JavaScript 将数据提交给本域下的 Flash，通过 Flash 中转去访问其他域的接口，条件只需要其他域的根目录下有一个crossdomain.xml文件，文件中设置允许所有域名或允许本域访问即可。很多网站的 API域名都提供了crossdomain.xml文件。 例如： 1、新浪博客的crossdomain.xml文件（&lt;a href=&#34;http://blog.sina.com.cn/crossdomain.xml&#34;&gt;http://blog.sina.com.cn/crossdomain.xml&lt;/a&gt;）设置了允许所有域名访问； 2、饭否API的crossdomain.xml文件（&lt;a href=&#34;http://api.fanfou.com/crossdomain.xml&#34;&gt;http://api.fanfou.com/crossdomain.xml&lt;/a&gt;）设置了允许所有域名访问； 3、校内网API的crossdomain.xml文件（&lt;a href=&#34;http://api.xiaonei.com/crossdomain.xml&#34;&gt;http://api.xiaonei.com/crossdomain.xml&lt;/a&gt;）设置了允许所有域名访问； 4、优酷网的crossdomain.xml文件（&lt;a href=&#34;http://www.youku.com/crossdomain.xml&#34;&gt;http://www.youku.com/crossdomain.xml&lt;/a&gt;）设置了允许所有域名访问； 5、土豆网的crossdomain.xml文件（&lt;a href=&#34;http://www.tudou.com/crossdomain.xml&#34;&gt;http://www.tudou.com/crossdomain.xml&lt;/a&gt;）设置了允许所有域名访问； 6、逍遥视频的crossdomain.xml文件（&lt;a href=&#34;http://v.xoyo.com/crossdomain.xml&#34;&gt;http://v.xoyo.com/crossdomain.xml&lt;/a&gt;）设置了只允许*.xoyo.com域名访问； 7、网易的crossdomain.xml文件（&lt;a href=&#34;http://www.163.com/crossdomain.xml&#34;&gt;http://www.163.com/crossdomain.xml&lt;/a&gt;）设置了只允许tech.163.com、sports.163.com等几个域名访问。&lt;/p&gt;
 &lt;hr&gt;
@@ -836,7 +836,7 @@ function mycallback()&amp;#123;
             <category>jquery插件</category>
             <category>js</category>
             <pubDate>Tue, 30 Dec 2014 21:47:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 倒计时功能在很多项目中都会使用到，比如维修页面、团购网站和下载限时网站等等。通过使用jQuery倒计时插件，你可以简化你的工作量，却同样创造出超酷的jQuery倒计时功能。本文为你介绍10款jQuery倒计时插件。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 倒计时功能在很多项目中都会使用到，比如维修页面、团购网站和下载限时网站等等。通过使用jQuery倒计时插件，你可以简化你的工作量，却同样创造出超酷的jQuery倒计时功能。本文为你介绍10款jQuery倒计时插件。&lt;/p&gt;
 &lt;h3 id=&#34;1-jQuery-Countdown&#34;&gt;&lt;a href=&#34;#1-jQuery-Countdown&#34; class=&#34;headerlink&#34; title=&#34;1. jQuery Countdown&#34;&gt;&lt;/a&gt;1. &lt;a href=&#34;http://keith-wood.name/countdown.html&#34;&gt;jQuery Countdown&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;这个jQuery插件可以让你设置一个div或span元素来显示倒计时，它拥有一堆的选项可以实现你的各种需求。 &lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://paranimage.com/wp-content/uploads/2011/06/image93.jpg&#34; alt=&#34;&#34;&gt; &lt;a href=&#34;http://keith-wood.name/countdown.html&#34;&gt;Demo&lt;/a&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;2-jQuery-Countdown-with-Background-and-Overlay&#34;&gt;&lt;a href=&#34;#2-jQuery-Countdown-with-Background-and-Overlay&#34; class=&#34;headerlink&#34; title=&#34;2. jQuery Countdown with Background and Overlay&#34;&gt;&lt;/a&gt;2. &lt;a href=&#34;http://tenseveninteractive.com/content/jquery-countdown-background-and-overlay&#34;&gt;jQuery Countdown with Background and Overlay&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;很酷的jQuery倒计时脚本，下载包含Javascript, 图片和CSS文件等。 &lt;/p&gt;
@@ -864,7 +864,7 @@ function mycallback()&amp;#123;
             <category>js</category>
             <category>seajs</category>
             <pubDate>Mon, 01 Dec 2014 23:22:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;偶然在一群里知道了seajs,百度详细介绍了： SeaJS的作者是前淘宝UED,现支付宝前端工程师玉伯。 SeaJS本身遵循KISS（Keep It Simple, Stupid）理念进行开发，其本身仅有个位数的API，因此学习起来毫无压力。在学习SeaJS的过程中，处处能感受到KISS原则的精髓——仅做一件事，做好一件事。 自己没试试效果，从示例代码中感觉还可以吧，希望能给小伙伴一些帮助 官网&lt;a href=&#34;http://seajs.org/docs/&#34;&gt;http://seajs.org/docs/&lt;/a&gt; 最新版下载&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8213435&#34;&gt;http://download.csdn.net/download/w15875510692/8213435&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;偶然在一群里知道了seajs,百度详细介绍了： SeaJS的作者是前淘宝UED,现支付宝前端工程师玉伯。 SeaJS本身遵循KISS（Keep It Simple, Stupid）理念进行开发，其本身仅有个位数的API，因此学习起来毫无压力。在学习SeaJS的过程中，处处能感受到KISS原则的精髓——仅做一件事，做好一件事。 自己没试试效果，从示例代码中感觉还可以吧，希望能给小伙伴一些帮助 官网&lt;a href=&#34;http://seajs.org/docs/&#34;&gt;http://seajs.org/docs/&lt;/a&gt; 最新版下载&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8213435&#34;&gt;http://download.csdn.net/download/w15875510692/8213435&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

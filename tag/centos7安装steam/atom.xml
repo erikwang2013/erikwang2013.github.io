@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;centos7安装steam&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2017-12-01T13:22:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2017/12/01/centos-shang-ru-he-an-zhuang-steam/</id>
         <title>centos上如何安装steam</title>
         <link rel="alternate" href="https://erik.xyz/2017/12/01/centos-shang-ru-he-an-zhuang-steam/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;最近想把win系统的东西统统转到centos上，偶然发现爱你deepin竟然之steam。去官网查到steam有deb的安装包。 然后就自己尝试把deb转成rpm好像能安装成功就是，总是报错GPU无法渲染，痛苦。&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-11-27-46-的屏幕截图.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;意外的发现steam有一个安装yum支持。 添加安装源 yum-config-manager —add-repo&lt;/p&gt;
+        <content type="html">&lt;p&gt;最近想把win系统的东西统统转到centos上，偶然发现爱你deepin竟然之steam。去官网查到steam有deb的安装包。 然后就自己尝试把deb转成rpm好像能安装成功就是，总是报错GPU无法渲染，痛苦。&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-11-27-46-的屏幕截图.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;意外的发现steam有一个安装yum支持。 添加安装源 yum-config-manager —add-repo&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAsZOF0aZ3nolIs4smsi7XcaVy9iE2/DAeMYM23XArLL/Pcg4iOwT6wY4qa+xKqX1jFqj6RVAA1ROAXD85Awz94K2uSdvSjzCTeuIai3OgnuzBVWKO/W++3xWZWJPUQllzP0RWHiYm/X80/TKe9kSg+odj2oeHoEzTI=&#34; alt=&#34;http://negativo17.org/repos/epel-steam.repo&#34;&gt;  &lt;/p&gt;
 &lt;p&gt;执行安装steam yum -y install steam 直接提示报错&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-12-47-57-的屏幕截图.png&#34; alt=&#34;&#34;&gt; &lt;/p&gt;
 &lt;p&gt;那就去软件仓库搜索一下 &lt;a href=&#34;https://www.rpmfind.net/linux/rpm2html/search.php?query=libva-intel-driver&amp;amp;submit=Search+...&amp;amp;system=&amp;amp;arch=&#34;&gt;https://www.rpmfind.net/linux/rpm2html/search.php?query=libva-intel-driver&amp;amp;submit=Search+...&amp;amp;system=&amp;amp;arch=&lt;/a&gt;&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-12-52-12-的屏幕截图.png&#34; alt=&#34;&#34;&gt; &lt;/p&gt;

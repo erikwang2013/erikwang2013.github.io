@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;web&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2024-06-12T02:00:56.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2024/06/12/loading-zero-copy/</id>
         <title>使用懒加载 + 零拷贝后，程序的秒开率提升至99.99%</title>
         <link rel="alternate" href="https://erik.xyz/2024/06/12/loading-zero-copy/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;一、5秒钟加载一个页面的真相&#34;&gt;&lt;a href=&#34;#一、5秒钟加载一个页面的真相&#34; class=&#34;headerlink&#34; title=&#34;一、5秒钟加载一个页面的真相&#34;&gt;&lt;/a&gt;一、5秒钟加载一个页面的真相&lt;/h4&gt;&lt;p&gt;今天在修改前端页面的时候，发现程序中有一个页面的加载速度很慢，差不多需要5秒，这其实是难以接受的，我也不知道为什么上线这么长时间了，没人提过这个事儿。&lt;/p&gt;
+        <content type="html">&lt;h4 id=&#34;一、5秒钟加载一个页面的真相&#34;&gt;&lt;a href=&#34;#一、5秒钟加载一个页面的真相&#34; class=&#34;headerlink&#34; title=&#34;一、5秒钟加载一个页面的真相&#34;&gt;&lt;/a&gt;一、5秒钟加载一个页面的真相&lt;/h4&gt;&lt;p&gt;今天在修改前端页面的时候，发现程序中有一个页面的加载速度很慢，差不多需要5秒，这其实是难以接受的，我也不知道为什么上线这么长时间了，没人提过这个事儿。&lt;/p&gt;
 &lt;p&gt;我记得有一个词儿，叫秒开率。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;秒开率是指能够在1秒内完成页面的加载。&lt;br&gt;&lt;img src=&#34;/img/2024/20240501.webp&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
 &lt;p&gt;查询的时候，会访问后台数据库，查询前20条数据，按道理来说，这应该很快才对。追踪代码，看看啥问题，最后发现问题有三：&lt;/p&gt;
 &lt;p&gt;1.表中有一个BLOB大字段，存储着一个PDF模板，也就是上图中的运费模板；&lt;/p&gt;
@@ -601,7 +601,7 @@
         <id>https://erik.xyz/2024/05/06/index-asynchrony-landing/</id>
         <title>增加索引 + 异步 + 不落地后，从 12h 优化到 15 min</title>
         <link rel="alternate" href="https://erik.xyz/2024/05/06/index-asynchrony-landing/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;在开发中，我们经常会遇到这样的需求，将数据库中的图片导出到本地，再传给别人。&lt;/p&gt;
+        <content type="html">&lt;p&gt;在开发中，我们经常会遇到这样的需求，将数据库中的图片导出到本地，再传给别人。&lt;/p&gt;
 &lt;h4 id=&#34;一、一般我会这样做：&#34;&gt;&lt;a href=&#34;#一、一般我会这样做：&#34; class=&#34;headerlink&#34; title=&#34;一、一般我会这样做：&#34;&gt;&lt;/a&gt;一、一般我会这样做：&lt;/h4&gt;&lt;p&gt;1.通过接口或者定时任务的形式&lt;/p&gt;
 &lt;p&gt;2.读取Oracle或者MySQL数据库&lt;/p&gt;
 &lt;p&gt;3.通过FileOutputStream将Base64解密后的byte[]存储到本地&lt;/p&gt;
@@ -752,7 +752,7 @@
         <id>https://erik.xyz/2019/07/18/http1-1-and-http2-0/</id>
         <title>http1.1和http2.0的知识点</title>
         <link rel="alternate" href="https://erik.xyz/2019/07/18/http1-1-and-http2-0/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;Http1-1&#34;&gt;&lt;a href=&#34;#Http1-1&#34; class=&#34;headerlink&#34; title=&#34;Http1.1&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#Http1-1&#34; title=&#34;Http1.1&#34;&gt;&lt;/a&gt;Http1.1&lt;/h3&gt;&lt;ul&gt;
+        <content type="html">&lt;h3 id=&#34;Http1-1&#34;&gt;&lt;a href=&#34;#Http1-1&#34; class=&#34;headerlink&#34; title=&#34;Http1.1&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#Http1-1&#34; title=&#34;Http1.1&#34;&gt;&lt;/a&gt;Http1.1&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;缓存处理&lt;/p&gt;
 &lt;p&gt; 引入了更多的缓存控制策略例如Entity tag，If-Unmodified-Since, If-Match, If-None-Match等更多可供选择的缓存头来控制缓存策略。&lt;/p&gt;
 &lt;/li&gt;
@@ -803,7 +803,7 @@
         <id>https://erik.xyz/2015/06/18/xiang-ying-shi-bu-ju-ru-he-ce-shi-bu-tong-fen-bian-lv/</id>
         <title>响应式布局如何测试不同分辨率</title>
         <link rel="alternate" href="https://erik.xyz/2015/06/18/xiang-ying-shi-bu-ju-ru-he-ce-shi-bu-tong-fen-bian-lv/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;最近在做响应式布局适应不同分辨率的屏幕，太痛苦了，摸着石头过河。之前没有做过这块，手机端又不是很在行，ipad/iphone/三星……一大堆不同的屏幕，如何测试呢，总不能买一大堆设备吧。&lt;/p&gt;
+        <content type="html">&lt;p&gt;最近在做响应式布局适应不同分辨率的屏幕，太痛苦了，摸着石头过河。之前没有做过这块，手机端又不是很在行，ipad/iphone/三星……一大堆不同的屏幕，如何测试呢，总不能买一大堆设备吧。&lt;/p&gt;
 &lt;p&gt;偶然间发现谷歌浏览器(最新版)可以缩小来实现，这样又有问题了，分辨率是多少呢？发现新方法了，废话不多说了，直接上教程。 1.在谷歌浏览器打开你要测试的网页按键盘F12，打开网页调试   2.点击调试工具右上角形似菜单的图标   3.这时候你会发现紧挨着浏览器底部有一排英文菜单   4.把菜单往上拉出来，点击第三个菜单   5.点击打开菜单下面的手机标示   6.如此便是手机设计效果   7.有2个地方可以选择不同的分辨率及屏幕对应的像素   8.下次打开就直接点击F12，然后左上角的手机标示就可以切换&lt;/p&gt;
 </content>
         <category term="css" />
@@ -818,7 +818,7 @@
         <id>https://erik.xyz/2015/01/29/display-inline-block-text-align-justify-xia-lie-biao-de-liang-duan-dui-qi-bu-ju/</id>
         <title>display:inline-block/text-align:justify下列表的两端对齐布局</title>
         <link rel="alternate" href="https://erik.xyz/2015/01/29/display-inline-block-text-align-justify-xia-lie-biao-de-liang-duan-dui-qi-bu-ju/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;by &lt;a href=&#34;http://www.zhangxinxu.com/&#34;&gt;zhangxinxu&lt;/a&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;by &lt;a href=&#34;http://www.zhangxinxu.com/&#34;&gt;zhangxinxu&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;一、何为列表元素的两端对齐布局&#34;&gt;&lt;a href=&#34;#一、何为列表元素的两端对齐布局&#34; class=&#34;headerlink&#34; title=&#34;一、何为列表元素的两端对齐布局&#34;&gt;&lt;/a&gt;一、何为列表元素的两端对齐布局&lt;/h3&gt;&lt;p&gt;首先说说何为两端对齐。下面这个截图是word中一段英文左对齐的右边缘截图：&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_214827.png&#34; alt=&#34;word中文字左对齐截图 张鑫旭-鑫空间-鑫生活&#34; title=&#34;word中文字左对齐截图 张鑫旭-鑫空间-鑫生活&#34;&gt; &lt;/p&gt;
 &lt;p&gt;可以看到右侧是参差不起的，现在，选中文字，点击word上方的两端对齐按钮，如下图：&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_215036.png&#34; alt=&#34;点击word中两端对齐按钮 张鑫旭-鑫空间-鑫生活&#34; title=&#34;点击word中两端对齐按钮 张鑫旭-鑫空间-鑫生活&#34;&gt; &lt;/p&gt;
 &lt;p&gt;结果文字的右边缘就成了这样：&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_215318.png&#34; alt=&#34;word中两端对齐效果截图 张鑫旭-鑫空间-鑫生活&#34; title=&#34;word中两端对齐效果截图 张鑫旭-鑫空间-鑫生活&#34;&gt; &lt;/p&gt;
@@ -919,7 +919,7 @@
         <id>https://erik.xyz/2015/01/12/18-ge-css-jing-jian-ya-suo-gong-ju-he-ji-qiao/</id>
         <title>18个CSS精简压缩工具和技巧</title>
         <link rel="alternate" href="https://erik.xyz/2015/01/12/18-ge-css-jing-jian-ya-suo-gong-ju-he-ji-qiao/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 我们已看过&lt;a href=&#34;http://paranimage.com/8-online-css-optimizer/&#34;&gt;8个在线CSS优化工具&lt;/a&gt;和&lt;a href=&#34;http://paranimage.com/css-code-streamlined-tools-and-tricks/&#34;&gt;CSS代码精简技巧&lt;/a&gt;，本文则为你带来&lt;strong&gt;18个CSS精简压缩工具和技巧&lt;/strong&gt;。&lt;/p&gt;
+        <content type="html">&lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 我们已看过&lt;a href=&#34;http://paranimage.com/8-online-css-optimizer/&#34;&gt;8个在线CSS优化工具&lt;/a&gt;和&lt;a href=&#34;http://paranimage.com/css-code-streamlined-tools-and-tricks/&#34;&gt;CSS代码精简技巧&lt;/a&gt;，本文则为你带来&lt;strong&gt;18个CSS精简压缩工具和技巧&lt;/strong&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;压缩还是不压缩&#34;&gt;&lt;a href=&#34;#压缩还是不压缩&#34; class=&#34;headerlink&#34; title=&#34;压缩还是不压缩&#34;&gt;&lt;/a&gt;压缩还是不压缩&lt;/h3&gt;&lt;p&gt;在我们讨论如何压缩CSS之前，需要注意一下在压缩和代码的易读性上常常要有个平衡。很多编码者以其CSS组织清晰为傲，而且并不希望自己的代码被 通过压缩器去掉注释和断行。作为一个设计师，你应该分析你所编写的代码的目标。如果你要创建一个小的只需要几行CSS的网站，可能就没有必要做额外的压 缩。同样，如果你在编写需要和一个开放团队分享的代码，插入额外的注释和断行可以节省你的同事的大量时间并获得他们真心的感谢。然而，如果你在设计一个需 要大量CSS的大型网站，你肯定要注意你的文件大小并进你所能保持其最小。 可能在寻找压缩和可能性之间的完美结合上面需要花一些时间，但是它们都值得挖掘而且实现它们的平衡可以让你的工作变得容易很多。同时，很明显并不是说压缩一定会导致可读性的降低。很多可用于压缩代码的技术都能生成更好更有组织的代码。 考虑到这一点儿，让我们开始了解一些技术已保持CSS文件最小化吧。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;空白样式定义&#34;&gt;&lt;a href=&#34;#空白样式定义&#34; class=&#34;headerlink&#34; title=&#34;空白样式定义&#34;&gt;&lt;/a&gt;空白样式定义&lt;/h3&gt;&lt;p&gt;让我们从明显的开始。如果你有一个空白样式，丢掉它。不要借口稍后或许会用到，你也知道它们是杂乱的。除非你有一个合理的理由，否则不要添加它们。&lt;/p&gt;
 &lt;h3 id=&#34;缩写&#34;&gt;&lt;a href=&#34;#缩写&#34; class=&#34;headerlink&#34; title=&#34;缩写&#34;&gt;&lt;/a&gt;缩写&lt;/h3&gt;&lt;p&gt;CSS缩写是一种将多行CSS合并到单行的方法。 养成使用你知道的所有缩写技巧的习惯可以明显的减少你最终写出的代码的行数。这里是个例子： 长写版本:&lt;/p&gt;
@@ -947,7 +947,7 @@
         <id>https://erik.xyz/2015/01/10/ji-yu-sphinx-gou-jian-zhun-shi-shi-geng-xin-de-fen-bu-shi-tong-yong-sou-suo-yin-qing-ping-tai/</id>
         <title>基于Sphinx构建准实时更新的分布式通用搜索引擎平台</title>
         <link rel="alternate" href="https://erik.xyz/2015/01/10/ji-yu-sphinx-gou-jian-zhun-shi-shi-geng-xin-de-fen-bu-shi-tong-yong-sou-suo-yin-qing-ping-tai/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者：张宴 前言： 2008年7月，我写过一篇文章《&lt;a href=&#34;http://blog.zyan.cc/post/360/&#34;&gt;基于Sphinx+MySQL的千万级数据全文检索（搜索引擎）架构设计&lt;/a&gt;》。有不少网友希望阅读全文，我将该文档整理了一下，分享出来。文档解压后大小为7.33M，共19页。 &lt;strong&gt;本站下载地址：&lt;/strong&gt; &lt;a href=&#34;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&#34;&gt;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&lt;/a&gt; &lt;strong&gt;新浪下载分流：&lt;/strong&gt; &lt;a href=&#34;http://ishare.iask.sina.com.cn/f/6728201.html&#34;&gt;http://ishare.iask.sina.com.cn/f/6728201.html&lt;/a&gt; 上述文档架构存在的局限，我在2008年12月的文章《&lt;a href=&#34;http://blog.zyan.cc/post/385/&#34;&gt;亿级数据的高并发通用搜索引擎架构设计&lt;/a&gt;》 中已经指出：一是MySQL本身的并发能力有限，在200～300个并发连接下，查询和更新就比较慢了；二是由于MySQL表的主键与Sphinx索引的 ID一一对应，从而无法跨多表建立整站查询，而且新增加类别还得修改配置文件，比较麻烦；三是因为和MySQL集成，无法发挥出Sphinx的优势。虽然 如此，但对于一些写入量不大的搜索应用，已经足够了，或许对很多人会有帮助。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;作者：张宴 前言： 2008年7月，我写过一篇文章《&lt;a href=&#34;http://blog.zyan.cc/post/360/&#34;&gt;基于Sphinx+MySQL的千万级数据全文检索（搜索引擎）架构设计&lt;/a&gt;》。有不少网友希望阅读全文，我将该文档整理了一下，分享出来。文档解压后大小为7.33M，共19页。 &lt;strong&gt;本站下载地址：&lt;/strong&gt; &lt;a href=&#34;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&#34;&gt;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&lt;/a&gt; &lt;strong&gt;新浪下载分流：&lt;/strong&gt; &lt;a href=&#34;http://ishare.iask.sina.com.cn/f/6728201.html&#34;&gt;http://ishare.iask.sina.com.cn/f/6728201.html&lt;/a&gt; 上述文档架构存在的局限，我在2008年12月的文章《&lt;a href=&#34;http://blog.zyan.cc/post/385/&#34;&gt;亿级数据的高并发通用搜索引擎架构设计&lt;/a&gt;》 中已经指出：一是MySQL本身的并发能力有限，在200～300个并发连接下，查询和更新就比较慢了；二是由于MySQL表的主键与Sphinx索引的 ID一一对应，从而无法跨多表建立整站查询，而且新增加类别还得修改配置文件，比较麻烦；三是因为和MySQL集成，无法发挥出Sphinx的优势。虽然 如此，但对于一些写入量不大的搜索应用，已经足够了，或许对很多人会有帮助。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;正文： 在这之后，本人基于《&lt;a href=&#34;http://blog.zyan.cc/post/385/&#34;&gt;亿级数据的高并发通用搜索引擎架构设计&lt;/a&gt;》开发的Sphinx分布式通用站内搜索引擎平台，已经在生产环境运行9个月以上，经过运营中的不断完善与改进，目前已形成了一套可扩展的分布式通用站内搜索引擎框架。CMS、视频、论坛等产品发生的增、删、改操作，文本内容实时写入自行开发的 &lt;a href=&#34;http://blog.zyan.cc/httpsqs&#34;&gt;HTTPSQS&lt;/a&gt; 高性能简单消息队列服务，通过队列控制器更新索引和存储。提供支持XML、JSON的API查询接口，支持亿级数据的索引、分布式、中文分词、高亮显示、自动摘要、准实时（1分钟内）增量索引更新。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://zyan.cc/attachment/201002/search_system.png&#34;&gt;&lt;img src=&#34;http://zyan.cc/attachment/201002/search_system.png&#34; alt=&#34;点击在新窗口中浏览此图片&#34; title=&#34;点击在新窗口中浏览此图片&#34;&gt;&lt;/a&gt; &lt;/p&gt;
@@ -994,7 +994,7 @@
         <id>https://erik.xyz/2014/12/28/9-ge-php-ku-jian-jie-he-xia-zai/</id>
         <title>9个PHP库简介和下载</title>
         <link rel="alternate" href="https://erik.xyz/2014/12/28/9-ge-php-ku-jian-jie-he-xia-zai/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 9个非常有用的PHP类库，相信一定可以为你的WEB开发提供更好和更为快速的方法。&lt;/p&gt;
+        <content type="html">&lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 9个非常有用的PHP类库，相信一定可以为你的WEB开发提供更好和更为快速的方法。&lt;/p&gt;
 &lt;h3 id=&#34;1-ReCAPTCHA&#34;&gt;&lt;a href=&#34;#1-ReCAPTCHA&#34; class=&#34;headerlink&#34; title=&#34;1. ReCAPTCHA&#34;&gt;&lt;/a&gt;1. ReCAPTCHA&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;http://recaptcha.net/plugins/php/&#34;&gt;The reCAPTCHA&lt;/a&gt; 库让你可以为网站创建高级的 CAPTCHA 系统，这个系统其实是用来生成验证信息的，甚至包括语音验证。当然还有 reCAPTCHA 服务可以使用，其提供易用的免费 API，值得在你的网站试试。 &lt;a href=&#34;http://code.google.com/p/recaptcha/downloads/list?q=label:phplib-Latest&#34;&gt;下载 ReCAPTCHA&lt;/a&gt; | &lt;a href=&#34;http://recaptcha.net/api/getkey?app=php&#34;&gt;获得 API Key&lt;/a&gt; | &lt;a href=&#34;http://recaptcha.net/plugins/php/&#34;&gt;文档&lt;/a&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;2-Akismet&#34;&gt;&lt;a href=&#34;#2-Akismet&#34; class=&#34;headerlink&#34; title=&#34;2. Akismet&#34;&gt;&lt;/a&gt;2. Akismet&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;http://akismet.com/&#34;&gt;Akismet&lt;/a&gt; 是个供小站点使用的免费服务，用来修改规范将加入数据库的评论（防止恶意评论）。这个库一直在改善。 &lt;a href=&#34;http://net.tutsplus.com/tutorials/tools-and-tips/the-best-ways-to-fight-spam/&#34;&gt;详细参考 Akismet 介绍&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;3-Services-JSON&#34;&gt;&lt;a href=&#34;#3-Services-JSON&#34; class=&#34;headerlink&#34; title=&#34;3. Services_JSON&#34;&gt;&lt;/a&gt;3. Services_JSON&lt;/h3&gt;&lt;p&gt;JSON 是人类能容易理解的信息传递格式。不过如果你并未使用 5.2.0 以后版本的 PHP（从那以后 PHP 有了 JSON 官方支持），那么就应该试试这个库。 &lt;a href=&#34;http://pear.php.net/package/Services_JSON&#34;&gt;查看 Services_JSON&lt;/a&gt;&lt;/p&gt;
@@ -1014,7 +1014,7 @@
         <id>https://erik.xyz/2014/12/20/nginx-1-5-2-php-5-5-1-mysql-5-6-10-zai-centos-xia-de-bian-yi-an-zhuang/</id>
         <title>Nginx 1.5.2 + PHP 5.5.1 + MySQL 5.6.10 在 CentOS 下的编译安装</title>
         <link rel="alternate" href="https://erik.xyz/2014/12/20/nginx-1-5-2-php-5-5-1-mysql-5-6-10-zai-centos-xia-de-bian-yi-an-zhuang/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;by &lt;a href=&#34;http://zyan.cc/user/2/&#34;&gt;张宴&lt;/a&gt; ]&lt;/p&gt;
+        <content type="html">&lt;p&gt;by &lt;a href=&#34;http://zyan.cc/user/2/&#34;&gt;张宴&lt;/a&gt; ]&lt;/p&gt;
 &lt;p&gt;　　最近配置了几台Web服务器，将安装笔记贴出来吧。没时间像以前那样，将文章写的那样系统了，请见谅。详细配置，可以看以前的旧文章：&lt;a href=&#34;http://blog.zyan.cc/nginx_php_v6&#34;&gt;http://blog.zyan.cc/nginx_php_v6&lt;/a&gt; 1、安装Nginx：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mkdir -p /Data/tgz cd /Data/tgz yum install wget yum install pcre yum install openssl* yum -y install gcc gcc-c++ autoconf libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel glibc glibc-devel glib2 glib2-devel bzip2 bzip2-devel ncurses ncurses-devel curl curl-devel e2fsprogs e2fsprogs-devel krb5 krb5-devel libidn libidn-devel openssl openssl-devel openldap openldap-devel nss_ldap openldap-clients openldap-servers make yum -y install gd gd2 gd-devel gd2-devel /usr/sbin/groupadd www /usr/sbin/useradd -g www www ulimit -SHn 65535 wget [ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.32.tar.gz](ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.32.tar.gz) tar zxvf pcre-8.32.tar.gz cd pcre-8.32 ./configure --prefix=/Data/apps/pcre make &amp;amp;&amp;amp; make install cd ../wget [http://nginx.org/download/nginx-1.5.2.tar.gz](http://nginx.org/download/nginx-1.5.2.tar.gz) tar zxvf nginx-1.5.2.tar.gz cd nginx-1.5.2 ./configure --user=www --group=www --prefix=/Data/apps/nginx --with-http\_stub\_status\_module --with-http\_ssl\_module --with-pcre=/Data/tgz/pcre-8.32 --with-http\_realip\_module --with-http\_image\_filter\_module make make install cd ../&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;2、安装 MySQL：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;wget [http://downloads.mysql.com/archives/mysql-5.6/mysql-5.6.10-linux-glibc2.5-x86_64.tar.gz](http://downloads.mysql.com/archives/mysql-5.6/mysql-5.6.10-linux-glibc2.5-x86_64.tar.gz) tar zxvf mysql-5.6.10-linux-glibc2.5-x86\_64.tar.gz mv mysql-5.6.10-linux-glibc2.5-x86\_64 /Data/apps/mysql /usr/sbin/groupadd mysql /usr/sbin/useradd -g mysql mysql mkdir -p /Data/data/mysql/data yum install libaio /Data/apps/mysql/scripts/mysql\_install\_db --basedir=/Data/apps/mysql --datadir=/Data/data/mysql/data --user=mysqlsed -i &amp;quot;s#/usr/local/mysql#/Data/apps/mysql#g&amp;quot; /Data/apps/mysql/bin/mysqld_safe&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;3、安装PHP依赖库&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mkdir -p /Data/apps/libs/ wget [http://www.ijg.org/files/jpegsrc.v9.tar.gz    ](http://www.ijg.org/files/jpegsrc.v9.tar.gz%C2%A0%C2%A0%C2%A0%C2%A0) tar zxvf jpegsrc.v9.tar.gz cd jpeg-9/ ./configure --prefix=/Data/apps/libs --enable-shared --enable-static --prefix=/Data/apps/libs make make install cd ../wget [http://prdownloads.sourceforge.net/libpng/libpng-1.6.2.tar.gz](http://prdownloads.sourceforge.net/libpng/libpng-1.6.2.tar.gz) tar zxvf libpng-1.6.2.tar.gz cd libpng-1.6.2/ ./configure --prefix=/Data/apps/libs make make install cd ../wget [http://download.savannah.gnu.org/releases/freetype/freetype-2.4.12.tar.gz](http://download.savannah.gnu.org/releases/freetype/freetype-2.4.12.tar.gz) tar zxvf freetype-2.4.12.tar.gz cd freetype-2.4.12/ ./configure --prefix=/Data/apps/libs make make install cd ../ wget &amp;quot;http://downloads.sourceforge.net/mhash/mhash-0.9.9.9.tar.gz?big\_mirror=0&amp;quot; wget &amp;quot;http://downloads.sourceforge.net/mcrypt/libmcrypt-2.5.8.tar.gz?big\_mirror=0&amp;quot; wget &amp;quot;http://downloads.sourceforge.net/mcrypt/mcrypt-2.6.8.tar.gz?big_mirror=0&amp;quot; tar zxvf libmcrypt-2.5.8.tar.gz cd libmcrypt-2.5.8/ ./configure --prefix=/Data/apps/libs make make install cd libltdl/ ./configure --prefix=/Data/apps/libs --enable-ltdl-install make make install cd ../../ tar zxvf mhash-0.9.9.9.tar.gz cd mhash-0.9.9.9/ ./configure --prefix=/Data/apps/libs make make install cd ../&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;vi /etc/ld.so.conf&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;添加：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;/Data/apps/libs/lib&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;然后：&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ldconfig&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar zxvf mcrypt-2.6.8.tar.gz cd mcrypt-2.6.8/ export LDFLAGS=&amp;quot;-L/Data/apps/libs/lib -L/usr/lib&amp;quot; export CFLAGS=&amp;quot;-I/Data/apps/libs/include -I/usr/include&amp;quot; touch malloc.h ./configure --prefix=/Data/apps/libs --with-libmcrypt-prefix=/Data/apps/libs make make install cd ../&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;4、编译安装PHP 5.5&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;wget [http://www.php.net/get/php-5.5.1.tar.gz/from/tw2.php.net/mirror](http://www.php.net/get/php-5.5.1.tar.gz/from/tw2.php.net/mirror) tar zxvf php-5.5.1.tar.gz cd php-5.5.1/ export LIBS=&amp;quot;-lm -ltermcap -lresolv&amp;quot; export DYLD\_LIBRARY\_PATH=&amp;quot;/Data/apps/mysql/lib/:/lib/:/usr/lib/:/usr/local/lib:/lib64/:/usr/lib64/:/usr/local/lib64&amp;quot; export LD\_LIBRARY\_PATH=&amp;quot;/Data/apps/mysql/lib/:/lib/:/usr/lib/:/usr/local/lib:/lib64/:/usr/lib64/:/usr/local/lib64&amp;quot; ./configure --prefix=/Data/apps/php --with-config-file-path=/Data/apps/php/etc --with-mysql=/Data/apps/mysql --with-mysqli=/Data/apps/mysql/bin/mysql_config --with-iconv-dir --with-freetype-dir=/Data/apps/libs --with-jpeg-dir=/Data/apps/libs --with-png-dir=/Data/apps/libs --with-zlib --with-libxml-dir=/usr --enable-xml --disable-rpath --enable-bcmath --enable-shmop --enable-sysvsem --enable-inline-optimization --with-curl --enable-mbregex --enable-fpm --enable-mbstring --with-mcrypt=/Data/apps/libs --with-gd --enable-gd-native-ttf --with-openssl --with-mhash --enable-pcntl --enable-sockets --with-xmlrpc --enable-zip --enable-soap --enable-opcache --with-pdo-mysql --enable-maintainer-zts make make install cp php.ini-development /Data/apps/php/etc/php.ini cd ../ln -s /Data/apps/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib mv /Data/apps/php/etc/php-fpm.conf.default /Data/apps/php/etc/php-fpm.conf&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;5、编译安装PHP扩展&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;wget [http://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz](http://ftp.gnu.org/gnu/autoconf/autoconf-latest.tar.gz) tar zxvf autoconf-latest.tar.gz cd autoconf-2.69/ ./configure --prefix=/Data/apps/libs make make install cd ../wget [http://pecl.php.net/get/memcache-2.2.7.tgz](http://pecl.php.net/get/memcache-2.2.7.tgz) tar zxvf memcache-2.2.7.tgz cd memcache-2.2.7/ export PHP\_AUTOCONF=&amp;quot;/Data/apps/libs/bin/autoconf&amp;quot; export PHP\_AUTOHEADER=&amp;quot;/Data/apps/libs/bin/autoheader&amp;quot; /Data/apps/php/bin/phpize ./configure --with-php-config=/Data/apps/php/bin/php-config make make install cd ../&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;打开 /Data/apps/php/etc/php.ini 查找 ; extension_dir = “ext” 在其后增加一行：&lt;/p&gt;
 &lt;p&gt;extension = “memcache.so”&lt;/p&gt;
 </content>
@@ -1027,7 +1027,7 @@
         <id>https://erik.xyz/2014/10/19/zhi-de-shou-cang-de-14-kuan-xiang-ying-shi-qian-duan-kai-fa-kuang-jia/</id>
         <title>值得收藏的14款响应式前端开发框架</title>
         <link rel="alternate" href="https://erik.xyz/2014/10/19/zhi-de-shou-cang-de-14-kuan-xiang-ying-shi-qian-duan-kai-fa-kuang-jia/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;strong&gt;摘要&lt;/strong&gt;：使用前端开发框架可以大大简化开发过程，所开发网站具有跨浏览器、一致性、响应式等特点。本文收集了14款响应式前端开发框架，且分别指出所包含的UI组件及JavaScript插件。几乎所有的框架都采用了响应式网格系统。 前端开发并不是一个容易的工作，不仅需要掌握HTML、CSS和JavaScript，针对不同的浏览器版本和平台，还需要了解如何设计出跨平台的网站。如今随着响应式设计的流行，前端开发变得越来越困难，且花费的时间更长。 本文收集了14个响应式前端开发框架，可以帮助前端开发人员大大简化开发过程。针对每个框架，文中均指出了它所包含的UI组件及JavaScript插件。几乎所有的框架都采用了响应式网格系统。 &lt;strong&gt;使用这些前端框架，有如下好处&lt;/strong&gt;： 跨浏览器。这一点已被证实。 一致性。UI组件，如导航、按钮、标签、表单、下拉框、表格……，在设计上保持风格一致。 快速开发。你可以快速、容易地构建布局。这些框架都配有详细的说明文档。 响应式。所有CSS组件及JavaScript插件可以很好地从桌面过渡到移动设备上。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;strong&gt;InK&lt;/strong&gt; &lt;/p&gt;
+        <content type="html">&lt;p&gt;&lt;strong&gt;摘要&lt;/strong&gt;：使用前端开发框架可以大大简化开发过程，所开发网站具有跨浏览器、一致性、响应式等特点。本文收集了14款响应式前端开发框架，且分别指出所包含的UI组件及JavaScript插件。几乎所有的框架都采用了响应式网格系统。 前端开发并不是一个容易的工作，不仅需要掌握HTML、CSS和JavaScript，针对不同的浏览器版本和平台，还需要了解如何设计出跨平台的网站。如今随着响应式设计的流行，前端开发变得越来越困难，且花费的时间更长。 本文收集了14个响应式前端开发框架，可以帮助前端开发人员大大简化开发过程。针对每个框架，文中均指出了它所包含的UI组件及JavaScript插件。几乎所有的框架都采用了响应式网格系统。 &lt;strong&gt;使用这些前端框架，有如下好处&lt;/strong&gt;： 跨浏览器。这一点已被证实。 一致性。UI组件，如导航、按钮、标签、表单、下拉框、表格……，在设计上保持风格一致。 快速开发。你可以快速、容易地构建布局。这些框架都配有详细的说明文档。 响应式。所有CSS组件及JavaScript插件可以很好地从桌面过渡到移动设备上。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;strong&gt;InK&lt;/strong&gt; &lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/004616vp3xhv2wvnskz8ms.jpg&#34; alt=&#34;1.jpg&#34; title=&#34;1.jpg&#34;&gt; &lt;/p&gt;
 &lt;p&gt;Ink为一个界面工具包，用于快速开发Web界面，具有易于使用、易于扩展特点。它可以为构建布局提供解决方案，可以展示普通的界面元素，可以实现以内容为中心、对用户友好的交互方式。 HTML&amp;amp;CSS：布局、导航、排版、图标、表单、提示框、表格 JS：Gallery、表格、树视图、排序列表、日期选择插件、制表符、表单验证及一些行为（停靠、折叠、关闭） 其他：Sass Mixins &lt;strong&gt;GroundworkCSS Beta&lt;/strong&gt; &lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/004648t6t00u0rk3z2902k.jpg&#34; alt=&#34;2.jpg&#34; title=&#34;2.jpg&#34;&gt;&lt;/p&gt;

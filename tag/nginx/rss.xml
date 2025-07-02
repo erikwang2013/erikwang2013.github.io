@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Thu, 02 Feb 2023 13:59:00 +0800</pubDate>
         <lastBuildDate>Thu, 02 Feb 2023 13:59:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -473,7 +473,7 @@
             <link>https://erik.xyz/2023/02/02/40-ge-nginx-questions/</link>
             <category>nginx</category>
             <pubDate>Thu, 02 Feb 2023 13:59:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;什么是-Nginx？&#34;&gt;&lt;a href=&#34;#什么是-Nginx？&#34; class=&#34;headerlink&#34; title=&#34;什么是 Nginx？&#34;&gt;&lt;/a&gt;什么是 Nginx？&lt;/h2&gt;&lt;hr&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;什么是-Nginx？&#34;&gt;&lt;a href=&#34;#什么是-Nginx？&#34; class=&#34;headerlink&#34; title=&#34;什么是 Nginx？&#34;&gt;&lt;/a&gt;什么是 Nginx？&lt;/h2&gt;&lt;hr&gt;
 &lt;p&gt;Nginx 是一个 轻量级 / 高性能的反向代理 Web 服务器，用于 HTTP、HTTPS、SMTP、POP3 和 IMAP 协议。他实现非常高效的反向代理、负载平衡，他可以处理 2-3 万并发连接数，官方监测能支持 5 万并发，现在中国使用 nginx 网站用户有很多，例如：新浪、网易、 腾讯等。&lt;/p&gt;
 &lt;h5 id=&#34;Nginx-有哪些优点？&#34;&gt;&lt;a href=&#34;#Nginx-有哪些优点？&#34; class=&#34;headerlink&#34; title=&#34;Nginx 有哪些优点？&#34;&gt;&lt;/a&gt;Nginx 有哪些优点？&lt;/h5&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;跨平台、配置简单。&lt;/p&gt;

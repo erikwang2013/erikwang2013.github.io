@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Thu, 13 Feb 2025 21:35:00 +0800</pubDate>
         <lastBuildDate>Thu, 13 Feb 2025 21:35:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>开源工具</category>
             <category>桌面共享工具</category>
             <pubDate>Thu, 13 Feb 2025 21:35:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;1-xrdp&#34;&gt;&lt;a href=&#34;#1-xrdp&#34; class=&#34;headerlink&#34; title=&#34;1. xrdp&#34;&gt;&lt;/a&gt;1. &lt;a href=&#34;https://github.com/neutrinolabs/xrdp&#34;&gt;xrdp&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;1-xrdp&#34;&gt;&lt;a href=&#34;#1-xrdp&#34; class=&#34;headerlink&#34; title=&#34;1. xrdp&#34;&gt;&lt;/a&gt;1. &lt;a href=&#34;https://github.com/neutrinolabs/xrdp&#34;&gt;xrdp&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：xrdp 是一个开源的远程桌面协议 (RDP) 服务器，允许 Linux 系统通过 Windows 的 RDP 客户端远程访问。它与 Microsoft RDP 协议兼容，能够让你从 Windows 客户端连接到 Linux 系统。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;安装&lt;/strong&gt;：通常可以通过 Linux 的包管理器安装，例如在 Ubuntu 上使用命令：&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install xrdp&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -521,7 +521,7 @@
             <category>kali</category>
             <category>kali安装</category>
             <pubDate>Wed, 22 Jan 2020 16:39:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;kali用了有一段时间了，谈谈关于使用上的一些事吧。&lt;br&gt;目前我自己用的就是kali系统，安装在笔记本电脑上，中间也因为升级导致系统崩溃，自己也折腾过好几次。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;kali用了有一段时间了，谈谈关于使用上的一些事吧。&lt;br&gt;目前我自己用的就是kali系统，安装在笔记本电脑上，中间也因为升级导致系统崩溃，自己也折腾过好几次。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;安装完系统第一件事就是配置软件库&lt;/p&gt;
 &lt;p&gt;编辑库源指定地址文件（没用leafpad是没安装，用vi或者vim也可以命令操作）&lt;/p&gt;
@@ -570,7 +570,7 @@ export PATH JAVA_HOME CLASSPATH
             <category>jetbtrains</category>
             <category>phpstorm</category>
             <pubDate>Tue, 01 Oct 2019 00:23:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;通用破解永久版本，安装插件即可，支持2019.2版本的大部分ide&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;通用破解永久版本，安装插件即可，支持2019.2版本的大部分ide&lt;/p&gt;
 &lt;p&gt;pycharm2019.2  phpstorm2019.2 intelli2019.2 gloand2019.2 clion2019.2 webstorm2019.2&lt;/p&gt;
 &lt;p&gt;注意，不要用于商业用途，个人使用练习即可。&lt;/p&gt;
 &lt;p&gt;下载平破解插件jetbrainsCrack.jar放到已安装的ide工具目录下的bin目录&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -609,7 +609,7 @@ export PATH JAVA_HOME CLASSPATH
             <category>谷歌</category>
             <category>谷歌搜索</category>
             <pubDate>Thu, 27 Nov 2014 14:58:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;最近一直在弄谷歌收录和解决网站被浏览器屏蔽问题，无奈得用到谷歌站长工具，国内无法登陆，只有翻墙。有了这款浏览器可以做谷歌推广，去国外网站查询资料，登录谷歌邮箱……   翻墙浏览器工具最新版，下载 &lt;a href=&#34;http://sourceforge.net/projects/erik1314/files/win_all/GAEChrome.zip/download&#34; title=&#34;翻墙浏览器工具&#34;&gt;翻墙浏览器工具&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;最近一直在弄谷歌收录和解决网站被浏览器屏蔽问题，无奈得用到谷歌站长工具，国内无法登陆，只有翻墙。有了这款浏览器可以做谷歌推广，去国外网站查询资料，登录谷歌邮箱……   翻墙浏览器工具最新版，下载 &lt;a href=&#34;http://sourceforge.net/projects/erik1314/files/win_all/GAEChrome.zip/download&#34; title=&#34;翻墙浏览器工具&#34;&gt;翻墙浏览器工具&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -618,7 +618,7 @@ export PATH JAVA_HOME CLASSPATH
             <link>https://erik.xyz/2014/11/10/zend-studio-11-0-0-11-0-0-10-6-1-po-jie-bu-ding/</link>
             <category>工具</category>
             <pubDate>Mon, 10 Nov 2014 11:41:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;无意间把我的zend studio 10.6.1升级成11.0.2了，又要重新破解。 悲催，只好百度求助，竟然让我找到了，在此分享一下。 补丁地址：&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8140777&#34;&gt;http://download.csdn.net/download/w15875510692/8140777&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;无意间把我的zend studio 10.6.1升级成11.0.2了，又要重新破解。 悲催，只好百度求助，竟然让我找到了，在此分享一下。 补丁地址：&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8140777&#34;&gt;http://download.csdn.net/download/w15875510692/8140777&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -628,7 +628,7 @@ export PATH JAVA_HOME CLASSPATH
             <category>工具</category>
             <category>免费</category>
             <pubDate>Sat, 01 Nov 2014 12:35:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;运行filezilla时，出现如下错误的提示信息： ./filezilla: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla) 如果是64位系统报错信息如下： ./filezilla: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla) 原因是没有GLIBCXX_3.4.15版本，或是更高的版本。&lt;br&gt;输入命令查询一下结果：&lt;br&gt;[root@localhost ~]# strings /usr/lib/libstdc++.so.6 | grep GLIBCXX GLIBCXX_3.4 GLIBCXX_3.4.1 GLIBCXX_3.4.2 GLIBCXX_3.4.3 GLIBCXX_3.4.4 GLIBCXX_3.4.5 GLIBCXX_3.4.6 GLIBCXX_3.4.7 GLIBCXX_3.4.8 GLIBCXX_3.4.9 GLIBCXX_3.4.10 GLIBCXX_3.4.11 GLIBCXX_3.4.12 GLIBCXX_3.4.13 GLIBCXX_FORCE_NEW GLIBCXX_DEBUG_MESSAGE_LENGTH 我们看到当前GCC版本中的确没有GLIBCXX_3.4.15。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;64位系统命令为： [root@localhost ~]# strings /usr/lib64/libstdc++.so.6 | grep GLIBCXX 下载新版本，地址：&lt;a href=&#34;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_i386.deb&#34;&gt;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_i386.deb&lt;/a&gt; 或&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8481469&#34;&gt;http://download.csdn.net/download/w15875510692/8481469&lt;/a&gt; 64位系统： &lt;a href=&#34;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_amd64.deb&#34;&gt;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_amd64.deb&lt;/a&gt; 或&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8471575&#34;&gt;http://download.csdn.net/download/w15875510692/8471575&lt;/a&gt;&lt;br&gt;假设下载的文件放在/data0/software/。&lt;br&gt;解压：&lt;br&gt;[root@localhost software]# ar -x libstdc++6_4.7.2-5_i386.deb &amp;amp;&amp;amp; tar xvf data.tar.gz&lt;br&gt;解压后出现/data0/software/usr目录；&lt;br&gt;[root@localhost software]# cd  /data0/software/usr/lib/i380-linux-gun&lt;br&gt;[root@localhost i386-linux-gnu]# cp libstdc++.so.6.0.17 /usr/lib&lt;br&gt;[root@localhost i386-linux-gnu]# /usr/lib&lt;br&gt;[root@localhost lib]# rm libstdc++.so.6&lt;br&gt;[root@localhost lib]# ln libstdc++.so.6.0.17 libstdc++.so.6&lt;br&gt;注意64位系统为&lt;br&gt;[root@localhost software]# cd  /data0/software/usr/lib/x86_64-linux-gnu&lt;br&gt;[root@localhost x86_64-linux-gnu]# cp libstdc++.so.6.0.17 /usr/lib64&lt;br&gt;[root@localhost x86_64-linux-gnu]#cd /usr/lib64&lt;br&gt;[root@localhost lib]# rm libstdc++.so.6&lt;br&gt;[root@localhost lib]# ln libstdc++.so.6.0.17 libstdc++.so.6&lt;br&gt;重新建立软连接，我们再输入命令查询一下结果：&lt;br&gt;[root@localhost lib]# strings /usr/lib/libstdc++.so.6 | grep GLIBCXX GLIBCXX_3.4 GLIBCXX_3.4.1 GLIBCXX_3.4.2 GLIBCXX_3.4.3 GLIBCXX_3.4.4 GLIBCXX_3.4.5 GLIBCXX_3.4.6 GLIBCXX_3.4.7 GLIBCXX_3.4.8 GLIBCXX_3.4.9 GLIBCXX_3.4.10 GLIBCXX_3.4.11 GLIBCXX_3.4.12 GLIBCXX_3.4.13 GLIBCXX_3.4.14 GLIBCXX_3.4.15 GLIBCXX_3.4.16 GLIBCXX_3.4.17 GLIBCXX_DEBUG_MESSAGE_LENGTH 已经安装好GLIBCXX_3.4.15啦。 重新切换到filezilla目录并运行，正常啦！./filezilla: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla)已经解决。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;运行filezilla时，出现如下错误的提示信息： ./filezilla: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla) 如果是64位系统报错信息如下： ./filezilla: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla) 原因是没有GLIBCXX_3.4.15版本，或是更高的版本。&lt;br&gt;输入命令查询一下结果：&lt;br&gt;[root@localhost ~]# strings /usr/lib/libstdc++.so.6 | grep GLIBCXX GLIBCXX_3.4 GLIBCXX_3.4.1 GLIBCXX_3.4.2 GLIBCXX_3.4.3 GLIBCXX_3.4.4 GLIBCXX_3.4.5 GLIBCXX_3.4.6 GLIBCXX_3.4.7 GLIBCXX_3.4.8 GLIBCXX_3.4.9 GLIBCXX_3.4.10 GLIBCXX_3.4.11 GLIBCXX_3.4.12 GLIBCXX_3.4.13 GLIBCXX_FORCE_NEW GLIBCXX_DEBUG_MESSAGE_LENGTH 我们看到当前GCC版本中的确没有GLIBCXX_3.4.15。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;64位系统命令为： [root@localhost ~]# strings /usr/lib64/libstdc++.so.6 | grep GLIBCXX 下载新版本，地址：&lt;a href=&#34;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_i386.deb&#34;&gt;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_i386.deb&lt;/a&gt; 或&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8481469&#34;&gt;http://download.csdn.net/download/w15875510692/8481469&lt;/a&gt; 64位系统： &lt;a href=&#34;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_amd64.deb&#34;&gt;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_amd64.deb&lt;/a&gt; 或&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8471575&#34;&gt;http://download.csdn.net/download/w15875510692/8471575&lt;/a&gt;&lt;br&gt;假设下载的文件放在/data0/software/。&lt;br&gt;解压：&lt;br&gt;[root@localhost software]# ar -x libstdc++6_4.7.2-5_i386.deb &amp;amp;&amp;amp; tar xvf data.tar.gz&lt;br&gt;解压后出现/data0/software/usr目录；&lt;br&gt;[root@localhost software]# cd  /data0/software/usr/lib/i380-linux-gun&lt;br&gt;[root@localhost i386-linux-gnu]# cp libstdc++.so.6.0.17 /usr/lib&lt;br&gt;[root@localhost i386-linux-gnu]# /usr/lib&lt;br&gt;[root@localhost lib]# rm libstdc++.so.6&lt;br&gt;[root@localhost lib]# ln libstdc++.so.6.0.17 libstdc++.so.6&lt;br&gt;注意64位系统为&lt;br&gt;[root@localhost software]# cd  /data0/software/usr/lib/x86_64-linux-gnu&lt;br&gt;[root@localhost x86_64-linux-gnu]# cp libstdc++.so.6.0.17 /usr/lib64&lt;br&gt;[root@localhost x86_64-linux-gnu]#cd /usr/lib64&lt;br&gt;[root@localhost lib]# rm libstdc++.so.6&lt;br&gt;[root@localhost lib]# ln libstdc++.so.6.0.17 libstdc++.so.6&lt;br&gt;重新建立软连接，我们再输入命令查询一下结果：&lt;br&gt;[root@localhost lib]# strings /usr/lib/libstdc++.so.6 | grep GLIBCXX GLIBCXX_3.4 GLIBCXX_3.4.1 GLIBCXX_3.4.2 GLIBCXX_3.4.3 GLIBCXX_3.4.4 GLIBCXX_3.4.5 GLIBCXX_3.4.6 GLIBCXX_3.4.7 GLIBCXX_3.4.8 GLIBCXX_3.4.9 GLIBCXX_3.4.10 GLIBCXX_3.4.11 GLIBCXX_3.4.12 GLIBCXX_3.4.13 GLIBCXX_3.4.14 GLIBCXX_3.4.15 GLIBCXX_3.4.16 GLIBCXX_3.4.17 GLIBCXX_DEBUG_MESSAGE_LENGTH 已经安装好GLIBCXX_3.4.15啦。 重新切换到filezilla目录并运行，正常啦！./filezilla: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla)已经解决。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -641,7 +641,7 @@ export PATH JAVA_HOME CLASSPATH
             <category>空间</category>
             <category>资源</category>
             <pubDate>Fri, 31 Oct 2014 18:01:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;最近因为百度bat封了（要收费），新浪sea数据库上传有限制。干脆找一下免费资源，这还真找到了。 &lt;a href=&#34;http://free.5944.net&#34;&gt;http://free.5944.net&lt;/a&gt;      这个网站只要已注册就有1000MB的免费空间 &lt;a href=&#34;http://www.freehao123.com/freedns-afraid-org/&#34;&gt;http://www.freehao123.com/freedns-afraid-org/&lt;/a&gt;     这篇文章介绍了怎么申请永久性域名（二级）不用备案，可以申请多个，而且还可以有DNS解析。 &lt;a href=&#34;http://www.pdxx.net&#34;&gt;http://www.pdxx.net&lt;/a&gt;    说说这个网站吧，卖服务器的，可以提供免费空间(300mb)、数据库空间（10mb但是免费空间不备案就用不了，这是我遇到的问题。 &lt;a href=&#34;http://www.ywxa.com&#34;&gt;http://www.ywxa.com&lt;/a&gt; 充值1元可以申请1GB免费mysql 空间，10GB的空间。我只能说碉堡了，这估计是最大的免费，只有一年的年限，后续收费。 下面这两个都是提供免费10G空间，但是巨网的要收费一年1元，另外一个不收费 &lt;a href=&#34;http://www.id666.com&#34;&gt;http://www.id666.com&lt;/a&gt; &lt;a href=&#34;http://www.jwkp.com&#34;&gt;http://www.jwkp.com&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;最近因为百度bat封了（要收费），新浪sea数据库上传有限制。干脆找一下免费资源，这还真找到了。 &lt;a href=&#34;http://free.5944.net&#34;&gt;http://free.5944.net&lt;/a&gt;      这个网站只要已注册就有1000MB的免费空间 &lt;a href=&#34;http://www.freehao123.com/freedns-afraid-org/&#34;&gt;http://www.freehao123.com/freedns-afraid-org/&lt;/a&gt;     这篇文章介绍了怎么申请永久性域名（二级）不用备案，可以申请多个，而且还可以有DNS解析。 &lt;a href=&#34;http://www.pdxx.net&#34;&gt;http://www.pdxx.net&lt;/a&gt;    说说这个网站吧，卖服务器的，可以提供免费空间(300mb)、数据库空间（10mb但是免费空间不备案就用不了，这是我遇到的问题。 &lt;a href=&#34;http://www.ywxa.com&#34;&gt;http://www.ywxa.com&lt;/a&gt; 充值1元可以申请1GB免费mysql 空间，10GB的空间。我只能说碉堡了，这估计是最大的免费，只有一年的年限，后续收费。 下面这两个都是提供免费10G空间，但是巨网的要收费一年1元，另外一个不收费 &lt;a href=&#34;http://www.id666.com&#34;&gt;http://www.id666.com&lt;/a&gt; &lt;a href=&#34;http://www.jwkp.com&#34;&gt;http://www.jwkp.com&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -651,7 +651,7 @@ export PATH JAVA_HOME CLASSPATH
             <category>工具</category>
             <category>软件</category>
             <pubDate>Thu, 23 Oct 2014 16:29:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2jEpVaVXXXXbSXXXXXXXXXXXX_!!809419769.jpg&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2jEpVaVXXXXbSXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt;最近发现老版本的ChromeGAE不能翻墙了，很郁闷，谷歌站长又不能用了。 无奈百度了一下，找到最新的翻墙软件，感觉还可以吧。在这分享一下。 效果还是不错的 O(∩&lt;em&gt;∩)O哈哈~ [![艾瑞可erik](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX&#34;&gt;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX&lt;/a&gt;&lt;/em&gt;!!809419769.jpg)](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX_!!809419769.jpg&#34;&gt;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX_!!809419769.jpg&lt;/a&gt;) 下载地址：&lt;a href=&#34;http://pan.baidu.com/s/1hqy1KaS&#34;&gt;http://pan.baidu.com/s/1hqy1KaS&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2jEpVaVXXXXbSXXXXXXXXXXXX_!!809419769.jpg&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2jEpVaVXXXXbSXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt;最近发现老版本的ChromeGAE不能翻墙了，很郁闷，谷歌站长又不能用了。 无奈百度了一下，找到最新的翻墙软件，感觉还可以吧。在这分享一下。 效果还是不错的 O(∩&lt;em&gt;∩)O哈哈~ [![艾瑞可erik](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX&#34;&gt;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX&lt;/a&gt;&lt;/em&gt;!!809419769.jpg)](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX_!!809419769.jpg&#34;&gt;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX_!!809419769.jpg&lt;/a&gt;) 下载地址：&lt;a href=&#34;http://pan.baidu.com/s/1hqy1KaS&#34;&gt;http://pan.baidu.com/s/1hqy1KaS&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -662,7 +662,7 @@ export PATH JAVA_HOME CLASSPATH
             <category>域名监测</category>
             <category>网站监测</category>
             <pubDate>Fri, 10 Oct 2014 10:31:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/mm64s.png&#34; alt=&#34;木木夕logo&#34;&gt;由于我的网站是海外服务器，经常被联通给k掉，在家里用的长城宽带总是登录不上或者打不开网站，干脆就修改dns，试了试结果很令人满意。软件无意中得到 的来源于dnspod网站，测试本地可建立一个.txt文件，放入自己的顶级域名，打开软件，然后读取域名，就可以检测到域名，解析的dns.&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;例如&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/mm64s.png&#34; alt=&#34;木木夕logo&#34;&gt;由于我的网站是海外服务器，经常被联通给k掉，在家里用的长城宽带总是登录不上或者打不开网站，干脆就修改dns，试了试结果很令人满意。软件无意中得到 的来源于dnspod网站，测试本地可建立一个.txt文件，放入自己的顶级域名，打开软件，然后读取域名，就可以检测到域名，解析的dns.&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;例如&lt;/p&gt;
 &lt;p&gt;1.解压文件得到&lt;/p&gt;
 &lt;p&gt;[caption id=”attachment_87” align=”alignnone” width=”211”]&lt;a href=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/1.png&#34;&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/1.png&#34; alt=&#34;1&#34;&gt;&lt;/a&gt; dns监测开始步骤[/caption]&lt;/p&gt;
 &lt;p&gt;2.&lt;/p&gt;
@@ -689,7 +689,7 @@ export PATH JAVA_HOME CLASSPATH
             <category>memcache</category>
             <category>memcached</category>
             <pubDate>Mon, 06 Oct 2014 18:12:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;memcached 高速缓存工具（linux） wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;libevent-1.4.14b-stable.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;memcached-1.4.20.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;memcache-2.2.1.tgz&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;memcached 高速缓存工具（linux） wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;libevent-1.4.14b-stable.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;memcached-1.4.20.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;memcache-2.2.1.tgz&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

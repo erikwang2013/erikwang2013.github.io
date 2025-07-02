@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;rpm互转&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2017-11-25T02:38:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2017/11/25/centos-ru-he-an-zhuang-deb-ruan-jian-bao-yuan-ming-linux-xi-tong-xia-zen-me-yong-checkinstall-cong-yuan-ma-chuang-jian-yi-ge-rpm-huo-deb-bao/</id>
         <title>centos如何安装deb软件包/rpm转换成deb(原名：Linux系统下怎么用CheckInstall从源码创建一个RPM或DEB包)</title>
         <link rel="alternate" href="https://erik.xyz/2017/11/25/centos-ru-he-an-zhuang-deb-ruan-jian-bao-yuan-ming-linux-xi-tong-xia-zen-me-yong-checkinstall-cong-yuan-ma-chuang-jian-yi-ge-rpm-huo-deb-bao/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;正如我确信，你们一定知道Linux下的多种软件安装方式：使用发行版所提供的包管理系统（&lt;a href=&#34;http://www.tecmint.com/linux-package-management/&#34;&gt;aptitude，yum，或者zypper&lt;/a&gt;，还可以举很多例子），从源码编译（尽管现在很少用了，但在Linux发展早期却是唯一可用的方法），或者使用各自的低级工具dpkg用于.deb，以及rpm用于.rpm，预编译包，如此这般。&lt;/p&gt;
+        <content type="html">&lt;p&gt;正如我确信，你们一定知道Linux下的多种软件安装方式：使用发行版所提供的包管理系统（&lt;a href=&#34;http://www.tecmint.com/linux-package-management/&#34;&gt;aptitude，yum，或者zypper&lt;/a&gt;，还可以举很多例子），从源码编译（尽管现在很少用了，但在Linux发展早期却是唯一可用的方法），或者使用各自的低级工具dpkg用于.deb，以及rpm用于.rpm，预编译包，如此这般。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://www.linuxidc.com/upload/2015_09/150902085681941.png&#34; alt=&#34;Convert RPM to DEB and DEB to RPM&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;em&gt;使用Alien将RPM转换成DEB以及将DEB转换成RPM&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;在本文中，我们将为你介绍alien，一个用于在各种不同的Linux包格式相互转换的工具，其最常见的用法是将.rpm转换成.deb（或者反过来）。 如果你需要某个特定类型的包，而你只能找到其它格式的包的时候，该工具迟早能派得上用场——即使是其作者不再维护，并且在其网站声明：alien将可能永远维持在实验状态。 例如，有一次，我正查找一个用于喷墨打印机的.deb驱动，但是却没有找到——生产厂家只提供.rpm包，这时候alien拯救了我。我安装了alien，将包进行转换，不久之后我就可以使用我的打印机了，没有任何问题。 即便如此，我们也必须澄清一下，这个工具不应当用来转换重要的系统文件和库，因为它们在不同的发行版中有不同的配置。只有在前面说的那种情况下所建议的安装方法根本不适合时，alien才能作为最后手段使用。 最后一项要点是，我们必须注意，虽然我们在本文中使用&lt;a href=&#34;http://www.linuxidc.com/topicnews.aspx?tid=14&#34; title=&#34;CentOS&#34;&gt;CentOS&lt;/a&gt;和Debian，除了前两个发行版及其各自的家族体系外，据我们所知，alien可以工作在Slackware中，甚至Solaris中。  &lt;/p&gt;
 &lt;h4 id=&#34;步骤1：安装Alien及其依赖包&#34;&gt;&lt;a href=&#34;#步骤1：安装Alien及其依赖包&#34; class=&#34;headerlink&#34; title=&#34;步骤1：安装Alien及其依赖包&#34;&gt;&lt;/a&gt;步骤1：安装Alien及其依赖包&lt;/h4&gt;&lt;p&gt;要安装alien到CentOS/RHEL 7中，你需要启用EPEL和Nux Dextop（是的，是Dextop——不是Desktop）仓库，顺序如下：&lt;/p&gt;

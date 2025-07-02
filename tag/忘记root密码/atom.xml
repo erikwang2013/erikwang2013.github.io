@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;忘记root密码&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2016-02-14T03:18:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2016/02/14/centos7-wang-ji-root-mi-ma-zhong-zhi/</id>
         <title>centos7忘记root密码重置</title>
         <link rel="alternate" href="https://erik.xyz/2016/02/14/centos7-wang-ji-root-mi-ma-zhong-zhi/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;Linux-CentOS-7-编辑&#34;&gt;&lt;a href=&#34;#Linux-CentOS-7-编辑&#34; class=&#34;headerlink&#34; title=&#34;Linux CentOS 7[编辑]&#34;&gt;&lt;/a&gt;Linux CentOS 7[&lt;a href=&#34;http://www.ytyzx.net/index.php?title=%E5%A6%82%E4%BD%95%E6%81%A2%E5%A4%8D%E6%88%96%E9%87%8D%E7%BD%AEFreeBSD_%26_Linux%E7%9A%84root%E5%AF%86%E7%A0%81&amp;amp;action=edit&amp;amp;section=3&#34; title=&#34;编辑小节：Linux CentOS 7&#34;&gt;编辑&lt;/a&gt;]&lt;/h2&gt;&lt;p&gt;重启Linux CentOS 7系统，在下图中用方向键选择对应的系统，并按“e”键。&lt;/p&gt;
+        <content type="html">&lt;h2 id=&#34;Linux-CentOS-7-编辑&#34;&gt;&lt;a href=&#34;#Linux-CentOS-7-编辑&#34; class=&#34;headerlink&#34; title=&#34;Linux CentOS 7[编辑]&#34;&gt;&lt;/a&gt;Linux CentOS 7[&lt;a href=&#34;http://www.ytyzx.net/index.php?title=%E5%A6%82%E4%BD%95%E6%81%A2%E5%A4%8D%E6%88%96%E9%87%8D%E7%BD%AEFreeBSD_%26_Linux%E7%9A%84root%E5%AF%86%E7%A0%81&amp;amp;action=edit&amp;amp;section=3&#34; title=&#34;编辑小节：Linux CentOS 7&#34;&gt;编辑&lt;/a&gt;]&lt;/h2&gt;&lt;p&gt;重启Linux CentOS 7系统，在下图中用方向键选择对应的系统，并按“e”键。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.ytyzx.net/index.php/File:CentOS1.png&#34;&gt;&lt;img src=&#34;http://www.ytyzx.net/images/d/dc/CentOS1.png&#34; alt=&#34;CentOS1.png&#34;&gt;&lt;/a&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;出现以下画面，按向下方向键移动蓝色框部分，请注意蓝色框内最后部分。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.ytyzx.net/index.php/File:CentOS2.png&#34;&gt;&lt;img src=&#34;http://www.ytyzx.net/images/f/f3/CentOS2.png&#34; alt=&#34;CentOS2.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;

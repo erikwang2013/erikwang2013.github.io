@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;优化&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2024-05-06T03:44:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2024/05/06/index-asynchrony-landing/</id>
         <title>增加索引 + 异步 + 不落地后，从 12h 优化到 15 min</title>
         <link rel="alternate" href="https://erik.xyz/2024/05/06/index-asynchrony-landing/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;在开发中，我们经常会遇到这样的需求，将数据库中的图片导出到本地，再传给别人。&lt;/p&gt;
+        <content type="html">&lt;p&gt;在开发中，我们经常会遇到这样的需求，将数据库中的图片导出到本地，再传给别人。&lt;/p&gt;
 &lt;h4 id=&#34;一、一般我会这样做：&#34;&gt;&lt;a href=&#34;#一、一般我会这样做：&#34; class=&#34;headerlink&#34; title=&#34;一、一般我会这样做：&#34;&gt;&lt;/a&gt;一、一般我会这样做：&lt;/h4&gt;&lt;p&gt;1.通过接口或者定时任务的形式&lt;/p&gt;
 &lt;p&gt;2.读取Oracle或者MySQL数据库&lt;/p&gt;
 &lt;p&gt;3.通过FileOutputStream将Base64解密后的byte[]存储到本地&lt;/p&gt;
@@ -619,7 +619,7 @@
         <id>https://erik.xyz/2017/11/17/ru-he-chu-li-wang-zhan-xiang-ying-man-de-wen-ti/</id>
         <title>如何处理网站响应慢的问题</title>
         <link rel="alternate" href="https://erik.xyz/2017/11/17/ru-he-chu-li-wang-zhan-xiang-ying-man-de-wen-ti/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;当一个网页请求量在10W+的时候出现慢或者很卡的情况如何解决呢？ 1.后台数据&lt;/p&gt;
+        <content type="html">&lt;p&gt;当一个网页请求量在10W+的时候出现慢或者很卡的情况如何解决呢？ 1.后台数据&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;把所有的数据放进缓存，让服务器内存来处理。&lt;/li&gt;
 &lt;li&gt;优化数据获取代码。&lt;/li&gt;
@@ -652,7 +652,7 @@
         <id>https://erik.xyz/2015/01/10/ji-yu-sphinx-gou-jian-zhun-shi-shi-geng-xin-de-fen-bu-shi-tong-yong-sou-suo-yin-qing-ping-tai/</id>
         <title>基于Sphinx构建准实时更新的分布式通用搜索引擎平台</title>
         <link rel="alternate" href="https://erik.xyz/2015/01/10/ji-yu-sphinx-gou-jian-zhun-shi-shi-geng-xin-de-fen-bu-shi-tong-yong-sou-suo-yin-qing-ping-tai/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;作者：张宴 前言： 2008年7月，我写过一篇文章《&lt;a href=&#34;http://blog.zyan.cc/post/360/&#34;&gt;基于Sphinx+MySQL的千万级数据全文检索（搜索引擎）架构设计&lt;/a&gt;》。有不少网友希望阅读全文，我将该文档整理了一下，分享出来。文档解压后大小为7.33M，共19页。 &lt;strong&gt;本站下载地址：&lt;/strong&gt; &lt;a href=&#34;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&#34;&gt;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&lt;/a&gt; &lt;strong&gt;新浪下载分流：&lt;/strong&gt; &lt;a href=&#34;http://ishare.iask.sina.com.cn/f/6728201.html&#34;&gt;http://ishare.iask.sina.com.cn/f/6728201.html&lt;/a&gt; 上述文档架构存在的局限，我在2008年12月的文章《&lt;a href=&#34;http://blog.zyan.cc/post/385/&#34;&gt;亿级数据的高并发通用搜索引擎架构设计&lt;/a&gt;》 中已经指出：一是MySQL本身的并发能力有限，在200～300个并发连接下，查询和更新就比较慢了；二是由于MySQL表的主键与Sphinx索引的 ID一一对应，从而无法跨多表建立整站查询，而且新增加类别还得修改配置文件，比较麻烦；三是因为和MySQL集成，无法发挥出Sphinx的优势。虽然 如此，但对于一些写入量不大的搜索应用，已经足够了，或许对很多人会有帮助。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;作者：张宴 前言： 2008年7月，我写过一篇文章《&lt;a href=&#34;http://blog.zyan.cc/post/360/&#34;&gt;基于Sphinx+MySQL的千万级数据全文检索（搜索引擎）架构设计&lt;/a&gt;》。有不少网友希望阅读全文，我将该文档整理了一下，分享出来。文档解压后大小为7.33M，共19页。 &lt;strong&gt;本站下载地址：&lt;/strong&gt; &lt;a href=&#34;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&#34;&gt;http://blog.zyan.cc/book/sphinx/sphinx_mysql.zip&lt;/a&gt; &lt;strong&gt;新浪下载分流：&lt;/strong&gt; &lt;a href=&#34;http://ishare.iask.sina.com.cn/f/6728201.html&#34;&gt;http://ishare.iask.sina.com.cn/f/6728201.html&lt;/a&gt; 上述文档架构存在的局限，我在2008年12月的文章《&lt;a href=&#34;http://blog.zyan.cc/post/385/&#34;&gt;亿级数据的高并发通用搜索引擎架构设计&lt;/a&gt;》 中已经指出：一是MySQL本身的并发能力有限，在200～300个并发连接下，查询和更新就比较慢了；二是由于MySQL表的主键与Sphinx索引的 ID一一对应，从而无法跨多表建立整站查询，而且新增加类别还得修改配置文件，比较麻烦；三是因为和MySQL集成，无法发挥出Sphinx的优势。虽然 如此，但对于一些写入量不大的搜索应用，已经足够了，或许对很多人会有帮助。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;正文： 在这之后，本人基于《&lt;a href=&#34;http://blog.zyan.cc/post/385/&#34;&gt;亿级数据的高并发通用搜索引擎架构设计&lt;/a&gt;》开发的Sphinx分布式通用站内搜索引擎平台，已经在生产环境运行9个月以上，经过运营中的不断完善与改进，目前已形成了一套可扩展的分布式通用站内搜索引擎框架。CMS、视频、论坛等产品发生的增、删、改操作，文本内容实时写入自行开发的 &lt;a href=&#34;http://blog.zyan.cc/httpsqs&#34;&gt;HTTPSQS&lt;/a&gt; 高性能简单消息队列服务，通过队列控制器更新索引和存储。提供支持XML、JSON的API查询接口，支持亿级数据的索引、分布式、中文分词、高亮显示、自动摘要、准实时（1分钟内）增量索引更新。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://zyan.cc/attachment/201002/search_system.png&#34;&gt;&lt;img src=&#34;http://zyan.cc/attachment/201002/search_system.png&#34; alt=&#34;点击在新窗口中浏览此图片&#34; title=&#34;点击在新窗口中浏览此图片&#34;&gt;&lt;/a&gt; &lt;/p&gt;
@@ -699,7 +699,7 @@
         <id>https://erik.xyz/2014/10/25/bai-du-tong-ji-ce-shi-wang-zhan-xiang-ying-su-du-jiang-di/</id>
         <title>百度统计测试网站响应速度降低</title>
         <link rel="alternate" href="https://erik.xyz/2014/10/25/bai-du-tong-ji-ce-shi-wang-zhan-xiang-ying-su-du-jiang-di/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i1/809419769/TB2UVibaVXXXXbHXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;seo&#34;&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;前段时间用百度统计刚刚把网站响应速度跑个满分，过个2天却又降了下来，很是郁闷啊。到底是怎么回事呢，还得从头开始分析原因。从百度统计测试看有一大堆提示，什么图片过大，没有Gzip压缩…… &lt;img src=&#34;http://img02.taobaocdn.com/imgextra/i2/809419769/TB2EV5aaVXXXXcnXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;优化详解&#34;&gt; 先分析一下，我用wp super cache开启了预缓存才出现，没有Gzip压缩。关闭预缓存问题解决。 图片问题是由于我截图后直接上传而没有保存或者转换成web格式，导致图片比较大，加载自然会占时间。 还有，首页是跟着文章的更新而出现更新，因此响应速度慢也就没什么了。&lt;/p&gt;
+        <content type="html">&lt;p&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i1/809419769/TB2UVibaVXXXXbHXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;seo&#34;&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;前段时间用百度统计刚刚把网站响应速度跑个满分，过个2天却又降了下来，很是郁闷啊。到底是怎么回事呢，还得从头开始分析原因。从百度统计测试看有一大堆提示，什么图片过大，没有Gzip压缩…… &lt;img src=&#34;http://img02.taobaocdn.com/imgextra/i2/809419769/TB2EV5aaVXXXXcnXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;优化详解&#34;&gt; 先分析一下，我用wp super cache开启了预缓存才出现，没有Gzip压缩。关闭预缓存问题解决。 图片问题是由于我截图后直接上传而没有保存或者转换成web格式，导致图片比较大，加载自然会占时间。 还有，首页是跟着文章的更新而出现更新，因此响应速度慢也就没什么了。&lt;/p&gt;
 </content>
         <category term="seo" />
         <category term="优化" />
@@ -709,7 +709,7 @@
         <id>https://erik.xyz/2014/10/24/wordpress-zhong-seo-you-hua-jian-yi/</id>
         <title>wordpress中seo优化建议</title>
         <link rel="alternate" href="https://erik.xyz/2014/10/24/wordpress-zhong-seo-you-hua-jian-yi/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/seo_wpss&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i1/809419769/TB2UVibaVXXXXbHXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt; 最近一直在弄网站优化这块，百度统计测试网站响应速度已100%跑满，只剩百度站长页面优化跑到92分卡住了。我对那些不愿意花时间来做优化的同行想说句“加油哦，我已经做到了”。大家遇到问题百度一下会发现好多贴吧或者博客说你没必要去管百度统计里面的优化，什么合并域名啊，合并js、css的都不行、没必要、影响不大。如果确实影响不大，百度难道自己有问题，故意个给你测评误导你。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB210F4aVXXXXa1XXXXXXXXXXXX_!!809419769.jpg&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB210F4aVXXXXa1XXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt; 说多了都是泪啊，百度统计网站响应测试，刚开始很让人头疼的。出现js、css要合并，外调的图片域名要合并，网站缓存响应时间要设置……问题多多啊 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2eRx0aVXXXXXWXpXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2eRx0aVXXXXXWXpXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 既然有这么问题那就解决吧，干看着没用啊。先上百度找找，忙活了一阵子发现百度不靠谱，好多人都没弄。怎么办呢？ 先从合并css开始吧。百度统计提示的是你代码里面有多个css文件（我的是2个）,在后台外观-编辑-header.php文件里并没有这些css文件,查查资料才知道是&amp;lt;?php  wp&lt;em&gt;head(); &amp;gt;输出的。怎么办呢，反复想想有结果了。 我先去网站首页查看源文件 [![木木夕](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX&#34;&gt;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX&lt;/a&gt;&lt;/em&gt;!!809419769.png)](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX_!!809419769.png&#34;&gt;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX_!!809419769.png&lt;/a&gt;) 源文件把所有的代码都解析出来了这个好啊，我们回头把header.php文件中的&amp;lt;?php  wp_head(); &amp;gt;注释掉，根据上下代码寻找衔接，把源文件输出替换&amp;lt;?php  wp_head(); &amp;gt;的代码复制粘贴到header.php中相对应的位置。然后，就会找到对应要合并css文件，同时也找到对应要合并的js文件。我们先注释其中的一个，留另外一个做调用（script貌似注释不了，只能先粘贴复制到本地文件，以防出错好恢复。），更新文件header.php。用ftp链接服务器找到对应文件。例如，我这边是style.cc和960.css，jquery.js和jquery-migrate.min.js要合并，我先找到这写文件对应的地方，下载到本地先做备份（注意jquery所在的文件夹文件较多，看仔细些）。我把960.css里面的代码粘贴复制到style.css里面，同时，注释掉header.php文件的连接路径（注意960.css文件不要删掉，因为还有其他地方在调用）。同理也把js文件合并。最后清理一下网站缓存（如果你装了缓存插件就要清楚缓存），然后在清理一下浏览器缓存，然后用百度统计测评一下会发现响应速度加分了。 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2LAx1aVXXXXcFXXXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2LAx1aVXXXXcFXXXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2bEV0aVXXXXXEXpXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2bEV0aVXXXXXEXpXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 接下来还没完，因为还有域名要合并。在百度上搜到的答案是说域名是没办法合并的，都是外调别人的。有的还说你得有顶级域名才能合并，反正我对这些人无语了。 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2daR5aVXXXXa9XXXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2daR5aVXXXXa9XXXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 外调图片是没办法的，空间不大，图片占得容量太大了，只有外调。笔者在建站时一直考虑这个问题，后来解决了。因为有做过淘宝，便有个淘宝图片空间，可以调外链。百度统计提示域名合并就是img03.taobaocdn.com和img04.taobaocdn.com就前面的不一样，把前面的改成一样的试试，结果还真有效果，不影响图片输出。合并域名就这样解决了，同理我调用360的友情链接和安全检测验证也是用这样的方法，刷新缓存重新测试，就没有要合并域名的情况了。 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2UIh1aVXXXXcVXXXXXXXXXXXX_!!809419769.jpg&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2UIh1aVXXXXcVXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 笔者在这是想说有些事真的是你自己去尝试了才知道有更好的办法解决，刚开始虽然是百度，但是你自己试试就知道结果会是怎么样的。&lt;/p&gt;
+        <content type="html">&lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/seo_wpss&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i1/809419769/TB2UVibaVXXXXbHXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt; 最近一直在弄网站优化这块，百度统计测试网站响应速度已100%跑满，只剩百度站长页面优化跑到92分卡住了。我对那些不愿意花时间来做优化的同行想说句“加油哦，我已经做到了”。大家遇到问题百度一下会发现好多贴吧或者博客说你没必要去管百度统计里面的优化，什么合并域名啊，合并js、css的都不行、没必要、影响不大。如果确实影响不大，百度难道自己有问题，故意个给你测评误导你。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB210F4aVXXXXa1XXXXXXXXXXXX_!!809419769.jpg&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB210F4aVXXXXa1XXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt; 说多了都是泪啊，百度统计网站响应测试，刚开始很让人头疼的。出现js、css要合并，外调的图片域名要合并，网站缓存响应时间要设置……问题多多啊 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2eRx0aVXXXXXWXpXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2eRx0aVXXXXXWXpXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 既然有这么问题那就解决吧，干看着没用啊。先上百度找找，忙活了一阵子发现百度不靠谱，好多人都没弄。怎么办呢？ 先从合并css开始吧。百度统计提示的是你代码里面有多个css文件（我的是2个）,在后台外观-编辑-header.php文件里并没有这些css文件,查查资料才知道是&amp;lt;?php  wp&lt;em&gt;head(); &amp;gt;输出的。怎么办呢，反复想想有结果了。 我先去网站首页查看源文件 [![木木夕](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX&#34;&gt;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX&lt;/a&gt;&lt;/em&gt;!!809419769.png)](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX_!!809419769.png&#34;&gt;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX_!!809419769.png&lt;/a&gt;) 源文件把所有的代码都解析出来了这个好啊，我们回头把header.php文件中的&amp;lt;?php  wp_head(); &amp;gt;注释掉，根据上下代码寻找衔接，把源文件输出替换&amp;lt;?php  wp_head(); &amp;gt;的代码复制粘贴到header.php中相对应的位置。然后，就会找到对应要合并css文件，同时也找到对应要合并的js文件。我们先注释其中的一个，留另外一个做调用（script貌似注释不了，只能先粘贴复制到本地文件，以防出错好恢复。），更新文件header.php。用ftp链接服务器找到对应文件。例如，我这边是style.cc和960.css，jquery.js和jquery-migrate.min.js要合并，我先找到这写文件对应的地方，下载到本地先做备份（注意jquery所在的文件夹文件较多，看仔细些）。我把960.css里面的代码粘贴复制到style.css里面，同时，注释掉header.php文件的连接路径（注意960.css文件不要删掉，因为还有其他地方在调用）。同理也把js文件合并。最后清理一下网站缓存（如果你装了缓存插件就要清楚缓存），然后在清理一下浏览器缓存，然后用百度统计测评一下会发现响应速度加分了。 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2LAx1aVXXXXcFXXXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2LAx1aVXXXXcFXXXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2bEV0aVXXXXXEXpXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2bEV0aVXXXXXEXpXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 接下来还没完，因为还有域名要合并。在百度上搜到的答案是说域名是没办法合并的，都是外调别人的。有的还说你得有顶级域名才能合并，反正我对这些人无语了。 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2daR5aVXXXXa9XXXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2daR5aVXXXXa9XXXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 外调图片是没办法的，空间不大，图片占得容量太大了，只有外调。笔者在建站时一直考虑这个问题，后来解决了。因为有做过淘宝，便有个淘宝图片空间，可以调外链。百度统计提示域名合并就是img03.taobaocdn.com和img04.taobaocdn.com就前面的不一样，把前面的改成一样的试试，结果还真有效果，不影响图片输出。合并域名就这样解决了，同理我调用360的友情链接和安全检测验证也是用这样的方法，刷新缓存重新测试，就没有要合并域名的情况了。 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2UIh1aVXXXXcVXXXXXXXXXXXX_!!809419769.jpg&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2UIh1aVXXXXcVXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 笔者在这是想说有些事真的是你自己去尝试了才知道有更好的办法解决，刚开始虽然是百度，但是你自己试试就知道结果会是怎么样的。&lt;/p&gt;
 </content>
         <category term="seo" />
         <category term="优化" />

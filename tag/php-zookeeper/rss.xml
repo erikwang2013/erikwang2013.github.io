@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Tue, 30 Jul 2019 11:16:00 +0800</pubDate>
         <lastBuildDate>Tue, 30 Jul 2019 11:16:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -476,7 +476,7 @@
             <category>zookeeper3.5.5</category>
             <category>php-zookeeper扩展</category>
             <pubDate>Tue, 30 Jul 2019 11:16:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;这两天想用用zookeeper，顺便做个提升。查了下官方给出的3.5.5和3.4.14。而php手册也有介绍配置方法，不过扩展好久没更新，就是试试用了。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;这两天想用用zookeeper，顺便做个提升。查了下官方给出的3.5.5和3.4.14。而php手册也有介绍配置方法，不过扩展好久没更新，就是试试用了。&lt;/p&gt;
 &lt;p&gt;下载php-zookeeper扩展，放到本地编译、安装。在执行make命令的时候总是报错缺少lzookeeper_mt.so库。&lt;br&gt;官方搜索教程都是老版本的，说是在文件根目录src/c下生成库。可是我用的是3.5.5版本的，目录下根本没有。&lt;br&gt;根据官方文档可知，新版本分为bin和源码版，也就是说bin是编译好的，下载后配置一下cfg文件就可以用了。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;我下载的是bin版，已经编译好的，那就下载源码（&lt;a href=&#34;https://www-us.apache.org/dist/zookeeper/,&#34;&gt;zookeeper下载&lt;/a&gt;）版吧。在3.5.5中需要使用c端就必须编译安装库，在项目根目录下zookeeper-client中，怎么编译呢很懵逼。看官方文档（&lt;a href=&#34;https://erik.xyz/dev_books/zookeeper3.5.5/zookeeperProgrammers.html#C+Binding,,&#34;&gt;zookeeper3.5.5手册&lt;/a&gt;）是这样说的&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/201907/2019-07-30_18-10.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;

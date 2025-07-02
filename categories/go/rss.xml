@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Wed, 16 Nov 2022 10:33:00 +0800</pubDate>
         <lastBuildDate>Wed, 16 Nov 2022 10:33:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -474,7 +474,7 @@
             <category>go</category>
             <category>开放接口开发</category>
             <pubDate>Wed, 16 Nov 2022 10:33:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;需求是这样的：&lt;br&gt;有个外部app给我们小程序做推广，在他们那领取优惠券码。然后到我们小程序领取优惠券，使用优惠券下单。同时，需要我们推送订单。还要接受他们那变更优惠券的状态。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;思路图如下：&lt;br&gt;&lt;img src=&#34;/img/202211/20221116094358.jpg&#34; alt=&#34;思路图&#34; title=&#34;思路图&#34;&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;需求是这样的：&lt;br&gt;有个外部app给我们小程序做推广，在他们那领取优惠券码。然后到我们小程序领取优惠券，使用优惠券下单。同时，需要我们推送订单。还要接受他们那变更优惠券的状态。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;思路图如下：&lt;br&gt;&lt;img src=&#34;/img/202211/20221116094358.jpg&#34; alt=&#34;思路图&#34; title=&#34;思路图&#34;&gt;&lt;/p&gt;
 &lt;p&gt;那么，根据上面的思路。我这需要开发三个接口&lt;/p&gt;
 &lt;p&gt;1.优惠券列表&lt;/p&gt;
 &lt;p&gt;第三方调用接口，获取优惠券信息&lt;/p&gt;
@@ -500,7 +500,7 @@
             <category>beego数据分页</category>
             <category>分页</category>
             <pubDate>Sat, 30 Jul 2022 10:43:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;beego中数据库分页&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;beego中数据库分页&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;  func PageDB(limit int, page int, count int64) (int, int) &amp;#123;
       pageSetNum := limit // 每页条数
 
@@ -524,7 +524,7 @@
             <link>https://erik.xyz/2022/07/30/go-on-express/</link>
             <category>go对接快递签名</category>
             <pubDate>Sat, 30 Jul 2022 10:39:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;ul&gt;
+            <description><![CDATA[ &lt;ul&gt;
 &lt;li&gt;韵达签名&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;  func YunDaSign(structData interface&amp;#123;&amp;#125;) ([]byte, string, string) &amp;#123;
@@ -608,7 +608,7 @@
             <category>go加密</category>
             <category>go解密</category>
             <pubDate>Sat, 16 Jul 2022 10:35:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;pre&gt;&lt;code&gt;func PKCS7Padding(ciphertext []byte, blockSize int) []byte &amp;#123;
+            <description><![CDATA[ &lt;pre&gt;&lt;code&gt;func PKCS7Padding(ciphertext []byte, blockSize int) []byte &amp;#123;
     padding := blockSize - len(ciphertext)%blockSize
     //Repeat()函数的功能是把切片[]byte&amp;#123;byte(padding)&amp;#125;复制padding个，然后合并成新的字节切片返回
     padtext := bytes.Repeat([]byte&amp;#123;byte(padding)&amp;#125;, padding)
@@ -717,7 +717,7 @@
             <link>https://erik.xyz/2022/05/22/go-add-pdf/</link>
             <category>go中pdf生成</category>
             <pubDate>Sun, 22 May 2022 10:57:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;一个简单但是非常实用的pdf生成器！&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;一个简单但是非常实用的pdf生成器！&lt;/p&gt;
 &lt;p&gt;安装：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;go get github.com/jung-kurt/gofpdf
 &lt;/code&gt;&lt;/pre&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
@@ -761,7 +761,7 @@ func GeneratePdf(filename string) error &amp;#123;
             <link>https://erik.xyz/2022/05/10/get-http-address-ip/</link>
             <category>go获取ip</category>
             <pubDate>Tue, 10 May 2022 20:12:31 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;pre&gt;&lt;code&gt;package main
+            <description><![CDATA[ &lt;pre&gt;&lt;code&gt;package main
 
 import (
     &amp;quot;encoding/json&amp;quot;
@@ -798,7 +798,7 @@ func GetIP(r *http.Request) string &amp;#123;
             <link>https://erik.xyz/2022/04/12/go-limit-open/</link>
             <category>go中限流</category>
             <pubDate>Tue, 12 Apr 2022 13:12:54 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;限流器是后台服务中的非常重要的组件，可以用来限制请求速率，保护服务，以免服务过载。 限流器的实现方法有很多种，例如滑动窗口法、Token Bucket、Leaky Bucket等。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;限流器是后台服务中的非常重要的组件，可以用来限制请求速率，保护服务，以免服务过载。 限流器的实现方法有很多种，例如滑动窗口法、Token Bucket、Leaky Bucket等。&lt;/p&gt;
 &lt;p&gt;其实golang标准库中就自带了限流算法的实现，即golang.org/x/time/rate。 该限流器是基于Token Bucket(令牌桶)实现的。&lt;/p&gt;
 &lt;p&gt;简单来说，令牌桶就是想象有一个固定大小的桶，系统会以恒定速率向桶中放Token，桶满则暂时不放。 而用户则从桶中取Token，如果有剩余Token就可以一直取。如果没有剩余Token，则需要等到系统中被放置了Token才行。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;本文则主要集中介绍下该组件的具体使用方法：&lt;/p&gt;
 &lt;p&gt;我们可以使用以下方法构造一个限流器对象：&lt;/p&gt;
@@ -891,7 +891,7 @@ func main() &amp;#123;
             <category>go</category>
             <category>new和make的区别</category>
             <pubDate>Tue, 22 Mar 2022 09:27:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;go中我们往往要对变量分配内存，那么分配内存有两中方式分别是new和make。查了一些资料，顺便看我开发中用的几个地方。其实，很好理解。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;go中我们往往要对变量分配内存，那么分配内存有两中方式分别是new和make。查了一些资料，顺便看我开发中用的几个地方。其实，很好理解。&lt;/p&gt;
 &lt;p&gt;new分配中内存，不做初始化，也就是不能直接赋值，必须初始化后才能赋值。&lt;/p&gt;
 &lt;p&gt;make分配好内存且已经&lt;/p&gt;
  ]]></description>
@@ -903,7 +903,7 @@ func main() &amp;#123;
             <category>go</category>
             <category>结构体转map</category>
             <pubDate>Fri, 11 Feb 2022 11:55:10 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;在go中往redis的hash写数据的时候遇到了结构体数组写入时无法写入，看了看写入数据要求是map[string]interface，而我的是struct。因此，无法写入的。&lt;br&gt;那么就是转格式呗&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;在go中往redis的hash写数据的时候遇到了结构体数组写入时无法写入，看了看写入数据要求是map[string]interface，而我的是struct。因此，无法写入的。&lt;br&gt;那么就是转格式呗&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;type order struct&amp;#123;
     Id int64 `json:&amp;quot;id&amp;quot;`
     orderSn int64 `json:&amp;quot;order_sn&amp;quot;`          

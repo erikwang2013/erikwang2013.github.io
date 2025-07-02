@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;数学&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2019-09-21T14:03:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2019/09/21/ai-ji-chu-zhi-hang-lie-shi/</id>
         <title>数学基础知识-行列式</title>
         <link rel="alternate" href="https://erik.xyz/2019/09/21/ai-ji-chu-zhi-hang-lie-shi/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;二阶行列式&#34;&gt;&lt;a href=&#34;#二阶行列式&#34; class=&#34;headerlink&#34; title=&#34;二阶行列式&#34;&gt;&lt;/a&gt;二阶行列式&lt;/h4&gt;&lt;p&gt;$\begin{vmatrix} a&lt;em&gt;{11} &amp;amp; a&lt;/em&gt;{12} \newline a&lt;em&gt;{21} &amp;amp; a&lt;/em&gt;{22} \newline \end{vmatrix}&lt;mjx-container class=&#34;MathJax&#34; jax=&#34;SVG&#34;&gt;&lt;svg style=&#34;vertical-align: -0.186ex;&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;1.76ex&#34; height=&#34;1.505ex&#34; role=&#34;img&#34; focusable=&#34;false&#34; viewBox=&#34;0 -583 778 665&#34;&gt;&lt;g stroke=&#34;currentColor&#34; fill=&#34;currentColor&#34; stroke-width=&#34;0&#34; transform=&#34;scale(1,-1)&#34;&gt;&lt;g data-mml-node=&#34;math&#34;&gt;&lt;g data-mml-node=&#34;mo&#34;&gt;&lt;path data-c=&#34;3D&#34; d=&#34;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&#34;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/mjx-container&gt;a&lt;em&gt;{11}a&lt;/em&gt;{22}-a&lt;em&gt;{12}a&lt;/em&gt;{21}$&lt;/p&gt;
+        <content type="html">&lt;h4 id=&#34;二阶行列式&#34;&gt;&lt;a href=&#34;#二阶行列式&#34; class=&#34;headerlink&#34; title=&#34;二阶行列式&#34;&gt;&lt;/a&gt;二阶行列式&lt;/h4&gt;&lt;p&gt;$\begin{vmatrix} a&lt;em&gt;{11} &amp;amp; a&lt;/em&gt;{12} \newline a&lt;em&gt;{21} &amp;amp; a&lt;/em&gt;{22} \newline \end{vmatrix}&lt;mjx-container class=&#34;MathJax&#34; jax=&#34;SVG&#34;&gt;&lt;svg style=&#34;vertical-align: -0.186ex;&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;1.76ex&#34; height=&#34;1.505ex&#34; role=&#34;img&#34; focusable=&#34;false&#34; viewBox=&#34;0 -583 778 665&#34;&gt;&lt;g stroke=&#34;currentColor&#34; fill=&#34;currentColor&#34; stroke-width=&#34;0&#34; transform=&#34;scale(1,-1)&#34;&gt;&lt;g data-mml-node=&#34;math&#34;&gt;&lt;g data-mml-node=&#34;mo&#34;&gt;&lt;path data-c=&#34;3D&#34; d=&#34;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&#34;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/mjx-container&gt;a&lt;em&gt;{11}a&lt;/em&gt;{22}-a&lt;em&gt;{12}a&lt;/em&gt;{21}$&lt;/p&gt;
 &lt;h4 id=&#34;三阶行列式&#34;&gt;&lt;a href=&#34;#三阶行列式&#34; class=&#34;headerlink&#34; title=&#34;三阶行列式&#34;&gt;&lt;/a&gt;三阶行列式&lt;/h4&gt;&lt;p&gt;$\begin{vmatrix}&lt;br&gt;a&lt;em&gt;{11} &amp;amp; a&lt;/em&gt;{12} &amp;amp; a&lt;em&gt;{13} \newline&lt;br&gt;a&lt;/em&gt;{21} &amp;amp; a&lt;em&gt;{22} &amp;amp; a&lt;/em&gt;{23} \newline&lt;br&gt;a&lt;em&gt;{31} &amp;amp; a&lt;/em&gt;{32} &amp;amp; a&lt;em&gt;{33} \newline&lt;br&gt;\end{vmatrix}&lt;mjx-container class=&#34;MathJax&#34; jax=&#34;SVG&#34;&gt;&lt;svg style=&#34;vertical-align: -0.186ex;&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;1.76ex&#34; height=&#34;1.505ex&#34; role=&#34;img&#34; focusable=&#34;false&#34; viewBox=&#34;0 -583 778 665&#34;&gt;&lt;g stroke=&#34;currentColor&#34; fill=&#34;currentColor&#34; stroke-width=&#34;0&#34; transform=&#34;scale(1,-1)&#34;&gt;&lt;g data-mml-node=&#34;math&#34;&gt;&lt;g data-mml-node=&#34;mo&#34;&gt;&lt;path data-c=&#34;3D&#34; d=&#34;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&#34;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/mjx-container&gt;a&lt;/em&gt;{i1}A&lt;em&gt;{i1}+a&lt;/em&gt;{i2}A&lt;em&gt;{i2}+a&lt;/em&gt;{i3}A_{i3}  \left( i=1,2,3 \right) $&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;p&gt;或&lt;/p&gt;

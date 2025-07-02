@@ -9,7 +9,7 @@
             "url": "https://erik.xyz/2017/11/10/you-guan-php-jia-mi-de/",
             "title": "有关php加密的",
             "date_published": "2017-11-10T13:18:00.000Z",
-            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>php加密，最早接触的是php5.3版本，zend的加密技术。解密还要安装扩展运行，解密后的代码不可运行。 php目前官方介绍了几种加密扩展： crack扩展，官方目前不扩绑在php中， caprng扩展，目前支持5.2以上版本, hash扩展， mcrypt扩展，php7.1.0废除，php7.2.0会移到pecl, mhash扩展， openssl扩展，opessl库来对称/非对称加解密，以及 PBKDF2、 PKCS7、 PKCS12、 X509 和其他加密操作, 密码散列算法 API 提供了简单易用的 <a href=\"http://php.net/manual/zh/function.crypt.php\">crypt()</a> 包装， 以一种简洁易用安全的方式创建和管理密码。 网友给出的加密技术： md5加密， crypt加密算法， sha1加密算法， url编码加密技术， Base64信息编码加密。 加密扩展呢，在官方文档里有介绍使用方法，这个大家自己可以去看看。   具体不详细介绍，参考php官方文档<a href=\"http://php.net/manual/zh/\">http://php.net/manual/zh/</a></p>\n",
+            "content_html": "<p>php加密，最早接触的是php5.3版本，zend的加密技术。解密还要安装扩展运行，解密后的代码不可运行。 php目前官方介绍了几种加密扩展： crack扩展，官方目前不扩绑在php中， caprng扩展，目前支持5.2以上版本, hash扩展， mcrypt扩展，php7.1.0废除，php7.2.0会移到pecl, mhash扩展， openssl扩展，opessl库来对称/非对称加解密，以及 PBKDF2、 PKCS7、 PKCS12、 X509 和其他加密操作, 密码散列算法 API 提供了简单易用的 <a href=\"http://php.net/manual/zh/function.crypt.php\">crypt()</a> 包装， 以一种简洁易用安全的方式创建和管理密码。 网友给出的加密技术： md5加密， crypt加密算法， sha1加密算法， url编码加密技术， Base64信息编码加密。 加密扩展呢，在官方文档里有介绍使用方法，这个大家自己可以去看看。   具体不详细介绍，参考php官方文档<a href=\"http://php.net/manual/zh/\">http://php.net/manual/zh/</a></p>\n",
             "tags": [
                 "php",
                 "php加密",

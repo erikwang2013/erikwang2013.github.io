@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;markdown&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2018-03-18T16:07:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2018/03/19/wei-shi-me-bu-ying-gai-shi-yong-markdown-lai-xie-wen-dang/</id>
         <title>为什么不应该使用Markdown来写文档</title>
         <link rel="alternate" href="https://erik.xyz/2018/03/19/wei-shi-me-bu-ying-gai-shi-yong-markdown-lai-xie-wen-dang/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_gif/GJM4P9zwRqib34BLPzma5a9DHsfqxpndBBsq84yviayUYSib0Pju3mgk1ZibvIAjbd469r8bepAYPooHj48dvyFAicg/640?wx_fmt=gif&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt; Python部落(python.freelycode.com)组织翻译，禁止转载，欢迎转发。 Markdown是互联网上最普遍使用的轻量级标记语言。对于写博客和评论这类的任务，用Markdown很棒。不过最近技术社区的人员开始用它来写文档。   下面我列出一些反对使用Markdown的观点，希望能帮助你决定是否适合使用Markdown。如果你在考虑使用Markdown，我希望你也可以关注下Asciidoctor 和Sphinx，我发现用它们写文档更好。   人们选择Markdown是因为它可以很简单的处理一些基本任务。开发者选择它是因为GitHub支持它，尽管GitHub支持9种不同的标记语言，包括 Asciidoc和reStructuredText。但是当文档从几页逐渐增长到大的文档集，Markdown很快就崩溃并成为累赘。下面是这种情况发生的原因。&lt;br&gt;&lt;strong&gt;缺乏一个标准&lt;/strong&gt; 最初，Markdown是由John Gruber写的initial implementation来定义，但并未明确规定行为规范。   随着Markdown越来越流行，越来越多的站点开始支持Markdown的实现，这些站点是用其它语言写成的，因此产生了更多的Markdown实现。所有这些实现有轻微差别，但都达不到令人接受的程度。   比如有些实现要求开头有一个空格，但另外的一些不做要求：&lt;br&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_png/GJM4P9zwRqib66HO7lgjaeV8Alfw53aX9QyNQoZssPTuxiaSq8LdZDwibpIepQan9MQ3WwRfjXnuxshibntUWjSR4w/640?wx_fmt=png&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;还有一些小问题使得Markdown很难在不同的站点和版本之间移植 在过去的几年里，Commonmark已经发展成标准化的Markdown。这很好，应该解决很多问题，但是却没人采用它。&lt;/p&gt;
+        <content type="html">&lt;p&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_gif/GJM4P9zwRqib34BLPzma5a9DHsfqxpndBBsq84yviayUYSib0Pju3mgk1ZibvIAjbd469r8bepAYPooHj48dvyFAicg/640?wx_fmt=gif&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt; Python部落(python.freelycode.com)组织翻译，禁止转载，欢迎转发。 Markdown是互联网上最普遍使用的轻量级标记语言。对于写博客和评论这类的任务，用Markdown很棒。不过最近技术社区的人员开始用它来写文档。   下面我列出一些反对使用Markdown的观点，希望能帮助你决定是否适合使用Markdown。如果你在考虑使用Markdown，我希望你也可以关注下Asciidoctor 和Sphinx，我发现用它们写文档更好。   人们选择Markdown是因为它可以很简单的处理一些基本任务。开发者选择它是因为GitHub支持它，尽管GitHub支持9种不同的标记语言，包括 Asciidoc和reStructuredText。但是当文档从几页逐渐增长到大的文档集，Markdown很快就崩溃并成为累赘。下面是这种情况发生的原因。&lt;br&gt;&lt;strong&gt;缺乏一个标准&lt;/strong&gt; 最初，Markdown是由John Gruber写的initial implementation来定义，但并未明确规定行为规范。   随着Markdown越来越流行，越来越多的站点开始支持Markdown的实现，这些站点是用其它语言写成的，因此产生了更多的Markdown实现。所有这些实现有轻微差别，但都达不到令人接受的程度。   比如有些实现要求开头有一个空格，但另外的一些不做要求：&lt;br&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_png/GJM4P9zwRqib66HO7lgjaeV8Alfw53aX9QyNQoZssPTuxiaSq8LdZDwibpIepQan9MQ3WwRfjXnuxshibntUWjSR4w/640?wx_fmt=png&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;还有一些小问题使得Markdown很难在不同的站点和版本之间移植 在过去的几年里，Commonmark已经发展成标准化的Markdown。这很好，应该解决很多问题，但是却没人采用它。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;风格&lt;/strong&gt; Markdown缺乏采用的主要原因是这些年来其一直在变化。起初，Markdown功能很有限，每当有流行的工具在Markdown上实现的时候，都会有一个特定的风格。听起来不错 ，是吧？问题是每一个工具都形成了不同的风格，甚至连实现相似任务的工具都有不同的语法。   举个例子，在Markdown Extra 中代码块是下面这种样式：&lt;br&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_png/GJM4P9zwRqib66HO7lgjaeV8Alfw53aX9UF2Tgzv4KWPMzBLhOBdEOVJBhX1cDzbLsxpPIye6yNSRT31aH08mMw/640?wx_fmt=png&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt;&lt;br&gt;这将python类应用于输出的HTML块   然而，同样的情况在GitHub Flavored Markdown 中是这样的：&lt;br&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_png/GJM4P9zwRqib66HO7lgjaeV8Alfw53aX9TTEmoM8kafhIQAmg18qnCRChjxS9iaWAPJQN5uHbCO3myFJNkV2fBqg/640?wx_fmt=png&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt;&lt;br&gt;这会将语法高亮显示应用于实际呈现的HTML输出。 相似的概念，不同的语法，但都是Markdown。  &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;缺乏扩展&lt;/strong&gt; 其它的标记语言，可以对其进行扩展以提供需要的功能。它们在语法上有增添新功能同时又不会违反初始规范的机制。 比如reStructuredText，具有内嵌和块级别的标记：&lt;br&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_png/GJM4P9zwRqib66HO7lgjaeV8Alfw53aX9VyrPatzKIapmX7rrica3zOyXls8XT3fauTGicePZgRQGu73H71b1OmYw/640?wx_fmt=png&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt;&lt;br&gt;可以了解更多关于 rfc， class和 contents的概念。   作为一个使用rST或Asciidoctor的开发者，我可以以一种简单，可插入的方式增添新的标记。 我不必改变语言的解析方式，而且我还可以通过标准扩展机制向其它用户分享那些新功能。 在不同的版本间进行移植这些功能，用Markdown可办不到。 注意：CommonMark正在开发可扩展性的语法，但还没有实现。&lt;br&gt;&lt;strong&gt;缺乏语义化&lt;/strong&gt; 尽管很多人添加了很多扩展，但都不够语义化。这意味着不能写Class或Warning，只能写文本。因此很多人直接将HTML嵌入到Markdown中：&lt;br&gt;&lt;img src=&#34;data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==&#34; alt=&#34;&#34;&gt;&lt;br&gt;而在reStructuredText中，你可以写成：&lt;br&gt;&lt;img src=&#34;data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==&#34; alt=&#34;&#34;&gt;&lt;br&gt;这在HTML,PDF，甚至任何创建的输出格式中都可以合适的显示为一个Warning.   语义化标记可以将所写的文字与它们的显示方式完全分开。   缺乏语义化将导致问题，原因如下：&lt;/p&gt;
 &lt;ul&gt;

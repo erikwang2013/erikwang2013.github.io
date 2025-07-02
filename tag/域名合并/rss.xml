@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Fri, 24 Oct 2014 12:06:00 +0800</pubDate>
         <lastBuildDate>Fri, 24 Oct 2014 12:06:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>优化</category>
             <category>域名合并</category>
             <pubDate>Fri, 24 Oct 2014 12:06:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/seo_wpss&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i1/809419769/TB2UVibaVXXXXbHXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt; 最近一直在弄网站优化这块，百度统计测试网站响应速度已100%跑满，只剩百度站长页面优化跑到92分卡住了。我对那些不愿意花时间来做优化的同行想说句“加油哦，我已经做到了”。大家遇到问题百度一下会发现好多贴吧或者博客说你没必要去管百度统计里面的优化，什么合并域名啊，合并js、css的都不行、没必要、影响不大。如果确实影响不大，百度难道自己有问题，故意个给你测评误导你。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB210F4aVXXXXa1XXXXXXXXXXXX_!!809419769.jpg&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB210F4aVXXXXa1XXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt; 说多了都是泪啊，百度统计网站响应测试，刚开始很让人头疼的。出现js、css要合并，外调的图片域名要合并，网站缓存响应时间要设置……问题多多啊 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2eRx0aVXXXXXWXpXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2eRx0aVXXXXXWXpXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 既然有这么问题那就解决吧，干看着没用啊。先上百度找找，忙活了一阵子发现百度不靠谱，好多人都没弄。怎么办呢？ 先从合并css开始吧。百度统计提示的是你代码里面有多个css文件（我的是2个）,在后台外观-编辑-header.php文件里并没有这些css文件,查查资料才知道是&amp;lt;?php  wp&lt;em&gt;head(); &amp;gt;输出的。怎么办呢，反复想想有结果了。 我先去网站首页查看源文件 [![木木夕](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX&#34;&gt;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX&lt;/a&gt;&lt;/em&gt;!!809419769.png)](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX_!!809419769.png&#34;&gt;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX_!!809419769.png&lt;/a&gt;) 源文件把所有的代码都解析出来了这个好啊，我们回头把header.php文件中的&amp;lt;?php  wp_head(); &amp;gt;注释掉，根据上下代码寻找衔接，把源文件输出替换&amp;lt;?php  wp_head(); &amp;gt;的代码复制粘贴到header.php中相对应的位置。然后，就会找到对应要合并css文件，同时也找到对应要合并的js文件。我们先注释其中的一个，留另外一个做调用（script貌似注释不了，只能先粘贴复制到本地文件，以防出错好恢复。），更新文件header.php。用ftp链接服务器找到对应文件。例如，我这边是style.cc和960.css，jquery.js和jquery-migrate.min.js要合并，我先找到这写文件对应的地方，下载到本地先做备份（注意jquery所在的文件夹文件较多，看仔细些）。我把960.css里面的代码粘贴复制到style.css里面，同时，注释掉header.php文件的连接路径（注意960.css文件不要删掉，因为还有其他地方在调用）。同理也把js文件合并。最后清理一下网站缓存（如果你装了缓存插件就要清楚缓存），然后在清理一下浏览器缓存，然后用百度统计测评一下会发现响应速度加分了。 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2LAx1aVXXXXcFXXXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2LAx1aVXXXXcFXXXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2bEV0aVXXXXXEXpXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2bEV0aVXXXXXEXpXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 接下来还没完，因为还有域名要合并。在百度上搜到的答案是说域名是没办法合并的，都是外调别人的。有的还说你得有顶级域名才能合并，反正我对这些人无语了。 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2daR5aVXXXXa9XXXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2daR5aVXXXXa9XXXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 外调图片是没办法的，空间不大，图片占得容量太大了，只有外调。笔者在建站时一直考虑这个问题，后来解决了。因为有做过淘宝，便有个淘宝图片空间，可以调外链。百度统计提示域名合并就是img03.taobaocdn.com和img04.taobaocdn.com就前面的不一样，把前面的改成一样的试试，结果还真有效果，不影响图片输出。合并域名就这样解决了，同理我调用360的友情链接和安全检测验证也是用这样的方法，刷新缓存重新测试，就没有要合并域名的情况了。 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2UIh1aVXXXXcVXXXXXXXXXXXX_!!809419769.jpg&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2UIh1aVXXXXcVXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 笔者在这是想说有些事真的是你自己去尝试了才知道有更好的办法解决，刚开始虽然是百度，但是你自己试试就知道结果会是怎么样的。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/seo_wpss&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i1/809419769/TB2UVibaVXXXXbHXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt; 最近一直在弄网站优化这块，百度统计测试网站响应速度已100%跑满，只剩百度站长页面优化跑到92分卡住了。我对那些不愿意花时间来做优化的同行想说句“加油哦，我已经做到了”。大家遇到问题百度一下会发现好多贴吧或者博客说你没必要去管百度统计里面的优化，什么合并域名啊，合并js、css的都不行、没必要、影响不大。如果确实影响不大，百度难道自己有问题，故意个给你测评误导你。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB210F4aVXXXXa1XXXXXXXXXXXX_!!809419769.jpg&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB210F4aVXXXXa1XXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt; 说多了都是泪啊，百度统计网站响应测试，刚开始很让人头疼的。出现js、css要合并，外调的图片域名要合并，网站缓存响应时间要设置……问题多多啊 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2eRx0aVXXXXXWXpXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2eRx0aVXXXXXWXpXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 既然有这么问题那就解决吧，干看着没用啊。先上百度找找，忙活了一阵子发现百度不靠谱，好多人都没弄。怎么办呢？ 先从合并css开始吧。百度统计提示的是你代码里面有多个css文件（我的是2个）,在后台外观-编辑-header.php文件里并没有这些css文件,查查资料才知道是&amp;lt;?php  wp&lt;em&gt;head(); &amp;gt;输出的。怎么办呢，反复想想有结果了。 我先去网站首页查看源文件 [![木木夕](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX&#34;&gt;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX&lt;/a&gt;&lt;/em&gt;!!809419769.png)](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX_!!809419769.png&#34;&gt;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2.V40aVXXXXXyXpXXXXXXXXXX_!!809419769.png&lt;/a&gt;) 源文件把所有的代码都解析出来了这个好啊，我们回头把header.php文件中的&amp;lt;?php  wp_head(); &amp;gt;注释掉，根据上下代码寻找衔接，把源文件输出替换&amp;lt;?php  wp_head(); &amp;gt;的代码复制粘贴到header.php中相对应的位置。然后，就会找到对应要合并css文件，同时也找到对应要合并的js文件。我们先注释其中的一个，留另外一个做调用（script貌似注释不了，只能先粘贴复制到本地文件，以防出错好恢复。），更新文件header.php。用ftp链接服务器找到对应文件。例如，我这边是style.cc和960.css，jquery.js和jquery-migrate.min.js要合并，我先找到这写文件对应的地方，下载到本地先做备份（注意jquery所在的文件夹文件较多，看仔细些）。我把960.css里面的代码粘贴复制到style.css里面，同时，注释掉header.php文件的连接路径（注意960.css文件不要删掉，因为还有其他地方在调用）。同理也把js文件合并。最后清理一下网站缓存（如果你装了缓存插件就要清楚缓存），然后在清理一下浏览器缓存，然后用百度统计测评一下会发现响应速度加分了。 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2LAx1aVXXXXcFXXXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2LAx1aVXXXXcFXXXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2bEV0aVXXXXXEXpXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2bEV0aVXXXXXEXpXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 接下来还没完，因为还有域名要合并。在百度上搜到的答案是说域名是没办法合并的，都是外调别人的。有的还说你得有顶级域名才能合并，反正我对这些人无语了。 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2daR5aVXXXXa9XXXXXXXXXXXX_!!809419769.png&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i4/809419769/TB2daR5aVXXXXa9XXXXXXXXXXXX_!!809419769.png&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 外调图片是没办法的，空间不大，图片占得容量太大了，只有外调。笔者在建站时一直考虑这个问题，后来解决了。因为有做过淘宝，便有个淘宝图片空间，可以调外链。百度统计提示域名合并就是img03.taobaocdn.com和img04.taobaocdn.com就前面的不一样，把前面的改成一样的试试，结果还真有效果，不影响图片输出。合并域名就这样解决了，同理我调用360的友情链接和安全检测验证也是用这样的方法，刷新缓存重新测试，就没有要合并域名的情况了。 &lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2UIh1aVXXXXcVXXXXXXXXXXXX_!!809419769.jpg&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i2/809419769/TB2UIh1aVXXXXcVXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 笔者在这是想说有些事真的是你自己去尝试了才知道有更好的办法解决，刚开始虽然是百度，但是你自己试试就知道结果会是怎么样的。&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

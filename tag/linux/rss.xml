@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Tue, 18 Jun 2019 12:28:00 +0800</pubDate>
         <lastBuildDate>Tue, 18 Jun 2019 12:28:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -476,7 +476,7 @@
             <category>kali桌面右键汉化</category>
             <category>kali右键创建文件</category>
             <pubDate>Tue, 18 Jun 2019 12:28:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;本来用了好久的kali自己笔记本已经配置的比较完美，老项目用的是php5.6。用自己的笔记本，然后各种折腾，结果系统根本不支持php5.6。我的完美系统被搞砸了，熬夜折腾回来一部分，php5.6只好用docker安装。最近离职了，彻底离职了。kali右键不显示中文问题还没解决，今天处理一下。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;本来用了好久的kali自己笔记本已经配置的比较完美，老项目用的是php5.6。用自己的笔记本，然后各种折腾，结果系统根本不支持php5.6。我的完美系统被搞砸了，熬夜折腾回来一部分，php5.6只好用docker安装。最近离职了，彻底离职了。kali右键不显示中文问题还没解决，今天处理一下。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt; 根据搜索引擎得到的结果，桌面图标有两种解决方法安装desktop-icons-enhanced或者nemo插件之前用过nemo隐隐约约记得是用nemo解决的。今天就试试。&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get install nemo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt; 安装nemo。然后创建desktop并编辑&lt;/p&gt;
@@ -495,7 +495,7 @@
             <category>linux中update-command-not-found</category>
             <category>linux运行命令报错</category>
             <pubDate>Thu, 30 May 2019 12:28:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h6 id=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;a href=&#34;#在Linux中运行一个命令尝试是否存在，突然报错了&#34; class=&#34;headerlink&#34; title=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#在Linux中运行一个命令尝试是否存在，突然报错了&#34; title=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;/a&gt;在Linux中运行一个命令尝试是否存在，突然报错了&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-48.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&amp;gt; Could not find the database of available applications, run update-command-not-found as root to fix this&lt;/p&gt;
+            <description><![CDATA[ &lt;h6 id=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;a href=&#34;#在Linux中运行一个命令尝试是否存在，突然报错了&#34; class=&#34;headerlink&#34; title=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#在Linux中运行一个命令尝试是否存在，突然报错了&#34; title=&#34;在Linux中运行一个命令尝试是否存在，突然报错了&#34;&gt;&lt;/a&gt;在Linux中运行一个命令尝试是否存在，突然报错了&lt;/h6&gt;&lt;p&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-48.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&amp;gt; Could not find the database of available applications, run update-command-not-found as root to fix this&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Sorry, command-not-found has crashed! Please file a bug report at:&lt;br&gt;&lt;a href=&#34;http://www.debian.org/Bugs/Reporting&#34;&gt;http://www.debian.org/Bugs/Reporting&lt;/a&gt;&lt;br&gt;Please include the following information with the report:&amp;gt; command-not-found version: 0.3&lt;br&gt;Python version: 3.7.3 candidate 1&lt;br&gt;Distributor ID:    Kali&lt;br&gt;Description:    Kali GNU/Linux Rolling&lt;br&gt;Release:    2019.2&lt;br&gt;Codename:    n/a&lt;br&gt;Exception information:&amp;gt; local variable ‘cnf’ referenced before assignment&lt;br&gt;Traceback (most recent call last):&lt;br&gt;  File “/usr/share/command-not-found/CommandNotFound/util.py”, line 23, in crash_guard&lt;br&gt;    callback()&lt;br&gt;  File “/usr/lib/command-not-found”, line 93, in main&lt;br&gt;    if not cnf.advise(args[0], options.ignore_installed) and not options.no_failure_msg:&lt;br&gt;UnboundLocalError: local variable ‘cnf’ referenced before assignment&amp;gt; 根据报错提示需要以root用户运行update-commond-not-found&amp;gt; 结果又报错了&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-49.png&#34; alt=&#34;&#34;&gt;&amp;gt; 根据报错提示执行编辑报错文件&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-50_1.png&#34; alt=&#34;&#34;&gt;&amp;gt; 打开报错文件找到如图&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-51.png&#34; alt=&#34;&#34;&gt;&amp;gt; 如有同样报错，继续编辑报错文件，添加所报错的缺失项&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-49_1.png&#34; alt=&#34;&#34;&gt;&amp;gt; 最后执行自己的测试命令，就不存在错误了&lt;br&gt;&lt;img src=&#34;https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-52.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -508,7 +508,7 @@
             <category>kali</category>
             <category>linux</category>
             <pubDate>Sat, 05 Sep 2015 19:46:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;a href=&#34;http://tietuku.com/f23c99b541e6483e&#34;&gt;&lt;img src=&#34;http://i3.tietuku.com/f23c99b541e6483e.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;apt-get clean &amp;amp;&amp;amp; apt-get update &amp;amp;&amp;amp; apt-get upgrade -y &amp;amp;&amp;amp; apt-get dist-upgrade -y&lt;br&gt;&lt;strong&gt;更新、升级和发行版升级&lt;/strong&gt; &lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;http://tietuku.com/f23c99b541e6483e&#34;&gt;&lt;img src=&#34;http://i3.tietuku.com/f23c99b541e6483e.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;apt-get clean &amp;amp;&amp;amp; apt-get update &amp;amp;&amp;amp; apt-get upgrade -y &amp;amp;&amp;amp; apt-get dist-upgrade -y&lt;br&gt;&lt;strong&gt;更新、升级和发行版升级&lt;/strong&gt; &lt;/p&gt;
 &lt;p&gt;apt-get install alsa-utils -y     &lt;strong&gt;确保启动时发出声音&lt;/strong&gt; &lt;/p&gt;
 &lt;p&gt;apt-get install unrar unace rar unrar p7zip zip unzip p7zip-full p7zip-rar file-roller -y     &lt;strong&gt;安装File Roller（归档管理器）&lt;/strong&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;apt-get install tor    &lt;strong&gt;安装Tor&lt;/strong&gt; &lt;/p&gt;
@@ -532,7 +532,7 @@
             <category>centos软件</category>
             <category>centos软件安装</category>
             <pubDate>Mon, 16 Mar 2015 07:45:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;在centos中我们想要安装软件，一般都是用yum，在安装软件前首先是查询软件&lt;br&gt;例如安装 samba网上邻居&lt;br&gt;查询： rpm -qa | grep -i samba&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/a8fca0536413f0a7.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/a8fca0536413f0a7.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;查询一下相关软件  yum search samba 找到后，就安装 yum install samba 安装完毕，&lt;br&gt;要修改配置文件，就需要找到文件路径 执行  rpm -qc samba samba-common&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/17d07aa8d4d9d680.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/17d07aa8d4d9d680.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;接下来要启动软件，先查询一下启动方式 rpm -ql samba | grep ‘/etc’&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/27c9d5d59ea177a5.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/27c9d5d59ea177a5.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;红线部分为启动路径 接下来就是具体启动操作&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/80c44788d7448f95.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/80c44788d7448f95.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;加入开机启动 执行 vi /etc/profile 按下方向键到底部&lt;br&gt;然后按i键写入 /etc/init.d/smb start /etc/init.d/nmb start 然后保存并退出&lt;br&gt;执行 source /etc/profile  修改生效 重启一下软件就是开机启动&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;在centos中我们想要安装软件，一般都是用yum，在安装软件前首先是查询软件&lt;br&gt;例如安装 samba网上邻居&lt;br&gt;查询： rpm -qa | grep -i samba&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/a8fca0536413f0a7.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/a8fca0536413f0a7.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;查询一下相关软件  yum search samba 找到后，就安装 yum install samba 安装完毕，&lt;br&gt;要修改配置文件，就需要找到文件路径 执行  rpm -qc samba samba-common&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/17d07aa8d4d9d680.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/17d07aa8d4d9d680.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;接下来要启动软件，先查询一下启动方式 rpm -ql samba | grep ‘/etc’&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/27c9d5d59ea177a5.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/27c9d5d59ea177a5.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;红线部分为启动路径 接下来就是具体启动操作&lt;br&gt;&lt;a href=&#34;http://i2.tietuku.com/80c44788d7448f95.png&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/80c44788d7448f95.png&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;br&gt;加入开机启动 执行 vi /etc/profile 按下方向键到底部&lt;br&gt;然后按i键写入 /etc/init.d/smb start /etc/init.d/nmb start 然后保存并退出&lt;br&gt;执行 source /etc/profile  修改生效 重启一下软件就是开机启动&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -543,7 +543,7 @@
             <category>centos</category>
             <category>linux</category>
             <pubDate>Wed, 10 Dec 2014 22:33:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;解压 语法：tar [主选项+辅选项] 文件或者目录 使用该命令时，主选项是必须要有的，它告诉tar要做什么事情，辅选项是辅助使用的，可以选用。 &lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;解压 语法：tar [主选项+辅选项] 文件或者目录 使用该命令时，主选项是必须要有的，它告诉tar要做什么事情，辅选项是辅助使用的，可以选用。 &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;主选项：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;c 创建新的档案文件。如果用户想备份一个目录或是一些文件，就要选择这个选项。相当于打包。&lt;/p&gt;
 &lt;p&gt;x 从档案文件中释放文件。相当于拆包。 &lt;/p&gt;
@@ -590,7 +590,7 @@
             <category>linux</category>
             <category>centos6.5</category>
             <pubDate>Sun, 02 Nov 2014 15:59:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/lxchywjjy/&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/bf358fa2f81bc07d.jpg&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt;&lt;br&gt;&lt;strong&gt;1.以.a为扩展名的文件:&lt;/strong&gt; #tar xv file.a&lt;br&gt;&lt;strong&gt;2.以.z为扩展名的文件: &lt;/strong&gt; #uncompress file.Z&lt;br&gt;&lt;strong&gt;3.以.gz为扩展名的文件: &lt;/strong&gt; #gunzip file.gz&lt;br&gt;&lt;strong&gt;4.以.bz2为扩展名的文件: &lt;/strong&gt; #bunzip2 file.bz2&lt;br&gt;&lt;strong&gt;5.以.tar.Z为扩展名的文件: &lt;/strong&gt; #tar xvZf file.tar.Z 或 #compress -dc file.tar.Z | tar xvf&lt;br&gt;&lt;strong&gt;6.以.tar.gz/.tgz为扩展名的文件: &lt;/strong&gt; #tar xvzf file.tar.gz 或 gzip -dc file.tar.gz | tar xvf -&lt;br&gt;&lt;strong&gt;7.以.tar.bz2为扩展名的文件: &lt;/strong&gt; #tar xvIf file.tar.bz2 或 bzip2 -dc file.tar.bz2 | xvf –&lt;br&gt;&lt;strong&gt;8.以.cpio.gz/.cgz为扩展名的文件: &lt;/strong&gt; #gzip -dc file.cgz | cpio -div&lt;br&gt;&lt;strong&gt;9.以.cpio/cpio为扩展名的文件: &lt;/strong&gt; #cpio -div file.cpio 或cpio -divc file.cpio&lt;br&gt;&lt;strong&gt;10.以.rpm为扩展名的文件安装: &lt;/strong&gt; #rpm -i file.rpm&lt;br&gt;&lt;strong&gt;11.以.rpm为扩展名的文件解压缩： &lt;/strong&gt; #rpm2cpio file.rpm | cpio -div&lt;br&gt;&lt;strong&gt;12.以.deb为扩展名的文件安装： &lt;/strong&gt; #dpkg -i file.deb&lt;br&gt;&lt;strong&gt;13.以.deb为扩展名的文件解压缩: &lt;/strong&gt; #dpkg-deb —fsys-tarfile file.deb | tar xvf - ar p file.deb data.tar.gz | tar xvzf –&lt;br&gt;&lt;strong&gt;14.以.zip为扩展名的文件: &lt;/strong&gt; #unzip file.zip&lt;br&gt;&lt;strong&gt;15.在linux下解压Winzip格式的文件：&lt;/strong&gt; 要是装了jdk的话，可以用jar命令；还可以使用unzip命令。&lt;br&gt;&lt;strong&gt;16.直接解压.tar.gz文件：&lt;/strong&gt; xxxx.tar.gz文件使用tar带zxvf参数，可以一次解压开。XXXX为文件名。 例如：$tar zxvf xxxx.tar.gz 各种压缩文件的解压（安装方法）&lt;br&gt;&lt;strong&gt;17.文件扩展名解压（安装方法）：&lt;/strong&gt; .a ar xv file.a .Z uncompress file.Z .gz gunzip file.gz .bz2 bunzip2 file.bz2 .tar.Z tar xvZf file.tar.Z compress -dc file.tar.Z | tar xvf - .tar.gz/.tgz tar xvzf file.tar.gz gzip -dc file.tar.gz | tar xvf - .tar.bz2 tar xvIf file.tar.bz2 bzip2 -dc file.tar.bz2 | xvf - .cpio.gz/.cgz gzip -dc file.cgz | cpio -div .cpio/cpio cpio -div file.cpio cpio -divc file.cpio .rpm/install rpm -i file.rpm .rpm/extract rpm2cpio file.rpm | cpio -div .deb/install dpkg -i file.deb .deb/exrtact dpkg-deb —fsys-tarfile file.deb | tar xvf - ar p file.deb data.tar.gz | tar xvzf - .zip unzip file.zip bzip2 -d myfile.tar.bz2 | tar xvf &lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/lxchywjjy/&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/bf358fa2f81bc07d.jpg&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt;&lt;br&gt;&lt;strong&gt;1.以.a为扩展名的文件:&lt;/strong&gt; #tar xv file.a&lt;br&gt;&lt;strong&gt;2.以.z为扩展名的文件: &lt;/strong&gt; #uncompress file.Z&lt;br&gt;&lt;strong&gt;3.以.gz为扩展名的文件: &lt;/strong&gt; #gunzip file.gz&lt;br&gt;&lt;strong&gt;4.以.bz2为扩展名的文件: &lt;/strong&gt; #bunzip2 file.bz2&lt;br&gt;&lt;strong&gt;5.以.tar.Z为扩展名的文件: &lt;/strong&gt; #tar xvZf file.tar.Z 或 #compress -dc file.tar.Z | tar xvf&lt;br&gt;&lt;strong&gt;6.以.tar.gz/.tgz为扩展名的文件: &lt;/strong&gt; #tar xvzf file.tar.gz 或 gzip -dc file.tar.gz | tar xvf -&lt;br&gt;&lt;strong&gt;7.以.tar.bz2为扩展名的文件: &lt;/strong&gt; #tar xvIf file.tar.bz2 或 bzip2 -dc file.tar.bz2 | xvf –&lt;br&gt;&lt;strong&gt;8.以.cpio.gz/.cgz为扩展名的文件: &lt;/strong&gt; #gzip -dc file.cgz | cpio -div&lt;br&gt;&lt;strong&gt;9.以.cpio/cpio为扩展名的文件: &lt;/strong&gt; #cpio -div file.cpio 或cpio -divc file.cpio&lt;br&gt;&lt;strong&gt;10.以.rpm为扩展名的文件安装: &lt;/strong&gt; #rpm -i file.rpm&lt;br&gt;&lt;strong&gt;11.以.rpm为扩展名的文件解压缩： &lt;/strong&gt; #rpm2cpio file.rpm | cpio -div&lt;br&gt;&lt;strong&gt;12.以.deb为扩展名的文件安装： &lt;/strong&gt; #dpkg -i file.deb&lt;br&gt;&lt;strong&gt;13.以.deb为扩展名的文件解压缩: &lt;/strong&gt; #dpkg-deb —fsys-tarfile file.deb | tar xvf - ar p file.deb data.tar.gz | tar xvzf –&lt;br&gt;&lt;strong&gt;14.以.zip为扩展名的文件: &lt;/strong&gt; #unzip file.zip&lt;br&gt;&lt;strong&gt;15.在linux下解压Winzip格式的文件：&lt;/strong&gt; 要是装了jdk的话，可以用jar命令；还可以使用unzip命令。&lt;br&gt;&lt;strong&gt;16.直接解压.tar.gz文件：&lt;/strong&gt; xxxx.tar.gz文件使用tar带zxvf参数，可以一次解压开。XXXX为文件名。 例如：$tar zxvf xxxx.tar.gz 各种压缩文件的解压（安装方法）&lt;br&gt;&lt;strong&gt;17.文件扩展名解压（安装方法）：&lt;/strong&gt; .a ar xv file.a .Z uncompress file.Z .gz gunzip file.gz .bz2 bunzip2 file.bz2 .tar.Z tar xvZf file.tar.Z compress -dc file.tar.Z | tar xvf - .tar.gz/.tgz tar xvzf file.tar.gz gzip -dc file.tar.gz | tar xvf - .tar.bz2 tar xvIf file.tar.bz2 bzip2 -dc file.tar.bz2 | xvf - .cpio.gz/.cgz gzip -dc file.cgz | cpio -div .cpio/cpio cpio -div file.cpio cpio -divc file.cpio .rpm/install rpm -i file.rpm .rpm/extract rpm2cpio file.rpm | cpio -div .deb/install dpkg -i file.deb .deb/exrtact dpkg-deb —fsys-tarfile file.deb | tar xvf - ar p file.deb data.tar.gz | tar xvzf - .zip unzip file.zip bzip2 -d myfile.tar.bz2 | tar xvf &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;18.tar xvfz myfile.tar.bz2&lt;/strong&gt; x 是解压 v 是复杂输出 f 是指定文件 z gz格式&lt;br&gt;&lt;strong&gt;19.gzip&lt;/strong&gt; gzip[选项]要压缩（或解压缩）的文件名 -c将输出写到标准输出上，并保留原有文件。 -d将压缩文件压缩。 -l对每个压缩文件，显示下列字段：压缩文件的大小，未压缩文件的大小、压缩比、未压缩文件的名字 -r递归式地查找指定目录并压缩或压缩其中的所有文件。 -t测试压缩文件是正完整。 -v对每一个压缩和解压缩的文件，显示其文件名和压缩比。 -num-用指定的数字调整压缩的速度。&lt;br&gt;&lt;strong&gt;20.举例：&lt;/strong&gt; 把/usr目录并包括它的子目录在内的全部文件做一备份，备份文件名为usr.tar tar cvf usr.tar /home 把/usr 目录并包括它的子目录在内的全部文件做一备份并进行压缩，备份文件名是usr.tar.gz tar czvf usr.tar.gz /usr 压缩一组文件，文件的后缀为tar.gz #tar cvf back.tar /back/ #gzip -q back.tar or #tar cvfz back.tar.gz /back/ 释放一个后缀为tar.gz的文件。 #tar zxvf back.tar.gz #gzip back.tar.gz #tar xvf back.tar&lt;/p&gt;
  ]]></description>
         </item>
@@ -602,7 +602,7 @@
             <category>centos</category>
             <category>linux</category>
             <pubDate>Fri, 31 Oct 2014 17:57:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/ctspbf/&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/706b2fbb5793484a.jpg&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 安装来centos6.5很郁闷的是自带的播放器好多视频不支持（你懂的哦）。怎么办呢？？ 老规矩先度娘，后谷歌。。。 度娘的伙伴们大部分都是mplayer那我也随众人吧 首先下载文件MPlayer-1.1.tar.gz和yasm-1.2.0.tar.gz mplayer &lt;a href=&#34;http://download.csdn.net/detail/w15875510692/7708613&#34;&gt;http://download.csdn.net/detail/w15875510692/7708613&lt;/a&gt; yasm &lt;a href=&#34;http://download.csdn.net/detail/w15875510692/7708623&#34;&gt;http://download.csdn.net/detail/w15875510692/7708623&lt;/a&gt; 解压先安装yasm 再安装mplayer ./configure —enable-gui 之后 make &amp;amp;&amp;amp; make install 漫长的等待吧 安装完成后 cd /usar/share/mplayer/skins cp Blue /usr/local/share/mplayer/skins/ -r cd /usr/local/share/mplayer/skins/ mv Blue/ default modprobe snd_pcm_oss 输入gmplayer打开播放器&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/ctspbf/&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/706b2fbb5793484a.jpg&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 安装来centos6.5很郁闷的是自带的播放器好多视频不支持（你懂的哦）。怎么办呢？？ 老规矩先度娘，后谷歌。。。 度娘的伙伴们大部分都是mplayer那我也随众人吧 首先下载文件MPlayer-1.1.tar.gz和yasm-1.2.0.tar.gz mplayer &lt;a href=&#34;http://download.csdn.net/detail/w15875510692/7708613&#34;&gt;http://download.csdn.net/detail/w15875510692/7708613&lt;/a&gt; yasm &lt;a href=&#34;http://download.csdn.net/detail/w15875510692/7708623&#34;&gt;http://download.csdn.net/detail/w15875510692/7708623&lt;/a&gt; 解压先安装yasm 再安装mplayer ./configure —enable-gui 之后 make &amp;amp;&amp;amp; make install 漫长的等待吧 安装完成后 cd /usar/share/mplayer/skins cp Blue /usr/local/share/mplayer/skins/ -r cd /usr/local/share/mplayer/skins/ mv Blue/ default modprobe snd_pcm_oss 输入gmplayer打开播放器&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -613,7 +613,7 @@
             <category>centos</category>
             <category>linux</category>
             <pubDate>Thu, 30 Oct 2014 10:14:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/lwnygpan/&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/5f7e22bbaa82f3ff.jpg&#34; alt=&#34;木木夕图片&#34;&gt;&lt;/a&gt; 这边介绍的是NTFS-3G挂载ntfs硬盘 首先，确认你的linux系统是否已经安装GCC不然源码包没法编译的&lt;br&gt;输入命令行   yum -y install gcc&lt;br&gt;创建位于mnt文件下的www文件&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;第二步，下载NTFS-3G依赖软件。FUSE下载地址 &lt;a href=&#34;http://sourceforge.net/projects/fuse/files/fuse-2.X/2.9.0/fuse-2.9.0.tar.gz/download&#34;&gt;http://sourceforge.net/projects/fuse/files/fuse-2.X/2.9.0/fuse-2.9.0.tar.gz/download&lt;/a&gt;   版本可以自己选&lt;br&gt;安装&lt;br&gt;1，解压命令       tar -xvzf fuse-2.9.0.tar.gz&lt;br&gt;2，复制    cd fuse-2.9.0&lt;br&gt;3，安装   ./configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install &lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/lwnygpan/&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/5f7e22bbaa82f3ff.jpg&#34; alt=&#34;木木夕图片&#34;&gt;&lt;/a&gt; 这边介绍的是NTFS-3G挂载ntfs硬盘 首先，确认你的linux系统是否已经安装GCC不然源码包没法编译的&lt;br&gt;输入命令行   yum -y install gcc&lt;br&gt;创建位于mnt文件下的www文件&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;第二步，下载NTFS-3G依赖软件。FUSE下载地址 &lt;a href=&#34;http://sourceforge.net/projects/fuse/files/fuse-2.X/2.9.0/fuse-2.9.0.tar.gz/download&#34;&gt;http://sourceforge.net/projects/fuse/files/fuse-2.X/2.9.0/fuse-2.9.0.tar.gz/download&lt;/a&gt;   版本可以自己选&lt;br&gt;安装&lt;br&gt;1，解压命令       tar -xvzf fuse-2.9.0.tar.gz&lt;br&gt;2，复制    cd fuse-2.9.0&lt;br&gt;3，安装   ./configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install &lt;/p&gt;
 &lt;p&gt;第三部，安装NTFS-3G驱动。下载地址 &lt;a href=&#34;http://tuxera.com/opensource/ntfs-3g\_ntfsprogs-2014.2.15.tgz&#34;&gt;http://tuxera.com/opensource/ntfs-3g\_ntfsprogs-2014.2.15.tgz&lt;/a&gt; tar -xvzf ntfs-3g_ntfsprogs-2014.2.15.tgz cd ntfs-3g_ntfsprogs-2014.2.15&lt;br&gt;./configure &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install&lt;br&gt;第四部，挂载ntfs格式硬盘 mount -t ntfs-3g /dev/sda1 /mnt/www&lt;br&gt;自动挂载 fdisk -l 可获得硬盘信息 一般sda1是c盘依次类推， sdb1是移动硬盘 vi /etc/fstab 在最后面添加 /dev/sda6 /mnt/www/d ntfs-3g defaults,umask=000 0 0 /dev/sda5 /mnt/www/d ntfs-3g defaults,umask=000 0 0 /dev/sdb6 /mnt/www/d ntfs-3g defaults,umask=000 0 0&lt;/p&gt;
  ]]></description>
         </item>
@@ -625,7 +625,7 @@
             <category>linux</category>
             <category>memcache</category>
             <pubDate>Wed, 29 Oct 2014 11:24:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;lnmp环境如何便捷安装？找找看，还真找到来。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;lnmp环境如何便捷安装？找找看，还真找到来。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;首先运行 yum install wget    //下载wget工具 &lt;/li&gt;
 &lt;li&gt;再运行 wget &lt;a href=&#34;http://www.atomicorp.com/installers/atomic&#34;&gt;http://www.atomicorp.com/installers/atomic&lt;/a&gt; //下载atomic源 &lt;/li&gt;
@@ -657,7 +657,7 @@
             <category>centos</category>
             <category>linux</category>
             <pubDate>Wed, 29 Oct 2014 11:07:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;本来是装了虚拟机vmware，但是很占内存，软件开多了不方便，而应用的centos软件又不想win系统的那样丰富。怎么办呢？度娘了，于是找到了解决方法 安装wine模拟win系统环境，相当与在centos上安装了一个插件 首先，安装一个第三方软件库，比较丰富的软件，差不多有2万多个 rpm -ivh &lt;a href=&#34;http://mirrors.yun-idc.com/epel/6/i386/epel-release-6-8.noarch.rpm&#34;&gt;http://mirrors.yun-idc.com/epel/6/i386/epel-release-6-8.noarch.rpm&lt;/a&gt; 因为软件库会更新版本，地址或者名字会有所变动，靠后面的小伙伴如果无法下载，自己在这个网址找找 接下来就是 yum install wine 如果这步报错的话 分别执行以下2个命令 yum clean all yum makecache 接下来重新 yum install wine 在应用程序中你就可以看到红酒杯的图标就是wine了 如果感觉版本地版本较低更改换新版本，那就卸载吧 rpm -qa |grep wine 来查看和wine有关的一般是10个，也有多的，全都删掉&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;本来是装了虚拟机vmware，但是很占内存，软件开多了不方便，而应用的centos软件又不想win系统的那样丰富。怎么办呢？度娘了，于是找到了解决方法 安装wine模拟win系统环境，相当与在centos上安装了一个插件 首先，安装一个第三方软件库，比较丰富的软件，差不多有2万多个 rpm -ivh &lt;a href=&#34;http://mirrors.yun-idc.com/epel/6/i386/epel-release-6-8.noarch.rpm&#34;&gt;http://mirrors.yun-idc.com/epel/6/i386/epel-release-6-8.noarch.rpm&lt;/a&gt; 因为软件库会更新版本，地址或者名字会有所变动，靠后面的小伙伴如果无法下载，自己在这个网址找找 接下来就是 yum install wine 如果这步报错的话 分别执行以下2个命令 yum clean all yum makecache 接下来重新 yum install wine 在应用程序中你就可以看到红酒杯的图标就是wine了 如果感觉版本地版本较低更改换新版本，那就卸载吧 rpm -qa |grep wine 来查看和wine有关的一般是10个，也有多的，全都删掉&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -667,7 +667,7 @@
             <category>centos</category>
             <category>linux</category>
             <pubDate>Mon, 27 Oct 2014 22:16:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;wine配置有一段时间了，又发现有些比较有用的第三方扩展软件playonlinux 因为我装得是centos6.5库软件更新比较慢，这playonlinux单独编译太费劲了，就干脆用rpm吧 下载（注意版本会更新，下载不了上网站看看版本） rpm -ivh &lt;a href=&#34;http://rpm.playonlinux.com/[playonlinux-yum-4-1.noarch.rpm](http://rpm.playonlinux.com/playonlinux-yum-4-1.noarch.rpm&#34;&gt;http://rpm.playonlinux.com/[playonlinux-yum-4-1.noarch.rpm](http://rpm.playonlinux.com/playonlinux-yum-4-1.noarch.rpm&lt;/a&gt;) 安装 yum install playonlinux 等待吧，差不多20多个软件 安装好后在应用程序》最后面那一项（游戏中看到playonlinu就是了） 这个是wine第三方应用，很有用，弥补wine的不足，可以安装好多软件&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;wine配置有一段时间了，又发现有些比较有用的第三方扩展软件playonlinux 因为我装得是centos6.5库软件更新比较慢，这playonlinux单独编译太费劲了，就干脆用rpm吧 下载（注意版本会更新，下载不了上网站看看版本） rpm -ivh &lt;a href=&#34;http://rpm.playonlinux.com/[playonlinux-yum-4-1.noarch.rpm](http://rpm.playonlinux.com/playonlinux-yum-4-1.noarch.rpm&#34;&gt;http://rpm.playonlinux.com/[playonlinux-yum-4-1.noarch.rpm](http://rpm.playonlinux.com/playonlinux-yum-4-1.noarch.rpm&lt;/a&gt;) 安装 yum install playonlinux 等待吧，差不多20多个软件 安装好后在应用程序》最后面那一项（游戏中看到playonlinu就是了） 这个是wine第三方应用，很有用，弥补wine的不足，可以安装好多软件&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -678,7 +678,7 @@
             <category>centos</category>
             <category>linux</category>
             <pubDate>Tue, 21 Oct 2014 18:24:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;群里有网友说不知道phpstudy怎配置多站点，其实这个不难，我当初配置的不是集成环境，集成环境和不是集成环境都一样的配置 首先我们要找到apache配置文件 E:\phpStudy\Apache\conf\httpd.conf 然后打开文件查找httpd-vhosts.conf 于是我们查找到 &lt;a href=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/20141021175554.png&#34;&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/20141021175554-300x53.png&#34; alt=&#34;apache&#34;&gt;&lt;/a&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;去掉前面的# 然后按这个路径找到httpd-vhosts.conf文件并打开 找到这段 # # VirtualHost example: # Almost any Apache directive may go into a VirtualHost container. # The first VirtualHost section is used for all requests that do not # match a ServerName or ServerAlias in any &lt;VirtualHost&gt; block. # 看看前面有 NameVirtualHost &lt;em&gt;:80 如果没有就加上 然后找到 #&amp;lt;VirtualHost &lt;/em&gt;:80&amp;gt; #    ServerAdmin webmaster@dummy-host.example.com #    DocumentRoot “/Apache24/docs/dummy-host.example.com” #    ServerName dummy-host.example.com #    ServerAlias www.dummy-host.example.com #    ErrorLog “logs/dummy-host.example.com-error.log” #    CustomLog “logs/dummy-host.example.com-access.log” common #&lt;/VirtualHost&gt; #&lt;VirtualHost *:80&gt; #    ServerAdmin webmaster@dummy-host2.example.com #    DocumentRoot “/Apache24/docs/dummy-host2.example.com” #    ServerName dummy-host2.example.com #    ErrorLog “logs/dummy-host2.example.com-error.log” #    CustomLog “logs/dummy-host2.example.com-access.log” common #&lt;/VirtualHost&gt; 去掉前面的#后，修改路径和域名 &lt;a href=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/s20141021181957.png&#34;&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/s20141021181957-300x207.png&#34; alt=&#34;虚拟站点配置&#34;&gt;&lt;/a&gt; 到此结束，建议最好用独立配置，别用集成环境，集成环境配置的东西太多容易冲突出错，此方法仅限在服务器上运行，本地运行没测试过，目前不清楚。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;群里有网友说不知道phpstudy怎配置多站点，其实这个不难，我当初配置的不是集成环境，集成环境和不是集成环境都一样的配置 首先我们要找到apache配置文件 E:\phpStudy\Apache\conf\httpd.conf 然后打开文件查找httpd-vhosts.conf 于是我们查找到 &lt;a href=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/20141021175554.png&#34;&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/20141021175554-300x53.png&#34; alt=&#34;apache&#34;&gt;&lt;/a&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;去掉前面的# 然后按这个路径找到httpd-vhosts.conf文件并打开 找到这段 # # VirtualHost example: # Almost any Apache directive may go into a VirtualHost container. # The first VirtualHost section is used for all requests that do not # match a ServerName or ServerAlias in any &lt;VirtualHost&gt; block. # 看看前面有 NameVirtualHost &lt;em&gt;:80 如果没有就加上 然后找到 #&amp;lt;VirtualHost &lt;/em&gt;:80&amp;gt; #    ServerAdmin webmaster@dummy-host.example.com #    DocumentRoot “/Apache24/docs/dummy-host.example.com” #    ServerName dummy-host.example.com #    ServerAlias www.dummy-host.example.com #    ErrorLog “logs/dummy-host.example.com-error.log” #    CustomLog “logs/dummy-host.example.com-access.log” common #&lt;/VirtualHost&gt; #&lt;VirtualHost *:80&gt; #    ServerAdmin webmaster@dummy-host2.example.com #    DocumentRoot “/Apache24/docs/dummy-host2.example.com” #    ServerName dummy-host2.example.com #    ErrorLog “logs/dummy-host2.example.com-error.log” #    CustomLog “logs/dummy-host2.example.com-access.log” common #&lt;/VirtualHost&gt; 去掉前面的#后，修改路径和域名 &lt;a href=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/s20141021181957.png&#34;&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/s20141021181957-300x207.png&#34; alt=&#34;虚拟站点配置&#34;&gt;&lt;/a&gt; 到此结束，建议最好用独立配置，别用集成环境，集成环境配置的东西太多容易冲突出错，此方法仅限在服务器上运行，本地运行没测试过，目前不清楚。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -690,7 +690,7 @@
             <category>centos6.5</category>
             <category>linux系统</category>
             <pubDate>Tue, 07 Oct 2014 09:54:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/logo.png&#34;&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/logo-300x300.png&#34; alt=&#34;logo.png&#34;&gt;&lt;/a&gt; CentOS-6.5-x86_64-LiveCD.iso CentOS-6.5-x86_64-LiveDVD.iso CentOS-6.5-x86_64-bin-DVD1.iso （比较全的系统，有大部分软件） CentOS-6.5-x86_64-bin-DVD2.iso  （对上DVD1的补充） 下载：&lt;a href=&#34;http://yunpan.cn/cgnqyggJJvYaD&#34;&gt;http://yunpan.cn/cgnqyggJJvYaD&lt;/a&gt; 提取码 54b2 CentOS-6.5-i386-LiveDVD.iso CentOS-6.5-i386-LiveCD.iso CentOS-6.5-i386-bin-DVD2.iso（对上DVD1的补充） CentOS-6.5-i386-bin-DVD1.iso（比较全的系统，有大部分软件） 下载：&lt;a href=&#34;http://yunpan.cn/cgnYNATiGayCM&#34;&gt;http://yunpan.cn/cgnYNATiGayCM&lt;/a&gt; 提取码 d567&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/logo.png&#34;&gt;&lt;img src=&#34;http://www.erik.xyz/wp-content/uploads/2014/10/logo-300x300.png&#34; alt=&#34;logo.png&#34;&gt;&lt;/a&gt; CentOS-6.5-x86_64-LiveCD.iso CentOS-6.5-x86_64-LiveDVD.iso CentOS-6.5-x86_64-bin-DVD1.iso （比较全的系统，有大部分软件） CentOS-6.5-x86_64-bin-DVD2.iso  （对上DVD1的补充） 下载：&lt;a href=&#34;http://yunpan.cn/cgnqyggJJvYaD&#34;&gt;http://yunpan.cn/cgnqyggJJvYaD&lt;/a&gt; 提取码 54b2 CentOS-6.5-i386-LiveDVD.iso CentOS-6.5-i386-LiveCD.iso CentOS-6.5-i386-bin-DVD2.iso（对上DVD1的补充） CentOS-6.5-i386-bin-DVD1.iso（比较全的系统，有大部分软件） 下载：&lt;a href=&#34;http://yunpan.cn/cgnYNATiGayCM&#34;&gt;http://yunpan.cn/cgnYNATiGayCM&lt;/a&gt; 提取码 d567&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

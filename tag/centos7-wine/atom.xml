@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;centos7-wine&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2016-01-07T08:12:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2016/01/07/centos7-an-zhuang-wine/</id>
         <title>centos7安装wine</title>
         <link rel="alternate" href="https://erik.xyz/2016/01/07/centos7-an-zhuang-wine/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;CentOS 7下安装最新的Wine（wine1.7.33）可谓一波三折，对于我这种菜鸟级别的人来说，真不好装！不过好在终于能够使用了。&lt;/p&gt;
+        <content type="html">&lt;p&gt;CentOS 7下安装最新的Wine（wine1.7.33）可谓一波三折，对于我这种菜鸟级别的人来说，真不好装！不过好在终于能够使用了。&lt;/p&gt;
 &lt;p&gt;下面记录安装过程：以后有时间在详细叙说安装的各个步骤： &lt;/p&gt;
 &lt;p&gt;CentOS 7安装可以仿照：The right way to install Wine on CentOS 6 64bit 里面给出了详细步骤，下面就是仿照其安装的！ &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[johnnyhu@localhost 下载]$ su root 密码： &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# wget http://citylan.dl.sourceforge.net/project/wine/Source/wine-1.7.33.tar.bz2 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# tar -xf wine-1.7.33.tar.bz2 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# yum -y groupinstall &amp;#x27;Development Tools&amp;#x27; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# yum -y install libX11-devel freetype-devel &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# yum install alsa-lib-devel.i686 libsndfile-devel.i686 readline-devel.i686 glib2.i686 glibc-devel.i686 libgcc.i686 libstdc++-devel.i686 pulseaudio-libs-devel.i686 cmake portaudio-devel.i686 openal-soft-devel.i686 audiofile-devel.i686 freeglut-devel.i686 lcms-devel.i686 libieee1284-devel.i686 openldap-devel.i686 unixODBC-devel.i686 sane-backends-devel.i686 fontforge libgphoto2-devel.i686 isdn4k-utils-devel.i686 mesa-libGL-devel.i686 mesa-libGLU-devel.i686 libXxf86dga-devel.i686 libXxf86vm-devel.i686 giflib-devel.i686 cups-devel.i686 gsm-devel.i686 libv4l-devel.i686 fontpackages-devel ImageMagick-devel.i686 openal-soft-devel.i686 libX11-devel.i686 docbook-utils-pdf libtextcat tex-cm-lgc &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# yum install alsa-lib-devel audiofile-devel.i686 audiofile-devel cups-devel.i686 cups-devel dbus-devel.i686 dbus-devel fontconfig-devel.i686 fontconfig-devel freetype.i686 freetype-devel.i686 freetype-devel giflib-devel.i686 giflib-devel lcms-devel.i686 lcms-devel libICE-devel.i686 libICE-devel libjpeg-turbo-devel.i686 libjpeg-turbo-devel libpng-devel.i686 libpng-devel libSM-devel.i686 libSM-devel libusb-devel.i686 libusb-devel libX11-devel.i686 libX11-devel libXau-devel.i686 libXau-devel libXcomposite-devel.i686 libXcomposite-devel libXcursor-devel.i686 libXcursor-devel libXext-devel.i686 libXext-devel libXi-devel.i686 libXi-devel libXinerama-devel.i686 libXinerama-devel libxml2-devel.i686 libxml2-devel libXrandr-devel.i686 libXrandr-devel libXrender-devel.i686 libXrender-devel libxslt-devel.i686 libxslt-devel libXt-devel.i686 libXt-devel libXv-devel.i686 libXv-devel libXxf86vm-devel.i686 libXxf86vm-devel mesa-libGL-devel.i686 mesa-libGL-devel mesa-libGLU-devel.i686 mesa-libGLU-devel ncurses-devel.i686 ncurses-devel openldap-devel.i686 openldap-devel openssl-devel.i686 openssl-devel zlib-devel.i686 pkgconfig sane-backends-devel.i686 sane-backends-devel xorg-x11-proto-devel glibc-devel.i686 prelink fontforge flex bison libstdc++-devel.i686 pulseaudio-libs-devel.i686 gnutls-devel.i686 libgphoto2-devel.i686 openal-soft-devel openal-soft-devel.i686 isdn4k-utils-devel.i686 gsm-devel.i686 samba-winbind libv4l-devel.i686 cups-devel.i686 libtiff-devel.i686 gstreamer-devel.i686 gstreamer-plugins-base-devel.i686 gettext-devel.i686 libmpg123-devel.i686 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# ls FoxitReader-v1.1.zip PDFStudio_v9_2_1_linux64.sh wine-1.7.15 wine-1.7.15.tar.bz2 wine-1.7.33 wine-1.7.33.tar.bz2 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# cd &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost ~]# mkdir wine64 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost ~]# ls anaconda-ks.cfg initial-setup-ks.cfg perl5 wine64 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost ~]# cd wine64 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost wine64]# /home/johnnyhu/下载/wine-1.7.33/configure --enable-win64 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost wine64]# make &amp;gt; make.log 2&amp;gt;&amp;amp;1 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost wine64]# cd &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost ~]# mkdir wine32 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost ~]# ls anaconda-ks.cfg initial-setup-ks.cfg perl5 wine32 wine64 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost ~]# cd wine32 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost wine32]# /home/johnnyhu/下载/wine-1.7.33/configure --enable-win32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost wine32]# make &amp;gt; make.log 2&amp;gt;&amp;amp;1 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost wine32]# make install &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost wine32]# cd &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost ~]# cd wine64 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost wine64]# make install &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost wine64]# cd /home/johnnyhu/下载 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# ls FoxitReader-v1.1.zip PDFStudio_v9_2_1_linux64.sh wine-1.7.33 FoxitReader-Win.exe wine-1.7.15 wine-1.7.33.tar.bz2 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# wine FoxitReader-Win.exe &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;注：这里我创建目录win32和win64时一时疏忽建在了root下，其实没必要，建在home下就可以了，好在不影响使用！ &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2. 以下是中文乱码时各种配置： &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 将simsun.ttc移动到/usr/share/wine/windows/中 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[johnnyhu@localhost 下载]$ su root 密码： &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# sudo mkdir -p /usr/share/wine/windows &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# sudo mv simsun.ttc /usr/share/wine/windows/ // 配置Wine中文字体目录 [johnnyhu@localhost ~]$ cd ~/.wine &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[johnnyhu@localhost ~]$ cd ~/.wine/drive_c &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[johnnyhu@localhost drive_c]$ cd windows &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[johnnyhu@localhost windows]$ cd fonts bash: cd: fonts: 没有那个文件或目录 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[johnnyhu@localhost windows]$ mkdir fonts &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[johnnyhu@localhost windows]$ ls command help notepad.exe system32 twain_32.dll win.ini explorer.exe hh.exe regedit.exe system.ini twain.dll winsxs fonts inf rundll.exe syswow64 winhelp.exe Fonts logs system temp winhlp32.exe &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[johnnyhu@localhost windows]$ cd fonts [johnnyhu@localhost fonts]$ ln -s /usr/share/fonts/windows/simsun.ttc simsun.ttc &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[johnnyhu@localhost fonts]$ ln -s /usr/share/fonts/windows/simsun.ttc simfang.ttc [johnnyhu@localhost fonts]$ su root 密码： &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost fonts]# gedit ~/.wine/system.reg &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost fonts]# gedit ~/.wine/drive_c/windows/win.ini &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost ~]# cp -f /home/johnnyhu/zh.reg ~/.wine/ &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost ~]# ls ~/.wine dosdevices drive_c system.reg system.reg~ userdef.reg user.reg zh.reg &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost ~]# cd ~/.wine&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost .wine]# regedit zh.reg &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost drive_c]# cp -f /home/johnnyhu/下载/simsun.ttc windows/fonts &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost drive_c]# cd windows &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost windows]# ls command hh.exe mono system32 twain.dll winsxs explorer.exe inf notepad.exe system.ini winhelp.exe fonts Installer regedit.exe syswow64 winhlp32.exe Fonts logs rundll.exe temp win.ini help Microsoft.NET system twain_32.dll win.ini~ &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost windows]# cd fonts bash: cd: fonts: &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;不是目录 注：wine中文程序安装乱码的问题网上有很多教程，大体类似如：CentOS下Wine乱码解决办法 ，按照上面的，如果不出错的话，大体上就可以了！ &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3. 下面安装附件： &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;wine mono的安装 系统弹框之后自动安装完成，gecko 则自动安装失败，改手动安装。 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 安装win_gecko &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[johnnyhu@localhost 下载]$ wget http://downloads.sourceforge.net/project/wine/Wine%20Gecko/2.34/wine_gecko-2.34-x86.msi [johnnyhu@localhost 下载]$ su root 密码： &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# sudo mkdir -p /usr/share/wine/gecko &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# sudo mv wine_gecko-2.34-x86.msi /usr/share/wine/gecko/ &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]# ls /usr/share/wine/gecko/ wine_gecko-2.34-x86.msi &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@localhost 下载]#&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 </content>

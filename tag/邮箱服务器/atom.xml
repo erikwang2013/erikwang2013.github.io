@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;邮箱服务器&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2014-12-07T14:38:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2014/12/07/zhuan-apache-james-da-jian-you-jian-fu-wu-qi/</id>
         <title>（转）apache james 搭建邮件服务器</title>
         <link rel="alternate" href="https://erik.xyz/2014/12/07/zhuan-apache-james-da-jian-you-jian-fu-wu-qi/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;前言：我只实现了利用james来发送&lt;a href=&#34;http://cpro.baidu.com/cpro/ui/uijs.php?rs=1&amp;amp;u=http%3A%2F%2Fwww%2Emyexception%2Ecn%2Fapache%2F1468802%2Ehtml&amp;amp;p=baidu&amp;amp;c=news&amp;amp;n=10&amp;amp;t=tpclicked3_hc&amp;amp;q=wangyuead_cpr&amp;amp;k=%D3%CA%BC%FE&amp;amp;k0=%D3%CA%BC%FE&amp;amp;k1=phoenix&amp;amp;k2=linux&amp;amp;k3=%D3%CA%BC%FE%B7%FE%CE%F1%C6%F7&amp;amp;k4=%D3%CA%BC%FE%B7%FE%CE%F1&amp;amp;k5=%CA%FD%BE%DD%BF%E2&amp;amp;sid=8713e2f6e9ed16e4&amp;amp;ch=0&amp;amp;tu=u1828791&amp;amp;jk=ffb1bdeaa3309920&amp;amp;cf=29&amp;amp;fv=15&amp;amp;stid=9&amp;amp;urlid=0&amp;amp;luki=8&amp;amp;seller_id=1&amp;amp;di=128&#34;&gt;邮件&lt;/a&gt;，至于接收邮件没有测试过。&lt;/p&gt;
+        <content type="html">&lt;p&gt;前言：我只实现了利用james来发送&lt;a href=&#34;http://cpro.baidu.com/cpro/ui/uijs.php?rs=1&amp;amp;u=http%3A%2F%2Fwww%2Emyexception%2Ecn%2Fapache%2F1468802%2Ehtml&amp;amp;p=baidu&amp;amp;c=news&amp;amp;n=10&amp;amp;t=tpclicked3_hc&amp;amp;q=wangyuead_cpr&amp;amp;k=%D3%CA%BC%FE&amp;amp;k0=%D3%CA%BC%FE&amp;amp;k1=phoenix&amp;amp;k2=linux&amp;amp;k3=%D3%CA%BC%FE%B7%FE%CE%F1%C6%F7&amp;amp;k4=%D3%CA%BC%FE%B7%FE%CE%F1&amp;amp;k5=%CA%FD%BE%DD%BF%E2&amp;amp;sid=8713e2f6e9ed16e4&amp;amp;ch=0&amp;amp;tu=u1828791&amp;amp;jk=ffb1bdeaa3309920&amp;amp;cf=29&amp;amp;fv=15&amp;amp;stid=9&amp;amp;urlid=0&amp;amp;luki=8&amp;amp;seller_id=1&amp;amp;di=128&#34;&gt;邮件&lt;/a&gt;，至于接收邮件没有测试过。&lt;/p&gt;
 &lt;p&gt;网上的资料有很多，感兴趣的话也可以搜索一下。我也是根据网上的资料，进行汇总并尝试，思考后写的文章，里面引用了网上的部分资料。无废话，开始干~&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;前置工作：&lt;/p&gt;
 &lt;ol&gt;

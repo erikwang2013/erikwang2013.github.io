@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Sat, 21 Sep 2019 22:03:00 +0800</pubDate>
         <lastBuildDate>Sat, 21 Sep 2019 22:03:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>行列式</category>
             <category>n阶行列式</category>
             <pubDate>Sat, 21 Sep 2019 22:03:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h4 id=&#34;二阶行列式&#34;&gt;&lt;a href=&#34;#二阶行列式&#34; class=&#34;headerlink&#34; title=&#34;二阶行列式&#34;&gt;&lt;/a&gt;二阶行列式&lt;/h4&gt;&lt;p&gt;$\begin{vmatrix} a&lt;em&gt;{11} &amp;amp; a&lt;/em&gt;{12} \newline a&lt;em&gt;{21} &amp;amp; a&lt;/em&gt;{22} \newline \end{vmatrix}&lt;mjx-container class=&#34;MathJax&#34; jax=&#34;SVG&#34;&gt;&lt;svg style=&#34;vertical-align: -0.186ex;&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;1.76ex&#34; height=&#34;1.505ex&#34; role=&#34;img&#34; focusable=&#34;false&#34; viewBox=&#34;0 -583 778 665&#34;&gt;&lt;g stroke=&#34;currentColor&#34; fill=&#34;currentColor&#34; stroke-width=&#34;0&#34; transform=&#34;scale(1,-1)&#34;&gt;&lt;g data-mml-node=&#34;math&#34;&gt;&lt;g data-mml-node=&#34;mo&#34;&gt;&lt;path data-c=&#34;3D&#34; d=&#34;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&#34;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/mjx-container&gt;a&lt;em&gt;{11}a&lt;/em&gt;{22}-a&lt;em&gt;{12}a&lt;/em&gt;{21}$&lt;/p&gt;
+            <description><![CDATA[ &lt;h4 id=&#34;二阶行列式&#34;&gt;&lt;a href=&#34;#二阶行列式&#34; class=&#34;headerlink&#34; title=&#34;二阶行列式&#34;&gt;&lt;/a&gt;二阶行列式&lt;/h4&gt;&lt;p&gt;$\begin{vmatrix} a&lt;em&gt;{11} &amp;amp; a&lt;/em&gt;{12} \newline a&lt;em&gt;{21} &amp;amp; a&lt;/em&gt;{22} \newline \end{vmatrix}&lt;mjx-container class=&#34;MathJax&#34; jax=&#34;SVG&#34;&gt;&lt;svg style=&#34;vertical-align: -0.186ex;&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;1.76ex&#34; height=&#34;1.505ex&#34; role=&#34;img&#34; focusable=&#34;false&#34; viewBox=&#34;0 -583 778 665&#34;&gt;&lt;g stroke=&#34;currentColor&#34; fill=&#34;currentColor&#34; stroke-width=&#34;0&#34; transform=&#34;scale(1,-1)&#34;&gt;&lt;g data-mml-node=&#34;math&#34;&gt;&lt;g data-mml-node=&#34;mo&#34;&gt;&lt;path data-c=&#34;3D&#34; d=&#34;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&#34;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/mjx-container&gt;a&lt;em&gt;{11}a&lt;/em&gt;{22}-a&lt;em&gt;{12}a&lt;/em&gt;{21}$&lt;/p&gt;
 &lt;h4 id=&#34;三阶行列式&#34;&gt;&lt;a href=&#34;#三阶行列式&#34; class=&#34;headerlink&#34; title=&#34;三阶行列式&#34;&gt;&lt;/a&gt;三阶行列式&lt;/h4&gt;&lt;p&gt;$\begin{vmatrix}&lt;br&gt;a&lt;em&gt;{11} &amp;amp; a&lt;/em&gt;{12} &amp;amp; a&lt;em&gt;{13} \newline&lt;br&gt;a&lt;/em&gt;{21} &amp;amp; a&lt;em&gt;{22} &amp;amp; a&lt;/em&gt;{23} \newline&lt;br&gt;a&lt;em&gt;{31} &amp;amp; a&lt;/em&gt;{32} &amp;amp; a&lt;em&gt;{33} \newline&lt;br&gt;\end{vmatrix}&lt;mjx-container class=&#34;MathJax&#34; jax=&#34;SVG&#34;&gt;&lt;svg style=&#34;vertical-align: -0.186ex;&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;1.76ex&#34; height=&#34;1.505ex&#34; role=&#34;img&#34; focusable=&#34;false&#34; viewBox=&#34;0 -583 778 665&#34;&gt;&lt;g stroke=&#34;currentColor&#34; fill=&#34;currentColor&#34; stroke-width=&#34;0&#34; transform=&#34;scale(1,-1)&#34;&gt;&lt;g data-mml-node=&#34;math&#34;&gt;&lt;g data-mml-node=&#34;mo&#34;&gt;&lt;path data-c=&#34;3D&#34; d=&#34;M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z&#34;&gt;&lt;/path&gt;&lt;/g&gt;&lt;/g&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/mjx-container&gt;a&lt;/em&gt;{i1}A&lt;em&gt;{i1}+a&lt;/em&gt;{i2}A&lt;em&gt;{i2}+a&lt;/em&gt;{i3}A_{i3}  \left( i=1,2,3 \right) $&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;p&gt;或&lt;/p&gt;

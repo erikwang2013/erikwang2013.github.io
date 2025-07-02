@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;elasticsearch集群&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2020-05-07T03:43:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2020/05/07/elasticsearch-node/</id>
         <title>linux系统里elasticsearch集群搭建</title>
         <link rel="alternate" href="https://erik.xyz/2020/05/07/elasticsearch-node/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;1-在容器中搜索elasticsearch镜像-如图结果，一般选择最上面的一个。&#34;&gt;&lt;a href=&#34;#1-在容器中搜索elasticsearch镜像-如图结果，一般选择最上面的一个。&#34; class=&#34;headerlink&#34; title=&#34;1.在容器中搜索elasticsearch镜像,如图结果，一般选择最上面的一个。&#34;&gt;&lt;/a&gt;1.在容器中搜索elasticsearch镜像,如图结果，一般选择最上面的一个。&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;    sudo docker search elasticsearch
+        <content type="html">&lt;h2 id=&#34;1-在容器中搜索elasticsearch镜像-如图结果，一般选择最上面的一个。&#34;&gt;&lt;a href=&#34;#1-在容器中搜索elasticsearch镜像-如图结果，一般选择最上面的一个。&#34; class=&#34;headerlink&#34; title=&#34;1.在容器中搜索elasticsearch镜像,如图结果，一般选择最上面的一个。&#34;&gt;&lt;/a&gt;1.在容器中搜索elasticsearch镜像,如图结果，一般选择最上面的一个。&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;    sudo docker search elasticsearch
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://erik.xyz/img/202005/07/2020-05-07_114446.jpg&#34; alt=&#34;&amp;#39;es图&amp;#39;&#34;&gt;&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;h2 id=&#34;2-到elasticsearch官方网站查询elasticsearch的版本，我用的是最新版7-6-2&#34;&gt;&lt;a href=&#34;#2-到elasticsearch官方网站查询elasticsearch的版本，我用的是最新版7-6-2&#34; class=&#34;headerlink&#34; title=&#34;2.到elasticsearch官方网站查询elasticsearch的版本，我用的是最新版7.6.2&#34;&gt;&lt;/a&gt;2.到elasticsearch官方网站查询elasticsearch的版本，我用的是最新版7.6.2&lt;/h2&gt;&lt;h2 id=&#34;3-拉镜像到本地&#34;&gt;&lt;a href=&#34;#3-拉镜像到本地&#34; class=&#34;headerlink&#34; title=&#34;3.拉镜像到本地&#34;&gt;&lt;/a&gt;3.拉镜像到本地&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;    sudo docker pull elasticsearch:7.6.2

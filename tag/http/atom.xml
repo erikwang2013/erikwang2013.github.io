@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;http&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2019-07-17T16:20:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2019/07/18/http1-1-and-http2-0/</id>
         <title>http1.1和http2.0的知识点</title>
         <link rel="alternate" href="https://erik.xyz/2019/07/18/http1-1-and-http2-0/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;Http1-1&#34;&gt;&lt;a href=&#34;#Http1-1&#34; class=&#34;headerlink&#34; title=&#34;Http1.1&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#Http1-1&#34; title=&#34;Http1.1&#34;&gt;&lt;/a&gt;Http1.1&lt;/h3&gt;&lt;ul&gt;
+        <content type="html">&lt;h3 id=&#34;Http1-1&#34;&gt;&lt;a href=&#34;#Http1-1&#34; class=&#34;headerlink&#34; title=&#34;Http1.1&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#Http1-1&#34; title=&#34;Http1.1&#34;&gt;&lt;/a&gt;Http1.1&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;缓存处理&lt;/p&gt;
 &lt;p&gt; 引入了更多的缓存控制策略例如Entity tag，If-Unmodified-Since, If-Match, If-None-Match等更多可供选择的缓存头来控制缓存策略。&lt;/p&gt;
 &lt;/li&gt;
@@ -519,7 +519,7 @@
         <id>https://erik.xyz/2015/02/05/windows-shang-jing-tai-bian-yi-libevent-2-0-10-bing-shi-xian-yi-ge-jian-dan-http-fu-wu-qi/</id>
         <title>Windows 上静态编译 Libevent 2.0.10 并实现一个简单 HTTP 服务器</title>
         <link rel="alternate" href="https://erik.xyz/2015/02/05/windows-shang-jing-tai-bian-yi-libevent-2-0-10-bing-shi-xian-yi-ge-jian-dan-http-fu-wu-qi/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;[文章作者：张宴 ] 本文介绍了如何在 Windows 操作系统中，利用微软 Visual Studio 2005 编译生成 &lt;a href=&#34;http://monkey.org/%7Eprovos/libevent/&#34;&gt;Libevent&lt;/a&gt; 2.0.10 静态链接库，并利用 &lt;a href=&#34;http://monkey.org/%7Eprovos/libevent/&#34;&gt;Libevent&lt;/a&gt; 静态链接库，实现一个简单的 HTTP Web服务器程序：httpd.exe。 假设 Visual Studio 2005 的安装路径为“D:\Program Files\Microsoft Visual Studio 8\”，&lt;a href=&#34;http://monkey.org/%7Eprovos/libevent/&#34;&gt;Libevent&lt;/a&gt; 2.0.10 解压后的路径为“D:\libevent-2.0.10-stable”。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;[文章作者：张宴 ] 本文介绍了如何在 Windows 操作系统中，利用微软 Visual Studio 2005 编译生成 &lt;a href=&#34;http://monkey.org/%7Eprovos/libevent/&#34;&gt;Libevent&lt;/a&gt; 2.0.10 静态链接库，并利用 &lt;a href=&#34;http://monkey.org/%7Eprovos/libevent/&#34;&gt;Libevent&lt;/a&gt; 静态链接库，实现一个简单的 HTTP Web服务器程序：httpd.exe。 假设 Visual Studio 2005 的安装路径为“D:\Program Files\Microsoft Visual Studio 8\”，&lt;a href=&#34;http://monkey.org/%7Eprovos/libevent/&#34;&gt;Libevent&lt;/a&gt; 2.0.10 解压后的路径为“D:\libevent-2.0.10-stable”。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;一、编译生成 Libevent 2.0.10 静态链接库。&lt;/strong&gt; &lt;/p&gt;
 &lt;ol&gt;

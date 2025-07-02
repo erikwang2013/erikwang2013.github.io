@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Fri, 01 Dec 2017 21:22:00 +0800</pubDate>
         <lastBuildDate>Fri, 01 Dec 2017 21:22:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -477,7 +477,7 @@
             <category>linux安装steam</category>
             <category>steam安装</category>
             <pubDate>Fri, 01 Dec 2017 21:22:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;最近想把win系统的东西统统转到centos上，偶然发现爱你deepin竟然之steam。去官网查到steam有deb的安装包。 然后就自己尝试把deb转成rpm好像能安装成功就是，总是报错GPU无法渲染，痛苦。&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-11-27-46-的屏幕截图.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;意外的发现steam有一个安装yum支持。 添加安装源 yum-config-manager —add-repo&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;最近想把win系统的东西统统转到centos上，偶然发现爱你deepin竟然之steam。去官网查到steam有deb的安装包。 然后就自己尝试把deb转成rpm好像能安装成功就是，总是报错GPU无法渲染，痛苦。&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-11-27-46-的屏幕截图.png&#34; alt=&#34;&#34;&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;意外的发现steam有一个安装yum支持。 添加安装源 yum-config-manager —add-repo&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAsZOF0aZ3nolIs4smsi7XcaVy9iE2/DAeMYM23XArLL/Pcg4iOwT6wY4qa+xKqX1jFqj6RVAA1ROAXD85Awz94K2uSdvSjzCTeuIai3OgnuzBVWKO/W++3xWZWJPUQllzP0RWHiYm/X80/TKe9kSg+odj2oeHoEzTI=&#34; alt=&#34;http://negativo17.org/repos/epel-steam.repo&#34;&gt;  &lt;/p&gt;
 &lt;p&gt;执行安装steam yum -y install steam 直接提示报错&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-12-47-57-的屏幕截图.png&#34; alt=&#34;&#34;&gt; &lt;/p&gt;
 &lt;p&gt;那就去软件仓库搜索一下 &lt;a href=&#34;https://www.rpmfind.net/linux/rpm2html/search.php?query=libva-intel-driver&amp;amp;submit=Search+...&amp;amp;system=&amp;amp;arch=&#34;&gt;https://www.rpmfind.net/linux/rpm2html/search.php?query=libva-intel-driver&amp;amp;submit=Search+...&amp;amp;system=&amp;amp;arch=&lt;/a&gt;&lt;br&gt;&lt;img src=&#34;http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-12-52-12-的屏幕截图.png&#34; alt=&#34;&#34;&gt; &lt;/p&gt;

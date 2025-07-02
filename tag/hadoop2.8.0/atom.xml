@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;hadoop2.8.0&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2017-06-29T00:27:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2017/06/29/hadoop2-8-0-de-bu-shu-an-zhuang-jiao-cheng/</id>
         <title>hadoop2.8.0的部署安装教程</title>
         <link rel="alternate" href="https://erik.xyz/2017/06/29/hadoop2-8-0-de-bu-shu-an-zhuang-jiao-cheng/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;Hadoop部署准备 本地vmware安装 Linux系统家族中 centos7 下载地址&lt;a href=&#34;http://101.110.118.58/isoredirect.centos.org/centos/7/isos/x86\_64/CentOS-7-x86\_64-Minimal-1611.iso&#34;&gt;http://101.110.118.58/isoredirect.centos.org/centos/7/isos/x86\_64/CentOS-7-x86\_64-Minimal-1611.iso&lt;/a&gt;   Java对应版本1.8.0_121   Hadoop版本2.8.0下载地址 &lt;a href=&#34;http://mirror.bit.edu.cn/apache/hadoop/common/&#34;&gt;http://mirror.bit.edu.cn/apache/hadoop/common/&lt;/a&gt; 可以根据自己喜好的版本下载&lt;/p&gt;
+        <content type="html">&lt;p&gt;Hadoop部署准备 本地vmware安装 Linux系统家族中 centos7 下载地址&lt;a href=&#34;http://101.110.118.58/isoredirect.centos.org/centos/7/isos/x86\_64/CentOS-7-x86\_64-Minimal-1611.iso&#34;&gt;http://101.110.118.58/isoredirect.centos.org/centos/7/isos/x86\_64/CentOS-7-x86\_64-Minimal-1611.iso&lt;/a&gt;   Java对应版本1.8.0_121   Hadoop版本2.8.0下载地址 &lt;a href=&#34;http://mirror.bit.edu.cn/apache/hadoop/common/&#34;&gt;http://mirror.bit.edu.cn/apache/hadoop/common/&lt;/a&gt; 可以根据自己喜好的版本下载&lt;/p&gt;
 &lt;h1 id=&#34;1-基本配置&#34;&gt;&lt;a href=&#34;#1-基本配置&#34; class=&#34;headerlink&#34; title=&#34;1.基本配置&#34;&gt;&lt;/a&gt;1.基本配置&lt;/h1&gt;&lt;p&gt;首先安装一个centos7并配置好java Java环境配置 我的java安装地址 /usr/java/ jdk1.8.0_121   编辑java环境 vi ~/.bash_profile 添加或修改 export JAVA_HOME=/usr/java/jdk1.8.0_121 export PATH=$JAVA_HOME/bin:$PATH 执行 . ~/.bash_profile 使变量生效  &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&#34;2-ssh配置&#34;&gt;&lt;a href=&#34;#2-ssh配置&#34; class=&#34;headerlink&#34; title=&#34;2.ssh配置&#34;&gt;&lt;/a&gt;2.ssh配置&lt;/h1&gt;&lt;p&gt;先 yum install ssh  安装   然后执行 ssh-keygen -t dsa -P ‘’ -f ~/.ssh/id_dsa 生成密匙&lt;/p&gt;
 &lt;h1 id=&#34;3-hadoop配置&#34;&gt;&lt;a href=&#34;#3-hadoop配置&#34; class=&#34;headerlink&#34; title=&#34;3.hadoop配置&#34;&gt;&lt;/a&gt;3.hadoop配置&lt;/h1&gt;&lt;p&gt;把下载好的hadoop解压出来。（我的地址在/roo目录,即完整地址/root/hadoop）   配置环境变量 vi ~/.bash_profile export HADOOP_HOME=/root/hadoop export PATH=$JAVA_HOME/bin:$PATH:$HOME/bin:$HADOOP_HOME/bin 执行 . ~/.bash_profile 使变量生效  &lt;/p&gt;

@@ -9,7 +9,7 @@
             "url": "https://erik.xyz/2017/11/17/ru-he-chu-li-wang-zhan-xiang-ying-man-de-wen-ti/",
             "title": "如何处理网站响应慢的问题",
             "date_published": "2017-11-17T13:19:00.000Z",
-            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"/assets/css/APlayer.min.css\"><script src=\"/assets/js/APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><p>当一个网页请求量在10W+的时候出现慢或者很卡的情况如何解决呢？ 1.后台数据</p>\n<ul>\n<li>把所有的数据放进缓存，让服务器内存来处理。</li>\n<li>优化数据获取代码。</li>\n<li>减少接口的重复请求<span id=\"more\"></span>\n</li>\n</ul>\n<p>2.服务器</p>\n<ul>\n<li>开启服务器多线程服务。</li>\n<li>查看cpu负载和内存负载。</li>\n<li>检查服务器宽带。</li>\n<li>去掉重定向</li>\n</ul>\n<p>3.页面</p>\n<ul>\n<li>使用第三方cnd加载js公共文件。</li>\n<li>压缩图片和其他类型的文件（资源加载压缩）。</li>\n<li>优化js代码处理。</li>\n<li>预加载页面（延迟渲染），延迟执行js。</li>\n<li>把js/css/图片缓存至本地浏览器。</li>\n<li>优化js代码</li>\n</ul>\n",
+            "content_html": "<p>当一个网页请求量在10W+的时候出现慢或者很卡的情况如何解决呢？ 1.后台数据</p>\n<ul>\n<li>把所有的数据放进缓存，让服务器内存来处理。</li>\n<li>优化数据获取代码。</li>\n<li>减少接口的重复请求<span id=\"more\"></span>\n</li>\n</ul>\n<p>2.服务器</p>\n<ul>\n<li>开启服务器多线程服务。</li>\n<li>查看cpu负载和内存负载。</li>\n<li>检查服务器宽带。</li>\n<li>去掉重定向</li>\n</ul>\n<p>3.页面</p>\n<ul>\n<li>使用第三方cnd加载js公共文件。</li>\n<li>压缩图片和其他类型的文件（资源加载压缩）。</li>\n<li>优化js代码处理。</li>\n<li>预加载页面（延迟渲染），延迟执行js。</li>\n<li>把js/css/图片缓存至本地浏览器。</li>\n<li>优化js代码</li>\n</ul>\n",
             "tags": [
                 "优化",
                 "响应慢",

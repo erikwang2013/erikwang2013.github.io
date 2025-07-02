@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;html&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2015-06-17T16:04:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2015/06/18/xiang-ying-shi-bu-ju-ru-he-ce-shi-bu-tong-fen-bian-lv/</id>
         <title>响应式布局如何测试不同分辨率</title>
         <link rel="alternate" href="https://erik.xyz/2015/06/18/xiang-ying-shi-bu-ju-ru-he-ce-shi-bu-tong-fen-bian-lv/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;最近在做响应式布局适应不同分辨率的屏幕，太痛苦了，摸着石头过河。之前没有做过这块，手机端又不是很在行，ipad/iphone/三星……一大堆不同的屏幕，如何测试呢，总不能买一大堆设备吧。&lt;/p&gt;
+        <content type="html">&lt;p&gt;最近在做响应式布局适应不同分辨率的屏幕，太痛苦了，摸着石头过河。之前没有做过这块，手机端又不是很在行，ipad/iphone/三星……一大堆不同的屏幕，如何测试呢，总不能买一大堆设备吧。&lt;/p&gt;
 &lt;p&gt;偶然间发现谷歌浏览器(最新版)可以缩小来实现，这样又有问题了，分辨率是多少呢？发现新方法了，废话不多说了，直接上教程。 1.在谷歌浏览器打开你要测试的网页按键盘F12，打开网页调试   2.点击调试工具右上角形似菜单的图标   3.这时候你会发现紧挨着浏览器底部有一排英文菜单   4.把菜单往上拉出来，点击第三个菜单   5.点击打开菜单下面的手机标示   6.如此便是手机设计效果   7.有2个地方可以选择不同的分辨率及屏幕对应的像素   8.下次打开就直接点击F12，然后左上角的手机标示就可以切换&lt;/p&gt;
 </content>
         <category term="css" />

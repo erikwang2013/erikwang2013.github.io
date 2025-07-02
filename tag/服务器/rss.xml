@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Thu, 26 Mar 2020 01:56:00 +0800</pubDate>
         <lastBuildDate>Thu, 26 Mar 2020 01:56:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -474,7 +474,7 @@
             <category>服务器</category>
             <category>openresty</category>
             <pubDate>Thu, 26 Mar 2020 01:56:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;今天给一家公司投简历，问我用过openresty没，确实没用过，回答后没结果了。这就查了查。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;今天给一家公司投简历，问我用过openresty没，确实没用过，回答后没结果了。这就查了查。&lt;/p&gt;
 &lt;p&gt;官方介绍如下：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;        OpenResty® 是一个基于 Nginx 与 Lua 的高性能 Web 平台，其内部集成了大量精良的 Lua 库、第三方模块以及大多数的依赖项。用于方便地搭建能够处理超高并发、扩展性极高的动态 Web 应用、Web 服务和动态网关。
 
@@ -532,7 +532,7 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
             <category>服务器</category>
             <category>邮箱服务器</category>
             <pubDate>Sun, 07 Dec 2014 22:38:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;前言：我只实现了利用james来发送&lt;a href=&#34;http://cpro.baidu.com/cpro/ui/uijs.php?rs=1&amp;amp;u=http%3A%2F%2Fwww%2Emyexception%2Ecn%2Fapache%2F1468802%2Ehtml&amp;amp;p=baidu&amp;amp;c=news&amp;amp;n=10&amp;amp;t=tpclicked3_hc&amp;amp;q=wangyuead_cpr&amp;amp;k=%D3%CA%BC%FE&amp;amp;k0=%D3%CA%BC%FE&amp;amp;k1=phoenix&amp;amp;k2=linux&amp;amp;k3=%D3%CA%BC%FE%B7%FE%CE%F1%C6%F7&amp;amp;k4=%D3%CA%BC%FE%B7%FE%CE%F1&amp;amp;k5=%CA%FD%BE%DD%BF%E2&amp;amp;sid=8713e2f6e9ed16e4&amp;amp;ch=0&amp;amp;tu=u1828791&amp;amp;jk=ffb1bdeaa3309920&amp;amp;cf=29&amp;amp;fv=15&amp;amp;stid=9&amp;amp;urlid=0&amp;amp;luki=8&amp;amp;seller_id=1&amp;amp;di=128&#34;&gt;邮件&lt;/a&gt;，至于接收邮件没有测试过。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;前言：我只实现了利用james来发送&lt;a href=&#34;http://cpro.baidu.com/cpro/ui/uijs.php?rs=1&amp;amp;u=http%3A%2F%2Fwww%2Emyexception%2Ecn%2Fapache%2F1468802%2Ehtml&amp;amp;p=baidu&amp;amp;c=news&amp;amp;n=10&amp;amp;t=tpclicked3_hc&amp;amp;q=wangyuead_cpr&amp;amp;k=%D3%CA%BC%FE&amp;amp;k0=%D3%CA%BC%FE&amp;amp;k1=phoenix&amp;amp;k2=linux&amp;amp;k3=%D3%CA%BC%FE%B7%FE%CE%F1%C6%F7&amp;amp;k4=%D3%CA%BC%FE%B7%FE%CE%F1&amp;amp;k5=%CA%FD%BE%DD%BF%E2&amp;amp;sid=8713e2f6e9ed16e4&amp;amp;ch=0&amp;amp;tu=u1828791&amp;amp;jk=ffb1bdeaa3309920&amp;amp;cf=29&amp;amp;fv=15&amp;amp;stid=9&amp;amp;urlid=0&amp;amp;luki=8&amp;amp;seller_id=1&amp;amp;di=128&#34;&gt;邮件&lt;/a&gt;，至于接收邮件没有测试过。&lt;/p&gt;
 &lt;p&gt;网上的资料有很多，感兴趣的话也可以搜索一下。我也是根据网上的资料，进行汇总并尝试，思考后写的文章，里面引用了网上的部分资料。无废话，开始干~&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;前置工作：&lt;/p&gt;
 &lt;ol&gt;
@@ -653,7 +653,7 @@ OpenResty® 的目标是让你的Web服务直接跑在 Nginx 服务内部，充�
             <category>php环境独立配置</category>
             <category>服务器</category>
             <pubDate>Sat, 04 Oct 2014 13:02:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;(一)安装yum&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[root@delphi ~\]# cd /etc/yum.repos.d/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@delphi yum.repos.d\]# ls&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;CentOS-Base.repo CentOS-Debuginfo.repo CentOS-Media.repo CentOS-Vault.repo&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@delphi yum.repos.d\]# vi CentOS-Media.repo &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# CentOS-Media.repo&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# This repo can be used with mounted DVD media, verify the mount point for&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# CentOS-6. You can use this repo and yum to install items directly off the&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# DVD ISO that we release.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# To use this repo, put in your DVD and use it with the other repos too:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# yum --enablerepo=c6-media \[command\]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# or for ONLY the media repo, do this:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# yum --disablerepo=\\* --enablerepo=c6-media \[command\]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;[c6-media]&lt;br&gt;name=CentOS-$releasever - Media&lt;br&gt;baseurl=file:///mnt/cdrom/     #指定了三个光盘有可能挂载的路径。&lt;br&gt;file:///media/cdrom/&lt;br&gt;file:///media/cdrecorder/&lt;br&gt;gpgcheck=1&lt;br&gt;enabled=1     #enabled=0 这里的0代表缺省源不存在，1代表启用。&lt;br&gt;gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;(一)安装yum&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[root@delphi ~\]# cd /etc/yum.repos.d/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@delphi yum.repos.d\]# ls&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;CentOS-Base.repo CentOS-Debuginfo.repo CentOS-Media.repo CentOS-Vault.repo&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[root@delphi yum.repos.d\]# vi CentOS-Media.repo &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# CentOS-Media.repo&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# This repo can be used with mounted DVD media, verify the mount point for&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# CentOS-6. You can use this repo and yum to install items directly off the&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# DVD ISO that we release.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# To use this repo, put in your DVD and use it with the other repos too:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# yum --enablerepo=c6-media \[command\]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# or for ONLY the media repo, do this:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# yum --disablerepo=\\* --enablerepo=c6-media \[command\]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;[c6-media]&lt;br&gt;name=CentOS-$releasever - Media&lt;br&gt;baseurl=file:///mnt/cdrom/     #指定了三个光盘有可能挂载的路径。&lt;br&gt;file:///media/cdrom/&lt;br&gt;file:///media/cdrecorder/&lt;br&gt;gpgcheck=1&lt;br&gt;enabled=1     #enabled=0 这里的0代表缺省源不存在，1代表启用。&lt;br&gt;gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-6&lt;/p&gt;
 &lt;p&gt;# wq保存退出。&lt;/p&gt;
 &lt;p&gt;  如果你的linux能够上互联网，那么备份Base这个配置文件。&lt;/p&gt;
 &lt;p&gt;[root@delphi yum.repos.d]# mv CentOS-Base.repo CentOS-Base.repo.bak&lt;/p&gt;

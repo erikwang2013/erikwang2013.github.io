@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Sat, 03 Jan 2015 21:19:00 +0800</pubDate>
         <lastBuildDate>Sat, 03 Jan 2015 21:19:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -476,7 +476,7 @@
             <category>flash</category>
             <category>表单</category>
             <pubDate>Sat, 03 Jan 2015 21:19:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;[ 作者：张宴] 最近的一个项目中，需要通过 JavaScript 提交表单数据到另一个域名下的PHP接口（因为数据较大，需要HTTP POST方式提交），并获取PHP接口的返回值，在页面无刷新、无跳转的情况下，更新div标签内的内容。 浏览器出于安全考虑，是不允许JavaScript代码进行跨域操作。JavaScript 和 AJAX 跨域访问分为两大类，一是本域和子域的交互，二是本域和其他域的交互。 一、本域和子域的交互：&lt;a href=&#34;http://www.zyan.cc&#34;&gt;www.zyan.cc&lt;/a&gt; 和 blog.zyan.cc 二、本域和其他域的交互：blog.zyan.cc 和 api.bz 本域和子域的交互，可以通过iframe设置两个域名document.domain = “zyan.cc”，实现统一zyan.cc域下的跨域访问。 本域和其他域的交互，可以通过iframe、代理、JS创建动态脚本等几种方法来实现，&lt;a href=&#34;http://www.phpchina.com/html/48/n-33848.html&#34;&gt;这里有篇文章对几种方法作了简要的介绍&lt;/a&gt;。 iframe、JS创建动态脚本这两种方法，需要开发者能控制两个域，两端都要编写相应的代码，非常麻烦。在本域服务器上用PHP写个代理中转程序，让 本域PHP程序去读取远程其他域的数据再返回给自己，是常用的方法。但是，在本域“前端是CDN或Squid缓存服务器，后端才是PHP应用程序服务器” 的系统架构下，穿透CDN或Squid去访问不能被缓存的PHP代理中转程序，效率是很低的。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;[ 作者：张宴] 最近的一个项目中，需要通过 JavaScript 提交表单数据到另一个域名下的PHP接口（因为数据较大，需要HTTP POST方式提交），并获取PHP接口的返回值，在页面无刷新、无跳转的情况下，更新div标签内的内容。 浏览器出于安全考虑，是不允许JavaScript代码进行跨域操作。JavaScript 和 AJAX 跨域访问分为两大类，一是本域和子域的交互，二是本域和其他域的交互。 一、本域和子域的交互：&lt;a href=&#34;http://www.zyan.cc&#34;&gt;www.zyan.cc&lt;/a&gt; 和 blog.zyan.cc 二、本域和其他域的交互：blog.zyan.cc 和 api.bz 本域和子域的交互，可以通过iframe设置两个域名document.domain = “zyan.cc”，实现统一zyan.cc域下的跨域访问。 本域和其他域的交互，可以通过iframe、代理、JS创建动态脚本等几种方法来实现，&lt;a href=&#34;http://www.phpchina.com/html/48/n-33848.html&#34;&gt;这里有篇文章对几种方法作了简要的介绍&lt;/a&gt;。 iframe、JS创建动态脚本这两种方法，需要开发者能控制两个域，两端都要编写相应的代码，非常麻烦。在本域服务器上用PHP写个代理中转程序，让 本域PHP程序去读取远程其他域的数据再返回给自己，是常用的方法。但是，在本域“前端是CDN或Squid缓存服务器，后端才是PHP应用程序服务器” 的系统架构下，穿透CDN或Squid去访问不能被缓存的PHP代理中转程序，效率是很低的。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;国外有人尝试用 Flash 做 JavaScript 和 AJAX 跨域访问中转，无疑是一个好方法。JavaScript 将数据提交给本域下的 Flash，通过 Flash 中转去访问其他域的接口，条件只需要其他域的根目录下有一个crossdomain.xml文件，文件中设置允许所有域名或允许本域访问即可。很多网站的 API域名都提供了crossdomain.xml文件。 例如： 1、新浪博客的crossdomain.xml文件（&lt;a href=&#34;http://blog.sina.com.cn/crossdomain.xml&#34;&gt;http://blog.sina.com.cn/crossdomain.xml&lt;/a&gt;）设置了允许所有域名访问； 2、饭否API的crossdomain.xml文件（&lt;a href=&#34;http://api.fanfou.com/crossdomain.xml&#34;&gt;http://api.fanfou.com/crossdomain.xml&lt;/a&gt;）设置了允许所有域名访问； 3、校内网API的crossdomain.xml文件（&lt;a href=&#34;http://api.xiaonei.com/crossdomain.xml&#34;&gt;http://api.xiaonei.com/crossdomain.xml&lt;/a&gt;）设置了允许所有域名访问； 4、优酷网的crossdomain.xml文件（&lt;a href=&#34;http://www.youku.com/crossdomain.xml&#34;&gt;http://www.youku.com/crossdomain.xml&lt;/a&gt;）设置了允许所有域名访问； 5、土豆网的crossdomain.xml文件（&lt;a href=&#34;http://www.tudou.com/crossdomain.xml&#34;&gt;http://www.tudou.com/crossdomain.xml&lt;/a&gt;）设置了允许所有域名访问； 6、逍遥视频的crossdomain.xml文件（&lt;a href=&#34;http://v.xoyo.com/crossdomain.xml&#34;&gt;http://v.xoyo.com/crossdomain.xml&lt;/a&gt;）设置了只允许*.xoyo.com域名访问； 7、网易的crossdomain.xml文件（&lt;a href=&#34;http://www.163.com/crossdomain.xml&#34;&gt;http://www.163.com/crossdomain.xml&lt;/a&gt;）设置了只允许tech.163.com、sports.163.com等几个域名访问。&lt;/p&gt;
 &lt;hr&gt;

@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;css中的em&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2015-05-20T15:12:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2015/05/20/css-zhong-qiang-da-de-em/</id>
         <title>CSS中强大的EM</title>
         <link rel="alternate" href="https://erik.xyz/2015/05/20/css-zhong-qiang-da-de-em/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;使用CSS也好久了，但一直都是在使用“px”来设置Web元素的相关属性，未敢使用“em”。主要原因是，对其并不什么了解，只知道一点概念性的东西，前段时间在项目中要求使用“em”作为单位设置元素，所以从头对“em”学习了一回。稍为有一点理解，今天特意整理了一份博文与大家一起分享，希望对童子们有些许的帮助。 这篇教程将引导大家如何使用“em”来创建一个基本的弹性布局，从而学习其如何计算？又是如何使用“em”对层进行弹性扩展？又是如何扩展文本和图像等内容？下在我们就一起带着这些问题开始今天的“em”之行。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+        <content type="html">&lt;p&gt;使用CSS也好久了，但一直都是在使用“px”来设置Web元素的相关属性，未敢使用“em”。主要原因是，对其并不什么了解，只知道一点概念性的东西，前段时间在项目中要求使用“em”作为单位设置元素，所以从头对“em”学习了一回。稍为有一点理解，今天特意整理了一份博文与大家一起分享，希望对童子们有些许的帮助。 这篇教程将引导大家如何使用“em”来创建一个基本的弹性布局，从而学习其如何计算？又是如何使用“em”对层进行弹性扩展？又是如何扩展文本和图像等内容？下在我们就一起带着这些问题开始今天的“em”之行。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h4 id=&#34;什么是弹性布局？&#34;&gt;&lt;a href=&#34;#什么是弹性布局？&#34; class=&#34;headerlink&#34; title=&#34;什么是弹性布局？&#34;&gt;&lt;/a&gt;什么是弹性布局？&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;用户的文字大小与弹性布局&lt;/strong&gt; 用户的浏览器默认渲染的文字大小是“16px”，换句话说，Web页面中“body”的文字大小在用户浏览器下默认渲染是“16px”。当然，如果用户愿意他可以改变这种字体大小的设置，用户可以通过&lt;a href=&#34;http://www.w3cplus.com/css/href=&#34;&gt;UI控件&lt;/a&gt;来改变浏览器默认的字体大小。 弹性设计有一个关键地方&lt;strong&gt;Web页面中所有元素都使用“em”单位值&lt;/strong&gt;。“em”是一个&lt;a href=&#34;http://www.w3.org/TR/CSS2/fonts.html#value-def-relative-size&#34; title=&#34;CSS2 Specification on relative size&#34;&gt;相对&lt;/a&gt;的大小，我们可以这样来设置&lt;strong&gt;1em，0.5em，1.5em&lt;/strong&gt;等，而且“em”还可以指定到小数点后三位，比如“1.365em”。而其中“相对”的意思是：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;相对的计算必然会一个参考物，那么这里相对所指的是相对于元素父元素的&lt;strong&gt;font-size&lt;/strong&gt;。比如说：如果在一个&lt;div&gt;&lt;a href=&#34;http://www.w3.org/TR/CSS2/cascade.html#computed-value&#34; title=&#34;CSS2 Specification on computed values&#34;&gt;设置字体大小&lt;/a&gt;为“16px”，此时这个&lt;div&gt;的后代元素教程了是将&lt;a href=&#34;http://www.w3.org/TR/CSS2/cascade.html#inheritance&#34; title=&#34;CSS2 Specification on inheritance&#34;&gt;继承&lt;/a&gt;他的字体大小，除非重新在其后代元素中进行过显示的设置。此时，如果你将其子元素的字体大小设置为“0.75em”，那么其字体大小计算出来后就相当于“0.75 X 16px = 12px”；&lt;/li&gt;

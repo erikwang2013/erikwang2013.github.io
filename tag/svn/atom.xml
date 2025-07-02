@@ -4,10 +4,6 @@
     <title>艾瑞可erik • Posts by &#34;svn&#34; tag • Posts by &#34;undefined&#34; categories</title>
     <link href="https://erik.xyz" />
     <updated>2015-03-24T12:17:00.000Z</updated>
-    <category term="php扩展" />
-    <category term="php技巧" />
-    <category term="php类库" />
-    <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
     <category term="jquery" />
@@ -18,25 +14,29 @@
     <category term="web" />
     <category term="代码" />
     <category term="压缩" />
+    <category term="php扩展" />
+    <category term="php技巧" />
+    <category term="php类库" />
+    <category term="php资源" />
     <category term="说说" />
     <category term="趣闻" />
     <category term="php服务器" />
     <category term="随笔" />
     <category term="php实例" />
-    <category term="nginx" />
-    <category term="转载" />
     <category term="php库" />
+    <category term="转载" />
     <category term="互联" />
     <category term="项目实战" />
+    <category term="nginx" />
     <category term="javascript" />
     <category term="漏洞" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
     <category term="农业系统" />
     <category term="系统设计" />
     <category term="克莱姆法则" />
@@ -50,9 +50,9 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
-    <category term="日常" />
     <category term="seo" />
     <category term="优化" />
+    <category term="日常" />
     <category term="摘要" />
     <category term="文章" />
     <category term="游记" />
@@ -383,12 +383,12 @@
     <category term="可视化数据" />
     <category term="数据" />
     <category term="数据表" />
-    <category term="json" />
-    <category term="json数组" />
-    <category term="json解析" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
+    <category term="json" />
+    <category term="json数组" />
+    <category term="json解析" />
     <category term="sql" />
     <category term="sql优化" />
     <category term="css3兼容360浏览器兼容模式" />
@@ -414,13 +414,13 @@
     <category term="我在" />
     <category term="wordpress" />
     <category term="wordpress标签" />
+    <category term="域名合并" />
     <category term="wpscan" />
     <category term="usbrip" />
     <category term="无限极分类" />
     <category term="php无限极" />
     <category term="分类tree" />
     <category term="无限极分类树型" />
-    <category term="域名合并" />
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
@@ -468,7 +468,7 @@
         <id>https://erik.xyz/2015/03/24/centos-an-zhuang-svn/</id>
         <title>centos安装svn</title>
         <link rel="alternate" href="https://erik.xyz/2015/03/24/centos-an-zhuang-svn/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;最近尝试进一步了解服务器，centos安装svn&lt;br&gt;rpm -qa subversion  检测已安装版本，如果存在则删除&lt;br&gt;删除   yum remove subversion&lt;br&gt;安装svn命令    yum install httpd httpd-devel subversion mod_dav_svn mod_auth_mysql 确认安装模块&lt;br&gt;进入目录     cd /etc/httpd/modules&lt;br&gt;确认命令    ls | grep svn&lt;br&gt;检查安装版本 svnserve —version&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;a href=&#34;http://i3.tietuku.com/54d9260e32ce137c.png&#34;&gt;&lt;img src=&#34;http://i3.tietuku.com/54d9260e32ce137c.png&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt;&lt;br&gt;安装完成后还需要建立svn库&lt;br&gt;创建目录 mkdir -p /opt/svn/repositories svnadmin create /opt/svn/repositories&lt;br&gt;查看/opt/svn/repositories 文件夹发现包含了conf, db,format,hooks, locks, README.txt文件，说明一个SVN库已经建立。&lt;br&gt;配置&lt;br&gt;进入 cd /opt/svn/repositories/conf&lt;br&gt;配置密码 vi passwd [users] # harry = harryssecret # sally = sallyssecret admin=123456 配置权限 vi authz &lt;/p&gt;
+        <content type="html">&lt;p&gt;最近尝试进一步了解服务器，centos安装svn&lt;br&gt;rpm -qa subversion  检测已安装版本，如果存在则删除&lt;br&gt;删除   yum remove subversion&lt;br&gt;安装svn命令    yum install httpd httpd-devel subversion mod_dav_svn mod_auth_mysql 确认安装模块&lt;br&gt;进入目录     cd /etc/httpd/modules&lt;br&gt;确认命令    ls | grep svn&lt;br&gt;检查安装版本 svnserve —version&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;a href=&#34;http://i3.tietuku.com/54d9260e32ce137c.png&#34;&gt;&lt;img src=&#34;http://i3.tietuku.com/54d9260e32ce137c.png&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt;&lt;br&gt;安装完成后还需要建立svn库&lt;br&gt;创建目录 mkdir -p /opt/svn/repositories svnadmin create /opt/svn/repositories&lt;br&gt;查看/opt/svn/repositories 文件夹发现包含了conf, db,format,hooks, locks, README.txt文件，说明一个SVN库已经建立。&lt;br&gt;配置&lt;br&gt;进入 cd /opt/svn/repositories/conf&lt;br&gt;配置密码 vi passwd [users] # harry = harryssecret # sally = sallyssecret admin=123456 配置权限 vi authz &lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;设置[/]代表根目录下所有的资源 [/] admin=rw 服务svnserve.com配置 vi svnserve.conf 【general] &lt;/li&gt;
 &lt;li&gt;匿名访问的权限，可以是read,write,none,默认为read anon-access=none &lt;/li&gt;

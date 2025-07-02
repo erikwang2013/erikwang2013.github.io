@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Mon, 11 Nov 2024 09:58:00 +0800</pubDate>
         <lastBuildDate>Mon, 11 Nov 2024 09:58:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -475,7 +475,7 @@
             <category>redis</category>
             <category>数据一致性</category>
             <pubDate>Mon, 11 Nov 2024 09:58:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;有时候感觉MySQL我们懂了，Redis我们懂了，但是面试的时候一直答不好，经常被难住，问题在哪呢？&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;有时候感觉MySQL我们懂了，Redis我们懂了，但是面试的时候一直答不好，经常被难住，问题在哪呢？&lt;/p&gt;
 &lt;p&gt;答案是：面试官考的不是专项能力，而是多项技术结合应用能力。&lt;/p&gt;
 &lt;p&gt;就拿&lt;strong&gt;并发场景下如何保证MySQL与Redis缓存一致性？&lt;/strong&gt;这个面试官常见的拷打考点举例。&lt;/p&gt;
 &lt;p&gt;对于读多写少并且要求高性能的业务逻辑，我们通常在应用服务器访问MySQL数据库的中间加上一层&lt;strong&gt;Redis缓存层&lt;/strong&gt;，以提高数据的查询效率，减轻MySQL数据库的压力，避免在MySQL出现性能瓶颈。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;img src=&#34;/img/2024/2024111101.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
@@ -557,7 +557,7 @@
             <link>https://erik.xyz/2020/03/17/nosql-db-presentation/</link>
             <category>非关系型数据库</category>
             <pubDate>Tue, 17 Mar 2020 01:35:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;根据&lt;a href=&#34;https://nosql-database.org&#34;&gt;NoSQL官网&lt;/a&gt;查阅，结合网上资料做一个简单介绍。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;根据&lt;a href=&#34;https://nosql-database.org&#34;&gt;NoSQL官网&lt;/a&gt;查阅，结合网上资料做一个简单介绍。&lt;/p&gt;
 &lt;h4 id=&#34;键值数据库&#34;&gt;&lt;a href=&#34;#键值数据库&#34; class=&#34;headerlink&#34; title=&#34;键值数据库&#34;&gt;&lt;/a&gt;键值数据库&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;目前使用较多的&lt;/p&gt;
 &lt;ul&gt;
@@ -674,7 +674,7 @@
             <category>hbase安装教程</category>
             <category>hbase</category>
             <pubDate>Wed, 21 Aug 2019 23:40:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;hbase分布式数据库，很早就知道了，今天尝试在docker中搭建一下。&lt;br&gt;首先，安装配置hadoop环境。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;hbase分布式数据库，很早就知道了，今天尝试在docker中搭建一下。&lt;br&gt;首先，安装配置hadoop环境。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://jingyan.baidu.com/article/2d5afd69d5969585a2e28eaf.html&#34;&gt;hadoop安装教程&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;这教程是我之前在百度经验分享的，版本是2.8，现在看了看了最新版hadoop，教程还是可以用的。&lt;/p&gt;
 &lt;p&gt;安装好hadoop后别忘了配置ssh、java环境等。&lt;/p&gt;
@@ -710,7 +710,7 @@
             <category>mysql</category>
             <category>分库分表</category>
             <pubDate>Tue, 23 Apr 2019 12:28:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;&lt;strong&gt;分库分表&lt;/strong&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;strong&gt;分库分表&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;php工作5年了,大部分场景都是业务层。说白了就是增删改查。也知道数据库大数据处理分库分表，一般是水平分表和垂直分表，实操是不可能的，今天看了一篇文章&lt;a href=&#34;https://mp.weixin.qq.com/s/QFlUPS8X0errMwpxdBMHvg&#34;&gt;《分库分表？如何做到永不迁移数据和避免热点？》&lt;/a&gt;，思路一下顺畅了。&lt;/p&gt;
@@ -740,7 +740,7 @@
             <category>mysql瓶颈</category>
             <category>mysql瓶颈解决办法</category>
             <pubDate>Tue, 01 Mar 2016 19:40:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;mysql本身是存在瓶颈的，当数据量达到千万级别以上，无论mysql如何优化，其性能都显著降低（有专门团队开发并改进mysql的除外）。 那么就有以下几种办法解决。&lt;br&gt;1.增加mysql配置中buffer和cache的数值，增加服务器cpu数量和内存大小。&lt;br&gt;2.使用第三方引擎或衍生版本。例如：Percona、MariaDB、TokuDB 3.迁移到其他数据库。例如：PostgreSQL、Oracle&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;mysql本身是存在瓶颈的，当数据量达到千万级别以上，无论mysql如何优化，其性能都显著降低（有专门团队开发并改进mysql的除外）。 那么就有以下几种办法解决。&lt;br&gt;1.增加mysql配置中buffer和cache的数值，增加服务器cpu数量和内存大小。&lt;br&gt;2.使用第三方引擎或衍生版本。例如：Percona、MariaDB、TokuDB 3.迁移到其他数据库。例如：PostgreSQL、Oracle&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -752,7 +752,7 @@
             <category>mysql引擎</category>
             <category>mysql数据表设计选择</category>
             <pubDate>Tue, 01 Mar 2016 17:50:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;针对不同的业务需求来选择mysql存储引擎。 1.采用MyISAM引擎&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;针对不同的业务需求来选择mysql存储引擎。 1.采用MyISAM引擎&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;R/W&amp;gt;100:1且updae相对较少。&lt;/li&gt;
 &lt;li&gt;并发不高，不需要事务。&lt;/li&gt;
@@ -782,7 +782,7 @@
             <category>mysql读写优化</category>
             <category>数据库优化，mysql语句优化</category>
             <pubDate>Tue, 01 Mar 2016 17:29:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;前辈们总结的经验，学习、学习。 &lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;前辈们总结的经验，学习、学习。 &lt;/p&gt;
 &lt;p&gt;1.尽量避免在列上进行运算，这样会导致索引失效。 &lt;/p&gt;
 &lt;p&gt;例如：SELECT &lt;em&gt; FROM t WHERE YEAR(d) &amp;gt;=2011; 优化为：SELECT &lt;/em&gt; FROM t WHERE d &amp;gt;=’2011-01-01’;&lt;/p&gt;
 &lt;p&gt;2.使用JOIN时，应该用小结果集驱动大结果集。&lt;/p&gt;
@@ -809,7 +809,7 @@
             <category>mysql</category>
             <category>数据表</category>
             <pubDate>Fri, 09 Jan 2015 22:38:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;文章作者：张宴 Mysql-udf-http 是一款简单的MySQL用户自定义函数（UDF, User-Defined Functions），具有http_get()、http_post()、http_put()、http_delete()四个函数，可以在 MySQL数据库中利用HTTP协议进行REST相关操作。 项目网址：&lt;a href=&#34;http://code.google.com/p/mysql-udf-http/&#34;&gt;http://code.google.com/p/mysql-udf-http/&lt;/a&gt; 中文说明：&lt;a href=&#34;http://blog.zyan.cc/mysql-udf-http/&#34;&gt;http://blog.zyan.cc/mysql-udf-http/&lt;/a&gt; 使用环境：Linux操作系统，支持的MySQL版本：5.1.x 和 5.5.x。5.0.x未经测试。 软件作者：张宴&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;文章作者：张宴 Mysql-udf-http 是一款简单的MySQL用户自定义函数（UDF, User-Defined Functions），具有http_get()、http_post()、http_put()、http_delete()四个函数，可以在 MySQL数据库中利用HTTP协议进行REST相关操作。 项目网址：&lt;a href=&#34;http://code.google.com/p/mysql-udf-http/&#34;&gt;http://code.google.com/p/mysql-udf-http/&lt;/a&gt; 中文说明：&lt;a href=&#34;http://blog.zyan.cc/mysql-udf-http/&#34;&gt;http://blog.zyan.cc/mysql-udf-http/&lt;/a&gt; 使用环境：Linux操作系统，支持的MySQL版本：5.1.x 和 5.5.x。5.0.x未经测试。 软件作者：张宴&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;一、REST架构风格：&lt;/strong&gt; REST（Representational State Transfer）是一种轻量级的Web Service架构风格，其实现和操作明显比SOAP和XML-RPC更为简洁，可以完全通过HTTP协议实现，还可以利用缓存Cache来提高响应速 度，性能、效率和易用性上都优于SOAP协议。REST最早是由 Roy Thomas Fielding 博士2000年在论文《&lt;a href=&#34;http://www.ics.uci.edu/%7Efielding/pubs/dissertation/top.htm&#34;&gt;Architectural Styles and the Design of Network-based Software Architectures&lt;/a&gt;》中提出的，&lt;a href=&#34;http://mysql-udf-http.googlecode.com/files/REST_cn.pdf&#34;&gt;中文译文全文PDF点此下载&lt;/a&gt;。另外，&lt;a href=&#34;http://www.infoq.com/cn/articles/rest-introduction&#34;&gt;有篇译文&lt;/a&gt;对REST做了一个简化说明。 目前，REST架构风格的常见实现是基于HTTP协议及其四种基本方法（如POST、GET、PUT和DELETE）的。有人将HTTP协议的四种方法 与CRUD原则相对应，CRUD原则对于资源只需要四种行为：Create（创建）、Read（读取）、Update（更新）和Delete（删除）就可 以完成对其操作和处理。 &lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://zyan.cc/attachment/201009/crud.png&#34;&gt;&lt;img src=&#34;http://zyan.cc/attachment/201009/crud.png&#34; alt=&#34;点击在新窗口中浏览此图片&#34; title=&#34;点击在新窗口中浏览此图片&#34;&gt;&lt;/a&gt;&lt;/p&gt;

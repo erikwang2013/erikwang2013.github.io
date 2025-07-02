@@ -7,10 +7,6 @@
         <language>zh-CN</language>
         <pubDate>Sun, 12 Oct 2014 10:17:00 +0800</pubDate>
         <lastBuildDate>Sun, 12 Oct 2014 10:17:00 +0800</lastBuildDate>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>日志</category>
         <category>工具</category>
         <category>jquery</category>
@@ -21,25 +17,29 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
-        <category>转载</category>
         <category>php库</category>
+        <category>转载</category>
         <category>互联</category>
         <category>项目实战</category>
+        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
+        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -386,12 +386,12 @@
         <category>可视化数据</category>
         <category>数据</category>
         <category>数据表</category>
-        <category>json</category>
-        <category>json数组</category>
-        <category>json解析</category>
         <category>socket通信</category>
         <category>socket多进程</category>
         <category>socket</category>
+        <category>json</category>
+        <category>json数组</category>
+        <category>json解析</category>
         <category>sql</category>
         <category>sql优化</category>
         <category>css3兼容360浏览器兼容模式</category>
@@ -417,13 +417,13 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
         <category>无限极分类树型</category>
-        <category>域名合并</category>
         <category>xhprof</category>
         <category>laravel</category>
         <category>composer插件</category>
@@ -477,7 +477,7 @@
             <category>php集成环境</category>
             <category>服务器集成环境</category>
             <pubDate>Sun, 12 Oct 2014 10:17:00 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;/assets/css/APlayer.min.css&#34;&gt;&lt;script src=&#34;/assets/js/APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;单独配置php环境比较浪费时间，用集成环境速度快，但是添加扩展比较麻烦，总之各有好处。&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;单独配置php环境比较浪费时间，用集成环境速度快，但是添加扩展比较麻烦，总之各有好处。&lt;/p&gt;
 &lt;h3 id=&#34;win系统中php集成环境&#34;&gt;&lt;a href=&#34;#win系统中php集成环境&#34; class=&#34;headerlink&#34; title=&#34;win系统中php集成环境&#34;&gt;&lt;/a&gt;win系统中php集成环境&lt;/h3&gt;&lt;p&gt;phpstudy这个集成目前算是比较优秀的基本上涵盖所有php版本和服务其配置，可以任意切换不同版本，相对于开发者来说，一些框架的特殊要求，不必再来回更换php版本。 下载地址 &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/win_all/phpStudy-x64.zip&#34;&gt;phpStudy-x64.zip&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/win_all/phpStudy-install.zip&#34;&gt;phpStudy-install.zip&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/win_all/phpStudy2014.1404454619.rar&#34;&gt;phpStudy2014.1404454619.rar&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/win_all/phpStudy2013.zip&#34;&gt;phpStudy2013.zip&lt;/a&gt; 默认mysql用户名密码都是root appserv集成环境也一般般，只是目前只看到32位的，不过也符合一些公司使用 下载地址 &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/win_all/appserv-win32-2.5.10.exe&#34;&gt;appserv-win32-2.5.10.exe&lt;/a&gt;  &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;linux集成环境&#34;&gt;&lt;a href=&#34;#linux集成环境&#34; class=&#34;headerlink&#34; title=&#34;linux集成环境&#34;&gt;&lt;/a&gt;linux集成环境&lt;/h3&gt;&lt;p&gt;笔者刚开始接触php由于配置比较繁琐，花费时间量大，干脆在百度上找找看有没有集成环境，后来找到了。 wdlinux这是一款专注于linux集成的环境，对于配置大有好处，后台还有专门的管理界面，可以分站点建立多个网站 下载地址 &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/linux_all/wdcp.sh&#34;&gt;wdlinux&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/linux_all/wdcp.sh&#34;&gt;https://sourceforge.net/projects/erik1314/files/linux_all/wdcp.sh&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/linux_all/lanmp_v2.5.tar.gz&#34;&gt;lanmp_v2.5.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/linux\_all/lanmp\_v2.5.tar.gz&#34;&gt;https://sourceforge.net/projects/erik1314/files/linux\_all/lanmp\_v2.5.tar.gz&lt;/a&gt; wdcp管理系统后台访问地址 &lt;a href=&#34;http://ip:8080&#34;&gt;http://ip:8080&lt;/a&gt; 默认用户密码 admin wdlinux.cn mysql默认的用户密码 root wdlinux.cn phpstudy我就不过多介绍了，也有linux版本的 下载地址 &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/linux_all/phpstudy.bin&#34;&gt;phpstudy&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/linux_all/phpstudy.bin&#34;&gt;https://sourceforge.net/projects/erik1314/files/linux_all/phpstudy.bin&lt;/a&gt;&lt;/p&gt;
  ]]></description>
