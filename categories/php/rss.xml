@@ -5,10 +5,14 @@
         <link>https://erik.xyz</link>
         <description>一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Tue, 10 Jun 2025 23:09:00 +0800</pubDate>
-        <lastBuildDate>Tue, 10 Jun 2025 23:09:00 +0800</lastBuildDate>
+        <pubDate>Sat, 05 Jul 2025 11:00:00 +0800</pubDate>
+        <lastBuildDate>Sat, 05 Jul 2025 11:00:00 +0800</lastBuildDate>
         <category>日志</category>
         <category>工具</category>
+        <category>php扩展</category>
+        <category>php技巧</category>
+        <category>php类库</category>
+        <category>php资源</category>
         <category>jquery</category>
         <category>jquery插件</category>
         <category>js</category>
@@ -17,29 +21,25 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
-        <category>php扩展</category>
-        <category>php技巧</category>
-        <category>php类库</category>
-        <category>php资源</category>
         <category>说说</category>
         <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>php库</category>
+        <category>nginx</category>
         <category>转载</category>
+        <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
-        <category>nginx</category>
         <category>javascript</category>
         <category>漏洞</category>
         <category>php应用</category>
         <category>浮点</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
@@ -53,9 +53,9 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
+        <category>日常</category>
         <category>seo</category>
         <category>优化</category>
-        <category>日常</category>
         <category>摘要</category>
         <category>文章</category>
         <category>游记</category>
@@ -467,6 +467,184 @@
         <category>翻墙</category>
         <category>谷歌</category>
         <category>谷歌搜索</category>
+        <category>php架构</category>
+        <category>php服务</category>
+        <category>php服务设计</category>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2025/07/05/php-architecture01/</guid>
+            <title>php架构方面的设计与思考（一）</title>
+            <link>https://erik.xyz/2025/07/05/php-architecture01/</link>
+            <category>php架构</category>
+            <category>php服务</category>
+            <category>php服务设计</category>
+            <pubDate>Sat, 05 Jul 2025 11:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;PHP的微服务架构设计，涵盖服务注册中心、服务调度、服务降级、服务网关、服务配置、服务总线等核心模块的完整梳理和实现方案：&lt;/p&gt;
+&lt;pre class=&#34;mermaid&#34;&gt;graph TD
+    A[服务网关] --&gt; B[服务注册中心]
+    A --&gt; C[服务配置中心]
+    D[服务提供者] --&gt; B
+    E[服务消费者] --&gt; B
+    F[服务总线] --&gt; D
+    F --&gt; E
+    G[服务调度器] --&gt; F
+    H[降级管理器] --&gt; C&lt;/pre&gt;
+
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h4 id=&#34;一、架构核心模块与实现技术选型&#34;&gt;&lt;a href=&#34;#一、架构核心模块与实现技术选型&#34; class=&#34;headerlink&#34; title=&#34;一、架构核心模块与实现技术选型&#34;&gt;&lt;/a&gt;一、架构核心模块与实现技术选型&lt;/h4&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;模块&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;推荐技术&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;PHP对接方式&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;特点&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;服务注册中心&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Consul、Nacos&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;HTTP API/PHP客户端库&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;支持健康检查、服务发现&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;服务网关&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Kong、APISIX&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Nginx代理/PHP插件&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;动态路由、限流、认证&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;服务配置中心&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Apollo、Nacos&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;HTTP长轮询/PHP SDK&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;配置热更新、版本管理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;服务总线&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;RabbitMQ、Kafka&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;PHP扩展(php-amqplib/rdkafka)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;异步解耦、可靠消息&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;服务调度&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Workerman/Swoole&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;原生PHP支持&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;协程调度、高性能&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;服务降级&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;ResiliencePHP&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Composer库&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;熔断、限流、降级&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;分布式追踪&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Jaeger、Zipkin&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;OpenTracing-PHP&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;全链路监控&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;二、各模块具体实现方案&#34;&gt;&lt;a href=&#34;#二、各模块具体实现方案&#34; class=&#34;headerlink&#34; title=&#34;二、各模块具体实现方案&#34;&gt;&lt;/a&gt;二、各模块具体实现方案&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;服务注册中心（Consul + PHP）&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;// 安装Consul PHP客户端：composer require sensiolabs/consul-php-sdk&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;use SensioLabs\Consul\ServiceFactory;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;use SensioLabs\Consul\Services\AgentInterface;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$consul = new ServiceFactory([&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;base_uri&amp;#x27; =&amp;gt; &amp;#x27;http://consul-server:8500&amp;#x27;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 服务注册&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$consul-&amp;gt;get(AgentInterface::class)-&amp;gt;registerService([&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;ID&amp;#x27; =&amp;gt; &amp;#x27;order-service-001&amp;#x27;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;Name&amp;#x27; =&amp;gt; &amp;#x27;order-service&amp;#x27;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;Address&amp;#x27; =&amp;gt; &amp;#x27;192.168.1.101&amp;#x27;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;Port&amp;#x27; =&amp;gt; 8000,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;Check&amp;#x27; =&amp;gt; [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#x27;HTTP&amp;#x27; =&amp;gt; &amp;#x27;http://192.168.1.101:8000/health&amp;#x27;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#x27;Interval&amp;#x27; =&amp;gt; &amp;#x27;10s&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 服务发现&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$services = $consul-&amp;gt;getCatalog()-&amp;gt;service(&amp;#x27;order-service&amp;#x27;)-&amp;gt;json();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$instances = array_map(fn($s) =&amp;gt; &amp;quot;&amp;#123;$s[&amp;#x27;ServiceAddress&amp;#x27;]&amp;#125;:&amp;#123;$s[&amp;#x27;ServicePort&amp;#x27;]&amp;#125;&amp;quot;, $services);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;API网关（Kong + PHP）&lt;/p&gt;
+ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;# Kong配置示例&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  location /api/ &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    access_by_lua_block &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      -- PHP认证插件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      local res = ngx.location.capture(&amp;quot;/auth.php?token=&amp;quot;..ngx.var.arg_token)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      if res.status ~= 200 then&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ngx.exit(401)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      end&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    proxy_pass http://php-upstream;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    proxy_set_header X-Service-Name $route_name;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;配置中心（Apollo + PHP） &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;// 使用apollo-client-php&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$client = new \ApolloClient\Client([&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;config_server&amp;#x27; =&amp;gt; &amp;#x27;http://apollo-config:8080&amp;#x27;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;app_id&amp;#x27; =&amp;gt; &amp;#x27;user-service&amp;#x27;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;cluster&amp;#x27; =&amp;gt; &amp;#x27;default&amp;#x27;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 获取配置&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$mysqlConfig = $client-&amp;gt;get(&amp;#x27;mysql.connection&amp;#x27;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 监听配置变更&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$client-&amp;gt;listen(function($key, $value) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    if ($key === &amp;#x27;feature_toggle&amp;#x27;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        FeatureToggle::update($value);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;服务总线（RabbitMQ + PHP） &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;// 生产者&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$connection = new AMQPStreamConnection(&amp;#x27;rabbitmq&amp;#x27;, 5672, &amp;#x27;guest&amp;#x27;, &amp;#x27;guest&amp;#x27;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$channel = $connection-&amp;gt;channel();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$channel-&amp;gt;queue_declare(&amp;#x27;order_events&amp;#x27;, false, true, false, false);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$msg = new AMQPMessage(json_encode([&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;event&amp;#x27; =&amp;gt; &amp;#x27;ORDER_CREATED&amp;#x27;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#x27;data&amp;#x27; =&amp;gt; [&amp;#x27;id&amp;#x27; =&amp;gt; 123]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;]), [&amp;#x27;delivery_mode&amp;#x27; =&amp;gt; 2]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$channel-&amp;gt;basic_publish($msg, &amp;#x27;&amp;#x27;, &amp;#x27;order_events&amp;#x27;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 消费者&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$channel-&amp;gt;basic_consume(&amp;#x27;order_events&amp;#x27;, &amp;#x27;&amp;#x27;, false, false, false, false, &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    function($msg) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        $event = json_decode($msg-&amp;gt;body, true);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        EventDispatcher::dispatch($event);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        $msg-&amp;gt;ack();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;服务降级（ResiliencePHP） &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;use Resilience\Retry;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;use Resilience\CircuitBreaker;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 熔断器配置&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$circuitBreaker = CircuitBreaker::builder()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -&amp;gt;withFailureRateThreshold(50)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -&amp;gt;withWaitDuration(10000)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -&amp;gt;build();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 带熔断的重试机制&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$result = Retry::with(Retry::maxAttempts(3))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -&amp;gt;decorate($circuitBreaker)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -&amp;gt;run(function() use ($service) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        return $service-&amp;gt;callApi();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;, function($e) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        // 降级处理&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        return [&amp;#x27;status&amp;#x27; =&amp;gt; &amp;#x27;degraded&amp;#x27;, &amp;#x27;data&amp;#x27; =&amp;gt; cached_data()];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;分布式调度（Swoole协程） &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;use Swoole\Coroutine;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 并发调用多个服务&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Coroutine\run(function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    $results = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    $wg = new Coroutine\WaitGroup();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    $services = [&amp;#x27;inventory&amp;#x27;, &amp;#x27;payment&amp;#x27;, &amp;#x27;notification&amp;#x27;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    foreach ($services as $service) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        $wg-&amp;gt;add();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        go(function() use ($service, &amp;amp;$results, $wg) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            $results[$service] = callService($service);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            $wg-&amp;gt;done();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    $wg-&amp;gt;wait();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    // 处理聚合结果&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    processResults($results);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;三、完整架构部署方案&#34;&gt;&lt;a href=&#34;#三、完整架构部署方案&#34; class=&#34;headerlink&#34; title=&#34;三、完整架构部署方案&#34;&gt;&lt;/a&gt;三、完整架构部署方案&lt;/h4&gt;&lt;pre class=&#34;mermaid&#34;&gt;graph LR
+    A[客户端] --&gt; B[Kong网关]
+    B --&gt; C[认证服务]
+    B --&gt; D[用户服务]
+    B --&gt; E[订单服务]
+    B --&gt; F[支付服务]
+
+    subgraph 微服务集群
+        C --&gt;|注册| H[Consul]
+        D --&gt;|注册| H
+        E --&gt;|注册| H
+        F --&gt;|注册| H
+
+        C --&gt;|配置| I[Apollo]
+        D --&gt;|配置| I
+        E --&gt;|配置| I
+        F --&gt;|配置| I
+
+        E --&gt;|消息| J[RabbitMQ]
+        J --&gt; F
+        J --&gt; K[通知服务]
+    end
+
+    H --&gt; L[Prometheus监控]
+    I --&gt; L
+    J --&gt; L
+    L --&gt; M[Grafana]&lt;/pre&gt;
+
+&lt;h4 id=&#34;四、关键组件安装与配置&#34;&gt;&lt;a href=&#34;#四、关键组件安装与配置&#34; class=&#34;headerlink&#34; title=&#34;四、关键组件安装与配置&#34;&gt;&lt;/a&gt;四、关键组件安装与配置&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;基础设施部署（Docker示例） &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;# docker-compose.yml&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;version: &amp;#x27;3&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;services:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  consul:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    image: consul:latest&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ports:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      - &amp;quot;8500:8500&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  kong:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    image: kong:latest&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    depends_on:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      - postgres&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ports:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      - &amp;quot;8000:8000&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      - &amp;quot;8001:8001&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  apollo:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    image: apolloconfig/apollo-portal&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ports:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      - &amp;quot;8070:8070&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  rabbitmq:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    image: rabbitmq:management&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ports:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      - &amp;quot;5672:5672&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      - &amp;quot;15672:15672&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;PHP服务Dockerfile&lt;/p&gt;
+ &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;FROM php:8.2-fpm&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# 安装必要扩展&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;RUN apt-get update &amp;amp;&amp;amp; apt-get install -y \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    libzip-dev \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    librabbitmq-dev \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;amp;&amp;amp; docker-php-ext-install zip pdo_mysql \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;amp;&amp;amp; pecl install amqp \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;amp;&amp;amp; docker-php-ext-enable amqp&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# 安装Composer&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;COPY --from=composer:latest /usr/bin/composer /usr/bin/composer&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;WORKDIR /var/www&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;COPY . .&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;RUN composer install --no-dev --optimize-autoloader&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;五、生产环境建议&#34;&gt;&lt;a href=&#34;#五、生产环境建议&#34; class=&#34;headerlink&#34; title=&#34;五、生产环境建议&#34;&gt;&lt;/a&gt;五、生产环境建议&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;服务注册中心：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;使用Consul集群（至少3节点）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;开启ACL安全控制&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;集成Prometheus监控&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;网关层：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Kong集群 + Nginx负载均衡&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;启用JWT认证插件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;配置速率限制（1000rps/服务）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;配置管理：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Apollo多环境配置（DEV/TEST/PROD）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;敏感配置加密存储&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;配置变更审计日志&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;服务通信：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;同步调用：HTTP/2 + Protobuf&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;异步消息：RabbitMQ镜像队列&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;服务网格：Istio（可选）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;可观测性：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;日志：ELK收集Nginx/PHP日志&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;指标：Prometheus收集服务指标&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;追踪：Jaeger实现全链路追踪&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;六、PHP微服务开发工具包&#34;&gt;&lt;a href=&#34;#六、PHP微服务开发工具包&#34; class=&#34;headerlink&#34; title=&#34;六、PHP微服务开发工具包&#34;&gt;&lt;/a&gt;六、PHP微服务开发工具包&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;composer require:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  sensiolabs/consul-php-sdk     # Consul客户端&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  guzzlehttp/guzzle             # HTTP客户端&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  php-amqplib/php-amqplib       # RabbitMQ&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  kwn/php-jaeger-client         # Jaeger追踪&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  resilience-php/resilience-php # 熔断降级&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ext-swoole                    # 协程调度&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://erik.xyz/2025/06/10/php-game-fish/</guid>
             <title>php开发捕鱼游戏的构思</title>
@@ -2904,20 +3082,6 @@ function getChildMoney($money = 0)
 findMoney(34);
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样就是任意金额&lt;br&gt;&lt;img src=&#34;/img/201907/2019-07-23_20-09.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
  ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://erik.xyz/2019/07/11/xue-hua-suan-fa-snoflake/</guid>
-            <title>雪花算法snoflake</title>
-            <link>https://erik.xyz/2019/07/11/xue-hua-suan-fa-snoflake/</link>
-            <category>算法</category>
-            <category>生成唯一id</category>
-            <category>生成id</category>
-            <pubDate>Thu, 11 Jul 2019 19:13:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;开发的大多数项目并未接触到百万级并发，但是一直以来有个id生成的纠结。我一般就是年月日+随机数生成唯一id,一般来说生成一个备用随机数据，不重复每次一次取值隔天重新从第一个开始取。虽然是可以解决，总感觉这个有点繁琐，仔细查查资料研究了一下，&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;在&lt;a href=&#34;https://blog.csdn.net/hero272285642/article/details/79168601z&#34;&gt;这里&lt;/a&gt;有提到uuid、Vesta、Twitter-Snowflake等。从文章中uuid在php中已经有专门的扩展或者写法生成唯一字符串在大并发数据中处理效率还是不够好。其他几中方法有用到数据库……&lt;br&gt;  这对雪花算法我查了查资料发现还是值得操作一番。&lt;/p&gt;
-&lt;p&gt;雪花算法的基本描述&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1.最高位是符号位，始终为0，不可用。 2.41位的时间序列，精确到毫秒级，41位的长度可以使用69年。时间位还有一个很重要的作用是可以根据时间进行排序。3.10位的机器标识，10位的长度最多支持部署1024个节点。4.12位的计数序列号，序列号即一系列的自增id，可以支持同一节点同一毫秒生成多个ID序号，12位的计数序列号支持每个节点每毫秒产生4096个ID序号。
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;根据以上描述及参考&lt;a href=&#34;https://blog.csdn.net/jerryyang_2017/article/details/80334580&#34;&gt;雪花算法及运用PHP&lt;/a&gt;、&lt;a href=&#34;https://blog.csdn.net/u013636118/article/details/91042838&#34;&gt;基于php的雪花算法&lt;/a&gt;等内容我的本地测试&lt;br&gt;代码如下：&lt;/p&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;75&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;76&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;class snowflake&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   const EPOCH_OFFSET = 0; //偏移时间戳&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   const SIGN = 1;  //最高位树，始终为0，不可用&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   const TIMESTAMP = 41;  //时间戳位数   默认41位，可以使用69年&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   const DATA_CENTER = 5;  //IDC编号位数  最多32个节点&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   const MACHINE_ID = 5;  //机器编号位数  最多32个节点&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   const SEQUENCE = 12;  //计数序列号位数，即一系列自增id 每个节点每毫秒产生4096个ID序列&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   protected $data_center_id; //数据中心编号&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   protected $unix_id;  //机器编号&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   protected $last_time = null;  //最后一次生成id使用的时间戳&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   protected $serial = 1;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   protected $sign_left_shift = self::TIMESTAMP + self::DATA_CENTER + self::MACHINE_ID + self::SEQUENCE; //符号左位移&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   protected $time_left_shift = self::DATA_CENTER + self::MACHINE_ID + self::SEQUENCE;  //时间戳左位移&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   protected $data_center_left_shift = self::MACHINE_ID + self::SEQUENCE; //idc左位移&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   protected $unix_left_shift = self::SEQUENCE;   //机器编号左位移位数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   protected $max_serial = -1 ^ (-1 &amp;lt;&amp;lt; self::SEQUENCE);  //最大序列号&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   protected $max_unix = -1 ^ (-1 &amp;lt;&amp;lt; self::MACHINE_ID); //最大机器编号&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   protected $max_data_center = -1 ^ (-1 &amp;lt;&amp;lt; self::DATA_CENTER); //最大数据中心编号&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   public function __construct($data_center_id, $unix_id)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       if ($data_center_id &amp;gt; $this-&amp;gt;max_data_center) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           throw new Exception(&amp;#x27;数据中心编号取值错误，取值范围为：0-&amp;#x27; . $this-&amp;gt;max_data_center);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       if ($unix_id &amp;gt; $this-&amp;gt;max_unix) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           throw new Exception(&amp;#x27;机器编号取值错误，取值范围为：0-&amp;#x27; . $this-&amp;gt;max_unix);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       $this-&amp;gt;data_center_id = $data_center_id;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       $this-&amp;gt;unix_id = $unix_id;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   public function generateId()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       $sign = 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       $unix_time = $this-&amp;gt;getUnixTime();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       //判断时间戳&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       if ($unix_time &amp;lt; $this-&amp;gt;last_time) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           throw new Exception(&amp;#x27;当前时间不能小于最后一次时间！&amp;#x27;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       if ($unix_time == $this-&amp;gt;last_time) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           $serial = ++$this-&amp;gt;serial;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           if ($serial == $this-&amp;gt;max_serial) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               $unix_time = $this-&amp;gt;getUnixTime();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               while ($unix_time &amp;lt;= $this-&amp;gt;last_time) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                   $unix_time = $this-&amp;gt;getUnixTime();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               $this-&amp;gt;serial = 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               $serial = ++$this-&amp;gt;serial;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &amp;#125; else &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           $this-&amp;gt;serial = 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           $serial = ++$this-&amp;gt;serial;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       $this-&amp;gt;last_time = $unix_time;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       $time = (int)($unix_time - self::EPOCH_OFFSET);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       $id = ($sign &amp;lt;&amp;lt; $this-&amp;gt;sign_left_shift) | ($time &amp;lt;&amp;lt; $this-&amp;gt;time_left_shift)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           | ($this-&amp;gt;data_center_id &amp;lt;&amp;lt; $this-&amp;gt;data_center_left_shift)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           | ($this-&amp;gt;unix_id &amp;lt;&amp;lt; $this-&amp;gt;unix_left_shift) | $serial;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       return $id;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   public function getUnixTime()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       return floor(microtime(true) * 1000);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$data=new snowflake(1,1);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$get_id=$data-&amp;gt;generateId();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo $get_id.PHP_EOL;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
     </channel>
 </rss>
