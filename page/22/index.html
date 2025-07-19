@@ -106,7 +106,7 @@ var _hmt = _hmt || [];
 								<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">
 									文章
 										
-											(271)
+											(274)
 												
 								</a>
 								
@@ -354,6 +354,323 @@ var _hmt = _hmt || [];
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-shang-chuan-jin-du-zhi-chi-Upload-progress-in-sessions" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/19/shang-chuan-jin-du-zhi-chi-upload-progress-in-sessions/">上传进度支持(Upload progress in sessions)</a>
+    </h1>
+  
+
+          
+            <a href="/2014/12/19/shang-chuan-jin-du-zhi-chi-upload-progress-in-sessions/" class="archive-article-date">
+  	<time datetime="2014-12-19T13:08:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-19</time>
+</a>
+                <!-- 需要添加的位置 -->
+            <!-- 开始添加字数统计-->
+            
+            <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>作者: <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.laruence.com" target="_blank">Laruence</a></li>
+</ul>
+<p>文件上传进度反馈, 这个需求在当前是越来越普遍, 比如大附件邮件. 在PHP5.4以前, 我们可以通过<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.php.net/manual/zh/apc.configuration.php#ini.apc.rfc1867" target="_blank">APC</a>提供的功能来实现. 或者使用PECL扩展<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://pecl.php.net/package/uploadprogress" target="_blank">uploadprogress</a>来实现. 虽然说, 它们能很好的解决现在的问题, 但是也有很明显的不足:</p>
+<ul>
+<li>1. 他们都需要额外安装(我们并没有打算把APC加入PHP5.4)</li>
+<li><p>2. 它们都使用本地机制来存储这些信息, APC使用共享内存, 而uploadprogress使用文件系统(不考虑NFS), 这在多台前端机的时候会造成麻烦.</p>
+        
+        <!--
+          <a class="article-more-a" href="/2014/12/19/shang-chuan-jin-du-zhi-chi-upload-progress-in-sessions/#more">more >></a>
+          -->
+        
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">php服务器</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">php函数</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-category icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/转载//" class="article-tag-list-link color3">转载</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2014/12/19/shang-chuan-jin-du-zhi-chi-upload-progress-in-sessions/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-zai-yi-ci-bu-yao-shi-yong-include-require-once" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/18/zai-yi-ci-bu-yao-shi-yong-include-require-once/">再一次, 不要使用(include/require)_once</a>
+    </h1>
+  
+
+          
+            <a href="/2014/12/18/zai-yi-ci-bu-yao-shi-yong-include-require-once/" class="archive-article-date">
+  	<time datetime="2014-12-18T13:50:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-18</time>
+</a>
+                <!-- 需要添加的位置 -->
+            <!-- 开始添加字数统计-->
+            
+            <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>作者: <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.laruence.com" target="_blank">Laruence</a></li>
+</ul>
+<p>最近关于apc.include_once_override的去留, 我们做了几次讨论, 这个APC的配置项一直一来就没有被很好的实现过. 在这里, 我想和大家在此分享下, 这个问题的原因, 以及对我们的一些启示. 关于使用include还是include_once(以下,都包含require_once), 这个讨论很长了, 结论也一直有, 就是尽量使用include, 而不是include_once, 以前最多的理由的是, include_once需要查询一遍已加载的文件列表, 确认是否存在, 然后再加载. 诚然, 这个理由是对的, 不过, 我今天要说的, 是另外一个的原因. 我们知道, PHP去判断一个文件是否被加载, 是需要得到这个文件的opened_path的, 意思是说, 比如:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">set\_include\_path(&quot;/tmp/:/tmp2/&quot;);</span><br><span class="line">include_once(&quot;2.php&quot;);</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure><br>
+        
+        <!--
+          <a class="article-more-a" href="/2014/12/18/zai-yi-ci-bu-yao-shi-yong-include-require-once/#more">more >></a>
+          -->
+        
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">php服务器</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">php函数</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-category icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/转载//" class="article-tag-list-link color3">转载</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2014/12/18/zai-yi-ci-bu-yao-shi-yong-include-require-once/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-PHP-zhen-zheng-duo-xian-cheng-de-shi-yong" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2014/12/17/php-zhen-zheng-duo-xian-cheng-de-shi-yong/">PHP 真正多线程的使用</a>
+    </h1>
+  
+
+          
+            <a href="/2014/12/17/php-zhen-zheng-duo-xian-cheng-de-shi-yong/" class="archive-article-date">
+  	<time datetime="2014-12-17T14:18:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-17</time>
+</a>
+                <!-- 需要添加的位置 -->
+            <!-- 开始添加字数统计-->
+            
+            <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>by <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://zyan.cc/user/2/" target="_blank">张宴</a> PHP 5.3 以上版本，使用pthreads PHP扩展，可以使PHP真正地支持多线程。多线程在处理重复性的循环任务，能够大大缩短程序执行时间。 我之前的文章中说过，大多数网站的性能瓶颈不在PHP服务器上，因为它可以简单地通过横向增加服务器或CPU核数来轻松应对（对于各种云主机，增加 VPS或CPU核数就更方便了，直接以备份镜像增加VPS，连操作系统、环境都不用安装配置），而是在于MySQL数据库。如果用 MySQL 数据库，一条联合查询的SQL，也许就可以处理完业务逻辑，但是，遇到大量并发请求，就歇菜了。如果用 NoSQL 数据库，也许需要十次查询，才能处理完同样地业务逻辑，但每次查询都比 MySQL 要快，十次循环NoSQL查询也许比一次MySQL联合查询更快，应对几万次/秒的查询完全没问题。如果加上PHP多线程，通过十个线程同时查询 NoSQL，返回结果汇总输出，速度就要更快了。我们实际的APP产品中，调用一个通过用户喜好实时推荐商品的PHP接口，PHP需要对BigSea NoSQL数据库发起500~1000次查询，来实时算出用户的个性喜好商品数据，PHP多线程的作用非常明显。
+        
+        <!--
+          <a class="article-more-a" href="/2014/12/17/php-zhen-zheng-duo-xian-cheng-de-shi-yong/#more">more >></a>
+          -->
+        
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">php服务器</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-category icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/转载//" class="article-tag-list-link color3">转载</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2014/12/17/php-zhen-zheng-duo-xian-cheng-de-shi-yong/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-shu-ju-ke-shi-hua-ji-ben-tu-biao" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -827,11 +1144,11 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">说说</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">说说</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
@@ -1095,304 +1412,6 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-onethink-zhong-lu-jing-qu-diao-home" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12/03/onethink-zhong-lu-jing-qu-diao-home/">onethink中路径去掉home</a>
-    </h1>
-  
-
-          
-            <a href="/2014/12/03/onethink-zhong-lu-jing-qu-diao-home/" class="archive-article-date">
-  	<time datetime="2014-12-03T10:33:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-03</time>
-</a>
-                <!-- 需要添加的位置 -->
-            <!-- 开始添加字数统计-->
-            
-            <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-
-        
-
-<p>最近一直在开发一个中型项目，就用onethink了，后来发现路径优化问题老是困扰，反复百度查询后，今早突然变好了。 反复分析一下原因，原来是没清楚缓存。 具体更改方法如下 首先找到公共config.php文件，在项目Application\Common\Conf下，在 代码如下 </p>
-<pre><code>      &#39;MODULE\_ALLOW\_LIST&#39;  =&gt; array(&#39;Home&#39;,&#39;Admin&#39;), 
-      &#39;URL\_ROUTER\_ON&#39; =&gt; true, 
-      &#39;URL\_ROUTE\_RULES&#39;=&gt;array( 
-      &#39;index&#39; =&gt; &#39;Index/index&#39;, //首页 
-      &#39;article/:id\\d$&#39; =&gt; &#39;Article/detail&#39;, //文章页 
-      &#39;:category$&#39;=&gt; &#39;Article/lists&#39; //列表页 ),
-</code></pre><p>然后在找到URL_MODEL把后面的3改为2，同时复制这一行代码 粘贴到Application\Home\Conf下的confi.php 代码如下 </p>
-<pre><code>        &#39;URL\_MODEL&#39;            =&gt; 2, //URL模式         
-</code></pre><p>然后清空缓存，缓存位置在项目Runtime\Cache\Home文件下删除所有的文件 刷新浏览器后路径中home不见了。 笔者在这想说onethink框架还是不错的，基于thinkphp3.2开发的，非常便捷。</p>
-
-      
-
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">onethink</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-category icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/php//" class="article-tag-list-link color4">php</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2014/12/03/onethink-zhong-lu-jing-qu-diao-home/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-php-lei-de-sheng-ming" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12/02/php-lei-de-sheng-ming/">php类的声明</a>
-    </h1>
-  
-
-          
-            <a href="/2014/12/02/php-lei-de-sheng-ming/" class="archive-article-date">
-  	<time datetime="2014-12-02T15:42:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-02</time>
-</a>
-                <!-- 需要添加的位置 -->
-            <!-- 开始添加字数统计-->
-            
-            <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-
-        
-
-<p>回想一下学习php这么久以来，刚开始那会一直搞不懂类、内部属性、外部属性现在从头来个详细的介绍。 代码如下 &lt;?php header(“content-type:text/html;charset=utf-8”); class guests{//声明一个类guests private $name;        //私有属性 private $gender; function setname($name){ $this-&gt;name=$name; } function getname(){ return $this-&gt;name;        //返回姓名 } function setgender($gender){ $this-&gt;gender=$gender; } function getgender(){ return $this-&gt;gender;    //返回性别 } }; $xiaoming=new guests; $xiaoming-&gt;setname(“王小明”); $xiaoming-&gt;setgender(“男”); $lili=new guests; $lili-&gt;setname(“莉莉”); $lili-&gt;setgender(“女”); echo $xiaoming-&gt;getname().”\t”.$xiaoming-&gt;getgender().”<br />“; echo $lili-&gt;getname().”\t”.$lili-&gt;getgender(); ?&gt;</p>
-
-      
-
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-category icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/php//" class="article-tag-list-link color4">php</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2014/12/02/php-lei-de-sheng-ming/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-seajs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2014/12/01/seajs/">seajs</a>
-    </h1>
-  
-
-          
-            <a href="/2014/12/01/seajs/" class="archive-article-date">
-  	<time datetime="2014-12-01T15:22:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2014-12-01</time>
-</a>
-                <!-- 需要添加的位置 -->
-            <!-- 开始添加字数统计-->
-            
-            <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-
-        
-
-<p>偶然在一群里知道了seajs,百度详细介绍了： SeaJS的作者是前淘宝UED,现支付宝前端工程师玉伯。 SeaJS本身遵循KISS（Keep It Simple, Stupid）理念进行开发，其本身仅有个位数的API，因此学习起来毫无压力。在学习SeaJS的过程中，处处能感受到KISS原则的精髓——仅做一件事，做好一件事。 自己没试试效果，从示例代码中感觉还可以吧，希望能给小伙伴一些帮助 官网<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://seajs.org/docs/" target="_blank">http://seajs.org/docs/</a> 最新版下载<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://download.csdn.net/download/w15875510692/8213435" target="_blank">http://download.csdn.net/download/w15875510692/8213435</a></p>
-
-      
-
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">seajs</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-category icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/php//" class="article-tag-list-link color4">php</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2014/12/01/seajs/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/21/">&lt; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><span class="page-number current">22</span><a class="page-number" href="/page/23/">23</a><a class="page-number" href="/page/24/">24</a><span class="space">&hellip;</span><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/23/">下一页 &gt;</a>
@@ -1587,14 +1606,6 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日志</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php扩展</a>
               </li>
              
@@ -1608,6 +1619,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php资源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日志</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1643,14 +1662,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -1660,6 +1671,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php实例</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1699,15 +1718,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">http</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http服务器</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">负载均衡</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2067,6 +2086,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">开发</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">清理系统</a>
               </li>
              
@@ -2171,6 +2194,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">go获取ip</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">ping</a>
               </li>
              
@@ -2187,10 +2214,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">go获取ip</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">im</a>
               </li>
              
@@ -2203,15 +2226,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">go对接快递签名</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">go时间获取</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">go类型转换</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">go对接快递签名</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2499,15 +2522,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">高级缓存配置</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">mongodb</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">mongodb权限</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">高级缓存配置</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2555,6 +2578,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">mysql监控</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">mysql存储</a>
               </li>
              
@@ -2564,10 +2591,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">mysql数据表设计选择</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2648,6 +2671,26 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">openvas安装</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php架构</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php服务</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php服务设计</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php项目</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php架构设计</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2863,6 +2906,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">plc</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
@@ -2899,15 +2946,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">redis锁</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">redis分布式锁</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">redis监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2943,19 +2990,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">浏览器禁止操作视频</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">禁止视频</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">响应慢</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">页面优化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">浏览器禁止操作视频</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">禁止视频</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3039,6 +3086,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">世界那么大</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">国庆骑行</a>
               </li>
              
@@ -3048,10 +3099,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">骑行</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">世界那么大</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3067,14 +3114,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">正则</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">shodan</a>
               </li>
              
@@ -3084,6 +3123,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">黒帽搜素</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php正则</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">正则</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3424,18 +3471,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">谷歌搜索</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php架构</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php服务</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php服务设计</a>
               </li>
             
             <div class="clearfix"></div>
