@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "艾瑞可erik • All posts by \"hyper-v\" tag • All posts by \"undefined\" categories",
+    "description": "一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。",
+    "home_page_url": "https://erik.xyz",
+    "items": [
+        {
+            "id": "https://erik.xyz/2025/07/22/virtualbox-hyper-v/",
+            "url": "https://erik.xyz/2025/07/22/virtualbox-hyper-v/",
+            "title": "virtualbox与hyper-v的冲突",
+            "date_published": "2025-07-22T09:10:00.000Z",
+            "content_html": "<p>因为最近在学鸿蒙开发，开发电脑一直用的deepin系统，DevEcoStudio不支持linux系统，用了win兼容引擎还是不行。没办法，只好装了virtualbox来运行win10。</p>\n<p>在virtualbox中安装好win10也装了，DevEcoStudio运行后，虚拟机一直提示hyper-v未开启。但是，明明开启了，怎么办？难打VT-X和hyper-v有冲突？查查资料，找到了解决办法。<br><span id=\"more\"></span></p>\n<p>1.关闭 Win10 虚拟机，在 Deepin 终端执行：</p>\n<pre><code>    VBoxManage modifyvm &quot;虚拟机名称&quot; --nested-hw-virt on \n</code></pre><p>2.修改虚拟机设置</p>\n<ul>\n<li><p>打开 VirtualBox 管理界面 → 选择 Win10 虚拟机 → 设置 → 系统 → 加速：</p>\n<ul>\n<li><p>半虚拟化接口 选择 Hyper-V4；</p>\n</li>\n<li><p>勾选 启用嵌套分页（Nested Paging）；</p>\n</li>\n<li><p>处理器数量 ≥ 2（若物理 CPU 核心足够）5。</p>\n</li>\n</ul>\n</li>\n</ul>\n<p>c</p>\n",
+            "tags": [
+                "virtualbox",
+                "hyper-v",
+                "鸿蒙开发"
+            ]
+        }
+    ]
+}
