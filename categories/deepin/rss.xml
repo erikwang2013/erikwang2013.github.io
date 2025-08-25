@@ -21,34 +21,34 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
-        <category>说说</category>
-        <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
+        <category>说说</category>
+        <category>趣闻</category>
         <category>转载</category>
+        <category>nginx</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
         <category>javascript</category>
         <category>漏洞</category>
-        <category>nginx</category>
         <category>php应用</category>
         <category>浮点</category>
+        <category>http</category>
+        <category>http服务器</category>
         <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>农业系统</category>
         <category>系统设计</category>
         <category>克莱姆法则</category>
         <category>行列式</category>
         <category>n阶行列式</category>
-        <category>支付系统</category>
-        <category>支付</category>
         <category>centos</category>
         <category>linux</category>
+        <category>支付系统</category>
+        <category>支付</category>
         <category>apache优化</category>
         <category>apache隐藏index</category>
         <category>nginx优化</category>
@@ -153,8 +153,8 @@
         <category>免费</category>
         <category>jenkis</category>
         <category>jenkis教程</category>
-        <category>算法</category>
         <category>随笔吐槽</category>
+        <category>算法</category>
         <category>ping</category>
         <category>ping服务器</category>
         <category>各大网站ping</category>
@@ -173,14 +173,14 @@
         <category>go解密</category>
         <category>归</category>
         <category>吐槽</category>
-        <category>php大全</category>
-        <category>php资料</category>
         <category>hadoop</category>
         <category>hadoop2.8.0</category>
         <category>hadoop安装教程</category>
         <category>hadoop安装详细教程</category>
         <category>hadoop教程</category>
         <category>hadoop部署</category>
+        <category>php大全</category>
+        <category>php资料</category>
         <category>hadoop3</category>
         <category>hadoop配置</category>
         <category>log4j2</category>
@@ -231,6 +231,9 @@
         <category>linux运行命令报错</category>
         <category>web前端</category>
         <category>web优化</category>
+        <category>蓝牙</category>
+        <category>小程序蓝牙</category>
+        <category>蓝牙连接</category>
         <category>撮合算法</category>
         <category>撮合</category>
         <category>php撮合算法</category>
@@ -240,9 +243,9 @@
         <category>高级缓存配置</category>
         <category>mongodb</category>
         <category>mongodb权限</category>
-        <category>可穿戴设备</category>
         <category>mysql</category>
         <category>分库分表</category>
+        <category>可穿戴设备</category>
         <category>mysql应对千万级</category>
         <category>mysql瓶颈</category>
         <category>mysql瓶颈解决办法</category>
@@ -432,9 +435,9 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
-        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
+        <category>域名合并</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
@@ -507,7 +510,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;c&lt;/p&gt;
+&lt;p&gt;3.开启win的hyper-v。&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;pushd &amp;quot;%~dp0&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txt&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;for /f %%i in (&amp;#x27;findstr /i . hyper-v.txt 2^&amp;gt;nul&amp;#x27;) do dism /online /norestart /add-package:&amp;quot;%SystemRoot%\servicing\Packages\%%i&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;del hyper-v.txt&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;自己在win中创建txt文件，把代码复制进去，然后把后缀改成bat以管理原的方式运行。结束后重启就可以了。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
