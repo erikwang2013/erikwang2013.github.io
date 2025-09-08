@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>艾瑞可erik·文档中心</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="艾瑞可erik·文档中心,erik,艾瑞可Erik,艾瑞可,https://docs.erik.xyz,docs.erik.xyz">
+    <meta name="description" content="一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>艾瑞可erik·文档中心</h1>
+        <div class="header-content">
+            <a href="https://erik.xyz" class="home-link">艾瑞可erik</a>
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <input type="text" id="searchInput" placeholder="搜索手册...">
+                    <button id="clearButton" class="clear-btn">×</button>
+                </div>
+                <button id="searchButton">搜索</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="manuals-container" id="manualsContainer">
+            <!-- 手册内容将通过JavaScript动态加载 -->
+        </div>
+        <div class="pagination-container" id="paginationContainer">
+            <!-- 分页控件将通过JavaScript动态加载 -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023-<span id="currentYear"></span> 艾瑞可erik·文档中心 All rights reserved.</p>
+            <div class="external-links">
+                <ul>
+                    <li><a href="https://erik.xyz" target="_blank">艾瑞可erik</a></li>
+                    <li><a href="https://www.erik.xyz" target="_blank">艾瑞可erik·导航</a></li>
+                    <li><a href="https://visual.erik.xyz" target="_blank">算法演示</a></li>
+                    <li><a href="https://postwoman.erik.xyz" target="_blank">postwoman</a></li>
+                </ul>
+            </div>
+            <div class="external-links">
+                <ul>
+                    <li>
+                        <a href="https://beian.miit.gov.cn" target="_blank"
+                            rel="external nofollow noopener noreferrer">粤ICP备2020136226号-3</a> |
+                        <a target="_blank"
+                            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030602005398">
+                            <img src="/common/img/public_security.png" width="20" height="20" alt="粤公网安备">
+                            粤公网安备 44030602005398号
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+                                async></script>
+                            <span id="busuanzi_container_site_pv" style="display: inline;">
+                                本站总访问量<span id="busuanzi_value_site_pv"></span>次
+                            </span>
+                            <span id="busuanzi_container_site_uv" style="display: inline;">
+                                本站访客数<span id="busuanzi_value_site_uv"></span>人次
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="back-to-top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

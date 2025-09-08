@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)/zola/templates/pages-sections/ -->
+<html lang="zh-CN" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Everything you need to make a static site engine in one binary.">
+               <meta name="author" content="Vincent Prouillet">
+        <meta name="description" content="Zola 是一个静态站点生成器 (SSG)，类似于Hugo、Pelican和Jekyll（有关 SSG 的完整列表，请参阅Jamstack）。它用Rust编写并使用Tera模板引擎，类似于Jinja2、Django 模板、Liquid和Twig">
+        <meta name="keywords" content="Zola中文文档,zola,Zola,https://erik.xyz/zola,zola中文文档">
+        <title>章节和页面 |  Zola</title>
+        <link rel="stylesheet" href="./pages-sections_files/site.css">
+        <link rel="icon" href="https://www.getzola.org/favicon.ico">
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="./pages-sections_files/m=el_main_css"></head>
+    <body>
+
+        <header>
+            <nav class="">
+                <a class="white" href="/docs/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola中文文档</font></font></a>
+                <a class="white" href="https://www.erik.xyz"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾瑞可erik·导航</font></font></a>
+<a class="white" href="https://erik.xyz/docs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾瑞可erik·文档中心</font></font></a>
+<a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">艾瑞可erik</font></font></a>
+                <a class="header__logo white" href="https://www.getzola.org/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola </font></font></a>
+                <a class="white" href="https://www.getzola.org/documentation/" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docs</font></font></a>
+                <a class="white" href="https://github.com/getzola/zola" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub</font></font></a>
+
+                <div class="search-container">
+                    <input id="search" type="search" placeholder="🔎 搜索文档">
+
+                    <div class="search-results">
+                        <div class="search-results__items"></div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content content--reversed">
+
+
+<div class="documentation">
+    <aside class="documentation__sidebar">
+        <ul>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/docs/zola/getting-started/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/getting-started/installation.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/getting-started/cli-usage.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CLI 用法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/getting-started/directory-structure.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录结构</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/getting-started/configuration.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">配置</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内容</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/docs/zola/content/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/content/section.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部分</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/content/page.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/content/shortcodes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">简码</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/content/linking.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">内部链接和深度链接</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/content/table-of-contents.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/content/syntax-highlighting.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语法高亮</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/content/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/content/search.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">搜索</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/content/sass.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sass</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/content/image-processing.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">图像处理</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/content/multilingual.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">多语言网站</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/docs/zola/templates/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="active">
+                            <a href="/docs/zola/templates/pages-sections.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">章节和页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/templates/pagination.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分页</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/templates/taxonomies.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">分类法</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/templates/feeds.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提要</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/templates/sitemap.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站地图</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/templates/robots.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">机器人.txt</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/templates/404.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">404错误页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/templates/archive.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">档案</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">主题</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/docs/zola/themes/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/themes/installing-and-using-themes.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装和使用主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/themes/creating-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">创建主题</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/themes/extending-a-theme.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">扩展主题</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <span class="documentation__sidebar__title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署</font></font></span>
+                <ul>
+
+                        <li class="">
+                            <a href="/docs/zola/deployment/overview.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">概述</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/deployment/sourcehut.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sourcehut 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/deployment/netlify.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网络化</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/deployment/github-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/deployment/gitlab-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitLab 页面</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/deployment/edgio.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Edgio</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/deployment/vercel.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vercel</font></font></a>
+                        </li>
+
+                        <li class="">
+                            <a href="/docs/zola/deployment/cloudflare-pages.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cloudflare 页面</font></font></a>
+                        </li>
+
+                </ul>
+            </li>
+
+        </ul>
+    </aside>
+    <div class="documentation__content">
+
+    <h1><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">章节和页面</font></font></h1>
+    <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面和部分的模板非常相似。</font></font></p>
+<h2 id="page-variables"><a class="zola-anchor" href="/docs/zola/templates/pages-sections/#page-variables" aria-label="锚链接：页面变量"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面变量</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Zola 将尝试加载</font></font><code>templates/page.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">模板，</font></font><code>page.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果使用了主题的模板或呈现内置模板（空白页面）。</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无论您决定呈现哪个模板，您都会</font></font><code>page</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在模板中获得一个包含以下字段的变量：</font></font></p>
+<pre data-lang="ts" style="background-color:#383838;color:#e6e1dc;" class="language-ts "><code class="language-ts" data-lang="ts"><span style="color:#95815e;">// The HTML output of the Markdown content
+</span><span>content: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span>title: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#d0d0ff;">description</span><span style="color:#cc7833;">: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#d0d0ff;">date</span><span style="color:#cc7833;">: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#d0d0ff;">updated</span><span style="color:#cc7833;">: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#d0d0ff;">slug</span><span style="color:#cc7833;">: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span>path: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span>draft: </span><span style="color:#d0d0ff;">Bool</span><span>;
+</span><span style="color:#95815e;">// the path, split on '/'
+</span><span>components: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">&gt;</span><span>;
+</span><span>permalink: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span>summary: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#d0d0ff;">taxonomies</span><span style="color:#cc7833;">: </span><span style="color:#d0d0ff;">HashMap</span><span style="color:#cc7833;">&lt;</span><span style="font-style:italic;color:#6e9cbe;">String</span><span>, </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">&gt;&gt;</span><span>;
+</span><span>extra: </span><span style="color:#d0d0ff;">HashMap</span><span style="color:#cc7833;">&lt;</span><span style="font-style:italic;color:#6e9cbe;">String</span><span>, </span><span style="color:#d0d0ff;">Any</span><span style="color:#cc7833;">&gt;</span><span>;
+</span><span>toc: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="color:#d0d0ff;">Header</span><span style="color:#cc7833;">&gt;</span><span>,
+</span><span style="color:#95815e;">// Naive word count, will not work for languages without whitespace
+</span><span>word_count: </span><span style="font-style:italic;color:#6e9cbe;">Number</span><span>;
+</span><span style="color:#95815e;">// Based on https://help.medium.com/hc/en-us/articles/214991667-Read-time
+</span><span>reading_time: </span><span style="font-style:italic;color:#6e9cbe;">Number</span><span>;
+</span><span style="color:#95815e;">// earlier / lighter
+</span><span>lower: </span><span style="color:#d0d0ff;">Page</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#95815e;">// later / heavier
+</span><span style="color:#d0d0ff;">higher</span><span style="color:#cc7833;">: </span><span style="color:#d0d0ff;">Page</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#95815e;">// Year/month/day is only set if the page has a date and month/day are 1-indexed
+</span><span style="color:#d0d0ff;">year</span><span style="color:#cc7833;">: </span><span style="font-style:italic;color:#6e9cbe;">Number</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#d0d0ff;">month</span><span style="color:#cc7833;">: </span><span style="font-style:italic;color:#6e9cbe;">Number</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#d0d0ff;">day</span><span style="color:#cc7833;">: </span><span style="font-style:italic;color:#6e9cbe;">Number</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#95815e;">// Paths of colocated assets, relative to the content directory
+</span><span style="color:#d0d0ff;">assets</span><span style="color:#cc7833;">: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">&gt;</span><span>;
+</span><span style="color:#95815e;">// The relative paths of the parent sections until the index one, for use with the `get_section` Tera function
+</span><span style="color:#95815e;">// The first item is the index section and the last one is the parent section
+</span><span style="color:#95815e;">// This is filled after rendering a page content so it will be empty in shortcodes
+</span><span>ancestors: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">&gt;</span><span>;
+</span><span style="color:#95815e;">// The relative path from the `content` directory to the markdown file
+</span><span>relative_path: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span style="color:#95815e;">// The relative path from the `content` directory to the directory of a colocated index.md markdown file
+</span><span style="color:#95815e;">// Null if the file is not colocated.
+</span><span>colocated_path: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#95815e;">// The language for the page if there is one. Default to the config `default_language`
+</span><span style="color:#d0d0ff;">lang</span><span style="color:#cc7833;">: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span style="color:#95815e;">// Information about all the available languages for that content, including the current page
+</span><span>translations: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="color:#d0d0ff;">TranslatedContent</span><span style="color:#cc7833;">&gt;</span><span>;
+</span><span style="color:#95815e;">// All the pages/sections linking this page: their permalink and a title if there is one
+</span><span>backlinks: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span>{permalink: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>, title: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">?</span><span>}</span><span style="color:#cc7833;">&gt;</span><span>;
+</span></code></pre>
+<h2 id="section-variables"><a class="zola-anchor" href="/docs/zola/templates/pages-sections/#section-variables" aria-label="锚链接：部分变量"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">节变量</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">默认情况下，Zola 将尝试</font></font><code>templates/index.html</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为</font><font style="vertical-align: inherit;">其他文件</font></font><code>content/_index.md</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+加载</font><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">如果没有，它将呈现内置模板（空白页）。</font></font><code>templates/section.html</code><font style="vertical-align: inherit;"></font><code>_index.md</code><font style="vertical-align: inherit;"></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">无论您决定呈现哪个模板，您都会</font></font><code>section</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在模板中获得一个包含以下字段的变量：</font></font></p>
+<pre data-lang="ts" style="background-color:#383838;color:#e6e1dc;" class="language-ts "><code class="language-ts" data-lang="ts"><span style="color:#95815e;">// The HTML output of the Markdown content
+</span><span>content: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span>title: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#d0d0ff;">description</span><span style="color:#cc7833;">: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#d0d0ff;">path</span><span style="color:#cc7833;">: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span style="color:#95815e;">// the path, split on '/'
+</span><span>components: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">&gt;</span><span>;
+</span><span>permalink: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span>extra: </span><span style="color:#d0d0ff;">HashMap</span><span style="color:#cc7833;">&lt;</span><span style="font-style:italic;color:#6e9cbe;">String</span><span>, </span><span style="color:#d0d0ff;">Any</span><span style="color:#cc7833;">&gt;</span><span>;
+</span><span style="color:#95815e;">// Pages directly in this section. By default, the pages are not sorted. Please set the "sort_by"
+</span><span style="color:#95815e;">// variable in the _index.md file of the corresponding section to "date" or "weight" for sorting by
+</span><span style="color:#95815e;">// date and weight, respectively.
+</span><span>pages: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="color:#d0d0ff;">Page</span><span style="color:#cc7833;">&gt;</span><span>;
+</span><span style="color:#95815e;">// Direct subsections to this section, sorted by subsections weight
+</span><span style="color:#95815e;">// This only contains the path to use in the `get_section` built-in function to get
+</span><span style="color:#95815e;">// the actual section object if you need it
+</span><span>subsections: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">&gt;</span><span>;
+</span><span>toc: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="color:#d0d0ff;">Header</span><span style="color:#cc7833;">&gt;</span><span>,
+</span><span style="color:#95815e;">// Unicode word count
+</span><span>word_count: </span><span style="font-style:italic;color:#6e9cbe;">Number</span><span>;
+</span><span style="color:#95815e;">// Based on https://help.medium.com/hc/en-us/articles/214991667-Read-time
+</span><span>reading_time: </span><span style="font-style:italic;color:#6e9cbe;">Number</span><span>;
+</span><span style="color:#95815e;">// Paths of colocated assets, relative to the content directory
+</span><span>assets: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">&gt;</span><span>;
+</span><span style="color:#95815e;">// The relative paths of the parent sections until the index one, for use with the `get_section` Tera function
+</span><span style="color:#95815e;">// The first item is the index section and the last one is the parent section
+</span><span style="color:#95815e;">// This is filled after rendering a page content so it will be empty in shortcodes
+</span><span>ancestors: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">&gt;</span><span>;
+</span><span style="color:#95815e;">// The relative path from the `content` directory to the markdown file
+</span><span>relative_path: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span style="color:#95815e;">// The language for the section if there is one. Default to the config `default_language`
+</span><span>lang: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span style="color:#95815e;">// Information about all the available languages for that content
+</span><span>translations: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="color:#d0d0ff;">TranslatedContent</span><span style="color:#cc7833;">&gt;</span><span>;
+</span><span style="color:#95815e;">// All the pages/sections linking this page: their permalink and a title if there is one
+</span><span>backlinks: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span>{permalink: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>, title: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">?</span><span>}</span><span style="color:#cc7833;">&gt;</span><span>;
+</span><span style="color:#95815e;">// Whether this section generates a feed or not. Taken from the front-matter if set
+</span><span style="color:#d0d0ff;">generate_feed</span><span style="color:#cc7833;">: </span><span style="color:#d0d0ff;">bool</span><span>;
+</span></code></pre>
+<h2 id="table-of-contents"><a class="zola-anchor" href="/docs/zola/templates/pages-sections/#table-of-contents" aria-label="锚链接：目录"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面和部分模板都有一个</font></font><code>toc</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对应于数组的变量</font></font><code>Header</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">A</font></font><code>Header</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">具有以下字段：</font></font></p>
+<pre data-lang="ts" style="background-color:#383838;color:#e6e1dc;" class="language-ts "><code class="language-ts" data-lang="ts"><span style="color:#95815e;">// The hX level
+</span><span>level: </span><span style="color:#a5c261;">1 </span><span style="color:#cc7833;">| </span><span style="color:#a5c261;">2 </span><span style="color:#cc7833;">| </span><span style="color:#a5c261;">3 </span><span style="color:#cc7833;">| </span><span style="color:#a5c261;">4 </span><span style="color:#cc7833;">| </span><span style="color:#a5c261;">5 </span><span style="color:#cc7833;">| </span><span style="color:#a5c261;">6</span><span>;
+</span><span style="color:#95815e;">// The generated slug id
+</span><span>id: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span style="color:#95815e;">// The text of the header
+</span><span>title: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span style="color:#95815e;">// A link pointing directly to the header, using the inserted anchor
+</span><span>permalink: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span style="color:#95815e;">// All lower level headers below this header
+</span><span>children: </span><span style="font-style:italic;color:#6e9cbe;">Array</span><span style="color:#cc7833;">&lt;</span><span style="color:#d0d0ff;">Header</span><span style="color:#cc7833;">&gt;</span><span>;
+</span></code></pre>
+<h2 id="translated-content"><a class="zola-anchor" href="/docs/zola/templates/pages-sections/#translated-content" aria-label="锚链接：翻译内容"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔗</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">翻译内容</font></font></h2>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面和部分都有一个</font></font><code>translations</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">对应于数组的字段</font></font><code>TranslatedContent</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font><font style="vertical-align: inherit;">如果您的网站没有使用多种语言，这将始终是一个空数组。
+</font></font><code>TranslatedContent</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">具有以下字段：</font></font></p>
+<pre data-lang="ts" style="background-color:#383838;color:#e6e1dc;" class="language-ts "><code class="language-ts" data-lang="ts"><span style="color:#95815e;">// The language code for that content, empty if it is the default language
+</span><span>lang: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#95815e;">// The title of that content if there is one
+</span><span style="color:#d0d0ff;">title</span><span style="color:#cc7833;">: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span style="color:#cc7833;">?</span><span>;
+</span><span style="color:#95815e;">// A permalink to that content
+</span><span style="color:#d0d0ff;">permalink</span><span style="color:#cc7833;">: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span><span style="color:#95815e;">// The path to the markdown file; useful for retrieving the full page through
+</span><span style="color:#95815e;">// the `get_page` function.
+</span><span>path: </span><span style="font-style:italic;color:#6e9cbe;">String</span><span>;
+</span></code></pre>
+
+
+    </div>
+</div>
+
+        </div>
+        <footer>
+<p>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">©2017-2023 — </font></font>
+<a class="white" href="https://erik.xyz"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">艾瑞可erik</font></font></a>、
+<a class="white" href="https://vincentprouillet.com/">
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vincent Prouillet</font>
+</font>
+</a>
+<font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font>
+<a class="white" href="https://github.com/getzola/zola/graphs/contributors"><font style="vertical-align: inherit;">
+<font style="vertical-align: inherit;">贡献者</font>
+</font>
+</a>
+</p>
+<p>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <span id="busuanzi_container_page_pv">&nbsp;本文总阅读量<span id="busuanzi_value_page_pv">0</span>次</span>
+</p>
+</footer>
+
+        <script type="text/javascript" src="./pages-sections_files/elasticlunr.min.js"></script>
+        <script type="text/javascript" src="./pages-sections_files/search.js"></script>
+
+
+</body></html>
