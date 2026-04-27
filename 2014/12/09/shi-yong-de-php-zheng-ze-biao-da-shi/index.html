@@ -20,7 +20,7 @@
 <meta property="og:description" content="正则表达式是程序开发中一个重要的元素，它提供用来描述或匹配文本的字符串，如特定的字符、词或算式等。但在某些情况下，用正则表达式去验证一个字符串比较复杂和费时。本文为你介绍10种常见的实用PHP正则表达式的写法，希望对你的工作有所帮助。 1. 验证E-mail地址 这是一个用于验证电子邮件的正则表达式。但它并不是高效、完美的解决方案。在此不推荐使用。 Php代码123456$email &#x3D; &amp;quo">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2014-12-09T01:45:00.000Z">
-<meta property="article:modified_time" content="2024-11-05T07:29:48.000Z">
+<meta property="article:modified_time" content="2025-09-11T03:48:36.764Z">
 <meta property="article:author" content="艾瑞可erik">
 <meta property="article:tag" content="php">
 <meta property="article:tag" content="php服务器">
@@ -121,15 +121,15 @@ var _hmt = _hmt || [];
 								
 									
 							
-								<a q-on="click: openSlider(e, 'books')" href="javascript:void(0)">
-									手册
+								<a q-on="click: openSlider(e, 'knowledge')" href="javascript:void(0)">
+									知识
 										
 								</a>
 								
 									
 							
-								<a q-on="click: openSlider(e, 'tools')" href="javascript:void(0)">
-									工具
+								<a q-on="click: openSlider(e, 'open')" href="javascript:void(0)">
+									开源
 										
 								</a>
 								
@@ -673,7 +673,7 @@ gitalk.render('gitalk-container')
 		</div>
 		<div id="footer-info">
 			<div class="footer-left">
-				&copy; 2014-2025
+				&copy; 2014-2026
 					艾瑞可erik |
 						<a href="https://beian.miit.gov.cn" target="_blank"
 							rel="external nofollow noopener noreferrer">粤ICP备2020136226号-1</a> |
@@ -813,11 +813,11 @@ MathJax.Hub.Queue(function() {
       
         
       
-      <li style="width: 20%" q-on="click: openSlider(e, 'books')"><a href="javascript:void(0)" q-class="active:books">手册</a></li>
+      <li style="width: 20%" q-on="click: openSlider(e, 'knowledge')"><a href="javascript:void(0)" q-class="active:knowledge">知识</a></li>
       
         
       
-      <li style="width: 20%" q-on="click: openSlider(e, 'tools')"><a href="javascript:void(0)" q-class="active:tools">工具</a></li>
+      <li style="width: 20%" q-on="click: openSlider(e, 'open')"><a href="javascript:void(0)" q-class="active:open">开源</a></li>
       
         
       
@@ -922,7 +922,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">php库</a>
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -930,7 +930,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+                <a href="javascript:void(0)" class="js-tag color5">php库</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1550,10 +1550,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">log4j2</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据库</a>
               </li>
              
@@ -1563,6 +1559,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">hbase</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">log4j2</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2174,10 +2174,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">R语言</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">a标签</a>
               </li>
              
@@ -2187,6 +2183,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">虚线框</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">R语言</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2614,22 +2614,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">3D</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">动画</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">平台</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">虚幻4引擎编辑</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">携程</a>
               </li>
              
@@ -2643,6 +2627,22 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">物理删除</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">3D</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">动画</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">平台</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">虚幻4引擎编辑</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2801,7 +2801,7 @@ MathJax.Hub.Queue(function() {
     
 
     
-      <section class="tools-section tools-section-books" q-show="books">
+      <section class="tools-section tools-section-knowledge" q-show="knowledge">
       
         <ul class="search-ul">
           
@@ -2877,20 +2877,10 @@ MathJax.Hub.Queue(function() {
               法律知识</a>
             </li>
           
-        </ul>
-      
-      </section>
-    
-
-    
-      <section class="tools-section tools-section-tools" q-show="tools">
-      
-        <ul class="search-ul">
-          
             <li class="search-li">
               <a href="https://visualgo.net/zh" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-tools"></use>
+  <use xlink:href="#icon-VIshouce"></use>
 </svg>
               数据结构和算法动态可视化</a>
             </li>
@@ -2898,7 +2888,7 @@ MathJax.Hub.Queue(function() {
             <li class="search-li">
               <a href="http://xssor.io" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-tools"></use>
+  <use xlink:href="#icon-VIshouce"></use>
 </svg>
               XSS&#39;OR</a>
             </li>
@@ -2906,7 +2896,7 @@ MathJax.Hub.Queue(function() {
             <li class="search-li">
               <a href="https://rot13.com" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-tools"></use>
+  <use xlink:href="#icon-VIshouce"></use>
 </svg>
               rot13</a>
             </li>
@@ -2914,7 +2904,7 @@ MathJax.Hub.Queue(function() {
             <li class="search-li">
               <a href="https://tool.lu" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-tools"></use>
+  <use xlink:href="#icon-VIshouce"></use>
 </svg>
               在线工具</a>
             </li>
@@ -2922,7 +2912,7 @@ MathJax.Hub.Queue(function() {
             <li class="search-li">
               <a href="https://regex101.com" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-tools"></use>
+  <use xlink:href="#icon-VIshouce"></use>
 </svg>
               正则表达式验证</a>
             </li>
@@ -2930,7 +2920,7 @@ MathJax.Hub.Queue(function() {
             <li class="search-li">
               <a href="/kali-tools/index.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-tools"></use>
+  <use xlink:href="#icon-VIshouce"></use>
 </svg>
               kali工具</a>
             </li>
@@ -2938,7 +2928,7 @@ MathJax.Hub.Queue(function() {
             <li class="search-li">
               <a href="/web-test-tools/index.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-tools"></use>
+  <use xlink:href="#icon-VIshouce"></use>
 </svg>
               测试工具</a>
             </li>
@@ -2946,7 +2936,7 @@ MathJax.Hub.Queue(function() {
             <li class="search-li">
               <a href="/security-tools/index.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-tools"></use>
+  <use xlink:href="#icon-VIshouce"></use>
 </svg>
               安全工具</a>
             </li>
@@ -2954,7 +2944,7 @@ MathJax.Hub.Queue(function() {
             <li class="search-li">
               <a href="/db-tools/index.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-tools"></use>
+  <use xlink:href="#icon-VIshouce"></use>
 </svg>
               数据工具</a>
             </li>
@@ -2962,7 +2952,7 @@ MathJax.Hub.Queue(function() {
             <li class="search-li">
               <a href="/utilities/index.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-tools"></use>
+  <use xlink:href="#icon-VIshouce"></use>
 </svg>
               实用工具</a>
             </li>
@@ -2970,9 +2960,91 @@ MathJax.Hub.Queue(function() {
             <li class="search-li">
               <a href="/monitor-tools/index.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-tools"></use>
+  <use xlink:href="#icon-VIshouce"></use>
 </svg>
               监控工具</a>
+            </li>
+          
+        </ul>
+      
+      </section>
+    
+
+    
+      <section class="tools-section tools-section-open" q-show="open">
+      
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="/open/xhprof-webman" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              xhprof-webman</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/xhprof-laravel" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              xhprof-laravel</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/webman-scout" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              webman-scout</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/jwt-webman" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              jwt-webman</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/encryption" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              encryption</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/season" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              season</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/aetherupload-webman" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              aetherupload-webman</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/encryptable" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              encryptable</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              Hexo Yilia 主题</a>
             </li>
           
         </ul>
