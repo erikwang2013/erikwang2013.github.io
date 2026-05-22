@@ -110,7 +110,7 @@ var _hmt = _hmt || [];
 								<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">
 									文章
 										
-											(278)
+											(281)
 												
 								</a>
 								
@@ -362,6 +362,326 @@ var _hmt = _hmt || [];
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-index-asynchrony-landing" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/05/06/index-asynchrony-landing/">增加索引 + 异步 + 不落地后，从 12h 优化到 15 min</a>
+    </h1>
+  
+
+          
+            <a href="/2024/05/06/index-asynchrony-landing/" class="archive-article-date">
+  	<time datetime="2024-05-06T03:44:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-05-06</time>
+</a>
+                <!-- 需要添加的位置 -->
+            <!-- 开始添加字数统计-->
+            
+            <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在开发中，我们经常会遇到这样的需求，将数据库中的图片导出到本地，再传给别人。</p>
+<h4 id="一、一般我会这样做："><a href="#一、一般我会这样做：" class="headerlink" title="一、一般我会这样做："></a>一、一般我会这样做：</h4><p>1.通过接口或者定时任务的形式</p>
+<p>2.读取Oracle或者MySQL数据库</p>
+<p>3.通过FileOutputStream将Base64解密后的byte[]存储到本地</p>
+<p>4.遍历本地文件夹，将图片通过FTP上传到第三方服务器<br>
+        
+        <!--
+          <a class="article-more-a" href="/2024/05/06/index-asynchrony-landing/#more">more >></a>
+          -->
+        
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">web</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">优化</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-category icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web//" class="article-tag-list-link color4">web</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web/优化//" class="article-tag-list-link color3">优化</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web/优化/转载//" class="article-tag-list-link color3">转载</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/05/06/index-asynchrony-landing/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-five-jenkis" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/04/06/five-jenkis/">5分钟搞定Jenkis</a>
+    </h1>
+  
+
+          
+            <a href="/2024/04/06/five-jenkis/" class="archive-article-date">
+  	<time datetime="2024-04-06T01:04:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-04-06</time>
+</a>
+                <!-- 需要添加的位置 -->
+            <!-- 开始添加字数统计-->
+            
+            <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="什么是持续集成"><a href="#什么是持续集成" class="headerlink" title="什么是持续集成"></a>什么是持续集成</h4><p>持续集成 Continuous integration ，简称CI随着软件开发复杂度的不断提高，团队开发成员间如何更好地协同工作以确保软件开发的质量已经慢慢成为开发过程中不可回避的问题。尤其是近些年来，敏捷（Agile） 在软件工程领域越来越红火，如何能在不断变化的需求中快速适应和保证软件的质量也显得尤其的重要。持续集成正是针对这一类问题的一种软件开发实践。它倡导团队开发成员必须经常集成他们的工作，甚至每天都可能发生多次集成。而每次的集成都是通过自动化的构建来验证，包括自动编译、发布和测试，从而尽快地发现集成错误，让团队能够更快的开发内聚的软件。<br>
+        
+        <!--
+          <a class="article-more-a" href="/2024/04/06/five-jenkis/#more">more >></a>
+          -->
+        
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">转载</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jenkis</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">jenkis教程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-category icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/运维//" class="article-tag-list-link color3">运维</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/运维/转载//" class="article-tag-list-link color3">转载</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/04/06/five-jenkis/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-randomization" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2024/03/19/randomization/">数据随机化算法</a>
+    </h1>
+  
+
+          
+            <a href="/2024/03/19/randomization/" class="archive-article-date">
+  	<time datetime="2024-03-19T15:06:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2024-03-19</time>
+</a>
+                <!-- 需要添加的位置 -->
+            <!-- 开始添加字数统计-->
+            
+            <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>开发卡牌游戏或者匹配游戏等等，需要重新洗牌或重新更换位置，这就需要清洗数据。那么就以最常见的扑克牌为例，来一个数据随机化算法。<br>
+        
+        <!--
+          <a class="article-more-a" href="/2024/03/19/randomization/#more">more >></a>
+          -->
+        
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">数据随机化</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-category icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/php//" class="article-tag-list-link color4">php</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2024/03/19/randomization/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-xhprof-plugs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -1113,324 +1433,9 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-hand-and-hand-log4j" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/01/11/hand-and-hand-log4j/">手把手教你复现 Log4j2 漏洞</a>
-    </h1>
-  
-
-          
-            <a href="/2023/01/11/hand-and-hand-log4j/" class="archive-article-date">
-  	<time datetime="2023-01-11T14:19:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2023-01-11</time>
-</a>
-                <!-- 需要添加的位置 -->
-            <!-- 开始添加字数统计-->
-            
-            <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a>1.简介</h4><p>ApacheLog4j2是一个开源的Java日志框架，被广泛地应用在中间件、开发框架与Web应用中。</p>
-<h4 id="2-漏洞概述"><a href="#2-漏洞概述" class="headerlink" title="2.漏洞概述"></a>2.漏洞概述</h4><p>该漏洞是由于Apache Log4j2某些功能存在递归解析功能，未经身份验证的攻击者通过发送特定恶意数据包，可在目标服务器上执行任意代码。<br>
-        
-        <!--
-          <a class="article-more-a" href="/2023/01/11/hand-and-hand-log4j/#more">more >></a>
-          -->
-        
-      
-
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">漏洞</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">log4j2</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-category icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/nginx//" class="article-tag-list-link color1">nginx</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/nginx/漏洞//" class="article-tag-list-link color3">漏洞</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/nginx/漏洞/转载//" class="article-tag-list-link color3">转载</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2023/01/11/hand-and-hand-log4j/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-in-guan-bingd-du" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/12/16/in-guan-bingd-du/">新冠真就是流感而已么？我问了四个阳了的朋友。。。</a>
-    </h1>
-  
-
-          
-            <a href="/2022/12/16/in-guan-bingd-du/" class="archive-article-date">
-  	<time datetime="2022-12-16T01:54:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-12-16</time>
-</a>
-                <!-- 需要添加的位置 -->
-            <!-- 开始添加字数统计-->
-            
-            <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>这段时间，各地新冠感染人数都在暴增，<strong>大家出门记得戴口罩</strong>。</p>
-<p>这几天，咱编辑部也充满了风雨欲来的危机感，不过，办公室刚出现病例，咱们就迅速进行了一个居家办公，所以目前情况还不错。</p>
-<p>但即便如此，我们每天讨论最多的话题，仍然是新冠，不仅仅是编辑部，差评君在的大部分群聊里也是这个状况。</p>
-<p>“ 听说现在新冠跟流感一样了？”</p>
-<p>“ 抢到药了么？我咋到处买不到药？”</p>
-<p>“ 现在得新冠还会有啥后遗症么？”<br>
-        
-        <!--
-          <a class="article-more-a" href="/2022/12/16/in-guan-bingd-du/#more">more >></a>
-          -->
-        
-      
-
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">转载</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">杂录</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">新冠肺炎</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/12/16/in-guan-bingd-du/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-shao-lu-luyouqi" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/12/14/shao-lu-luyouqi/">如何把极路由从砖头变正常  </a>
-    </h1>
-  
-
-          
-            <a href="/2022/12/14/shao-lu-luyouqi/" class="archive-article-date">
-  	<time datetime="2022-12-14T00:41:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-12-14</time>
-</a>
-                <!-- 需要添加的位置 -->
-            <!-- 开始添加字数统计-->
-            
-            <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>家里有一个闲置的极路由2，试试刷个openwrt，结果一不小心刷成砖头了。开机不能通电，没有指示灯亮。本来想着就这样丢了，再弄个查查咸鱼，二手的都要100多。果断找找解决办法。找这篇文章<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://www.ddmzf.cn/202203155.html" target="_blank">极路由X编程器救砖教程编程器刷PandoraBox</a>，根据这篇文章，到万能的淘宝买了CH341A编程器 + 烧录夹<br>
-        
-        <!--
-          <a class="article-more-a" href="/2022/12/14/shao-lu-luyouqi/#more">more >></a>
-          -->
-        
-      
-
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">路由器烧录</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">烧录</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">极路由2烧录</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">砖头烧录</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-category icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/硬件//" class="article-tag-list-link color3">硬件</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2022/12/14/shao-lu-luyouqi/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/3/">&lt; 上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/28/">28</a><a class="extend next" rel="next" href="/page/5/">下一页 &gt;</a>
+      <a class="extend prev" rel="prev" href="/page/3/">&lt; 上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/5/">下一页 &gt;</a>
     </nav>
   
 
@@ -1751,6 +1756,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">多平台广告管理系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Ads Platform</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">农业系统</a>
               </li>
              
@@ -1991,6 +2004,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">cloud-platform</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">程序员</a>
               </li>
              
@@ -2179,6 +2196,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">erik shop</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">跨境电商平台</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">phone</a>
               </li>
              
@@ -2231,15 +2256,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">im</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">go中pdf生成</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">go中限流</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">im</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2323,6 +2348,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">log4j2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据库</a>
               </li>
              
@@ -2332,10 +2361,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">hbase</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">log4j2</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3749,7 +3774,31 @@ MathJax.Hub.Queue(function() {
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="/open/xhprof-webman" target="_blank" class="search-title">
+              <a href="/2026/05/22/erik-shop" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              跨境电商平台(Erik Shop)</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/2026/05/22/ads-shop" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              多平台广告管理系统(Ads Platform)</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/2026/05/22/cloud-platform" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              全球云资源交易平台(Cloud Platform)</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/xhprof-webman.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3757,15 +3806,7 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="/open/xhprof-laravel" target="_blank" class="search-title">
-<svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-github"></use>
-</svg>
-              xhprof-laravel</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/open/webman-scout" target="_blank" class="search-title">
+              <a href="/open/webman-scout.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3773,7 +3814,7 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="/open/jwt-webman" target="_blank" class="search-title">
+              <a href="/open/jwt-webman.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3781,7 +3822,7 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="/open/encryption" target="_blank" class="search-title">
+              <a href="/open/encryption.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3789,7 +3830,7 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="/open/season" target="_blank" class="search-title">
+              <a href="/open/season.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3797,7 +3838,7 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="/open/aetherupload-webman" target="_blank" class="search-title">
+              <a href="/open/aetherupload-webman.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3805,7 +3846,7 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="/open/encryptable" target="_blank" class="search-title">
+              <a href="/open/encryptable.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3813,11 +3854,51 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title">
+              <a href="/open/consul-php.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
-              Hexo Yilia 主题</a>
+              consul-php</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/etcd.html" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              etcd</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/hashids.html" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              hashids</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/poster-php.html" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              poster-php</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/security-php.html" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              security-php</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/snowflake-php.html" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              snowflake-php</a>
             </li>
           
         </ul>

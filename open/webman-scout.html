@@ -12,15 +12,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="keywords" content="艾瑞可erik,erik,艾瑞可Erik,艾瑞可,https://erik.xyz,erik.xyz">
-  <meta name="description" content="**顶部导航：** [顶部](#webman-scout) · [特性](#特性) · [框架与版本](#框架与版本) · [环境要求](#环境要求) · [安装](#安装) · [各框架使用说明](#各框架使用说明) · [配置项（节选）](#配置项节选) · [模型配置](#模型配置) · [基础使用](#基础使用) · [高级构建](#高级构建面向-opensearch--elasti">
+  <meta name="description" content="webman-scout基于 Laravel Scout 并参考 shopwwi&#x2F;webman-scout 的全文搜索扩展；在兼容 Webman 的同时，支持在 Laravel 7–11、Hyperf 2&#x2F;3、ThinkPHP 6&#x2F;8（限定场景） 中与 Eloquent 一起使用。 因 shopwwi&#x2F;webman-scout 更新停滞，为满足 时间范围查询、数据聚合 以及 OpenSearch">
 <meta property="og:type" content="website">
 <meta property="og:title" content="艾瑞可erik">
 <meta property="og:url" content="https://erik.xyz/open/webman-scout.html">
 <meta property="og:site_name" content="艾瑞可erik">
-<meta property="og:description" content="**顶部导航：** [顶部](#webman-scout) · [特性](#特性) · [框架与版本](#框架与版本) · [环境要求](#环境要求) · [安装](#安装) · [各框架使用说明](#各框架使用说明) · [配置项（节选）](#配置项节选) · [模型配置](#模型配置) · [基础使用](#基础使用) · [高级构建](#高级构建面向-opensearch--elasti">
+<meta property="og:description" content="webman-scout基于 Laravel Scout 并参考 shopwwi&#x2F;webman-scout 的全文搜索扩展；在兼容 Webman 的同时，支持在 Laravel 7–11、Hyperf 2&#x2F;3、ThinkPHP 6&#x2F;8（限定场景） 中与 Eloquent 一起使用。 因 shopwwi&#x2F;webman-scout 更新停滞，为满足 时间范围查询、数据聚合 以及 OpenSearch">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-04-27T05:52:58.980Z">
-<meta property="article:modified_time" content="2026-04-27T05:52:58.980Z">
+<meta property="article:published_time" content="2026-04-27T06:56:48.072Z">
+<meta property="article:modified_time" content="2026-04-27T06:56:48.072Z">
 <meta property="article:author" content="艾瑞可erik">
 <meta property="article:tag" content="艾瑞可erik,erik,艾瑞可Erik,艾瑞可,https:&#x2F;&#x2F;erik.xyz,erik.xyz">
 <meta name="twitter:card" content="summary">
@@ -112,7 +112,7 @@ var _hmt = _hmt || [];
 								<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">
 									文章
 										
-											(278)
+											(281)
 												
 								</a>
 								
@@ -372,209 +372,284 @@ var _hmt = _hmt || [];
         
 
 <!-- doc-nav：同步更新顶部导航与 `<details>`。左侧目录为 `position:fixed`；`doc-body` 用 `padding-left` 包住标题、简介与正文，避免被目录遮挡。github.com 可能去掉样式。 -->
-<div style="position:fixed;left:12px;top:88px;width:min(288px,calc(100vw - 36px));max-height:min(520px,calc(100vh - 112px));overflow-y:auto;overflow-x:hidden;z-index:9998;padding:12px 14px;background:#f6f8fa;border:1px solid #d0d7de;border-radius:10px;font-size:12.5px;line-height:1.45;box-shadow:0 2px 14px rgba(31,35,40,.12)">
-
-**顶部导航：** [顶部](#webman-scout) · [特性](#特性) · [框架与版本](#框架与版本) · [环境要求](#环境要求) · [安装](#安装) · [各框架使用说明](#各框架使用说明) · [配置项（节选）](#配置项节选) · [模型配置](#模型配置) · [基础使用](#基础使用) · [高级构建](#高级构建面向-opensearch--elasticsearch) · [Artisan / Webman 命令](#artisan--webman-命令) · [队列](#队列) · [构建器参考](#构建器参考扩展) · [参考链接](#参考链接) · [许可证](#许可证)
-
+<h1 id="webman-scout"><a href="#webman-scout" class="headerlink" title="webman-scout"></a>webman-scout</h1><p>基于 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://laravel.com/docs/scout" target="_blank">Laravel Scout</a> 并参考 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://github.com/shopwwi/webman-scout" target="_blank">shopwwi/webman-scout</a> 的全文搜索扩展；在兼容 Webman 的同时，支持在 <strong>Laravel 7–11、Hyperf 2/3、ThinkPHP 6/8（限定场景）</strong> 中与 <strong>Eloquent</strong> 一起使用。</p>
+<p>因 shopwwi/webman-scout 更新停滞，为满足 <strong>时间范围查询、数据聚合</strong> 以及 <strong>OpenSearch</strong> 等需求，本包在相近 API 下增加了高级查询、聚合、分面、向量检索、地理距离等能力。</p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
+<li>与 Laravel Scout / shopwwi webman-scout 用法接近，便于迁移</li>
+<li>引擎：<strong>OpenSearch</strong>、Elasticsearch、Meilisearch、Typesense、Algolia、XunSearch、Database、Collection 等</li>
+<li>默认面向 <strong>OpenSearch</strong>，支持复杂查询、聚合、KNN、地理检索</li>
+<li>可选队列同步索引（Webman Redis Queue）</li>
+<li>索引设置同步、软删除、分块导入</li>
+</ul>
+<h2 id="框架与版本"><a href="#框架与版本" class="headerlink" title="框架与版本"></a>框架与版本</h2><p>需要应用提供 <strong><code>config()</code></strong> 与 <strong><code>app()</code>（Illuminate 容器）</strong>，模型为 <strong><code>Illuminate\Database\Eloquent\Model</code></strong>（或兼容实现，如 Hyperf Database Model）。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>框架</th>
+<th>版本</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Webman</strong></td>
+<td>常用 1.x / 2.x</td>
+<td>默认使用插件配置 <code>config/plugin/erikwang2013/webman-scout/</code>。</td>
+</tr>
+<tr>
+<td><strong>Laravel</strong></td>
+<td>7.x – 11.x</td>
+<td>将包内 <code>app.php</code> 配置数组放到 <code>config/scout.php</code>（或自建文件名），并设置环境变量 <strong><code>SCOUT_CONFIG_KEY=scout</code></strong>。需 <strong>PHP ≥ 8.0</strong>（Laravel 7 请使用支持 PHP 8 的 7.x 小版本）。</td>
+</tr>
+<tr>
+<td><strong>Hyperf</strong></td>
+<td>2.x – 3.x</td>
+<td>使用 Hyperf 配置与 DI；在非标插件路径下通过 <strong><code>SCOUT_CONFIG_KEY</code></strong> 指向你的配置根键。</td>
+</tr>
+<tr>
+<td><strong>ThinkPHP</strong></td>
+<td>6.x / 8.x</td>
+<td>适用于已集成 <strong>Illuminate 配置/容器</strong> 或使用 <strong><code>illuminate/database</code> Eloquent</strong> 的项目。原生 <strong><code>think\Model</code></strong> 未接入本包 <code>Searchable</code> trait，需自行调引擎 API 或改用 Eloquent 模型承载索引数据。</td>
+</tr>
+</tbody>
+</table>
 </div>
-
-<p><a href="#webman-scout" title="返回顶部" aria-label="返回顶部" style="position:fixed;bottom:1.25rem;right:1.25rem;z-index:9999;padding:0.45rem 0.85rem;background:#0969da;color:#fff!important;border-radius:999px;font-weight:700;line-height:1;text-decoration:none;box-shadow:0 2px 12px rgba(31,35,40,.25)">↑</a></p>
-<div style="padding-left:min(312px,max(8px,calc(100vw - 120px)));box-sizing:border-box;max-width:100%">
-
-# webman-scout
-
-基于 [Laravel Scout](https://laravel.com/docs/scout) 并参考 [shopwwi/webman-scout](https://github.com/shopwwi/webman-scout) 的全文搜索扩展；在兼容 Webman 的同时，支持在 **Laravel 7–11、Hyperf 2/3、ThinkPHP 6/8（限定场景）** 中与 **Eloquent** 一起使用。
-
-
-因 shopwwi/webman-scout 更新停滞，为满足 **时间范围查询、数据聚合** 以及 **OpenSearch** 等需求，本包在相近 API 下增加了高级查询、聚合、分面、向量检索、地理距离等能力。
-
-## 特性
-
-- 与 Laravel Scout / shopwwi webman-scout 用法接近，便于迁移
-- 引擎：**OpenSearch**、Elasticsearch、Meilisearch、Typesense、Algolia、XunSearch、Database、Collection 等
-- 默认面向 **OpenSearch**，支持复杂查询、聚合、KNN、地理检索
-- 可选队列同步索引（Webman Redis Queue）
-- 索引设置同步、软删除、分块导入
-
-
-## 框架与版本
-
-需要应用提供 **`config()`** 与 **`app()`（Illuminate 容器）**，模型为 **`Illuminate\Database\Eloquent\Model`**（或兼容实现，如 Hyperf Database Model）。
-
-| 框架 | 版本 | 说明 |
-|------|------|------|
-| **Webman** | 常用 1.x / 2.x | 默认使用插件配置 `config/plugin/erikwang2013/webman-scout/`。 |
-| **Laravel** | 7.x – 11.x | 将包内 `app.php` 配置数组放到 `config/scout.php`（或自建文件名），并设置环境变量 **`SCOUT_CONFIG_KEY=scout`**。需 **PHP ≥ 8.0**（Laravel 7 请使用支持 PHP 8 的 7.x 小版本）。 |
-| **Hyperf** | 2.x – 3.x | 使用 Hyperf 配置与 DI；在非标插件路径下通过 **`SCOUT_CONFIG_KEY`** 指向你的配置根键。 |
-| **ThinkPHP** | 6.x / 8.x | 适用于已集成 **Illuminate 配置/容器** 或使用 **`illuminate/database` Eloquent** 的项目。原生 **`think\Model`** 未接入本包 `Searchable` trait，需自行调引擎 API 或改用 Eloquent 模型承载索引数据。 |
-
-Composer 依赖 **`illuminate/*` ^7.0–^11.0**、**`symfony/console` ^5.4–^7.0**，与上述框架的传递依赖对齐。
-
-
-## 环境要求
-
-- PHP ^8.0
-- Eloquent 模型（使用 `Searchable` trait 时）
-
-
-## 安装
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer require erikwang2013/webman-scout</span><br></pre></td></tr></table></figure>
-
-安装后（Webman）执行插件安装，会复制配置与队列消费者：
-
-- 配置目录：`config/plugin/erikwang2013/webman-scout/`
-- 队列消费者：`app/queue/redis/search/`
-
-### 多框架配置根键
-
-包内所有业务配置通过 **`scout_config('键名')`** 读取。解析规则：
-
-1. 若设置 **`SCOUT_CONFIG_KEY`**（例如 `scout`），则使用 `config('scout.xxx')`。
-2. 否则若存在 `config('plugin.erikwang2013.webman-scout.app')`，使用 Webman 插件路径。
-3. 否则尝试 `config('scout')` 或 `config('erikwang2013.webman-scout')`（需为含 `driver` / `prefix` 等字段的数组）。
-
-Laravel / Hyperf / ThinkPHP 非插件布局：请将 `src/config/plugin/erikwang2013/webman-scout/app.php` 的**返回数组**合并到你的配置文件，并设置 **`SCOUT_CONFIG_KEY=scout`**（与 `config/scout.php` 对应）。
-
-
-## 各框架使用说明
-
-以下默认已执行 `composer require erikwang2013/webman-scout`。
-
-### Webman（1.x / 2.x）
-
-1. **启用插件**：按 [Webman 插件文档](https://www.workerman.net/doc/webman/plugin.html) 安装/启用本插件，使 `config/plugin/erikwang2013/webman-scout/` 出现在项目中。若安装流程会执行包内 `Install`，会自动复制配置与队列消费者；否则可从 `vendor/erikwang2013/webman-scout/src/config/plugin/erikwang2013/webman-scout/` 手工拷贝。
-2. **配置**：主配置为 `config/plugin/erikwang2013/webman-scout/app.php`。一般**不必**设置 `SCOUT_CONFIG_KEY`，`scout_config()` 会自动走插件路径。
-3. **命令行**：通过 `config/plugin/erikwang2013/webman-scout/command.php` 注册，示例：`php webman scout:import "App\\Model\\Product"`（按实际命名空间修改）。
-4. **模型**：通常继承 `support\Model`，并 `use Searchable`。
-5. **队列（可选）**：安装 [webman/redis-queue](https://www.workerman.net/doc/webman/components/redis-queue.html)，在 Scout 配置中设 `'queue' => true`，并运行 `app/queue/redis/search/` 下消费者（如 `scout_make`、`scout_remove`）。未安装 Redis 队列或 `queue` 为 false 时，索引在**当前进程内同步**写入。
-
-### Laravel（7.x – 11.x）
-
-1. **配置文件**：新增 `config/scout.php`，`return` 与包内 `src/config/plugin/erikwang2013/webman-scout/app.php` **相同结构的数组**（`driver`、`prefix`、`opensearch` 等）。若同时使用官方 **`laravel/scout`**，注意避免配置键与启动流程冲突；本包可独立使用，不必再装官方 Scout。
-2. **环境变量**：在 `.env` 中设置 **`SCOUT_CONFIG_KEY=scout`**，使 `scout_config('driver')` 对应 `config('scout.driver')`。
-3. **容器**：`helpers.php` 会在 `app()` 上注册 `EngineManager`（及已安装时的 Meilisearch 客户端）。若你的应用在 Composer `files` 加载 `helpers` 之前尚未就绪，可在 `AppServiceProvider::register()` 中手动绑定：
-
-   <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">$this</span>-&gt;app-&gt;<span class="title function_ invoke__">singleton</span>(<span class="title class_">\Erikwang2013\WebmanScout\EngineManager</span>::<span class="variable language_">class</span>, function (<span class="variable">$app</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">\Erikwang2013\WebmanScout\EngineManager</span>(<span class="variable">$app</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-4. **Artisan 命令**：包内命令为 Symfony `Command`，名称如 `scout:import`。需向框架注册：
-   - **Laravel 10 及以下**：在 `app/Console/Kernel.php` 的 `$commands` 中加入：
-
-     <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">protected</span> <span class="variable">$commands</span> = [</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\ImportCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\FlushCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\IndexCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\DeleteIndexCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\DeleteAllIndexesCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\QueueImportCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\SyncIndexSettingsCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
-
-   - **Laravel 11+**：在 `bootstrap/app.php` 使用 `->withCommands([...])` 传入上述类名列表（参见 [Laravel 结构说明](https://laravel.com/docs/11.x/structure)）。
-
-5. **模型**：继承 `Illuminate\Database\Eloquent\Model`（或项目基类）并 `use Searchable`。
-6. **队列**：包内异步索引与 **`Webman\RedisQueue`** 集成；标准 Laravel 环境若无该类，请将配置中 **`queue` 设为 `false`** 使用同步索引，或自行在观察者/任务中调用引擎 `update()` 实现异步（可参考 `syncMakeSearchable` 逻辑）。
-
-### Hyperf（2.x – 3.x）
-
-1. **配置**：将 Scout 数组放到 Hyperf 配置中，例如 `config/autoload/scout.php`，内容与包内 `app.php` 一致。在 Hyperf 读取的环境变量中设置 **`SCOUT_CONFIG_KEY=scout`**，保证 `config('scout')` 为根配置。
-2. **`config()` / `app()`**：需保证 `scout_config()` 最终能读到上述配置；若 `helpers.php` 中的 `app()` 与 Hyperf 容器不一致，请在 `ConfigProvider` 或 DI 配置中为 **`EngineManager`** 做显式绑定。
-3. **模型**：`Hyperf\Database\Model` 与 Eloquent 兼容，在数据库组件配置正确的前提下可同样使用 `Searchable`。
-4. **命令行**：将上述与 Laravel 相同的 Command 类注册到 [Hyperf 命令](https://hyperf.wiki/zh-cn/command.html)，或通过自定义入口挂载 Symfony Console。
-5. **队列**：与 Laravel 相同，无 Webman Redis 队列时建议 **`queue` => false** 或自建异步任务。
-
-### ThinkPHP（6.x / 8.x）
-
-1. **适用范围**：`Searchable` 依赖 Eloquent 的观察者、集合等，**不能**直接挂在原生 `think\Model` 上。
-2. **可用场景**：已使用 **`illuminate/database`** 与 Eloquent 模型，或中间层提供了 Laravel 风格 **`config()` + `app()` + Illuminate 容器** 时，可按 **Laravel** 小节配置 `config/scout.php`、`SCOUT_CONFIG_KEY` 与 `EngineManager`。
-3. **纯 ThinkPHP 模型**：可解析 `app(EngineManager::class)->engine()` 后对文档数组调用 `update` / `delete` / `search`；或单独建一张表/模型用 Eloquent 仅做搜索同步。
-4. **配置位置**：按 ThinkPHP 版本将 `scout` 数组写入 `config/scout.php` 等，并保证 `config('scout.xxx')` 可读。
-
-### 对照简表
-
-| 步骤 | Webman | Laravel | Hyperf | ThinkPHP（Eloquent/混合） |
-|------|--------|---------|--------|---------------------------|
-| 配置文件 | `config/plugin/.../app.php` | `config/scout.php` | `config/autoload/scout.php` | `config/scout.php`（或版本对应路径） |
-| `SCOUT_CONFIG_KEY` | 一般不设 | `scout` | `scout` | 非插件路径时设 `scout` |
-| 命令 | `php webman scout:*` | `php artisan scout:*`（需注册） | 按 Hyperf 注册 | 按项目控制台 |
-| 异步索引 | Redis Queue + 消费者 | `queue` 为 false 或自建 Job | 同左 | 同左 |
-
-
-## 配置项（节选）
-
-| 配置项 | 说明 |
-|--------|------|
-| `driver` | 默认引擎：`opensearch`、`elasticsearch`、`meilisearch` 等 |
-| `prefix` | 索引前缀 |
-| `queue` | 是否使用队列同步 |
-| `chunk.searchable` / `chunk.unsearchable` | 批量分块大小 |
-| `soft_delete` | 是否在索引中保留软删记录 |
-
-### OpenSearch 配置示例
-
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;opensearch&#x27;</span> =&gt; [</span><br><span class="line">    <span class="string">&#x27;host&#x27;</span> =&gt; <span class="title function_ invoke__">getenv</span>(<span class="string">&#x27;OPENSEARCH_HTTP_HOST&#x27;</span>, <span class="string">&#x27;https://127.0.0.1:6205&#x27;</span>),</span><br><span class="line">    <span class="string">&#x27;username&#x27;</span> =&gt; <span class="title function_ invoke__">getenv</span>(<span class="string">&#x27;OPENSEARCH_USERNAME&#x27;</span>, <span class="string">&#x27;admin&#x27;</span>),</span><br><span class="line">    <span class="string">&#x27;password&#x27;</span> =&gt; <span class="title function_ invoke__">getenv</span>(<span class="string">&#x27;OPENSEARCH_PASSWORD&#x27;</span>, <span class="string">&#x27;admin&#x27;</span>),</span><br><span class="line">    <span class="string">&#x27;prefix&#x27;</span> =&gt; <span class="title function_ invoke__">getenv</span>(<span class="string">&#x27;OPENSEARCH_INDEX_PREFIX&#x27;</span>),</span><br><span class="line">    <span class="string">&#x27;ssl_verification&#x27;</span> =&gt; (<span class="keyword">bool</span>) <span class="title function_ invoke__">getenv</span>(<span class="string">&#x27;OPENSEARCH_SSL_VERIFICATION&#x27;</span>, <span class="literal">false</span>),</span><br><span class="line">    <span class="string">&#x27;indices&#x27;</span> =&gt; [</span><br><span class="line">        <span class="string">&#x27;products&#x27;</span> =&gt; [</span><br><span class="line">            <span class="string">&#x27;settings&#x27;</span> =&gt; [ <span class="comment">/* index settings */</span> ],</span><br><span class="line">            <span class="string">&#x27;mappings&#x27;</span> =&gt; [</span><br><span class="line">                <span class="string">&#x27;properties&#x27;</span> =&gt; [</span><br><span class="line">                    <span class="string">&#x27;vector&#x27;</span> =&gt; [<span class="string">&#x27;type&#x27;</span> =&gt; <span class="string">&#x27;knn_vector&#x27;</span>, <span class="string">&#x27;dimension&#x27;</span> =&gt; <span class="number">1536</span>],</span><br><span class="line">                    <span class="string">&#x27;location&#x27;</span> =&gt; [<span class="string">&#x27;type&#x27;</span> =&gt; <span class="string">&#x27;geo_point&#x27;</span>],</span><br><span class="line">                ],</span><br><span class="line">            ],</span><br><span class="line">        ],</span><br><span class="line">    ],</span><br><span class="line">],</span><br></pre></td></tr></table></figure>
-
-
-## 模型配置
-
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> <span class="title">Erikwang2013</span>\<span class="title">WebmanScout</span>\<span class="title">Searchable</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">support</span>\<span class="title">Model</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Product</span> <span class="keyword">extends</span> <span class="title">Model</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">use</span> <span class="title">Searchable</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">searchableAs</span>(<span class="params"></span>): <span class="title">string</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&#x27;products&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toSearchableArray</span>(<span class="params"></span>): <span class="title">array</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> [</span><br><span class="line">            <span class="string">&#x27;id&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;id,</span><br><span class="line">            <span class="string">&#x27;title&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;title,</span><br><span class="line">            <span class="string">&#x27;content&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;content,</span><br><span class="line">            <span class="string">&#x27;price&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;price,</span><br><span class="line">            <span class="string">&#x27;created_at&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;created_at?-&gt;timestamp,</span><br><span class="line">            <span class="string">&#x27;location&#x27;</span> =&gt; [<span class="string">&#x27;lat&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;lat, <span class="string">&#x27;lon&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;lng],</span><br><span class="line">            <span class="string">&#x27;vector&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;embedding ?? [],</span><br><span class="line">        ];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">searchableFields</span>(<span class="params"></span>): <span class="title">array</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> [<span class="string">&#x27;title&#x27;</span>, <span class="string">&#x27;content&#x27;</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-## 基础使用
-
-### 搜索与索引
-
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 关键词搜索</span></span><br><span class="line"><span class="variable">$products</span> = <span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;手机&#x27;</span>)-&gt;<span class="title function_ invoke__">get</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 带回调，约束查询构造器</span></span><br><span class="line"><span class="variable">$products</span> = <span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;手机&#x27;</span>, function (<span class="variable">$builder</span>) &#123;</span><br><span class="line">    <span class="variable">$builder</span>-&gt;<span class="title function_ invoke__">where</span>(<span class="string">&#x27;status&#x27;</span>, <span class="number">1</span>);</span><br><span class="line">&#125;)-&gt;<span class="title function_ invoke__">get</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 分页</span></span><br><span class="line"><span class="variable">$paginator</span> = <span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;手机&#x27;</span>)-&gt;<span class="title function_ invoke__">paginate</span>(<span class="number">15</span>);</span><br><span class="line"></span><br><span class="line"><span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;关键词&#x27;</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">where</span>(<span class="string">&#x27;status&#x27;</span>, <span class="number">1</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">whereIn</span>(<span class="string">&#x27;category_id&#x27;</span>, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">    -&gt;<span class="title function_ invoke__">orderBy</span>(<span class="string">&#x27;created_at&#x27;</span>, <span class="string">&#x27;desc&#x27;</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">limit</span>(<span class="number">20</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">get</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 单条写入/移除索引（是否走队列取决于配置）</span></span><br><span class="line"><span class="variable">$product</span>-&gt;<span class="title function_ invoke__">searchableSync</span>();</span><br><span class="line"><span class="variable">$product</span>-&gt;<span class="title function_ invoke__">searchable</span>();</span><br><span class="line"><span class="variable">$product</span>-&gt;<span class="title function_ invoke__">unsearchable</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 全量导入 / 清空该模型索引</span></span><br><span class="line"><span class="title class_">Product</span>::<span class="title function_ invoke__">makeAllSearchable</span>();</span><br><span class="line"><span class="title class_">Product</span>::<span class="title function_ invoke__">removeAllFromSearch</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 临时关闭同步</span></span><br><span class="line"><span class="title class_">Product</span>::<span class="title function_ invoke__">withoutSyncingToSearch</span>(function () &#123;</span><br><span class="line">    <span class="title class_">Product</span>::<span class="title function_ invoke__">query</span>()-&gt;<span class="title function_ invoke__">where</span>(<span class="string">&#x27;id&#x27;</span>, <span class="number">1</span>)-&gt;<span class="title function_ invoke__">update</span>([<span class="string">&#x27;title&#x27;</span> =&gt; <span class="string">&#x27;新标题&#x27;</span>]);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-### Laravel 7 兼容性说明
-
-- 查询主键列表时，若当前 Eloquent 版本无 `whereIntegerInRaw`，会自动回退为 `whereIn`。
-- `HasManyThrough::chunkById` 在较早版本不存在时，不会注册对应的 `searchable` / `unsearchable` 宏（关系批量导入需升级框架或使用普通查询构造器分块）。
-
-## 高级构建（面向 OpenSearch / Elasticsearch）
-
-以下链式方法主要面向 OpenSearch / Elasticsearch 等引擎（以实际引擎支持为准）。
-
+<p>Composer 依赖 <strong><code>illuminate/*</code> ^7.0–^11.0</strong>、<strong><code>symfony/console</code> ^5.4–^7.0</strong>，与上述框架的传递依赖对齐。</p>
+<h2 id="环境要求"><a href="#环境要求" class="headerlink" title="环境要求"></a>环境要求</h2><ul>
+<li>PHP ^8.0</li>
+<li>Eloquent 模型（使用 <code>Searchable</code> trait 时）</li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">composer require erikwang2013/webman-scout</span><br></pre></td></tr></table></figure>
+<p>安装后（Webman）执行插件安装，会复制配置与队列消费者：</p>
+<ul>
+<li>配置目录：<code>config/plugin/erikwang2013/webman-scout/</code></li>
+<li>队列消费者：<code>app/queue/redis/search/</code></li>
+</ul>
+<h3 id="多框架配置根键"><a href="#多框架配置根键" class="headerlink" title="多框架配置根键"></a>多框架配置根键</h3><p>包内所有业务配置通过 <strong><code>scout_config(&#39;键名&#39;)</code></strong> 读取。解析规则：</p>
+<ol>
+<li>若设置 <strong><code>SCOUT_CONFIG_KEY</code></strong>（例如 <code>scout</code>），则使用 <code>config(&#39;scout.xxx&#39;)</code>。</li>
+<li>否则若存在 <code>config(&#39;plugin.erikwang2013.webman-scout.app&#39;)</code>，使用 Webman 插件路径。</li>
+<li>否则尝试 <code>config(&#39;scout&#39;)</code> 或 <code>config(&#39;erikwang2013.webman-scout&#39;)</code>（需为含 <code>driver</code> / <code>prefix</code> 等字段的数组）。</li>
+</ol>
+<p>Laravel / Hyperf / ThinkPHP 非插件布局：请将 <code>src/config/plugin/erikwang2013/webman-scout/app.php</code> 的<strong>返回数组</strong>合并到你的配置文件，并设置 <strong><code>SCOUT_CONFIG_KEY=scout</code></strong>（与 <code>config/scout.php</code> 对应）。</p>
+<h2 id="各框架使用说明"><a href="#各框架使用说明" class="headerlink" title="各框架使用说明"></a>各框架使用说明</h2><p>以下默认已执行 <code>composer require erikwang2013/webman-scout</code>。</p>
+<h3 id="Webman（1-x-2-x）"><a href="#Webman（1-x-2-x）" class="headerlink" title="Webman（1.x / 2.x）"></a>Webman（1.x / 2.x）</h3><ol>
+<li><strong>启用插件</strong>：按 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://www.workerman.net/doc/webman/plugin.html" target="_blank">Webman 插件文档</a> 安装/启用本插件，使 <code>config/plugin/erikwang2013/webman-scout/</code> 出现在项目中。若安装流程会执行包内 <code>Install</code>，会自动复制配置与队列消费者；否则可从 <code>vendor/erikwang2013/webman-scout/src/config/plugin/erikwang2013/webman-scout/</code> 手工拷贝。</li>
+<li><strong>配置</strong>：主配置为 <code>config/plugin/erikwang2013/webman-scout/app.php</code>。一般<strong>不必</strong>设置 <code>SCOUT_CONFIG_KEY</code>，<code>scout_config()</code> 会自动走插件路径。</li>
+<li><strong>命令行</strong>：通过 <code>config/plugin/erikwang2013/webman-scout/command.php</code> 注册，示例：<code>php webman scout:import &quot;App\\Model\\Product&quot;</code>（按实际命名空间修改）。</li>
+<li><strong>模型</strong>：通常继承 <code>support\Model</code>，并 <code>use Searchable</code>。</li>
+<li><strong>队列（可选）</strong>：安装 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://www.workerman.net/doc/webman/components/redis-queue.html" target="_blank">webman/redis-queue</a>，在 Scout 配置中设 <code>&#39;queue&#39; =&gt; true</code>，并运行 <code>app/queue/redis/search/</code> 下消费者（如 <code>scout_make</code>、<code>scout_remove</code>）。未安装 Redis 队列或 <code>queue</code> 为 false 时，索引在<strong>当前进程内同步</strong>写入。</li>
+</ol>
+<h3 id="Laravel（7-x-–-11-x）"><a href="#Laravel（7-x-–-11-x）" class="headerlink" title="Laravel（7.x – 11.x）"></a>Laravel（7.x – 11.x）</h3><ol>
+<li><strong>配置文件</strong>：新增 <code>config/scout.php</code>，<code>return</code> 与包内 <code>src/config/plugin/erikwang2013/webman-scout/app.php</code> <strong>相同结构的数组</strong>（<code>driver</code>、<code>prefix</code>、<code>opensearch</code> 等）。若同时使用官方 <strong><code>laravel/scout</code></strong>，注意避免配置键与启动流程冲突；本包可独立使用，不必再装官方 Scout。</li>
+<li><strong>环境变量</strong>：在 <code>.env</code> 中设置 <strong><code>SCOUT_CONFIG_KEY=scout</code></strong>，使 <code>scout_config(&#39;driver&#39;)</code> 对应 <code>config(&#39;scout.driver&#39;)</code>。</li>
+<li><p><strong>容器</strong>：<code>helpers.php</code> 会在 <code>app()</code> 上注册 <code>EngineManager</code>（及已安装时的 Meilisearch 客户端）。若你的应用在 Composer <code>files</code> 加载 <code>helpers</code> 之前尚未就绪，可在 <code>AppServiceProvider::register()</code> 中手动绑定：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">$this</span>-&gt;app-&gt;<span class="title function_ invoke__">singleton</span>(<span class="title class_">\Erikwang2013\WebmanScout\EngineManager</span>::<span class="variable language_">class</span>, function (<span class="variable">$app</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">\Erikwang2013\WebmanScout\EngineManager</span>(<span class="variable">$app</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Artisan 命令</strong>：包内命令为 Symfony <code>Command</code>，名称如 <code>scout:import</code>。需向框架注册：</p>
+<ul>
+<li><p><strong>Laravel 10 及以下</strong>：在 <code>app/Console/Kernel.php</code> 的 <code>$commands</code> 中加入：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">protected</span> <span class="variable">$commands</span> = [</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\ImportCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\FlushCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\IndexCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\DeleteIndexCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\DeleteAllIndexesCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\QueueImportCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">    <span class="title class_">\Erikwang2013\WebmanScout\Command\SyncIndexSettingsCommand</span>::<span class="variable language_">class</span>,</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>Laravel 11+</strong>：在 <code>bootstrap/app.php</code> 使用 <code>-&gt;withCommands([...])</code> 传入上述类名列表（参见 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://laravel.com/docs/11.x/structure" target="_blank">Laravel 结构说明</a>）。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>模型</strong>：继承 <code>Illuminate\Database\Eloquent\Model</code>（或项目基类）并 <code>use Searchable</code>。</p>
+</li>
+<li><strong>队列</strong>：包内异步索引与 <strong><code>Webman\RedisQueue</code></strong> 集成；标准 Laravel 环境若无该类，请将配置中 <strong><code>queue</code> 设为 <code>false</code></strong> 使用同步索引，或自行在观察者/任务中调用引擎 <code>update()</code> 实现异步（可参考 <code>syncMakeSearchable</code> 逻辑）。</li>
+</ol>
+<h3 id="Hyperf（2-x-–-3-x）"><a href="#Hyperf（2-x-–-3-x）" class="headerlink" title="Hyperf（2.x – 3.x）"></a>Hyperf（2.x – 3.x）</h3><ol>
+<li><strong>配置</strong>：将 Scout 数组放到 Hyperf 配置中，例如 <code>config/autoload/scout.php</code>，内容与包内 <code>app.php</code> 一致。在 Hyperf 读取的环境变量中设置 <strong><code>SCOUT_CONFIG_KEY=scout</code></strong>，保证 <code>config(&#39;scout&#39;)</code> 为根配置。</li>
+<li><strong><code>config()</code> / <code>app()</code></strong>：需保证 <code>scout_config()</code> 最终能读到上述配置；若 <code>helpers.php</code> 中的 <code>app()</code> 与 Hyperf 容器不一致，请在 <code>ConfigProvider</code> 或 DI 配置中为 <strong><code>EngineManager</code></strong> 做显式绑定。</li>
+<li><strong>模型</strong>：<code>Hyperf\Database\Model</code> 与 Eloquent 兼容，在数据库组件配置正确的前提下可同样使用 <code>Searchable</code>。</li>
+<li><strong>命令行</strong>：将上述与 Laravel 相同的 Command 类注册到 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://hyperf.wiki/zh-cn/command.html" target="_blank">Hyperf 命令</a>，或通过自定义入口挂载 Symfony Console。</li>
+<li><strong>队列</strong>：与 Laravel 相同，无 Webman Redis 队列时建议 <strong><code>queue</code> =&gt; false</strong> 或自建异步任务。</li>
+</ol>
+<h3 id="ThinkPHP（6-x-8-x）"><a href="#ThinkPHP（6-x-8-x）" class="headerlink" title="ThinkPHP（6.x / 8.x）"></a>ThinkPHP（6.x / 8.x）</h3><ol>
+<li><strong>适用范围</strong>：<code>Searchable</code> 依赖 Eloquent 的观察者、集合等，<strong>不能</strong>直接挂在原生 <code>think\Model</code> 上。</li>
+<li><strong>可用场景</strong>：已使用 <strong><code>illuminate/database</code></strong> 与 Eloquent 模型，或中间层提供了 Laravel 风格 <strong><code>config()</code> + <code>app()</code> + Illuminate 容器</strong> 时，可按 <strong>Laravel</strong> 小节配置 <code>config/scout.php</code>、<code>SCOUT_CONFIG_KEY</code> 与 <code>EngineManager</code>。</li>
+<li><strong>纯 ThinkPHP 模型</strong>：可解析 <code>app(EngineManager::class)-&gt;engine()</code> 后对文档数组调用 <code>update</code> / <code>delete</code> / <code>search</code>；或单独建一张表/模型用 Eloquent 仅做搜索同步。</li>
+<li><strong>配置位置</strong>：按 ThinkPHP 版本将 <code>scout</code> 数组写入 <code>config/scout.php</code> 等，并保证 <code>config(&#39;scout.xxx&#39;)</code> 可读。</li>
+</ol>
+<h3 id="对照简表"><a href="#对照简表" class="headerlink" title="对照简表"></a>对照简表</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>Webman</th>
+<th>Laravel</th>
+<th>Hyperf</th>
+<th>ThinkPHP（Eloquent/混合）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>配置文件</td>
+<td><code>config/plugin/.../app.php</code></td>
+<td><code>config/scout.php</code></td>
+<td><code>config/autoload/scout.php</code></td>
+<td><code>config/scout.php</code>（或版本对应路径）</td>
+</tr>
+<tr>
+<td><code>SCOUT_CONFIG_KEY</code></td>
+<td>一般不设</td>
+<td><code>scout</code></td>
+<td><code>scout</code></td>
+<td>非插件路径时设 <code>scout</code></td>
+</tr>
+<tr>
+<td>命令</td>
+<td><code>php webman scout:*</code></td>
+<td><code>php artisan scout:*</code>（需注册）</td>
+<td>按 Hyperf 注册</td>
+<td>按项目控制台</td>
+</tr>
+<tr>
+<td>异步索引</td>
+<td>Redis Queue + 消费者</td>
+<td><code>queue</code> 为 false 或自建 Job</td>
+<td>同左</td>
+<td>同左</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="配置项（节选）"><a href="#配置项（节选）" class="headerlink" title="配置项（节选）"></a>配置项（节选）</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>配置项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>driver</code></td>
+<td>默认引擎：<code>opensearch</code>、<code>elasticsearch</code>、<code>meilisearch</code> 等</td>
+</tr>
+<tr>
+<td><code>prefix</code></td>
+<td>索引前缀</td>
+</tr>
+<tr>
+<td><code>queue</code></td>
+<td>是否使用队列同步</td>
+</tr>
+<tr>
+<td><code>chunk.searchable</code> / <code>chunk.unsearchable</code></td>
+<td>批量分块大小</td>
+</tr>
+<tr>
+<td><code>soft_delete</code></td>
+<td>是否在索引中保留软删记录</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="OpenSearch-配置示例"><a href="#OpenSearch-配置示例" class="headerlink" title="OpenSearch 配置示例"></a>OpenSearch 配置示例</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;opensearch&#x27;</span> =&gt; [</span><br><span class="line">    <span class="string">&#x27;host&#x27;</span> =&gt; <span class="title function_ invoke__">getenv</span>(<span class="string">&#x27;OPENSEARCH_HTTP_HOST&#x27;</span>, <span class="string">&#x27;https://127.0.0.1:6205&#x27;</span>),</span><br><span class="line">    <span class="string">&#x27;username&#x27;</span> =&gt; <span class="title function_ invoke__">getenv</span>(<span class="string">&#x27;OPENSEARCH_USERNAME&#x27;</span>, <span class="string">&#x27;admin&#x27;</span>),</span><br><span class="line">    <span class="string">&#x27;password&#x27;</span> =&gt; <span class="title function_ invoke__">getenv</span>(<span class="string">&#x27;OPENSEARCH_PASSWORD&#x27;</span>, <span class="string">&#x27;admin&#x27;</span>),</span><br><span class="line">    <span class="string">&#x27;prefix&#x27;</span> =&gt; <span class="title function_ invoke__">getenv</span>(<span class="string">&#x27;OPENSEARCH_INDEX_PREFIX&#x27;</span>),</span><br><span class="line">    <span class="string">&#x27;ssl_verification&#x27;</span> =&gt; (<span class="keyword">bool</span>) <span class="title function_ invoke__">getenv</span>(<span class="string">&#x27;OPENSEARCH_SSL_VERIFICATION&#x27;</span>, <span class="literal">false</span>),</span><br><span class="line">    <span class="string">&#x27;indices&#x27;</span> =&gt; [</span><br><span class="line">        <span class="string">&#x27;products&#x27;</span> =&gt; [</span><br><span class="line">            <span class="string">&#x27;settings&#x27;</span> =&gt; [ <span class="comment">/* index settings */</span> ],</span><br><span class="line">            <span class="string">&#x27;mappings&#x27;</span> =&gt; [</span><br><span class="line">                <span class="string">&#x27;properties&#x27;</span> =&gt; [</span><br><span class="line">                    <span class="string">&#x27;vector&#x27;</span> =&gt; [<span class="string">&#x27;type&#x27;</span> =&gt; <span class="string">&#x27;knn_vector&#x27;</span>, <span class="string">&#x27;dimension&#x27;</span> =&gt; <span class="number">1536</span>],</span><br><span class="line">                    <span class="string">&#x27;location&#x27;</span> =&gt; [<span class="string">&#x27;type&#x27;</span> =&gt; <span class="string">&#x27;geo_point&#x27;</span>],</span><br><span class="line">                ],</span><br><span class="line">            ],</span><br><span class="line">        ],</span><br><span class="line">    ],</span><br><span class="line">],</span><br></pre></td></tr></table></figure>
+<h2 id="模型配置"><a href="#模型配置" class="headerlink" title="模型配置"></a>模型配置</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> <span class="title">Erikwang2013</span>\<span class="title">WebmanScout</span>\<span class="title">Searchable</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">support</span>\<span class="title">Model</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Product</span> <span class="keyword">extends</span> <span class="title">Model</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">use</span> <span class="title">Searchable</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">searchableAs</span>(<span class="params"></span>): <span class="title">string</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&#x27;products&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">toSearchableArray</span>(<span class="params"></span>): <span class="title">array</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> [</span><br><span class="line">            <span class="string">&#x27;id&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;id,</span><br><span class="line">            <span class="string">&#x27;title&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;title,</span><br><span class="line">            <span class="string">&#x27;content&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;content,</span><br><span class="line">            <span class="string">&#x27;price&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;price,</span><br><span class="line">            <span class="string">&#x27;created_at&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;created_at?-&gt;timestamp,</span><br><span class="line">            <span class="string">&#x27;location&#x27;</span> =&gt; [<span class="string">&#x27;lat&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;lat, <span class="string">&#x27;lon&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;lng],</span><br><span class="line">            <span class="string">&#x27;vector&#x27;</span> =&gt; <span class="variable language_">$this</span>-&gt;embedding ?? [],</span><br><span class="line">        ];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">searchableFields</span>(<span class="params"></span>): <span class="title">array</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> [<span class="string">&#x27;title&#x27;</span>, <span class="string">&#x27;content&#x27;</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="基础使用"><a href="#基础使用" class="headerlink" title="基础使用"></a>基础使用</h2><h3 id="搜索与索引"><a href="#搜索与索引" class="headerlink" title="搜索与索引"></a>搜索与索引</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 关键词搜索</span></span><br><span class="line"><span class="variable">$products</span> = <span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;手机&#x27;</span>)-&gt;<span class="title function_ invoke__">get</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 带回调，约束查询构造器</span></span><br><span class="line"><span class="variable">$products</span> = <span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;手机&#x27;</span>, function (<span class="variable">$builder</span>) &#123;</span><br><span class="line">    <span class="variable">$builder</span>-&gt;<span class="title function_ invoke__">where</span>(<span class="string">&#x27;status&#x27;</span>, <span class="number">1</span>);</span><br><span class="line">&#125;)-&gt;<span class="title function_ invoke__">get</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 分页</span></span><br><span class="line"><span class="variable">$paginator</span> = <span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;手机&#x27;</span>)-&gt;<span class="title function_ invoke__">paginate</span>(<span class="number">15</span>);</span><br><span class="line"></span><br><span class="line"><span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;关键词&#x27;</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">where</span>(<span class="string">&#x27;status&#x27;</span>, <span class="number">1</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">whereIn</span>(<span class="string">&#x27;category_id&#x27;</span>, [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">    -&gt;<span class="title function_ invoke__">orderBy</span>(<span class="string">&#x27;created_at&#x27;</span>, <span class="string">&#x27;desc&#x27;</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">limit</span>(<span class="number">20</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">get</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 单条写入/移除索引（是否走队列取决于配置）</span></span><br><span class="line"><span class="variable">$product</span>-&gt;<span class="title function_ invoke__">searchableSync</span>();</span><br><span class="line"><span class="variable">$product</span>-&gt;<span class="title function_ invoke__">searchable</span>();</span><br><span class="line"><span class="variable">$product</span>-&gt;<span class="title function_ invoke__">unsearchable</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 全量导入 / 清空该模型索引</span></span><br><span class="line"><span class="title class_">Product</span>::<span class="title function_ invoke__">makeAllSearchable</span>();</span><br><span class="line"><span class="title class_">Product</span>::<span class="title function_ invoke__">removeAllFromSearch</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 临时关闭同步</span></span><br><span class="line"><span class="title class_">Product</span>::<span class="title function_ invoke__">withoutSyncingToSearch</span>(function () &#123;</span><br><span class="line">    <span class="title class_">Product</span>::<span class="title function_ invoke__">query</span>()-&gt;<span class="title function_ invoke__">where</span>(<span class="string">&#x27;id&#x27;</span>, <span class="number">1</span>)-&gt;<span class="title function_ invoke__">update</span>([<span class="string">&#x27;title&#x27;</span> =&gt; <span class="string">&#x27;新标题&#x27;</span>]);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="Laravel-7-兼容性说明"><a href="#Laravel-7-兼容性说明" class="headerlink" title="Laravel 7 兼容性说明"></a>Laravel 7 兼容性说明</h3><ul>
+<li>查询主键列表时，若当前 Eloquent 版本无 <code>whereIntegerInRaw</code>，会自动回退为 <code>whereIn</code>。</li>
+<li><code>HasManyThrough::chunkById</code> 在较早版本不存在时，不会注册对应的 <code>searchable</code> / <code>unsearchable</code> 宏（关系批量导入需升级框架或使用普通查询构造器分块）。</li>
+</ul>
+<h2 id="高级构建（面向-OpenSearch-Elasticsearch）"><a href="#高级构建（面向-OpenSearch-Elasticsearch）" class="headerlink" title="高级构建（面向 OpenSearch / Elasticsearch）"></a>高级构建（面向 OpenSearch / Elasticsearch）</h2><p>以下链式方法主要面向 OpenSearch / Elasticsearch 等引擎（以实际引擎支持为准）。</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">whereRange</span>(<span class="string">&#x27;created_at&#x27;</span>, [<span class="string">&#x27;gte&#x27;</span> =&gt; <span class="number">1609459200</span>, <span class="string">&#x27;lte&#x27;</span> =&gt; <span class="number">1640995200</span>], <span class="literal">true</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">whereRange</span>(<span class="string">&#x27;price&#x27;</span>, [<span class="string">&#x27;gte&#x27;</span> =&gt; <span class="number">100</span>, <span class="string">&#x27;lt&#x27;</span> =&gt; <span class="number">500</span>])</span><br><span class="line">    -&gt;<span class="title function_ invoke__">get</span>();</span><br><span class="line"></span><br><span class="line"><span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">whereGeoDistance</span>(<span class="string">&#x27;location&#x27;</span>, <span class="number">31.23</span>, <span class="number">121.47</span>, <span class="number">10.0</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">get</span>();</span><br><span class="line"></span><br><span class="line"><span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">fulltextSearch</span>(<span class="string">&#x27;关键词&#x27;</span>, [<span class="string">&#x27;title&#x27;</span>, <span class="string">&#x27;content&#x27;</span>], [<span class="string">&#x27;operator&#x27;</span> =&gt; <span class="string">&#x27;and&#x27;</span>])</span><br><span class="line">    -&gt;<span class="title function_ invoke__">get</span>();</span><br><span class="line"></span><br><span class="line"><span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">orderByVectorSimilarity</span>([<span class="number">0.1</span>, -<span class="number">0.2</span> <span class="comment">/* ... */</span>], <span class="string">&#x27;vector&#x27;</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">get</span>();</span><br><span class="line"></span><br><span class="line"><span class="variable">$builder</span> = <span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;关键词&#x27;</span>)</span><br><span class="line">    -&gt;<span class="title function_ invoke__">aggregate</span>(<span class="string">&#x27;price_ranges&#x27;</span>, <span class="string">&#x27;range&#x27;</span>, <span class="string">&#x27;price&#x27;</span>, [<span class="string">&#x27;ranges&#x27;</span> =&gt; [</span><br><span class="line">        [<span class="string">&#x27;from&#x27;</span> =&gt; <span class="number">0</span>, <span class="string">&#x27;to&#x27;</span> =&gt; <span class="number">100</span>],</span><br><span class="line">        [<span class="string">&#x27;from&#x27;</span> =&gt; <span class="number">100</span>, <span class="string">&#x27;to&#x27;</span> =&gt; <span class="number">500</span>],</span><br><span class="line">    ]])</span><br><span class="line">    -&gt;<span class="title function_ invoke__">facet</span>(<span class="string">&#x27;category_id&#x27;</span>, [<span class="string">&#x27;size&#x27;</span> =&gt; <span class="number">10</span>]);</span><br><span class="line"></span><br><span class="line"><span class="variable">$results</span> = <span class="variable">$builder</span>-&gt;<span class="title function_ invoke__">get</span>();</span><br><span class="line"><span class="variable">$aggregations</span> = <span class="variable">$builder</span>-&gt;<span class="title function_ invoke__">getAggregations</span>();</span><br><span class="line"><span class="variable">$facets</span> = <span class="variable">$builder</span>-&gt;<span class="title function_ invoke__">getFacets</span>();</span><br><span class="line"></span><br><span class="line"><span class="variable">$engine</span> = <span class="title function_ invoke__">app</span>(<span class="title class_">\Erikwang2013\WebmanScout\EngineManager</span>::<span class="variable language_">class</span>)-&gt;<span class="title function_ invoke__">engine</span>();</span><br><span class="line"><span class="variable">$engine</span>-&gt;<span class="title function_ invoke__">updateIndexMappings</span>(<span class="string">&#x27;products&#x27;</span>, [</span><br><span class="line">    <span class="string">&#x27;properties&#x27;</span> =&gt; [</span><br><span class="line">        <span class="string">&#x27;new_field&#x27;</span> =&gt; [<span class="string">&#x27;type&#x27;</span> =&gt; <span class="string">&#x27;keyword&#x27;</span>],</span><br><span class="line">    ],</span><br><span class="line">]);</span><br><span class="line"></span><br><span class="line"><span class="variable">$builder</span> = <span class="title class_">Product</span>::<span class="title function_ invoke__">search</span>(<span class="string">&#x27;关键词&#x27;</span>);</span><br><span class="line"><span class="variable">$builder</span>-&gt;<span class="title function_ invoke__">whereRange</span>(<span class="string">&#x27;created_at&#x27;</span>, <span class="variable">$range</span>)-&gt;<span class="title function_ invoke__">get</span>();</span><br><span class="line"><span class="variable">$builder</span>-&gt;<span class="title function_ invoke__">clearAdvancedConditions</span>();</span><br></pre></td></tr></table></figure>
-
-## Artisan / Webman commands
-
-**Webman** 下使用 `php webman …`。**Laravel** 需在项目中注册包内 Symfony 命令类后，再使用 `php artisan scout:import` 等（参见上文「各框架使用说明」中的 Laravel 小节）。
-
-| 命令 | 说明 |
-|------|------|
-| `php webman scout:import [Model]` | 全量导入；支持 `--chunk`、`--fresh` |
-| `php webman scout:flush [Model]` | 从索引中清空该模型数据 |
-| `php webman scout:delete-index [Model]` | 删除该模型对应索引 |
-| `php webman scout:index` | 列出/创建索引（依引擎实现） |
-| `php webman scout:queue-import` | 通过队列导入 |
-| `php webman scout:sync-index-settings` | 同步索引设置 |
-| `php webman scout:delete-all-indexes` | 删除所有托管索引（慎用） |
-
-具体参数以各命令 `--help` 为准。
-
-## 队列
-
-在配置中开启 `queue` 后，模型的 `searchable()` / `unsearchable()` 在存在 `Webman\RedisQueue\Redis` 时会进入 Redis 队列；请保证 `app/queue/redis/search` 下消费者已运行（如 `scout_make`、`scout_remove`）。未使用 Webman Redis 队列时，请将配置中 **`queue` 设为 `false`** 或自行实现异步任务。
-
-## 构建器参考（扩展）
-
-| 方法 | 说明 |
-|------|------|
-| `whereRange($field, array $range, bool $inclusive = true)` | 范围过滤 |
-| `whereGeoDistance($field, $lat, $lng, $radius)` | 地理距离 |
-| `fulltextSearch($query, array $fields = [], array $options = [])` | 全文检索 |
-| `orderByVectorSimilarity(array $vector, ?string $vectorField = null)` | 向量排序 |
-| `aggregate(...)` / `facet(...)` | 聚合 / 分面 |
-| `addResultProcessor(callable $processor)` | 结果后处理 |
-| `getAggregations()` / `getFacets()` | 读取聚合与分面结果 |
-| `clearAdvancedConditions()` | 清空高级条件 |
-
-OpenSearch 等引擎通常还提供 `updateIndexMappings(string $index, array $mappings)` 用于更新映射。
-
-## 参考链接
-
-- [Laravel Scout 文档](https://laravel.com/docs/scout)
-- [shopwwi/webman-scout](https://github.com/shopwwi/webman-scout)
-
-
-## 许可证
-
-MIT
-
+<h2 id="Artisan-Webman-commands"><a href="#Artisan-Webman-commands" class="headerlink" title="Artisan / Webman commands"></a>Artisan / Webman commands</h2><p><strong>Webman</strong> 下使用 <code>php webman …</code>。<strong>Laravel</strong> 需在项目中注册包内 Symfony 命令类后，再使用 <code>php artisan scout:import</code> 等（参见上文「各框架使用说明」中的 Laravel 小节）。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>php webman scout:import [Model]</code></td>
+<td>全量导入；支持 <code>--chunk</code>、<code>--fresh</code></td>
+</tr>
+<tr>
+<td><code>php webman scout:flush [Model]</code></td>
+<td>从索引中清空该模型数据</td>
+</tr>
+<tr>
+<td><code>php webman scout:delete-index [Model]</code></td>
+<td>删除该模型对应索引</td>
+</tr>
+<tr>
+<td><code>php webman scout:index</code></td>
+<td>列出/创建索引（依引擎实现）</td>
+</tr>
+<tr>
+<td><code>php webman scout:queue-import</code></td>
+<td>通过队列导入</td>
+</tr>
+<tr>
+<td><code>php webman scout:sync-index-settings</code></td>
+<td>同步索引设置</td>
+</tr>
+<tr>
+<td><code>php webman scout:delete-all-indexes</code></td>
+<td>删除所有托管索引（慎用）</td>
+</tr>
+</tbody>
+</table>
 </div>
+<p>具体参数以各命令 <code>--help</code> 为准。</p>
+<h2 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h2><p>在配置中开启 <code>queue</code> 后，模型的 <code>searchable()</code> / <code>unsearchable()</code> 在存在 <code>Webman\RedisQueue\Redis</code> 时会进入 Redis 队列；请保证 <code>app/queue/redis/search</code> 下消费者已运行（如 <code>scout_make</code>、<code>scout_remove</code>）。未使用 Webman Redis 队列时，请将配置中 <strong><code>queue</code> 设为 <code>false</code></strong> 或自行实现异步任务。</p>
+<h2 id="构建器参考（扩展）"><a href="#构建器参考（扩展）" class="headerlink" title="构建器参考（扩展）"></a>构建器参考（扩展）</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>whereRange($field, array $range, bool $inclusive = true)</code></td>
+<td>范围过滤</td>
+</tr>
+<tr>
+<td><code>whereGeoDistance($field, $lat, $lng, $radius)</code></td>
+<td>地理距离</td>
+</tr>
+<tr>
+<td><code>fulltextSearch($query, array $fields = [], array $options = [])</code></td>
+<td>全文检索</td>
+</tr>
+<tr>
+<td><code>orderByVectorSimilarity(array $vector, ?string $vectorField = null)</code></td>
+<td>向量排序</td>
+</tr>
+<tr>
+<td><code>aggregate(...)</code> / <code>facet(...)</code></td>
+<td>聚合 / 分面</td>
+</tr>
+<tr>
+<td><code>addResultProcessor(callable $processor)</code></td>
+<td>结果后处理</td>
+</tr>
+<tr>
+<td><code>getAggregations()</code> / <code>getFacets()</code></td>
+<td>读取聚合与分面结果</td>
+</tr>
+<tr>
+<td><code>clearAdvancedConditions()</code></td>
+<td>清空高级条件</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>OpenSearch 等引擎通常还提供 <code>updateIndexMappings(string $index, array $mappings)</code> 用于更新映射。</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><ul>
+<li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://laravel.com/docs/scout" target="_blank">Laravel Scout 文档</a></li>
+<li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://github.com/shopwwi/webman-scout" target="_blank">shopwwi/webman-scout</a></li>
+</ul>
+<h2 id="许可证"><a href="#许可证" class="headerlink" title="许可证"></a>许可证</h2><p>MIT</p>
 
       
 
@@ -1069,6 +1144,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">多平台广告管理系统</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Ads Platform</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">农业系统</a>
               </li>
              
@@ -1309,6 +1392,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">cloud-platform</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">程序员</a>
               </li>
              
@@ -1497,6 +1584,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">erik shop</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">跨境电商平台</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">phone</a>
               </li>
              
@@ -1549,15 +1644,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">im</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">go中pdf生成</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">go中限流</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">im</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1641,6 +1736,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">log4j2</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据库</a>
               </li>
              
@@ -1650,10 +1749,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">hbase</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">log4j2</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3067,7 +3162,31 @@ MathJax.Hub.Queue(function() {
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="/open/xhprof-webman" target="_blank" class="search-title">
+              <a href="/2026/05/22/erik-shop" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              跨境电商平台(Erik Shop)</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/2026/05/22/ads-shop" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              多平台广告管理系统(Ads Platform)</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/2026/05/22/cloud-platform" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              全球云资源交易平台(Cloud Platform)</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/xhprof-webman.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3075,15 +3194,7 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="/open/xhprof-laravel" target="_blank" class="search-title">
-<svg class="icon" aria-hidden="true">
-  <use xlink:href="#icon-github"></use>
-</svg>
-              xhprof-laravel</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="/open/webman-scout" target="_blank" class="search-title">
+              <a href="/open/webman-scout.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3091,7 +3202,7 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="/open/jwt-webman" target="_blank" class="search-title">
+              <a href="/open/jwt-webman.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3099,7 +3210,7 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="/open/encryption" target="_blank" class="search-title">
+              <a href="/open/encryption.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3107,7 +3218,7 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="/open/season" target="_blank" class="search-title">
+              <a href="/open/season.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3115,7 +3226,7 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="/open/aetherupload-webman" target="_blank" class="search-title">
+              <a href="/open/aetherupload-webman.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3123,7 +3234,7 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="/open/encryptable" target="_blank" class="search-title">
+              <a href="/open/encryptable.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
@@ -3131,11 +3242,51 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title">
+              <a href="/open/consul-php.html" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>
-              Hexo Yilia 主题</a>
+              consul-php</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/etcd.html" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              etcd</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/hashids.html" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              hashids</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/poster-php.html" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              poster-php</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/security-php.html" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              security-php</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/open/snowflake-php.html" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              snowflake-php</a>
             </li>
           
         </ul>
