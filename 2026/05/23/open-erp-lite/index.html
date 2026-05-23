@@ -20,7 +20,7 @@
 <meta property="og:description" content="开放ERP系统 (open-erp)基于 webman v2 + Flutter 的全栈ERP系统。 功能清单    业务域 功能 说明     🔐 认证 登录&#x2F;注册&#x2F;刷新令牌&#x2F;登出 点击验证码 + JWT + 黑名单    账号锁定 5 次失败锁定 15 分钟    并发会话限制 同一用户最多 3 个有效 Token   📊 仪表盘 经营总览&#x2F;销售看板&#x2F;库存看板&#x2F;财务看板 Redis 缓存">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-05-23T01:59:00.000Z">
-<meta property="article:modified_time" content="2026-05-23T02:19:42.879Z">
+<meta property="article:modified_time" content="2026-05-23T03:11:48.100Z">
 <meta property="article:author" content="艾瑞可erik">
 <meta property="article:tag" content="erp">
 <meta property="article:tag" content="open erp">
@@ -561,7 +561,7 @@ var _hmt = _hmt || [];
 </table>
 </div>
 <span id="more"></span>
-<h2 id="ERP-模块"><a href="#ERP-模块" class="headerlink" title="ERP 模块"></a>ERP 模块</h2><p>各业务模块间的数据流转：</p>
+<h4 id="下载"><a href="#下载" class="headerlink" title="下载"></a><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://github.com/erikwang2013/erp-php-lite" target="_blank">下载</a></h4><h2 id="ERP-模块"><a href="#ERP-模块" class="headerlink" title="ERP 模块"></a>ERP 模块</h2><p>各业务模块间的数据流转：</p>
 <ul>
 <li>采购收货 → 自动入库（移动加权平均成本核算） → 自动生成应付</li>
 <li>销售发货 → 自动出库 → 自动生成应收</li>
@@ -2185,7 +2185,6 @@ var _hmt = _hmt || [];
 </div>
 <hr>
 <h2 id="升级路径"><a href="#升级路径" class="headerlink" title="升级路径"></a>升级路径</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Lite (简化版)</span><br><span class="line">  ├─ 62 表 / 12 业务模块 / 无审批/通知/HR/制造/报表</span><br><span class="line">  │</span><br><span class="line">  ├─ Standard (标准版)</span><br><span class="line">  │    ├─ 72 表 / 12 业务模块 / 更精简的数据模型</span><br><span class="line">  │</span><br><span class="line">  └─ Full (完整版)</span><br><span class="line">       └─ 122 表 / 6 业务模块 / 全面的企业平台能力</span><br></pre></td></tr></table></figure>
-
       
 
 
@@ -2652,14 +2651,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">说说</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php服务器</a>
               </li>
              
@@ -2672,11 +2663,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+                <a href="javascript:void(0)" class="js-tag color3">说说</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">趣闻</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">转载</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3104,14 +3103,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">docker</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php安装</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">dns</a>
               </li>
              
@@ -3121,6 +3112,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">网站监测</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">docker</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php安装</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3148,6 +3147,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">elasticsearch搭建</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">elasticsearch集群</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">系统</a>
               </li>
              
@@ -3157,14 +3164,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">mdm</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">elasticsearch搭建</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">elasticsearch集群</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3292,14 +3291,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">hadoop</a>
               </li>
              
@@ -3353,6 +3344,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">http2.0</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3516,6 +3515,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">web前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">web优化</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">蓝牙</a>
               </li>
              
@@ -3525,14 +3532,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">蓝牙连接</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">web前端</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">web优化</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3676,11 +3675,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">oop</a>
+                <a href="javascript:void(0)" class="js-tag color4">onethink</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">onethink</a>
+                <a href="javascript:void(0)" class="js-tag color4">oop</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -4328,10 +4327,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">wget</a>
               </li>
              
@@ -4353,6 +4348,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">wordpress标签</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">

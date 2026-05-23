@@ -21,13 +21,13 @@
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
-        <category>说说</category>
-        <category>趣闻</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
-        <category>nginx</category>
+        <category>说说</category>
+        <category>趣闻</category>
         <category>转载</category>
+        <category>nginx</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
@@ -134,22 +134,22 @@
         <category>开发</category>
         <category>清理系统</category>
         <category>清理c盘</category>
-        <category>docker</category>
-        <category>php安装</category>
         <category>dns</category>
         <category>域名监测</category>
         <category>网站监测</category>
+        <category>docker</category>
+        <category>php安装</category>
         <category>杂谈</category>
         <category>ecshop</category>
         <category>框架</category>
         <category>beego数据分页</category>
         <category>分页</category>
         <category>elasticsearch</category>
+        <category>elasticsearch搭建</category>
+        <category>elasticsearch集群</category>
         <category>系统</category>
         <category>emm</category>
         <category>mdm</category>
-        <category>elasticsearch搭建</category>
-        <category>elasticsearch集群</category>
         <category>erik shop</category>
         <category>跨境电商平台</category>
         <category>phone</category>
@@ -181,8 +181,6 @@
         <category>go解密</category>
         <category>归</category>
         <category>吐槽</category>
-        <category>php大全</category>
-        <category>php资料</category>
         <category>hadoop</category>
         <category>hadoop2.8.0</category>
         <category>hadoop安装教程</category>
@@ -197,6 +195,8 @@
         <category>hbase</category>
         <category>http1.1</category>
         <category>http2.0</category>
+        <category>php大全</category>
+        <category>php资料</category>
         <category>会话</category>
         <category>会话原理</category>
         <category>hyperf</category>
@@ -237,11 +237,11 @@
         <category>linux报错</category>
         <category>linux中update-command-not-found</category>
         <category>linux运行命令报错</category>
+        <category>web前端</category>
+        <category>web优化</category>
         <category>蓝牙</category>
         <category>小程序蓝牙</category>
         <category>蓝牙连接</category>
-        <category>web前端</category>
-        <category>web优化</category>
         <category>撮合算法</category>
         <category>撮合</category>
         <category>php撮合算法</category>
@@ -277,8 +277,8 @@
         <category>红包算法</category>
         <category>深圳劳动法服务部门</category>
         <category>非关系型数据库</category>
-        <category>oop</category>
         <category>onethink</category>
+        <category>oop</category>
         <category>php管理系统</category>
         <category>开放接口开发</category>
         <category>erp</category>
@@ -440,13 +440,13 @@
         <category>自适应所有分辨率</category>
         <category>webman</category>
         <category>mysql设置超时，超时</category>
-        <category>markdown</category>
         <category>wget</category>
         <category>wget抓取</category>
         <category>网站抓取</category>
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>markdown</category>
         <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
@@ -650,7 +650,7 @@
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;h2 id=&#34;ERP-模块&#34;&gt;&lt;a href=&#34;#ERP-模块&#34; class=&#34;headerlink&#34; title=&#34;ERP 模块&#34;&gt;&lt;/a&gt;ERP 模块&lt;/h2&gt;&lt;p&gt;各业务模块间的数据流转：&lt;/p&gt;
+&lt;h4 id=&#34;下载&#34;&gt;&lt;a href=&#34;#下载&#34; class=&#34;headerlink&#34; title=&#34;下载&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://github.com/erikwang2013/erp-php-lite&#34;&gt;下载&lt;/a&gt;&lt;/h4&gt;&lt;h2 id=&#34;ERP-模块&#34;&gt;&lt;a href=&#34;#ERP-模块&#34; class=&#34;headerlink&#34; title=&#34;ERP 模块&#34;&gt;&lt;/a&gt;ERP 模块&lt;/h2&gt;&lt;p&gt;各业务模块间的数据流转：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;采购收货 → 自动入库（移动加权平均成本核算） → 自动生成应付&lt;/li&gt;
 &lt;li&gt;销售发货 → 自动出库 → 自动生成应收&lt;/li&gt;
@@ -2273,8 +2273,7 @@
 &lt;/table&gt;
 &lt;/div&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;升级路径&#34;&gt;&lt;a href=&#34;#升级路径&#34; class=&#34;headerlink&#34; title=&#34;升级路径&#34;&gt;&lt;/a&gt;升级路径&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Lite (简化版)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ├─ 62 表 / 12 业务模块 / 无审批/通知/HR/制造/报表&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ├─ Standard (标准版)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  │    ├─ 72 表 / 12 业务模块 / 更精简的数据模型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  └─ Full (完整版)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       └─ 122 表 / 6 业务模块 / 全面的企业平台能力&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
- ]]></description>
+&lt;h2 id=&#34;升级路径&#34;&gt;&lt;a href=&#34;#升级路径&#34; class=&#34;headerlink&#34; title=&#34;升级路径&#34;&gt;&lt;/a&gt;升级路径&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Lite (简化版)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ├─ 62 表 / 12 业务模块 / 无审批/通知/HR/制造/报表&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ├─ Standard (标准版)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  │    ├─ 72 表 / 12 业务模块 / 更精简的数据模型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  └─ Full (完整版)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       └─ 122 表 / 6 业务模块 / 全面的企业平台能力&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
     </channel>
 </rss>
