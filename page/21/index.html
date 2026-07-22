@@ -110,7 +110,7 @@ var _hmt = _hmt || [];
 								<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">
 									文章
 										
-											(284)
+											(285)
 												
 								</a>
 								
@@ -362,6 +362,113 @@ var _hmt = _hmt || [];
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-guan-yu-Javascript-de-lia-ge-you-qu-de-tan-tao" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/27/guan-yu-javascript-de-lia-ge-you-qu-de-tan-tao/">关于Javascript的俩个有趣的探讨</a>
+    </h1>
+  
+
+          
+            <a href="/2015/01/27/guan-yu-javascript-de-lia-ge-you-qu-de-tan-tao/" class="archive-article-date">
+  	<time datetime="2015-01-27T14:56:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-01-27</time>
+</a>
+                <!-- 需要添加的位置 -->
+            <!-- 开始添加字数统计-->
+            
+            <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="作者-Laruence"><a href="#作者-Laruence" class="headerlink" title="作者: Laruence"></a>作者: <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.laruence.com" target="_blank">Laruence</a></h3><h3 id="关于事件处理函数引用的一个佐证"><a href="#关于事件处理函数引用的一个佐证" class="headerlink" title="关于事件处理函数引用的一个佐证"></a>关于事件处理函数引用的一个佐证</h3><p>之前, 我在分析Javascript的This关键字的时候, 说过, 当使用inline的方式写dom元素的事件处理函数的时候, 采用的是引用的方式. 刚好nullbyte童鞋给我提供了一个很有意思的Case:</p>
+<pre><code>  &lt;img id=&quot;foo&quot; src=&quot;xxx&quot; onerror=&quot; alert(&#39;error&#39;);
+  &#125; function foobar() &#123;
+  alert(&#39;www.laruence.com&#39;); &quot; /&gt;
+  &lt;script&gt;
+  alert(document.getElementById(&quot;foo&quot;).onerror);
+  &lt;/script&gt;
+</code></pre><p>在IE下试试看.. 不过, FF和Chrome下都不行, 应该是FF和Chrome都会验证html代码的合法性.
+        
+        <!--
+          <a class="article-more-a" href="/2015/01/27/guan-yu-javascript-de-lia-ge-you-qu-de-tan-tao/#more">more >></a>
+          -->
+        
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-category icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/转载//" class="article-tag-list-link color3">转载</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/01/27/guan-yu-javascript-de-lia-ge-you-qu-de-tan-tao/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-you-xi-yang-zai" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -1328,107 +1435,6 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-14-tiao-gai-shan-jQuery-dai-ma-de-ji-qiao" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/06/14-tiao-gai-shan-jquery-dai-ma-de-ji-qiao/">14条改善jQuery代码的技巧</a>
-    </h1>
-  
-
-          
-            <a href="/2015/01/06/14-tiao-gai-shan-jquery-dai-ma-de-ji-qiao/" class="archive-article-date">
-  	<time datetime="2015-01-06T15:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-01-06</time>
-</a>
-                <!-- 需要添加的位置 -->
-            <!-- 开始添加字数统计-->
-            
-            <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>jQuery简单易学，但如果你想写出更漂亮更简洁高效的代码，总需要一些技巧。本文就为你总结了<strong>14条改善jQuery代码的技巧</strong>。</p>
-<h3 id="1-测试并提升你的jQuery选择器水平"><a href="#1-测试并提升你的jQuery选择器水平" class="headerlink" title="1.测试并提升你的jQuery选择器水平"></a>1.测试并提升你的jQuery选择器水平</h3><p>这个<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://codylindley.com/jqueryselectors/" target="_blank">jQuery选择器实验室</a>非常酷，它能在线免费使用，当然你也能下来到本地离线使用。这个测试页面包含复杂的HTML组合字段，然后你能尝试预定义使用各种jQuery选择器。如果这还不够你也可以自定义选择器。
-        
-        <!--
-          <a class="article-more-a" href="/2015/01/06/14-tiao-gai-shan-jquery-dai-ma-de-ji-qiao/#more">more >></a>
-          -->
-        
-      
-
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jquery</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">jquery插件</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-category icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/转载//" class="article-tag-list-link color3">转载</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/01/06/14-tiao-gai-shan-jquery-dai-ma-de-ji-qiao/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/20/">&lt; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/19/">19</a><a class="page-number" href="/page/20/">20</a><span class="page-number current">21</span><a class="page-number" href="/page/22/">22</a><a class="page-number" href="/page/23/">23</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/22/">下一页 &gt;</a>
@@ -1696,11 +1702,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+                <a href="javascript:void(0)" class="js-tag color3">转载</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2280,11 +2286,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">go时间获取</a>
+                <a href="javascript:void(0)" class="js-tag color2">go类型转换</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">go类型转换</a>
+                <a href="javascript:void(0)" class="js-tag color2">go时间获取</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2313,6 +2319,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">吐槽</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2372,14 +2386,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">会话</a>
               </li>
              
@@ -2397,6 +2403,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">新冠肺炎</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">工业网络通信协议插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">industrial protocols</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">主流工业协议</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2560,18 +2578,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">撮合算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">撮合</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php撮合算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">maven搭建库</a>
               </li>
              
@@ -2581,6 +2587,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">maven内网库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">撮合算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">撮合</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php撮合算法</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3352,6 +3370,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">wget</a>
               </li>
              
@@ -3373,10 +3395,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">wordpress标签</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3548,15 +3566,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">php抓取图片</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php批量抓取页面图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3947,6 +3965,14 @@ MathJax.Hub.Queue(function() {
   <use xlink:href="#icon-github"></use>
 </svg>
               snowflake-php</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/2026/07/22/industrial-protocols/" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              industrial-protocols</a>
             </li>
           
         </ul>

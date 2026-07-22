@@ -110,7 +110,7 @@ var _hmt = _hmt || [];
 								<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">
 									文章
 										
-											(284)
+											(285)
 												
 								</a>
 								
@@ -362,6 +362,113 @@ var _hmt = _hmt || [];
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-qu-diao-a-biao-qian-dian-ji-hou-de-xu-xian-kuang" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/08/qu-diao-a-biao-qian-dian-ji-hou-de-xu-xian-kuang/">去掉a标签点击后的虚线框</a>
+    </h1>
+  
+
+          
+            <a href="/2015/05/08/qu-diao-a-biao-qian-dian-ji-hou-de-xu-xian-kuang/" class="archive-article-date">
+  	<time datetime="2015-05-08T07:23:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-05-08</time>
+</a>
+                <!-- 需要添加的位置 -->
+            <!-- 开始添加字数统计-->
+            
+            <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+
+        
+
+<p>最近用bootstrap在做前端设计页面，突然发现a标签点击后出现虚线框，很郁闷啊。原因是css的outline属性 百度后找到网友给的解决办法是添加css样式 a:focus { outline: none; outline-style:none; -moz-outline:none; } 试试后貌似不起作用，肿么办。又找了一下才发现还有一个办法 在a标签里加入js控制，当a标签被聚焦时，强制取消焦点，这时候a标签自然不会有虚线框。 <strong><a href="#" onfocus="this.blur();">测试</a></strong> 搞定 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.erik.xyz/web_a" target="_blank"><img src="http://i1.tietuku.com/3901561e8bc8d85b.jpg" alt="展示图"></a></p>
+
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">a标签</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">a标签虚线</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">虚线框</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-category icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/html//" class="article-tag-list-link color5">html</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/html/css//" class="article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/05/08/qu-diao-a-biao-qian-dian-ji-hou-de-xu-xian-kuang/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-php-shi-jian-dao-ji-shi" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -1309,108 +1416,6 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-centos-da-jian-svn-fu-wu-qi" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/03/15/centos-da-jian-svn-fu-wu-qi/">centos搭建svn服务器</a>
-    </h1>
-  
-
-          
-            <a href="/2015/03/15/centos-da-jian-svn-fu-wu-qi/" class="archive-article-date">
-  	<time datetime="2015-03-15T04:27:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-03-15</time>
-</a>
-                <!-- 需要添加的位置 -->
-            <!-- 开始添加字数统计-->
-            
-            <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在centos中搭建svn服务器 在终端输入 yum install subversion 安装完毕 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://i2.tietuku.com/793f012274070e04.png" target="_blank"><img src="http://i2.tietuku.com/793f012274070e04.png" alt=""></a> </p>
-<p>输入 subversion -v 判断是否安装成功 接着会出现提示   -bash: subversion: command not found   </p>
-<p>查找 输入 svnserve –version   出现提示 svnserve，版本 1.6.11 (r934486) 编译于 Feb 10 2015，22:08:22     版权所有 (C) 2000-2009 CollabNet。 Subversion 是开放源代码软件，请参阅 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://subversion.tigris.org/" target="_blank">http://subversion.tigris.org/</a> 站点。 此产品包含由 CollabNet(<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.Collab.Net/" target="_blank">http://www.Collab.Net/</a>) 开发的软件。
-        
-        <!--
-          <a class="article-more-a" href="/2015/03/15/centos-da-jian-svn-fu-wu-qi/#more">more >></a>
-          -->
-        
-      
-
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">php服务器</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">centos</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-category icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/linux//" class="article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2015/03/15/centos-da-jian-svn-fu-wu-qi/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/18/">&lt; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><span class="page-number current">19</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/20/">下一页 &gt;</a>
@@ -1678,11 +1683,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+                <a href="javascript:void(0)" class="js-tag color3">转载</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2262,11 +2267,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">go时间获取</a>
+                <a href="javascript:void(0)" class="js-tag color2">go类型转换</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">go类型转换</a>
+                <a href="javascript:void(0)" class="js-tag color2">go时间获取</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2295,6 +2300,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">吐槽</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2354,14 +2367,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">会话</a>
               </li>
              
@@ -2379,6 +2384,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">新冠肺炎</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">工业网络通信协议插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">industrial protocols</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">主流工业协议</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2542,18 +2559,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">撮合算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">撮合</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php撮合算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">maven搭建库</a>
               </li>
              
@@ -2563,6 +2568,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">maven内网库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">撮合算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">撮合</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php撮合算法</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3334,6 +3351,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">wget</a>
               </li>
              
@@ -3355,10 +3376,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">wordpress标签</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3530,15 +3547,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">php抓取图片</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php批量抓取页面图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3929,6 +3946,14 @@ MathJax.Hub.Queue(function() {
   <use xlink:href="#icon-github"></use>
 </svg>
               snowflake-php</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/2026/07/22/industrial-protocols/" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              industrial-protocols</a>
             </li>
           
         </ul>

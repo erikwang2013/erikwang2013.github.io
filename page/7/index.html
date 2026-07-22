@@ -110,7 +110,7 @@ var _hmt = _hmt || [];
 								<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">
 									文章
 										
-											(284)
+											(285)
 												
 								</a>
 								
@@ -362,6 +362,106 @@ var _hmt = _hmt || [];
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-hyperf-errors" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/01/12/hyperf-errors/">hyperf异常</a>
+    </h1>
+  
+
+          
+            <a href="/2022/01/12/hyperf-errors/" class="archive-article-date">
+  	<time datetime="2022-01-12T07:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-01-12</time>
+</a>
+                <!-- 需要添加的位置 -->
+            <!-- 开始添加字数统计-->
+            
+            <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>Maximum function nesting level of ‘256’ reached, aborting</p>
+<pre><code>先跑了所有接口，发现都是这个报错。梳理新增加的接口方法后，直接屏蔽新接口所有方法逻辑，就恢复正常。依次排除法，最终发现在model里面封装的方法调用了service层的方法导致超负荷加载函数嵌套。
+</code></pre></li>
+</ul>
+        
+        <!--
+          <a class="article-more-a" href="/2022/01/12/hyperf-errors/#more">more >></a>
+          -->
+        
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">hyperf</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-category icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/php//" class="article-tag-list-link color4">php</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/01/12/hyperf-errors/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-review-go-gin-framework" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -1260,127 +1360,6 @@ nethogs eth0
 
 
   
-    <article id="post-redis-about-all" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/04/07/redis-about-all/">关于redis的总结</a>
-    </h1>
-  
-
-          
-            <a href="/2021/04/07/redis-about-all/" class="archive-article-date">
-  	<time datetime="2021-04-07T08:09:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-07</time>
-</a>
-                <!-- 需要添加的位置 -->
-            <!-- 开始添加字数统计-->
-            
-            <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="基础数据结构"><a href="#基础数据结构" class="headerlink" title="基础数据结构"></a>基础数据结构</h2><ul>
-<li><h3 id="字符串（string）"><a href="#字符串（string）" class="headerlink" title="字符串（string）"></a>字符串（string）</h3><ul>
-<li>字符串、整数、浮点数</li>
-<li>对整个字符串或者字符串的其中一部分执行操作，对整数和浮点数执行自增或自减操作</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><h3 id="哈希列表（hash）"><a href="#哈希列表（hash）" class="headerlink" title="哈希列表（hash）"></a>哈希列表（hash）</h3><ul>
-<li>包含键值对的无序散列表</li>
-<li>添加、获取、移除单个键值对，获取所有键值对，检查某个键是否存在</li>
-</ul>
-</li>
-</ul>
-        
-        <!--
-          <a class="article-more-a" href="/2021/04/07/redis-about-all/#more">more >></a>
-          -->
-        
-      
-
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">redis</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">redis总结</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">redis命令</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-category icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/redis//" class="article-tag-list-link color1">redis</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/redis/linux//" class="article-tag-list-link color1">linux</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/04/07/redis-about-all/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/page/6/">&lt; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/8/">下一页 &gt;</a>
@@ -1648,11 +1627,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+                <a href="javascript:void(0)" class="js-tag color3">转载</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2232,11 +2211,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">go时间获取</a>
+                <a href="javascript:void(0)" class="js-tag color2">go类型转换</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">go类型转换</a>
+                <a href="javascript:void(0)" class="js-tag color2">go时间获取</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2265,6 +2244,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">吐槽</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2324,14 +2311,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">会话</a>
               </li>
              
@@ -2349,6 +2328,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">新冠肺炎</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">工业网络通信协议插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">industrial protocols</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">主流工业协议</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2512,18 +2503,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">撮合算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">撮合</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php撮合算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">maven搭建库</a>
               </li>
              
@@ -2533,6 +2512,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">maven内网库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">撮合算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">撮合</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php撮合算法</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3304,6 +3295,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">wget</a>
               </li>
              
@@ -3325,10 +3320,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">wordpress标签</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3500,15 +3491,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">php抓取图片</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php批量抓取页面图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3899,6 +3890,14 @@ MathJax.Hub.Queue(function() {
   <use xlink:href="#icon-github"></use>
 </svg>
               snowflake-php</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/2026/07/22/industrial-protocols/" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              industrial-protocols</a>
             </li>
           
         </ul>

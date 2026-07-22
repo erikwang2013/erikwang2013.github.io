@@ -5,8 +5,8 @@
         <link>https://erik.xyz</link>
         <description>一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Sat, 23 May 2026 10:32:00 +0800</pubDate>
-        <lastBuildDate>Sat, 23 May 2026 10:32:00 +0800</lastBuildDate>
+        <pubDate>Wed, 22 Jul 2026 16:24:00 +0800</pubDate>
+        <lastBuildDate>Wed, 22 Jul 2026 16:24:00 +0800</lastBuildDate>
         <category>日志</category>
         <category>工具</category>
         <category>php扩展</category>
@@ -26,8 +26,8 @@
         <category>php实例</category>
         <category>说说</category>
         <category>趣闻</category>
-        <category>转载</category>
         <category>nginx</category>
+        <category>转载</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
@@ -172,8 +172,8 @@
         <category>go中pdf生成</category>
         <category>go中限流</category>
         <category>go对接快递签名</category>
-        <category>go时间获取</category>
         <category>go类型转换</category>
+        <category>go时间获取</category>
         <category>微服务</category>
         <category>go-zero</category>
         <category>rpc</category>
@@ -181,6 +181,8 @@
         <category>go解密</category>
         <category>归</category>
         <category>吐槽</category>
+        <category>php大全</category>
+        <category>php资料</category>
         <category>hadoop</category>
         <category>hadoop2.8.0</category>
         <category>hadoop安装教程</category>
@@ -195,13 +197,14 @@
         <category>hbase</category>
         <category>http1.1</category>
         <category>http2.0</category>
-        <category>php大全</category>
-        <category>php资料</category>
         <category>会话</category>
         <category>会话原理</category>
         <category>hyperf</category>
         <category>杂录</category>
         <category>新冠肺炎</category>
+        <category>工业网络通信协议插件</category>
+        <category>industrial protocols</category>
+        <category>主流工业协议</category>
         <category>springboot</category>
         <category>springboot内网部署</category>
         <category>linux恢复</category>
@@ -242,12 +245,12 @@
         <category>蓝牙</category>
         <category>小程序蓝牙</category>
         <category>蓝牙连接</category>
-        <category>撮合算法</category>
-        <category>撮合</category>
-        <category>php撮合算法</category>
         <category>maven搭建库</category>
         <category>maven</category>
         <category>maven内网库</category>
+        <category>撮合算法</category>
+        <category>撮合</category>
+        <category>php撮合算法</category>
         <category>高级缓存配置</category>
         <category>mongodb</category>
         <category>mongodb权限</category>
@@ -440,13 +443,13 @@
         <category>自适应所有分辨率</category>
         <category>webman</category>
         <category>mysql设置超时，超时</category>
+        <category>markdown</category>
         <category>wget</category>
         <category>wget抓取</category>
         <category>网站抓取</category>
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
-        <category>markdown</category>
         <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
@@ -489,14 +492,402 @@
         <category>php中mysql函数</category>
         <category>互联网时代</category>
         <category>开源技术</category>
-        <category>web框架</category>
         <category>php抓取图片</category>
         <category>php批量抓取页面图片</category>
+        <category>web框架</category>
         <category>邮箱服务器</category>
         <category>正则表达式</category>
         <category>翻墙</category>
         <category>谷歌</category>
         <category>谷歌搜索</category>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2026/07/22/industrial-protocols/</guid>
+            <title>工业网络通信协议集 —— 微内核 + 协议 SDK 架构，覆盖 40 种工业协议，兼容 6 种 PHP 运行时环境</title>
+            <link>https://erik.xyz/2026/07/22/industrial-protocols/</link>
+            <category>php</category>
+            <category>工业网络通信协议插件</category>
+            <category>industrial protocols</category>
+            <category>主流工业协议</category>
+            <pubDate>Wed, 22 Jul 2026 16:24:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;PHP 工业网络通信协议集 —— 微内核 + 协议 SDK 架构，覆盖 40 种工业协议，兼容 6 种 PHP 运行时环境。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols/README.en.md&#34;&gt;English&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;目录&#34;&gt;&lt;a href=&#34;#目录&#34; class=&#34;headerlink&#34; title=&#34;目录&#34;&gt;&lt;/a&gt;目录&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#项目简介&#34;&gt;项目简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#架构概览&#34;&gt;架构概览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#所有协议包&#34;&gt;所有协议包&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#支持的框架&#34;&gt;支持的框架&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#快速开始&#34;&gt;快速开始&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#配置参考&#34;&gt;配置参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#文档&#34;&gt;文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#系统要求&#34;&gt;系统要求&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#license&#34;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;项目简介&#34;&gt;&lt;a href=&#34;#项目简介&#34; class=&#34;headerlink&#34; title=&#34;项目简介&#34;&gt;&lt;/a&gt;项目简介&lt;/h2&gt;&lt;p&gt;Industrial Protocols 是一个面向 PHP 生态的工业通信协议集，采用 &lt;strong&gt;微内核 + 协议 SDK&lt;/strong&gt; 架构。40 个协议包（15 个纯 PHP 实现 + 25 个 Bridge 桥接），每个包都是独立 GitHub 仓库和 Composer 包，通过 Packagist 按需安装。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心理念：&lt;/strong&gt; 内核只定义「协议是什么」，不包含任何具体协议实现。用户按需安装协议包，内核启动时通过 &lt;code&gt;composer.json&lt;/code&gt; 的 &lt;code&gt;extra&lt;/code&gt; 字段自动发现并注册。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;composer require erikwang2013/industrial-protocols-kernel erikwang2013/industrial-protocols-modbus&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/h2&gt;&lt;h2 id=&#34;架构概览&#34;&gt;&lt;a href=&#34;#架构概览&#34; class=&#34;headerlink&#34; title=&#34;架构概览&#34;&gt;&lt;/a&gt;架构概览&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;┌─────────────────────────────────────────────────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│                  User Application                │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├─────────────────────────────────────────────────┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│  Framework Adapters: Laravel · Webman · Hyperf  │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│                     ThinkPHP · Yii2 · Plain PHP  │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├─────────────────────────────────────────────────┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│                  Micro-Kernel                    │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│  ProtocolRegistry · ConnectionManager(3策略)      │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│  ConfigRepository · GatewayEngine · CircuitBreaker│&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│  CoroutineAdapter · Bridge Layer · Vendor Profiles│&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│  Event System(PSR-14) · Log(PSR-3) · Retry(4种)  │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│  Metrics(Prometheus) · Alert · Security · Exception│&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├─────────────────────────────────────────────────┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│           Protocol SDK (6 Core Interfaces)        │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├─────────────────────────────────────────────────┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   40 Protocol Packages: 15 Pure PHP + 25 Bridge   │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;└─────────────────────────────────────────────────┘&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;所有协议包&#34;&gt;&lt;a href=&#34;#所有协议包&#34; class=&#34;headerlink&#34; title=&#34;所有协议包&#34;&gt;&lt;/a&gt;所有协议包&lt;/h2&gt;&lt;h3 id=&#34;工业以太网（5）&#34;&gt;&lt;a href=&#34;#工业以太网（5）&#34; class=&#34;headerlink&#34; title=&#34;工业以太网（5）&#34;&gt;&lt;/a&gt;工业以太网（5）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-modbus&#34;&gt;modbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-modbus&#34;&gt;erikwang2013/industrial-protocols-modbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Modbus TCP/RTU/ASCII，FC 01/03/04/06/10，端口 502&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-bacnet&#34;&gt;bacnet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-bacnet&#34;&gt;erikwang2013/industrial-protocols-bacnet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;BACnet/IP，Who-Is/I-Am 设备发现，ReadProperty，端口 47808&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-ethernetip&#34;&gt;ethernetip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-ethernetip&#34;&gt;erikwang2013/industrial-protocols-ethernetip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;EtherNet/IP，ENIP 会话管理 + CIP Read Tag，端口 44818&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-opcua&#34;&gt;opcua&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-opcua&#34;&gt;erikwang2013/industrial-protocols-opcua&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;OPC UA Binary 协议栈，Session + Read/Write/Browse，端口 4840&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-profinet&#34;&gt;profinet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-profinet&#34;&gt;erikwang2013/industrial-protocols-profinet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Profinet NRT，DCP 设备发现 + Record Data 读写，端口 34964&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;现场总线（12）&#34;&gt;&lt;a href=&#34;#现场总线（12）&#34; class=&#34;headerlink&#34; title=&#34;现场总线（12）&#34;&gt;&lt;/a&gt;现场总线（12）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-hart&#34;&gt;hart&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-hart&#34;&gt;erikwang2013/industrial-protocols-hart&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;HART 4-20mA FSK，HART 调制解调器，PV/回路电流&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-cclink&#34;&gt;cclink&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-cclink&#34;&gt;erikwang2013/industrial-protocols-cclink&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;CC-Link RS-485，主从轮询，CRC-16/XMODEM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-dnp3&#34;&gt;dnp3&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-dnp3&#34;&gt;erikwang2013/industrial-protocols-dnp3&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;DNP3 电力自动化，Class 0 轮询，端口 20000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-iec61850&#34;&gt;iec61850&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-iec61850&#34;&gt;erikwang2013/industrial-protocols-iec61850&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;IEC 61850 MMS 变电站自动化，端口 102&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-profibus&#34;&gt;profibus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-profibus&#34;&gt;erikwang2013/industrial-protocols-profibus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;PROFIBUS DP/PA/FMS，需 Siemens CP 5611/Anybus 网关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-canopen&#34;&gt;canopen&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-canopen&#34;&gt;erikwang2013/industrial-protocols-canopen&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;CANopen，需 PCAN-USB/SocketCAN 接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-devicenet&#34;&gt;devicenet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-devicenet&#34;&gt;erikwang2013/industrial-protocols-devicenet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;DeviceNet，需 Anybus DeviceNet Scanner&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-foundationfieldbus&#34;&gt;foundationfieldbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-foundationfieldbus&#34;&gt;erikwang2013/industrial-protocols-foundationfieldbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Foundation Fieldbus H1/HSE，需 NI USB-8486/Softing FFusb&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-asinterface&#34;&gt;asinterface&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-asinterface&#34;&gt;erikwang2013/industrial-protocols-asinterface&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;AS-Interface，需 Bihl+Wiedemann/Pepperl+Fuchs 网关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-iolink&#34;&gt;iolink&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-iolink&#34;&gt;erikwang2013/industrial-protocols-iolink&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;IO-Link，需 ifm/Balluff IO-Link Master&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-cclinkie&#34;&gt;cclinkie&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-cclinkie&#34;&gt;erikwang2013/industrial-protocols-cclinkie&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;CC-Link IE Field 工业以太网版，需网关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;IoT-消息（2）&#34;&gt;&lt;a href=&#34;#IoT-消息（2）&#34; class=&#34;headerlink&#34; title=&#34;IoT/消息（2）&#34;&gt;&lt;/a&gt;IoT/消息（2）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-mqtt&#34;&gt;mqtt&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-mqtt&#34;&gt;erikwang2013/industrial-protocols-mqtt&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;MQTT 3.1.1，发布/订阅 + 通配符，端口 1883&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-hartip&#34;&gt;hartip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-hartip&#34;&gt;erikwang2013/industrial-protocols-hartip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;HART-IP，HART over TCP/UDP，端口 5094&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;汽车总线（5）&#34;&gt;&lt;a href=&#34;#汽车总线（5）&#34; class=&#34;headerlink&#34; title=&#34;汽车总线（5）&#34;&gt;&lt;/a&gt;汽车总线（5）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-lin&#34;&gt;lin&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-lin&#34;&gt;erikwang2013/industrial-protocols-lin&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;LIN 车身总线，19200 bps UART，主从模式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-kline&#34;&gt;kline&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-kline&#34;&gt;erikwang2013/industrial-protocols-kline&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;K-Line OBD-II，ISO 9141/14230，5-baud 初始化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-flexray&#34;&gt;flexray&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-flexray&#34;&gt;erikwang2013/industrial-protocols-flexray&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;FlexRay 汽车高速总线，需 FlexRay 控制器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-saej1850&#34;&gt;saej1850&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-saej1850&#34;&gt;erikwang2013/industrial-protocols-saej1850&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;SAE J1850 OBD-II 早期标准，需 J1850 接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-most&#34;&gt;most&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-most&#34;&gt;erikwang2013/industrial-protocols-most&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;MOST 光纤多媒体，需 MOST 接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;楼宇-照明（2）&#34;&gt;&lt;a href=&#34;#楼宇-照明（2）&#34; class=&#34;headerlink&#34; title=&#34;楼宇/照明（2）&#34;&gt;&lt;/a&gt;楼宇/照明（2）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-lonworks&#34;&gt;lonworks&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-lonworks&#34;&gt;erikwang2013/industrial-protocols-lonworks&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;LonWorks 楼宇自动化，需 Neuron 芯片/接口卡&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-dali&#34;&gt;dali&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-dali&#34;&gt;erikwang2013/industrial-protocols-dali&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;DALI 数字照明，需 DALI 网关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;硬件桥接（11）&#34;&gt;&lt;a href=&#34;#硬件桥接（11）&#34; class=&#34;headerlink&#34; title=&#34;硬件桥接（11）&#34;&gt;&lt;/a&gt;硬件桥接（11）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;所需硬件&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-ethercat&#34;&gt;ethercat&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-ethercat&#34;&gt;erikwang2013/industrial-protocols-ethercat&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Beckhoff TwinCAT 3 / SOEM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-powerlink&#34;&gt;powerlink&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-powerlink&#34;&gt;erikwang2013/industrial-protocols-powerlink&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;openPOWERLINK / B&amp;amp;R Automation Studio&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-sercos&#34;&gt;sercos&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-sercos&#34;&gt;erikwang2013/industrial-protocols-sercos&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;SERCOS III FPGA IP / Hilscher netX&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-sercos1&#34;&gt;sercos1&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-sercos1&#34;&gt;erikwang2013/industrial-protocols-sercos1&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;SERCOS I/II 光纤接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-controlnet&#34;&gt;controlnet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-controlnet&#34;&gt;erikwang2013/industrial-protocols-controlnet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Allen-Bradley 1784-PCIC/S&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-interbus&#34;&gt;interbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-interbus&#34;&gt;erikwang2013/industrial-protocols-interbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Phoenix Contact IBS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-worldfip&#34;&gt;worldfip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-worldfip&#34;&gt;erikwang2013/industrial-protocols-worldfip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;WorldFIP/Fipio 总线接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-lightbus&#34;&gt;lightbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-lightbus&#34;&gt;erikwang2013/industrial-protocols-lightbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Beckhoff Lightbus 光纤接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-modbusplus&#34;&gt;modbusplus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-modbusplus&#34;&gt;erikwang2013/industrial-protocols-modbusplus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Schneider Modbus Plus SA85/BM85&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-isa100&#34;&gt;isa100&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-isa100&#34;&gt;erikwang2013/industrial-protocols-isa100&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yokogawa YFGW410 / Honeywell OneWireless&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-wirelesshart&#34;&gt;wirelesshart&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-wirelesshart&#34;&gt;erikwang2013/industrial-protocols-wirelesshart&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Emerson 1410/1420 Smart Wireless Gateway&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;系统总线（3）&#34;&gt;&lt;a href=&#34;#系统总线（3）&#34; class=&#34;headerlink&#34; title=&#34;系统总线（3）&#34;&gt;&lt;/a&gt;系统总线（3）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-pci&#34;&gt;pci&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-pci&#34;&gt;erikwang2013/industrial-protocols-pci&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;PCI/PCIe 系统总线，需内核驱动/库桥接&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-vme&#34;&gt;vme&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-vme&#34;&gt;erikwang2013/industrial-protocols-vme&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;VME/VPX 工控背板，需 VME 桥接模块&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-cpci&#34;&gt;cpci&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-cpci&#34;&gt;erikwang2013/industrial-protocols-cpci&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;CompactPCI 机架式 PCI，需 CPCI 接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;支持的框架&#34;&gt;&lt;a href=&#34;#支持的框架&#34; class=&#34;headerlink&#34; title=&#34;支持的框架&#34;&gt;&lt;/a&gt;支持的框架&lt;/h2&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;框架&lt;/th&gt;
+&lt;th&gt;检测方式&lt;/th&gt;
+&lt;th&gt;协程&lt;/th&gt;
+&lt;th&gt;集成方式&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Plain PHP&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;默认回退&lt;/td&gt;
+&lt;td&gt;Fiber&lt;/td&gt;
+&lt;td&gt;Kernel 实例化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Laravel&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Illuminate\Foundation\Application&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Octane Swoole&lt;/td&gt;
+&lt;td&gt;ServiceProvider + Facade + artisan&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Webman&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Workerman\Worker&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Swoole/Fiber&lt;/td&gt;
+&lt;td&gt;config/plugin 自动发现&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Hyperf&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Hyperf\Framework\ApplicationFactory&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Swoole 原生&lt;/td&gt;
+&lt;td&gt;ConfigProvider + DI&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ThinkPHP&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;think\App&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;think-swoole&lt;/td&gt;
+&lt;td&gt;services.php + 单例&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Yii2&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;yii\base\Application&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;swoole-yii2&lt;/td&gt;
+&lt;td&gt;Bootstrap + 组件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;检测优先级：&lt;code&gt;Laravel → Webman → Hyperf → ThinkPHP → Yii2 → Plain PHP&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;快速开始&#34;&gt;&lt;a href=&#34;#快速开始&#34; class=&#34;headerlink&#34; title=&#34;快速开始&#34;&gt;&lt;/a&gt;快速开始&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;composer require erikwang2013/industrial-protocols-kernel erikwang2013/industrial-protocols-modbus&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight php&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;require&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;vendor/autoload.php&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;use&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Erikwang2013&lt;/span&gt;\&lt;span class=&#34;title&#34;&gt;IndustrialProtocols&lt;/span&gt;\&lt;span class=&#34;title&#34;&gt;Kernel&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;use&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Erikwang2013&lt;/span&gt;\&lt;span class=&#34;title&#34;&gt;IndustrialProtocols&lt;/span&gt;\&lt;span class=&#34;title&#34;&gt;Modbus&lt;/span&gt;\&lt;span class=&#34;title&#34;&gt;ModbusProtocol&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$kernel&lt;/span&gt; = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Kernel&lt;/span&gt;([&lt;span class=&#34;string&#34;&gt;&amp;#x27;config_path&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;keyword&#34;&gt;__DIR__&lt;/span&gt; . &lt;span class=&#34;string&#34;&gt;&amp;#x27;/industrial-protocols.php&amp;#x27;&lt;/span&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$kernel&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;getProtocolRegistry&lt;/span&gt;()-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;register&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;ModbusProtocol&lt;/span&gt;());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$kernel&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;boot&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$conn&lt;/span&gt; = &lt;span class=&#34;variable&#34;&gt;$kernel&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;getConnectionManager&lt;/span&gt;()-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;connect&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;plc-001&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$result&lt;/span&gt; = &lt;span class=&#34;variable&#34;&gt;$conn&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;read&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;40001&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$result&lt;/span&gt;[&lt;span class=&#34;string&#34;&gt;&amp;#x27;40001&amp;#x27;&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$conn&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;write&lt;/span&gt;([&lt;span class=&#34;string&#34;&gt;&amp;#x27;40001&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;number&#34;&gt;25&lt;/span&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$health&lt;/span&gt; = &lt;span class=&#34;variable&#34;&gt;$kernel&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;getConnectionManager&lt;/span&gt;()-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;health&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;plc-001&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;subst&#34;&gt;&amp;#123;$health-&amp;gt;state-&amp;gt;value&amp;#125;&lt;/span&gt;, &lt;span class=&#34;subst&#34;&gt;&amp;#123;$health-&amp;gt;latencyMs&amp;#125;&lt;/span&gt;ms&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$kernel&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;shutdown&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;配置参考&#34;&gt;&lt;a href=&#34;#配置参考&#34; class=&#34;headerlink&#34; title=&#34;配置参考&#34;&gt;&lt;/a&gt;配置参考&lt;/h2&gt;&lt;figure class=&#34;highlight php&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;string&#34;&gt;&amp;#x27;devices&amp;#x27;&lt;/span&gt; =&amp;gt; [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;string&#34;&gt;&amp;#x27;plc-001&amp;#x27;&lt;/span&gt; =&amp;gt; [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;string&#34;&gt;&amp;#x27;protocol&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;modbus&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;variant&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;tcp&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;string&#34;&gt;&amp;#x27;host&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;192.168.1.10&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;port&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;number&#34;&gt;502&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;string&#34;&gt;&amp;#x27;unit_id&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;timeout&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;number&#34;&gt;3000&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ],&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ],&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;string&#34;&gt;&amp;#x27;gateway&amp;#x27;&lt;/span&gt; =&amp;gt; [&lt;span class=&#34;string&#34;&gt;&amp;#x27;rules&amp;#x27;&lt;/span&gt; =&amp;gt; []],&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;string&#34;&gt;&amp;#x27;health_check_interval&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;number&#34;&gt;30&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;string&#34;&gt;&amp;#x27;default_retry_max&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;string&#34;&gt;&amp;#x27;default_retry_backoff&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;exponential&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;];&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;文档&#34;&gt;&lt;a href=&#34;#文档&#34; class=&#34;headerlink&#34; title=&#34;文档&#34;&gt;&lt;/a&gt;文档&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols/tree/main/docs/protocols.md&#34;&gt;协议 API 参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols/tree/main/docs/framework-integration.md&#34;&gt;框架集成指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols/tree/main/docs/gateway.md&#34;&gt;网关引擎指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols/tree/main/docs/security.md&#34;&gt;安全指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols/tree/main/docs/vendors.md&#34;&gt;厂商适配参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;系统要求&#34;&gt;&lt;a href=&#34;#系统要求&#34; class=&#34;headerlink&#34; title=&#34;系统要求&#34;&gt;&lt;/a&gt;系统要求&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;PHP &amp;gt;= 8.1&lt;/li&gt;
+&lt;li&gt;Composer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;License&#34;&gt;&lt;a href=&#34;#License&#34; class=&#34;headerlink&#34; title=&#34;License&#34;&gt;&lt;/a&gt;License&lt;/h2&gt;&lt;p&gt;MIT — Copyright (c) 2026 erik &lt;a href=&#34;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#111;&amp;#x3a;&amp;#x65;&amp;#114;&amp;#x69;&amp;#107;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#x2e;&amp;#x78;&amp;#121;&amp;#122;&#34;&gt;&amp;#x65;&amp;#114;&amp;#x69;&amp;#107;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#x2e;&amp;#x78;&amp;#121;&amp;#122;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://erik.xyz/2026/05/23/game-platform-php/</guid>
             <title>Global Game Platform全球游戏聚合平台</title>
@@ -506,7 +897,7 @@
             <category>游戏</category>
             <pubDate>Sat, 23 May 2026 10:32:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;全球游戏聚合平台-Global-Game-Platform&#34;&gt;&lt;a href=&#34;#全球游戏聚合平台-Global-Game-Platform&#34; class=&#34;headerlink&#34; title=&#34;全球游戏聚合平台 (Global Game Platform)&#34;&gt;&lt;/a&gt;全球游戏聚合平台 (Global Game Platform)&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#108;&amp;#116;&amp;#x6f;&amp;#58;&amp;#x65;&amp;#114;&amp;#105;&amp;#107;&amp;#x40;&amp;#101;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#46;&amp;#x78;&amp;#121;&amp;#x7a;&#34;&gt;&amp;#x65;&amp;#114;&amp;#105;&amp;#107;&amp;#x40;&amp;#101;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#46;&amp;#x78;&amp;#121;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#x3a;&amp;#x65;&amp;#114;&amp;#x69;&amp;#x6b;&amp;#x40;&amp;#101;&amp;#114;&amp;#x69;&amp;#x6b;&amp;#46;&amp;#120;&amp;#121;&amp;#122;&#34;&gt;&amp;#x65;&amp;#114;&amp;#x69;&amp;#x6b;&amp;#x40;&amp;#101;&amp;#114;&amp;#x69;&amp;#x6b;&amp;#46;&amp;#120;&amp;#121;&amp;#122;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;全球通用、国际化的游戏聚合平台。用户注册后在平台充值兑换游戏币，用游戏币玩游戏、赚取游戏币，游戏币可转回钱包提现。后台提供完整的游戏管理、提现审核、用户管理和支付管理功能。支持多语言切换（英文/中文）。&lt;/p&gt;
 &lt;h2 id=&#34;版本策略&#34;&gt;&lt;a href=&#34;#版本策略&#34; class=&#34;headerlink&#34; title=&#34;版本策略&#34;&gt;&lt;/a&gt;版本策略&lt;/h2&gt;&lt;div class=&#34;table-container&#34;&gt;
@@ -600,7 +991,7 @@
             <category>property</category>
             <pubDate>Sat, 23 May 2026 10:20:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;物业管理系统-Property-Management-Platform&#34;&gt;&lt;a href=&#34;#物业管理系统-Property-Management-Platform&#34; class=&#34;headerlink&#34; title=&#34;物业管理系统 (Property Management Platform)&#34;&gt;&lt;/a&gt;物业管理系统 (Property Management Platform)&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#x61;&amp;#x69;&amp;#108;&amp;#116;&amp;#111;&amp;#x3a;&amp;#x65;&amp;#114;&amp;#x69;&amp;#x6b;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#105;&amp;#107;&amp;#x2e;&amp;#x78;&amp;#121;&amp;#122;&#34;&gt;&amp;#x65;&amp;#114;&amp;#x69;&amp;#x6b;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#105;&amp;#107;&amp;#x2e;&amp;#x78;&amp;#121;&amp;#122;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#x6f;&amp;#58;&amp;#101;&amp;#x72;&amp;#105;&amp;#107;&amp;#64;&amp;#x65;&amp;#114;&amp;#x69;&amp;#107;&amp;#46;&amp;#x78;&amp;#x79;&amp;#x7a;&#34;&gt;&amp;#101;&amp;#x72;&amp;#105;&amp;#107;&amp;#64;&amp;#x65;&amp;#114;&amp;#x69;&amp;#107;&amp;#46;&amp;#x78;&amp;#x79;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;全栈物业管理系统，覆盖小区管理、费用收缴、报修维护、停车门禁、安保保洁等15个业务模块。管理员端（admin）和业主端（service）分离部署，前端覆盖 Flutter Web（PC 管理后台风格）与 HarmonyOS 移动端。&lt;/p&gt;
 &lt;h2 id=&#34;项目结构&#34;&gt;&lt;a href=&#34;#项目结构&#34; class=&#34;headerlink&#34; title=&#34;项目结构&#34;&gt;&lt;/a&gt;项目结构&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;property-management-platform/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── admin/                         # 管理员端 webman v2 项目&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── app/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── admin/controller/      # 管理端控制器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── api/v1/controller/     # 公开 API 控制器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── common/                # 公共工具类&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── middleware/            # 中间件（认证/鉴权/限流/安全）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── model/                 # 数据模型（Eloquent ORM）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── queue/                 # 队列任务&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   └── process/               # 进程管理&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── apps/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── flutter/               # 管理后台 Flutter Web（PC 风格）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   └── harmonyos/             # 管理后台 HarmonyOS App&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── config/                    # 配置文件（含中文注释）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── database/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── migrations/            # SQL 迁移文件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   └── backup/                # 数据库备份脚本&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── resource/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   └── translations/          # 国际化语言文件（zh_CN / en）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── docs/                      # 管理端文档&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── tests/                     # 单元测试&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   └── public/                    # Web 入口&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── service/                       # 业主业务端 webman v2 项目&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── app/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── api/v1/controller/     # 业主端 API 控制器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── common/                # 公共工具类&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── middleware/            # 中间件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── model/                 # 数据模型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   └── process/               # 进程管理&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── config/                    # 配置文件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── resource/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   └── translations/          # 国际化语言文件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   └── database/migrations/       # SQL 迁移文件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── apps/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── flutter/                   # 业主端 Flutter Web（PC 风格）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   └── harmonyos/                 # 业主端 HarmonyOS App&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;└── docs/                          # 项目文档&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ├── ARCHITECTURE.md&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ├── ARCHITECTURE_DESIGN.md&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ├── API.md&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ├── FEATURES.md&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    └── FEATURE_DESIGN.md&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -2692,7 +3083,7 @@
             <category>跨境电商平台</category>
             <pubDate>Fri, 22 May 2026 15:54:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;Erik-Shop-—-跨境电商平台&#34;&gt;&lt;a href=&#34;#Erik-Shop-—-跨境电商平台&#34; class=&#34;headerlink&#34; title=&#34;Erik Shop — 跨境电商平台&#34;&gt;&lt;/a&gt;Erik Shop — 跨境电商平台&lt;/h1&gt;&lt;p&gt;基于 webman 全家桶构建的全栈跨境电商平台，覆盖 B2C/B2B 场景和第三方卖家入驻。&lt;/p&gt;
-&lt;h1 id=&#34;Erik-Shop-—-三版本对比&#34;&gt;&lt;a href=&#34;#Erik-Shop-—-三版本对比&#34; class=&#34;headerlink&#34; title=&#34;Erik Shop — 三版本对比&#34;&gt;&lt;/a&gt;Erik Shop — 三版本对比&lt;/h1&gt;&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#x74;&amp;#111;&amp;#58;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#64;&amp;#101;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#46;&amp;#120;&amp;#x79;&amp;#x7a;&#34;&gt;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#64;&amp;#101;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#46;&amp;#120;&amp;#x79;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;Erik-Shop-—-三版本对比&#34;&gt;&lt;a href=&#34;#Erik-Shop-—-三版本对比&#34; class=&#34;headerlink&#34; title=&#34;Erik Shop — 三版本对比&#34;&gt;&lt;/a&gt;Erik Shop — 三版本对比&lt;/h1&gt;&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x74;&amp;#x6f;&amp;#58;&amp;#101;&amp;#114;&amp;#105;&amp;#107;&amp;#x40;&amp;#101;&amp;#114;&amp;#x69;&amp;#107;&amp;#46;&amp;#x78;&amp;#x79;&amp;#x7a;&#34;&gt;&amp;#101;&amp;#114;&amp;#105;&amp;#107;&amp;#x40;&amp;#101;&amp;#114;&amp;#x69;&amp;#107;&amp;#46;&amp;#x78;&amp;#x79;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;版本概览&#34;&gt;&lt;a href=&#34;#版本概览&#34; class=&#34;headerlink&#34; title=&#34;版本概览&#34;&gt;&lt;/a&gt;版本概览&lt;/h2&gt;&lt;div class=&#34;table-container&#34;&gt;
 &lt;table&gt;
@@ -3680,7 +4071,7 @@
             <category>Ads Platform</category>
             <pubDate>Fri, 22 May 2026 15:51:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;Ads-Platform-—-多平台广告管理系统&#34;&gt;&lt;a href=&#34;#Ads-Platform-—-多平台广告管理系统&#34; class=&#34;headerlink&#34; title=&#34;Ads Platform — 多平台广告管理系统&#34;&gt;&lt;/a&gt;Ads Platform — 多平台广告管理系统&lt;/h1&gt;&lt;p&gt;统一管理广告投放与跨平台数据报表，支持告警监控、自动出价、多端访问&lt;/p&gt;
-&lt;h1 id=&#34;版本对比&#34;&gt;&lt;a href=&#34;#版本对比&#34; class=&#34;headerlink&#34; title=&#34;版本对比&#34;&gt;&lt;/a&gt;版本对比&lt;/h1&gt;&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x74;&amp;#x6f;&amp;#58;&amp;#101;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#x40;&amp;#x65;&amp;#114;&amp;#x69;&amp;#x6b;&amp;#46;&amp;#x78;&amp;#x79;&amp;#x7a;&#34;&gt;&amp;#101;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#x40;&amp;#x65;&amp;#114;&amp;#x69;&amp;#x6b;&amp;#46;&amp;#x78;&amp;#x79;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;版本对比&#34;&gt;&lt;a href=&#34;#版本对比&#34; class=&#34;headerlink&#34; title=&#34;版本对比&#34;&gt;&lt;/a&gt;版本对比&lt;/h1&gt;&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#97;&amp;#105;&amp;#x6c;&amp;#116;&amp;#111;&amp;#x3a;&amp;#x65;&amp;#114;&amp;#x69;&amp;#107;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#46;&amp;#120;&amp;#121;&amp;#x7a;&#34;&gt;&amp;#x65;&amp;#114;&amp;#x69;&amp;#107;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#46;&amp;#120;&amp;#121;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;table-container&#34;&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -7705,53 +8096,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;💡 更多项目源码和部署指南可访问对应 GitHub 仓库。若需替代商业 IM 服务（如融云、环信），OpenIM 的私有化方案能显著降低成本并提升数据安全性 。&lt;/p&gt;
 &lt;/blockquote&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://erik.xyz/2025/02/13/open-source-esktop-sharing-tool/</guid>
-            <title>开源桌面共享工具</title>
-            <link>https://erik.xyz/2025/02/13/open-source-esktop-sharing-tool/</link>
-            <category>工具</category>
-            <category>开源工具</category>
-            <category>桌面共享工具</category>
-            <pubDate>Thu, 13 Feb 2025 21:35:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;1-xrdp&#34;&gt;&lt;a href=&#34;#1-xrdp&#34; class=&#34;headerlink&#34; title=&#34;1. xrdp&#34;&gt;&lt;/a&gt;1. &lt;a href=&#34;https://github.com/neutrinolabs/xrdp&#34;&gt;xrdp&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：xrdp 是一个开源的远程桌面协议 (RDP) 服务器，允许 Linux 系统通过 Windows 的 RDP 客户端远程访问。它与 Microsoft RDP 协议兼容，能够让你从 Windows 客户端连接到 Linux 系统。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;安装&lt;/strong&gt;：通常可以通过 Linux 的包管理器安装，例如在 Ubuntu 上使用命令：&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install xrdp&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;2-VNC-Virtual-Network-Computing&#34;&gt;&lt;a href=&#34;#2-VNC-Virtual-Network-Computing&#34; class=&#34;headerlink&#34; title=&#34;2. VNC (Virtual Network Computing)&#34;&gt;&lt;/a&gt;2. VNC (Virtual Network Computing)&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：VNC 是一种图形桌面共享系统，支持跨平台远程访问。常见的开源 VNC 实现有：&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;TightVNC&lt;/strong&gt;：轻量级且性能优化。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;TigerVNC&lt;/strong&gt;：增强了性能和安全性。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;RealVNC&lt;/strong&gt;：提供商业和开源版本。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;安装&lt;/strong&gt;：可以通过包管理器（如 &lt;code&gt;apt&lt;/code&gt;）安装，或通过下载其源代码来安装。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;3-NoMachine&#34;&gt;&lt;a href=&#34;#3-NoMachine&#34; class=&#34;headerlink&#34; title=&#34;3. NoMachine&#34;&gt;&lt;/a&gt;3. &lt;a href=&#34;https://www.nomachine.com/&#34;&gt;NoMachine&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：NoMachine 是一款开源远程桌面解决方案，支持跨平台远程访问。它具有高性能和较低延迟，支持音视频流和文件传输等功能。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;安装&lt;/strong&gt;：可以直接从官网下载安装包，也可以通过官方的开源版本进行安装。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;4-Remmina&#34;&gt;&lt;a href=&#34;#4-Remmina&#34; class=&#34;headerlink&#34; title=&#34;4. Remmina&#34;&gt;&lt;/a&gt;4. &lt;a href=&#34;https://github.com/FreeRDP/Remmina&#34;&gt;Remmina&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：Remmina 是一个支持多种远程桌面协议的客户端，支持 RDP、VNC、SSH 等多种协议。它的设计非常适合 Linux 用户，但也支持其他操作系统。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;安装&lt;/strong&gt;：大多数 Linux 发行版都可以通过包管理器安装，例如：&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;sudo&lt;/span&gt; apt install remmina&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;5-FreeRDP&#34;&gt;&lt;a href=&#34;#5-FreeRDP&#34; class=&#34;headerlink&#34; title=&#34;5. FreeRDP&#34;&gt;&lt;/a&gt;5. &lt;a href=&#34;https://github.com/FreeRDP/FreeRDP&#34;&gt;FreeRDP&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：FreeRDP 是一个开源的远程桌面协议实现，可以用作 RDP 客户端和服务器。它支持 Windows 和 Linux 系统之间的远程访问，并且非常轻量级。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;安装&lt;/strong&gt;：可以通过包管理器进行安装，例如：&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;sudo&lt;/span&gt; apt install freerdp2-x11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;6-WayVNC&#34;&gt;&lt;a href=&#34;#6-WayVNC&#34; class=&#34;headerlink&#34; title=&#34;6. WayVNC&#34;&gt;&lt;/a&gt;6. WayVNC&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：WayVNC 是专门为 Wayland 兼容的 Linux 系统设计的 VNC 服务器，适用于那些使用 Wayland 显示服务器的系统。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;安装&lt;/strong&gt;：可以通过源码编译安装，或查找相关的 Linux 包。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;7-Guacamole&#34;&gt;&lt;a href=&#34;#7-Guacamole&#34; class=&#34;headerlink&#34; title=&#34;7. Guacamole&#34;&gt;&lt;/a&gt;7. &lt;a href=&#34;http://guacamole.apache.org/&#34;&gt;Guacamole&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;功能&lt;/strong&gt;：Guacamole 是一个基于 Web 的远程桌面客户端，支持 RDP、VNC 和 SSH。你可以通过浏览器访问并远程控制计算机，安装较为复杂，通常需要配置 Web 服务器。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;安装&lt;/strong&gt;：需要在服务器端安装 Guacamole，并配置相应的 Web 服务器。它支持各种操作系统。&lt;/li&gt;
-&lt;/ul&gt;
  ]]></description>
         </item>
     </channel>

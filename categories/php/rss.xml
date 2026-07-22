@@ -5,8 +5,8 @@
         <link>https://erik.xyz</link>
         <description>一只PHP开发的程序猿，偶尔做做运维、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 09 Jul 2025 01:37:00 +0800</pubDate>
-        <lastBuildDate>Wed, 09 Jul 2025 01:37:00 +0800</lastBuildDate>
+        <pubDate>Wed, 22 Jul 2026 16:24:00 +0800</pubDate>
+        <lastBuildDate>Wed, 22 Jul 2026 16:24:00 +0800</lastBuildDate>
         <category>日志</category>
         <category>工具</category>
         <category>php扩展</category>
@@ -26,8 +26,8 @@
         <category>php实例</category>
         <category>说说</category>
         <category>趣闻</category>
-        <category>转载</category>
         <category>nginx</category>
+        <category>转载</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
@@ -172,8 +172,8 @@
         <category>go中pdf生成</category>
         <category>go中限流</category>
         <category>go对接快递签名</category>
-        <category>go时间获取</category>
         <category>go类型转换</category>
+        <category>go时间获取</category>
         <category>微服务</category>
         <category>go-zero</category>
         <category>rpc</category>
@@ -181,6 +181,8 @@
         <category>go解密</category>
         <category>归</category>
         <category>吐槽</category>
+        <category>php大全</category>
+        <category>php资料</category>
         <category>hadoop</category>
         <category>hadoop2.8.0</category>
         <category>hadoop安装教程</category>
@@ -195,13 +197,14 @@
         <category>hbase</category>
         <category>http1.1</category>
         <category>http2.0</category>
-        <category>php大全</category>
-        <category>php资料</category>
         <category>会话</category>
         <category>会话原理</category>
         <category>hyperf</category>
         <category>杂录</category>
         <category>新冠肺炎</category>
+        <category>工业网络通信协议插件</category>
+        <category>industrial protocols</category>
+        <category>主流工业协议</category>
         <category>springboot</category>
         <category>springboot内网部署</category>
         <category>linux恢复</category>
@@ -242,12 +245,12 @@
         <category>蓝牙</category>
         <category>小程序蓝牙</category>
         <category>蓝牙连接</category>
-        <category>撮合算法</category>
-        <category>撮合</category>
-        <category>php撮合算法</category>
         <category>maven搭建库</category>
         <category>maven</category>
         <category>maven内网库</category>
+        <category>撮合算法</category>
+        <category>撮合</category>
+        <category>php撮合算法</category>
         <category>高级缓存配置</category>
         <category>mongodb</category>
         <category>mongodb权限</category>
@@ -440,13 +443,13 @@
         <category>自适应所有分辨率</category>
         <category>webman</category>
         <category>mysql设置超时，超时</category>
+        <category>markdown</category>
         <category>wget</category>
         <category>wget抓取</category>
         <category>网站抓取</category>
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
-        <category>markdown</category>
         <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
@@ -489,14 +492,402 @@
         <category>php中mysql函数</category>
         <category>互联网时代</category>
         <category>开源技术</category>
-        <category>web框架</category>
         <category>php抓取图片</category>
         <category>php批量抓取页面图片</category>
+        <category>web框架</category>
         <category>邮箱服务器</category>
         <category>正则表达式</category>
         <category>翻墙</category>
         <category>谷歌</category>
         <category>谷歌搜索</category>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2026/07/22/industrial-protocols/</guid>
+            <title>工业网络通信协议集 —— 微内核 + 协议 SDK 架构，覆盖 40 种工业协议，兼容 6 种 PHP 运行时环境</title>
+            <link>https://erik.xyz/2026/07/22/industrial-protocols/</link>
+            <category>php</category>
+            <category>工业网络通信协议插件</category>
+            <category>industrial protocols</category>
+            <category>主流工业协议</category>
+            <pubDate>Wed, 22 Jul 2026 16:24:00 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;PHP 工业网络通信协议集 —— 微内核 + 协议 SDK 架构，覆盖 40 种工业协议，兼容 6 种 PHP 运行时环境。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols/README.en.md&#34;&gt;English&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;目录&#34;&gt;&lt;a href=&#34;#目录&#34; class=&#34;headerlink&#34; title=&#34;目录&#34;&gt;&lt;/a&gt;目录&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#项目简介&#34;&gt;项目简介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#架构概览&#34;&gt;架构概览&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#所有协议包&#34;&gt;所有协议包&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#支持的框架&#34;&gt;支持的框架&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#快速开始&#34;&gt;快速开始&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#配置参考&#34;&gt;配置参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#文档&#34;&gt;文档&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#系统要求&#34;&gt;系统要求&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#license&#34;&gt;License&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;项目简介&#34;&gt;&lt;a href=&#34;#项目简介&#34; class=&#34;headerlink&#34; title=&#34;项目简介&#34;&gt;&lt;/a&gt;项目简介&lt;/h2&gt;&lt;p&gt;Industrial Protocols 是一个面向 PHP 生态的工业通信协议集，采用 &lt;strong&gt;微内核 + 协议 SDK&lt;/strong&gt; 架构。40 个协议包（15 个纯 PHP 实现 + 25 个 Bridge 桥接），每个包都是独立 GitHub 仓库和 Composer 包，通过 Packagist 按需安装。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心理念：&lt;/strong&gt; 内核只定义「协议是什么」，不包含任何具体协议实现。用户按需安装协议包，内核启动时通过 &lt;code&gt;composer.json&lt;/code&gt; 的 &lt;code&gt;extra&lt;/code&gt; 字段自动发现并注册。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;composer require erikwang2013/industrial-protocols-kernel erikwang2013/industrial-protocols-modbus&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;&#34;&gt;&lt;a href=&#34;#&#34; class=&#34;headerlink&#34; title=&#34;&#34;&gt;&lt;/a&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/h2&gt;&lt;h2 id=&#34;架构概览&#34;&gt;&lt;a href=&#34;#架构概览&#34; class=&#34;headerlink&#34; title=&#34;架构概览&#34;&gt;&lt;/a&gt;架构概览&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;┌─────────────────────────────────────────────────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│                  User Application                │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├─────────────────────────────────────────────────┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│  Framework Adapters: Laravel · Webman · Hyperf  │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│                     ThinkPHP · Yii2 · Plain PHP  │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├─────────────────────────────────────────────────┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│                  Micro-Kernel                    │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│  ProtocolRegistry · ConnectionManager(3策略)      │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│  ConfigRepository · GatewayEngine · CircuitBreaker│&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│  CoroutineAdapter · Bridge Layer · Vendor Profiles│&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│  Event System(PSR-14) · Log(PSR-3) · Retry(4种)  │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│  Metrics(Prometheus) · Alert · Security · Exception│&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├─────────────────────────────────────────────────┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│           Protocol SDK (6 Core Interfaces)        │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├─────────────────────────────────────────────────┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   40 Protocol Packages: 15 Pure PHP + 25 Bridge   │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;└─────────────────────────────────────────────────┘&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;所有协议包&#34;&gt;&lt;a href=&#34;#所有协议包&#34; class=&#34;headerlink&#34; title=&#34;所有协议包&#34;&gt;&lt;/a&gt;所有协议包&lt;/h2&gt;&lt;h3 id=&#34;工业以太网（5）&#34;&gt;&lt;a href=&#34;#工业以太网（5）&#34; class=&#34;headerlink&#34; title=&#34;工业以太网（5）&#34;&gt;&lt;/a&gt;工业以太网（5）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-modbus&#34;&gt;modbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-modbus&#34;&gt;erikwang2013/industrial-protocols-modbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Modbus TCP/RTU/ASCII，FC 01/03/04/06/10，端口 502&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-bacnet&#34;&gt;bacnet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-bacnet&#34;&gt;erikwang2013/industrial-protocols-bacnet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;BACnet/IP，Who-Is/I-Am 设备发现，ReadProperty，端口 47808&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-ethernetip&#34;&gt;ethernetip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-ethernetip&#34;&gt;erikwang2013/industrial-protocols-ethernetip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;EtherNet/IP，ENIP 会话管理 + CIP Read Tag，端口 44818&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-opcua&#34;&gt;opcua&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-opcua&#34;&gt;erikwang2013/industrial-protocols-opcua&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;OPC UA Binary 协议栈，Session + Read/Write/Browse，端口 4840&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-profinet&#34;&gt;profinet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-profinet&#34;&gt;erikwang2013/industrial-protocols-profinet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Profinet NRT，DCP 设备发现 + Record Data 读写，端口 34964&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;现场总线（12）&#34;&gt;&lt;a href=&#34;#现场总线（12）&#34; class=&#34;headerlink&#34; title=&#34;现场总线（12）&#34;&gt;&lt;/a&gt;现场总线（12）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-hart&#34;&gt;hart&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-hart&#34;&gt;erikwang2013/industrial-protocols-hart&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;HART 4-20mA FSK，HART 调制解调器，PV/回路电流&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-cclink&#34;&gt;cclink&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-cclink&#34;&gt;erikwang2013/industrial-protocols-cclink&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;CC-Link RS-485，主从轮询，CRC-16/XMODEM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-dnp3&#34;&gt;dnp3&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-dnp3&#34;&gt;erikwang2013/industrial-protocols-dnp3&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;DNP3 电力自动化，Class 0 轮询，端口 20000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-iec61850&#34;&gt;iec61850&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-iec61850&#34;&gt;erikwang2013/industrial-protocols-iec61850&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;IEC 61850 MMS 变电站自动化，端口 102&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-profibus&#34;&gt;profibus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-profibus&#34;&gt;erikwang2013/industrial-protocols-profibus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;PROFIBUS DP/PA/FMS，需 Siemens CP 5611/Anybus 网关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-canopen&#34;&gt;canopen&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-canopen&#34;&gt;erikwang2013/industrial-protocols-canopen&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;CANopen，需 PCAN-USB/SocketCAN 接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-devicenet&#34;&gt;devicenet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-devicenet&#34;&gt;erikwang2013/industrial-protocols-devicenet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;DeviceNet，需 Anybus DeviceNet Scanner&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-foundationfieldbus&#34;&gt;foundationfieldbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-foundationfieldbus&#34;&gt;erikwang2013/industrial-protocols-foundationfieldbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Foundation Fieldbus H1/HSE，需 NI USB-8486/Softing FFusb&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-asinterface&#34;&gt;asinterface&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-asinterface&#34;&gt;erikwang2013/industrial-protocols-asinterface&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;AS-Interface，需 Bihl+Wiedemann/Pepperl+Fuchs 网关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-iolink&#34;&gt;iolink&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-iolink&#34;&gt;erikwang2013/industrial-protocols-iolink&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;IO-Link，需 ifm/Balluff IO-Link Master&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-cclinkie&#34;&gt;cclinkie&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-cclinkie&#34;&gt;erikwang2013/industrial-protocols-cclinkie&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;CC-Link IE Field 工业以太网版，需网关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;IoT-消息（2）&#34;&gt;&lt;a href=&#34;#IoT-消息（2）&#34; class=&#34;headerlink&#34; title=&#34;IoT/消息（2）&#34;&gt;&lt;/a&gt;IoT/消息（2）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-mqtt&#34;&gt;mqtt&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-mqtt&#34;&gt;erikwang2013/industrial-protocols-mqtt&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;MQTT 3.1.1，发布/订阅 + 通配符，端口 1883&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-hartip&#34;&gt;hartip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-hartip&#34;&gt;erikwang2013/industrial-protocols-hartip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;HART-IP，HART over TCP/UDP，端口 5094&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;汽车总线（5）&#34;&gt;&lt;a href=&#34;#汽车总线（5）&#34; class=&#34;headerlink&#34; title=&#34;汽车总线（5）&#34;&gt;&lt;/a&gt;汽车总线（5）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-lin&#34;&gt;lin&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-lin&#34;&gt;erikwang2013/industrial-protocols-lin&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;LIN 车身总线，19200 bps UART，主从模式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-kline&#34;&gt;kline&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-kline&#34;&gt;erikwang2013/industrial-protocols-kline&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;K-Line OBD-II，ISO 9141/14230，5-baud 初始化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-flexray&#34;&gt;flexray&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-flexray&#34;&gt;erikwang2013/industrial-protocols-flexray&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;FlexRay 汽车高速总线，需 FlexRay 控制器&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-saej1850&#34;&gt;saej1850&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-saej1850&#34;&gt;erikwang2013/industrial-protocols-saej1850&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;SAE J1850 OBD-II 早期标准，需 J1850 接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-most&#34;&gt;most&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-most&#34;&gt;erikwang2013/industrial-protocols-most&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;MOST 光纤多媒体，需 MOST 接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;楼宇-照明（2）&#34;&gt;&lt;a href=&#34;#楼宇-照明（2）&#34; class=&#34;headerlink&#34; title=&#34;楼宇/照明（2）&#34;&gt;&lt;/a&gt;楼宇/照明（2）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-lonworks&#34;&gt;lonworks&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-lonworks&#34;&gt;erikwang2013/industrial-protocols-lonworks&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;LonWorks 楼宇自动化，需 Neuron 芯片/接口卡&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-dali&#34;&gt;dali&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-dali&#34;&gt;erikwang2013/industrial-protocols-dali&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;DALI 数字照明，需 DALI 网关&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;硬件桥接（11）&#34;&gt;&lt;a href=&#34;#硬件桥接（11）&#34; class=&#34;headerlink&#34; title=&#34;硬件桥接（11）&#34;&gt;&lt;/a&gt;硬件桥接（11）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;所需硬件&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-ethercat&#34;&gt;ethercat&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-ethercat&#34;&gt;erikwang2013/industrial-protocols-ethercat&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Beckhoff TwinCAT 3 / SOEM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-powerlink&#34;&gt;powerlink&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-powerlink&#34;&gt;erikwang2013/industrial-protocols-powerlink&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;openPOWERLINK / B&amp;amp;R Automation Studio&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-sercos&#34;&gt;sercos&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-sercos&#34;&gt;erikwang2013/industrial-protocols-sercos&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;SERCOS III FPGA IP / Hilscher netX&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-sercos1&#34;&gt;sercos1&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-sercos1&#34;&gt;erikwang2013/industrial-protocols-sercos1&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;SERCOS I/II 光纤接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-controlnet&#34;&gt;controlnet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-controlnet&#34;&gt;erikwang2013/industrial-protocols-controlnet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Allen-Bradley 1784-PCIC/S&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-interbus&#34;&gt;interbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-interbus&#34;&gt;erikwang2013/industrial-protocols-interbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Phoenix Contact IBS&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-worldfip&#34;&gt;worldfip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-worldfip&#34;&gt;erikwang2013/industrial-protocols-worldfip&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;WorldFIP/Fipio 总线接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-lightbus&#34;&gt;lightbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-lightbus&#34;&gt;erikwang2013/industrial-protocols-lightbus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Beckhoff Lightbus 光纤接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-modbusplus&#34;&gt;modbusplus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-modbusplus&#34;&gt;erikwang2013/industrial-protocols-modbusplus&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Schneider Modbus Plus SA85/BM85&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-isa100&#34;&gt;isa100&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-isa100&#34;&gt;erikwang2013/industrial-protocols-isa100&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Yokogawa YFGW410 / Honeywell OneWireless&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-wirelesshart&#34;&gt;wirelesshart&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-wirelesshart&#34;&gt;erikwang2013/industrial-protocols-wirelesshart&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Emerson 1410/1420 Smart Wireless Gateway&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;系统总线（3）&#34;&gt;&lt;a href=&#34;#系统总线（3）&#34; class=&#34;headerlink&#34; title=&#34;系统总线（3）&#34;&gt;&lt;/a&gt;系统总线（3）&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;包&lt;/th&gt;
+&lt;th&gt;仓库&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-pci&#34;&gt;pci&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-pci&#34;&gt;erikwang2013/industrial-protocols-pci&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;PCI/PCIe 系统总线，需内核驱动/库桥接&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-vme&#34;&gt;vme&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-vme&#34;&gt;erikwang2013/industrial-protocols-vme&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;VME/VPX 工控背板，需 VME 桥接模块&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols-cpci&#34;&gt;cpci&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://packagist.org/packages/erikwang2013/industrial-protocols-cpci&#34;&gt;erikwang2013/industrial-protocols-cpci&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;CompactPCI 机架式 PCI，需 CPCI 接口&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;支持的框架&#34;&gt;&lt;a href=&#34;#支持的框架&#34; class=&#34;headerlink&#34; title=&#34;支持的框架&#34;&gt;&lt;/a&gt;支持的框架&lt;/h2&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;框架&lt;/th&gt;
+&lt;th&gt;检测方式&lt;/th&gt;
+&lt;th&gt;协程&lt;/th&gt;
+&lt;th&gt;集成方式&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Plain PHP&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;默认回退&lt;/td&gt;
+&lt;td&gt;Fiber&lt;/td&gt;
+&lt;td&gt;Kernel 实例化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Laravel&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Illuminate\Foundation\Application&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Octane Swoole&lt;/td&gt;
+&lt;td&gt;ServiceProvider + Facade + artisan&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Webman&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Workerman\Worker&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Swoole/Fiber&lt;/td&gt;
+&lt;td&gt;config/plugin 自动发现&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Hyperf&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Hyperf\Framework\ApplicationFactory&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Swoole 原生&lt;/td&gt;
+&lt;td&gt;ConfigProvider + DI&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;ThinkPHP&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;think\App&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;think-swoole&lt;/td&gt;
+&lt;td&gt;services.php + 单例&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Yii2&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;yii\base\Application&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;swoole-yii2&lt;/td&gt;
+&lt;td&gt;Bootstrap + 组件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;p&gt;检测优先级：&lt;code&gt;Laravel → Webman → Hyperf → ThinkPHP → Yii2 → Plain PHP&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;快速开始&#34;&gt;&lt;a href=&#34;#快速开始&#34; class=&#34;headerlink&#34; title=&#34;快速开始&#34;&gt;&lt;/a&gt;快速开始&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;composer require erikwang2013/industrial-protocols-kernel erikwang2013/industrial-protocols-modbus&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight php&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;require&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;vendor/autoload.php&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;use&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Erikwang2013&lt;/span&gt;\&lt;span class=&#34;title&#34;&gt;IndustrialProtocols&lt;/span&gt;\&lt;span class=&#34;title&#34;&gt;Kernel&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;use&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Erikwang2013&lt;/span&gt;\&lt;span class=&#34;title&#34;&gt;IndustrialProtocols&lt;/span&gt;\&lt;span class=&#34;title&#34;&gt;Modbus&lt;/span&gt;\&lt;span class=&#34;title&#34;&gt;ModbusProtocol&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$kernel&lt;/span&gt; = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Kernel&lt;/span&gt;([&lt;span class=&#34;string&#34;&gt;&amp;#x27;config_path&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;keyword&#34;&gt;__DIR__&lt;/span&gt; . &lt;span class=&#34;string&#34;&gt;&amp;#x27;/industrial-protocols.php&amp;#x27;&lt;/span&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$kernel&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;getProtocolRegistry&lt;/span&gt;()-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;register&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;ModbusProtocol&lt;/span&gt;());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$kernel&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;boot&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$conn&lt;/span&gt; = &lt;span class=&#34;variable&#34;&gt;$kernel&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;getConnectionManager&lt;/span&gt;()-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;connect&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;plc-001&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$result&lt;/span&gt; = &lt;span class=&#34;variable&#34;&gt;$conn&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;read&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;40001&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$result&lt;/span&gt;[&lt;span class=&#34;string&#34;&gt;&amp;#x27;40001&amp;#x27;&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$conn&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;write&lt;/span&gt;([&lt;span class=&#34;string&#34;&gt;&amp;#x27;40001&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;number&#34;&gt;25&lt;/span&gt;]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$health&lt;/span&gt; = &lt;span class=&#34;variable&#34;&gt;$kernel&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;getConnectionManager&lt;/span&gt;()-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;health&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;#x27;plc-001&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;subst&#34;&gt;&amp;#123;$health-&amp;gt;state-&amp;gt;value&amp;#125;&lt;/span&gt;, &lt;span class=&#34;subst&#34;&gt;&amp;#123;$health-&amp;gt;latencyMs&amp;#125;&lt;/span&gt;ms&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$kernel&lt;/span&gt;-&amp;gt;&lt;span class=&#34;title function_ invoke__&#34;&gt;shutdown&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;配置参考&#34;&gt;&lt;a href=&#34;#配置参考&#34; class=&#34;headerlink&#34; title=&#34;配置参考&#34;&gt;&lt;/a&gt;配置参考&lt;/h2&gt;&lt;figure class=&#34;highlight php&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;?php&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;string&#34;&gt;&amp;#x27;devices&amp;#x27;&lt;/span&gt; =&amp;gt; [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;string&#34;&gt;&amp;#x27;plc-001&amp;#x27;&lt;/span&gt; =&amp;gt; [&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;string&#34;&gt;&amp;#x27;protocol&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;modbus&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;variant&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;tcp&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;string&#34;&gt;&amp;#x27;host&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;192.168.1.10&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;port&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;number&#34;&gt;502&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;string&#34;&gt;&amp;#x27;unit_id&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;#x27;timeout&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;number&#34;&gt;3000&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ],&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ],&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;string&#34;&gt;&amp;#x27;gateway&amp;#x27;&lt;/span&gt; =&amp;gt; [&lt;span class=&#34;string&#34;&gt;&amp;#x27;rules&amp;#x27;&lt;/span&gt; =&amp;gt; []],&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;string&#34;&gt;&amp;#x27;health_check_interval&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;number&#34;&gt;30&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;string&#34;&gt;&amp;#x27;default_retry_max&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;string&#34;&gt;&amp;#x27;default_retry_backoff&amp;#x27;&lt;/span&gt; =&amp;gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;exponential&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;];&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;文档&#34;&gt;&lt;a href=&#34;#文档&#34; class=&#34;headerlink&#34; title=&#34;文档&#34;&gt;&lt;/a&gt;文档&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols/tree/main/docs/protocols.md&#34;&gt;协议 API 参考&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols/tree/main/docs/framework-integration.md&#34;&gt;框架集成指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols/tree/main/docs/gateway.md&#34;&gt;网关引擎指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols/tree/main/docs/security.md&#34;&gt;安全指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/erikwang2013/industrial-protocols/tree/main/docs/vendors.md&#34;&gt;厂商适配参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;系统要求&#34;&gt;&lt;a href=&#34;#系统要求&#34; class=&#34;headerlink&#34; title=&#34;系统要求&#34;&gt;&lt;/a&gt;系统要求&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;PHP &amp;gt;= 8.1&lt;/li&gt;
+&lt;li&gt;Composer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;License&#34;&gt;&lt;a href=&#34;#License&#34; class=&#34;headerlink&#34; title=&#34;License&#34;&gt;&lt;/a&gt;License&lt;/h2&gt;&lt;p&gt;MIT — Copyright (c) 2026 erik &lt;a href=&#34;&amp;#x6d;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#116;&amp;#111;&amp;#x3a;&amp;#x65;&amp;#114;&amp;#x69;&amp;#107;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#x2e;&amp;#x78;&amp;#121;&amp;#122;&#34;&gt;&amp;#x65;&amp;#114;&amp;#x69;&amp;#107;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#x2e;&amp;#x78;&amp;#121;&amp;#122;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://erik.xyz/2025/07/09/php-architecture03/</guid>
             <title>php架构方面的设计与思考（三）</title>
@@ -3124,30 +3515,6 @@ $img_data = new RetileImg(
 );
 $img_data-&amp;gt;download();
 &lt;/code&gt;&lt;/pre&gt; ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://erik.xyz/2019/07/30/php-pei-zhi-zookeeper3-5-5-kuo-zhan/</guid>
-            <title>php配置zookeeper3.5.5扩展</title>
-            <link>https://erik.xyz/2019/07/30/php-pei-zhi-zookeeper3-5-5-kuo-zhan/</link>
-            <category>php</category>
-            <category>php-zookeeper</category>
-            <category>zookeeper3.5.5</category>
-            <category>php-zookeeper扩展</category>
-            <pubDate>Tue, 30 Jul 2019 11:16:00 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;这两天想用用zookeeper，顺便做个提升。查了下官方给出的3.5.5和3.4.14。而php手册也有介绍配置方法，不过扩展好久没更新，就是试试用了。&lt;/p&gt;
-&lt;p&gt;下载php-zookeeper扩展，放到本地编译、安装。在执行make命令的时候总是报错缺少lzookeeper_mt.so库。&lt;br&gt;官方搜索教程都是老版本的，说是在文件根目录src/c下生成库。可是我用的是3.5.5版本的，目录下根本没有。&lt;br&gt;根据官方文档可知，新版本分为bin和源码版，也就是说bin是编译好的，下载后配置一下cfg文件就可以用了。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;我下载的是bin版，已经编译好的，那就下载源码（&lt;a href=&#34;https://www-us.apache.org/dist/zookeeper/,&#34;&gt;zookeeper下载&lt;/a&gt;）版吧。在3.5.5中需要使用c端就必须编译安装库，在项目根目录下zookeeper-client中，怎么编译呢很懵逼。看官方文档（&lt;a href=&#34;https://erik.xyz/dev_books/zookeeper3.5.5/zookeeperProgrammers.html#C+Binding,,&#34;&gt;zookeeper3.5.5手册&lt;/a&gt;）是这样说的&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/201907/2019-07-30_18-10.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;感觉很复杂，其实梳理一下就明白了。不过我这被坑好几天。&lt;br&gt;先在zookeeper根目录下执行 ant compile_jute 命令，在zookeeper-client/zookeeper-client-c下生成目录generated&lt;/p&gt;
-&lt;p&gt;然后在zookeeper-client/zookeeper-client-c执行命令autoreconf -if 如果此时报错，一般就是autoconf，automake和libtool这个三个软件没安装，安装好后重新执行autoreconf -if&lt;/p&gt;
-&lt;p&gt;最后执行 ./configure –enable-debug 如果是开发或者测试环境就加–enable-debug&lt;/p&gt;
-&lt;p&gt;接下make一下，一般来说到这里会报错&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;rc/zookeeper.c: In function ‘print_completion_queue’:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;src/zookeeper.c:2542:5: error: null argument where non-null required (argument 1) [-Werror=nonnull]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     fprintf(LOGSTREAM,&amp;quot;Completion queue: &amp;quot;,&amp;quot;empty\n&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     ^~~~~~~&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;src/zookeeper.c:2542:23: error: too many arguments for format [-Werror=format-extra-args]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     fprintf(LOGSTREAM,&amp;quot;Completion queue: &amp;quot;,&amp;quot;empty\n&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                       ^~~~~~~~~~~~~~~~~~~~&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;src/zookeeper.c:2550:9: error: null argument where non-null required (argument 1) [-Werror=nonnull]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         fprintf(LOGSTREAM,&amp;quot;%d,&amp;quot;,cptr-&amp;gt;xid);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         ^~~~~~~&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;src/zookeeper.c:2553:5: error: null argument where non-null required (argument 1) [-Werror=nonnull]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     fprintf(LOGSTREAM,&amp;quot;end\n&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     ^~~~~~~&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;src/zookeeper.c: In function ‘format_endpoint_info’:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;src/zookeeper.c:4410:21: error: ‘%d’ directive writing between 1 and 5 bytes into a region of size between 0 and 127 [-Werror=format-overflow=]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     sprintf(buf,&amp;quot;%s:%d&amp;quot;,addrstr,ntohs(port));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                     ^~&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;src/zookeeper.c:4410:17: note: directive argument in the range [0, 65535]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     sprintf(buf,&amp;quot;%s:%d&amp;quot;,addrstr,ntohs(port));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                 ^~~~~~~&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;src/zookeeper.c:4410:5: note: ‘sprintf’ output between 3 and 134 bytes into a destination of size 128&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     sprintf(buf,&amp;quot;%s:%d&amp;quot;,addrstr,ntohs(port));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cc1: all warnings being treated as errors&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/201907/2019-07-30_14-21.jpg&#34; alt=&#34;&#34;&gt;&lt;br&gt;这里卡了好久,通过网上查找才知道编译的时候gcc版本不同。我本地是gcc8.8，立马换系统centos7&lt;/p&gt;
-&lt;p&gt;在docker中安装centos7复制zookeeper源码、配置jdk、安装make、vim等软件后，以上步骤重新走一次就生成了，然后把生成的库（lib文件、include文件）复制一份放到本地zookeeper目录&lt;/p&gt;
-&lt;p&gt;编译php-zookeeper扩展，执行。、configure的时候指定一下库目录就可以啦。&lt;br&gt;结束了。&lt;/p&gt;
-&lt;p&gt;上一份跟官方组合的源码，带编译库&lt;a href=&#34;https://github.com/erikwang2013/zookeeper3.5.5&#34;&gt;zookeeper3.5.5&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/201907/2019-07-30_18-29.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
- ]]></description>
         </item>
     </channel>
 </rss>

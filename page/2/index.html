@@ -110,7 +110,7 @@ var _hmt = _hmt || [];
 								<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">
 									文章
 										
-											(284)
+											(285)
 												
 								</a>
 								
@@ -362,6 +362,111 @@ var _hmt = _hmt || [];
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-virtualbox-hyper-v" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2025/07/22/virtualbox-hyper-v/">virtualbox与hyper-v的冲突</a>
+    </h1>
+  
+
+          
+            <a href="/2025/07/22/virtualbox-hyper-v/" class="archive-article-date">
+  	<time datetime="2025-07-22T09:10:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-07-22</time>
+</a>
+                <!-- 需要添加的位置 -->
+            <!-- 开始添加字数统计-->
+            
+            <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>因为最近在学鸿蒙开发，开发电脑一直用的deepin系统，DevEcoStudio不支持linux系统，用了win兼容引擎还是不行。没办法，只好装了virtualbox来运行win10。</p>
+<p>在virtualbox中安装好win10也装了，DevEcoStudio运行后，虚拟机一直提示hyper-v未开启。但是，明明开启了，怎么办？难打VT-X和hyper-v有冲突？查查资料，找到了解决办法。<br>
+        
+        <!--
+          <a class="article-more-a" href="/2025/07/22/virtualbox-hyper-v/#more">more >></a>
+          -->
+        
+      
+
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">virtualbox</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">hyper-v</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">鸿蒙开发</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-category icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/deepin//" class="article-tag-list-link color2">deepin</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2025/07/22/virtualbox-hyper-v/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-plc-concepts-application-scenarios" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -1338,120 +1443,6 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-open-source-esktop-sharing-tool" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2025/02/13/open-source-esktop-sharing-tool/">开源桌面共享工具</a>
-    </h1>
-  
-
-          
-            <a href="/2025/02/13/open-source-esktop-sharing-tool/" class="archive-article-date">
-  	<time datetime="2025-02-13T13:35:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-02-13</time>
-</a>
-                <!-- 需要添加的位置 -->
-            <!-- 开始添加字数统计-->
-            
-            <!-- 添加完成 -->
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-xrdp"><a href="#1-xrdp" class="headerlink" title="1. xrdp"></a>1. <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://github.com/neutrinolabs/xrdp" target="_blank">xrdp</a></h2><ul>
-<li><strong>功能</strong>：xrdp 是一个开源的远程桌面协议 (RDP) 服务器，允许 Linux 系统通过 Windows 的 RDP 客户端远程访问。它与 Microsoft RDP 协议兼容，能够让你从 Windows 客户端连接到 Linux 系统。</li>
-<li><strong>安装</strong>：通常可以通过 Linux 的包管理器安装，例如在 Ubuntu 上使用命令：
-        
-        <!--
-          <a class="article-more-a" href="/2025/02/13/open-source-esktop-sharing-tool/#more">more >></a>
-          -->
-        
-      
-
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工具</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">开源工具</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">桌面共享工具</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-category icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/linux//" class="article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/linux/win//" class="article-tag-list-link color4">win</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/linux/win/工具//" class="article-tag-list-link color3">工具</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2025/02/13/open-source-esktop-sharing-tool/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/">&lt; 上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/29/">29</a><a class="extend next" rel="next" href="/page/3/">下一页 &gt;</a>
@@ -1719,11 +1710,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">转载</a>
+                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">nginx</a>
+                <a href="javascript:void(0)" class="js-tag color3">转载</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2303,11 +2294,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">go时间获取</a>
+                <a href="javascript:void(0)" class="js-tag color2">go类型转换</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">go类型转换</a>
+                <a href="javascript:void(0)" class="js-tag color2">go时间获取</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2336,6 +2327,14 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">吐槽</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2395,14 +2394,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">会话</a>
               </li>
              
@@ -2420,6 +2411,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">新冠肺炎</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">工业网络通信协议插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">industrial protocols</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">主流工业协议</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2583,18 +2586,6 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">撮合算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">撮合</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">php撮合算法</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">maven搭建库</a>
               </li>
              
@@ -2604,6 +2595,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">maven内网库</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">撮合算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">撮合</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">php撮合算法</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3375,6 +3378,10 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">wget</a>
               </li>
              
@@ -3396,10 +3403,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">wordpress标签</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3571,15 +3574,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">php抓取图片</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">php批量抓取页面图片</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">web框架</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -3970,6 +3973,14 @@ MathJax.Hub.Queue(function() {
   <use xlink:href="#icon-github"></use>
 </svg>
               snowflake-php</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="/2026/07/22/industrial-protocols/" target="_blank" class="search-title">
+<svg class="icon" aria-hidden="true">
+  <use xlink:href="#icon-github"></use>
+</svg>
+              industrial-protocols</a>
             </li>
           
         </ul>
