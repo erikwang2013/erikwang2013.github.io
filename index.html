@@ -844,7 +844,7 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="全球游戏聚合平台-Global-Game-Platform"><a href="#全球游戏聚合平台-Global-Game-Platform" class="headerlink" title="全球游戏聚合平台 (Global Game Platform)"></a>全球游戏聚合平台 (Global Game Platform)</h1><blockquote>
-<p>Copyright (c) 2026 erik <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#101;&#x72;&#105;&#x6b;&#x40;&#101;&#x72;&#105;&#107;&#46;&#x78;&#121;&#122;">&#101;&#x72;&#105;&#x6b;&#x40;&#101;&#x72;&#105;&#107;&#46;&#x78;&#121;&#122;</a> — <a href="https://erik.xyz">https://erik.xyz</a></p>
+<p>Copyright (c) 2026 erik <a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#x65;&#x72;&#x69;&#107;&#x40;&#101;&#114;&#105;&#107;&#x2e;&#120;&#x79;&#x7a;">&#x65;&#x72;&#x69;&#107;&#x40;&#101;&#114;&#105;&#107;&#x2e;&#120;&#x79;&#x7a;</a> — <a href="https://erik.xyz">https://erik.xyz</a></p>
 </blockquote>
 <p>全球通用、国际化的游戏聚合平台。用户注册后在平台充值兑换游戏币，用游戏币玩游戏、赚取游戏币，游戏币可转回钱包提现。后台提供完整的游戏管理、提现审核、用户管理和支付管理功能。支持多语言切换（英文/中文）。</p>
 <h2 id="版本策略"><a href="#版本策略" class="headerlink" title="版本策略"></a>版本策略</h2><div class="table-container">
@@ -979,7 +979,7 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="物业管理系统-Property-Management-Platform"><a href="#物业管理系统-Property-Management-Platform" class="headerlink" title="物业管理系统 (Property Management Platform)"></a>物业管理系统 (Property Management Platform)</h1><blockquote>
-<p>Copyright (c) 2026 erik <a href="&#109;&#x61;&#x69;&#x6c;&#116;&#111;&#x3a;&#101;&#114;&#105;&#107;&#64;&#101;&#114;&#105;&#107;&#x2e;&#x78;&#121;&#x7a;">&#101;&#114;&#105;&#107;&#64;&#101;&#114;&#105;&#107;&#x2e;&#x78;&#121;&#x7a;</a> — <a href="https://erik.xyz">https://erik.xyz</a></p>
+<p>Copyright (c) 2026 erik <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#58;&#x65;&#x72;&#105;&#107;&#64;&#x65;&#114;&#x69;&#107;&#46;&#120;&#x79;&#122;">&#x65;&#x72;&#105;&#107;&#64;&#x65;&#114;&#x69;&#107;&#46;&#120;&#x79;&#122;</a> — <a href="https://erik.xyz">https://erik.xyz</a></p>
 </blockquote>
 <p>全栈物业管理系统，覆盖小区管理、费用收缴、报修维护、停车门禁、安保保洁等15个业务模块。管理员端（admin）和业主端（service）分离部署，前端覆盖 Flutter Web（PC 管理后台风格）与 HarmonyOS 移动端。</p>
 <h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">property-management-platform/</span><br><span class="line">├── admin/                         # 管理员端 webman v2 项目</span><br><span class="line">│   ├── app/</span><br><span class="line">│   │   ├── admin/controller/      # 管理端控制器</span><br><span class="line">│   │   ├── api/v1/controller/     # 公开 API 控制器</span><br><span class="line">│   │   ├── common/                # 公共工具类</span><br><span class="line">│   │   ├── middleware/            # 中间件（认证/鉴权/限流/安全）</span><br><span class="line">│   │   ├── model/                 # 数据模型（Eloquent ORM）</span><br><span class="line">│   │   ├── queue/                 # 队列任务</span><br><span class="line">│   │   └── process/               # 进程管理</span><br><span class="line">│   ├── apps/</span><br><span class="line">│   │   ├── flutter/               # 管理后台 Flutter Web（PC 风格）</span><br><span class="line">│   │   └── harmonyos/             # 管理后台 HarmonyOS App</span><br><span class="line">│   ├── config/                    # 配置文件（含中文注释）</span><br><span class="line">│   ├── database/</span><br><span class="line">│   │   ├── migrations/            # SQL 迁移文件</span><br><span class="line">│   │   └── backup/                # 数据库备份脚本</span><br><span class="line">│   ├── resource/</span><br><span class="line">│   │   └── translations/          # 国际化语言文件（zh_CN / en）</span><br><span class="line">│   ├── docs/                      # 管理端文档</span><br><span class="line">│   ├── tests/                     # 单元测试</span><br><span class="line">│   └── public/                    # Web 入口</span><br><span class="line">├── service/                       # 业主业务端 webman v2 项目</span><br><span class="line">│   ├── app/</span><br><span class="line">│   │   ├── api/v1/controller/     # 业主端 API 控制器</span><br><span class="line">│   │   ├── common/                # 公共工具类</span><br><span class="line">│   │   ├── middleware/            # 中间件</span><br><span class="line">│   │   ├── model/                 # 数据模型</span><br><span class="line">│   │   └── process/               # 进程管理</span><br><span class="line">│   ├── config/                    # 配置文件</span><br><span class="line">│   ├── resource/</span><br><span class="line">│   │   └── translations/          # 国际化语言文件</span><br><span class="line">│   └── database/migrations/       # SQL 迁移文件</span><br><span class="line">├── apps/</span><br><span class="line">│   ├── flutter/                   # 业主端 Flutter Web（PC 风格）</span><br><span class="line">│   └── harmonyos/                 # 业主端 HarmonyOS App</span><br><span class="line">└── docs/                          # 项目文档</span><br><span class="line">    ├── ARCHITECTURE.md</span><br><span class="line">    ├── ARCHITECTURE_DESIGN.md</span><br><span class="line">    ├── API.md</span><br><span class="line">    ├── FEATURES.md</span><br><span class="line">    └── FEATURE_DESIGN.md</span><br></pre></td></tr></table></figure>
@@ -1330,7 +1330,7 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Erik-Shop-—-跨境电商平台"><a href="#Erik-Shop-—-跨境电商平台" class="headerlink" title="Erik Shop — 跨境电商平台"></a>Erik Shop — 跨境电商平台</h1><p>基于 webman 全家桶构建的全栈跨境电商平台，覆盖 B2C/B2B 场景和第三方卖家入驻。</p>
-<h1 id="Erik-Shop-—-三版本对比"><a href="#Erik-Shop-—-三版本对比" class="headerlink" title="Erik Shop — 三版本对比"></a>Erik Shop — 三版本对比</h1><p>Copyright (c) 2026 erik <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#x3a;&#101;&#x72;&#x69;&#x6b;&#x40;&#x65;&#114;&#105;&#x6b;&#46;&#120;&#121;&#x7a;">&#101;&#x72;&#x69;&#x6b;&#x40;&#x65;&#114;&#105;&#x6b;&#46;&#120;&#121;&#x7a;</a> — <a href="https://erik.xyz">https://erik.xyz</a></p>
+<h1 id="Erik-Shop-—-三版本对比"><a href="#Erik-Shop-—-三版本对比" class="headerlink" title="Erik Shop — 三版本对比"></a>Erik Shop — 三版本对比</h1><p>Copyright (c) 2026 erik <a href="&#x6d;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#x65;&#114;&#x69;&#107;&#64;&#101;&#x72;&#x69;&#107;&#x2e;&#120;&#121;&#x7a;">&#x65;&#114;&#x69;&#107;&#64;&#101;&#x72;&#x69;&#107;&#x2e;&#120;&#121;&#x7a;</a> — <a href="https://erik.xyz">https://erik.xyz</a></p>
 <hr>
 <h2 id="版本概览"><a href="#版本概览" class="headerlink" title="版本概览"></a>版本概览</h2><div class="table-container">
 <table>
@@ -1476,7 +1476,7 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Ads-Platform-—-多平台广告管理系统"><a href="#Ads-Platform-—-多平台广告管理系统" class="headerlink" title="Ads Platform — 多平台广告管理系统"></a>Ads Platform — 多平台广告管理系统</h1><p>统一管理广告投放与跨平台数据报表，支持告警监控、自动出价、多端访问</p>
-<h1 id="版本对比"><a href="#版本对比" class="headerlink" title="版本对比"></a>版本对比</h1><p>Copyright (c) 2026 erik <a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#58;&#x65;&#x72;&#x69;&#107;&#x40;&#101;&#114;&#105;&#107;&#x2e;&#120;&#121;&#122;">&#x65;&#x72;&#x69;&#107;&#x40;&#101;&#114;&#105;&#107;&#x2e;&#120;&#121;&#122;</a> — <a href="https://erik.xyz">https://erik.xyz</a></p>
+<h1 id="版本对比"><a href="#版本对比" class="headerlink" title="版本对比"></a>版本对比</h1><p>Copyright (c) 2026 erik <a href="&#109;&#97;&#x69;&#108;&#116;&#111;&#58;&#x65;&#x72;&#x69;&#107;&#x40;&#x65;&#x72;&#105;&#x6b;&#x2e;&#x78;&#x79;&#122;">&#x65;&#x72;&#x69;&#107;&#x40;&#x65;&#x72;&#105;&#x6b;&#x2e;&#x78;&#x79;&#122;</a> — <a href="https://erik.xyz">https://erik.xyz</a></p>
 <div class="table-container">
 <table>
 <thead>
@@ -1900,14 +1900,6 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日志</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">工具</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">php扩展</a>
               </li>
              
@@ -1924,11 +1916,23 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日志</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">jquery</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">jquery插件</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1949,10 +1953,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">压缩</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2612,6 +2612,14 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">hadoop</a>
               </li>
              
@@ -2633,14 +2641,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">hadoop部署</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php大全</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">php资料</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -2960,11 +2960,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql监控</a>
+                <a href="javascript:void(0)" class="js-tag color3">mysql性能</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">mysql性能</a>
+                <a href="javascript:void(0)" class="js-tag color3">mysql监控</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -4138,7 +4138,7 @@ MathJax.Hub.Queue(function() {
             </li>
           
             <li class="search-li">
-              <a href="https://github.com/erikwang2013/ads-shop" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title">
+              <a href="https://github.com/erikwang2013/ads-php" target="_blank" rel="external nofollow noopener noreferrer" target="_blank" class="search-title">
 <svg class="icon" aria-hidden="true">
   <use xlink:href="#icon-github"></use>
 </svg>

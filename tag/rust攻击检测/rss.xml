@@ -7,20 +7,20 @@
         <language>zh-CN</language>
         <pubDate>Wed, 29 Jul 2026 20:38:00 +0800</pubDate>
         <lastBuildDate>Wed, 29 Jul 2026 20:38:00 +0800</lastBuildDate>
-        <category>日志</category>
-        <category>工具</category>
         <category>php扩展</category>
         <category>php技巧</category>
         <category>php类库</category>
         <category>php资源</category>
+        <category>日志</category>
+        <category>工具</category>
         <category>jquery</category>
         <category>jquery插件</category>
+        <category>js</category>
         <category>css</category>
         <category>php</category>
         <category>web</category>
         <category>代码</category>
         <category>压缩</category>
-        <category>js</category>
         <category>php服务器</category>
         <category>随笔</category>
         <category>php实例</category>
@@ -185,14 +185,14 @@
         <category>go解密</category>
         <category>归</category>
         <category>吐槽</category>
+        <category>php大全</category>
+        <category>php资料</category>
         <category>hadoop</category>
         <category>hadoop2.8.0</category>
         <category>hadoop安装教程</category>
         <category>hadoop安装详细教程</category>
         <category>hadoop教程</category>
         <category>hadoop部署</category>
-        <category>php大全</category>
-        <category>php资料</category>
         <category>hadoop3</category>
         <category>hadoop配置</category>
         <category>log4j2</category>
@@ -272,8 +272,8 @@
         <category>mysql存储</category>
         <category>mysql引擎</category>
         <category>mysql数据表设计选择</category>
-        <category>mysql监控</category>
         <category>mysql性能</category>
+        <category>mysql监控</category>
         <category>内网支付</category>
         <category>内网穿透</category>
         <category>支付接口本地化开发</category>
@@ -801,7 +801,7 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;开发&#34;&gt;&lt;a href=&#34;#开发&#34; class=&#34;headerlink&#34; title=&#34;开发&#34;&gt;&lt;/a&gt;开发&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 构建&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cargo build --release&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 测试（46 个集成测试）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cargo &lt;span class=&#34;built_in&#34;&gt;test&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 代码检查&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cargo clippy -- -D warnings&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;许可&#34;&gt;&lt;a href=&#34;#许可&#34; class=&#34;headerlink&#34; title=&#34;许可&#34;&gt;&lt;/a&gt;许可&lt;/h2&gt;&lt;p&gt;MIT — Copyright (c) 2026 erik &lt;a href=&#34;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#x3a;&amp;#101;&amp;#x72;&amp;#x69;&amp;#107;&amp;#x40;&amp;#101;&amp;#114;&amp;#105;&amp;#107;&amp;#46;&amp;#x78;&amp;#x79;&amp;#x7a;&#34;&gt;&amp;#101;&amp;#x72;&amp;#x69;&amp;#107;&amp;#x40;&amp;#101;&amp;#114;&amp;#105;&amp;#107;&amp;#46;&amp;#x78;&amp;#x79;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;许可&#34;&gt;&lt;a href=&#34;#许可&#34; class=&#34;headerlink&#34; title=&#34;许可&#34;&gt;&lt;/a&gt;许可&lt;/h2&gt;&lt;p&gt;MIT — Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#58;&amp;#x65;&amp;#x72;&amp;#105;&amp;#107;&amp;#x40;&amp;#x65;&amp;#114;&amp;#x69;&amp;#107;&amp;#46;&amp;#120;&amp;#121;&amp;#122;&#34;&gt;&amp;#x65;&amp;#x72;&amp;#105;&amp;#107;&amp;#x40;&amp;#x65;&amp;#114;&amp;#x69;&amp;#107;&amp;#46;&amp;#120;&amp;#121;&amp;#122;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
  ]]></description>
         </item>
