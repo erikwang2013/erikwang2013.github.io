@@ -323,7 +323,15 @@
     var pos = function () {
       var s = sidebar.getBoundingClientRect(), GAP = 16;
       drawer.style.top = s.top + 'px'; drawer.style.bottom = 'auto';
-      if (window.innerWidth < 769) { drawer.style.height = 'auto'; drawer.style.left = '16px'; drawer.style.right = '16px'; return; }
+      /* 移动端:改为下拉面板,贴头部下方垂落,上下各留 16px 缝隙(固定定位 top+bottom 保证底缝) */
+      if (window.innerWidth < 769) {
+        var hdr = document.querySelector('.site-header');
+        drawer.style.top = ((hdr ? hdr.offsetHeight : 64) + 16) + 'px';
+        drawer.style.bottom = '16px';
+        drawer.style.left = '16px'; drawer.style.right = '16px';
+        drawer.style.height = 'auto';
+        return;
+      }
       drawer.style.height = s.height + 'px';
       if (document.body.classList.contains('sidebar-left')) drawer.style.left = (s.right + GAP) + 'px';
       else drawer.style.right = (document.documentElement.clientWidth - s.left + GAP) + 'px';
