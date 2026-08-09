@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js');</script>
+<title>王可勋 · 全栈开发工程师 · PHP / Go</title>
+<meta name="description" content="王可勋，资深全栈开发工程师（PHP/Go），10 年+ 大型系统架构与高并发服务经验，求职意向：深圳 / 香港。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Three.js 背景画布；WebGL 不可用或加载失败时 body 加 .no-webgl，canvas 隐藏，CSS 星点背景接管 -->
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div id="scroll-progress" aria-hidden="true"></div>
+<div id="glow" aria-hidden="true"></div>
+
+<nav class="topnav" aria-label="页内导航">
+  <div class="nav-inner">
+    <a class="brand" href="/">王可勋 · <span class="brand-sub">blog</span></a>
+    <div class="nav-links">
+      <a href="#skills">核心能力</a>
+      <a href="#strengths">竞争力</a>
+      <a href="#experience">工作经历</a>
+      <a href="#projects">项目经验</a>
+      <a href="#education">教育背景</a>
+    </div>
+  </div>
+</nav>
+
+<header id="hero" class="hero">
+  <h1>王可勋</h1>
+  <p class="role">全栈开发工程师 · 10 年+ 大型系统架构与高并发服务经验</p>
+  <ul class="tags">
+    <li>求职意向：深圳 / 香港</li>
+    <li>全栈开发 / PHP / Go</li>
+    <li>37 岁（1989 年 9 月）</li>
+    <li>现居：深圳宝安固戍</li>
+  </ul>
+  <ul class="contact">
+    <li><a href="tel:17796371573">17796371573</a></li>
+    <li><a href="mailto:szwangkexun@126.com">szwangkexun@126.com</a></li>
+    <li><a href="https://erik.xyz" target="_blank" rel="noopener">erik.xyz</a></li>
+    <!-- TODO(user): 将下方 GitHub 链接替换为个人主页 -->
+    <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+  </ul>
+  <div class="hero-actions">
+    <!-- TODO(user): 用正式黑白简历 PDF 覆盖 resume/pdf/黑白简历.pdf -->
+    <a class="btn btn-primary" href="/pdf/王可勋-全栈-go-php.pdf" download>下载黑白简历</a>
+     <button type="button" class="btn btn-ghost" onclick="window.print()">下载彩色简历</button>
+  </div>
+</header>
+
+<main>
+<section id="skills" class="section">
+  <h2 class="sec-title">核心能力</h2>
+  <div class="skill-grid">
+    <div class="card reveal">
+      <h3>编程语言</h3>
+      <ul class="chips">
+        <li class="chip hot">PHP（精通）</li><li class="chip">Go（熟练）</li><li class="chip">Python（熟练）</li>
+        <li class="chip">Vue（熟练）</li><li class="chip">JavaScript（熟练）</li><li class="chip">Flutter（熟练）</li>
+        <li class="chip">Java</li><li class="chip">Shell</li><li class="chip">Lua</li><li class="chip">C</li>
+        <li class="chip">C++</li><li class="chip">Rust</li><li class="chip">HarmonyOS</li><li class="chip">Node.js</li>
+      </ul>
+    </div>
+    <div class="card reveal">
+      <h3>框架（PHP / Go）</h3>
+      <ul class="chips">
+        <li class="chip">Webman</li><li class="chip">Swoole</li><li class="chip">Hyperf</li><li class="chip">Laravel</li>
+        <li class="chip">ThinkPHP</li><li class="chip">Yii2</li><li class="chip">Swift</li>
+        <li class="chip">Gin</li><li class="chip">Beego</li><li class="chip">go-zero</li><li class="chip">gRPC</li>
+      </ul>
+    </div>
+    <div class="card reveal">
+      <h3>数据库与中间件</h3>
+      <ul class="chips">
+        <li class="chip">MySQL</li><li class="chip">Redis</li><li class="chip">Elasticsearch</li>
+        <li class="chip">RabbitMQ</li><li class="chip">ClickHouse</li><li class="chip">Consul</li>
+        <li class="chip">MinIO</li><li class="chip">ETCD</li>
+      </ul>
+    </div>
+    <div class="card reveal">
+      <h3>运维与工具</h3>
+      <ul class="chips">
+        <li class="chip">Docker</li><li class="chip">Nginx</li><li class="chip">Jenkins</li><li class="chip">Zabbix</li>
+        <li class="chip">Git</li><li class="chip">Linux</li><li class="chip">Shell</li>
+        <li class="chip">ESP32</li><li class="chip">STM32</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="strengths" class="section">
+  <h2 class="sec-title">核心竞争力</h2>
+  <div class="strength-grid">
+    <div class="card reveal">
+      <h3>大型系统架构</h3>
+      <p>高并发微服务划分、服务治理、数据库调优，保障 99.99% 可用性。</p>
+    </div>
+    <div class="card reveal">
+      <h3>技术与业务融合</h3>
+      <p>云资源编排、支付计费、实时撮合等复杂业务的技术落地。</p>
+    </div>
+    <div class="card reveal">
+      <h3>团队管理与效能</h3>
+      <p>跨技术栈（PHP/Go/Java/前端）协作，建立代码规范与 CI/CD，提升交付质量。</p>
+    </div>
+    <div class="card reveal">
+      <h3>持续学习与创新</h3>
+      <p>快速掌握 Rust、HarmonyOS，落地 AI Coding 辅助工具，降低重复劳动。</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section">
+  <h2 class="sec-title">工作经历</h2>
+  <ol class="timeline">
+    <li class="tl-item reveal">
+      <div class="tl-head">
+        <h3>深圳市星链云科技有限公司</h3>
+        <span class="tl-role">PHP 开发工程师</span>
+        <span class="tl-date">2025.09 – 2026.04</span>
+      </div>
+      <ul class="tl-points">
+        <li>主导 IDC 云管理平台微服务拆分（5 大核心服务域：API-Gateway、Middleware、Business、File、Log），基于 Webman+Swoole，集成 Consul。</li>
+        <li>实现云主机全生命周期管理、带宽/流量扣减、订单支付、SSH 密钥管理；通过 Redis 队列 + Crontab 实现月结账单自动化，支撑千万级 API 调用。</li>
+        <li>设计全链路安全（JWT、RBAC、限流、操作审计），保障多租户数据隔离。</li>
+        <li>集成 AWS API Gateway + Nginx 同源部署，输出架构文档。</li>
+      </ul>
+    </li>
+    <li class="tl-item reveal">
+      <div class="tl-head">
+        <h3>释元文化发展（深圳）有限公司</h3>
+        <span class="tl-role">全栈开发工程师</span>
+        <span class="tl-date">2023.02 – 2025.08</span>
+      </div>
+      <ul class="tl-points">
+        <li>负责日访问 10 万+、日订单 1 万笔、流水过亿的游客后台。从 Slim 迁移至 Webman，结合 RabbitMQ 异步解耦，核心接口响应延迟降低约 35%。</li>
+        <li>封装通用后台管理脚手架，支撑多地区项目快速二次开发。</li>
+        <li>独立交付 Go（Beego/Gin）、Java、Vue 项目，具备跨技术栈交付能力。</li>
+      </ul>
+    </li>
+    <li class="tl-item reveal">
+      <div class="tl-head">
+        <h3>深圳市麦凯莱科技有限公司</h3>
+        <span class="tl-role">全栈开发工程师</span>
+        <span class="tl-date">2022.03 – 2023.01</span>
+      </div>
+      <ul class="tl-points">
+        <li>基于 Beego 开发小程序商城，对接微信支付 V2/V3、快递公司 API 及聚水潭 ERP，保障订单实时同步。</li>
+        <li>整合腾讯广告、抖音、京东广告数据回传与归因，优化私域流量管理后台，提升营销转化率约 20%。</li>
+      </ul>
+    </li>
+    <li class="tl-item reveal">
+      <div class="tl-head">
+        <h3>深圳市永达电子信息股份有限公司</h3>
+        <span class="tl-role">PHP 开发工程师</span>
+        <span class="tl-date">2020.05 – 2021.12</span>
+      </div>
+      <ul class="tl-points">
+        <li>基于 Yii2 + Swoole 开发铁路局专用远程监控与病毒扫描系统，实现设备状态实时上报与指令下发。</li>
+        <li>搭建 Elasticsearch + Filebeat 日志平台，处理千万级设备日志，输出安全检测报表。</li>
+      </ul>
+    </li>
+    <li class="tl-item reveal">
+      <div class="tl-head">
+        <h3>深圳市前海比特空间科技有限公司</h3>
+        <span class="tl-role">开发组长</span>
+        <span class="tl-date">2017.10 – 2019.12</span>
+      </div>
+      <ul class="tl-points">
+        <li>带领 9 人混合团队（Java/PHP/前端），负责数字货币交易所及轻钱包项目，用户量 30 万，日活 10 万。</li>
+        <li>主导订单撮合引擎、充提币、场外交易模块，使用 gRPC 对接区块链节点，保障最终一致性。</li>
+      </ul>
+    </li>
+    <li class="tl-item reveal">
+      <div class="tl-head">
+        <h3>深圳市智儒科技有限公司</h3>
+        <span class="tl-role">开发组长</span>
+        <span class="tl-date">2013.12 – 2017.10</span>
+      </div>
+      <ul class="tl-points">
+        <li>带领团队开发定制管理项目、企业门户、B2C 电商平台等。</li>
+        <li>技术栈：PHP / MySQL / JavaScript / ThinkPHP / Yii / WordPress / Nginx / Ecshop / EeMall。</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section id="projects" class="section">
+  <h2 class="sec-title">项目经验</h2>
+  <div class="project-grid">
+
+    <article class="card reveal">
+      <h3>🌐 全球云资源交易平台</h3>
+      <ul class="chips">
+        <li class="chip">PHP 8.2 / Webman</li><li class="chip">Laravel Eloquent</li><li class="chip">MySQL 8.0</li>
+        <li class="chip">Redis</li><li class="chip">ES</li><li class="chip">GraphQL</li><li class="chip">Docker</li>
+        <li class="chip">Prometheus + Grafana</li><li class="chip">Flutter</li><li class="chip">HarmonyOS ArkTS</li>
+      </ul>
+      <ul class="proj-points">
+        <li>模块化单体 + 事件驱动，15 个业务域垂直切分；Provider 插件体系统一接入自营/第三方。</li>
+        <li>14 层全局中间件（WAF、AES-256-GCM 传输加密、字段级加密、Hashids 混淆、JWT、限流、审计等）。</li>
+        <li>事件驱动流水线 + 指数退避重试 + 超限告警；Snowflake 主键，读写分离 + 多级缓存 + ES 三层加密，零停机密钥轮换。</li>
+        <li>190+ RESTful/GraphQL 端点，Flutter 客户端 + HarmonyOS 骨架；Docker Compose、GitHub Actions CI/CD、k6 压测、295 端测试、Sentry、Feature Flags、多语言 i18n。</li>
+        <li>独立发布 7 个 PHP 开源包（JWT、Snowflake、Hashids、加解密、验证码等）。</li>
+      </ul>
+      <p class="scale">91 commits · 46 表 · 15 模块 · 190+ API · 295+ 测试</p>
+    </article>
+
+    <article class="card reveal">
+      <h3>🛒 跨境电商平台</h3>
+      <ul class="chips">
+        <li class="chip">B2C / B2B / 多商家入驻</li><li class="chip">Amazon / eBay / Shoppe</li>
+        <li class="chip">Lazada / Temu</li><li class="chip">Flutter</li><li class="chip">HarmonyOS</li>
+      </ul>
+      <ul class="proj-points">
+        <li>分布式主键（Snowflake）+ Hashids 混淆；12 级中间件 + 31 类攻击检测 + 三层加密。</li>
+        <li>高并发：Redis 令牌桶限流、随机 TTL 防雪崩、熔断、读写分离。</li>
+        <li>跨境合规：HS Code 编码 + 关税规则引擎 + VAT/IOSS 计算 + 10 类合规标。</li>
+        <li>供应链风控：供应商评级、采购审核、质检门禁、库存不可变账本；旁路规则风控 + KYC + GDPR/CCPA。</li>
+      </ul>
+      <p class="scale">315 PHP 文件 · 70 表 · 71 API · Flutter 5 平台 + HarmonyOS · 5 语言 i18n</p>
+    </article>
+
+    <article class="card reveal">
+      <h3>🏢 企业级全栈 ERP 系统</h3>
+      <ul class="chips">
+        <li class="chip">9 微服务</li><li class="chip">gRPC</li><li class="chip">Protobuf</li>
+        <li class="chip">Flutter PC</li><li class="chip">MySQL</li><li class="chip">Docker</li>
+      </ul>
+      <ul class="proj-points">
+        <li>9 个独立微服务（Core/OMS/WMS/TMS/Finance/CRM/HR/Manufacturing/Project），21 个 Protobuf 契约，7 条 gRPC 数据流。</li>
+        <li>8 层防御（WAF、限流、JWT、RBAC、CSRF、审计、字段加密）。</li>
+        <li>Flutter PC 管理端 50+ 页面 + 移动 H5，共享 100% 核心代码；自定义审批流引擎（Snowflake ID 贯通订单→履单→应收/应付）。</li>
+        <li>105 个 PHPUnit 测试（533 断言），PHPStan Level 5，PHP-CS-Fixer。</li>
+      </ul>
+      <p class="scale">9 微服务 · 99 控制器 · 138 模型 · 122 表 · ~73,800 行 PHP+Dart · 12 个 Docker 容器</p>
+    </article>
+
+    <article class="card reveal">
+      <h3>🎮 全球游戏聚合平台</h3>
+      <ul class="chips">
+        <li class="chip">Webman ×2</li><li class="chip">WebSocket</li><li class="chip">Stripe / PayPal</li>
+        <li class="chip">支付宝 / 微信</li><li class="chip">ClickHouse</li>
+      </ul>
+      <ul class="proj-points">
+        <li>多国法币充值（Stripe/PayPal/支付宝/微信）、平台币兑换游戏币、提现审核与自动打款；双 webman 应用（admin+service）+ 2 个 WebSocket 服务（排行榜/聊天）。</li>
+        <li>资金安全：bcmath 精度、乐观锁（version CAS）、支付回调幂等、冻结余额+记账审计。</li>
+        <li>双层加密（AES-256-CBC 传输 + AES-128-ECB 字段级），自研 SecurityGuard（30 类攻击检测）。</li>
+        <li>多游戏币种独立汇率 + 平台点差；三级 KYC + 提现分级；会员等级/成就/优惠券/返佣；ClickHouse OLAP 运营快照。</li>
+      </ul>
+      <p class="scale">200+ API · 43 表 · 50 模型 · 四存储引擎协同</p>
+    </article>
+
+    <article class="card reveal">
+      <h3>🏘️ 智慧物业管理平台</h3>
+      <ul class="chips">
+        <li class="chip">Flutter Web</li><li class="chip">鸿蒙原生 App</li><li class="chip">Workerman</li>
+        <li class="chip">Redis</li><li class="chip">ES</li><li class="chip">Docker Compose</li>
+      </ul>
+      <ul class="proj-points">
+        <li>34 个业务模块，支持多社区团管，三端（Flutter Web 管理后台、业主端、鸿蒙原生 App）。</li>
+        <li>18 层纵深防御（自研 WAF、JWT+RefreshToken、RBAC、字段加密、Hashids、CSP/HSTS 等）。</li>
+        <li>高性能：Workerman 常驻 + OPcache，Redis 缓存 + ES 异步索引，Snowflake ID；微信/支付宝支付、Prometheus 监控、Excel 导入导出、多语言。</li>
+        <li>133 个 PHPUnit 测试，PHPStan，CI，MIT 开源 v1.0.0。</li>
+      </ul>
+      <p class="scale">34 模块 · 65 表 · 180+ API · 三端覆盖 · Docker Compose 5 服务</p>
+    </article>
+
+    <article class="card reveal">
+      <h3>💇 预约服务管理平台</h3>
+      <ul class="chips">
+        <li class="chip">微信小程序</li><li class="chip">Flutter APP</li><li class="chip">Flutter Web</li>
+        <li class="chip">WebSocket</li><li class="chip">ES Scout</li>
+      </ul>
+      <ul class="proj-points">
+        <li>微信小程序 + Flutter APP + Flutter Web 管理台，支持客户/技师切换；双服务架构（API + 管理后台独立），自建 WebSocket 推送（JWT 鉴权），ES Scout 驱动。</li>
+        <li>多门店/多技师/多时段预约（闲时折扣、提前优惠）、订单状态机、支付双通道、技师排班/打卡/考试/收益、优惠券/会员卡/积分、排队叫号（Redis + 蓝牙打印）、LBS 附近门店。</li>
+        <li>31 种攻击检测，AES-256-CBC 双密钥，JWT（Access+Refresh），RBAC 路径级权限，5 次失败锁定，Hashids，图形+滑块验证。</li>
+        <li>自研 7 个 Composer 包（snowflake、hashids、jwt-webman、encryption、scout、security、poster）。</li>
+      </ul>
+      <p class="scale">104 控制器 · 58 模型 · 55 表 · 242 API 路由 · 80+ 测试</p>
+    </article>
+
+    <article class="card reveal">
+      <h3>🛡️ Go 攻击检测库</h3>
+      <ul class="chips">
+        <li class="chip">Go</li><li class="chip">零外部依赖</li><li class="chip">策略模式</li>
+        <li class="chip">Memory / File / Redis</li>
+      </ul>
+      <ul class="proj-points">
+        <li>纯 Go 实现，零外部依赖，覆盖 32 个检测器、5 大攻击类别（XSS、SQL 注入、命令注入、NoSQL、LDAP、Log4Shell、SSTI、SSRF、XXE、CORS 绕过、开放重定向、JWT alg:none、原型污染等）。</li>
+        <li>注册表 + 策略模式，支持 Memory/File/Redis 三种存储后端，IP 滑动窗口计数与自动封禁。</li>
+        <li>四级严重程度分级，核心包覆盖率 95.8%。</li>
+      </ul>
+      <p class="scale">32 检测器 · 5 大攻击类别 · ~3,200 行代码</p>
+    </article>
+
+    <article class="card reveal">
+      <h3>⚙️ Rust 工业协议集（38 种协议）</h3>
+      <ul class="chips">
+        <li class="chip">Rust</li><li class="chip">微内核 + 协议 SDK</li><li class="chip">tokio</li><li class="chip">SocketCAN</li>
+      </ul>
+      <ul class="proj-points">
+        <li>微内核 + 协议 SDK 架构，覆盖工业以太网、现场总线、汽车总线、楼宇照明、硬件桥接、系统总线。</li>
+        <li>内核提供注册表、连接管理器、熔断器、事件总线、协议网关；协议实现仅需 6 个 trait；类型安全（关联类型区分 Modbus 地址 u16、OPC UA 地址 String）。</li>
+        <li>传输抽象（TCP/UDP/串口/SocketCAN/FFI），熔断器 + 4 种退避策略；异步可选（同步内核 + tokio 异步层）。</li>
+      </ul>
+      <p class="scale">45 个 Cargo crates · 10,000+ 行 Rust · 137 测试用例 · MIT 协议</p>
+    </article>
+
+  </div>
+</section>
+
+<section id="education" class="section">
+  <h2 class="sec-title">教育背景</h2>
+  <div class="card reveal edu-card">
+    <h3>深圳大学</h3>
+    <p>工商管理 · 本科（非全日制）</p>
+    <span class="tl-date">2018.03 – 2023.12</span>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 王可勋 · 简历页面 · <a href="#hero">返回顶部 ↑</a></p>
+</footer>
+
+<button id="back-top" type="button" aria-label="返回顶部">↑</button>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

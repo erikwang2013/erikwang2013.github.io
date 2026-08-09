@@ -1,0 +1,331 @@
+{
+  "statuses": [
+    {
+      "id": "planning",
+      "label": "规划",
+      "color": "#C0C4CC"
+    },
+    {
+      "id": "development",
+      "label": "开发",
+      "color": "#4A9EFF"
+    },
+    {
+      "id": "maintenance",
+      "label": "维护",
+      "color": "#34C77B"
+    },
+    {
+      "id": "update",
+      "label": "更新",
+      "color": "#A78BFA"
+    },
+    {
+      "id": "fix",
+      "label": "修复",
+      "color": "#FF5A5A"
+    }
+  ],
+  "projects": [
+    {
+      "id": "erp-php",
+      "nameZh": "开放ERP系统",
+      "nameEn": "Open ERP",
+      "githubUrl": "https://github.com/erikwang2013/erp-php",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "开源企业资源计划系统,覆盖采购、库存、销售、财务等核心业务模块。",
+      "emoji": "📦"
+    },
+    {
+      "id": "property-management",
+      "nameZh": "物业管理系统",
+      "nameEn": "Property Management Platform",
+      "githubUrl": "https://github.com/erikwang2013/property-management-platform",
+      "status": "update",
+      "language": "PHP",
+      "description": "全栈物业管理系统，覆盖22个业务模块 + 12个扩展功能（消息通知/审批工作流/支付/投票/SLA/数据大屏/催缴/巡检/商城/人脸/集团/智能问答）。管理员端（admin）和业主端（service）分离部署，前端覆盖 Flutter Web（PC 管理后台风格）与 HarmonyOS 移动端。",
+      "emoji": "🏢"
+    },
+    {
+      "id": "erik-shop",
+      "nameZh": "跨境电商平台",
+      "nameEn": "Erik Shop",
+      "githubUrl": "https://github.com/erikwang2013/erik-shop",
+      "status": "update",
+      "language": "PHP",
+      "description": "跨境电子商务平台,支持多语言、多币种与海外支付渠道。覆盖 B2C/B2B 场景和第三方卖家入驻",
+      "emoji": "🛒"
+    },
+    {
+      "id": "ads-php",
+      "nameZh": "多平台广告管理系统",
+      "nameEn": "Ads Platform",
+      "githubUrl": "https://github.com/erikwang2013/ads-php",
+      "status": "update",
+      "language": "PHP",
+      "description": "国内外多平台广告投放管理系统,聚合渠道投放、数据统计与效果分析，支持告警监控、自动出价、多端访问",
+      "emoji": "📢"
+    },
+    {
+      "id": "cloud-php",
+      "nameZh": "全球云资源交易平台",
+      "nameEn": "Cloud Platform",
+      "githubUrl": "https://github.com/erikwang2013/cloud-php",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "全球云资源交易平台,提供云主机、带宽等资源的购买与调度。",
+      "emoji": "☁️"
+    },
+    {
+      "id": "game-platform-php",
+      "nameZh": "全球游戏聚合平台",
+      "nameEn": "Global Game Platform",
+      "githubUrl": "https://github.com/erikwang2013/game-platform-php",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "全球游戏聚合平台,集成多地区游戏发行与渠道分发能力。",
+      "emoji": "🎮"
+    },
+    {
+      "id": "appointment-php",
+      "nameZh": "预约服务系统",
+      "nameEn": "Appointment Service",
+      "githubUrl": "https://github.com/erikwang2013/appointment-php",
+      "status": "development",
+      "language": "PHP",
+      "description": "通用预约服务系统,支持多门店、多服务的在线预约与管理。",
+      "emoji": "📅"
+    },
+    {
+      "id": "xhprof-webman",
+      "nameZh": "xhprof-webman",
+      "nameEn": "xhprof-webman",
+      "githubUrl": "https://github.com/erikwang2013/xhprof-webman",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "webman 框架的 xhprof 性能分析集成组件。",
+      "emoji": "📊"
+    },
+    {
+      "id": "webman-scout",
+      "nameZh": "webman-scout",
+      "nameEn": "webman-scout",
+      "githubUrl": "https://github.com/erikwang2013/webman-scout",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "webman 框架的全文搜索组件,基于 Laravel Scout 设计思路。",
+      "emoji": "🔍"
+    },
+    {
+      "id": "jwt-webman",
+      "nameZh": "jwt-webman",
+      "nameEn": "jwt-webman",
+      "githubUrl": "https://github.com/erikwang2013/jwt-webman",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "webman 框架的 JWT 认证中间件与工具库。",
+      "emoji": "🎟️"
+    },
+    {
+      "id": "encryption",
+      "nameZh": "encryption",
+      "nameEn": "encryption",
+      "githubUrl": "https://github.com/erikwang2013/encryption",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "通用加密解密工具库,提供常见对称与非对称加密封装。",
+      "emoji": "🔐"
+    },
+    {
+      "id": "season",
+      "nameZh": "season",
+      "nameEn": "season",
+      "githubUrl": "https://github.com/erikwang2013/season",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "通用 PHP 工具集,提供日期、集合等常用功能封装。",
+      "emoji": "🧰"
+    },
+    {
+      "id": "aetherupload-webman",
+      "nameZh": "aetherupload-webman",
+      "nameEn": "aetherupload-webman",
+      "githubUrl": "https://github.com/erikwang2013/aetherupload-webman",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "AetherUpload 大文件分片上传组件的 webman 适配。",
+      "emoji": "📤"
+    },
+    {
+      "id": "encryptable",
+      "nameZh": "encryptable",
+      "nameEn": "encryptable",
+      "githubUrl": "https://github.com/erikwang2013/encryptable",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "模型字段透明加密组件,自动加密写入、解密读取。",
+      "emoji": "🔒"
+    },
+    {
+      "id": "consul-php",
+      "nameZh": "consul-php",
+      "nameEn": "consul-php",
+      "githubUrl": "https://github.com/erikwang2013/consul-php",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "Consul 服务发现与配置中心的 PHP 客户端。",
+      "emoji": "🧭"
+    },
+    {
+      "id": "etcd",
+      "nameZh": "etcd",
+      "nameEn": "etcd",
+      "githubUrl": "https://github.com/erikwang2013/etcd",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "etcd 分布式键值存储的 PHP 客户端。",
+      "emoji": "🗄️"
+    },
+    {
+      "id": "clickhouse-php",
+      "nameZh": "clickhouse-php",
+      "nameEn": "clickhouse-php",
+      "githubUrl": "https://github.com/erikwang2013/clickhouse-php",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "ClickHouse 列式数据库的 PHP 客户端封装。",
+      "emoji": "📈"
+    },
+    {
+      "id": "hashids",
+      "nameZh": "hashids",
+      "nameEn": "hashids",
+      "githubUrl": "https://github.com/erikwang2013/hashids",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "Hashids 短 ID 生成库,将数字混淆为不可猜测的短字符串。",
+      "emoji": "🆔"
+    },
+    {
+      "id": "poster-php",
+      "nameZh": "poster-php",
+      "nameEn": "poster-php",
+      "githubUrl": "https://github.com/erikwang2013/poster-php",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "PHP 海报生成库,基于图片合成生成分享海报。",
+      "emoji": "🖼️"
+    },
+    {
+      "id": "security-php",
+      "nameZh": "security-php",
+      "nameEn": "security-php",
+      "githubUrl": "https://github.com/erikwang2013/security-php",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "PHP 安全工具库,提供输入过滤、防注入等安全防护封装。",
+      "emoji": "🛡️"
+    },
+    {
+      "id": "snowflake-php",
+      "nameZh": "snowflake-php",
+      "nameEn": "snowflake-php",
+      "githubUrl": "https://github.com/erikwang2013/snowflake-php",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "雪花算法分布式 ID 生成器 PHP 实现。",
+      "emoji": "❄️"
+    },
+    {
+      "id": "industrial-protocols",
+      "nameZh": "工业协议库",
+      "nameEn": "Industrial Protocols",
+      "githubUrl": "https://github.com/erikwang2013/industrial-protocols",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "工业控制协议解析与通信库(Modbus 等)。",
+      "emoji": "🏭"
+    },
+    {
+      "id": "security-rust",
+      "nameZh": "Security Rust",
+      "nameEn": "Security Rust",
+      "githubUrl": "https://github.com/erikwang2013/security-rust",
+      "status": "maintenance",
+      "language": "Rust",
+      "description": "Rust 安全工具库,提供加解密、哈希与安全编码封装。",
+      "emoji": "🦀"
+    },
+    {
+      "id": "security-go",
+      "nameZh": "Security Go",
+      "nameEn": "Security Go",
+      "githubUrl": "https://github.com/erikwang2013/security-go",
+      "status": "maintenance",
+      "language": "Go",
+      "description": "Go 安全工具库,提供加解密、认证与安全防护组件。",
+      "emoji": "🐹"
+    },
+    {
+      "id": "e-cat",
+      "nameZh": "Ecat 微服务框架",
+      "nameEn": "Ecat",
+      "githubUrl": "https://github.com/erikwang2013/e-cat",
+      "status": "maintenance",
+      "language": "Rust",
+      "description": "Rust 微服务框架,提供服务发现、配置与调用链能力。",
+      "emoji": "🐱"
+    },
+    {
+      "id": "bee-rust",
+      "nameZh": "Beerust Web 框架",
+      "nameEn": "Beerust",
+      "githubUrl": "https://github.com/erikwang2013/bee-rust",
+      "status": "maintenance",
+      "language": "Rust",
+      "description": "Rust Web 框架,提供路由、中间件与模板渲染能力。",
+      "emoji": "🐝"
+    },
+    {
+      "id": "coding-to-rust",
+      "nameZh": "Coding to Rust",
+      "nameEn": "Coding to Rust",
+      "githubUrl": "https://github.com/erikwang2013/coding-to-rust",
+      "status": "maintenance",
+      "language": "Rust",
+      "description": "面向 PHP 开发者的 Rust 入门与迁移指南项目。",
+      "emoji": "📖"
+    },
+    {
+      "id": "druid-rust",
+      "nameZh": "Druid Rust",
+      "nameEn": "Druid Rust",
+      "githubUrl": "https://github.com/erikwang2013/druid-rust",
+      "status": "maintenance",
+      "language": "Rust",
+      "description": "Druid 数据查询引擎的 Rust 实现与移植。",
+      "emoji": "🧙"
+    },
+    {
+      "id": "ai-desgin",
+      "nameZh": "AI Design",
+      "nameEn": "AI Design",
+      "githubUrl": "https://github.com/erikwang2013/ai-desgin",
+      "status": "development",
+      "language": "AI",
+      "description": "AI 辅助设计工具与生成式设计相关项目。",
+      "emoji": "🤖"
+    },
+    {
+      "id": "canal-rust",
+      "nameZh": "Canal Rust",
+      "nameEn": "Canal Rust",
+      "githubUrl": "https://github.com/erikwang2013/canal-rust",
+      "status": "fix",
+      "language": "Rust",
+      "description": "阿里巴巴 Canal 数据库增量订阅的 Rust 实现。",
+      "emoji": "🚢"
+    }
+  ]
+}
