@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <script>
+      (function () {
+        var m = 'dark';
+        var t = localStorage.getItem('erik-theme');
+        var dark = t ? t === 'dark' : (m === 'auto' ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) : m === 'dark');
+        if (!dark) document.documentElement.classList.add('erik-light');
+      })();
+    </script>
   <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
@@ -38,6 +46,19 @@
 <link rel="stylesheet" type="text/css" href="/css/effects.css">
 <link rel="stylesheet" type="text/css" href="/css/mobile.css">
 
+    
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"艾瑞可erik","url":"https://erik.xyz/","description":"一只全栈开发的程序猿，偶尔做做运维、PHP、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。"},{"@type":"Article","headline":"jq实现侧边导航","url":"https://erik.xyz/2015/07/31/jq-shi-xian-ce-bian-dao-hang/","datePublished":"2015-07-31","dateModified":"2026-08-10","author":{"@type":"Person","name":"艾瑞可erik"},"publisher":{"@type":"Organization","name":"艾瑞可erik"},"image":"http://i3.tietuku.com/1a573bd86e46654a.jpg","mainEntityOfPage":"https://erik.xyz/2015/07/31/jq-shi-xian-ce-bian-dao-hang/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://erik.xyz/"},{"@type":"ListItem","position":2,"name":"js","item":"https://erik.xyz/categories/js/"},{"@type":"ListItem","position":3,"name":"jq实现侧边导航","item":"https://erik.xyz/2015/07/31/jq-shi-xian-ce-bian-dao-hang/"}]}]}
+    </script>
+    
+    
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script>
+      if (location.protocol === 'https:' && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').catch(function () {});
+      }
+    </script>
+    
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body class="erik-dark sidebar-left">
@@ -73,7 +94,19 @@
         
           <li><a href="/open-page/index.html"  target="_blank" rel="noopener" >开源</a></li>
         
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://visual.erik.xyz" target="_blank" >算法</a></li>
+        
       </ul>
+      
+      <button type="button" id="search-toggle" class="header-icon" aria-label="搜索">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      </button>
+      
+      
+      <button type="button" id="theme-toggle" class="header-icon" aria-label="切换主题">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+      
     </nav>
     <div class="header-right">
       <div class="social-wrap">
@@ -188,8 +221,12 @@
 </span>
 
         
+        
+        <span id="busuanzi_container_page_pv">阅读 <b id="busuanzi_value_page_pv">0</b> 次 👀</span>
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>对于国内网站开发日趋的成熟，许多公司对后台的界面也做了改善需求。接下来就是关于侧边导航的jq写法。 需求：做个导航，点击不同的链接，显示相应的内容。 首先，做个基本的html、css布局 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://tietuku.com/1a573bd86e46654a" target="_blank"><img src="http://i3.tietuku.com/1a573bd86e46654a.jpg" alt=""></a>   其次,然后做个简单的分析。 子目录内容在打开页面的时候是隐藏的，当鼠标点击导航链接时，触发一个动作执行显示隐藏的子导航。那就是show()显示和hide()隐藏 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://tietuku.com/1f0e762261e0c788" target="_blank"><img src="http://i3.tietuku.com/1f0e762261e0c788.jpg" alt=""></a>   如此，再把相应的css调试好就出啦效果了 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://tietuku.com/c3b9f568fac75b3a" target="_blank"><img src="http://i3.tietuku.com/c3b9f568fac75b3a.jpg" alt=""></a>   最后贴上完整的代码 <span id="more"></span>&lt;!DOCTYPE html&gt; <html> <head> <meta charset="utf-8"> <title>jq商品导航</title> <link rel="stylesheet" href="css/d.css" type="text/css" /> <script type="text/javascript" src="js/jquery.js"></script> <script type="text/javascript"> $(document).ready(function(){ $(".level1>a").click(function(){ $(this).addClass("current") //给当前元素添加 current样式 .next().show() //显示下一个元素 .parent().siblings().children("a").removeClass("current") //父元素的同辈元素的子元素a移除current样式 .next().hide(); //隐藏它们的下一个元素 return false; }); }); </script> </head> <body> <div class="box"> <ul class="menu"> <li class="level1"> <a href="#none">水果</a> <ul class="level2"> <li><a href="#none">苹果</a></li> <li><a href="#none">橘子</a></li> <li><a href="#none">香蕉</a></li> <li><a href="#none">凤梨</a></li> <li><a href="#none">西瓜</a></li> <li><a href="#none">黑布林</a></li> </ul> </li> <li class="level1"> <a href="#none">蔬菜</a> <ul class="level2"> <li><a href="#none">南瓜</a></li> <li><a href="#none">茄子</a></li> <li><a href="#none">萝卜</a></li> <li><a href="#none">香菜</a></li> <li><a href="#none">白菜</a></li> <li><a href="#none">西兰花</a></li> </ul> </li> <li class="level1"> <a href="#none">食品</a> <ul class="level2"> <li><a href="#none">饼干</a></li> <li><a href="#none">火腿肠</a></li> <li><a href="#none">方便面</a></li> <li><a href="#none">面包</a></li> <li><a href="#none">咸鸡蛋</a></li> <li><a href="#none">速食鸡肉</a></li> </ul> </li> </ul> </div> </body> </html>         css文件 /<em> reset </em>/<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">body&#123;m</span><br><span class="line">  argin:0;padding:0 0 12px 0;</span><br><span class="line">  font-size:12px;</span><br><span class="line">  line-height:22px;</span><br><span class="line">  font-family:&quot;\\5b8b\\4f53&quot;,&quot;Arial Narrow&quot;;background:#fff;</span><br><span class="line">&#125; </span><br><span class="line">form,ul,li,p,h1,h2,h3,h4,h5,h6&#123;</span><br><span class="line">  margin:0;</span><br><span class="line">  padding:0;</span><br><span class="line">&#125;</span><br><span class="line">input,select&#123;</span><br><span class="line">  font-size:12px;</span><br><span class="line">  line-height:16px;</span><br><span class="line">&#125; </span><br><span class="line">img&#123;border:0;&#125;</span><br><span class="line">ul,li&#123;list-style-type:none;&#125; </span><br><span class="line">a &#123;</span><br><span class="line">  color:#00007F;</span><br><span class="line">  text-decoration:none;</span><br><span class="line">&#125; </span><br><span class="line">a:hover &#123;</span><br><span class="line">  color:#bd0a01;</span><br><span class="line">  text-decoration:underline;</span><br><span class="line">&#125; </span><br><span class="line">.box &#123; width: 150px; margin: 0 auto; &#125; </span><br><span class="line">.menu&#123; </span><br><span class="line">  width:100%; </span><br><span class="line">  overflow:hidden;</span><br><span class="line">  border-color: #C4D5DF; </span><br><span class="line">  border-style: solid;</span><br><span class="line">  border-width: 0 1px 1px; </span><br><span class="line">&#125; </span><br><span class="line">/* lv1 */ </span><br><span class="line">.menu li.level1 a&#123; </span><br><span class="line">  display: block;</span><br><span class="line">  height: 28px; </span><br><span class="line">  line-height: 28px;</span><br><span class="line">  background:#EBF3F8;</span><br><span class="line">  font-weight:700;</span><br><span class="line">  color: #5893B7;</span><br><span class="line">  text-indent: 14px;</span><br><span class="line">  border-top: 1px solid #C4D5DF; </span><br><span class="line">&#125; </span><br><span class="line">.menu li.level1 a:hover&#123;text-decoration:none;&#125; </span><br><span class="line">.menu li.level1 a.current&#123;background:#B1D7EF;&#125;</span><br><span class="line">/* lv2 */ </span><br><span class="line">.menu li ul&#123;overflow:hidden;&#125; </span><br><span class="line">.menu li ul.level2&#123; </span><br><span class="line">  width:100%; </span><br><span class="line">  display:none; </span><br><span class="line">  text-align: left; </span><br><span class="line">&#125;</span><br><span class="line">.menu li ul.level2 li a&#123; </span><br><span class="line">  width: 100%; display: block; </span><br><span class="line">  height: 28px; line-height: 28px;</span><br><span class="line">  background:#ffffff;</span><br><span class="line">  font-weight:400;</span><br><span class="line">  color: #42556B; </span><br><span class="line">  text-indent: 18px; </span><br><span class="line">  border-top: 0px solid #ffffff;</span><br><span class="line">  overflow: hidden; </span><br><span class="line">  text-align: left; </span><br><span class="line">&#125;</span><br><span class="line">.menu li ul.level2 li a:hover&#123; color:#f60; &#125;</span><br></pre></td></tr></table></figure></p>
@@ -248,26 +285,32 @@
 
 
   
-    <div id="gitalk-container" class="glass gitalk-box"></div>
-<link rel="stylesheet" href="/css/gitalk.css">
-<script src="/js/gitalk.min.js"></script>
-<script src="/js/md5.js"></script>
+  
+  
+  
+    
+
+<div id="gitalk-container" class="glass gitalk-box"></div>
+<link rel="stylesheet" href="/vendor/gitalk.css">
+<script src="/vendor/md5.min.js"></script>
+<script src="/vendor/gitalk.min.js"></script>
 <script>
-if (true){
-  var gitalk = new Gitalk({
-    clientID: '1f3ef16f7a5f58d435b3',
-    clientSecret: '9e444c34bd4f282e698f56ba76cd9a8d0892b762',
-    repo: 'erikwang2013.github.io',
-    owner: 'erikwang2013',
-    admin: ['erikwang2013'],
-    id: md5(location.pathname),
-    language: 'zh-CN',
-    perPage: 10,
-    distractionFreeMode: false
-  });
-  gitalk.render('gitalk-container');
-}
+  (function () {
+    var g = new Gitalk({
+      clientID: '1f3ef16f7a5f58d435b3',
+      clientSecret: '9e444c34bd4f282e698f56ba76cd9a8d0892b762',
+      repo: 'erikwang2013.github.io',
+      owner: 'erikwang2013',
+      admin: ['erikwang2013'],
+      id: md5(location.pathname),
+      language: 'zh-CN',
+      perPage: 10,
+      distractionFreeMode: true
+    });
+    g.render('gitalk-container');
+  })();
 </script>
+
 
   
 
@@ -291,11 +334,9 @@ if (true){
   
     <div class="footer-info footer-nav">
       
-        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">艾瑞可erik·导航</a>
+        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🛸 艾瑞可erik·导航</a>
       
-        <a href="https://visual.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">算法演示</a>
-      
-        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">postwoman</a>
+        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🤝 postwoman</a>
       
     </div>
   
@@ -359,16 +400,43 @@ if (true){
   </div>
   
 
+  
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="search-panel-box">
+      <input type="search" id="search-input" class="search-input"
+             placeholder="搜索文章…" autocomplete="off">
+      <ul id="search-results" class="search-results"></ul>
+      <p class="search-empty" id="search-empty" hidden>没有找到匹配的文章 🙈</p>
+    </div>
+  </div>
+  
+  
+  <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog">
+    <button type="button" class="lightbox-close" aria-label="关闭">✕</button>
+    <button type="button" class="lightbox-prev" aria-label="上一张">‹</button>
+    <button type="button" class="lightbox-next" aria-label="下一张">›</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+  
   <script>
 window.ERIK = {
   root: "/",
   three: {"enable":true,"particleCount":2600,"particleColors":["#7c3aed","#06b6d4","#f472b6","#fbbf24","#a78bfa"],"emojiCount":14,"emoji":["🔮","✨","🚀","🫣","🌟","🤔","🎯","👌","♥️","🧪","💎","😜","🪄","😴","⚡","🌈","🛸","🤣","😘","🛰️","🪐","👾","🌙","🔥","💫","🍀","🌊","🎈","⭐","🌸","🍃","🎶","🤦","😅","🤭","🤨","🤔","😫","😭","👌","👏","😘","😣","😒","😆","🍉","💪","🤓","😏","🤦","👌","🐶","🤙","6️","👀","💔","🤗","👍","👎","👉","🙏","👌","✊","🙏","🌹","🤝","💩","☀️","🎁","🧧","💰","🎆","🔄","🥶","🏃","🐷","🧧","❤️","💋"],"opacity":0.55,"parallax":true,"scrollRotate":true},
   tilt: {"enable":true,"maxAngle":12},
-  style: {"mode":"dark","primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
+  style: {"mode":"dark","toggle":true,"primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
   mode: "dark",
   mathjax: true,
-  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"}]},
-  isPost: true
+  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg","lrc":"/music/song/yvqingweiliao.lrc"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"},{"name":"画中仙","artist":"暴卯卯","url":"/music/song/huazhongxian.WAV","cover":"/img/timg.jpeg"},{"name":"嫁给我吧","artist":"暴卯卯","url":"/music/song/jiageiwoba.WAV","cover":"/img/timg.jpeg"}]},
+  isPost: true,
+  search: {"enable":true,"placeholder":"搜索文章…","max_results":10},
+  lightbox: {"enable":true},
+  copyBtn: {"enable":true},
+  dynamicTitle: {"enable":true,"wording":"📬 有新消息等你"},
+  quote: {"enable":false,"api":""},
+  encrypt: false
 };
 </script>
 <script src="/js/vendor/three.min.js"></script>
@@ -376,6 +444,8 @@ window.ERIK = {
 <script src="/js/main.js"></script>
 
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script src="/js/feats.js"></script>
 
 
 </body>

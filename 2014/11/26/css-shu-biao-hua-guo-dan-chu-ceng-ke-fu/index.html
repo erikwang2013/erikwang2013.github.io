@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><script>
+      (function () {
+        var m = 'dark';
+        var t = localStorage.getItem('erik-theme');
+        var dark = t ? t === 'dark' : (m === 'auto' ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) : m === 'dark');
+        if (!dark) document.documentElement.classList.add('erik-light');
+      })();
+    </script>
+  <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,6 +41,19 @@
 <link rel="stylesheet" type="text/css" href="/css/effects.css">
 <link rel="stylesheet" type="text/css" href="/css/mobile.css">
 
+    
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"艾瑞可erik","url":"https://erik.xyz/","description":"一只全栈开发的程序猿，偶尔做做运维、PHP、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。"},{"@type":"Article","headline":"css鼠标滑过弹出层客服","url":"https://erik.xyz/2014/11/26/css-shu-biao-hua-guo-dan-chu-ceng-ke-fu/","datePublished":"2014-11-26","dateModified":"2026-08-10","author":{"@type":"Person","name":"艾瑞可erik"},"publisher":{"@type":"Organization","name":"艾瑞可erik"},"mainEntityOfPage":"https://erik.xyz/2014/11/26/css-shu-biao-hua-guo-dan-chu-ceng-ke-fu/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://erik.xyz/"},{"@type":"ListItem","position":2,"name":"css","item":"https://erik.xyz/categories/css/"},{"@type":"ListItem","position":3,"name":"css鼠标滑过弹出层客服","item":"https://erik.xyz/2014/11/26/css-shu-biao-hua-guo-dan-chu-ceng-ke-fu/"}]}]}
+    </script>
+    
+    
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script>
+      if (location.protocol === 'https:' && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').catch(function () {});
+      }
+    </script>
+    
 <meta name="generator" content="Hexo 6.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
 <body class="erik-dark sidebar-left">
@@ -68,7 +89,19 @@
         
           <li><a href="/open-page/index.html"  target="_blank" rel="noopener" >开源</a></li>
         
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://visual.erik.xyz" target="_blank" >算法</a></li>
+        
       </ul>
+      
+      <button type="button" id="search-toggle" class="header-icon" aria-label="搜索">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      </button>
+      
+      
+      <button type="button" id="theme-toggle" class="header-icon" aria-label="切换主题">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+      
     </nav>
     <div class="header-right">
       <div class="social-wrap">
@@ -181,8 +214,12 @@
 </span>
 
         
+        
+        <span id="busuanzi_container_page_pv">阅读 <b id="busuanzi_value_page_pv">0</b> 次 👀</span>
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>shopex不能兼容js，怎么办呢，客服界面要鼠标滑动弹出？？ css来了，兼容所有浏览器，用纯css写弹出层在好不过了。 源码<span id="more"></span><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</span><br><span class="line">&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;</span><br><span class="line">&lt;title&gt;无标题文档&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;style type=&quot;text/css&quot; &gt;</span><br><span class="line">*&#123;margin:0; padding:0;&#125; /* 所有元素外边距为0 内边距为0 */</span><br><span class="line">/\* body中元素字体大小为12px,字体样式为:&quot;Times New Roman&quot;, Times, serif,背景色:#333 */</span><br><span class="line">body&#123;font-size:12px; font-family:&quot;Times New Roman&quot;, Times, serif; &#125;</span><br><span class="line">/\* id为main的元素上下外边距为100px,左右外边距为自动;宽度为300px */</span><br><span class="line">#main&#123;margin-left:-100px auto; width:300px;z-index:10000;	position:absolute;&#125;</span><br><span class="line">/\* id为main的元素中无序列表列表样式为隐藏 */</span><br><span class="line">#main ul&#123;list-style:none;&#125;</span><br><span class="line">/\* id为main的元素中的无序列表下的li块 中的a标签 颜色为#E7E7E7;关闭文本修饰;相对定位;元素当做块元素显示,前后会有换行符*/</span><br><span class="line"> .sa&#123;color:#E7E7E7; text-decoration:none; position:relative; display:block;&#125;</span><br><span class="line">  #y1 &#123;position:fixed;top:482px;left:2px;&#125; </span><br><span class="line">  ul&#123;list-style:none;&#125;</span><br><span class="line">&lt;span style=&quot;color:#FF0000&quot;&gt; .sa .divs &#123;display:none;&#125;</span><br><span class="line">.sa:hover&#123;color:#FFF;&#125;</span><br><span class="line"> .sa:hover .divs&#123;position:absolute; left:280px; top:-40px; background-color:#FFF; display:block; width:300px; height:100px; color:#000; overflow:hidden;&#125;</span><br><span class="line">.sa:hover .divs dt&#123;float:left; width:8px; background:url(234.gif) center no-repeat;height:100px; display:block; background-color:#333;&#125;</span><br><span class="line"> .sa:hover .divs dd&#123;float:right ; width:270px; height:auto; line-height:18px; padding:6px 10px;margin-left:100px;&#125;&lt;/span&gt;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;script&gt; </span><br><span class="line">  if (navigator.userAgent.indexOf(&quot;MSIE 6&quot;) &gt; -1) &#123; </span><br><span class="line">    window.onscroll = function(e) &#123; </span><br><span class="line">      var t = document.documentElement ? document.documentElement.scrollTop : document.body.scrollTop;</span><br><span class="line">      document.getElementById(&quot;y1&quot;).style.top = document.getElementById(&quot;y2&quot;).style.top = t + 82 + &quot;px&quot;; </span><br><span class="line">    &#125; </span><br><span class="line">  &#125; </span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;div id=&quot;y1&quot;&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">&lt;li&gt;&lt;div     class=&quot;sa&quot; href=&quot;javascript:void(0);&quot;&gt;</span><br><span class="line">&lt;img   src=&quot;images/siderim_hiddenbar.gif&quot; style=&quot;z-index:10000;	position:absolute;margin-top:-150px;&quot; /&gt;</span><br><span class="line">&lt;div     class=&quot;divs&quot; style=&quot;margin-left:-284px;margin-top:-354px;height:440px;width:280px;background:url(images/bj01.png) no-repeat;z-index:10000;	position:absolute;&quot;&gt;</span><br><span class="line">&lt;img  src=&quot;images/mhd365365.png&quot; alt=&quot;&quot; width=&quot;80&quot; height=&quot;65&quot; style=&quot;margin-top:90px;font-size:17px;width:80px;margin-left:180px;&quot;&gt;</span><br><span class="line">&lt;div style=&quot;margin-left:40px;margin-top:-20px;;font-size:17px;color:#8498af;&quot;&gt;0755—33537666&lt;/div&gt;</span><br><span class="line">&lt;div style=&quot;margin-left:90px;margin-top:110px;width:160px;&quot;&gt;</span><br><span class="line">&lt;ul&gt;</span><br><span class="line">					&lt;li&gt;</span><br><span class="line">					&lt;div style=&quot;width:80px;height:20px;padding-top:5px;&quot;&gt;客服&lt;/div&gt;</span><br><span class="line">					&lt;div style=&quot;width:50px;margin-left:75px;margin-top:-22px;&quot;&gt;</span><br><span class="line">					&lt;a target=&quot;_blank&quot; href=&quot;tencent://message/?uin=247765235&amp;&amp;Site=www.lanrenzhijia.com&amp;&amp;Menu=yes&quot;&gt;&lt;img</span><br><span class="line">						border=&quot;0&quot; src=&quot;http://wpa.qq.com/pa?p=1:24776523:42&quot;&gt;&lt;/a&gt;</span><br><span class="line">						&lt;/div&gt;&lt;/li&gt;</span><br><span class="line">						&lt;div style=&quot;height:4px;&quot;&gt;&lt;/div&gt;</span><br><span class="line">					&lt;li&gt;&lt;div style=&quot;width:80px;height:20px;padding-top:5px;&quot;&gt;客服&lt;/div&gt;</span><br><span class="line">					&lt;div style=&quot;width:50px;margin-left:75px;margin-top:-22px;&quot;&gt;</span><br><span class="line">                    &lt;a target=&quot;_blank&quot; href=&quot;tencent://message/?uin=24776523&amp;&amp;Site=www.lanrenzhijia.com&amp;&amp;Menu=yes&quot;&gt;</span><br><span class="line">                    &lt;img border=&quot;0&quot; src=&quot;http://wpa.qq.com/pa?p=1:24776523:42&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</span><br><span class="line">                    &lt;div style=&quot;height:4px;&quot;&gt;&lt;/div&gt;</span><br><span class="line">					&lt;li&gt;</span><br><span class="line">                    &lt;div style=&quot;width:80px;height:20px;padding-top:5px;&quot;&gt;客服&lt;/div&gt;</span><br><span class="line">					&lt;div style=&quot;width:50px;margin-left:75px;margin-top:-22px;&quot;&gt;</span><br><span class="line">                    &lt;a target=&quot;_blank&quot; href=&quot;tencent://message/?uin=24776523&amp;&amp;Site=www.lanrenzhijia.com&amp;&amp;Menu=yes&quot;&gt;</span><br><span class="line">                    &lt;img border=&quot;0&quot; src=&quot;http://wpa.qq.com/pa?p=1:24776523:42&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</span><br><span class="line">                        &lt;div style=&quot;height:4px;&quot;&gt;&lt;/div&gt;</span><br><span class="line">					&lt;li&gt;</span><br><span class="line">                    &lt;div style=&quot;width:80px;height:20px;padding-top:5px;&quot;&gt;客服&lt;/div&gt;</span><br><span class="line">					&lt;div style=&quot;width:50px;margin-left:75px;margin-top:-22px;&quot;&gt;</span><br><span class="line">                    &lt;a target=&quot;_blank&quot; href=&quot;tencent://messag0e/?uin=24776523&amp;&amp;Site=www.lanrenzhijia.com&amp;&amp;Menu=yes&quot;&gt;</span><br><span class="line">                    &lt;img border=&quot;0&quot; src=&quot;http://wpa.qq.com/pa?p=1:24776523:42&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</span><br><span class="line">                        &lt;div style=&quot;height:4px;&quot;&gt;&lt;/div&gt;</span><br><span class="line">					&lt;li&gt;</span><br><span class="line">                    &lt;div style=&quot;width:80px;height:20px;padding-top:5px;&quot;&gt;客服&lt;/div&gt;</span><br><span class="line">					&lt;div style=&quot;width:50px;margin-left:75px;margin-top:-22px;&quot;&gt;</span><br><span class="line">                    &lt;a target=&quot;_blank&quot; href=&quot;tencent://message/?uin=24776523&amp;&amp;Site=www.lanrenzhijia.com&amp;&amp;Menu=yes&quot;&gt;</span><br><span class="line">                    &lt;img border=&quot;0&quot; src=&quot;http://wpa.qq.com/pa?p=1:24776523:42&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;/li&gt;</span><br><span class="line">                        &lt;div style=&quot;height:4px;&quot;&gt;&lt;/div&gt;</span><br><span class="line">				&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
@@ -241,26 +278,57 @@
 
 
   
-    <div id="gitalk-container" class="glass gitalk-box"></div>
-<link rel="stylesheet" href="/css/gitalk.css">
-<script src="/js/gitalk.min.js"></script>
-<script src="/js/md5.js"></script>
+  
+  <section class="related-posts">
+    <h2 class="related-title">🔗 相关文章</h2>
+    <div class="related-grid">
+      
+      <a class="related-card" href="2015/01/12/18-ge-css-jing-jian-ya-suo-gong-ju-he-ji-qiao/">
+        <span class="related-emoji">🌟</span>
+        <span class="related-name">18个CSS精简压缩工具和技巧</span>
+        <span class="related-date">2015-01-12</span>
+      </a>
+      
+      <a class="related-card" href="2026/07/22/industrial-protocols/">
+        <span class="related-emoji">🐘</span>
+        <span class="related-name">工业网络通信协议集 —— 微内核 + 协议 SDK 架构，覆盖 40 种工业协议，兼容 6 种 PHP 运行时环境</span>
+        <span class="related-date">2026-07-22</span>
+      </a>
+      
+      <a class="related-card" href="2025/06/10/php-game-fish/">
+        <span class="related-emoji">🐘</span>
+        <span class="related-name">php开发捕鱼游戏的构思</span>
+        <span class="related-date">2025-06-10</span>
+      </a>
+      
+    </div>
+  </section>
+  
+  
+  
+    
+
+<div id="gitalk-container" class="glass gitalk-box"></div>
+<link rel="stylesheet" href="/vendor/gitalk.css">
+<script src="/vendor/md5.min.js"></script>
+<script src="/vendor/gitalk.min.js"></script>
 <script>
-if (true){
-  var gitalk = new Gitalk({
-    clientID: '1f3ef16f7a5f58d435b3',
-    clientSecret: '9e444c34bd4f282e698f56ba76cd9a8d0892b762',
-    repo: 'erikwang2013.github.io',
-    owner: 'erikwang2013',
-    admin: ['erikwang2013'],
-    id: md5(location.pathname),
-    language: 'zh-CN',
-    perPage: 10,
-    distractionFreeMode: false
-  });
-  gitalk.render('gitalk-container');
-}
+  (function () {
+    var g = new Gitalk({
+      clientID: '1f3ef16f7a5f58d435b3',
+      clientSecret: '9e444c34bd4f282e698f56ba76cd9a8d0892b762',
+      repo: 'erikwang2013.github.io',
+      owner: 'erikwang2013',
+      admin: ['erikwang2013'],
+      id: md5(location.pathname),
+      language: 'zh-CN',
+      perPage: 10,
+      distractionFreeMode: true
+    });
+    g.render('gitalk-container');
+  })();
 </script>
+
 
   
 
@@ -284,11 +352,9 @@ if (true){
   
     <div class="footer-info footer-nav">
       
-        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">艾瑞可erik·导航</a>
+        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🛸 艾瑞可erik·导航</a>
       
-        <a href="https://visual.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">算法演示</a>
-      
-        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">postwoman</a>
+        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🤝 postwoman</a>
       
     </div>
   
@@ -352,23 +418,52 @@ if (true){
   </div>
   
 
+  
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="search-panel-box">
+      <input type="search" id="search-input" class="search-input"
+             placeholder="搜索文章…" autocomplete="off">
+      <ul id="search-results" class="search-results"></ul>
+      <p class="search-empty" id="search-empty" hidden>没有找到匹配的文章 🙈</p>
+    </div>
+  </div>
+  
+  
+  <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog">
+    <button type="button" class="lightbox-close" aria-label="关闭">✕</button>
+    <button type="button" class="lightbox-prev" aria-label="上一张">‹</button>
+    <button type="button" class="lightbox-next" aria-label="下一张">›</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+  
   <script>
 window.ERIK = {
   root: "/",
   three: {"enable":true,"particleCount":2600,"particleColors":["#7c3aed","#06b6d4","#f472b6","#fbbf24","#a78bfa"],"emojiCount":14,"emoji":["🔮","✨","🚀","🫣","🌟","🤔","🎯","👌","♥️","🧪","💎","😜","🪄","😴","⚡","🌈","🛸","🤣","😘","🛰️","🪐","👾","🌙","🔥","💫","🍀","🌊","🎈","⭐","🌸","🍃","🎶","🤦","😅","🤭","🤨","🤔","😫","😭","👌","👏","😘","😣","😒","😆","🍉","💪","🤓","😏","🤦","👌","🐶","🤙","6️","👀","💔","🤗","👍","👎","👉","🙏","👌","✊","🙏","🌹","🤝","💩","☀️","🎁","🧧","💰","🎆","🔄","🥶","🏃","🐷","🧧","❤️","💋"],"opacity":0.55,"parallax":true,"scrollRotate":true},
   tilt: {"enable":true,"maxAngle":12},
-  style: {"mode":"dark","primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
+  style: {"mode":"dark","toggle":true,"primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
   mode: "dark",
   mathjax: true,
-  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"}]},
-  isPost: true
+  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg","lrc":"/music/song/yvqingweiliao.lrc"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"},{"name":"画中仙","artist":"暴卯卯","url":"/music/song/huazhongxian.WAV","cover":"/img/timg.jpeg"},{"name":"嫁给我吧","artist":"暴卯卯","url":"/music/song/jiageiwoba.WAV","cover":"/img/timg.jpeg"}]},
+  isPost: true,
+  search: {"enable":true,"placeholder":"搜索文章…","max_results":10},
+  lightbox: {"enable":true},
+  copyBtn: {"enable":true},
+  dynamicTitle: {"enable":true,"wording":"📬 有新消息等你"},
+  quote: {"enable":false,"api":""},
+  encrypt: false
 };
 </script>
 <script src="/js/vendor/three.min.js"></script>
 <script>window.THREE || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>')</script>
 <script src="/js/main.js"></script>
 
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script src="/js/feats.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 </body>

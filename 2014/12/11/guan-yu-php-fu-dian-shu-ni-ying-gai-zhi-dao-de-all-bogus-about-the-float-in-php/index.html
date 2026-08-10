@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><script>
+      (function () {
+        var m = 'dark';
+        var t = localStorage.getItem('erik-theme');
+        var dark = t ? t === 'dark' : (m === 'auto' ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) : m === 'dark');
+        if (!dark) document.documentElement.classList.add('erik-light');
+      })();
+    </script>
+  <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,6 +42,19 @@
 <link rel="stylesheet" type="text/css" href="/css/effects.css">
 <link rel="stylesheet" type="text/css" href="/css/mobile.css">
 
+    
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"艾瑞可erik","url":"https://erik.xyz/","description":"一只全栈开发的程序猿，偶尔做做运维、PHP、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。"},{"@type":"Article","headline":"关于PHP浮点数你应该知道的(All ‘bogus’ about the float in PHP)","url":"https://erik.xyz/2014/12/11/guan-yu-php-fu-dian-shu-ni-ying-gai-zhi-dao-de-all-bogus-about-the-float-in-php/","datePublished":"2014-12-11","dateModified":"2026-08-10","author":{"@type":"Person","name":"艾瑞可erik"},"publisher":{"@type":"Organization","name":"艾瑞可erik"},"mainEntityOfPage":"https://erik.xyz/2014/12/11/guan-yu-php-fu-dian-shu-ni-ying-gai-zhi-dao-de-all-bogus-about-the-float-in-php/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://erik.xyz/"},{"@type":"ListItem","position":2,"name":"转载","item":"https://erik.xyz/categories/转载/"},{"@type":"ListItem","position":3,"name":"关于PHP浮点数你应该知道的(All ‘bogus’ about the float in PHP)","item":"https://erik.xyz/2014/12/11/guan-yu-php-fu-dian-shu-ni-ying-gai-zhi-dao-de-all-bogus-about-the-float-in-php/"}]}]}
+    </script>
+    
+    
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script>
+      if (location.protocol === 'https:' && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').catch(function () {});
+      }
+    </script>
+    
 <meta name="generator" content="Hexo 6.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
 <body class="erik-dark sidebar-left">
@@ -69,7 +90,19 @@
         
           <li><a href="/open-page/index.html"  target="_blank" rel="noopener" >开源</a></li>
         
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://visual.erik.xyz" target="_blank" >算法</a></li>
+        
       </ul>
+      
+      <button type="button" id="search-toggle" class="header-icon" aria-label="搜索">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      </button>
+      
+      
+      <button type="button" id="theme-toggle" class="header-icon" aria-label="切换主题">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+      
     </nav>
     <div class="header-right">
       <div class="social-wrap">
@@ -184,8 +217,12 @@
 </span>
 
         
+        
+        <span id="busuanzi_container_page_pv">阅读 <b id="busuanzi_value_page_pv">0</b> 次 👀</span>
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>PHP是一种弱类型语言, 这样的特性, 必然要求有无缝透明的隐式类型转换, PHP内部使用zval来保存任意类型的数值, zval的结构如下(5.2为例):<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">struct \_zval\_struct &#123;</span><br><span class="line">    /\* Variable information */</span><br><span class="line">    zvalue_value value; /\* value */</span><br><span class="line">    zend_uint refcount;</span><br><span class="line">    zend_uchar type; /\* active type */</span><br><span class="line">    zend_uchar is_ref;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><br><span id="more"></span><br>上面的结构中, 实际保存数值本身的是zvalue_value联合体:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">typedef union \_zvalue\_value &#123;</span><br><span class="line">    long lval; /\* long value */</span><br><span class="line">    double dval; /\* double value */</span><br><span class="line">    struct &#123;</span><br><span class="line">        char *val;</span><br><span class="line">        int len;</span><br><span class="line">    &#125; str;</span><br><span class="line">    HashTable *ht; /\* hash table value */</span><br><span class="line">    zend\_object\_value obj;</span><br><span class="line">&#125; zvalue_value;</span><br></pre></td></tr></table></figure><br>今天的话题, 我们只关注其中的俩个成员, lval和dval, 我们要意识到, long lval是随着编译器, OS的字长不同而不定长的, 它有可能是32bits或者64bits, 而double dval(双精度)由<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://en.wikipedia.org/wiki/IEEE_754-2008" target="_blank">IEEE 754</a>规定, 是定长的, 一定是64bits. 请记住这一点, 造就了PHP的一些代码的”非平台无关性”. <strong>我们接下来的讨论, 除了特别指明, 都是假设long为64bits</strong> IEEE 754的浮点计数法, 我这里就不引用了, 大家有兴趣的可以自己查看, 关键的一点是, double的尾数采用52位bit来保存, 算上隐藏的1位有效位, 一共是53bits. 在这里, 引出一个很有意思的问题, 我们用c代码举例(假设long为64bits):<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">      long a = x;</span><br><span class="line">      assert(a == (long)(double)a);</span><br></pre></td></tr></table></figure><br>请问, a的取值在什么范围内的时候, 上面的代码可以断言成功?(留在文章最后解答) 现在我们回归正题, PHP在执行一个脚本之前, 首先需要读入脚本, 分析脚本, 这个过程中也包含着, 对脚本中的字面量进行zval化, 比如对于如下脚本:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = 9223372036854775807; //64位有符号数最大值</span><br><span class="line">$b = 9223372036854775808; //最大值+1</span><br><span class="line">var_dump($a);</span><br><span class="line">var_dump($b);</span><br></pre></td></tr></table></figure><br>输出:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int(9223372036854775807)</span><br><span class="line">float(9.22337203685E+18)</span><br></pre></td></tr></table></figure><br>也就说, PHP在词法分析阶段, 对于一个字面量的数值, 会去判断, 是否超出了当前系统的long的表值范围, 如果不是, 则用lval来保存, zval为IS_LONG, 否则就用dval表示, zval IS_FLOAT. 凡是大于最大的整数值的数值, 我们都要小心, 因为它可能会有精度损失:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$a = 9223372036854775807;</span><br><span class="line">$b = 9223372036854775808;</span><br><span class="line"></span><br><span class="line">var_dump($a === ($b - 1));</span><br></pre></td></tr></table></figure><br>输出是false. 现在接上开头的讨论, 之前说过, PHP的整数, 可能是32位, 也可能是64位, 那么就决定了, 一些在64位上可以运行正常的代码, 可能会因为隐形的类型转换, 发生精度丢失, 从而造成代码不能正常的运行在32位系统上. 所以, 我们一定要警惕这个临界值, 好在PHP中已经定义了这个临界值:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">    echo PHP\_INT\_MAX;</span><br><span class="line"> ?&gt;</span><br></pre></td></tr></table></figure><br>当然, 为了保险起见, 我们应该使用字符串来保存大整数, 并且采用比如<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.php.net/manual/en/book.bc.php" target="_blank">bcmath</a>这样的数学函数库来进行计算. 另外, 还有一个关键的配置, 会让我们产生迷惑, 这个配置就是<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.php.net/manual/en/ini.core.php#ini.precision" target="_blank">php.precision</a>, 这配置决定了PHP再输出一个float值的时候, 输出多少有效位. 最后, 我们再来回头看上面提出的问题, 也就是一个long的整数, 最大的值是多少, 才能保证转到float以后再转回long不会发生精度丢失? 比如, 对于整数, 我们知道它的二进制表示是, 101, 现在, 让我们右移俩位, 变成1.01, 舍去高位的隐含有效位1, 我们得到在double中存储5的二进制数值为:</p>
@@ -252,26 +289,57 @@
 
 
   
-    <div id="gitalk-container" class="glass gitalk-box"></div>
-<link rel="stylesheet" href="/css/gitalk.css">
-<script src="/js/gitalk.min.js"></script>
-<script src="/js/md5.js"></script>
+  
+  <section class="related-posts">
+    <h2 class="related-title">🔗 相关文章</h2>
+    <div class="related-grid">
+      
+      <a class="related-card" href="2014/10/04/lanmp-du-li-er-pei-zhi/">
+        <span class="related-emoji">🐘</span>
+        <span class="related-name">lanmp独立而配置</span>
+        <span class="related-date">2014-10-04</span>
+      </a>
+      
+      <a class="related-card" href="2015/03/15/centos-da-jian-svn-fu-wu-qi/">
+        <span class="related-emoji">🫣</span>
+        <span class="related-name">centos搭建svn服务器</span>
+        <span class="related-date">2015-03-15</span>
+      </a>
+      
+      <a class="related-card" href="2014/12/29/21-ge-shi-yong-bian-li-de-php-dai-ma/">
+        <span class="related-emoji">🐘</span>
+        <span class="related-name">21个实用便利的PHP代码</span>
+        <span class="related-date">2014-12-29</span>
+      </a>
+      
+    </div>
+  </section>
+  
+  
+  
+    
+
+<div id="gitalk-container" class="glass gitalk-box"></div>
+<link rel="stylesheet" href="/vendor/gitalk.css">
+<script src="/vendor/md5.min.js"></script>
+<script src="/vendor/gitalk.min.js"></script>
 <script>
-if (true){
-  var gitalk = new Gitalk({
-    clientID: '1f3ef16f7a5f58d435b3',
-    clientSecret: '9e444c34bd4f282e698f56ba76cd9a8d0892b762',
-    repo: 'erikwang2013.github.io',
-    owner: 'erikwang2013',
-    admin: ['erikwang2013'],
-    id: md5(location.pathname),
-    language: 'zh-CN',
-    perPage: 10,
-    distractionFreeMode: false
-  });
-  gitalk.render('gitalk-container');
-}
+  (function () {
+    var g = new Gitalk({
+      clientID: '1f3ef16f7a5f58d435b3',
+      clientSecret: '9e444c34bd4f282e698f56ba76cd9a8d0892b762',
+      repo: 'erikwang2013.github.io',
+      owner: 'erikwang2013',
+      admin: ['erikwang2013'],
+      id: md5(location.pathname),
+      language: 'zh-CN',
+      perPage: 10,
+      distractionFreeMode: true
+    });
+    g.render('gitalk-container');
+  })();
 </script>
+
 
   
 
@@ -295,11 +363,9 @@ if (true){
   
     <div class="footer-info footer-nav">
       
-        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">艾瑞可erik·导航</a>
+        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🛸 艾瑞可erik·导航</a>
       
-        <a href="https://visual.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">算法演示</a>
-      
-        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">postwoman</a>
+        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🤝 postwoman</a>
       
     </div>
   
@@ -363,23 +429,52 @@ if (true){
   </div>
   
 
+  
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="search-panel-box">
+      <input type="search" id="search-input" class="search-input"
+             placeholder="搜索文章…" autocomplete="off">
+      <ul id="search-results" class="search-results"></ul>
+      <p class="search-empty" id="search-empty" hidden>没有找到匹配的文章 🙈</p>
+    </div>
+  </div>
+  
+  
+  <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog">
+    <button type="button" class="lightbox-close" aria-label="关闭">✕</button>
+    <button type="button" class="lightbox-prev" aria-label="上一张">‹</button>
+    <button type="button" class="lightbox-next" aria-label="下一张">›</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+  
   <script>
 window.ERIK = {
   root: "/",
   three: {"enable":true,"particleCount":2600,"particleColors":["#7c3aed","#06b6d4","#f472b6","#fbbf24","#a78bfa"],"emojiCount":14,"emoji":["🔮","✨","🚀","🫣","🌟","🤔","🎯","👌","♥️","🧪","💎","😜","🪄","😴","⚡","🌈","🛸","🤣","😘","🛰️","🪐","👾","🌙","🔥","💫","🍀","🌊","🎈","⭐","🌸","🍃","🎶","🤦","😅","🤭","🤨","🤔","😫","😭","👌","👏","😘","😣","😒","😆","🍉","💪","🤓","😏","🤦","👌","🐶","🤙","6️","👀","💔","🤗","👍","👎","👉","🙏","👌","✊","🙏","🌹","🤝","💩","☀️","🎁","🧧","💰","🎆","🔄","🥶","🏃","🐷","🧧","❤️","💋"],"opacity":0.55,"parallax":true,"scrollRotate":true},
   tilt: {"enable":true,"maxAngle":12},
-  style: {"mode":"dark","primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
+  style: {"mode":"dark","toggle":true,"primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
   mode: "dark",
   mathjax: true,
-  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"}]},
-  isPost: true
+  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg","lrc":"/music/song/yvqingweiliao.lrc"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"},{"name":"画中仙","artist":"暴卯卯","url":"/music/song/huazhongxian.WAV","cover":"/img/timg.jpeg"},{"name":"嫁给我吧","artist":"暴卯卯","url":"/music/song/jiageiwoba.WAV","cover":"/img/timg.jpeg"}]},
+  isPost: true,
+  search: {"enable":true,"placeholder":"搜索文章…","max_results":10},
+  lightbox: {"enable":true},
+  copyBtn: {"enable":true},
+  dynamicTitle: {"enable":true,"wording":"📬 有新消息等你"},
+  quote: {"enable":false,"api":""},
+  encrypt: false
 };
 </script>
 <script src="/js/vendor/three.min.js"></script>
 <script>window.THREE || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>')</script>
 <script src="/js/main.js"></script>
 
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script src="/js/feats.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 </body>

@@ -13,7 +13,11 @@
   function applyThemeColors() {
     var r = document.documentElement;
     var c = styleCfg || {};
-    if (c.mode === 'light') r.classList.add('erik-light');
+    var light = c.mode === 'light' ||
+      (c.mode === 'auto' && window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches);
+    if (light) r.classList.add('erik-light');
+    /* 亮色主题由样式表 .erik-light 提供变量,内联暗色值会覆盖它 */
+    if (light) return;
     var map = {
       '--primary': c.primary,
       '--secondary': c.secondary,
@@ -302,17 +306,9 @@
           row.style.setProperty('--delay', (-i * baseDur * 0.6) + 's');
         });
       }
-      var zoomed = null;
       box.addEventListener('click', function (e) {
         var el = e.target.closest ? e.target.closest('.tag-item') : null;
-        if (el) {
-          e.preventDefault();
-          if (el === zoomed) { location.href = el.getAttribute('href'); return; }
-          if (zoomed) zoomed.classList.remove('zoomed');
-          zoomed = el;
-          box.classList.add('paused');
-          el.classList.add('zoomed');
-        } else if (zoomed) { zoomed.classList.remove('zoomed'); zoomed = null; box.classList.remove('paused'); }
+        if (el) { e.preventDefault(); location.href = el.getAttribute('href'); }
       }, false);
     }
     var sidebar = document.querySelector('.sidebar'), drawer = document.getElementById('sb-drawer');
@@ -398,8 +394,27 @@
       artist: document.getElementById('player-artist'),
       cover: document.getElementById('player-cover'),
       bar: document.getElementById('player-progress'),
-      time: document.getElementById('player-time')
+      time: document.getElementById('player-time'),
+      vol: document.getElementById('player-volume'),
+      lyricBtn: document.getElementById('player-lyric'),
+      listBtn: document.getElementById('player-list-btn'),
+      listPanel: document.getElementById('player-list-panel'),
+      lyricPanel: document.getElementById('player-lyric-panel'),
+      lyricInner: document.getElementById('player-lyric-inner'),
+      plist: document.getElementById('player-plist')
     };
+
+    // 音量：localStorage 记忆
+    if (els.vol) {
+      var vol = parseInt(localStorage.getItem('erik-player-vol'), 10);
+      if (isNaN(vol)) vol = 80;
+      audio.volume = vol / 100;
+      els.vol.value = vol;
+      els.vol.addEventListener('input', function () {
+        audio.volume = els.vol.value / 100;
+        localStorage.setItem('erik-player-vol', els.vol.value);
+      });
+    }
 
     function loadTrack(i) {
       idx = (i + list.length) % list.length;
@@ -410,6 +425,15 @@
       if (els.artist) els.artist.textContent = t.artist || '';
       if (els.bar) els.bar.value = '0';
       if (els.time) els.time.textContent = '00:00 / 00:00';
+      // 渲染播放列表
+      if (els.plist) {
+        els.plist.innerHTML = list.map(function (t, i) {
+          return '<li class="pl-item' + (i === idx ? ' active' : '') + '" data-i="' + i + '">' +
+            '<span class="pl-name">' + esc(t.name) + '</span><span class="pl-artist">' + esc(t.artist || '') + '</span></li>';
+        }).join('');
+      }
+      // 歌词加载：list[].lrc 配置时解析 [mm:ss.xx]
+      loadLyric(list[idx].lrc);
     }
 
     function fmt(s) {
@@ -433,6 +457,71 @@
     if (mini) mini.addEventListener('click', function () { box.classList.remove('collapsed'); }, false);
     if (collapse) collapse.addEventListener('click', function () { box.classList.add('collapsed'); }, false);
 
+    // 播放列表点击切歌
+    if (els.listBtn && els.plist) {
+      els.listBtn.addEventListener('click', function () { togglePanel(els.listPanel); });
+      els.plist.addEventListener('click', function (e) {
+        var li = e.target.closest('.pl-item');
+        if (!li) return;
+        idx = parseInt(li.dataset.i, 10);
+        loadTrack(idx);
+        togglePanel(els.listPanel, true);
+      });
+    }
+    function togglePanel(panel, forceClose) {
+      if (!panel) return;
+      var willShow = forceClose ? false : panel.hidden;
+      if (willShow) {
+        if (els.listPanel && els.listPanel !== panel) els.listPanel.hidden = true;
+        if (els.lyricPanel && els.lyricPanel !== panel) els.lyricPanel.hidden = true;
+      }
+      panel.hidden = !willShow;
+    }
+
+    var lyricData = [];
+    function esc(s) {
+      return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+    function loadLyric(lrcPath) {
+      lyricData = [];
+      /* 歌词入口按钮已移除时不再加载歌词 */
+      if (!els.lyricBtn) return;
+      if (els.lyricBtn) els.lyricBtn.hidden = !lrcPath;
+      if (!lrcPath) return;
+      fetch(lrcPath).then(function (r) { return r.text(); }).then(function (txt) {
+        var re = /\[(\d+):(\d+(?:\.\d+)?)\](.*)/g;
+        var m;
+        while ((m = re.exec(txt))) {
+          var t = parseInt(m[1], 10) * 60 + parseFloat(m[2]);
+          lyricData.push({ t: t, text: m[3].trim() });
+        }
+        lyricData.sort(function (a, b) { return a.t - b.t; });
+        if (els.lyricInner) {
+          els.lyricInner.innerHTML = lyricData.map(function (l) {
+            return '<p class="lyric-line">' + esc(l.text) + '</p>';
+          }).join('');
+        }
+        updateLyric(audio.currentTime);
+      }).catch(function () { if (els.lyricBtn) els.lyricBtn.hidden = true; });
+    }
+    function updateLyric(time) {
+      if (!lyricData.length || !els.lyricInner) return;
+      var idx2 = 0;
+      for (var i = 0; i < lyricData.length; i++) {
+        if (lyricData[i].t <= time) idx2 = i; else break;
+      }
+      var lines = els.lyricInner.querySelectorAll('.lyric-line');
+      for (var j = 0; j < lines.length; j++) {
+        lines[j].classList.toggle('active', j === idx2);
+      }
+      if (lines[idx2] && lines[idx2].scrollIntoView) {
+        lines[idx2].scrollIntoView({ block: 'center', behavior: 'smooth' });
+      }
+    }
+    if (els.lyricBtn) {
+      els.lyricBtn.addEventListener('click', function () { togglePanel(els.lyricPanel); });
+    }
+
     els.play.addEventListener('click', function () {
       if (audio.paused) play(); else audio.pause();
       updateUI();
@@ -440,16 +529,41 @@
     els.prev.addEventListener('click', function () { loadTrack(idx - 1); play(); }, false);
     els.next.addEventListener('click', function () { loadTrack(idx + 1); play(); }, false);
 
+    /* 进度条：播放时同步，拖动即时跳转；duration 不可用（NaN/Infinity）时跳过 */
+    /* 拖动中或目标位置未到达（seek 失败/未缓冲）时，不把进度条拉回当前播放位置，避免拖动被弹回 */
+    var barDragging = false, seekTarget = -1;
+    function refreshBar() {
+      var d = audio.duration;
+      if (!d || !isFinite(d)) return;
+      if (seekTarget >= 0 && !barDragging && Math.abs(audio.currentTime - seekTarget) < 0.5) seekTarget = -1;
+      if (els.bar) {
+        els.bar.max = String(d);
+        if (!barDragging && seekTarget < 0) els.bar.value = String(audio.currentTime || 0);
+      }
+      if (els.time) els.time.textContent = fmt(seekTarget >= 0 ? seekTarget : audio.currentTime) + ' / ' + fmt(d);
+    }
+    audio.addEventListener('seeked', function () {
+      if (seekTarget >= 0 && Math.abs(audio.currentTime - seekTarget) < 0.5) seekTarget = -1;
+      if (seekTarget >= 0 && els.bar) els.bar.value = String(seekTarget);
+      refreshBar();
+    }, false);
     audio.addEventListener('timeupdate', function () {
-      if (els.bar && audio.duration) els.bar.max = String(audio.duration);
-      if (els.bar) els.bar.value = String(audio.currentTime || 0);
-      if (els.time) els.time.textContent = fmt(audio.currentTime) + ' / ' + fmt(audio.duration);
+      refreshBar();
+      updateLyric(audio.currentTime);
       var now = Date.now();
       if (now - lastSave > 1000) { lastSave = now; saveState(); }
     }, false);
-    if (els.bar) els.bar.addEventListener('input', function () {
-      audio.currentTime = parseFloat(els.bar.value) || 0;
-    }, false);
+    if (els.bar) {
+      els.bar.addEventListener('pointerdown', function () { barDragging = true; }, true);
+      els.bar.addEventListener('pointerup', function () { barDragging = false; }, true);
+      els.bar.addEventListener('pointercancel', function () { barDragging = false; }, true);
+      els.bar.addEventListener('input', function () {
+        var t = parseFloat(els.bar.value) || 0;
+        seekTarget = t;
+        audio.currentTime = t;
+        if (els.time) els.time.textContent = fmt(t) + ' / ' + fmt(audio.duration);
+      }, false);
+    }
     audio.addEventListener('ended', function () {
       if (pc.loop === 'one') { loadTrack(idx); play(); }
       else if (pc.loop === 'off') updateUI();
@@ -469,13 +583,12 @@
     }
     var saved = null;
     try { saved = JSON.parse(localStorage.getItem('erik-player') || 'null'); } catch (e) {}
+    var resumeT = saved && saved.t ? saved.t : 0;
     loadTrack(saved && typeof saved.idx === 'number' ? saved.idx : 0);
-    if (saved && saved.t) {
-      audio.currentTime = Math.min(saved.t, audio.duration || saved.t);
-      audio.addEventListener('loadedmetadata', function () {
-        audio.currentTime = Math.min(saved.t, audio.duration || saved.t);
-      }, { once: true });
-    }
+    audio.addEventListener('loadedmetadata', function () {
+      if (resumeT) audio.currentTime = Math.min(resumeT, audio.duration || resumeT);
+      refreshBar();
+    }, false);
     audio.addEventListener('play', saveState, false);
     audio.addEventListener('pause', saveState, false);
     if (saved && saved.playing) play();

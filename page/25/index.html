@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><script>
+      (function () {
+        var m = 'dark';
+        var t = localStorage.getItem('erik-theme');
+        var dark = t ? t === 'dark' : (m === 'auto' ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) : m === 'dark');
+        if (!dark) document.documentElement.classList.add('erik-light');
+      })();
+    </script>
+  <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +38,19 @@
 <link rel="stylesheet" type="text/css" href="/css/effects.css">
 <link rel="stylesheet" type="text/css" href="/css/mobile.css">
 
+    
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"艾瑞可erik","url":"https://erik.xyz/","description":"一只全栈开发的程序猿，偶尔做做运维、PHP、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。"}]}
+    </script>
+    
+    
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script>
+      if (location.protocol === 'https:' && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').catch(function () {});
+      }
+    </script>
+    
 <meta name="generator" content="Hexo 6.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
 <body class="erik-dark sidebar-left">
@@ -65,7 +86,19 @@
         
           <li><a href="/open-page/index.html"  target="_blank" rel="noopener" >开源</a></li>
         
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://visual.erik.xyz" target="_blank" >算法</a></li>
+        
       </ul>
+      
+      <button type="button" id="search-toggle" class="header-icon" aria-label="搜索">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      </button>
+      
+      
+      <button type="button" id="theme-toggle" class="header-icon" aria-label="切换主题">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+      
     </nav>
     <div class="header-right">
       <div class="social-wrap">
@@ -134,7 +167,7 @@
   <div class="hero-emojis" aria-hidden="true">
     <span class="float-emoji e1">🛸</span>
     <span class="float-emoji e2">⚡</span>
-    <span class="float-emoji e3">😜</span>
+    <span class="float-emoji e3">🤔</span>
     <span class="float-emoji e4">🔮</span>
     <span class="float-emoji e5">🚀</span>
   </div>
@@ -147,6 +180,7 @@
     <span class="stat-chip">🏷️ 499 个标签</span>
     <span class="stat-chip">📂 89 个分类</span>
   </div>
+  
 </section>
 
 <div class="layout">
@@ -197,8 +231,10 @@
 
 
         
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>运用thinkphp框架好久一段时间了，最近进换工作后又重新熟悉一下，才发现这个框架还是挺好用的。从代码的模型、函数调用，到数据输出，静态生成调试……每种数据展现的是不同的逻辑，同时又是相同的思维。 php有java的思想，却又不能按照java的方法照搬式使用。今天一同事就一直在纠结这个问题，其实是他想的多了，把2种不同的语言混淆到一起。思想可以相似，用法却有着差别。猛然间觉得人的思维何苦不是这样的，相近的事物关联在一起，得出结论，最终却输给实践的答案。 运用一种框架并不难，也没有什么特殊的技巧，有时候自是自己想多了，思维跑偏了。成功的捷径也是这样，不需要非得30而立，也不需要非得获得认证，只是实间沉积的多少和世界观的认知。我们并不能改变自己原有的根本，我们却可以朝着未来的方向去努力改变。 很简单，一切都和容易……</p>
@@ -258,8 +294,10 @@
 
 
         
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>时间久了，不得不吐槽一下，那些年的我们。 一起逃课，一起吃饭…… 有时我在想，我们的相遇只是一抹时光的略去，曾有的微笑和快乐早已停息。多少过后，我还记得你，你还认识我。其实，不必有太多的感觉，没有回忆的时刻里我们总会有真理来奠基。 没有资格去埋怨环境和不公，你想要的终究是要自己来取，等待，永远不会有美丽的结局。 随手一笔，吐槽自己，吐槽时间，用亲情来滴亮牟际，看看世界美妙的乐曲。 走也不是开始，去也不是结束，往复循环……</p>
@@ -319,8 +357,10 @@
 
 
         
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>第一届国际互联网大会已经过去了，中国7个大佬分别掌管着不同领域的资源，把持着各自的方向。烧钱也好，合作也好，投资也罢结局都是推动中国经济发展，方便人群互惠互利。我们生活在底层的人不回去知道10年后是什么样子，当然也不会很在意，高科技的发展以让生活变得很懒。我们到最后会是什么样，会担心什么……都是未知的 百度从一个乱撞的苍蝇，变为专注智能、大数据方向发展。阿里巴巴从淘宝、团购、到阿里云不断演化自己的生态圈。腾讯，中国永远聊天中的老大，5亿qq，4.5亿微信用户群。360夺冠网络pc安全之首。小米开创国产手机品牌第一，同时也是苹果的跟屁虫。京东，曾是很不起眼的一家商城，如今和腾讯联姻大有盖过阿里巴巴之势。搜狐，不起眼的角色，在一步步崛起。 我能说现在是互联网开拔的时代，也是7大佬真正争斗的开幕，一场很大的风暴开始慢慢酝酿了。</p>
@@ -380,8 +420,10 @@
 
 
         
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>高交会在深圳有好几个年头了，一直没抽时间去看，昨天特地去了一下。 <img src="http://i1.tietuku.com/0163e6e287a5d7d1.jpg" alt="3d试衣镜图片"> 从1号馆展示科技动态、视觉技术给人太多的震撼了。3d试衣镜，激光自由雕刻机，移动机器人……感觉不久的生活会很便捷。我不知道这样科技的智能化利弊之间有多大，科技给我们带来越多的便捷同时也产生越多的弊端。机器都干了人来干的事情，人的生活会是什么样？ <img src="http://i1.tietuku.com/c3b005b4b3af85b3.jpg" alt="图片"> 我能看到现在的智能家具、绿色能源、3d立体这些东西足以让我猜想未来的生活会是什么样子的。科技在不断的更新，影响着我们周围的一切，也许不久我可以站在祖国的最南端和最北端的盆友面对面的交流，他的表情、动作一一展现出来。 <img src="http://i1.tietuku.com/ed6d90a08a015309.jpg" alt="图片"> 下一年将会是互联网统治，伴随着物联网、车联网、o2o的出现生活中似乎只剩2样东西——网络和电。少了他们感觉会空虚，会无助，会模糊。手势识别技术也再次成熟，或许过不了几天你可以看到真实的游戏中，自己如临实景，操控整个战场。 <img src="http://i1.tietuku.com/3338997c2105e903.jpg" alt="8K电视图片"></p>
@@ -441,8 +483,10 @@
 
 
         
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>乌镇，中国历史上的千年古镇。旅游的好地方，咋看和互联网大会不找边啊，几千年留下的历史建筑同现在科技结合在一起岸，给太多的疑惑了。跟着这些疑惑先去百度一下。 <img src="http://i1.tietuku.com/2d6c4e9df4ed6e87.png" alt="百度截图"> 百度只给了这个简单的介绍，介绍后面提到互联网大会。还是有点晕乎，到底为什么在乌镇举行互联网大会，为什么不是北上广深任一城市？后来才发现，原来乌镇是全国最早、最快运用互联网、互联网经济最发达的地方，当然也有主办方有意让互联网大会坐落在一个小镇上。第一节世界互联网大会就这么在乌镇开始了，没有柏油路，没有玻璃窗，所有的原貌依旧，一种古老的气息同店铺里扫描支付、石板路上的无线高速wi-fi显得格外有意思。 互联网大会将聚集十几个国家地区的公司代表，为期三天，共同探讨世界互联网发展。第一届就这么开始了。</p>
@@ -502,8 +546,10 @@
 
 
         
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>最近在做ecshop发现mysql忘了一大堆，复习一下。<br>name数据库  name1表格1  依次类推 </p>
@@ -571,8 +617,10 @@
 
 
         
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt; &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt; &lt;head&gt; </span><br><span class="line">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt; </span><br><span class="line">&lt;title&gt;访客统计&lt;/title&gt; </span><br><span class="line">&lt;/head&gt; &lt;body&gt; </span><br><span class="line">  &lt;?php </span><br><span class="line">  if (!@$fp=fopen(&quot;count.txt&quot;, &quot;r&quot;))&#123; //以只读的方式打开文件，这步可要可不要根据实际情况来确定。</span><br><span class="line">  		echo &quot;count.txt文件创建成功！&lt;br /&gt;&quot;; </span><br><span class="line">  &#125;</span><br><span class="line">  @$num=fgets($fp,12);//读取11位数字 </span><br><span class="line">  if ($num==&quot;&quot;)$num=0;//如果文件count.txt内容为空，则初始化为0 $num++; //浏览次数加1 </span><br><span class="line">  @fclose($fp); $fp=fopen(&quot;count.txt&quot;, &quot;w&quot;);//以只读的方式打开文件 </span><br><span class="line">  fwrite($fp, $num); //写入加1后结果 </span><br><span class="line">  fclose($fp); //关闭文件 echo &quot;您是第&quot;.$num.&quot;位浏览者！&quot;; </span><br><span class="line">  ?&gt; </span><br><span class="line">&lt;/body&gt; </span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -633,8 +681,10 @@
 
 
         
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>__construct()构造函数，主要是通过关键字new生成实例的时候，它就会被调用执行。（构造函数不能返回值） __destructor()析构函数，它是在对象被销毁的时候被调用执行的。（对象被销毁时清空资源或者记录日志信息） __get(),__set()访问函数，类属性被访问和操作，访问函数都会被激发。oop思想不鼓励直接从类的外部访问类的属性，所以使用它们可以避免直接对类属性的访问。
@@ -695,8 +745,10 @@
 
 
         
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>date_default_timezone_set();设置默认时区时间 strtotime()函数，将任何英文文本的日期时间描述解析为 Unix 时间戳 getdate()函数，把生成的时间戳转化为一个数组，包含各个部分。 checkdate()函数，检查日期的有效性 格式  checkdate(月份,日期,年份) mktime()函数，取得一个日期的时间戳  格式 mktime(小时,分钟,秒,月份,日期,年份) strftime()函数，把时间戳格式化为日期和时间    格式 strftime(格式,时间戳) gmstrftime()函数和strftime()函数用法一致，只是gmstrftime()函数是显示标准的GMT时间 笔者遇到过日期和时间格式符，%Z显示的中文编码为GBK而我主体用的是utf8，所以只能转码用 iconv()函数 格式 iconv(原字符编码,要转换成的字符编码,转换目标) <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://tietuku.com/580195791180cf87" target="_blank" title="php时间函数"><img src="http://i2.tietuku.com/580195791180cf87.jpg" alt="php时间函数"></a></p>
@@ -758,8 +810,10 @@
 
 
         
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>php开发中数组是经常性的用到 那就介绍一下一维数组中的排序函数 sort()函数，默认排序从低到高排列 asort()函数，根据数组元素的值升序排列 ksort()函数，根据数组元素的键值，也就是关键字的升序排列 rsort()函数正好和sort()函数相反 arsort()函数正好和asort()函数相反 krsort()函数正好和ksort()函数相反   array_unshift()函数，向数组中与添加元素   array_unshift(目标数组,要添加的元素) array_push()函数，向数组中添加元素，以实现先进先出  array_unshift(目标数组,要添加的元素) array_shift()函数，删除目标数组的头一个数组元素  array_shift(目标数组) array_pop()函数，删除目标数组的最后一个数组元素   array_pop(目标数组)   array_key_exists()函数专门针对联合数组的‘键名’进行查询 array_search()函数专门针对联合数组的‘元素值’进行查询 array_keys()函数是取得数组‘键值’ array_values()函数是取得数组‘元素值’   count()函数，为统计数组的元素个数 array_count_values()函数，为统计数组的元素值个数（只能用于一维数组） array_unique()函数实现数组中元素的唯一性，也就是去掉数组中重复的元素 array_flip()函数调换数组中的键值和元素值位置，如果有重复的键值则覆盖键值，显示最后一次赋值的键值   serialize()函数，数组序列化 unserialize()函数，数组反序列化</p>
@@ -808,15 +862,6 @@
       
       
         
-        <a class="tag-item" href="/tags/php%E6%8A%80%E5%B7%A7/" title="1 篇">php技巧</a>
-      
-        
-        <a class="tag-item" href="/tags/php%E7%B1%BB%E5%BA%93/" title="1 篇">php类库</a>
-      
-        
-        <a class="tag-item" href="/tags/php%E8%B5%84%E6%BA%90/" title="1 篇">php资源</a>
-      
-        
         <a class="tag-item" href="/tags/%E6%97%A5%E5%BF%97/" title="1 篇">日志</a>
       
         
@@ -830,6 +875,15 @@
       
         
         <a class="tag-item" href="/tags/nginx/" title="1 篇">nginx</a>
+      
+        
+        <a class="tag-item" href="/tags/php%E6%8A%80%E5%B7%A7/" title="1 篇">php技巧</a>
+      
+        
+        <a class="tag-item" href="/tags/php%E7%B1%BB%E5%BA%93/" title="1 篇">php类库</a>
+      
+        
+        <a class="tag-item" href="/tags/php%E8%B5%84%E6%BA%90/" title="1 篇">php资源</a>
       
         
         <a class="tag-item" href="/tags/php%E5%BA%93/" title="1 篇">php库</a>
@@ -854,12 +908,6 @@
       
         
         <a class="tag-item" href="/tags/kali%E5%AE%89%E8%A3%85/" title="1 篇">kali安装</a>
-      
-        
-        <a class="tag-item" href="/tags/%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%B9%BF%E5%91%8A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" title="1 篇">多平台广告管理系统</a>
-      
-        
-        <a class="tag-item" href="/tags/Ads-Platform/" title="1 篇">Ads Platform</a>
       
         
         <a class="tag-item" href="/tags/%E5%86%9C%E4%B8%9A%E7%B3%BB%E7%BB%9F/" title="1 篇">农业系统</a>
@@ -893,6 +941,12 @@
       
         
         <a class="tag-item" href="/tags/nginx%E9%9A%90%E8%97%8Findex/" title="1 篇">nginx隐藏index</a>
+      
+        
+        <a class="tag-item" href="/tags/%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%B9%BF%E5%91%8A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" title="1 篇">多平台广告管理系统</a>
+      
+        
+        <a class="tag-item" href="/tags/Ads-Platform/" title="1 篇">Ads Platform</a>
       
         
         <a class="tag-item" href="/tags/%E6%97%A5%E5%B8%B8/" title="1 篇">日常</a>
@@ -1381,15 +1435,6 @@
         <a class="tag-item" href="/tags/web%E4%BC%98%E5%8C%96/" title="1 篇">web优化</a>
       
         
-        <a class="tag-item" href="/tags/%E8%93%9D%E7%89%99/" title="1 篇">蓝牙</a>
-      
-        
-        <a class="tag-item" href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%93%9D%E7%89%99/" title="1 篇">小程序蓝牙</a>
-      
-        
-        <a class="tag-item" href="/tags/%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" title="1 篇">蓝牙连接</a>
-      
-        
         <a class="tag-item" href="/tags/%E6%92%AE%E5%90%88%E7%AE%97%E6%B3%95/" title="1 篇">撮合算法</a>
       
         
@@ -1406,6 +1451,15 @@
       
         
         <a class="tag-item" href="/tags/maven%E5%86%85%E7%BD%91%E5%BA%93/" title="1 篇">maven内网库</a>
+      
+        
+        <a class="tag-item" href="/tags/%E8%93%9D%E7%89%99/" title="1 篇">蓝牙</a>
+      
+        
+        <a class="tag-item" href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%93%9D%E7%89%99/" title="1 篇">小程序蓝牙</a>
+      
+        
+        <a class="tag-item" href="/tags/%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" title="1 篇">蓝牙连接</a>
       
         
         <a class="tag-item" href="/tags/%E9%AB%98%E7%BA%A7%E7%BC%93%E5%AD%98%E9%85%8D%E7%BD%AE/" title="1 篇">高级缓存配置</a>
@@ -1459,9 +1513,6 @@
         <a class="tag-item" href="/tags/mysql%E6%80%A7%E8%83%BD/" title="1 篇">mysql性能</a>
       
         
-        <a class="tag-item" href="/tags/new%E5%92%8Cmake%E7%9A%84%E5%8C%BA%E5%88%AB/" title="1 篇">new和make的区别</a>
-      
-        
         <a class="tag-item" href="/tags/%E5%86%85%E7%BD%91%E6%94%AF%E4%BB%98/" title="1 篇">内网支付</a>
       
         
@@ -1475,6 +1526,9 @@
       
         
         <a class="tag-item" href="/tags/%E7%A9%BF%E9%80%8F/" title="1 篇">穿透</a>
+      
+        
+        <a class="tag-item" href="/tags/new%E5%92%8Cmake%E7%9A%84%E5%8C%BA%E5%88%AB/" title="1 篇">new和make的区别</a>
       
         
         <a class="tag-item" href="/tags/%E7%BA%A2%E5%8C%85%E7%AE%97%E6%B3%95/" title="1 篇">红包算法</a>
@@ -1582,9 +1636,6 @@
         <a class="tag-item" href="/tags/php%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0/" title="1 篇">php数学函数</a>
       
         
-        <a class="tag-item" href="/tags/php%E9%9D%A2%E8%AF%95%E9%A2%98/" title="1 篇">php面试题</a>
-      
-        
         <a class="tag-item" href="/tags/php%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="1 篇">php面向对象</a>
       
         
@@ -1642,12 +1693,6 @@
         <a class="tag-item" href="/tags/phpunit%E5%AE%89%E8%A3%85/" title="1 篇">phpunit安装</a>
       
         
-        <a class="tag-item" href="/tags/php%E8%BF%87%E6%BB%A4/" title="1 篇">php过滤</a>
-      
-        
-        <a class="tag-item" href="/tags/%E8%BF%87%E6%BB%A4/" title="1 篇">过滤</a>
-      
-        
         <a class="tag-item" href="/tags/foreach/" title="1 篇">foreach</a>
       
         
@@ -1655,6 +1700,12 @@
       
         
         <a class="tag-item" href="/tags/php%E4%B8%ADforeach%E6%8A%A5%E9%94%99/" title="1 篇">php中foreach报错</a>
+      
+        
+        <a class="tag-item" href="/tags/php%E8%BF%87%E6%BB%A4/" title="1 篇">php过滤</a>
+      
+        
+        <a class="tag-item" href="/tags/%E8%BF%87%E6%BB%A4/" title="1 篇">过滤</a>
       
         
         <a class="tag-item" href="/tags/php%E4%B8%ADif/" title="1 篇">php中if</a>
@@ -1667,6 +1718,15 @@
       
         
         <a class="tag-item" href="/tags/php%E5%AD%97%E7%AC%A6%E4%B8%B2/" title="1 篇">php字符串</a>
+      
+        
+        <a class="tag-item" href="/tags/php7%E4%B8%ADsphinx/" title="1 篇">php7中sphinx</a>
+      
+        
+        <a class="tag-item" href="/tags/php7%E4%B8%ADsphinx%E6%89%A9%E5%B1%95/" title="1 篇">php7中sphinx扩展</a>
+      
+        
+        <a class="tag-item" href="/tags/sphinx%E6%89%A9%E5%B1%95/" title="1 篇">sphinx扩展</a>
       
         
         <a class="tag-item" href="/tags/plc/" title="1 篇">plc</a>
@@ -1690,28 +1750,19 @@
         <a class="tag-item" href="/tags/%E8%99%9A%E7%BA%BF%E6%A1%86/" title="1 篇">虚线框</a>
       
         
-        <a class="tag-item" href="/tags/R%E8%AF%AD%E8%A8%80/" title="1 篇">R语言</a>
-      
-        
         <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E9%9A%8F%E6%9C%BA%E5%8C%96/" title="1 篇">数据随机化</a>
       
         
-        <a class="tag-item" href="/tags/php7%E4%B8%ADsphinx/" title="1 篇">php7中sphinx</a>
+        <a class="tag-item" href="/tags/R%E8%AF%AD%E8%A8%80/" title="1 篇">R语言</a>
       
         
-        <a class="tag-item" href="/tags/php7%E4%B8%ADsphinx%E6%89%A9%E5%B1%95/" title="1 篇">php7中sphinx扩展</a>
-      
-        
-        <a class="tag-item" href="/tags/sphinx%E6%89%A9%E5%B1%95/" title="1 篇">sphinx扩展</a>
+        <a class="tag-item" href="/tags/redis%E7%9B%91%E6%8E%A7/" title="1 篇">redis监控</a>
       
         
         <a class="tag-item" href="/tags/redis%E6%80%BB%E7%BB%93/" title="1 篇">redis总结</a>
       
         
         <a class="tag-item" href="/tags/redis%E5%91%BD%E4%BB%A4/" title="1 篇">redis命令</a>
-      
-        
-        <a class="tag-item" href="/tags/redis%E7%9B%91%E6%8E%A7/" title="1 篇">redis监控</a>
       
         
         <a class="tag-item" href="/tags/redis%E9%94%81/" title="1 篇">redis锁</a>
@@ -1801,15 +1852,6 @@
         <a class="tag-item" href="/tags/%E8%B5%84%E6%BA%90/" title="1 篇">资源</a>
       
         
-        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E6%94%BF%E5%BA%9C%E7%94%B5%E8%AF%9D/" title="1 篇">深圳政府电话</a>
-      
-        
-        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E7%94%B5%E8%AF%9D/" title="1 篇">深圳电话</a>
-      
-        
-        <a class="tag-item" href="/tags/%E7%89%B9%E5%8C%BA%E7%94%B5%E8%AF%9D/" title="1 篇">特区电话</a>
-      
-        
         <a class="tag-item" href="/tags/%E5%B1%85%E4%BD%8F%E8%AF%81/" title="1 篇">居住证</a>
       
         
@@ -1817,6 +1859,15 @@
       
         
         <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E6%96%B0%E5%B1%85%E4%BD%8F%E8%AF%81/" title="1 篇">深圳新居住证</a>
+      
+        
+        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E6%94%BF%E5%BA%9C%E7%94%B5%E8%AF%9D/" title="1 篇">深圳政府电话</a>
+      
+        
+        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E7%94%B5%E8%AF%9D/" title="1 篇">深圳电话</a>
+      
+        
+        <a class="tag-item" href="/tags/%E7%89%B9%E5%8C%BA%E7%94%B5%E8%AF%9D/" title="1 篇">特区电话</a>
       
         
         <a class="tag-item" href="/tags/%E5%9B%BD%E5%BA%86%E9%AA%91%E8%A1%8C/" title="1 篇">国庆骑行</a>
@@ -1921,6 +1972,15 @@
         <a class="tag-item" href="/tags/js%E6%8F%92%E4%BB%B6/" title="1 篇">js插件</a>
       
         
+        <a class="tag-item" href="/tags/virtualbox/" title="1 篇">virtualbox</a>
+      
+        
+        <a class="tag-item" href="/tags/hyper-v/" title="1 篇">hyper-v</a>
+      
+        
+        <a class="tag-item" href="/tags/%E9%B8%BF%E8%92%99%E5%BC%80%E5%8F%91/" title="1 篇">鸿蒙开发</a>
+      
+        
         <a class="tag-item" href="/tags/web%E8%87%AA%E9%80%82%E5%BA%94/" title="1 篇">web自适应</a>
       
         
@@ -1939,16 +1999,10 @@
         <a class="tag-item" href="/tags/mysql%E8%AE%BE%E7%BD%AE%E8%B6%85%E6%97%B6%EF%BC%8C%E8%B6%85%E6%97%B6/" title="1 篇">mysql设置超时，超时</a>
       
         
+        <a class="tag-item" href="/tags/php%E9%9D%A2%E8%AF%95%E9%A2%98/" title="1 篇">php面试题</a>
+      
+        
         <a class="tag-item" href="/tags/markdown/" title="1 篇">markdown</a>
-      
-        
-        <a class="tag-item" href="/tags/virtualbox/" title="1 篇">virtualbox</a>
-      
-        
-        <a class="tag-item" href="/tags/hyper-v/" title="1 篇">hyper-v</a>
-      
-        
-        <a class="tag-item" href="/tags/%E9%B8%BF%E8%92%99%E5%BC%80%E5%8F%91/" title="1 篇">鸿蒙开发</a>
       
         
         <a class="tag-item" href="/tags/wget/" title="1 篇">wget</a>
@@ -1990,15 +2044,6 @@
         <a class="tag-item" href="/tags/%E6%97%A0%E9%99%90%E6%9E%81%E5%88%86%E7%B1%BB%E6%A0%91%E5%9E%8B/" title="1 篇">无限极分类树型</a>
       
         
-        <a class="tag-item" href="/tags/xhprof/" title="1 篇">xhprof</a>
-      
-        
-        <a class="tag-item" href="/tags/laravel/" title="1 篇">laravel</a>
-      
-        
-        <a class="tag-item" href="/tags/composer%E6%8F%92%E4%BB%B6/" title="1 篇">composer插件</a>
-      
-        
         <a class="tag-item" href="/tags/html/" title="1 篇">html</a>
       
         
@@ -2021,6 +2066,15 @@
       
         
         <a class="tag-item" href="/tags/%E7%89%A9%E7%90%86%E5%88%A0%E9%99%A4/" title="1 篇">物理删除</a>
+      
+        
+        <a class="tag-item" href="/tags/xhprof/" title="1 篇">xhprof</a>
+      
+        
+        <a class="tag-item" href="/tags/laravel/" title="1 篇">laravel</a>
+      
+        
+        <a class="tag-item" href="/tags/composer%E6%8F%92%E4%BB%B6/" title="1 篇">composer插件</a>
       
         
         <a class="tag-item" href="/tags/3D/" title="1 篇">3D</a>
@@ -2074,13 +2128,13 @@
         <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BC%98%E5%8C%96%EF%BC%8Cmysql%E8%AF%AD%E5%8F%A5%E4%BC%98%E5%8C%96/" title="1 篇">数据库优化，mysql语句优化</a>
       
         
-        <a class="tag-item" href="/tags/%E5%A4%95%E9%98%B3/" title="1 篇">夕阳</a>
-      
-        
         <a class="tag-item" href="/tags/php%E5%8A%A0%E5%AF%86/" title="1 篇">php加密</a>
       
         
         <a class="tag-item" href="/tags/php%E6%8A%80%E6%9C%AF/" title="1 篇">php技术</a>
+      
+        
+        <a class="tag-item" href="/tags/%E5%A4%95%E9%98%B3/" title="1 篇">夕阳</a>
       
         
         <a class="tag-item" href="/tags/mysql%E5%87%BD%E6%95%B0/" title="1 篇">mysql函数</a>
@@ -2119,10 +2173,10 @@
         <a class="tag-item" href="/tags/%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%B4%A2/" title="1 篇">谷歌搜索</a>
       
         
-        <a class="tag-item" href="/tags/php%E6%89%A9%E5%B1%95/" title="2 篇">php扩展</a>
+        <a class="tag-item" href="/tags/%E4%BB%A3%E7%A0%81/" title="2 篇">代码</a>
       
         
-        <a class="tag-item" href="/tags/%E4%BB%A3%E7%A0%81/" title="2 篇">代码</a>
+        <a class="tag-item" href="/tags/php%E6%89%A9%E5%B1%95/" title="2 篇">php扩展</a>
       
         
         <a class="tag-item" href="/tags/%E6%BC%8F%E6%B4%9E/" title="2 篇">漏洞</a>
@@ -2329,7 +2383,7 @@
         
           <li><a href="/fault-analusis/index.html" >故障分析</a></li>
         
-          <li><a href="/2019/03/26/zui-quan-de-zheng-ze-biao-da-shi/" >正则表达式</a></li>
+          <li><a href="/2019/03/27/zui-quan-de-zheng-ze-biao-da-shi/" >正则表达式</a></li>
         
           <li><a href="/file/legals.html" >法律知识</a></li>
         
@@ -2385,11 +2439,9 @@
   
     <div class="footer-info footer-nav">
       
-        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">艾瑞可erik·导航</a>
+        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🛸 艾瑞可erik·导航</a>
       
-        <a href="https://visual.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">算法演示</a>
-      
-        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">postwoman</a>
+        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🤝 postwoman</a>
       
     </div>
   
@@ -2453,21 +2505,50 @@
   </div>
   
 
+  
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="search-panel-box">
+      <input type="search" id="search-input" class="search-input"
+             placeholder="搜索文章…" autocomplete="off">
+      <ul id="search-results" class="search-results"></ul>
+      <p class="search-empty" id="search-empty" hidden>没有找到匹配的文章 🙈</p>
+    </div>
+  </div>
+  
+  
+  <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog">
+    <button type="button" class="lightbox-close" aria-label="关闭">✕</button>
+    <button type="button" class="lightbox-prev" aria-label="上一张">‹</button>
+    <button type="button" class="lightbox-next" aria-label="下一张">›</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+  
   <script>
 window.ERIK = {
   root: "/",
   three: {"enable":true,"particleCount":2600,"particleColors":["#7c3aed","#06b6d4","#f472b6","#fbbf24","#a78bfa"],"emojiCount":14,"emoji":["🔮","✨","🚀","🫣","🌟","🤔","🎯","👌","♥️","🧪","💎","😜","🪄","😴","⚡","🌈","🛸","🤣","😘","🛰️","🪐","👾","🌙","🔥","💫","🍀","🌊","🎈","⭐","🌸","🍃","🎶","🤦","😅","🤭","🤨","🤔","😫","😭","👌","👏","😘","😣","😒","😆","🍉","💪","🤓","😏","🤦","👌","🐶","🤙","6️","👀","💔","🤗","👍","👎","👉","🙏","👌","✊","🙏","🌹","🤝","💩","☀️","🎁","🧧","💰","🎆","🔄","🥶","🏃","🐷","🧧","❤️","💋"],"opacity":0.55,"parallax":true,"scrollRotate":true},
   tilt: {"enable":true,"maxAngle":12},
-  style: {"mode":"dark","primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
+  style: {"mode":"dark","toggle":true,"primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
   mode: "dark",
   mathjax: true,
-  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"}]},
-  isPost: false
+  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg","lrc":"/music/song/yvqingweiliao.lrc"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"},{"name":"画中仙","artist":"暴卯卯","url":"/music/song/huazhongxian.WAV","cover":"/img/timg.jpeg"},{"name":"嫁给我吧","artist":"暴卯卯","url":"/music/song/jiageiwoba.WAV","cover":"/img/timg.jpeg"}]},
+  isPost: false,
+  search: {"enable":true,"placeholder":"搜索文章…","max_results":10},
+  lightbox: {"enable":true},
+  copyBtn: {"enable":true},
+  dynamicTitle: {"enable":true,"wording":"📬 有新消息等你"},
+  quote: {"enable":false,"api":""},
+  encrypt: false
 };
 </script>
 <script src="/js/vendor/three.min.js"></script>
 <script>window.THREE || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>')</script>
-<script src="/js/main.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/main.js"></script>
+
+<script src="/js/feats.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 </body>

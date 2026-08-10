@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><script>
+      (function () {
+        var m = 'dark';
+        var t = localStorage.getItem('erik-theme');
+        var dark = t ? t === 'dark' : (m === 'auto' ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) : m === 'dark');
+        if (!dark) document.documentElement.classList.add('erik-light');
+      })();
+    </script>
+  <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,6 +47,19 @@
 <link rel="stylesheet" type="text/css" href="/css/effects.css">
 <link rel="stylesheet" type="text/css" href="/css/mobile.css">
 
+    
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"艾瑞可erik","url":"https://erik.xyz/","description":"一只全栈开发的程序猿，偶尔做做运维、PHP、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。"},{"@type":"Article","headline":"JS判断浏览器类型及版本","url":"https://erik.xyz/2015/05/12/js-pan-duan-liu-lan-qi-lei-xing-ji-ban-ben/","datePublished":"2015-05-12","dateModified":"2026-08-10","author":{"@type":"Person","name":"艾瑞可erik"},"publisher":{"@type":"Organization","name":"艾瑞可erik"},"image":"http://www.cnblogs.com/Skins/custom/images/logo.gif","mainEntityOfPage":"https://erik.xyz/2015/05/12/js-pan-duan-liu-lan-qi-lei-xing-ji-ban-ben/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://erik.xyz/"},{"@type":"ListItem","position":2,"name":"转载","item":"https://erik.xyz/categories/转载/"},{"@type":"ListItem","position":3,"name":"JS判断浏览器类型及版本","item":"https://erik.xyz/2015/05/12/js-pan-duan-liu-lan-qi-lei-xing-ji-ban-ben/"}]}]}
+    </script>
+    
+    
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script>
+      if (location.protocol === 'https:' && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').catch(function () {});
+      }
+    </script>
+    
 <meta name="generator" content="Hexo 6.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
 <body class="erik-dark sidebar-left">
@@ -74,7 +95,19 @@
         
           <li><a href="/open-page/index.html"  target="_blank" rel="noopener" >开源</a></li>
         
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://visual.erik.xyz" target="_blank" >算法</a></li>
+        
       </ul>
+      
+      <button type="button" id="search-toggle" class="header-icon" aria-label="搜索">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      </button>
+      
+      
+      <button type="button" id="theme-toggle" class="header-icon" aria-label="切换主题">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+      
     </nav>
     <div class="header-right">
       <div class="social-wrap">
@@ -193,8 +226,12 @@
 </span>
 
         
+        
+        <span id="busuanzi_container_page_pv">阅读 <b id="busuanzi_value_page_pv">0</b> 次 👀</span>
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>摘自：<a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.cnblogs.com/gowhy/" target="_blank"><img src="http://www.cnblogs.com/Skins/custom/images/logo.gif" alt="返回主页"></a><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://www.cnblogs.com/gowhy/" target="_blank">狼-志</a> 你知道世界上有多少种浏览器吗？除了我们熟知的IE, Firefox, Opera, Safari四大浏览器之外，世界上还有近百种浏览器。 几天前，浏览器家族有刚诞生了一位小王子，就是Google推出的Chrome浏览器。由于Chrome出生名门，尽管他还是个小家伙，没有人敢小看他。以后，咱们常说浏览器的“四大才子”就得改称为“五朵金花”了。 在网站前端开发中，浏览器兼容性问题本已让我们手忙脚乱，Chrome的出世不知道又要给我们添多少乱子。虽然说现在有一些WEB技术（AJAX、ExtJS等）已经帮我们处理不同浏览器的兼容问题，但是有时候自己来解决岂不是更好，浏览器兼容性是前端开发框架要解决的第一个问题，要解决兼容性问题就得首先准确判断出浏览器的类型及其版本。 JavaScript是前端开发的主要语言，我们可以通过编写JavaScript程序来判断浏览器的类型及版本。JavaScript判断浏览器类型一般有两种办法，一种是根据各种浏览器独有的属性来分辨，另一种是通过分析浏览器的userAgent属性来判断的。在许多情况下，值判断出浏览器类型之后，还需判断浏览器版本才能处理兼容性问题，而判断浏览器的版本一般只能通过分析浏览器的userAgent才能知道。 我们先来分析一下各种浏览器的特征及其userAgent。<span id="more"></span> <strong>IE</strong> 只有IE支持创建ActiveX控件，因此她有一个其他浏览器没有的东西，就是ActiveXObject函数。只要判断window对象存在 ActiveXObject函数，就可以明确判断出当前浏览器是IE。而IE各个版本典型的userAgent如下：     Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)     Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.2)     Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)     Mozilla/4.0 (compatible; MSIE 5.0; Windows NT) 其中，版本号是MSIE之后的数字。 <strong>Firefox</strong> Firefox中的DOM元素都有一个getBoxObjectFor函数，用来获取该DOM元素的位置和大小（IE对应的中是 getBoundingClientRect函数）。这是Firefox独有的，判断它即可知道是当前浏览器是Firefox。Firefox几个版本的 userAgent大致如下：     Mozilla/5.0 (Windows; U; Windows NT 5.2) Gecko/2008070208 Firefox/3.0.1     Mozilla/5.0 (Windows; U; Windows NT 5.1) Gecko/20070309 Firefox/2.0.0.3     Mozilla/5.0 (Windows; U; Windows NT 5.1) Gecko/20070803 Firefox/1.5.0.12 其中，版本号是Firefox之后的数字。 <strong>Opera</strong> Opera提供了专门的浏览器标志，就是window.opera属性。Opera典型的userAgent如下：     Opera/9.27 (Windows NT 5.2; U; zh-cn)     Opera/8.0 (Macintosh; PPC Mac OS X; U; en)     Mozilla/5.0 (Macintosh; PPC Mac OS X; U; en) Opera 8.0     其中，版本号是靠近Opera的数字。 <strong>Safari</strong> Safari浏览器中有一个其他浏览器没有的openDatabase函数，可做为判断Safari的标志。Safari典型的userAgent如下：     Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/525.13 (KHTML, like Gecko) Version/3.1 Safari/525.13     Mozilla/5.0 (iPhone; U; CPU like Mac OS X) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/4A93 Safari/419.3 其版本号是Version之后的数字。 <strong>Chrome</strong> Chrome有一个MessageEvent函数，但Firefox也有。不过，好在Chrome并没有Firefox的getBoxObjectFor 函数，根据这个条件还是可以准确判断出Chrome浏览器的。目前，Chrome的userAgent是：     Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.2.149.27 Safari/525.13 其中，版本号在Chrome只后的数字。 有趣的是，Chrome的userAgent还包含了Safari的特征，也许这就是Chrome可以运行所有Apple浏览器应用的基础吧。 只要了解了以上信息，我们就可以根基这些特征来判断浏览器类型及其版本了。我们会将判断的结果保存在Sys名字空间中，成为前端框架的基本标志信息，供今后的程序来读取。如果判断出谋种浏览器，Sys名字空间将有一个该浏览器名称的属性，其值为该浏览器的版本号。例如，如果判断出IE 7.0，则Sys.ie的值为7.0；如果判断出Firefox 3.0，则Sys.firefox的值为3.0。下面是判断浏览器的代码：  </p>
@@ -310,26 +347,32 @@
 
 
   
-    <div id="gitalk-container" class="glass gitalk-box"></div>
-<link rel="stylesheet" href="/css/gitalk.css">
-<script src="/js/gitalk.min.js"></script>
-<script src="/js/md5.js"></script>
+  
+  
+  
+    
+
+<div id="gitalk-container" class="glass gitalk-box"></div>
+<link rel="stylesheet" href="/vendor/gitalk.css">
+<script src="/vendor/md5.min.js"></script>
+<script src="/vendor/gitalk.min.js"></script>
 <script>
-if (true){
-  var gitalk = new Gitalk({
-    clientID: '1f3ef16f7a5f58d435b3',
-    clientSecret: '9e444c34bd4f282e698f56ba76cd9a8d0892b762',
-    repo: 'erikwang2013.github.io',
-    owner: 'erikwang2013',
-    admin: ['erikwang2013'],
-    id: md5(location.pathname),
-    language: 'zh-CN',
-    perPage: 10,
-    distractionFreeMode: false
-  });
-  gitalk.render('gitalk-container');
-}
+  (function () {
+    var g = new Gitalk({
+      clientID: '1f3ef16f7a5f58d435b3',
+      clientSecret: '9e444c34bd4f282e698f56ba76cd9a8d0892b762',
+      repo: 'erikwang2013.github.io',
+      owner: 'erikwang2013',
+      admin: ['erikwang2013'],
+      id: md5(location.pathname),
+      language: 'zh-CN',
+      perPage: 10,
+      distractionFreeMode: true
+    });
+    g.render('gitalk-container');
+  })();
 </script>
+
 
   
 
@@ -353,11 +396,9 @@ if (true){
   
     <div class="footer-info footer-nav">
       
-        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">艾瑞可erik·导航</a>
+        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🛸 艾瑞可erik·导航</a>
       
-        <a href="https://visual.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">算法演示</a>
-      
-        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">postwoman</a>
+        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🤝 postwoman</a>
       
     </div>
   
@@ -421,23 +462,52 @@ if (true){
   </div>
   
 
+  
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="search-panel-box">
+      <input type="search" id="search-input" class="search-input"
+             placeholder="搜索文章…" autocomplete="off">
+      <ul id="search-results" class="search-results"></ul>
+      <p class="search-empty" id="search-empty" hidden>没有找到匹配的文章 🙈</p>
+    </div>
+  </div>
+  
+  
+  <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog">
+    <button type="button" class="lightbox-close" aria-label="关闭">✕</button>
+    <button type="button" class="lightbox-prev" aria-label="上一张">‹</button>
+    <button type="button" class="lightbox-next" aria-label="下一张">›</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+  
   <script>
 window.ERIK = {
   root: "/",
   three: {"enable":true,"particleCount":2600,"particleColors":["#7c3aed","#06b6d4","#f472b6","#fbbf24","#a78bfa"],"emojiCount":14,"emoji":["🔮","✨","🚀","🫣","🌟","🤔","🎯","👌","♥️","🧪","💎","😜","🪄","😴","⚡","🌈","🛸","🤣","😘","🛰️","🪐","👾","🌙","🔥","💫","🍀","🌊","🎈","⭐","🌸","🍃","🎶","🤦","😅","🤭","🤨","🤔","😫","😭","👌","👏","😘","😣","😒","😆","🍉","💪","🤓","😏","🤦","👌","🐶","🤙","6️","👀","💔","🤗","👍","👎","👉","🙏","👌","✊","🙏","🌹","🤝","💩","☀️","🎁","🧧","💰","🎆","🔄","🥶","🏃","🐷","🧧","❤️","💋"],"opacity":0.55,"parallax":true,"scrollRotate":true},
   tilt: {"enable":true,"maxAngle":12},
-  style: {"mode":"dark","primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
+  style: {"mode":"dark","toggle":true,"primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
   mode: "dark",
   mathjax: true,
-  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"}]},
-  isPost: true
+  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg","lrc":"/music/song/yvqingweiliao.lrc"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"},{"name":"画中仙","artist":"暴卯卯","url":"/music/song/huazhongxian.WAV","cover":"/img/timg.jpeg"},{"name":"嫁给我吧","artist":"暴卯卯","url":"/music/song/jiageiwoba.WAV","cover":"/img/timg.jpeg"}]},
+  isPost: true,
+  search: {"enable":true,"placeholder":"搜索文章…","max_results":10},
+  lightbox: {"enable":true},
+  copyBtn: {"enable":true},
+  dynamicTitle: {"enable":true,"wording":"📬 有新消息等你"},
+  quote: {"enable":false,"api":""},
+  encrypt: false
 };
 </script>
 <script src="/js/vendor/three.min.js"></script>
 <script>window.THREE || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>')</script>
 <script src="/js/main.js"></script>
 
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script src="/js/feats.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 </body>

@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><script>
+      (function () {
+        var m = 'dark';
+        var t = localStorage.getItem('erik-theme');
+        var dark = t ? t === 'dark' : (m === 'auto' ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) : m === 'dark');
+        if (!dark) document.documentElement.classList.add('erik-light');
+      })();
+    </script>
+  <meta charset="utf-8">
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,6 +41,19 @@
 <link rel="stylesheet" type="text/css" href="/css/effects.css">
 <link rel="stylesheet" type="text/css" href="/css/mobile.css">
 
+    
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"艾瑞可erik","url":"https://erik.xyz/","description":"一只全栈开发的程序猿，偶尔做做运维、PHP、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。"},{"@type":"Article","headline":"国内不如国外吗","url":"https://erik.xyz/2015/03/22/guo-nei-bu-ru-guo-wai-ma/","datePublished":"2015-03-22","dateModified":"2026-08-10","author":{"@type":"Person","name":"艾瑞可erik"},"publisher":{"@type":"Organization","name":"艾瑞可erik"},"mainEntityOfPage":"https://erik.xyz/2015/03/22/guo-nei-bu-ru-guo-wai-ma/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://erik.xyz/"},{"@type":"ListItem","position":2,"name":"生活手记","item":"https://erik.xyz/categories/生活手记/"},{"@type":"ListItem","position":3,"name":"国内不如国外吗","item":"https://erik.xyz/2015/03/22/guo-nei-bu-ru-guo-wai-ma/"}]}]}
+    </script>
+    
+    
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script>
+      if (location.protocol === 'https:' && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').catch(function () {});
+      }
+    </script>
+    
 <meta name="generator" content="Hexo 6.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
 <body class="erik-dark sidebar-left">
@@ -68,7 +89,19 @@
         
           <li><a href="/open-page/index.html"  target="_blank" rel="noopener" >开源</a></li>
         
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://visual.erik.xyz" target="_blank" >算法</a></li>
+        
       </ul>
+      
+      <button type="button" id="search-toggle" class="header-icon" aria-label="搜索">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      </button>
+      
+      
+      <button type="button" id="theme-toggle" class="header-icon" aria-label="切换主题">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+      
     </nav>
     <div class="header-right">
       <div class="social-wrap">
@@ -181,8 +214,12 @@
 </span>
 
         
+        
+        <span id="busuanzi_container_page_pv">阅读 <b id="busuanzi_value_page_pv">0</b> 次 👀</span>
+        
       </div>
     </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
         <p>从成长的时间里我总是听着别人去抱怨中国国情不如美国、瑞士……其他国家，于是我就跟着这种环境的滋养长大了。 中国，国内到底哪点比不上国外，又或者说差别在哪里？这是一连串的的疑问，这答案从哪里找到呢。 在成长中我知道，一个国家的发展离不开底层的人民智慧，创造事物，建设家园，经营贸易……这一切活动的基础条件又是什么？安定繁荣的秩序。对，这就是答案，我恍惚知道了什么…… 翻翻历史祖国的成长得从1840年的前和后来分析。<span id="more"></span> 1840 年以前是什么样子，我们现在的人当然不知道，可考证的只有历代留下的史书、资料。可信度也并不完全大，而这对于大的历史回顾还是相当有用处的。第一次工业 革命开始于18世纪60年代的英国，也就是1760年。1760年的中国正在干什么？1760年的中国正是乾隆二十五年，乾隆刚刚登基，国内正处于康乾盛 世的时段，人人安乐太平。那为什么国内没有进入工业革命的范围或者说没有机器的发明？那这个原因又得把历史往前翻。 中 国四大发明分别起源于春秋、东汉、隋唐、北宋，分别是公元前476年、公元25年、公元581-907年、公元960年算算时间中途有过百年的差距，但是 发明还是有的。在这时间里，社会时有动荡，思想是极为开放的，没有利益与荣耀的纠葛（我猜大概这样）安定而又开阔的思维，有发明是必然的。然而，从隋朝出 现了科举制度，唐朝进一步确立，宋朝完善，明清兴盛。那时科举就是为了当官，当官就是为了光宗耀祖，和如今干一番事业也是差不多的目的。所有人都想着寒窗 苦读，一朝荣耀。除了四书五经还是四书五经，思维就在这几个地方转。发明也就少了，看所有的人都基于这种思维，安定走完一拨又一拨。 落 后也就难免了，没跟上第一次工业革命也很自然。另外当时的清朝是限制航海，排斥外来文化。正式天国自足的安定以及愚昧的四书五经教化，剥夺了开放式的思 维。中国只发明了他，去没有将他们的用途发挥出来。而这期间发明的外流，西方世界不断钻研的改进，使得经济进入一个新的历程。 我 们可以这样说，英国是从1760年开始发展经济的。而中国呢？1840年以前还是最原始的经济，即便是到了1949年中华民国成立，中国的经济依然没有。 而的美国呢，1783年独立，1814年摆脱英国经济控制，大力发展经济，鼓励发明创新。1860年美国经济跃居世界第4。而中国呢，嘉庆裁兵，禁止出 洋。英法联军入京，火烧圆明园，处于动荡中。 那1949年以前，中国正处在第二次世界大战中、紧接着是内战。从第一次工业革命到1949年新中国成立，中国没有过真正的经济发展，也没有什么振兴经济的措施和发明。而此时，美国打发横财、其他国家也是经济萧条靠战争被转移。 而 今，半个世纪多了中国经济在急速复苏，在成长。我们任何人没有资格说中国不好，也没有资格说中国人不文明。那个国家一开始都直接从文明发展过来的吗？那个 国家发展了半个世纪的经济就已经很文明了。我们是比国外的教育、福利、保障比不了，你可以有自己的选择，但是没有资格说自己的祖国。这是事实，也是规则。</p>
@@ -241,26 +278,45 @@
 
 
   
-    <div id="gitalk-container" class="glass gitalk-box"></div>
-<link rel="stylesheet" href="/css/gitalk.css">
-<script src="/js/gitalk.min.js"></script>
-<script src="/js/md5.js"></script>
+  
+  <section class="related-posts">
+    <h2 class="related-title">🔗 相关文章</h2>
+    <div class="related-grid">
+      
+      <a class="related-card" href="2019/12/03/docker-long/">
+        <span class="related-emoji">😜</span>
+        <span class="related-name">容器发展史</span>
+        <span class="related-date">2019-12-03</span>
+      </a>
+      
+    </div>
+  </section>
+  
+  
+  
+    
+
+<div id="gitalk-container" class="glass gitalk-box"></div>
+<link rel="stylesheet" href="/vendor/gitalk.css">
+<script src="/vendor/md5.min.js"></script>
+<script src="/vendor/gitalk.min.js"></script>
 <script>
-if (true){
-  var gitalk = new Gitalk({
-    clientID: '1f3ef16f7a5f58d435b3',
-    clientSecret: '9e444c34bd4f282e698f56ba76cd9a8d0892b762',
-    repo: 'erikwang2013.github.io',
-    owner: 'erikwang2013',
-    admin: ['erikwang2013'],
-    id: md5(location.pathname),
-    language: 'zh-CN',
-    perPage: 10,
-    distractionFreeMode: false
-  });
-  gitalk.render('gitalk-container');
-}
+  (function () {
+    var g = new Gitalk({
+      clientID: '1f3ef16f7a5f58d435b3',
+      clientSecret: '9e444c34bd4f282e698f56ba76cd9a8d0892b762',
+      repo: 'erikwang2013.github.io',
+      owner: 'erikwang2013',
+      admin: ['erikwang2013'],
+      id: md5(location.pathname),
+      language: 'zh-CN',
+      perPage: 10,
+      distractionFreeMode: true
+    });
+    g.render('gitalk-container');
+  })();
 </script>
+
 
   
 
@@ -284,11 +340,9 @@ if (true){
   
     <div class="footer-info footer-nav">
       
-        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">艾瑞可erik·导航</a>
+        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🛸 艾瑞可erik·导航</a>
       
-        <a href="https://visual.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">算法演示</a>
-      
-        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">postwoman</a>
+        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🤝 postwoman</a>
       
     </div>
   
@@ -352,23 +406,52 @@ if (true){
   </div>
   
 
+  
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="search-panel-box">
+      <input type="search" id="search-input" class="search-input"
+             placeholder="搜索文章…" autocomplete="off">
+      <ul id="search-results" class="search-results"></ul>
+      <p class="search-empty" id="search-empty" hidden>没有找到匹配的文章 🙈</p>
+    </div>
+  </div>
+  
+  
+  <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog">
+    <button type="button" class="lightbox-close" aria-label="关闭">✕</button>
+    <button type="button" class="lightbox-prev" aria-label="上一张">‹</button>
+    <button type="button" class="lightbox-next" aria-label="下一张">›</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+  
   <script>
 window.ERIK = {
   root: "/",
   three: {"enable":true,"particleCount":2600,"particleColors":["#7c3aed","#06b6d4","#f472b6","#fbbf24","#a78bfa"],"emojiCount":14,"emoji":["🔮","✨","🚀","🫣","🌟","🤔","🎯","👌","♥️","🧪","💎","😜","🪄","😴","⚡","🌈","🛸","🤣","😘","🛰️","🪐","👾","🌙","🔥","💫","🍀","🌊","🎈","⭐","🌸","🍃","🎶","🤦","😅","🤭","🤨","🤔","😫","😭","👌","👏","😘","😣","😒","😆","🍉","💪","🤓","😏","🤦","👌","🐶","🤙","6️","👀","💔","🤗","👍","👎","👉","🙏","👌","✊","🙏","🌹","🤝","💩","☀️","🎁","🧧","💰","🎆","🔄","🥶","🏃","🐷","🧧","❤️","💋"],"opacity":0.55,"parallax":true,"scrollRotate":true},
   tilt: {"enable":true,"maxAngle":12},
-  style: {"mode":"dark","primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
+  style: {"mode":"dark","toggle":true,"primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
   mode: "dark",
   mathjax: true,
-  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"}]},
-  isPost: true
+  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg","lrc":"/music/song/yvqingweiliao.lrc"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"},{"name":"画中仙","artist":"暴卯卯","url":"/music/song/huazhongxian.WAV","cover":"/img/timg.jpeg"},{"name":"嫁给我吧","artist":"暴卯卯","url":"/music/song/jiageiwoba.WAV","cover":"/img/timg.jpeg"}]},
+  isPost: true,
+  search: {"enable":true,"placeholder":"搜索文章…","max_results":10},
+  lightbox: {"enable":true},
+  copyBtn: {"enable":true},
+  dynamicTitle: {"enable":true,"wording":"📬 有新消息等你"},
+  quote: {"enable":false,"api":""},
+  encrypt: false
 };
 </script>
 <script src="/js/vendor/three.min.js"></script>
 <script>window.THREE || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>')</script>
 <script src="/js/main.js"></script>
 
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script src="/js/feats.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 </body>
