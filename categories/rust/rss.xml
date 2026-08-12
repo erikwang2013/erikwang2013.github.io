@@ -26,20 +26,19 @@
         <category>php实例</category>
         <category>说说</category>
         <category>趣闻</category>
-        <category>nginx</category>
         <category>转载</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
         <category>javascript</category>
         <category>漏洞</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
+        <category>负载均衡</category>
         <category>多平台广告管理系统</category>
         <category>Ads Platform</category>
         <category>农业系统</category>
@@ -55,6 +54,7 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
+        <category>nginx</category>
         <category>日常</category>
         <category>seo</category>
         <category>优化</category>
@@ -195,6 +195,7 @@
         <category>hadoop部署</category>
         <category>hadoop3</category>
         <category>hadoop配置</category>
+        <category>log4j2</category>
         <category>数据库</category>
         <category>hbase安装教程</category>
         <category>hbase</category>
@@ -257,14 +258,12 @@
         <category>高级缓存配置</category>
         <category>mongodb</category>
         <category>mongodb权限</category>
+        <category>可穿戴设备</category>
         <category>mysql</category>
         <category>分库分表</category>
         <category>mysql应对千万级</category>
         <category>mysql瓶颈</category>
         <category>mysql瓶颈解决办法</category>
-        <category>可穿戴设备</category>
-        <category>redis</category>
-        <category>数据一致性</category>
         <category>mysql消息</category>
         <category>mysql队列</category>
         <category>mysql高并发</category>
@@ -273,7 +272,6 @@
         <category>mysql数据表设计选择</category>
         <category>mysql监控</category>
         <category>mysql性能</category>
-        <category>log4j2</category>
         <category>内网支付</category>
         <category>内网穿透</category>
         <category>支付接口本地化开发</category>
@@ -291,9 +289,9 @@
         <category>erp</category>
         <category>open erp</category>
         <category>开放erp</category>
-        <category>openresty</category>
         <category>开源工具</category>
         <category>桌面共享工具</category>
+        <category>openresty</category>
         <category>openvas</category>
         <category>openvas安装</category>
         <category>php架构</category>
@@ -317,6 +315,8 @@
         <category>php环境</category>
         <category>php集成环境</category>
         <category>服务器集成环境</category>
+        <category>redis</category>
+        <category>数据一致性</category>
         <category>数组函数</category>
         <category>数组排序函数</category>
         <category>php数学函数</category>
@@ -363,11 +363,11 @@
         <category>虚线框</category>
         <category>R语言</category>
         <category>数据随机化</category>
-        <category>redis总结</category>
-        <category>redis命令</category>
         <category>redis监控</category>
         <category>redis锁</category>
         <category>redis分布式锁</category>
+        <category>redis总结</category>
+        <category>redis命令</category>
         <category>任意金额输入</category>
         <category>10元、5元、2元</category>
         <category>队列</category>
@@ -385,9 +385,9 @@
         <category>在线编辑</category>
         <category>rust配置</category>
         <category>seajs</category>
-        <category>rust攻击检测</category>
-        <category>攻击检测</category>
         <category>go攻击检测</category>
+        <category>攻击检测</category>
+        <category>rust攻击检测</category>
         <category>session</category>
         <category>路由器烧录</category>
         <category>烧录</category>
@@ -739,8 +739,8 @@
             <guid isPermalink="true">https://erik.xyz/2026/07/29/security-rust/</guid>
             <title>Security rust攻击检测库</title>
             <link>https://erik.xyz/2026/07/29/security-rust/</link>
-            <category>rust攻击检测</category>
             <category>攻击检测</category>
+            <category>rust攻击检测</category>
             <pubDate>Wed, 29 Jul 2026 20:38:00 +0800</pubDate>
             <description><![CDATA[ &lt;!-- Copyright (c) 2026 erik &lt;erik@erik.xyz&gt; — https://erik.xyz --&gt;
 &lt;h1 id=&#34;Security-rust&#34;&gt;&lt;a href=&#34;#Security-rust&#34; class=&#34;headerlink&#34; title=&#34;Security rust&#34;&gt;&lt;/a&gt;Security rust&lt;/h1&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/erikwang2013/security-rust/blob/main/README.en.md&#34;&gt;English&lt;/a&gt; | &lt;strong&gt;中文&lt;/strong&gt;&lt;/p&gt;
@@ -1030,7 +1030,7 @@
 &lt;hr&gt;
 &lt;h2 id=&#34;开发&#34;&gt;&lt;a href=&#34;#开发&#34; class=&#34;headerlink&#34; title=&#34;开发&#34;&gt;&lt;/a&gt;开发&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 构建&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cargo build --release&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 测试（46 个集成测试）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cargo &lt;span class=&#34;built_in&#34;&gt;test&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 代码检查&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cargo clippy -- -D warnings&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;许可&#34;&gt;&lt;a href=&#34;#许可&#34; class=&#34;headerlink&#34; title=&#34;许可&#34;&gt;&lt;/a&gt;许可&lt;/h2&gt;&lt;p&gt;MIT — Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#101;&amp;#114;&amp;#105;&amp;#x6b;&amp;#64;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#x2e;&amp;#x78;&amp;#x79;&amp;#x7a;&#34;&gt;&amp;#101;&amp;#114;&amp;#105;&amp;#x6b;&amp;#64;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#x2e;&amp;#x78;&amp;#x79;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;许可&#34;&gt;&lt;a href=&#34;#许可&#34; class=&#34;headerlink&#34; title=&#34;许可&#34;&gt;&lt;/a&gt;许可&lt;/h2&gt;&lt;p&gt;MIT — Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#x65;&amp;#x72;&amp;#105;&amp;#107;&amp;#64;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#46;&amp;#120;&amp;#121;&amp;#x7a;&#34;&gt;&amp;#x65;&amp;#x72;&amp;#105;&amp;#107;&amp;#64;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#46;&amp;#120;&amp;#121;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
  ]]></description>
         </item>

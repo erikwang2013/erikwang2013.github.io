@@ -387,6 +387,7 @@
 
     var idx = 0;
     var els = {
+      mode: document.getElementById('player-mode'),
       play: document.getElementById('player-play'),
       prev: document.getElementById('player-prev'),
       next: document.getElementById('player-next'),
@@ -416,9 +417,11 @@
       });
     }
 
-    function loadTrack(i) {
+    function loadTrack(i, resumePos) {
       idx = (i + list.length) % list.length;
       var t = list[idx];
+      pendingResume = !!resumePos;
+      seekTarget = -1;
       audio.src = root.replace(/\/$/, '') + (t.url || '');
       if (els.cover) els.cover.src = root.replace(/\/$/, '') + (t.cover || '/img/timg.jpeg');
       if (els.title) els.title.textContent = t.name || '';
@@ -450,6 +453,37 @@
 
     function play() {
       audio.play().then(updateUI).catch(function () { updateUI(); });
+    }
+
+    /* 播放模式：顺序播放 / 列表循环 / 单曲循环 / 随机播放（localStorage 记忆，默认取配置 loop） */
+    var MODES = ['off', 'all', 'one', 'shuffle'];
+    var MODE_LABEL = { off: '顺序播放', all: '列表循环', one: '单曲循环', shuffle: '随机播放' };
+    var mode = localStorage.getItem('erik-player-mode');
+    if (MODES.indexOf(mode) < 0) mode = pc.loop || 'all';
+    if (MODES.indexOf(mode) < 0) mode = 'all';
+    function updateModeUI() {
+      if (!els.mode) return;
+      els.mode.dataset.mode = mode;
+      els.mode.title = '播放模式：' + MODE_LABEL[mode] + '（点击切换）';
+    }
+    if (els.mode) {
+      els.mode.addEventListener('click', function () {
+        mode = MODES[(MODES.indexOf(mode) + 1) % MODES.length];
+        localStorage.setItem('erik-player-mode', mode);
+        updateModeUI();
+      }, false);
+    }
+    updateModeUI();
+
+    function nextTrack() {
+      if (mode === 'shuffle' && list.length > 1) {
+        var r = idx;
+        while (r === idx) r = Math.floor(Math.random() * list.length);
+        loadTrack(r);
+      } else {
+        loadTrack(idx + 1);
+      }
+      play();
     }
 
     var mini = document.getElementById('player-mini');
@@ -527,20 +561,33 @@
       updateUI();
     }, false);
     els.prev.addEventListener('click', function () { loadTrack(idx - 1); play(); }, false);
-    els.next.addEventListener('click', function () { loadTrack(idx + 1); play(); }, false);
+    els.next.addEventListener('click', nextTrack, false);
 
-    /* 进度条：播放时同步，拖动即时跳转；duration 不可用（NaN/Infinity）时跳过 */
-    /* 拖动中或目标位置未到达（seek 失败/未缓冲）时，不把进度条拉回当前播放位置，避免拖动被弹回 */
+    /* 进度条：播放时同步，拖动即时跳转；拖动中或目标位置未到达（seek 失败/未缓冲）时，不把进度条拉回当前播放位置，避免拖动被弹回 */
+    /* duration 不可用（NaN/Infinity，如无 Range 支持的服务大文件元数据未就绪）时退化为 seekable 估算；仍拿不到则至少显示已播放时间 */
     var barDragging = false, seekTarget = -1;
-    function refreshBar() {
+    function getDuration() {
       var d = audio.duration;
-      if (!d || !isFinite(d)) return;
-      if (seekTarget >= 0 && !barDragging && Math.abs(audio.currentTime - seekTarget) < 0.5) seekTarget = -1;
-      if (els.bar) {
-        els.bar.max = String(d);
-        if (!barDragging && seekTarget < 0) els.bar.value = String(audio.currentTime || 0);
+      if (d && isFinite(d)) return d;
+      if (audio.seekable && audio.seekable.length) {
+        var end = audio.seekable.end(audio.seekable.length - 1);
+        if (isFinite(end) && end > 0) return end;
       }
-      if (els.time) els.time.textContent = fmt(seekTarget >= 0 ? seekTarget : audio.currentTime) + ' / ' + fmt(d);
+      return 0;
+    }
+    function refreshBar() {
+      var d = getDuration();
+      if (seekTarget >= 0 && !barDragging && Math.abs(audio.currentTime - seekTarget) < 0.5) seekTarget = -1;
+      if (d > 0) {
+        if (els.bar) {
+          els.bar.max = String(d);
+          if (!barDragging && seekTarget < 0) els.bar.value = String(audio.currentTime || 0);
+        }
+        if (els.time) els.time.textContent = fmt(seekTarget >= 0 ? seekTarget : audio.currentTime) + ' / ' + fmt(d);
+      } else {
+        if (els.bar) { els.bar.max = '0'; els.bar.value = '0'; }
+        if (els.time) els.time.textContent = fmt(audio.currentTime);
+      }
     }
     audio.addEventListener('seeked', function () {
       if (seekTarget >= 0 && Math.abs(audio.currentTime - seekTarget) < 0.5) seekTarget = -1;
@@ -553,21 +600,46 @@
       var now = Date.now();
       if (now - lastSave > 1000) { lastSave = now; saveState(); }
     }, false);
+    audio.addEventListener('durationchange', refreshBar, false);
+    function canSeek(t) {
+      var ranges = audio.seekable;
+      if (ranges && ranges.length) {
+        for (var i = 0; i < ranges.length; i++) {
+          if (t >= ranges.start(i) && t <= ranges.end(i)) return true;
+        }
+      }
+      ranges = audio.buffered;
+      if (ranges && ranges.length) {
+        for (var j = 0; j < ranges.length; j++) {
+          if (t >= ranges.start(j) && t <= ranges.end(j)) return true;
+        }
+      }
+      return false;
+    }
+    function commitSeek() {
+      if (seekTarget < 0) return;
+      if (canSeek(seekTarget)) audio.currentTime = seekTarget;
+      refreshBar();
+    }
+    audio.addEventListener('progress', function () {
+      refreshBar();
+      if (seekTarget >= 0 && canSeek(seekTarget)) audio.currentTime = seekTarget;
+    }, false);
     if (els.bar) {
       els.bar.addEventListener('pointerdown', function () { barDragging = true; }, true);
-      els.bar.addEventListener('pointerup', function () { barDragging = false; }, true);
-      els.bar.addEventListener('pointercancel', function () { barDragging = false; }, true);
+      els.bar.addEventListener('pointerup', function () { barDragging = false; commitSeek(); }, true);
+      els.bar.addEventListener('pointercancel', function () { barDragging = false; commitSeek(); }, true);
       els.bar.addEventListener('input', function () {
         var t = parseFloat(els.bar.value) || 0;
         seekTarget = t;
-        audio.currentTime = t;
-        if (els.time) els.time.textContent = fmt(t) + ' / ' + fmt(audio.duration);
+        if (canSeek(t)) audio.currentTime = t;
+        if (els.time) els.time.textContent = fmt(t) + ' / ' + fmt(getDuration());
       }, false);
     }
     audio.addEventListener('ended', function () {
-      if (pc.loop === 'one') { loadTrack(idx); play(); }
-      else if (pc.loop === 'off') updateUI();
-      else { loadTrack(idx + 1); play(); }
+      if (mode === 'one') { loadTrack(idx); play(); }
+      else if (mode === 'off') updateUI();
+      else nextTrack();
     }, false);
     audio.addEventListener('play', updateUI, false);
     audio.addEventListener('pause', updateUI, false);
@@ -584,9 +656,15 @@
     var saved = null;
     try { saved = JSON.parse(localStorage.getItem('erik-player') || 'null'); } catch (e) {}
     var resumeT = saved && saved.t ? saved.t : 0;
-    loadTrack(saved && typeof saved.idx === 'number' ? saved.idx : 0);
+    var hasSavedTrack = saved && typeof saved.idx === 'number';
+    var pendingResume = false;
+    loadTrack(hasSavedTrack ? saved.idx : 0, hasSavedTrack);
     audio.addEventListener('loadedmetadata', function () {
-      if (resumeT) audio.currentTime = Math.min(resumeT, audio.duration || resumeT);
+      if (pendingResume) {
+        pendingResume = false;
+        var d0 = getDuration();
+        if (resumeT) audio.currentTime = Math.min(resumeT, d0 || resumeT);
+      }
       refreshBar();
     }, false);
     audio.addEventListener('play', saveState, false);

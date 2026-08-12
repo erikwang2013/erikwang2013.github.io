@@ -26,20 +26,19 @@
         <category>php实例</category>
         <category>说说</category>
         <category>趣闻</category>
-        <category>nginx</category>
         <category>转载</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
         <category>javascript</category>
         <category>漏洞</category>
-        <category>http</category>
-        <category>http服务器</category>
         <category>php应用</category>
         <category>浮点</category>
-        <category>负载均衡</category>
         <category>kali</category>
         <category>kali安装</category>
+        <category>http</category>
+        <category>http服务器</category>
+        <category>负载均衡</category>
         <category>多平台广告管理系统</category>
         <category>Ads Platform</category>
         <category>农业系统</category>
@@ -55,6 +54,7 @@
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
+        <category>nginx</category>
         <category>日常</category>
         <category>seo</category>
         <category>优化</category>
@@ -195,6 +195,7 @@
         <category>hadoop部署</category>
         <category>hadoop3</category>
         <category>hadoop配置</category>
+        <category>log4j2</category>
         <category>数据库</category>
         <category>hbase安装教程</category>
         <category>hbase</category>
@@ -257,14 +258,12 @@
         <category>高级缓存配置</category>
         <category>mongodb</category>
         <category>mongodb权限</category>
+        <category>可穿戴设备</category>
         <category>mysql</category>
         <category>分库分表</category>
         <category>mysql应对千万级</category>
         <category>mysql瓶颈</category>
         <category>mysql瓶颈解决办法</category>
-        <category>可穿戴设备</category>
-        <category>redis</category>
-        <category>数据一致性</category>
         <category>mysql消息</category>
         <category>mysql队列</category>
         <category>mysql高并发</category>
@@ -273,7 +272,6 @@
         <category>mysql数据表设计选择</category>
         <category>mysql监控</category>
         <category>mysql性能</category>
-        <category>log4j2</category>
         <category>内网支付</category>
         <category>内网穿透</category>
         <category>支付接口本地化开发</category>
@@ -291,9 +289,9 @@
         <category>erp</category>
         <category>open erp</category>
         <category>开放erp</category>
-        <category>openresty</category>
         <category>开源工具</category>
         <category>桌面共享工具</category>
+        <category>openresty</category>
         <category>openvas</category>
         <category>openvas安装</category>
         <category>php架构</category>
@@ -317,6 +315,8 @@
         <category>php环境</category>
         <category>php集成环境</category>
         <category>服务器集成环境</category>
+        <category>redis</category>
+        <category>数据一致性</category>
         <category>数组函数</category>
         <category>数组排序函数</category>
         <category>php数学函数</category>
@@ -363,11 +363,11 @@
         <category>虚线框</category>
         <category>R语言</category>
         <category>数据随机化</category>
-        <category>redis总结</category>
-        <category>redis命令</category>
         <category>redis监控</category>
         <category>redis锁</category>
         <category>redis分布式锁</category>
+        <category>redis总结</category>
+        <category>redis命令</category>
         <category>任意金额输入</category>
         <category>10元、5元、2元</category>
         <category>队列</category>
@@ -385,9 +385,9 @@
         <category>在线编辑</category>
         <category>rust配置</category>
         <category>seajs</category>
-        <category>rust攻击检测</category>
-        <category>攻击检测</category>
         <category>go攻击检测</category>
+        <category>攻击检测</category>
+        <category>rust攻击检测</category>
         <category>session</category>
         <category>路由器烧录</category>
         <category>烧录</category>
@@ -510,8 +510,8 @@
             <guid isPermalink="true">https://erik.xyz/2026/07/29/security-go/</guid>
             <title>Security Go — 攻击检测库</title>
             <link>https://erik.xyz/2026/07/29/security-go/</link>
-            <category>攻击检测</category>
             <category>go攻击检测</category>
+            <category>攻击检测</category>
             <pubDate>Wed, 29 Jul 2026 18:05:00 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;Security-Go-—-攻击检测库&#34;&gt;&lt;a href=&#34;#Security-Go-—-攻击检测库&#34; class=&#34;headerlink&#34; title=&#34;Security Go — 攻击检测库&#34;&gt;&lt;/a&gt;Security Go — 攻击检测库&lt;/h1&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/erikwang2013/security-go/blob/main/README-EN.md&#34;&gt;English&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Go 语言编写的攻击检测包，覆盖 &lt;strong&gt;32 个检测器&lt;/strong&gt;、&lt;strong&gt;5 大攻击类别&lt;/strong&gt;、&lt;strong&gt;3 种可插拔存储后端&lt;/strong&gt;。统一接口 + 注册表模式，纯检测库，适配任何 Go HTTP 框架。&lt;/p&gt;
@@ -785,7 +785,7 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;hr&gt;
-&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#x61;&amp;#x69;&amp;#108;&amp;#x74;&amp;#111;&amp;#x3a;&amp;#101;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#x40;&amp;#101;&amp;#114;&amp;#105;&amp;#x6b;&amp;#46;&amp;#120;&amp;#x79;&amp;#x7a;&#34;&gt;&amp;#101;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#x40;&amp;#101;&amp;#114;&amp;#105;&amp;#x6b;&amp;#46;&amp;#120;&amp;#x79;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#x6d;&amp;#x61;&amp;#105;&amp;#x6c;&amp;#x74;&amp;#x6f;&amp;#x3a;&amp;#101;&amp;#114;&amp;#x69;&amp;#107;&amp;#64;&amp;#x65;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#x2e;&amp;#120;&amp;#x79;&amp;#x7a;&#34;&gt;&amp;#101;&amp;#114;&amp;#x69;&amp;#107;&amp;#64;&amp;#x65;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#x2e;&amp;#120;&amp;#x79;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

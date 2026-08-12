@@ -23,20 +23,19 @@
     <category term="php实例" />
     <category term="说说" />
     <category term="趣闻" />
-    <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
     <category term="漏洞" />
-    <category term="http" />
-    <category term="http服务器" />
     <category term="php应用" />
     <category term="浮点" />
-    <category term="负载均衡" />
     <category term="kali" />
     <category term="kali安装" />
+    <category term="http" />
+    <category term="http服务器" />
+    <category term="负载均衡" />
     <category term="多平台广告管理系统" />
     <category term="Ads Platform" />
     <category term="农业系统" />
@@ -52,6 +51,7 @@
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="nginx" />
     <category term="日常" />
     <category term="seo" />
     <category term="优化" />
@@ -192,6 +192,7 @@
     <category term="hadoop部署" />
     <category term="hadoop3" />
     <category term="hadoop配置" />
+    <category term="log4j2" />
     <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
@@ -254,14 +255,12 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
+    <category term="可穿戴设备" />
     <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
     <category term="mysql瓶颈解决办法" />
-    <category term="可穿戴设备" />
-    <category term="redis" />
-    <category term="数据一致性" />
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
@@ -270,7 +269,6 @@
     <category term="mysql数据表设计选择" />
     <category term="mysql监控" />
     <category term="mysql性能" />
-    <category term="log4j2" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -288,9 +286,9 @@
     <category term="erp" />
     <category term="open erp" />
     <category term="开放erp" />
-    <category term="openresty" />
     <category term="开源工具" />
     <category term="桌面共享工具" />
+    <category term="openresty" />
     <category term="openvas" />
     <category term="openvas安装" />
     <category term="php架构" />
@@ -314,6 +312,8 @@
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
+    <category term="redis" />
+    <category term="数据一致性" />
     <category term="数组函数" />
     <category term="数组排序函数" />
     <category term="php数学函数" />
@@ -360,11 +360,11 @@
     <category term="虚线框" />
     <category term="R语言" />
     <category term="数据随机化" />
-    <category term="redis总结" />
-    <category term="redis命令" />
     <category term="redis监控" />
     <category term="redis锁" />
     <category term="redis分布式锁" />
+    <category term="redis总结" />
+    <category term="redis命令" />
     <category term="任意金额输入" />
     <category term="10元、5元、2元" />
     <category term="队列" />
@@ -382,9 +382,9 @@
     <category term="在线编辑" />
     <category term="rust配置" />
     <category term="seajs" />
-    <category term="rust攻击检测" />
-    <category term="攻击检测" />
     <category term="go攻击检测" />
+    <category term="攻击检测" />
+    <category term="rust攻击检测" />
     <category term="session" />
     <category term="路由器烧录" />
     <category term="烧录" />
@@ -883,7 +883,7 @@
 &lt;li&gt;PHP &amp;gt;= 8.1&lt;/li&gt;
 &lt;li&gt;Composer&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;License&#34;&gt;&lt;a href=&#34;#License&#34; class=&#34;headerlink&#34; title=&#34;License&#34;&gt;&lt;/a&gt;License&lt;/h2&gt;&lt;p&gt;MIT — Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#97;&amp;#105;&amp;#x6c;&amp;#116;&amp;#111;&amp;#58;&amp;#101;&amp;#114;&amp;#105;&amp;#x6b;&amp;#64;&amp;#x65;&amp;#114;&amp;#105;&amp;#x6b;&amp;#x2e;&amp;#x78;&amp;#121;&amp;#x7a;&#34;&gt;&amp;#101;&amp;#114;&amp;#105;&amp;#x6b;&amp;#64;&amp;#x65;&amp;#114;&amp;#105;&amp;#x6b;&amp;#x2e;&amp;#x78;&amp;#121;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;License&#34;&gt;&lt;a href=&#34;#License&#34; class=&#34;headerlink&#34; title=&#34;License&#34;&gt;&lt;/a&gt;License&lt;/h2&gt;&lt;p&gt;MIT — Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#x6f;&amp;#58;&amp;#101;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#64;&amp;#101;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#46;&amp;#x78;&amp;#121;&amp;#x7a;&#34;&gt;&amp;#101;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#64;&amp;#101;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#46;&amp;#x78;&amp;#121;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
 </content>
         <category term="php" />
         <category term="工业网络通信协议插件" />
