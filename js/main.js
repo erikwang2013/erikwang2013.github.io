@@ -104,8 +104,10 @@
 
     var clock = new THREE.Clock();
     var scrollRotate = threeCfg.scrollRotate !== false;
+    var running = true;
 
     function animate() {
+      if (!running) return;
       requestAnimationFrame(animate);
       var t = clock.getElapsedTime();
       stars.rotation.y = t * 0.02;
@@ -130,6 +132,12 @@
       renderer.render(scene, camera);
     }
     animate();
+
+    /* 切后台暂停渲染循环,切回时恢复 */
+    document.addEventListener('visibilitychange', function () {
+      running = !document.hidden;
+      if (running) requestAnimationFrame(animate);
+    }, false);
 
     window.addEventListener('resize', function () {
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -676,12 +684,26 @@
   /* ---- boot ---- */
   applyThemeColors();
 
-  if (window.THREE) {
-    try { initThree(); }
-    catch (e) { document.body.classList.add('no-webgl'); }
-  } else {
-    document.body.classList.add('no-webgl');
+  /* 3D 背景按需加载:未禁用且未请求减少动效时才注入 three.js,首屏不再同步下载 600KB */
+  function loadThree(cb) {
+    var s = document.createElement('script');
+    s.src = root.replace(/\/$/, '') + '/js/vendor/three.min.js';
+    s.onload = cb;
+    s.onerror = function () { document.body.classList.add('no-webgl'); };
+    document.head.appendChild(s);
   }
+
+  function bootThree() {
+    if (window.THREE) {
+      try { initThree(); }
+      catch (e) { document.body.classList.add('no-webgl'); }
+    } else {
+      document.body.classList.add('no-webgl');
+    }
+  }
+
+  if (threeCfg.enable !== false && !reduceMotion) loadThree(bootThree);
+  else document.body.classList.add('no-webgl');
 
   initTilt();
   initReveal();
