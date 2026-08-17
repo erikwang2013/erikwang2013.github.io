@@ -51,7 +51,7 @@ function makeChipTexture(kw, icon, dpr, T) {
   ctx.arcTo(0, h, 0, 0, rad);
   ctx.arcTo(0, 0, w, 0, rad);
   ctx.closePath();
-  ctx.fillStyle = 'rgba(13, 21, 45, 0.62)';
+  ctx.fillStyle = 'rgba(13, 21, 45, 0.5)';
   ctx.fill();
   ctx.strokeStyle = 'rgba(56, 189, 248, 0.3)';
   ctx.lineWidth = 1;
@@ -69,7 +69,7 @@ async function initScene(T) {
   if (new URLSearchParams(location.search).has('nogl')) { fallback(); return; }
 
   const scene = new T.Scene();
-  scene.fog = new T.FogExp2(0x0b1020, 0.04);
+  scene.fog = new T.FogExp2(0x0b1020, 0.055);
 
   const camera = new T.PerspectiveCamera(60, innerWidth / innerHeight, 0.1, 100);
   camera.position.z = 18;
@@ -86,7 +86,7 @@ async function initScene(T) {
   KEYWORDS.forEach((kw, i) => {
     const tex = makeChipTexture(kw, icons[i], dpr, T);
     const sprite = new T.Sprite(new T.SpriteMaterial({
-      map: tex, transparent: true, opacity: 0.72,
+      map: tex, transparent: true, opacity: 0.42,
       depthWrite: false, fog: true,
     }));
     const r = 6.5 + Math.random() * 4.5;
@@ -124,7 +124,7 @@ async function initScene(T) {
     if (!prefersReduced) requestAnimationFrame(animate);
     cx += (tx - cx) * 0.05;
     cy += (ty - cy) * 0.05;
-    group.rotation.y += 0.0003;
+    group.rotation.y += 0.00012;
     for (const s of chips) {
       const u = s.userData;
       s.position.y = u.baseY + Math.sin(t * 0.001 * u.speed + u.phase) * u.amp;
@@ -175,7 +175,7 @@ async function initScene(T) {
       }
     }
   }, { rootMargin: '-40% 0px -55% 0px' });
-  ['skills', 'strengths', 'experience', 'projects', 'education'].forEach((id) => {
+  ['skills', 'strengths', 'agent', 'experience', 'projects', 'education'].forEach((id) => {
     const el = document.getElementById(id);
     if (el) spy.observe(el);
   });
@@ -214,12 +214,99 @@ if (matchMedia('(pointer: fine)').matches && matchMedia('(min-width: 768px)').ma
   })();
 }
 
-/* 启动 */
-(async function boot() {
-  try {
-    const T = await import('./vendor/three.module.js');
-    await initScene(T);
-  } catch {
-    fallback();
+/* 启动：延迟到空闲再加载 1.3MB three 模块，首屏不等待背景 */
+function startBackground() {
+  const boot = async () => {
+    if (new URLSearchParams(location.search).has('nogl')) { fallback(); return; }
+    try {
+      const T = await import('./vendor/three.module.js');
+      await initScene(T);
+    } catch {
+      fallback();
+    }
+  };
+  if ('requestIdleCallback' in window) requestIdleCallback(boot, { timeout: 1500 });
+  else setTimeout(boot, 150);
+}
+startBackground();
+
+/* PDF 下载：html2canvas 渲染 + jsPDF 手动分页，绕开浏览器打印对话框页眉页脚，不依赖服务器。
+   html2canvas 1.x 无媒体模拟，onclone 里把 style.css 的 @media print 规则注入克隆文档复用。 */
+function injectPrintStyles(doc) {
+  const rules = [];
+  for (const sheet of document.styleSheets) {
+    for (const rule of sheet.cssRules) {
+      if (rule.type === CSSRule.MEDIA_RULE && rule.media.mediaText.includes('print')) {
+        rules.push(rule.cssText.replace(/^@media print\s*\{/, '').replace(/\}\s*$/, ''));
+      }
+    }
   }
-})();
+  const style = doc.createElement('style');
+  style.textContent = rules.join('\n');
+  doc.head.appendChild(style);
+}
+
+function exportPdf(color) {
+  if (typeof html2canvas === 'undefined' || typeof window.jspdf === 'undefined') return;
+  const hadColor = document.body.classList.contains('print-color');
+  document.body.classList.toggle('print-color', color);
+  // html2canvas 渲染伪元素时克隆文档的覆盖规则不生效，需在活文档里中和（黑白/彩色各取对应色）
+  const live = document.createElement('style');
+  const accent = color ? '#38bdf8' : '#000';
+  live.textContent = '.timeline::before,.sec-title::before{background:' + accent + ' !important;background-image:none !important}' +
+    '.tl-item::before{background:#fff !important;border-color:' + accent + ' !important;box-shadow:none !important}';
+  document.head.appendChild(live);
+  const filename = color ? '王可勋-全栈-go-php-彩色.pdf' : '王可勋-全栈-go-php.pdf';
+  let avoidTops = [];
+  html2canvas(document.body, {
+    scale: 2, useCORS: true,
+    windowWidth: 703, windowHeight: 1049, // 与 Chrome 打印视口一致（A4 减 12/12/14mm 边距）
+    onclone: (doc) => {
+      injectPrintStyles(doc);
+      // 元素分页避让：测量克隆文档（视口已为 703px，与捕获一致）
+      avoidTops = [...doc.querySelectorAll('.tl-item,.card,.agent-row,.skill-row,.strength-row,.edu-card,.sec-title')]
+        .map((el) => el.getBoundingClientRect())
+        .filter((r) => r.height > 0 && r.height < 900)
+        .map((r) => r.top * 2); // scale=2，canvas 像素
+    },
+  }).then((canvas) => {
+    const pdf = new window.jspdf.jsPDF({ unit: 'pt', format: 'a4', orientation: 'portrait' });
+    const mL = 34, mT = 34, mR = 34, mB = 40; // 与 @page 边距一致
+    const pw = pdf.internal.pageSize.getWidth();
+    const ph = pdf.internal.pageSize.getHeight();
+    const scale = (pw - mL - mR) / canvas.width;
+    const stripH = (ph - mT - mB) / scale;
+    const cuts = [0];
+    while (cuts[cuts.length - 1] + stripH < canvas.height) {
+      let b = cuts[cuts.length - 1] + stripH;
+      const near = avoidTops.filter((t) => t < b - 6 && t > b - 260);
+      if (near.length) b = Math.min(...near);
+      cuts.push(b);
+    }
+    cuts.push(canvas.height); // while 不产生最后一个切点，末段不足一页的内容会整段丢失
+    const tmp = document.createElement('canvas');
+    tmp.width = canvas.width;
+    const tctx = tmp.getContext('2d');
+    for (let i = 0; i < cuts.length - 1; i++) {
+      const y = cuts[i];
+      const h = Math.min(cuts[i + 1] - y, canvas.height - y);
+      tmp.height = Math.ceil(h);
+      tctx.drawImage(canvas, 0, y, canvas.width, h, 0, 0, canvas.width, h);
+      if (i) pdf.addPage();
+      pdf.addImage(tmp.toDataURL('image/jpeg', 0.95), 'JPEG', mL, mT, pw - mL - mR, h * scale);
+      // 右下角页码 X / Y，与 add-page-numbers.py 同位置：右贴 34pt 边距、基线距底 14pt
+      pdf.setFontSize(9);
+      pdf.text((i + 1) + ' / ' + (cuts.length - 1), pw - mR, ph - 14, { align: 'right' });
+    }
+    pdf.save(filename);
+  }).catch((e) => console.error('PDF 生成失败', e))
+    .finally(() => {
+      document.body.classList.toggle('print-color', hadColor);
+      live.remove();
+    });
+}
+
+document.querySelectorAll('[data-pdf]').forEach((btn) => {
+  btn.addEventListener('click', () => exportPdf(btn.dataset.pdf === 'color'));
+});
+

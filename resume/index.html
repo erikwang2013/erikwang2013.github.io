@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<script>if (location.search.includes('pdf')) document.body.classList.add('print-color');</script>
 <!-- Three.js 背景画布；WebGL 不可用或加载失败时 body 加 .no-webgl，canvas 隐藏，CSS 星点背景接管 -->
 <canvas id="bg-canvas" aria-hidden="true"></canvas>
 <div id="scroll-progress" aria-hidden="true"></div>
@@ -16,20 +17,21 @@
 
 <nav class="topnav" aria-label="页内导航">
   <div class="nav-inner">
-    <a class="brand" href="/">王可勋 · <span class="brand-sub">blog</span></a>
+    <a class="brand" href="#hero">王可勋<span class="brand-sub">.dev</span></a>
     <div class="nav-links">
       <a href="#skills">核心能力</a>
       <a href="#strengths">竞争力</a>
+      <a href="#agent">Agent 开发</a>
       <a href="#experience">工作经历</a>
       <a href="#projects">项目经验</a>
-      <a href="#education">教育背景</a>
+      <a href="#education">学历及培训</a>
     </div>
   </div>
 </nav>
 
 <header id="hero" class="hero">
   <h1>王可勋</h1>
-  <p class="role">全栈开发工程师 · 10 年+ 大型系统架构与高并发服务经验</p>
+  <p class="role">全栈开发工程师 · AI Agent 开发 · 10 年+ 大型系统架构与高并发服务经验</p>
   <ul class="tags">
     <li>求职意向：深圳 / 香港</li>
     <li>全栈开发 / PHP / Go</li>
@@ -39,39 +41,38 @@
   <ul class="contact">
     <li><a href="tel:17796371573">17796371573</a></li>
     <li><a href="mailto:szwangkexun@126.com">szwangkexun@126.com</a></li>
-    <li><a href="https://erik.xyz" target="_blank" rel="noopener">erik.xyz</a></li>
+    <li><a href="https://erik.xyz" target="_blank" rel="noopener">Blog：https://erik.xyz</a></li>
     <!-- TODO(user): 将下方 GitHub 链接替换为个人主页 -->
-    <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="https://github.com/erikwang2013" target="_blank" rel="noopener">GitHub：https://github.com/erikwang2013</a></li>
   </ul>
   <div class="hero-actions">
-    <!-- TODO(user): 用正式黑白简历 PDF 覆盖 resume/pdf/黑白简历.pdf -->
-    <a class="btn btn-primary" href="/pdf/王可勋-全栈-go-php.pdf" download>下载黑白简历</a>
-     <button type="button" class="btn btn-ghost" onclick="window.print()">下载彩色简历</button>
+    <button class="btn btn-primary" type="button" data-pdf="color">下载彩色简历</button>
+    <button class="btn btn-ghost" type="button" data-pdf="bw">下载黑白简历</button>
   </div>
 </header>
 
 <main>
 <section id="skills" class="section">
   <h2 class="sec-title">核心能力</h2>
-  <div class="skill-grid">
-    <div class="card reveal">
+  <div class="skill-rows">
+    <div class="skill-row reveal">
       <h3>编程语言</h3>
       <ul class="chips">
-        <li class="chip hot">PHP（精通）</li><li class="chip">Go（熟练）</li><li class="chip">Python（熟练）</li>
+        <li class="chip">PHP（精通）</li><li class="chip">Go（熟练）</li><li class="chip">Python（熟练）</li>
         <li class="chip">Vue（熟练）</li><li class="chip">JavaScript（熟练）</li><li class="chip">Flutter（熟练）</li>
         <li class="chip">Java</li><li class="chip">Shell</li><li class="chip">Lua</li><li class="chip">C</li>
         <li class="chip">C++</li><li class="chip">Rust</li><li class="chip">HarmonyOS</li><li class="chip">Node.js</li>
       </ul>
     </div>
-    <div class="card reveal">
-      <h3>框架（PHP / Go）</h3>
+    <div class="skill-row reveal">
+      <h3>框架（PHP/Go）</h3>
       <ul class="chips">
         <li class="chip">Webman</li><li class="chip">Swoole</li><li class="chip">Hyperf</li><li class="chip">Laravel</li>
         <li class="chip">ThinkPHP</li><li class="chip">Yii2</li><li class="chip">Swift</li>
         <li class="chip">Gin</li><li class="chip">Beego</li><li class="chip">go-zero</li><li class="chip">gRPC</li>
       </ul>
     </div>
-    <div class="card reveal">
+    <div class="skill-row reveal">
       <h3>数据库与中间件</h3>
       <ul class="chips">
         <li class="chip">MySQL</li><li class="chip">Redis</li><li class="chip">Elasticsearch</li>
@@ -79,7 +80,7 @@
         <li class="chip">MinIO</li><li class="chip">ETCD</li>
       </ul>
     </div>
-    <div class="card reveal">
+    <div class="skill-row reveal">
       <h3>运维与工具</h3>
       <ul class="chips">
         <li class="chip">Docker</li><li class="chip">Nginx</li><li class="chip">Jenkins</li><li class="chip">Zabbix</li>
@@ -87,28 +88,94 @@
         <li class="chip">ESP32</li><li class="chip">STM32</li>
       </ul>
     </div>
+    <div class="skill-row reveal">
+      <h3>AI Agent</h3>
+      <ul class="chips">
+        <li class="chip">Claude Code</li><li class="chip">MCP</li>
+        <li class="chip">Agent 编排（Swarm）</li><li class="chip">分布式共识</li>
+        <li class="chip">插件 / Skill 开发</li><li class="chip">AI 辅助编码</li>
+      </ul>
+    </div>
   </div>
 </section>
 
 <section id="strengths" class="section">
   <h2 class="sec-title">核心竞争力</h2>
-  <div class="strength-grid">
-    <div class="card reveal">
+  <div class="strength-rows">
+    <div class="strength-row reveal">
       <h3>大型系统架构</h3>
       <p>高并发微服务划分、服务治理、数据库调优，保障 99.99% 可用性。</p>
     </div>
-    <div class="card reveal">
+    <div class="strength-row reveal">
       <h3>技术与业务融合</h3>
       <p>云资源编排、支付计费、实时撮合等复杂业务的技术落地。</p>
     </div>
-    <div class="card reveal">
+    <div class="strength-row reveal">
       <h3>团队管理与效能</h3>
       <p>跨技术栈（PHP/Go/Java/前端）协作，建立代码规范与 CI/CD，提升交付质量。</p>
     </div>
-    <div class="card reveal">
+    <div class="strength-row reveal">
       <h3>持续学习与创新</h3>
       <p>快速掌握 Rust、HarmonyOS，落地 AI Coding 辅助工具，降低重复劳动。</p>
     </div>
+    <div class="strength-row reveal">
+      <h3>Agent 工程化</h3>
+      <p>把 agent 团队、共识协议、插件体系从原型变成可交付工程：Claude Code 插件生态、多 Agent 编排、分布式协调器，全链路落地。</p>
+    </div>
+  </div>
+</section>
+
+<section id="agent" class="section">
+  <h2 class="sec-title">AI Agent 开发</h2>
+  <div class="agent-rows">
+
+    <article class="agent-row reveal">
+      <div class="agent-head">
+        <h3><span class="emoji">🧩</span> Claude Code 插件生态</h3>
+        <ul class="chips">
+          <li class="chip">Claude Code</li><li class="chip">Skill</li><li class="chip">Agent 角色</li>
+          <li class="chip">工作流编排</li><li class="chip">事实核验</li>
+        </ul>
+      </div>
+      <ul class="proj-points">
+        <li>webnovel-writer 完整写作工作流插件：research → outline → chapter → review → fact-check 的 agent 链，含数据抽取与正文一致性审查。</li>
+        <li>自定义 skill 体系与角色 agent（deconstruction / context / reviewer），把创作流程固化为可复用工具。</li>
+        <li>Claude Code 插件机制深入应用：subagent 派发、结构审查、git 化产物管理。</li>
+      </ul>
+      <p class="scale">1 插件 · 6+ agent 角色 · 5 阶段写作工作流</p>
+    </article>
+
+    <article class="agent-row reveal">
+      <div class="agent-head">
+        <h3><span class="emoji">🧠</span> 分布式协调 Agent 集</h3>
+        <ul class="chips">
+          <li class="chip">Raft</li><li class="chip">Gossip</li><li class="chip">Byzantine</li>
+          <li class="chip">CRDT</li><li class="chip">Quorum</li><li class="chip">性能基准</li>
+        </ul>
+      </div>
+      <ul class="proj-points">
+        <li>7 个共识/安全协调器：raft、gossip、byzantine、crdt 共识协议实现 + quorum 动态管理 + 恶意节点检测 + 性能基准。</li>
+        <li>可直接投入生产的共识型 agent 集，覆盖选举、日志复制、最终一致与容错。</li>
+      </ul>
+      <p class="scale">7 协调器 · 4 共识协议 · 恶意节点检测 + 基准</p>
+    </article>
+
+    <article class="agent-row reveal">
+      <div class="agent-head">
+        <h3><span class="emoji">🤝</span> 多 Agent 团队编排</h3>
+        <ul class="chips">
+          <li class="chip">Hierarchical</li><li class="chip">Mesh</li><li class="chip">Adaptive</li>
+          <li class="chip">TDD Swarm</li><li class="chip">ruflo / claude-flow</li>
+        </ul>
+      </div>
+      <ul class="proj-points">
+        <li>三种拓扑协调器（hierarchical / mesh / adaptive），15 agent 上限，任务路由 + 共享记忆 + HNSW 向量检索。</li>
+        <li>与 ruflo / claude-flow 集成：内存管理、hooks 路由、后台 worker 派发、3 层模型路由（WASM / Haiku / Sonnet）。</li>
+        <li>TDD swarm（London 学派 mock 驱动）落地为测试工作流。</li>
+      </ul>
+      <p class="scale">3 拓扑 · 15 agent · 任务路由 + 共享记忆</p>
+    </article>
+
   </div>
 </section>
 
@@ -192,7 +259,24 @@
   <div class="project-grid">
 
     <article class="card reveal">
-      <h3>🌐 全球云资源交易平台</h3>
+      <h3><span class="emoji">🎵</span> OMB 多平台外链音乐聚合播放平台</h3>
+      <ul class="chips">
+        <li class="chip">PHP 8.1 / webman</li><li class="chip">MySQL 8.4</li><li class="chip">Redis</li>
+        <li class="chip">Flutter 六端</li><li class="chip">HarmonyOS ArkTS</li><li class="chip">ECIES 加密</li>
+        <li class="chip">GitHub Actions</li>
+      </ul>
+      <ul class="proj-points">
+        <li>聚合抖音 / 快手 / 小红书 / 视频号外链音乐，Flutter 六端（iOS / Android / macOS / Windows / Linux / Web）+ HarmonyOS 原生客户端。</li>
+        <li>服务端音频代理 /api/music/proxy：Guzzle 统一处理上游 Referer / Origin / Range 鉴权与跨域，多源切换 + 按 IP 限流。</li>
+        <li>自研 PlaybackEngine 播放状态机（UI 状态流订阅）+ LRU 离线缓存（50 文件 / 200MB），Web 端自动降级。</li>
+        <li>Redis ZSET 实时排行 + 60s 定时快照刷新，榜单 / 收藏接口直读快照解耦写放大与读延迟。</li>
+        <li>ECIES 加密信封（X25519 + HKDF + AES-256-GCM）、Hashids ID 混淆、JWT 双令牌黑名单；GitHub Actions 六端 CI 矩阵 + Release 自动发布。</li>
+      </ul>
+      <p class="scale">六端客户端 · 自研代理拉流 + 播放引擎 · 三层安全 · 4 语言 i18n</p>
+    </article>
+
+    <article class="card reveal">
+      <h3><span class="emoji">🌐</span> 全球云资源交易平台</h3>
       <ul class="chips">
         <li class="chip">PHP 8.2 / Webman</li><li class="chip">Laravel Eloquent</li><li class="chip">MySQL 8.0</li>
         <li class="chip">Redis</li><li class="chip">ES</li><li class="chip">GraphQL</li><li class="chip">Docker</li>
@@ -209,7 +293,7 @@
     </article>
 
     <article class="card reveal">
-      <h3>🛒 跨境电商平台</h3>
+      <h3><span class="emoji">🛒</span> 跨境电商平台</h3>
       <ul class="chips">
         <li class="chip">B2C / B2B / 多商家入驻</li><li class="chip">Amazon / eBay / Shoppe</li>
         <li class="chip">Lazada / Temu</li><li class="chip">Flutter</li><li class="chip">HarmonyOS</li>
@@ -224,7 +308,7 @@
     </article>
 
     <article class="card reveal">
-      <h3>🏢 企业级全栈 ERP 系统</h3>
+      <h3><span class="emoji">🏢</span> 企业级全栈 ERP 系统</h3>
       <ul class="chips">
         <li class="chip">9 微服务</li><li class="chip">gRPC</li><li class="chip">Protobuf</li>
         <li class="chip">Flutter PC</li><li class="chip">MySQL</li><li class="chip">Docker</li>
@@ -239,7 +323,7 @@
     </article>
 
     <article class="card reveal">
-      <h3>🎮 全球游戏聚合平台</h3>
+      <h3><span class="emoji">🎮</span> 全球游戏聚合平台</h3>
       <ul class="chips">
         <li class="chip">Webman ×2</li><li class="chip">WebSocket</li><li class="chip">Stripe / PayPal</li>
         <li class="chip">支付宝 / 微信</li><li class="chip">ClickHouse</li>
@@ -254,7 +338,7 @@
     </article>
 
     <article class="card reveal">
-      <h3>🏘️ 智慧物业管理平台</h3>
+      <h3><span class="emoji">🏘️</span> 智慧物业管理平台</h3>
       <ul class="chips">
         <li class="chip">Flutter Web</li><li class="chip">鸿蒙原生 App</li><li class="chip">Workerman</li>
         <li class="chip">Redis</li><li class="chip">ES</li><li class="chip">Docker Compose</li>
@@ -269,7 +353,7 @@
     </article>
 
     <article class="card reveal">
-      <h3>💇 预约服务管理平台</h3>
+      <h3><span class="emoji">💇</span> 预约服务管理平台</h3>
       <ul class="chips">
         <li class="chip">微信小程序</li><li class="chip">Flutter APP</li><li class="chip">Flutter Web</li>
         <li class="chip">WebSocket</li><li class="chip">ES Scout</li>
@@ -284,7 +368,7 @@
     </article>
 
     <article class="card reveal">
-      <h3>🛡️ Go 攻击检测库</h3>
+      <h3><span class="emoji">🛡️</span> Go 攻击检测库</h3>
       <ul class="chips">
         <li class="chip">Go</li><li class="chip">零外部依赖</li><li class="chip">策略模式</li>
         <li class="chip">Memory / File / Redis</li>
@@ -298,7 +382,7 @@
     </article>
 
     <article class="card reveal">
-      <h3>⚙️ Rust 工业协议集（38 种协议）</h3>
+      <h3><span class="emoji">⚙️</span> Rust 工业协议集（38 种协议）</h3>
       <ul class="chips">
         <li class="chip">Rust</li><li class="chip">微内核 + 协议 SDK</li><li class="chip">tokio</li><li class="chip">SocketCAN</li>
       </ul>
@@ -310,15 +394,53 @@
       <p class="scale">45 个 Cargo crates · 10,000+ 行 Rust · 137 测试用例 · MIT 协议</p>
     </article>
 
+    <article class="card reveal">
+      <h3><span class="emoji">🔌</span> ESP32-S3 多传感器智能控制面板</h3>
+      <ul class="chips">
+        <li class="chip">C / C++</li><li class="chip">Arduino 框架</li><li class="chip">ESP32-S3</li>
+        <li class="chip">WiFi</li><li class="chip">HTTP Web Server</li><li class="chip">MQTT</li>
+        <li class="chip">PubSubClient + Mosquitto</li><li class="chip">ArduinoJson</li>
+        <li class="chip">MFRC522 RFID</li><li class="chip">DHT 温湿度</li>
+      </ul>
+      <ul class="proj-points">
+        <li>六类外设（LED、触摸开关、光敏、热敏、DHT、MFRC522）集成，网页控制与 MQTT 远程控制双通道并行。</li>
+        <li>统一命令入口：HTTP GET 路径与 MQTT 下行命令映射到公共 handleCommand()，双通道行为一致，新增控制项仅需一次映射。</li>
+        <li>公共状态出口 collectStatusJson()：网页模板渲染与 MQTT 上报共用同一数据源；esp32/status 每 5 秒全量 + 状态变化即时上报，esp32/event 刷卡事件毫秒级发布。</li>
+        <li>可靠性：断线 5 秒自动重连、首连失败不阻塞启动（HTTP 始终可用）、MAC 生成 client ID 防多设备冲突、非法 JSON/未知命令安全忽略。</li>
+        <li>非阻塞架构：全传感器 millis() 去抖轮询；每外设独立 .h 驱动，新增外设只需加开关、加驱动、加命令映射三步。</li>
+      </ul>
+      <p class="scale">六类外设 · 双通道（HTTP + MQTT）· 3 个 MQTT Topic</p>
+    </article>
+
   </div>
 </section>
 
 <section id="education" class="section">
-  <h2 class="sec-title">教育背景</h2>
+  <h2 class="sec-title">学历及培训</h2>
+  <div class="card reveal edu-card">
+    <h3>深圳市公益性职业培训</h3>
+    <p>物联技术及应用</p>
+    <span class="tl-date">2026.08</span>
+  </div>
+  <div class="card reveal edu-card">
+    <h3>深圳市公益性职业培训</h3>
+    <p>鸿蒙原生应用开发 · 获得鸿蒙开发基础认证</p>
+    <span class="tl-date">2025.08</span>
+  </div>
   <div class="card reveal edu-card">
     <h3>深圳大学</h3>
     <p>工商管理 · 本科（非全日制）</p>
     <span class="tl-date">2018.03 – 2023.12</span>
+  </div>
+  <div class="card reveal edu-card">
+    <h3>达内科技</h3>
+    <p>PHP 互联网开发 · 获得 NTC 职业资格证书</p>
+    <span class="tl-date">2013.08 – 2013.12</span>
+  </div>
+  <div class="card reveal edu-card">
+    <h3>汝阳二高</h3>
+    <p>高中</p>
+    <span class="tl-date">2006 – 2009</span>
   </div>
 </section>
 </main>
@@ -329,6 +451,8 @@
 
 <button id="back-top" type="button" aria-label="返回顶部">↑</button>
 
+<script src="js/vendor/html2canvas.min.js" defer></script>
+<script src="js/vendor/jspdf.umd.min.js" defer></script>
 <script type="module" src="js/main.js"></script>
 </body>
 </html>

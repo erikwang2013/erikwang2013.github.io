@@ -3,8 +3,8 @@
   --bg: #0b1020;
   --bg-glow-1: rgba(20, 40, 90, .35);
   --bg-glow-2: rgba(46, 24, 96, .22);
-  --card: rgba(16, 26, 52, .66);
-  --card-border: rgba(56, 189, 248, .16);
+  --card: rgba(14, 23, 48, .58);
+  --card-border: rgba(56, 189, 248, .22);
   --accent: #38bdf8;
   --accent-2: #6366f1;
   --text: #e8f1ff;
@@ -66,7 +66,7 @@ body.no-webgl #bg-canvas { display: none; }
 .nav-links::-webkit-scrollbar { display: none; }
 .nav-links a {
   color: var(--text-dim); text-decoration: none; font-size: .9rem;
-  padding: 6px 12px; border-radius: 999px; white-space: nowrap;
+  padding: 6px 12px; border-radius: 0; white-space: nowrap;
   transition: color .2s, background .2s;
 }
 .nav-links a:hover { color: var(--text); }
@@ -86,6 +86,7 @@ body.no-webgl #bg-canvas { display: none; }
   background-size: 220% 100%;
   -webkit-background-clip: text; background-clip: text; color: transparent;
   animation: hero-shimmer 7s linear infinite;
+  filter: drop-shadow(0 0 18px rgba(56, 189, 248, .35));
 }
 @keyframes hero-shimmer {
   from { background-position: 100% 50%; }
@@ -94,16 +95,16 @@ body.no-webgl #bg-canvas { display: none; }
 .hero .role { margin-top: 14px; color: var(--text-dim); font-size: clamp(1rem, 2.4vw, 1.25rem); }
 .tags { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 22px; }
 .tags li {
-  font-size: .82rem; color: var(--chip-text);
-  border: 1px solid rgba(56,189,248,.35); background: var(--chip-bg);
-  padding: 4px 14px; border-radius: 999px;
+  font-size: .82rem; color: var(--text-dim);
+  border: none; background: none;
+  padding: 2px 0;
 }
 .contact { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 22px; margin-top: 24px; }
 .contact a { color: var(--text); text-decoration: none; font-size: .95rem; border-bottom: 1px dashed rgba(56,189,248,.45); padding-bottom: 2px; transition: color .2s; }
 .contact a:hover { color: var(--accent); }
 .hero-actions { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; justify-content: center; }
 .btn {
-  display: inline-block; padding: 11px 26px; border-radius: 999px;
+  display: inline-block; padding: 11px 26px; border-radius: 0;
   font-size: .95rem; font-weight: 600; cursor: pointer;
   text-decoration: none; border: 1px solid transparent;
   transition: transform .15s, box-shadow .2s, background .2s;
@@ -126,7 +127,7 @@ main { max-width: 1080px; margin: 0 auto; padding: 30px 20px 80px; }
   display: flex; align-items: center; gap: 12px;
 }
 .sec-title::before {
-  content: ""; width: 5px; height: 1.3em; border-radius: 3px;
+  content: ""; width: 5px; height: 1.3em; border-radius: 0;
   background: linear-gradient(180deg, var(--accent), var(--accent-2));
 }
 
@@ -136,8 +137,8 @@ main { max-width: 1080px; margin: 0 auto; padding: 30px 20px 80px; }
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
   padding: 22px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
   html.js .card.reveal:hover {
@@ -150,19 +151,46 @@ main { max-width: 1080px; margin: 0 auto; padding: 30px 20px 80px; }
 .card h3 { font-size: 1.05rem; margin-bottom: 14px; }
 .card p { color: var(--text-dim); font-size: .92rem; }
 
-/* ===== 技能 ===== */
-.skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+/* ===== 技能（行式） ===== */
+.skill-rows { display: flex; flex-direction: column; }
+.skill-row {
+  display: flex; align-items: baseline; gap: 14px 24px;
+  padding: 14px 2px; border-bottom: 1px solid var(--card-border);
+}
+.skill-row:first-child { border-top: 1px solid var(--card-border); }
+.skill-row h3 { flex: 0 0 120px; margin: 0; font-size: .95rem; color: var(--accent); }
+.skill-row .chips { flex: 1; }
+.skill-row .chip { background: none; border: none; padding: 0; color: var(--text-dim); font-size: .86rem; }
+.skill-row .chip.hot { color: var(--accent); font-weight: 700; }
 .chips { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
 .chip {
   font-size: .78rem; color: var(--chip-text);
   background: var(--chip-bg); border: 1px solid rgba(56,189,248,.18);
-  padding: 3px 11px; border-radius: 999px;
+  padding: 3px 11px; border-radius: 0;
 }
 .chip.hot { color: #fff; background: linear-gradient(120deg, rgba(56,189,248,.35), rgba(99,102,241,.35)); border-color: rgba(56,189,248,.5); }
 
-/* ===== 竞争力 ===== */
-.strength-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
-.strength-grid .card h3 { color: var(--accent); }
+/* ===== 竞争力（行式） ===== */
+.strength-rows { display: flex; flex-direction: column; }
+.strength-row {
+  display: flex; align-items: baseline; gap: 14px 24px;
+  padding: 14px 2px; border-bottom: 1px solid var(--card-border);
+}
+.strength-row:first-child { border-top: 1px solid var(--card-border); }
+.strength-row h3 { flex: 0 0 120px; margin: 0; font-size: .95rem; color: var(--accent); }
+.strength-row p { flex: 1; margin: 0; color: var(--text-dim); font-size: .92rem; }
+
+/* ===== AI Agent 板块（行式） ===== */
+.agent-rows { display: flex; flex-direction: column; }
+.agent-row {
+  display: flex; flex-direction: column; gap: 8px;
+  padding: 16px 2px; border-bottom: 1px solid var(--card-border);
+}
+.agent-row:first-child { border-top: 1px solid var(--card-border); }
+.agent-head { display: flex; align-items: baseline; gap: 6px 16px; flex-wrap: wrap; }
+.agent-head h3 { margin: 0; font-size: 1.02rem; }
+.agent-row .proj-points { margin-top: 2px; }
+.agent-row .scale { margin-top: 4px; padding-top: 0; border-top: none; }
 
 /* ===== 时间轴 ===== */
 .timeline { list-style: none; position: relative; padding-left: 22px; }
@@ -194,9 +222,17 @@ main { max-width: 1080px; margin: 0 auto; padding: 30px 20px 80px; }
   color: var(--chip-text); font-size: .78rem; font-weight: 600;
 }
 
-/* ===== 教育 ===== */
-.edu-card { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; max-width: 560px; }
-.edu-card p { color: var(--text-dim); }
+/* ===== 教育（行式，不用卡片） ===== */
+.edu-card {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px;
+  padding: 9px 2px; max-width: 720px;
+  background: none; border: none; border-bottom: 1px solid var(--card-border);
+  backdrop-filter: none; -webkit-backdrop-filter: none;
+}
+.edu-card:first-child { border-top: 1px solid var(--card-border); }
+.edu-card h3 { flex: 0 0 170px; margin: 0; font-size: .95rem; color: var(--accent); }
+.edu-card p { flex: 1; margin: 0; color: var(--text-dim); font-size: .92rem; }
+.edu-card .tl-date { margin-left: auto; color: var(--text-faint); font-size: .85rem; }
 
 /* ===== 页脚 ===== */
 .footer { text-align: center; padding: 30px 20px 40px; color: var(--text-faint); font-size: .82rem; }
@@ -215,14 +251,14 @@ main { max-width: 1080px; margin: 0 auto; padding: 30px 20px 80px; }
 #glow {
   display: none;
   position: fixed; left: 0; top: 0; width: 480px; height: 480px;
-  border-radius: 50%; pointer-events: none; z-index: 0;
+  border-radius: 0; pointer-events: none; z-index: 0;
   background: radial-gradient(circle, rgba(56, 189, 248, .13), rgba(99, 102, 241, .09) 45%, transparent 70%);
 }
 
 /* ===== 返回顶部 ===== */
 #back-top {
   position: fixed; right: 18px; bottom: 24px; width: 44px; height: 44px;
-  border-radius: 50%; border: 1px solid var(--card-border);
+  border-radius: 0; border: 1px solid var(--card-border);
   background: rgba(16, 26, 52, .85); color: var(--text-dim);
   font-size: 1.1rem; line-height: 1; cursor: pointer;
   opacity: 0; pointer-events: none; transform: translateY(10px);
@@ -241,12 +277,24 @@ html.js .reveal.in { opacity: 1; transform: none; }
   .project-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
-  .nav-inner { padding: 0 12px; }
+  .nav-inner { padding: 0 12px; gap: 10px; }
+  .brand { font-size: .95rem; }
   .brand-sub { display: none; }
+  .nav-links { gap: 2px; }
+  .nav-links a { font-size: .8rem; padding: 6px 8px; }
   .tl-head h3 { width: 100%; }
   .tl-date { margin-left: 0; }
-  .skill-grid, .strength-grid { grid-template-columns: 1fr; }
+  .skill-row, .strength-row { flex-direction: column; align-items: flex-start; gap: 4px; padding: 7px 2px; }
+  .skill-row h3, .strength-row h3 { flex: none; line-height: 1.35; }
+  .skill-row .chip, .strength-row p { line-height: 1.5; }
+  .section { padding-top: 26px; }
+  .sec-title { margin-bottom: 14px; }
   .hero { padding-top: calc(var(--nav-h) + 30px); }
+  main { padding: 24px 14px 60px; }
+  .card { padding: 16px 14px; }
+  .agent-head { gap: 2px 10px; }
+  .timeline { padding-left: 16px; }
+  .tl-item { padding: 0 0 24px 12px; }
 }
 
 /* ===== 减弱动态 ===== */
@@ -258,22 +306,75 @@ html.js .reveal.in { opacity: 1; transform: none; }
 
 /* ===== 打印 ===== */
 @media print {
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   :root { --bg: #fff; --text: #000; --text-dim: #222; --text-faint: #444; }
   body { background: #fff !important; color: #000; }
   body::before { display: none !important; }
   #bg-canvas, .topnav, .hero-actions, .footer, #back-top, #scroll-progress, #glow { display: none !important; }
-  .hero { min-height: 0; padding: 12px 0 8px; text-align: left; align-items: flex-start; }
-  .hero h1 { background: none; -webkit-text-fill-color: #000; color: #000; }
+  .hero { min-height: 0; padding: 4px 0 2px; text-align: left; align-items: flex-start; }
+  .hero h1 { background: none; -webkit-text-fill-color: #000; color: #000; filter: none; }
   .tags, .contact { justify-content: flex-start; }
-  .section { padding-top: 26px; }
-  .card { background: #fff; border: 1px solid #999; backdrop-filter: none; }
+  .section { padding-top: 10px; }
+  .card { background: #fff; border: none; backdrop-filter: none; padding: 10px 12px; }
   .chip { color: #000; background: #fff; border: 1px solid #666; }
   .chip.hot { color: #000; background: #fff; border: 1px solid #000; }
-  .tags li { color: #000; background: #fff; border-color: #666; }
+  .tags li { color: #000; background: none; border: none; padding: 0; }
+  .contact a { border-bottom-color: #999; }
   .tl-points li, .proj-points li, .card p, .edu-card p { color: #222; }
-  .tl-role, .sec-title::before, .tl-item::before, .scale { color: #000; }
+  .tl-role, .scale { color: #000; }
+  .sec-title::before { background: #000; }
+  .skill-row h3, .strength-row h3, .agent-row h3, .edu-card h3, .tl-head h3 { color: #000; }
   .tl-item::before { background: #fff; border-color: #000; box-shadow: none; }
+  .timeline::before { background: #000; }
   .scale { border-top-color: #999; color: #000; }
   html.js .reveal { opacity: 1; transform: none; }
-  .tl-item, .card { break-inside: avoid; }
+  .tl-item, .card, .agent-row { break-inside: avoid; }
+  .sec-title, .tl-head h3, .skill-row h3, .strength-row h3, .agent-row h3, .edu-card h3 { break-after: avoid; }
+  .skill-row, .strength-row, .agent-row { border-color: #999; }
+  .skill-row:first-child, .strength-row:first-child, .agent-row:first-child { border-color: #999; }
+  body:not(.print-color) .emoji { display: none; }
+  /* 紧凑版式 */
+  body { line-height: 1.45; }
+  .hero h1 { font-size: 1.9rem; letter-spacing: .04em; }
+  .hero .role { margin-top: 4px; font-size: .9rem; }
+  .tags { margin-top: 6px; gap: 4px; }
+  .tags li { padding: 2px 8px; font-size: .74rem; }
+  .contact { margin-top: 8px; gap: 4px 14px; }
+  .sec-title { font-size: 1.15rem; margin-bottom: 8px; }
+  .tl-item { padding-bottom: 12px; }
+  .tl-head h3 { font-size: .95rem; }
+  .tl-points { margin-top: 4px; gap: 3px; }
+  .tl-points li { font-size: .82rem; line-height: 1.5; }
+  .proj-points { margin-top: 5px; gap: 3px; }
+  .proj-points li { line-height: 1.5; }
+  .scale { margin-top: 6px; padding-top: 4px; }
+  /* 打印视口 703px 会命中 max-width:768px 的 column 堆叠，显式恢复横向 */
+  .skill-row, .strength-row { flex-direction: row; align-items: baseline; gap: 6px 24px; padding: 6px 2px; }
+  .skill-row h3, .strength-row h3 { flex: 0 0 120px; line-height: inherit; }
+  .edu-card { padding: 2px 0; border: none; background: none; }
+  .edu-card h3 { margin-bottom: 0; font-size: .92rem; }
+  .agent-row { gap: 3px; padding: 7px 2px; }
+  .chips { gap: 4px; }
+  .chip { padding: 2px 7px; font-size: .72rem; }
+  .skill-row .chip { background: none; border: none; padding: 0; color: #000; font-size: .78rem; }
+  .project-grid { gap: 8px; }
+}
+
+/* ===== A4 打印版式 + 彩色 PDF（?pdf=color → body.print-color，scripts/gen-pdf.sh 生成用）===== */
+@page { size: A4; margin: 12mm 12mm 14mm; }
+@media print {
+  body.print-color { background: #fff !important; }
+  body.print-color .hero h1 { background: none; -webkit-text-fill-color: #0c4a6e; color: #0c4a6e; }
+  body.print-color .sec-title { color: #0369a1; }
+  body.print-color .sec-title::before { background: linear-gradient(180deg, #38bdf8, #6366f1); }
+  body.print-color .card { background: #fff; border: none; }
+  body.print-color .chip { color: #0369a1; background: #eff6ff; border-color: #93c5fd; }
+  body.print-color .chip.hot { color: #fff; background: linear-gradient(120deg, #38bdf8, #6366f1); border-color: #38bdf8; }
+  body.print-color .tags li { color: #0369a1; background: none; border: none; padding: 0; }
+  body.print-color .tl-role, body.print-color .scale { color: #0369a1; }
+  body.print-color .tl-item::before { border-color: #38bdf8; }
+  body.print-color .timeline::before { background: #38bdf8; }
+  body.print-color .skill-row .chip { background: none; border: none; padding: 0; color: #0369a1; }
+  body.print-color .skill-row .chip.hot { color: #0c4a6e; font-weight: 700; }
+  body.print-color * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }

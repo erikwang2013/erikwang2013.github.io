@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><script>
+      (function () {
+        var m = 'dark';
+        var t = localStorage.getItem('erik-theme');
+        var dark = t ? t === 'dark' : (m === 'auto' ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) : m === 'dark');
+        if (!dark) document.documentElement.classList.add('erik-light');
+      })();
+    </script>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="一只全栈开发的程序猿，偶尔做做运维、PHP、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。">
+  <meta name="keywords" content="艾瑞可erik,erik,艾瑞可Erik,艾瑞可,https://erik.xyz,erik.xyz">
+  <meta name="description" content="EcatEnglish | 简体中文 e-cat 是对标 go-kratos&#x2F;kratos v3 的 Rust 微服务框架。 提供 API-first 开发体验、可插拔的组件架构、统一的 HTTP&#x2F;gRPC 中间件抽象，以及完备的 CLI 工具链。让熟悉 Kratos 的开发者可以无缝上手，同时充分利用 Rust 的类型安全、零成本抽象和极致性能。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ecat是Rust 微服务框架">
+<meta property="og:url" content="https://erik.xyz/2026/08/14/e-cat/index.html">
+<meta property="og:site_name" content="艾瑞可erik">
+<meta property="og:description" content="EcatEnglish | 简体中文 e-cat 是对标 go-kratos&#x2F;kratos v3 的 Rust 微服务框架。 提供 API-first 开发体验、可插拔的组件架构、统一的 HTTP&#x2F;gRPC 中间件抽象，以及完备的 CLI 工具链。让熟悉 Kratos 的开发者可以无缝上手，同时充分利用 Rust 的类型安全、零成本抽象和极致性能。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-08-14T14:45:00.000Z">
+<meta property="article:modified_time" content="2026-08-17T10:12:37.753Z">
+<meta property="article:author" content="艾瑞可erik">
+<meta property="article:tag" content="Ecat">
+<meta property="article:tag" content="rust微服务框架">
+<meta property="article:tag" content="微服务">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/rss.xml" title="艾瑞可erik" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <title>Ecat是Rust 微服务框架 | 艾瑞可erik</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css?v=20260813">
+<link rel="stylesheet" type="text/css" href="/css/effects.css?v=20260813">
+<link rel="stylesheet" type="text/css" href="/css/mobile.css?v=20260813">
+
+    
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"艾瑞可erik","url":"https://erik.xyz/","description":"一只全栈开发的程序猿，偶尔做做运维、PHP、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。"},{"@type":"Article","headline":"Ecat是Rust 微服务框架","url":"https://erik.xyz/2026/08/14/e-cat/","datePublished":"2026-08-14","dateModified":"2026-08-17","author":{"@type":"Person","name":"艾瑞可erik"},"publisher":{"@type":"Organization","name":"艾瑞可erik"},"mainEntityOfPage":"https://erik.xyz/2026/08/14/e-cat/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://erik.xyz/"},{"@type":"ListItem","position":2,"name":"rust","item":"https://erik.xyz/categories/rust/"},{"@type":"ListItem","position":3,"name":"Ecat是Rust 微服务框架","item":"https://erik.xyz/2026/08/14/e-cat/"}]}]}
+    </script>
+    
+    
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script>
+      if (location.protocol === 'https:' && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').catch(function () {});
+      }
+    </script>
+    
+<meta name="generator" content="Hexo 6.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+<body class="erik-dark sidebar-left">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="scroll-progress" id="scroll-progress"></div>
+  <canvas id="bg3d" aria-hidden="true"></canvas>
+  <div class="bg-fallback" id="bgFallback" aria-hidden="true"></div>
+
+  <div class="page-wrap">
+    <header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a href="/" class="brand-logo" title="艾瑞可erik">
+        <span class="logo-orbit">
+          <img src="/img/header.jpg" alt="艾瑞可erik">
+          <span class="orbit-ring"></span>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name gradient-text">艾瑞可erik</span>
+          
+            <span class="brand-subtitle">艾瑞可erik 🌟</span>
+          
+        </span>
+      </a>
+    </div>
+    <nav class="header-menu">
+      <ul>
+        
+          <li><a href="/" >主页</a></li>
+        
+          <li><a href="/archives" >归档</a></li>
+        
+          <li><a href="/categories" >分类</a></li>
+        
+          <li><a href="/open-page/index.html"  target="_blank" rel="noopener" >开源</a></li>
+        
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://visual.erik.xyz" target="_blank" >算法</a></li>
+        
+      </ul>
+      
+      <button type="button" id="search-toggle" class="header-icon" aria-label="搜索">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      </button>
+      
+      
+      <button type="button" id="theme-toggle" class="header-icon" aria-label="切换主题">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+      
+    </nav>
+    <div class="header-right">
+      <div class="social-wrap">
+        <button class="social-toggle" id="social-toggle" aria-label="社交链接">🌐 社交 <span class="social-toggle-arrow">▼</span></button>
+        <div class="social-panel glass" id="social-panel">
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://github.com/erikwang2013" target="_blank" title="github">
+              <span class="social-emoji">🐙</span>
+              <span class="social-name">github</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://blog.csdn.net/erik_aaron" target="_blank" title="csdn">
+              <span class="social-emoji">💻</span>
+              <span class="social-name">csdn</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://wpa.qq.com/msgrd?v=3&amp;uin=407978933&amp;site=qq&amp;menu=yes" target="_blank" title="qq">
+              <span class="social-emoji">🐧</span>
+              <span class="social-name">qq</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://500px.me/erik" target="_blank" title="500px">
+              <span class="social-emoji">📷</span>
+              <span class="social-name">500px</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://erik.tuchong.com" target="_blank" title="tuchong">
+              <span class="social-emoji">🐛</span>
+              <span class="social-name">tuchong</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://ycg.qq.com/person/works/2415382" target="_blank" title="web">
+              <span class="social-emoji">🎨</span>
+              <span class="social-name">web</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener" href="/rss.xml" title="rss">
+              <span class="social-emoji">📡</span>
+              <span class="social-name">rss</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener" href="mailto:erik@erik.xyz" title="mail">
+              <span class="social-emoji">✉️</span>
+              <span class="social-name">mail</span>
+            </a>
+          
+        </div>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <div id="wrapper" class="body-wrap">
+      <div class="post-layout">
+  <div class="post-main">
+    
+<article id="post-e-cat" class="article card " data-emoji="🦀" data-hue="168" itemscope itemprop="blogPost">
+  <div class="card-emoji" aria-hidden="true">🦀</div>
+  <div class="card-glow" aria-hidden="true"></div>
+  <div class="article-inner">
+    <header class="article-header">
+      <div class="article-title-row">
+        
+        
+  
+    <h1 class="article-title gradient-text" itemprop="name">Ecat是Rust 微服务框架</h1>
+  
+
+
+      </div>
+      <div class="article-meta">
+        <span class="article-date article-date">
+  <time datetime="2026-08-14T14:45:00.000Z" itemprop="datePublished">📅 2026-08-14</time>
+</span>
+
+        
+  <span class="article-tags">
+    
+      <a href="/tags/Ecat/" class="tag-chip color5">🏷️ Ecat</a>
+    
+      <a href="/tags/rust%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6/" class="tag-chip color5">🏷️ rust微服务框架</a>
+    
+      <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" class="tag-chip color4">🏷️ 微服务</a>
+    
+  </span>
+
+
+        
+  <span class="article-categories">
+    
+      <a href="/categories/rust/" class="cat-chip">📂 rust</a>
+    
+  </span>
+
+
+        
+          <span class="article-word">
+  <span>📝 1.6k 字</span>
+  <span class="dot">·</span>
+  <span>⏱️ 7 分钟</span>
+</span>
+
+        
+        
+        <span id="busuanzi_container_page_pv">阅读 <b id="busuanzi_value_page_pv">0</b> 次 👀</span>
+        
+      </div>
+    </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- Copyright (c) 2026 erik <erik@erik.xyz> — https://erik.xyz -->
+<h1 id="Ecat"><a href="#Ecat" class="headerlink" title="Ecat"></a>Ecat</h1><p><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://github.com/erikwang2013/e-cat/blob/main/README.en.md" target="_blank">English</a> | 简体中文</p>
+<p><strong>e-cat</strong> 是对标 <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://github.com/go-kratos/kratos" target="_blank">go-kratos/kratos</a> v3 的 Rust 微服务框架。</p>
+<p>提供 API-first 开发体验、可插拔的组件架构、统一的 HTTP/gRPC 中间件抽象，以及完备的 CLI 工具链。让熟悉 Kratos 的开发者可以无缝上手，同时充分利用 Rust 的类型安全、零成本抽象和极致性能。<br><span id="more"></span></p>
+<h2 id="设计架构"><a href="#设计架构" class="headerlink" title="设计架构"></a>设计架构</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">┌──────────────────────────────────────────────────────────────┐</span><br><span class="line">│                         ecat-cli                             │</span><br><span class="line">│              (new │ proto │ run │ build)                     │</span><br><span class="line">├──────────────────────────────────────────────────────────────┤</span><br><span class="line">│                     ecat (应用生命周期)                         │</span><br><span class="line">│      AppBuilder → App &#123; name, servers, hooks, ... &#125;         │</span><br><span class="line">├────────────────────┬────────────────────┬────────────────────┤</span><br><span class="line">│     transport      │    middleware      │     registry       │</span><br><span class="line">│     ─────────      │    ──────────      │     ────────       │</span><br><span class="line">│     HTTP (axum)    │    RecoveryLayer   │     memory         │</span><br><span class="line">│     gRPC (tonic)   │    TracingLayer    │                    │</span><br><span class="line">│     encoding       │    LoggingLayer    │                    │</span><br><span class="line">│                    │    TimeoutLayer    │                    │</span><br><span class="line">│                    │    SecurityLayer   │                    │</span><br><span class="line">├────────────────────┼────────────────────┼────────────────────┤</span><br><span class="line">│     config         │     errors         │     metadata       │</span><br><span class="line">│     ──────         │     ──────         │     ────────       │</span><br><span class="line">│     file / env     │     ErrorCode      │     key-value      │</span><br><span class="line">│     remote source  │     Error          │     HTTP/gRPC      │</span><br><span class="line">├────────────────────┴────────────────────┴────────────────────┤</span><br><span class="line">│                         data 层                               │</span><br><span class="line">│     ────────────────────────────────────────────────          │</span><br><span class="line">│     rdbms:   SQLite / PostgreSQL / MySQL / TiDB              │</span><br><span class="line">│     cache:   Redis / Memcached                               │</span><br><span class="line">│     olap:    ClickHouse                                      │</span><br><span class="line">│     search:  OpenSearch / Elasticsearch                      │</span><br><span class="line">│     graph:   Neo4j / NebulaGraph / ArangoDB                  │</span><br><span class="line">│     tsdb:    InfluxDB / Apache IoTDB / QuestDB               │</span><br><span class="line">├──────────────────────────────────────────────────────────────┤</span><br><span class="line">│                       ecat-protos                             │</span><br><span class="line">│     (共享 .proto 定义: errors, metadata, ...)                 │</span><br><span class="line">└──────────────────────────────────────────────────────────────┘</span><br></pre></td></tr></table></figure>
+<h3 id="请求处理流程"><a href="#请求处理流程" class="headerlink" title="请求处理流程"></a>请求处理流程</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">客户端请求</span><br><span class="line">  │</span><br><span class="line">  ├─ HTTP :8000 ────→ axum::Router ──┐</span><br><span class="line">  │                                   │</span><br><span class="line">  └─ gRPC :9000 ────→ tonic::Server ─┤</span><br><span class="line">                                      │</span><br><span class="line">                              ┌───────┴───────┐</span><br><span class="line">                              │   Middleware   │</span><br><span class="line">                              │   ──────────   │</span><br><span class="line">                              │ 1. Recovery    │  捕获 panic</span><br><span class="line">                              │ 2. Tracing     │  注入 trace_id</span><br><span class="line">                              │ 3. Logging     │  请求日志</span><br><span class="line">                              │ 4. Auth        │  认证鉴权</span><br><span class="line">                              │ 5. Metrics     │  指标采集</span><br><span class="line">│ 6. Security    │  攻击检测（仅告警）</span><br><span class="line">                              └───────┬───────┘</span><br><span class="line">                                      │</span><br><span class="line">                              ┌───────┴───────┐</span><br><span class="line">                              │    Handler     │  用户业务逻辑</span><br><span class="line">                              │ (tower::Service)│</span><br><span class="line">                              └───────┬───────┘</span><br><span class="line">                                      │</span><br><span class="line">                              ┌───────┴───────┐</span><br><span class="line">                              │   Response     │  编码序列化</span><br><span class="line">                              │ JSON/Protobuf  │</span><br><span class="line">                              └───────────────┘</span><br></pre></td></tr></table></figure>
+<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><ul>
+<li><strong>API-first</strong>：Protobuf 定义 API、错误码、元数据；prost + tonic-build 代码生成</li>
+<li><strong>双协议支持</strong>：HTTP（axum）和 gRPC（tonic）共用同一套 tower::Layer 中间件</li>
+<li><strong>可插拔架构</strong>：Registry、Config、Logging、Encoding 全部通过 trait 抽象，默认提供生产可用实现</li>
+<li><strong>中间件体系</strong>：内置 Recovery、Tracing、Logging、Timeout、Security；通过 tower::ServiceBuilder 组合</li>
+<li><strong>应用生命周期</strong>：Builder 模式构建 App，多 Server 并发启动，SIGTERM/SIGINT 信号处理，start/stop 生命周期钩子</li>
+<li><strong>类型安全</strong>：基于 protobuf 的错误码体系，编译期 HTTP 状态码映射</li>
+<li><strong>可观测性</strong>：tracing + opentelemetry + Prometheus 开箱即用</li>
+<li><strong>攻击检测</strong>：27 种攻击模式自动识别（SQL 注入、XSS、SSRF、路径遍历等），仅日志告警不阻断</li>
+<li><strong>多数据源</strong>：RDBMS（SQLite/PG/MySQL/TiDB）、缓存、OLAP、搜索引擎、图数据库、时序数据库</li>
+</ul>
+<h3 id="Kratos-概念映射"><a href="#Kratos-概念映射" class="headerlink" title="Kratos 概念映射"></a>Kratos 概念映射</h3><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Kratos (Go)</th>
+<th>e-cat (Rust)</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kratos.New()</code></td>
+<td><code>App::builder()</code></td>
+<td>Builder 模式</td>
+</tr>
+<tr>
+<td><code>http.Handler</code></td>
+<td><code>tower::Service</code></td>
+<td>Rust 生态标准 trait</td>
+</tr>
+<tr>
+<td><code>http.Server</code></td>
+<td><code>axum::Router</code></td>
+<td>社区主流 HTTP 框架</td>
+</tr>
+<tr>
+<td><code>grpc.Server</code></td>
+<td><code>tonic::transport::Server</code></td>
+<td>最成熟的 gRPC 实现</td>
+</tr>
+<tr>
+<td><code>proto generate</code></td>
+<td><code>prost + tonic-build</code></td>
+<td>社区标准 protobuf</td>
+</tr>
+<tr>
+<td><code>registry.Discovery</code></td>
+<td><code>Registry</code> trait</td>
+<td>可插拔注册发现</td>
+</tr>
+<tr>
+<td><code>config.Source</code></td>
+<td><code>ConfigSource</code> trait</td>
+<td>多源配置加载</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>选型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>异步运行时</td>
+<td><strong>tokio</strong></td>
+</tr>
+<tr>
+<td>HTTP</td>
+<td><strong>axum</strong></td>
+</tr>
+<tr>
+<td>gRPC</td>
+<td><strong>tonic</strong></td>
+</tr>
+<tr>
+<td>Protobuf</td>
+<td><strong>prost + tonic-build</strong></td>
+</tr>
+<tr>
+<td>中间件</td>
+<td><strong>tower::Service / Layer</strong></td>
+</tr>
+<tr>
+<td>日志/追踪</td>
+<td><strong>tracing + opentelemetry-rust</strong></td>
+</tr>
+<tr>
+<td>指标</td>
+<td><strong>prometheus</strong></td>
+</tr>
+<tr>
+<td>序列化</td>
+<td><strong>serde + prost</strong></td>
+</tr>
+<tr>
+<td>攻击检测</td>
+<td><strong>security-rust</strong></td>
+</tr>
+<tr>
+<td>RDBMS</td>
+<td><strong>sqlx</strong></td>
+</tr>
+<tr>
+<td>CLI</td>
+<td><strong>clap</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="支持的数据库"><a href="#支持的数据库" class="headerlink" title="支持的数据库"></a>支持的数据库</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>数据库</th>
+<th>Crate</th>
+<th>Rust 驱动</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RDBMS</td>
+<td>SQLite</td>
+<td><code>ecat-data-sqlx</code></td>
+<td><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://crates.io/crates/sqlx" target="_blank">sqlx</a></td>
+</tr>
+<tr>
+<td>RDBMS</td>
+<td>PostgreSQL</td>
+<td><code>ecat-data-sqlx</code></td>
+<td><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://crates.io/crates/sqlx" target="_blank">sqlx</a></td>
+</tr>
+<tr>
+<td>RDBMS</td>
+<td>MySQL</td>
+<td><code>ecat-data-sqlx</code></td>
+<td><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://crates.io/crates/sqlx" target="_blank">sqlx</a></td>
+</tr>
+<tr>
+<td>RDBMS</td>
+<td>TiDB</td>
+<td><code>ecat-data-sqlx</code></td>
+<td><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://crates.io/crates/sqlx" target="_blank">sqlx</a></td>
+</tr>
+<tr>
+<td>缓存</td>
+<td>Redis</td>
+<td><code>ecat-data-redis</code></td>
+<td><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://crates.io/crates/redis" target="_blank">redis-rs</a></td>
+</tr>
+<tr>
+<td>缓存</td>
+<td>Memcached</td>
+<td><code>ecat-data-memcached</code></td>
+<td><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://crates.io/crates/memcache" target="_blank">memcache</a></td>
+</tr>
+<tr>
+<td>OLAP</td>
+<td>ClickHouse</td>
+<td><code>ecat-data-clickhouse</code></td>
+<td><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://crates.io/crates/clickhouse-rs" target="_blank">clickhouse-rs</a></td>
+</tr>
+<tr>
+<td>搜索</td>
+<td>OpenSearch</td>
+<td><code>ecat-data-opensearch</code></td>
+<td><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://crates.io/crates/opensearch" target="_blank">opensearch</a></td>
+</tr>
+<tr>
+<td>搜索</td>
+<td>Elasticsearch</td>
+<td><code>ecat-data-elasticsearch</code></td>
+<td><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://crates.io/crates/elasticsearch" target="_blank">elasticsearch</a></td>
+</tr>
+<tr>
+<td>图</td>
+<td>Neo4j</td>
+<td><code>ecat-data-neo4j</code></td>
+<td><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://crates.io/crates/neo4rs" target="_blank">neo4rs</a></td>
+</tr>
+<tr>
+<td>图</td>
+<td>NebulaGraph</td>
+<td><code>ecat-data-nebulagraph</code></td>
+<td>nebula-client</td>
+</tr>
+<tr>
+<td>图</td>
+<td>ArangoDB</td>
+<td><code>ecat-data-arangodb</code></td>
+<td><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://crates.io/crates/arangors" target="_blank">arangors</a></td>
+</tr>
+<tr>
+<td>时序</td>
+<td>InfluxDB</td>
+<td><code>ecat-data-influxdb</code></td>
+<td><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://crates.io/crates/influxdb2" target="_blank">influxdb2</a></td>
+</tr>
+<tr>
+<td>时序</td>
+<td>Apache IoTDB</td>
+<td><code>ecat-data-iotdb</code></td>
+<td>iotdb-client-rs</td>
+</tr>
+<tr>
+<td>时序</td>
+<td>QuestDB</td>
+<td><code>ecat-data-questdb</code></td>
+<td>questdb-rs (ILP)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<blockquote>
+<p>所有数据后端通过统一的 trait 抽象（<code>RdbmsClient</code> / <code>Cache</code> / <code>SearchClient</code> / <code>GraphClient</code> / <code>TsdbClient</code>），按需引入对应 contrib crate。</p>
+</blockquote>
+<h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">e-cat/</span><br><span class="line">├── ecat/                       # 核心：App 生命周期</span><br><span class="line">├── ecat-transport/             # 传输抽象（Server trait）</span><br><span class="line">├── ecat-transport-http/        # axum 实现</span><br><span class="line">├── ecat-transport-grpc/        # tonic 实现</span><br><span class="line">├── ecat-middleware/            # tower::Layer 中间件</span><br><span class="line">├── ecat-protos/                # Protobuf 定义</span><br><span class="line">├── ecat-errors/                # 错误码体系</span><br><span class="line">├── ecat-metadata/              # 元数据传递</span><br><span class="line">├── ecat-encoding/              # 序列化抽象</span><br><span class="line">├── ecat-logging/               # tracing 集成</span><br><span class="line">├── ecat-registry/              # 服务注册发现</span><br><span class="line">├── ecat-config/                # 配置管理</span><br><span class="line">├── ecat-metrics/               # Prometheus 集成</span><br><span class="line">├── ecat-data/                  # 数据访问 trait</span><br><span class="line">├── ecat-security/              # 攻击检测（security-rust）</span><br><span class="line">├── ecat-cli/                   # CLI 工具</span><br><span class="line">├── docs/                       # 设计文档与实现计划</span><br><span class="line">└── examples/                   # 示例项目</span><br></pre></td></tr></table></figure>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="前提条件"><a href="#前提条件" class="headerlink" title="前提条件"></a>前提条件</h3><ul>
+<li>Rust 1.80+（stable 工具链）</li>
+<li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://github.com/protocolbuffers/protobuf" target="_blank">protoc</a>（Protocol Buffers 编译器）</li>
+</ul>
+<h3 id="安装-CLI"><a href="#安装-CLI" class="headerlink" title="安装 CLI"></a>安装 CLI</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cargo install ecat-cli</span><br></pre></td></tr></table></figure>
+<h3 id="创建服务"><a href="#创建服务" class="headerlink" title="创建服务"></a>创建服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 脚手架生成项目</span></span><br><span class="line">ecat new helloworld</span><br><span class="line"><span class="built_in">cd</span> helloworld</span><br><span class="line"></span><br><span class="line"><span class="comment"># 添加 proto 定义</span></span><br><span class="line">ecat proto add api/helloworld/helloworld.proto</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成客户端和服务端代码</span></span><br><span class="line">ecat proto client api/helloworld/helloworld.proto</span><br><span class="line">ecat proto server api/helloworld/helloworld.proto -t internal/service</span><br><span class="line"></span><br><span class="line"><span class="comment"># 开发模式运行</span></span><br><span class="line">ecat run</span><br></pre></td></tr></table></figure>
+<p>访问 <code>http://localhost:8000/helloworld/ecat</code>。</p>
+<h3 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h3><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> ecat::App;</span><br><span class="line"><span class="keyword">use</span> ecat_transport_http::HttpServer;</span><br><span class="line"><span class="keyword">use</span> ecat_transport_grpc::GrpcServer;</span><br><span class="line"></span><br><span class="line"><span class="meta">#[tokio::main]</span></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">fn</span> <span class="title function_">main</span>() <span class="punctuation">-&gt;</span> <span class="type">Result</span>&lt;(), <span class="type">Box</span>&lt;<span class="keyword">dyn</span> std::error::Error + <span class="built_in">Send</span> + <span class="built_in">Sync</span>&gt;&gt; &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">http_srv</span> = HttpServer::<span class="title function_ invoke__">new</span>(<span class="string">&quot;:8000&quot;</span>);</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">grpc_srv</span> = GrpcServer::<span class="title function_ invoke__">new</span>(<span class="string">&quot;:9000&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">app</span> = App::<span class="title function_ invoke__">builder</span>()</span><br><span class="line">        .<span class="title function_ invoke__">name</span>(<span class="string">&quot;my-service&quot;</span>)</span><br><span class="line">        .<span class="title function_ invoke__">version</span>(<span class="string">&quot;v1.0.0&quot;</span>)</span><br><span class="line">        .<span class="title function_ invoke__">server</span>(http_srv)</span><br><span class="line">        .<span class="title function_ invoke__">server</span>(grpc_srv)</span><br><span class="line">        .<span class="title function_ invoke__">on_start</span>(|| <span class="keyword">async</span> &#123;</span><br><span class="line">            tracing::info!(<span class="string">&quot;service started&quot;</span>);</span><br><span class="line">            <span class="title function_ invoke__">Ok</span>(())</span><br><span class="line">        &#125;)</span><br><span class="line">        .<span class="title function_ invoke__">on_stop</span>(|| <span class="keyword">async</span> &#123;</span><br><span class="line">            tracing::info!(<span class="string">&quot;service stopped&quot;</span>);</span><br><span class="line">            <span class="title function_ invoke__">Ok</span>(())</span><br><span class="line">        &#125;)</span><br><span class="line">        .<span class="title function_ invoke__">build</span>()?;</span><br><span class="line"></span><br><span class="line">    app.<span class="title function_ invoke__">run</span>().<span class="keyword">await</span>?; <span class="comment">// 阻塞直到 SIGTERM/SIGINT</span></span><br><span class="line">    <span class="title function_ invoke__">Ok</span>(())</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h3><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> tower::ServiceBuilder;</span><br><span class="line"><span class="keyword">use</span> ecat_middleware::&#123;RecoveryLayer, TracingLayer, LoggingLayer, TimeoutLayer&#125;;</span><br><span class="line"><span class="keyword">use</span> std::time::Duration;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> <span class="variable">layer</span> = ServiceBuilder::<span class="title function_ invoke__">new</span>()</span><br><span class="line">    .<span class="title function_ invoke__">layer</span>(RecoveryLayer)</span><br><span class="line">    .<span class="title function_ invoke__">layer</span>(TracingLayer)</span><br><span class="line">    .<span class="title function_ invoke__">layer</span>(LoggingLayer)</span><br><span class="line">    .<span class="title function_ invoke__">layer</span>(TimeoutLayer::<span class="title function_ invoke__">new</span>(Duration::<span class="title function_ invoke__">from_secs</span>(<span class="number">30</span>)))</span><br><span class="line">    .<span class="title function_ invoke__">layer</span>(SecurityLayer::<span class="title function_ invoke__">new</span>());</span><br></pre></td></tr></table></figure>
+<h3 id="错误处理"><a href="#错误处理" class="headerlink" title="错误处理"></a>错误处理</h3><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> ecat_errors::&#123;Error, ErrorCode&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">get_user</span>(id: <span class="type">u64</span>) <span class="punctuation">-&gt;</span> <span class="type">Result</span>&lt;User, Error&gt; &#123;</span><br><span class="line">    <span class="keyword">if</span> id == <span class="number">0</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="title function_ invoke__">Err</span>(Error::<span class="title function_ invoke__">new</span>(</span><br><span class="line">            ErrorCode::InvalidArgument,</span><br><span class="line">            <span class="string">&quot;bad_request&quot;</span>,</span><br><span class="line">            <span class="string">&quot;user id must be positive&quot;</span>,</span><br><span class="line">        ));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="实现阶段"><a href="#实现阶段" class="headerlink" title="实现阶段"></a>实现阶段</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>状态</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phase 1</td>
+<td>✅ 完成</td>
+<td>项目骨架、protos、errors、metadata、encoding、logging</td>
+</tr>
+<tr>
+<td>Phase 2</td>
+<td>✅ 完成</td>
+<td>Transport 层（HTTP + gRPC）</td>
+</tr>
+<tr>
+<td>Phase 3</td>
+<td>✅ 完成</td>
+<td>Middleware 体系（Recovery/Tracing/Logging/Timeout）</td>
+</tr>
+<tr>
+<td>Phase 4</td>
+<td>✅ 完成</td>
+<td>App 生命周期管理</td>
+</tr>
+<tr>
+<td>Phase 5</td>
+<td>✅ 完成</td>
+<td>Registry、Config、Metrics</td>
+</tr>
+<tr>
+<td>Phase 5.5</td>
+<td>✅ 完成</td>
+<td>Data 访问层（traits + sqlx 后端）</td>
+</tr>
+<tr>
+<td>Phase 6</td>
+<td>✅ 完成</td>
+<td>CLI 工具链（new/proto/run/build）</td>
+</tr>
+<tr>
+<td>Phase 7</td>
+<td>✅ 完成</td>
+<td>README、示例（helloworld）、设计文档</td>
+</tr>
+<tr>
+<td>Phase 8</td>
+<td>✅ 完成</td>
+<td>攻击检测集成（security-rust, ecat-security）</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="设计目标"><a href="#设计目标" class="headerlink" title="设计目标"></a>设计目标</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>目标</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Kratos 对齐</strong></td>
+<td>保持 Kratos 的 API-first、可插拔、统一抽象理念</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Rust 惯用</strong></td>
+<td>复用 tower::Service、trait 泛型、零成本抽象；不做「Go in Rust」</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>类型安全</strong></td>
+<td>编译期捕获错误，Protobuf 定义全强类型化</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>可插拔</strong></td>
+<td>Registry、Config、Logging、Encoding 全部通过 trait 抽象</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>工具链完备</strong></td>
+<td>CLI 支持项目脚手架、proto 代码生成、开发运行</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>性能优先</strong></td>
+<td>零成本抽象 + 异步运行时</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>可观测</strong></td>
+<td>tracing + OpenTelemetry + Prometheus 开箱即用</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="技术说明"><a href="#技术说明" class="headerlink" title="技术说明"></a>技术说明</h2><h3 id="为什么选择-tower-Service"><a href="#为什么选择-tower-Service" class="headerlink" title="为什么选择 tower::Service"></a>为什么选择 tower::Service</h3><p><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://docs.rs/tower/latest/tower/trait.Service.html" target="_blank"><code>tower::Service</code></a> 是 Rust 异步生态的 <code>http.Handler</code> 等价物。axum 和 tonic 都构建在 tower 之上，因此 e-cat 不需要自定义中间件 trait——直接提供 tower::Layer 实现即可达到与 Kratos 中间件相同的效果，且零适配器开销。</p>
+<h3 id="为什么用-Cargo-Workspace"><a href="#为什么用-Cargo-Workspace" class="headerlink" title="为什么用 Cargo Workspace"></a>为什么用 Cargo Workspace</h3><p>与 Kratos 的模块化设计一致。每个 <code>ecat-*</code> crate 独立版本、独立编译，用户按需引入。核心 crate 保持最小依赖，contrib crate 提供可选集成。</p>
+<h3 id="为什么用-prost（而非-protobuf-rs）"><a href="#为什么用-prost（而非-protobuf-rs）" class="headerlink" title="为什么用 prost（而非 protobuf-rs）"></a>为什么用 prost（而非 protobuf-rs）</h3><p>prost 是 Rust 社区最广泛使用的 protobuf 实现，编译期生成类型安全代码，与 tonic 深度集成。</p>
+<h2 id="设计文档"><a href="#设计文档" class="headerlink" title="设计文档"></a>设计文档</h2><ul>
+<li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://github.com/erikwang2013/e-cat/blob/main/docs/superpowers/specs/2026-07-29-ecat-framework-design.md" target="_blank">设计规范</a></li>
+<li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://github.com/erikwang2013/e-cat/blob/main/docs/superpowers/plans/2026-07-29-ecat-framework.md" target="_blank">实现计划</a></li>
+</ul>
+<h2 id="许可证"><a href="#许可证" class="headerlink" title="许可证"></a>许可证</h2><p>MIT</p>
+
+      
+    </div>
+    <div class="article-footer">
+      
+      
+        <div class="declare">
+          <strong>🧑‍💻 本文作者：</strong>艾瑞可erik<br>
+          <strong>🔗 本文链接：</strong>https://erik.xyz/2026/08/14/e-cat/<br>
+          <strong>📜 版权声明：</strong>本作品采用
+          <a rel="license noopener external nofollow noopener noreferrer" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+          进行许可，转载请注明出处！
+        </div>
+      
+      
+        <div class="page-reward" id="reward-box">
+          <button class="reward-toggle" id="reward-toggle" aria-label="打赏">🎁 打赏<span class="reward-tip"> 感谢投喂，法力 +1 🍬</span></button>
+          <div class="reward-panel" id="reward-panel">
+            
+              <div class="reward-card"><img src="/img/alipay.jpg" alt="支付宝"><span class="reward-name">💙 支付宝</span></div>
+            
+            
+              <div class="reward-card"><img src="/img/wxpay.jpg" alt="微信"><span class="reward-name">💚 微信</span></div>
+            
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav" class="glass">
+  
+  
+    <a href="/2026/07/30/coding-to-rust/" class="article-nav-link next">
+      <span class="nav-body">
+        <span class="nav-label">下一篇</span>
+        <span class="nav-title">Coding to Rust 是一个 Claude Code 技能集合，覆盖从 16 种主流编程语言迁移到 Rust 的完整skills</span>
+      </span>
+      <span class="nav-arrow">→</span>
+    </a>
+  
+</nav>
+
+
+  
+  
+  <section class="related-posts">
+    <h2 class="related-title">🔗 相关文章</h2>
+    <div class="related-grid">
+      
+      <a class="related-card" href="2022/08/09/go-zero-list-1/">
+        <span class="related-emoji">😜</span>
+        <span class="related-name">go-zero微服务试用</span>
+        <span class="related-date">2022-08-09</span>
+      </a>
+      
+    </div>
+  </section>
+  
+  
+  
+    
+
+<div id="gitalk-container" class="glass gitalk-box"></div>
+<link rel="stylesheet" href="/vendor/gitalk.css?v=20260813">
+<script src="/vendor/md5.min.js?v=20260813"></script>
+<script src="/vendor/gitalk.min.js?v=20260813"></script>
+<script>
+  (function () {
+    var g = new Gitalk({
+      clientID: '1f3ef16f7a5f58d435b3',
+      clientSecret: '9e444c34bd4f282e698f56ba76cd9a8d0892b762',
+      repo: 'erikwang2013.github.io',
+      owner: 'erikwang2013',
+      admin: ['erikwang2013'],
+      id: md5(location.pathname),
+      language: 'zh-CN',
+      perPage: 10,
+      distractionFreeMode: true
+    });
+    g.render('gitalk-container');
+  })();
+</script>
+
+
+  
+
+
+  </div>
+  <aside class="post-aside">
+    
+  <div class="toc-wrap glass">
+    <div class="toc-title">🧭 目录导航</div>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Ecat"><span class="toc-text">Ecat</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E6%9E%B6%E6%9E%84"><span class="toc-text">设计架构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B7%E6%B1%82%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B"><span class="toc-text">请求处理流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD"><span class="toc-text">功能</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Kratos-%E6%A6%82%E5%BF%B5%E6%98%A0%E5%B0%84"><span class="toc-text">Kratos 概念映射</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E6%A0%88"><span class="toc-text">技术栈</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%AF%E6%8C%81%E7%9A%84%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">支持的数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84"><span class="toc-text">项目结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"><span class="toc-text">快速开始</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="toc-text">前提条件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-CLI"><span class="toc-text">安装 CLI</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%9C%8D%E5%8A%A1"><span class="toc-text">创建服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E7%A4%BA%E4%BE%8B"><span class="toc-text">代码示例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E9%97%B4%E4%BB%B6"><span class="toc-text">中间件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86"><span class="toc-text">错误处理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E9%98%B6%E6%AE%B5"><span class="toc-text">实现阶段</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E7%9B%AE%E6%A0%87"><span class="toc-text">设计目标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E8%AF%B4%E6%98%8E"><span class="toc-text">技术说明</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9-tower-Service"><span class="toc-text">为什么选择 tower::Service</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8-Cargo-Workspace"><span class="toc-text">为什么用 Cargo Workspace</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8-prost%EF%BC%88%E8%80%8C%E9%9D%9E-protobuf-rs%EF%BC%89"><span class="toc-text">为什么用 prost（而非 protobuf-rs）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3"><span class="toc-text">设计文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%B8%E5%8F%AF%E8%AF%81"><span class="toc-text">许可证</span></a></li></ol></li></ol>
+    
+  </div>
+
+
+  </aside>
+</div>
+
+    </div>
+    <footer class="site-footer">
+  <div class="footer-magic">✨ 🧙‍♂️ ✨</div>
+  
+    <div class="footer-info footer-nav">
+      
+        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🛸 艾瑞可erik·导航</a>
+      
+        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🤝 postwoman</a>
+      
+    </div>
+  
+  <div class="footer-info">
+    &copy; 2026 艾瑞可erik
+    
+      | <a href="https://beian.miit.gov.cn" target="_blank" target="_blank" rel="nofollow noopener external nofollow noopener noreferrer">粤ICP备2020136226号-1</a>
+    
+    
+      | <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030602005398" target="_blank" target="_blank" rel="nofollow noopener external nofollow noopener noreferrer">粤公网安备 44030602005398号</a>
+    
+  </div>
+  
+    <div class="footer-info" id="busuanzi">
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_pv">本站总访问量 <b id="busuanzi_value_site_pv">0</b> 次 👀</span>
+      <span class="dot">·</span>
+      <span id="busuanzi_container_site_uv">访客数 <b id="busuanzi_value_site_uv">0</b> 人次 🧑‍🚀</span>
+    </div>
+  
+  <div class="footer-info footer-powered">
+    Powered by <a href="https://hexo.io" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Hexo</a>
+    &amp; three.js 🚀 Theme by erik 🎨
+  </div>
+</footer>
+
+  </div>
+
+  <button class="back-top" id="back-top" title="回到顶部 🚀">🚀</button>
+
+  
+  <div class="player collapsed" id="player-box">
+    <button type="button" class="player-mini" id="player-mini" title="展开播放器 🎵">🎵</button>
+    <div class="player-panel">
+      <div class="player-top">
+        <img class="player-cover" id="player-cover" src="/img/timg.jpeg" alt="cover">
+        <div class="player-info">
+          <div class="player-title" id="player-title"></div>
+          <div class="player-artist" id="player-artist"></div>
+        </div>
+        <button type="button" class="player-collapse" id="player-collapse" title="收起">✕</button>
+      </div>
+      <div class="player-progress">
+        <input type="range" id="player-progress" min="0" max="100" step="0.1" value="0" aria-label="播放进度">
+        <span class="player-time" id="player-time">00:00</span>
+      </div>
+      <div class="player-controls">
+        <button type="button" class="player-mode" id="player-mode" data-mode="all" title="播放模式">
+          <svg class="icon-mode-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10h11v2H3zm0-4h11v2H3zm0 8h7v2H3zm13-1v8l6-4z"/></svg>
+          <svg class="icon-mode-all" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/></svg>
+          <svg class="icon-mode-one" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4zm-4-2V9h-1l-2 1v1h1.5v4H13z"/></svg>
+          <svg class="icon-mode-shuffle" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
+        </button>
+        <button type="button" id="player-prev" title="上一首">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h2v12H6zm13.5 0L9 12l10.5 6z"/></svg>
+        </button>
+        <button type="button" class="player-play" id="player-play" title="播放/暂停">
+          <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+        </button>
+        <button type="button" id="player-next" title="下一首">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 6h2v12h-2zM4.5 5L15 12 4.5 19z"/></svg>
+        </button>
+      </div>
+    </div>
+    <audio id="player-audio" preload="metadata"></audio>
+  </div>
+  
+
+  
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="search-panel-box">
+      <input type="search" id="search-input" class="search-input"
+             placeholder="搜索文章…" autocomplete="off">
+      <ul id="search-results" class="search-results"></ul>
+      <p class="search-empty" id="search-empty" hidden>没有找到匹配的文章 🙈</p>
+    </div>
+  </div>
+  
+  
+  <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog">
+    <button type="button" class="lightbox-close" aria-label="关闭">✕</button>
+    <button type="button" class="lightbox-prev" aria-label="上一张">‹</button>
+    <button type="button" class="lightbox-next" aria-label="下一张">›</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+  
+  <script>
+window.ERIK = {
+  root: "/",
+  three: {"enable":true,"particleCount":2600,"particleColors":["#7c3aed","#06b6d4","#f472b6","#fbbf24","#a78bfa"],"emojiCount":14,"emoji":["🔮","✨","🚀","🫣","🌟","🤔","🎯","👌","♥️","🧪","💎","😜","🪄","😴","⚡","🌈","🛸","🤣","😘","🛰️","🪐","👾","🌙","🔥","💫","🍀","🌊","🎈","⭐","🌸","🍃","🎶","🤦","😅","🤭","🤨","🤔","😫","😭","👌","👏","😘","😣","😒","😆","🍉","💪","🤓","😏","🤦","👌","🐶","🤙","6️","👀","💔","🤗","👍","👎","👉","🙏","👌","✊","🙏","🌹","🤝","💩","☀️","🎁","🧧","💰","🎆","🔄","🥶","🏃","🐷","🧧","❤️","💋"],"opacity":0.55,"parallax":true,"scrollRotate":true},
+  tilt: {"enable":true,"maxAngle":12},
+  style: {"mode":"dark","toggle":true,"primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
+  mode: "dark",
+  mathjax: true,
+  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg","lrc":"/music/song/yvqingweiliao.lrc"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"},{"name":"画中仙","artist":"暴卯卯","url":"/music/song/huazhongxian.WAV","cover":"/img/timg.jpeg"},{"name":"嫁给我吧","artist":"暴卯卯","url":"/music/song/jiageiwoba.WAV","cover":"/img/timg.jpeg"}]},
+  isPost: true,
+  search: {"enable":true,"placeholder":"搜索文章…","max_results":10},
+  lightbox: {"enable":true},
+  copyBtn: {"enable":true},
+  dynamicTitle: {"enable":true,"wording":"📬 有新消息等你"},
+  quote: {"enable":false,"api":""},
+  encrypt: false
+};
+</script>
+<script src="/js/main.js?v=20260813"></script>
+
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script src="/js/feats.js?v=20260813"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+</body>
+</html>

@@ -5,14 +5,14 @@
         <link>https://erik.xyz</link>
         <description>一只全栈开发的程序猿，偶尔做做运维、PHP、Goland、Python、Java、摄影、画画、写作、顺便睡觉，反正整站都搞过。</description>
         <language>zh-CN</language>
-        <pubDate>Tue, 09 Aug 2022 21:48:00 +0800</pubDate>
-        <lastBuildDate>Tue, 09 Aug 2022 21:48:00 +0800</lastBuildDate>
-        <category>日志</category>
-        <category>工具</category>
+        <pubDate>Fri, 14 Aug 2026 22:45:00 +0800</pubDate>
+        <lastBuildDate>Fri, 14 Aug 2026 22:45:00 +0800</lastBuildDate>
         <category>php扩展</category>
         <category>php技巧</category>
         <category>php类库</category>
         <category>php资源</category>
+        <category>日志</category>
+        <category>工具</category>
         <category>jquery</category>
         <category>jquery插件</category>
         <category>js</category>
@@ -26,8 +26,8 @@
         <category>php实例</category>
         <category>说说</category>
         <category>趣闻</category>
-        <category>转载</category>
         <category>nginx</category>
+        <category>转载</category>
         <category>php库</category>
         <category>互联</category>
         <category>项目实战</category>
@@ -42,19 +42,19 @@
         <category>kali安装</category>
         <category>多平台广告管理系统</category>
         <category>Ads Platform</category>
+        <category>农业系统</category>
+        <category>系统设计</category>
         <category>克莱姆法则</category>
         <category>行列式</category>
         <category>n阶行列式</category>
-        <category>农业系统</category>
-        <category>系统设计</category>
         <category>支付系统</category>
         <category>支付</category>
+        <category>centos</category>
+        <category>linux</category>
         <category>apache优化</category>
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>centos</category>
-        <category>linux</category>
         <category>日常</category>
         <category>seo</category>
         <category>优化</category>
@@ -91,13 +91,13 @@
         <category>linux安装centos7安装Redis Desktop Manager</category>
         <category>Redis Desktop Manager</category>
         <category>redis桌面</category>
-        <category>root密码</category>
-        <category>root密码重置</category>
-        <category>忘记root密码</category>
         <category>centos7</category>
         <category>centos7-wine</category>
         <category>wine</category>
         <category>wine安装</category>
+        <category>root密码</category>
+        <category>root密码重置</category>
+        <category>忘记root密码</category>
         <category>memcache</category>
         <category>memcached</category>
         <category>生活手记</category>
@@ -144,6 +144,8 @@
         <category>docker</category>
         <category>php安装</category>
         <category>杂谈</category>
+        <category>Ecat</category>
+        <category>rust微服务框架</category>
         <category>微服务</category>
         <category>ecshop</category>
         <category>框架</category>
@@ -168,11 +170,11 @@
         <category>游戏聚合平台</category>
         <category>游戏平台</category>
         <category>游戏</category>
-        <category>go获取ip</category>
         <category>ping</category>
         <category>ping服务器</category>
         <category>各大网站ping</category>
         <category>搜引擎ping服务器</category>
+        <category>go获取ip</category>
         <category>im</category>
         <category>go中pdf生成</category>
         <category>go中限流</category>
@@ -287,13 +289,13 @@
         <category>onethink</category>
         <category>oop</category>
         <category>php管理系统</category>
+        <category>开放接口开发</category>
         <category>erp</category>
         <category>open erp</category>
         <category>开放erp</category>
-        <category>开放接口开发</category>
+        <category>openresty</category>
         <category>开源工具</category>
         <category>桌面共享工具</category>
-        <category>openresty</category>
         <category>openvas</category>
         <category>openvas安装</category>
         <category>php架构</category>
@@ -399,12 +401,12 @@
         <category>深圳政府电话</category>
         <category>深圳电话</category>
         <category>特区电话</category>
-        <category>居住证</category>
-        <category>居住证签注</category>
-        <category>深圳新居住证</category>
         <category>国庆骑行</category>
         <category>深圳珠海骑行</category>
         <category>骑行</category>
+        <category>居住证</category>
+        <category>居住证签注</category>
+        <category>深圳新居住证</category>
         <category>世界那么大</category>
         <category>css3</category>
         <category>css在线生成工具</category>
@@ -456,9 +458,9 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
+        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
-        <category>域名合并</category>
         <category>无限极分类</category>
         <category>php无限极</category>
         <category>分类tree</category>
@@ -506,6 +508,369 @@
         <category>翻墙</category>
         <category>谷歌</category>
         <category>谷歌搜索</category>
+        <item>
+            <guid isPermalink="true">https://erik.xyz/2026/08/14/e-cat/</guid>
+            <title>Ecat是Rust 微服务框架</title>
+            <link>https://erik.xyz/2026/08/14/e-cat/</link>
+            <category>Ecat</category>
+            <category>rust微服务框架</category>
+            <category>微服务</category>
+            <pubDate>Fri, 14 Aug 2026 22:45:00 +0800</pubDate>
+            <description><![CDATA[ &lt;!-- Copyright (c) 2026 erik &lt;erik@erik.xyz&gt; — https://erik.xyz --&gt;
+&lt;h1 id=&#34;Ecat&#34;&gt;&lt;a href=&#34;#Ecat&#34; class=&#34;headerlink&#34; title=&#34;Ecat&#34;&gt;&lt;/a&gt;Ecat&lt;/h1&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/erikwang2013/e-cat/blob/main/README.en.md&#34;&gt;English&lt;/a&gt; | 简体中文&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;e-cat&lt;/strong&gt; 是对标 &lt;a href=&#34;https://github.com/go-kratos/kratos&#34;&gt;go-kratos/kratos&lt;/a&gt; v3 的 Rust 微服务框架。&lt;/p&gt;
+&lt;p&gt;提供 API-first 开发体验、可插拔的组件架构、统一的 HTTP/gRPC 中间件抽象，以及完备的 CLI 工具链。让熟悉 Kratos 的开发者可以无缝上手，同时充分利用 Rust 的类型安全、零成本抽象和极致性能。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;设计架构&#34;&gt;&lt;a href=&#34;#设计架构&#34; class=&#34;headerlink&#34; title=&#34;设计架构&#34;&gt;&lt;/a&gt;设计架构&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;┌──────────────────────────────────────────────────────────────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│                         ecat-cli                             │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│              (new │ proto │ run │ build)                     │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├──────────────────────────────────────────────────────────────┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│                     ecat (应用生命周期)                         │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│      AppBuilder → App &amp;#123; name, servers, hooks, ... &amp;#125;         │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├────────────────────┬────────────────────┬────────────────────┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     transport      │    middleware      │     registry       │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     ─────────      │    ──────────      │     ────────       │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     HTTP (axum)    │    RecoveryLayer   │     memory         │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     gRPC (tonic)   │    TracingLayer    │                    │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     encoding       │    LoggingLayer    │                    │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│                    │    TimeoutLayer    │                    │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│                    │    SecurityLayer   │                    │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├────────────────────┼────────────────────┼────────────────────┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     config         │     errors         │     metadata       │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     ──────         │     ──────         │     ────────       │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     file / env     │     ErrorCode      │     key-value      │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     remote source  │     Error          │     HTTP/gRPC      │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├────────────────────┴────────────────────┴────────────────────┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│                         data 层                               │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     ────────────────────────────────────────────────          │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     rdbms:   SQLite / PostgreSQL / MySQL / TiDB              │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     cache:   Redis / Memcached                               │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     olap:    ClickHouse                                      │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     search:  OpenSearch / Elasticsearch                      │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     graph:   Neo4j / NebulaGraph / ArangoDB                  │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     tsdb:    InfluxDB / Apache IoTDB / QuestDB               │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├──────────────────────────────────────────────────────────────┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│                       ecat-protos                             │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│     (共享 .proto 定义: errors, metadata, ...)                 │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;└──────────────────────────────────────────────────────────────┘&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;请求处理流程&#34;&gt;&lt;a href=&#34;#请求处理流程&#34; class=&#34;headerlink&#34; title=&#34;请求处理流程&#34;&gt;&lt;/a&gt;请求处理流程&lt;/h3&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;客户端请求&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ├─ HTTP :8000 ────→ axum::Router ──┐&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  │                                   │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  └─ gRPC :9000 ────→ tonic::Server ─┤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                      │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              ┌───────┴───────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              │   Middleware   │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              │   ──────────   │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              │ 1. Recovery    │  捕获 panic&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              │ 2. Tracing     │  注入 trace_id&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              │ 3. Logging     │  请求日志&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              │ 4. Auth        │  认证鉴权&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              │ 5. Metrics     │  指标采集&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│ 6. Security    │  攻击检测（仅告警）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              └───────┬───────┘&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                      │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              ┌───────┴───────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              │    Handler     │  用户业务逻辑&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              │ (tower::Service)│&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              └───────┬───────┘&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                      │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              ┌───────┴───────┐&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              │   Response     │  编码序列化&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              │ JSON/Protobuf  │&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                              └───────────────┘&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;功能&#34;&gt;&lt;a href=&#34;#功能&#34; class=&#34;headerlink&#34; title=&#34;功能&#34;&gt;&lt;/a&gt;功能&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;API-first&lt;/strong&gt;：Protobuf 定义 API、错误码、元数据；prost + tonic-build 代码生成&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;双协议支持&lt;/strong&gt;：HTTP（axum）和 gRPC（tonic）共用同一套 tower::Layer 中间件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可插拔架构&lt;/strong&gt;：Registry、Config、Logging、Encoding 全部通过 trait 抽象，默认提供生产可用实现&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;中间件体系&lt;/strong&gt;：内置 Recovery、Tracing、Logging、Timeout、Security；通过 tower::ServiceBuilder 组合&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;应用生命周期&lt;/strong&gt;：Builder 模式构建 App，多 Server 并发启动，SIGTERM/SIGINT 信号处理，start/stop 生命周期钩子&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;类型安全&lt;/strong&gt;：基于 protobuf 的错误码体系，编译期 HTTP 状态码映射&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可观测性&lt;/strong&gt;：tracing + opentelemetry + Prometheus 开箱即用&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;攻击检测&lt;/strong&gt;：27 种攻击模式自动识别（SQL 注入、XSS、SSRF、路径遍历等），仅日志告警不阻断&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多数据源&lt;/strong&gt;：RDBMS（SQLite/PG/MySQL/TiDB）、缓存、OLAP、搜索引擎、图数据库、时序数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Kratos-概念映射&#34;&gt;&lt;a href=&#34;#Kratos-概念映射&#34; class=&#34;headerlink&#34; title=&#34;Kratos 概念映射&#34;&gt;&lt;/a&gt;Kratos 概念映射&lt;/h3&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Kratos (Go)&lt;/th&gt;
+&lt;th&gt;e-cat (Rust)&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;kratos.New()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;App::builder()&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Builder 模式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;http.Handler&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;tower::Service&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Rust 生态标准 trait&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;http.Server&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;axum::Router&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;社区主流 HTTP 框架&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;grpc.Server&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;tonic::transport::Server&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;最成熟的 gRPC 实现&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;proto generate&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;prost + tonic-build&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;社区标准 protobuf&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;registry.Discovery&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Registry&lt;/code&gt; trait&lt;/td&gt;
+&lt;td&gt;可插拔注册发现&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;config.Source&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ConfigSource&lt;/code&gt; trait&lt;/td&gt;
+&lt;td&gt;多源配置加载&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;技术栈&#34;&gt;&lt;a href=&#34;#技术栈&#34; class=&#34;headerlink&#34; title=&#34;技术栈&#34;&gt;&lt;/a&gt;技术栈&lt;/h2&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;组件&lt;/th&gt;
+&lt;th&gt;选型&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;异步运行时&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;tokio&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;HTTP&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;axum&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gRPC&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;tonic&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Protobuf&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;prost + tonic-build&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;中间件&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;tower::Service / Layer&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;日志/追踪&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;tracing + opentelemetry-rust&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;指标&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;prometheus&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;序列化&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;serde + prost&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;攻击检测&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;security-rust&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;RDBMS&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;sqlx&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CLI&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;clap&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;支持的数据库&#34;&gt;&lt;a href=&#34;#支持的数据库&#34; class=&#34;headerlink&#34; title=&#34;支持的数据库&#34;&gt;&lt;/a&gt;支持的数据库&lt;/h2&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;类别&lt;/th&gt;
+&lt;th&gt;数据库&lt;/th&gt;
+&lt;th&gt;Crate&lt;/th&gt;
+&lt;th&gt;Rust 驱动&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;RDBMS&lt;/td&gt;
+&lt;td&gt;SQLite&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-sqlx&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://crates.io/crates/sqlx&#34;&gt;sqlx&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;RDBMS&lt;/td&gt;
+&lt;td&gt;PostgreSQL&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-sqlx&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://crates.io/crates/sqlx&#34;&gt;sqlx&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;RDBMS&lt;/td&gt;
+&lt;td&gt;MySQL&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-sqlx&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://crates.io/crates/sqlx&#34;&gt;sqlx&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;RDBMS&lt;/td&gt;
+&lt;td&gt;TiDB&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-sqlx&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://crates.io/crates/sqlx&#34;&gt;sqlx&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;缓存&lt;/td&gt;
+&lt;td&gt;Redis&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-redis&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://crates.io/crates/redis&#34;&gt;redis-rs&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;缓存&lt;/td&gt;
+&lt;td&gt;Memcached&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-memcached&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://crates.io/crates/memcache&#34;&gt;memcache&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;OLAP&lt;/td&gt;
+&lt;td&gt;ClickHouse&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-clickhouse&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://crates.io/crates/clickhouse-rs&#34;&gt;clickhouse-rs&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;搜索&lt;/td&gt;
+&lt;td&gt;OpenSearch&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-opensearch&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://crates.io/crates/opensearch&#34;&gt;opensearch&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;搜索&lt;/td&gt;
+&lt;td&gt;Elasticsearch&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-elasticsearch&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://crates.io/crates/elasticsearch&#34;&gt;elasticsearch&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;图&lt;/td&gt;
+&lt;td&gt;Neo4j&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-neo4j&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://crates.io/crates/neo4rs&#34;&gt;neo4rs&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;图&lt;/td&gt;
+&lt;td&gt;NebulaGraph&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-nebulagraph&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;nebula-client&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;图&lt;/td&gt;
+&lt;td&gt;ArangoDB&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-arangodb&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://crates.io/crates/arangors&#34;&gt;arangors&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;时序&lt;/td&gt;
+&lt;td&gt;InfluxDB&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-influxdb&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://crates.io/crates/influxdb2&#34;&gt;influxdb2&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;时序&lt;/td&gt;
+&lt;td&gt;Apache IoTDB&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-iotdb&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;iotdb-client-rs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;时序&lt;/td&gt;
+&lt;td&gt;QuestDB&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;ecat-data-questdb&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;questdb-rs (ILP)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所有数据后端通过统一的 trait 抽象（&lt;code&gt;RdbmsClient&lt;/code&gt; / &lt;code&gt;Cache&lt;/code&gt; / &lt;code&gt;SearchClient&lt;/code&gt; / &lt;code&gt;GraphClient&lt;/code&gt; / &lt;code&gt;TsdbClient&lt;/code&gt;），按需引入对应 contrib crate。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;项目结构&#34;&gt;&lt;a href=&#34;#项目结构&#34; class=&#34;headerlink&#34; title=&#34;项目结构&#34;&gt;&lt;/a&gt;项目结构&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;e-cat/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat/                       # 核心：App 生命周期&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-transport/             # 传输抽象（Server trait）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-transport-http/        # axum 实现&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-transport-grpc/        # tonic 实现&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-middleware/            # tower::Layer 中间件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-protos/                # Protobuf 定义&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-errors/                # 错误码体系&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-metadata/              # 元数据传递&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-encoding/              # 序列化抽象&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-logging/               # tracing 集成&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-registry/              # 服务注册发现&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-config/                # 配置管理&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-metrics/               # Prometheus 集成&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-data/                  # 数据访问 trait&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-security/              # 攻击检测（security-rust）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── ecat-cli/                   # CLI 工具&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── docs/                       # 设计文档与实现计划&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;└── examples/                   # 示例项目&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;快速开始&#34;&gt;&lt;a href=&#34;#快速开始&#34; class=&#34;headerlink&#34; title=&#34;快速开始&#34;&gt;&lt;/a&gt;快速开始&lt;/h2&gt;&lt;h3 id=&#34;前提条件&#34;&gt;&lt;a href=&#34;#前提条件&#34; class=&#34;headerlink&#34; title=&#34;前提条件&#34;&gt;&lt;/a&gt;前提条件&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Rust 1.80+（stable 工具链）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/protocolbuffers/protobuf&#34;&gt;protoc&lt;/a&gt;（Protocol Buffers 编译器）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;安装-CLI&#34;&gt;&lt;a href=&#34;#安装-CLI&#34; class=&#34;headerlink&#34; title=&#34;安装 CLI&#34;&gt;&lt;/a&gt;安装 CLI&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cargo install ecat-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;创建服务&#34;&gt;&lt;a href=&#34;#创建服务&#34; class=&#34;headerlink&#34; title=&#34;创建服务&#34;&gt;&lt;/a&gt;创建服务&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 脚手架生成项目&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ecat new helloworld&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; helloworld&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 添加 proto 定义&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ecat proto add api/helloworld/helloworld.proto&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 生成客户端和服务端代码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ecat proto client api/helloworld/helloworld.proto&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ecat proto server api/helloworld/helloworld.proto -t internal/service&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 开发模式运行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ecat run&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;访问 &lt;code&gt;http://localhost:8000/helloworld/ecat&lt;/code&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;代码示例&#34;&gt;&lt;a href=&#34;#代码示例&#34; class=&#34;headerlink&#34; title=&#34;代码示例&#34;&gt;&lt;/a&gt;代码示例&lt;/h3&gt;&lt;figure class=&#34;highlight rust&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;use&lt;/span&gt; ecat::App;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;use&lt;/span&gt; ecat_transport_http::HttpServer;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;use&lt;/span&gt; ecat_transport_grpc::GrpcServer;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#[tokio::main]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;async&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;fn&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;main&lt;/span&gt;() &lt;span class=&#34;punctuation&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;Result&lt;/span&gt;&amp;lt;(), &lt;span class=&#34;type&#34;&gt;Box&lt;/span&gt;&amp;lt;&lt;span class=&#34;keyword&#34;&gt;dyn&lt;/span&gt; std::error::Error + &lt;span class=&#34;built_in&#34;&gt;Send&lt;/span&gt; + &lt;span class=&#34;built_in&#34;&gt;Sync&lt;/span&gt;&amp;gt;&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;http_srv&lt;/span&gt; = HttpServer::&lt;span class=&#34;title function_ invoke__&#34;&gt;new&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;:8000&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;grpc_srv&lt;/span&gt; = GrpcServer::&lt;span class=&#34;title function_ invoke__&#34;&gt;new&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;:9000&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;app&lt;/span&gt; = App::&lt;span class=&#34;title function_ invoke__&#34;&gt;builder&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        .&lt;span class=&#34;title function_ invoke__&#34;&gt;name&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;my-service&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        .&lt;span class=&#34;title function_ invoke__&#34;&gt;version&lt;/span&gt;(&lt;span class=&#34;string&#34;&gt;&amp;quot;v1.0.0&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        .&lt;span class=&#34;title function_ invoke__&#34;&gt;server&lt;/span&gt;(http_srv)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        .&lt;span class=&#34;title function_ invoke__&#34;&gt;server&lt;/span&gt;(grpc_srv)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        .&lt;span class=&#34;title function_ invoke__&#34;&gt;on_start&lt;/span&gt;(|| &lt;span class=&#34;keyword&#34;&gt;async&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            tracing::info!(&lt;span class=&#34;string&#34;&gt;&amp;quot;service started&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;title function_ invoke__&#34;&gt;Ok&lt;/span&gt;(())&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        .&lt;span class=&#34;title function_ invoke__&#34;&gt;on_stop&lt;/span&gt;(|| &lt;span class=&#34;keyword&#34;&gt;async&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            tracing::info!(&lt;span class=&#34;string&#34;&gt;&amp;quot;service stopped&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;title function_ invoke__&#34;&gt;Ok&lt;/span&gt;(())&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        .&lt;span class=&#34;title function_ invoke__&#34;&gt;build&lt;/span&gt;()?;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    app.&lt;span class=&#34;title function_ invoke__&#34;&gt;run&lt;/span&gt;().&lt;span class=&#34;keyword&#34;&gt;await&lt;/span&gt;?; &lt;span class=&#34;comment&#34;&gt;// 阻塞直到 SIGTERM/SIGINT&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;title function_ invoke__&#34;&gt;Ok&lt;/span&gt;(())&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;中间件&#34;&gt;&lt;a href=&#34;#中间件&#34; class=&#34;headerlink&#34; title=&#34;中间件&#34;&gt;&lt;/a&gt;中间件&lt;/h3&gt;&lt;figure class=&#34;highlight rust&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;use&lt;/span&gt; tower::ServiceBuilder;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;use&lt;/span&gt; ecat_middleware::&amp;#123;RecoveryLayer, TracingLayer, LoggingLayer, TimeoutLayer&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;use&lt;/span&gt; std::time::Duration;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;layer&lt;/span&gt; = ServiceBuilder::&lt;span class=&#34;title function_ invoke__&#34;&gt;new&lt;/span&gt;()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    .&lt;span class=&#34;title function_ invoke__&#34;&gt;layer&lt;/span&gt;(RecoveryLayer)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    .&lt;span class=&#34;title function_ invoke__&#34;&gt;layer&lt;/span&gt;(TracingLayer)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    .&lt;span class=&#34;title function_ invoke__&#34;&gt;layer&lt;/span&gt;(LoggingLayer)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    .&lt;span class=&#34;title function_ invoke__&#34;&gt;layer&lt;/span&gt;(TimeoutLayer::&lt;span class=&#34;title function_ invoke__&#34;&gt;new&lt;/span&gt;(Duration::&lt;span class=&#34;title function_ invoke__&#34;&gt;from_secs&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;30&lt;/span&gt;)))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    .&lt;span class=&#34;title function_ invoke__&#34;&gt;layer&lt;/span&gt;(SecurityLayer::&lt;span class=&#34;title function_ invoke__&#34;&gt;new&lt;/span&gt;());&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;错误处理&#34;&gt;&lt;a href=&#34;#错误处理&#34; class=&#34;headerlink&#34; title=&#34;错误处理&#34;&gt;&lt;/a&gt;错误处理&lt;/h3&gt;&lt;figure class=&#34;highlight rust&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;use&lt;/span&gt; ecat_errors::&amp;#123;Error, ErrorCode&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;fn&lt;/span&gt; &lt;span class=&#34;title function_&#34;&gt;get_user&lt;/span&gt;(id: &lt;span class=&#34;type&#34;&gt;u64&lt;/span&gt;) &lt;span class=&#34;punctuation&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;type&#34;&gt;Result&lt;/span&gt;&amp;lt;User, Error&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; id == &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;title function_ invoke__&#34;&gt;Err&lt;/span&gt;(Error::&lt;span class=&#34;title function_ invoke__&#34;&gt;new&lt;/span&gt;(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            ErrorCode::InvalidArgument,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;string&#34;&gt;&amp;quot;bad_request&amp;quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;string&#34;&gt;&amp;quot;user id must be positive&amp;quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;实现阶段&#34;&gt;&lt;a href=&#34;#实现阶段&#34; class=&#34;headerlink&#34; title=&#34;实现阶段&#34;&gt;&lt;/a&gt;实现阶段&lt;/h2&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;阶段&lt;/th&gt;
+&lt;th&gt;状态&lt;/th&gt;
+&lt;th&gt;内容&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Phase 1&lt;/td&gt;
+&lt;td&gt;✅ 完成&lt;/td&gt;
+&lt;td&gt;项目骨架、protos、errors、metadata、encoding、logging&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Phase 2&lt;/td&gt;
+&lt;td&gt;✅ 完成&lt;/td&gt;
+&lt;td&gt;Transport 层（HTTP + gRPC）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Phase 3&lt;/td&gt;
+&lt;td&gt;✅ 完成&lt;/td&gt;
+&lt;td&gt;Middleware 体系（Recovery/Tracing/Logging/Timeout）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Phase 4&lt;/td&gt;
+&lt;td&gt;✅ 完成&lt;/td&gt;
+&lt;td&gt;App 生命周期管理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Phase 5&lt;/td&gt;
+&lt;td&gt;✅ 完成&lt;/td&gt;
+&lt;td&gt;Registry、Config、Metrics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Phase 5.5&lt;/td&gt;
+&lt;td&gt;✅ 完成&lt;/td&gt;
+&lt;td&gt;Data 访问层（traits + sqlx 后端）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Phase 6&lt;/td&gt;
+&lt;td&gt;✅ 完成&lt;/td&gt;
+&lt;td&gt;CLI 工具链（new/proto/run/build）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Phase 7&lt;/td&gt;
+&lt;td&gt;✅ 完成&lt;/td&gt;
+&lt;td&gt;README、示例（helloworld）、设计文档&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Phase 8&lt;/td&gt;
+&lt;td&gt;✅ 完成&lt;/td&gt;
+&lt;td&gt;攻击检测集成（security-rust, ecat-security）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;设计目标&#34;&gt;&lt;a href=&#34;#设计目标&#34; class=&#34;headerlink&#34; title=&#34;设计目标&#34;&gt;&lt;/a&gt;设计目标&lt;/h2&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;#&lt;/th&gt;
+&lt;th&gt;目标&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Kratos 对齐&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;保持 Kratos 的 API-first、可插拔、统一抽象理念&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;Rust 惯用&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;复用 tower::Service、trait 泛型、零成本抽象；不做「Go in Rust」&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;类型安全&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;编译期捕获错误，Protobuf 定义全强类型化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;可插拔&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Registry、Config、Logging、Encoding 全部通过 trait 抽象&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;工具链完备&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;CLI 支持项目脚手架、proto 代码生成、开发运行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;性能优先&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;零成本抽象 + 异步运行时&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;可观测&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;tracing + OpenTelemetry + Prometheus 开箱即用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;技术说明&#34;&gt;&lt;a href=&#34;#技术说明&#34; class=&#34;headerlink&#34; title=&#34;技术说明&#34;&gt;&lt;/a&gt;技术说明&lt;/h2&gt;&lt;h3 id=&#34;为什么选择-tower-Service&#34;&gt;&lt;a href=&#34;#为什么选择-tower-Service&#34; class=&#34;headerlink&#34; title=&#34;为什么选择 tower::Service&#34;&gt;&lt;/a&gt;为什么选择 tower::Service&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://docs.rs/tower/latest/tower/trait.Service.html&#34;&gt;&lt;code&gt;tower::Service&lt;/code&gt;&lt;/a&gt; 是 Rust 异步生态的 &lt;code&gt;http.Handler&lt;/code&gt; 等价物。axum 和 tonic 都构建在 tower 之上，因此 e-cat 不需要自定义中间件 trait——直接提供 tower::Layer 实现即可达到与 Kratos 中间件相同的效果，且零适配器开销。&lt;/p&gt;
+&lt;h3 id=&#34;为什么用-Cargo-Workspace&#34;&gt;&lt;a href=&#34;#为什么用-Cargo-Workspace&#34; class=&#34;headerlink&#34; title=&#34;为什么用 Cargo Workspace&#34;&gt;&lt;/a&gt;为什么用 Cargo Workspace&lt;/h3&gt;&lt;p&gt;与 Kratos 的模块化设计一致。每个 &lt;code&gt;ecat-*&lt;/code&gt; crate 独立版本、独立编译，用户按需引入。核心 crate 保持最小依赖，contrib crate 提供可选集成。&lt;/p&gt;
+&lt;h3 id=&#34;为什么用-prost（而非-protobuf-rs）&#34;&gt;&lt;a href=&#34;#为什么用-prost（而非-protobuf-rs）&#34; class=&#34;headerlink&#34; title=&#34;为什么用 prost（而非 protobuf-rs）&#34;&gt;&lt;/a&gt;为什么用 prost（而非 protobuf-rs）&lt;/h3&gt;&lt;p&gt;prost 是 Rust 社区最广泛使用的 protobuf 实现，编译期生成类型安全代码，与 tonic 深度集成。&lt;/p&gt;
+&lt;h2 id=&#34;设计文档&#34;&gt;&lt;a href=&#34;#设计文档&#34; class=&#34;headerlink&#34; title=&#34;设计文档&#34;&gt;&lt;/a&gt;设计文档&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/erikwang2013/e-cat/blob/main/docs/superpowers/specs/2026-07-29-ecat-framework-design.md&#34;&gt;设计规范&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/erikwang2013/e-cat/blob/main/docs/superpowers/plans/2026-07-29-ecat-framework.md&#34;&gt;实现计划&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;许可证&#34;&gt;&lt;a href=&#34;#许可证&#34; class=&#34;headerlink&#34; title=&#34;许可证&#34;&gt;&lt;/a&gt;许可证&lt;/h2&gt;&lt;p&gt;MIT&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://erik.xyz/2022/08/09/go-zero-list-1/</guid>
             <title>go-zero微服务试用</title>
