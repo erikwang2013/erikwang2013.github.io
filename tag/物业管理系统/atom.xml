@@ -46,12 +46,12 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="centos" />
+    <category term="linux" />
     <category term="日常" />
     <category term="seo" />
     <category term="优化" />
@@ -114,12 +114,12 @@
     <category term="内网部署composer" />
     <category term="cphalcon" />
     <category term="cphalcon报错" />
-    <category term="css中的em" />
-    <category term="响应式字体" />
-    <category term="响应式布局样式" />
     <category term="proxy代理搭建" />
     <category term="代理服务器搭建" />
     <category term="proxy服务器" />
+    <category term="css中的em" />
+    <category term="响应式字体" />
+    <category term="响应式布局样式" />
     <category term="查找" />
     <category term="排序" />
     <category term="快速排序" />
@@ -156,10 +156,10 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
+    <category term="免费" />
     <category term="phone" />
     <category term="手机" />
     <category term="新闻" />
-    <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
     <category term="随笔吐槽" />
@@ -326,13 +326,13 @@
     <category term="zookeeper3.5.5" />
     <category term="php-zookeeper扩展" />
     <category term="php串口开发" />
+    <category term="PHP数组" />
+    <category term="字符串函数" />
+    <category term="排序函数" />
     <category term="php倒计时" />
     <category term="php时间" />
     <category term="倒计时" />
     <category term="计算时间" />
-    <category term="PHP数组" />
-    <category term="字符串函数" />
-    <category term="排序函数" />
     <category term="php的SPL" />
     <category term="SPL手册" />
     <category term="PHP算法" />
@@ -510,7 +510,7 @@
         <title>Property Management Platform物业管理系统</title>
         <link rel="alternate" href="https://erik.xyz/2026/05/23/property-management-platform/"/>
         <content type="html">&lt;h1 id=&#34;物业管理系统-Property-Management-Platform&#34;&gt;&lt;a href=&#34;#物业管理系统-Property-Management-Platform&#34; class=&#34;headerlink&#34; title=&#34;物业管理系统 (Property Management Platform)&#34;&gt;&lt;/a&gt;物业管理系统 (Property Management Platform)&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#97;&amp;#x69;&amp;#108;&amp;#116;&amp;#111;&amp;#x3a;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#64;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#x2e;&amp;#x78;&amp;#x79;&amp;#x7a;&#34;&gt;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#64;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#x2e;&amp;#x78;&amp;#x79;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#97;&amp;#x69;&amp;#108;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#101;&amp;#114;&amp;#105;&amp;#107;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#46;&amp;#x78;&amp;#x79;&amp;#x7a;&#34;&gt;&amp;#101;&amp;#114;&amp;#105;&amp;#107;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#46;&amp;#x78;&amp;#x79;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;全栈物业管理系统，覆盖小区管理、费用收缴、报修维护、停车门禁、安保保洁等15个业务模块。管理员端（admin）和业主端（service）分离部署，前端覆盖 Flutter Web（PC 管理后台风格）与 HarmonyOS 移动端。&lt;/p&gt;
 &lt;h2 id=&#34;项目结构&#34;&gt;&lt;a href=&#34;#项目结构&#34; class=&#34;headerlink&#34; title=&#34;项目结构&#34;&gt;&lt;/a&gt;项目结构&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;property-management-platform/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── admin/                         # 管理员端 webman v2 项目&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── app/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── admin/controller/      # 管理端控制器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── api/v1/controller/     # 公开 API 控制器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── common/                # 公共工具类&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── middleware/            # 中间件（认证/鉴权/限流/安全）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── model/                 # 数据模型（Eloquent ORM）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── queue/                 # 队列任务&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   └── process/               # 进程管理&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── apps/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── flutter/               # 管理后台 Flutter Web（PC 风格）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   └── harmonyos/             # 管理后台 HarmonyOS App&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── config/                    # 配置文件（含中文注释）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── database/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── migrations/            # SQL 迁移文件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   └── backup/                # 数据库备份脚本&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── resource/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   └── translations/          # 国际化语言文件（zh_CN / en）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── docs/                      # 管理端文档&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── tests/                     # 单元测试&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   └── public/                    # Web 入口&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── service/                       # 业主业务端 webman v2 项目&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── app/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── api/v1/controller/     # 业主端 API 控制器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── common/                # 公共工具类&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── middleware/            # 中间件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   ├── model/                 # 数据模型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   └── process/               # 进程管理&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── config/                    # 配置文件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── resource/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   │   └── translations/          # 国际化语言文件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   └── database/migrations/       # SQL 迁移文件&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── apps/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── flutter/                   # 业主端 Flutter Web（PC 风格）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   └── harmonyos/                 # 业主端 HarmonyOS App&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;└── docs/                          # 项目文档&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ├── ARCHITECTURE.md&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ├── ARCHITECTURE_DESIGN.md&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ├── API.md&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ├── FEATURES.md&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    └── FEATURE_DESIGN.md&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
