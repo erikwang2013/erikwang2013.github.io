@@ -19,53 +19,54 @@
   <div class="nav-inner">
     <a class="brand" href="https://erik.xyz">王可勋<span class="brand-sub">.blog</span></a>
     <div class="nav-links">
-      <a href="#skills">核心能力</a>
-      <a href="#strengths">竞争力</a>
-      <a href="#agent">Agent 开发</a>
-      <a href="#experience">工作经历</a>
-      <a href="#projects">项目经验</a>
-      <a href="#education">学历及培训</a>
+      <a href="#skills" data-i18n="nav-skills">核心能力</a>
+      <a href="#strengths" data-i18n="nav-strengths">竞争力</a>
+      <a href="#agent" data-i18n="nav-agent">Agent 开发</a>
+      <a href="#experience" data-i18n="nav-experience">工作经历</a>
+      <a href="#projects" data-i18n="nav-projects">项目经验</a>
+      <a href="#education" data-i18n="nav-education">学历及培训</a>
     </div>
+    <button id="lang-toggle" type="button" aria-label="Switch to English">EN</button>
   </div>
 </nav>
 
 <header id="hero" class="hero">
   <h1>王可勋</h1>
-  <p class="role">全栈开发工程师 · AI Agent 开发 · 12 年+ 大型系统架构与高并发服务经验</p>
+  <p class="role" data-i18n="hero-role">全栈开发工程师 · AI Agent 开发 · 12 年+ 大型系统架构与高并发服务经验</p>
   <ul class="tags">
-    <li>求职意向：深圳 / 香港</li>
-    <li>全栈开发 / PHP / Go</li>
-    <li>37 岁（1989 年 9 月）</li>
-    <li>现居：深圳宝安固戍</li>
+    <li data-i18n="tag-intent">求职意向：深圳 / 香港</li>
+    <li data-i18n="tag-stack">全栈开发 / PHP / Go</li>
+    <li data-i18n="tag-age">37 岁（1989 年 9 月）</li>
+    <li data-i18n="tag-loc">现居：深圳宝安固戍</li>
   </ul>
   <ul class="contact">
     <li><a href="tel:17796371573">17796371573</a></li>
-    <li><a href="mailto:szwangkexun@126.com">szwangkexun@126.com</a></li>
-    <li><a href="https://erik.xyz" target="_blank" rel="noopener">Blog：https://erik.xyz</a></li>
+    <li><a href="mailto:szwangkexun@gmail.com">szwangkexun@gmail.com</a></li>
+    <li><a href="https://erik.xyz" target="_blank" rel="noopener"><span data-i18n="blog-label">Blog：</span>https://erik.xyz</a></li>
     <!-- TODO(user): 将下方 GitHub 链接替换为个人主页 -->
-    <li><a href="https://github.com/erikwang2013" target="_blank" rel="noopener">GitHub：https://github.com/erikwang2013</a></li>
+    <li><a href="https://github.com/erikwang2013" target="_blank" rel="noopener"><span data-i18n="github-label">GitHub：</span>https://github.com/erikwang2013</a></li>
   </ul>
   <div class="hero-actions">
-    <button class="btn btn-primary" type="button" data-pdf="color">下载彩色简历</button>
-    <button class="btn btn-ghost" type="button" data-pdf="bw">下载黑白简历</button>
+    <button class="btn btn-primary" type="button" data-pdf="color" data-i18n="dl-color">下载彩色简历</button>
+    <button class="btn btn-ghost" type="button" data-pdf="bw" data-i18n="dl-bw">下载黑白简历</button>
   </div>
 </header>
 
 <main>
 <section id="skills" class="section">
-  <h2 class="sec-title">核心能力</h2>
+  <h2 class="sec-title" data-i18n="skill-sec">核心能力</h2>
   <div class="skill-rows">
     <div class="skill-row reveal">
-      <h3>编程语言</h3>
+      <h3 data-i18n="skill-lang">编程语言</h3>
       <ul class="chips">
-        <li class="chip">PHP（精通）</li><li class="chip">Go（熟练）</li><li class="chip">Python（熟练）</li>
-        <li class="chip">Vue（熟练）</li><li class="chip">JavaScript（熟练）</li><li class="chip">Flutter（熟练）</li>
+        <li class="chip" data-i18n="chip-php">PHP（精通）</li><li class="chip" data-i18n="chip-go">Go（熟练）</li><li class="chip" data-i18n="chip-py">Python（熟练）</li>
+        <li class="chip" data-i18n="chip-vue">Vue（熟练）</li><li class="chip" data-i18n="chip-js">JavaScript（熟练）</li><li class="chip" data-i18n="chip-flutter">Flutter（熟练）</li>
         <li class="chip">Java</li><li class="chip">Lua</li><li class="chip">C</li>
         <li class="chip">C++</li><li class="chip">Rust</li><li class="chip">HarmonyOS</li><li class="chip">Node.js</li>
       </ul>
     </div>
     <div class="skill-row reveal">
-      <h3>框架（PHP/Go）</h3>
+      <h3 data-i18n="skill-framework">框架（PHP/Go）</h3>
       <ul class="chips">
         <li class="chip">Webman</li><li class="chip">Swoole</li><li class="chip">Hyperf</li><li class="chip">Laravel</li>
         <li class="chip">ThinkPHP</li><li class="chip">Yii2</li><li class="chip">Swift</li>
@@ -73,7 +74,7 @@
       </ul>
     </div>
     <div class="skill-row reveal">
-      <h3>数据库与中间件</h3>
+      <h3 data-i18n="skill-db">数据库与中间件</h3>
       <ul class="chips">
         <li class="chip">MySQL</li><li class="chip">Redis</li><li class="chip">Elasticsearch</li>
         <li class="chip">RabbitMQ</li><li class="chip">ClickHouse</li><li class="chip">Consul</li>
@@ -81,7 +82,7 @@
       </ul>
     </div>
     <div class="skill-row reveal">
-      <h3>运维与工具</h3>
+      <h3 data-i18n="skill-ops">运维与工具</h3>
       <ul class="chips">
         <li class="chip">Docker</li><li class="chip">Nginx</li><li class="chip">Jenkins</li><li class="chip">Zabbix</li>
         <li class="chip">Git</li><li class="chip">Linux</li><li class="chip">Shell</li>
@@ -89,370 +90,389 @@
       </ul>
     </div>
     <div class="skill-row reveal">
-      <h3>AI Agent</h3>
+      <h3 data-i18n="skill-ai">AI Agent</h3>
       <ul class="chips">
         <li class="chip">Claude Code</li><li class="chip">MCP</li>
-        <li class="chip">Agent 编排（Swarm）</li><li class="chip">分布式共识</li>
-        <li class="chip">插件 / Skill 开发</li><li class="chip">AI 辅助编码</li>
+        <li class="chip" data-i18n="chip-orch">Agent 编排（Swarm）</li><li class="chip" data-i18n="chip-consensus">分布式共识</li>
+        <li class="chip" data-i18n="chip-plugin">插件 / Skill 开发</li><li class="chip" data-i18n="chip-aicoding">AI 辅助编码</li>
       </ul>
     </div>
   </div>
 </section>
 
 <section id="strengths" class="section">
-  <h2 class="sec-title">核心竞争力</h2>
+  <h2 class="sec-title" data-i18n="str-sec">核心竞争力</h2>
   <div class="strength-rows">
     <div class="strength-row reveal">
-      <h3>大型系统架构</h3>
-      <p>高并发微服务划分、服务治理、数据库调优，保障 99.99% 可用性。</p>
+      <h3 data-i18n="str-arch">大型系统架构</h3>
+      <p data-i18n="str-arch-d">高并发微服务划分、服务治理、数据库调优，保障 99.99% 可用性。</p>
     </div>
     <div class="strength-row reveal">
-      <h3>技术与业务融合</h3>
-      <p>云资源编排、支付计费、实时撮合等复杂业务的技术落地。</p>
+      <h3 data-i18n="str-biz">技术与业务融合</h3>
+      <p data-i18n="str-biz-d">云资源编排、支付计费、实时撮合等复杂业务的技术落地。</p>
     </div>
     <div class="strength-row reveal">
-      <h3>团队管理与效能</h3>
-      <p>跨技术栈（PHP/Go/Java/前端）协作，建立代码规范与 CI/CD，提升交付质量。</p>
+      <h3 data-i18n="str-team">团队管理与效能</h3>
+      <p data-i18n="str-team-d">跨技术栈（PHP/Go/Java/前端）协作，建立代码规范与 CI/CD，提升交付质量。</p>
     </div>
     <div class="strength-row reveal">
-      <h3>持续学习与创新</h3>
-      <p>快速掌握 Rust、HarmonyOS，落地 AI Coding 辅助工具，降低重复劳动。</p>
+      <h3 data-i18n="str-learn">持续学习与创新</h3>
+      <p data-i18n="str-learn-d">快速掌握 Rust、HarmonyOS，落地 AI Coding 辅助工具，降低重复劳动。</p>
     </div>
     <div class="strength-row reveal">
-      <h3>Agent 工程化</h3>
-      <p>把 agent 团队、共识协议、插件体系从原型变成可交付工程：Claude Code 插件生态、多 Agent 编排、分布式协调器，全链路落地。</p>
+      <h3 data-i18n="str-agent">Agent 工程化</h3>
+      <p data-i18n="str-agent-d">把 agent 团队、共识协议、插件体系从原型变成可交付工程：Claude Code 插件生态、多 Agent 编排、分布式协调器，全链路落地。</p>
     </div>
   </div>
 </section>
 
 <section id="agent" class="section">
-  <h2 class="sec-title">AI Agent 开发</h2>
+  <h2 class="sec-title" data-i18n="agent-sec">AI Agent 开发</h2>
   <div class="agent-rows">
 
     <article class="agent-row reveal">
       <div class="agent-head">
-        <h3><span class="emoji">🧩</span> Claude Code 插件生态</h3>
+        <h3><span class="emoji">🧩</span> <span data-i18n="agent1-title">Claude Code 插件生态</span></h3>
         <ul class="chips">
-          <li class="chip">Claude Code</li><li class="chip">Skill</li><li class="chip">Agent 角色</li>
-          <li class="chip">工作流编排</li><li class="chip">事实核验</li>
+          <li class="chip">Claude Code</li><li class="chip">Skill</li><li class="chip" data-i18n="agent1-c3">Agent 角色</li>
+          <li class="chip" data-i18n="agent1-c4">工作流编排</li><li class="chip" data-i18n="agent1-c5">事实核验</li>
         </ul>
       </div>
       <ul class="proj-points">
-        <li>webnovel-writer 完整写作工作流插件：research → outline → chapter → review → fact-check 的 agent 链，含数据抽取与正文一致性审查。</li>
-        <li>自定义 skill 体系与角色 agent（deconstruction / context / reviewer），把创作流程固化为可复用工具。</li>
-        <li>Claude Code 插件机制深入应用：subagent 派发、结构审查、git 化产物管理。</li>
+        <li data-i18n="agent1-p1">webnovel-writer 完整写作工作流插件：research → outline → chapter → review → fact-check 的 agent 链，含数据抽取与正文一致性审查。</li>
+        <li data-i18n="agent1-p2">自定义 skill 体系与角色 agent（deconstruction / context / reviewer），把创作流程固化为可复用工具。</li>
+        <li data-i18n="agent1-p3">Claude Code 插件机制深入应用：subagent 派发、结构审查、git 化产物管理。</li>
       </ul>
-      <p class="scale">1 插件 · 6+ agent 角色 · 5 阶段写作工作流</p>
+      <p class="scale" data-i18n="agent1-scale">1 插件 · 6+ agent 角色 · 5 阶段写作工作流</p>
     </article>
 
     <article class="agent-row reveal">
       <div class="agent-head">
-        <h3><span class="emoji">🧠</span> 分布式协调 Agent 集</h3>
+        <h3><span class="emoji">🧠</span> <span data-i18n="agent2-title">分布式协调 Agent 集</span></h3>
         <ul class="chips">
           <li class="chip">Raft</li><li class="chip">Gossip</li><li class="chip">Byzantine</li>
-          <li class="chip">CRDT</li><li class="chip">Quorum</li><li class="chip">性能基准</li>
+          <li class="chip">CRDT</li><li class="chip">Quorum</li><li class="chip" data-i18n="agent2-c6">性能基准</li>
         </ul>
       </div>
       <ul class="proj-points">
-        <li>7 个共识/安全协调器：raft、gossip、byzantine、crdt 共识协议实现 + quorum 动态管理 + 恶意节点检测 + 性能基准。</li>
-        <li>可直接投入生产的共识型 agent 集，覆盖选举、日志复制、最终一致与容错。</li>
+        <li data-i18n="agent2-p1">7 个共识/安全协调器：raft、gossip、byzantine、crdt 共识协议实现 + quorum 动态管理 + 恶意节点检测 + 性能基准。</li>
+        <li data-i18n="agent2-p2">可直接投入生产的共识型 agent 集，覆盖选举、日志复制、最终一致与容错。</li>
       </ul>
-      <p class="scale">7 协调器 · 4 共识协议 · 恶意节点检测 + 基准</p>
+      <p class="scale" data-i18n="agent2-scale">7 协调器 · 4 共识协议 · 恶意节点检测 + 基准</p>
     </article>
 
     <article class="agent-row reveal">
       <div class="agent-head">
-        <h3><span class="emoji">🤝</span> 多 Agent 团队编排</h3>
+        <h3><span class="emoji">🤝</span> <span data-i18n="agent3-title">多 Agent 团队编排</span></h3>
         <ul class="chips">
           <li class="chip">Hierarchical</li><li class="chip">Mesh</li><li class="chip">Adaptive</li>
           <li class="chip">TDD Swarm</li><li class="chip">ruflo / claude-flow</li>
         </ul>
       </div>
       <ul class="proj-points">
-        <li>三种拓扑协调器（hierarchical / mesh / adaptive），15 agent 上限，任务路由 + 共享记忆 + HNSW 向量检索。</li>
-        <li>与 ruflo / claude-flow 集成：内存管理、hooks 路由、后台 worker 派发、3 层模型路由（WASM / Haiku / Sonnet）。</li>
-        <li>TDD swarm（London 学派 mock 驱动）落地为测试工作流。</li>
+        <li data-i18n="agent3-p1">三种拓扑协调器（hierarchical / mesh / adaptive），15 agent 上限，任务路由 + 共享记忆 + HNSW 向量检索。</li>
+        <li data-i18n="agent3-p2">与 ruflo / claude-flow 集成：内存管理、hooks 路由、后台 worker 派发、3 层模型路由（WASM / Haiku / Sonnet）。</li>
+        <li data-i18n="agent3-p3">TDD swarm（London 学派 mock 驱动）落地为测试工作流。</li>
       </ul>
-      <p class="scale">3 拓扑 · 15 agent · 任务路由 + 共享记忆</p>
+      <p class="scale" data-i18n="agent3-scale">3 拓扑 · 15 agent · 任务路由 + 共享记忆</p>
     </article>
 
   </div>
 </section>
 
 <section id="experience" class="section">
-  <h2 class="sec-title">工作经历</h2>
+  <h2 class="sec-title" data-i18n="exp-sec">工作经历</h2>
   <ol class="timeline">
     <li class="tl-item reveal">
       <div class="tl-head">
-        <h3>深圳市星链云科技有限公司</h3>
-        <span class="tl-role">PHP 开发工程师</span>
+        <h3 data-i18n="exp1-co">深圳市星链云科技有限公司</h3>
+        <span class="tl-role" data-i18n="exp1-role">PHP 开发工程师</span>
         <span class="tl-date">2025.09 – 2026.04</span>
       </div>
       <ul class="tl-points">
-        <li>主导 IDC 云管理平台微服务拆分（5 大核心服务域：API-Gateway、Middleware、Business、File、Log），基于 Webman+Swoole，集成 Consul。</li>
-        <li>实现云主机全生命周期管理、带宽/流量扣减、订单支付、SSH 密钥管理；通过 Redis 队列 + Crontab 实现月结账单自动化，支撑千万级 API 调用。</li>
-        <li>设计全链路安全（JWT、RBAC、限流、操作审计），保障多租户数据隔离。</li>
-        <li>集成 AWS API Gateway + Nginx 同源部署，输出架构文档。</li>
+        <li data-i18n="exp1-p1">主导 IDC 云管理平台微服务拆分（5 大核心服务域：API-Gateway、Middleware、Business、File、Log），基于 Webman+Swoole，集成 Consul。</li>
+        <li data-i18n="exp1-p2">实现云主机全生命周期管理、带宽/流量扣减、订单支付、SSH 密钥管理；通过 Redis 队列 + Crontab 实现月结账单自动化，支撑千万级 API 调用。</li>
+        <li data-i18n="exp1-p3">设计全链路安全（JWT、RBAC、限流、操作审计），保障多租户数据隔离。</li>
+        <li data-i18n="exp1-p4">集成 AWS API Gateway + Nginx 同源部署，输出架构文档。</li>
       </ul>
     </li>
     <li class="tl-item reveal">
       <div class="tl-head">
-        <h3>释元文化发展（深圳）有限公司</h3>
-        <span class="tl-role">全栈开发工程师</span>
+        <h3 data-i18n="exp2-co">释元文化发展（深圳）有限公司</h3>
+        <span class="tl-role" data-i18n="exp2-role">全栈开发工程师</span>
         <span class="tl-date">2023.02 – 2025.08</span>
       </div>
       <ul class="tl-points">
-        <li>负责日访问 10 万+、日订单 1 万笔、流水过亿的游客后台。从 Slim 迁移至 Webman，结合 RabbitMQ 异步解耦，核心接口响应延迟降低约 35%。</li>
-        <li>封装通用后台管理脚手架，支撑多地区项目快速二次开发。</li>
-        <li>独立交付 Go（Beego/Gin）、Java、Vue 项目，具备跨技术栈交付能力。</li>
+        <li data-i18n="exp2-p1">负责日访问 10 万+、日订单 1 万笔、流水过亿的游客后台。从 Slim 迁移至 Webman，结合 RabbitMQ 异步解耦，核心接口响应延迟降低约 35%。</li>
+        <li data-i18n="exp2-p2">封装通用后台管理脚手架，支撑多地区项目快速二次开发。</li>
+        <li data-i18n="exp2-p3">独立交付 Go（Beego/Gin）、Java、Vue 项目，具备跨技术栈交付能力。</li>
       </ul>
     </li>
     <li class="tl-item reveal">
       <div class="tl-head">
-        <h3>深圳市麦凯莱科技有限公司</h3>
-        <span class="tl-role">全栈开发工程师</span>
+        <h3 data-i18n="exp3-co">深圳市麦凯莱科技有限公司</h3>
+        <span class="tl-role" data-i18n="exp3-role">全栈开发工程师</span>
         <span class="tl-date">2022.03 – 2023.01</span>
       </div>
       <ul class="tl-points">
-        <li>基于 Beego 开发小程序商城，对接微信支付 V2/V3、快递公司 API 及聚水潭 ERP，保障订单实时同步。</li>
-        <li>整合腾讯广告、抖音、京东广告数据回传与归因，优化私域流量管理后台，提升营销转化率约 20%。</li>
+        <li data-i18n="exp3-p1">基于 Beego 开发小程序商城，对接微信支付 V2/V3、快递公司 API 及聚水潭 ERP，保障订单实时同步。</li>
+        <li data-i18n="exp3-p2">整合腾讯广告、抖音、京东广告数据回传与归因，优化私域流量管理后台，提升营销转化率约 20%。</li>
       </ul>
     </li>
     <li class="tl-item reveal">
       <div class="tl-head">
-        <h3>深圳市永达电子信息股份有限公司</h3>
-        <span class="tl-role">PHP 开发工程师</span>
+        <h3 data-i18n="exp4-co">深圳市永达电子信息股份有限公司</h3>
+        <span class="tl-role" data-i18n="exp4-role">PHP 开发工程师</span>
         <span class="tl-date">2020.05 – 2021.12</span>
       </div>
       <ul class="tl-points">
-        <li>基于 Yii2 + Swoole 开发铁路局专用远程监控与病毒扫描系统，实现设备状态实时上报与指令下发。</li>
-        <li>搭建 Elasticsearch + Filebeat 日志平台，处理千万级设备日志，输出安全检测报表。</li>
+        <li data-i18n="exp4-p1">基于 Yii2 + Swoole 开发铁路局专用远程监控与病毒扫描系统，实现设备状态实时上报与指令下发。</li>
+        <li data-i18n="exp4-p2">搭建 Elasticsearch + Filebeat 日志平台，处理千万级设备日志，输出安全检测报表。</li>
       </ul>
     </li>
     <li class="tl-item reveal">
       <div class="tl-head">
-        <h3>深圳市前海比特空间科技有限公司</h3>
-        <span class="tl-role">开发组长</span>
+        <h3 data-i18n="exp5-co">深圳市前海比特空间科技有限公司</h3>
+        <span class="tl-role" data-i18n="exp5-role">开发组长</span>
         <span class="tl-date">2017.10 – 2019.12</span>
       </div>
       <ul class="tl-points">
-        <li>带领 9 人混合团队（Java/PHP/前端），负责数字货币交易所及轻钱包项目，用户量 30 万，日活 10 万。</li>
-        <li>主导订单撮合引擎、充提币、场外交易模块，使用 gRPC 对接区块链节点，保障最终一致性。</li>
+        <li data-i18n="exp5-p1">带领 9 人混合团队（Java/PHP/前端），负责数字货币交易所及轻钱包项目，用户量 30 万，日活 10 万。</li>
+        <li data-i18n="exp5-p2">主导订单撮合引擎、充提币、场外交易模块，使用 gRPC 对接区块链节点，保障最终一致性。</li>
       </ul>
     </li>
     <li class="tl-item reveal">
       <div class="tl-head">
-        <h3>深圳市智儒科技有限公司</h3>
-        <span class="tl-role">开发组长</span>
+        <h3 data-i18n="exp6-co">深圳市智儒科技有限公司</h3>
+        <span class="tl-role" data-i18n="exp6-role">开发组长</span>
         <span class="tl-date">2013.12 – 2017.10</span>
       </div>
       <ul class="tl-points">
-        <li>带领团队开发定制管理项目、企业门户、B2C 电商平台等。</li>
-        <li>技术栈：PHP / MySQL / JavaScript / ThinkPHP / Yii / WordPress / Nginx / Ecshop / EeMall。</li>
+        <li data-i18n="exp6-p1">带领团队开发定制管理项目、企业门户、B2C 电商平台等。</li>
+        <li data-i18n="exp6-p2">技术栈：PHP / MySQL / JavaScript / ThinkPHP / Yii / WordPress / Nginx / Ecshop / EeMall。</li>
       </ul>
     </li>
   </ol>
 </section>
 
 <section id="projects" class="section">
-  <h2 class="sec-title">项目经验</h2>
+  <h2 class="sec-title" data-i18n="proj-sec">项目经验</h2>
   <div class="project-grid">
 
     <article class="card reveal">
-      <h3><span class="emoji">🎵</span> OMB 多平台外链音乐聚合播放平台</h3>
+      <h3><span class="emoji">🎵</span> <span data-i18n="proj1-title">OMB 多平台外链音乐聚合播放平台</span></h3>
       <ul class="chips">
         <li class="chip">PHP 8.1 / webman</li><li class="chip">MySQL 8.4</li><li class="chip">Redis</li>
-        <li class="chip">Flutter 六端</li><li class="chip">HarmonyOS ArkTS</li><li class="chip">ECIES 加密</li>
+        <li class="chip" data-i18n="proj1-c4">Flutter 六端</li><li class="chip">HarmonyOS ArkTS</li><li class="chip" data-i18n="proj1-c6">ECIES 加密</li>
         <li class="chip">GitHub Actions</li>
       </ul>
       <ul class="proj-points">
-        <li>聚合抖音 / 快手 / 小红书 / 视频号外链音乐，Flutter 六端（iOS / Android / macOS / Windows / Linux / Web）+ HarmonyOS 原生客户端。</li>
-        <li>服务端音频代理 /api/music/proxy：Guzzle 统一处理上游 Referer / Origin / Range 鉴权与跨域，多源切换 + 按 IP 限流。</li>
-        <li>自研 PlaybackEngine 播放状态机（UI 状态流订阅）+ LRU 离线缓存（50 文件 / 200MB），Web 端自动降级。</li>
-        <li>Redis ZSET 实时排行 + 60s 定时快照刷新，榜单 / 收藏接口直读快照解耦写放大与读延迟。</li>
-        <li>ECIES 加密信封（X25519 + HKDF + AES-256-GCM）、Hashids ID 混淆、JWT 双令牌黑名单；GitHub Actions 六端 CI 矩阵 + Release 自动发布。</li>
+        <li data-i18n="proj1-p1">聚合抖音 / 快手 / 小红书 / 视频号外链音乐，Flutter 六端（iOS / Android / macOS / Windows / Linux / Web）+ HarmonyOS 原生客户端。</li>
+        <li data-i18n="proj1-p2">服务端音频代理 /api/music/proxy：Guzzle 统一处理上游 Referer / Origin / Range 鉴权与跨域，多源切换 + 按 IP 限流。</li>
+        <li data-i18n="proj1-p3">自研 PlaybackEngine 播放状态机（UI 状态流订阅）+ LRU 离线缓存（50 文件 / 200MB），Web 端自动降级。</li>
+        <li data-i18n="proj1-p4">Redis ZSET 实时排行 + 60s 定时快照刷新，榜单 / 收藏接口直读快照解耦写放大与读延迟。</li>
+        <li data-i18n="proj1-p5">ECIES 加密信封（X25519 + HKDF + AES-256-GCM）、Hashids ID 混淆、JWT 双令牌黑名单；GitHub Actions 六端 CI 矩阵 + Release 自动发布。</li>
       </ul>
-      <p class="scale">六端客户端 · 自研代理拉流 + 播放引擎 · 三层安全 · 4 语言 i18n</p>
+      <p class="scale" data-i18n="proj1-scale">六端客户端 · 自研代理拉流 + 播放引擎 · 三层安全 · 4 语言 i18n</p>
     </article>
 
     <article class="card reveal">
-      <h3><span class="emoji">🌐</span> 全球云资源交易平台</h3>
+      <h3><span class="emoji">🌐</span> <span data-i18n="proj2-title">全球云资源交易平台</span></h3>
       <ul class="chips">
         <li class="chip">PHP 8.2 / Webman</li><li class="chip">Laravel Eloquent</li><li class="chip">MySQL 8.0</li>
         <li class="chip">Redis</li><li class="chip">ES</li><li class="chip">GraphQL</li><li class="chip">Docker</li>
         <li class="chip">Prometheus + Grafana</li><li class="chip">Flutter</li><li class="chip">HarmonyOS ArkTS</li>
       </ul>
       <ul class="proj-points">
-        <li>模块化单体 + 事件驱动，15 个业务域垂直切分；Provider 插件体系统一接入自营/第三方。</li>
-        <li>14 层全局中间件（WAF、AES-256-GCM 传输加密、字段级加密、Hashids 混淆、JWT、限流、审计等）。</li>
-        <li>事件驱动流水线 + 指数退避重试 + 超限告警；Snowflake 主键，读写分离 + 多级缓存 + ES 三层加密，零停机密钥轮换。</li>
-        <li>190+ RESTful/GraphQL 端点，Flutter 客户端 + HarmonyOS 骨架；Docker Compose、GitHub Actions CI/CD、k6 压测、295 端测试、Sentry、Feature Flags、多语言 i18n。</li>
-        <li>独立发布 7 个 PHP 开源包（JWT、Snowflake、Hashids、加解密、验证码等）。</li>
+        <li data-i18n="proj2-p1">模块化单体 + 事件驱动，15 个业务域垂直切分；Provider 插件体系统一接入自营/第三方。</li>
+        <li data-i18n="proj2-p2">14 层全局中间件（WAF、AES-256-GCM 传输加密、字段级加密、Hashids 混淆、JWT、限流、审计等）。</li>
+        <li data-i18n="proj2-p3">事件驱动流水线 + 指数退避重试 + 超限告警；Snowflake 主键，读写分离 + 多级缓存 + ES 三层加密，零停机密钥轮换。</li>
+        <li data-i18n="proj2-p4">190+ RESTful/GraphQL 端点，Flutter 客户端 + HarmonyOS 骨架；Docker Compose、GitHub Actions CI/CD、k6 压测、295 端测试、Sentry、Feature Flags、多语言 i18n。</li>
+        <li data-i18n="proj2-p5">独立发布 7 个 PHP 开源包（JWT、Snowflake、Hashids、加解密、验证码等）。</li>
       </ul>
-      <p class="scale">91 commits · 46 表 · 15 模块 · 190+ API · 295+ 测试</p>
+      <p class="scale" data-i18n="proj2-scale">91 commits · 46 表 · 15 模块 · 190+ API · 295+ 测试</p>
     </article>
 
     <article class="card reveal">
-      <h3><span class="emoji">🛒</span> 跨境电商平台</h3>
+      <h3><span class="emoji">🛒</span> <span data-i18n="proj3-title">跨境电商平台</span></h3>
       <ul class="chips">
-        <li class="chip">B2C / B2B / 多商家入驻</li><li class="chip">Amazon / eBay / Shoppe</li>
+        <li class="chip" data-i18n="proj3-c1">B2C / B2B / 多商家入驻</li><li class="chip">Amazon / eBay / Shoppe</li>
         <li class="chip">Lazada / Temu</li><li class="chip">Flutter</li><li class="chip">HarmonyOS</li>
       </ul>
       <ul class="proj-points">
-        <li>分布式主键（Snowflake）+ Hashids 混淆；12 级中间件 + 31 类攻击检测 + 三层加密。</li>
-        <li>高并发：Redis 令牌桶限流、随机 TTL 防雪崩、熔断、读写分离。</li>
-        <li>跨境合规：HS Code 编码 + 关税规则引擎 + VAT/IOSS 计算 + 10 类合规标。</li>
-        <li>供应链风控：供应商评级、采购审核、质检门禁、库存不可变账本；旁路规则风控 + KYC + GDPR/CCPA。</li>
+        <li data-i18n="proj3-p1">分布式主键（Snowflake）+ Hashids 混淆；12 级中间件 + 31 类攻击检测 + 三层加密。</li>
+        <li data-i18n="proj3-p2">高并发：Redis 令牌桶限流、随机 TTL 防雪崩、熔断、读写分离。</li>
+        <li data-i18n="proj3-p3">跨境合规：HS Code 编码 + 关税规则引擎 + VAT/IOSS 计算 + 10 类合规标。</li>
+        <li data-i18n="proj3-p4">供应链风控：供应商评级、采购审核、质检门禁、库存不可变账本；旁路规则风控 + KYC + GDPR/CCPA。</li>
       </ul>
-      <p class="scale">315 PHP 文件 · 70 表 · 71 API · Flutter 5 平台 + HarmonyOS · 5 语言 i18n</p>
+      <p class="scale" data-i18n="proj3-scale">315 PHP 文件 · 70 表 · 71 API · Flutter 5 平台 + HarmonyOS · 5 语言 i18n</p>
     </article>
 
     <article class="card reveal">
-      <h3><span class="emoji">🏢</span> 企业级全栈 ERP 系统</h3>
+      <h3><span class="emoji">🏢</span> <span data-i18n="proj4-title">企业级全栈 ERP 系统</span></h3>
       <ul class="chips">
-        <li class="chip">9 微服务</li><li class="chip">gRPC</li><li class="chip">Protobuf</li>
+        <li class="chip" data-i18n="proj4-c1">9 微服务</li><li class="chip">gRPC</li><li class="chip">Protobuf</li>
         <li class="chip">Flutter PC</li><li class="chip">MySQL</li><li class="chip">Docker</li>
       </ul>
       <ul class="proj-points">
-        <li>9 个独立微服务（Core/OMS/WMS/TMS/Finance/CRM/HR/Manufacturing/Project），21 个 Protobuf 契约，7 条 gRPC 数据流。</li>
-        <li>8 层防御（WAF、限流、JWT、RBAC、CSRF、审计、字段加密）。</li>
-        <li>Flutter PC 管理端 50+ 页面 + 移动 H5，共享 100% 核心代码；自定义审批流引擎（Snowflake ID 贯通订单→履单→应收/应付）。</li>
-        <li>105 个 PHPUnit 测试（533 断言），PHPStan Level 5，PHP-CS-Fixer。</li>
+        <li data-i18n="proj4-p1">9 个独立微服务（Core/OMS/WMS/TMS/Finance/CRM/HR/Manufacturing/Project），21 个 Protobuf 契约，7 条 gRPC 数据流。</li>
+        <li data-i18n="proj4-p2">8 层防御（WAF、限流、JWT、RBAC、CSRF、审计、字段加密）。</li>
+        <li data-i18n="proj4-p3">Flutter PC 管理端 50+ 页面 + 移动 H5，共享 100% 核心代码；自定义审批流引擎（Snowflake ID 贯通订单→履单→应收/应付）。</li>
+        <li data-i18n="proj4-p4">105 个 PHPUnit 测试（533 断言），PHPStan Level 5，PHP-CS-Fixer。</li>
       </ul>
-      <p class="scale">9 微服务 · 99 控制器 · 138 模型 · 122 表 · ~73,800 行 PHP+Dart · 12 个 Docker 容器</p>
+      <p class="scale" data-i18n="proj4-scale">9 微服务 · 99 控制器 · 138 模型 · 122 表 · ~73,800 行 PHP+Dart · 12 个 Docker 容器</p>
     </article>
 
     <article class="card reveal">
-      <h3><span class="emoji">🎮</span> 全球游戏聚合平台</h3>
+      <h3><span class="emoji">🎮</span> <span data-i18n="proj5-title">全球游戏聚合平台</span></h3>
       <ul class="chips">
         <li class="chip">Webman ×2</li><li class="chip">WebSocket</li><li class="chip">Stripe / PayPal</li>
-        <li class="chip">支付宝 / 微信</li><li class="chip">ClickHouse</li>
+        <li class="chip" data-i18n="proj5-c4">支付宝 / 微信</li><li class="chip">ClickHouse</li>
       </ul>
       <ul class="proj-points">
-        <li>多国法币充值（Stripe/PayPal/支付宝/微信）、平台币兑换游戏币、提现审核与自动打款；双 webman 应用（admin+service）+ 2 个 WebSocket 服务（排行榜/聊天）。</li>
-        <li>资金安全：bcmath 精度、乐观锁（version CAS）、支付回调幂等、冻结余额+记账审计。</li>
-        <li>双层加密（AES-256-CBC 传输 + AES-128-ECB 字段级），自研 SecurityGuard（30 类攻击检测）。</li>
-        <li>多游戏币种独立汇率 + 平台点差；三级 KYC + 提现分级；会员等级/成就/优惠券/返佣；ClickHouse OLAP 运营快照。</li>
+        <li data-i18n="proj5-p1">多国法币充值（Stripe/PayPal/支付宝/微信）、平台币兑换游戏币、提现审核与自动打款；双 webman 应用（admin+service）+ 2 个 WebSocket 服务（排行榜/聊天）。</li>
+        <li data-i18n="proj5-p2">资金安全：bcmath 精度、乐观锁（version CAS）、支付回调幂等、冻结余额+记账审计。</li>
+        <li data-i18n="proj5-p3">双层加密（AES-256-CBC 传输 + AES-128-ECB 字段级），自研 SecurityGuard（30 类攻击检测）。</li>
+        <li data-i18n="proj5-p4">多游戏币种独立汇率 + 平台点差；三级 KYC + 提现分级；会员等级/成就/优惠券/返佣；ClickHouse OLAP 运营快照。</li>
       </ul>
-      <p class="scale">200+ API · 43 表 · 50 模型 · 四存储引擎协同</p>
+      <p class="scale" data-i18n="proj5-scale">200+ API · 43 表 · 50 模型 · 四存储引擎协同</p>
     </article>
 
     <article class="card reveal">
-      <h3><span class="emoji">🏘️</span> 智慧物业管理平台</h3>
+      <h3><span class="emoji">🏘️</span> <span data-i18n="proj6-title">智慧物业管理平台</span></h3>
       <ul class="chips">
-        <li class="chip">Flutter Web</li><li class="chip">鸿蒙原生 App</li><li class="chip">Workerman</li>
+        <li class="chip">Flutter Web</li><li class="chip" data-i18n="proj6-c2">鸿蒙原生 App</li><li class="chip">Workerman</li>
         <li class="chip">Redis</li><li class="chip">ES</li><li class="chip">Docker Compose</li>
       </ul>
       <ul class="proj-points">
-        <li>34 个业务模块，支持多社区团管，三端（Flutter Web 管理后台、业主端、鸿蒙原生 App）。</li>
-        <li>18 层纵深防御（自研 WAF、JWT+RefreshToken、RBAC、字段加密、Hashids、CSP/HSTS 等）。</li>
-        <li>高性能：Workerman 常驻 + OPcache，Redis 缓存 + ES 异步索引，Snowflake ID；微信/支付宝支付、Prometheus 监控、Excel 导入导出、多语言。</li>
-        <li>133 个 PHPUnit 测试，PHPStan，CI，MIT 开源 v1.0.0。</li>
+        <li data-i18n="proj6-p1">34 个业务模块，支持多社区团管，三端（Flutter Web 管理后台、业主端、鸿蒙原生 App）。</li>
+        <li data-i18n="proj6-p2">18 层纵深防御（自研 WAF、JWT+RefreshToken、RBAC、字段加密、Hashids、CSP/HSTS 等）。</li>
+        <li data-i18n="proj6-p3">高性能：Workerman 常驻 + OPcache，Redis 缓存 + ES 异步索引，Snowflake ID；微信/支付宝支付、Prometheus 监控、Excel 导入导出、多语言。</li>
+        <li data-i18n="proj6-p4">133 个 PHPUnit 测试，PHPStan，CI，MIT 开源 v1.0.0。</li>
       </ul>
-      <p class="scale">34 模块 · 65 表 · 180+ API · 三端覆盖 · Docker Compose 5 服务</p>
+      <p class="scale" data-i18n="proj6-scale">34 模块 · 65 表 · 180+ API · 三端覆盖 · Docker Compose 5 服务</p>
     </article>
 
     <article class="card reveal">
-      <h3><span class="emoji">💇</span> 预约服务管理平台</h3>
+      <h3><span class="emoji">💇</span> <span data-i18n="proj7-title">预约服务管理平台</span></h3>
       <ul class="chips">
-        <li class="chip">微信小程序</li><li class="chip">Flutter APP</li><li class="chip">Flutter Web</li>
+        <li class="chip" data-i18n="proj7-c1">微信小程序</li><li class="chip">Flutter APP</li><li class="chip">Flutter Web</li>
         <li class="chip">WebSocket</li><li class="chip">ES Scout</li>
       </ul>
       <ul class="proj-points">
-        <li>微信小程序 + Flutter APP + Flutter Web 管理台，支持客户/技师切换；双服务架构（API + 管理后台独立），自建 WebSocket 推送（JWT 鉴权），ES Scout 驱动。</li>
-        <li>多门店/多技师/多时段预约（闲时折扣、提前优惠）、订单状态机、支付双通道、技师排班/打卡/考试/收益、优惠券/会员卡/积分、排队叫号（Redis + 蓝牙打印）、LBS 附近门店。</li>
-        <li>31 种攻击检测，AES-256-CBC 双密钥，JWT（Access+Refresh），RBAC 路径级权限，5 次失败锁定，Hashids，图形+滑块验证。</li>
-        <li>自研 7 个 Composer 包（snowflake、hashids、jwt-webman、encryption、scout、security、poster）。</li>
+        <li data-i18n="proj7-p1">微信小程序 + Flutter APP + Flutter Web 管理台，支持客户/技师切换；双服务架构（API + 管理后台独立），自建 WebSocket 推送（JWT 鉴权），ES Scout 驱动。</li>
+        <li data-i18n="proj7-p2">多门店/多技师/多时段预约（闲时折扣、提前优惠）、订单状态机、支付双通道、技师排班/打卡/考试/收益、优惠券/会员卡/积分、排队叫号（Redis + 蓝牙打印）、LBS 附近门店。</li>
+        <li data-i18n="proj7-p3">31 种攻击检测，AES-256-CBC 双密钥，JWT（Access+Refresh），RBAC 路径级权限，5 次失败锁定，Hashids，图形+滑块验证。</li>
+        <li data-i18n="proj7-p4">自研 7 个 Composer 包（snowflake、hashids、jwt-webman、encryption、scout、security、poster）。</li>
       </ul>
-      <p class="scale">104 控制器 · 58 模型 · 55 表 · 242 API 路由 · 80+ 测试</p>
+      <p class="scale" data-i18n="proj7-scale">104 控制器 · 58 模型 · 55 表 · 242 API 路由 · 80+ 测试</p>
     </article>
 
     <article class="card reveal">
-      <h3><span class="emoji">🛡️</span> Go 攻击检测库</h3>
+      <h3><span class="emoji">🛡️</span> <span data-i18n="proj8-title">Go 攻击检测库</span></h3>
       <ul class="chips">
-        <li class="chip">Go</li><li class="chip">零外部依赖</li><li class="chip">策略模式</li>
+        <li class="chip">Go</li><li class="chip" data-i18n="proj8-c2">零外部依赖</li><li class="chip" data-i18n="proj8-c3">策略模式</li>
         <li class="chip">Memory / File / Redis</li>
       </ul>
       <ul class="proj-points">
-        <li>纯 Go 实现，零外部依赖，覆盖 32 个检测器、5 大攻击类别（XSS、SQL 注入、命令注入、NoSQL、LDAP、Log4Shell、SSTI、SSRF、XXE、CORS 绕过、开放重定向、JWT alg:none、原型污染等）。</li>
-        <li>注册表 + 策略模式，支持 Memory/File/Redis 三种存储后端，IP 滑动窗口计数与自动封禁。</li>
-        <li>四级严重程度分级，核心包覆盖率 95.8%。</li>
+        <li data-i18n="proj8-p1">纯 Go 实现，零外部依赖，覆盖 32 个检测器、5 大攻击类别（XSS、SQL 注入、命令注入、NoSQL、LDAP、Log4Shell、SSTI、SSRF、XXE、CORS 绕过、开放重定向、JWT alg:none、原型污染等）。</li>
+        <li data-i18n="proj8-p2">注册表 + 策略模式，支持 Memory/File/Redis 三种存储后端，IP 滑动窗口计数与自动封禁。</li>
+        <li data-i18n="proj8-p3">四级严重程度分级，核心包覆盖率 95.8%。</li>
       </ul>
-      <p class="scale">32 检测器 · 5 大攻击类别 · ~3,200 行代码</p>
+      <p class="scale" data-i18n="proj8-scale">32 检测器 · 5 大攻击类别 · ~3,200 行代码</p>
     </article>
 
     <article class="card reveal">
-      <h3><span class="emoji">⚙️</span> Rust 工业协议集（38 种协议）</h3>
+      <h3><span class="emoji">⚙️</span> <span data-i18n="proj9-title">Rust 工业协议集（38 种协议）</span></h3>
       <ul class="chips">
-        <li class="chip">Rust</li><li class="chip">微内核 + 协议 SDK</li><li class="chip">tokio</li><li class="chip">SocketCAN</li>
+        <li class="chip">Rust</li><li class="chip" data-i18n="proj9-c2">微内核 + 协议 SDK</li><li class="chip">tokio</li><li class="chip">SocketCAN</li>
       </ul>
       <ul class="proj-points">
-        <li>微内核 + 协议 SDK 架构，覆盖工业以太网、现场总线、汽车总线、楼宇照明、硬件桥接、系统总线。</li>
-        <li>内核提供注册表、连接管理器、熔断器、事件总线、协议网关；协议实现仅需 6 个 trait；类型安全（关联类型区分 Modbus 地址 u16、OPC UA 地址 String）。</li>
-        <li>传输抽象（TCP/UDP/串口/SocketCAN/FFI），熔断器 + 4 种退避策略；异步可选（同步内核 + tokio 异步层）。</li>
+        <li data-i18n="proj9-p1">微内核 + 协议 SDK 架构，覆盖工业以太网、现场总线、汽车总线、楼宇照明、硬件桥接、系统总线。</li>
+        <li data-i18n="proj9-p2">内核提供注册表、连接管理器、熔断器、事件总线、协议网关；协议实现仅需 6 个 trait；类型安全（关联类型区分 Modbus 地址 u16、OPC UA 地址 String）。</li>
+        <li data-i18n="proj9-p3">传输抽象（TCP/UDP/串口/SocketCAN/FFI），熔断器 + 4 种退避策略；异步可选（同步内核 + tokio 异步层）。</li>
       </ul>
-      <p class="scale">45 个 Cargo crates · 10,000+ 行 Rust · 137 测试用例 · MIT 协议</p>
+      <p class="scale" data-i18n="proj9-scale">45 个 Cargo crates · 10,000+ 行 Rust · 137 测试用例 · MIT 协议</p>
     </article>
 
     <article class="card reveal">
-      <h3><span class="emoji">🔌</span> ESP32-S3 多传感器智能控制面板</h3>
+      <h3><span class="emoji">🔌</span> <span data-i18n="proj10-title">ESP32-S3 多传感器智能控制面板</span></h3>
       <ul class="chips">
-        <li class="chip">C / C++</li><li class="chip">Arduino 框架</li><li class="chip">ESP32-S3</li>
+        <li class="chip">C / C++</li><li class="chip" data-i18n="proj10-c2">Arduino 框架</li><li class="chip">ESP32-S3</li>
         <li class="chip">WiFi</li><li class="chip">HTTP Web Server</li><li class="chip">MQTT</li>
         <li class="chip">PubSubClient + Mosquitto</li><li class="chip">ArduinoJson</li>
-        <li class="chip">MFRC522 RFID</li><li class="chip">DHT 温湿度</li>
+        <li class="chip">MFRC522 RFID</li><li class="chip" data-i18n="proj10-c9">DHT 温湿度</li>
       </ul>
       <ul class="proj-points">
-        <li>六类外设（LED、触摸开关、光敏、热敏、DHT、MFRC522）集成，网页控制与 MQTT 远程控制双通道并行。</li>
-        <li>统一命令入口：HTTP GET 路径与 MQTT 下行命令映射到公共 handleCommand()，双通道行为一致，新增控制项仅需一次映射。</li>
-        <li>公共状态出口 collectStatusJson()：网页模板渲染与 MQTT 上报共用同一数据源；esp32/status 每 5 秒全量 + 状态变化即时上报，esp32/event 刷卡事件毫秒级发布。</li>
-        <li>可靠性：断线 5 秒自动重连、首连失败不阻塞启动（HTTP 始终可用）、MAC 生成 client ID 防多设备冲突、非法 JSON/未知命令安全忽略。</li>
-        <li>非阻塞架构：全传感器 millis() 去抖轮询；每外设独立 .h 驱动，新增外设只需加开关、加驱动、加命令映射三步。</li>
+        <li data-i18n="proj10-p1">六类外设（LED、触摸开关、光敏、热敏、DHT、MFRC522）集成，网页控制与 MQTT 远程控制双通道并行。</li>
+        <li data-i18n="proj10-p2">统一命令入口：HTTP GET 路径与 MQTT 下行命令映射到公共 handleCommand()，双通道行为一致，新增控制项仅需一次映射。</li>
+        <li data-i18n="proj10-p3">公共状态出口 collectStatusJson()：网页模板渲染与 MQTT 上报共用同一数据源；esp32/status 每 5 秒全量 + 状态变化即时上报，esp32/event 刷卡事件毫秒级发布。</li>
+        <li data-i18n="proj10-p4">可靠性：断线 5 秒自动重连、首连失败不阻塞启动（HTTP 始终可用）、MAC 生成 client ID 防多设备冲突、非法 JSON/未知命令安全忽略。</li>
+        <li data-i18n="proj10-p5">非阻塞架构：全传感器 millis() 去抖轮询；每外设独立 .h 驱动，新增外设只需加开关、加驱动、加命令映射三步。</li>
       </ul>
-      <p class="scale">六类外设 · 双通道（HTTP + MQTT）· 3 个 MQTT Topic</p>
+      <p class="scale" data-i18n="proj10-scale">六类外设 · 双通道（HTTP + MQTT）· 3 个 MQTT Topic</p>
     </article>
 
   </div>
 </section>
 
 <section id="education" class="section">
-  <h2 class="sec-title">学历及培训</h2>
+  <h2 class="sec-title" data-i18n="edu-sec">学历及培训</h2>
   <div class="card reveal edu-card">
-    <h3>深圳市公益性职业培训</h3>
-    <p>物联技术及应用</p>
+    <h3 data-i18n="edu1-h">深圳市公益性职业培训</h3>
+    <p data-i18n="edu1-p">物联技术及应用</p>
     <span class="tl-date">2026.08</span>
   </div>
   <div class="card reveal edu-card">
-    <h3>深圳市公益性职业培训</h3>
-    <p>鸿蒙原生应用开发 · 获得鸿蒙开发基础认证</p>
+    <h3 data-i18n="edu1-h">深圳市公益性职业培训</h3>
+    <p data-i18n="edu2-p">鸿蒙原生应用开发 · 获得鸿蒙开发基础认证</p>
     <span class="tl-date">2025.08</span>
   </div>
   <div class="card reveal edu-card">
-    <h3>深圳大学</h3>
-    <p>工商管理 · 本科（非全日制）</p>
-    <span class="tl-date">2018.03 – 2023.12</span>
+    <h3 data-i18n="edu3-h">深圳大学</h3>
+    <p data-i18n="edu3-p">工商管理 · 本科（非全日制）</p>
+    <span class="tl-date">2018.03 – 2023.01</span>
   </div>
   <div class="card reveal edu-card">
-    <h3>达内科技</h3>
-    <p>PHP 互联网开发 · 获得 NTC 职业资格证书</p>
+    <h3 data-i18n="edu4-h">达内科技</h3>
+    <p data-i18n="edu4-p">PHP 互联网开发 · 获得 NTC 职业资格证书</p>
     <span class="tl-date">2013.08 – 2013.12</span>
   </div>
   <div class="card reveal edu-card">
-    <h3>汝阳二高</h3>
-    <p>高中</p>
+    <h3 data-i18n="edu5-h">汝阳二高</h3>
+    <p data-i18n="edu5-p">高中</p>
     <span class="tl-date">2006 – 2009</span>
   </div>
 </section>
 </main>
 
 <footer class="footer">
-  <p>© 2026 王可勋 · 简历页面 · <a href="#hero">返回顶部 ↑</a></p>
+  <p>© 2026 王可勋 · <span data-i18n="footer-resume">简历页面</span> · <a href="#hero"><span data-i18n="footer-top">返回顶部</span> ↑</a></p>
 </footer>
 
 <button id="back-top" type="button" aria-label="返回顶部">↑</button>
 
+<script src="js/i18n.js" defer></script>
 <script src="js/vendor/html2canvas.min.js" defer></script>
 <script src="js/vendor/jspdf.umd.min.js" defer></script>
+<script>
+/* 下载按钮：main.js 模块脚本加载前点击不静默失效，等 exportPdf 就绪后自动重试 */
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('[data-pdf]');
+  if (!btn) return;
+  const fire = () => exportPdf(btn.dataset.pdf === 'color');
+  if (typeof exportPdf === 'function') { fire(); return; }
+  btn.disabled = true;
+  let tries = 0;
+  const t = setInterval(() => {
+    if (typeof exportPdf === 'function' || ++tries > 150) { // 15s 兜底，资源一直没到就恢复按钮而不是永久禁用
+      clearInterval(t);
+      btn.disabled = false;
+      if (typeof exportPdf === 'function') fire();
+    }
+  }, 100);
+});
+</script>
 <script type="module" src="js/main.js"></script>
 </body>
 </html>

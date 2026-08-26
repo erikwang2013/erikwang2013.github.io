@@ -38,8 +38,6 @@
         <category>http</category>
         <category>http服务器</category>
         <category>负载均衡</category>
-        <category>kali</category>
-        <category>kali安装</category>
         <category>多平台广告管理系统</category>
         <category>Ads Platform</category>
         <category>农业系统</category>
@@ -49,12 +47,12 @@
         <category>n阶行列式</category>
         <category>支付系统</category>
         <category>支付</category>
+        <category>centos</category>
+        <category>linux</category>
         <category>apache优化</category>
         <category>apache隐藏index</category>
         <category>nginx优化</category>
         <category>nginx隐藏index</category>
-        <category>centos</category>
-        <category>linux</category>
         <category>日常</category>
         <category>seo</category>
         <category>优化</category>
@@ -117,12 +115,12 @@
         <category>内网部署composer</category>
         <category>cphalcon</category>
         <category>cphalcon报错</category>
-        <category>proxy代理搭建</category>
-        <category>代理服务器搭建</category>
-        <category>proxy服务器</category>
         <category>css中的em</category>
         <category>响应式字体</category>
         <category>响应式布局样式</category>
+        <category>proxy代理搭建</category>
+        <category>代理服务器搭建</category>
+        <category>proxy服务器</category>
         <category>查找</category>
         <category>排序</category>
         <category>快速排序</category>
@@ -159,7 +157,6 @@
         <category>mdm</category>
         <category>erik shop</category>
         <category>跨境电商平台</category>
-        <category>免费</category>
         <category>phone</category>
         <category>手机</category>
         <category>新闻</category>
@@ -167,19 +164,15 @@
         <category>jenkis教程</category>
         <category>随笔吐槽</category>
         <category>算法</category>
+        <category>免费</category>
         <category>游戏聚合平台</category>
         <category>游戏平台</category>
         <category>游戏</category>
-        <category>ping</category>
-        <category>ping服务器</category>
-        <category>各大网站ping</category>
-        <category>搜引擎ping服务器</category>
         <category>go获取ip</category>
         <category>im</category>
         <category>go中pdf生成</category>
         <category>go中限流</category>
         <category>go对接快递签名</category>
-        <category>go时间获取</category>
         <category>go类型转换</category>
         <category>go-zero</category>
         <category>rpc</category>
@@ -201,6 +194,9 @@
         <category>数据库</category>
         <category>hbase安装教程</category>
         <category>hbase</category>
+        <category>kali</category>
+        <category>kali安装</category>
+        <category>go时间获取</category>
         <category>http1.1</category>
         <category>http2.0</category>
         <category>会话</category>
@@ -208,6 +204,10 @@
         <category>hyperf</category>
         <category>杂录</category>
         <category>新冠肺炎</category>
+        <category>ping</category>
+        <category>ping服务器</category>
+        <category>各大网站ping</category>
+        <category>搜引擎ping服务器</category>
         <category>工业网络通信协议插件</category>
         <category>industrial protocols</category>
         <category>主流工业协议</category>
@@ -238,19 +238,16 @@
         <category>lanmp</category>
         <category>php环境独立配置</category>
         <category>服务器</category>
+        <category>flash</category>
+        <category>表单</category>
         <category>劳动纠纷</category>
         <category>追缴工资</category>
         <category>申请仲裁</category>
-        <category>flash</category>
-        <category>表单</category>
-        <category>linux报错</category>
-        <category>linux中update-command-not-found</category>
-        <category>linux运行命令报错</category>
-        <category>web前端</category>
-        <category>web优化</category>
         <category>蓝牙</category>
         <category>小程序蓝牙</category>
         <category>蓝牙连接</category>
+        <category>web前端</category>
+        <category>web优化</category>
         <category>撮合算法</category>
         <category>撮合</category>
         <category>php撮合算法</category>
@@ -268,9 +265,9 @@
         <category>mysql瓶颈解决办法</category>
         <category>redis</category>
         <category>数据一致性</category>
-        <category>mysql消息</category>
-        <category>mysql队列</category>
-        <category>mysql高并发</category>
+        <category>linux报错</category>
+        <category>linux中update-command-not-found</category>
+        <category>linux运行命令报错</category>
         <category>mysql存储</category>
         <category>mysql引擎</category>
         <category>mysql数据表设计选择</category>
@@ -281,10 +278,13 @@
         <category>支付接口本地化开发</category>
         <category>本地挂网</category>
         <category>穿透</category>
+        <category>mysql消息</category>
+        <category>mysql队列</category>
+        <category>mysql高并发</category>
         <category>go</category>
         <category>new和make的区别</category>
-        <category>红包算法</category>
         <category>深圳劳动法服务部门</category>
+        <category>红包算法</category>
         <category>非关系型数据库</category>
         <category>onethink</category>
         <category>oop</category>
@@ -329,13 +329,13 @@
         <category>zookeeper3.5.5</category>
         <category>php-zookeeper扩展</category>
         <category>php串口开发</category>
-        <category>PHP数组</category>
-        <category>字符串函数</category>
-        <category>排序函数</category>
         <category>php倒计时</category>
         <category>php时间</category>
         <category>倒计时</category>
         <category>计算时间</category>
+        <category>PHP数组</category>
+        <category>字符串函数</category>
+        <category>排序函数</category>
         <category>php的SPL</category>
         <category>SPL手册</category>
         <category>PHP算法</category>
@@ -343,11 +343,6 @@
         <category>递归</category>
         <category>phpunit</category>
         <category>phpunit安装</category>
-        <category>php过滤</category>
-        <category>过滤</category>
-        <category>foreach</category>
-        <category>foreach报错</category>
-        <category>php中foreach报错</category>
         <category>php中if</category>
         <category>php中if判断</category>
         <category>php的if</category>
@@ -382,11 +377,13 @@
         <category>禁止视频</category>
         <category>响应慢</category>
         <category>页面优化</category>
+        <category>php过滤</category>
+        <category>过滤</category>
         <category>js编辑</category>
         <category>runjs</category>
         <category>在线编辑</category>
-        <category>rust配置</category>
         <category>seajs</category>
+        <category>rust配置</category>
         <category>go攻击检测</category>
         <category>攻击检测</category>
         <category>rust攻击检测</category>
@@ -395,6 +392,9 @@
         <category>烧录</category>
         <category>极路由2烧录</category>
         <category>砖头烧录</category>
+        <category>foreach</category>
+        <category>foreach报错</category>
+        <category>php中foreach报错</category>
         <category>免费服务器</category>
         <category>空间</category>
         <category>资源</category>
@@ -458,7 +458,6 @@
         <category>我在</category>
         <category>wordpress</category>
         <category>wordpress标签</category>
-        <category>域名合并</category>
         <category>wpscan</category>
         <category>usbrip</category>
         <category>无限极分类</category>
@@ -476,6 +475,7 @@
         <category>携程攻击</category>
         <category>携程网站瘫痪</category>
         <category>物理删除</category>
+        <category>域名合并</category>
         <category>3D</category>
         <category>动画</category>
         <category>平台</category>
@@ -787,7 +787,7 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;hr&gt;
-&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#x6d;&amp;#97;&amp;#105;&amp;#108;&amp;#x74;&amp;#111;&amp;#58;&amp;#x65;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#64;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#46;&amp;#x78;&amp;#x79;&amp;#x7a;&#34;&gt;&amp;#x65;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#64;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#46;&amp;#x78;&amp;#x79;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#x6d;&amp;#x61;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#x6f;&amp;#58;&amp;#x65;&amp;#114;&amp;#105;&amp;#107;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#46;&amp;#120;&amp;#x79;&amp;#x7a;&#34;&gt;&amp;#x65;&amp;#114;&amp;#105;&amp;#107;&amp;#x40;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#46;&amp;#120;&amp;#x79;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

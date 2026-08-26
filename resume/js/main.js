@@ -235,7 +235,9 @@ startBackground();
 function injectPrintStyles(doc) {
   const rules = [];
   for (const sheet of document.styleSheets) {
-    for (const rule of sheet.cssRules) {
+    let cssRules;
+    try { cssRules = sheet.cssRules; } catch { continue; } // 跨域样式表访问会抛 SecurityError，跳过而不是让整个 PDF 失败
+    for (const rule of cssRules) {
       if (rule.type === CSSRule.MEDIA_RULE && rule.media.mediaText.includes('print')) {
         rules.push(rule.cssText.replace(/^@media print\s*\{/, '').replace(/\}\s*$/, ''));
       }
@@ -246,8 +248,11 @@ function injectPrintStyles(doc) {
   doc.head.appendChild(style);
 }
 
-function exportPdf(color) {
+async function exportPdf(color) {
   if (typeof html2canvas === 'undefined' || typeof window.jspdf === 'undefined') return;
+  if (document.body.classList.contains('pdf-busy')) return; // 生成中防连点
+  document.body.classList.add('pdf-busy');
+  if (document.fonts && document.fonts.ready) await document.fonts.ready; // 字体未就绪时克隆文档会回流，抓出缺内容的 PDF
   const hadColor = document.body.classList.contains('print-color');
   document.body.classList.toggle('print-color', color);
   // html2canvas 渲染伪元素时克隆文档的覆盖规则不生效，需在活文档里中和（黑白/彩色各取对应色）
@@ -256,13 +261,22 @@ function exportPdf(color) {
   live.textContent = '.timeline::before,.sec-title::before{background:' + accent + ' !important;background-image:none !important}' +
     '.tl-item::before{background:#fff !important;border-color:' + accent + ' !important;box-shadow:none !important}';
   document.head.appendChild(live);
-  const filename = color ? '王可勋-全栈-go-php-彩色.pdf' : '王可勋-全栈-go-php.pdf';
+  const en = document.documentElement.lang === 'en';
+  const filename = en ? (color ? 'Wang-Kexun-fullstack-go-php-color.pdf' : 'Wang-Kexun-fullstack-go-php.pdf')
+    : (color ? '王可勋-全栈-go-php-彩色.pdf' : '王可勋-全栈-go-php.pdf');
   let avoidTops = [];
   html2canvas(document.body, {
     scale: 2, useCORS: true,
     windowWidth: 703, windowHeight: 1049, // 与 Chrome 打印视口一致（A4 减 12/12/14mm 边距）
+    ignoreElements: (el) => el.id && /^(bg-canvas|glow|scroll-progress|back-top)$/.test(el.id), // 装饰性固定元素：WebGL 画布拖慢捕获，其余无内容
     onclone: (doc) => {
       injectPrintStyles(doc);
+      // .reveal 初始 opacity:0，注入打印样式后会从 0 过渡到 1；html2canvas 不等过渡完成，
+      // 页面加载中点击时截到半透明内容。硬编码复位可见性并杀掉过渡/动画，内容不再依赖滚动位置与时机。
+      const s = doc.createElement('style');
+      s.textContent = 'html.js .reveal{opacity:1!important;transform:none!important}' +
+        '*{transition:none!important;animation:none!important}';
+      doc.head.appendChild(s);
       // 元素分页避让：测量克隆文档（视口已为 703px，与捕获一致）
       avoidTops = [...doc.querySelectorAll('.tl-item,.card,.agent-row,.skill-row,.strength-row,.edu-card,.sec-title')]
         .map((el) => el.getBoundingClientRect())
@@ -303,10 +317,9 @@ function exportPdf(color) {
     .finally(() => {
       document.body.classList.toggle('print-color', hadColor);
       live.remove();
+      document.body.classList.remove('pdf-busy');
     });
 }
 
-document.querySelectorAll('[data-pdf]').forEach((btn) => {
-  btn.addEventListener('click', () => exportPdf(btn.dataset.pdf === 'color'));
-});
+window.exportPdf = exportPdf; // 供 index.html 的内联委托监听调用（模块加载前点击不丢事件）
 

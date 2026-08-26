@@ -71,6 +71,13 @@ body.no-webgl #bg-canvas { display: none; }
 }
 .nav-links a:hover { color: var(--text); }
 .nav-links a.active { color: var(--text); background: var(--chip-bg); }
+#lang-toggle {
+  flex-shrink: 0; background: rgba(56, 189, 248, .08);
+  border: 1px solid rgba(56, 189, 248, .35); color: var(--accent);
+  font-size: .8rem; font-weight: 600; padding: 5px 12px; border-radius: 0;
+  cursor: pointer; white-space: nowrap; transition: background .2s, color .2s;
+}
+#lang-toggle:hover { background: rgba(56, 189, 248, .18); color: var(--text); }
 
 /* ===== Hero ===== */
 .hero {
@@ -118,6 +125,7 @@ body.no-webgl #bg-canvas { display: none; }
 .btn-primary:hover { box-shadow: 0 6px 26px rgba(56, 189, 248, .5); }
 .btn-ghost { color: var(--text); border-color: rgba(56,189,248,.5); background: rgba(56,189,248,.06); }
 .btn-ghost:hover { background: rgba(56,189,248,.14); }
+.pdf-busy [data-pdf] { opacity: .5; pointer-events: none; }
 
 /* ===== 区块通用 ===== */
 main { max-width: 1080px; margin: 0 auto; padding: 30px 20px 80px; }
@@ -225,7 +233,7 @@ main { max-width: 1080px; margin: 0 auto; padding: 30px 20px 80px; }
 /* ===== 教育（行式，不用卡片） ===== */
 .edu-card {
   display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px;
-  padding: 9px 2px; max-width: 720px;
+  padding: 9px 2px; margin-bottom: 8px; max-width: 720px;
   background: none; border: none; border-bottom: 1px solid var(--card-border);
   backdrop-filter: none; -webkit-backdrop-filter: none;
 }
@@ -295,6 +303,8 @@ html.js .reveal.in { opacity: 1; transform: none; }
   .agent-head { gap: 2px 10px; }
   .timeline { padding-left: 16px; }
   .tl-item { padding: 0 0 24px 12px; }
+  .edu-card { flex-direction: column; align-items: flex-start; gap: 2px 0; }
+  .edu-card h3, .edu-card p, .edu-card .tl-date { flex: none; margin-left: 0; }
 }
 
 /* ===== 减弱动态 ===== */
@@ -351,8 +361,10 @@ html.js .reveal.in { opacity: 1; transform: none; }
   /* 打印视口 703px 会命中 max-width:768px 的 column 堆叠，显式恢复横向 */
   .skill-row, .strength-row { flex-direction: row; align-items: baseline; gap: 6px 24px; padding: 6px 2px; }
   .skill-row h3, .strength-row h3 { flex: 0 0 120px; line-height: inherit; }
-  .edu-card { padding: 2px 0; border: none; background: none; }
-  .edu-card h3 { margin-bottom: 0; font-size: .92rem; }
+  .edu-card { padding: 2px 0; border: none; background: none; flex-direction: row; align-items: baseline; gap: 4px 14px; }
+  .edu-card h3 { margin-bottom: 0; font-size: .92rem; flex: 0 0 170px; }
+  .edu-card p { flex: 1; }
+  .edu-card .tl-date { margin-left: auto; }
   .agent-row { gap: 3px; padding: 7px 2px; }
   .chips { gap: 4px; }
   .chip { padding: 2px 7px; font-size: .72rem; }

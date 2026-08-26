@@ -66,8 +66,10 @@
 
     var mat = new THREE.PointsMaterial({
       size: 0.55,
+      map: makeCircleTexture(),
       vertexColors: true,
       transparent: true,
+      alphaTest: 0.1,
       opacity: typeof threeCfg.opacity === 'number' ? threeCfg.opacity : 0.55,
       depthWrite: false
     });
@@ -95,6 +97,34 @@
     }
     scene.add(spriteGroup);
 
+    /* planets (sphere + optional ring) */
+    var planets = [];
+    for (var p = 0; p < 5; p++) {
+      var pg = new THREE.Group();
+      var pcol = palette[p % palette.length];
+      pg.add(new THREE.Mesh(
+        new THREE.SphereGeometry(1, 24, 24),
+        new THREE.MeshBasicMaterial({ color: pcol, transparent: true, opacity: 0.85 })
+      ));
+      if (p % 2 === 0) {
+        pg.add(new THREE.Mesh(
+          new THREE.RingGeometry(1.5, 2.1, 48),
+          new THREE.MeshBasicMaterial({ color: pcol, transparent: true, opacity: 0.4, side: THREE.DoubleSide })
+        ));
+        pg.children[1].rotation.x = Math.PI / 2.3;
+        pg.children[1].rotation.y = 0.5;
+      }
+      var ps = 0.8 + Math.random() * 1.6;
+      pg.scale.set(ps, ps, ps);
+      pg.position.set(
+        (Math.random() - 0.5) * 80,
+        (Math.random() - 0.5) * 45,
+        -20 - Math.random() * 50
+      );
+      scene.add(pg);
+      planets.push({ g: pg, speed: 0.1 + Math.random() * 0.2, phase: Math.random() * Math.PI * 2 });
+    }
+
     /* mouse parallax */
     var mouse = { x: 0, y: 0 };
     document.addEventListener('mousemove', function (e) {
@@ -117,6 +147,11 @@
         sprites[k].sprite.position.y += Math.sin(t * sprites[k].speed + sprites[k].phase) * 0.008;
       }
       spriteGroup.rotation.y = t * 0.01;
+
+      for (var q = 0; q < planets.length; q++) {
+        planets[q].g.rotation.y += 0.002 * planets[q].speed * 10;
+        planets[q].g.position.y += Math.sin(t * 0.4 + planets[q].phase) * 0.004;
+      }
 
       if (threeCfg.parallax !== false) {
         camera.position.x += (mouse.x * 7 - camera.position.x) * 0.04;
@@ -151,6 +186,20 @@
     if (h.length === 3) h = h[0] + h[0] + h[1] + h[1] + h[2] + h[2];
     var n = parseInt(h, 16);
     return [(n >> 16 & 255) / 255, (n >> 8 & 255) / 255, (n & 255) / 255];
+  }
+
+  function makeCircleTexture() {
+    var size = 32;
+    var c = document.createElement('canvas');
+    c.width = size; c.height = size;
+    var ctx = c.getContext('2d');
+    var g = ctx.createRadialGradient(size / 2, size / 2, 0, size / 2, size / 2, size / 2);
+    g.addColorStop(0, 'rgba(255,255,255,1)');
+    g.addColorStop(0.35, 'rgba(255,255,255,0.7)');
+    g.addColorStop(1, 'rgba(255,255,255,0)');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, size, size);
+    return new THREE.CanvasTexture(c);
   }
 
   function makeEmojiTexture(emoji) {
