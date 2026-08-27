@@ -175,7 +175,7 @@ async function initScene(T) {
       }
     }
   }, { rootMargin: '-40% 0px -55% 0px' });
-  ['skills', 'strengths', 'agent', 'experience', 'projects', 'education'].forEach((id) => {
+  ['skills', 'strengths', 'experience', 'projects', 'education'].forEach((id) => {
     const el = document.getElementById(id);
     if (el) spy.observe(el);
   });
@@ -277,11 +277,11 @@ async function exportPdf(color) {
       s.textContent = 'html.js .reveal{opacity:1!important;transform:none!important}' +
         '*{transition:none!important;animation:none!important}';
       doc.head.appendChild(s);
-      // 元素分页避让：测量克隆文档（视口已为 703px，与捕获一致）
-      avoidTops = [...doc.querySelectorAll('.tl-item,.card,.agent-row,.skill-row,.strength-row,.edu-card,.sec-title')]
+      // 元素分页避让：记录顶部与高度（视口已为 703px，与捕获一致），跨切点的元素整体上移防截断
+      avoidTops = [...doc.querySelectorAll('.tl-item,.card,.skill-row,.strength-row,.edu-card,.sec-title')]
         .map((el) => el.getBoundingClientRect())
         .filter((r) => r.height > 0 && r.height < 900)
-        .map((r) => r.top * 2); // scale=2，canvas 像素
+        .map((r) => ({ top: r.top * 2, height: r.height * 2 })); // scale=2，canvas 像素
     },
   }).then((canvas) => {
     const pdf = new window.jspdf.jsPDF({ unit: 'pt', format: 'a4', orientation: 'portrait' });
@@ -290,24 +290,48 @@ async function exportPdf(color) {
     const ph = pdf.internal.pageSize.getHeight();
     const scale = (pw - mL - mR) / canvas.width;
     const stripH = (ph - mT - mB) / scale;
+    // 末页太空（末段 < 55% 页容量）时等比微缩内容并入前页；缩放下限 0.85，避免中空页被缩得过于明显
+    const n0 = Math.ceil(canvas.height / stripH - 1e-6);
+    const tail = canvas.height - stripH * (n0 - 1);
+    let shrink = 1;
+    if (n0 > 1 && tail < stripH * 0.55) {
+      const s = (n0 - 1) / (n0 - 1 + tail / stripH);
+      if (s >= 0.85) shrink = s;
+    }
+    // 切点基于缩放后布局坐标（shrink=1 时即原始坐标）；元素底跨过或贴进切点 6pt 内才上移，避免整卡被切
     const cuts = [0];
-    while (cuts[cuts.length - 1] + stripH < canvas.height) {
+    const H = canvas.height * shrink;
+    const gap = 48 * shrink; // 避让上移留白 24csspx：section padding 在元素外，切点贴元素顶会让标题贴页顶
+    while (cuts[cuts.length - 1] + stripH < H - 1) {
       let b = cuts[cuts.length - 1] + stripH;
-      const near = avoidTops.filter((t) => t < b - 6 && t > b - 260);
-      if (near.length) b = Math.min(...near);
+      const near = avoidTops
+        .map((o) => ({ top: o.top * shrink, bottom: (o.top + o.height) * shrink }))
+        .filter((o) => o.top < b && o.bottom > b - 6);
+      if (near.length) {
+        const nb0 = Math.min(...near.map((o) => o.top)) - gap;
+        // 切点推上后可能落进上方元素底部：紧密排列时上方元素底与避让元素顶几乎相贴，
+        // 按 min-top-gap 推会切掉上方元素整段 ~20px。把切点按到最深元素底部之上 6px 处，
+        // 残条 ≤6px（3css px）不可见；切点仍低于避让元素顶，不会切到它
+        const hit = avoidTops
+          .map((o) => ({ top: o.top * shrink, bottom: (o.top + o.height) * shrink }))
+          .filter((o) => o.top < nb0 && o.bottom > nb0);
+        const nb = hit.length ? Math.max(nb0, Math.max(...hit.map((o) => o.bottom)) - 6) : nb0;
+        if (nb > cuts[cuts.length - 1] + 40) b = nb; // 空间不足时放弃避让，防切点倒退产生负高丢失内容
+      }
       cuts.push(b);
     }
-    cuts.push(canvas.height); // while 不产生最后一个切点，末段不足一页的内容会整段丢失
+    cuts.push(H);
     const tmp = document.createElement('canvas');
     tmp.width = canvas.width;
     const tctx = tmp.getContext('2d');
+    const imgW = (pw - mL - mR) * shrink;
     for (let i = 0; i < cuts.length - 1; i++) {
-      const y = cuts[i];
-      const h = Math.min(cuts[i + 1] - y, canvas.height - y);
+      const y = cuts[i] / shrink;
+      const h = (cuts[i + 1] - cuts[i]) / shrink;
       tmp.height = Math.ceil(h);
       tctx.drawImage(canvas, 0, y, canvas.width, h, 0, 0, canvas.width, h);
       if (i) pdf.addPage();
-      pdf.addImage(tmp.toDataURL('image/jpeg', 0.95), 'JPEG', mL, mT, pw - mL - mR, h * scale);
+      pdf.addImage(tmp.toDataURL('image/jpeg', 0.95), 'JPEG', mL + (pw - mL - mR - imgW) / 2, mT, imgW, (cuts[i + 1] - cuts[i]) * scale);
       // 右下角页码 X / Y，与 add-page-numbers.py 同位置：右贴 34pt 边距、基线距底 14pt
       pdf.setFontSize(9);
       pdf.text((i + 1) + ' / ' + (cuts.length - 1), pw - mR, ph - 14, { align: 'right' });

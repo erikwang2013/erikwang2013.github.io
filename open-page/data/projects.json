@@ -74,7 +74,7 @@
       "githubUrl": "https://github.com/erikwang2013/cloud-php",
       "status": "maintenance",
       "language": "PHP",
-      "description": "全球云资源交易平台,提供云主机、带宽等资源的购买与调度。",
+      "description": "面向全球用户的云资源交易平台，支持服务器（VM）、IP 地址、云磁盘、域名等产品的在线购买与自动交付。自营物理机通过 Proxmox VE 虚拟化交付，同时支持第三方供应商入驻售卖。",
       "emoji": "☁️"
     },
     {
@@ -94,7 +94,7 @@
       "githubUrl": "https://github.com/erikwang2013/appointment-php",
       "status": "development",
       "language": "PHP",
-      "description": "通用预约服务系统,支持多门店、多服务的在线预约与管理。",
+      "description": "预约服务系统是一套面向生活服务行业的四端预约管理平台：用户端覆盖微信小程序、Flutter APP、HarmonyOS APP 三端，同账号跨端自由切换，配合 PC 管理后台，实现 用户预约 → 技师接单 → 后台运营 全流程数字化闭环。无论门店预约、技师服务、会员营销还是财务结算，一套系统全部搞定。按日历直观选时预约、优惠券/次卡/积分抵扣、秒杀与拼团优惠、微信/余额支付，订单状态全程可追踪——改期、取消、退款、售后、电子发票全流程在线完成；技师端 提供工作台、上下班打卡、批量排班、服务核销与提现审批，运营效率一目了然",
       "emoji": "📅"
     },
     {
@@ -274,7 +274,7 @@
       "githubUrl": "https://github.com/erikwang2013/e-cat",
       "status": "maintenance",
       "language": "Rust",
-      "description": "Rust 微服务框架,提供服务发现、配置与调用链能力。",
+      "description": "对标 go-kratos/kratos v3 的 Rust 微服务框架。提供 API-first 开发体验、可插拔的组件架构、统一的 HTTP/gRPC 中间件抽象，以及完备的 CLI 工具链。让熟悉 Kratos 的开发者可以无缝上手，同时充分利用 Rust 的类型安全、零成本抽象和极致性能。",
       "emoji": "🐱"
     },
     {
@@ -326,6 +326,36 @@
       "language": "Rust",
       "description": "阿里巴巴 Canal 数据库增量订阅的 Rust 实现。",
       "emoji": "🚢"
+    },
+    {
+      "id": "open-admin",
+      "nameZh": "Open Admin",
+      "nameEn": "Open Admin",
+      "githubUrl": "https://github.com/erikwang2013/open-admin",
+      "status": "maintenance",
+      "language": "PHP",
+      "description": "基于 webman v2 + Flutter 的全栈管理后台系统。",
+      "emoji": "🖥️"
+    },
+    {
+      "id": "integrated-global-logistics",
+      "nameZh": "物流聚合平台",
+      "nameEn": "Integrated Global Logistics",
+      "githubUrl": "https://github.com/erikwang2013/integrated-global-logistics",
+      "status": "maintenance",
+      "language": "PHP/Rust",
+      "description": "全球物流轨迹查询的一站式平台：admin 管理后台（PHP webman + Flutter）承载管理面与查询 worker 池，e-cat 高频网关（Rust 常驻进程）扛住查询流量，global-logistics 统一门面（209 家承运商 PHP 适配器）一条入口查遍全球。",
+      "emoji": "🚚"
+    },
+    {
+      "id": "social",
+      "nameZh": "多语言社交平台",
+      "nameEn": "Social",
+      "githubUrl": "https://github.com/erikwang2013/social",
+      "status": "maintenance",
+      "language": "PHP/Rust",
+      "description": "多语言社交平台：图文社区 + IM + 直播/语音 + 虚拟经济。",
+      "emoji": "💬"
     }
   ]
 }

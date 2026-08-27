@@ -21,7 +21,6 @@
     <div class="nav-links">
       <a href="#skills" data-i18n="nav-skills">核心能力</a>
       <a href="#strengths" data-i18n="nav-strengths">竞争力</a>
-      <a href="#agent" data-i18n="nav-agent">Agent 开发</a>
       <a href="#experience" data-i18n="nav-experience">工作经历</a>
       <a href="#projects" data-i18n="nav-projects">项目经验</a>
       <a href="#education" data-i18n="nav-education">学历及培训</a>
@@ -32,16 +31,16 @@
 
 <header id="hero" class="hero">
   <h1>王可勋</h1>
-  <p class="role" data-i18n="hero-role">全栈开发工程师 · AI Agent 开发 · 12 年+ 大型系统架构与高并发服务经验</p>
+  <p class="role" data-i18n="hero-role">全栈开发工程师 · 12 年+ 大型系统架构与高并发服务经验</p>
   <ul class="tags">
-    <li data-i18n="tag-intent">求职意向：深圳 / 香港</li>
+    <li data-i18n="tag-intent">求职意向：深圳 / 香港 / 全球远程开发</li>
     <li data-i18n="tag-stack">全栈开发 / PHP / Go</li>
     <li data-i18n="tag-age">37 岁（1989 年 9 月）</li>
     <li data-i18n="tag-loc">现居：深圳宝安固戍</li>
   </ul>
   <ul class="contact">
-    <li><a href="tel:17796371573">17796371573</a></li>
-    <li><a href="mailto:szwangkexun@gmail.com">szwangkexun@gmail.com</a></li>
+    <li><a href="tel:+8617796371573">+86 17796371573</a></li>
+    <li><a href="mailto:erik@erik.xyz">erik@erik.xyz</a></li>
     <li><a href="https://erik.xyz" target="_blank" rel="noopener"><span data-i18n="blog-label">Blog：</span>https://erik.xyz</a></li>
     <!-- TODO(user): 将下方 GitHub 链接替换为个人主页 -->
     <li><a href="https://github.com/erikwang2013" target="_blank" rel="noopener"><span data-i18n="github-label">GitHub：</span>https://github.com/erikwang2013</a></li>
@@ -89,14 +88,6 @@
         <li class="chip">ESP32</li><li class="chip">STM32</li>
       </ul>
     </div>
-    <div class="skill-row reveal">
-      <h3 data-i18n="skill-ai">AI Agent</h3>
-      <ul class="chips">
-        <li class="chip">Claude Code</li><li class="chip">MCP</li>
-        <li class="chip" data-i18n="chip-orch">Agent 编排（Swarm）</li><li class="chip" data-i18n="chip-consensus">分布式共识</li>
-        <li class="chip" data-i18n="chip-plugin">插件 / Skill 开发</li><li class="chip" data-i18n="chip-aicoding">AI 辅助编码</li>
-      </ul>
-    </div>
   </div>
 </section>
 
@@ -119,64 +110,6 @@
       <h3 data-i18n="str-learn">持续学习与创新</h3>
       <p data-i18n="str-learn-d">快速掌握 Rust、HarmonyOS，落地 AI Coding 辅助工具，降低重复劳动。</p>
     </div>
-    <div class="strength-row reveal">
-      <h3 data-i18n="str-agent">Agent 工程化</h3>
-      <p data-i18n="str-agent-d">把 agent 团队、共识协议、插件体系从原型变成可交付工程：Claude Code 插件生态、多 Agent 编排、分布式协调器，全链路落地。</p>
-    </div>
-  </div>
-</section>
-
-<section id="agent" class="section">
-  <h2 class="sec-title" data-i18n="agent-sec">AI Agent 开发</h2>
-  <div class="agent-rows">
-
-    <article class="agent-row reveal">
-      <div class="agent-head">
-        <h3><span class="emoji">🧩</span> <span data-i18n="agent1-title">Claude Code 插件生态</span></h3>
-        <ul class="chips">
-          <li class="chip">Claude Code</li><li class="chip">Skill</li><li class="chip" data-i18n="agent1-c3">Agent 角色</li>
-          <li class="chip" data-i18n="agent1-c4">工作流编排</li><li class="chip" data-i18n="agent1-c5">事实核验</li>
-        </ul>
-      </div>
-      <ul class="proj-points">
-        <li data-i18n="agent1-p1">webnovel-writer 完整写作工作流插件：research → outline → chapter → review → fact-check 的 agent 链，含数据抽取与正文一致性审查。</li>
-        <li data-i18n="agent1-p2">自定义 skill 体系与角色 agent（deconstruction / context / reviewer），把创作流程固化为可复用工具。</li>
-        <li data-i18n="agent1-p3">Claude Code 插件机制深入应用：subagent 派发、结构审查、git 化产物管理。</li>
-      </ul>
-      <p class="scale" data-i18n="agent1-scale">1 插件 · 6+ agent 角色 · 5 阶段写作工作流</p>
-    </article>
-
-    <article class="agent-row reveal">
-      <div class="agent-head">
-        <h3><span class="emoji">🧠</span> <span data-i18n="agent2-title">分布式协调 Agent 集</span></h3>
-        <ul class="chips">
-          <li class="chip">Raft</li><li class="chip">Gossip</li><li class="chip">Byzantine</li>
-          <li class="chip">CRDT</li><li class="chip">Quorum</li><li class="chip" data-i18n="agent2-c6">性能基准</li>
-        </ul>
-      </div>
-      <ul class="proj-points">
-        <li data-i18n="agent2-p1">7 个共识/安全协调器：raft、gossip、byzantine、crdt 共识协议实现 + quorum 动态管理 + 恶意节点检测 + 性能基准。</li>
-        <li data-i18n="agent2-p2">可直接投入生产的共识型 agent 集，覆盖选举、日志复制、最终一致与容错。</li>
-      </ul>
-      <p class="scale" data-i18n="agent2-scale">7 协调器 · 4 共识协议 · 恶意节点检测 + 基准</p>
-    </article>
-
-    <article class="agent-row reveal">
-      <div class="agent-head">
-        <h3><span class="emoji">🤝</span> <span data-i18n="agent3-title">多 Agent 团队编排</span></h3>
-        <ul class="chips">
-          <li class="chip">Hierarchical</li><li class="chip">Mesh</li><li class="chip">Adaptive</li>
-          <li class="chip">TDD Swarm</li><li class="chip">ruflo / claude-flow</li>
-        </ul>
-      </div>
-      <ul class="proj-points">
-        <li data-i18n="agent3-p1">三种拓扑协调器（hierarchical / mesh / adaptive），15 agent 上限，任务路由 + 共享记忆 + HNSW 向量检索。</li>
-        <li data-i18n="agent3-p2">与 ruflo / claude-flow 集成：内存管理、hooks 路由、后台 worker 派发、3 层模型路由（WASM / Haiku / Sonnet）。</li>
-        <li data-i18n="agent3-p3">TDD swarm（London 学派 mock 驱动）落地为测试工作流。</li>
-      </ul>
-      <p class="scale" data-i18n="agent3-scale">3 拓扑 · 15 agent · 任务路由 + 共享记忆</p>
-    </article>
-
   </div>
 </section>
 
@@ -260,20 +193,32 @@
   <div class="project-grid">
 
     <article class="card reveal">
-      <h3><span class="emoji">🎵</span> <span data-i18n="proj1-title">OMB 多平台外链音乐聚合播放平台</span></h3>
+      <h3><span class="emoji">📦</span> <span data-i18n="projlogi-title">物流聚合平台（Integrated Global Logistics）</span></h3>
       <ul class="chips">
-        <li class="chip">PHP 8.1 / webman</li><li class="chip">MySQL 8.4</li><li class="chip">Redis</li>
-        <li class="chip" data-i18n="proj1-c4">Flutter 六端</li><li class="chip">HarmonyOS ArkTS</li><li class="chip" data-i18n="proj1-c6">ECIES 加密</li>
-        <li class="chip">GitHub Actions</li>
+        <li class="chip">PHP 8.2 / webman</li><li class="chip">Flutter</li><li class="chip">Rust (e-cat)</li>
+        <li class="chip">MySQL</li><li class="chip">Redis</li><li class="chip" data-i18n="projlogi-c6">209 家承运商</li>
       </ul>
       <ul class="proj-points">
-        <li data-i18n="proj1-p1">聚合抖音 / 快手 / 小红书 / 视频号外链音乐，Flutter 六端（iOS / Android / macOS / Windows / Linux / Web）+ HarmonyOS 原生客户端。</li>
-        <li data-i18n="proj1-p2">服务端音频代理 /api/music/proxy：Guzzle 统一处理上游 Referer / Origin / Range 鉴权与跨域，多源切换 + 按 IP 限流。</li>
-        <li data-i18n="proj1-p3">自研 PlaybackEngine 播放状态机（UI 状态流订阅）+ LRU 离线缓存（50 文件 / 200MB），Web 端自动降级。</li>
-        <li data-i18n="proj1-p4">Redis ZSET 实时排行 + 60s 定时快照刷新，榜单 / 收藏接口直读快照解耦写放大与读延迟。</li>
-        <li data-i18n="proj1-p5">ECIES 加密信封（X25519 + HKDF + AES-256-GCM）、Hashids ID 混淆、JWT 双令牌黑名单；GitHub Actions 六端 CI 矩阵 + Release 自动发布。</li>
+        <li data-i18n="projlogi-p1">全球物流轨迹查询一站式平台：global-logistics 统一门面聚合 209 家承运商 PHP 适配器，一条入口查遍全球。</li>
+        <li data-i18n="projlogi-p2">admin 管理后台（PHP webman + Flutter）承载管理面与查询 worker 池，任务分发与限流。</li>
+        <li data-i18n="projlogi-p3">e-cat 高频网关（Rust 常驻进程）扛住查询流量，Kratos 式框架内核。</li>
       </ul>
-      <p class="scale" data-i18n="proj1-scale">六端客户端 · 自研代理拉流 + 播放引擎 · 三层安全 · 4 语言 i18n</p>
+      <p class="scale" data-i18n="projlogi-scale">209 家承运商适配器 · 双端（PHP webman + Flutter）· Rust 高频网关 · 开源</p>
+    </article>
+
+    <article class="card reveal">
+      <h3><span class="emoji">💬</span> <span data-i18n="projsoc-title">多语言社交平台</span></h3>
+      <ul class="chips">
+        <li class="chip" data-i18n="projsoc-c1">图文社区</li><li class="chip" data-i18n="projsoc-c2">IM</li>
+        <li class="chip" data-i18n="projsoc-c3">直播 / 语音</li><li class="chip" data-i18n="projsoc-c4">虚拟经济</li>
+        <li class="chip" data-i18n="projsoc-c5">多语言 i18n</li>
+      </ul>
+      <ul class="proj-points">
+        <li data-i18n="projsoc-p1">图文社区 + IM + 直播/语音 + 虚拟经济一体化的多语言社交平台。</li>
+        <li data-i18n="projsoc-p2">IM 与直播/语音实时互动，虚拟经济（打赏 / 礼物 / 币）闭环。</li>
+        <li data-i18n="projsoc-p3">全站多语言（i18n），面向全球用户。</li>
+      </ul>
+      <p class="scale" data-i18n="projsoc-scale">社区 · IM · 直播/语音 · 虚拟经济 · 多语言</p>
     </article>
 
     <article class="card reveal">
@@ -369,30 +314,49 @@
     </article>
 
     <article class="card reveal">
-      <h3><span class="emoji">🛡️</span> <span data-i18n="proj8-title">Go 攻击检测库</span></h3>
+      <h3><span class="emoji">🦀</span> <span data-i18n="projecat-title">e-cat — Rust 微服务框架</span></h3>
       <ul class="chips">
-        <li class="chip">Go</li><li class="chip" data-i18n="proj8-c2">零外部依赖</li><li class="chip" data-i18n="proj8-c3">策略模式</li>
-        <li class="chip">Memory / File / Redis</li>
+        <li class="chip">Rust</li><li class="chip" data-i18n="projecat-c2">对标 Kratos v3</li><li class="chip">HTTP / gRPC</li>
+        <li class="chip" data-i18n="projecat-c4">CLI 工具链</li><li class="chip" data-i18n="projecat-c5">维护中</li>
       </ul>
       <ul class="proj-points">
-        <li data-i18n="proj8-p1">纯 Go 实现，零外部依赖，覆盖 32 个检测器、5 大攻击类别（XSS、SQL 注入、命令注入、NoSQL、LDAP、Log4Shell、SSTI、SSRF、XXE、CORS 绕过、开放重定向、JWT alg:none、原型污染等）。</li>
-        <li data-i18n="proj8-p2">注册表 + 策略模式，支持 Memory/File/Redis 三种存储后端，IP 滑动窗口计数与自动封禁。</li>
-        <li data-i18n="proj8-p3">四级严重程度分级，核心包覆盖率 95.8%。</li>
+        <li data-i18n="projecat-p1">对标 go-kratos/kratos v3 的 Rust 微服务框架：API-first 开发体验 + 可插拔组件架构。</li>
+        <li data-i18n="projecat-p2">统一 HTTP/gRPC 中间件抽象 + 完备 CLI 工具链，熟悉 Kratos 的开发者无缝上手。</li>
+        <li data-i18n="projecat-p3">充分发挥 Rust 类型安全、零成本抽象与极致性能。</li>
       </ul>
-      <p class="scale" data-i18n="proj8-scale">32 检测器 · 5 大攻击类别 · ~3,200 行代码</p>
+      <p class="scale" data-i18n="projecat-scale">API-first · 可插拔组件 · HTTP/gRPC 统一中间件 · CLI 工具链 · 持续维护</p>
     </article>
 
     <article class="card reveal">
-      <h3><span class="emoji">⚙️</span> <span data-i18n="proj9-title">Rust 工业协议集（38 种协议）</span></h3>
+      <h3><span class="emoji">🦀</span> <span data-i18n="projbee-title">bee-rust — Rust 生产级 Web 框架</span></h3>
       <ul class="chips">
-        <li class="chip">Rust</li><li class="chip" data-i18n="proj9-c2">微内核 + 协议 SDK</li><li class="chip">tokio</li><li class="chip">SocketCAN</li>
+        <li class="chip">Rust</li><li class="chip" data-i18n="projbee-c2">源自 Beego</li><li class="chip" data-i18n="projbee-c3">trait + macro</li>
+        <li class="chip" data-i18n="projbee-c4">类型系统</li><li class="chip" data-i18n="projbee-c5">维护中</li>
       </ul>
       <ul class="proj-points">
-        <li data-i18n="proj9-p1">微内核 + 协议 SDK 架构，覆盖工业以太网、现场总线、汽车总线、楼宇照明、硬件桥接、系统总线。</li>
-        <li data-i18n="proj9-p2">内核提供注册表、连接管理器、熔断器、事件总线、协议网关；协议实现仅需 6 个 trait；类型安全（关联类型区分 Modbus 地址 u16、OPC UA 地址 String）。</li>
-        <li data-i18n="proj9-p3">传输抽象（TCP/UDP/串口/SocketCAN/FFI），熔断器 + 4 种退避策略；异步可选（同步内核 + tokio 异步层）。</li>
+        <li data-i18n="projbee-p1">Rust 语言的生产级 Web 框架，设计哲学源自 Go 的 Beego 框架。</li>
+        <li data-i18n="projbee-p2">用 Rust 惯用的 trait、macro、类型系统重新表达 Beego 的设计。</li>
+        <li data-i18n="projbee-p3">面向生产环境设计，持续维护中。</li>
       </ul>
-      <p class="scale" data-i18n="proj9-scale">45 个 Cargo crates · 10,000+ 行 Rust · 137 测试用例 · MIT 协议</p>
+      <p class="scale" data-i18n="projbee-scale">Rust · 生产级 Web 框架 · 源自 Beego · 持续维护</p>
+    </article>
+
+    <article class="card reveal">
+      <h3><span class="emoji">📊</span> <span data-i18n="projads-title">多平台广告管理系统</span></h3>
+      <ul class="chips">
+        <li class="chip">PHP</li><li class="chip" data-i18n="projads-c1">29 个广告平台</li>
+        <li class="chip">Vue 3</li><li class="chip">Flutter</li><li class="chip">HarmonyOS</li>
+      </ul>
+      <ul class="proj-points">
+        <li data-i18n="projads-p1">投放管理：OAuth 账户授权，广告计划 / 广告组 / 创意跨平台统一管理。</li>
+        <li data-i18n="projads-p2">数据报表：跨平台指标汇总，CSV / Excel / PDF 导出，5 模型跨平台归因。</li>
+        <li data-i18n="projads-p3">智能投放：自动出价、预算预警、投放日历（Gantt）、素材库。</li>
+        <li data-i18n="projads-p4">监控告警：告警规则引擎、多渠道推送、定时任务自动同步。</li>
+        <li data-i18n="projads-p5">多端访问：Web 管理后台（Vue 3）、Flutter PC / Mobile、HarmonyOS。</li>
+        <li data-i18n="projads-p6">稳定可靠：平台调用熔断 / 降级 / 超时，三级缓存，高并发优化，22 项安全防护。</li>
+        <li data-i18n="projads-p7">国际化：12 语言文档，界面中英双语。</li>
+      </ul>
+      <p class="scale" data-i18n="projads-scale">29 个广告平台（国内 16 + 国际 13）· 投放管理 · 跨平台报表 · 智能投放 · 告警监控 · 多端访问</p>
     </article>
 
     <article class="card reveal">
