@@ -356,6 +356,46 @@
       "language": "PHP/Rust",
       "description": "多语言社交平台：图文社区 + IM + 直播/语音 + 虚拟经济。",
       "emoji": "💬"
+    },
+    {
+      "id": "apidoc-go",
+      "nameZh": "apidoc-go",
+      "nameEn": "apidoc-go",
+      "githubUrl": "https://github.com/erikwang2013/apidoc-go",
+      "status": "maintenance",
+      "language": "Go",
+      "description": "通用 Go API 文档插件库：接口文档以类型化结构体随路由注册一同声明，文档与路由同生；内嵌 Web UI 提供在线浏览与在线调试，内置密码鉴权、多应用/多版本管理、Mock 数据与 JSON / TypeScript 导出能力、注释解析、接口缓存与参数自动补全。一次接入，全框架通用，无需改造现有项目。",
+      "emoji": "🐹"
+    },
+    {
+      "id": "apidoc-rust",
+      "nameZh": "apidoc-rust",
+      "nameEn": "apidoc-rust",
+      "githubUrl": "https://github.com/erikwang2013/apidoc-rust",
+      "status": "maintenance",
+      "language": "Rust",
+      "description": "用 Rust 实现的通用插件式 API 接口文档生成器，参考 apidoc-php（基于 PHP 8 attributes 生成 API 文档的 composer 扩展），把「注解即文档」的能力以 Rust 原生方式落地。",
+      "emoji": "🦀"
+    },
+    {
+      "id": "open-novel",
+      "nameZh": "Open Novel 小说平台",
+      "nameEn": "Open Novel",
+      "githubUrl": "https://github.com/erikwang2013/open-novel",
+      "status": "maintenance",
+      "language": "Go",
+      "description": "云原生微服务架构的全球多语言小说平台：Go-Kratos v2（gRPC / HTTP 双协议）微服务按领域拆分（用户、书籍、章节、评论、搜索、推荐）；Flutter 全平台 + HarmonyOS NEXT 原生应用共用同一套后端 API；i18n 动态加载 12+ 语种；MySQL 8 主从读写分离 + Redis 热点缓存 + OpenSearch 多语言搜索；Docker Compose 一键部署 + Prometheus/Grafana 监控 + GitHub Actions CI。",
+      "emoji": "📚"
+    },
+    {
+      "id": "open-travel",
+      "nameZh": "Open Travel 旅游平台",
+      "nameEn": "Open Travel",
+      "githubUrl": "https://github.com/erikwang2013/open-travel",
+      "status": "maintenance",
+      "language": "Rust",
+      "description": "全球旅游平台 monorepo，采用 e-cat Rust 微服务框架构建高性能后端，配合 Flutter 多端与鸿蒙原生客户端，为全球用户提供统一的旅行预订体验。",
+      "emoji": "✈️"
     }
   ]
 }

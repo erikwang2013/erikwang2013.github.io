@@ -12,6 +12,16 @@ html, body {
 
 #app { position: relative; width: 100%; height: 100%; }
 #scene { position: absolute; inset: 0; display: block; }
+#scene-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: rgba(200, 216, 255, 0.9);
+  letter-spacing: 2px;
+}
 
 /* ---------- HUD ---------- */
 #hud {

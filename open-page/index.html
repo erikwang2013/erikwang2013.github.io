@@ -20,7 +20,7 @@
 
 <body>
   <div id="app">
-    <div id="scene"></div>
+    <div id="scene"><div id="scene-loading">🪐 星球构建中…</div></div>
 
     <div id="hud">
       <h1>开源项目中心 <span class="sub">Open Source Project Repositor</span></h1>
@@ -67,15 +67,16 @@
     const data = await loadData();
 
     const fallback = document.getElementById('webgl-fallback');
+    let renderer;
     try {
-      new THREE.WebGLRenderer();
+      // 直接创建正式 renderer,失败即视为不支持 WebGL(省去探测用的第二个上下文)
+      renderer = new THREE.WebGLRenderer({ antialias: false, alpha: true });
     } catch (err) {
       fallback.classList.remove('hidden');
       throw err;
     }
-
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    // 场景全为发光 sprite/点,无硬边几何,MSAA 收益极小但填充成本高;dpr 1.5 在 2x 屏省 44% 像素
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.getElementById('scene').appendChild(renderer.domElement);
 
@@ -92,6 +93,9 @@
     camera.position.copy(HOME.pos);
     controls.target.copy(HOME.target);
     window.__cam = camera; // 调试钩子(playwright 验证用)
+
+    const loading = document.getElementById('scene-loading');
+    loading.remove();
 
     const galaxy = buildScene(scene, data);
     const interaction = initInteraction({ renderer, scene, camera, controls, galaxy, home: HOME, data });

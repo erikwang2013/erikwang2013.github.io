@@ -8,6 +8,7 @@
     'nav-projects': 'Projects',
     'nav-education': 'Education',
     /* hero */
+    'name': 'Wang Kexun',
     'hero-role': 'Full-Stack Engineer · 12+ yrs of large-scale architecture & high-concurrency services',
     'tag-intent': 'Job Preference: Shenzhen / Hong Kong / Global Remote',
     'tag-stack': 'Full-Stack / PHP / Go',
@@ -170,11 +171,9 @@
     'edu1-p': 'IoT Technology & Applications',
     'edu2-p': 'HarmonyOS Native Development · HarmonyOS Fundamentals certified',
     'edu3-h': 'Shenzhen University',
-    'edu3-p': 'Business Administration · Bachelor’s (part-time)',
+    'edu3-p': 'Business Administration · Bachelor’s',
     'edu4-h': 'Tarena Technology',
     'edu4-p': 'PHP Web Development · NTC Professional Certification',
-    'edu5-h': 'Ruyang No.2 Senior High School',
-    'edu5-p': 'Senior High School',
     /* footer */
     'footer-resume': 'CV page',
     'footer-top': 'Back to top',
@@ -188,25 +187,204 @@
   const zhDesc = document.querySelector('meta[name="description"]').content;
   document.querySelectorAll('[data-i18n]').forEach((el) => { ZH[el.dataset.i18n] = el.textContent; });
 
+  const ZH_HANT = {
+    'name': '王可勳',
+    'nav-skills': '核心能力',
+    'nav-strengths': '競爭力',
+    'nav-experience': '工作經歷',
+    'nav-projects': '項目經驗',
+    'nav-education': '學歷及培訓',
+    'hero-role': '全棧開發工程師 · 12 年+ 大型系統架構與高併發服務經驗',
+    'tag-intent': '求職意向：深圳 / 香港 / 全球遠程開發',
+    'tag-stack': '全棧開發 / PHP / Go',
+    'tag-age': '37 歲（1989 年 9 月）',
+    'tag-loc': '現居：深圳寶安固戍',
+    'blog-label': 'Blog：',
+    'github-label': 'GitHub：',
+    'dl-color': '下載彩色簡歷',
+    'dl-bw': '下載黑白簡歷',
+    'skill-sec': '核心能力',
+    'skill-lang': '編程語言',
+    'chip-php': 'PHP（精通）',
+    'chip-go': 'Go（熟練）',
+    'chip-py': 'Python（熟練）',
+    'chip-vue': 'Vue（熟練）',
+    'chip-js': 'JavaScript（熟練）',
+    'chip-flutter': 'Flutter（熟練）',
+    'skill-framework': '框架（PHP/Go）',
+    'skill-db': '數據庫與中間件',
+    'skill-ops': '運維與工具',
+    'str-sec': '核心競爭力',
+    'str-arch': '大型系統架構',
+    'str-arch-d': '高併發微服務劃分、服務治理、數據庫調優，保障 99.99% 可用性。',
+    'str-biz': '技術與業務融合',
+    'str-biz-d': '雲資源編排、支付計費、實時撮合等複雜業務的技術落地。',
+    'str-team': '團隊管理與效能',
+    'str-team-d': '跨技術棧（PHP/Go/Java/前端）協作，建立代碼規範與 CI/CD，提升交付質量。',
+    'str-learn': '持續學習與創新',
+    'str-learn-d': '快速掌握 Rust、HarmonyOS，落地 AI Coding 輔助工具，降低重複勞動。',
+    'exp-sec': '工作經歷',
+    'exp1-co': '深圳市星鏈雲科技有限公司',
+    'exp1-role': 'PHP 開發工程師',
+    'exp1-p1': '主導 IDC 雲管理平臺微服務拆分（5 大核心服務域：API-Gateway、Middleware、Business、File、Log），基於 Webman+Swoole，集成 Consul。',
+    'exp1-p2': '實現雲主機全生命週期管理、帶寬/流量扣減、訂單支付、SSH 密鑰管理；通過 Redis 隊列 + Crontab 實現月結賬單自動化，支撐千萬級 API 調用。',
+    'exp1-p3': '設計全鏈路安全（JWT、RBAC、限流、操作審計），保障多租戶數據隔離。',
+    'exp1-p4': '集成 AWS API Gateway + Nginx 同源部署，輸出架構文檔。',
+    'exp2-co': '釋元文化發展（深圳）有限公司',
+    'exp2-role': '全棧開發工程師',
+    'exp2-p1': '負責日訪問 10 萬+、日訂單 1 萬筆、流水過億的遊客後臺。從 Slim 遷移至 Webman，結合 RabbitMQ 異步解耦，核心接口響應延遲降低約 35%。',
+    'exp2-p2': '封裝通用後臺管理腳手架，支撐多地區項目快速二次開發。',
+    'exp2-p3': '獨立交付 Go（Beego/Gin）、Java、Vue 項目，具備跨技術棧交付能力。',
+    'exp3-co': '深圳市麥凱萊科技有限公司',
+    'exp3-role': '全棧開發工程師',
+    'exp3-p1': '基於 Beego 開發小程序商城，對接微信支付 V2/V3、快遞公司 API 及聚水潭 ERP，保障訂單實時同步。',
+    'exp3-p2': '整合騰訊廣告、抖音、京東廣告數據回傳與歸因，優化私域流量管理後臺，提升營銷轉化率約 20%。',
+    'exp4-co': '深圳市永達電子信息股份有限公司',
+    'exp4-role': 'PHP 開發工程師',
+    'exp4-p1': '基於 Yii2 + Swoole 開發鐵路局專用遠程監控與病毒掃描系統，實現設備狀態實時上報與指令下發。',
+    'exp4-p2': '搭建 Elasticsearch + Filebeat 日誌平臺，處理千萬級設備日誌，輸出安全檢測報表。',
+    'exp5-co': '深圳市前海比特空間科技有限公司',
+    'exp5-role': '開發組長',
+    'exp5-p1': '帶領 9 人混合團隊（Java/PHP/前端），負責數字貨幣交易所及輕錢包項目，用戶量 30 萬，日活 10 萬。',
+    'exp5-p2': '主導訂單撮合引擎、充提幣、場外交易模塊，使用 gRPC 對接區塊鏈節點，保障最終一致性。',
+    'exp6-co': '深圳市智儒科技有限公司',
+    'exp6-role': '開發組長',
+    'exp6-p1': '帶領團隊開發定製管理項目、企業門戶、B2C 電商平臺等。',
+    'exp6-p2': '技術棧：PHP / MySQL / JavaScript / ThinkPHP / Yii / WordPress / Nginx / Ecshop / EeMall。',
+    'proj-sec': '項目經驗',
+    'projlogi-title': '物流聚合平臺（Integrated Global Logistics）',
+    'projlogi-c6': '209 家承運商',
+    'projlogi-p1': '全球物流軌跡查詢一站式平臺：global-logistics 統一門面聚合 209 家承運商 PHP 適配器，一條入口查遍全球。',
+    'projlogi-p2': 'admin 管理後臺（PHP webman + Flutter）承載管理面與查詢 worker 池，任務分發與限流。',
+    'projlogi-p3': 'e-cat 高頻網關（Rust 常駐進程）扛住查詢流量，Kratos 式框架內核。',
+    'projlogi-scale': '209 家承運商適配器 · 雙端（PHP webman + Flutter）· Rust 高頻網關 · 開源',
+    'projsoc-title': '多語言社交平臺',
+    'projsoc-c1': '圖文社區',
+    'projsoc-c2': 'IM',
+    'projsoc-c3': '直播 / 語音',
+    'projsoc-c4': '虛擬經濟',
+    'projsoc-c5': '多語言 i18n',
+    'projsoc-p1': '圖文社區 + IM + 直播/語音 + 虛擬經濟一體化的多語言社交平臺。',
+    'projsoc-p2': 'IM 與直播/語音實時互動，虛擬經濟（打賞 / 禮物 / 幣）閉環。',
+    'projsoc-p3': '全站多語言（i18n），面向全球用戶。',
+    'projsoc-scale': '社區 · IM · 直播/語音 · 虛擬經濟 · 多語言',
+    'proj2-title': '全球雲資源交易平臺',
+    'proj2-p1': '模塊化單體 + 事件驅動，15 個業務域垂直切分；Provider 插件體系統一接入自營/第三方。',
+    'proj2-p2': '14 層全局中間件（WAF、AES-256-GCM 傳輸加密、字段級加密、Hashids 混淆、JWT、限流、審計等）。',
+    'proj2-p3': '事件驅動流水線 + 指數退避重試 + 超限告警；Snowflake 主鍵，讀寫分離 + 多級緩存 + ES 三層加密，零停機密鑰輪換。',
+    'proj2-p4': '190+ RESTful/GraphQL 端點，Flutter 客戶端 + HarmonyOS 骨架；Docker Compose、GitHub Actions CI/CD、k6 壓測、295 端測試、Sentry、Feature Flags、多語言 i18n。',
+    'proj2-p5': '獨立發佈 7 個 PHP 開源包（JWT、Snowflake、Hashids、加解密、驗證碼等）。',
+    'proj2-scale': '91 commits · 46 表 · 15 模塊 · 190+ API · 295+ 測試',
+    'proj3-title': '跨境電商平臺',
+    'proj3-c1': 'B2C / B2B / 多商家入駐',
+    'proj3-p1': '分佈式主鍵（Snowflake）+ Hashids 混淆；12 級中間件 + 31 類攻擊檢測 + 三層加密。',
+    'proj3-p2': '高併發：Redis 令牌桶限流、隨機 TTL 防雪崩、熔斷、讀寫分離。',
+    'proj3-p3': '跨境合規：HS Code 編碼 + 關稅規則引擎 + VAT/IOSS 計算 + 10 類合規標。',
+    'proj3-p4': '供應鏈風控：供應商評級、採購審覈、質檢門禁、庫存不可變賬本；旁路規則風控 + KYC + GDPR/CCPA。',
+    'proj3-scale': '315 PHP 文件 · 70 表 · 71 API · Flutter 5 平臺 + HarmonyOS · 5 語言 i18n',
+    'proj4-title': '企業級全棧 ERP 系統',
+    'proj4-c1': '9 微服務',
+    'proj4-p1': '9 個獨立微服務（Core/OMS/WMS/TMS/Finance/CRM/HR/Manufacturing/Project），21 個 Protobuf 契約，7 條 gRPC 數據流。',
+    'proj4-p2': '8 層防禦（WAF、限流、JWT、RBAC、CSRF、審計、字段加密）。',
+    'proj4-p3': 'Flutter PC 管理端 50+ 頁面 + 移動 H5，共享 100% 核心代碼；自定義審批流引擎（Snowflake ID 貫通訂單→履單→應收/應付）。',
+    'proj4-p4': '105 個 PHPUnit 測試（533 斷言），PHPStan Level 5，PHP-CS-Fixer。',
+    'proj4-scale': '9 微服務 · 99 控制器 · 138 模型 · 122 表 · ~73,800 行 PHP+Dart · 12 個 Docker 容器',
+    'proj5-title': '全球遊戲聚合平臺',
+    'proj5-c4': '支付寶 / 微信',
+    'proj5-p1': '多國法幣充值（Stripe/PayPal/支付寶/微信）、平臺幣兌換遊戲幣、提現審覈與自動打款；雙 webman 應用（admin+service）+ 2 個 WebSocket 服務（排行榜/聊天）。',
+    'proj5-p2': '資金安全：bcmath 精度、樂觀鎖（version CAS）、支付回調冪等、凍結餘額+記賬審計。',
+    'proj5-p3': '雙層加密（AES-256-CBC 傳輸 + AES-128-ECB 字段級），自研 SecurityGuard（30 類攻擊檢測）。',
+    'proj5-p4': '多遊戲幣種獨立匯率 + 平臺點差；三級 KYC + 提現分級；會員等級/成就/優惠券/返傭；ClickHouse OLAP 運營快照。',
+    'proj5-scale': '200+ API · 43 表 · 50 模型 · 四存儲引擎協同',
+    'proj6-title': '智慧物業管理平臺',
+    'proj6-c2': '鴻蒙原生 App',
+    'proj6-p1': '34 個業務模塊，支持多社區團管，三端（Flutter Web 管理後臺、業主端、鴻蒙原生 App）。',
+    'proj6-p2': '18 層縱深防禦（自研 WAF、JWT+RefreshToken、RBAC、字段加密、Hashids、CSP/HSTS 等）。',
+    'proj6-p3': '高性能：Workerman 常駐 + OPcache，Redis 緩存 + ES 異步索引，Snowflake ID；微信/支付寶支付、Prometheus 監控、Excel 導入導出、多語言。',
+    'proj6-p4': '133 個 PHPUnit 測試，PHPStan，CI，MIT 開源 v1.0.0。',
+    'proj6-scale': '34 模塊 · 65 表 · 180+ API · 三端覆蓋 · Docker Compose 5 服務',
+    'proj7-title': '預約服務管理平臺',
+    'proj7-c1': '微信小程序',
+    'proj7-p1': '微信小程序 + Flutter APP + Flutter Web 管理臺，支持客戶/技師切換；雙服務架構（API + 管理後臺獨立），自建 WebSocket 推送（JWT 鑑權），ES Scout 驅動。',
+    'proj7-p2': '多門店/多技師/多時段預約（閒時折扣、提前優惠）、訂單狀態機、支付雙通道、技師排班/打卡/考試/收益、優惠券/會員卡/積分、排隊叫號（Redis + 藍牙打印）、LBS 附近門店。',
+    'proj7-p3': '31 種攻擊檢測，AES-256-CBC 雙密鑰，JWT（Access+Refresh），RBAC 路徑級權限，5 次失敗鎖定，Hashids，圖形+滑塊驗證。',
+    'proj7-p4': '自研 7 個 Composer 包（snowflake、hashids、jwt-webman、encryption、scout、security、poster）。',
+    'proj7-scale': '104 控制器 · 58 模型 · 55 表 · 242 API 路由 · 80+ 測試',
+    'projecat-title': 'e-cat — Rust 微服務框架',
+    'projecat-c2': '對標 Kratos v3',
+    'projecat-c4': 'CLI 工具鏈',
+    'projecat-c5': '維護中',
+    'projecat-p1': '對標 go-kratos/kratos v3 的 Rust 微服務框架：API-first 開發體驗 + 可插拔組件架構。',
+    'projecat-p2': '統一 HTTP/gRPC 中間件抽象 + 完備 CLI 工具鏈，熟悉 Kratos 的開發者無縫上手。',
+    'projecat-p3': '充分發揮 Rust 類型安全、零成本抽象與極致性能。',
+    'projecat-scale': 'API-first · 可插拔組件 · HTTP/gRPC 統一中間件 · CLI 工具鏈 · 持續維護',
+    'projbee-title': 'bee-rust — Rust 生產級 Web 框架',
+    'projbee-c2': '源自 Beego',
+    'projbee-c3': 'trait + macro',
+    'projbee-c4': '類型系統',
+    'projbee-c5': '維護中',
+    'projbee-p1': 'Rust 語言的生產級 Web 框架，設計哲學源自 Go 的 Beego 框架。',
+    'projbee-p2': '用 Rust 慣用的 trait、macro、類型系統重新表達 Beego 的設計。',
+    'projbee-p3': '面向生產環境設計，持續維護中。',
+    'projbee-scale': 'Rust · 生產級 Web 框架 · 源自 Beego · 持續維護',
+    'projads-title': '多平臺廣告管理系統',
+    'projads-c1': '29 個廣告平臺',
+    'projads-p1': '投放管理：OAuth 賬戶授權，廣告計劃 / 廣告組 / 創意跨平臺統一管理。',
+    'projads-p2': '數據報表：跨平臺指標彙總，CSV / Excel / PDF 導出，5 模型跨平臺歸因。',
+    'projads-p3': '智能投放：自動出價、預算預警、投放日曆（Gantt）、素材庫。',
+    'projads-p4': '監控告警：告警規則引擎、多渠道推送、定時任務自動同步。',
+    'projads-p5': '多端訪問：Web 管理後臺（Vue 3）、Flutter PC / Mobile、HarmonyOS。',
+    'projads-p6': '穩定可靠：平臺調用熔斷 / 降級 / 超時，三級緩存，高併發優化，22 項安全防護。',
+    'projads-p7': '國際化：12 語言文檔，界面中英雙語。',
+    'projads-scale': '29 個廣告平臺（國內 16 + 國際 13）· 投放管理 · 跨平臺報表 · 智能投放 · 告警監控 · 多端訪問',
+    'proj10-title': 'ESP32-S3 多傳感器智能控制面板',
+    'proj10-c2': 'Arduino 框架',
+    'proj10-c9': 'DHT 溫溼度',
+    'proj10-p1': '六類外設（LED、觸摸開關、光敏、熱敏、DHT、MFRC522）集成，網頁控制與 MQTT 遠程控制雙通道並行。',
+    'proj10-p2': '統一命令入口：HTTP GET 路徑與 MQTT 下行命令映射到公共 handleCommand()，雙通道行爲一致，新增控制項僅需一次映射。',
+    'proj10-p3': '公共狀態出口 collectStatusJson()：網頁模板渲染與 MQTT 上報共用同一數據源；esp32/status 每 5 秒全量 + 狀態變化即時上報，esp32/event 刷卡事件毫秒級發佈。',
+    'proj10-p4': '可靠性：斷線 5 秒自動重連、首連失敗不阻塞啓動（HTTP 始終可用）、MAC 生成 client ID 防多設備衝突、非法 JSON/未知命令安全忽略。',
+    'proj10-p5': '非阻塞架構：全傳感器 millis() 去抖輪詢；每外設獨立 .h 驅動，新增外設只需加開關、加驅動、加命令映射三步。',
+    'proj10-scale': '六類外設 · 雙通道（HTTP + MQTT）· 3 個 MQTT Topic',
+    'edu-sec': '學歷及培訓',
+    'edu1-h': '深圳市公益性職業培訓',
+    'edu1-p': '物聯技術及應用',
+    'edu2-p': '鴻蒙原生應用開發 · 獲得鴻蒙開發基礎認證',
+    'edu3-h': '深圳大學',
+    'edu3-p': '工商管理 · 本科',
+    'edu4-h': '達內科技',
+    'edu4-p': 'PHP 互聯網開發 · 獲得 NTC 職業資格證書',
+    'footer-resume': '簡歷頁面',
+    'footer-top': '返回頂部',
+  };
+  const ZH_HANT_TITLE = '王可勳 · 全棧開發工程師 · PHP / Go';
+  const ZH_HANT_DESC = '王可勳，資深全棧開發工程師（PHP/Go），10 年+ 大型系統架構與高併發服務經驗，求職意向：深圳 / 香港。';
+
   const KEY = 'resume-lang';
+  const LANGS = ['zh', 'hant', 'en'];
+  const DICTS = { zh: ZH, hant: ZH_HANT, en: EN };
+  const TITLES = { zh: zhTitle, hant: ZH_HANT_TITLE, en: EN_TITLE };
+  const DESCS = { zh: zhDesc, hant: ZH_HANT_DESC, en: EN_DESC };
+  const LANG_ATTR = { zh: 'zh-CN', hant: 'zh-Hant', en: 'en' };
+  const BTN_NEXT = { zh: '繁', hant: 'EN', en: '简' };
+  const BTN_ARIA = { zh: '切换为繁体中文', hant: 'Switch to English', en: '切换为简体中文' };
   const btn = document.getElementById('lang-toggle');
   const meta = document.querySelector('meta[name="description"]');
 
   function apply(lang) {
-    const en = lang === 'en';
     document.querySelectorAll('[data-i18n]').forEach((el) => {
-      const t = EN[el.dataset.i18n];
-      el.textContent = en ? (t || el.textContent) : (ZH[el.dataset.i18n] || el.textContent);
+      el.textContent = DICTS[lang][el.dataset.i18n] || el.textContent;
     });
-    document.title = en ? EN_TITLE : zhTitle;
-    meta.content = en ? EN_DESC : zhDesc;
-    document.documentElement.lang = en ? 'en' : 'zh-CN';
-    btn.textContent = en ? '中文' : 'EN';
-    btn.setAttribute('aria-label', en ? '切换为中文' : 'Switch to English');
+    document.title = TITLES[lang];
+    meta.content = DESCS[lang];
+    document.documentElement.lang = LANG_ATTR[lang];
+    btn.textContent = BTN_NEXT[lang];
+    btn.setAttribute('aria-label', BTN_ARIA[lang]);
     localStorage.setItem(KEY, lang);
   }
 
-  let current = localStorage.getItem(KEY) === 'en' ? 'en' : 'zh';
-  btn.addEventListener('click', () => { current = current === 'zh' ? 'en' : 'zh'; apply(current); });
+  let current = localStorage.getItem(KEY);
+  if (!LANGS.includes(current)) current = 'zh';
+  btn.addEventListener('click', () => { current = LANGS[(LANGS.indexOf(current) + 1) % LANGS.length]; apply(current); });
   apply(current);
 })();

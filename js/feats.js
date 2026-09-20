@@ -211,6 +211,156 @@
   });
 })();
 
+/* 文章页首图视差：滚动时图片相对页面缓慢位移（只动 transform，不动布局） */
+(function () {
+  var cfg = (window.ERIK && window.ERIK.three) || {};
+  if (cfg.enable === false || cfg.parallax === false) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var img = document.querySelector('.article-entry img');
+  if (!img || window.innerWidth < 769) return;
+  var ticking = false, RANGE = 26;
+  function update() {
+    ticking = false;
+    var r = img.getBoundingClientRect();
+    if (r.bottom < -120 || r.top > window.innerHeight + 120) return;
+    var p = (r.top + r.height / 2 - window.innerHeight / 2) / window.innerHeight;
+    img.style.transform = 'translateY(' + (p * RANGE).toFixed(1) + 'px) scale(1.06)';
+  }
+  img.style.willChange = 'transform';
+  img.style.transition = 'transform .12s linear';
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
+})();
+
+/* 相册 3D 照片墙：整墙跟着光标轻微转动、图片按远近分层（窄屏/减少动效保持平面） */
+(function () {
+  var walls = document.querySelectorAll('.gallery-masonry');
+  if (!walls.length || window.innerWidth < 769) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  Array.prototype.forEach.call(walls, function (wall) {
+    wall.classList.add('wall3d');
+    Array.prototype.forEach.call(wall.querySelectorAll('.gallery-item'), function (it, i) {
+      it.style.transform = 'translateZ(' + ((i % 5) * 12) + 'px)';
+    });
+    wall.addEventListener('mousemove', function (e) {
+      var r = wall.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width - 0.5, py = (e.clientY - r.top) / r.height - 0.5;
+      wall.style.transform = 'perspective(1200px) rotateY(' + (px * 10).toFixed(2) + 'deg) rotateX(' + (-py * 8).toFixed(2) + 'deg)';
+    });
+    wall.addEventListener('mouseleave', function () { wall.style.transform = ''; });
+  });
+})();
+
+/* 移动端轻量通道：3D 回落（low 档/无 WebGL/上下文丢失）时用 Canvas2D 顶上，
+   再给一个"开启完整 3D"按钮，点了写 localStorage 下次启动就按 mid 档加载 */
+(function () {
+  var cfg = (window.ERIK && window.ERIK.three) || {};
+  if (cfg.enable === false) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var canvas = null, ctx = null, raf = 0, dots = [], emojis = [], W = 0, H = 0, t0 = 0;
+
+  function resize() {
+    if (!canvas) return;
+    var dpr = Math.min(2, window.devicePixelRatio || 1);
+    W = window.innerWidth; H = window.innerHeight;
+    canvas.width = W * dpr; canvas.height = H * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  function loop(now) {
+    raf = requestAnimationFrame(loop);
+    if (!t0) t0 = now;
+    var t = (now - t0) / 1000;
+    ctx.clearRect(0, 0, W, H);
+    var pal = (cfg.particleColors || ['#a78bfa', '#22d3ee', '#f472b6', '#fbbf24']);
+    for (var i = 0; i < dots.length; i++) {
+      var d = dots[i];
+      ctx.globalAlpha = 0.25 + 0.45 * (0.5 + 0.5 * Math.sin(t * d.s + d.p));
+      ctx.fillStyle = pal[i % pal.length];
+      ctx.beginPath();
+      ctx.arc(d.x * W, d.y * H, d.r, 0, 6.2832);
+      ctx.fill();
+    }
+    ctx.globalAlpha = 0.5;
+    ctx.font = '24px serif';
+    ctx.textAlign = 'center';
+    for (var j = 0; j < emojis.length; j++) {
+      var e = emojis[j], y = (e.y0 + t * e.v) % 1.15 - 0.08;
+      ctx.save();
+      ctx.translate(e.x * W + Math.sin(t * 0.5 + j) * 14, (1 - y) * H);
+      ctx.rotate(Math.sin(t * 0.4 + j) * 0.2);
+      ctx.fillText(e.ch, 0, 0);
+      ctx.restore();
+    }
+    ctx.globalAlpha = 1;
+  }
+  function start() {
+    if (canvas) return;
+    canvas = document.createElement('canvas');
+    canvas.id = 'bg2d';
+    canvas.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(canvas);
+    ctx = canvas.getContext('2d');
+    var n = window.innerWidth < 600 ? 60 : 110;
+    for (var i = 0; i < n; i++) dots.push({ x: Math.random(), y: Math.random(), r: 0.6 + Math.random() * 1.6, p: Math.random() * 6.28, s: 0.3 + Math.random() * 0.8 });
+    var list = (cfg.emoji && cfg.emoji.length ? cfg.emoji : ['🔮', '✨', '🚀', '🪐']);
+    for (var k = 0; k < 5; k++) emojis.push({ ch: list[(k * 7) % list.length], x: 0.1 + Math.random() * 0.8, y0: Math.random(), v: 0.006 + Math.random() * 0.012 });
+    resize();
+    window.addEventListener('resize', resize);
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) { cancelAnimationFrame(raf); raf = 0; }
+      else if (!raf) loop(performance.now());
+    });
+    loop(performance.now());
+  }
+
+  function tune() {
+    if (!document.body.classList.contains('no-webgl')) return;
+    start();
+    if (document.getElementById('full3d-btn')) return;
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.id = 'full3d-btn';
+    btn.className = 'full3d-btn';
+    btn.textContent = '✨ 开启完整 3D';
+    btn.addEventListener('click', function () {
+      try { localStorage.setItem('erik-full3d', '1'); } catch (e) {}
+      location.reload();
+    });
+    document.body.appendChild(btn);
+  }
+
+  tune();
+  /* 运行时降档/上下文丢失是后发生的，盯着 body 的 class 变化 */
+  if (window.MutationObserver) {
+    new MutationObserver(tune).observe(document.body, { attributes: true, attributeFilter: ['class'] });
+  }
+})();
+
+/* 节日飘落物（雪花/彩带）：由 main.js 判定节日后挂在 window.erikHoliday 上 */
+(function () {
+  var h = window.erikHoliday;
+  if (!h || !h.flakes) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var box = document.createElement('div');
+  box.className = 'flakes flakes-' + h.flakes;
+  box.setAttribute('aria-hidden', 'true');
+  var n = h.flakes === 'snow' ? 26 : 20;
+  var conf = ['🎊', '🎉', '✨', '🎈'];
+  for (var i = 0; i < n; i++) {
+    var f = document.createElement('span');
+    f.textContent = h.flakes === 'snow' ? '❄' : conf[i % conf.length];
+    f.style.left = (Math.random() * 100).toFixed(1) + '%';
+    f.style.fontSize = (10 + Math.random() * 12).toFixed(0) + 'px';
+    f.style.opacity = (0.4 + Math.random() * 0.5).toFixed(2);
+    f.style.animationDuration = (7 + Math.random() * 8).toFixed(1) + 's';
+    f.style.animationDelay = (-Math.random() * 12).toFixed(1) + 's';
+    box.appendChild(f);
+  }
+  document.body.appendChild(box);
+})();
+
 /* 一言 / 随机语录 */
 (function () {
   var cfg = (window.ERIK && window.ERIK.quote) || { enable: false };

@@ -261,8 +261,9 @@ async function exportPdf(color) {
   live.textContent = '.timeline::before,.sec-title::before{background:' + accent + ' !important;background-image:none !important}' +
     '.tl-item::before{background:#fff !important;border-color:' + accent + ' !important;box-shadow:none !important}';
   document.head.appendChild(live);
-  const en = document.documentElement.lang === 'en';
-  const filename = en ? (color ? 'Wang-Kexun-fullstack-go-php-color.pdf' : 'Wang-Kexun-fullstack-go-php.pdf')
+  const lang = document.documentElement.lang;
+  const filename = lang === 'en' ? (color ? 'Wang-Kexun-fullstack-go-php-color.pdf' : 'Wang-Kexun-fullstack-go-php.pdf')
+    : lang === 'zh-Hant' ? (color ? '王可勳-全棧-go-php-彩色.pdf' : '王可勳-全棧-go-php.pdf')
     : (color ? '王可勋-全栈-go-php-彩色.pdf' : '王可勋-全栈-go-php.pdf');
   let avoidTops = [];
   html2canvas(document.body, {
@@ -290,37 +291,43 @@ async function exportPdf(color) {
     const ph = pdf.internal.pageSize.getHeight();
     const scale = (pw - mL - mR) / canvas.width;
     const stripH = (ph - mT - mB) / scale;
-    // 末页太空（末段 < 55% 页容量）时等比微缩内容并入前页；缩放下限 0.85，避免中空页被缩得过于明显
-    const n0 = Math.ceil(canvas.height / stripH - 1e-6);
-    const tail = canvas.height - stripH * (n0 - 1);
-    let shrink = 1;
-    if (n0 > 1 && tail < stripH * 0.55) {
-      const s = (n0 - 1) / (n0 - 1 + tail / stripH);
-      if (s >= 0.85) shrink = s;
-    }
     // 切点基于缩放后布局坐标（shrink=1 时即原始坐标）；元素底跨过或贴进切点 6pt 内才上移，避免整卡被切
-    const cuts = [0];
-    const H = canvas.height * shrink;
-    const gap = 48 * shrink; // 避让上移留白 24csspx：section padding 在元素外，切点贴元素顶会让标题贴页顶
-    while (cuts[cuts.length - 1] + stripH < H - 1) {
-      let b = cuts[cuts.length - 1] + stripH;
-      const near = avoidTops
-        .map((o) => ({ top: o.top * shrink, bottom: (o.top + o.height) * shrink }))
-        .filter((o) => o.top < b && o.bottom > b - 6);
-      if (near.length) {
-        const nb0 = Math.min(...near.map((o) => o.top)) - gap;
-        // 切点推上后可能落进上方元素底部：紧密排列时上方元素底与避让元素顶几乎相贴，
-        // 按 min-top-gap 推会切掉上方元素整段 ~20px。把切点按到最深元素底部之上 6px 处，
-        // 残条 ≤6px（3css px）不可见；切点仍低于避让元素顶，不会切到它
-        const hit = avoidTops
-          .map((o) => ({ top: o.top * shrink, bottom: (o.top + o.height) * shrink }))
-          .filter((o) => o.top < nb0 && o.bottom > nb0);
-        const nb = hit.length ? Math.max(nb0, Math.max(...hit.map((o) => o.bottom)) - 6) : nb0;
-        if (nb > cuts[cuts.length - 1] + 40) b = nb; // 空间不足时放弃避让，防切点倒退产生负高丢失内容
+    const paginate = (shrink) => {
+      const H = canvas.height * shrink;
+      const gap = 48 * shrink; // 避让上移留白 24csspx：section padding 在元素外，切点贴元素顶会让标题贴页顶
+      const scaled = avoidTops.map((o) => ({ top: o.top * shrink, bottom: (o.top + o.height) * shrink }));
+      const cuts = [0];
+      while (cuts[cuts.length - 1] + stripH < H - 1) {
+        let b = cuts[cuts.length - 1] + stripH;
+        const near = scaled.filter((o) => o.top < b && o.bottom > b - 6);
+        if (near.length) {
+          const nb0 = Math.min(...near.map((o) => o.top)) - gap;
+          // 切点推上后可能落进上方元素底部：紧密排列时上方元素底与避让元素顶几乎相贴，
+          // 按 min-top-gap 推会切掉上方元素整段 ~20px。把切点按到最深元素底部之上 6px 处，
+          // 残条 ≤6px（3css px）不可见；切点仍低于避让元素顶，不会切到它
+          const hit = scaled.filter((o) => o.top < nb0 && o.bottom > nb0);
+          const nb = hit.length ? Math.max(nb0, Math.max(...hit.map((o) => o.bottom)) - 6) : nb0;
+          if (nb > cuts[cuts.length - 1] + 40) b = nb; // 空间不足时放弃避让，防切点倒退产生负高丢失内容
+        }
+        cuts.push(b);
       }
-      cuts.push(b);
+      cuts.push(H);
+      return cuts;
+    };
+    // 分页压缩：整份简历控制在 MAX_PAGES 页内；末页太空（实装 < 55%）也缩并一页。
+    // 按 0.99…0.85 逐档试缩，取首个达到目标页数的档位（缩得最少），压不进就保持原尺寸。
+    // 缩放下限 0.85 避免中空页被缩得过于明显；避让留白使每页实装小于 stripH，按整页高度取模的
+    // 理想末段会低估压缩量（英文版实测缩 4.8% 后仍多一页），故页数一律按真实切点算
+    const MAX_PAGES = 5;
+    let shrink = 1;
+    let cuts = paginate(1);
+    const lastFill = (cuts[cuts.length - 1] - cuts[cuts.length - 2]) / stripH;
+    const goal = Math.min(MAX_PAGES, lastFill < 0.55 && cuts.length > 2 ? cuts.length - 2 : cuts.length - 1);
+    for (let k = 1; k <= 15 && cuts.length - 1 > goal; k++) {
+      const s = Math.round((1 - k * 0.01) * 100) / 100; // 0.99 … 0.85
+      const c = paginate(s);
+      if (c.length - 1 <= goal) { shrink = s; cuts = c; }
     }
-    cuts.push(H);
     const tmp = document.createElement('canvas');
     tmp.width = canvas.width;
     const tctx = tmp.getContext('2d');

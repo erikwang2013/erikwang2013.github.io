@@ -48,17 +48,19 @@ function makeEmojiSprite(emoji) {
 }
 
 function makeLabelSprite(text, color) {
+  // 256x64 + 描边替代 512x128 + shadowBlur:纹理绘制快约 8 倍,3D 中视觉几乎无差
   const canvas = document.createElement('canvas');
-  canvas.width = 512;
-  canvas.height = 128;
+  canvas.width = 256;
+  canvas.height = 64;
   const ctx = canvas.getContext('2d');
   ctx.font = 'bold 40px "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  ctx.shadowColor = 'rgba(0, 0, 0, 0.9)';
-  ctx.shadowBlur = 16;
+  ctx.lineWidth = 4;
+  ctx.strokeStyle = 'rgba(0, 0, 0, 0.85)';
+  ctx.strokeText(text, 128, 32);
   ctx.fillStyle = color;
-  ctx.fillText(text, 256, 64);
+  ctx.fillText(text, 128, 32);
   const texture = new THREE.CanvasTexture(canvas);
   texture.colorSpace = THREE.SRGBColorSpace;
   const sprite = new THREE.Sprite(new THREE.SpriteMaterial({
