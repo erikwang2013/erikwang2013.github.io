@@ -5,6 +5,20 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2014/10/12/php-ji-cheng-huan-jing-en/",
+            "url": "https://erik.xyz/2014/10/12/php-ji-cheng-huan-jing-en/",
+            "title": "PHP Integrated Environments",
+            "date_published": "2014-10-12T02:17:00.000Z",
+            "content_html": "<p>Configuring a php environment on your own wastes a lot of time; an integrated environment is faster, but adding extensions is more troublesome — in short, each has its advantages.</p>\n<h3 id=\"PHP-integrated-environments-on-Windows\"><a href=\"#PHP-integrated-environments-on-Windows\" class=\"headerlink\" title=\"PHP integrated environments on Windows\"></a>PHP integrated environments on Windows</h3><p>phpstudy is currently one of the better integrated environments — it basically covers every php version and its server configuration, and you can switch between versions freely, so when a framework has special requirements, developers don’t have to keep swapping php versions back and forth. Download links <a href=\"https://sourceforge.net/projects/erik1314/files/win_all/phpStudy-x64.zip\">phpStudy-x64.zip</a> <a href=\"https://sourceforge.net/projects/erik1314/files/win_all/phpStudy-install.zip\">phpStudy-install.zip</a> <a href=\"https://sourceforge.net/projects/erik1314/files/win_all/phpStudy2014.1404454619.rar\">phpStudy2014.1404454619.rar</a> <a href=\"https://sourceforge.net/projects/erik1314/files/win_all/phpStudy2013.zip\">phpStudy2013.zip</a> By default the mysql username and password are both root. The appserv integrated environment is only so-so, and so far I’ve only seen a 32-bit build, though it still suits what some companies use. Download link <a href=\"https://sourceforge.net/projects/erik1314/files/win_all/appserv-win32-2.5.10.exe\">appserv-win32-2.5.10.exe</a> <span id=\"more\"></span></p>\n<h3 id=\"Linux-integrated-environments\"><a href=\"#Linux-integrated-environments\" class=\"headerlink\" title=\"Linux integrated environments\"></a>Linux integrated environments</h3><p>When I first got into php, configuration was tedious and ate up a lot of time, so I just searched Baidu to see whether an integrated environment existed, and eventually I found one. wdlinux is an environment focused on linux integration; it is a big help for configuration, and it has a dedicated management interface in the backend where you can set up multiple sites site by site. Download link <a href=\"https://sourceforge.net/projects/erik1314/files/linux_all/wdcp.sh\">wdlinux</a> wget <a href=\"https://sourceforge.net/projects/erik1314/files/linux_all/wdcp.sh\">https://sourceforge.net/projects/erik1314/files/linux_all/wdcp.sh</a> <a href=\"https://sourceforge.net/projects/erik1314/files/linux_all/lanmp_v2.5.tar.gz\">lanmp_v2.5.tar.gz</a> wget <a href=\"https://sourceforge.net/projects/erik1314/files/linux\\_all/lanmp\\_v2.5.tar.gz\">https://sourceforge.net/projects/erik1314/files/linux\\_all/lanmp\\_v2.5.tar.gz</a> The wdcp management system backend is at <a href=\"http://ip:8080\">http://ip:8080</a> Default username and password: admin wdlinux.cn Default mysql username and password: root wdlinux.cn I won’t go into more detail about phpstudy — there is a linux version too. Download link <a href=\"https://sourceforge.net/projects/erik1314/files/linux_all/phpstudy.bin\">phpstudy</a> wget <a href=\"https://sourceforge.net/projects/erik1314/files/linux_all/phpstudy.bin\">https://sourceforge.net/projects/erik1314/files/linux_all/phpstudy.bin</a></p>\n",
+            "tags": [
+                "php",
+                "php服务器",
+                "php环境",
+                "php集成环境",
+                "服务器集成环境"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2014/10/12/php-ji-cheng-huan-jing/",
             "url": "https://erik.xyz/2014/10/12/php-ji-cheng-huan-jing/",
             "title": "php集成环境",

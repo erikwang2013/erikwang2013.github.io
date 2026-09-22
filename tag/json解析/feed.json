@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2015/09/21/son-shu-zu-shu-chu-de-si-kao-en/",
+            "url": "https://erik.xyz/2015/09/21/son-shu-zu-shu-chu-de-si-kao-en/",
+            "title": "Thoughts on Outputting a JSON Array",
+            "date_published": "2015-09-20T16:25:00.000Z",
+            "content_html": "<p>Recently I’ve been working on courier integration, submitting data as json and getting json data back. As shown below, what’s displayed is a json array, and my head immediately ached — before it was only json data, json arrays… After all kinds of attempts, data.kind had data but data.track_data had none, which was very strange. It seems a json array can’t be parsed that way. Next I tried a for loop, still useless. I couldn’t waste time on this, so I resolutely turned to Baidu (Google’s vpn is blocked), and after searching for a long while I finally found the answer: $.each. The official manual explains it like this: each(callback)</p>\n<p>Execute a function with each matched element as the context. First, the first execution $.each(data.teack_data,function(a,b){ $.each(b,function(a1,b1){  //second execution alet(b1.info);   //the data you need }); });</p>\n",
+            "tags": [
+                "json",
+                "json数组",
+                "json解析"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2015/09/21/son-shu-zu-shu-chu-de-si-kao/",
             "url": "https://erik.xyz/2015/09/21/son-shu-zu-shu-chu-de-si-kao/",
             "title": "json数组输出的思考",

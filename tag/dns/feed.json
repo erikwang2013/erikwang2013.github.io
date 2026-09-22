@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2014/10/10/dns-jian-ce-ruan-jian-en/",
+            "url": "https://erik.xyz/2014/10/10/dns-jian-ce-ruan-jian-en/",
+            "title": "DNS Monitoring Software",
+            "date_published": "2014-10-10T02:31:00.000Z",
+            "content_html": "<p><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/mm64s.png\" alt=\"木木夕logo\">Since my website is on an overseas server, it often gets knocked out by China Unicom, and the Great Wall Broadband I use at home can never log in to or open the site. So I just changed the DNS, tried it out, and the result was very satisfying. I came across this software by accident, and it comes from the dnspod website. To test it, create a .txt file locally, put in your own top-level domain, open the software, then read the domains, and it will detect the domain and the DNS it resolves to.<br><span id=\"more\"></span><br>For example</p>\n<ol>\n<li>Unzip the file and you get</li>\n</ol>\n<p>[caption id=”attachment_87” align=”alignnone” width=”211”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/1.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/1.png\" alt=\"1\"></a> dns monitoring start steps[/caption]</p>\n<p>2.</p>\n<p>[caption id=”attachment_88” align=”alignnone” width=”300”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/2.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/2-300x201.png\" alt=\"2\"></a> overview of the dns software contents 2[/caption]</p>\n<ol>\n<li>Create a new .txt document (name it whatever you like)</li>\n</ol>\n<p>[caption id=”attachment_89” align=”alignnone” width=”300”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/3.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/3-300x232.png\" alt=\"3\"></a> create a new document[/caption]</p>\n<ol>\n<li>Add the top-level domain</li>\n</ol>\n<p>[caption id=”attachment_90” align=”alignnone” width=”300”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/4.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/4-300x172.png\" alt=\"Add your own top-level domain\"></a> Add your own top-level domain[/caption]</p>\n<ol>\n<li>Read the domains</li>\n</ol>\n<p>[caption id=”attachment_91” align=”alignnone” width=”282”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/5.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/5-282x300.png\" alt=\"Read domains\"></a> Read domains[/caption]</p>\n<ol>\n<li>Read the domain details</li>\n</ol>\n<p>[caption id=”attachment_92” align=”alignnone” width=”300”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/6.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/6-300x235.png\" alt=\"Read domain details\"></a> Read domain details[/caption]</p>\n<ol>\n<li>Execution result</li>\n</ol>\n<p>[caption id=”attachment_93” align=”alignnone” width=”282”]<a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/7.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/7-282x300.png\" alt=\"Execution result\"></a> Execution result[/caption]</p>\n<p>Download the software. This software only works on Windows systems. Please do not use it for commercial purposes; it is for reference only. Download: <a href=\"https://sourceforge.net/projects/erik1314/files/alls/dns.zip\">dns检测.zip</a></p>\n",
+            "tags": [
+                "dns",
+                "域名监测",
+                "网站监测"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2014/10/10/dns-jian-ce-ruan-jian/",
             "url": "https://erik.xyz/2014/10/10/dns-jian-ce-ruan-jian/",
             "title": "dns监测软件",

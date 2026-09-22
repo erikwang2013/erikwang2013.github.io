@@ -5,6 +5,20 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2023/11/12/xhprof-plugs-en/",
+            "url": "https://erik.xyz/2023/11/12/xhprof-plugs-en/",
+            "title": "xhprof Plugin Development",
+            "date_published": "2023-11-12T13:51:00.000Z",
+            "content_html": "<p>Lately I always have to test interface performance after development to pin down interface problems, and it suddenly occurred to me that the xhprof extension could be used. I looked around and found that most of them either are no longer updated or are just too cumbersome, so I simply developed my own.</p>\n<p>   Referring to the phacility/xhprof and phpxxb/xhprof projects, I downloaded a copy of the code myself. So first I made the webman plugin <a href=\"https://github.com/erikwang2013/xhprof-webman\">xhprof-webman</a>, and after dawdling for a while I made the laravel version of the plugin <a href=\"https://github.com/erikwang2013/xhprof-laravel\">xhprof-laravel</a>. The latest versions have been updated, so if you find them useful, go install them with composer.</p>\n",
+            "tags": [
+                "composer",
+                "webman",
+                "xhprof",
+                "laravel",
+                "composer插件"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2023/11/12/xhprof-plugs/",
             "url": "https://erik.xyz/2023/11/12/xhprof-plugs/",
             "title": "xhprof插件开发",

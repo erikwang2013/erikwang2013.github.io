@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,22 +502,33 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
     <entry>
-        <id>https://erik.xyz/2015/04/04/4-ge-fang-fa-bang-ni-cheng-wei-chuang-yi-gao-chan-da-ren/</id>
+        <id>https://erik.xyz/2015/04/04/4-fang-fa-bang-cheng-wei-chuang-yi-en/</id>
+        <title>4 Methods to Help You Become a Creative Powerhouse</title>
+        <link rel="alternate" href="https://erik.xyz/2015/04/04/4-fang-fa-bang-cheng-wei-chuang-yi-en/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chuangyi.jpg&#34; alt=&#34;chuangyi&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-Associative-thinking&#34;&gt;&lt;a href=&#34;#1-Associative-thinking&#34; class=&#34;headerlink&#34; title=&#34;1. Associative thinking&#34;&gt;&lt;/a&gt;1. Associative thinking&lt;/h3&gt;&lt;p&gt;The first creative method is associative thinking. This is a method everyone uses more or less unconsciously when thinking. It’s a bit like brainstorming: you take a core thing as a starting point, associate the elements related to it, and extend outward in a radial way. Thinking by association sounds like a very simple method, but most of the time thoughts race around in the brain in a messy, disordered and illogical way, so we need some systematic methods to settle our thinking down and find a clear direction for our ideas. If you don’t know where to start, we can think from three directions: horizontal association, vertical association and relational association. Horizontal association &lt;strong&gt;means diverging around the core thing, only considering things directly related to the core thing, that is, things associated at one degree of separation.&lt;/strong&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chuangyi1.jpg&#34; alt=&#34;chuangyi1&#34;&gt;&lt;br&gt;Horizontal association. For example, let’s do an exercise: name 10 things related to “wind”. You might think of “cold, winter, desert, seaside, leaves, kite, long hair, dust, silk scarf, air” and so on. These are all things directly related to “wind”. If horizontal association is drawing a circle around a point, then we can also make its radius bigger and do vertical association. &lt;strong&gt;Starting from the core thing, each associated thing must be related to the previous thing, digging deeper to find things associated with the core thing at two, three, even five or six degrees of separation.&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chuangyi2.jpg&#34; alt=&#34;chuangyi2&#34;&gt; &lt;/p&gt;
+&lt;p&gt;Vertical association. For example, still using “wind” as the theme for vertical association, we can think of “wind — kite — spring — willow — buds — catkins — seeds — life” and so on. In addition, we can also associate from the angle of relatedness, associating what two things have in common. This is very useful for designs with more than one theme. For example, name 10 things “wind” and “fire” have in common. We can think of wind and fire both being “formless, destructive, able to produce energy, untouchable, something you can feel, natural, able to be produced artificially, air, able to be big or small, hard to control”. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chuangyyi3.jpg&#34; alt=&#34;chuangyyi3&#34;&gt;&lt;br&gt;Relational association. Through association in these three directions, we can diverge creatively as much as we like.&lt;/p&gt;
+&lt;h3 id=&#34;2-Diverge-and-converge&#34;&gt;&lt;a href=&#34;#2-Diverge-and-converge&#34; class=&#34;headerlink&#34; title=&#34;2. Diverge and converge&#34;&gt;&lt;/a&gt;2. Diverge and converge&lt;/h3&gt;&lt;p&gt;The diverge-and-converge method is actually a way of thinking that can be applied anywhere. &lt;strong&gt;First diverge on your own, then screen the possibilities, and finally converge on a solid direction.&lt;/strong&gt; By repeatedly alternating “diverging — proposing creative ideas” and “converging — analyzing and screening creative ideas”, you gradually reach the expected goal. For example, in design, &lt;strong&gt;we can first list all possible creative points, then analyze and screen out the feasible ideas, then diverge again and raise the problems that need to be solved in that idea, then converge again and focus on the best solution, alternating back and forth like this until the goal is finally reached.&lt;/strong&gt; With this funnel-shaped way of thinking, the ideas that finally settle out have all been screened layer by layer.&lt;br&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chuangyi4.jpg&#34; alt=&#34;chuangyi4&#34;&gt; &lt;/p&gt;
+&lt;h3 id=&#34;3-Mapping-reality&#34;&gt;&lt;a href=&#34;#3-Mapping-reality&#34; class=&#34;headerlink&#34; title=&#34;3. Mapping reality&#34;&gt;&lt;/a&gt;3. Mapping reality&lt;/h3&gt;&lt;p&gt;When people talk about mapping reality, many think of skeuomorphic design. The original skeuomorphic design was meant to lower the user’s learning cost and guide correct operation. However, as people use electronic products more and more, their acceptance of virtual interfaces is getting higher and higher; without the guidance of skeuomorphism, users still know how to operate things. Some skeuomorphic interfaces overemphasize details, which also places a visual and cognitive burden on users. But drawing inspiration from the real world doesn’t mean you must 100% reproduce the real texture of the physical world. What you distill and abstract from reality can be form, color, texture, or movement patterns, optical and mechanical properties, and other parts that are most characteristic of an object. For example, the design style of Google Material Design was inspired by paper and ink. By simplifying complex visual elements like this, you can likewise design products that are both simple and able to stir users’ emotions.&lt;br&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chuangyi5.jpg&#34; alt=&#34;chuangyi5&#34;&gt;&lt;br&gt;Mapping reality. Take the example below: the iOS 6 weather forecast interface has a strong texture, and the glass panel effect and the details of the weather icons completely simulate real things. Looking at it now, the visual style seems a bit outdated. The second image is the iOS 7 weather forecast, which removes the strong texture and the visual burden; we feel its information is presented more clearly and it emphasizes content more, which is a good design — but would you say it’s special or moving? Probably not. Now look at the interface of a third weather app, Haze. Haze reflects how temperature feels through changes in color; from 34° to 37° the color gradually deepens and becomes more vivid, and you feel hotter and hotter. The direction in which the background ripples float reflects the trend of temperature change, and the amplitude of the ripples shows whether the temperature difference is large or small — a big temperature difference makes it float quickly, a small one makes it float only slightly. Whether it’s color or the trend of change, these are in fact characteristics abstracted from reality, truthfully reproducing the way temperature feels, and a design like this makes people feel it is full of emotion and is moving. These are all inspirations reality gives us.&lt;br&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chunagyi6.jpg&#34; alt=&#34;chunagyi6&#34;&gt;&lt;br&gt;Three weather app designs. Now look at Paper’s interface: the card-style design looks flat, but it actually carries a metaphor, an operational hint that comes from real-world logic — we can touch, flip and rotate these “cards”, and the cards won’t disappear out of nowhere but move along with the user. What looks like a flat design is in fact also a kind of mapping and abstraction of the “real world”.&lt;br&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chuangyi7.jpg&#34; alt=&#34;chuangyi7&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;4-Combining-elements&#34;&gt;&lt;a href=&#34;#4-Combining-elements&#34; class=&#34;headerlink&#34; title=&#34;4. Combining elements&#34;&gt;&lt;/a&gt;4. Combining elements&lt;/h3&gt;&lt;p&gt;In nature, elements can be combined to form all kinds of new substances — for example, hydrogen and oxygen can become water. Combining different old elements in new ways can also produce new ideas. Combining elements is not simply stacking them either; it can be seen as a kind of creation built on top of what already exists.&lt;br&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chuangyi8.jpg&#34; alt=&#34;chuangyi8&#34;&gt;&lt;br&gt;For example, a pencil with an eraser looks like nothing more than an ordinary thing now, but when an American painter invented that pencil, the patent sold for 550,000 US dollars and was regarded as a great creation — in fact it was just the result of stacking elements. The Walkman was rated one of the great music inventions of the past 50 years, and it too was the stacking of headphones + a recorder. As shown below, Flappy Bird and 2048 are two mini games with completely different controls, yet the game designer cleverly stacked the two together and it became a new hit mini game.&lt;br&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chuangyi9.jpg&#34; alt=&#34;chuangyi9&#34;&gt;&lt;br&gt;Next let’s look at two Durex marketing cases. A hit 2048 mini game, combined with Durex’s usage scenarios — single, chatting someone up, dating, falling in love, hugging, kissing and so on, until the final stage where Durex is used — became a highly shareable marketing case. Durex never tires of this trick: its “N times a night” mini game is old wine in a new bottle too, using the format of the hit game “Don’t Guess the Black Block”, which lets everyone play it right away, and the slightly risqué spoof copy makes people very happy to share it.&lt;br&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chunagyi10.jpg&#34; alt=&#34;chunagyi10&#34;&gt;&lt;br&gt;Two of Durex’s marketing mini games. From those two cases we can see that it’s really just a product’s core function fused with a classic or trendy mini game, and it becomes a New Idea. The product’s core function is Durex’s usage scenarios, plus 2048, Don’t Guess the Black Block, or widely spread mini games like Plane Shooting or Crazy Guess the Picture; and in the end, because it’s simple and easy to pick up and a bit of off-color fun, it becomes a highly spreadable marketing plan.&lt;br&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chuangyi11.jpg&#34; alt=&#34;chuangyi11&#34;&gt;&lt;br&gt;Author: @ME NetEase Mobile Design Source: &lt;a href=&#34;http://www.uisdc.com/4-way-become-creative-designer&#34;&gt;UISDC&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="说说" />
+        <category term="趣闻" />
+        <updated>2015-04-04T08:35:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2015/04/04/4-fang-fa-bang-cheng-wei-chuang-yi/</id>
         <title>4个方法帮你成为创意高产达人</title>
-        <link rel="alternate" href="https://erik.xyz/2015/04/04/4-ge-fang-fa-bang-ni-cheng-wei-chuang-yi-gao-chan-da-ren/"/>
+        <link rel="alternate" href="https://erik.xyz/2015/04/04/4-fang-fa-bang-cheng-wei-chuang-yi/"/>
         <content type="html">&lt;p&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chuangyi.jpg&#34; alt=&#34;chuangyi&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;1、联想思维&#34;&gt;&lt;a href=&#34;#1、联想思维&#34; class=&#34;headerlink&#34; title=&#34;1、联想思维&#34;&gt;&lt;/a&gt;1、联想思维&lt;/h3&gt;&lt;p&gt;第一个创意方法，就是联想思维。这是每个人在思考时都会潜移默化使用到的一个方法。有点像头脑风暴，以一个核心事物为起点，将与之有关的元素进行联 想，以一种放射性的方式向外延展。思维联想听起来是个很简单的方法，但是大多数时候，思维在大脑中流窜，是杂乱无序、没有逻辑的，所以我们需要一些系统化 的方法将思维沉淀下来，为思路找一个清晰的方向。如果不知道从哪里入手，我们可以从三方向进行思考：横向联想、纵向联想和关联联想。 横向联想是&lt;strong&gt;指围绕核心事物进行发散，只考虑与核心事物有直接关联的，也就是一度关联的事物。&lt;/strong&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chuangyi1.jpg&#34; alt=&#34;chuangyi1&#34;&gt;&lt;br&gt;横向联想 比如我们做个练习，说出与“风”相关的10件事物。大家也许可以想到“寒冷、冬天、沙漠、海边、树叶、风筝、长发、尘土、丝巾、空气”等等。这些都是与“风”直接相关的事物。 如果说横向联想是在一个点周围画了一个圈，那么我们还可以使它的半径变大，进行纵向联想。&lt;strong&gt;从核心事物开始，联想的后一样事物要与前一样事物有关联，深挖下去，找到与核心事物有二度、三度、甚至五度、六度关联的事物。&lt;/strong&gt; &lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://image.woshipm.com/wp-files/2015/04/chuangyi2.jpg&#34; alt=&#34;chuangyi2&#34;&gt; &lt;/p&gt;
@@ -524,6 +541,22 @@
         <category term="说说" />
         <category term="趣闻" />
         <updated>2015-04-04T08:35:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2015/02/17/bei-fang-de-xing-ren-en/</id>
+        <title>Almonds of the North</title>
+        <link rel="alternate" href="https://erik.xyz/2015/02/17/bei-fang-de-xing-ren-en/"/>
+        <content type="html">&lt;p&gt;It’s dark now, the night has grown drunk…&lt;/p&gt;
+&lt;p&gt;Time returns to before 2014. Bright eyes flicker across the sky now and then; I linger in the sweet rain I never tire of tasting, slowly savoring these early-morning hours…&lt;/p&gt;
+&lt;p&gt;On campus, the dark-green lawn heaves and wanders with an indescribable heaviness, silently fading. I am here, reveling boundlessly in emotions that rise and fall again and again. Sometimes I feel that the decay of time is a punishment for life — only because I refuse the outside, refuse to slip…&lt;/p&gt;
+&lt;p&gt;The mystery that has cut off the sunlight wears a childhood smile in its gaps, unknowing, unwilling. Layer upon layer of woolly snow steeped in the sky is the rampage of early-spring fibers; this has gone beyond my awareness, and I even feel a certain awe before life. Perceive the world you know, sense the realm you wish to reach, drift in the breathing of the wind all around…&lt;/p&gt;
+&lt;p&gt;I am here; this place holds so much love. I am here — thank goodness I am already here. Farewell, that world of mine: the astringent-sweet spring water, the furious discontent, the age of shouting, ending me and my world. And now, more than six years on, never to return again…&lt;/p&gt;
+&lt;p&gt;No more, never more; not much time remains. In truth, the almonds of the North are very bitter — astringently bitter…&lt;/p&gt;
+</content>
+        <category term="说说" />
+        <category term="摘要" />
+        <category term="文章" />
+        <updated>2015-02-17T07:37:00.000Z</updated>
     </entry>
     <entry>
         <id>https://erik.xyz/2015/02/17/bei-fang-de-xing-ren/</id>
@@ -542,6 +575,18 @@
         <updated>2015-02-17T07:37:00.000Z</updated>
     </entry>
     <entry>
+        <id>https://erik.xyz/2015/01/23/you-xi-yang-zai-en/</id>
+        <title>There Is a Sunset</title>
+        <link rel="alternate" href="https://erik.xyz/2015/01/23/you-xi-yang-zai-en/"/>
+        <content type="html">&lt;p&gt;&lt;a href=&#34;http://tietuku.com/7461f673503f06c9&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/7461f673503f06c9.jpg&#34; alt=&#34;IMG_20150118_172915&#34;&gt;&lt;/a&gt;Early morning, the blinding sunlight clings to the earth. I often miss the days of old. When you could soak yourself in the streets playing. Come summer, catching cicadas and roasting them over a fire. Catching grasshoppers, teasing the kitten until it chased us all over the house. Digging out hedgehogs, plucking the spines off their bodies. Because of childhood, because of youth, in ignorance, without restraint. These days I rarely stay in my hometown, and I’ve never seen the glimmering fireflies, or the fields and fields of peanuts and edamame. Looking back I always giggle at my own ignorance, and at the maturity I have now. There’s a willful stubbornness, a silly support, a clumsy giving. They all say I’m still me, just missing the old me. I’m glad — I only do me. With the sunset there, I don’t worry about the gloomy air. I always love her with my whole world.&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <category term="说说" />
+        <category term="随笔吐槽" />
+        <category term="夕阳" />
+        <updated>2015-01-23T13:53:00.000Z</updated>
+    </entry>
+    <entry>
         <id>https://erik.xyz/2015/01/23/you-xi-yang-zai/</id>
         <title>有夕阳在</title>
         <link rel="alternate" href="https://erik.xyz/2015/01/23/you-xi-yang-zai/"/>
@@ -552,6 +597,17 @@
         <category term="随笔吐槽" />
         <category term="夕阳" />
         <updated>2015-01-23T13:53:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2015/01/14/fo-xiao-zhi-tong-en/</id>
+        <title>Eye of Dawn</title>
+        <link rel="alternate" href="https://erik.xyz/2015/01/14/fo-xiao-zhi-tong-en/"/>
+        <content type="html">&lt;p&gt;&lt;a href=&#34;http://tietuku.com/257a4944a32ed5b5&#34;&gt;&lt;img src=&#34;http://i2.tietuku.com/257a4944a32ed5b5.jpg&#34; alt=&#34;IMG_20150128_232954&#34;&gt;&lt;/a&gt;Early summer, on Shennan Boulevard. Birds not yet returning to their nests — it is precisely the season of migration; amid the noisy traffic there is always a touch of crisp melody that lingers in the mind and cannot be forgotten for a long time. I am still on this boulevard, watching the stream of cars, lifting my head endlessly along with the green leaves, and halting. The road is no longer so long; the roadside, still filled with green, keeps darkening, lightless. Night quietly draws near. There is no fresh natural flavour; the breath of people is everywhere, and yet this night has come to life all the more. The sea breeze keeps bringing new touches of colour, licking the forehead, embracing the treetops, and just like that, with no sense of propriety, it runs wild over everything around. Along this boulevard there are plants and flowers in one stretch and crowds of people in the next; what you see is exactly what you hear — charm without losing the bearing of an old uncle. As the high-rises keep growing, the dust is drunk, but the banyan trees have withered. Zhongshan Park, south side. Nantou, the dividing point between inside and outside the pass. Outside the North Ring is Zhongshan Park: lush lychees and longans, spacious lawns and lakes. Laughter is everywhere to be seen, and we are all there. You can lie on the lawn, lazily basking in the sun, or run after a kite, or bat a shuttlecock around… There is no inexpressible displeasure — only that the flavour you had been looking forward to is a little lacking.&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <category term="说说" />
+        <category term="随笔吐槽" />
+        <updated>2015-01-14T14:12:00.000Z</updated>
     </entry>
     <entry>
         <id>https://erik.xyz/2015/01/14/fo-xiao-zhi-tong/</id>
@@ -565,9 +621,53 @@
         <updated>2015-01-14T14:12:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2014/12/31/qian-yuan-ji-biao-gan-men-kan-zai-ti-gao-tcl-me-me-da-3n-fen-xiang-ti-yan/</id>
+        <id>https://erik.xyz/2014/12/31/tcl-me-me-da-3n-fen-xiang-ti-yan-en/</id>
+        <title>Budget Phones Raise the Bar Again -- TCL 么么哒 3N Hands-on Review</title>
+        <link rel="alternate" href="https://erik.xyz/2014/12/31/tcl-me-me-da-3n-fen-xiang-ti-yan-en/"/>
+        <content type="html">&lt;p&gt;&lt;a href=&#34;http://www.dgtle.com/home.php?mod=space&amp;amp;uid=7589&amp;amp;do=profile&#34;&gt;陈繁leon&lt;/a&gt; &lt;strong&gt;Foreword · The bar for budget phones rises:&lt;/strong&gt; Budget phones have arguably been the volume-driving weapon of recent years, with a new model appearing almost every month. If it isn’t Lenovo launching a 599-yuan phone last month, it’s Meizu releasing the 999-yuan Meilan this month, or Redmi getting its next generation refresh the month after. Manufacturers seem tireless at the thousand-yuan tier, but because of the price limits, today’s budget phones are not all that different from one another. Consumers are getting more and more rational, and now that budget phones barely differ, getting users to choose ours means we have to be far better than the competition in some respect. And the thousand-yuan segment is iterating too, making every detail better: the most visible upgrades this year are 1080P screens, 4G, bigger storage, 3000mAh large batteries and so on.&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;img src=&#34;http://img.dgtle.com/forum/201412/31/144406tujmmp7ou4zam51a.jpg%21680px&#34; alt=&#34;21.jpg&#34; title=&#34;21.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/144236q4v369ece9t41g43.jpg%21680px&#34; alt=&#34;22.jpg&#34; title=&#34;22.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;TCL also launched the 么么哒 3N (M2M) not long ago. Speaking of 么么哒 phones, I’m sure everyone is familiar with them — this is a brand-new brand that only launched at the end of March this year. The name “么么哒” is very fresh and cute, it feels more intimate and more human, and it leaves a deep impression. The TCL 么么哒 3N basically pushes the thousand-yuan spec sheet to the top: a MediaTek MT6752 true octa-core 64-bit processor, 2GB RAM + 16GB ROM, a 5.5-inch 1080P screen, and a built-in 3500mAh battery. Of course it supports the China Mobile 4G version, dual SIM dual standby, and memory expansion is a given too, yet the price is only 899 yuan. So how does the experience hold up after all that hardware upgrading? Let’s take a look:&lt;strong&gt;Design · Faux brushed metal finish:&lt;/strong&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/004254owwh5qhwxaqeocf5.jpg%21680px&#34; alt=&#34;2.jpg&#34; title=&#34;2.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you have seen a 么么哒 phone before, you will probably be a little disappointed by the new model’s looks, because overall it isn’t much different from its predecessor. If you insist on finding a big difference, it’s that the body’s four sides are now curved and more rounded, a little less stern and a little more soft, and that the color lineup uses champagne gold for the first time. The TCL 么么哒 3N measures 152.3 *76.4 * 7.95mm, and although it is less than 8mm thick, it still feels a bit big in the hand.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/004238wwvx5i8xdofxopdz.jpg%21680px&#34; alt=&#34;1.jpg&#34; title=&#34;1.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/005045mxyv4dv5x3vgd1fy.jpg%21680px&#34; alt=&#34;8.jpg&#34; title=&#34;8.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For the screen, the TCL 么么哒 3N abandons the 720P panel that users so disliked on big screens, and instead uses a 5.5-inch 1080P HD screen that is very rare at the budget tier, with a pixel density of 401PPI and OGS full-lamination, so the display is very clear and sharp, and the color temperature is fairly neutral as well. The “resting screen aesthetics” are done well too: on standby, it’s hard to tell where the screen ends and the bezel begins on the front of the TCL 么么哒 3N, which looks very pretty.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/005416ayylvxx4244hzoho.jpg%21680px&#34; alt=&#34;12.jpg&#34; title=&#34;12.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/004302kk3yqmzmjhyrtajw.jpg%21680px&#34; alt=&#34;3.jpg&#34; title=&#34;3.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Up top there’s still the earpiece and the front camera, and the three traditional capacitive keys below the screen look especially large. Unfortunately they aren’t backlit, though there seem to be few breathing-light keys at the thousand-yuan tier, so the manufacturer apparently felt this was money it could save.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/004709i6rfzdcqt3vr3cl3.jpg%21680px&#34; alt=&#34;7.jpg&#34; title=&#34;7.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The back cover of the TCL 么么哒 3N is made of polycarbonate plastic, and the champagne-colored cover in Fanfan’s hands has a subtle brushed-metal texture, throwing off slivers of light when it reflects, and because it is understated it doesn’t feel nouveau riche. This material isn’t slip-resistant, but it doesn’t easily pick up fingerprints, so friends with oily hands can handle it easily too.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/004332hw14rkhvvho3rddg.jpg%21680px&#34; alt=&#34;6.jpg&#34; title=&#34;6.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/005405zhudrwrvezebqdl6.jpg%21680px&#34; alt=&#34;11.jpg&#34; title=&#34;11.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The TCL 么么哒 N3 uses a 13-megapixel camera, and you can see a silver decorative ring around the camera, which is definitely a visual plus. The TCL logo is printed below the LED flash, and the loudspeaker sits at the bottom of the body. The speaker is a horizontal long-row speaker with very densely packed holes, and the dots on either side do a good job of preventing the volume from being muffled when the phone is set down on a desk, preserving the speaker’s volume as much as possible.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/005122uco74pgggp1rj24d.jpg%21680px&#34; alt=&#34;10.jpg&#34; title=&#34;10.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/005113ms4qanpwzw8i004k.jpg%21680px&#34; alt=&#34;9.jpg&#34; title=&#34;9.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/004318n31a1z1wlep6babw.jpg%21680px&#34; alt=&#34;5.jpg&#34; title=&#34;5.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The phone’s frame also uses a brushed-metal finish, creating a metallic feel on a plastic body. Of course the texture is different, but we also don’t need to worry about metal affecting the signal. The side buttons are distributed fairly sensibly: the left side is left empty, while the volume key, power key and other physical buttons are all on the right side. The physical keys are well placed — your finger reaches them without any strain — and the key feedback is full and firm. A 3.5mm headphone jack and the charging port sit at the top and bottom of the body respectively.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/004308b2vfgfofbmfc3cbv.jpg%21680px&#34; alt=&#34;4.jpg&#34; title=&#34;4.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The TCL 么么哒 N3 uses a unibody design. Usually opening the SIM tray on a unibody phone requires a SIM pin, but the TCL 么么哒 3N’s tray is more user-friendly: no pin needed, just press the bump on the tray cover. The tray is a pop-out design — we simply press down on the “bump” end to open it. The tray also seals nicely; when closed it effectively keeps out light splashes and dust. There are still plenty of small problems in use though — for example, the tray sits quite deep, so if you don’t have fingernails or a sharp object to help press it, pulling the SIM card in and out becomes very difficult. On the plus side, the TCL 么么哒 3N supports TD-LTE dual SIM dual standby, which everyone probably knows by now, and both card slots support China Mobile’s 4G network, with no distinction between primary and secondary — either one can activate 4G data.&lt;strong&gt;System · Lewa-flavored 么么哒 2.0:&lt;/strong&gt;The TCL 么么哒 N3’s ROM is a collaboration with the third party 乐蛙, using 乐蛙OS 5.1, a deeply customized system based on Android 4.4. Anyone who plays with phones is surely familiar with 乐蛙OS; it’s good in both looks and functionality, and counts as one of the better Chinese ROMs. 乐蛙OS 5.1 can’t really be called fully flat — it sits somewhere between skeuomorphic and flat, and the icons look a bit large and slightly out of proportion, but none of this hurts the user experience. The 乐蛙OS style is actually quite ingratiating: fresh, natural and clean overall, with soft fonts, and after turning on large fonts, older users should be quite fond of it. &lt;img src=&#34;http://img.dgtle.com/forum/201412/31/143323jh857n88zu5ayya6.jpg%21680px&#34; alt=&#34;13.jpg&#34; title=&#34;13.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;乐蛙OS 5.1 is quite practical when it comes to off-screen gestures and smart motion sensing. For example: besides double-tapping to wake the screen, it also supports writing letters on the screen while it’s off to quickly launch the corresponding app. Fanfan tried it a few times and it worked well — bundled apps respond fairly quickly, while third-party apps are noticeably slower. Smart motion sensing is mostly about “air gestures”: we can complete the corresponding operations without touching the screen, for example sweeping a palm across the screen while it’s on to unlock it.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/143356bqxuzqngs4znfdtf.jpg%21680px&#34; alt=&#34;15.jpg&#34; title=&#34;15.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The TCL 么么哒 3N integrates T-show, a new news aggregation page with an all-new “waterfall” layout. Swipe left from the home screen to wake it; it presents trending content in waterfall-style tiles and lets you pick the categories you like. It’s light reading — read it whenever and wherever you want. All of the content comes from highlights around the web, curated and pushed to everyone. Of course, once you’ve developed particular reading interests, the TCL 么么哒 3N will automatically push related content based on your preferences, and the content is updated fairly frequently.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/143339r96scs50ob6sp9ib.jpg%21680px&#34; alt=&#34;14.jpg&#34; title=&#34;14.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The TCL 么么哒 3N has another very nice feature — 么么哒 2.0, which lets you transfer files between phone and phone, or phone and computer, with zero data usage. The app shares the phone’s name, “么么哒”, which is perhaps where the phone got its name. Simply put two phones with the 么么哒 app installed on the same network segment and data transfer is done; it supports any type of file, and can even transfer already-installed apps. Free from the shackles of a data cable, for lazy people like us it couldn’t be more practical. In addition, 么么哒 2.0 also supports connecting to Apple devices and computers.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/143508baw9h0whnj2kroah.jpg%21680px&#34; alt=&#34;18.jpg&#34; title=&#34;18.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The TCL 么么哒 3N comes with a security center that provides virus protection, security blocking, junk cleaning, auto-start management and notification management, solving messy app problems for users in one go. It also provides a power-saving management system that can automatically run smart power-saving, best used while you sleep at night; with a large battery plus a decent power-saving system, it brings us a longer battery life experience.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/143533blmvvmljm37v5jlf.jpg%21680px&#34; alt=&#34;19.jpg&#34; title=&#34;19.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In fact, the TCL 么么哒 3N brings a great many nice little features as well, such as color temperature adjustment so we don’t fear warm or cool screens, and a Messages icon that occasionally wriggles like jelly when there are new texts.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/143601gqfxim7iie77r9wc.jpg%21680px&#34; alt=&#34;20.jpg&#34; title=&#34;20.jpg&#34;&gt;&lt;strong&gt;Performance · Strong octa-core with solid battery life:&lt;/strong&gt; Hardware strength is a very important point for budget phones — you need decent performance at a low price, and thankfully MediaTek is there to handle that. Although the TCL 么么哒 3N doesn’t have luxurious hardware like a Snapdragon 805, it has upgrades across screen, processor, memory and storage. The TCL 么么哒 3N carries a 64-bit MediaTek MT6752 octa-core processor clocked up to 1.7GHz. Running memory is upgraded to 2GB and body storage is raised to 16GB as well. That’s a pretty good configuration for the price: it keeps the system running smoothly while leaving enough storage headroom for multitasking. Judging by actual benchmark results, it really surprised me a bit — it hit a high score of 40000+ on AnTuTu. &lt;img src=&#34;http://img.dgtle.com/forum/201412/31/143440l17u5u4swohor3ss.jpg%21680px&#34; alt=&#34;17.jpg&#34; title=&#34;17.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Beyond those benchmark numbers, I also tried a few games on the TCL 么么哒 3N. Asphalt 8 ran very smoothly, with no crashes or screen ghosting along the way. But when I tried Fish Hunter 3, the wallpaper behind everything went black — a bug. MediaTek processors still have compatibility problems in some games.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/143413w2eqvq7c2w2ek21e.jpg%21680px&#34; alt=&#34;16.jpg&#34; title=&#34;16.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;On battery life, the TCL 么么哒 3N has a built-in 3500mAh battery, a capacity that already exceeds the standard of most budget phones today — plenty of flagships don’t have one this big either. In actual use, two days of everyday use should be no problem at all.&lt;strong&gt;Camera · Decent by day, needs work at night:&lt;/strong&gt;The TCL 么么哒 3N uses an 8MP front camera and a Sony 13MP IMX214 stacked rear camera. In the shooting interface, besides the usual filter effects, HDR and panorama, you can also manually adjust exposure compensation, white balance and other parameters. The interface looks a bit dated and could use more design effort in the future. &lt;img src=&#34;http://img.dgtle.com/forum/201412/31/152224jvgu9gixu1qxxuqb.jpg%21680px&#34; alt=&#34;31.jpg&#34; title=&#34;31.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/151912rnhe2f3qienh37f7.jpg%21680px&#34; alt=&#34;25.jpg&#34; title=&#34;25.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The TCL 么么哒 3N’s daytime imaging is pretty good. The overall saturation of the photos is nice and the color reproduction is fairly true. In some scenes with large differences in lighting there is smearing, while white balance control in big scenes is passable.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/151848n1m6zmyr9d7qmmk1.jpg%21680px&#34; alt=&#34;24.jpg&#34; title=&#34;24.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/151941ppp0vhfqo7gyloc0.jpg%21680px&#34; alt=&#34;26.jpg&#34; title=&#34;26.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Focus speed is on the slow side in macro shots, and it occasionally focuses inaccurately — though it’s certainly much better than the 599-yuan Lenovo Lemon.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/152330q4txomtgxcxxcfct.jpg%21680px&#34; alt=&#34;27_副本.jpg&#34; title=&#34;27_副本.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/152142ug9ccr4rb6hjrgr4.jpg%21680px&#34; alt=&#34;28.jpg&#34; title=&#34;28.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When shooting still objects, you can see that the image resolution is quite good, the color rendering is fairly true with high fidelity, and it looks full-bodied; the colors and exposure of the photos are just right.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/152204p6u42dp69j44huux.jpg%21680px&#34; alt=&#34;30.jpg&#34; title=&#34;30.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/152116u9mehf9v2raumroa.jpg%21680px&#34; alt=&#34;29.jpg&#34; title=&#34;29.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Noise control and color reproduction at night fall a bit short, and both noise suppression and glare handling need further work.&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/150627ap5fgp46k9agi9iu.jpg%21680px&#34; alt=&#34;23.jpg&#34; title=&#34;23.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For selfies, the front camera is a full 8MP, so it can take high-quality selfies, and paired with beauty mode it’s pretty good.&lt;strong&gt;Conclusion · Flawed but still a bargain:&lt;/strong&gt;Taken as a whole, the TCL 么么哒 3N really can be said to set a new benchmark for budget phone hardware. In terms of design the 么么哒 3N is still fairly conservative, but it blends in fashionable color combinations so the whole device doesn’t feel cheap. The system leaves a so-so impression but is still very solid and practical. On the hardware side, the 1080P HD screen, octa-core 64-bit processor, 4G network, and 13MP Sony IMX214 camera all add a lot of points to the TCL 么么哒 3N. There’s also the very interesting 么么哒 2.0, which gives us a simpler way to transfer files. Of course the TCL 么么哒 3N still has plenty of problems, such as a SIM tray that sits too deep and less-than-ideal photo quality; these aren’t huge issues, but they still deserve attention. A phone priced under a thousand yuan really does live up to its price, and we needn’t nitpick over a budget phone — otherwise what would high-end phones be for? Right? &lt;img src=&#34;http://img.dgtle.com/forum/201412/31/152313vkqnsrd11ozvvrqn.jpg%21680px&#34; alt=&#34;33.jpg&#34; title=&#34;33.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/152244w8n3e8dm5nve85g8.jpg%21680px&#34; alt=&#34;32.jpg&#34; title=&#34;32.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Pros:&lt;/strong&gt; 5.5-inch 1080P screen Both card slots support 4G 2GB RAM, 16GB storage 3500mAh battery&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cons:&lt;/strong&gt; MediaTek processor compatibility is average The card tray sits too deep, hard to swap cards System experience is lacking Photos are not ideal&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <category term="说说" />
+        <category term="随笔吐槽" />
+        <updated>2014-12-31T14:34:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/12/31/tcl-me-me-da-3n-fen-xiang-ti-yan/</id>
         <title>千元机，标杆门槛再提高 -- TCL 么么哒 3N 分享体验</title>
-        <link rel="alternate" href="https://erik.xyz/2014/12/31/qian-yuan-ji-biao-gan-men-kan-zai-ti-gao-tcl-me-me-da-3n-fen-xiang-ti-yan/"/>
+        <link rel="alternate" href="https://erik.xyz/2014/12/31/tcl-me-me-da-3n-fen-xiang-ti-yan/"/>
         <content type="html">&lt;p&gt;&lt;a href=&#34;http://www.dgtle.com/home.php?mod=space&amp;amp;uid=7589&amp;amp;do=profile&#34;&gt;陈繁leon&lt;/a&gt; &lt;strong&gt;前言 · 千元机门槛提升：&lt;/strong&gt; 千元机可以说是近年来充量的利器，几乎每个月都有新机。不是上个月联想发售599的新机，就是这个月魅族发售999魅蓝，还是下个月红米又要更新换代。似 乎厂商在千元级上都乐此不疲，但又由于价格限制，现在的千元机差异性不大。现在消费者越来越理性，千元机差异不大的今天，要让用户选择我们某方面要远比对 方出色。而现在千元就也进行着更替，把每个细节更加优秀，比如今年很显眼的升级就是屏幕升级1080P、4G、增加容量、3000毫安大电池等等。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;img src=&#34;http://img.dgtle.com/forum/201412/31/144406tujmmp7ou4zam51a.jpg%21680px&#34; alt=&#34;21.jpg&#34; title=&#34;21.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/144236q4v369ece9t41g43.jpg%21680px&#34; alt=&#34;22.jpg&#34; title=&#34;22.jpg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;TCL前不久也发布了么么哒3N（M2M），说起么么哒手机，相信大家都不会陌生，这是今年款3月底才发布的全新品牌。“么么哒”这个名字非常小清新，感 觉更亲密，更人性化，让人印象深刻。TCL么么哒3N  基本上把千元的配置达到了顶级，联发科MT6752真八核64位处理器，2GB RAM + 16GB ROM，采用5.5英寸1080P屏幕，内置3500mAh电池。当然支持移动4G 版本，双卡双待，内存扩展也是少不了的，但售价仅仅为899元，到底提升硬件以后体验如何呢？我们往下看：&lt;strong&gt;外观 · 仿金属拉丝工艺：&lt;/strong&gt;&lt;img src=&#34;http://img.dgtle.com/forum/201412/31/004254owwh5qhwxaqeocf5.jpg%21680px&#34; alt=&#34;2.jpg&#34; title=&#34;2.jpg&#34;&gt;&lt;/p&gt;
@@ -609,9 +709,26 @@
         <updated>2014-12-31T14:34:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2014/12/27/mu-qian-hai-shi-wan-wu-ke-chuan-dai-shi-she-bei-bao-gao-jie-xi/</id>
+        <id>https://erik.xyz/2014/12/27/wan-wu-ke-chuan-dai-she-bei-bao-gao-en/</id>
+        <title>Still Just a Toy for Now — An Analysis of the Wearable Device Report</title>
+        <link rel="alternate" href="https://erik.xyz/2014/12/27/wan-wu-ke-chuan-dai-she-bei-bao-gao-en/"/>
+        <content type="html">&lt;p&gt;by &lt;a href=&#34;http://www.zoopda.com/author/637681&#34;&gt;maomaobear&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/8520cc3bc0a952ed24958ef3ba47c7e0_w_680_h_425.jpg&#34; alt=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A while ago Tencent did a survey on wearable devices, with a sample size of 24,877 and with weighting applied, so its credibility is quite high. The data revealed some very interesting phenomena. Let’s take a look.&lt;/p&gt;
+&lt;h2 id=&#34;1-Wearable-devices-much-thunder-little-rain&#34;&gt;&lt;a href=&#34;#1-Wearable-devices-much-thunder-little-rain&#34; class=&#34;headerlink&#34; title=&#34;1. Wearable devices: much thunder, little rain&#34;&gt;&lt;/a&gt;1. Wearable devices: much thunder, little rain&lt;/h2&gt;&lt;p&gt;The data shows that among the internet population, a great many people know about wearable devices, but only 2.9% are willing to use one, which is a fairly low proportion. On the one hand this shows that the market still has great potential; on the other hand, it shows that today’s wearable devices have not yet found people’s real pain points, and too few people can actually make use of them.&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/d8b02a85f7fff3856b9dad807b6d0469_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report - 1.jpg&#34; title=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report&#34;&gt; As for the types used, people still use whatever they can buy. And they are closely tied to phones. Smart glasses are all the rage, but you cannot buy them. Samsung’s smart watch and Xiaomi’s smart band are sold alongside phones, so it is very convenient for users to add some money and pick one up. So these two still hold a numerical advantage. &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/2d6f787aa177215c3ac1e15c824e7891_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report - 2.jpg&#34; title=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report&#34;&gt; &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/62a7e2da310bdb98fb0b60102a6876e2_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report - 3.jpg&#34; title=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-Trying-something-new-—-novelty-is-the-selling-point&#34;&gt;&lt;a href=&#34;#2-Trying-something-new-—-novelty-is-the-selling-point&#34; class=&#34;headerlink&#34; title=&#34;2. Trying something new — novelty is the selling point&#34;&gt;&lt;/a&gt;2. Trying something new — novelty is the selling point&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/0631ba089fcd29d70c2e3d2ae75f7cc9_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report - 4.jpg&#34; title=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report&#34;&gt; Looking at the channels through which people learn about them, tech websites are the main channel through which users hear about wearable devices, followed by product official sites and shopping sites. Online media, especially specialist media, play an important role in promoting wearable devices. &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/aa3f874fb850d8908be9af3a69af4289_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report - 5.jpg&#34; title=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report&#34;&gt; I did the maths on the proportion of users who bought one themselves: about three quarters paid out of their own pocket. Adding in the 2.9% usage rate from above, only 2.17% of users actually paid money for a wearable device. In terms of channels, official sites and physical stores are also important channels for phone purchases, which shows that wearable devices are currently very closely tied to smartphones. &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/4223a1d5b9e017dda51515829140e5d2_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report - 6.jpg&#34; title=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report&#34;&gt; The product usage rate is pitiful too: 58% of people are still using theirs, and the rest have basically given up, which shows that fitness bands are not very practical and that quite a few get thrown aside after the novelty wears off. &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/5bb77e5c6d452aee283844d47756dc05_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report - 7.jpg&#34; title=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report&#34;&gt; The satisfaction rate is about the same as the still-using rate. Too few functions, poor battery life and the hassle of connecting to a phone are the three main reasons. A poor experience and not being of much use are the main problems with wearable devices. From this data, wearable devices are still at the toy stage: people see them introduced in the tech media, pick one up along with a phone purchase to play with, and stop using it once it turns out not to be much good. A product that truly hits a pain point and is widely accepted has yet to appear.&lt;/p&gt;
+&lt;h2 id=&#34;3-Who-is-using-wearable-devices&#34;&gt;&lt;a href=&#34;#3-Who-is-using-wearable-devices&#34; class=&#34;headerlink&#34; title=&#34;3. Who is using wearable devices?&#34;&gt;&lt;/a&gt;3. Who is using wearable devices?&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/b443471216b517cc30cb9eea354e023d_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report - 8.jpg&#34; title=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report&#34;&gt; &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/6003950cffdc86970909a494861920c6_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report - 9.jpg&#34; title=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report&#34;&gt; &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/7db181be25ab69447b69a185006d9b03_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report - 10.jpg&#34; title=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report&#34;&gt; &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/07d34e2419c61216a85a2156b2cf8ae4_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report - 11.jpg&#34; title=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report&#34;&gt; &lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/b5f30ed55c1e0b0c8be8d25edacb6f94_mw_680_wm_0_wmp_3.jpg&#34; alt=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report - 12.jpg&#34; title=&#34;Still Just a Toy for Now — An Analysis of the Wearable Device Report&#34;&gt; There is a very interesting figure in the survey: students make up 20% of users, and 18.1% were unwilling to disclose their income. Students with no income account for no small share of wearable device users. Looking at the groups, people with an education from junior high school up to university, and the backbone of society aged 20-40, are also the main force consuming wearable devices. Wearable devices are gladly accepted by the backbone of society, but that shows their potential; the fact that they are not yet widespread is a problem with the products themselves, not with the users.&lt;/p&gt;
+&lt;h2 id=&#34;4-Conclusion&#34;&gt;&lt;a href=&#34;#4-Conclusion&#34; class=&#34;headerlink&#34; title=&#34;4. Conclusion&#34;&gt;&lt;/a&gt;4. Conclusion&lt;/h2&gt;&lt;p&gt;Judging from Tencent’s survey results, wearable devices are already recognised by netizens and have very high awareness among the mainstream population. They have great market potential, but since current products do not have sufficiently attractive features and the experience is not good either, people’s satisfaction and desire to buy are both fairly low, and they remain at the toy stage. There is still a long way to go from potential to sales. From www.zoopda.com/2719&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <category term="说说" />
+        <category term="可穿戴设备" />
+        <updated>2014-12-27T12:13:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/12/27/wan-wu-ke-chuan-dai-she-bei-bao-gao/</id>
         <title>目前还是玩物——可穿戴式设备报告解析</title>
-        <link rel="alternate" href="https://erik.xyz/2014/12/27/mu-qian-hai-shi-wan-wu-ke-chuan-dai-shi-she-bei-bao-gao-jie-xi/"/>
+        <link rel="alternate" href="https://erik.xyz/2014/12/27/wan-wu-ke-chuan-dai-she-bei-bao-gao/"/>
         <content type="html">&lt;p&gt;by &lt;a href=&#34;http://www.zoopda.com/author/637681&#34;&gt;maomaobear&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://www.zoopda.com/thumbs/2014/12/24/8520cc3bc0a952ed24958ef3ba47c7e0_w_680_h_425.jpg&#34; alt=&#34;目前还是玩物——可穿戴式设备报告解析&#34;&gt;&lt;/p&gt;
 &lt;p&gt;日前，腾讯对穿戴式设备做了一个调查，样本数量达到了 24877 个，而且做了配比处理，可信度颇高。数据显示了一些很有意思的现象，我们来看一下。&lt;/p&gt;
@@ -626,9 +743,9 @@
         <updated>2014-12-27T12:13:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2014/12/08/fen-xi-shi-wei-fire-phone-fa-zhan-zhi-zhao-san-bu-zhou-huo-qi-si-hui-sheng/</id>
+        <id>https://erik.xyz/2014/12/08/fire-phone-fa-zhan-san-bu-zhou/</id>
         <title>分析师为Fire Phone发展支招 三步骤或起死回生</title>
-        <link rel="alternate" href="https://erik.xyz/2014/12/08/fen-xi-shi-wei-fire-phone-fa-zhan-zhi-zhao-san-bu-zhou-huo-qi-si-hui-sheng/"/>
+        <link rel="alternate" href="https://erik.xyz/2014/12/08/fire-phone-fa-zhan-san-bu-zhou/"/>
         <content type="html">&lt;p&gt;12月8日消息，亚马逊集团董事会主席兼CEO杰夫·贝佐斯(Jeff Bezos)表示，亚马逊将会发布更多款的智能手机。外界希望他能从亚马逊Fire Phone的惨痛失败中接受教训并汲取经验。这款手机的失败导致亚马逊从众多手机制造商中脱颖而出的想法变得愈加难以实现。 关于亚马逊的Fire Phone，有两点值得注意。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;第一，它仅在美国发售；&lt;/p&gt;
 &lt;p&gt;第二，顾客只能购买SIM-free非定制机（这在欧洲市场并不适用）或者是美国电话电报公司 （AT&amp;amp;T）的合约机。如Facebook与HTC联合推出的手机HTC First一样，如果Fire Phone能在网上热销，那一定会震惊许多人。 但Fire Phone有一个优势：亚马逊首页是全球最大的互联网购物窗口之一，Fire Phone有它作为支撑。亚马逊的全部商品分类中可以将Fire Phone放在任意位置，以吸引潜在客户。 如人们所料，亚马逊并未公布Fire Phone相关的销售数据，但有两点可以提示Fire Phone属于“失败产品”的行列。第一点是合约机价格急剧下降（目前两年合约价为99美分），第二点是亚马逊在有关该款手机的成本记录上显示公司减记1.7亿美元。 但杰夫·贝佐斯仍坚持Fire Phone的项目。他表示，在最终确定该项目成功与否之前，“它需要经历几次迭代”。 但笔者对此持不同观点。消费者对商家的信赖需要很长时间才能建立，亚马逊最初冒险尝试Kindle电子书阅读器以及随后的Kindle Fire平板都耗费了好几年时间以取得消费者对亚马逊的信任。但Fire Phone的质量将这份信任迅速消耗，并且没有挽回的可能。 对当今的智能手机制造商而言，市场份额的丢失可以快得出奇，并且是灾难性的。悬崖理论表明一旦消费者的信任不在，那么对手机制造商的支持就会急剧下降，并 且无法挽回。诺基亚，Palm，爱立信（ Ericsson），西门子，飞利浦(Phillips)以及很多其他的公司都曾在此败倒，三星目前似乎也正在接近这个结局。亚马逊在发售Fire Phone前不曾建立起一个强大的智能手机市场，因此它也不存在丢失大份额市场的问题，对它而言，问题在于也许根本无法起步。 &lt;/p&gt;
@@ -646,9 +763,41 @@
         <updated>2014-12-08T15:14:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2014/12/06/zhuan-shu-ju-ku-biao-fen-ge-ji-shu-qian-xi/</id>
+        <id>https://erik.xyz/2014/12/08/fire-phone-fa-zhan-san-bu-zhou-en/</id>
+        <title>Analysts Offer Advice on the Fire Phone&#39;s Future: Three Steps That Could Bring It Back to Life</title>
+        <link rel="alternate" href="https://erik.xyz/2014/12/08/fire-phone-fa-zhan-san-bu-zhou-en/"/>
+        <content type="html">&lt;p&gt;News from December 8: Amazon chairman and CEO Jeff Bezos says Amazon will release more smartphones. The outside world hopes he has taken the lessons of the Fire Phone’s painful failure to heart. That failure has made Amazon’s ambition of standing out from the crowd of phone makers harder and harder to realize. There are two things worth noting about the Amazon Fire Phone.&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;First, it was only sold in the United States.&lt;/p&gt;
+&lt;p&gt;Second, customers could only buy the SIM-free unlocked version (which doesn’t apply in the European market) or a contract phone from AT&amp;amp;T. Just like the HTC First that Facebook and HTC launched together, if the Fire Phone had sold well online, it would have astonished plenty of people. But the Fire Phone had one advantage: Amazon’s homepage is one of the largest internet shopping windows in the world, and the Fire Phone had that behind it. Amazon could place the Fire Phone anywhere it liked among its product categories to draw in potential customers. As expected, Amazon did not publish any Fire Phone sales data, but two things hint that the Fire Phone belongs in the “failed product” column. The first is the sharp drop in the contract price (the two-year contract price is now 99 cents), and the second is that Amazon’s cost records for the phone show a $170 million writedown. Yet Jeff Bezos still stuck with the Fire Phone project. He said that before it can finally be judged a success or a failure, “it needs to go through several iterations.” But this writer takes a different view. Consumer trust in a seller takes a long time to build, and Amazon’s early gamble on the Kindle e-reader, followed by the Kindle Fire tablet, took several years to earn consumers’ trust. But the quality of the Fire Phone burned through that trust fast, with no chance of winning it back. For today’s smartphone makers, market share can be lost startlingly fast, and catastrophically. The cliff theory holds that once consumer trust is gone, support for a phone maker plunges and cannot be recovered. Nokia, Palm, Ericsson, Siemens, Philips and many other companies have fallen this way, and Samsung now seems to be approaching that same ending. Amazon never built a strong smartphone market before launching the Fire Phone, so it doesn’t have a large market share to lose — its problem is that it may never get off the ground at all.&lt;/p&gt;
+&lt;p&gt;When the Fire Phone 2 arrives, it will hold the same market share as the Kindle Fire, but even more consumers will scrutinize the Fire Phone 2 with doubt and caution. This is not simply a difficult second-version launch; it also has to overcome a whole baggage load of negativity. This writer has no reason to question Bezos’s insistence on developing the Fire Phone in the hope that it will get back on track, so for the Fire Phone 2 to have any hope of being accepted by the market, I want to stress the following three points:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Broaden the carrier network.&lt;/strong&gt; Setting aside the SIM-free unlocked model, tying the phone to an AT&amp;amp;T contract severely limited the Fire Phone’s appeal. Consumers not only need a Fire Phone, they also need to sign a contract with AT&amp;amp;T and keep up with that network’s updates — or break the contract — in order to use another one. This is a concern for a lot of people. Selling at scale requires lowering the barriers to purchase, and partnering with AT&amp;amp;T for exclusive sales may have saved Amazon some advertising and manufacturing costs; I suspect AT&amp;amp;T helped Amazon pay for that $170 million writedown. Fire Phone sales need the support of networks across the whole United States, but that doesn’t mean it should be limited to US soil. The world is interconnected, and the smartphone fans outside the US who want a Fire Phone should also be potential customers. Amazon needs to expand its market and make the phone available to customers in those places at launch (or within a few weeks after).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deliver good value for money, or even more.&lt;/strong&gt; Value for money doesn’t just mean a low price. Amazon can’t push the US price of this phone below 99 cents, and the one-year Amazon Prime membership bundled with the purchase is genuinely tempting. But the phone didn’t deliver on its promise of “making a good phone.” Reviews say the phone has poor sound quality, a subpar camera and an awkward user interface. Ian Morris of Forbes magazine pointed out: “Like the Fire tablet, the Fire Phone’s interface is a mess. That really is a problem, because if consumers are unhappy with the phone’s performance and don’t want to buy it, then the phone is hard to sell. Apple’s iPhone sells well because no matter who picks up the phone, they can use it. I’m an experienced tech industry journalist, and for me the Fire Phone’s user interface really isn’t up to much.” If what consumers buy is useless, then how cheap it is doesn’t mean much to them. Amazon needs to put in much more effort to make the Fire Phone a first-class product that comes out ahead of other smartphones. To stand alongside today’s well-known brands, the Fire Phone needs to be better, faster and smoother than other smartphones such as the Galaxy S5 and the iPhone 6. In addition, this SIM-free unlocked model should be worth its $450 price. However, Amazon has not yet reached that standard.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Improve the phone’s compatibility and usefulness.&lt;/strong&gt; On the face of it, the Fire Phone running Android is good news. Android is familiar to consumers, it has their trust, and it counts as a flagship operating system in the industry. Of course, this isn’t Google’s version of Android, it’s Amazon’s. By improving the Android Open Source Project, Amazon already has a stable, modern operating system for it to run on. But that operating system has no connection to Google Play, Google Play Services, or Google’s first-party apps like Gmail or Google Maps. Yet these are exactly the apps many consumers depend on. What about the Android apps consumers have already bought? They would need to buy them again on Amazon rather than simply reinstalling them. That being the case, the Fire Phone’s App Store should have every piece of software consumers want, but the fact is it doesn’t. Amazon needs to solve this problem quickly and efficiently, and it will have to pay a steep price in both time and money. Without a good idea, gaps in software usability and app compatibility will drive consumers away from the Fire Phone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Other measures.&lt;/strong&gt; Poor performance and the industry’s negative reviews of the Fire Phone leave Amazon struggling in the smartphone market, with little chance of success. The Fire Phone 2 needs more support from Amazon, the carriers, industry analysts and consumers. Just as Apple did when it launched the iPhone, the Fire Phone team should talk to multiple carriers rather than starting with one or squeezing out another. They need to be more strategic, build more partners and partnerships, and pay attention to how consumers in the real world respond to improvements in the Fire Phone’s design. Fortunately, Bezos hasn’t given up. But I want to see more than product iterations and spec improvements. To hit its expected sales figures, the Fire Phone 2 has a lot of work to do. Price, usefulness and value for money all need improvement. The author of this article is Forbes columnist Ewan Spence.&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <category term="说说" />
+        <category term="phone" />
+        <category term="手机" />
+        <category term="新闻" />
+        <updated>2014-12-08T15:14:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/12/06/shu-ju-ku-biao-fen-ge-ji-shu-en/</id>
+        <title>(Repost) A Brief Analysis of Database Table Partitioning Techniques</title>
+        <link rel="alternate" href="https://erik.xyz/2014/12/06/shu-ju-ku-biao-fen-ge-ji-shu-en/"/>
+        <content type="html">&lt;p&gt;&lt;strong&gt;1. Horizontal Partitioning&lt;/strong&gt; What is horizontal partitioning? A rather vivid analogy: when you eat in a canteen there is only one window, and the queue for food gets so long that it coils into an S shape, which easily makes the people in line anxious and prone to chaos. Then a manager steps up, adds several more serving windows, and cuts that long queue in half into several lines. To put it even more vividly: you take a “scalpel” and slash a big table a few times, and the big table turns into several small tables. Horizontal partitioning places data into two or more independent tables according to certain conditions. That is, it partitions by records — different records can be stored separately, and each sub-table has the same number of columns. Horizontal splitting divides a table into multiple tables. Each table contains the same number of columns, but fewer data rows.&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;For example, a table containing a billion rows can be horizontally partitioned into 12 tables, each small table representing one month of data in a specific year. Any query that needs data for a particular month only has to reference the table for that month. The conditions usually used to horizontally partition a table include: the date-time dimension, the region dimension, and so on — and of course more business dimensions. Let me give a few examples to explain: Case 1: A company’s sales record data volume is too large, so we can horizontally partition it by month, with each month’s sales records in a separate table. Case 2: A group has branch companies in various regions, and the group’s order data table is too large, so we can horizontally split it by the region where each branch is located. Case 3: A telecom company’s call detail records, after being horizontally split by date and city, were found to still have too much data, so they then split them horizontally by brand and number segment. Horizontal partitioning is usually used in the following situations: (1)    The table has a very large volume of data; after splitting, the data and index pages that must be read during a query are reduced, and the number of index levels is lowered as well, speeding up queries. (2)    The data in the table is inherently independent — for example, the table records data for each region or data for different periods separately, especially when some data is used often and some is not. (3)    The data needs to be stored on multiple media. (4)    Historical data and current data need to be separated. Advantages: 1: It reduces the data and index pages that must be read during a query, and also lowers the number of index levels, speeding up queries. Disadvantages: 1: Horizontal partitioning adds complexity to the application; queries usually need multiple table names, and querying all the data requires a union operation. In many database applications this complexity outweighs the benefits it brings, because as long as the index key isn’t large, when the index is used for queries and the table gains two to three times more data, a query only adds one more disk read of an index level. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Vertical Partitioning&lt;/strong&gt; What is vertical partitioning? A vivid analogy: a small company grows into a large multinational enterprise in just a few short years, and its old departmental structure clearly can no longer satisfy the current business growth, so the CEO splits the company into a finance department, an HR department, a production department, a sales department….. setting up many departments at once, each with its own duties. That analogy is fairly apt, isn’t it? Hehe. When you vertically partition a table (without breaking third normal form), you put the primary key and some columns into one table, then put the primary key and some other columns into another table. The original table is split into multiple tables that each contain fewer columns. If some columns in a table are used often and other columns are not, vertical partitioning can be applied. Advantages: 1: Vertical partitioning makes the row data smaller, so a single data block (Block) can hold more data, which reduces the number of I/Os during queries (fewer Blocks are read per query). 2: Vertical partitioning a table achieves maximum use of the Cache. Disadvantages: 1: After vertical partitioning, the primary key becomes redundant, and the redundant columns need to be managed. 2: It gives rise to table JOIN operations (increasing CPU overhead), which needs to be avoided at the business level. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Table Sharding&lt;/strong&gt; Table sharding is similar to horizontal partitioning, but without as clear a dividing line as horizontal partitioning; a Hash algorithm is used to spread the data across the shard tables, so that the IO is more balanced. Generally speaking, we separate databases by business or functional module, with different modules corresponding to different databases or tables, and then apply a certain strategy to further shard a page or function at a smaller database level — for example, the user table sharded by user ID into 128 tables, which should be able to improve system performance at low cost and offers good scalability. Reference: &lt;a href=&#34;http://blog.csdn.net/tianlesoftware/article/details/7674501&#34;&gt;http://blog.csdn.net/tianlesoftware/article/details/7674501&lt;/a&gt; Original article address: &lt;a href=&#34;http://www.cnblogs.com/kerrycode/archive/2013/01/25/2876195.html&#34;&gt;http://www.cnblogs.com/kerrycode/archive/2013/01/25/2876195.html&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="说说" />
+        <category term="数据表" />
+        <updated>2014-12-06T15:01:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/12/06/shu-ju-ku-biao-fen-ge-ji-shu/</id>
         <title>（转）数据库表分割技术浅析</title>
-        <link rel="alternate" href="https://erik.xyz/2014/12/06/zhuan-shu-ju-ku-biao-fen-ge-ji-shu-qian-xi/"/>
+        <link rel="alternate" href="https://erik.xyz/2014/12/06/shu-ju-ku-biao-fen-ge-ji-shu/"/>
         <content type="html">&lt;p&gt;&lt;strong&gt;一．水平分割&lt;/strong&gt; 什么是水平分割？打个比较形象的比喻，在食堂吃 饭的时候，只有一个窗口，排队打饭的队伍太长了，都排成S型了，这时容易让排队的人产生焦虑情绪，容易产生混乱，这时一个管理者站出来，增加多个打饭窗 口，把那条长长的队伍拦腰截断成几队。更形象一点的理解，你拿一把“手术刀”，把一个大表猛的切了几刀，结果这个大表，变成了几个小表. 水平分割根据某些条件将数据放到两个或多个独立 的表中。即按记录进分分割，不同的记录可以分开保存，每个子表的列数相同。水平切割将表分为多个表。每个表包含的列数相同，但是数据行更少。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;例如，可以将 一个包含十亿行的表水平分区成 12 个表，每个小表表示特定年份内一个月的数据。任何需要特定月份数据的查询只需引用相应月份的表。 通常用来水平分割表的条件有：日期时间维度、地区维度等，当然还有更多的业务维度。下面我举几个例子来解说一下 案例1：某个公司销售记录数据量太大了，我们可以对它按月进行水平分割，每个月的销售记录单独成一张表。 案例2：某个集团在各个地区都有分公司，该集团的订单数据表太大了，我们可以按分公司所在的地区进行水平切割。 案例3：某电信公司的话单按日期、地市水平切割后，发现数据量太大，然后他们又按品牌、号码段进行水平切割 水平分割通常在下面的情况下使用： （1）    表数据量很大，分割后可以降低在查询时需要读的数据和索引的页数，同时也降低了索引的层数，加快了查询速度。 （2）    表中的数据本来就有独立性，例如表中分别记录各个地区的数据或不同时期的数据，特别是有些数据常用，而另外一些数据不常用。 （3）    需要把数据存放到多个介质上。 （4）    需要把历史数据和当前的数据拆分开。 优点： 1：降低在查询时需要读的数据和索引的页数，同时也降低了索引的层数，加快了查询速度。 缺点： 1：水平分割会给应用增加复杂度，它通常在查询时需要多个表名，查询所有数据需要union操作。在许多数据库应用中，这种复杂性会超过它带来的优点，因为只要索引关键字不大，则在索引用于查询时，表中增加两到三倍数据量，查询时也就增加读一个索引层的磁盘次数。 &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;二．垂直分割&lt;/strong&gt; 什么是垂直分割呢？打个形象的比喻，一个小公司 通过短短几年发展变成了一个跨国大企业，以前的部门架构明显不能满足现在的业务发展，CEO噼里啪啦的把公司分成了财务部、人事部、生产部、销售部 门…..，一下子成立了多个部门，各司其职。这个还算比较形象吧，有木有？呵呵 你垂直分割表（不破坏第三范式），把主码(主键)和一些列放到一个表，然后把主码(主键)和另外的一些列放到另一个表中。将原始表分成多个只包含较少列的表。如果一个表中某些列常用，而另外一些列不常用，则可以采用垂直分割。 优点： 1：垂直分割可以使得行数据变小，一个数据块(Block)就能存放更多的数据，在查询时就会减少I/O次数(每次查询时读取的Block 就少)。 2：垂直分割表可以达到最大化利用Cache的目的。 缺点： 1：表垂直分割后，主码(主键)出现冗余，需要管理冗余列 2：会引起表连接JOIN操作（增加CPU开销）需要从业务上规避 &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;三. 库表散列&lt;/strong&gt; 表散列与水平分割相似，但没有水平分割那样的明显分割界限，采用Hash算法把数据分散到各个分表中, 这样IO更加均衡。一般来说，我们会按照业务或者功能模块将数据库进行分离，不同的模块对应不同的数据库或者表，再按照一定的策略对某个页面或者功能进行 更小的数据库散列，比如用户表，按照用户ID进行表散列，散列128张表，则应就能够低成本的提升系统的性能并且有很好的扩展性 参考资料：&lt;a href=&#34;http://blog.csdn.net/tianlesoftware/article/details/7674501&#34;&gt;http://blog.csdn.net/tianlesoftware/article/details/7674501&lt;/a&gt; 原始文章地址：&lt;a href=&#34;http://www.cnblogs.com/kerrycode/archive/2013/01/25/2876195.html&#34;&gt;http://www.cnblogs.com/kerrycode/archive/2013/01/25/2876195.html&lt;/a&gt;&lt;/p&gt;
@@ -656,6 +805,17 @@
         <category term="说说" />
         <category term="数据表" />
         <updated>2014-12-06T15:01:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/11/29/ni-wo-ta-en/</id>
+        <title>You, Me and Them</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/29/ni-wo-ta-en/"/>
+        <content type="html">&lt;p&gt;There are always some unfair terms in life. 1. The bank’s ATM breaks down and keeps spitting out banknotes; you call the bank and someone comes right away. If your bank card gets swallowed instead, they tell you after your call to come to the bank to pick up the card a week later. Lesson: when their own interests are not involved, there is no need to hurry at all. When their own interests are involved, they are more frantic than a monkey. 2. When you rent a place away from home you usually sign a contract with the landlord. If you keep living there after the contract expires and sometimes pay the rent a few days late, the landlord is quite easygoing. If there is any problem with the room, the landlord deals with it promptly. But when you are about to move out, a pile of problems appears… Lesson: when they can make use of you and have an interest relationship with you, they are there whenever you call; when they can no longer use you, they take a few hard cuts at you. 3. You often see people showing off that they know some richest man, some big shot, some TV host, that they are friends with so-and-so. Then one day when they fall on hard times, they find that nobody pays them the slightest attention. Lesson: real relationships are built on a long-term foundation, not on having a meal together, shaking hands, or taking part in a few events together and calling that knowing someone.&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <category term="说说" />
+        <category term="随笔吐槽" />
+        <updated>2014-11-29T15:33:00.000Z</updated>
     </entry>
     <entry>
         <id>https://erik.xyz/2014/11/29/ni-wo-ta/</id>
@@ -669,10 +829,10 @@
         <updated>2014-11-29T15:33:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2014/11/25/he-dai-ma-da-jiao-dao-de-yi-xie-dong-xi/</id>
-        <title>和代码打交道的一些东西</title>
-        <link rel="alternate" href="https://erik.xyz/2014/11/25/he-dai-ma-da-jiao-dao-de-yi-xie-dong-xi/"/>
-        <content type="html">&lt;p&gt;运用thinkphp框架好久一段时间了，最近进换工作后又重新熟悉一下，才发现这个框架还是挺好用的。从代码的模型、函数调用，到数据输出，静态生成调试……每种数据展现的是不同的逻辑，同时又是相同的思维。 php有java的思想，却又不能按照java的方法照搬式使用。今天一同事就一直在纠结这个问题，其实是他想的多了，把2种不同的语言混淆到一起。思想可以相似，用法却有着差别。猛然间觉得人的思维何苦不是这样的，相近的事物关联在一起，得出结论，最终却输给实践的答案。 运用一种框架并不难，也没有什么特殊的技巧，有时候自是自己想多了，思维跑偏了。成功的捷径也是这样，不需要非得30而立，也不需要非得获得认证，只是实间沉积的多少和世界观的认知。我们并不能改变自己原有的根本，我们却可以朝着未来的方向去努力改变。 很简单，一切都和容易……&lt;/p&gt;
+        <id>https://erik.xyz/2014/11/25/he-dai-ma-da-jiao-dao-dong-xi-en/</id>
+        <title>Some Things About Working with Code</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/25/he-dai-ma-da-jiao-dao-dong-xi-en/"/>
+        <content type="html">&lt;p&gt;I had been using the thinkphp framework for quite a long time, and recently after changing jobs I got familiar with it again, only to find that this framework is actually pretty good to use. From the code’s models and function calls, to data output, static generation and debugging… each kind of data presents a different logic, while at the same time sharing the same thinking. PHP has the ideas of Java, yet you can’t just copy Java’s methods wholesale. Today a colleague kept agonizing over this problem, when really he was overthinking it, mixing two different languages together. The ideas can be similar, but the usage differs. Suddenly it struck me that people’s thinking works no differently: related things get linked together and a conclusion is drawn, yet in the end it loses out to the answer that practice gives. Using a framework isn’t hard, and there’s no special trick to it — sometimes you’re just overthinking and your thinking goes off track. The shortcut to success is the same way: you don’t have to have made it by 30, and you don’t have to get certified, it’s just a matter of how much time has settled and how you understand the world. We can’t change what we fundamentally are, but we can work toward changing in the direction of the future. It’s very simple, everything is easy…&lt;/p&gt;
 </content>
         <category term="随笔" />
         <category term="说说" />
@@ -680,104 +840,14 @@
         <updated>2014-11-25T14:11:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2014/11/24/na-xie-nian-de-wo-men/</id>
-        <title>那些年的我们</title>
-        <link rel="alternate" href="https://erik.xyz/2014/11/24/na-xie-nian-de-wo-men/"/>
-        <content type="html">&lt;p&gt;时间久了，不得不吐槽一下，那些年的我们。 一起逃课，一起吃饭…… 有时我在想，我们的相遇只是一抹时光的略去，曾有的微笑和快乐早已停息。多少过后，我还记得你，你还认识我。其实，不必有太多的感觉，没有回忆的时刻里我们总会有真理来奠基。 没有资格去埋怨环境和不公，你想要的终究是要自己来取，等待，永远不会有美丽的结局。 随手一笔，吐槽自己，吐槽时间，用亲情来滴亮牟际，看看世界美妙的乐曲。 走也不是开始，去也不是结束，往复循环……&lt;/p&gt;
+        <id>https://erik.xyz/2014/11/25/he-dai-ma-da-jiao-dao-dong-xi/</id>
+        <title>和代码打交道的一些东西</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/25/he-dai-ma-da-jiao-dao-dong-xi/"/>
+        <content type="html">&lt;p&gt;运用thinkphp框架好久一段时间了，最近进换工作后又重新熟悉一下，才发现这个框架还是挺好用的。从代码的模型、函数调用，到数据输出，静态生成调试……每种数据展现的是不同的逻辑，同时又是相同的思维。 php有java的思想，却又不能按照java的方法照搬式使用。今天一同事就一直在纠结这个问题，其实是他想的多了，把2种不同的语言混淆到一起。思想可以相似，用法却有着差别。猛然间觉得人的思维何苦不是这样的，相近的事物关联在一起，得出结论，最终却输给实践的答案。 运用一种框架并不难，也没有什么特殊的技巧，有时候自是自己想多了，思维跑偏了。成功的捷径也是这样，不需要非得30而立，也不需要非得获得认证，只是实间沉积的多少和世界观的认知。我们并不能改变自己原有的根本，我们却可以朝着未来的方向去努力改变。 很简单，一切都和容易……&lt;/p&gt;
 </content>
         <category term="随笔" />
         <category term="说说" />
         <category term="随笔吐槽" />
-        <updated>2014-11-24T15:41:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2014/11/22/hu-lian-wang-de-na-xie-shi/</id>
-        <title>互联网的那些事</title>
-        <link rel="alternate" href="https://erik.xyz/2014/11/22/hu-lian-wang-de-na-xie-shi/"/>
-        <content type="html">&lt;p&gt;第一届国际互联网大会已经过去了，中国7个大佬分别掌管着不同领域的资源，把持着各自的方向。烧钱也好，合作也好，投资也罢结局都是推动中国经济发展，方便人群互惠互利。我们生活在底层的人不回去知道10年后是什么样子，当然也不会很在意，高科技的发展以让生活变得很懒。我们到最后会是什么样，会担心什么……都是未知的 百度从一个乱撞的苍蝇，变为专注智能、大数据方向发展。阿里巴巴从淘宝、团购、到阿里云不断演化自己的生态圈。腾讯，中国永远聊天中的老大，5亿qq，4.5亿微信用户群。360夺冠网络pc安全之首。小米开创国产手机品牌第一，同时也是苹果的跟屁虫。京东，曾是很不起眼的一家商城，如今和腾讯联姻大有盖过阿里巴巴之势。搜狐，不起眼的角色，在一步步崛起。 我能说现在是互联网开拔的时代，也是7大佬真正争斗的开幕，一场很大的风暴开始慢慢酝酿了。&lt;/p&gt;
-</content>
-        <category term="随笔" />
-        <category term="说说" />
-        <category term="随笔吐槽" />
-        <updated>2014-11-22T15:26:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2014/11/21/gao-jiao-hui/</id>
-        <title>高交会</title>
-        <link rel="alternate" href="https://erik.xyz/2014/11/21/gao-jiao-hui/"/>
-        <content type="html">&lt;p&gt;高交会在深圳有好几个年头了，一直没抽时间去看，昨天特地去了一下。 &lt;img src=&#34;http://i1.tietuku.com/0163e6e287a5d7d1.jpg&#34; alt=&#34;3d试衣镜图片&#34;&gt; 从1号馆展示科技动态、视觉技术给人太多的震撼了。3d试衣镜，激光自由雕刻机，移动机器人……感觉不久的生活会很便捷。我不知道这样科技的智能化利弊之间有多大，科技给我们带来越多的便捷同时也产生越多的弊端。机器都干了人来干的事情，人的生活会是什么样？ &lt;img src=&#34;http://i1.tietuku.com/c3b005b4b3af85b3.jpg&#34; alt=&#34;图片&#34;&gt; 我能看到现在的智能家具、绿色能源、3d立体这些东西足以让我猜想未来的生活会是什么样子的。科技在不断的更新，影响着我们周围的一切，也许不久我可以站在祖国的最南端和最北端的盆友面对面的交流，他的表情、动作一一展现出来。 &lt;img src=&#34;http://i1.tietuku.com/ed6d90a08a015309.jpg&#34; alt=&#34;图片&#34;&gt; 下一年将会是互联网统治，伴随着物联网、车联网、o2o的出现生活中似乎只剩2样东西——网络和电。少了他们感觉会空虚，会无助，会模糊。手势识别技术也再次成熟，或许过不了几天你可以看到真实的游戏中，自己如临实景，操控整个战场。 &lt;img src=&#34;http://i1.tietuku.com/3338997c2105e903.jpg&#34; alt=&#34;8K电视图片&#34;&gt;&lt;/p&gt;
-</content>
-        <category term="随笔" />
-        <category term="说说" />
-        <category term="随笔吐槽" />
-        <updated>2014-11-21T11:48:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2014/11/19/wu-zhen-hu-lian-wang-da-hui/</id>
-        <title>乌镇互联网大会</title>
-        <link rel="alternate" href="https://erik.xyz/2014/11/19/wu-zhen-hu-lian-wang-da-hui/"/>
-        <content type="html">&lt;p&gt;乌镇，中国历史上的千年古镇。旅游的好地方，咋看和互联网大会不找边啊，几千年留下的历史建筑同现在科技结合在一起岸，给太多的疑惑了。跟着这些疑惑先去百度一下。 &lt;img src=&#34;http://i1.tietuku.com/2d6c4e9df4ed6e87.png&#34; alt=&#34;百度截图&#34;&gt; 百度只给了这个简单的介绍，介绍后面提到互联网大会。还是有点晕乎，到底为什么在乌镇举行互联网大会，为什么不是北上广深任一城市？后来才发现，原来乌镇是全国最早、最快运用互联网、互联网经济最发达的地方，当然也有主办方有意让互联网大会坐落在一个小镇上。第一节世界互联网大会就这么在乌镇开始了，没有柏油路，没有玻璃窗，所有的原貌依旧，一种古老的气息同店铺里扫描支付、石板路上的无线高速wi-fi显得格外有意思。 互联网大会将聚集十几个国家地区的公司代表，为期三天，共同探讨世界互联网发展。第一届就这么开始了。&lt;/p&gt;
-</content>
-        <category term="随笔" />
-        <category term="说说" />
-        <category term="随笔吐槽" />
-        <updated>2014-11-19T12:47:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2014/11/04/wei-ni-zai-gan-ma/</id>
-        <title>喂，你在干嘛</title>
-        <link rel="alternate" href="https://erik.xyz/2014/11/04/wei-ni-zai-gan-ma/"/>
-        <content type="html">&lt;p&gt;不是春天也不是秋天，每年都是一个天。&lt;/p&gt;
-&lt;p&gt;没有妒忌，没有贪婪，只有静静的相伴&lt;/p&gt;
-&lt;p&gt;山不在有，路不再远，而我还是满脸无言&lt;/p&gt;
-&lt;p&gt;有着四季给予的抚爱，却总是缠缠绵绵&lt;/p&gt;
-&lt;p&gt;透过朦胧的小道，我看到门的边缘&lt;/p&gt;
-&lt;p&gt;其实，我在边，我的世界在变。&lt;/p&gt;
-</content>
-        <category term="随笔" />
-        <category term="说说" />
-        <category term="随笔吐槽" />
-        <updated>2014-11-04T10:21:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2014/10/23/wang-zhan-xiang-ying-su-du/</id>
-        <title>网站响应速度！！</title>
-        <link rel="alternate" href="https://erik.xyz/2014/10/23/wang-zhan-xiang-ying-su-du/"/>
-        <content type="html">&lt;p&gt;&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB217h.aVXXXXXnXpXXXXXXXXXX_!!809419769.jpg&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB217h.aVXXXXXnXpXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;木木夕&#34;&gt;&lt;/a&gt; 很给力，哈哈。终于不用再操心了。。！&lt;/p&gt;
-</content>
-        <category term="随笔" />
-        <category term="说说" />
-        <updated>2014-10-23T03:06:53.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2014/10/22/php-gong-cheng-shi/</id>
-        <title>php攻城狮</title>
-        <link rel="alternate" href="https://erik.xyz/2014/10/22/php-gong-cheng-shi/"/>
-        <content type="html">&lt;p&gt;&lt;img src=&#34;http://img02.taobaocdn.com/imgextra/i2/809419769/TB2_2lPaVXXXXX_XXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;工程师是个累活，说白了就和农民工没多大区别。对于刚开始的php程序员来说问题也是大把的，在此我做个简单的总结。 做开发中你没有经验，经常回卡住，这是难免的。你会想去群里求助，但是你会发现大多数会的人基本上不搭理你，要不就是搭理你也是说个思路。首先，遇到的问题是先自己百度、谷歌或者直接翻译报错内容。其次，你可以把你报错的内容发到群里，详细的说下你的想法，注意要有礼貌（群里热心人还是不少的）。大部分人不愿意解答的问题确实太简单了，没必要去花费时间，他们往往会给你个方向自己研究去，因为他们都是这样过来的，这样学到的经验。还要注意某些问题不重要的不要一味的去纠结，那样很浪费时间。 &lt;img src=&#34;http://img02.taobaocdn.com/imgextra/i2/809419769/TB2EGxOaVXXXXbjXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt; 笔者曾在百度寻找答案时经常遇到很模糊的作者，他们往往以自己的角度和理解方法去阐述问题，对于大部分刚接触php者来说根本看不懂，干着急。有时候，有些方法只是在win系统管用，linux却不管用，毕竟二者是有着差别的。所以，请花时间理解或者掌握解决某些问题的伙伴，发博客时考虑一下没php基础的伙伴，尽量用详细的语言描述。另外学php的大都是半路出家，没有班课出身的，学校也没有这方面专业的课程，所以大部分都没学基础，要先把基础搞懂了再去问问题，和别人沟通才好。 &lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2EqROaVXXXXa0XXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt; 在开发中经常会被一些下问题卡上几天，比如忘加分好了或者忘加引号了，这就要php开发者有良好的代码书写习惯，一开始就要注意。另外平时多接触一下seo代码优化这块的要求，在编写代码时尽量按着这方面走，为后续优化节约时间。二次开发时注意下如果源码很是乱，没有备注，那你就要自己重新开发，不要在源码上浪费时间了。 &lt;img src=&#34;http://img01.taobaocdn.com/imgextra/i1/809419769/TB2dWxGaVXXXXb0XpXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt; 有些问题你搞不明白可以先放一段时间后再去研究，那时候你会发现豁然开朗。 &lt;img src=&#34;http://img04.taobaocdn.com/imgextra/i4/809419769/TB2ishHaVXXXXbiXpXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt; 刚开始的php程序员，工作一定要选择好，特别是将来发展这块，尤其是别去做维护这块，对自身发展不利。特别是小公司就一个程序员，基本上就把你当个打杂的使唤。 &lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2yQlIaVXXXXaoXpXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt; 工作中要注意调节好自己的心情，不要刻意的压抑着，适当的出去透透气放松一下，php开发刚开始是很枯燥的，一个问题有时候真的搞得人都崩溃了。 &lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2zOtIaVXXXXaGXpXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt; 最后祝愿那些和我们一样的开发者，保持好心情，多写一些照顾基础伙伴的博文。php开发者加油哦。&lt;/p&gt;
-</content>
-        <category term="随笔" />
-        <category term="说说" />
-        <category term="随笔吐槽" />
-        <updated>2014-10-22T13:40:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2014/10/17/zhe-shi-yi-ge-kai-shi-de-jie-shu/</id>
-        <title>这是一个开始的结束</title>
-        <link rel="alternate" href="https://erik.xyz/2014/10/17/zhe-shi-yi-ge-kai-shi-de-jie-shu/"/>
-        <content type="html">&lt;p&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB29IwPaFXXXXXHXpXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt; &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;可以有江山一色，也可以有花鸟纷飞，我们的世界里只要有实力，创造似乎并不是难事。难得是如何控制欲望，如何改动实际的布局。默默地守护和默默地抗争，或许并不知道自己想要的是什么，也不知道这存在有多大的意义，总之离不开利益，利益不均衡就会有问题，有斗争……&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://img02.taobaocdn.com/imgextra/i2/809419769/TB2FTQPaFXXXXcJXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;br&gt;有时候真的很孤单，却又找不到我的她，她在哪…… &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://img01.taobaocdn.com/imgextra/i1/809419769/TB2vngLaFXXXXbwXpXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;br&gt;漫长的路程，漫长的历史，却没有漫长的时空来穿越过去。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://img02.taobaocdn.com/imgextra/i2/809419769/TB2jUIOaFXXXXXQXpXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;br&gt;没有漂亮的脸蛋就用实力展现自己，那还有一点，人总是喜欢审美标准，美女多了才养眼，现在流行造美女。 &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://img01.taobaocdn.com/imgextra/i1/809419769/TB2.AMQaFXXXXcmXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;br&gt;我们都是被父母养大的，我们现在却有着超乎父母担心养老的压力，感情在的，我却不再……&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2hfITaFXXXXaIXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;br&gt;没有人再说夕阳是最美的，没有再说老婆是最美的，没有人再说时间很宝贵的……你会发现这些统统是一个观点，大众赋予的，公众一直沉醉的。 &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://img02.taobaocdn.com/imgextra/i2/809419769/TB2Za3YaFXXXXXbXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;br&gt;火药该进了武器，推动了自然环境的利用，同时也有许多生命惨死。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2gTERaFXXXXbPXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;br&gt;可以有会飞的鸟儿，钻地的穿山甲，爬树的知了，游泳的老虎，为什么没有全能的人。因为物种不一样，人只有一种类别，动物确实数不清的类别。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://img04.taobaocdn.com/imgextra/i4/809419769/TB26eZUaFXXXXacXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;br&gt;已知的世界里只有植物的寿命最久，在它们生下来那一刻就一直原地不动。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://img01.taobaocdn.com/imgextra/i1/809419769/TB2b7wPaFXXXXXoXpXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;br&gt;实物造就了胖子，也造就的最变笨的方法。&lt;/p&gt;
-</content>
-        <category term="随笔" />
-        <category term="说说" />
-        <category term="随笔吐槽" />
-        <updated>2014-10-17T04:03:00.000Z</updated>
+        <updated>2014-11-25T14:11:00.000Z</updated>
     </entry>
 </feed>

@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,27 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2019/08/14/liu-shui-en/</id>
+        <title>Flowing Water</title>
+        <link rel="alternate" href="https://erik.xyz/2019/08/14/liu-shui-en/"/>
+        <content type="html">&lt;p&gt;One laugh, one fool, one madness,&lt;/p&gt;
+&lt;p&gt;Half dreaming, half awake, half a face of sorrow.&lt;/p&gt;
+&lt;p&gt;Branches sway and swing, the branch unseen,&lt;/p&gt;
+&lt;p&gt;Blossoms bloom and fall, without a pause.&lt;/p&gt;
+&lt;h5 id=&#34;Introduction&#34;&gt;&lt;a href=&#34;#Introduction&#34; class=&#34;headerlink&#34; title=&#34;Introduction&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#介绍&#34; title=&#34;介绍&#34;&gt;&lt;/a&gt;Introduction&lt;/h5&gt;&lt;p&gt;Written around mid-November 2018.&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <category term="生活手记" />
+        <category term="艾瑞可erik" />
+        <updated>2019-08-14T01:58:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2019/08/14/liu-shui/</id>
         <title>流水</title>
@@ -540,6 +555,35 @@
         <updated>2019-08-06T01:58:00.000Z</updated>
     </entry>
     <entry>
+        <id>https://erik.xyz/2019/08/06/chen-yuan-en/</id>
+        <title>Dust of Fate</title>
+        <link rel="alternate" href="https://erik.xyz/2019/08/06/chen-yuan-en/"/>
+        <content type="html">&lt;p&gt;One tangle, one parting,&lt;/p&gt;
+&lt;p&gt;The Buddha saves me not; I save myself from dust.&lt;/p&gt;
+&lt;p&gt;Three parts unseen, seven parts a trace,&lt;/p&gt;
+&lt;p&gt;Each blade of grass grieves, each blade of grass hears.&lt;/p&gt;
+&lt;h5 id=&#34;Introduction&#34;&gt;&lt;a href=&#34;#Introduction&#34; class=&#34;headerlink&#34; title=&#34;Introduction&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#介绍&#34; title=&#34;介绍&#34;&gt;&lt;/a&gt;Introduction&lt;/h5&gt;&lt;p&gt;Written in early July 2018.&lt;/p&gt;
+&lt;p&gt;They say the rain of June is written full of sorrow. I once did not understand……&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <category term="生活手记" />
+        <category term="艾瑞可erik" />
+        <updated>2019-08-06T01:58:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2019/03/12/yuan-dian-en/</id>
+        <title>The Origin</title>
+        <link rel="alternate" href="https://erik.xyz/2019/03/12/yuan-dian-en/"/>
+        <content type="html">&lt;p&gt;Life always goes in cycles; by the end of the year we’re back to the origin.&lt;/p&gt;
+&lt;p&gt;The blog was down for a year, and tonight it is officially rebuilt.&lt;/p&gt;
+&lt;p&gt;2018 was a roller-coaster year of life.&lt;/p&gt;
+&lt;p&gt;In 2019, everything starts from the very origin. I haven’t given up, and I won’t give up.&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <category term="生活手记" />
+        <updated>2019-03-12T01:58:00.000Z</updated>
+    </entry>
+    <entry>
         <id>https://erik.xyz/2019/03/12/yuan-dian/</id>
         <title>原点</title>
         <link rel="alternate" href="https://erik.xyz/2019/03/12/yuan-dian/"/>
@@ -551,6 +595,110 @@
         <category term="随笔" />
         <category term="生活手记" />
         <updated>2019-03-12T01:58:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2019/03/12/lao-dong-zhong-cai-de-liu-cheng-en/</id>
+        <title>The Process of Labor Arbitration in Shenzhen</title>
+        <link rel="alternate" href="https://erik.xyz/2019/03/12/lao-dong-zhong-cai-de-liu-cheng-en/"/>
+        <content type="html">&lt;h5 id=&#34;Reference-Materials&#34;&gt;&lt;a href=&#34;#Reference-Materials&#34; class=&#34;headerlink&#34; title=&#34;Reference Materials&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#参照资料&#34; title=&#34;参照资料&#34;&gt;&lt;/a&gt;Reference Materials&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://flk.npc.gov.cn/detail2.html?MmM5MDlmZGQ2NzhiZjE3OTAxNjc4YmY3NGQ3MTA2YjM%3D&#34;&gt;Labor Contract Law of the People’s Republic of China&lt;/a&gt;&lt;br&gt;Refer to Articles 30, 47, 48, 85, 87, 88, 90, and 91&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.chinacourt.org/law/detail/2013/01/id/146113.shtml&#34;&gt;Interpretation of the Supreme People’s Court on Several Issues Concerning the Application of Law in the Trial of Criminal Cases of Refusing to Pay Labor Remuneration&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.chinacourt.org/law/detail/2017/05/id/149471.shtml&#34;&gt;Rules for Handling Labor and Personnel Dispute Arbitration Cases&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.chinacourt.org/law/detail/2017/05/id/149472.shtml&#34;&gt;Rules on the Organization of Labor and Personnel Dispute Arbitration&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://zxgk.court.gov.cn/thirdPage.html?href=shouye/html/sfjs/fy_201804210233.html&amp;amp;system=sfjs&#34;&gt;Provisions of the Supreme People’s Court on Several Issues Concerning the Change and Addition of Parties in Civil Enforcement&lt;/a&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;Lookup-Websites&#34;&gt;&lt;a href=&#34;#Lookup-Websites&#34; class=&#34;headerlink&#34; title=&#34;Lookup Websites&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#查询网&#34; title=&#34;查询网&#34;&gt;&lt;/a&gt;Lookup Websites&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://wenshu.court.gov.cn/&#34;&gt;China Judgements Online&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://songda.court.gov.cn/wscx/mo/m-login.html&#34;&gt;National Court Litigation Activity Notification Platform&lt;/a&gt; (currently in trial operation)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rmfygg.court.gov.cn/&#34;&gt;People’s Court Announcement Network&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jubao.court.gov.cn/&#34;&gt;Judge Reporting Center&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://zxgk.court.gov.cn/&#34;&gt;China Enforcement Information Disclosure Network&lt;/a&gt; (you can check the progress of your application for enforcement)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If the company you signed the contract with and the company you actually work for are not the same company, and your social insurance is not paid by either of those two companies, then winning such an arbitration is unlikely…&lt;/p&gt;
+&lt;p&gt;In Shenzhen you can go directly through the WeChat official account: &lt;strong&gt;深圳人社&lt;/strong&gt; -&amp;gt; HR and Social Security Services -&amp;gt; Palm Services, where at the very bottom there is an E-Arbitration service. Log in there and fill in the information online (choose based on the registered office address on the company’s business license; Shenzhen regulations require that if the registered capital exceeds 10 million yuan or the company is a Shenzhen group enterprise, you must select a municipal-level arbitration institution). The grounds are generally matters such as claiming labor remuneration, compensation, and so on. After your application succeeds, it will show what materials you need to prepare (proof of social insurance relationship, salary bank statements, etc.) to confirm the labor relationship. Generally the arbitration office will contact you within one working day.&lt;/p&gt;
+&lt;p&gt;Note: If there are more than ten people, you can apply for collective arbitration, which requires three representatives; later these three representatives will become the main persons in charge.&lt;/p&gt;
+&lt;h1 id=&#34;If-they-can’t-pay-wages-mediation-is-not-recommended-—-the-process-is-very-slow-Whenever-the-wages-are-paid-then-mediate&#34;&gt;&lt;a href=&#34;#If-they-can’t-pay-wages-mediation-is-not-recommended-—-the-process-is-very-slow-Whenever-the-wages-are-paid-then-mediate&#34; class=&#34;headerlink&#34; title=&#34;If they can’t pay wages, mediation is not recommended — the process is very slow. Whenever the wages are paid, then mediate.&#34;&gt;&lt;/a&gt;&lt;font color=&#34;#FF0000&#34;&gt;If they can’t pay wages, mediation is not recommended — the process is very slow. Whenever the wages are paid, then mediate.&lt;/font&gt;&lt;/h1&gt;&lt;h5 id=&#34;Arbitration-Materials&#34;&gt;&lt;a href=&#34;#Arbitration-Materials&#34; class=&#34;headerlink&#34; title=&#34;Arbitration Materials&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#仲裁资料&#34; title=&#34;仲裁资料&#34;&gt;&lt;/a&gt;Arbitration Materials&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;Proof of social insurance enrollment: log in and check at &lt;a href=&#34;https://sipub.sz.gov.cn/hspms/&#34;&gt;Shenzhen Municipal Human Resources and Social Security Bureau -&amp;gt; Shenzhen Municipal Social Insurance Fund Management Bureau&lt;/a&gt;; there is a social insurance certificate inside that you can print. I won’t go into the specifics. (2 copies)&lt;/li&gt;
+&lt;li&gt;Bank salary statements — bank salary statements can be printed at a bank’s self-service terminal (2 copies)&lt;/li&gt;
+&lt;li&gt;Photocopy of your ID card (2 copies)&lt;/li&gt;
+&lt;li&gt;Labor contract (if you have one, photocopy two copies and bring them — do not hand in the original labor contract)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;Arbitration-Matters&#34;&gt;&lt;a href=&#34;#Arbitration-Matters&#34; class=&#34;headerlink&#34; title=&#34;Arbitration Matters&#34;&gt;&lt;/a&gt;Arbitration Matters&lt;/h4&gt;&lt;p&gt;According to Article 33 of the Labor Contract Law of the People’s Republic of China: if an employer changes its name, legal representative, main person in charge, or investors and other such matters, this does not affect the performance of the labor contract. Therefore, whatever happens to the company does not affect the performance of the Labor Contract Law.&lt;/p&gt;
+&lt;h3 id=&#34;Basis-for-Applying-for-Arbitration&#34;&gt;&lt;a href=&#34;#Basis-for-Applying-for-Arbitration&#34; class=&#34;headerlink&#34; title=&#34;Basis for Applying for Arbitration&#34;&gt;&lt;/a&gt;Basis for Applying for Arbitration&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Article 40　Under any of the following circumstances, the employer may terminate the labor contract after notifying the worker in writing 30 days in advance, or after paying the worker an additional month’s wages:&lt;br&gt;(1) The worker is ill or injured for non-work-related reasons and, after the prescribed medical treatment period expires, is unable to perform the original work, and is also unable to perform other work arranged by the employer;&lt;br&gt;(2) The worker is incompetent for the job and, after training or a job reassignment, remains incompetent for the job;&lt;br&gt;(3) The objective circumstances on which the labor contract was concluded changed significantly, making it impossible to perform the labor contract, and no agreement on amending the labor contract could be reached after consultation between the employer and the worker.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Article 46　Under any of the following circumstances, the employer shall pay economic compensation to the worker:&lt;br&gt;　 (1) The worker terminates the labor contract in accordance with Article 38 of this Law;&lt;br&gt;　 (2) The employer proposes terminating the labor contract in accordance with Article 36 of this Law, and the labor contract is terminated upon reaching consensus with the worker through consultation;&lt;br&gt;　 (3) The employer terminates the labor contract in accordance with Article 40 of this Law;&lt;br&gt;　 (4) The employer terminates the labor contract in accordance with Article 41, paragraph 1 of this Law;&lt;br&gt;　 (5) The fixed-term labor contract is terminated in accordance with Article 44, item 1 of this Law, except where the employer maintains or raises the conditions agreed in the labor contract to renew the labor contract and the worker does not agree to the renewal;&lt;br&gt;　 (6) The labor contract is terminated in accordance with Article 44, items 4 and 5 of this Law;&lt;br&gt;　 (7) Other circumstances provided for by laws and administrative regulations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Article 47　Economic compensation shall be paid to the worker at the rate of one month’s wages for each full year the worker has worked for this employer. For a period of six months or more but less than one year, it shall be counted as one year; for less than six months, the employer shall pay the worker economic compensation of half a month’s wages.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;　　If the worker’s monthly wage is higher than three times the average monthly wage of workers in the region for the previous year as published by the municipal people’s government of the municipality directly under the Central Government or of the city divided into districts where the employer is located, the standard for paying economic compensation to that worker shall be three times the average monthly wage of workers, and the number of years for which economic compensation is paid shall not exceed twelve years.&lt;/p&gt;
+&lt;p&gt;　　The monthly wage referred to in this Article means the worker’s average wage for the twelve months preceding the termination or ending of the labor contract.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Article 48　If the employer terminates or ends the labor contract in violation of this Law and the worker requests continued performance of the labor contract, the employer shall continue to perform it; if the worker does not request continued performance of the labor contract, or the labor contract can no longer be performed, the employer shall pay compensation in accordance with Article 87 of this Law.####&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Article 87　If the employer terminates or ends a labor contract in violation of this Law, it shall pay the worker compensation at twice the economic compensation standard provided in Article 47 of this Law.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Article 85　If an employer falls under any of the following circumstances, the labor administrative department shall order it to pay the labor remuneration, overtime pay, or economic compensation within a specified time limit; if the labor remuneration is lower than the local minimum wage standard, the difference shall be paid; if payment is not made within the time limit, the employer shall be ordered to pay the worker additional compensation at the rate of &lt;font color=&#34;#FF0000&#34;&gt;not less than 50% and not more than 100%&lt;/font&gt; of the amount payable:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;　　(1) Failing to pay the worker labor remuneration in full and on time as agreed in the labor contract or as provided by state regulations;&lt;/p&gt;
+&lt;p&gt;　　(2) Paying the worker wages below the local minimum wage standard;&lt;/p&gt;
+&lt;p&gt;　　(3) Arranging overtime work without paying overtime pay;&lt;/p&gt;
+&lt;p&gt;　　(4) Terminating or ending a labor contract without paying the worker economic compensation in accordance with this Law.&lt;/p&gt;
+&lt;font color=&#34;#FF0000&#34;&gt;Generally, whichever of the above articles apply should be written into the arbitration application; you can write the application yourself and print it out.&lt;/font&gt;
+
+  &lt;font color=&#34;#FF0000&#34;&gt;The above legal information is for reference only&lt;/font&gt;
+
+&lt;p&gt;Once you’ve confirmed things with the arbitration office, you can prepare the above materials and go to the arbitration committee to take a number and submit the materials directly.&lt;/p&gt;
+&lt;p&gt;After submitting the materials that day, you will receive a notice of case acceptance in about a week, either by mail or by picking it up from the arbitration committee. After that, in about a month you will receive a notice of hearing, confirming the hearing time. At this stage, if you are confident of winning you don’t need to apply for a free lawyer (a labor lawyer paid for by the state) — either way it takes half a day, and being present yourself is perhaps better.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lawyer’s assistance&lt;/strong&gt; You can go to the WeChat mini program 粤省事, search for legal aid, and apply for legal aid at the legal aid office of whichever district the arbitration is in. As for exactly what materials you need to bring, work it out over the phone with the legal aid office.&lt;/p&gt;
+&lt;p&gt; If your hearing claims include overtime, you need to provide proof of overtime. It can be emails, application slips, or the like — bring anything that counts as evidence, for confrontation in court. During the arbitration process, don’t expect the arbitrator to be biased in your favor; you must present evidence and the basis in labor law according to your own claims.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Final Award&lt;/strong&gt; After receiving the arbitration award, if you plan to apply for enforcement, photocopy the award four or five times and have the arbitration committee stamp them. Generally after 15 days you can apply to the court for enforcement; you can handle the application for enforcement online at the &lt;a href=&#34;https://ssfw.gdcourts.gov.cn/web/loginA&#34;&gt;Guangdong Court Litigation Service Network&lt;/a&gt; (online is relatively slow). If you’re in a hurry, just go to the district court early in the morning and take a number and queue.&lt;/p&gt;
+&lt;h1 id=&#34;If-they-can’t-pay-wages-mediation-is-not-recommended-—-the-process-is-very-slow-Whenever-the-wages-are-paid-then-mediate-1&#34;&gt;&lt;a href=&#34;#If-they-can’t-pay-wages-mediation-is-not-recommended-—-the-process-is-very-slow-Whenever-the-wages-are-paid-then-mediate-1&#34; class=&#34;headerlink&#34; title=&#34;If they can’t pay wages, mediation is not recommended — the process is very slow. Whenever the wages are paid, then mediate.&#34;&gt;&lt;/a&gt;&lt;font color=&#34;#FF0000&#34;&gt;If they can’t pay wages, mediation is not recommended — the process is very slow. Whenever the wages are paid, then mediate.&lt;/font&gt;&lt;/h1&gt;&lt;h5 id=&#34;Applying-for-Enforcement&#34;&gt;&lt;a href=&#34;#Applying-for-Enforcement&#34; class=&#34;headerlink&#34; title=&#34;Applying for Enforcement&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#申请强制执行&#34; title=&#34;申请强制执行&#34;&gt;&lt;/a&gt;Applying for Enforcement&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;Original arbitration award (1 copy), photocopies (2 copies)&lt;/li&gt;
+&lt;li&gt;Photocopy of the applicant’s ID card (2 copies)&lt;/li&gt;
+&lt;li&gt;Information on the respondent (2 copies of the business license)&lt;/li&gt;
+&lt;li&gt;Application (note: wages + compensation or damages + doubled interest recovery) (2 copies)&lt;/li&gt;
+&lt;li&gt;Applicant’s service address form (2 copies)&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Respondent’s service address form (2 copies)&lt;/p&gt;
+&lt;p&gt;When you apply for enforcement at the court, go to the self-service machine on the first floor and write down the phone numbers of the judges in the enforcement bureau (if you don’t note them down, it will be rough later when you file for enforcement and try to proactively communicate with and hurry the judge — even though there are phone numbers, they’re often busy). There are usually two landlines. Register on the &lt;a href=&#34;http://zxgk.court.gov.cn/&#34;&gt;China Enforcement Information Disclosure Network&lt;/a&gt; and you can check the case’s progress. Take the time to nudge the judge handling your enforcement application, but don’t speak too aggressively. If the judge has already frozen the company’s account and you still haven’t recovered the money: if it’s a branch company, just apply to the judge to add the head office; if the head office is added and there is still no money in the account, go to the case filing hall and apply to add the company’s legal representative and shareholders.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Adding the Legal Representative and Shareholders&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Adding the legal representative and shareholders requires providing the legal representative’s ID information and information on whether the shareholders’ capital contributions to the company are subscribed capital or paid-in currency. The legal representative’s ID information and the shareholders’ contribution information can be obtained by going to the &lt;strong&gt;深圳市场监督&lt;/strong&gt; WeChat official account: Consultation and Reporting -&amp;gt; Archive Query Appointment, to book a time to look up the company’s records. You need to bring your own ID card and the case filing materials notice from the court’s filing window — you collect this at the court filing window (bring the business license of the company where the legal representative works or has served as legal representative). Write down your name, ID card, and the name of the company you’re looking up (look up the legal representative’s companies in advance, and it’s best to write down several of the legal representative’s companies). The company records all contain the legal representative’s ID information, and the shareholders’ contribution information is in the company’s articles of association.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Basis-for-Adding-the-Person-Subject-to-Enforcement&#34;&gt;&lt;a href=&#34;#Basis-for-Adding-the-Person-Subject-to-Enforcement&#34; class=&#34;headerlink&#34; title=&#34;Basis for Adding the Person Subject to Enforcement&#34;&gt;&lt;/a&gt;Basis for Adding the Person Subject to Enforcement&lt;/h3&gt;&lt;p&gt; Once you’ve looked up the information you can go to the court to file, applying to add the person subject to enforcement. The application to add is based on the Provisions of the Supreme People’s Court on Several Issues Concerning the Change and Addition of Parties in Civil Enforcement:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Article 7  When a legal person or other organization that is the applicant for enforcement is liquidated or goes bankrupt, and the rights determined by the effective legal instrument are lawfully allocated to a third party, if that third party applies to change or add itself as the applicant for enforcement, the people’s court shall support it.&lt;/li&gt;
+&lt;li&gt;　Article 15  If a branch of a legal person that is the person subject to enforcement cannot pay off the debt determined by the effective legal instrument, and the applicant for enforcement applies to change or add that legal person as the person subject to enforcement, the people’s court shall support it. If the property for which the legal person is directly responsible still cannot pay off the debt, the people’s court may directly enforce against the property of the legal person’s other branches.&lt;br&gt; If a legal person that is the person subject to enforcement cannot pay off the debt determined by the effective legal instrument out of the property for which it is directly responsible, the people’s court may directly enforce against the property of that legal person’s branches.&lt;/li&gt;
+&lt;li&gt;Article 17  If an enterprise legal person that is the person subject to enforcement has insufficient property to pay off the debt determined by the effective legal instrument, and the applicant for enforcement applies to change or add as the person subject to enforcement a shareholder or capital contributor who has not paid, or has not fully paid, its capital contribution, or a promoter who bears joint and several liability for that contribution under the Company Law, to bear liability according to law within the scope of the capital contribution not yet paid, the people’s court shall support it.&lt;/li&gt;
+&lt;li&gt;Article 18  If an enterprise legal person that is the person subject to enforcement has insufficient property to pay off the debt determined by the effective legal instrument, and the applicant for enforcement applies to change or add as the person subject to enforcement a shareholder or capital contributor who withdrew its capital contribution, to bear liability within the scope of the withdrawn capital contribution, the people’s court shall support it.&lt;/li&gt;
+&lt;li&gt;Article 19  If a company that is the person subject to enforcement has insufficient property to pay off the debt determined by the effective legal instrument, and its shareholder transferred its equity without lawfully performing its capital contribution obligation, and the applicant for enforcement applies to change or add as the person subject to enforcement that former shareholder, or a promoter who bears joint and several liability for that contribution under the Company Law, to bear liability within the scope of the contribution not lawfully made, the people’s court shall support it.&lt;/li&gt;
+&lt;li&gt;Article 21  If a company that is the person subject to enforcement completes deregistration without liquidation, making liquidation of the company impossible, and the applicant for enforcement applies to change or add as the person subject to enforcement the shareholders of a limited liability company, or the directors and controlling shareholders of a joint stock company, to bear joint and several liability for the company’s debts, the people’s court shall support it.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Article 22  If a legal person or other organization that is the person subject to enforcement is deregistered, or grounds for dissolution such as revocation of its business license, being dissolved, being ordered to close, or suspension of business arise, and its shareholders, capital contributors, or competent department accept its property without compensation, such that the person subject to enforcement has no remaining property or the remaining property is insufficient to pay off the debt, and the applicant for enforcement applies to change or add as the person subject to enforcement that shareholder, capital contributor, or competent department, to bear liability within the scope of the property accepted, the people’s court shall support it. (Add this article if the company has been deregistered)&lt;/p&gt;
+&lt;font color=&#34;#FF0000&#34;&gt;The above legal information is for reference only&lt;/font&gt;
+
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;If-they-can’t-pay-wages-mediation-is-not-recommended-—-the-process-is-very-slow-Whenever-the-wages-are-paid-then-mediate-2&#34;&gt;&lt;a href=&#34;#If-they-can’t-pay-wages-mediation-is-not-recommended-—-the-process-is-very-slow-Whenever-the-wages-are-paid-then-mediate-2&#34; class=&#34;headerlink&#34; title=&#34;If they can’t pay wages, mediation is not recommended — the process is very slow. Whenever the wages are paid, then mediate.&#34;&gt;&lt;/a&gt;&lt;font color=&#34;#FF0000&#34;&gt;If they can’t pay wages, mediation is not recommended — the process is very slow. Whenever the wages are paid, then mediate.&lt;/font&gt;&lt;/h1&gt;&lt;p&gt; Even if you ultimately can’t recover the money, credit reporting is quite well developed now — an individual having a litigation case record will automatically be entered into the credit reporting system, and once you’re on the list of untrustworthy persons it’s not just restrictions on high-end consumption. Furthermore, the Shenzhen labor bureau (I’m not sure about other cities) has a wage fund used to advance wages; if in the end the court cannot recover the money either, you can apply for wage advancement&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;Don’t be afraid of trouble, and don’t be afraid of how long it takes. Defending your rights is about your own hard-earned money, nothing else. If you’re afraid of hassle, then just don’t apply for arbitration in the first place.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt; Finally, I wish everyone forced to apply for arbitration to defend their rights a speedy recovery of their hard-earned money.&lt;/p&gt;
+  &lt;font color=&#34;#FF0000&#34;&gt;The above information is for reference only and differs somewhat from actual practice.&lt;/font&gt;
+
+   &lt;font color=&#34;#FF0000&#34;&gt;If anyone uses this information to do anything illegal, they bear the consequences themselves.&lt;/font&gt;
+</content>
+        <category term="随笔" />
+        <category term="生活手记" />
+        <category term="劳动纠纷" />
+        <category term="追缴工资" />
+        <category term="申请仲裁" />
+        <updated>2019-03-12T01:26:00.000Z</updated>
     </entry>
     <entry>
         <id>https://erik.xyz/2019/03/12/lao-dong-zhong-cai-de-liu-cheng/</id>
@@ -654,6 +802,15 @@
         <category term="追缴工资" />
         <category term="申请仲裁" />
         <updated>2019-03-12T01:26:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2015/09/12/shou-ji-zhuo-mian-bian-liang-le-en/</id>
+        <title>My Phone&#39;s Home Screen Got Brighter</title>
+        <link rel="alternate" href="https://erik.xyz/2015/09/12/shou-ji-zhuo-mian-bian-liang-le-en/"/>
+        <content type="html">&lt;p&gt;After a bit more than three months of use, a domestic phone’s screen suddenly became bright and crisp. The phone was always running hot and draining battery, needing a charge almost every day. It felt strange, so I uninstalled more than half of the apps I rarely used, and the system battery monitor showed the home screen was using the most power. That puzzled me — the screen was on for the least amount of time, so how could it be the biggest drain? I tried changing the phone’s default wallpaper to a seascape photo I had taken, and in an instant the home screen became crisp…… Sometimes changing your surroundings is a good thing, even if you haven’t yet found what you’re looking for. Time began in graduation season, and now we either start families or rush about or stay busy and reap the rewards. Still racing against time, but those days will not come again. Your environment determines what you become and what you have. The phone screen lit up, and I suddenly thought of something. The first time, or rather the very first time, I came to Shenzhen, there was pain and helplessness. I came at first just to survive, working on an assembly line. I didn’t want that kind of life — dull, repetitive, insipid. Either change or change places; changing wasn’t working, so I left. I once felt life was so exhausting that I wanted to give up. Off the steady assembly line, the days went by quite rootlessly. I once had all of it, and now it drifts away like clouds and does not return. What changes you is not only time, but also your environment…… I love these accidental gains, these momentary flashes of insight. I have come, and I no longer beg……&lt;/p&gt;
+</content>
+        <category term="生活手记" />
+        <updated>2015-09-12T12:42:00.000Z</updated>
     </entry>
     <entry>
         <id>https://erik.xyz/2015/09/12/shou-ji-zhuo-mian-bian-liang-le/</id>

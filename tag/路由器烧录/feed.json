@@ -5,6 +5,19 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2022/12/14/shao-lu-luyouqi-en/",
+            "url": "https://erik.xyz/2022/12/14/shao-lu-luyouqi-en/",
+            "title": "How to Turn a Bricked HiWiFi Router Back to Normal",
+            "date_published": "2022-12-14T00:41:00.000Z",
+            "content_html": "<p>There is an idle HiWiFi 2 sitting at home, so I tried flashing openwrt on it, and one careless move bricked it. It would not power on, and no indicator light came on. I had originally thought of just throwing it away, but then I checked Xianyu and second-hand ones cost over 100. So I resolutely looked for a solution. I found this article <a href=\"https://www.ddmzf.cn/202203155.html\">HiWiFi X programmer brick rescue tutorial: flashing PandoraBox with a programmer</a>, and following it, I bought a CH341A programmer + flashing clip from the almighty Taobao<br><span id=\"more\"></span></p>\n<p><img src=\"/img/202212/20221214084856.jpg\" width = \"500\" height = \"400\" alt=\"erik.xyz\" align=center /></p>\n<p>The price was still reasonable. As soon as the thing arrived I started taking the router apart; the screws are truly bizarre, and it took me ages to get them off.</p>\n<p><img src=\"/img/202212/20221214085342.jpg\" width = \"500\" height = \"200\" alt=\"erik.xyz\" align=center /></p>\n<p>Then I searched online for CH341A programmer flashing software. Extract the downloaded software package.</p>\n<ol>\n<li>Install the driver first<br>Open the - programmer driver manual installation folder<br><img src=\"/img/202212/1.png\" alt=\"erik.xyz\"></li>\n</ol>\n<ol>\n<li>Open<br><img src=\"/img/202212/2.png\" alt=\"erik.xyz\"></li>\n</ol>\n<ol>\n<li>Click install<br><img src=\"/img/202212/3.png\" alt=\"erik.xyz\"></li>\n</ol>\n<ol>\n<li><p>It reports that the driver was installed successfully<br><img src=\"/img/202212/4.png\" alt=\"erik.xyz\"><br>*Installing the TTL driver is the same</p>\n</li>\n<li><p>Open the software folder<br><img src=\"/img/202212/5.png\" alt=\"erik.xyz\"></p>\n</li>\n</ol>\n<ol>\n<li>Open the CH341A.exe program and plug in the programmer<br><img src=\"/img/202212/6.png\" alt=\"erik.xyz\"></li>\n</ol>\n<ol>\n<li>If the bottom-right corner of the software shows connected, it means the driver was installed successfully<br><img src=\"/img/202212/7.png\" alt=\"erik.xyz\"></li>\n</ol>\n<ol>\n<li>Install it with the CH341A programmer I bought<br><img src=\"/img/202212/254879.webp\" alt=\"erik.xyz\"></li>\n</ol>\n<p><img src=\"/img/202212/345517.webp\" alt=\"erik.xyz\"></p>\n<ol>\n<li>Press the software’s detect button. If it cannot detect anything or the model does not match, manually select your model. It shows chip 25T80 detected<br><img src=\"/img/202212/8.png\" alt=\"erik.xyz\"></li>\n</ol>\n<p>Once the chip is recognised normally, we carry out the operations of the buttons at the top in order: Erase – Blank check – Open – Select file “HC5761A-sysupgrade-20170606-abe3b35e.bin” – Program – Verify</p>\n<p><img src=\"/img/202212/20221214091336.jpg\" alt=\"erik.xyz\"></p>\n",
+            "tags": [
+                "路由器烧录",
+                "烧录",
+                "极路由2烧录",
+                "砖头烧录"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2022/12/14/shao-lu-luyouqi/",
             "url": "https://erik.xyz/2022/12/14/shao-lu-luyouqi/",
             "title": "如何把极路由从砖头变正常  ",

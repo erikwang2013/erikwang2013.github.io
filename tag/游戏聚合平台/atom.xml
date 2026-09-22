@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,24 +502,114 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
     <entry>
+        <id>https://erik.xyz/2026/05/23/game-platform-php-en/</id>
+        <title>Global Game Platform — Global Game Aggregation Platform</title>
+        <link rel="alternate" href="https://erik.xyz/2026/05/23/game-platform-php-en/"/>
+        <content type="html">&lt;h1 id=&#34;Global-Game-Platform&#34;&gt;&lt;a href=&#34;#Global-Game-Platform&#34; class=&#34;headerlink&#34; title=&#34;Global Game Platform&#34;&gt;&lt;/a&gt;Global Game Platform&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#97;&amp;#x69;&amp;#x6c;&amp;#x74;&amp;#111;&amp;#58;&amp;#101;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#64;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#x2e;&amp;#x78;&amp;#x79;&amp;#122;&#34;&gt;&amp;#101;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#64;&amp;#x65;&amp;#x72;&amp;#x69;&amp;#107;&amp;#x2e;&amp;#x78;&amp;#x79;&amp;#122;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A universal, internationalized game aggregation platform. After registering, users top up on the platform and exchange that balance for game coins; they use the coins to play games and earn more coins, and coins can be converted back into wallet balance for withdrawal. The admin panel provides complete game management, withdrawal review, user management and payment management. Multi-language switching (English/Chinese) is supported.&lt;/p&gt;
+&lt;h2 id=&#34;Version-strategy&#34;&gt;&lt;a href=&#34;#Version-strategy&#34; class=&#34;headerlink&#34; title=&#34;Version strategy&#34;&gt;&lt;/a&gt;Version strategy&lt;/h2&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Version&lt;/th&gt;
+&lt;th&gt;Goal&lt;/th&gt;
+&lt;th&gt;Status&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Basic (MVP)&lt;/td&gt;
+&lt;td&gt;Get the core loop working: register → top up → exchange → play → withdraw → review&lt;/td&gt;
+&lt;td&gt;Done&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Standard&lt;/td&gt;
+&lt;td&gt;Production-ready: global payments, third-party game SDKs, basic risk control, three front ends&lt;/td&gt;
+&lt;td&gt;Planned&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Full&lt;/td&gt;
+&lt;td&gt;The complete version: multi-language, leaderboards, coupons, full risk control, every feature&lt;/td&gt;
+&lt;td&gt;Planned&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h4 id=&#34;Download&#34;&gt;&lt;a href=&#34;#Download&#34; class=&#34;headerlink&#34; title=&#34;Download&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://github.com/erikwang2013/game-platform-php-lite&#34;&gt;Download&lt;/a&gt;&lt;/h4&gt;&lt;h2 id=&#34;Tech-stack&#34;&gt;&lt;a href=&#34;#Tech-stack&#34; class=&#34;headerlink&#34; title=&#34;Tech stack&#34;&gt;&lt;/a&gt;Tech stack&lt;/h2&gt;&lt;h3 id=&#34;Backend&#34;&gt;&lt;a href=&#34;#Backend&#34; class=&#34;headerlink&#34; title=&#34;Backend&#34;&gt;&lt;/a&gt;Backend&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;PHP 8.3+, webman v2 (workerman/webman)&lt;/li&gt;
+&lt;li&gt;MySQL 8.0+ (table prefix &lt;code&gt;erik_&lt;/code&gt;, BIGINT non-auto-increment primary keys)&lt;/li&gt;
+&lt;li&gt;Redis (session / cache / rate limiting)&lt;/li&gt;
+&lt;li&gt;Elasticsearch (full-text search)&lt;/li&gt;
+&lt;li&gt;JWT authentication + RBAC permissions&lt;/li&gt;
+&lt;li&gt;Data encryption: AES-256-CBC at the API transport layer + AES-128-ECB at the database storage layer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Frontend&#34;&gt;&lt;a href=&#34;#Frontend&#34; class=&#34;headerlink&#34; title=&#34;Frontend&#34;&gt;&lt;/a&gt;Frontend&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Flutter 3.x (Web PC style)&lt;/li&gt;
+&lt;li&gt;HarmonyOS ArkTS (mobile)&lt;/li&gt;
+&lt;li&gt;Responsive layout (Phone / Tablet / Desktop)&lt;/li&gt;
+&lt;li&gt;Internationalization (i18n): English / Simplified Chinese switching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Core-components&#34;&gt;&lt;a href=&#34;#Core-components&#34; class=&#34;headerlink&#34; title=&#34;Core components&#34;&gt;&lt;/a&gt;Core components&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;erikwang2013/snowflake-php&lt;/code&gt; — globally unique BIGINT ID generation&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;erikwang2013/hashids&lt;/code&gt; — ID encryption/decryption at the API layer&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;erikwang2013/jwt-webman&lt;/code&gt; — JWT authentication&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;erikwang2013/encryption&lt;/code&gt; — encrypt/decrypt sensitive API data&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;erikwang2013/encryptable&lt;/code&gt; — encrypt/decrypt sensitive database fields&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;erikwang2013/webman-scout&lt;/code&gt; — Elasticsearch sync and query&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;erikwang2013/season&lt;/code&gt; — country flags&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;erikwang2013/security-php&lt;/code&gt; — security tooling detection&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;erikwang2013/poster-php&lt;/code&gt; — random verification for sensitive operations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Project-structure&#34;&gt;&lt;a href=&#34;#Project-structure&#34; class=&#34;headerlink&#34; title=&#34;Project structure&#34;&gt;&lt;/a&gt;Project structure&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;game-platform-php/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── admin/                     # Admin panel (webman v2, port 8787)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── app/admin/controller/  #   admin-side controllers&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── app/middleware/        #   middleware (Cors/Security/RateLimit/Auth/Permission)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── config/                #   configuration files&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── database/migrations/   #   SQL migration files&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   └── apps/flutter/          #   Flutter Web PC admin panel&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── service/                   # Client-facing service (webman v2, port 8788)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── app/api/v1/controller/ #   client API controllers&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── app/middleware/        #   middleware&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   └── config/                #   configuration files&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── common/                    # Shared layer (PSR-4 autoload)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── model/                 #   data models (25)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── middleware/            #   shared middleware (UserAuth)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   └── service/               #   shared services (4)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── apps/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   └── flutter/platform/      # Flutter Web PC client user platform&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;├── docs/                      # Project documentation&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── ARCHITECTURE.md        #   architecture doc&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── ARCHITECTURE-DESIGN.md #   architecture design doc&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── FEATURES.md            #   features doc&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   ├── FEATURE-DESIGN.md      #   feature design doc&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│   └── API.md                 #   API doc&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;│&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;└── admin/docs/superpowers/    # Development standards and plans&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ├── specs/                 #   design specs&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    └── plans/                 #   implementation plans&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;Quick-start&#34;&gt;&lt;a href=&#34;#Quick-start&#34; class=&#34;headerlink&#34; title=&#34;Quick start&#34;&gt;&lt;/a&gt;Quick start&lt;/h2&gt;&lt;h3 id=&#34;Requirements&#34;&gt;&lt;a href=&#34;#Requirements&#34; class=&#34;headerlink&#34; title=&#34;Requirements&#34;&gt;&lt;/a&gt;Requirements&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;PHP 8.3+&lt;/li&gt;
+&lt;li&gt;MySQL 8.0+&lt;/li&gt;
+&lt;li&gt;Redis 6.0+&lt;/li&gt;
+&lt;li&gt;Composer 2.x&lt;/li&gt;
+&lt;li&gt;Flutter SDK 3.x (frontend)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;1-Initialize-the-database&#34;&gt;&lt;a href=&#34;#1-Initialize-the-database&#34; class=&#34;headerlink&#34; title=&#34;1. Initialize the database&#34;&gt;&lt;/a&gt;1. Initialize the database&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Create the database&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mysql -u root -e &lt;span class=&#34;string&#34;&gt;&amp;quot;CREATE DATABASE IF NOT EXISTS game_platform CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Run the migrations (in numeric order)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mysql -u root game_platform &amp;lt; admin/database/migrations/2026_05_16_000000_init_tables.sql&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mysql -u root game_platform &amp;lt; admin/database/migrations/2026_05_22_000003_platform_tables.sql&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mysql -u root game_platform &amp;lt; admin/database/migrations/2026_05_22_000004_i18n_tables.sql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;2-Start-the-backend&#34;&gt;&lt;a href=&#34;#2-Start-the-backend&#34; class=&#34;headerlink&#34; title=&#34;2. Start the backend&#34;&gt;&lt;/a&gt;2. Start the backend&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Admin panel (port 8787)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; admin&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; .env.example .&lt;span class=&#34;built_in&#34;&gt;env&lt;/span&gt;   &lt;span class=&#34;comment&#34;&gt;# edit the database connection settings&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;composer install&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;php start.php start -d&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Client-facing service (port 8788)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; service&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cp&lt;/span&gt; .env.example .&lt;span class=&#34;built_in&#34;&gt;env&lt;/span&gt;   &lt;span class=&#34;comment&#34;&gt;# edit the database connection settings&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;composer install&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;php start.php start -d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;3-Start-the-frontend&#34;&gt;&lt;a href=&#34;#3-Start-the-frontend&#34; class=&#34;headerlink&#34; title=&#34;3. Start the frontend&#34;&gt;&lt;/a&gt;3. Start the frontend&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Admin panel (Flutter Web PC)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; admin/apps/flutter&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;flutter pub get&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;flutter run -d chrome&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Client user platform (Flutter Web PC)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; apps/flutter/platform&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;flutter pub get&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;flutter run -d chrome&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;4-Verify&#34;&gt;&lt;a href=&#34;#4-Verify&#34; class=&#34;headerlink&#34; title=&#34;4. Verify&#34;&gt;&lt;/a&gt;4. Verify&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Test the admin panel&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;curl http://localhost:8787/health&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Test the client-facing service&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;curl http://localhost:8788/health&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Test user registration&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;curl -X POST http://localhost:8788/api/auth/register \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  -H &lt;span class=&#34;string&#34;&gt;&amp;quot;Content-Type: application/json&amp;quot;&lt;/span&gt; \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  -d &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;&amp;quot;username&amp;quot;:&amp;quot;testuser&amp;quot;,&amp;quot;password&amp;quot;:&amp;quot;123456&amp;quot;&amp;#125;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;Security-features&#34;&gt;&lt;a href=&#34;#Security-features&#34; class=&#34;headerlink&#34; title=&#34;Security features&#34;&gt;&lt;/a&gt;Security features&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;18 layers of defense in depth&lt;/strong&gt;: XSS/SQL injection/CSRF/path traversal/command injection detection and blocking&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HTTP method whitelist&lt;/strong&gt;: only GET/POST/PUT/DELETE/OPTIONS/HEAD allowed&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JWT authentication&lt;/strong&gt;: access_token 2h + refresh_token 14d, with a limit on concurrent sessions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RBAC permissions&lt;/strong&gt;: method.path granularity permission control, cached in Redis for 60s&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Click captcha&lt;/strong&gt;: mandatory human verification on login/registration&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Password re-confirmation&lt;/strong&gt;: sensitive operations require the password to be entered again&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data encryption&lt;/strong&gt;: AES-256-CBC at the transport layer + AES-128-ECB at the storage layer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ID encryption&lt;/strong&gt;: Snowflake generation + Hashids encoding, so IDs cannot be reverse-engineered from outside&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Wallet optimistic locking&lt;/strong&gt;: prevents concurrent debits and duplicate credits&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Operation auditing&lt;/strong&gt;: full operation logs, with automatic detection of 8 source platforms&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rate limiting&lt;/strong&gt;: Redis sliding window, made atomic with Lua&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CSP header&lt;/strong&gt;: Content-Security-Policy to prevent XSS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Account security&lt;/strong&gt;: 5 consecutive failed logins locks the account for 15 minutes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;Business-model&#34;&gt;&lt;a href=&#34;#Business-model&#34; class=&#34;headerlink&#34; title=&#34;Business model&#34;&gt;&lt;/a&gt;Business model&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Fiat currency (USD/CNY/EUR...)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  │  Top up (Stripe/PayPal/Alipay/WeChat Pay)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Platform coin (unified, precision decimal(18,4))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  │  Exchange (includes the exchange rate + platform spread)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Game coin (independent per game, independent exchange rate)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  │  Play games to earn/spend&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ▼&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Platform coin ← convert back → withdrawal (reviewed/automatic)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <category term="游戏聚合平台" />
+        <category term="游戏平台" />
+        <category term="游戏" />
+        <updated>2026-05-23T02:32:00.000Z</updated>
+    </entry>
+    <entry>
         <id>https://erik.xyz/2026/05/23/game-platform-php/</id>
         <title>Global Game Platform全球游戏聚合平台</title>
         <link rel="alternate" href="https://erik.xyz/2026/05/23/game-platform-php/"/>
         <content type="html">&lt;h1 id=&#34;全球游戏聚合平台-Global-Game-Platform&#34;&gt;&lt;a href=&#34;#全球游戏聚合平台-Global-Game-Platform&#34; class=&#34;headerlink&#34; title=&#34;全球游戏聚合平台 (Global Game Platform)&#34;&gt;&lt;/a&gt;全球游戏聚合平台 (Global Game Platform)&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#109;&amp;#x61;&amp;#105;&amp;#108;&amp;#116;&amp;#x6f;&amp;#x3a;&amp;#x65;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#64;&amp;#x65;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#x2e;&amp;#120;&amp;#121;&amp;#x7a;&#34;&gt;&amp;#x65;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#64;&amp;#x65;&amp;#x72;&amp;#105;&amp;#x6b;&amp;#x2e;&amp;#120;&amp;#121;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Copyright (c) 2026 erik &lt;a href=&#34;&amp;#x6d;&amp;#97;&amp;#105;&amp;#x6c;&amp;#116;&amp;#111;&amp;#x3a;&amp;#x65;&amp;#114;&amp;#x69;&amp;#x6b;&amp;#x40;&amp;#101;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#x2e;&amp;#x78;&amp;#121;&amp;#x7a;&#34;&gt;&amp;#x65;&amp;#114;&amp;#x69;&amp;#x6b;&amp;#x40;&amp;#101;&amp;#x72;&amp;#x69;&amp;#x6b;&amp;#x2e;&amp;#x78;&amp;#121;&amp;#x7a;&lt;/a&gt; — &lt;a href=&#34;https://erik.xyz&#34;&gt;https://erik.xyz&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;全球通用、国际化的游戏聚合平台。用户注册后在平台充值兑换游戏币，用游戏币玩游戏、赚取游戏币，游戏币可转回钱包提现。后台提供完整的游戏管理、提现审核、用户管理和支付管理功能。支持多语言切换（英文/中文）。&lt;/p&gt;
 &lt;h2 id=&#34;版本策略&#34;&gt;&lt;a href=&#34;#版本策略&#34; class=&#34;headerlink&#34; title=&#34;版本策略&#34;&gt;&lt;/a&gt;版本策略&lt;/h2&gt;&lt;div class=&#34;table-container&#34;&gt;

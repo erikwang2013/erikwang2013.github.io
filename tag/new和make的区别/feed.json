@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2022/03/22/new-and-make-other-en/",
+            "url": "https://erik.xyz/2022/03/22/new-and-make-other-en/",
+            "title": "The Difference Between new and make",
+            "date_published": "2022-03-22T01:27:00.000Z",
+            "content_html": "<p>In Go we often have to allocate memory for variables, and there are two ways to allocate memory: new and make. I looked up some material, and took the chance to review the places where I use them in my own development. Actually, it’s quite easy to understand.</p>\n<p>new allocates memory but does not initialize it, which means you cannot assign to it directly — you must initialize it before you can assign.</p>\n<p>make allocates the memory and has already</p>\n",
+            "tags": [
+                "go",
+                "new和make的区别"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2022/03/22/new-and-make-other/",
             "url": "https://erik.xyz/2022/03/22/new-and-make-other/",
             "title": "new和make的区别",

@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2016/03/01/mysql-ru-he-ying-dui-xiao-xi-en/",
+            "url": "https://erik.xyz/2016/03/01/mysql-ru-he-ying-dui-xiao-xi-en/",
+            "title": "How MySQL handles messages",
+            "date_published": "2016-03-01T12:06:00.000Z",
+            "content_html": "<p>When using a MySQL database, if it’s a shopping site you have to take into account flash sales, panic buying, message sending and other cases where simultaneous access to the database causes congestion and ends up crushing the database. How can we effectively do some handling in the program and in MySQL to cope with it? </p>\n<p>The answer is: put the HTTP requests into a high-speed in-memory queue, then split and process the data in the queue according to certain rules. When a user sends a request, we can delay it by 2s for that user, and so on. </p>\n<p>If you are sending notification-type messages, the user base is large and you can’t send them all at once, so you need to queue them up for sending; delay the message-sending operations while giving priority to active users (that is, asynchronous operations), reasonably spreading the load on the server. </p>\n<p>Advantages of asynchronous operations: simple deployment — most scheduling can be done with MySQL’s built-in stored procedures and timers — and the server deployment is simple and easy to migrate.</p>\n<p>Disadvantages: it doesn’t work well for large data volumes or for handling tens of millions of messages. It cannot cope with scenarios that demand very high real-time performance. As for HTTP queues, Kingsoft has an internally open-sourced HTTPSQL that moves the queue out of MySQL and into an in-memory database, with a dedicated process responsible for queue operations while clients read and write through socket requests. There is also a lightweight in-memory message queue, ZeroMQ, which transfers messages through its API.</p>\n",
+            "tags": [
+                "mysql消息",
+                "mysql队列",
+                "mysql高并发"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2016/03/01/mysql-ru-he-ying-dui-xiao-xi/",
             "url": "https://erik.xyz/2016/03/01/mysql-ru-he-ying-dui-xiao-xi/",
             "title": "mysql如何应对消息",

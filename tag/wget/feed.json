@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2017/09/29/wget-zhua-qu-wang-zhan-en/",
+            "url": "https://erik.xyz/2017/09/29/wget-zhua-qu-wang-zhan-en/",
+            "title": "Scraping a Website with wget",
+            "date_published": "2017-09-29T13:23:00.000Z",
+            "content_html": "<p>Recently I needed to adapt a template, and of course I wasn’t going to buy one. So I’d scrape one instead — a quick search turned up wget as a pretty good way to do it.<br>wget -r -p -np -k  <a href=\"https://erik.xyz\">https://erik.xyz</a>   and you can scrape the whole site’s template to your local machine.</p>\n<p>Then package it up, compress it, copy it to a Windows machine and you can tinker with it as you like.<br>While I was at it I looked up how to use wget<br>-a<logfile>: record the execution process in the specified log file;</p>\n<p>-A<suffix>: specify the suffixes of the files to download; separate multiple suffixes with commas; </p>\n<p>-b: run wget in the background; <span id=\"more\"></span></p>\n<p>-B<base address>: set the base address for reference link addresses; </p>\n<p>-c: continue the task interrupted last time;</p>\n<p>-C<flag>: set the server data block feature flag; on activates it, off disables it, the default value is on; </p>\n<p>-d: run the command in debug mode; </p>\n<p>-D<domain list>: set the list of domains to follow; separate domains with “,”; </p>\n<p>-e<command>: execute the specified command as part of the “.wgetrc” file; </p>\n<p>-h: show command help information;</p>\n<p>-i<file>: get the URLs to download from the specified file;</p>\n<p>-l<directory list>: set the list of directories to follow; separate multiple directories with “,”; </p>\n<p>-L: follow only relative links; </p>\n<p>-r: recursive download mode;</p>\n<p>-nc: when the file exists, the downloaded file does not overwrite the existing file;</p>\n<p>-nv: during download show only update and error messages, not the detailed command execution process; </p>\n<p>-q: don’t show the command execution process; </p>\n<p>-nh: don’t look up host names; </p>\n<p>-v: show the detailed execution process; </p>\n<p>-V: show version information; </p>\n<p>—passive-ftp: use passive mode PASV to connect to the FTP server; </p>\n<p>—follow-ftp: download FTP-linked files from HTML files.</p>\n",
+            "tags": [
+                "wget",
+                "wget抓取",
+                "网站抓取"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2017/09/29/wget-zhua-qu-wang-zhan/",
             "url": "https://erik.xyz/2017/09/29/wget-zhua-qu-wang-zhan/",
             "title": "wget抓取网站",

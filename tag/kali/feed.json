@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2020/01/22/about-kali-other-en/",
+            "url": "https://erik.xyz/2020/01/22/about-kali-other-en/",
+            "title": "A Few Things About Kali",
+            "date_published": "2020-01-22T08:39:00.000Z",
+            "content_html": "<p>I’ve been using Kali for a while now, so let me talk about a few things regarding its use.<br>Right now I run Kali myself, installed on a laptop. Along the way upgrades have crashed the system, and I’ve had to mess around with it several times myself.</p>\n<hr>\n<p>The first thing to do after installing the system is to configure the software repositories.</p>\n<p>Edit the file that specifies the repository source addresses (I didn’t use leafpad because it wasn’t installed; vi or vim works fine for the command too):</p>\n<pre><code>sudo leafpad /etc/apt/sources.list\n</code></pre><p>Copy the repository addresses below:  <span id=\"more\"></span></p>\n<pre><code>deb https://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib\ndeb-src https://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib\n\ndeb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster main contrib non-free\ndeb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main contrib non-free\ndeb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib non-free\ndeb https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free\n\n\ndeb http://mirrors.163.com/deepin/ unstable main contrib non-free\ndeb-src http://mirrors.163.com/deepin/ unstable main contrib non-free\n\ndeb [by-hash=force] http://packages.deepin.com/deepin stable main contrib non-free\n</code></pre><p>Then update (note: it’s best to update the latter two systems separately — if a compatibility choice issue comes up in the middle, it may uninstall some software. Write down the uninstalled software so you can fix things promptly if problems arise).</p>\n<pre><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade &amp;&amp; sudo apt-get dist-upgrade\n</code></pre><hr>\n<p>Configure the environment (I set up Java and Go here).</p>\n<pre><code>sudo leafpad /etc/profile\n</code></pre><p>Add the following at the end of the file (everyone’s file locations differ, so adjust according to where you put yours):</p>\n<pre><code>JAVA_HOME=/usr/lib/jvm/jdk1.8.0_241\nGO_ROOT=/usr/local/go\nPATH=$JAVA_HOME/bin:$PATH:$GO_ROOT/bin\nCLASSPATH=$JAVA_HOME/jre/lib/ext:$JAVA_HOME/lib/tools.jar\nexport PATH JAVA_HOME CLASSPATH\n</code></pre><hr>\n<p>Generally speaking, once the Chinese-localized version is installed you’re good to go. The only thing is that the right-click menu on the GNOME desktop stayed in English the whole time. Later I found a plugin, nemo, to handle the localization, and it worked well for a long time. Until I updated to the latest version, after which the system’s menu bar would expand to a blank panel. All sorts of localization tweaks failed to solve it. At the time I never realized it was the plugin’s fault. With no other option, I backed up my data using a USB system, and reinstalled the system. Only by installing the plugins step by step did I find the cause. It cost a lot of time, and the desktop right-click menu is still in English now.</p>\n<hr>\n<p>Kali is meant for penetration testing or attack-and-defense experiments, and it can’t be ruled out for doing “some things under the water” either. Tools, after all, depend on who uses them. A newly installed system has only a small subset of software available, so you must first pay a visit to the <a href=\"https://www.kali.org\">official site</a>. Look for the <a href=\"https://tools.kali.org\">tool library</a> as shown below.<br><img src=\"/img/202001/2020-01-22_21-35.jpg\" alt=\"kali tools\"><br>The tool list is the complete list of all tools.</p>\n<p>A metapackage is essentially a category package of tools, letting you install a batch of related tools for a certain area all at once.</p>\n<p>As shown below.</p>\n<p><img src=\"/img/202001/2020-01-22_215720.jpg\" alt=\"kali metapackage tools\"></p>\n<p>Anyway, I just installed by metapackage — much less hassle than hunting down and installing them one by one..</p>\n<p>Then you can install deepin-wine via the command line and search the repositories for QQ, WeChat, WeCom, DingTalk, Sogou Input Method, WPS, Tencent Video and other software. Office, development and entertainment are basically covered. You can also go to GitHub to find software that others have ported over from Windows.</p>\n",
+            "tags": [
+                "kali",
+                "kali安装"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2020/01/22/about-kali-other/",
             "url": "https://erik.xyz/2020/01/22/about-kali-other/",
             "title": "关于kali的一些事",
@@ -16,8 +27,21 @@
             ]
         },
         {
-            "id": "https://erik.xyz/2016/02/23/shi-yong-metasploit-shi-xian-shodan-sou-suo/",
-            "url": "https://erik.xyz/2016/02/23/shi-yong-metasploit-shi-xian-shodan-sou-suo/",
+            "id": "https://erik.xyz/2016/02/23/shi-yong-metasploit-shi-xian-shodan-en/",
+            "url": "https://erik.xyz/2016/02/23/shi-yong-metasploit-shi-xian-shodan-en/",
+            "title": "Implementing Shodan Search with Metasploit",
+            "date_published": "2016-02-23T08:35:00.000Z",
+            "content_html": "<p>I stumbled on the fact that shodan can search any internet-connected device (no need to explain further, you know what I mean). You can configure shodan in a kali system — that is, you don’t have to go to the official <a href=\"https://www.shodan.io/\">https://www.shodan.io/</a> site to search; you can just type commands directly in the kali terminal. First, register a free account on shodan NO.1 <img src=\"http://i13.tietuku.com/2cf5be0118b2f83f.jpg\" alt=\"\"><br><span id=\"more\"></span><br>NO.2 <img src=\"http://i13.tietuku.com/eae2acb719b4d0bd.jpg\" alt=\"\"> NO.3 <img src=\"http://i13.tietuku.com/bae48a11a9ee68f4.jpg\" alt=\"\"> After registering successfully, get your APIkey in your account center. Then run the following command in the kali terminal <img src=\"http://i12.tietuku.com/dcfdf50a1c661f83.jpg\" alt=\"\"> You can select a module and view the parameters that can be configured under that module <img src=\"http://i12.tietuku.com/4245447745108237.jpg\" alt=\"\"> Configure the QUERY and SHODAN_APIKEY option parameters (SHODAN_APIKEY is the APIkey given to you in your shodan account after registration; change the part marked with the red line to your own key) <img src=\"http://i12.tietuku.com/7ad2c99eea0c50bc.jpg\" alt=\"\"> Next you can run commands to scan host information <img src=\"http://i11.tietuku.com/37d6893c5c6aa77a.jpg\" alt=\"\"></p>\n",
+            "tags": [
+                "kali",
+                "shodan",
+                "黑谷歌",
+                "黒帽搜素"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2016/02/23/shi-yong-metasploit-shi-xian-shodan/",
+            "url": "https://erik.xyz/2016/02/23/shi-yong-metasploit-shi-xian-shodan/",
             "title": "使用Metasploit实现shodan搜索",
             "date_published": "2016-02-23T08:35:00.000Z",
             "content_html": "<p>无意间发现shodan可以搜索任何联网的设备（不多解释，你懂的）。在kali系统中可以配置shodan,也就是说你不用去 <a href=\"https://www.shodan.io/官网上搜索了，在kali终端直接敲命令就可以了。\">https://www.shodan.io/官网上搜索了，在kali终端直接敲命令就可以了。</a> 首先，在shodan注册个免费账户 NO.1 <img src=\"http://i13.tietuku.com/2cf5be0118b2f83f.jpg\" alt=\"\"><br><span id=\"more\"></span><br>NO.2 <img src=\"http://i13.tietuku.com/eae2acb719b4d0bd.jpg\" alt=\"\"> NO.3 <img src=\"http://i13.tietuku.com/bae48a11a9ee68f4.jpg\" alt=\"\"> 注册成功后在个人中心获得APIkey 然后在kali终端执行以下命令 <img src=\"http://i12.tietuku.com/dcfdf50a1c661f83.jpg\" alt=\"\"> 可以选择模块并查看该模块下可配置的参数 <img src=\"http://i12.tietuku.com/4245447745108237.jpg\" alt=\"\"> 配置QUERY和SHODAN_APIKEY选项参数（其中SHODAN_APIKEY就是你在shodan注册后个人中给的APIkey,画红线处改成你自己的密匙） <img src=\"http://i12.tietuku.com/7ad2c99eea0c50bc.jpg\" alt=\"\"> 接下来就可以操作命令扫描主机信息 <img src=\"http://i11.tietuku.com/37d6893c5c6aa77a.jpg\" alt=\"\"></p>\n",
@@ -26,6 +50,17 @@
                 "shodan",
                 "黑谷歌",
                 "黒帽搜素"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2015/09/05/kali-de-yi-xie-an-zhuang-ming-ling-en/",
+            "url": "https://erik.xyz/2015/09/05/kali-de-yi-xie-an-zhuang-ming-ling-en/",
+            "title": "Some installation commands for Kali",
+            "date_published": "2015-09-05T11:46:00.000Z",
+            "content_html": "<p><a href=\"http://tietuku.com/f23c99b541e6483e\"><img src=\"http://i3.tietuku.com/f23c99b541e6483e.jpg\" alt=\"\"></a><br>apt-get clean &amp;&amp; apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get dist-upgrade -y<br><strong>Update, upgrade, and distribution upgrade</strong> </p>\n<p>apt-get install alsa-utils -y     <strong>Make sure sound is emitted at startup</strong> </p>\n<p>apt-get install unrar unace rar unrar p7zip zip unzip p7zip-full p7zip-rar file-roller -y     <strong>Install File Roller (archive manager)</strong> <span id=\"more\"></span></p>\n<p>apt-get install tor    <strong>Install Tor</strong> </p>\n<p>apt-get install filezilla filezilla-common -y   <strong>Install the Filezilla FTP client</strong></p>\n<p>apt-get install htop nethogs -y     <strong>Install HTOP and NetHogs</strong> </p>\n<p>apt-get install fcitx-table-wbpy ttf-wqy-microhei ttf-wqy-zenhei      <strong>Install the Chinese Squirrel input method</strong> </p>\n<p>apt-get install gtk-recordmydesktop recordmydesktop remmina -y     <strong>Install Recordmydesktop and the Remmina remote desktop client</strong></p>\n<p>apt-get upgrade  upgrades packages that already exist. If you get a “could not lock directory” error, run the following commands </p>\n<p>sudo rm /var/cache/apt/archives/lock</p>\n<p>sudo rm /var/lib/dpkg/lock proxychains msfconsole </p>\n<p>Use the proxychains program to launch msfconsole www.turnkeylinux.org   </p>\n<p>A Linux distribution based on Ubuntu that integrates a number of good open source programs into complete, ready-to-use solutions.</p>\n",
+            "tags": [
+                "kali",
+                "linux"
             ]
         },
         {

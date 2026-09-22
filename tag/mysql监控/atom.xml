@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,133 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2023/05/15/mysql-top-log-en/</id>
+        <title>The most plain way to monitor MYSQL</title>
+        <link rel="alternate" href="https://erik.xyz/2023/05/15/mysql-top-log-en/"/>
+        <content type="html">&lt;p&gt;There are many ways to monitor a database today, split into three broad categories: built into the database, commercial, and open source, each with its own characteristics; and for the mysql database, thanks to its highly active community, monitoring approaches are even more varied. Regardless of the monitoring approach, the core is the monitoring data, and after obtaining comprehensive monitoring data comes the flexible presentation part. So today let’s introduce collecting and obtaining monitoring data entirely using mysql’s own facilities, achieving the fastest, most convenient and least overhead approach for a single instance.&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;This article obtains everything entirely using mysql’s built-in show commands, gathering monitoring data comprehensively across 7 major areas: connects, buffercache, lock, SQL, statement, Database throughputs, and serverconfig.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Number of connections (Connects)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Maximum connections used: show status like ‘Max_used_connections’&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Currently open connections: show status like ‘Threads_connected’&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Cache (bufferCache)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Number of reads not from the buffer pool: show status like ‘Innodb_buffer_pool_reads’&lt;/li&gt;
+&lt;li&gt;Number of reads from the buffer pool: show status like ‘Innodb_buffer_pool_read_requests’&lt;/li&gt;
+&lt;li&gt;Total pages in the buffer pool: show status like ‘Innodb_buffer_pool_pages_total’&lt;/li&gt;
+&lt;li&gt;Free pages in the buffer pool: show status like ‘Innodb_buffer_pool_pages_free’&lt;/li&gt;
+&lt;li&gt;Cache hit rate calculation: (1-Innodb_buffer_pool_reads/Innodb_buffer_pool_read_requests）*100%&lt;/li&gt;
+&lt;li&gt;Buffer pool usage rate: ((Innodb_buffer_pool_pages_total-Innodb_buffer_pool_pages_free）/Innodb_buffer_pool_pages_total）*100%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Locks (lock)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Number of lock waits: show status like ‘Innodb_row_lock_waits’&lt;/li&gt;
+&lt;li&gt;Average wait time per lock: show status like ‘Innodb_row_lock_time_avg’&lt;/li&gt;
+&lt;li&gt;Check whether table locks exist: show open TABLES where in_use&amp;gt;0; having data means table locks exist, empty means no table locks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: the lock wait count is cumulative data; each time you retrieve it you can subtract the previous data to get the current statistics&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;SQL&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check whether the mysql switch is on: show variables like ‘slow_query_log’, ON means enabled, if it is OFF, run set global slow_query_log=1 to enable it&lt;/li&gt;
+&lt;li&gt;Check the mysql threshold: show variables like ‘long_query_time’, pass the threshold parameter from the page, modify the threshold with set global long_query_time=0.1&lt;/li&gt;
+&lt;li&gt;Check the mysql slow sql directory: show variables like ‘slow_query_log_file’&lt;/li&gt;
+&lt;li&gt;Format the slow sql log: mysqldumpslow -s at -t 10 /export/data/mysql/log/slow.log Note: this statement cannot be executed via jdbc, it is a command line execution. It means: show the execution information of the 10 most time-consuming SQL statements, 10 can be changed to the TOP number. The information shown is: execution count, average execution time, SQL statement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Note: when the mysqldumpslow command fails to execute, sync the slow log locally for formatting.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;statement&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;insert count: show status like ‘Com_insert’&lt;/li&gt;
+&lt;li&gt;delete count: show status like ‘Com_delete’&lt;/li&gt;
+&lt;li&gt;update count: show status like ‘Com_update’&lt;/li&gt;
+&lt;li&gt;select count: show status like ‘Com_select’&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Throughput (Database throughputs)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Send throughput: show status like ‘Bytes_sent’&lt;/li&gt;
+&lt;li&gt;Receive throughput: show status like ‘Bytes_received’&lt;/li&gt;
+&lt;li&gt;Total throughput: Bytes_sent+Bytes_received&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Database parameters (serverconfig)&lt;/p&gt;
+&lt;p&gt; show variables&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Slow SQL&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Slow SQL refers to MySQL slow queries, specifically SQL whose execution time exceeds the long_query_time value. We often hear that MySQL has a binary log binlog, relay log relaylog, redo/rollback log redolog, undolog, etc. For slow queries there is also a slow query log slowlog, used to record statements in MySQL whose response time exceeds the threshold. Slow SQL has a fatal impact on actual production business, so it is especially important for testers to monitor the execution of database SQL statements during performance testing and provide developers with accurate performance optimization advice. So how do you use the slow query log provided by the Mysql database to monitor SQL statement execution and find the SQL statements that consume the most? The following explains the steps for using the slow query log in detail:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure the slow SQL switch slow_query_log is on&lt;/li&gt;
+&lt;li&gt;Set the slow SQL threshold long_query_time; this long_query_time is used to define how many seconds counts as a “slow query”, note the unit is seconds. I set the value of long_query_time to 1 by running the sql command set long_query_time=1, meaning anything executing for more than 1 second counts as a slow query, as follows:&lt;/li&gt;
+&lt;li&gt;Check the slow SQL log path&lt;/li&gt;
+&lt;li&gt;Use the slow sql analysis tool mysqldumpslow to format and analyze the slow SQL log. mysqldumpslow is a slow query analysis tool that comes with mysql after installation; you can view the usage parameter description via ./mysqldumpslow —help&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Common usage:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Get the 10 most frequently used slow queries ./mysqldumpslow -s c -t 10 /export/data/mysql/log/slow.log&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Get the 3 slowest queries ./mysqldumpslow -s t -t 3 /export/data/mysql/log/slow.log&lt;/p&gt;
+&lt;p&gt;Note: the analysis result of mysqldumpslow will not show the complete specific sql statement, only the composition structure of the sql; for example: SELECT FROM sms_send WHERE service_id=10 GROUP BY content LIMIT 0, 1000; after running the mysqldumpslow command it shows: Count: 2 Time=1.5s (3s) Lock=0.00s (0s) Rows=1000.0 (2000), vgos_dba[vgos_dba]@[10.130.229.196]SELECT FROM sms_send WHERE service_id=N GROUP BY content LIMIT N, N&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Detailed explanation of the mysqldumpslow analysis result:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Count: indicates the number of times statements of this type were executed; in the image above it means the select statement was executed 2 times.&lt;/li&gt;
+&lt;li&gt;Time: indicates the average execution time of statements of this type (total time)&lt;/li&gt;
+&lt;li&gt;Lock: lock time 0s.&lt;/li&gt;
+&lt;li&gt;Rows: a single execution returned 1000 records, 2 executions returned 2000 records in total.&lt;br&gt;With this tool you can find out which sql statements are slow SQL, and feed that back to R&amp;amp;D for optimization, such as adding indexes, changing the implementation of the application, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;Common-slow-SQL-troubleshooting&#34;&gt;&lt;a href=&#34;#Common-slow-SQL-troubleshooting&#34; class=&#34;headerlink&#34; title=&#34;Common slow SQL troubleshooting&#34;&gt;&lt;/a&gt;Common slow SQL troubleshooting&lt;/h5&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Don’t use subqueries&lt;/p&gt;
+&lt;p&gt;SELECT FROM t1 WHERE id (SELECT id FROM t2 WHERE name=’hechunyang’); In MySQL5.5, the internal execution planner executes subqueries like this: query the outer table first then match the inner table, rather than querying the inner table t2 first; when the outer table’s data is very large, the query speed becomes very slow. In MariaDB10/MySQL5.6, this was optimized using join association; this SQL is automatically converted to SELECT t1. FROM t1 JOIN t2 ON t1.id = t2.id; But note: the optimization is only effective for SELECT, it has no effect on UPDATE/DELETE subqueries, and production environments should avoid using subqueries as much as possible.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Avoid function indexes&lt;/p&gt;
+&lt;p&gt;SELECT FROM t WHERE YEAR(d) &amp;gt;= 2016; Since MySQL, unlike Oracle, does not support function indexes, even if the d field has an index it will still do a direct full table scan. It should be changed to &amp;gt; SELECT FROM t WHERE d &amp;gt;= ‘2016-01-01’;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use IN to replace inefficient OR queries&lt;/p&gt;
+&lt;p&gt;Slow SELECT FROM t WHERE LOC_ID = 10 OR LOC_ID = 20 OR LOC_ID = 30; Efficient query &amp;gt; SELECT FROM t WHERE LOC_IN IN (10,20,30);&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;LIKE with double percent signs cannot use an index&lt;/p&gt;
+&lt;p&gt;SELECT FROM t WHERE name LIKE ‘%de%’; Use SELECT FROM t WHERE name LIKE ‘de%’;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Group statistics can disable sorting&lt;/p&gt;
+&lt;p&gt;SELECT goods_id,count() FROM t GROUP BY goods_id; By default, MySQL sorts all GROUP BY col1, col2… fields. If the query includes GROUP BY and you want to avoid the cost of sorting results, you can specify ORDER BY NULL to disable sorting. Use SELECT goods_id,count () FROM t GROUP BY goods_id ORDER BY NULL;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Disable unnecessary ORDER BY sorting&lt;/p&gt;
+&lt;p&gt;SELECT count(1) FROM user u LEFT JOIN user_info i ON u.id = i.user_id WHERE 1 = 1 ORDER BY u.create_time DESC; Use SELECT count (1) FROM user u LEFT JOIN user_info i ON u.id = i.user_id;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Summary&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Nothing should focus too much on its exterior; focus on the inner substance, because under a gorgeous exterior there are often corresponding burdens and overhead.&lt;/li&gt;
+&lt;li&gt;mysql database monitoring supports accessing the corresponding table data from the performance_schema database via SQL, provided that this database is initialized and writing of monitoring data is enabled.&lt;/li&gt;
+&lt;li&gt;For monitoring, it’s not about the diversity of means, but about understanding the essence of monitoring and the monitoring items you need, and finding a monitoring approach that fits your own project’s characteristics.&lt;/li&gt;
+&lt;li&gt;When choosing a monitoring tool for mysql monitoring, pay attention to the tool’s own consumption of the database server, and don’t let it affect its own usage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://my.oschina.net/u/4090830/blog/5564849&#34;&gt;https://my.oschina.net/u/4090830/blog/5564849&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="mysql" />
+        <category term="mysql监控" />
+        <updated>2023-05-15T14:24:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2023/05/15/mysql-top-log/</id>
         <title>MYSQL 最朴素的监控方式</title>

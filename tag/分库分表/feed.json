@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2019/04/23/mysql-fen-ku-fen-biao-en/",
+            "url": "https://erik.xyz/2019/04/23/mysql-fen-ku-fen-biao-en/",
+            "title": "MySQL sharding: splitting databases and tables",
+            "date_published": "2019-04-23T04:28:00.000Z",
+            "content_html": "<p><strong>Sharding databases and tables</strong></p>\n<blockquote>\n</blockquote>\n<p>I’ve been working with php for 5 years, and most scenarios are at the business layer. Put plainly, it’s just CRUD. I also know that large-scale data processing in databases involves sharding databases and tables, generally horizontal sharding and vertical sharding, but actually doing it was impossible. Today I read an article <a href=\"https://mp.weixin.qq.com/s/QFlUPS8X0errMwpxdBMHvg\">《Sharding databases and tables? How to never migrate data and avoid hot spots?》</a>, and my thinking suddenly became smooth.</p>\n<blockquote>\n</blockquote>\n<p> Generally speaking, once a mysql table reaches around 1M rows the query speed can’t keep up.<span id=\"more\"></span>If the daily data volume is 1M then this data area needs to be handled. My previous thinking was like this:</p>\n<blockquote>\n</blockquote>\n<p> Fix 1M rows of data per table, and assign each table a range based on the data id. Then when querying, find the table based on the id, but this has a problem: if the same user’s data is in different tables, then to query all of that user’s data you’d need to join tables, and in reality sharded table queries have time and range limits, there’s no case where you pull out all the data at once. (And when I attended an interview, an interviewer directly gave me this kind of question:<br> “I have 100 million rows of data, pull them all out at once, how do you do it with mysql.” I was instantly dumbfounded, there was no way to do it; it might be doable at the code layer, but with database queries I really don’t know.)</p>\n<blockquote>\n</blockquote>\n<p>  <strong>According to the article I read above, this is the range scheme</strong><br>   <img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_170042.jpg\" alt=\"\"></p>\n<p>   Besides the query problem, there’s also the hot spot problem. In some time period the data volume surges, and one table alone can’t hold up.</p>\n<blockquote>\n</blockquote>\n<p>  <em>_The article also introduced the hash modulo method </em>_<br>   <img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_171040.jpg\" alt=\"\"></p>\n<p>   The hash modulo method easily leads to data migration problems; if the data volume is large, the migration cost is relatively high.</p>\n<p>   <strong>According to the article, you can first do range grouping, and then use hash modulo to shard the tables within the group</strong><br>   <img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_180531.jpg\" alt=\"\"></p>\n<p>   <em>_The final table design is as </em>_<br>   <img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_180824.jpg\" alt=\"\"></p>\n",
+            "tags": [
+                "mysql",
+                "分库分表"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2019/04/23/mysql-fen-ku-fen-biao/",
             "url": "https://erik.xyz/2019/04/23/mysql-fen-ku-fen-biao/",
             "title": "mysql分库分表",

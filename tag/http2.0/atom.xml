@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,63 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2019/07/18/http1-1-and-http2-0-en/</id>
+        <title>Knowledge points about HTTP 1.1 and HTTP 2.0</title>
+        <link rel="alternate" href="https://erik.xyz/2019/07/18/http1-1-and-http2-0-en/"/>
+        <content type="html">&lt;h3 id=&#34;Http1-1&#34;&gt;&lt;a href=&#34;#Http1-1&#34; class=&#34;headerlink&#34; title=&#34;Http1.1&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#Http1-1&#34; title=&#34;Http1.1&#34;&gt;&lt;/a&gt;Http1.1&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Cache handling&lt;/p&gt;
+&lt;p&gt; It introduces more cache control strategies, such as Entity tag, If-Unmodified-Since, If-Match, If-None-Match and other cache headers you can choose from to control caching policy.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Bandwidth optimization and network connection usage&lt;/p&gt;
+&lt;p&gt;  A range header field was introduced into requests, allowing you to request only a certain part of a resource, i.e. returning status code 206 (Partial Content), which makes it convenient for developers to choose freely and make full use of bandwidth and connections.&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Error notification management&lt;/p&gt;
+&lt;p&gt; It adds 24 new error status response codes, such as 409 (Conflict), meaning the requested resource conflicts with the resource’s current state; and 410 (Gone), meaning some resource on the server has been permanently deleted.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Host header handling&lt;/p&gt;
+&lt;p&gt;  Both request and response messages in Http1.1 should support the Host header field, and a request message without a Host header field will report an error (400 Bad Request).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Persistent connections&lt;/p&gt;
+&lt;p&gt;  Http1.1 supports persistent connections (PersistentConnection) and request pipelining (Pipelining): multiple HTTP requests and responses can be carried over a single TCP connection, reducing the cost and latency of establishing and closing connections. In HTTP1.1, Connection: keep-alive is enabled by default, which to some extent makes up for the shortcoming of HTTP1.0 having to create a connection for every request.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Http2-0&#34;&gt;&lt;a href=&#34;#Http2-0&#34; class=&#34;headerlink&#34; title=&#34;Http2.0&#34;&gt;&lt;/a&gt;Http2.0&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Fully binary format&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Multiplexing&lt;/p&gt;
+&lt;p&gt;   Requests are attributed to their respective different server-side requests according to the request id.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Header compression&lt;/p&gt;
+&lt;p&gt;   An encoder is used to reduce the size of the headers that need to be transmitted; both communicating parties each cache a copy of the header fields table, which both avoids transmitting duplicate headers and reduces the size that needs to be transmitted.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Server push&lt;/p&gt;
+&lt;p&gt;   The server push feature.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;What-is-the-difference-between-Http2-0-multiplexing-and-persistent-connection-reuse-in-Http1-X&#34;&gt;&lt;a href=&#34;#What-is-the-difference-between-Http2-0-multiplexing-and-persistent-connection-reuse-in-Http1-X&#34; class=&#34;headerlink&#34; title=&#34;What is the difference between Http2.0 multiplexing and persistent connection reuse in Http1.X?&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#Http2-0的多路复用和Http1-X中的长连接复用有什么区别？&#34; title=&#34;Http2.0的多路复用和Http1.X中的长连接复用有什么区别？&#34;&gt;&lt;/a&gt;What is the difference between Http2.0 multiplexing and persistent connection reuse in Http1.X?&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;Http/1.* — one request-response, establish a connection, close it when done; every request has to establish a connection;&lt;/li&gt;
+&lt;li&gt;Http/1.1’s Pipeling solution serializes several requests into a queue handled by a single thread; a later request waits for the earlier request’s response before it gets a chance to execute. Once some request times out, the subsequent requests can only be blocked, with nothing you can do about it — this is what people call head-of-line blocking;&lt;/li&gt;
+&lt;li&gt;Http/2 allows multiple requests to execute in parallel on a single connection. A single request task that takes a long time will not affect the normal execution of the other connections;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;What-exactly-is-server-push&#34;&gt;&lt;a href=&#34;#What-exactly-is-server-push&#34; class=&#34;headerlink&#34; title=&#34;What exactly is server push?&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#服务器推送到底是什么？&#34; title=&#34;服务器推送到底是什么？&#34;&gt;&lt;/a&gt;What exactly is server push?&lt;/h5&gt;&lt;p&gt;Server push can send the resources the client needs to the client together with index.html, saving the client the step of making repeated requests. Precisely because there is no request initiation, connection establishment and so on, static resources can be greatly sped up through server push.&lt;/p&gt;
+&lt;h5 id=&#34;Why-is-header-compression-needed&#34;&gt;&lt;a href=&#34;#Why-is-header-compression-needed&#34; class=&#34;headerlink&#34; title=&#34;Why is header compression needed?&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#为什么需要头部压缩？&#34; title=&#34;为什么需要头部压缩？&#34;&gt;&lt;/a&gt;Why is header compression needed?&lt;/h5&gt;&lt;p&gt;Suppose a page has 100 resources to load (a fairly conservative number for today’s Web), and every request carries a 1kb message header (also not uncommon, given things like Cookies and referrers), then at least an extra 100kb is consumed just to fetch these message headers. HTTP2.0 can maintain a dictionary and update HTTP headers differentially, greatly reducing the traffic generated by header transmission.&lt;/p&gt;
+&lt;h5 id=&#34;How-good-is-Http2-0-multiplexing&#34;&gt;&lt;a href=&#34;#How-good-is-Http2-0-multiplexing&#34; class=&#34;headerlink&#34; title=&#34;How good is Http2.0 multiplexing&#34;&gt;&lt;/a&gt;&lt;a href=&#34;#Http2-0多路复用有多好&#34; title=&#34;Http2.0多路复用有多好&#34;&gt;&lt;/a&gt;How good is Http2.0 multiplexing&lt;/h5&gt;&lt;ul&gt;
+&lt;li&gt;The key to Http performance optimization is not high bandwidth, but low latency. A TCP connection “tunes” itself over time: at first it limits the connection’s maximum speed, and if data is transmitted successfully it raises the transmission speed over time. This tuning is called TCP slow start. Because of this, HTTP connections, which are inherently bursty and short-lived, become very inefficient.&lt;/li&gt;
+&lt;li&gt;Http/2 lets all data streams share the same connection, which makes more effective use of the TCP connection, so that high bandwidth can truly serve HTTP performance improvements.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="web" />
+        <category term="http" />
+        <category term="http1.1" />
+        <category term="http2.0" />
+        <updated>2019-07-17T16:20:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2019/07/18/http1-1-and-http2-0/</id>
         <title>http1.1和http2.0的知识点</title>

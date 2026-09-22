@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2020/04/11/openvas-install-update-en/",
+            "url": "https://erik.xyz/2020/04/11/openvas-install-update-en/",
+            "title": "A Little Story About OpenVAS",
+            "date_published": "2020-04-10T20:58:00.000Z",
+            "content_html": "<p>A few small things happened while I was using openvas.<br>Using the command</p>\n<pre><code>    sudo openvas-check-setup\n</code></pre><p>to check whether the installation was complete, it always reported an error. The message said it was an nvt problem, over and over again; later, once I confirmed it, I found out it was actually a data update problem.<br>With the command</p>\n<pre><code>    sudo greenbone-scapdata-sync\n</code></pre><span id=\"more\"></span>\n<p>to pull the database. At first it pulled data starting from 2005 and timed out, so I ran the command again to pull. Because the data is overseas, the speed is very slow and it still kept timing out. There was no other way — by the time it had pulled the data up to 2020 it was already the middle of the night.</p>\n<p>Get the certificate</p>\n<pre><code>    sudo greenbone-certdata-sync\n</code></pre><p>Rebuild the database</p>\n<pre><code>    sudo openvasmd --rebuild\n</code></pre><p>Create a user and reset the password</p>\n<pre><code>    sudo openvasmd --create-user=erik --role=Admin &amp;&amp; sudo openvasmd --user=erik --new-password=123456\n</code></pre><p>Generate the certificate</p>\n<pre><code>    sudo openvas-manage-certs -a\n</code></pre><p>Start greenbone security assistant        </p>\n<pre><code>        sudo gsad --listen=127.0.0.1 --port=9392\n</code></pre><p>Run openvas</p>\n<pre><code>        sudo openvasmd\n</code></pre><p> Check the installation again</p>\n<pre><code>         sudo openvas-check-setup\n</code></pre><p>  If it shows: It seems like your OpenVAS-9 installation is OK, that means the installation succeeded.</p>\n<p>  Enter <a href=\"https://127.0.0.1:9392\">https://127.0.0.1:9392</a> in the browser to access and log in</p>\n",
+            "tags": [
+                "openvas",
+                "openvas安装"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2020/04/11/openvas-install-update/",
             "url": "https://erik.xyz/2020/04/11/openvas-install-update/",
             "title": "openvas的小故事",

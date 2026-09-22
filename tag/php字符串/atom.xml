@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,22 +502,34 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
     <entry>
-        <id>https://erik.xyz/2014/11/10/php-zhong-zi-fu-chuan-zheng-ze-han-shu/</id>
+        <id>https://erik.xyz/2014/11/10/php-zi-fu-chuan-zheng-ze-han-shu-en/</id>
+        <title>String and regular expression functions in PHP</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/10/php-zi-fu-chuan-zheng-ze-han-shu-en/"/>
+        <content type="html">&lt;h4 id=&#34;String-statistics&#34;&gt;&lt;a href=&#34;#String-statistics&#34; class=&#34;headerlink&#34; title=&#34;String statistics&#34;&gt;&lt;/a&gt;&lt;strong&gt;String statistics&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;Calculating string length comes up often in PHP development; the function you need is strlen(). For counting the words in a string there’s str_word_count() (it only works on ASCII English words)&lt;/p&gt;
+&lt;h4 id=&#34;Removing-spaces&#34;&gt;&lt;a href=&#34;#Removing-spaces&#34; class=&#34;headerlink&#34; title=&#34;Removing spaces&#34;&gt;&lt;/a&gt;&lt;strong&gt;Removing spaces&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;In many cases PHP development has to take user convenience into account — for example, what if someone accidentally types an extra space when entering their username? Then you use the space-clearing functions: ltrim() removes the spaces at the left end of the string, rtrim() removes the spaces at the right end of the string, and trim() removes the leading and trailing spaces on both sides at the same time. You can look for the pattern in these three functions: trim clears both the left and the right, so in ltrim the l is like left, meaning it clears on the left. Likewise for the right.&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h4 id=&#34;Splitting-strings&#34;&gt;&lt;a href=&#34;#Splitting-strings&#34; class=&#34;headerlink&#34; title=&#34;Splitting strings&#34;&gt;&lt;/a&gt;&lt;strong&gt;Splitting strings&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;String splitting is commonly used in PHP, namely the explode() and strtok() functions. The implode() function joins things into a single string according to a certain separator. implode() is also aliased as join() and the functionality is the same. Among these, explode() is used more, mostly for splitting email addresses, URLs, file paths and so on. Compared with explode(), strtok() can remember the position of the newly split string in the original string so it can keep splitting.  &lt;/p&gt;
+&lt;h4 id=&#34;Truncating-strings&#34;&gt;&lt;a href=&#34;#Truncating-strings&#34; class=&#34;headerlink&#34; title=&#34;Truncating strings&#34;&gt;&lt;/a&gt;&lt;strong&gt;Truncating strings&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;Note: each Chinese character takes up 2 characters. In PHP development you also run into cutting strings short, and that calls for the substr() function. The target string is the variable name of some string variable, and both the start position and the cut length are integers. If both are positive, the start position integer must be smaller than the length integer, otherwise the function returns false. If the cut length is negative, it means: starting from the start position and going forward, all characters except for the last (length) characters counted from the end of the target string. Format: substr(target string, start position, cut length)&lt;/p&gt;
+&lt;h4 id=&#34;Replacing-strings&#34;&gt;&lt;a href=&#34;#Replacing-strings&#34; class=&#34;headerlink&#34; title=&#34;Replacing strings&#34;&gt;&lt;/a&gt;&lt;strong&gt;Replacing strings&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;Usually in actual PHP development some parts of strings are the same, and to improve the site’s efficiency we need to replace them and make a call. That’s the substr_replace() function. Format: substr_replace(target string, replacement string, start position, replacement length)&lt;/p&gt;
+&lt;h4 id=&#34;Searching-strings&#34;&gt;&lt;a href=&#34;#Searching-strings&#34; class=&#34;headerlink&#34; title=&#34;Searching strings&#34;&gt;&lt;/a&gt;&lt;strong&gt;Searching strings&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;PHP generates a whole pile of strings during development or encryption, and sometimes we need to locate a string, which requires the search function strstr(). The strstr() function is not case sensitive. Format: strstr(target string, characters to find)&lt;/p&gt;
+&lt;h3 id=&#34;Regular-expressions&#34;&gt;&lt;a href=&#34;#Regular-expressions&#34; class=&#34;headerlink&#34; title=&#34;Regular expressions&#34;&gt;&lt;/a&gt;&lt;strong&gt;Regular expressions&lt;/strong&gt;&lt;/h3&gt;&lt;h4 id=&#34;Replacing-strings-with-regular-expressions&#34;&gt;&lt;a href=&#34;#Replacing-strings-with-regular-expressions&#34; class=&#34;headerlink&#34; title=&#34;Replacing strings with regular expressions&#34;&gt;&lt;/a&gt;Replacing strings with regular expressions&lt;/h4&gt;&lt;p&gt;When writing code, a website often needs to exchange friendly links, and for convenience we usually need to do some extraction so that the links become simple and easy to use. That calls for the PHP functions ereg_replace() and eregi_replace(); the former is case sensitive, the latter is not. Format ereg_replace(regular expression pattern, substring to be replaced, target string) &lt;strong&gt;Splitting strings with regular expressions&lt;/strong&gt; In most shopping site development we need arrays to combine and output customer information and product information for different pages, which requires us to use arrays. In PHP the split() and spliti() functions can do it, splitting different pieces of information apart and calling them repeatedly, improving the site’s efficiency; the former is case sensitive, the latter is not. Format split(regular expression, target string)&lt;/p&gt;
+</content>
+        <category term="php" />
+        <category term="php函数" />
+        <category term="lanmp" />
+        <category term="php字符串" />
+        <updated>2014-11-10T10:43:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/11/10/php-zi-fu-chuan-zheng-ze-han-shu/</id>
         <title>php中字符串、正则函数</title>
-        <link rel="alternate" href="https://erik.xyz/2014/11/10/php-zhong-zi-fu-chuan-zheng-ze-han-shu/"/>
+        <link rel="alternate" href="https://erik.xyz/2014/11/10/php-zi-fu-chuan-zheng-ze-han-shu/"/>
         <content type="html">&lt;h4 id=&#34;字符串统计&#34;&gt;&lt;a href=&#34;#字符串统计&#34; class=&#34;headerlink&#34; title=&#34;字符串统计&#34;&gt;&lt;/a&gt;&lt;strong&gt;字符串统计&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;计算字符串长度在php开发中经常遇到，需要使用的函数是strlen() 字符串单词统计函数 str_word_count() (只对ASCII的英文单词起作用)&lt;/p&gt;
 &lt;h4 id=&#34;清除空格&#34;&gt;&lt;a href=&#34;#清除空格&#34; class=&#34;headerlink&#34; title=&#34;清除空格&#34;&gt;&lt;/a&gt;&lt;strong&gt;清除空格&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;php开发在很多情况下要考虑客户使用便捷，比如输入用户名不小心多了一个空格，怎么办。那就用清楚空格函数 ltrim()函数是从左清除字符串头部的空格 rtrim()函数是从右清除字符串头部的空格 trim()函数是两边同时去除头部和尾部的空格 这三个函数大家可以找一下规律，trim是左右清楚，那么，ltrim中l就好比left左边，所以是左边清除。同理，右边也是。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h4 id=&#34;字符串切分&#34;&gt;&lt;a href=&#34;#字符串切分&#34; class=&#34;headerlink&#34; title=&#34;字符串切分&#34;&gt;&lt;/a&gt;&lt;strong&gt;字符串切分&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;在php函数中常用到字符串切分，即explode()和strtok()函数。implode()函数是按照一定间隔标准组合成一个字符串。 implode()别名又用作join()功能都是一致的。在其中explode()函数用的较多，大部分是用作，邮箱、网址、文件等分割。strtok()函数与explode()相比能记住分割后的新字符串在原字符串中的位置，以便继续分割。  &lt;/p&gt;
@@ -521,8 +539,8 @@
 &lt;h3 id=&#34;正则表达式&#34;&gt;&lt;a href=&#34;#正则表达式&#34; class=&#34;headerlink&#34; title=&#34;正则表达式&#34;&gt;&lt;/a&gt;&lt;strong&gt;正则表达式&lt;/strong&gt;&lt;/h3&gt;&lt;h4 id=&#34;正则替换字符串&#34;&gt;&lt;a href=&#34;#正则替换字符串&#34; class=&#34;headerlink&#34; title=&#34;正则替换字符串&#34;&gt;&lt;/a&gt;正则替换字符串&lt;/h4&gt;&lt;p&gt;在编写代码中，网站往往需要交换友情链接，为了方便我们一般都需要做个提取，是链接变得简便、好用。那就要用到php中的函数ereg_replace()和eregi_replace(),前者对大小写敏感，后者对大小写不敏感。 格式 ereg_replace(正则表达规范,欲取代字符串子串,目标字符串) &lt;strong&gt;正则切分字符串&lt;/strong&gt; 大多数商城开发中，我们需要用到数组，来整合、输出不同界面的客户信息、产品信息，这就需要我们用数组来实现。在php函数中split()和spliti()函数就可以做到，把不同信息进行切分，重复调用，提高网站运行效率,前者对大小写敏感，后者对大小写不敏感。 格式 split(正则表达式,目标字符串)&lt;/p&gt;
 </content>
         <category term="php" />
-        <category term="lanmp" />
         <category term="php函数" />
+        <category term="lanmp" />
         <category term="php字符串" />
         <updated>2014-11-10T10:43:00.000Z</updated>
     </entry>

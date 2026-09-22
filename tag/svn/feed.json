@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2015/03/24/centos-an-zhuang-svn-en/",
+            "url": "https://erik.xyz/2015/03/24/centos-an-zhuang-svn-en/",
+            "title": "Installing SVN on CentOS",
+            "date_published": "2015-03-24T12:17:00.000Z",
+            "content_html": "<p>Lately I’ve been trying to learn more about servers, so here is installing svn on CentOS<br>rpm -qa subversion  checks the installed version; if it exists, remove it<br>Remove   yum remove subversion<br>Install svn command    yum install httpd httpd-devel subversion mod_dav_svn mod_auth_mysql  confirm the installed modules<br>Enter the directory     cd /etc/httpd/modules<br>Confirm with the command    ls | grep svn<br>Check the installed version svnserve —version<span id=\"more\"></span><br><a href=\"http://i3.tietuku.com/54d9260e32ce137c.png\"><img src=\"http://i3.tietuku.com/54d9260e32ce137c.png\" alt=\"艾瑞可erik\"></a><br>After the installation is complete you still need to create an svn repository<br>Create the directory mkdir -p /opt/svn/repositories svnadmin create /opt/svn/repositories<br>Looking at the /opt/svn/repositories folder, you’ll find it contains the conf, db, format, hooks, locks and README.txt files, which means an SVN repository has been created.<br>Configuration<br>Enter cd /opt/svn/repositories/conf<br>Configure the password vi passwd [users] # harry = harryssecret # sally = sallyssecret admin=123456 Configure the permissions vi authz </p>\n<ol>\n<li>Setting [/] represents all resources under the root directory [/] admin=rw svnserve.com service configuration vi svnserve.conf 【general] </li>\n<li>Permission for anonymous access, can be read, write, none, defaults to read anon-access=none </li>\n<li>Give authorized users write permission auth-access=write </li>\n<li>Path of the password database password-db=passwd</li>\n<li>Access control file authz-db=authz </li>\n<li>Authentication namespace; subversion will display it in the authentication prompt and use it as the keyword for credential caching realm=/opt/svn/repositories </li>\n</ol>\n<p><a href=\"http://i3.tietuku.com/067648b1456ff3ab.png\"><img src=\"http://i3.tietuku.com/067648b1456ff3ab.png\" alt=\"\"></a><br>Configure the firewall vi /etc/sysconfig/iptables<br>Add the following content: -A INPUT -m state —state NEW -m tcp -p tcp —dport 3690 -j ACCEPT<br>After saving, restart the firewall service iptables restart<br>Start svn svnserve -d -r /opt/svn/repositories<br>Check the svn process ps -ef|grep svn|grep -v grep root 3699 1 0 21:33 ? 00:00:00 svnserve -d -r /opt/svn/reposito<br>Check the port netstat -ln |grep 3690 tcp 0 0 0.0.0.0:3690 0.0.0.0:* LIST<br>Stop svn killall svnserve<br>Start svn svnserve -d -r /opt/svn/repositories connect with a client to test</p>\n",
+            "tags": [
+                "centos",
+                "svn",
+                "代码提交"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2015/03/24/centos-an-zhuang-svn/",
             "url": "https://erik.xyz/2015/03/24/centos-an-zhuang-svn/",
             "title": "centos安装svn",

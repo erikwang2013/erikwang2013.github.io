@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2014/10/29/yum-du-li-an-zhuang-lnmp-huan-jing-en/",
+            "url": "https://erik.xyz/2014/10/29/yum-du-li-an-zhuang-lnmp-huan-jing-en/",
+            "title": "Installing an LNMP Environment Standalone with yum",
+            "date_published": "2014-10-29T03:24:00.000Z",
+            "content_html": "<p>How do you install an LNMP environment conveniently? I did some looking around, and I really did find a way.</p>\n<ul>\n<li>First run yum install wget    // download the wget tool </li>\n<li>Then run wget <a href=\"http://www.atomicorp.com/installers/atomic\">http://www.atomicorp.com/installers/atomic</a> // download the atomic repo </li>\n<li>sh ./atomic   // install </li>\n<li>yum check-update  // update<span id=\"more\"></span></li>\n<li>yum -y install ntp make openssl openssl-devel pcre pcre-devel libpng libpng-devel libjpeg-6b - - libjpeg-devel-6b freetype freetype-devel gd gd-devel zlib zlib-devel gcc gcc-c++ libXpm libXpm-devel ncurses ncurses-devel libmcrypt libmcrypt-devel libxml2 libxml2-devel imake autoconf automake screen sysstat compat-libstdc++-33 curl curl-devel // install development packages and files</li>\n<li>yum install nginx    // install</li>\n<li>nginx service nginx start   // start</li>\n<li>nginx chkconfig —levels 235 nginx on   // set it to start at boot for runlevels 2, 3, and 5 </li>\n<li>yum install mysql mysql-server mysql-devel   // install</li>\n<li>mysql service mysqld start        // start</li>\n<li>mysql chkconfig —levels 235 mysqld on mysqladmin -u root password “123456” // set a password for the root user - service mysqld restart // restart mysql </li>\n<li>Install php: yum install php lighttpd-fastcgi php-cli php-mysql php-gd php-imap php-ldap php-odbc php-pear php-xml php-xmlrpc php-mbstring php-mcrypt php-mssql php-snmp php-soap php-tidy php-common php-devel php-fpm // install php and the required components so PHP supports MySQL and FastCGI mode </li>\n<li>service php-fpm start chkconfig —levels 235 php-fpm on Configure nginx to support php </li>\n<li>mv /etc/nginx/nginx.conf /etc/nginx/nginx.confbak // rename the config file to a backup file</li>\n<li>cp /etc/nginx/nginx.conf.default /etc/nginx/nginx.conf // since the original config file has to be written by hand, you can use the default config file as the config file // modify the nginx config file to add fastcgi support </li>\n<li>vi /etc/nginx/nginx.conf index index.php index.html index.htm; // add index.php <figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">location ~ \\\\.php$ &#123; </span><br><span class=\"line\">root           /usr/share/nginx/html; </span><br><span class=\"line\">fastcgi\\_pass   127.0.0.1:9000; </span><br><span class=\"line\">fastcgi\\_index  index.php;</span><br><span class=\"line\">fastcgi\\_param  SCRIPT\\_FILENAME  /usr/share/nginx/html$fastcgi\\_script\\_name; </span><br><span class=\"line\">include        fastcgi\\_params;</span><br><span class=\"line\">&#125; </span><br></pre></td></tr></table></figure>\n// uncomment the code above, and change it to the nginx default path Configure php<br>// edit the php.ini file, add cgi.fix_pathinfo = 1 at the end of the file vi /etc/php.ini<br>Restart nginx<br>php-fpm service nginx restart service php-fpm restart </li>\n</ul>\n<p>Create the info.php file vi /usr/share/nginx/html/info.php</p>\n<p>&lt;?php phpinfo(); ?&gt; </p>\n<p>Enter 127.0.01 in the browser and it shows <a href=\"http://i2.tietuku.com/fe584e1cf5db4f2b.png\"><img src=\"http://i2.tietuku.com/fe584e1cf5db4f2b.png\" alt=\"木木夕互联网\"></a></p>\n",
+            "tags": [
+                "centos",
+                "linux",
+                "memcache"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2014/10/29/yum-du-li-an-zhuang-lnmp-huan-jing/",
             "url": "https://erik.xyz/2014/10/29/yum-du-li-an-zhuang-lnmp-huan-jing/",
             "title": "yum独立安装lnmp环境",
@@ -14,6 +26,19 @@
                 "centos",
                 "linux",
                 "memcache"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2014/10/06/chang-yong-gong-ju-en/",
+            "url": "https://erik.xyz/2014/10/06/chang-yong-gong-ju-en/",
+            "title": "Commonly Used Tools",
+            "date_published": "2014-10-06T10:12:00.000Z",
+            "content_html": "<p>memcached high-speed caching tool (linux) wget <a href=\"https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz\">https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz</a> wget <a href=\"https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz\">https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz</a> wget <a href=\"https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz\">https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz</a> <a href=\"https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz\">libevent-1.4.14b-stable.tar.gz</a> <a href=\"https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz\">memcached-1.4.20.tar.gz</a> <a href=\"https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz\">memcache-2.2.1.tgz</a></p>\n",
+            "tags": [
+                "工具",
+                "软件",
+                "memcache",
+                "memcached"
             ]
         },
         {

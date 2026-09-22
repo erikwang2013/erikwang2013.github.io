@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2022/09/15/rust-dev-test-en/",
+            "url": "https://erik.xyz/2022/09/15/rust-dev-test-en/",
+            "title": "First Look at the Rust Language",
+            "date_published": "2022-09-15T12:51:00.000Z",
+            "content_html": "<p>Last year, while browsing job sites, I happened to come across the Rust programming language and made a mental note of it. It just so happens that I’m not too busy these days, so let me start by getting a first look at it.</p>\n<p>The official website describes it like this:<br>A language empowering everyone to build reliable and efficient software.<br><span id=\"more\"></span><br>First, set up the local environment</p>\n<p>Mine is a linux system, so I’ll run the following command<br><figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">curl --proto &#x27;=https&#x27; --tlsv1.3 https://sh.rustup.rs -sSf | sh</span><br></pre></td></tr></table></figure></p>\n<p>Once it’s installed, type this in the command window</p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">rustc -V</span><br></pre></td></tr></table></figure>\n<p>and you’ll see</p>\n<p><img src=\"/img/202209/20221116105814.jpg\" alt=\"\"></p>\n<p>which means the installation succeeded</p>\n<p>Installing it also installs cargo</p>\n<p>Cargo is Rust’s build system and package manager. Most Rustaceans use Cargo to manage their Rust projects, because it can handle a lot of tasks for you, such as building code, downloading dependency libraries and compiling those libraries</p>\n<p>If typing rust -V or cargo —version anywhere in the terminal gives no response, then you need to symlink these two installed commands into /usr/local/bin or /usr/bin so that they can be used globally.</p>\n<p>At this point the Rust environment is configured.</p>\n<p>Next, let’s develop a guessing game following the <a href=\"https://kaisery.github.io/trpl-zh-cn/ch02-00-guessing-game-tutorial.html\">documentation</a>; the code is as follows<br><img src=\"/img/202209/20221116110422.jpg\" alt=\"\"></p>\n<p>The final result<br><img src=\"/img/202209/20221116110639.jpg\" alt=\"\"></p>\n",
+            "tags": [
+                "rust",
+                "rust配置"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2022/09/15/rust-dev-test/",
             "url": "https://erik.xyz/2022/09/15/rust-dev-test/",
             "title": "初识rust语言",

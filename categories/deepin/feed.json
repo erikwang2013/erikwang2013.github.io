@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2025/07/22/virtualbox-hyper-v-en/",
+            "url": "https://erik.xyz/2025/07/22/virtualbox-hyper-v-en/",
+            "title": "VirtualBox conflicts with Hyper-V",
+            "date_published": "2025-07-22T09:10:00.000Z",
+            "content_html": "<p>I’ve been learning HarmonyOS development lately, and my dev machine has always run deepin. DevEco Studio doesn’t support Linux, and the win compatibility engine didn’t help either. So I had no choice but to install VirtualBox to run Win10.</p>\n<p>Win10 installed fine in VirtualBox, but after launching DevEco Studio the VM kept saying Hyper-V was not enabled. It clearly was enabled though — so what now? Could VT-X and Hyper-V actually be in conflict? I dug around and found the fix.<br><span id=\"more\"></span></p>\n<ol>\n<li><p>Shut down the Win10 VM and run this in a deepin terminal:</p>\n<pre><code> VBoxManage modifyvm &quot;VM name&quot; --nested-hw-virt on\n</code></pre></li>\n</ol>\n<ol>\n<li>Change the VM settings</li>\n</ol>\n<ul>\n<li><p>Open the VirtualBox manager → select the Win10 VM → Settings → System → Acceleration:</p>\n<ul>\n<li><p>Set Paravirtualization Interface to Hyper-V4;</p>\n</li>\n<li><p>Tick Enable Nested Paging;</p>\n</li>\n<li><p>Processor count ≥ 2 (if the physical CPU has enough cores).</p>\n</li>\n</ul>\n</li>\n</ul>\n<ol>\n<li>Enable Hyper-V inside Windows.<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">pushd &quot;%~dp0&quot;</span><br><span class=\"line\">dir /b %SystemRoot%\\servicing\\Packages\\*Hyper-V*.mum &gt;hyper-v.txt</span><br><span class=\"line\">for /f %%i in (&#x27;findstr /i . hyper-v.txt 2^&gt;nul&#x27;) do dism /online /norestart /add-package:&quot;%SystemRoot%\\servicing\\Packages\\%%i&quot;</span><br><span class=\"line\">del hyper-v.txt</span><br><span class=\"line\">Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</span><br></pre></td></tr></table></figure>\nCreate a txt file in Windows yourself, paste the code in, rename the extension to bat and run it as administrator. Reboot when it’s done.</li>\n</ol>\n",
+            "tags": [
+                "virtualbox",
+                "hyper-v",
+                "鸿蒙开发"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2025/07/22/virtualbox-hyper-v/",
             "url": "https://erik.xyz/2025/07/22/virtualbox-hyper-v/",
             "title": "virtualbox与hyper-v的冲突",
@@ -14,6 +26,19 @@
                 "virtualbox",
                 "hyper-v",
                 "鸿蒙开发"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2024/11/15/deepin-not-login-en/",
+            "url": "https://erik.xyz/2024/11/15/deepin-not-login-en/",
+            "title": "deepin fails to log in with emergency mode error",
+            "date_published": "2024-11-15T02:56:00.000Z",
+            "content_html": "<p>After the system restarted, the freshly installed WeChat kept popping up dialog boxes and got stuck there, which was unbearable. I force-restarted right away, and after booting it kept showing “You are in emergency mode……” and a pile of stuff, meaning it wanted me to log in as root, check the error and fix it.</p>\n<p>  Kind of a headache.</p>\n<p>  System commands would display, but the graphical interface would not.<br>  <span id=\"more\"></span><br>  So I grabbed the USB drive I used to install the system, booted from it into the installer, pressed ctrl+alt+f4 to get to the USB system’s command interface. Typed startx to enter the USB system’s graphical interface. Now I could see the disks mounted on the computer. I went through the mounted disks one by one looking for the root directory disk. Once I found it, I used the USB system’s command window:<br><figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sudo vi /etc/fstab</span><br><span class=\"line\"></span><br></pre></td></tr></table></figure></p>\n<p> Comment out the home directory and reboot the system.</p>\n<p> After rebooting you’ll see a graphical login screen. That one is fake and useless. Press ctrl+alt+f2 to get to the command interface.<br> Log in to the command interface with your account and password.</p>\n<p> Open the /etc/fstab file and remove the comment on home. (Here you need to check the home mount path, mine is /dev/sda6 for example.)</p>\n<p> Use the following command to repair:<br> <figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sudo e2fsck /dev/sda6</span><br></pre></td></tr></table></figure></p>\n<p> You will see a bunch of repairs; confirm them one by one, wait for the repair to finish and then reboot the system.</p>\n",
+            "tags": [
+                "deepin",
+                "emergency",
+                "emergency mode",
+                "deepin黑屏"
             ]
         },
         {

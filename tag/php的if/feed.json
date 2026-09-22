@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2017/08/08/php-zhong-if-zhu-yi-shi-xiang-en/",
+            "url": "https://erik.xyz/2017/08/08/php-zhong-if-zhu-yi-shi-xiang-en/",
+            "title": "Things to Watch Out For with if in PHP",
+            "date_published": "2017-08-08T03:59:00.000Z",
+            "content_html": "<p>Recently I happened to discover that PHP’s if has an automatically handled parameter for comparisons<br><img src=\"http://erik.xyz/wp-content/uploads/2017/08/11.jpg\" alt=\"\"><br>For example </p>\n<ol>\n<li>$a=’adasds’; if($a==0){ echo “GGGG”; }else{ echo “KKKK”; } The result is GGGG. This is because when if evaluates $a it checks whether there is a number at the very start of the string; if there is no number it returns 0, so the result is GGGG</li>\n<li>$a=’55adasds’; if($a==55){ echo “GGGG”; }else{ echo “KKKK”; } The result is  GGGG. The if comparison checks whether there is a number at the beginning of $a; if there is a number it returns that number, so the result is GGGG</li>\n<li>$a=’ad55asds’; or $a=’adasds55’; if($a==55){ echo “GGGG”; }else{ echo “KKKK”; } The result is KKKK, which shows that when if evaluates $a it does not check whether there is a number in the middle or at the end, and the result simply returns 0; In summary, with if comparisons, if the variable you define is an integer this problem won’t come up, but if it is a string you have to take the situations in examples 1 and 2 into account.</li>\n</ol>\n",
+            "tags": [
+                "php中if",
+                "php中if判断",
+                "php的if"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2017/08/08/php-zhong-if-zhu-yi-shi-xiang/",
             "url": "https://erik.xyz/2017/08/08/php-zhong-if-zhu-yi-shi-xiang/",
             "title": "php中if注意事项",

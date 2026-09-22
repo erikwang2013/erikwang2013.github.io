@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,183 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2020/01/29/review-points-en/</id>
+        <title>Algorithms, Data Structures, Linear Structures, Stacks, Queues</title>
+        <link rel="alternate" href="https://erik.xyz/2020/01/29/review-points-en/"/>
+        <content type="html">&lt;h3 id=&#34;Algorithms&#34;&gt;&lt;a href=&#34;#Algorithms&#34; class=&#34;headerlink&#34; title=&#34;Algorithms&#34;&gt;&lt;/a&gt;Algorithms&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Basic characteristics of an algorithm&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Feasibility&lt;ul&gt;
+&lt;li&gt;The steps are implementable and the execution result meets expectations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Determinacy&lt;ul&gt;
+&lt;li&gt;The steps are unambiguous&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Finiteness&lt;ul&gt;
+&lt;li&gt;It completes in a finite amount of time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Possessing sufficient intelligence&lt;ul&gt;
+&lt;li&gt;Having enough input information and initialization information&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Complexity of an algorithm&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Time complexity&lt;ul&gt;
+&lt;li&gt;The amount of computational work required to execute the algorithm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Space complexity&lt;ul&gt;
+&lt;li&gt;The memory space required to execute the algorithm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;Data-Structures&#34;&gt;&lt;a href=&#34;#Data-Structures&#34; class=&#34;headerlink&#34; title=&#34;Data Structures&#34;&gt;&lt;/a&gt;Data Structures&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Definition: a data structure is a collection of data elements that are related to one another.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Concepts of data structures&lt;ul&gt;
+&lt;li&gt;Root node&lt;ul&gt;
+&lt;li&gt;A node with no predecessor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Terminal node&lt;ul&gt;
+&lt;li&gt;A node with no successor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Internal node&lt;ul&gt;
+&lt;li&gt;A node other than the root node and the terminal node&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;Linear-Structures-and-Non-linear-Structures&#34;&gt;&lt;a href=&#34;#Linear-Structures-and-Non-linear-Structures&#34; class=&#34;headerlink&#34; title=&#34;Linear Structures and Non-linear Structures&#34;&gt;&lt;/a&gt;Linear Structures and Non-linear Structures&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Linear structure&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There is exactly one root node&lt;/li&gt;
+&lt;li&gt;Each node has at most one predecessor and at most one successor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Non-linear structure: anything that does not satisfy the two conditions of a linear structure is a non-linear structure&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tree structure&lt;/li&gt;
+&lt;li&gt;Network structure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;Linear-Lists&#34;&gt;&lt;a href=&#34;#Linear-Lists&#34; class=&#34;headerlink&#34; title=&#34;Linear Lists&#34;&gt;&lt;/a&gt;Linear Lists&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;A linear structure is also called a linear list&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Non-empty linear list&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It has only one root node&lt;/li&gt;
+&lt;li&gt;It has exactly one terminal node&lt;/li&gt;
+&lt;li&gt;Apart from the root node and the terminal node, every other node has exactly one predecessor and exactly one successor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;Sequential-Storage-of-Linear-Lists&#34;&gt;&lt;a href=&#34;#Sequential-Storage-of-Linear-Lists&#34; class=&#34;headerlink&#34; title=&#34;Sequential Storage of Linear Lists&#34;&gt;&lt;/a&gt;Sequential Storage of Linear Lists&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Definition: sequential storage of a linear list means storing the elements of the linear list one after another in a contiguous storage area; such a linear list is also called a sequential list&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Characteristics of a sequential list&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The storage space occupied by all elements in the linear list is contiguous&lt;/li&gt;
+&lt;li&gt;The data elements in the linear list are stored one by one in logical order within the storage space&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;Stacks&#34;&gt;&lt;a href=&#34;#Stacks&#34; class=&#34;headerlink&#34; title=&#34;Stacks&#34;&gt;&lt;/a&gt;Stacks&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Definition: a stack is a special kind of linear list. All of its insertions and deletions are restricted to the same end of the list. The end where insertion and deletion are allowed is called the top of the stack, and the end where they are not allowed is called the bottom of the stack. When the stack contains no elements, it is called an empty stack.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The modification principle of a stack is last-in-first-out, or first-in-last-out&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Basic operations on a stack: push, pop, read the top element&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;Queues&#34;&gt;&lt;a href=&#34;#Queues&#34; class=&#34;headerlink&#34; title=&#34;Queues&#34;&gt;&lt;/a&gt;Queues&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Definition: a linear list that allows insertion at one end and deletion at the other end&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The end where deletion is allowed is called the front of the queue, and the end where insertion is allowed is called the rear of the queue&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;Comparison-of-Sequential-Lists-and-Linked-Lists&#34;&gt;&lt;a href=&#34;#Comparison-of-Sequential-Lists-and-Linked-Lists&#34; class=&#34;headerlink&#34; title=&#34;Comparison of Sequential Lists and Linked Lists&#34;&gt;&lt;/a&gt;Comparison of Sequential Lists and Linked Lists&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Sequential list&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Advantages&lt;ul&gt;
+&lt;li&gt;Any node in the list can be accessed randomly&lt;/li&gt;
+&lt;li&gt;No extra storage space is needed to represent the logical relationships between nodes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Disadvantages&lt;ul&gt;
+&lt;li&gt;Insertion and deletion in a sequential list are very inefficient&lt;/li&gt;
+&lt;li&gt;The storage space of a sequential list is inconvenient to expand&lt;/li&gt;
+&lt;li&gt;A sequential list is not convenient for dynamic allocation of storage space&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Linked list&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Advantages&lt;ul&gt;
+&lt;li&gt;For insertion and deletion, only the pointers need to be changed; elements do not need to be moved&lt;/li&gt;
+&lt;li&gt;The storage space of a linked list is easy to expand and convenient for dynamic allocation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Disadvantages&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Extra space is needed to represent the logical relationships between data elements, so the storage density is lower than that of a sequential list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Types of linked lists&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Singly linked list&lt;ul&gt;
+&lt;li&gt;The links of the list run in a single direction; accessing the list requires reading sequentially from the head. A linked list is a list constructed using pointers; it is also called a node list&lt;/li&gt;
+&lt;li&gt;Creating a single node is very convenient; ordinary linear memory usually requires the data size to be set at creation time&lt;/li&gt;
+&lt;li&gt;Deleting a node is very convenient; there is no need to move the remaining data as with a linear structure&lt;/li&gt;
+&lt;li&gt;Accessing nodes is convenient; any data can be reached through loops or recursion, but the average access efficiency is lower than that of a linear list&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Doubly linked list&lt;ul&gt;
+&lt;li&gt;Each data node has two pointers, pointing to its direct successor and direct predecessor respectively. Starting from any node in a doubly linked list, you can conveniently access its predecessor and successor nodes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Circular linked list&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The last node points to the head node, forming a ring. Starting from any node in a circular linked list, you can find any other node&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+        <category term="算法" />
+        <category term="队列" />
+        <category term="栈" />
+        <category term="顺序表" />
+        <category term="链表" />
+        <category term="数据结构" />
+        <category term="线性结构" />
+        <updated>2020-01-29T14:46:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2020/01/29/review-points/</id>
         <title>算法、数据结构、线性结构、栈、队列</title>

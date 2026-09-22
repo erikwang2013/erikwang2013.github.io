@@ -5,6 +5,16 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2014/12/03/onethink-zhong-lu-jing-qu-diao-home-en/",
+            "url": "https://erik.xyz/2014/12/03/onethink-zhong-lu-jing-qu-diao-home-en/",
+            "title": "Removing 'home' from the Path in onethink",
+            "date_published": "2014-12-03T10:33:00.000Z",
+            "content_html": "<p>I’ve been developing a medium-sized project for a while now, and I used onethink for it. Later I found that the path optimization issue kept bugging me; after searching on Baidu over and over, it suddenly worked this morning. After analyzing the reason again and again, it turned out I simply hadn’t cleared the cache. The specific way to change it is as follows. First find the common config.php file, which is under Application\\Common\\Conf in the project, and in it the code is as follows </p>\n<pre><code>      &#39;MODULE\\_ALLOW\\_LIST&#39;  =&gt; array(&#39;Home&#39;,&#39;Admin&#39;), \n      &#39;URL\\_ROUTER\\_ON&#39; =&gt; true, \n      &#39;URL\\_ROUTE\\_RULES&#39;=&gt;array( \n      &#39;index&#39; =&gt; &#39;Index/index&#39;, //首页 \n      &#39;article/:id\\\\d$&#39; =&gt; &#39;Article/detail&#39;, //文章页 \n      &#39;:category$&#39;=&gt; &#39;Article/lists&#39; //列表页 ),\n</code></pre><p>Then find URL_MODEL and change the 3 after it to 2, and at the same time copy this line of code and paste it into confi.php under Application\\Home\\Conf. The code is as follows </p>\n<pre><code>        &#39;URL\\_MODEL&#39;            =&gt; 2, //URL mode         \n</code></pre><p>Then clear the cache — the cache is under Runtime\\Cache\\Home in the project, so delete all the files in there. After refreshing the browser, home is gone from the path. Here I’d like to say that the onethink framework is still a good one; it’s built on thinkphp3.2 and is very convenient.</p>\n",
+            "tags": [
+                "onethink"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2014/12/03/onethink-zhong-lu-jing-qu-diao-home/",
             "url": "https://erik.xyz/2014/12/03/onethink-zhong-lu-jing-qu-diao-home/",
             "title": "onethink中路径去掉home",

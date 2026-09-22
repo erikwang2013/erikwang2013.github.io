@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2017/09/15/php7-an-zhuang-sphinx-kuo-zhan-en/",
+            "url": "https://erik.xyz/2017/09/15/php7-an-zhuang-sphinx-kuo-zhan-en/",
+            "title": "Installing the Sphinx Extension for PHP 7",
+            "date_published": "2017-09-15T13:17:00.000Z",
+            "content_html": "<p>In the official pecl repository you can only find a Sphinx extension that supports version 5.2. PHP 7 has been out for quite a while, and having no Sphinx isn’t very reasonable. Following a tip from a fellow netizen, on the sphinx page under the pecl repository, click [ Browse Source ] as shown below: <img src=\"http://erik.xyz/wp-content/uploads/2017/08/1-1.jpg\" alt=\"\"> <span id=\"more\"></span><br>This takes you to the git page, where you can find extension files that support PHP 7 <img src=\"http://erik.xyz/wp-content/uploads/2017/08/2-1.jpg\" alt=\"\"> </p>\n<p>This makes things much easier. Click shortlog to go to the download page and download the extension. The download address for the source code needed by sphinx is <a href=\"http://download.csdn.net/download/w15875510692/9931232\">http://download.csdn.net/download/w15875510692/9931232</a> </p>\n<p>It’s best to download with a browser: <a href=\"http://git.php.net/?p=pecl/search_engine/sphinx.git;a=snapshot;h=339e123acb0ce7beb2d9d4f9094d6f8bcf15fb54;sf=tgz\">http://git.php.net/?p=pecl/search_engine/sphinx.git;a=snapshot;h=339e123acb0ce7beb2d9d4f9094d6f8bcf15fb54;sf=tgz</a> Because when installing the sphinx extension it always reports an error about libsphinxclient, that is, libsphinxclient is missing. So you need to download coreseek, unpack it, and enter the csft-3.2.14/api/libsphinxclient directory to run ./configure, then make &amp;&amp; make install to install libsphinxclient. The installation succeeds as shown in the figure.<br><img src=\"http://erik.xyz/wp-content/uploads/2017/08/core.jpg\" alt=\"\"></p>\n<p>Next, unpack sphinx and install the extension. Enter the sphinx directory and run phpize, then ./configure —with-php-config=XXXX (the php-config directory), then make &amp;&amp; make install. It installs successfully, as shown in the figure. <img src=\"http://erik.xyz/wp-content/uploads/2017/08/sphinx.jpg\" alt=\"\"> </p>\n<p>Then add the extension in php.ini, restart the php service, and you’ll be able to see the sphinx extension in phpinfo.</p>\n",
+            "tags": [
+                "php7中sphinx",
+                "php7中sphinx扩展",
+                "sphinx扩展"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2017/09/15/php7-an-zhuang-sphinx-kuo-zhan/",
             "url": "https://erik.xyz/2017/09/15/php7-an-zhuang-sphinx-kuo-zhan/",
             "title": "php7安装sphinx扩展",

@@ -5,6 +5,20 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2017/12/01/centos-shang-ru-he-an-zhuang-steam-en/",
+            "url": "https://erik.xyz/2017/12/01/centos-shang-ru-he-an-zhuang-steam-en/",
+            "title": "How to Install Steam on CentOS",
+            "date_published": "2017-12-01T13:22:00.000Z",
+            "content_html": "<p>Lately I wanted to move everything from my win system over to centos, and I happened to discover that deepin actually has steam. I checked the official site and found that steam has a deb installer package. Then I tried converting the deb to rpm myself, and it seemed like it could install successfully, but it always reported an error that the GPU could not render. Painful.<br><img src=\"http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-11-27-46-的屏幕截图.png\" alt=\"\"><br><span id=\"more\"></span>Then I unexpectedly discovered that steam has a yum repo you can install from. Adding the repo: yum-config-manager —add-repo</p>\n<p><img src=\"http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAsZOF0aZ3nolIs4smsi7XcaVy9iE2/DAeMYM23XArLL/Pcg4iOwT6wY4qa+xKqX1jFqj6RVAA1ROAXD85Awz94K2uSdvSjzCTeuIai3OgnuzBVWKO/W++3xWZWJPUQllzP0RWHiYm/X80/TKe9kSg+odj2oeHoEzTI=\" alt=\"http://negativo17.org/repos/epel-steam.repo\">  </p>\n<p>Running the steam install with yum -y install steam immediately gives an error<br><img src=\"http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-12-47-57-的屏幕截图.png\" alt=\"\"> </p>\n<p>Then go search the software repository: <a href=\"https://www.rpmfind.net/linux/rpm2html/search.php?query=libva-intel-driver&amp;submit=Search+...&amp;system=&amp;arch=\">https://www.rpmfind.net/linux/rpm2html/search.php?query=libva-intel-driver&amp;submit=Search+...&amp;system=&amp;arch=</a><br><img src=\"http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-12-52-12-的屏幕截图.png\" alt=\"\"> </p>\n<p>So just wget the 32-bit and 64-bit ones. Steam only supports 32-bit, and my system is 64-bit: wget <a href=\"https://www.rpmfind.net/linux/rpmfusion/free/fedora/releases/27/Everything/x86\\_64/os/Packages/l/libva-intel-driver-1.8.3-2.fc27.i686.rpm\">https://www.rpmfind.net/linux/rpmfusion/free/fedora/releases/27/Everything/x86\\_64/os/Packages/l/libva-intel-driver-1.8.3-2.fc27.i686.rpm</a> wget <a href=\"https://www.rpmfind.net/linux/rpmfusion/free/fedora/releases/27/Everything/x86\\_64/os/Packages/l/libva-intel-driver-1.8.3-2.fc27.x86_64.rpm\">https://www.rpmfind.net/linux/rpmfusion/free/fedora/releases/27/Everything/x86\\_64/os/Packages/l/libva-intel-driver-1.8.3-2.fc27.x86_64.rpm</a> </p>\n<p>Then run yum -y install libva-intel-driver*rpm and yum -y install steam, and the install succeeds. If it won’t start, run rm /usr/lib/libxcb-dri3.so.0<br><img src=\"http://erik.xyz/wp-content/uploads/2017/11/2017-11-25-13-14-03-的屏幕截图.png\" alt=\"\"></p>\n",
+            "tags": [
+                "centos7安装steam",
+                "centos安装steam",
+                "centos安装吃鸡steam",
+                "linux安装steam",
+                "steam安装"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2017/12/01/centos-shang-ru-he-an-zhuang-steam/",
             "url": "https://erik.xyz/2017/12/01/centos-shang-ru-he-an-zhuang-steam/",
             "title": "centos上如何安装steam",

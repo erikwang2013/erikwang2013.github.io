@@ -5,6 +5,19 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2014/11/14/php-mian-xiang-dui-xiang-en/",
+            "url": "https://erik.xyz/2014/11/14/php-mian-xiang-dui-xiang-en/",
+            "title": "Object-oriented PHP",
+            "date_published": "2014-11-14T07:18:00.000Z",
+            "content_html": "<p>__construct() is the constructor, mainly called and executed when an instance is generated with the new keyword. (A constructor cannot return a value.) __destructor() is the destructor, called and executed when the object is destroyed. (It clears resources or writes log information when the object is destroyed.) __get(), __set() are accessor functions; whenever a class property is accessed or manipulated, the accessor functions are triggered. The oop philosophy discourages accessing class properties directly from outside the class, so using them avoids direct access to class properties.<span id=\"more\"></span> extends confirms that a subclass inherits from a superclass  format: class Subclass extends Superclass{} final placed before a particular class means that class can no longer be inherited. If placed before a class method, it means that method cannot be “overridden” or redefined after inheritance. implements specifies the use of an interface <a href=\"http://tietuku.com/cc26841c6b434585\" title=\"php interface diagram\"><img src=\"http://i2.tietuku.com/cc26841c6b434585.jpg\" alt=\"php interface diagram\"></a> interface can declare an interface and set up interface methods separately <a href=\"http://tietuku.com/9ce70457b5ef2e3b\" title=\"interface diagram\"><img src=\"http://i2.tietuku.com/9ce70457b5ef2e3b.jpg\" alt=\"interface diagram\"></a> Error handling <a href=\"http://tietuku.com/cce268d063bbd079\" title=\"error handling\"><img src=\"http://i2.tietuku.com/cce268d063bbd079.jpg\" alt=\"error handling\"></a></p>\n",
+            "tags": [
+                "php",
+                "php函数",
+                "php面向对象",
+                "面向对象"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2014/11/14/php-mian-xiang-dui-xiang/",
             "url": "https://erik.xyz/2014/11/14/php-mian-xiang-dui-xiang/",
             "title": "php面向对象",

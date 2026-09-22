@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,22 +502,52 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
     <entry>
-        <id>https://erik.xyz/2014/10/19/zhi-de-shou-cang-de-14-kuan-xiang-ying-shi-qian-duan-kai-fa-kuang-jia/</id>
+        <id>https://erik.xyz/2014/10/19/14-xiang-ying-shi-kuang-jia-en/</id>
+        <title>14 Responsive Front-End Development Frameworks Worth Bookmarking</title>
+        <link rel="alternate" href="https://erik.xyz/2014/10/19/14-xiang-ying-shi-kuang-jia-en/"/>
+        <content type="html">&lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;: Using a front-end development framework can greatly simplify the development process, and the sites you build are cross-browser, consistent, and responsive. This article collects 14 responsive front-end development frameworks, and points out the UI components and JavaScript plugins each one includes. Almost all of the frameworks adopt a responsive grid system. Front-end development is not an easy job: you need to master not only HTML, CSS and JavaScript, but also, for different browser versions and platforms, to understand how to design cross-platform websites. These days, with responsive design becoming popular, front-end development is getting harder and taking longer. This article collects 14 responsive front-end development frameworks that can help front-end developers greatly simplify the development process. For each framework, the article points out the UI components and JavaScript plugins it includes. Almost all of the frameworks adopt a responsive grid system. &lt;strong&gt;Using these front-end frameworks has the following benefits&lt;/strong&gt;: Cross-browser. This has already been proven. Consistency. UI components such as navigation, buttons, labels, forms, drop-down boxes, tables… stay consistent in style. Rapid development. You can build layouts quickly and easily. These frameworks all ship with detailed documentation. Responsive. All CSS components and JavaScript plugins transition nicely from desktop to mobile devices.&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;strong&gt;InK&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/004616vp3xhv2wvnskz8ms.jpg&#34; alt=&#34;1.jpg&#34; title=&#34;1.jpg&#34;&gt; &lt;/p&gt;
+&lt;p&gt;Ink is an interface toolkit for rapidly developing web interfaces, with the characteristics of being easy to use and easy to extend. It provides solutions for building layouts, can display ordinary interface elements, and can achieve content-centric, user-friendly interaction. HTML&amp;amp;CSS: layout, navigation, typography, icons, forms, tooltips, tables JS: Gallery, tables, tree view, sortable lists, date picker plugin, tabs, form validation and some behaviors (dock, collapse, close) Other: Sass Mixins &lt;strong&gt;GroundworkCSS Beta&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/004648t6t00u0rk3z2902k.jpg&#34; alt=&#34;2.jpg&#34; title=&#34;2.jpg&#34;&gt;&lt;/p&gt;
+&lt;p&gt;GroundworkCSS is an open source project based on the Sass preprocessor, mainly used to quickly build responsive web applications. It has a flexible, nestable grid system that lets you create layouts adapted to many kinds of browsing devices. GroundworkCSS also provides many UI components, such as navigation, buttons, icons, forms, Tabs, dialogs, tooltips and more. HTML&amp;amp;CSS: grid, layout, typography, buttons, headings, forms, icons, social icons, responsive text, dialogs, tooltips JS: navigation, tabs (Tab), tooltips, Cycle2 Other: Sass Mixins &lt;strong&gt;Ivory&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/004705lbpcdps0pzjvdj3c.jpg&#34; alt=&#34;3.jpg&#34; title=&#34;3.jpg&#34;&gt; &lt;/p&gt;
+&lt;p&gt;This is a flexible, powerful responsive web framework that makes web development faster and simpler. HTML&amp;amp;CSS: grid, typography, forms, buttons, tooltips, pagination, breadcrumbs, lists, tables JS: tooltips, tabs (Tab), toggle switch, accordion &lt;strong&gt;ZURB&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/004731eg0061xwwm2rg67v.jpg&#34; alt=&#34;4.jpg&#34; title=&#34;4.jpg&#34;&gt;&lt;br&gt;Foundation is designed by ZURB, a product design company located in Campbell, California. Foundation is a state-of-the-art responsive front-end development framework, with plenty of layout templates, CSS stylesheets and excellent JavaScript plugins of its own making. HTML&amp;amp;CSS: grid, layout templates, icon fonts, responsive tables, SVG social icons, pagination, breadcrumbs, side navigation, buttons, typography, labels, tooltips, panels, price tables, progress bars, tables, thumbnails JS: drop-down buttons, split buttons, switches, Flex Video, lightbox, drop-downs, responsive layout (achieved by scaling images), Joyride, Magellan Sticky Nav, Orbit image slider plugin, etc. Other: Custom Skinned Forms, SCSS Mixin &lt;strong&gt;Grumby&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/004805wz6a655pj2q8h8jc.jpg&#34; alt=&#34;5.jpg&#34; title=&#34;5.jpg&#34;&gt; &lt;/p&gt;
+&lt;p&gt;Gumby 2 is built on Sass. Sass is a powerful CSS preprocessor, and with it Gumby can be developed quickly. HTML&amp;amp;CSS: grid, forms, buttons, navigation, labels, Entypo icons JS: drop-downs, popovers, tabs (Tab), Toggles &amp;amp; Switches Other: Custom Skinned Forms, SASS and Compass &lt;strong&gt;HTML KickStart&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/004835cw13ccwaw1a1b3hg.jpg&#34; alt=&#34;6.jpg&#34; title=&#34;6.jpg&#34;&gt; &lt;/p&gt;
+&lt;p&gt;This framework combines HTML5, CSS and JavaScript to help developers build web products quickly. It covers all the UI components and also includes some useful JavaScript plugins. HTML&amp;amp;CSS: grid, typography buttons, lists, tables, icons, breadcrumbs, images, forms JS: menus, code highlighting plugin, tabs (Tab), slideshow, form validation Other: CSS help documentation &lt;strong&gt;Maxmertkit&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/004901ornkznofslo0lftl.jpg&#34; alt=&#34;7.jpg&#34; title=&#34;7.jpg&#34;&gt; &lt;/p&gt;
+&lt;p&gt;Maxmertkit has complete documentation, includes a large number of examples, and offers a drag-and-drop code generation feature. HTML&amp;amp;CSS: grid, layout, badges, buttons, forms, icons, labels, menus, progress bars, tables, drop-downs, tooltips JS: buttons, carousel, notifications, popovers, scrollbars, tabs (Tab) Other: Sass, CoffeeScript &lt;strong&gt;Twitter Bootstrap&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/004934z4xjkxxkke6ejscz.jpg&#34; alt=&#34;8.jpg&#34; title=&#34;8.jpg&#34;&gt; &lt;/p&gt;
+&lt;p&gt;Everyone is already quite familiar with Twitter Bootstrap. Thanks to its comprehensive UI components and easy-to-use grid and components, Bootstrap has become many designers’ and developers’ favorite rapid development tool. Plenty of third-party Bootstrap programs and JavaScript plugins are now available for use. HTML&amp;amp;CSS: grid, layout, typography, code, tables, forms, buttons, images, icons, button groups, navigation, breadcrumbs, pagination, labels, badges, thumbnails, tooltips, progress bars JS: Modals, Tool Tips, Popovers, Scrollspy, Carousel, Typeahead, and so on. Other: Customizer, LESS CSS &lt;strong&gt;Skeleton&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/004958fccafmfsfp1mfm1m.jpg&#34; alt=&#34;9.jpg&#34; title=&#34;9.jpg&#34;&gt; &lt;/p&gt;
+&lt;p&gt;Skeleton is a small collection of JS and CSS files that helps you quickly build beautiful websites, suitable for all kinds of screen devices, including phones. Skeleton is built on 960 Grid and is a UI framework. HTML&amp;amp;CSS: GRid, typography, buttons, forms, Media Queries &lt;strong&gt;Kube&lt;/strong&gt;&lt;br&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/005037fdnd6d4p3x47o4xx.jpg&#34; alt=&#34;10.jpg&#34; title=&#34;10.jpg&#34;&gt; &lt;/p&gt;
+&lt;p&gt;Kube is a minimal, responsive-capable front-end framework, including a concise CSS file for conveniently creating responsive layouts, plus two JS files that handle Tab and page button operations. HTML&amp;amp;CSS: typography, grid, forms, tables, buttons, navigation, icons JS: buttons, tabs (Tab) Other: LESS CSS &lt;strong&gt;Helium&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/005103zkttpiagkgey2a9b.jpg&#34; alt=&#34;11.jpg&#34; title=&#34;11.jpg&#34;&gt; &lt;/p&gt;
+&lt;p&gt;Helium is a responsive front-end web framework that uses HTML5 and CSS3 to quickly prototype and build products. Helium is a lot like Twitter Bootstrap and ZURB Foundation; in fact, Helium uses quite a bit of code from both. But unlike those two frameworks, Helium is designed to be more lightweight and easier to modify. Helium is only about 30KB, while Bootstrap is 100KB and ZURB is more than 200KB. HTML&amp;amp;CSS: grid, buttons, typography, forms JS: drop-downs, form validation Other: Sass, Compass &lt;strong&gt;The Markup Framework&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/0051240w3e2nb789h239v3.jpg&#34; alt=&#34;12.jpg&#34; title=&#34;12.jpg&#34;&gt; &lt;/p&gt;
+&lt;p&gt;Markup is a framework that brings together layout, widgets, UI components and typographic styles. It can serve as the starting point for designing your own website. HTML&amp;amp;CSS: layout, grid, typography, forms, buttons, breadcrumbs, navigation lists, navigation menus JS: no JavaScripts, pure CSS &lt;strong&gt;Topcoat&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/0051541919wdfb3r23elr7.jpg&#34; alt=&#34;13.jpg&#34; title=&#34;13.jpg&#34;&gt; &lt;/p&gt;
+&lt;p&gt;TopCoat is a free, open source library of UI element classes. The whole library uses no JavaScript at all; it is generated with CSS and HTML. HTML&amp;amp;CSS: icons, fonts, buttons, breadcrumbs, forms, drop-downs, sliding switches, selects, scrollbars, toggle buttons JS: no JavaScripts, pure CSS &lt;strong&gt;PureCSS&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/00522433rcnrs8p5c888rh.jpg&#34; alt=&#34;14.jpg&#34; title=&#34;14.jpg&#34;&gt; &lt;/p&gt;
+&lt;p&gt;Pure is a fairly small framework, only 5.7KB after compression and minification. It uses no JavaScript at all, just HTML and CSS. The CSS framework is responsive, uses a modular structure, and each module’s styles can be used separately. HTML&amp;amp;CSS: grid, typography, forms, buttons, tables, menus JS: no JavaScripts, pure CSS Other: Skin Builder, YUI library. &lt;strong&gt;Conclusion&lt;/strong&gt; Choose, according to your needs, the framework that matches your design. We should not build a website around a framework, because that greatly limits the designer’s thinking. If front-end design/layout is not that important, then we can freely choose to use any framework.   Originally reposted from: &lt;a href=&#34;http://cloudbbs.org/forum.php?mod=viewthread&amp;amp;tid=28314&#34;&gt;http://cloudbbs.org/forum.php?mod=viewthread&amp;amp;tid=28314&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="web" />
+        <category term="web框架" />
+        <updated>2014-10-19T14:46:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/10/19/14-xiang-ying-shi-kuang-jia/</id>
         <title>值得收藏的14款响应式前端开发框架</title>
-        <link rel="alternate" href="https://erik.xyz/2014/10/19/zhi-de-shou-cang-de-14-kuan-xiang-ying-shi-qian-duan-kai-fa-kuang-jia/"/>
+        <link rel="alternate" href="https://erik.xyz/2014/10/19/14-xiang-ying-shi-kuang-jia/"/>
         <content type="html">&lt;p&gt;&lt;strong&gt;摘要&lt;/strong&gt;：使用前端开发框架可以大大简化开发过程，所开发网站具有跨浏览器、一致性、响应式等特点。本文收集了14款响应式前端开发框架，且分别指出所包含的UI组件及JavaScript插件。几乎所有的框架都采用了响应式网格系统。 前端开发并不是一个容易的工作，不仅需要掌握HTML、CSS和JavaScript，针对不同的浏览器版本和平台，还需要了解如何设计出跨平台的网站。如今随着响应式设计的流行，前端开发变得越来越困难，且花费的时间更长。 本文收集了14个响应式前端开发框架，可以帮助前端开发人员大大简化开发过程。针对每个框架，文中均指出了它所包含的UI组件及JavaScript插件。几乎所有的框架都采用了响应式网格系统。 &lt;strong&gt;使用这些前端框架，有如下好处&lt;/strong&gt;： 跨浏览器。这一点已被证实。 一致性。UI组件，如导航、按钮、标签、表单、下拉框、表格……，在设计上保持风格一致。 快速开发。你可以快速、容易地构建布局。这些框架都配有详细的说明文档。 响应式。所有CSS组件及JavaScript插件可以很好地从桌面过渡到移动设备上。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt; &lt;strong&gt;InK&lt;/strong&gt; &lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://devbbs-discuzx.stor.sinaapp.com/uc_server/forum/201410/18/004616vp3xhv2wvnskz8ms.jpg&#34; alt=&#34;1.jpg&#34; title=&#34;1.jpg&#34;&gt; &lt;/p&gt;
 &lt;p&gt;Ink为一个界面工具包，用于快速开发Web界面，具有易于使用、易于扩展特点。它可以为构建布局提供解决方案，可以展示普通的界面元素，可以实现以内容为中心、对用户友好的交互方式。 HTML&amp;amp;CSS：布局、导航、排版、图标、表单、提示框、表格 JS：Gallery、表格、树视图、排序列表、日期选择插件、制表符、表单验证及一些行为（停靠、折叠、关闭） 其他：Sass Mixins &lt;strong&gt;GroundworkCSS Beta&lt;/strong&gt; &lt;/p&gt;

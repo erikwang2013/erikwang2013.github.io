@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2019/11/03/php-get-day-data-en/",
+            "url": "https://erik.xyz/2019/11/03/php-get-day-data-en/",
+            "title": "PHP: getting the timestamps and dates for this year, this month and this week",
+            "date_published": "2019-11-03T11:12:00.000Z",
+            "content_html": "<p>Set the timezone<br>date_default_timezone_set(“Asia/Shanghai”);<br>date_default_timezone_set(‘PRC’);//these two methods have the same effect<br>1<br>2<br>To convert a timestamp to a date, you can use date(‘Y-m-s h:i:s’, the specific timestamp)<br>To convert a date to a timestamp, use strtotime(“date()”).<br><span id=\"more\"></span><br>Timestamp format<br>    //get today’s start timestamp and end timestamp<br>    $beginToday=mktime(0,0,0,date(‘m’),date(‘d’),date(‘Y’));<br>    $endToday=mktime(0,0,0,date(‘m’),date(‘d’)+1,date(‘Y’))-1;  </p>\n<pre><code>//get yesterday&#39;s start timestamp and end timestamp  \n$beginYesterday=mktime(0,0,0,date(&#39;m&#39;),date(&#39;d&#39;)-1,date(&#39;Y&#39;));  \n$endYesterday=mktime(0,0,0,date(&#39;m&#39;),date(&#39;d&#39;),date(&#39;Y&#39;))-1;  \n\n//get this week&#39;s start timestamp and end timestamp   \n$beginThisweek = mktime(0,0,0,date(&#39;m&#39;),date(&#39;d&#39;)-date(&#39;w&#39;)+1,date(&#39;y&#39;));  \n$endThisweek=time();  \n\n//get last week&#39;s start timestamp and end timestamp  \n$beginLastweek=mktime(0,0,0,date(&#39;m&#39;),date(&#39;d&#39;)-date(&#39;w&#39;)+1-7,date(&#39;Y&#39;));  \n$endLastweek=mktime(23,59,59,date(&#39;m&#39;),date(&#39;d&#39;)-date(&#39;w&#39;)+7-7,date(&#39;Y&#39;));  \n\n//get this month&#39;s start timestamp and end timestamp  \n$beginThismonth=mktime(0,0,0,date(&#39;m&#39;),1,date(&#39;Y&#39;));  \n$endThismonth=mktime(23,59,59,date(&#39;m&#39;),date(&#39;t&#39;),date(&#39;Y&#39;));  \n\n //last month&#39;s start time:  \n$begin_time = strtotime(date(&#39;Y-m-01 00:00:00&#39;,strtotime(&#39;-1 month&#39;)));  \n$end_time = strtotime(date(&quot;Y-m-d 23:59:59&quot;, strtotime(-date(&#39;d&#39;).&#39;day&#39;)));  \n\n$begin_year = strtotime(date(&quot;Y&quot;,time()).&quot;-1&quot;.&quot;-1&quot;); //start of this year  \n$end_year = strtotime(date(&quot;Y&quot;,time()).&quot;-12&quot;.&quot;-31&quot;); //end of this year  \n\n//timestamp difference between now and early morning of the next day  \n$time = (strtotime(date(&#39;Y-m-d&#39;))+3600*24) - time() ; \n</code></pre><p>Date format</p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br><span class=\"line\">10</span><br><span class=\"line\">11</span><br><span class=\"line\">12</span><br><span class=\"line\">13</span><br><span class=\"line\">14</span><br><span class=\"line\">15</span><br><span class=\"line\">16</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">echo &#x27;&lt;br&gt;上周起始时间:&lt;br&gt;&#x27;;</span><br><span class=\"line\">echo date(&quot;Y-m-d H:i:s&quot;,mktime(0, 0 , 0,date(&quot;m&quot;),date(&quot;d&quot;)-date(&quot;w&quot;)+1-7,date(&quot;Y&quot;))),&quot;\\n&quot;;</span><br><span class=\"line\">echo date(&quot;Y-m-d H:i:s&quot;,mktime(23,59,59,date(&quot;m&quot;),date(&quot;d&quot;)-date(&quot;w&quot;)+7-7,date(&quot;Y&quot;))),&quot;\\n&quot;;</span><br><span class=\"line\">echo &#x27;&lt;br&gt;本周起始时间:&lt;br&gt;&#x27;;</span><br><span class=\"line\">echo date(&quot;Y-m-d H:i:s&quot;,mktime(0, 0 , 0,date(&quot;m&quot;),date(&quot;d&quot;)-date(&quot;w&quot;)+1,date(&quot;Y&quot;))),&quot;\\n&quot;;</span><br><span class=\"line\">echo date(&quot;Y-m-d H:i:s&quot;,mktime(23,59,59,date(&quot;m&quot;),date(&quot;d&quot;)-date(&quot;w&quot;)+7,date(&quot;Y&quot;))),&quot;\\n&quot;;</span><br><span class=\"line\">echo &#x27;&lt;br&gt;上月起始时间:&lt;br&gt;&#x27;;</span><br><span class=\"line\">echo date(&quot;Y-m-d H:i:s&quot;,mktime(0, 0 , 0,date(&quot;m&quot;)-1,1,date(&quot;Y&quot;))),&quot;\\n&quot;;</span><br><span class=\"line\">echo date(&quot;Y-m-d H:i:s&quot;,mktime(23,59,59,date(&quot;m&quot;) ,0,date(&quot;Y&quot;))),&quot;\\n&quot;;</span><br><span class=\"line\">echo &#x27;&lt;br&gt;本月起始时间:&lt;br&gt;&#x27;;</span><br><span class=\"line\">echo date(&quot;Y-m-d H:i:s&quot;,mktime(0, 0 , 0,date(&quot;m&quot;),1,date(&quot;Y&quot;))),&quot;\\n&quot;;</span><br><span class=\"line\">echo date(&quot;Y-m-d H:i:s&quot;,mktime(23,59,59,date(&quot;m&quot;),date(&quot;t&quot;),date(&quot;Y&quot;))),&quot;\\n&quot;;</span><br><span class=\"line\">//start of this year</span><br><span class=\"line\">echo date(‘Y-01-01’); </span><br><span class=\"line\">//end date </span><br><span class=\"line\">echo date(‘Y-12-31’);</span><br></pre></td></tr></table></figure>\n<p>Original link: <a href=\"https://blog.csdn.net/qq_40018938/article/details/81031414\">https://blog.csdn.net/qq_40018938/article/details/81031414</a></p>\n",
+            "tags": [
+                "php",
+                "php时间"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2019/11/03/php-get-day-data/",
             "url": "https://erik.xyz/2019/11/03/php-get-day-data/",
             "title": "php获取本年、本月、本周时间戳和日期",
@@ -13,6 +24,20 @@
             "tags": [
                 "php",
                 "php时间"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2015/05/06/php-shi-jian-dao-ji-shi-en/",
+            "url": "https://erik.xyz/2015/05/06/php-shi-jian-dao-ji-shi-en/",
+            "title": "PHP countdown timer",
+            "date_published": "2015-05-06T15:32:00.000Z",
+            "content_html": "<p>When a website or shopping site needs to run a campaign that ends at some point in time, a countdown timer is what you need. First, get the current time in the current time zone, then get the time of the end date; subtracting the two times gives you the campaign duration. <a href=\"http://www.erik.xyz/phptime\"><img src=\"http://i1.tietuku.com/2f9c2daabed1d1a4.png\" alt=\"countdown\"></a></p>\n",
+            "tags": [
+                "php",
+                "php倒计时",
+                "php时间",
+                "倒计时",
+                "计算时间"
             ]
         },
         {

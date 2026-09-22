@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2022/07/30/eego-zhong-shu-ju-ku-fen-ye-en/",
+            "url": "https://erik.xyz/2022/07/30/eego-zhong-shu-ju-ku-fen-ye-en/",
+            "title": "Database Pagination in beego",
+            "date_published": "2022-07-30T02:43:00.000Z",
+            "content_html": "<p>Database pagination in beego</p>\n<pre><code>  func PageDB(limit int, page int, count int64) (int, int) &#123;\n      pageSetNum := limit // items per page\n\n      pageCount := math.Ceil((float64(count)) / (float64(pageSetNum))) // total pages\n      pageNum := page                                                  // current page number\n\n      if pageNum &gt; int(pageCount) &#123; // if the page number passed in is out of range\n          pageNum = int(pageCount)\n      &#125;\n      offset := pageSetNum * (pageNum - 1)\n      if offset &lt; 0 &#123;\n          offset = 0\n      &#125;\n      return pageSetNum, offset\n  &#125;\n</code></pre>",
+            "tags": [
+                "beego数据分页",
+                "分页"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2022/07/30/eego-zhong-shu-ju-ku-fen-ye/",
             "url": "https://erik.xyz/2022/07/30/eego-zhong-shu-ju-ku-fen-ye/",
             "title": "beego中数据库分页",

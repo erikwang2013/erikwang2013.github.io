@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2022/11/16/open-api-on-en/",
+            "url": "https://erik.xyz/2022/11/16/open-api-on-en/",
+            "title": "Developing Public-Facing APIs",
+            "date_published": "2022-11-16T02:33:00.000Z",
+            "content_html": "<p>Here’s the requirement:<br>There’s an external app that promotes our mini program by handing out coupon codes on their side. Then users come to our mini program to claim the coupon and place an order with it. At the same time, we need to push orders to them, and also accept the coupon status changes on their side.<br><span id=\"more\"></span><br>The flow diagram is as follows:<br><img src=\"/img/202211/20221116094358.jpg\" alt=\"Flow diagram\" title=\"Flow diagram\"></p>\n<p>So, based on the flow above, I need to develop three interfaces here</p>\n<p>1.Coupon list</p>\n<p>The third party calls the interface to get coupon information</p>\n<p>2.Coupon status change</p>\n<p>The third party calls to change the coupon status</p>\n<p>3.Coupon order push</p>\n<p>The third party provides a URL, and on my side I push order information based on orders generated from using coupons</p>\n<p>First, design an open application table, mainly storing the application id and application secret, as shown in the figure</p>\n<p><img src=\"/img/202211/20221116102006.jpg\" alt=\"Application table design\" title=\"Application table design\"></p>\n<p>We need to sign the data and encrypt the important data</p>\n<p>For the signature, use the conventional format (you can also change the format yourself): timestamp + application secret + transmitted data<br>Apply md5 to the format above, then encode it to base64. The timestamp and signature should be placed in the request header for transmission. As shown in the figure</p>\n<p><img src=\"/img/202211/20221116102258.jpg\" alt=\"Signature code\" title=\"Signature code\"></p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br><span class=\"line\">10</span><br><span class=\"line\">11</span><br><span class=\"line\">12</span><br><span class=\"line\">13</span><br><span class=\"line\">14</span><br><span class=\"line\">15</span><br><span class=\"line\">16</span><br><span class=\"line\">17</span><br><span class=\"line\">18</span><br><span class=\"line\">19</span><br><span class=\"line\">20</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">func CouponSigin(appId, jsonData string, sid int, def ...string) (*string, *string, *string, error) &#123;</span><br><span class=\"line\">    openApp, err := GetStoreApp(appId, sid, 0)</span><br><span class=\"line\">    if err != nil &#123;</span><br><span class=\"line\">        logs.Error(&quot;获取应用失败&quot;, err)</span><br><span class=\"line\">        return nil, nil, nil, err</span><br><span class=\"line\">    &#125;</span><br><span class=\"line\">    apiKey := openApp.ApiOne</span><br><span class=\"line\">    getTime := Util.Int64ToString(time.Now().UnixNano())</span><br><span class=\"line\">    if len(def) &gt; 0 &amp;&amp; len(def[0]) &gt; 0 &#123;</span><br><span class=\"line\">        getTime = def[0]</span><br><span class=\"line\">    &#125;</span><br><span class=\"line\">    strData := getTime + apiKey + jsonData + getTime</span><br><span class=\"line\">    md := md5.New()</span><br><span class=\"line\">    md.Write([]byte(strData))</span><br><span class=\"line\">    md5Str := hex.EncodeToString(md.Sum(nil))</span><br><span class=\"line\">    SystemSign := base64.StdEncoding.EncodeToString([]byte(md5Str))</span><br><span class=\"line\">    logs.Error(&quot;==签名==&quot;, SystemSign)</span><br><span class=\"line\">    logs.Error(&quot;==时间戳==&quot;, getTime)</span><br><span class=\"line\">    return &amp;SystemSign, &amp;getTime, &amp;apiKey, nil</span><br><span class=\"line\">&#125;</span><br></pre></td></tr></table></figure>\n<p>For encryption and decryption, just use conventional aes encryption, encrypting with the application secret yourself. I won’t go into it here, it’s very common.</p>\n<p>With that, the foundation is done.</p>\n<p>Once we develop the coupon list, coupon status change and coupon order push, we can verify the data through the signature, and encrypt the sensitive data at the same time</p>\n",
+            "tags": [
+                "go",
+                "开放接口开发"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2022/11/16/open-api-on/",
             "url": "https://erik.xyz/2022/11/16/open-api-on/",
             "title": "对外开放接口开发",
@@ -16,6 +27,17 @@
             ]
         },
         {
+            "id": "https://erik.xyz/2022/03/22/new-and-make-other-en/",
+            "url": "https://erik.xyz/2022/03/22/new-and-make-other-en/",
+            "title": "The Difference Between new and make",
+            "date_published": "2022-03-22T01:27:00.000Z",
+            "content_html": "<p>In Go we often have to allocate memory for variables, and there are two ways to allocate memory: new and make. I looked up some material, and took the chance to review the places where I use them in my own development. Actually, it’s quite easy to understand.</p>\n<p>new allocates memory but does not initialize it, which means you cannot assign to it directly — you must initialize it before you can assign.</p>\n<p>make allocates the memory and has already</p>\n",
+            "tags": [
+                "go",
+                "new和make的区别"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2022/03/22/new-and-make-other/",
             "url": "https://erik.xyz/2022/03/22/new-and-make-other/",
             "title": "new和make的区别",
@@ -24,6 +46,17 @@
             "tags": [
                 "go",
                 "new和make的区别"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2022/02/11/structtomap-en/",
+            "url": "https://erik.xyz/2022/02/11/structtomap-en/",
+            "title": "Converting a Struct to a map",
+            "date_published": "2022-02-11T03:55:10.000Z",
+            "content_html": "<p>When writing data to a redis hash in go, I ran into the problem that a struct array could not be written. I looked into it and the data to be written is required to be map[string]interface, while mine was a struct. Therefore, it could not be written.<br>So it’s just a matter of converting the format.</p>\n<pre><code>type order struct&#123;\n    Id int64 `json:&quot;id&quot;`\n    orderSn int64 `json:&quot;order_sn&quot;`          \n&#125;\n\norders:=order&#123;\n    Id:2022032034566\n    OrderSn:20220320122444\n&#125;\n\njsonData,_:=json.Marshal(orders)\n\nvar redisData map[string]interface&#123;&#125;\n\njson.Unmarshal([]byte(jsonData),&amp;redisData)\n\nlog.Info(redisData)\n</code></pre><p>The above is the conversion process.</p>\n",
+            "tags": [
+                "go",
+                "结构体转map"
             ]
         },
         {
@@ -43,6 +76,16 @@
             "title": "重温go的gin框架",
             "date_published": "2022-01-05T07:55:00.000Z",
             "content_html": "<p><img src=\"/img/202201/2022-01-05_161242.jpg\" alt=\"\"><br><span id=\"more\"></span><br>快两年没有用过go了，这几天磨磨蹭蹭的把本地环境搭建好。分别装上了gin和beego框架。尝试性的按照php的几个框架分目录来使用gin框架，却发现除了语法、函数、包的差异，写项目的思路何其的相似。</p>\n<p> gin框架引入后，也可以分目录放置接口、中间件、控制器、模型等等，就是写代码的过程中需要熟悉语法和函数。而成熟的php框架都已经分配好了，直接撸代码就是。</p>\n<p> 相比较两种语言来说，php上手是相当容易的。但是，会了php之后，再去用go也是相当快的（这是我的感觉）。不同就是两种语言一个是脚本，一个是静态、编译语言。然而go却比c更容易上手，加上生态圈的晚上，各种包的引入，开发效率自然也提高很多。有编程基础的，可以先看看go手册，然后尝试折腾一下gin、beego框架。实在折腾不明白的，上b站找点相关的视频，过重点。</p>\n",
+            "tags": [
+                "go"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2022/01/05/review-go-gin-framework-en/",
+            "url": "https://erik.xyz/2022/01/05/review-go-gin-framework-en/",
+            "title": "Revisiting Go's Gin Framework",
+            "date_published": "2022-01-05T07:55:00.000Z",
+            "content_html": "<p><img src=\"/img/202201/2022-01-05_161242.jpg\" alt=\"\"><br><span id=\"more\"></span><br>It’s been almost two years since I last used Go. Over the past few days I’ve been slowly getting my local environment set up. I installed the gin and beego frameworks separately. I tentatively tried using the gin framework with the directory layout of several PHP frameworks, and found that aside from differences in syntax, functions and packages, the mindset for writing a project is remarkably similar.</p>\n<p> After importing the gin framework, you can also place interfaces, middleware, controllers, models and so on in separate directories — it’s just that while writing code you need to be familiar with the syntax and functions. Mature PHP frameworks have all of this laid out for you, so you can just start coding.</p>\n<p> Comparing the two languages, PHP is quite easy to pick up. But once you know PHP, moving to Go is also quite fast (that’s my impression). The difference is that one language is a scripting language, while the other is a static, compiled language. Yet Go is easier to pick up than C, and with the ecosystem’s improvements and the ability to pull in all kinds of packages, development efficiency naturally goes up a lot. If you have a programming background, you can start by reading the Go manual, then try tinkering with the gin and beego frameworks. If you really can’t figure it out, go find some related videos on Bilibili and go through the key points.</p>\n",
             "tags": [
                 "go"
             ]

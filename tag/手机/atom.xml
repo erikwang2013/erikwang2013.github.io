@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,22 +502,16 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
     <entry>
-        <id>https://erik.xyz/2014/12/08/fen-xi-shi-wei-fire-phone-fa-zhan-zhi-zhao-san-bu-zhou-huo-qi-si-hui-sheng/</id>
+        <id>https://erik.xyz/2014/12/08/fire-phone-fa-zhan-san-bu-zhou/</id>
         <title>分析师为Fire Phone发展支招 三步骤或起死回生</title>
-        <link rel="alternate" href="https://erik.xyz/2014/12/08/fen-xi-shi-wei-fire-phone-fa-zhan-zhi-zhao-san-bu-zhou-huo-qi-si-hui-sheng/"/>
+        <link rel="alternate" href="https://erik.xyz/2014/12/08/fire-phone-fa-zhan-san-bu-zhou/"/>
         <content type="html">&lt;p&gt;12月8日消息，亚马逊集团董事会主席兼CEO杰夫·贝佐斯(Jeff Bezos)表示，亚马逊将会发布更多款的智能手机。外界希望他能从亚马逊Fire Phone的惨痛失败中接受教训并汲取经验。这款手机的失败导致亚马逊从众多手机制造商中脱颖而出的想法变得愈加难以实现。 关于亚马逊的Fire Phone，有两点值得注意。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;第一，它仅在美国发售；&lt;/p&gt;
 &lt;p&gt;第二，顾客只能购买SIM-free非定制机（这在欧洲市场并不适用）或者是美国电话电报公司 （AT&amp;amp;T）的合约机。如Facebook与HTC联合推出的手机HTC First一样，如果Fire Phone能在网上热销，那一定会震惊许多人。 但Fire Phone有一个优势：亚马逊首页是全球最大的互联网购物窗口之一，Fire Phone有它作为支撑。亚马逊的全部商品分类中可以将Fire Phone放在任意位置，以吸引潜在客户。 如人们所料，亚马逊并未公布Fire Phone相关的销售数据，但有两点可以提示Fire Phone属于“失败产品”的行列。第一点是合约机价格急剧下降（目前两年合约价为99美分），第二点是亚马逊在有关该款手机的成本记录上显示公司减记1.7亿美元。 但杰夫·贝佐斯仍坚持Fire Phone的项目。他表示，在最终确定该项目成功与否之前，“它需要经历几次迭代”。 但笔者对此持不同观点。消费者对商家的信赖需要很长时间才能建立，亚马逊最初冒险尝试Kindle电子书阅读器以及随后的Kindle Fire平板都耗费了好几年时间以取得消费者对亚马逊的信任。但Fire Phone的质量将这份信任迅速消耗，并且没有挽回的可能。 对当今的智能手机制造商而言，市场份额的丢失可以快得出奇，并且是灾难性的。悬崖理论表明一旦消费者的信任不在，那么对手机制造商的支持就会急剧下降，并 且无法挽回。诺基亚，Palm，爱立信（ Ericsson），西门子，飞利浦(Phillips)以及很多其他的公司都曾在此败倒，三星目前似乎也正在接近这个结局。亚马逊在发售Fire Phone前不曾建立起一个强大的智能手机市场，因此它也不存在丢失大份额市场的问题，对它而言，问题在于也许根本无法起步。 &lt;/p&gt;
@@ -520,6 +520,26 @@
 &lt;p&gt;&lt;strong&gt;做到物有所值甚至超值&lt;/strong&gt; 物有所值并不仅仅意味着低价。亚马逊不可能把这款手机在美国的价格降至低于99美分，而且购买该手机即享受亚马逊金牌会员1年的优惠也着实诱人。但该款手机并没有兑现它们“做一款好手机”的诺言。点评说这款手机音质差，相机功能不行，以及用户界面不佳。 《福布斯》杂志的Ian Morris指出：“和Fire平板相似，Fire Phone的界面也是一团糟。这确实是个问题，因为如果消费者们对手机性能不满而不愿购买，那么手机很难销售出去。苹果的iPhone之所以畅销就是因为 无论是谁拿起手机，都能够进行操作。我是一位经验丰富的科技行业记者，对我而言，Fire Phone的用户界面的确不怎么样。”‍ 如果消费者们买到的东西毫无用处，那么就这个东西是否便宜对他们而言就没有太大意义了。 亚马逊需要下更大的功夫，让Fire Phone成为一流产品，与其他智能手机相比时能更胜一筹。为了能与现在的知名品牌相媲美，Fire Phone需要做到更好、更快、更流畅，超过其他职能手机如Galaxy S5、iPhone6等。 另外，这款SIM-free非定制机应对得起450美元的价格。然而，亚马逊现在尚未达到这个标准。 &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;增强手机的兼容性与实用性&lt;/strong&gt; 表面上看来，Fire Phone搭载了安卓系统是一个好消息。安卓系统是消费者们熟知的，它拥有消费者的信任，而且它在业界中也算是一个标志性的操作系统。 当然，这并不是谷歌版本的安卓系统，而是亚马逊版本的。通过改进了Android开放源 项目，亚马逊已经拥有了一套稳定的现代操作系统供其运行。但这个操作系统却没有与Google Play、Google Play Services以及谷歌的首批应用Gmail或谷歌地图等形成连接。然而，这些应用恰恰是诸多消费者十分依赖的。 消费者们已经购买过的那些安卓应用呢？他们需要在亚马逊上重新购买，而不是重新安装即可的。这样的话Fire Phone的App Store上应该拥有所有消费者想要的软件，但事实并不是这样。 亚马逊需要快速而高效地解决这个问题，并且需要在时间和金钱上都付出巨大代价。 如果没有好的主意，软件效用上以及应用兼容方面的缺陷将会使消费者们远离Fire Phone。 &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;其他措施&lt;/strong&gt; 较差的性能与业界对Fire Phone的差评让亚马逊在智能手机市场举步维艰，很难获得成功。Fire Phone2需要从亚马逊、各个运营商、业内分析师以及消费者那里获得更多的支持。 正如苹果当初发售iPhone的时候一样，Fire Phone的团队应该与多家运营商洽谈，而不是从某一家做起或者打压另一家。他们需要更具战略性，建立更多的合作伙伴及合作关系，并关注现实世界中消费者对于Fire Phone设计改进的反响。 值得庆幸的是，贝佐斯并未放弃。但我想看到的不止是产品的迭代以及配置的优化。要达到预期的销售量，Fire Phone2得下很大功夫。价格、效用以及资金价值方面都需要改进。‍ 本文作者为福布斯专栏作家伊万-斯宾塞。&lt;/p&gt;
+</content>
+        <category term="随笔" />
+        <category term="说说" />
+        <category term="phone" />
+        <category term="手机" />
+        <category term="新闻" />
+        <updated>2014-12-08T15:14:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/12/08/fire-phone-fa-zhan-san-bu-zhou-en/</id>
+        <title>Analysts Offer Advice on the Fire Phone&#39;s Future: Three Steps That Could Bring It Back to Life</title>
+        <link rel="alternate" href="https://erik.xyz/2014/12/08/fire-phone-fa-zhan-san-bu-zhou-en/"/>
+        <content type="html">&lt;p&gt;News from December 8: Amazon chairman and CEO Jeff Bezos says Amazon will release more smartphones. The outside world hopes he has taken the lessons of the Fire Phone’s painful failure to heart. That failure has made Amazon’s ambition of standing out from the crowd of phone makers harder and harder to realize. There are two things worth noting about the Amazon Fire Phone.&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;First, it was only sold in the United States.&lt;/p&gt;
+&lt;p&gt;Second, customers could only buy the SIM-free unlocked version (which doesn’t apply in the European market) or a contract phone from AT&amp;amp;T. Just like the HTC First that Facebook and HTC launched together, if the Fire Phone had sold well online, it would have astonished plenty of people. But the Fire Phone had one advantage: Amazon’s homepage is one of the largest internet shopping windows in the world, and the Fire Phone had that behind it. Amazon could place the Fire Phone anywhere it liked among its product categories to draw in potential customers. As expected, Amazon did not publish any Fire Phone sales data, but two things hint that the Fire Phone belongs in the “failed product” column. The first is the sharp drop in the contract price (the two-year contract price is now 99 cents), and the second is that Amazon’s cost records for the phone show a $170 million writedown. Yet Jeff Bezos still stuck with the Fire Phone project. He said that before it can finally be judged a success or a failure, “it needs to go through several iterations.” But this writer takes a different view. Consumer trust in a seller takes a long time to build, and Amazon’s early gamble on the Kindle e-reader, followed by the Kindle Fire tablet, took several years to earn consumers’ trust. But the quality of the Fire Phone burned through that trust fast, with no chance of winning it back. For today’s smartphone makers, market share can be lost startlingly fast, and catastrophically. The cliff theory holds that once consumer trust is gone, support for a phone maker plunges and cannot be recovered. Nokia, Palm, Ericsson, Siemens, Philips and many other companies have fallen this way, and Samsung now seems to be approaching that same ending. Amazon never built a strong smartphone market before launching the Fire Phone, so it doesn’t have a large market share to lose — its problem is that it may never get off the ground at all.&lt;/p&gt;
+&lt;p&gt;When the Fire Phone 2 arrives, it will hold the same market share as the Kindle Fire, but even more consumers will scrutinize the Fire Phone 2 with doubt and caution. This is not simply a difficult second-version launch; it also has to overcome a whole baggage load of negativity. This writer has no reason to question Bezos’s insistence on developing the Fire Phone in the hope that it will get back on track, so for the Fire Phone 2 to have any hope of being accepted by the market, I want to stress the following three points:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Broaden the carrier network.&lt;/strong&gt; Setting aside the SIM-free unlocked model, tying the phone to an AT&amp;amp;T contract severely limited the Fire Phone’s appeal. Consumers not only need a Fire Phone, they also need to sign a contract with AT&amp;amp;T and keep up with that network’s updates — or break the contract — in order to use another one. This is a concern for a lot of people. Selling at scale requires lowering the barriers to purchase, and partnering with AT&amp;amp;T for exclusive sales may have saved Amazon some advertising and manufacturing costs; I suspect AT&amp;amp;T helped Amazon pay for that $170 million writedown. Fire Phone sales need the support of networks across the whole United States, but that doesn’t mean it should be limited to US soil. The world is interconnected, and the smartphone fans outside the US who want a Fire Phone should also be potential customers. Amazon needs to expand its market and make the phone available to customers in those places at launch (or within a few weeks after).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deliver good value for money, or even more.&lt;/strong&gt; Value for money doesn’t just mean a low price. Amazon can’t push the US price of this phone below 99 cents, and the one-year Amazon Prime membership bundled with the purchase is genuinely tempting. But the phone didn’t deliver on its promise of “making a good phone.” Reviews say the phone has poor sound quality, a subpar camera and an awkward user interface. Ian Morris of Forbes magazine pointed out: “Like the Fire tablet, the Fire Phone’s interface is a mess. That really is a problem, because if consumers are unhappy with the phone’s performance and don’t want to buy it, then the phone is hard to sell. Apple’s iPhone sells well because no matter who picks up the phone, they can use it. I’m an experienced tech industry journalist, and for me the Fire Phone’s user interface really isn’t up to much.” If what consumers buy is useless, then how cheap it is doesn’t mean much to them. Amazon needs to put in much more effort to make the Fire Phone a first-class product that comes out ahead of other smartphones. To stand alongside today’s well-known brands, the Fire Phone needs to be better, faster and smoother than other smartphones such as the Galaxy S5 and the iPhone 6. In addition, this SIM-free unlocked model should be worth its $450 price. However, Amazon has not yet reached that standard.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Improve the phone’s compatibility and usefulness.&lt;/strong&gt; On the face of it, the Fire Phone running Android is good news. Android is familiar to consumers, it has their trust, and it counts as a flagship operating system in the industry. Of course, this isn’t Google’s version of Android, it’s Amazon’s. By improving the Android Open Source Project, Amazon already has a stable, modern operating system for it to run on. But that operating system has no connection to Google Play, Google Play Services, or Google’s first-party apps like Gmail or Google Maps. Yet these are exactly the apps many consumers depend on. What about the Android apps consumers have already bought? They would need to buy them again on Amazon rather than simply reinstalling them. That being the case, the Fire Phone’s App Store should have every piece of software consumers want, but the fact is it doesn’t. Amazon needs to solve this problem quickly and efficiently, and it will have to pay a steep price in both time and money. Without a good idea, gaps in software usability and app compatibility will drive consumers away from the Fire Phone.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Other measures.&lt;/strong&gt; Poor performance and the industry’s negative reviews of the Fire Phone leave Amazon struggling in the smartphone market, with little chance of success. The Fire Phone 2 needs more support from Amazon, the carriers, industry analysts and consumers. Just as Apple did when it launched the iPhone, the Fire Phone team should talk to multiple carriers rather than starting with one or squeezing out another. They need to be more strategic, build more partners and partnerships, and pay attention to how consumers in the real world respond to improvements in the Fire Phone’s design. Fortunately, Bezos hasn’t given up. But I want to see more than product iterations and spec improvements. To hit its expected sales figures, the Fire Phone 2 has a lot of work to do. Price, usefulness and value for money all need improvement. The author of this article is Forbes columnist Ewan Spence.&lt;/p&gt;
 </content>
         <category term="随笔" />
         <category term="说说" />

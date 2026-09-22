@@ -5,8 +5,20 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
-            "id": "https://erik.xyz/2015/02/27/thinkphp-de-zhong-xin-ren-shi-thinkphp-pei-zhi-wen-jian/",
-            "url": "https://erik.xyz/2015/02/27/thinkphp-de-zhong-xin-ren-shi-thinkphp-pei-zhi-wen-jian/",
+            "id": "https://erik.xyz/2015/02/27/thinkphp-chong-xin-ren-shi-pei-zhi-en/",
+            "url": "https://erik.xyz/2015/02/27/thinkphp-chong-xin-ren-shi-pei-zhi-en/",
+            "title": "Rediscovering thinkphp - the thinkphp configuration file",
+            "date_published": "2015-02-27T07:13:00.000Z",
+            "content_html": "<p>I’ve been doing thinkphp development for over a year now, and how should I put it — I’m pretty lousy at it…… I’ve always used version 3.0 or above, checking the manual, debugging, typing code. Then I happened to come across the 2.0 manual and was left completely speechless 2.0’s manual is all fundamentals; I had been using thinkphp with my head down the whole time, so today I sat down and read a good part of the configuration for config.php. Here is the reference the official docs give  <span id=\"more\"></span></p>\n<h3 id=\"Convention-configuration\"><a href=\"#Convention-configuration\" class=\"headerlink\" title=\"Convention configuration\"></a>Convention configuration</h3><p>Convention over configuration is an important idea in ThinkPHP: the system has a built-in convention configuration file (located in Think\\Common\\convention.php) that gives default values to common parameters based on how most people use them. So for an application project’s configuration file, you usually only need to configure the parameters that differ from the convention configuration or that are new; if you go entirely with the defaults, you may not even need to define any configuration file at all. (If you want to see the detailed settings list in the convention configuration, refer to the configuration reference section in the appendix.)  </p>\n<p>Reading this, I couldn’t stay calm: so thinkphp does ship a ready-made reference configuration, and the pit I’d fallen into was a deep one. No wonder the colleagues I used to develop with always left debug mode on when their projects went live instead of turning it off…… I went digging and found that in 2.0 it’s actually in the Common core directory, and that plenty of other documents are sitting in there too…… </p>\n<p>But in 3.0 and above it really is in the conf directory</p>\n<p>These settings basically cover every aspect; I also found that some of the methods tp already wraps up are quite good — I just never used them much, and went off and wrapped everything myself……</p>\n",
+            "tags": [
+                "config",
+                "thinkphp",
+                "配置文件"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2015/02/27/thinkphp-chong-xin-ren-shi-pei-zhi/",
+            "url": "https://erik.xyz/2015/02/27/thinkphp-chong-xin-ren-shi-pei-zhi/",
             "title": "thinkphp的重新认识-thinkphp配置文件",
             "date_published": "2015-02-27T07:13:00.000Z",
             "content_html": "<p>thinkphp开发做了有一年多了，怎么说呢，很菜…… 一直是用3.0以上的版本，查手册，调试，敲代码。无意间看到2.0的手册，彻底无语了 2.0手册全是基础，我竟然一直蒙着头用thinkphp，今天就好好看了一部分关于config.php的配置。官方给出的是这样的参考  <span id=\"more\"></span></p>\n<h3 id=\"惯例配置\"><a href=\"#惯例配置\" class=\"headerlink\" title=\"惯例配置\"></a>惯例配置</h3><p>惯例重于配置是ThinkPHP的一个重要思想，系统内置有一个惯例配置文件（位于Think\\Common\\convention.php），按照大多数的使用对常用参数进行了默认配置。所以，对于应用项目的配置文件，往往只需要配置和惯例配置不同的或者新增的配置参数，如果你完全采用默认配置，甚至可以不需要定义任何配置文件。 （如果需要了解惯例配置中的详细配置列表请参考附录的配置参考部分。）  </p>\n<p>看到这里就不能淡定了，原来thinkphp有提供配置好的参考配置，这下跳的坑大了。怪不得以前开发的同事上线项目都是开启调试模式，而不去关闭调试模式…… 找找看发现2.0的实在Common核心目录里，而且里面还提供了好多其他文档…… </p>\n<p>但是在3.0以上确实在conf目录里</p>\n<p>这些配置基本上涵盖了方方面面，另外还发现一些tp本身封装好的方法也是不错的，就是我没怎么用，净自己去封装了……</p>\n",

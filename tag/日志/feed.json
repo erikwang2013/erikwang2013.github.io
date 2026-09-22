@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2021/08/22/10-logs-tools-total-en/",
+            "url": "https://erik.xyz/2021/08/22/10-logs-tools-total-en/",
+            "title": "10 Web Log Security Analysis Tools",
+            "date_published": "2021-08-22T13:30:00.000Z",
+            "content_html": "<p>First of all, we should be clear that log files not only help us trace the origin of an intruder and find their attack path — in normal operations and maintenance, logs can also reveal many security attacks.</p>\n<p>A simple, easy-to-use web log analysis tool can greatly improve efficiency. There are many log analysis tools on the market today. Here we recommend ten easy-to-use web log security analysis tools.</p>\n<span id=\"more\"></span>\n<ol>\n<li>360 Starmap (360星图)</li>\n</ol>\n<p>A very easy-to-use website access log analysis tool that can effectively identify web vulnerability attacks, CC attacks, malicious crawler scans, abnormal access and other behaviors. One-click automatic analysis outputs a security analysis report, supports iis / apache / nginx logs, and supports custom formats.</p>\n<ol>\n<li>LogForensics</li>\n</ol>\n<p>A log analysis tool provided by TSRC that can start from a single suspicious clue and traverse all suspicious URLs (CGI) and source IPs.</p>\n<ol>\n<li>GoAccess</li>\n</ol>\n<p>A visual web log analysis tool, accessible through a web browser or a terminal program on *nix systems. It provides system administrators with fast and valuable HTTP statistics, presented as an online visual server.</p>\n<ol>\n<li>AWStats</li>\n</ol>\n<p>A powerful open-source log analysis system that can graphically generate advanced statistics for web, streaming media, ftp or mail servers.</p>\n<ol>\n<li>Logstalgia</li>\n</ol>\n<p>A very cool visual log analysis tool that can intuitively display CC attacks and website log analysis, presenting it with a visual 3D effect.</p>\n<ol>\n<li>FinderWeb</li>\n</ol>\n<p>A tool for programmers to monitor logs, supporting tail, less, grep, and large text files. Log files ranging from a few MB to tens of GB are handled smoothly, and it’s free.</p>\n<ol>\n<li>web-log-parser</li>\n</ol>\n<p>An open-source web log analysis tool developed in Python, with flexible log format configuration.</p>\n<ol>\n<li>ELK</li>\n</ol>\n<p>The ELK platform for open-source real-time log analysis consists of three open-source projects: ElasticSearch, Logstash and Kiabana. It is very common in enterprise-level log management platforms.</p>\n<ol>\n<li>Splunk</li>\n</ol>\n<p>A top-tier log analysis tool. If you often use grep, awk, sed, sort, uniq, tail, head to analyze logs, you can transition to Splunk easily.</p>\n<ol>\n<li>IBM QRadar</li>\n</ol>\n<p>Qradar has a free community edition whose features are not much different from the commercial version, suitable for small-scale log and traffic analysis.</p>\n<p>Article source: WooYun Security (乌云安全)</p>\n",
+            "tags": [
+                "日志",
+                "工具"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2021/08/22/10-logs-tools-total/",
             "url": "https://erik.xyz/2021/08/22/10-logs-tools-total/",
             "title": "10个Web日志安全性分析工具",

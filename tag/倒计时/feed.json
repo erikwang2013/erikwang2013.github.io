@@ -5,6 +5,20 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2015/05/06/php-shi-jian-dao-ji-shi-en/",
+            "url": "https://erik.xyz/2015/05/06/php-shi-jian-dao-ji-shi-en/",
+            "title": "PHP countdown timer",
+            "date_published": "2015-05-06T15:32:00.000Z",
+            "content_html": "<p>When a website or shopping site needs to run a campaign that ends at some point in time, a countdown timer is what you need. First, get the current time in the current time zone, then get the time of the end date; subtracting the two times gives you the campaign duration. <a href=\"http://www.erik.xyz/phptime\"><img src=\"http://i1.tietuku.com/2f9c2daabed1d1a4.png\" alt=\"countdown\"></a></p>\n",
+            "tags": [
+                "php",
+                "php倒计时",
+                "php时间",
+                "倒计时",
+                "计算时间"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2015/05/06/php-shi-jian-dao-ji-shi/",
             "url": "https://erik.xyz/2015/05/06/php-shi-jian-dao-ji-shi/",
             "title": "PHP时间倒计时",

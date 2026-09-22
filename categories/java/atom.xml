@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,67 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2024/12/18/maven-intranet-library-en/</id>
+        <title>Maven internal repository</title>
+        <link rel="alternate" href="https://erik.xyz/2024/12/18/maven-intranet-library-en/"/>
+        <content type="html">&lt;h4 id=&#34;1-Set-Up-a-Private-Maven-Repository&#34;&gt;&lt;a href=&#34;#1-Set-Up-a-Private-Maven-Repository&#34; class=&#34;headerlink&#34; title=&#34;1. Set Up a Private Maven Repository&#34;&gt;&lt;/a&gt;1. Set Up a Private Maven Repository&lt;/h4&gt;&lt;p&gt;First, you need to set up a Maven repository in the internal network environment. Common private Maven repository tools are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nexus Repository: Sonatype Nexus is the most popular private Maven repository management tool.&lt;/li&gt;
+&lt;li&gt;Artifactory: JFrog Artifactory is another popular build management tool that provides support for private repositories.&lt;/li&gt;
+&lt;li&gt;Apache Archiva: Apache Archiva is also a repository management tool that supports Maven.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following are the simple steps to set up Nexus Repository:&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;1.1 Install Nexus Repository&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Download Nexus: Visit the Nexus Repository download page and download the Nexus OSS version.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Extract and start: Extract the downloaded archive and start Nexus.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cd /opt/nexus/bin&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;./nexus start&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Access the Nexus UI: Open your browser and visit the default Nexus address:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;http://localhost:8081&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;The default username is admin and the password is admin123; you can change the password after logging in for the first time.&lt;/p&gt;
+&lt;p&gt;1.2 Configure the Maven Repository&lt;/p&gt;
+&lt;p&gt;In the Nexus UI you can create a new Maven repository. After creating the repository, you can upload your company’s internal dependencies, plugins, and build artifacts.&lt;/p&gt;
+&lt;h4 id=&#34;2-Configure-Maven-to-Use-an-Internal-Repository&#34;&gt;&lt;a href=&#34;#2-Configure-Maven-to-Use-an-Internal-Repository&#34; class=&#34;headerlink&#34; title=&#34;2. Configure Maven to Use an Internal Repository&#34;&gt;&lt;/a&gt;2. Configure Maven to Use an Internal Repository&lt;/h4&gt;&lt;p&gt;Configuring Maven to use an internal repository requires modifying the settings.xml file.&lt;/p&gt;
+&lt;p&gt;2.1 Modify settings.xml&lt;/p&gt;
+&lt;p&gt;In Maven’s settings.xml file, configure the address of the private repository and the authentication information. The settings.xml file is usually located in the ~/.m2/ directory (user-level configuration) or in the ${MAVEN_HOME}/conf/ directory (global configuration).&lt;/p&gt;
+&lt;p&gt;The following is an example of configuring an internal Maven repository:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;settings xmlns=&amp;quot;http://maven.apache.org/SETTINGS/1.0.0&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          xsi:schemaLocation=&amp;quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;mirrors&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;!-- Configure the private repository mirror --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;mirror&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;id&amp;gt;nexus&amp;lt;/id&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;mirrorOf&amp;gt;external:http://central&amp;lt;/mirrorOf&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;url&amp;gt;http://your-nexus-server:8081/repository/maven-public/&amp;lt;/url&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;blocked&amp;gt;false&amp;lt;/blocked&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;/mirror&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;/mirrors&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;repositories&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;repository&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;id&amp;gt;internal-repo&amp;lt;/id&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;url&amp;gt;http://your-nexus-server:8081/repository/maven-releases/&amp;lt;/url&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;snapshots&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;lt;enabled&amp;gt;false&amp;lt;/enabled&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;/snapshots&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;/repository&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;/repositories&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;pluginRepositories&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;pluginRepository&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;id&amp;gt;internal-plugins&amp;lt;/id&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;url&amp;gt;http://your-nexus-server:8081/repository/maven-plugins/&amp;lt;/url&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;/pluginRepository&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;/pluginRepositories&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;servers&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;!-- Configure Maven repository authentication --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;server&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;id&amp;gt;nexus&amp;lt;/id&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;username&amp;gt;your-nexus-username&amp;lt;/username&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;lt;password&amp;gt;your-nexus-password&amp;lt;/password&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;/server&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;/servers&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/settings&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;2.2 Configure Mirrors and Repositories&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Mirror: Configure the URL of the private repository in the &lt;mirrors&gt; tag to proxy Maven’s central repository or other public repository requests to the private repository. Use the mirrorOf configuration to choose which repositories to proxy (external:&lt;a href=&#34;http://central&#34;&gt;http://central&lt;/a&gt; means proxying all external repositories).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Repository: Configure the URL of your internal repository in the &lt;repositories&gt; and &lt;pluginRepositories&gt; tags.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Server Authentication: Configure the authentication information for the internal repository in the &lt;servers&gt; tag (if the repository requires authentication).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;3-Configure-the-Project-to-Use-the-Internal-Repository&#34;&gt;&lt;a href=&#34;#3-Configure-the-Project-to-Use-the-Internal-Repository&#34; class=&#34;headerlink&#34; title=&#34;3. Configure the Project to Use the Internal Repository&#34;&gt;&lt;/a&gt;3. Configure the Project to Use the Internal Repository&lt;/h4&gt;&lt;p&gt;In the project’s pom.xml file, you usually do not need to configure repositories separately, because Maven will use the internal repository configured in settings.xml. However, if you need to force a specific repository, you can configure the &lt;repositories&gt; tag in pom.xml:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;repositories&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;repository&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;id&amp;gt;nexus-repo&amp;lt;/id&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;url&amp;gt;http://your-nexus-server:8081/repository/maven-releases/&amp;lt;/url&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;/repository&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/repositories&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;4-Upload-and-Download-Dependencies&#34;&gt;&lt;a href=&#34;#4-Upload-and-Download-Dependencies&#34; class=&#34;headerlink&#34; title=&#34;4. Upload and Download Dependencies&#34;&gt;&lt;/a&gt;4. Upload and Download Dependencies&lt;/h4&gt;&lt;p&gt;4.1 Upload Dependencies to the Internal Repository&lt;br&gt;You can upload locally built JAR files to the internal repository with Maven commands. For example, to upload a JAR to Nexus:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mvn deploy:deploy-file \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -DgroupId=com.example \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -DartifactId=my-artifact \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -Dversion=1.0.0 \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -Dpackaging=jar \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -Dfile=path/to/your-artifact.jar \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -DrepositoryId=nexus \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    -Durl=http://your-nexus-server:8081/repository/maven-releases/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;4.2 Download Dependencies from the Internal Repository&lt;/p&gt;
+&lt;p&gt;Once the internal repository is configured, Maven will automatically download dependencies from it. If the dependency is not in the repository, Maven will try to download it from other configured repositories.&lt;/p&gt;
+&lt;h4 id=&#34;5-Use-Dependencies-from-the-Private-Repository&#34;&gt;&lt;a href=&#34;#5-Use-Dependencies-from-the-Private-Repository&#34; class=&#34;headerlink&#34; title=&#34;5. Use Dependencies from the Private Repository&#34;&gt;&lt;/a&gt;5. Use Dependencies from the Private Repository&lt;/h4&gt;&lt;p&gt;Once the repository is configured, Maven will download dependencies from the configured internal repository. You can reference dependencies normally in the project’s pom.xml, and Maven will automatically pull them from the private repository.&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;dependencies&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;groupId&amp;gt;com.example&amp;lt;/groupId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;artifactId&amp;gt;my-artifact&amp;lt;/artifactId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;lt;version&amp;gt;1.0.0&amp;lt;/version&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;lt;/dependency&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/dependencies&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;6-Configure-Mirrors-to-Improve-Build-Speed-Optional&#34;&gt;&lt;a href=&#34;#6-Configure-Mirrors-to-Improve-Build-Speed-Optional&#34; class=&#34;headerlink&#34; title=&#34;6. Configure Mirrors to Improve Build Speed (Optional)&#34;&gt;&lt;/a&gt;6. Configure Mirrors to Improve Build Speed (Optional)&lt;/h4&gt;&lt;p&gt;To improve build speed, you can configure settings.xml to use the private repository as Maven’s default mirror, ensuring that all build dependencies are pulled from the private repository, avoiding external repository access on every build and reducing build time.&lt;/p&gt;
+</content>
+        <category term="maven搭建库" />
+        <category term="maven" />
+        <category term="maven内网库" />
+        <updated>2024-12-18T12:55:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2024/12/18/maven-intranet-library/</id>
         <title>maven内网库</title>
@@ -562,6 +617,70 @@
         <category term="maven" />
         <category term="maven内网库" />
         <updated>2024-12-18T12:55:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2024/12/12/intranet-spring-boot-install-en/</id>
+        <title>Deploying Spring Boot on an Intranet</title>
+        <link rel="alternate" href="https://erik.xyz/2024/12/12/intranet-spring-boot-install-en/"/>
+        <content type="html">&lt;h4 id=&#34;1-Prepare-the-environment&#34;&gt;&lt;a href=&#34;#1-Prepare-the-environment&#34; class=&#34;headerlink&#34; title=&#34;1. Prepare the environment&#34;&gt;&lt;/a&gt;1. Prepare the environment&lt;/h4&gt;&lt;p&gt;Make sure the server or machine on the intranet has the basic environment needed to run a Spring Boot application:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JDK: make sure the server has a suitable version of the JDK installed (Java 8 or above is usually recommended).&lt;/li&gt;
+&lt;li&gt;Maven/Gradle: install Maven or Gradle depending on the build tool your project uses.&lt;/li&gt;
+&lt;li&gt;Database: if the application needs to connect to a database, make sure the database is reachable from the intranet and that the connection configuration is correct.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h4 id=&#34;2-Compile-the-Spring-Boot-application&#34;&gt;&lt;a href=&#34;#2-Compile-the-Spring-Boot-application&#34; class=&#34;headerlink&#34; title=&#34;2. Compile the Spring Boot application&#34;&gt;&lt;/a&gt;2. Compile the Spring Boot application&lt;/h4&gt;&lt;p&gt;First, you need to compile your Spring Boot application to produce an executable JAR file. You can run the following commands in the project directory:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Maven build command:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mvn clean package&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Gradle build command:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;./gradlew build&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;This generates an executable JAR file in the target/ or build/libs/ directory, usually named your-application-name.jar.&lt;/p&gt;
+&lt;h4 id=&#34;3-Transfer-the-JAR-to-the-intranet-server&#34;&gt;&lt;a href=&#34;#3-Transfer-the-JAR-to-the-intranet-server&#34; class=&#34;headerlink&#34; title=&#34;3. Transfer the JAR to the intranet server&#34;&gt;&lt;/a&gt;3. Transfer the JAR to the intranet server&lt;/h4&gt;&lt;p&gt;Upload the generated JAR file to the target server on the intranet. You can use any of various file transfer tools, for example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SCP (if the server supports SSH):&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;scp your-application-name.jar user@server-ip:/path/to/deploy/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;FTP or SFTP (if an FTP service is configured).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;4-Configure-the-Spring-Boot-application&#34;&gt;&lt;a href=&#34;#4-Configure-the-Spring-Boot-application&#34; class=&#34;headerlink&#34; title=&#34;4. Configure the Spring Boot application&#34;&gt;&lt;/a&gt;4. Configure the Spring Boot application&lt;/h4&gt;&lt;p&gt;When deploying on an intranet, you may need to modify the configuration file according to the environment, such as application.properties or application.yml. Common configuration items include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Database connection information (spring.datasource.url, spring.datasource.username, etc.).&lt;/li&gt;
+&lt;li&gt;Logging configuration.&lt;/li&gt;
+&lt;li&gt;Service port (server.port).&lt;/li&gt;
+&lt;li&gt;Security settings (such as disabling external access, or setting an access whitelist).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example, modifying the database configuration in application.properties:&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;spring.datasource.url=jdbc:mysql://localhost:3306/your_db&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;spring.datasource.username=db_user&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;spring.datasource.password=db_password&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h4 id=&#34;5-Start-the-Spring-Boot-application&#34;&gt;&lt;a href=&#34;#5-Start-the-Spring-Boot-application&#34; class=&#34;headerlink&#34; title=&#34;5. Start the Spring Boot application&#34;&gt;&lt;/a&gt;5. Start the Spring Boot application&lt;/h4&gt;&lt;p&gt;On the intranet server, start the Spring Boot application with the following command:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;java -jar your-application-name.jar&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;If you want the application to run in the background, you can use nohup or a similar tool:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;nohup java -jar your-application-name.jar &amp;gt; output.log 2&amp;gt;&amp;amp;1 &amp;amp;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;This redirects the output to the output.log file and lets the application run in the background.&lt;/p&gt;
+&lt;h4 id=&#34;6-Configure-the-firewall-and-network&#34;&gt;&lt;a href=&#34;#6-Configure-the-firewall-and-network&#34; class=&#34;headerlink&#34; title=&#34;6. Configure the firewall and network&#34;&gt;&lt;/a&gt;6. Configure the firewall and network&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Make sure the server’s firewall allows access to the port the application is bound to (8080 by default). If you use a different port, configure the firewall to allow access to that port.&lt;/li&gt;
+&lt;li&gt;If the Spring Boot application needs to be accessed through a specific IP address or domain name on the intranet, make sure the DNS or hosts configuration is correct.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;7-Monitoring-and-logging&#34;&gt;&lt;a href=&#34;#7-Monitoring-and-logging&#34; class=&#34;headerlink&#34; title=&#34;7. Monitoring and logging&#34;&gt;&lt;/a&gt;7. Monitoring and logging&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Logging: a Spring Boot application outputs logs to the console; you can configure logging to write to a file for persistent storage. A common approach is to set the log path in application.properties or application.yml:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;logging.file.name=/path/to/logs/application.log&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Monitoring: you can use Spring Boot’s Actuator or other monitoring tools (such as Prometheus and Grafana) to monitor the application’s running status.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;8-Set-up-startup-on-boot-optional&#34;&gt;&lt;a href=&#34;#8-Set-up-startup-on-boot-optional&#34; class=&#34;headerlink&#34; title=&#34;8. Set up startup on boot (optional)&#34;&gt;&lt;/a&gt;8. Set up startup on boot (optional)&lt;/h4&gt;&lt;p&gt;If you want the application to start automatically when the server reboots, you can use systemd (on Linux systems) or configure it as a Windows service.&lt;/p&gt;
+&lt;p&gt;Linux systems (Systemd)&lt;/p&gt;
+&lt;p&gt;Create a systemd service file, such as /etc/systemd/system/yourapp.service:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[Unit]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Description=Spring Boot Application&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;After=network.target&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[Service]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;User=your_user&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ExecStart=/usr/bin/java -jar /path/to/your-application-name.jar&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;SuccessExitStatus=143&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Restart=always&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[Install]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;WantedBy=multi-user.target&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Then enable and start the service:&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo systemctl enable yourapp&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo systemctl start yourapp&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <category term="springboot" />
+        <category term="springboot内网部署" />
+        <updated>2024-12-12T10:22:18.000Z</updated>
     </entry>
     <entry>
         <id>https://erik.xyz/2024/12/12/intranet-spring-boot-install/</id>

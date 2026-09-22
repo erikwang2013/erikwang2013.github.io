@@ -5,6 +5,19 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2024/11/15/deepin-not-login-en/",
+            "url": "https://erik.xyz/2024/11/15/deepin-not-login-en/",
+            "title": "deepin fails to log in with emergency mode error",
+            "date_published": "2024-11-15T02:56:00.000Z",
+            "content_html": "<p>After the system restarted, the freshly installed WeChat kept popping up dialog boxes and got stuck there, which was unbearable. I force-restarted right away, and after booting it kept showing “You are in emergency mode……” and a pile of stuff, meaning it wanted me to log in as root, check the error and fix it.</p>\n<p>  Kind of a headache.</p>\n<p>  System commands would display, but the graphical interface would not.<br>  <span id=\"more\"></span><br>  So I grabbed the USB drive I used to install the system, booted from it into the installer, pressed ctrl+alt+f4 to get to the USB system’s command interface. Typed startx to enter the USB system’s graphical interface. Now I could see the disks mounted on the computer. I went through the mounted disks one by one looking for the root directory disk. Once I found it, I used the USB system’s command window:<br><figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sudo vi /etc/fstab</span><br><span class=\"line\"></span><br></pre></td></tr></table></figure></p>\n<p> Comment out the home directory and reboot the system.</p>\n<p> After rebooting you’ll see a graphical login screen. That one is fake and useless. Press ctrl+alt+f2 to get to the command interface.<br> Log in to the command interface with your account and password.</p>\n<p> Open the /etc/fstab file and remove the comment on home. (Here you need to check the home mount path, mine is /dev/sda6 for example.)</p>\n<p> Use the following command to repair:<br> <figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sudo e2fsck /dev/sda6</span><br></pre></td></tr></table></figure></p>\n<p> You will see a bunch of repairs; confirm them one by one, wait for the repair to finish and then reboot the system.</p>\n",
+            "tags": [
+                "deepin",
+                "emergency",
+                "emergency mode",
+                "deepin黑屏"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2024/11/15/deepin-not-login/",
             "url": "https://erik.xyz/2024/11/15/deepin-not-login/",
             "title": "deepin无法登录报错emergency mode",

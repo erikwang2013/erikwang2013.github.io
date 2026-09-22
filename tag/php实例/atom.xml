@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,407 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2014/12/29/21-ge-shi-yong-bian-li-de-php-dai-ma-en/</id>
+        <title>21 Handy and Practical PHP Code Snippets</title>
+        <link rel="alternate" href="https://erik.xyz/2014/12/29/21-ge-shi-yong-bian-li-de-php-dai-ma-en/"/>
+        <content type="html">&lt;p&gt;Author: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;Published by Paran&#34;&gt;Paran&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-PHP-readable-random-string&#34;&gt;&lt;a href=&#34;#1-PHP-readable-random-string&#34; class=&#34;headerlink&#34; title=&#34;1. PHP readable random string&#34;&gt;&lt;/a&gt;1. PHP readable random string&lt;/h3&gt;&lt;p&gt;This code creates a readable string that is closer to words found in a dictionary, which is practical and also works for password verification.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**************
+*@length - length of random string (must be a multiple of 2)
+**************/
+function readable_random_string($length = 6)&amp;#123;
+    $conso=array(&amp;quot;b&amp;quot;,&amp;quot;c&amp;quot;,&amp;quot;d&amp;quot;,&amp;quot;f&amp;quot;,&amp;quot;g&amp;quot;,&amp;quot;h&amp;quot;,&amp;quot;j&amp;quot;,&amp;quot;k&amp;quot;,&amp;quot;l&amp;quot;,
+    &amp;quot;m&amp;quot;,&amp;quot;n&amp;quot;,&amp;quot;p&amp;quot;,&amp;quot;r&amp;quot;,&amp;quot;s&amp;quot;,&amp;quot;t&amp;quot;,&amp;quot;v&amp;quot;,&amp;quot;w&amp;quot;,&amp;quot;x&amp;quot;,&amp;quot;y&amp;quot;,&amp;quot;z&amp;quot;);
+    $vocal=array(&amp;quot;a&amp;quot;,&amp;quot;e&amp;quot;,&amp;quot;i&amp;quot;,&amp;quot;o&amp;quot;,&amp;quot;u&amp;quot;);
+    $password=&amp;quot;&amp;quot;;
+    srand ((double)microtime()*1000000);
+    $max = $length/2;
+    for($i=1; $i&amp;lt;=$max; $i++)
+    &amp;#123;
+    $password.=$conso[rand(0,19)];
+    $password.=$vocal[rand(0,4)];
+    &amp;#125;
+    return $password;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h3 id=&#34;2-PHP-generates-a-random-string&#34;&gt;&lt;a href=&#34;#2-PHP-generates-a-random-string&#34; class=&#34;headerlink&#34; title=&#34;2. PHP generates a random string&#34;&gt;&lt;/a&gt;2. PHP generates a random string&lt;/h3&gt;&lt;p&gt;If you don’t need a readable string, use this function instead — it creates a random string you can hand out as a user’s random password and so on.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/*************
+*@l - length of random string
+*/
+function generate_rand($l)&amp;#123;
+  $c= &amp;quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&amp;quot;;
+  srand((double)microtime()*1000000);
+  for($i=0; $i&amp;lt;$l; $i++) &amp;#123;
+      $rand.= $c[rand()%strlen($c)];
+  &amp;#125;
+  return $rand;
+ &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-PHP-encodes-email-addresses&#34;&gt;&lt;a href=&#34;#3-PHP-encodes-email-addresses&#34; class=&#34;headerlink&#34; title=&#34;3. PHP encodes email addresses&#34;&gt;&lt;/a&gt;3. PHP encodes email addresses&lt;/h3&gt;&lt;p&gt;With this code you can encode any email address into HTML character entities to keep it from being harvested by spam bots.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function encode_email($email=&amp;#39;info@domain.com&amp;#39;, $linkText=&amp;#39;Contact Us&amp;#39;, $attrs =&amp;#39;class=&amp;quot;emailencoder&amp;quot;&amp;#39; )
+&amp;#123;
+    // remplazar aroba y puntos
+    $email = str_replace(&amp;#39;@&amp;#39;, &amp;#39;&amp;amp;#64;&amp;#39;, $email);
+    $email = str_replace(&amp;#39;.&amp;#39;, &amp;#39;&amp;amp;#46;&amp;#39;, $email);
+    $email = str_split($email, 5);  
+
+    $linkText = str_replace(&amp;#39;@&amp;#39;, &amp;#39;&amp;amp;#64;&amp;#39;, $linkText);
+    $linkText = str_replace(&amp;#39;.&amp;#39;, &amp;#39;&amp;amp;#46;&amp;#39;, $linkText);
+    $linkText = str_split($linkText, 5);  
+
+    $part1 = &amp;#39;&amp;lt;a href=&amp;quot;ma&amp;#39;;
+    $part2 = &amp;#39;ilto&amp;amp;#58;&amp;#39;;
+    $part3 = &amp;#39;&amp;quot; &amp;#39;. $attrs .&amp;#39; &amp;gt;&amp;#39;;
+    $part4 = &amp;#39;&amp;lt;/a&amp;gt;&amp;#39;;  
+
+    $encoded = &amp;#39;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;#39;;
+    $encoded .= &amp;quot;document.write(&amp;#39;$part1&amp;#39;);&amp;quot;;
+    $encoded .= &amp;quot;document.write(&amp;#39;$part2&amp;#39;);&amp;quot;;
+    foreach($email as $e)
+    &amp;#123;
+            $encoded .= &amp;quot;document.write(&amp;#39;$e&amp;#39;);&amp;quot;;
+    &amp;#125;
+    $encoded .= &amp;quot;document.write(&amp;#39;$part3&amp;#39;);&amp;quot;;
+    foreach($linkText as $l)
+    &amp;#123;
+            $encoded .= &amp;quot;document.write(&amp;#39;$l&amp;#39;);&amp;quot;;
+    &amp;#125;
+    $encoded .= &amp;quot;document.write(&amp;#39;$part4&amp;#39;);&amp;quot;;
+    $encoded .= &amp;#39;&amp;lt;/script&amp;gt;&amp;#39;;  
+
+    return $encoded;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;4-PHP-validates-an-email-address&#34;&gt;&lt;a href=&#34;#4-PHP-validates-an-email-address&#34; class=&#34;headerlink&#34; title=&#34;4. PHP validates an email address&#34;&gt;&lt;/a&gt;4. PHP validates an email address&lt;/h3&gt;&lt;p&gt;Email validation is probably the most common form of web form validation. Besides validating the email address itself, this code can also optionally check the MX records in the DNS of the mail domain, which makes the email validation even more powerful.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function is_valid_email($email, $test_mx = false)
+&amp;#123;
+    if(eregi(&amp;quot;^([_a-z0-9-]+)(\.[_a-z0-9-]+)*@([a-z0-9-]+)(\.[a-z0-9-]+)*(\.[a-z]&amp;#123;2,4&amp;#125;)$&amp;quot;, $email))
+        if($test_mx)
+        &amp;#123;
+            list($username, $domain) = split(&amp;quot;@&amp;quot;, $email);
+            return getmxrr($domain, $mxrecords);
+        &amp;#125;
+        else
+            return true;
+    else
+        return false;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;5-PHP-lists-directory-contents&#34;&gt;&lt;a href=&#34;#5-PHP-lists-directory-contents&#34; class=&#34;headerlink&#34; title=&#34;5. PHP lists directory contents&#34;&gt;&lt;/a&gt;5. PHP lists directory contents&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;function list_files($dir)
+&amp;#123;
+    if(is_dir($dir))
+    &amp;#123;
+        if($handle = opendir($dir))
+        &amp;#123;
+            while(($file = readdir($handle)) !== false)
+            &amp;#123;
+                if($file != &amp;quot;.&amp;quot; &amp;amp;&amp;amp; $file != &amp;quot;..&amp;quot; &amp;amp;&amp;amp; $file != &amp;quot;Thumbs.db&amp;quot;)
+                &amp;#123;
+                    echo &amp;#39;&amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;&amp;#39;.$dir.$file.&amp;#39;&amp;quot;&amp;gt;&amp;#39;.$file.&amp;#39;&amp;lt;/a&amp;gt;&amp;lt;br&amp;gt;&amp;#39;.&amp;quot;\n&amp;quot;;
+                &amp;#125;
+            &amp;#125;
+            closedir($handle);
+        &amp;#125;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;6-PHP-destroys-a-directory&#34;&gt;&lt;a href=&#34;#6-PHP-destroys-a-directory&#34; class=&#34;headerlink&#34; title=&#34;6. PHP destroys a directory&#34;&gt;&lt;/a&gt;6. PHP destroys a directory&lt;/h3&gt;&lt;p&gt;Delete a directory, including everything inside it.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/*****
+*@dir - Directory to destroy
+*@virtual[optional]- whether a virtual directory
+*/
+function destroyDir($dir, $virtual = false)
+&amp;#123;
+    $ds = DIRECTORY_SEPARATOR;
+    $dir = $virtual ? realpath($dir) : $dir;
+    $dir = substr($dir, -1) == $ds ? substr($dir, 0, -1) : $dir;
+    if (is_dir($dir) &amp;amp;&amp;amp; $handle = opendir($dir))
+    &amp;#123;
+        while ($file = readdir($handle))
+        &amp;#123;
+            if ($file == &amp;#39;.&amp;#39; || $file == &amp;#39;..&amp;#39;)
+            &amp;#123;
+                continue;
+            &amp;#125;
+            elseif (is_dir($dir.$ds.$file))
+            &amp;#123;
+                destroyDir($dir.$ds.$file);
+            &amp;#125;
+            else
+            &amp;#123;
+                unlink($dir.$ds.$file);
+            &amp;#125;
+        &amp;#125;
+        closedir($handle);
+        rmdir($dir);
+        return true;
+    &amp;#125;
+    else
+    &amp;#123;
+        return false;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;7-PHP-parses-JSON-data&#34;&gt;&lt;a href=&#34;#7-PHP-parses-JSON-data&#34; class=&#34;headerlink&#34; title=&#34;7. PHP parses JSON data&#34;&gt;&lt;/a&gt;7. PHP parses JSON data&lt;/h3&gt;&lt;p&gt;Just as most popular web services such as Twitter expose their data through an open API, it always pays to know how to parse the various transport formats of API data, including JSON, XML and so on.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$json_string=&amp;#39;&amp;#123;&amp;quot;id&amp;quot;:1,&amp;quot;name&amp;quot;:&amp;quot;foo&amp;quot;,&amp;quot;email&amp;quot;:&amp;quot;foo@foobar.com&amp;quot;,&amp;quot;interest&amp;quot;:[&amp;quot;wordpress&amp;quot;,&amp;quot;php&amp;quot;]&amp;#125; &amp;#39;;
+$obj=json_decode($json_string);
+echo $obj-&amp;gt;name; //prints foo
+echo $obj-&amp;gt;interest[1]; //prints php
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;8-PHP-parses-XML-data&#34;&gt;&lt;a href=&#34;#8-PHP-parses-XML-data&#34; class=&#34;headerlink&#34; title=&#34;8. PHP parses XML data&#34;&gt;&lt;/a&gt;8. PHP parses XML data&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;//xml string
+$xml_string=&amp;quot;&amp;lt;?xml version=&amp;#39;1.0&amp;#39;?&amp;gt;
+&amp;lt;users&amp;gt;
+   &amp;lt;user id=&amp;#39;398&amp;#39;&amp;gt;
+      &amp;lt;name&amp;gt;Foo&amp;lt;/name&amp;gt;
+      &amp;lt;email&amp;gt;foo@bar.com&amp;lt;/name&amp;gt;
+   &amp;lt;/user&amp;gt;
+   &amp;lt;user id=&amp;#39;867&amp;#39;&amp;gt;
+      &amp;lt;name&amp;gt;Foobar&amp;lt;/name&amp;gt;
+      &amp;lt;email&amp;gt;foobar@foo.com&amp;lt;/name&amp;gt;
+   &amp;lt;/user&amp;gt;
+&amp;lt;/users&amp;gt;&amp;quot;;  
+
+//load the xml string using simplexml
+$xml = simplexml_load_string($xml_string);  
+
+//loop through the each node of user
+foreach ($xml-&amp;gt;user as $user)
+&amp;#123;
+   //access attribute
+   echo $user[&amp;#39;id&amp;#39;], &amp;#39;  &amp;#39;;
+   //subnodes are accessed by -&amp;gt; operator
+   echo $user-&amp;gt;name, &amp;#39;  &amp;#39;;
+   echo $user-&amp;gt;email, &amp;#39;&amp;lt;br /&amp;gt;&amp;#39;;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;9-PHP-creates-a-post-slug&#34;&gt;&lt;a href=&#34;#9-PHP-creates-a-post-slug&#34; class=&#34;headerlink&#34; title=&#34;9. PHP creates a post slug&#34;&gt;&lt;/a&gt;9. PHP creates a post slug&lt;/h3&gt;&lt;p&gt;Create a user-friendly post slug.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function create_slug($string)&amp;#123;
+    $slug=preg_replace(&amp;#39;/[^A-Za-z0-9-]+/&amp;#39;, &amp;#39;-&amp;#39;, $string);
+    return $slug;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;10-PHP-gets-the-client’s-real-IP-address&#34;&gt;&lt;a href=&#34;#10-PHP-gets-the-client’s-real-IP-address&#34; class=&#34;headerlink&#34; title=&#34;10. PHP gets the client’s real IP address&#34;&gt;&lt;/a&gt;10. PHP gets the client’s real IP address&lt;/h3&gt;&lt;p&gt;This function gets the user’s real IP address even when they are behind a proxy server.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function getRealIpAddr()
+&amp;#123;
+    if (!emptyempty($_SERVER[&amp;#39;HTTP_CLIENT_IP&amp;#39;]))
+    &amp;#123;
+        $ip=$_SERVER[&amp;#39;HTTP_CLIENT_IP&amp;#39;];
+    &amp;#125;
+    elseif (!emptyempty($_SERVER[&amp;#39;HTTP_X_FORWARDED_FOR&amp;#39;]))
+    //to check ip is pass from proxy
+    &amp;#123;
+        $ip=$_SERVER[&amp;#39;HTTP_X_FORWARDED_FOR&amp;#39;];
+    &amp;#125;
+    else
+    &amp;#123;
+        $ip=$_SERVER[&amp;#39;REMOTE_ADDR&amp;#39;];
+    &amp;#125;
+    return $ip;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;11-PHP-forces-a-file-download&#34;&gt;&lt;a href=&#34;#11-PHP-forces-a-file-download&#34; class=&#34;headerlink&#34; title=&#34;11. PHP forces a file download&#34;&gt;&lt;/a&gt;11. PHP forces a file download&lt;/h3&gt;&lt;p&gt;Give users a forced file download feature.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/********************
+*@file - path to file
+*/
+function force_download($file)
+&amp;#123;
+    if ((isset($file))&amp;amp;&amp;amp;(file_exists($file))) &amp;#123;
+       header(&amp;quot;Content-length: &amp;quot;.filesize($file));
+       header(&amp;#39;Content-Type: application/octet-stream&amp;#39;);
+       header(&amp;#39;Content-Disposition: attachment; filename=&amp;quot;&amp;#39; . $file . &amp;#39;&amp;quot;&amp;#39;);
+       readfile(&amp;quot;$file&amp;quot;);
+    &amp;#125; else &amp;#123;
+       echo &amp;quot;No file selected&amp;quot;;
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;12-PHP-creates-a-tag-cloud&#34;&gt;&lt;a href=&#34;#12-PHP-creates-a-tag-cloud&#34; class=&#34;headerlink&#34; title=&#34;12. PHP creates a tag cloud&#34;&gt;&lt;/a&gt;12. PHP creates a tag cloud&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;function getCloud( $data = array(), $minFontSize = 12, $maxFontSize = 30 )
+&amp;#123;
+    $minimumCount = min( array_values( $data ) );
+    $maximumCount = max( array_values( $data ) );
+    $spread       = $maximumCount - $minimumCount;
+    $cloudHTML    = &amp;#39;&amp;#39;;
+    $cloudTags    = array();  
+
+    $spread == 0 &amp;amp;&amp;amp; $spread = 1;  
+
+    foreach( $data as $tag =&amp;gt; $count )
+    &amp;#123;
+        $size = $minFontSize + ( $count - $minimumCount )
+            * ( $maxFontSize - $minFontSize ) / $spread;
+        $cloudTags[] = &amp;#39;&amp;lt;a style=&amp;quot;font-size: &amp;#39; . floor( $size ) . &amp;#39;px&amp;#39;
+        . &amp;#39;&amp;quot; href=&amp;quot;#&amp;quot; title=&amp;quot;\&amp;#39;&amp;#39; . $tag  .
+        &amp;#39;\&amp;#39; returned a count of &amp;#39; . $count . &amp;#39;&amp;quot;&amp;gt;&amp;#39;
+        . htmlspecialchars( stripslashes( $tag ) ) . &amp;#39;&amp;lt;/a&amp;gt;&amp;#39;;
+    &amp;#125;  
+
+    return join( &amp;quot;\n&amp;quot;, $cloudTags ) . &amp;quot;\n&amp;quot;;
+&amp;#125;
+/**************************
+****   Sample usage    ***/
+$arr = Array(&amp;#39;Actionscript&amp;#39; =&amp;gt; 35, &amp;#39;Adobe&amp;#39; =&amp;gt; 22, &amp;#39;Array&amp;#39; =&amp;gt; 44, &amp;#39;Background&amp;#39; =&amp;gt; 43,
+    &amp;#39;Blur&amp;#39; =&amp;gt; 18, &amp;#39;Canvas&amp;#39; =&amp;gt; 33, &amp;#39;Class&amp;#39; =&amp;gt; 15, &amp;#39;Color Palette&amp;#39; =&amp;gt; 11, &amp;#39;Crop&amp;#39; =&amp;gt; 42,
+    &amp;#39;Delimiter&amp;#39; =&amp;gt; 13, &amp;#39;Depth&amp;#39; =&amp;gt; 34, &amp;#39;Design&amp;#39; =&amp;gt; 8, &amp;#39;Encode&amp;#39; =&amp;gt; 12, &amp;#39;Encryption&amp;#39; =&amp;gt; 30,
+    &amp;#39;Extract&amp;#39; =&amp;gt; 28, &amp;#39;Filters&amp;#39; =&amp;gt; 42);
+echo getCloud($arr, 12, 36);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;13-PHP-finds-the-similarity-between-two-strings&#34;&gt;&lt;a href=&#34;#13-PHP-finds-the-similarity-between-two-strings&#34; class=&#34;headerlink&#34; title=&#34;13. PHP finds the similarity between two strings&#34;&gt;&lt;/a&gt;13. PHP finds the similarity between two strings&lt;/h3&gt;&lt;p&gt;PHP ships with a rarely used function called similar_text, but it is very useful — it compares two strings and returns a percentage for how similar they are.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;similar_text($string1, $string2, $percent);
+//$percent will have the percentage of similarity
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;14-PHP-uses-Gravatar-universal-avatars-in-your-application&#34;&gt;&lt;a href=&#34;#14-PHP-uses-Gravatar-universal-avatars-in-your-application&#34; class=&#34;headerlink&#34; title=&#34;14. PHP uses Gravatar universal avatars in your application&#34;&gt;&lt;/a&gt;14. PHP uses Gravatar universal avatars in your application&lt;/h3&gt;&lt;p&gt;As WordPress becomes more and more widespread, Gravatar has grown popular along with it. And since Gravatar offers an easy-to-use API, working it into your application is a breeze.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/******************
+*@email - Email address to show gravatar for
+*@size - size of gravatar
+*@default - URL of default gravatar to use
+*@rating - rating of Gravatar(G, PG, R, X)
+*/
+function show_gravatar($email, $size, $default, $rating)
+&amp;#123;
+    echo &amp;#39;&amp;lt;img src=&amp;quot;http://www.gravatar.com/avatar.php?gravatar_id=&amp;#39;.md5($email).
+        &amp;#39;&amp;amp;default=&amp;#39;.$default.&amp;#39;&amp;amp;size=&amp;#39;.$size.&amp;#39;&amp;amp;rating=&amp;#39;.$rating.&amp;#39;&amp;quot; width=&amp;quot;&amp;#39;.$size.&amp;#39;px&amp;quot;
+        height=&amp;quot;&amp;#39;.$size.&amp;#39;px&amp;quot; /&amp;gt;&amp;#39;;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;15-PHP-truncates-text-at-a-word-break&#34;&gt;&lt;a href=&#34;#15-PHP-truncates-text-at-a-word-break&#34; class=&#34;headerlink&#34; title=&#34;15. PHP truncates text at a word break&#34;&gt;&lt;/a&gt;15. PHP truncates text at a word break&lt;/h3&gt;&lt;p&gt;A word break is a point where a word can be split when the line wraps. This function truncates a string at such a break.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// Original PHP code by Chirp Internet: www.chirp.com.au
+// Please acknowledge use of this code by including this header.
+function myTruncate($string, $limit, $break=&amp;quot;.&amp;quot;, $pad=&amp;quot;...&amp;quot;) &amp;#123;
+    // return with no change if string is shorter than $limit
+    if(strlen($string) &amp;lt;= $limit)
+        return $string;   
+
+    // is $break present between $limit and the end of the string?
+    if(false !== ($breakpoint = strpos($string, $break, $limit))) &amp;#123;
+        if($breakpoint &amp;lt; strlen($string) - 1) &amp;#123;
+            $string = substr($string, 0, $breakpoint) . $pad;
+        &amp;#125;
+    &amp;#125;
+    return $string;
+&amp;#125;
+/***** Example ****/
+$short_string=myTruncate($long_string, 100, &amp;#39; &amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;16-PHP-Zip-file-compression&#34;&gt;&lt;a href=&#34;#16-PHP-Zip-file-compression&#34; class=&#34;headerlink&#34; title=&#34;16. PHP Zip file compression&#34;&gt;&lt;/a&gt;16. PHP Zip file compression&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;/* creates a compressed zip file */
+function create_zip($files = array(),$destination = &amp;#39;&amp;#39;,$overwrite = false) &amp;#123;
+    //if the zip file already exists and overwrite is false, return false
+    if(file_exists($destination) &amp;amp;&amp;amp; !$overwrite) &amp;#123; return false; &amp;#125;
+    //vars
+    $valid_files = array();
+    //if files were passed in...
+    if(is_array($files)) &amp;#123;
+        //cycle through each file
+        foreach($files as $file) &amp;#123;
+            //make sure the file exists
+            if(file_exists($file)) &amp;#123;
+                $valid_files[] = $file;
+            &amp;#125;
+        &amp;#125;
+    &amp;#125;
+    //if we have good files...
+    if(count($valid_files)) &amp;#123;
+        //create the archive
+        $zip = new ZipArchive();
+        if($zip-&amp;gt;open($destination,$overwrite ? ZIPARCHIVE::OVERWRITE : ZIPARCHIVE::CREATE) !== true) &amp;#123;
+            return false;
+        &amp;#125;
+        //add the files
+        foreach($valid_files as $file) &amp;#123;
+            $zip-&amp;gt;addFile($file,$file);
+        &amp;#125;
+        //debug
+        //echo &amp;#39;The zip archive contains &amp;#39;,$zip-&amp;gt;numFiles,&amp;#39; files with a status of &amp;#39;,$zip-&amp;gt;status;  
+
+        //close the zip -- done!
+        $zip-&amp;gt;close();  
+
+        //check to make sure the file exists
+        return file_exists($destination);
+    &amp;#125;
+    else
+    &amp;#123;
+        return false;
+    &amp;#125;
+&amp;#125;
+/***** Example Usage ***/
+$files=array(&amp;#39;file1.jpg&amp;#39;, &amp;#39;file2.jpg&amp;#39;, &amp;#39;file3.gif&amp;#39;);
+create_zip($files, &amp;#39;myzipfile.zip&amp;#39;, true);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;17-PHP-unzips-a-Zip-file&#34;&gt;&lt;a href=&#34;#17-PHP-unzips-a-Zip-file&#34; class=&#34;headerlink&#34; title=&#34;17. PHP unzips a Zip file&#34;&gt;&lt;/a&gt;17. PHP unzips a Zip file&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;/**********************
+*@file - path to zip file
+*@destination - destination directory for unzipped files
+*/
+function unzip_file($file, $destination)&amp;#123;
+    // create object
+    $zip = new ZipArchive() ;
+    // open archive
+    if ($zip-&amp;gt;open($file) !== TRUE) &amp;#123;
+        die (’Could not open archive’);
+    &amp;#125;
+    // extract contents to destination directory
+    $zip-&amp;gt;extractTo($destination);
+    // close archive
+    $zip-&amp;gt;close();
+    echo &amp;#39;Archive extracted to directory&amp;#39;;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;18-PHP-prepends-the-http-string-to-a-URL-address&#34;&gt;&lt;a href=&#34;#18-PHP-prepends-the-http-string-to-a-URL-address&#34; class=&#34;headerlink&#34; title=&#34;18. PHP prepends the http string to a URL address&#34;&gt;&lt;/a&gt;18. PHP prepends the http string to a URL address&lt;/h3&gt;&lt;p&gt;Sometimes you need to accept a URL entered into a form, but users rarely type the http:// part — this code adds it for them.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;if (!preg_match(&amp;quot;/^(http|ftp):/&amp;quot;, $_POST[&amp;#39;url&amp;#39;])) &amp;#123;
+   $_POST[&amp;#39;url&amp;#39;] = &amp;#39;http://&amp;#39;.$_POST[&amp;#39;url&amp;#39;];
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;19-PHP-turns-a-URL-string-into-a-hyperlink&#34;&gt;&lt;a href=&#34;#19-PHP-turns-a-URL-string-into-a-hyperlink&#34; class=&#34;headerlink&#34; title=&#34;19. PHP turns a URL string into a hyperlink&#34;&gt;&lt;/a&gt;19. PHP turns a URL string into a hyperlink&lt;/h3&gt;&lt;p&gt;This function converts URL and email address strings into clickable hyperlinks.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;function makeClickableLinks($text) &amp;#123;
+ $text = eregi_replace(&amp;#39;(((f|ht)&amp;#123;1&amp;#125;tp://)[-a-zA-Z0-9@:%_+.~#?&amp;amp;//=]+)&amp;#39;,
+ &amp;#39;&amp;lt;a href=&amp;quot;\1&amp;quot;&amp;gt;\1&amp;lt;/a&amp;gt;&amp;#39;, $text);
+ $text = eregi_replace(&amp;#39;([[:space:]()[&amp;#123;&amp;#125;])(www.[-a-zA-Z0-9@:%_+.~#?&amp;amp;//=]+)&amp;#39;,
+ &amp;#39;\1&amp;lt;a href=&amp;quot;http://\2&amp;quot;&amp;gt;\2&amp;lt;/a&amp;gt;&amp;#39;, $text);
+ $text = eregi_replace(&amp;#39;([_.0-9a-z-]+@([0-9a-z][0-9a-z-]+.)+[a-z]&amp;#123;2,3&amp;#125;)&amp;#39;,
+ &amp;#39;&amp;lt;a href=&amp;quot;mailto:\1&amp;quot;&amp;gt;\1&amp;lt;/a&amp;gt;&amp;#39;, $text);  
+
+return $text;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;20-PHP-resizes-an-image&#34;&gt;&lt;a href=&#34;#20-PHP-resizes-an-image&#34; class=&#34;headerlink&#34; title=&#34;20. PHP resizes an image&#34;&gt;&lt;/a&gt;20. PHP resizes an image&lt;/h3&gt;&lt;p&gt;Creating image thumbnails takes quite a bit of time, and this code will help you understand the logic behind thumbnails.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**********************
+*@filename - path to the image
+*@tmpname - temporary path to thumbnail
+*@xmax - max width
+*@ymax - max height
+*/
+function resize_image($filename, $tmpname, $xmax, $ymax)
+&amp;#123;
+    $ext = explode(&amp;quot;.&amp;quot;, $filename);
+    $ext = $ext[count($ext)-1];  
+
+    if($ext == &amp;quot;jpg&amp;quot; || $ext == &amp;quot;jpeg&amp;quot;)
+        $im = imagecreatefromjpeg($tmpname);
+    elseif($ext == &amp;quot;png&amp;quot;)
+        $im = imagecreatefrompng($tmpname);
+    elseif($ext == &amp;quot;gif&amp;quot;)
+        $im = imagecreatefromgif($tmpname);  
+
+    $x = imagesx($im);
+    $y = imagesy($im);  
+
+    if($x &amp;lt;= $xmax &amp;amp;&amp;amp; $y &amp;lt;= $ymax)
+        return $im;  
+
+    if($x &amp;gt;= $y) &amp;#123;
+        $newx = $xmax;
+        $newy = $newx * $y / $x;
+    &amp;#125;
+    else &amp;#123;
+        $newy = $ymax;
+        $newx = $x / $y * $newy;
+    &amp;#125;  
+
+    $im2 = imagecreatetruecolor($newx, $newy);
+    imagecopyresized($im2, $im, 0, 0, 0, 0, floor($newx), floor($newy), $x, $y);
+    return $im2;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;21-PHP-detects-Ajax-requests&#34;&gt;&lt;a href=&#34;#21-PHP-detects-Ajax-requests&#34; class=&#34;headerlink&#34; title=&#34;21. PHP detects Ajax requests&#34;&gt;&lt;/a&gt;21. PHP detects Ajax requests&lt;/h3&gt;&lt;p&gt;Most JavaScript frameworks such as jQuery and Mootools send an extra HTTP_X_REQUESTED_WITH header when they fire off an Ajax request, marking it as an Ajax request, so you can detect Ajax requests on the server side.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;if(!emptyempty($_SERVER[&amp;#39;HTTP_X_REQUESTED_WITH&amp;#39;]) &amp;amp;&amp;amp; strtolower($_SERVER[&amp;#39;HTTP_X_REQUESTED_WITH&amp;#39;]) == &amp;#39;xmlhttprequest&amp;#39;)&amp;#123;
+    //If AJAX Request Then
+&amp;#125;else&amp;#123;
+//something else
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;</content>
+        <category term="php" />
+        <category term="php服务器" />
+        <category term="随笔" />
+        <category term="php实例" />
+        <updated>2014-12-29T14:07:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2014/12/29/21-ge-shi-yong-bian-li-de-php-dai-ma/</id>
         <title>21个实用便利的PHP代码</title>

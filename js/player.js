@@ -5,6 +5,11 @@
   var cfg = window.ERIK || {};
   var root = cfg.root || '/';
 
+  /* 取词：i18n.js 没加载/被关掉时用中文原文兜底 */
+  function T(key, args, fallback) {
+    return window.erikt ? window.erikt(key, args, fallback) : fallback;
+  }
+
   /* ---- 音乐播放器 (原生,底部悬浮) ---- */
   function initPlayer() {
     var audio = document.getElementById('player-audio');
@@ -93,7 +98,8 @@
     function updateModeUI() {
       if (!els.mode) return;
       els.mode.dataset.mode = mode;
-      els.mode.title = '播放模式：' + MODE_LABEL[mode] + '（点击切换）';
+      var label = T('player.mode.' + mode, null, MODE_LABEL[mode]);
+      els.mode.title = T('player.modeTip', [label], '播放模式：' + label + '（点击切换）');
     }
     if (els.mode) {
       els.mode.addEventListener('click', function () {
@@ -103,6 +109,8 @@
       }, false);
     }
     updateModeUI();
+    /* 换语言后重刷提示语（i18n.js 晚于本文件也没关系，事件是之后才发的） */
+    document.addEventListener('erik:lang', updateModeUI);
 
     function nextTrack() {
       if (mode === 'shuffle' && list.length > 1) {

@@ -1,4 +1,8 @@
 /* Erik feats.js — 搜索 / 灯箱 / 复制 / 动态标题 / 一言 */
+/* 取词：i18n.js 没加载/被关掉时用中文原文兜底 */
+function erikT(key, args, fallback) {
+  return window.erikt ? window.erikt(key, args, fallback) : fallback;
+}
 /* 亮/暗切换 */
 (function () {
   var btn = document.getElementById('theme-toggle');
@@ -41,6 +45,9 @@
   var toggle = document.getElementById('search-toggle');
   var maxResults = cfg.max_results || 10;
   var index = null;
+  var failed = false;
+  /* 当前语言：i18n.js 的 apply() 会同步 window.erikLang 和 html[data-lang] */
+  function curLang() { return /^en/i.test(window.erikLang || '') ? 'en' : 'zh'; }
 
   function highlight(text, q) {
     if (!q) return escapeHtml(text);
@@ -58,6 +65,7 @@
     if (q) {
       var ql = q.toLowerCase();
       index.forEach(function (p) {
+        if ((p.lang || 'zh') !== curLang()) return;
         var hay = (p.title + ' ' + (p.tags || []).join(' ') + ' ' + (p.categories || []).join(' ') + ' ' + p.excerpt).toLowerCase();
         if (hay.indexOf(ql) >= 0) hits.push(p);
       });
@@ -78,7 +86,7 @@
     if (!index) {
       fetch((window.ERIK.root || '/') + 'search.json').then(function (r) { return r.json(); })
         .then(function (d) { index = d; render(input.value); })
-        .catch(function () { if (empty) { empty.textContent = '搜索索引加载失败 😢'; empty.hidden = false; } });
+        .catch(function () { if (empty) { failed = true; empty.textContent = erikT('search.fail', null, '搜索索引加载失败 😢'); empty.hidden = false; } });
     }
   }
   function closePanel() {
@@ -90,6 +98,11 @@
   if (input) input.addEventListener('input', function () { render(input.value); });
   panel.addEventListener('click', function (e) { if (e.target === panel) closePanel(); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !panel.hidden) closePanel(); });
+  document.addEventListener('erik:lang', function () {
+    if (failed && empty) empty.textContent = erikT('search.fail', null, '搜索索引加载失败 😢');
+    /* 索引里中英都有，换语言只需按新语言重渲染（没打开过搜索面板则 index 为空，直接跳过） */
+    render(input ? input.value : '');
+  });
 })();
 /* 图片灯箱：同组切换 / 滚轮缩放 / 双击重置 / ESC 关闭 */
 (function () {
@@ -161,7 +174,7 @@
   if (!cfg.enable) return;
   function copy(text, btn) {
     function done() {
-      btn.textContent = '✅ 已复制';
+      btn.textContent = erikT('copy.ok', null, '✅ 已复制');
       setTimeout(function () { btn.textContent = '📋'; }, 2000);
     }
     if (navigator.clipboard && navigator.clipboard.writeText) {
@@ -203,7 +216,7 @@
 (function () {
   var cfg = (window.ERIK && window.ERIK.dynamicTitle) || { enable: false };
   if (!cfg.enable) return;
-  var wording = cfg.wording || '📬 有新消息等你';
+  var wording = erikT(cfg.wording || '📬 有新消息等你');
   var orig = document.title;
   document.addEventListener('visibilitychange', function () {
     if (document.hidden) { orig = document.title; document.title = wording; }
@@ -323,7 +336,10 @@
     btn.type = 'button';
     btn.id = 'full3d-btn';
     btn.className = 'full3d-btn';
-    btn.textContent = '✨ 开启完整 3D';
+    btn.textContent = erikT('btn.full3d', null, '✨ 开启完整 3D');
+    document.addEventListener('erik:lang', function () {
+      btn.textContent = erikT('btn.full3d', null, '✨ 开启完整 3D');
+    });
     btn.addEventListener('click', function () {
       try { localStorage.setItem('erik-full3d', '1'); } catch (e) {}
       location.reload();
@@ -401,15 +417,19 @@
     { t: '每天进步一点点，十年后就是另一个自己。', a: '' },
     { t: 'Good things come to those who wait, but only the things left by those who hustle.', a: 'Abraham Lincoln' }
   ];
+  function wrap(text, from) {
+    return '<span class="quote-text">' + erikT('quote.open') + text + erikT('quote.close') + '</span>' +
+      (from ? '<span class="quote-from">' + erikT('quote.by') + from + '</span>' : '');
+  }
   function show() {
     var q = quotes[Math.floor(Math.random() * quotes.length)];
-    el.innerHTML = '<span class="quote-text">「' + q.t + '」</span>' + (q.a ? '<span class="quote-from">—— ' + q.a + '</span>' : '');
+    el.innerHTML = wrap(q.t, q.a);
   }
   if (cfg.api) {
     fetch(cfg.api).then(function (r) { return r.json(); })
       .then(function (d) {
         if (d && d.hitokoto) {
-          el.innerHTML = '<span class="quote-text">「' + esc(d.hitokoto) + '」</span>' + (d.from ? '<span class="quote-from">—— ' + esc(d.from) + '</span>' : '');
+          el.innerHTML = wrap(esc(d.hitokoto), d.from ? esc(d.from) : '');
         } else show();
       }).catch(show);
   } else show();

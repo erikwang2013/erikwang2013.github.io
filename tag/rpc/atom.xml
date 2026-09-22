@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,232 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2022/08/09/go-zero-list-1-en/</id>
+        <title>Trying Out go-zero Microservices</title>
+        <link rel="alternate" href="https://erik.xyz/2022/08/09/go-zero-list-1-en/"/>
+        <content type="html">&lt;p&gt;Reference address: &lt;a href=&#34;https://go-zero.dev/cn/docs/quick-start/micro-service#%E5%88%9B%E5%BB%BAuser-rpc%E6%9C%8D%E5%8A%A1&#34;&gt;https://go-zero.dev/cn/docs/quick-start/micro-service#%E5%88%9B%E5%BB%BAuser-rpc%E6%9C%8D%E5%8A%A1&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;Introduction-to-go-zero&#34;&gt;&lt;a href=&#34;#Introduction-to-go-zero&#34; class=&#34;headerlink&#34; title=&#34;Introduction to go-zero&#34;&gt;&lt;/a&gt;Introduction to go-zero&lt;/h4&gt;&lt;p&gt;go-zero (included in the CNCF Cloud Native Landscape: &lt;a href=&#34;https://landscape.cncf.io/?selected=go-zero&#34;&gt;https://landscape.cncf.io/?selected=go-zero&lt;/a&gt;) is a web and rpc framework that integrates a variety of engineering practices. Through resilient design it guarantees the stability of highly concurrent server-side services and has been fully proven in practice.&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;go-zero includes a minimalist API definition and the generation tool goctl, which can generate Go, iOS, Android, Kotlin, Dart, TypeScript and JavaScript code from a defined api file with a single command, and the generated code can be run directly.&lt;/p&gt;
+&lt;p&gt;The benefits of using go-zero:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Easily obtain the stability to support a service with tens of millions of daily active users&lt;/li&gt;
+&lt;li&gt;Built-in microservice governance capabilities such as cascading timeout control, rate limiting, adaptive circuit breaking and adaptive load shedding, with no configuration or extra code required&lt;/li&gt;
+&lt;li&gt;Microservice governance middleware can be seamlessly integrated into other existing frameworks&lt;/li&gt;
+&lt;li&gt;A minimalist API description that generates code for every client with one command&lt;/li&gt;
+&lt;li&gt;Automatically validates the legality of client request parameters&lt;/li&gt;
+&lt;li&gt;A large number of microservice governance and concurrency toolkits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Quickly create a microservice according to the official documentation&lt;br&gt;We first create go-zero-demo in the go project directory&lt;/p&gt;
+&lt;p&gt;   mkdir go-zero-demo&lt;br&gt;   cd go-zero-demo&lt;br&gt;   go mod init go-zero-demo&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Create the user rpc service&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;2.1 Create the user rpc directory&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; mkdir -p mall/user/rpc
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.2 Add the user.proto file and add a getUser method&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vim mall/user/rpc/user.proto
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.3 Add the following code:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    syntax = &amp;quot;proto3&amp;quot;;
+    package user;
+    // for protoc-gen-go versions greater than 1.4.0, the proto file needs go_package, otherwise it cannot be generated
+    option go_package = &amp;quot;./user&amp;quot;;
+    message IdRequest &amp;#123;
+        string id = 1;
+    &amp;#125;
+    message UserResponse &amp;#123;
+      // user id
+      string id = 1;
+      // user name
+      string name = 2;
+      // user gender
+      string gender = 3;
+    &amp;#125;
+    service User &amp;#123;
+        rpc getUser(IdRequest) returns(UserResponse);
+    &amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;2.4 Generate the code &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  cd mall/user/rpc
+  goctl rpc protoc user.proto --go_out=./types --go-grpc_out=./types --zrpc_out=.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/img/202208/zero1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;2.5 Fill in the business logic&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; vim internal/logic/getuserlogic.go
+
+
+package logic
+import (
+  &amp;quot;context&amp;quot;
+  &amp;quot;go-zero-demo/mall/user/rpc/internal/svc&amp;quot;
+  &amp;quot;go-zero-demo/mall/user/rpc/types/user&amp;quot;
+  &amp;quot;github.com/zeromicro/go-zero/core/logx&amp;quot;
+)
+type GetUserLogic struct &amp;#123;
+  ctx context.Context
+  svcCtx *svc.ServiceContext
+  logx.Logger
+&amp;#125;
+func NewGetUserLogic(ctx context.Context, svcCtx *svc.ServiceContext) *GetUserLogic &amp;#123;
+  return &amp;amp;GetUserLogic&amp;#123;
+  ctx: ctx,
+  svcCtx: svcCtx,
+  Logger: logx.WithContext(ctx),
+  &amp;#125;
+&amp;#125;
+func (l *GetUserLogic) GetUser(in *user.IdRequest) (*user.UserResponse, error) &amp;#123;
+  return &amp;amp;user.UserResponse&amp;#123;
+  Id: &amp;quot;1&amp;quot;,    
+  Name: &amp;quot;test&amp;quot;,
+  &amp;#125;, nil
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;Create the order api service#&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;3.1 Create the order api directory&lt;/p&gt;
+&lt;p&gt;Go back to the go-zero-demo/mall directory&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;mkdir -p order/api &amp;amp;&amp;amp; cd order/api
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.1 Add the api file&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; vim order.api
+
+
+type(
+  OrderReq &amp;#123;
+      Id string `path:&amp;quot;id&amp;quot;`
+  &amp;#125;
+  OrderReply &amp;#123;
+      Id string `json:&amp;quot;id&amp;quot;`
+      Name string `json:&amp;quot;name&amp;quot;`
+  &amp;#125;
+)
+service order &amp;#123;
+  @handler getOrder
+  get /api/order/get/:id (OrderReq) returns (OrderReply)
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.2 Generate the order service&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; goctl api go -api order.api -dir .
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/img/202208/zero2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;3.3 Add the user rpc configuration&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; vim internal/config/config.go
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Additional content&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;package config
+import (
+  &amp;quot;github.com/zeromicro/go-zero/zrpc&amp;quot;
+  &amp;quot;github.com/zeromicro/go-zero/rest&amp;quot;
+)
+
+type Config struct &amp;#123;
+  rest.RestConf
+  UserRpc zrpc.RpcClientConf
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.4 Add the yaml configuration&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; vim etc/order.yaml 
+
+
+Name: order
+Host: 0.0.0.0
+Port: 8888
+UserRpc:
+Etcd:
+Hosts:
+- 127.0.0.1:2379
+Key: user.rpc
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.5 Complete the service dependency&lt;br&gt;The official documentation uses user here, but when I used it locally I found that the generated code has no user, only userclient — it is very likely that the official documentation was not updated in time.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vim internal/svc/servicecontext.go
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt; Additional content&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;package svc
+
+import (
+
+&amp;quot;go-zero-demo/mall/order/api/internal/config&amp;quot;
+&amp;quot;go-zero-demo/mall/user/rpc/userclient&amp;quot;
+&amp;quot;github.com/zeromicro/go-zero/zrpc&amp;quot;
+)
+type ServiceContext struct &amp;#123;
+Config config.Config
+UserRpc userclient.User
+&amp;#125;
+func NewServiceContext(c config.Config) *ServiceContext &amp;#123;
+return &amp;amp;ServiceContext&amp;#123;
+Config: c,
+UserRpc: userclient.NewUser(zrpc.MustNewClient(c.UserRpc)),
+&amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;3.6 Add business logic to getorderlogic&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vim internal/logic/getorderlogic.go
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Additional content&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;package logic
+import (
+  &amp;quot;context&amp;quot;
+  &amp;quot;errors&amp;quot;
+  &amp;quot;go-zero-demo/mall/order/api/internal/svc&amp;quot;
+  &amp;quot;go-zero-demo/mall/order/api/internal/types&amp;quot;
+  &amp;quot;go-zero-demo/mall/user/rpc/types/user&amp;quot;
+  &amp;quot;github.com/zeromicro/go-zero/core/logx&amp;quot;
+)
+
+type GetOrderLogic struct &amp;#123;
+  logx.Logger
+  ctx context.Context
+  svcCtx *svc.ServiceContext
+&amp;#125;
+
+func NewGetOrderLogic(ctx context.Context, svcCtx *svc.ServiceContext) GetOrderLogic &amp;#123;
+    return GetOrderLogic&amp;#123;
+    Logger: logx.WithContext(ctx),
+    ctx: ctx,
+    svcCtx: svcCtx,
+    &amp;#125;
+&amp;#125;
+
+func (l *GetOrderLogic) GetOrder(req *types.OrderReq) (*types.OrderReply, error) &amp;#123;
+    user, err := l.svcCtx.UserRpc.GetUser(l.ctx, &amp;amp;user.IdRequest&amp;#123;
+    Id: &amp;quot;1&amp;quot;,
+    &amp;#125;)
+
+    if err != nil &amp;#123;
+    return nil, err
+    &amp;#125;
+    if user.Name != &amp;quot;test&amp;quot; &amp;#123;
+    return nil, errors.New(&amp;quot;用户不存在&amp;quot;)
+    &amp;#125;
+
+    return &amp;amp;types.OrderReply&amp;#123;
+    Id: req.Id,
+    Name: &amp;quot;test order&amp;quot;,
+    &amp;#125;, nil
+
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;Start the services and verify#&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;4.1 Start etcd&lt;br&gt;There is no etcd service here, you need to install it yourself&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; etcd
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.2 Download the dependencies&lt;/p&gt;
+&lt;p&gt; In the go-zero-demo directory&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; go mod tidy
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;4.3 Start the user rpc&lt;/p&gt;
+&lt;p&gt; In the mall/user/rpc directory&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; go run user.go -f etc/user.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If the following error appears, it means etcd has not been started&lt;br&gt;&lt;img src=&#34;/img/202208/zero3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;4.4 Start the order api&lt;/p&gt;
+&lt;p&gt; In the mall/order/api directory&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; go run order.go -f etc/order.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/img/202208/zero4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;4.5 Access the order api&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; curl -i -X GET http://localhost:8888/api/order/get/1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;/img/202208/zero5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="微服务" />
+        <category term="go-zero" />
+        <category term="rpc" />
+        <updated>2022-08-09T13:48:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2022/08/09/go-zero-list-1/</id>
         <title>go-zero微服务试用</title>

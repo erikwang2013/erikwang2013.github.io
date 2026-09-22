@@ -5,8 +5,19 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
-            "id": "https://erik.xyz/2015/05/13/php-huo-qu-zhi-ding-shi-jian-duan-de-run-nian/",
-            "url": "https://erik.xyz/2015/05/13/php-huo-qu-zhi-ding-shi-jian-duan-de-run-nian/",
+            "id": "https://erik.xyz/2015/05/13/php-zhi-ding-shi-jian-duan-run-nian-en/",
+            "url": "https://erik.xyz/2015/05/13/php-zhi-ding-shi-jian-duan-run-nian-en/",
+            "title": "Getting the Leap Years in a Specified Time Range with PHP",
+            "date_published": "2015-05-13T15:55:00.000Z",
+            "content_html": "<p>Source code <a href=\"http://i1.tietuku.com/c143e48c21880077.png\"><img src=\"http://i1.tietuku.com/c143e48c21880077.png\" alt=\"php leap year\"></a> &lt;?php /<strong> <em> Copyright 木木夕互联网开发 <a href=\"http://www.erik.xyz\">http://www.erik.xyz</a> </em> Developer: 艾瑞可 <em> May 13, 2015 11:50:36 PM </em> PHP */ header(“Content-Type:text/html;Charset=utf-8”); //calculate all leap years between 2000 and 2030 /</strong> <em> Analysis: a leap year is a year divisible by 4, so any year that divides by 4 with no remainder is a leap year </em>/ $_POST[“sub”]=2000; //start from 2000 if($_POST[“sub”]){ for($a=2000;$a&lt;=2030;$a++){ //define the loop variable if($a%4==0){ //check whether the year is divisible by 4 echo $a.”&nbsp;&nbsp;”; } } } ?&gt;  Output result <a href=\"http://i1.tietuku.com/da8ce81f6b455132.png\"><img src=\"http://i1.tietuku.com/da8ce81f6b455132.png\" alt=\"\"></a></p>\n",
+            "tags": [
+                "php获取闰年",
+                "闰年.php时间"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2015/05/13/php-zhi-ding-shi-jian-duan-run-nian/",
+            "url": "https://erik.xyz/2015/05/13/php-zhi-ding-shi-jian-duan-run-nian/",
             "title": "php获取指定时间段的闰年",
             "date_published": "2015-05-13T15:55:00.000Z",
             "content_html": "<p>源码 <a href=\"http://i1.tietuku.com/c143e48c21880077.png\"><img src=\"http://i1.tietuku.com/c143e48c21880077.png\" alt=\"php闰年\"></a> &lt;?php /<strong> <em> 版权所有 木木夕互联网开发 <a href=\"http://www.erik.xyz\">http://www.erik.xyz</a> </em> 开发者：艾瑞可 <em> 2015年5月13日 下午11:50:36 </em> PHP */ header(“Content-Type:text/html;Charset=utf-8”); //计算2000到2030之间所有的闰年 /</strong> <em> 分析：闰年是除以4为整数的的年份，所以只要符合除以4没有余数的年份都是闰年 </em>/ $_POST[“sub”]=2000; //从2000年开始 if($_POST[“sub”]){ for($a=2000;$a&lt;=2030;$a++){ //定义循环变量 if($a%4==0){ //判断除以4为整数的年份 echo $a.”&nbsp;&nbsp;”; } } } ?&gt;   输出结果 <a href=\"http://i1.tietuku.com/da8ce81f6b455132.png\"><img src=\"http://i1.tietuku.com/da8ce81f6b455132.png\" alt=\"\"></a></p>\n",

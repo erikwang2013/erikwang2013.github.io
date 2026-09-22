@@ -5,6 +5,19 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2014/11/12/php-kai-fa-zhong-shu-zu-han-shu-en/",
+            "url": "https://erik.xyz/2014/11/12/php-kai-fa-zhong-shu-zu-han-shu-en/",
+            "title": "Array functions in PHP development",
+            "date_published": "2014-11-12T08:42:00.000Z",
+            "content_html": "<p>Arrays are used constantly in PHP development, so let me introduce the sorting functions for one-dimensional arrays: the sort() function, which by default sorts from low to high; the asort() function, which sorts in ascending order by the array element values; the ksort() function, which sorts in ascending order by the array element keys, that is, the keywords; the rsort() function, which is exactly the opposite of the sort() function; the arsort() function, which is exactly the opposite of the asort() function; the krsort() function, which is exactly the opposite of the ksort() function.   The array_unshift() function adds an element to the array   array_unshift(target array, element to add) The array_push() function adds an element to the array to implement first-in-first-out  array_unshift(target array, element to add) The array_shift() function deletes the first array element of the target array  array_shift(target array) The array_pop() function deletes the last array element of the target array   array_pop(target array)   The array_key_exists() function is specifically for querying the ‘key name’ of an associative array The array_search() function is specifically for querying the ‘element value’ of an associative array The array_keys() function retrieves the array ‘keys’ The array_values() function retrieves the array ‘element values’   The count() function counts the number of array elements The array_count_values() function counts how many times each array element value occurs (it can only be used on one-dimensional arrays) The array_unique() function makes the array elements unique, that is, it removes duplicate elements from the array The array_flip() function swaps the positions of the keys and the element values in the array; if there are duplicate keys, the key is overwritten and the value from the last assignment is shown   The serialize() function serializes an array The unserialize() function unserializes an array</p>\n",
+            "tags": [
+                "php",
+                "php函数",
+                "数组函数",
+                "数组排序函数"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2014/11/12/php-kai-fa-zhong-shu-zu-han-shu/",
             "url": "https://erik.xyz/2014/11/12/php-kai-fa-zhong-shu-zu-han-shu/",
             "title": "php开发中数组函数",

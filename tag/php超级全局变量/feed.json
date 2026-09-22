@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2017/08/11/php-chao-ji-quan-ju-bian-liang-en/",
+            "url": "https://erik.xyz/2017/08/11/php-chao-ji-quan-ju-bian-liang-en/",
+            "title": "PHP Superglobals",
+            "date_published": "2017-08-10T16:04:00.000Z",
+            "content_html": "<p>I’ve used PHP for so long but don’t really understand some of the basics. Starting today I’ll be studying them one by one.<br>Superglobals in PHP: </p>\n<ul>\n<li>$GLOBALS array of all global variables </li>\n<li>$_SERVER array of server environment variables </li>\n<li>$_GET array of variables passed to the script via get </li>\n<li>$_POST array of variables passed to the script via post </li>\n<li>$_COOKIE array of cookie variables </li>\n<li>$_FILES   array of variables related to file uploads </li>\n<li>$_ENV  array of environment variables </li>\n<li>$_REQUEST  array of all user-input variables (including $_GET $_POST $_COOKIE but not $_FILES) $_SESSION   array of session variables</li>\n</ul>\n",
+            "tags": [
+                "php变量",
+                "php超级全局变量",
+                "php超级变量"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2017/08/11/php-chao-ji-quan-ju-bian-liang/",
             "url": "https://erik.xyz/2017/08/11/php-chao-ji-quan-ju-bian-liang/",
             "title": "php超级全局变量",

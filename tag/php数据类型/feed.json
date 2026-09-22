@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2017/08/11/php-de-shu-ju-lei-xing-en/",
+            "url": "https://erik.xyz/2017/08/11/php-de-shu-ju-lei-xing-en/",
+            "title": "PHP Data Types",
+            "date_published": "2017-08-10T16:05:11.000Z",
+            "content_html": "<ul>\n<li>Basic types<ul>\n<li>integer — integer type, represents whole numbers</li>\n<li>float — floating point, double-precision values, represents all real numbers</li>\n<li>string — string type, represents strings</li>\n<li>boolean — boolean, represents true or false</li>\n<li>array — array, holds multiple data items of the same type</li>\n<li>object — object, holds an instance of a class; a special type</li>\n<li>NULL — null, a variable that has not been assigned a value, has been reset, or has been assigned the special value NULL is a variable of the NULL type</li>\n<li>resource — resource, specific built-in functions (for example database functions) return variables of the resource type; they must be passed as arguments to other functions</li>\n</ul>\n</li>\n</ul>\n",
+            "tags": [
+                "php基本类型",
+                "php数据类型"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2017/08/11/php-de-shu-ju-lei-xing/",
             "url": "https://erik.xyz/2017/08/11/php-de-shu-ju-lei-xing/",
             "title": "php的数据类型",

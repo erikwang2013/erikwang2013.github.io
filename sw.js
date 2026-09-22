@@ -1,9 +1,13 @@
-const CACHE = 'erik-v1';
+const CACHE = 'erik-v2';
 const PRECACHE = [
   "/",
   "/css/style.css",
+  "/js/i18n.js",
+  "/js/scenes.js",
   "/js/main.js",
   "/js/feats.js",
+  "/js/player.js",
+  "/js/ui.js",
   "/js/encrypt.js",
   "/js/vendor/three.min.js",
   "/manifest.webmanifest"

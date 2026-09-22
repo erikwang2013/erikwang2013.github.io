@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2016/03/01/mysql-ping-geng-de-ying-dui-cuo-shi-en/",
+            "url": "https://erik.xyz/2016/03/01/mysql-ping-geng-de-ying-dui-cuo-shi-en/",
+            "title": "How to Deal with MySQL Bottlenecks",
+            "date_published": "2016-03-01T11:40:00.000Z",
+            "content_html": "<p>mysql itself has bottlenecks: once the data volume reaches the tens-of-millions level or above, no matter how you optimize mysql, its performance drops noticeably (unless you have a dedicated team developing and improving mysql). So here are a few ways to solve it. </p>\n<ol>\n<li>Increase the buffer and cache values in the mysql configuration, and add more server CPUs and memory.</li>\n<li>Use a third-party engine or a derivative version. For example: Percona, MariaDB, TokuDB 3. Migrate to another database. For example: PostgreSQL, Oracle</li>\n</ol>\n",
+            "tags": [
+                "mysql应对千万级",
+                "mysql瓶颈",
+                "mysql瓶颈解决办法"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2016/03/01/mysql-ping-geng-de-ying-dui-cuo-shi/",
             "url": "https://erik.xyz/2016/03/01/mysql-ping-geng-de-ying-dui-cuo-shi/",
             "title": "mysql瓶颈的应对措施",

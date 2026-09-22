@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2014/10/04/wordpress-biao-qian-zi-ti-she-zhi-en/",
+            "url": "https://erik.xyz/2014/10/04/wordpress-biao-qian-zi-ti-she-zhi-en/",
+            "title": "Setting WordPress Tag Font Sizes",
+            "date_published": "2014-10-04T12:37:00.000Z",
+            "content_html": "<p>After tinkering with wordpres on and off for a while, I finally had my own website. Today it’s finally fully usable, when I suddenly noticed the tag font was very blurry.</p>\n<p>The answer I got from Baidu was:</p>\n<p>WordPress’s default tag cloud has a minimum font size of 8pt and a maximum of 22pt, displays 45 tags, and sorts them in ascending order by tag name. But checking with Firefox showed that it’s done by modifying the style.css stylesheet — yet no matter how I looked, I couldn’t find it. What to do… helpless, I turned to Baidu. <strong>How to modify the WordPress tag cloud</strong> Open wp-includes/category-template.php, search for wp_tag_cloud, and you’ll find ‘smallest’ =&gt; 8, ‘largest’ =&gt; 22, ‘unit’ =&gt; ‘pt’, ‘number’ =&gt; 45,‘format’ =&gt; ‘flat’, ‘separator’ =&gt; “\\n”, ‘orderby’ =&gt; ‘name’, ‘order’ =&gt; ‘ASC’, <strong>Specific parameter descriptions:</strong> smallest – defines the minimum font size for tags, default 8; largest – defines the maximum font size for tags, default 22; unit – sets the font size unit, such as “pt” or “px”, default “pt”; number – sets the number of tags in the cloud, default 45 tags; orderby – sets sorting by “name” or “count”, default “name”; (Note: orderby=count means sorting by how many times a tag is used) order – sets ascending or descending order via “DESC” or “ASC”, default “ASC” ascending. Just modify the specific parameters of the wp_tag_cloud function according to your own needs to customize the tag cloud, then upload the category-template.php file to your hosting space to replace the original file.</p>\n",
+            "tags": [
+                "wordpress",
+                "wordpress标签"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2014/10/04/wordpress-biao-qian-zi-ti-she-zhi/",
             "url": "https://erik.xyz/2014/10/04/wordpress-biao-qian-zi-ti-she-zhi/",
             "title": "wordpress标签字体设置",

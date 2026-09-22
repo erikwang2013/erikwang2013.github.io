@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,22 +502,58 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
     <entry>
-        <id>https://erik.xyz/2015/05/29/15-ge-mian-fei-de-jquery-cha-jian-zhong-wen-xiang-jie/</id>
+        <id>https://erik.xyz/2015/05/29/15-mian-fei-jquery-cha-jian-en/</id>
+        <title>15 Free jQuery Plugins, Explained in Detail</title>
+        <link rel="alternate" href="https://erik.xyz/2015/05/29/15-mian-fei-jquery-cha-jian-en/"/>
+        <content type="html">&lt;p&gt;&lt;strong&gt;QMeter&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s6.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul1YGSTw_AAABnpCBMYME808.jpg&#34;&gt;&lt;img src=&#34;http://s6.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul1YGSTw_AAABnpCBMYME808.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;jQMeter is a simple, lightweight jQuery plugin that lets you show horizontal or vertical progress bars with animation. It currently provides growth or completion display effects for a target and a specific amount, and you can click here to check out the other available options. &lt;strong&gt;Prism Effect Slider&lt;/strong&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s4.51cto.com/wyfs02/M01/5D/DD/wKiom1Ul1PXTE-j1AACjqWKfedE195.jpg&#34;&gt;&lt;img src=&#34;http://s4.51cto.com/wyfs02/M01/5D/DD/wKiom1Ul1PXTE-j1AACjqWKfedE195.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Today we want to show you how to create a simple slideshow using an interesting “prism” effect. The idea is to place a graphic in front of the slideshow and “reflect” each image, creating a mirrored display effect. To use this plugin we also need the HTML 5 canvas element along with plain JavaScript code. &lt;strong&gt;Fixed Background Effect&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s9.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul1meCJz3FAABDoGESP54667.jpg&#34;&gt;&lt;img src=&#34;http://s9.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul1meCJz3FAABDoGESP54667.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a simple template that takes advantage of the background-attachment CSS property to create a fixed background effect. &lt;strong&gt;Animated Dropdown Mega Menu&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s9.51cto.com/wyfs02/M00/5D/D8/wKioL1Ul1ovhB8mOAAB73lnLHqI241.jpg&#34;&gt;&lt;img src=&#34;http://s9.51cto.com/wyfs02/M00/5D/D8/wKioL1Ul1ovhB8mOAAB73lnLHqI241.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is an animated dropdown menu plugin that uses Animate CSS/HoverIntent to free CSS layouts from the monotonous effect of only being able to move backwards. &lt;strong&gt;Audio Recording&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s4.51cto.com/wyfs02/M01/5D/D8/wKioL1Ul1uKig3kpAABe78Rl2Dg335.jpg&#34;&gt;&lt;img src=&#34;http://s4.51cto.com/wyfs02/M01/5D/D8/wKioL1Ul1uKig3kpAABe78Rl2Dg335.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Today we plan to explore how to use jQuery and HTML 5 to post your own voice recording messages to a newsfeed through the HTML 5 audio player. You can view the short demo above and you will be fully able to grasp how to use it — of course, for better audio quality, don’t forget to use it together with a microphone. &lt;strong&gt;jQuery Progress Tracker&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s4.51cto.com/wyfs02/M01/5D/DD/wKiom1Ul1dHiG2r6AAAVTLfp-c8617.jpg&#34;&gt;&lt;img src=&#34;http://s4.51cto.com/wyfs02/M01/5D/DD/wKiom1Ul1dHiG2r6AAAVTLfp-c8617.jpg&#34; alt=&#34;&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This tiny jQuery plugin (only 2KB) can create fixed progress indicators based on the user’s actual content, and it allows different indicators to link to each other. &lt;strong&gt;Hover Effects Builder&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s8.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul1zTA3b-7AADNFaAegRU586.jpg&#34;&gt;&lt;img src=&#34;http://s8.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul1zTA3b-7AADNFaAegRU586.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It provides CSS3 hover effects for images on your site, and users need no CSS coding knowledge at all. &lt;strong&gt;iFrame Resize&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s7.51cto.com/wyfs02/M02/5D/DD/wKiom1Ul1hXzXdNQAACIyghX9NM060.jpg&#34;&gt;&lt;img src=&#34;http://s7.51cto.com/wyfs02/M02/5D/DD/wKiom1Ul1hXzXdNQAACIyghX9NM060.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This library lets users automatically and uniformly adjust the height and width of cross-domain iFrames so they fit the format of the content they contain. It also offers a set of feature options that help you solve the various common problems that can come up when using iFrames. &lt;strong&gt;Loaders.css&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s9.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul16fRkwTiAAAp55PGZ38231.jpg&#34;&gt;&lt;img src=&#34;http://s9.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul16fRkwTiAAAp55PGZ38231.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a collection of loading animations written entirely in CSS. Each animation is limited to a small subset of CSS properties, which avoids imposing a heavy painting and layout calculation load. &lt;strong&gt;simpleFilter.js&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s7.51cto.com/wyfs02/M01/5D/D8/wKioL1Ul196SqG4pAAAZ-81ENAQ140.jpg&#34;&gt;&lt;img src=&#34;http://s7.51cto.com/wyfs02/M01/5D/D8/wKioL1Ul196SqG4pAAAZ-81ENAQ140.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;simpleFilter.js is an easy-to-use jQuery plugin that includes a complete library of image filters for your website. You can choose from eight filters and six adjusters to create subtle visual effects. &lt;strong&gt;Gridder.js&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s8.51cto.com/wyfs02/M01/5D/DD/wKiom1Ul1rLSTOW1AADh88rGdaM364.jpg&#34;&gt;&lt;img src=&#34;http://s8.51cto.com/wyfs02/M01/5D/DD/wKiom1Ul1rLSTOW1AADh88rGdaM364.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a jQuery plugin for displaying preview thumbnails, and it works much like Google Images. Its effect is quite good and its practicality is very prominent — it helps you quickly see more content details without having to load a new page. The design idea is that the user can click a thumbnail to open a preview that contains a larger image, a title, a description and a link. &lt;strong&gt;Spectrum&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s3.51cto.com/wyfs02/M01/5D/D8/wKioL1Ul2DvhVUi-AABOQR97WXs211.jpg&#34;&gt;&lt;img src=&#34;http://s3.51cto.com/wyfs02/M01/5D/D8/wKioL1Ul2DvhVUi-AABOQR97WXs211.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a dynamic and colorful jQuery plugin, especially well suited for adding subtle color transitions to your web applications. &lt;strong&gt;Tour Tip Guide!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s2.51cto.com/wyfs02/M00/5D/D8/wKioL1Ul2FKg28tHAABEJjfpllQ721.jpg&#34;&gt;&lt;img src=&#34;http://s2.51cto.com/wyfs02/M00/5D/D8/wKioL1Ul2FKg28tHAABEJjfpllQ721.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;jQuery Tour Tip Guide! is a beautiful navigation plugin. &lt;strong&gt;WebSnowjq.js&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s6.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul2HaR1ip8AABEgWrWrLI556.jpg&#34;&gt;&lt;img src=&#34;http://s6.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul2HaR1ip8AABEgWrWrLI556.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;WebSnowjq.Js is a jQuery plugin designed to create a virtual falling-snow effect on a web page using HTML 5 and JavaScript code. WebSnowjq.Js is compatible with all browsers that support HTML 5. You can easily integrate WebSnowjq.Js into your website. &lt;strong&gt;Responsive Facebook Style Timeline Design With Bootstrap&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://s9.51cto.com/wyfs02/M00/5D/D8/wKioL1Ul2IrRI14jAABq0m6s3Eg799.jpg&#34;&gt;&lt;img src=&#34;http://s9.51cto.com/wyfs02/M00/5D/D8/wKioL1Ul2IrRI14jAABq0m6s3Eg799.jpg&#34; alt=&#34;15 free jQuery plugins explained in Chinese, April 2015&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here we want to introduce how to achieve this Responsive Facebook-style timeline design using Twitter Bootstrap. We will go through step by step how to implement this responsive timeline design, so please read every single step carefully.&lt;/p&gt;
+&lt;p&gt;From: &lt;a href=&#34;http://developer.51cto.com/art/201504/471472_2.htm&#34;&gt;http://developer.51cto.com/art/201504/471472_2.htm&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="js" />
+        <category term="jquery" />
+        <category term="jquery插件" />
+        <updated>2015-05-29T10:32:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2015/05/29/15-mian-fei-jquery-cha-jian/</id>
         <title>15个免费的jQuery插件中文详解</title>
-        <link rel="alternate" href="https://erik.xyz/2015/05/29/15-ge-mian-fei-de-jquery-cha-jian-zhong-wen-xiang-jie/"/>
+        <link rel="alternate" href="https://erik.xyz/2015/05/29/15-mian-fei-jquery-cha-jian/"/>
         <content type="html">&lt;p&gt;&lt;strong&gt;QMeter&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://s6.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul1YGSTw_AAABnpCBMYME808.jpg&#34;&gt;&lt;img src=&#34;http://s6.51cto.com/wyfs02/M02/5D/D8/wKioL1Ul1YGSTw_AAABnpCBMYME808.jpg&#34; alt=&#34;2015年4月15个免费的jQuery插件中文详解&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;jQMeter是一款简便的轻量化jQuery插件，允许大家以动画方式显示横向或者纵向进程表。其目前提供目标及具体数量的增长或完成显示效果，大家也可以点击此处查看其它可选功能。 &lt;strong&gt;Prism Effect Slider&lt;/strong&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -545,15 +587,245 @@
 &lt;p&gt;这里我们要介绍如何利用Twitter Bootstrap实现这种Responsive Facebook风格的时间表设计方案。我们将共同一步步了解如何实现这一响应式时间设计，所以请大家务必认真阅读其中的每一个具体步骤。&lt;/p&gt;
 &lt;p&gt;来自：&lt;a href=&#34;http://developer.51cto.com/art/201504/471472_2.htm&#34;&gt;http://developer.51cto.com/art/201504/471472_2.htm&lt;/a&gt;&lt;/p&gt;
 </content>
+        <category term="js" />
         <category term="jquery" />
         <category term="jquery插件" />
-        <category term="js" />
         <updated>2015-05-29T10:32:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2015/01/06/14-tiao-gai-shan-jquery-dai-ma-de-ji-qiao/</id>
+        <id>https://erik.xyz/2015/01/06/14-gai-shan-jquery-dai-ma-ji-qiao-en/</id>
+        <title>14 Tips for Improving Your jQuery Code</title>
+        <link rel="alternate" href="https://erik.xyz/2015/01/06/14-gai-shan-jquery-dai-ma-ji-qiao-en/"/>
+        <content type="html">&lt;p&gt;jQuery is easy to learn, but if you want to write prettier, cleaner and more efficient code, you always need a few tricks. This article summarizes &lt;strong&gt;14 tips for improving your jQuery code&lt;/strong&gt; for you.&lt;/p&gt;
+&lt;h3 id=&#34;1-Test-and-level-up-your-jQuery-selectors&#34;&gt;&lt;a href=&#34;#1-Test-and-level-up-your-jQuery-selectors&#34; class=&#34;headerlink&#34; title=&#34;1. Test and level up your jQuery selectors&#34;&gt;&lt;/a&gt;1. Test and level up your jQuery selectors&lt;/h3&gt;&lt;p&gt;This &lt;a href=&#34;http://codylindley.com/jqueryselectors/&#34;&gt;jQuery Selector Lab&lt;/a&gt; is really cool, it’s free to use online, and of course you can also download it to use offline locally. The test page contains complex combined HTML fields, and then you can try out various predefined jQuery selectors. If that’s not enough you can also define your own selectors.&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-Test-whether-a-jQuery-wrapper-set-contains-certain-elements&#34;&gt;&lt;a href=&#34;#2-Test-whether-a-jQuery-wrapper-set-contains-certain-elements&#34; class=&#34;headerlink&#34; title=&#34;2. Test whether a jQuery wrapper set contains certain elements&#34;&gt;&lt;/a&gt;2. Test whether a jQuery wrapper set contains certain elements&lt;/h3&gt;&lt;p&gt;If you want to test whether a certain jQuery wrapper set contains some elements, you can first try verifying whether the first element exists:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;if($(selector)[0])&amp;#123;...&amp;#125;
+// or like this
+if($(selector).length)&amp;#123;...&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Let’s look at this example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//Example. If your page has the following html code
+&amp;lt;ul id=&amp;quot;shopping_cart_items&amp;quot;&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;input class=&amp;quot;in_stock&amp;quot; name=&amp;quot;item&amp;quot; type=&amp;quot;radio&amp;quot; value=&amp;quot;Item-X&amp;quot; /&amp;gt;Item X&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;input class=&amp;quot;unknown&amp;quot; name=&amp;quot;item&amp;quot; type=&amp;quot;radio&amp;quot; value=&amp;quot;Item-Y&amp;quot; /&amp;gt;Item Y&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;&amp;lt;input class=&amp;quot;in_stock&amp;quot; name=&amp;quot;item&amp;quot; type=&amp;quot;radio&amp;quot; value=&amp;quot;Item-Z&amp;quot; /&amp;gt;Item Z&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&amp;lt;pre escaped=&amp;quot;true&amp;quot; lang=&amp;quot;javascript&amp;quot;&amp;gt;...
+//this if condition will return true, because we have two
+// input fields matched by the selector, so the &amp;lt;statement&amp;gt; code will run
+if($(&amp;#39;#shopping_cart_items input.in_stock&amp;#39;)[0])&amp;#123;&amp;lt;statement&amp;gt;&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;3-Read-the-latest-jQuery-version-from-jquery-org&#34;&gt;&lt;a href=&#34;#3-Read-the-latest-jQuery-version-from-jquery-org&#34; class=&#34;headerlink&#34; title=&#34;3. Read the latest jQuery version from jquery.org&#34;&gt;&lt;/a&gt;3. Read the latest jQuery version from jquery.org&lt;/h3&gt;&lt;p&gt;You can use this line of code to load the latest version of the jQuery source file.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;script src=&amp;quot;http://code.jquery.com/jquery-latest.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can use this approach to call the most recent version of the jQuery framework. Of course, you can also use the following code to call the same latest jQuery version from ajax.useso.com:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;script src=&amp;quot;http://ajax.useso.com/ajax/libs/jquery/1.3.2/jquery.min.js&amp;quot;
+type=&amp;quot;text/javascript&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;4-Storing-data&#34;&gt;&lt;a href=&#34;#4-Storing-data&#34; class=&#34;headerlink&#34; title=&#34;4. Storing data&#34;&gt;&lt;/a&gt;4. Storing data&lt;/h3&gt;&lt;p&gt;Using the data method can save you from storing data in the DOM. Some front-end developers like to use HTML attributes to store data:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(&amp;#39;selector&amp;#39;).attr(&amp;#39;alt&amp;#39;, &amp;#39;data being stored&amp;#39;);
+//later you can read the data like this:
+$(&amp;#39;selector&amp;#39;).attr(&amp;#39;alt&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Using the “alt” attribute as a parameter name to store data is actually not semantically correct for HTML. We can use jQuery’s data method to store data for an element on the page:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(&amp;#39;selector&amp;#39;).data(&amp;#39;参数名&amp;#39;, &amp;#39;要存储的数据&amp;#39;);
+//later get the data like this:
+$(&amp;#39;selector&amp;#39;).data(&amp;#39;参数&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This data method lets you name the data parameters yourself, making it more semantic and more flexible. You can store data information on any element on the page. If you want to learn more about the data() and removeData() methods, take a look at this &lt;a href=&#34;http://docs.jquery.com/Internals&#34;&gt;official jQuery explanation&lt;/a&gt;. A classic use of this method is giving an input field a default value and then clearing it when it gets focused: HTML part:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;form id=&amp;quot;testform&amp;quot;&amp;gt;
+&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;clear&amp;quot; value=&amp;quot;Always cleared&amp;quot; /&amp;gt;
+&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;clear once&amp;quot; value=&amp;quot;Cleared only once&amp;quot; /&amp;gt;
+&amp;lt;input type=&amp;quot;text&amp;quot; value=&amp;quot;Normal text&amp;quot; /&amp;gt;
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;JavaScript part:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(function() &amp;#123;
+//grab the input fields with the clear class
+//(note: &amp;quot;clear once&amp;quot; is two classes, clear and once)
+$(&amp;#39;#testform input.clear&amp;#39;).each(function()&amp;#123;
+//use the data method to store data
+$(this).data( &amp;quot;txt&amp;quot;, $.trim($(this).val()) );
+&amp;#125;).focus(function()&amp;#123;
+// when focused, check whether the value in the field equals the default value, and clear it if so
+if ( $.trim($(this).val()) === $(this).data(&amp;quot;txt&amp;quot;) ) &amp;#123;
+$(this).val(&amp;quot;&amp;quot;);
+&amp;#125;
+&amp;#125;).blur(function()&amp;#123;
+// add a blur event to fields with the clear class to restore the default value
+// but ignore it if the class is once
+if ( $.trim($(this).val()) === &amp;quot;&amp;quot; &amp;amp;&amp;amp; !$(this).hasClass(&amp;quot;once&amp;quot;) ) &amp;#123;
+//Restore saved data
+$(this).val( $(this).data(&amp;quot;txt&amp;quot;) );
+&amp;#125;
+&amp;#125;);
+&amp;#125;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&#34;http://www.tripwiremagazine.com/wp-content/uploads/images/stories/Articles/jquery-tips/demo.html&#34;&gt;View the Demo&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;5-Keep-the-jQuery-manual-close-by&#34;&gt;&lt;a href=&#34;#5-Keep-the-jQuery-manual-close-by&#34; class=&#34;headerlink&#34; title=&#34;5. Keep the jQuery manual close by&#34;&gt;&lt;/a&gt;5. Keep the jQuery manual close by&lt;/h3&gt;&lt;p&gt;Most people find it hard to remember all the programming details. Even the best programmers can be careless about some corner of a language, so printing out the relevant manual or keeping it on your desktop for quick reference is absolutely something that can improve your programming efficiency. &lt;a href=&#34;http://oscarotero.com/jquery/&#34;&gt;oscarotero jquery 1.3&lt;/a&gt; (&lt;a href=&#34;http://www.gmtaz.com/index.php/jquery-13-cheatsheet-wallpaper/&#34;&gt;wallpaper version&lt;/a&gt;) &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://paranimage.com/wp-content/uploads/2009/11/oscarotero.jpg&#34; alt=&#34;oscarotero&#34; title=&#34;oscarotero&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;6-Log-jQuery-in-the-FireBug-console&#34;&gt;&lt;a href=&#34;#6-Log-jQuery-in-the-FireBug-console&#34; class=&#34;headerlink&#34; title=&#34;6. Log jQuery in the FireBug console&#34;&gt;&lt;/a&gt;6. Log jQuery in the FireBug console&lt;/h3&gt;&lt;p&gt;FireBug is one of my favorite browser extensions. It lets you quickly understand the current page’s HTML+CSS+JavaScript in a visual interface, and do live development right inside the tool. As a jQuery or JavaScript developer, FireFox also supports &lt;a href=&#34;http://www.getfirebug.com/logging.html&#34;&gt;logging your JavaScript code&lt;/a&gt;. The simplest way to write to the FireBug console is as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;console.log(&amp;quot;hello world&amp;quot;)
+fire-500X200
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can also write some parameters however you like:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;console.log(2,4,6,8,&amp;quot;foo&amp;quot;,bar)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You can also write a small extension to log jQuery objects to the console:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;jQuery.fn.log = function (msg) &amp;#123;
+console.log(&amp;quot;%s: %o&amp;quot;, msg, this);
+return this;
+&amp;#125;;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;With this extension, you can directly use the .log() method to log the current object to the console.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(&amp;#39;#some_div&amp;#39;).find(&amp;#39;li.source &amp;gt; input:checkbox&amp;#39;)
+.log(&amp;quot;sources to uncheck&amp;quot;)
+.removeAttr(&amp;quot;checked&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;7-Use-ID-selectors-whenever-possible&#34;&gt;&lt;a href=&#34;#7-Use-ID-selectors-whenever-possible&#34; class=&#34;headerlink&#34; title=&#34;7. Use ID selectors whenever possible&#34;&gt;&lt;/a&gt;7. Use ID selectors whenever possible&lt;/h3&gt;&lt;p&gt;After you start using jQuery, you’ll find that selecting DOM elements by their class attribute becomes quite easy. Even so, it’s still recommended to use class selectors as little as possible and instead use the faster ID selectors (in IE, using a class selector walks the entire DOM tree before returning the matching class wrapper set). ID selectors are faster because the DOM itself has a “natural” getElementById method, while class does not. So if you use class selectors, the browser will traverse the whole DOM, and if your page’s DOM structure is complex enough, these class selectors are more than enough to drag the page down and make it slower and slower. Let’s look at this simple piece of HTML code:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;main&amp;quot;&amp;gt;
+&amp;lt;form method=&amp;quot;post&amp;quot; action=&amp;quot;/&amp;quot;&amp;gt;
+&amp;lt;h2&amp;gt;Selectors in jQuery&amp;lt;/h2&amp;gt;
+...
+...
+&amp;lt;input class=&amp;quot;button&amp;quot; id=&amp;quot;main_button&amp;quot; type=&amp;quot;submit&amp;quot; value=&amp;quot;Submit&amp;quot; /&amp;gt;
+&amp;lt;/form&amp;gt;
+&amp;lt;/div&amp;gt;
+
+
+
+
+
+//using a class to call the submit button is much slower than using the absolute ID selector
+var main_button = $(&amp;#39;#main .button&amp;#39;);
+var main_button = $(&amp;#39;#main_button&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;8-Make-good-use-of-jQuery-chaining&#34;&gt;&lt;a href=&#34;#8-Make-good-use-of-jQuery-chaining&#34; class=&#34;headerlink&#34; title=&#34;8. Make good use of jQuery chaining&#34;&gt;&lt;/a&gt;8. Make good use of jQuery chaining&lt;/h3&gt;&lt;p&gt;jQuery chaining not only lets you write powerful operations in a concise way, but also improves development efficiency, because it can apply multiple commands to a wrapper set without having to recompute the wrapper set. So instead of writing:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;li&amp;gt;Description: &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;description&amp;quot; value=&amp;quot;&amp;quot; /&amp;gt;&amp;lt;/li&amp;gt;
+
+
+
+
+
+$(&amp;#39;#shopping_cart_items input.text&amp;#39;).css(&amp;#39;border&amp;#39;, &amp;#39;3px dashed yellow&amp;#39;);
+$(&amp;#39;#shopping_cart_items input.text&amp;#39;).css(&amp;#39;background-color&amp;#39;, &amp;#39;red&amp;#39;);
+$(&amp;#39;#shopping_cart_items input.text&amp;#39;).val(&amp;quot;text updated&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Instead, you can use jQuery chaining to do it more simply:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var input_text = $(&amp;#39;#shopping_cart_items input.text&amp;#39;);
+input_text.css(&amp;#39;border&amp;#39;, &amp;#39;3px dashed yellow&amp;#39;);
+input_text.css(&amp;#39;background-color&amp;#39;, &amp;#39;red&amp;#39;);
+input_text.val(&amp;quot;text updated&amp;quot;);
+
+//same with chaining:
+var input_text = $(&amp;#39;#shopping_cart_items input.text&amp;#39;);
+input_text
+.css(&amp;#39;border&amp;#39;, &amp;#39;3px dashed yellow&amp;#39;)
+.css(&amp;#39;background-color&amp;#39;, &amp;#39;red&amp;#39;)
+.val(&amp;quot;text updated&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;9-Bind-jQuery-functions-to-the-window-load-event&#34;&gt;&lt;a href=&#34;#9-Bind-jQuery-functions-to-the-window-load-event&#34; class=&#34;headerlink&#34; title=&#34;9. Bind jQuery functions to the $(window).load event&#34;&gt;&lt;/a&gt;9. Bind jQuery functions to the $(window).load event&lt;/h3&gt;&lt;p&gt;Most jQuery examples or tutorials tell us to bind our jQuery code to the $(document).ready event. Although the $(document).ready event is fine in most cases, it runs when the document is ready but images and other objects on the page are still downloading. So sometimes using the $(document).ready event doesn’t necessarily give us the result we expect — for example with some visual effects and animations, drag and drop, preloading hidden images, and so on… By using the $(window).load event you can safely start running the code you expect only after the entire document is ready.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(window).load(function()&amp;#123;
+// put the code you want to run after the page is fully ready here
+&amp;#125;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;10-Use-jQuery-chaining-to-scope-selectors-making-your-code-cleaner-and-more-elegant&#34;&gt;&lt;a href=&#34;#10-Use-jQuery-chaining-to-scope-selectors-making-your-code-cleaner-and-more-elegant&#34; class=&#34;headerlink&#34; title=&#34;10. Use jQuery chaining to scope selectors, making your code cleaner and more elegant&#34;&gt;&lt;/a&gt;10. Use jQuery chaining to scope selectors, making your code cleaner and more elegant&lt;/h3&gt;&lt;p&gt;Because JavaScript supports chaining and line breaks, you can write your code like this. This example first removes a class from an element and then adds another class to the same element:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$(&amp;#39;#shopping_cart_items input.in_stock&amp;#39;)
+.removeClass(&amp;#39;in_stock&amp;#39;)
+.addClass(&amp;#39;3-5_days&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you want to make it even simpler and more practical, you can create a chainable jQuery function:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$.fn.makeNotInStock = function() &amp;#123;
+return $(this).removeClass(&amp;#39;in_stock&amp;#39;).addClass(&amp;#39;3-5_days&amp;#39;);
+&amp;#125;
+
+$(&amp;#39;#shopping_cart_items input.in_stock&amp;#39;).makeNotInStock().log();
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;11-Use-callback-functions-to-synchronize-effects&#34;&gt;&lt;a href=&#34;#11-Use-callback-functions-to-synchronize-effects&#34; class=&#34;headerlink&#34; title=&#34;11. Use callback functions to synchronize effects&#34;&gt;&lt;/a&gt;11. Use callback functions to synchronize effects&lt;/h3&gt;&lt;p&gt;If you want to make sure an event or animation effect is called after another event runs, then you need to use a callback function. You can bind a callback function after these animation effects: slideDown( speed, [callback] ) ie. $(’#sliding’).slideDown(’slow’, function(){… &lt;a href=&#34;http://www.tripwiremagazine.com/wp-content/uploads/images/stories/Articles/jquery-tips2/demo.html&#34;&gt;Click here&lt;/a&gt; to preview this example.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;style&amp;gt;
+div.button &amp;#123; background:#cfd; margin:3px; width:50px;
+text-align:center; float:left; cursor:pointer;
+border:2px outset black; font-weight:bolder; &amp;#125;
+#sliding &amp;#123; display:none; &amp;#125;
+&amp;lt;/style&amp;gt;
+
+
+
+
+
+$(document).ready(function()&amp;#123;
+// use jQuery&amp;#39;s click event to change the visual effect and start the sliding effect
+$(&amp;quot;div.button&amp;quot;).click(function () &amp;#123;
+//div.button now looks like it is pressed
+$(this).css(&amp;#123; borderStyle:&amp;quot;inset&amp;quot;, cursor:&amp;quot;wait&amp;quot; &amp;#125;);
+//#sliding will now fade out and start the fade-in effect once it completes
+//slideup once it completes
+$(&amp;#39;#sliding&amp;#39;).slideDown(&amp;#39;slow&amp;#39;, function()&amp;#123;
+$(&amp;#39;#sliding&amp;#39;).slideUp(&amp;#39;slow&amp;#39;, function()&amp;#123;
+//once the fade-in effect completes, the button&amp;#39;s CSS properties will be changed
+$(&amp;#39;div.button&amp;#39;).css(&amp;#123; borderStyle:&amp;quot;outset&amp;quot;, cursor:&amp;quot;auto&amp;quot; &amp;#125;);
+&amp;#125;);
+&amp;#125;);
+&amp;#125;);
+&amp;#125;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;12-Learn-to-use-custom-selectors&#34;&gt;&lt;a href=&#34;#12-Learn-to-use-custom-selectors&#34; class=&#34;headerlink&#34; title=&#34;12. Learn to use custom selectors&#34;&gt;&lt;/a&gt;12. Learn to use custom selectors&lt;/h3&gt;&lt;p&gt;jQuery allows us to define custom selectors on top of CSS selectors to make our code cleaner:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$.expr[&amp;#39;:&amp;#39;].mycustomselector= function(element, index, meta, stack)&amp;#123;
+// element - DOM element
+// index - the index value of the current iteration in the stack
+// meta - data element about your selector
+// stack - the stack used to iterate over all elements
+
+// return true if the current element is included
+// return false if the current element is not included
+&amp;#125;;
+
+// usage of the custom selector:
+$(&amp;#39;.someClasses:test&amp;#39;).doSomething();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Below let’s look at a small example where we use a custom selector to target the set of elements that have a “rel” attribute:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$.expr[&amp;#39;:&amp;#39;].withRel = function(element)&amp;#123;
+var $this = $(element);
+//only return elements whose rel attribute is not empty
+return ($this.attr(&amp;#39;rel&amp;#39;) != &amp;#39;&amp;#39;);
+&amp;#125;;
+
+$(document).ready(function()&amp;#123;
+//using a custom selector is very simple, it works like any other selector and returns a wrapper set of elements
+//you can use formatted methods on it, for example changing its css style like this
+$(&amp;#39;a:withRel&amp;#39;).css(&amp;#39;background-color&amp;#39;, &amp;#39;green&amp;#39;);
+&amp;#125;);
+
+
+
+
+
+&amp;lt;ul&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;without rel&amp;lt;/a&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;a rel=&amp;quot;somerel&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;with rel&amp;lt;/a&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;a rel=&amp;quot;&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;without rel&amp;lt;/a&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;li&amp;gt;
+&amp;lt;a rel=&amp;quot;nofollow&amp;quot; href=&amp;quot;#&amp;quot;&amp;gt;a link with rel&amp;lt;/a&amp;gt;
+&amp;lt;/li&amp;gt;
+&amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;13-Preload-images&#34;&gt;&lt;a href=&#34;#13-Preload-images&#34; class=&#34;headerlink&#34; title=&#34;13. Preload images&#34;&gt;&lt;/a&gt;13. Preload images&lt;/h3&gt;&lt;p&gt;Usually using JavaScript to preload images is a pretty good approach:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//define the function that preloads a list of images (takes parameters)
+
+jQuery.preloadImages = function()&amp;#123;
+//iterate over the images
+for(var i = 0; i&amp;lt;arguments.length; i++)&amp;#123;
+jQuery(&amp;quot;&amp;lt;img&amp;gt;&amp;quot;).attr(&amp;quot;src&amp;quot;, arguments[i]);
+
+&amp;#125;
+&amp;#125;
+// you can use the preload function like this
+$.preloadImages(&amp;quot;images/logo.png&amp;quot;, &amp;quot;images/logo-face.png&amp;quot;, &amp;quot;images/mission.png&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;14-Test-your-code-thoroughly&#34;&gt;&lt;a href=&#34;#14-Test-your-code-thoroughly&#34; class=&#34;headerlink&#34; title=&#34;14. Test your code thoroughly&#34;&gt;&lt;/a&gt;14. Test your code thoroughly&lt;/h3&gt;&lt;p&gt;jQuery has a unit testing framework called QUnit. Writing tests is easy, and it lets you modify your code with confidence, making sure it still works as expected. Here is how it works:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;//split the tests into several modules.
+module(&amp;quot;Module B&amp;quot;);
+
+test(&amp;quot;some other test&amp;quot;, function() &amp;#123;
+//specify how many assertions need to be added to the test.
+expect(2);
+
+equals( true, false, &amp;quot;failing test&amp;quot; );
+equals( true, true, &amp;quot;passing test&amp;quot; );
+&amp;#125;);
+&lt;/code&gt;&lt;/pre&gt;</content>
+        <category term="jquery" />
+        <category term="jquery插件" />
+        <updated>2015-01-06T15:15:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2015/01/06/14-gai-shan-jquery-dai-ma-ji-qiao/</id>
         <title>14条改善jQuery代码的技巧</title>
-        <link rel="alternate" href="https://erik.xyz/2015/01/06/14-tiao-gai-shan-jquery-dai-ma-de-ji-qiao/"/>
+        <link rel="alternate" href="https://erik.xyz/2015/01/06/14-gai-shan-jquery-dai-ma-ji-qiao/"/>
         <content type="html">&lt;p&gt;jQuery简单易学，但如果你想写出更漂亮更简洁高效的代码，总需要一些技巧。本文就为你总结了&lt;strong&gt;14条改善jQuery代码的技巧&lt;/strong&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;1-测试并提升你的jQuery选择器水平&#34;&gt;&lt;a href=&#34;#1-测试并提升你的jQuery选择器水平&#34; class=&#34;headerlink&#34; title=&#34;1.测试并提升你的jQuery选择器水平&#34;&gt;&lt;/a&gt;1.测试并提升你的jQuery选择器水平&lt;/h3&gt;&lt;p&gt;这个&lt;a href=&#34;http://codylindley.com/jqueryselectors/&#34;&gt;jQuery选择器实验室&lt;/a&gt;非常酷，它能在线免费使用，当然你也能下来到本地离线使用。这个测试页面包含复杂的HTML组合字段，然后你能尝试预定义使用各种jQuery选择器。如果这还不够你也可以自定义选择器。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;2-测试jQuery包装集是否包含某些元素&#34;&gt;&lt;a href=&#34;#2-测试jQuery包装集是否包含某些元素&#34; class=&#34;headerlink&#34; title=&#34;2.测试jQuery包装集是否包含某些元素&#34;&gt;&lt;/a&gt;2.测试jQuery包装集是否包含某些元素&lt;/h3&gt;&lt;p&gt;如果你想测试一下某个jQuery包装集中是否包含某些元素，你首先可以尝试使用验证首个元素是否存在：&lt;/p&gt;
@@ -781,9 +1053,9 @@ equals( true, true, &amp;quot;passing test&amp;quot; );
         <updated>2015-01-06T15:15:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2014/12/30/9-ge-chao-ku-de-jquery-dao-ji-shi-cha-jian-he-jiao-cheng/</id>
+        <id>https://erik.xyz/2014/12/30/9-chao-ku-jquery-ji-shi-cha-jian/</id>
         <title>9个超酷的jQuery倒计时插件和教程</title>
-        <link rel="alternate" href="https://erik.xyz/2014/12/30/9-ge-chao-ku-de-jquery-dao-ji-shi-cha-jian-he-jiao-cheng/"/>
+        <link rel="alternate" href="https://erik.xyz/2014/12/30/9-chao-ku-jquery-ji-shi-cha-jian/"/>
         <content type="html">&lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 倒计时功能在很多项目中都会使用到，比如维修页面、团购网站和下载限时网站等等。通过使用jQuery倒计时插件，你可以简化你的工作量，却同样创造出超酷的jQuery倒计时功能。本文为你介绍10款jQuery倒计时插件。&lt;/p&gt;
 &lt;h3 id=&#34;1-jQuery-Countdown&#34;&gt;&lt;a href=&#34;#1-jQuery-Countdown&#34; class=&#34;headerlink&#34; title=&#34;1. jQuery Countdown&#34;&gt;&lt;/a&gt;1. &lt;a href=&#34;http://keith-wood.name/countdown.html&#34;&gt;jQuery Countdown&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;这个jQuery插件可以让你设置一个div或span元素来显示倒计时，它拥有一堆的选项可以实现你的各种需求。 &lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://paranimage.com/wp-content/uploads/2011/06/image93.jpg&#34; alt=&#34;&#34;&gt; &lt;a href=&#34;http://keith-wood.name/countdown.html&#34;&gt;Demo&lt;/a&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -804,9 +1076,38 @@ equals( true, true, &amp;quot;passing test&amp;quot; );
 &lt;h3 id=&#34;9-Coming-Soon-Pages-WordPress-Plugins&#34;&gt;&lt;a href=&#34;#9-Coming-Soon-Pages-WordPress-Plugins&#34; class=&#34;headerlink&#34; title=&#34;9. Coming Soon Pages WordPress Plugins&#34;&gt;&lt;/a&gt;9. &lt;a href=&#34;http://www.cssjockey.com/freebies/custom-coming-soon-pages-wordpress-plugin&#34;&gt;Coming Soon Pages WordPress Plugins&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;这又是一个WordPress插件，它可以让你为你的WP博客生成一个漂亮的Coming Soon页面，该页面会显示一个jQuery倒计时，以及订阅邮箱之类的。如果你的网站因为某些原因需要暂停访问，而你又希望用户得到提示，你的网站将在 什么时间正常显示，推荐使用它。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://paranimage.com/wp-content/uploads/2011/06/wordpress-plugin-coming-soon-6.jpg&#34; alt=&#34;&#34; title=&#34;Coming Soon Page WordPress插件&#34;&gt;&lt;/p&gt;
 </content>
+        <category term="js" />
         <category term="jquery" />
         <category term="jquery插件" />
+        <updated>2014-12-30T13:47:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/12/30/9-chao-ku-jquery-ji-shi-cha-jian-en/</id>
+        <title>9 Super Cool jQuery Countdown Plugins and Tutorials</title>
+        <link rel="alternate" href="https://erik.xyz/2014/12/30/9-chao-ku-jquery-ji-shi-cha-jian-en/"/>
+        <content type="html">&lt;p&gt;Author: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;Posted by 帕兰&#34;&gt;帕兰&lt;/a&gt; Countdown functionality is used in many projects, such as maintenance pages, group-buying sites, and download time-limited sites, and so on. By using jQuery countdown plugins, you can simplify your workload while still creating super cool jQuery countdown functionality. This article introduces 10 jQuery countdown plugins for you.&lt;/p&gt;
+&lt;h3 id=&#34;1-jQuery-Countdown&#34;&gt;&lt;a href=&#34;#1-jQuery-Countdown&#34; class=&#34;headerlink&#34; title=&#34;1. jQuery Countdown&#34;&gt;&lt;/a&gt;1. &lt;a href=&#34;http://keith-wood.name/countdown.html&#34;&gt;jQuery Countdown&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This jQuery plugin lets you set up a div or span element to display a countdown, and it has a bunch of options that can fulfill your various needs. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://paranimage.com/wp-content/uploads/2011/06/image93.jpg&#34; alt=&#34;&#34;&gt; &lt;a href=&#34;http://keith-wood.name/countdown.html&#34;&gt;Demo&lt;/a&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-jQuery-Countdown-with-Background-and-Overlay&#34;&gt;&lt;a href=&#34;#2-jQuery-Countdown-with-Background-and-Overlay&#34; class=&#34;headerlink&#34; title=&#34;2. jQuery Countdown with Background and Overlay&#34;&gt;&lt;/a&gt;2. &lt;a href=&#34;http://tenseveninteractive.com/content/jquery-countdown-background-and-overlay&#34;&gt;jQuery Countdown with Background and Overlay&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A very cool jQuery countdown script; the download includes JavaScript, image, and CSS files, and so on. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://paranimage.com/wp-content/uploads/2011/06/image94.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;3-littlewebthings-CountDown&#34;&gt;&lt;a href=&#34;#3-littlewebthings-CountDown&#34; class=&#34;headerlink&#34; title=&#34;3. littlewebthings CountDown&#34;&gt;&lt;/a&gt;3. &lt;a href=&#34;http://www.littlewebthings.com/projects/countdown/index.php&#34;&gt;littlewebthings CountDown&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;This is a jQuery countdown plugin that is simple to use. It is very easy to customize the look of the countdown.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://paranimage.com/wp-content/uploads/2011/06/image95.jpg&#34; alt=&#34;&#34;&gt; Demo address&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.littlewebthings.com/projects/countdown/example/&#34;&gt;Dark theme&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.littlewebthings.com/projects/countdown/example/?style=light&#34;&gt;Light theme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-jQuery-Countdown-plugin-that-doesn’t-sucks&#34;&gt;&lt;a href=&#34;#4-jQuery-Countdown-plugin-that-doesn’t-sucks&#34; class=&#34;headerlink&#34; title=&#34;4. jQuery Countdown plugin that doesn’t sucks!&#34;&gt;&lt;/a&gt;4. &lt;a href=&#34;http://code.google.com/p/jquery-countdown/&#34;&gt;jQuery Countdown plugin that doesn’t sucks!&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://paranimage.com/wp-content/uploads/2011/06/image96.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;5-Countdown-timer-jQuery-Plugin&#34;&gt;&lt;a href=&#34;#5-Countdown-timer-jQuery-Plugin&#34; class=&#34;headerlink&#34; title=&#34;5. Countdown timer jQuery Plugin&#34;&gt;&lt;/a&gt;5. &lt;a href=&#34;http://www.webmuse.co.uk/articles/countdown-timer-jquery-plugin/&#34;&gt;Countdown timer jQuery Plugin&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://paranimage.com/wp-content/uploads/2011/06/image97.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;6-jQuery-CountDown-Plugin&#34;&gt;&lt;a href=&#34;#6-jQuery-CountDown-Plugin&#34; class=&#34;headerlink&#34; title=&#34;6. jQuery CountDown Plugin&#34;&gt;&lt;/a&gt;6. &lt;a href=&#34;http://davidwalsh.name/jquery-countdown-plugin&#34;&gt;jQuery CountDown Plugin&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This script lets you create a countdown feature similar to that of the download site rapidshare.com. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://paranimage.com/wp-content/uploads/2011/06/image98.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;7-How-can-I-make-a-jQuery-countdown&#34;&gt;&lt;a href=&#34;#7-How-can-I-make-a-jQuery-countdown&#34; class=&#34;headerlink&#34; title=&#34;7. How can I make a jQuery countdown&#34;&gt;&lt;/a&gt;7. &lt;a href=&#34;http://stackoverflow.com/questions/2064186/how-can-i-make-a-jquery-countdown&#34;&gt;How can I make a jQuery countdown&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This is the simplest possible example of jQuery countdown code. If you are just starting to learn jQuery and want to learn how to write a countdown event yourself, it is a good place to start.&lt;/p&gt;
+&lt;h3 id=&#34;8-jQuery-Countdown-Clock-WordPress-Plugin&#34;&gt;&lt;a href=&#34;#8-jQuery-Countdown-Clock-WordPress-Plugin&#34; class=&#34;headerlink&#34; title=&#34;8. jQuery Countdown Clock (WordPress Plugin)&#34;&gt;&lt;/a&gt;8. &lt;a href=&#34;http://wordpress.org/extend/plugins/jquery-countdown-clock-widget/&#34;&gt;jQuery Countdown Clock (WordPress Plugin)&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This is a WordPress plugin. With it, you can display a jQuery countdown clock in your sidebar.&lt;/p&gt;
+&lt;h3 id=&#34;9-Coming-Soon-Pages-WordPress-Plugins&#34;&gt;&lt;a href=&#34;#9-Coming-Soon-Pages-WordPress-Plugins&#34; class=&#34;headerlink&#34; title=&#34;9. Coming Soon Pages WordPress Plugins&#34;&gt;&lt;/a&gt;9. &lt;a href=&#34;http://www.cssjockey.com/freebies/custom-coming-soon-pages-wordpress-plugin&#34;&gt;Coming Soon Pages WordPress Plugins&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This is yet another WordPress plugin that lets you generate a beautiful Coming Soon page for your WP blog, which displays a jQuery countdown as well as a subscription email field and the like. If your website needs to be temporarily unavailable for some reason and you want users to be notified of when your site will be back up, this is recommended.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://paranimage.com/wp-content/uploads/2011/06/wordpress-plugin-coming-soon-6.jpg&#34; alt=&#34;&#34; title=&#34;Coming Soon Page WordPress plugin&#34;&gt;&lt;/p&gt;
+</content>
         <category term="js" />
+        <category term="jquery" />
+        <category term="jquery插件" />
         <updated>2014-12-30T13:47:00.000Z</updated>
     </entry>
 </feed>

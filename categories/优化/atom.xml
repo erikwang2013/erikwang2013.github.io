@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,236 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2024/05/06/index-asynchrony-landing-en/</id>
+        <title>From 12h to 15 min: Indexes, Async, and No Disk Writes</title>
+        <link rel="alternate" href="https://erik.xyz/2024/05/06/index-asynchrony-landing-en/"/>
+        <content type="html">&lt;p&gt;In development, we often run into a requirement like this: export images from the database to the local machine, then pass them on to someone else.&lt;/p&gt;
+&lt;h4 id=&#34;1-Normally-I-would-do-it-like-this&#34;&gt;&lt;a href=&#34;#1-Normally-I-would-do-it-like-this&#34; class=&#34;headerlink&#34; title=&#34;1. Normally I would do it like this:&#34;&gt;&lt;/a&gt;1. Normally I would do it like this:&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Through an interface or a scheduled task&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Read from an Oracle or MySQL database&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use FileOutputStream to store the Base64-decoded byte[] locally&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Walk the local folder and upload the images to a third-party server over FTP&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/202405100.webp&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The site blew up!&lt;/p&gt;
+&lt;p&gt;The actual data volume was enormous — by the statistics, roughly 400G of images needed exporting.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The feedback from the people on site was that it had already been running for 12 hours and was still going, with no idea when it would finish.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Stop it? Then the earlier work was wasted. Don’t stop it? No idea when it would finish.&lt;/p&gt;
+&lt;p&gt;That won’t do — it’s too slow. A simple task shouldn’t be the death of us, right?&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;@Value(&amp;quot;$&amp;#123;months&amp;#125;&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;private String months;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;@Value(&amp;quot;$&amp;#123;imgDir&amp;#125;&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;private String imgDir;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;@Resource&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;private UserDao userDao;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;@Override&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public void getUserInfoImg() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; try &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // Get the month table to export&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  String[] monthArr = months.split(&amp;quot;,&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  for (int i = 0; i &amp;lt; monthArr.length; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   // Get the images from the month table&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   Map&amp;lt;String, Object&amp;gt; map = new HashMap&amp;lt;String, Object&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   String tableName = &amp;quot;USER_INFO_&amp;quot; + monthArr[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   map.put(&amp;quot;tableName&amp;quot;, tableName);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   map.put(&amp;quot;status&amp;quot;, 1);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   List&amp;lt;UserInfo&amp;gt; userInfoList = userDao.getUserInfoImg(map);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   if (userInfoList == null || userInfoList.size() == 0) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    return;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   for (int j = 0; j &amp;lt; userInfoList.size(); j++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    UserInfo user = userInfoList.get(j);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    String userId = user.getUserId();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    String userName = user.getUserName();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    byte[] content = user.getImgContent;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    // Download the image locally&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    FileUtil.dowmloadImage(imgDir + userId+&amp;quot;-&amp;quot;+userName+&amp;quot;.png&amp;quot;, content);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    // Upload the downloaded image to the third party via FTP&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    FileUtil.uploadByFtp(imgDir);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &amp;#125; catch (Exception e) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  serviceLogger.error(&amp;quot;获取图片异常：&amp;quot;, e);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2-Who-wrote-this-Optimize-it-with-overtime-right-now-—-will-someone-be-held-accountable&#34;&gt;&lt;a href=&#34;#2-Who-wrote-this-Optimize-it-with-overtime-right-now-—-will-someone-be-held-accountable&#34; class=&#34;headerlink&#34; title=&#34;2. Who wrote this? Optimize it with overtime right now — will someone be held accountable?&#34;&gt;&lt;/a&gt;2. Who wrote this? Optimize it with overtime right now — will someone be held accountable?&lt;/h4&gt;&lt;p&gt;After an hour of careful thought, the reasons for the slowness were probably these:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Querying the database&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The program is serial&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;base64 decoding&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Images written to disk&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;FTP upload to the server&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Optimization 1: Add the corresponding index in the database to speed up queries&lt;/p&gt;
+&lt;p&gt;Optimization 2: Export using added indexes + async + multithreading&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/202405101.webp&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Optimization 3: No decoding + no disk writes, hand the images straight to the third party over FTP&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/202405102.webp&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;After using indexes + async + no decoding + no disk writes, exporting and uploading 40G of images went from over 12 hours to 15 minutes. Would you believe it?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Almost the same code, and yet such a huge gap in efficiency.&lt;/p&gt;
+&lt;p&gt;Below is the key code for exporting images without writing them to disk.&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;@Resource&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;private UserAsyncService userAsyncService;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;@Override&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public void getUserInfoImg() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; try &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // Get the month table to export&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  String[] monthArr = months.split(&amp;quot;,&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  for (int i = 0; i &amp;lt; monthArr.length; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   userAsyncService.getUserInfoImgAsync(monthArr[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &amp;#125; catch (Exception e) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  serviceLogger.error(&amp;quot;获取图片异常：&amp;quot;, e);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;@Value(&amp;quot;$&amp;#123;months&amp;#125;&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;private String months;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;@Resource&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;private UserDao userDao;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;@Async(&amp;quot;async-executor&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;@Override&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public void getUserInfoImgAsync(String month) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; try &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  // Get the images from the month table&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  Map&amp;lt;String, Object&amp;gt; map = new HashMap&amp;lt;String, Object&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  String tableName = &amp;quot;USER_INFO_&amp;quot; + month;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  map.put(&amp;quot;tableName&amp;quot;, tableName);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  map.put(&amp;quot;status&amp;quot;, 1);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  List&amp;lt;UserInfo&amp;gt; userInfoList = userDao.getUserInfoImg(map);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  if (userInfoList == null || userInfoList.size() == 0) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   return;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  for (int i = 0; i &amp;lt; userInfoList.size(); i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   UserInfo user = userInfoList.get(i);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   String userId = user.getUserId();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   String userName = user.getUserName();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   byte[] content = user.getImgContent;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   // No disk write, upload directly to the third party via FTP&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   FileUtil.uploadByFtp(content);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &amp;#125; catch (Exception e) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  serviceLogger.error(&amp;quot;获取图片异常：&amp;quot;, e);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;4. Async thread pool utility class&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The job of @Async is to handle tasks asynchronously.&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Adding @Async to a method marks that method as asynchronous;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Adding @Async to a class marks every method in the class as asynchronous;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The class using this annotation must be managed by Spring;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;You need to add the @EnableAsync annotation to the startup class or a configuration class for @Async to take effect;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;When using @Async, if you don’t specify the name of a thread pool — that is, if you don’t define a custom thread pool — @Async has a default one: Spring’s default thread pool, SimpleAsyncTaskExecutor.&lt;/p&gt;
+&lt;p&gt;The default configuration of the default thread pool is as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Default core thread count: 8;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Max thread count: Integet.MAX_VALUE;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The queue uses LinkedBlockingQueue;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Capacity: Integet.MAX_VALUE;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Idle thread keep-alive time: 60s;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Thread pool rejection policy: AbortPolicy;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;As you can tell from the max thread count, under concurrency it will create threads without limit. Good grief.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It can also be reconfigured through yml:&lt;/strong&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;spring:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  task:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    execution:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      pool:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        max-size: 10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        core-size: 5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        keep-alive: 3s&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        queue-capacity: 1000&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        thread-name-prefix: my-executor&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;You can also define your own thread pool. Below is a bit of simple code that implements a custom @Async thread pool.&lt;/p&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;@EnableAsync// supports async operations&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;@Configuration&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public class AsyncTaskConfig &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    /**&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     * com.google.guava&amp;#x27;s thread pool&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     * @return&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    @Bean(&amp;quot;my-executor&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    public Executor firstExecutor() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat(&amp;quot;my-executor&amp;quot;).build();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        // Get the number of CPU processors&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        int curSystemThreads = Runtime.getRuntime().availableProcessors() * 2;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ThreadPoolExecutor threadPool = new ThreadPoolExecutor(curSystemThreads, 100,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                200, TimeUnit.SECONDS,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                new LinkedBlockingQueue&amp;lt;&amp;gt;(), threadFactory);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        threadPool.allowsCoreThreadTimeOut();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        return threadPool;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    /**&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     * Spring thread pool&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     * @return&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    @Bean(&amp;quot;async-executor&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    public Executor asyncExecutor() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        // Core thread count&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        taskExecutor.setCorePoolSize(24);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        // Max threads the pool maintains; threads beyond the core count are only requested once the buffer queue is full&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        taskExecutor.setMaxPoolSize(200);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        // Buffer queue&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        taskExecutor.setQueueCapacity(50);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        // Idle time; threads beyond the core count are destroyed once this idle time is reached&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        taskExecutor.setKeepAliveSeconds(200);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        // Thread name inside the async method&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        taskExecutor.setThreadNamePrefix(&amp;quot;async-executor-&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        /**&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         * When the thread pool task queue is full and the thread count has reached maximumPoolSize, any further task triggers the rejection policy&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         * There are usually four policies:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         * ThreadPoolExecutor.AbortPolicy: discards the task and throws a RejectedExecutionException.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         * ThreadPoolExecutor.DiscardPolicy: also discards the task, but throws no exception.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         * ThreadPoolExecutor.DiscardOldestPolicy: discards the task at the head of the queue, then retries execution (repeating this process)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         * ThreadPoolExecutor.CallerRunsPolicy：retries adding the current task, automatically calling execute() repeatedly until it succeeds&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        taskExecutor.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        taskExecutor.initialize();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        return taskExecutor;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;3-Say-goodbye-to-shoddy-code-—-where-does-optimization-start&#34;&gt;&lt;a href=&#34;#3-Say-goodbye-to-shoddy-code-—-where-does-optimization-start&#34; class=&#34;headerlink&#34; title=&#34;3. Say goodbye to shoddy code — where does optimization start?&#34;&gt;&lt;/a&gt;3. Say goodbye to shoddy code — where does optimization start?&lt;/h4&gt;&lt;p&gt;I think optimization has two broad directions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Business optimization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Code optimization&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;1. Business optimization&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Business optimization has an enormous impact, but it is generally the product manager’s and project manager’s territory, and CRUD programmers rarely get near it.&lt;/p&gt;
+&lt;p&gt;For example, with the image export and upload requirement above, after the tireless efforts of the product manager and project manager, the requirement was dropped. Now that’s optimization on an unprecedented scale.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Code optimization&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Database optimization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Reuse optimization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Parallel optimization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Algorithm optimization&lt;br&gt;&lt;img src=&#34;/img/2024/202405103.webp&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;4-Database-optimization&#34;&gt;&lt;a href=&#34;#4-Database-optimization&#34; class=&#34;headerlink&#34; title=&#34;4. Database optimization&#34;&gt;&lt;/a&gt;4. Database optimization&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;inner join, left join, right join — prefer inner join&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Don’t use too many table joins, and not too many indexes — generally within 5&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The leftmost property of composite indexes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;For delete or update statements, add a limit or delete in batches in a loop&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use explain to analyze your SQL execution plan&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;47 small tips for SQL performance optimization — save them now!&lt;/p&gt;
+&lt;h4 id=&#34;5-Reuse-optimization&#34;&gt;&lt;a href=&#34;#5-Reuse-optimization&#34; class=&#34;headerlink&#34; title=&#34;5. Reuse optimization&#34;&gt;&lt;/a&gt;5. Reuse optimization&lt;/h4&gt;&lt;p&gt;When writing code, everyone generally extracts repetitive code into utility methods, so the next time it’s needed you don’t have to write it again — just call it.&lt;/p&gt;
+&lt;p&gt;That is reuse.&lt;/p&gt;
+&lt;p&gt;Database connection pools, thread pools, and long connections are all reuse techniques as well. These objects are expensive to create and destroy, so reuse brings a noticeable efficiency gain.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Connection pool&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A connection pool is a common way to optimize the reuse of network connections. The pool manages a fixed number of network connections and hands them out to clients when needed; when a client is done, the connection is returned to the pool. This avoids establishing a new connection for every communication, cutting down on connection setup and teardown and improving system performance and efficiency.&lt;/p&gt;
+&lt;p&gt;In Java development, common connection pool technologies include Apache Commons Pool and Druid. When using a connection pool, you need to set the pool size sensibly and tune it according to the actual situation. Too small a pool means connections run out, while too large a pool occupies excessive system resources.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Long connections&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A long connection is another way to optimize the reuse of network connections. A long connection means keeping the network connection open after one communication, so that subsequent communication can keep reusing it. Compared with short connections, long connections reduce connection setup and teardown to a degree and improve the reuse and efficiency of network connections.&lt;/p&gt;
+&lt;p&gt;In Java development, you can implement long connections with Socket programming. After the client establishes a connection, it sets the Socket’s Keep-Alive option to keep the connection alive. This avoids frequently establishing new connections and improves the reuse and efficiency of network connections.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Cache&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Caching is also a fairly common form of reuse; it belongs to data reuse.&lt;/p&gt;
+&lt;p&gt;Caching usually means storing data from the database in memory or Redis — that is, in a relatively fast area — so that the next query can hit the cache directly instead of querying the database. Caching mainly targets read operations.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. Buffer&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Buffering is common for temporarily holding data and then transmitting or writing it in batches. It mostly uses a sequential approach to smooth out the frequent, slow random writes between different devices. Buffering mainly targets write operations.&lt;/p&gt;
+&lt;h4 id=&#34;6-Parallel-optimization&#34;&gt;&lt;a href=&#34;#6-Parallel-optimization&#34; class=&#34;headerlink&#34; title=&#34;6. Parallel optimization&#34;&gt;&lt;/a&gt;6. Parallel optimization&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;1. Asynchronous programming&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The optimization approach above is asynchronous optimization: it makes full use of multi-core processor performance and turns a serial program into a parallel one, greatly improving execution efficiency.&lt;/p&gt;
+&lt;p&gt;Asynchronous programming is a programming model in which task execution does not block the current thread. By submitting tasks to other threads or a thread pool, the current thread can keep doing other work without having to wait for the task to finish.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Characteristics of asynchronous programming&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Non-blocking: executing an async task does not block the calling thread, letting the thread continue with other tasks;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Callback mechanism: async tasks usually register a callback function, which is called for follow-up handling when the task completes;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Improved responsiveness: asynchronous programming can improve a program’s responsiveness, and is especially suited to handling IO-intensive tasks such as network requests and database queries;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Java 8 introduced the CompletableFuture class, which makes asynchronous programming convenient.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Parallel programming&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Parallel programming is a model that uses multiple threads or processors to execute multiple tasks at the same time. It divides a large task into several subtasks and executes them concurrently, thereby speeding up the overall completion time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. Characteristics of parallel programming&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Distributed tasks: parallel programming divides a large task into several independent subtasks, each executing in parallel on a different thread;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;2.. Data sharing: parallel programming must consider data sharing and synchronization between multiple threads to avoid race conditions and inconsistent data;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Improved performance: parallel programming can fully exploit the computing power of multi-core processors to speed up program execution.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;5. How is parallel programming implemented?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Multithreading: Java provides the Thread class and the Runnable interface for creating and managing multiple threads. Parallel programming can be achieved by creating multiple threads that execute tasks concurrently.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Thread pool: Java’s Executor framework provides thread pool support, making it easy to manage and schedule multiple threads. Through a thread pool, thread objects can be reused, cutting the overhead of creating and destroying threads;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Concurrent collections: Java provides a series of concurrent collection classes such as ConcurrentHashMap and ConcurrentLinkedQueue for thread-safe data sharing in parallel programming.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Asynchronous programming and parallel programming are two important ways of handling tasks and improving program performance in Java.&lt;/p&gt;
+&lt;p&gt;Asynchronous programming handles tasks in a non-blocking way, improving the program’s responsiveness, and suits IO-intensive tasks.&lt;/p&gt;
+&lt;p&gt;Parallel programming, by contrast, executes tasks concurrently through multiple threads or processors, fully using computing resources and speeding up execution.&lt;/p&gt;
+&lt;p&gt;In Java, you can use CompletableFuture and callback interfaces for asynchronous programming, and multithreading, thread pools, and concurrent collections for parallel programming. By applying async and parallel programming sensibly, we can handle tasks efficiently and boost program performance in Java.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6. Code example&lt;/strong&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;public static void main(String[] args) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    // Create the thread pool&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ExecutorService executor = Executors.newFixedThreadPool(10);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    // Create a CompletableFuture object using the thread pool&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    CompletableFuture&amp;lt;Integer&amp;gt; future = CompletableFuture.supplyAsync(() -&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        // Some little-known operations&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        return &amp;quot;result&amp;quot;; // return the result&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;, executor);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    // Execute the task using the CompletableFuture object&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    CompletableFuture&amp;lt;String&amp;gt; result = future.thenApply(result -&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        // Some little-known operations&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        return &amp;quot;result&amp;quot;; // return the result&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    // Handle the task result&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    String finalResult = result.join();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    // Shut down the thread pool&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    executor.shutdown();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7. Java 8 parallel&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(1) What is parallel()&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The Stream.parallel() method is a parallel processing approach provided by the Java 8 Stream API. When processing large amounts of data or time-consuming operations, using Stream.parallel() can fully exploit the advantages of multi-core CPUs and improve program performance.&lt;/p&gt;
+&lt;p&gt;The Stream.parallel() method converts a serial stream into a parallel stream. With it, a large amount of data can be divided into subtasks handled in parallel by multiple threads, and the results of the subtasks are finally merged into the final result. Using Stream.parallel() simplifies multithreaded programming and reduces development difficulty.&lt;/p&gt;
+&lt;p&gt;Note that parallel processing may introduce problems such as thread safety, so the choice needs to be made according to the specific situation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(2) A simple demo&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Define a list, then use the parallel() method to turn the collection into a parallel stream, do i++ on each element, and finally use collect(Collectors.toList()) to turn the result into a List collection.&lt;/p&gt;
+&lt;p&gt;Using parallel processing can fully exploit the advantages of multi-core CPUs and speed things up.&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public class StreamTest &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    public static void main(String[] args) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        List&amp;lt;Integer&amp;gt; list = new ArrayList&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        for (int i = 0; i &amp;lt; 10; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            list.add(i);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(list);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        List&amp;lt;Integer&amp;gt; result = list.stream().parallel().map(i -&amp;gt; i++).collect(Collectors.toList());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(result);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;I’ll be damned — what’s going on here?&lt;br&gt;&lt;img src=&#34;/img/2024/202405104.webp&#34; alt=&#34;erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;(3) Pros and cons of parallel()&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;① Pros:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Fully exploits the advantages of multi-core CPUs, improving program performance;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Simplifies multithreaded programming and reduces development difficulty.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;② Cons:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Parallel processing may introduce problems such as thread safety, so the choice needs to be made according to the specific situation;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Parallel processing comes with extra overhead, such as creating and destroying thread pools and thread switching, so for small data volumes and simple calculations serial processing may be faster.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;(4) When should you use parallel()?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In real development, you should weigh factors such as data volume, computational complexity, and hardware.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The data volume is large, say 10,000 elements;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The computational complexity is high, requiring complex calculations per element;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The hardware is beefy, e.g. a multi-core CPU.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;7-Algorithm-optimization&#34;&gt;&lt;a href=&#34;#7-Algorithm-optimization&#34; class=&#34;headerlink&#34; title=&#34;7. Algorithm optimization&#34;&gt;&lt;/a&gt;7. Algorithm optimization&lt;/h4&gt;&lt;p&gt;In the example above, avoiding base64 decoding should be classified as algorithm optimization.&lt;/p&gt;
+&lt;p&gt;A program is made of data structures and algorithms. A high-quality algorithm can significantly improve execution efficiency, reducing runtime and resource consumption. By contrast, an inefficient algorithm can make things run extremely slowly and consume a lot of system resources.&lt;/p&gt;
+&lt;p&gt;Many problems can be solved through algorithm optimization, for example:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1. Loops and recursion&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Loops and recursion are common operations in Java programming, but overly complex business logic often brings layers of nested loops, and unnecessary repeated looping greatly reduces execution efficiency.&lt;/p&gt;
+&lt;p&gt;Recursion is a technique where a function calls itself, similar to a loop. Although recursion can solve many problems, its efficiency leaves something to be desired.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2. Memory management&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Java comes with a garbage collector, so developers don’t need to free memory manually.&lt;/p&gt;
+&lt;p&gt;However, unreasonable memory usage can cause memory leaks and performance degradation. Make sure to release objects that are no longer used in time and avoid creating too many temporary objects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Strings&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I think strings are the most frequently used technique in Java programming — many programmers would define every variable as a string if they could.&lt;/p&gt;
+&lt;p&gt;However, because strings are immutable, every string concatenation or replacement creates a new string. This takes up a lot of memory and processing time.&lt;/p&gt;
+&lt;p&gt;Using StringBuilder for string concatenation can significantly improve performance.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. IO operations&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;IO operations are usually the most performance- and resource-hungry operations. When handling large amounts of IO, be sure to optimize the IO code to improve program performance — for example, the no-disk-write image handling mentioned above completely solves the IO problem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5. Choosing a data structure&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Choosing an appropriate data structure is crucial to a program’s performance.&lt;/p&gt;
+&lt;p&gt;Take Map, the second most used thing in the Java world. The common ones are HashMap, HashTable, and ConcurrentHashMap.&lt;/p&gt;
+&lt;p&gt;HashMap, implemented on an array + linked list, can store null keys and null values, and is not thread-safe;&lt;/p&gt;
+&lt;p&gt;HashTable, implemented on an array + linked list, allows neither null keys nor null values, and is thread-safe; it achieves thread safety by locking the entire HashTable when modifying data, which is inefficient — ConcurrentHashMap made related optimizations;&lt;/p&gt;
+&lt;p&gt;ConcurrentHashMap, implemented on a segmented array + linked list, is thread-safe; by splitting the whole Map into N Segments it provides the same thread safety while improving efficiency N-fold — 16-fold by default.&lt;/p&gt;
+&lt;p&gt;Hashtable’s synchronized applies to the entire hash table, i.e. it locks the whole table each time so a thread has exclusive access. ConcurrentHashMap allows multiple modification operations to proceed concurrently, and the key to that is the lock separation technique.&lt;/p&gt;
+&lt;p&gt;Reprinted from: &lt;a href=&#34;https://mp.weixin.qq.com/s/V2p_p-KoDowlZxLN2by2Sg&#34;&gt;哪吒编程&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="web" />
+        <category term="优化" />
+        <updated>2024-05-06T03:44:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2024/05/06/index-asynchrony-landing/</id>
         <title>增加索引 + 异步 + 不落地后，从 12h 优化到 15 min</title>

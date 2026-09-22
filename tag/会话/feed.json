@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2017/10/20/hui-hua-yuan-li-en/",
+            "url": "https://erik.xyz/2017/10/20/hui-hua-yuan-li-en/",
+            "title": "How Sessions Work",
+            "date_published": "2017-10-20T13:18:00.000Z",
+            "content_html": "<p>Recently our company was hiring new employees, and the principle of sessions came up during an interview — I blanked for a moment. What exactly is the principle of sessions? First, let me explain what a session is. In computer terminology, a session refers to the process of communication between an end user and an interactive system; for example, going from typing in an account and password to enter an operating system all the way to logging out of the operating system is one session. Sessions are more commonly used on networks: TCP’s three-way handshake creates a session, and closing a TCP connection closes the session. In plain language you could explain it like this: you dial your girlfriend’s phone number, your girlfriend answers, and then there’s a round of “dear…” until either side hangs up — that whole process is a session. You tease a puppy and it interacts with you, and that is also a session; if it ignores you, then no session is formed. Isn’t this just communication between the server and the client, or in other words the client authenticating by logging into the server? It can enable communication between servers, communication between a browser and a website… It can be implemented with the traditional cookie and session mechanisms. It can also be implemented with token authentication. This includes: creating a session, authenticating a session, retrieving session information, session duration limits, and destroying a session. In everyday terms, it is the process of a user logging into a website, browsing the website’s data, and then leaving. In fact, it is just a login authentication service.</p>\n",
+            "tags": [
+                "会话",
+                "会话原理"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2017/10/20/hui-hua-yuan-li/",
             "url": "https://erik.xyz/2017/10/20/hui-hua-yuan-li/",
             "title": "会话原理",

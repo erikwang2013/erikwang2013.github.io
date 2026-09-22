@@ -5,6 +5,19 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2019/06/18/kali-zhuo-mian-you-jian-han-hua-en/",
+            "url": "https://erik.xyz/2019/06/18/kali-zhuo-mian-you-jian-han-hua-en/",
+            "title": "Localizing the Kali Desktop Context Menu into Chinese",
+            "date_published": "2019-06-18T04:28:00.000Z",
+            "content_html": "<p>My own laptop had been running kali for a long time and was configured pretty perfectly, with the old project using php5.6. On my own laptop, after all sorts of tinkering, it turned out the system simply doesn’t support php5.6. My perfect system got wrecked, and I stayed up late restoring part of it - php5.6 had to be installed with docker. Recently I quit my job - quit it completely. The problem of the kali right-click menu not showing Chinese still wasn’t solved, so today I’m dealing with it.<span id=\"more\"></span></p>\n<p> According to what the search engines turned up, there are two ways to fix the desktop icons: install desktop-icons-enhanced or the nemo plugin. I’d used nemo before and vaguely remembered solving it with nemo. So today I’ll give it a try.</p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sudo apt-get install nemo</span><br></pre></td></tr></table></figure>\n<p> Install nemo. Then create the desktop file and edit it</p>\n<p> <code>sudo leafpad  ~/.config/autostart/nemo-autostart-with-gnome.desktop</code></p>\n<p>Fill the file with</p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">[Desktop Entry]</span><br><span class=\"line\">Type=Application</span><br><span class=\"line\">Name=Nemo</span><br><span class=\"line\">Comment=Start Nemo desktop at log in</span><br><span class=\"line\">Exec=nemo-desktop</span><br><span class=\"line\">OnlyShowIn=GNOME;</span><br><span class=\"line\">AutostartCondition=GSettings org.nemo.desktop show-desktop-icons</span><br><span class=\"line\">X-GNOME-AutoRestart=true</span><br><span class=\"line\">NoDisplay=true</span><br></pre></td></tr></table></figure>\n<p>Save and exit.<br>Log out, log back in, and you can use the Chinese right-click menu.</p>\n",
+            "tags": [
+                "linux",
+                "kali右键汉化",
+                "kali桌面右键汉化",
+                "kali右键创建文件"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2019/06/18/kali-zhuo-mian-you-jian-han-hua/",
             "url": "https://erik.xyz/2019/06/18/kali-zhuo-mian-you-jian-han-hua/",
             "title": "kali桌面右键汉化",
@@ -18,8 +31,21 @@
             ]
         },
         {
-            "id": "https://erik.xyz/2019/05/30/linux-yun-xing-bu-cun-zai-de-bao-cuo-ming-ling/",
-            "url": "https://erik.xyz/2019/05/30/linux-yun-xing-bu-cun-zai-de-bao-cuo-ming-ling/",
+            "id": "https://erik.xyz/2019/05/30/linux-yun-xing-bu-cun-bao-cuo-ming-en/",
+            "url": "https://erik.xyz/2019/05/30/linux-yun-xing-bu-cun-bao-cuo-ming-en/",
+            "title": "Error When Running a Non-Existent Command on Linux",
+            "date_published": "2019-05-30T04:28:00.000Z",
+            "content_html": "<h6 id=\"Running-a-command-in-Linux-to-see-if-it-exists-and-suddenly-getting-an-error\"><a href=\"#Running-a-command-in-Linux-to-see-if-it-exists-and-suddenly-getting-an-error\" class=\"headerlink\" title=\"Running a command in Linux to see if it exists, and suddenly getting an error\"></a><a href=\"#running-a-command-in-linux-to-see-if-it-exists-and-suddenly-getting-an-error\" title=\"running-a-command-in-linux-to-see-if-it-exists-and-suddenly-getting-an-error\"></a>Running a command in Linux to see if it exists, and suddenly getting an error</h6><p><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-48.png\" alt=\"\"><br><span id=\"more\"></span>&gt; Could not find the database of available applications, run update-command-not-found as root to fix this</p>\n<blockquote>\n<p>Sorry, command-not-found has crashed! Please file a bug report at:<br><a href=\"http://www.debian.org/Bugs/Reporting\">http://www.debian.org/Bugs/Reporting</a><br>Please include the following information with the report:&gt; command-not-found version: 0.3<br>Python version: 3.7.3 candidate 1<br>Distributor ID:    Kali<br>Description:    Kali GNU/Linux Rolling<br>Release:    2019.2<br>Codename:    n/a<br>Exception information:&gt; local variable ‘cnf’ referenced before assignment<br>Traceback (most recent call last):<br>  File “/usr/share/command-not-found/CommandNotFound/util.py”, line 23, in crash_guard<br>    callback()<br>  File “/usr/lib/command-not-found”, line 93, in main<br>    if not cnf.advise(args[0], options.ignore_installed) and not options.no_failure_msg:<br>UnboundLocalError: local variable ‘cnf’ referenced before assignment&gt; According to the error message, you need to run update-commond-not-found as the root user&gt; And then it errored again<br><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-49.png\" alt=\"\">&gt; Following the error message, edit the file that threw the error<br><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-50_1.png\" alt=\"\">&gt; Open the file and you’ll find what’s shown in the image<br><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-51.png\" alt=\"\">&gt; If you get the same error, keep editing the file and add the missing entries the error reports<br><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-49_1.png\" alt=\"\">&gt; Finally, run your own test command and the error is gone<br><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-52.png\" alt=\"\"></p>\n</blockquote>\n",
+            "tags": [
+                "linux",
+                "linux报错",
+                "linux中update-command-not-found",
+                "linux运行命令报错"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2019/05/30/linux-yun-xing-bu-cun-bao-cuo-ming/",
+            "url": "https://erik.xyz/2019/05/30/linux-yun-xing-bu-cun-bao-cuo-ming/",
             "title": "linux运行不存在的命令报错",
             "date_published": "2019-05-30T04:28:00.000Z",
             "content_html": "<h6 id=\"在Linux中运行一个命令尝试是否存在，突然报错了\"><a href=\"#在Linux中运行一个命令尝试是否存在，突然报错了\" class=\"headerlink\" title=\"在Linux中运行一个命令尝试是否存在，突然报错了\"></a><a href=\"#在Linux中运行一个命令尝试是否存在，突然报错了\" title=\"在Linux中运行一个命令尝试是否存在，突然报错了\"></a>在Linux中运行一个命令尝试是否存在，突然报错了</h6><p><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-48.png\" alt=\"\"><br><span id=\"more\"></span>&gt; Could not find the database of available applications, run update-command-not-found as root to fix this</p>\n<blockquote>\n<p>Sorry, command-not-found has crashed! Please file a bug report at:<br><a href=\"http://www.debian.org/Bugs/Reporting\">http://www.debian.org/Bugs/Reporting</a><br>Please include the following information with the report:&gt; command-not-found version: 0.3<br>Python version: 3.7.3 candidate 1<br>Distributor ID:    Kali<br>Description:    Kali GNU/Linux Rolling<br>Release:    2019.2<br>Codename:    n/a<br>Exception information:&gt; local variable ‘cnf’ referenced before assignment<br>Traceback (most recent call last):<br>  File “/usr/share/command-not-found/CommandNotFound/util.py”, line 23, in crash_guard<br>    callback()<br>  File “/usr/lib/command-not-found”, line 93, in main<br>    if not cnf.advise(args[0], options.ignore_installed) and not options.no_failure_msg:<br>UnboundLocalError: local variable ‘cnf’ referenced before assignment&gt; 根据报错提示需要以root用户运行update-commond-not-found&gt; 结果又报错了<br><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-49.png\" alt=\"\">&gt; 根据报错提示执行编辑报错文件<br><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-50_1.png\" alt=\"\">&gt; 打开报错文件找到如图<br><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-51.png\" alt=\"\">&gt; 如有同样报错，继续编辑报错文件，添加所报错的缺失项<br><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-49_1.png\" alt=\"\">&gt; 最后执行自己的测试命令，就不存在错误了<br><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-05-30_09-52.png\" alt=\"\"></p>\n</blockquote>\n",
@@ -31,6 +57,17 @@
             ]
         },
         {
+            "id": "https://erik.xyz/2015/09/05/kali-de-yi-xie-an-zhuang-ming-ling-en/",
+            "url": "https://erik.xyz/2015/09/05/kali-de-yi-xie-an-zhuang-ming-ling-en/",
+            "title": "Some installation commands for Kali",
+            "date_published": "2015-09-05T11:46:00.000Z",
+            "content_html": "<p><a href=\"http://tietuku.com/f23c99b541e6483e\"><img src=\"http://i3.tietuku.com/f23c99b541e6483e.jpg\" alt=\"\"></a><br>apt-get clean &amp;&amp; apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get dist-upgrade -y<br><strong>Update, upgrade, and distribution upgrade</strong> </p>\n<p>apt-get install alsa-utils -y     <strong>Make sure sound is emitted at startup</strong> </p>\n<p>apt-get install unrar unace rar unrar p7zip zip unzip p7zip-full p7zip-rar file-roller -y     <strong>Install File Roller (archive manager)</strong> <span id=\"more\"></span></p>\n<p>apt-get install tor    <strong>Install Tor</strong> </p>\n<p>apt-get install filezilla filezilla-common -y   <strong>Install the Filezilla FTP client</strong></p>\n<p>apt-get install htop nethogs -y     <strong>Install HTOP and NetHogs</strong> </p>\n<p>apt-get install fcitx-table-wbpy ttf-wqy-microhei ttf-wqy-zenhei      <strong>Install the Chinese Squirrel input method</strong> </p>\n<p>apt-get install gtk-recordmydesktop recordmydesktop remmina -y     <strong>Install Recordmydesktop and the Remmina remote desktop client</strong></p>\n<p>apt-get upgrade  upgrades packages that already exist. If you get a “could not lock directory” error, run the following commands </p>\n<p>sudo rm /var/cache/apt/archives/lock</p>\n<p>sudo rm /var/lib/dpkg/lock proxychains msfconsole </p>\n<p>Use the proxychains program to launch msfconsole www.turnkeylinux.org   </p>\n<p>A Linux distribution based on Ubuntu that integrates a number of good open source programs into complete, ready-to-use solutions.</p>\n",
+            "tags": [
+                "kali",
+                "linux"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2015/09/05/kali-de-yi-xie-an-zhuang-ming-ling/",
             "url": "https://erik.xyz/2015/09/05/kali-de-yi-xie-an-zhuang-ming-ling/",
             "title": "kali的一些安装命令",
@@ -39,6 +76,19 @@
             "tags": [
                 "kali",
                 "linux"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2015/03/16/centos-zhong-ruan-jian-an-zhuang-en/",
+            "url": "https://erik.xyz/2015/03/16/centos-zhong-ruan-jian-an-zhuang-en/",
+            "title": "Installing Software on CentOS",
+            "date_published": "2015-03-15T23:45:00.000Z",
+            "content_html": "<p>On CentOS, when we want to install software we generally use yum. Before installing, the first step is to look up the package.<br>For example, to install samba (Windows network neighborhood):<br>Query: rpm -qa | grep -i samba<br><a href=\"http://i2.tietuku.com/a8fca0536413f0a7.png\"><img src=\"http://i2.tietuku.com/a8fca0536413f0a7.png\" alt=\"\"></a><br>Look up the related packages with yum search samba. Once found, install with yum install samba. After installation,<br>to modify the config file you need to find the file path. Run rpm -qc samba samba-common<br><a href=\"http://i2.tietuku.com/17d07aa8d4d9d680.png\"><img src=\"http://i2.tietuku.com/17d07aa8d4d9d680.png\" alt=\"\"></a><br>Next you need to start the software. First look up how it starts with rpm -ql samba | grep ‘/etc’<br><a href=\"http://i2.tietuku.com/27c9d5d59ea177a5.png\"><img src=\"http://i2.tietuku.com/27c9d5d59ea177a5.png\" alt=\"\"></a><br>The part in the red line is the startup path. Next comes the actual startup operation.<br><a href=\"http://i2.tietuku.com/80c44788d7448f95.png\"><img src=\"http://i2.tietuku.com/80c44788d7448f95.png\" alt=\"\"></a><br>To add it to the boot startup, run vi /etc/profile and press the arrow key to go to the bottom.<br>Then press i to insert /etc/init.d/smb start and /etc/init.d/nmb start, then save and exit.<br>Run source /etc/profile to make the change take effect. Reboot and the software will start on boot.</p>\n",
+            "tags": [
+                "centos",
+                "linux",
+                "centos软件",
+                "centos软件安装"
             ]
         },
         {
@@ -55,6 +105,18 @@
             ]
         },
         {
+            "id": "https://erik.xyz/2014/12/10/linux-xia-shi-yong-tar-ming-ling-en/",
+            "url": "https://erik.xyz/2014/12/10/linux-xia-shi-yong-tar-ming-ling-en/",
+            "title": "Using the tar Command on Linux",
+            "date_published": "2014-12-10T14:33:00.000Z",
+            "content_html": "<p>Extraction Syntax: tar [main options + auxiliary options] file or directory. When using this command, the main option is mandatory — it tells tar what to do. The auxiliary options are supporting ones and are optional. </p>\n<p><strong>Main options:</strong></p>\n<p>c Create a new archive file. If the user wants to back up a directory or some files, this is the option to choose. Equivalent to packing.</p>\n<p>x Release files from the archive file. Equivalent to unpacking. </p>\n<p>t List the contents of the archive file, to see which files have already been backed up. </p>\n<p>Note in particular that among the parameters issued, only one of c/x/t can exist! They cannot exist at the same time! Because it’s impossible to compress and decompress at the same time. <span id=\"more\"></span></p>\n<p><strong>Auxiliary options:</strong> </p>\n<p>-z : Does it also have the gzip property? In other words, does it need to compress or decompress with gzip? The usual format is xx.tar.gz or xx. tgz </p>\n<p>-j : Does it also have the bzip2 property? In other words, does it need to compress or decompress with bzip2? The usual format is xx.tar.bz2 </p>\n<p>-v : Show the files during compression! This one is commonly used -f : Use a file name — note that the file name must follow immediately after f! Don’t add any other parameters!</p>\n<p>-p : Use the original file’s original attributes (the attributes will not change according to the user) —exclude FILE: During compression, do not pack FILE!<br><strong>Examples:</strong> Example one:<br>Pack all files under the entire /etc directory into /tmp/etc.tar </p>\n<p>tar -cvf /tmp/etc.tar /etc　　</p>\n<p>&lt;== pack only, no compression!  tar -zcvf /tmp/etc.tar.gz /etc　　</p>\n<p>&lt;== after packing, compress with gzip  tar -jcvf /tmp/etc.tar.bz2 /etc　</p>\n<p>&lt;== after packing, compress with bzip2 </p>\n<h1 id=\"Note-in-particular-that-the-file-name-after-the-parameter-f-is-one-you-choose-yourself-we-customarily-use-tar-to-identify-it\"><a href=\"#Note-in-particular-that-the-file-name-after-the-parameter-f-is-one-you-choose-yourself-we-customarily-use-tar-to-identify-it\" class=\"headerlink\" title=\"Note in particular that the file name after the parameter f is one you choose yourself; we customarily use .tar to identify it.\"></a>Note in particular that the file name after the parameter f is one you choose yourself; we customarily use .tar to identify it.</h1><h1 id=\"If-you-add-the-z-parameter-use-tar-gz-or-tgz-to-represent-the-gzip-compressed-tar-file-～\"><a href=\"#If-you-add-the-z-parameter-use-tar-gz-or-tgz-to-represent-the-gzip-compressed-tar-file-～\" class=\"headerlink\" title=\"If you add the z parameter, use .tar.gz or .tgz to represent the gzip-compressed tar file ～\"></a>If you add the z parameter, use .tar.gz or .tgz to represent the gzip-compressed tar file ～</h1><h1 id=\"If-you-add-the-j-parameter-use-tar-bz2-as-the-extension-～\"><a href=\"#If-you-add-the-j-parameter-use-tar-bz2-as-the-extension-～\" class=\"headerlink\" title=\"If you add the j parameter, use .tar.bz2 as the extension ～\"></a>If you add the j parameter, use .tar.bz2 as the extension ～</h1><h1 id=\"When-the-above-command-is-executed-it-will-display-a-warning-message-“tar-Removing-leading-“-from-member-names”-—-that-is-a-special-setting-regarding-absolute-paths\"><a href=\"#When-the-above-command-is-executed-it-will-display-a-warning-message-“tar-Removing-leading-“-from-member-names”-—-that-is-a-special-setting-regarding-absolute-paths\" class=\"headerlink\" title=\"When the above command is executed, it will display a warning message: # “tar: Removing leading /“ from member names” — that is a special setting regarding absolute paths.\"></a>When the above command is executed, it will display a warning message: # “tar: Removing leading /“ from member names” — that is a special setting regarding absolute paths.</h1><p>Example two:</p>\n<p>Check which files are inside the above /tmp/etc.tar.gz file? </p>\n<p>tar -ztvf /tmp/etc.tar.gz </p>\n<h1 id=\"Since-we-compressed-with-gzip-when-we-want-to-look-at-the-files-inside-that-tar-file\"><a href=\"#Since-we-compressed-with-gzip-when-we-want-to-look-at-the-files-inside-that-tar-file\" class=\"headerlink\" title=\"Since we compressed with gzip, when we want to look at the files inside that tar file,\"></a>Since we compressed with gzip, when we want to look at the files inside that tar file,</h1><h1 id=\"we-have-to-add-the-z-parameter-This-is-very-important\"><a href=\"#we-have-to-add-the-z-parameter-This-is-very-important\" class=\"headerlink\" title=\"we have to add the z parameter! This is very important!\"></a>we have to add the z parameter! This is very important!</h1><p>Example three:</p>\n<p>Extract the /tmp/etc.tar.gz file under /usr/local/src</p>\n<p> cd /usr/local/src</p>\n<p> tar -zxvf /tmp/etc.tar.gz </p>\n<h1 id=\"By-default-we-can-extract-the-archive-anywhere-In-this-example\"><a href=\"#By-default-we-can-extract-the-archive-anywhere-In-this-example\" class=\"headerlink\" title=\"By default, we can extract the archive anywhere! In this example\"></a>By default, we can extract the archive anywhere! In this example</h1><h1 id=\"I-first-change-the-working-directory-to-usr-local-src-and-extract-tmp-etc-tar-gz\"><a href=\"#I-first-change-the-working-directory-to-usr-local-src-and-extract-tmp-etc-tar-gz\" class=\"headerlink\" title=\"I first change the working directory to /usr/local/src and extract /tmp/etc.tar.gz\"></a>I first change the working directory to /usr/local/src and extract /tmp/etc.tar.gz</h1><h1 id=\"then-the-extracted-directory-will-be-usr-local-src-etc-Also-if-you-enter-usr-local-src-etc\"><a href=\"#then-the-extracted-directory-will-be-usr-local-src-etc-Also-if-you-enter-usr-local-src-etc\" class=\"headerlink\" title=\"then the extracted directory will be /usr/local/src/etc. Also, if you enter /usr/local/src/etc\"></a>then the extracted directory will be /usr/local/src/etc. Also, if you enter /usr/local/src/etc</h1><h1 id=\"you-will-find-that-the-file-attributes-under-that-directory-may-differ-from-those-in-etc\"><a href=\"#you-will-find-that-the-file-attributes-under-that-directory-may-differ-from-those-in-etc\" class=\"headerlink\" title=\"you will find that the file attributes under that directory may differ from those in /etc/!\"></a>you will find that the file attributes under that directory may differ from those in /etc/!</h1><p>Example four:</p>\n<p>Under /tmp, I only want to extract etc/passwd from /tmp/etc.tar.gz </p>\n<p> cd /tmp </p>\n<p> tar -zxvf /tmp/etc.tar.gz etc/passwd </p>\n<h1 id=\"I-can-use-tar-ztvf-to-look-at-the-file-names-inside-the-tarfile-and-if-I-want-just-a-single-file\"><a href=\"#I-can-use-tar-ztvf-to-look-at-the-file-names-inside-the-tarfile-and-if-I-want-just-a-single-file\" class=\"headerlink\" title=\"I can use tar -ztvf to look at the file names inside the tarfile, and if I want just a single file,\"></a>I can use tar -ztvf to look at the file names inside the tarfile, and if I want just a single file,</h1><h1 id=\"I-can-issue-it-this-way-Note-The-root-directory-inside-etc-tar-gz-has-been-stripped\"><a href=\"#I-can-issue-it-this-way-Note-The-root-directory-inside-etc-tar-gz-has-been-stripped\" class=\"headerlink\" title=\"I can issue it this way! Note! The root directory / inside etc.tar.gz has been stripped!\"></a>I can issue it this way! Note! The root directory / inside etc.tar.gz has been stripped!</h1><p>Example five:</p>\n<p>I want to back up /home, /etc, but not /home/dmtsai </p>\n<p>tar —exclude /home/dmtsai -zcvf myfile.tar.gz /home/<em> /etc   </em></p>\n<p><em>Also: the C parameter of the tar command</em></p>\n<p><strong>tar -cvf file2.tar /home/usr2/file2</strong></p>\n<p>tar: Removing leading ‘/‘ from members names home/usr2/file2 This command can pack the file /home/usr2/file2 into file2.tar in the current directory. Note that for source files identified by absolute paths, after compressing with the tar command, the file name is packed in together with the absolute path (here home/usr2/ — the root directory ‘/‘ is automatically removed). After extracting with the tar command, you get the following: $ tar -xvf file2.tar $ ls …… …… home …… …… The extracted file name is not file2 as you might imagine, but home/usr2/file2. </p>\n<p><strong>tar -cvf file2.tar -C /home/usr2 file2</strong></p>\n<p>The -C dir parameter in this command changes tar’s working directory from the current directory to /home/usr2, compressing the file2 file (without the absolute path) into file2.tar. Note: the -C dir parameter serves to change the working directory, and it remains in effect until the next -C dir parameter in that command. Using tar’s -C dir parameter, you can likewise extract a file into another directory while in the current directory /home/usr1, for example:</p>\n<p><strong>tar -xvf file2.tar -C /home/usr2</strong> </p>\n<p>Whereas tar cannot do this without the -C dir parameter:</p>\n<p>tar -xvf file2.tar /home/usr2 tar: /tmp/file: Not found in archive tar: Error exit delayed from previous errors</p>\n",
+            "tags": [
+                "php服务器",
+                "centos",
+                "linux"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2014/12/10/linux-xia-shi-yong-tar-ming-ling/",
             "url": "https://erik.xyz/2014/12/10/linux-xia-shi-yong-tar-ming-ling/",
             "title": "linux下使用tar命令",
@@ -64,6 +126,18 @@
                 "php服务器",
                 "centos",
                 "linux"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2014/11/02/linux-xia-chang-yong-wen-jian-jie-ya-en/",
+            "url": "https://erik.xyz/2014/11/02/linux-xia-chang-yong-wen-jian-jie-ya-en/",
+            "title": "Common File Extraction Commands on Linux",
+            "date_published": "2014-11-02T07:59:00.000Z",
+            "content_html": "<p><a href=\"http://www.erik.xyz/lxchywjjy/\"><img src=\"http://i2.tietuku.com/bf358fa2f81bc07d.jpg\" alt=\"木木夕\"></a><br><strong>1. Files with the .a extension:</strong> #tar xv file.a<br><strong>2. Files with the .z extension: </strong> #uncompress file.Z<br><strong>3. Files with the .gz extension: </strong> #gunzip file.gz<br><strong>4. Files with the .bz2 extension: </strong> #bunzip2 file.bz2<br><strong>5. Files with the .tar.Z extension: </strong> #tar xvZf file.tar.Z or #compress -dc file.tar.Z | tar xvf<br><strong>6. Files with the .tar.gz/.tgz extension: </strong> #tar xvzf file.tar.gz or gzip -dc file.tar.gz | tar xvf -<br><strong>7. Files with the .tar.bz2 extension: </strong> #tar xvIf file.tar.bz2 or bzip2 -dc file.tar.bz2 | xvf –<br><strong>8. Files with the .cpio.gz/.cgz extension: </strong> #gzip -dc file.cgz | cpio -div<br><strong>9. Files with the .cpio/cpio extension: </strong> #cpio -div file.cpio or cpio -divc file.cpio<br><strong>10. Installing files with the .rpm extension: </strong> #rpm -i file.rpm<br><strong>11. Extracting files with the .rpm extension: </strong> #rpm2cpio file.rpm | cpio -div<br><strong>12. Installing files with the .deb extension: </strong> #dpkg -i file.deb<br><strong>13. Extracting files with the .deb extension: </strong> #dpkg-deb —fsys-tarfile file.deb | tar xvf - ar p file.deb data.tar.gz | tar xvzf –<br><strong>14. Files with the .zip extension: </strong> #unzip file.zip<br><strong>15. Extracting Winzip-format files under Linux:</strong> if you have the JDK installed you can use the jar command; the unzip command works too.<br><strong>16. Extracting a .tar.gz file directly:</strong> for an xxxx.tar.gz file, use tar with the zxvf options and it will unpack in one go. XXXX is the file name. For example: $tar zxvf xxxx.tar.gz Extraction (and install methods) for all kinds of compressed files<br><strong>17. Extraction by file extension (install methods):</strong> .a ar xv file.a .Z uncompress file.Z .gz gunzip file.gz .bz2 bunzip2 file.bz2 .tar.Z tar xvZf file.tar.Z compress -dc file.tar.Z | tar xvf - .tar.gz/.tgz tar xvzf file.tar.gz gzip -dc file.tar.gz | tar xvf - .tar.bz2 tar xvIf file.tar.bz2 bzip2 -dc file.tar.bz2 | xvf - .cpio.gz/.cgz gzip -dc file.cgz | cpio -div .cpio/cpio cpio -div file.cpio cpio -divc file.cpio .rpm/install rpm -i file.rpm .rpm/extract rpm2cpio file.rpm | cpio -div .deb/install dpkg -i file.deb .deb/exrtact dpkg-deb —fsys-tarfile file.deb | tar xvf - ar p file.deb data.tar.gz | tar xvzf - .zip unzip file.zip bzip2 -d myfile.tar.bz2 | tar xvf </p>\n<p><strong>18.tar xvfz myfile.tar.bz2</strong> x is for extract, v is verbose output, f specifies the file, z is the gz format<br><strong>19.gzip</strong> gzip[options]the name of the file to compress (or decompress) -c writes the output to standard output and keeps the original file. -d decompresses the compressed file. -l for each compressed file, displays the following fields: the size of the compressed file, the size of the uncompressed file, the compression ratio, and the name of the uncompressed file -r recursively searches the specified directory and compresses or decompresses all the files in it. -t tests whether the compressed file is intact. -v for each file compressed or decompressed, displays its filename and compression ratio. -num- adjusts the compression speed with the specified number.<br><strong>20. Examples:</strong> back up every file in the /usr directory, including its subdirectories, with the backup file named usr.tar tar cvf usr.tar /home back up every file in the /usr directory, including its subdirectories, and compress it, with the backup file named usr.tar.gz tar czvf usr.tar.gz /usr compress a group of files, with the suffix tar.gz #tar cvf back.tar /back/ #gzip -q back.tar or #tar cvfz back.tar.gz /back/ unpack a file with the tar.gz suffix. #tar zxvf back.tar.gz #gzip back.tar.gz #tar xvf back.tar</p>\n",
+            "tags": [
+                "centos",
+                "linux",
+                "centos6.5"
             ]
         },
         {
@@ -79,8 +153,20 @@
             ]
         },
         {
-            "id": "https://erik.xyz/2014/10/31/centos6-5-ben-di-an-zhuang-shi-pin-bo-fang-qi/",
-            "url": "https://erik.xyz/2014/10/31/centos6-5-ben-di-an-zhuang-shi-pin-bo-fang-qi/",
+            "id": "https://erik.xyz/2014/10/31/centos6-5-ben-di-an-zhuang-shi-pin-en/",
+            "url": "https://erik.xyz/2014/10/31/centos6-5-ben-di-an-zhuang-shi-pin-en/",
+            "title": "Installing a Video Player Locally on CentOS 6.5",
+            "date_published": "2014-10-31T09:57:00.000Z",
+            "content_html": "<p><a href=\"http://www.erik.xyz/ctspbf/\"><img src=\"http://i2.tietuku.com/706b2fbb5793484a.jpg\" alt=\"木木夕\"></a> The frustrating thing about installing CentOS 6.5 is that the built-in player doesn’t support a lot of videos (you know what I mean). So what to do?? The old routine: Baidu first, then Google… Most of the folks on Baidu use mplayer, so I’ll just follow the crowd. First download MPlayer-1.1.tar.gz and yasm-1.2.0.tar.gz. mplayer <a href=\"http://download.csdn.net/detail/w15875510692/7708613\">http://download.csdn.net/detail/w15875510692/7708613</a> yasm <a href=\"http://download.csdn.net/detail/w15875510692/7708623\">http://download.csdn.net/detail/w15875510692/7708623</a> Unzip and install yasm first, then install mplayer with ./configure —enable-gui, then make &amp;&amp; make install. Now the long wait. Once installed: cd /usar/share/mplayer/skins cp Blue /usr/local/share/mplayer/skins/ -r cd /usr/local/share/mplayer/skins/ mv Blue/ default modprobe snd_pcm_oss Type gmplayer to open the player.</p>\n",
+            "tags": [
+                "php服务器",
+                "centos",
+                "linux"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2014/10/31/centos6-5-ben-di-an-zhuang-shi-pin/",
+            "url": "https://erik.xyz/2014/10/31/centos6-5-ben-di-an-zhuang-shi-pin/",
             "title": "centos6.5本地安装视频播放器",
             "date_published": "2014-10-31T09:57:00.000Z",
             "content_html": "<p><a href=\"http://www.erik.xyz/ctspbf/\"><img src=\"http://i2.tietuku.com/706b2fbb5793484a.jpg\" alt=\"木木夕\"></a> 安装来centos6.5很郁闷的是自带的播放器好多视频不支持（你懂的哦）。怎么办呢？？ 老规矩先度娘，后谷歌。。。 度娘的伙伴们大部分都是mplayer那我也随众人吧 首先下载文件MPlayer-1.1.tar.gz和yasm-1.2.0.tar.gz mplayer <a href=\"http://download.csdn.net/detail/w15875510692/7708613\">http://download.csdn.net/detail/w15875510692/7708613</a> yasm <a href=\"http://download.csdn.net/detail/w15875510692/7708623\">http://download.csdn.net/detail/w15875510692/7708623</a> 解压先安装yasm 再安装mplayer ./configure —enable-gui 之后 make &amp;&amp; make install 漫长的等待吧 安装完成后 cd /usar/share/mplayer/skins cp Blue /usr/local/share/mplayer/skins/ -r cd /usr/local/share/mplayer/skins/ mv Blue/ default modprobe snd_pcm_oss 输入gmplayer打开播放器</p>\n",
@@ -91,8 +177,20 @@
             ]
         },
         {
-            "id": "https://erik.xyz/2014/10/30/linux-xi-tong-fang-wen-windows-xi-tong-de-ying-pan-ntfs-ying-pan/",
-            "url": "https://erik.xyz/2014/10/30/linux-xi-tong-fang-wen-windows-xi-tong-de-ying-pan-ntfs-ying-pan/",
+            "id": "https://erik.xyz/2014/10/30/linux-fang-wen-windows-ntfs-ying-pan-en/",
+            "url": "https://erik.xyz/2014/10/30/linux-fang-wen-windows-ntfs-ying-pan-en/",
+            "title": "Accessing a Windows NTFS Drive from Linux",
+            "date_published": "2014-10-30T02:14:00.000Z",
+            "content_html": "<p><a href=\"http://www.erik.xyz/lwnygpan/\"><img src=\"http://i2.tietuku.com/5f7e22bbaa82f3ff.jpg\" alt=\"Mumuxi image\"></a> What’s described here is mounting an NTFS drive with NTFS-3G. First, make sure your Linux system already has GCC installed, otherwise the source package can’t be compiled.<br>Enter the command   yum -y install gcc<br>Create the www directory under mnt<br><span id=\"more\"></span><br>Step two, download the NTFS-3G dependency software. FUSE download address <a href=\"http://sourceforge.net/projects/fuse/files/fuse-2.X/2.9.0/fuse-2.9.0.tar.gz/download\">http://sourceforge.net/projects/fuse/files/fuse-2.X/2.9.0/fuse-2.9.0.tar.gz/download</a>   you can pick the version yourself<br>Installation<br>1, Unpack command       tar -xvzf fuse-2.9.0.tar.gz<br>2, Copy    cd fuse-2.9.0<br>3, Install   ./configure &amp;&amp; make &amp;&amp; make install</p>\n<p>Step three, install the NTFS-3G driver. Download address <a href=\"http://tuxera.com/opensource/ntfs-3g\\_ntfsprogs-2014.2.15.tgz\">http://tuxera.com/opensource/ntfs-3g\\_ntfsprogs-2014.2.15.tgz</a> tar -xvzf ntfs-3g_ntfsprogs-2014.2.15.tgz cd ntfs-3g_ntfsprogs-2014.2.15<br>./configure &amp;&amp; make &amp;&amp; make install<br>Step four, mount the NTFS-format drive mount -t ntfs-3g /dev/sda1 /mnt/www<br>Auto-mount: fdisk -l gives you the drive information; generally sda1 is the C drive and so on, sdb1 is a removable drive. vi /etc/fstab and append at the end /dev/sda6 /mnt/www/d ntfs-3g defaults,umask=000 0 0 /dev/sda5 /mnt/www/d ntfs-3g defaults,umask=000 0 0 /dev/sdb6 /mnt/www/d ntfs-3g defaults,umask=000 0 0</p>\n",
+            "tags": [
+                "php服务器",
+                "centos",
+                "linux"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2014/10/30/linux-fang-wen-windows-ntfs-ying-pan/",
+            "url": "https://erik.xyz/2014/10/30/linux-fang-wen-windows-ntfs-ying-pan/",
             "title": "linux系统访问windows系统的硬盘ntfs硬盘",
             "date_published": "2014-10-30T02:14:00.000Z",
             "content_html": "<p><a href=\"http://www.erik.xyz/lwnygpan/\"><img src=\"http://i2.tietuku.com/5f7e22bbaa82f3ff.jpg\" alt=\"木木夕图片\"></a> 这边介绍的是NTFS-3G挂载ntfs硬盘 首先，确认你的linux系统是否已经安装GCC不然源码包没法编译的<br>输入命令行   yum -y install gcc<br>创建位于mnt文件下的www文件<br><span id=\"more\"></span><br>第二步，下载NTFS-3G依赖软件。FUSE下载地址 <a href=\"http://sourceforge.net/projects/fuse/files/fuse-2.X/2.9.0/fuse-2.9.0.tar.gz/download\">http://sourceforge.net/projects/fuse/files/fuse-2.X/2.9.0/fuse-2.9.0.tar.gz/download</a>   版本可以自己选<br>安装<br>1，解压命令       tar -xvzf fuse-2.9.0.tar.gz<br>2，复制    cd fuse-2.9.0<br>3，安装   ./configure &amp;&amp; make &amp;&amp; make install </p>\n<p>第三部，安装NTFS-3G驱动。下载地址 <a href=\"http://tuxera.com/opensource/ntfs-3g\\_ntfsprogs-2014.2.15.tgz\">http://tuxera.com/opensource/ntfs-3g\\_ntfsprogs-2014.2.15.tgz</a> tar -xvzf ntfs-3g_ntfsprogs-2014.2.15.tgz cd ntfs-3g_ntfsprogs-2014.2.15<br>./configure &amp;&amp; make &amp;&amp; make install<br>第四部，挂载ntfs格式硬盘 mount -t ntfs-3g /dev/sda1 /mnt/www<br>自动挂载 fdisk -l 可获得硬盘信息 一般sda1是c盘依次类推， sdb1是移动硬盘 vi /etc/fstab 在最后面添加 /dev/sda6 /mnt/www/d ntfs-3g defaults,umask=000 0 0 /dev/sda5 /mnt/www/d ntfs-3g defaults,umask=000 0 0 /dev/sdb6 /mnt/www/d ntfs-3g defaults,umask=000 0 0</p>\n",
@@ -100,6 +198,18 @@
                 "php服务器",
                 "centos",
                 "linux"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2014/10/29/yum-du-li-an-zhuang-lnmp-huan-jing-en/",
+            "url": "https://erik.xyz/2014/10/29/yum-du-li-an-zhuang-lnmp-huan-jing-en/",
+            "title": "Installing an LNMP Environment Standalone with yum",
+            "date_published": "2014-10-29T03:24:00.000Z",
+            "content_html": "<p>How do you install an LNMP environment conveniently? I did some looking around, and I really did find a way.</p>\n<ul>\n<li>First run yum install wget    // download the wget tool </li>\n<li>Then run wget <a href=\"http://www.atomicorp.com/installers/atomic\">http://www.atomicorp.com/installers/atomic</a> // download the atomic repo </li>\n<li>sh ./atomic   // install </li>\n<li>yum check-update  // update<span id=\"more\"></span></li>\n<li>yum -y install ntp make openssl openssl-devel pcre pcre-devel libpng libpng-devel libjpeg-6b - - libjpeg-devel-6b freetype freetype-devel gd gd-devel zlib zlib-devel gcc gcc-c++ libXpm libXpm-devel ncurses ncurses-devel libmcrypt libmcrypt-devel libxml2 libxml2-devel imake autoconf automake screen sysstat compat-libstdc++-33 curl curl-devel // install development packages and files</li>\n<li>yum install nginx    // install</li>\n<li>nginx service nginx start   // start</li>\n<li>nginx chkconfig —levels 235 nginx on   // set it to start at boot for runlevels 2, 3, and 5 </li>\n<li>yum install mysql mysql-server mysql-devel   // install</li>\n<li>mysql service mysqld start        // start</li>\n<li>mysql chkconfig —levels 235 mysqld on mysqladmin -u root password “123456” // set a password for the root user - service mysqld restart // restart mysql </li>\n<li>Install php: yum install php lighttpd-fastcgi php-cli php-mysql php-gd php-imap php-ldap php-odbc php-pear php-xml php-xmlrpc php-mbstring php-mcrypt php-mssql php-snmp php-soap php-tidy php-common php-devel php-fpm // install php and the required components so PHP supports MySQL and FastCGI mode </li>\n<li>service php-fpm start chkconfig —levels 235 php-fpm on Configure nginx to support php </li>\n<li>mv /etc/nginx/nginx.conf /etc/nginx/nginx.confbak // rename the config file to a backup file</li>\n<li>cp /etc/nginx/nginx.conf.default /etc/nginx/nginx.conf // since the original config file has to be written by hand, you can use the default config file as the config file // modify the nginx config file to add fastcgi support </li>\n<li>vi /etc/nginx/nginx.conf index index.php index.html index.htm; // add index.php <figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">location ~ \\\\.php$ &#123; </span><br><span class=\"line\">root           /usr/share/nginx/html; </span><br><span class=\"line\">fastcgi\\_pass   127.0.0.1:9000; </span><br><span class=\"line\">fastcgi\\_index  index.php;</span><br><span class=\"line\">fastcgi\\_param  SCRIPT\\_FILENAME  /usr/share/nginx/html$fastcgi\\_script\\_name; </span><br><span class=\"line\">include        fastcgi\\_params;</span><br><span class=\"line\">&#125; </span><br></pre></td></tr></table></figure>\n// uncomment the code above, and change it to the nginx default path Configure php<br>// edit the php.ini file, add cgi.fix_pathinfo = 1 at the end of the file vi /etc/php.ini<br>Restart nginx<br>php-fpm service nginx restart service php-fpm restart </li>\n</ul>\n<p>Create the info.php file vi /usr/share/nginx/html/info.php</p>\n<p>&lt;?php phpinfo(); ?&gt; </p>\n<p>Enter 127.0.01 in the browser and it shows <a href=\"http://i2.tietuku.com/fe584e1cf5db4f2b.png\"><img src=\"http://i2.tietuku.com/fe584e1cf5db4f2b.png\" alt=\"木木夕互联网\"></a></p>\n",
+            "tags": [
+                "centos",
+                "linux",
+                "memcache"
             ]
         },
         {
@@ -115,6 +225,17 @@
             ]
         },
         {
+            "id": "https://erik.xyz/2014/10/29/centos6-5-an-zhuang-wine-en/",
+            "url": "https://erik.xyz/2014/10/29/centos6-5-an-zhuang-wine-en/",
+            "title": "Installing wine on CentOS 6.5",
+            "date_published": "2014-10-29T03:07:00.000Z",
+            "content_html": "<p>I had originally installed the vmware virtual machine, but it eats up a lot of memory and gets inconvenient once you have several programs open, and the CentOS software available just isn’t as rich as on a win system. So what to do? I turned to Baidu, and found the solution: install wine to emulate a win system environment, roughly equivalent to installing a plugin on CentOS. First, install a third-party software repository with a fairly rich set of packages — 20,000 or so of them. rpm -ivh <a href=\"http://mirrors.yun-idc.com/epel/6/i386/epel-release-6-8.noarch.rpm\">http://mirrors.yun-idc.com/epel/6/i386/epel-release-6-8.noarch.rpm</a> Because the repository updates its versions, the address or name may change, so if you’re reading this later and can’t download it, go look for it yourself on that site. Next comes yum install wine If this step reports an error, run these 2 commands separately: yum clean all yum makecache Then run yum install wine again In your applications you’ll see a wineglass icon — that’s wine. If you feel the version is too old and want to switch to a newer one, then just uninstall it: rpm -qa |grep wine to check. There are usually 10 wine-related entries, sometimes more — delete them all.</p>\n",
+            "tags": [
+                "centos",
+                "linux"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2014/10/29/centos6-5-an-zhuang-wine/",
             "url": "https://erik.xyz/2014/10/29/centos6-5-an-zhuang-wine/",
             "title": "centos6.5安装wine",
@@ -123,42 +244,6 @@
             "tags": [
                 "centos",
                 "linux"
-            ]
-        },
-        {
-            "id": "https://erik.xyz/2014/10/27/centos-xia-zai-an-zhuang-playonlinux/",
-            "url": "https://erik.xyz/2014/10/27/centos-xia-zai-an-zhuang-playonlinux/",
-            "title": "CentOS下载安装playonlinux",
-            "date_published": "2014-10-27T14:16:00.000Z",
-            "content_html": "<p>wine配置有一段时间了，又发现有些比较有用的第三方扩展软件playonlinux 因为我装得是centos6.5库软件更新比较慢，这playonlinux单独编译太费劲了，就干脆用rpm吧 下载（注意版本会更新，下载不了上网站看看版本） rpm -ivh <a href=\"http://rpm.playonlinux.com/[playonlinux-yum-4-1.noarch.rpm](http://rpm.playonlinux.com/playonlinux-yum-4-1.noarch.rpm\">http://rpm.playonlinux.com/[playonlinux-yum-4-1.noarch.rpm](http://rpm.playonlinux.com/playonlinux-yum-4-1.noarch.rpm</a>) 安装 yum install playonlinux 等待吧，差不多20多个软件 安装好后在应用程序》最后面那一项（游戏中看到playonlinu就是了） 这个是wine第三方应用，很有用，弥补wine的不足，可以安装好多软件</p>\n",
-            "tags": [
-                "centos",
-                "linux"
-            ]
-        },
-        {
-            "id": "https://erik.xyz/2014/10/21/apache-fu-wu-qi-duo-zhan-dian-pei-zhi/",
-            "url": "https://erik.xyz/2014/10/21/apache-fu-wu-qi-duo-zhan-dian-pei-zhi/",
-            "title": "apache服务器多站点配置",
-            "date_published": "2014-10-21T10:24:00.000Z",
-            "content_html": "<p>群里有网友说不知道phpstudy怎配置多站点，其实这个不难，我当初配置的不是集成环境，集成环境和不是集成环境都一样的配置 首先我们要找到apache配置文件 E:\\phpStudy\\Apache\\conf\\httpd.conf 然后打开文件查找httpd-vhosts.conf 于是我们查找到 <a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/20141021175554.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/20141021175554-300x53.png\" alt=\"apache\"></a> <span id=\"more\"></span>去掉前面的# 然后按这个路径找到httpd-vhosts.conf文件并打开 找到这段 # # VirtualHost example: # Almost any Apache directive may go into a VirtualHost container. # The first VirtualHost section is used for all requests that do not # match a ServerName or ServerAlias in any <VirtualHost> block. # 看看前面有 NameVirtualHost <em>:80 如果没有就加上 然后找到 #&lt;VirtualHost </em>:80&gt; #    ServerAdmin webmaster@dummy-host.example.com #    DocumentRoot “/Apache24/docs/dummy-host.example.com” #    ServerName dummy-host.example.com #    ServerAlias www.dummy-host.example.com #    ErrorLog “logs/dummy-host.example.com-error.log” #    CustomLog “logs/dummy-host.example.com-access.log” common #</VirtualHost> #<VirtualHost *:80> #    ServerAdmin webmaster@dummy-host2.example.com #    DocumentRoot “/Apache24/docs/dummy-host2.example.com” #    ServerName dummy-host2.example.com #    ErrorLog “logs/dummy-host2.example.com-error.log” #    CustomLog “logs/dummy-host2.example.com-access.log” common #</VirtualHost> 去掉前面的#后，修改路径和域名 <a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/s20141021181957.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/s20141021181957-300x207.png\" alt=\"虚拟站点配置\"></a> 到此结束，建议最好用独立配置，别用集成环境，集成环境配置的东西太多容易冲突出错，此方法仅限在服务器上运行，本地运行没测试过，目前不清楚。</p>\n",
-            "tags": [
-                "php服务器",
-                "centos",
-                "linux"
-            ]
-        },
-        {
-            "id": "https://erik.xyz/2014/10/07/centos6-5-cao-zuo-xi-tong/",
-            "url": "https://erik.xyz/2014/10/07/centos6-5-cao-zuo-xi-tong/",
-            "title": "CentOs6.5操作系统",
-            "date_published": "2014-10-07T01:54:00.000Z",
-            "content_html": "<p><a href=\"http://www.erik.xyz/wp-content/uploads/2014/10/logo.png\"><img src=\"http://www.erik.xyz/wp-content/uploads/2014/10/logo-300x300.png\" alt=\"logo.png\"></a> CentOS-6.5-x86_64-LiveCD.iso CentOS-6.5-x86_64-LiveDVD.iso CentOS-6.5-x86_64-bin-DVD1.iso （比较全的系统，有大部分软件） CentOS-6.5-x86_64-bin-DVD2.iso  （对上DVD1的补充） 下载：<a href=\"http://yunpan.cn/cgnqyggJJvYaD\">http://yunpan.cn/cgnqyggJJvYaD</a> 提取码 54b2 CentOS-6.5-i386-LiveDVD.iso CentOS-6.5-i386-LiveCD.iso CentOS-6.5-i386-bin-DVD2.iso（对上DVD1的补充） CentOS-6.5-i386-bin-DVD1.iso（比较全的系统，有大部分软件） 下载：<a href=\"http://yunpan.cn/cgnYNATiGayCM\">http://yunpan.cn/cgnYNATiGayCM</a> 提取码 d567</p>\n",
-            "tags": [
-                "centos",
-                "linux",
-                "centos6.5",
-                "linux系统"
             ]
         }
     ]

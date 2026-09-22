@@ -5,6 +5,16 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2021/06/22/open-admin-en/",
+            "url": "https://erik.xyz/2021/06/22/open-admin-en/",
+            "title": "Planning an Open Source Management System",
+            "date_published": "2021-06-22T01:59:00.000Z",
+            "content_html": "<p>Always chasing the perfect system, I developed on and off with laravel and Yii, and finally chose laravel8 to build a management system</p>\n<p><a href=\"https://github.com/erikwang2013/laravel-erik-admin\">laravel-erik-admin</a></p>\n<ul>\n<li><p>Phase 1</p>\n<p>Version expected to be 1.0, mainly a basic management system with admin, roles, permissions and other basic features; backend pages will be provided later</p>\n<span id=\"more\"></span>\n<ul>\n<li>Phase 2</li>\n</ul>\n<p>Version 2.0, mainly fleshing out the branches: branches aimed at business scenarios, such as a regular edition (enterprise management or article management) direction, an e-commerce direction, and so on</p>\n</li>\n</ul>\n<ul>\n<li><p>Phase 3</p>\n<p>Version 3.0, mainly a code review of the features already developed</p>\n</li>\n</ul>\n<ul>\n<li><p>Phase 4</p>\n<p>Version 4.0 and above, improvements for concurrency and big data scenarios</p>\n</li>\n</ul>\n",
+            "tags": [
+                "php管理系统"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2021/06/22/open-admin/",
             "url": "https://erik.xyz/2021/06/22/open-admin/",
             "title": "开源一个管理系统规划",

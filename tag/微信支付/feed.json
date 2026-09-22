@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2017/07/17/php-dui-jie-wei-xin-zhi-fu-wen-ti-en/",
+            "url": "https://erik.xyz/2017/07/17/php-dui-jie-wei-xin-zhi-fu-wen-ti-en/",
+            "title": "Problems integrating WeChat Pay with PHP",
+            "date_published": "2017-07-16T19:04:00.000Z",
+            "content_html": "<p>The official documentation is fairly brief, the demo tutorial basically has no parameter comments, so just read the code and figure it out.<br>Payment Scan-code payment native.php<br>Mode 2</p>\n<p>$input-&gt;SetBody(“test”);  //description </p>\n<p>$input-&gt;SetAttach(“test”); //order id, attachment custom data, which will be returned as-is </p>\n<p>$input-&gt;SetGoods_tag(“test”);  //parameters of the voucher or instant discount feature </p>\n<p>$input-&gt;SetNotify_url（‘url’); //specify the callback address </p>\n<p>$input-&gt;SetProduct_id(‘test’); //merchant order number. If you use Mode 1 you have to go configure the callback address on the WeChat official platform; Mode 2 does not need configuration   <span id=\"more\"></span></p>\n<p>Callback: the official reference given is notify.php, so just define your own callback address based on notify.php. In notify.php, locate the notify() method under WxPay.Api.php //get the notification data//get the notification data </p>\n<p>$xml = $GLOBALS[‘HTTP_RAW_POST_DATA’]; </p>\n<p>But $GLOBALS[‘HTTP_RAW_POST_DATA’];</p>\n<p>no matter what, it just couldn’t get the data — the same was true in a simulated environment. After checking the docs, $GLOBALS[‘HTTP_RAW_POST_DATA’] is actually the same as file_get_contents(‘php://input’). The official version is roughly from around 2014, while my server is PHP 7, so I decisively swapped it out and the data was retrieved normally. Once the callback can retrieve data, you need to verify the signature to ensure security. You can’t just write your own verification scheme — it’s needed right away. </p>\n<p>You can find a clue in the official demo, which contains an already-written signature verification that you can call directly. The rule is still from the notify() method under WxPay.Api.php //if it returns success, then verify the signature//if it returns success, then verify the signature try { $result = WxPayResults::Init($xml); } catch (WxPayException $e){ $msg = $e-&gt;errorMessage(); return false; } As for how to include the files, I won’t explain that — just work through it yourself slowly. When I have time I’ll also try writing a signature verification scheme myself.</p>\n",
+            "tags": [
+                "php对接微信支付",
+                "微信支付",
+                "微信支付回调"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2017/07/17/php-dui-jie-wei-xin-zhi-fu-wen-ti/",
             "url": "https://erik.xyz/2017/07/17/php-dui-jie-wei-xin-zhi-fu-wen-ti/",
             "title": "php对接微信支付问题",

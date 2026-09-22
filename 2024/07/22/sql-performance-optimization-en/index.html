@@ -1,0 +1,2994 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><script>
+      (function () {
+        var m = 'dark';
+        var t = localStorage.getItem('erik-theme');
+        var dark = t ? t === 'dark' : (m === 'auto' ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) : m === 'dark');
+        if (!dark) document.documentElement.classList.add('erik-light');
+      })();
+      /* 语言防闪：先定下 <html lang>，英文模式下把 body 压住，等 i18n.js 换完文案再放出来
+         （i18n.enable 为 false 时不压，免得图标按钮都不显示却还等着 i18n.js 来摘这个类） */
+      (function () {
+        if (false) return;
+        var l;
+        try { l = localStorage.getItem('erik-lang'); } catch (e) {}
+        l = l || 'en' || 'zh-CN';
+        l = /^en/i.test(l) ? 'en' : 'zh-CN';
+        var el = document.documentElement;
+        el.setAttribute('data-lang', l);
+        if (l === 'en') { el.classList.add('lang-loading'); el.lang = 'en'; }
+      })();
+    </script>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="给我一个需求，还你一个项目——别管它是什么。这就是全栈。">
+  <meta name="keywords" content="艾瑞可erik,erik,艾瑞可Erik,艾瑞可,https://erik.xyz,erik.xyz">
+  <meta name="description" content="1. Understand MySQL’s Execution Process First Only once we understand MySQL’s execution process do we know how to optimize SQL.  The client sends a query statement to the server;  The server checks th">
+<meta property="og:type" content="article">
+<meta property="og:title" content="47 Little Tips for SQL Performance Optimization, Bookmark Them Right Away!">
+<meta property="og:url" content="https://erik.xyz/2024/07/22/sql-performance-optimization-en/index.html">
+<meta property="og:site_name" content="艾瑞可erik">
+<meta property="og:description" content="1. Understand MySQL’s Execution Process First Only once we understand MySQL’s execution process do we know how to optimize SQL.  The client sends a query statement to the server;  The server checks th">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://erik.xyz/img/2024/202405201.png">
+<meta property="article:published_time" content="2024-07-22T04:44:34.000Z">
+<meta property="article:modified_time" content="2026-09-20T18:21:02.635Z">
+<meta property="article:author" content="艾瑞可erik">
+<meta property="article:tag" content="mysql">
+<meta property="article:tag" content="sql">
+<meta property="article:tag" content="sql优化">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://erik.xyz/img/2024/202405201.png">
+  
+    <link rel="alternate" href="/rss.xml" title="艾瑞可erik" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link rel="alternate" hreflang="en" href="https://erik.xyz/2024/07/22/sql-performance-optimization-en/">
+  
+    <link rel="alternate" hreflang="zh-CN" href="https://erik.xyz/2024/07/22/sql-performance-optimization/">
+  
+  <title>47 Little Tips for SQL Performance Optimization, Bookmark Them Right Away! | 艾瑞可erik</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css?v=20260921e">
+<link rel="stylesheet" type="text/css" href="/css/effects.css?v=20260921e">
+<link rel="stylesheet" type="text/css" href="/css/mobile.css?v=20260921e">
+
+    
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"艾瑞可erik","url":"https://erik.xyz/","description":"给我一个需求，还你一个项目——别管它是什么。这就是全栈。"},{"@type":"Article","headline":"47 Little Tips for SQL Performance Optimization, Bookmark Them Right Away!","url":"https://erik.xyz/2024/07/22/sql-performance-optimization-en/","datePublished":"2024-07-22","dateModified":"2026-09-21","author":{"@type":"Person","name":"艾瑞可erik"},"publisher":{"@type":"Organization","name":"艾瑞可erik"},"image":"https://erik.xyz/img/2024/202405201.png","mainEntityOfPage":"https://erik.xyz/2024/07/22/sql-performance-optimization-en/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://erik.xyz/"},{"@type":"ListItem","position":2,"name":"mysql","item":"https://erik.xyz/categories/mysql/"},{"@type":"ListItem","position":3,"name":"sql","item":"https://erik.xyz/categories/mysql/sql/"},{"@type":"ListItem","position":4,"name":"转载","item":"https://erik.xyz/categories/mysql/sql/转载/"},{"@type":"ListItem","position":5,"name":"47 Little Tips for SQL Performance Optimization, Bookmark Them Right Away!","item":"https://erik.xyz/2024/07/22/sql-performance-optimization-en/"}]}]}
+    </script>
+    
+    
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script>
+      if (location.protocol === 'https:' && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').catch(function () {});
+      }
+    </script>
+    
+<meta name="generator" content="Hexo 6.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+<body class="erik-dark sidebar-left">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="scroll-progress" id="scroll-progress"></div>
+  <canvas id="bg3d" aria-hidden="true"></canvas>
+  <div class="bg-fallback" id="bgFallback" aria-hidden="true"></div>
+
+  <div class="page-wrap">
+    <header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a href="/" class="brand-logo" title="艾瑞可erik">
+        <span class="logo-orbit">
+          <img src="/img/header.jpg" alt="艾瑞可erik">
+          <span class="orbit-ring"></span>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name gradient-text">艾瑞可erik</span>
+          
+            <span class="brand-subtitle"><span data-i18n="艾瑞可erik">艾瑞可erik</span> 🌟</span>
+          
+        </span>
+      </a>
+    </div>
+    <nav class="header-menu">
+      <ul>
+        
+          <li><a href="/"  data-i18n="主页">主页</a></li>
+        
+          <li><a href="/archives"  data-i18n="归档">归档</a></li>
+        
+          <li><a href="/categories"  data-i18n="分类">分类</a></li>
+        
+          <li><a href="/open-page/index.html"  target="_blank" rel="noopener"  data-i18n="开源">开源</a></li>
+        
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://visual.erik.xyz" target="_blank"  data-i18n="算法">算法</a></li>
+        
+      </ul>
+      
+      <button type="button" id="search-toggle" class="header-icon" aria-label="搜索" title="搜索" data-i18n="nav.search" data-i18n-attr="aria-label,title">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      </button>
+      
+      
+      <button type="button" id="theme-toggle" class="header-icon" aria-label="切换主题" title="切换主题" data-i18n="nav.theme" data-i18n-attr="aria-label,title">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+      
+      
+      <button type="button" id="lang-toggle" class="header-icon lang-toggle" aria-label="切换语言" title="切换语言" data-i18n="nav.lang" data-i18n-attr="aria-label,title">
+        <span class="lang-opt" data-lang="zh-CN">中</span><span class="lang-sep" aria-hidden="true">/</span><span class="lang-opt" data-lang="en">EN</span>
+      </button>
+      
+    </nav>
+    <div class="header-right">
+      <div class="social-wrap">
+        <button class="social-toggle" id="social-toggle" aria-label="社交链接" title="社交链接" data-i18n="nav.social" data-i18n-attr="aria-label,title"><span data-i18n="nav.socialText">🌐 社交</span> <span class="social-toggle-arrow">▼</span></button>
+        <div class="social-panel glass" id="social-panel">
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://github.com/erikwang2013" target="_blank" title="github" data-i18n="github" data-i18n-attr="title">
+              <span class="social-emoji">🐙</span>
+              <span class="social-name" data-i18n="github">github</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://blog.csdn.net/erik_aaron" target="_blank" title="csdn" data-i18n="csdn" data-i18n-attr="title">
+              <span class="social-emoji">💻</span>
+              <span class="social-name" data-i18n="csdn">csdn</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://wpa.qq.com/msgrd?v=3&amp;uin=407978933&amp;site=qq&amp;menu=yes" target="_blank" title="qq" data-i18n="qq" data-i18n-attr="title">
+              <span class="social-emoji">🐧</span>
+              <span class="social-name" data-i18n="qq">qq</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://500px.me/erik" target="_blank" title="500px" data-i18n="500px" data-i18n-attr="title">
+              <span class="social-emoji">📷</span>
+              <span class="social-name" data-i18n="500px">500px</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://erik.tuchong.com" target="_blank" title="tuchong" data-i18n="tuchong" data-i18n-attr="title">
+              <span class="social-emoji">🐛</span>
+              <span class="social-name" data-i18n="tuchong">tuchong</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://ycg.qq.com/person/works/2415382" target="_blank" title="web" data-i18n="web" data-i18n-attr="title">
+              <span class="social-emoji">🎨</span>
+              <span class="social-name" data-i18n="web">web</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener" href="/rss.xml" title="rss" data-i18n="rss" data-i18n-attr="title">
+              <span class="social-emoji">📡</span>
+              <span class="social-name" data-i18n="rss">rss</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener" href="mailto:erik@erik.xyz" title="mail" data-i18n="mail" data-i18n-attr="title">
+              <span class="social-emoji">✉️</span>
+              <span class="social-name" data-i18n="mail">mail</span>
+            </a>
+          
+        </div>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="菜单" title="菜单" data-i18n="nav.menu" data-i18n-attr="aria-label,title">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <div id="wrapper" class="body-wrap">
+      <div class="layout">
+  <main class="layout-main">
+    <section class="page-body reveal">
+      
+<article id="post-sql-performance-optimization-en" class="article card " data-post-lang="" data-emoji="🐬" data-hue="147" itemscope itemprop="blogPost">
+  <div class="card-emoji" aria-hidden="true">🐬</div>
+  <div class="card-glow" aria-hidden="true"></div>
+  <div class="article-inner">
+    <header class="article-header">
+      <div class="article-title-row">
+        
+        
+  
+    <h1 class="article-title gradient-text" itemprop="name">47 Little Tips for SQL Performance Optimization, Bookmark Them Right Away!</h1>
+  
+
+
+      </div>
+      <div class="article-meta">
+        <span class="article-date article-date">
+  <time datetime="2024-07-22T04:44:34.000Z" itemprop="datePublished">📅 2024-07-22</time>
+</span>
+
+        
+  <span class="article-tags">
+    
+      <a href="/tags/mysql/" class="tag-chip color1">🏷️ mysql</a>
+    
+      <a href="/tags/sql/" class="tag-chip color4">🏷️ sql</a>
+    
+      <a href="/tags/sql%E4%BC%98%E5%8C%96/" class="tag-chip color1">🏷️ <span data-lang-text="zh">sql优化</span><span data-lang-text="en">SQL Optimization</span></a>
+    
+  </span>
+
+
+        
+  <span class="article-categories">
+    
+      <a href="/categories/mysql/" class="cat-chip">📂 mysql</a>
+    
+      <a href="/categories/mysql/sql/" class="cat-chip">📂 sql</a>
+    
+      <a href="/categories/mysql/sql/%E8%BD%AC%E8%BD%BD/" class="cat-chip">📂 转载</a>
+    
+  </span>
+
+
+        
+          <span class="article-word">
+  <span data-i18n="post.words" data-i18n-args="4.9k">📝 4.9k 字</span>
+  <span class="dot">·</span>
+  <span data-i18n="post.minutes" data-i18n-args="30">⏱️ 30 分钟</span>
+</span>
+
+        
+        
+        <span id="busuanzi_container_page_pv"><span data-i18n="post.readA">阅读</span> <b id="busuanzi_value_page_pv">0</b> <span data-i18n="post.readB">次 👀</span></span>
+        
+      </div>
+    </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>1. Understand MySQL’s Execution Process First</strong></p>
+<p>Only once we understand MySQL’s execution process do we know how to optimize SQL.</p>
+<ol>
+<li><p>The client sends a query statement to the server;</p>
+</li>
+<li><p>The server checks the query cache first; if the cache is hit, the data stored in the cache is returned immediately;</p>
+</li>
+<li><p>If the cache is not hit, MySQL parses the SQL statement by keyword and generates a corresponding parse tree; the MySQL parser validates and parses it using MySQL syntax. For example, it verifies whether a wrong keyword was used, or whether keywords are used correctly;</p>
+</li>
+<li><p>Preprocessing checks whether the parse tree is reasonable according to certain MySQL rules, such as checking whether tables and columns exist; it also resolves names and aliases, and then the preprocessor verifies permissions;</p>
+</li>
+<li><p>Based on the execution plan, it queries the execution engine, which calls the API to call the storage engine to query the data;</p>
+</li>
+<li><p>The result is returned to the client and cached;</p>
+<span id="more"></span>
+</li>
+</ol>
+<p><img src="/img/2024/202405201.png" alt="erik.xyz"></p>
+<p><strong>2. Common Database Conventions</strong></p>
+<ol>
+<li><p>All database object names must use lowercase letters and be separated by underscores;</p>
+</li>
+<li><p>All database object names are forbidden from using MySQL reserved keywords;</p>
+</li>
+<li><p>Database object names should be self-explanatory, and should not exceed 32 characters;</p>
+</li>
+<li><p>Temporary tables must be prefixed with tmp<em> and suffixed with the date; backup tables must be prefixed with bak</em> and suffixed with the date (timestamp);</p>
+</li>
+<li><p>The column names and column types storing the same data must be consistent across all tables;</p>
+</li>
+</ol>
+<p><strong>3. All Tables Must Use the InnoDB Storage Engine</strong></p>
+<p>Unless there are special requirements (that is, functionality InnoDB cannot satisfy, such as column storage or spatial data storage), all tables must use the InnoDB storage engine (MySQL before 5.5 used MyISAM by default, and from 5.6 onward the default is InnoDB).</p>
+<p>InnoDB supports transactions and row-level locking, offers better recoverability, and performs better under high concurrency.</p>
+<p><strong>4. Every InnoDB Table Must Have a Primary Key</strong></p>
+<p>InnoDB is an index-organized table: the logical order in which data is stored is the same as the order of the index. Each table can have multiple indexes, but the table’s storage order can only be one.</p>
+<p>InnoDB organizes tables according to the order of the primary key index.</p>
+<ol>
+<li><p>Do not use frequently updated columns as the primary key, and do not use multi-column primary keys;</p>
+</li>
+<li><p>Do not use UUID, MD5, HASH, or string columns as the primary key (they cannot guarantee that data grows in order);</p>
+</li>
+<li><p>It is recommended to use an auto-increment ID as the primary key;</p>
+</li>
+</ol>
+<p><strong>5. Use UTF8 Uniformly as the Character Set for Databases and Tables</strong></p>
+<p>Compatibility is better, and a uniform character set avoids garbled text caused by character set conversion. Comparing different character sets requires conversion first, which invalidates indexes. If the database needs to store emoji, the character set must be utf8mb4.</p>
+<p><strong>6. For Query SQL, Try Not to Use select * — Use Specific Fields Instead</strong></p>
+<p>The drawbacks of select *:</p>
+<ol>
+<li><p>It adds a lot of unnecessary overhead, such as CPU, IO, memory, and network bandwidth;</p>
+</li>
+<li><p>It reduces the possibility of using a covering index;</p>
+</li>
+<li><p>It increases the possibility of having to look up rows in the table again;</p>
+</li>
+<li><p>When the table structure changes, the front end has to change as well;</p>
+</li>
+<li><p>Query efficiency is low;</p>
+</li>
+</ol>
+<p><strong>7. Avoid Using or to Join Conditions in the where Clause</strong></p>
+<ol>
+<li><p>Using or may invalidate the index, resulting in a full table scan;</p>
+</li>
+<li><p>For the case of or without an index on salary, suppose it uses the id index, but when it reaches the salary condition it still has to do a full table scan;</p>
+</li>
+<li><p>In other words, the whole process takes three steps: full table scan + index scan + merge. If it did a full table scan from the start, a single scan would settle it;</p>
+</li>
+<li><p>Although MySQL has an optimizer, when it encounters an or condition, the index may still be abandoned out of consideration for efficiency and cost;</p>
+</li>
+</ol>
+<p><strong>8. Prefer Numeric Types Over String Types</strong></p>
+<ol>
+<li><p>Because the engine compares each character of a string one by one when processing queries and joins;</p>
+</li>
+<li><p>Whereas for a numeric type, only one comparison is needed;</p>
+</li>
+<li><p>Characters reduce the performance of queries and joins and increase storage overhead;</p>
+</li>
+</ol>
+<p><strong>9. Use varchar Instead of char</strong></p>
+<ol>
+<li><p>A variable-length varchar field stores data according to the actual length of the content, so it takes up less space and saves storage;</p>
+</li>
+<li><p>char stores according to the declared size, padding with spaces when the content is shorter;</p>
+</li>
+<li><p>Also, for queries, searching within a relatively small field is more efficient;</p>
+</li>
+</ol>
+<p><strong>10. Financial and Banking Amount Fields Must Use the decimal Type</strong></p>
+<ul>
+<li><p>Inexact floating point: float, double</p>
+</li>
+<li><p>Exact floating point: decimal</p>
+</li>
+</ul>
+<ol>
+<li><p>The Decimal type is an exact floating point type and does not lose precision during calculation;</p>
+</li>
+<li><p>The space it occupies is determined by the defined width; every 4 bytes can store 9 digits, and the decimal point takes up one byte;</p>
+</li>
+<li><p>It can be used to store integer data larger than bigint;</p>
+</li>
+</ol>
+<p><strong>11. Avoid Using the ENUM Type</strong></p>
+<ul>
+<li><p>Modifying ENUM values requires an ALTER statement;</p>
+</li>
+<li><p>ORDER BY operations on the ENUM type are inefficient and require extra work;</p>
+</li>
+<li><p>Do not use numbers as ENUM values;</p>
+</li>
+</ul>
+<p><strong>12. For distinct De-duplication, Filter Fewer Fields</strong></p>
+<ol>
+<li><p>A statement with distinct consumes more CPU time than one without it;</p>
+</li>
+<li><p>When many fields are queried, if distinct is used, the database engine compares the data and filters out duplicates;</p>
+</li>
+<li><p>However, this comparison and filtering process consumes system resources such as CPU time;</p>
+</li>
+</ol>
+<p><strong>13. Use Default Values Instead of null in where</strong></p>
+<ol>
+<li><p>It is not that using is null or is not null necessarily skips the index; this depends on the MySQL version and the query cost;</p>
+</li>
+<li><p>If the MySQL optimizer finds that using the index costs more than not using it, it will abandon the index. Conditions such as !=, &lt;&gt;, is null, and is not null are often thought to invalidate indexes;</p>
+</li>
+<li><p>In fact, it is usually because the query cost is high in general, so the optimizer automatically abandons the index;</p>
+</li>
+<li><p>If you replace null values with default values, using the index often becomes possible, and the meaning expressed is relatively clearer as well;</p>
+</li>
+</ol>
+<p><strong>14. Avoid Using the != or &lt;&gt; Operators in the where Clause</strong></p>
+<ol>
+<li><p>Using != and &lt;&gt; is very likely to invalidate the index;</p>
+</li>
+<li><p>You should try to avoid using the != or &lt;&gt; operators in the where clause, otherwise the engine will abandon the index and perform a full table scan;</p>
+</li>
+<li><p>Business needs come first; if there is really no other way, you just have to use them. It is not that they cannot be used;</p>
+</li>
+</ol>
+<p><strong>15. Among inner join, left join, and right join, Prefer inner join</strong></p>
+<p>If the three kinds of joins return the same result, prefer inner join; if you use left join, try to keep the left table as small as possible.</p>
+<ul>
+<li><p>inner join is an inner join and only keeps the fully matching result set from the two tables;</p>
+</li>
+<li><p>left join returns all rows of the left table, even if there is no matching record in the right table;</p>
+</li>
+<li><p>right join returns all rows of the right table, even if there is no matching record in the left table;</p>
+</li>
+</ul>
+<p>Why?</p>
+<ul>
+<li><p>If inner join is an equi-join, it returns fewer rows, so performance is relatively better;</p>
+</li>
+<li><p>If a left join is used, try to keep the data on the left side as small as possible and put the conditions on the left side, which means fewer rows may be returned;</p>
+</li>
+<li><p>This is a MySQL optimization principle: a small table drives a large table, and a small data set drives a large data set, so that performance is better;</p>
+</li>
+</ul>
+<p><strong>16. Improve the Efficiency of group by Statements</strong></p>
+<ol>
+<li>Counter-example</li>
+</ol>
+<p>Group first, then filter<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select job, avg（salary） from employee group by jobhaving job =&#x27;develop&#x27; or job = &#x27;test&#x27;;</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li>Good example</li>
+</ol>
+<p>Filter first, then group<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select job，avg（salary） from employee where job =&#x27;develop&#x27; or job = &#x27;test&#x27; group by job;</span><br></pre></td></tr></table></figure></p>
+<ol>
+<li>Reason</li>
+</ol>
+<p>You can filter out the records you don’t need before the statement is executed</p>
+<p><strong>17. Prefer truncate When Emptying a Table</strong></p>
+<p>truncate table is functionally the same as a delete statement without a where clause: both delete all rows in the table. But truncate table is faster than delete and uses fewer system and transaction log resources.</p>
+<p>The delete statement deletes one row at a time and records an entry in the transaction log for each deleted row. truncate table deletes data by releasing the data pages used to store the table data, and only records the release of pages in the transaction log.</p>
+<p>truncate table deletes all rows in a table, but the table structure and its columns, constraints, indexes, and so on remain unchanged. The counter value used for the new row identifier is reset to the seed of that column. If you want to keep the identity counter value, use DELETE instead. If you want to delete the table definition and its data, use the drop table statement.</p>
+<p>For tables referenced by a foreign key constraint, you cannot use truncate table; instead use a DELETE statement without a where clause. Because truncate table is not logged, it cannot fire triggers.</p>
+<p>truncate table cannot be used on tables that participate in an indexed view.</p>
+<p><strong>18. When Running delete or update Statements, Add a limit or Delete in Batches in a Loop</strong></p>
+<p>(1) It lowers the cost of writing the wrong SQL</p>
+<p>Emptying a table is no small matter — one slip of the hand and it is all gone, delete the database and run away? If you add a limit, even if you delete the wrong thing you only lose part of the data, and it can be recovered quickly from the binlog.</p>
+<p>(2) SQL efficiency is likely to be higher</p>
+<p>If you add limit 1 to the SQL, and the first row hits the target, it returns; without the limit, it would keep scanning the table.</p>
+<p>(3) It avoids long transactions</p>
+<p>When delete is executed, if age has an index, MySQL will add write locks and gap locks to all related rows, and all rows involved in the execution will be locked. If the number of deleted rows is large, it will directly affect and make the related business unusable.</p>
+<p>(4) With a large amount of data, it is easy to max out the CPU</p>
+<p>If you delete a very large amount of data without a limit to constrain the number of records, it is easy to max out the CPU, making deletion slower and slower.</p>
+<p>(5) Table locking</p>
+<p>Deleting too much data at once may cause table locking and produce a lock wait timeout exceed error, so it is recommended to operate in batches.</p>
+<p><strong>19. The UNION Operator</strong></p>
+<p>After joining tables, UNION filters out duplicate records, so after the table join it sorts the resulting result set, removes duplicate records, and then returns the result. In most real applications there are no duplicate records; the most common case is a UNION of a process table and a history table. For example:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select username,tel from userunionselect departmentname from department</span><br></pre></td></tr></table></figure><br>When this SQL runs, it first fetches the results of the two tables, then uses sorting space to sort and remove duplicate records, and finally returns the result set. If the tables hold a large amount of data, it may end up sorting on disk. Recommended approach: use the UNION ALL operator instead of UNION, because UNION ALL simply merges the two results and returns them.</p>
+<p><strong>20. The IN Clause in a SQL Statement Should Not Contain Too Many Fields</strong></p>
+<p>MySQL stores all the constants in an IN clause in a single array, and that array is sorted. If there are too many values, the overhead is relatively large. If they are consecutive numbers, you can use between instead, or replace it with a join query.</p>
+<p><strong>21. Performance Gains from Batch Inserts</strong></p>
+<p>(1) Multiple submissions</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO user (id,username) VALUES(1,&#x27;哪吒编程&#x27;);INSERT INTO user (id,username) VALUES(2,&#x27;妲己&#x27;);</span><br></pre></td></tr></table></figure>
+<p>(2) Batch submission<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INSERT INTO user (id,username) VALUES(1,&#x27;哪吒编程&#x27;),(2,&#x27;妲己&#x27;);</span><br></pre></td></tr></table></figure></p>
+<p>By default, an insert SQL statement is wrapped in transaction control, so every statement needs a transaction start and a transaction commit, whereas batch processing starts and commits the transaction once. The efficiency gain is obvious, and beyond a certain volume the effect is significant — you just don’t notice it in everyday use.</p>
+<p><strong>22. Don’t Use Too Many Table Joins or Too Many Indexes — Generally Within 5</strong></p>
+<p>(1) Don’t use too many table joins — generally within 5</p>
+<ol>
+<li><p>The more tables that are joined, the greater the compilation time and overhead</p>
+</li>
+<li><p>Every join generates a temporary table in memory</p>
+</li>
+<li><p>You should split the joined tables into several smaller executions; readability is also better</p>
+</li>
+<li><p>If you really need to join many tables to get the data, that means the design is bad</p>
+</li>
+<li><p>In Alibaba’s conventions, multi-table queries of fewer than three tables are recommended</p>
+</li>
+</ol>
+<p>(2) Don’t use too many indexes — generally within 5</p>
+<ol>
+<li><p>Indexes are not the more the better: although they improve query efficiency, they reduce insert and update efficiency;</p>
+</li>
+<li><p>An index can be understood as a table itself; it can store data, and its data takes up space;</p>
+</li>
+<li><p>The data in an index table is sorted, and sorting also takes time;</p>
+</li>
+<li><p>During insert or update, the index may be rebuilt; if the amount of data is huge, the rebuild will re-sort the records, so creating an index requires careful consideration and depends on the specific situation;</p>
+</li>
+<li><p>The number of indexes on a table should preferably not exceed 5; if there are too many, you need to consider whether some of them are necessary;</p>
+</li>
+</ol>
+<p><strong>23. Don’t Create a Separate Index for Every Column in a Table</strong></p>
+<p>People really do this, and it leaves me speechless.</p>
+<p>2万字带你精通MySQL索引 (A 20,000-word guide to mastering MySQL indexes)</p>
+<p><strong>24. How to Choose the Order of Index Columns</strong></p>
+<p>The purpose of creating an index is to look up data through the index, reduce random IO, and increase query performance. The fewer rows the index can filter out, the less data has to be read from disk.</p>
+<p>Put the column with the highest cardinality on the leftmost side of a composite index (cardinality = number of distinct values in the column / total number of rows in the column).</p>
+<p>Try to put columns with a small field length on the leftmost side of a composite index (because the smaller the field length, the more data can be stored in one page, and the better the IO performance).</p>
+<p>Put the most frequently used columns on the left side of a composite index (this way you can create fewer indexes).</p>
+<p><strong>25. For Frequent Queries, Prefer a Covering Index</strong></p>
+<p>Covering index: an index that contains all the fields involved in a query (the fields included in where, select, order by, and group by).</p>
+<p>Benefits of a covering index:</p>
+<p>(1) It avoids the secondary lookup of the index in InnoDB tables</p>
+<p>InnoDB stores data in the order of the clustered index. For InnoDB, what is stored in the leaf nodes of a secondary index is the primary key information of the row. If you query data using a secondary index, after finding the corresponding key value you still have to do a secondary lookup through the primary key to get the data you actually need.</p>
+<p>With a covering index, all the data can be obtained from the key values of the secondary index, avoiding the secondary lookup of the primary key, reducing IO operations, and improving query efficiency.</p>
+<p>(2) It can turn random IO into sequential IO to speed up queries</p>
+<p>Because a covering index is stored in the order of key values, for IO-intensive range lookups there is far less IO than reading each row of data randomly from disk. Therefore, when accessing data through a covering index, the random read IO from disk can also be turned into the sequential IO of an index lookup.</p>
+<p><strong>26. It Is Recommended to Use Prepared Statements for Database Operations</strong></p>
+<p>Prepared statements can reuse these plans, reducing the time required to compile SQL, and can also solve the SQL injection problems caused by dynamic SQL.</p>
+<p>Passing only parameters is more efficient than passing SQL statements.</p>
+<p>The same statement can be parsed once and used many times, improving processing efficiency.</p>
+<p><strong>27. Avoid Large Transactions</strong></p>
+<p>Modifying data in large batches is certainly done within a single transaction, which locks a large amount of data in the table, causing a great deal of blocking, and blocking has a very large impact on MySQL performance.</p>
+<p>In particular, long blocking will use up all available database connections, which makes other applications in the production environment unable to connect to the database. So you must be careful to perform large batch write operations in batches.</p>
+<p><strong>28. Avoid Using Built-in Functions on Indexed Columns</strong></p>
+<p>Using a built-in function on an indexed column invalidates the index.</p>
+<p><strong>29. Composite Index</strong></p>
+<p>When sorting, sort according to the order of the columns in the composite index, even if only one column in the index is being sorted; otherwise sorting performance will be relatively poor.<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create index IDX_USERNAME_TEL on user(deptid,position,createtime);select username,tel from user where deptid= 1 and position = &#x27;java开发&#x27; order by deptid,position,createtime desc; </span><br></pre></td></tr></table></figure></p>
+<p>In fact, this only queries the records matching deptid= 1 and position = ‘java开发’ and sorts them by createtime in descending order, but writing order by createtime desc performs relatively poorly.</p>
+<p><strong>30. The Leftmost Property of a Composite Index</strong></p>
+<p>(1) Create a composite index<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE employee ADD INDEX idx_name_salary (name,salary)</span><br></pre></td></tr></table></figure><br>(2) Satisfy the leftmost property of the composite index, even if only partially — the composite index takes effect<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM employee WHERE NAME=&#x27;哪吒编程&#x27;</span><br></pre></td></tr></table></figure><br>(3) If the leftmost field does not appear, the leftmost property is not satisfied and the index is invalidated<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM employee WHERE salary=5000</span><br></pre></td></tr></table></figure><br>(4) If the whole composite index is used, appearing in left-side order name,salary, the index takes effect<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM employee WHERE NAME=&#x27;哪吒编程&#x27; AND salary=5000</span><br></pre></td></tr></table></figure><br>(5) Although it violates the leftmost property, MySQL optimizes when executing the SQL and swaps the order internally<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM employee WHERE salary=5000 AND NAME=&#x27;哪吒编程&#x27;</span><br></pre></td></tr></table></figure><br>(6) Reason<br>A composite index is also called a joint index. When we create a joint index, such as (k1,k2,k3), it is equivalent to creating three indexes: (k1), (k1,k2), and (k1,k2,k3). This is the leftmost matching principle.</p>
+<p>If a joint index does not satisfy the leftmost principle, the index will generally be invalidated.</p>
+<p><strong>31. Use force index When Necessary to Force a Query to Use a Certain Index</strong></p>
+<p>Sometimes the MySQL optimizer picks the index it considers appropriate to retrieve the SQL statement, but the index it uses may not be the one we want. At this point you can use force index to force the optimizer to use the index we specify.</p>
+<p><strong>32. Optimize like Statements</strong></p>
+<p>Fuzzy queries: the thing programmers love most is using like, but like can very easily invalidate your index.</p>
+<ul>
+<li><p>First, try to avoid fuzzy queries. If you must use them, don’t use a full fuzzy query; try to use a right-hand fuzzy query, i.e. like ‘…%’, which will use the index;</p>
+</li>
+<li><p>A left-hand fuzzy like ‘%…’ cannot use the index directly, but you can use the reverse + function index form to turn it into like ‘…%’;</p>
+</li>
+<li><p>A full fuzzy query cannot be optimized. If you really must use one, it is recommended to use a search engine.</p>
+</li>
+</ul>
+<p><strong>33. Keep SQL Statement Formatting Consistent</strong></p>
+<p>For the following two SQL statements, programmers consider them identical, while the database query optimizer considers them different.<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from user;select * From USER;</span><br></pre></td></tr></table></figure></p>
+<p>Both are very common ways of writing, and few people pay attention to it — it is just that the table name differs in case. However, the query parser considers these two different SQL statements, parses them twice, and generates two different execution plans. As a rigorous Java development engineer, you should ensure that two identical SQL statements look the same no matter where they appear.</p>
+<p><strong>34. Don’t Write SQL Statements That Are Too Complex</strong></p>
+<p>You often hear someone bragging: “I wrote an 800-line SQL statement, the logic is super strong, we even held a meeting to walk through the SQL, and everyone looked at me with admiration…”</p>
+<p>Generally speaking, nested subqueries or a three-table join query are fairly common, but if there are more than 3 levels of nesting, the query optimizer can easily produce a wrong execution plan, affecting SQL efficiency. SQL execution plans can be reused; the simpler the SQL, the greater the chance it will be reused, and generating an execution plan is also very time-consuming.</p>
+<p><strong>35. Turn Large DELETE, UPDATE, and INSERT Queries into Several Small Queries</strong></p>
+<p>Does writing a SQL statement of dozens or hundreds of lines make you look impressive? However, to achieve better performance and better data control, you can turn them into several small queries.</p>
+<p><strong>36. About Temporary Tables</strong></p>
+<ol>
+<li><p>Avoid frequently creating and dropping temporary tables, to reduce the consumption of system table resources;</p>
+</li>
+<li><p>When creating a temporary table, if you insert a very large amount of data at once, you can use select into instead of create table to avoid generating a large amount of log;</p>
+</li>
+<li><p>If the amount of data is not large, to ease the pressure on system table resources, you should create table first and then insert;</p>
+</li>
+<li><p>If temporary tables are used, always explicitly drop all temporary tables at the end of the stored procedure. truncate table first, then drop table, which avoids locking system tables for a long time.</p>
+</li>
+</ol>
+<p><strong>37. Use explain to Analyze Your SQL Execution Plan</strong></p>
+<p>(1) type</p>
+<ol>
+<li><p>system: the table has only one row, basically never used;</p>
+</li>
+<li><p>const: the table has at most one matching row of data; triggered mostly for primary key queries;</p>
+</li>
+<li><p>eq_ref: for each row combination from the preceding tables, one row is read from this table. This is possibly the best join type, apart from const;</p>
+</li>
+<li><p>ref: for each row combination from the preceding tables, all rows with matching index values are read from this table;</p>
+</li>
+<li><p>range: only rows in a given range are retrieved, using an index to select the rows. range can be used when using the =, &lt;&gt;, &gt;, &gt;=, &lt;, &lt;=, IS NULL, &lt;=&gt;, BETWEEN, or IN operators to compare a key column with a constant;</p>
+</li>
+<li><p>index: this join type is the same as ALL, except that only the index tree is scanned. This is usually faster than ALL, because index files are usually smaller than data files;</p>
+</li>
+<li><p>all: full table scan;</p>
+</li>
+<li><p>Performance ranking: system &gt; const &gt; eq_ref &gt; ref &gt; range &gt; index &gt; all.</p>
+</li>
+<li><p>In actual SQL optimization, you ultimately want to reach the ref or range level.</p>
+</li>
+</ol>
+<p>(2) Common Extra keywords</p>
+<ul>
+<li><p>Using index: the information is obtained only from the index tree, with no need to look up rows in the table;</p>
+</li>
+<li><p>Using where: the WHERE clause is used to restrict which rows match the next table or are sent to the client. Unless you specifically request or check all rows from the table, if the Extra value is not Using where and the table join type is ALL or index, the query may have some problems. It requires looking up rows in the table.</p>
+</li>
+<li><p>Using temporary: MySQL often creates a temporary table to hold the result, typically when the query contains GROUP BY and ORDER BY clauses that can list columns in different ways;</p>
+</li>
+</ul>
+<p><strong>38. Read/Write Splitting and Sharding</strong></p>
+<p>Once the amount of data reaches a certain volume, what limits the database’s storage performance can no longer be solved by optimization at the database level. At that point, read/write splitting and sharding are usually adopted, and caching is used alongside them, while database-level optimization is only the foundation.</p>
+<p>Read/write splitting is suitable for smaller amounts of data; table sharding is suitable for medium amounts of data; and database sharding and table sharding are generally used together, which is suitable for storing large amounts of data. This is also one of the ways large internet companies today solve data storage.</p>
+<p><strong>39. Use a Reasonable Pagination Approach to Improve Pagination Efficiency</strong><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select id,name from user limit 100000, 20</span><br></pre></td></tr></table></figure></p>
+<p>When paginating with the SQL statement above, as the amount of data in the table grows, using the limit statement directly becomes slower and slower.<br>In this case, you can take the maximum ID of the previous page, use it as the starting point, and then run the limit operation; the efficiency gain is significant.<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select id,name from user where id&gt; 100000 limit 20</span><br></pre></td></tr></table></figure></p>
+<p><strong>40. Try to Keep the Amount of Data in a Single Table Under Control — 5 Million Rows or Fewer Is Recommended.</strong></p>
+<p>5 million is not a MySQL database limit; going beyond it causes big problems with altering the table structure, backup, and recovery.<br>You can control the amount of data with approaches such as archiving historical data (applied to log data) and sharding (applied to business data).</p>
+<p><strong>41. Use MySQL Partitioning with Caution</strong></p>
+<ul>
+<li><p>A partitioned table appears as multiple files physically, and as one table logically;</p>
+</li>
+<li><p>Choose the partition key carefully; cross-partition queries may be less efficient;</p>
+</li>
+<li><p>It is recommended to manage large data using physical table sharding.</p>
+</li>
+</ul>
+<p><strong>42. Separate Hot and Cold Data as Much as Possible and Reduce Table Width</strong></p>
+<p>MySQL limits each table to at most 4096 columns, and the size of each row of data cannot exceed 65535 bytes.</p>
+<p>Reduce disk IO and ensure the memory cache hit rate for hot data (the wider the table, the more memory it takes up when loaded into the memory buffer pool, and the more IO it consumes);</p>
+<p>Use the cache more effectively and avoid reading useless cold data;</p>
+<p>Put columns that are often used together in one table (avoiding more join operations).</p>
+<p><strong>43. Don’t Create Reserved Fields in Tables</strong></p>
+<ol>
+<li><p>Reserved fields are hard to name in a self-explanatory way;</p>
+</li>
+<li><p>You cannot confirm what type of data a reserved field will store, so you cannot choose a suitable type;</p>
+</li>
+<li><p>Modifying the type of a reserved field locks the table;</p>
+</li>
+</ol>
+<p><strong>44. Don’t Store Large Binary Data Such as Images and Files in the Database</strong></p>
+<p>Such files are usually large and cause the amount of data to grow rapidly in a short time. When the database reads them, it usually performs a large number of random IO operations, and when the files are large the IO operations are very time-consuming.</p>
+<p>They are usually stored on a file server, and the database only stores the file address information.</p>
+<p><strong>45. It Is Recommended to Split BLOB or TEXT Columns into a Separate Extension Table</strong></p>
+<p>MySQL’s in-memory temporary tables do not support large data types like TEXT and BLOB. If a query contains such data, operations such as sorting cannot use in-memory temporary tables and must use disk temporary tables instead. Moreover, for this kind of data MySQL still has to perform a secondary lookup, which makes SQL performance very poor. That said, it does not mean you absolutely cannot use these data types.</p>
+<p>If you must use them, it is recommended to split the BLOB or TEXT columns into a separate extension table. When querying, never use select *, only fetch the necessary columns, and do not query that column when you do not need the TEXT column data.</p>
+<p><strong>46. TEXT or BLOB Types Can Only Use Prefix Indexes</strong></p>
+<p>Because MySQL limits the length of index fields, the TEXT type can only use a prefix index, and TEXT columns cannot have default values.</p>
+<p><strong>47. Some Other Optimization Approaches</strong></p>
+<p>(1) When you only need one row of data, use limit 1:<br>limit 1 can avoid a full table scan; once the corresponding result is found, it will not keep scanning.</p>
+<p>(2) If the sort field does not use an index, sort as little as possible</p>
+<p>(3) All tables and fields need comments: use the comment clause to add remarks for tables and columns, and maintain the data dictionary from the very beginning.</p>
+<p>(4) SQL formatting: keep keyword capitalization consistent and use indentation.</p>
+<p>(5) Back up important data before modifying or deleting it.</p>
+<p>(6) Using exists instead of in is often a good choice</p>
+<p>(7) For the fields after where, pay attention to implicit conversion of their data types.</p>
+<p>(8) Try to define all columns as NOT NULL:<br>NOT NULL columns save more space; a NULL column needs an extra byte as a flag for whether it is NULL. NULL columns require attention to null pointer issues, and when NULL columns are calculated and compared, you need to watch out for null pointer problems.</p>
+<p>(9) Soft delete design</p>
+<p>(10) Indexes are not suitable for fields with a large amount of duplicate data, such as gender; sort fields should have indexes created</p>
+<p>(11) Try to avoid using cursors:<br>Because cursors are relatively inefficient, if a cursor operates on more than 10,000 rows, you should consider rewriting it.</p>
+<p>Reprinted from: <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://mp.weixin.qq.com/s/zGneQEY8_P3nL0nGI8tCFg" target="_blank">哪吒编程</a></p>
+
+      
+    </div>
+    <div class="article-footer">
+      
+      
+        <div class="declare">
+          <strong data-i18n="post.author">🧑‍💻 本文作者：</strong>艾瑞可erik<br>
+          <strong data-i18n="post.link">🔗 本文链接：</strong>https://erik.xyz/2024/07/22/sql-performance-optimization-en/<br>
+          <strong data-i18n="post.license">📜 版权声明：</strong><span data-i18n="post.licenseA">本作品采用</span>
+          <a rel="license noopener external nofollow noopener noreferrer" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+          <span data-i18n="post.licenseB">进行许可，转载请注明出处！</span>
+        </div>
+      
+      
+        <div class="page-reward" id="reward-box">
+          <button class="reward-toggle" id="reward-toggle" aria-label="打赏" data-i18n="post.rewardAria" data-i18n-attr="aria-label"><span data-i18n="post.reward">🎁 打赏</span><span class="reward-tip" data-i18n=" 感谢投喂，法力 +1 🍬"> 感谢投喂，法力 +1 🍬</span></button>
+          <div class="reward-panel" id="reward-panel">
+            
+              <div class="reward-card"><img src="/img/alipay.jpg" alt="支付宝"><span class="reward-name" data-i18n="post.alipay">💙 支付宝</span></div>
+            
+            
+              <div class="reward-card"><img src="/img/wxpay.jpg" alt="微信"><span class="reward-name" data-i18n="post.wechat">💚 微信</span></div>
+            
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</article>
+
+  
+
+<nav id="article-nav" class="glass">
+  
+    <a href="/2024/08/23/disk-cleanup-en/" class="article-nav-link prev">
+      <span class="nav-arrow">←</span>
+      <span class="nav-body">
+        <span class="nav-label" data-i18n="post.navPrev">上一篇</span>
+        <span class="nav-title">Cleaning Up the C Drive</span>
+      </span>
+    </a>
+  
+  
+    <a href="/2024/06/12/loading-zero-copy-en/" class="article-nav-link next">
+      <span class="nav-body">
+        <span class="nav-label" data-i18n="post.navNext">下一篇</span>
+        <span class="nav-title">After Lazy Loading + Zero-Copy, the Instant-Open Rate Reached 99.99%</span>
+      </span>
+      <span class="nav-arrow">→</span>
+    </a>
+  
+</nav>
+
+
+  
+  
+  <section class="related-posts">
+    <h2 class="related-title" data-i18n="🔗 相关文章" data-i18n-html>🔗 相关文章</h2>
+    <div class="related-grid">
+      
+      <a class="related-card" href="2024/11/11/mysql-redis-consistency-en/">
+        <span class="related-emoji">🐬</span>
+        <span class="related-name">How Do You Guarantee Data Consistency Between MySQL and Redis Cache?</span>
+        <span class="related-date">2024-11-11</span>
+      </a>
+      
+      <a class="related-card" href="2023/05/15/mysql-top-log-en/">
+        <span class="related-emoji">🐬</span>
+        <span class="related-name">The most plain way to monitor MYSQL</span>
+        <span class="related-date">2023-05-15</span>
+      </a>
+      
+      <a class="related-card" href="2020/06/20/mysql-top-sun-en/">
+        <span class="related-emoji">🐬</span>
+        <span class="related-name">MySQL Performance Metrics and How to Calculate Them</span>
+        <span class="related-date">2020-06-20</span>
+      </a>
+      
+    </div>
+  </section>
+  
+  
+  
+    
+
+<div id="gitalk-container" class="glass gitalk-box"></div>
+<link rel="stylesheet" href="/vendor/gitalk.css?v=20260921e">
+<script src="/vendor/md5.min.js?v=20260921e"></script>
+<script src="/vendor/gitalk.min.js?v=20260921e"></script>
+<script>
+  (function () {
+    var g = new Gitalk({
+      clientID: '1f3ef16f7a5f58d435b3',
+      clientSecret: '9e444c34bd4f282e698f56ba76cd9a8d0892b762',
+      repo: 'erikwang2013.github.io',
+      owner: 'erikwang2013',
+      admin: ['erikwang2013'],
+      id: md5(location.pathname),
+      language: 'zh-CN',
+      perPage: 10,
+      distractionFreeMode: true
+    });
+    g.render('gitalk-container');
+  })();
+</script>
+
+
+  
+
+
+    </section>
+  </main>
+  
+
+
+<aside class="sidebar">
+  
+  
+  <!-- 内容标题按钮：点击抽屉式展开（抽屉从按钮下方滑出，不盖住按钮） -->
+  <section class="sb-block">
+    <div class="sb-tabs">
+      <button type="button" class="sb-tab" data-panel="sb-knowledge" data-i18n="📚 知识">📚 知识</button>
+      
+      <button type="button" class="sb-tab" data-panel="sb-friends" data-i18n="🤝 友链">🤝 友链</button>
+      <button type="button" class="sb-tab" data-panel="sb-about" data-i18n="🧙 关于我">🧙 关于我</button>
+      
+    </div>
+  </section>
+  
+
+  <!-- 标签块：纵向上下缓慢滚动 -->
+  
+  <section class="sb-block">
+    <h3 class="sb-title" data-i18n="🪐 标签">🪐 标签</h3>
+    <div class="float-tags" data-mode="flow" data-speed="24" data-maxshow="120">
+      
+      
+        
+        
+        <a class="tag-item" href="/tags/css%E4%B8%AD%E7%9A%84em/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">css中的em</span><span data-lang-text="en">CSS EM Units</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%AD%97%E4%BD%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应式字体</span><span data-lang-text="en">Responsive Typography</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%E6%A0%B7%E5%BC%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应式布局样式</span><span data-lang-text="en">Responsive Layout Styles</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%8A%80%E5%B7%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php技巧</span><span data-lang-text="en">PHP Tips</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E7%B1%BB%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php类库</span><span data-lang-text="en">PHP Class Libraries</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%B5%84%E6%BA%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php资源</span><span data-lang-text="en">PHP Resources</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%97%A5%E5%BF%97/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">日志</span><span data-lang-text="en">Logs</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/js%E6%8F%92%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">js插件</span><span data-lang-text="en">JS Plugins</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/web%E6%A1%86%E6%9E%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">web框架</span><span data-lang-text="en">Web Frameworks</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8E%8B%E7%BC%A9/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">压缩</span><span data-lang-text="en">Compression</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%AE%9E%E4%BE%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php实例</span><span data-lang-text="en">PHP Examples</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B6%A3%E9%97%BB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">趣闻</span><span data-lang-text="en">Fun Facts</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/nginx/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">nginx</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php库</span><span data-lang-text="en">PHP Libraries</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/flash/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">flash</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%A1%A8%E5%8D%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">表单</span><span data-lang-text="en">Forms</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/phone/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">phone</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%89%8B%E6%9C%BA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">手机</span><span data-lang-text="en">Mobile</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%96%B0%E9%97%BB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">新闻</span><span data-lang-text="en">News</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BA%92%E8%81%94/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">互联</span><span data-lang-text="en">Interconnection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">项目实战</span><span data-lang-text="en">Project Practice</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%BA%94%E7%94%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php应用</span><span data-lang-text="en">PHP Applications</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B5%AE%E7%82%B9/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">浮点</span><span data-lang-text="en">Floating Point</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">搜索引擎</span><span data-lang-text="en">Search Engines</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/http%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">http服务器</span><span data-lang-text="en">HTTP Servers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">负载均衡</span><span data-lang-text="en">Load Balancing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/kali%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">kali安装</span><span data-lang-text="en">Kali Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%B9%BF%E5%91%8A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">多平台广告管理系统</span><span data-lang-text="en">Multi-Platform Ad System</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/Ads-Platform/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">Ads Platform</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%86%9C%E4%B8%9A%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">农业系统</span><span data-lang-text="en">Agriculture System</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">系统设计</span><span data-lang-text="en">System Design</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%B3%95%E5%88%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">克莱姆法则</span><span data-lang-text="en">Cramer Rule</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%A1%8C%E5%88%97%E5%BC%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">行列式</span><span data-lang-text="en">Determinants</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/n%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">n阶行列式</span><span data-lang-text="en">Nth-Order Determinants</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%94%AF%E4%BB%98%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">支付系统</span><span data-lang-text="en">Payment Systems</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%94%AF%E4%BB%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">支付</span><span data-lang-text="en">Payment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/apache%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">apache优化</span><span data-lang-text="en">Apache Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/apache%E9%9A%90%E8%97%8Findex/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">apache隐藏index</span><span data-lang-text="en">Apache Hidden Index</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/nginx%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">nginx优化</span><span data-lang-text="en">Nginx Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/nginx%E9%9A%90%E8%97%8Findex/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">nginx隐藏index</span><span data-lang-text="en">Nginx Hide Index</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%82%AE%E7%AE%B1%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">邮箱服务器</span><span data-lang-text="en">Mail Server</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%97%A5%E5%B8%B8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">日常</span><span data-lang-text="en">Daily Life</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/Beerust/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">Beerust</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rust%E6%A1%86%E6%9E%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">rust框架</span><span data-lang-text="en">Rust Frameworks</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%91%98%E8%A6%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">摘要</span><span data-lang-text="en">Summary</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%96%87%E7%AB%A0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">文章</span><span data-lang-text="en">Articles</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/css3%E5%85%BC%E5%AE%B9360%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">css3兼容360浏览器兼容模式</span><span data-lang-text="en">CSS3 360 Browser Compatibility</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/css%E5%9C%86%E8%A7%92/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">css圆角</span><span data-lang-text="en">CSS Rounded Corners</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B8%B8%E8%AE%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">游记</span><span data-lang-text="en">Travel Notes</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/ca%E8%AF%81%E4%B9%A6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">ca证书</span><span data-lang-text="en">CA Certificate</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%AF%81%E4%B9%A6%E7%94%9F%E6%88%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">证书生成</span><span data-lang-text="en">Certificate Generation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BA%8C%E6%88%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">二战</span><span data-lang-text="en">World War II</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BA%8C%E6%88%98%E7%86%8A/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">二战熊</span><span data-lang-text="en">WWII Bear</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%A5%BF%E4%BC%AF%E5%88%A9%E4%BA%9A%E7%86%8A/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">西伯利亚熊</span><span data-lang-text="en">Siberian Bear</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/html/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">html</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%88%86%E8%BE%A8%E7%8E%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应式分辨率</span><span data-lang-text="en">Responsive Resolutions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E8%B0%83%E8%AF%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应式调试</span><span data-lang-text="en">Responsive Debugging</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%87%AA%E9%80%82%E5%BA%94%E5%B1%8F%E5%B9%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">自适应屏幕</span><span data-lang-text="en">Responsive Screen</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos%E5%AE%89%E8%A3%85chromium%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos安装chromium报错</span><span data-lang-text="en">CentOS Chromium Install Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/chromium%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">chromium安装报错</span><span data-lang-text="en">Chromium Install Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/svn/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">svn</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">代码提交</span><span data-lang-text="en">Code Commits</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/deb/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">deb</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/deb-rpm%E4%BA%92%E8%BD%AC/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">deb/rpm互转</span><span data-lang-text="en">DEB RPM Conversion</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/deb%E8%BD%ACrpm/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">deb转rpm</span><span data-lang-text="en">DEB to RPM</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rpm%E4%BA%92%E8%BD%AC/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">rpm互转</span><span data-lang-text="en">RPM Conversion</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/yum%E4%BB%93%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">yum仓库</span><span data-lang-text="en">Yum Repository</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos7%E5%AE%89%E8%A3%85steam/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos7安装steam</span><span data-lang-text="en">CentOS 7 Steam Install</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos%E5%AE%89%E8%A3%85steam/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos安装steam</span><span data-lang-text="en">CentOS Steam Install</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos%E5%AE%89%E8%A3%85%E5%90%83%E9%B8%A1steam/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos安装吃鸡steam</span><span data-lang-text="en">CentOS PUBG Steam Install</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E5%AE%89%E8%A3%85steam/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux安装steam</span><span data-lang-text="en">Steam on Linux</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/steam%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">steam安装</span><span data-lang-text="en">Steam Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos软件安装</span><span data-lang-text="en">CentOS Software Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux系统</span><span data-lang-text="en">Linux System</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos7%E5%AE%89%E8%A3%85Redis-Desktop-Manager/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos7安装Redis Desktop Manager</span><span data-lang-text="en">Redis Desktop Manager on CentOS 7</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos7%E5%AE%89%E8%A3%85redis%E6%A1%8C%E9%9D%A2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos7安装redis桌面</span><span data-lang-text="en">CentOS 7 Redis Desktop Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos%E5%AE%89%E8%A3%85redis%E6%A1%8C%E9%9D%A2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos安装redis桌面</span><span data-lang-text="en">CentOS Redis Desktop Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E5%AE%89%E8%A3%85centos7%E5%AE%89%E8%A3%85Redis-Desktop-Manager/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux安装centos7安装Redis Desktop Manager</span><span data-lang-text="en">Redis Desktop Manager on Linux</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/Redis-Desktop-Manager/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">Redis Desktop Manager</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis%E6%A1%8C%E9%9D%A2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">redis桌面</span><span data-lang-text="en">Redis Desktop</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">centos7</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos7-wine/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">centos7-wine</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wine/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">wine</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wine%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">wine安装</span><span data-lang-text="en">Wine Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/root%E5%AF%86%E7%A0%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">root密码</span><span data-lang-text="en">Root Password</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/root%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">root密码重置</span><span data-lang-text="en">Root Password Reset</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BF%98%E8%AE%B0root%E5%AF%86%E7%A0%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">忘记root密码</span><span data-lang-text="en">Forgot Root Password</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E6%85%A2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应慢</span><span data-lang-text="en">Slow Response</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%A1%B5%E9%9D%A2%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">页面优化</span><span data-lang-text="en">Page Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/cloud-platform/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">cloud-platform</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">程序员</span><span data-lang-text="en">Programmers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/skills/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">skills</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/coding/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">coding</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/Coding-to-rust/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">Coding to rust</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E6%BA%90%E4%BA%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">开源云</span><span data-lang-text="en">Open Source Cloud</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%AE%B9%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">容器</span><span data-lang-text="en">Containers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/cncf/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">cncf</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%9B%91%E6%8E%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">监控</span><span data-lang-text="en">Monitoring</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/composer%E9%83%A8%E7%BD%B2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">composer部署</span><span data-lang-text="en">Composer Deployment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%86%85%E7%BD%91%E9%83%A8%E7%BD%B2composer/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">内网部署composer</span><span data-lang-text="en">Intranet Composer Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/cphalcon/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">cphalcon</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/cphalcon%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">cphalcon报错</span><span data-lang-text="en">CPhalcon Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/proxy%E4%BB%A3%E7%90%86%E6%90%AD%E5%BB%BA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">proxy代理搭建</span><span data-lang-text="en">Proxy Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">代理服务器搭建</span><span data-lang-text="en">Proxy Server Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/proxy%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">proxy服务器</span><span data-lang-text="en">Proxy Server</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9F%A5%E6%89%BE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">查找</span><span data-lang-text="en">Lookup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%8E%92%E5%BA%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">排序</span><span data-lang-text="en">Sorting</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">二分查找</span><span data-lang-text="en">Binary Search</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/datahub/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">datahub</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/datahub%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">datahub安装</span><span data-lang-text="en">DataHub Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/deepin/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">deepin</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/emergency/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">emergency</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/emergency-mode/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">emergency mode</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/deepin%E9%BB%91%E5%B1%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">deepin黑屏</span><span data-lang-text="en">Deepin Black Screen</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">开发语言</span><span data-lang-text="en">Programming Languages</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">清理系统</span><span data-lang-text="en">System Cleanup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B8%85%E7%90%86c%E7%9B%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">清理c盘</span><span data-lang-text="en">C Drive Cleanup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/dns/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">dns</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%9F%9F%E5%90%8D%E7%9B%91%E6%B5%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">域名监测</span><span data-lang-text="en">Domain Monitoring</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%BD%91%E7%AB%99%E7%9B%91%E6%B5%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">网站监测</span><span data-lang-text="en">Website Monitoring</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/docker/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">docker</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php安装</span><span data-lang-text="en">PHP Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/Ecat/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">Ecat</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rust%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">rust微服务框架</span><span data-lang-text="en">Rust Microservice Framework</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/beego%E6%95%B0%E6%8D%AE%E5%88%86%E9%A1%B5/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">beego数据分页</span><span data-lang-text="en">Beego Pagination</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%88%86%E9%A1%B5/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">分页</span><span data-lang-text="en">Pagination</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/elasticsearch%E6%90%AD%E5%BB%BA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">elasticsearch搭建</span><span data-lang-text="en">Elasticsearch Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/elasticsearch%E9%9B%86%E7%BE%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">elasticsearch集群</span><span data-lang-text="en">Elasticsearch Cluster</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">系统</span><span data-lang-text="en">Systems</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/emm/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">emm</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mdm/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">mdm</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/erik-shop/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">erik shop</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86%E5%B9%B3%E5%8F%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">跨境电商平台</span><span data-lang-text="en">Cross-Border E-Commerce</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8F%91%E9%82%AE%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">发邮件</span><span data-lang-text="en">Sending Email</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%82%AE%E4%BB%B6%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">邮件函数</span><span data-lang-text="en">Mail Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jenkis/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">jenkis</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jenkis%E6%95%99%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">jenkis教程</span><span data-lang-text="en">Jenkins Tutorials</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B8%B8%E6%88%8F%E8%81%9A%E5%90%88%E5%B9%B3%E5%8F%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">游戏聚合平台</span><span data-lang-text="en">Game Aggregation Platform</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B8%B8%E6%88%8F%E5%B9%B3%E5%8F%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">游戏平台</span><span data-lang-text="en">Game Platforms</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/ping/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">ping</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/ping%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">ping服务器</span><span data-lang-text="en">Server Ping</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%90%84%E5%A4%A7%E7%BD%91%E7%AB%99ping/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">各大网站ping</span><span data-lang-text="en">Website Ping Tests</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E8%8E%B7%E5%8F%96ip/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go获取ip</span><span data-lang-text="en">Go Get IP</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/im/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">im</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%8F%92%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">插件</span><span data-lang-text="en">Plugins</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E4%B8%ADpdf%E7%94%9F%E6%88%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go中pdf生成</span><span data-lang-text="en">Go PDF Generation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E4%B8%AD%E9%99%90%E6%B5%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go中限流</span><span data-lang-text="en">Go Rate Limiting</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E5%AF%B9%E6%8E%A5%E5%BF%AB%E9%80%92%E7%AD%BE%E5%90%8D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go对接快递签名</span><span data-lang-text="en">Go Courier Signing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E6%97%B6%E9%97%B4%E8%8E%B7%E5%8F%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go时间获取</span><span data-lang-text="en">Go Time Retrieval</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go类型转换</span><span data-lang-text="en">Go Type Conversion</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go-zero/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">go-zero</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rpc/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">rpc</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E5%8A%A0%E5%AF%86/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go加密</span><span data-lang-text="en">Go Encryption</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E8%A7%A3%E5%AF%86/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go解密</span><span data-lang-text="en">Go Decryption</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BD%92/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">归</span><span data-lang-text="en">Return</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%90%90%E6%A7%BD/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">吐槽</span><span data-lang-text="en">Rants</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%A4%A7%E5%85%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php大全</span><span data-lang-text="en">PHP Complete Guide</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%B5%84%E6%96%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php资料</span><span data-lang-text="en">PHP Study Materials</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop2-8-0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">hadoop2.8.0</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">hadoop安装教程</span><span data-lang-text="en">Hadoop Installation Tutorial</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop%E5%AE%89%E8%A3%85%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">hadoop安装详细教程</span><span data-lang-text="en">Hadoop Install Walkthrough</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop%E6%95%99%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">hadoop教程</span><span data-lang-text="en">Hadoop Tutorials</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop%E9%83%A8%E7%BD%B2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">hadoop部署</span><span data-lang-text="en">Hadoop Deployment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop3/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">hadoop3</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop%E9%85%8D%E7%BD%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">hadoop配置</span><span data-lang-text="en">Hadoop Configuration</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/log4j2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">log4j2</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hbase%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">hbase安装教程</span><span data-lang-text="en">HBase Installation Tutorial</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hbase/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">hbase</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/http1-1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">http1.1</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/http2-0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">http2.0</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BA%92%E8%81%94%E7%BD%91%E6%97%B6%E4%BB%A3/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">互联网时代</span><span data-lang-text="en">Internet Era</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E6%BA%90%E6%8A%80%E6%9C%AF/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">开源技术</span><span data-lang-text="en">Open Source Tech</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BC%9A%E8%AF%9D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">会话</span><span data-lang-text="en">Sessions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BC%9A%E8%AF%9D%E5%8E%9F%E7%90%86/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">会话原理</span><span data-lang-text="en">Session Mechanics</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9D%82%E5%BD%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">杂录</span><span data-lang-text="en">Miscellany</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">新冠肺炎</span><span data-lang-text="en">COVID-19</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%B7%A5%E4%B8%9A%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE%E6%8F%92%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">工业网络通信协议插件</span><span data-lang-text="en">Industrial Protocol Plugin</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/industrial-protocols/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">industrial protocols</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%B8%BB%E6%B5%81%E5%B7%A5%E4%B8%9A%E5%8D%8F%E8%AE%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">主流工业协议</span><span data-lang-text="en">Mainstream Industrial Protocols</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/springboot/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">springboot</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/springboot%E5%86%85%E7%BD%91%E9%83%A8%E7%BD%B2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">springboot内网部署</span><span data-lang-text="en">Spring Boot Intranet Deployment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E6%81%A2%E5%A4%8D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux恢复</span><span data-lang-text="en">Linux Recovery</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E8%AF%AF%E5%88%A0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux误删</span><span data-lang-text="en">Linux Accidental Deletion</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E5%91%BD%E4%BB%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux命令</span><span data-lang-text="en">Linux Commands</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E5%91%BD%E4%BB%A4%E6%B1%87%E6%80%BB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux命令汇总</span><span data-lang-text="en">Linux Command Reference</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jenkins/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">jenkins</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jetbtrains/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">jetbtrains</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/phpstorm/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">phpstorm</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%9B%BE%E7%89%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">图片</span><span data-lang-text="en">Images</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jq/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">jq</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jq%E4%BE%A7%E8%BE%B9%E5%AF%BC%E8%88%AA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">jq侧边导航</span><span data-lang-text="en">jQuery Sidebar Navigation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BE%A7%E8%BE%B9%E5%AF%BC%E8%88%AA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">侧边导航</span><span data-lang-text="en">Sidebar Navigation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/js%E5%88%A4%E6%96%AD%E6%B5%8F%E8%A7%88%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">js判断浏览器</span><span data-lang-text="en">Browser Detection with JS</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/js%E5%88%A4%E6%96%AD%E6%B5%8F%E8%A7%88%E5%99%A8%E7%89%88%E6%9C%AC/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">js判断浏览器版本</span><span data-lang-text="en">Browser Version Detection with JS</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%88%A4%E6%96%AD%E6%B5%8F%E8%A7%88%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">判断浏览器</span><span data-lang-text="en">Browser Detection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%89%88%E6%9C%AC%E5%88%A4%E6%96%AD/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">浏览器版本判断</span><span data-lang-text="en">Browser Version Detection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%8E%B7%E5%8F%96%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BF%A1%E6%81%AF/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">获取浏览器信息</span><span data-lang-text="en">Browser Information</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/kali%E5%8F%B3%E9%94%AE%E6%B1%89%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">kali右键汉化</span><span data-lang-text="en">Kali Right-Click Chinese</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/kali%E6%A1%8C%E9%9D%A2%E5%8F%B3%E9%94%AE%E6%B1%89%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">kali桌面右键汉化</span><span data-lang-text="en">Kali Desktop Chinese</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/kali%E5%8F%B3%E9%94%AE%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">kali右键创建文件</span><span data-lang-text="en">Kali File Menu</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E7%8E%AF%E5%A2%83%E7%8B%AC%E7%AB%8B%E9%85%8D%E7%BD%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php环境独立配置</span><span data-lang-text="en">PHP Standalone Environment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8A%B3%E5%8A%A8%E7%BA%A0%E7%BA%B7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">劳动纠纷</span><span data-lang-text="en">Labor Disputes</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%BF%BD%E7%BC%B4%E5%B7%A5%E8%B5%84/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">追缴工资</span><span data-lang-text="en">Wage Recovery</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%94%B3%E8%AF%B7%E4%BB%B2%E8%A3%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">申请仲裁</span><span data-lang-text="en">Arbitration Application</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux报错</span><span data-lang-text="en">Linux Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E4%B8%ADupdate-command-not-found/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux中update-command-not-found</span><span data-lang-text="en">Linux Command Not Found</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux运行命令报错</span><span data-lang-text="en">Linux Command Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/web%E5%89%8D%E7%AB%AF/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">web前端</span><span data-lang-text="en">Web Frontend</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/web%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">web优化</span><span data-lang-text="en">Web Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%93%9D%E7%89%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">蓝牙</span><span data-lang-text="en">Bluetooth</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%93%9D%E7%89%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">小程序蓝牙</span><span data-lang-text="en">Mini Program Bluetooth</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">蓝牙连接</span><span data-lang-text="en">Bluetooth Connection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%92%AE%E5%90%88%E7%AE%97%E6%B3%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">撮合算法</span><span data-lang-text="en">Matching Algorithms</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%92%AE%E5%90%88/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">撮合</span><span data-lang-text="en">Order Matching</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%92%AE%E5%90%88%E7%AE%97%E6%B3%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php撮合算法</span><span data-lang-text="en">PHP Matching Algorithm</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/maven%E6%90%AD%E5%BB%BA%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">maven搭建库</span><span data-lang-text="en">Maven Repository Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/maven/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">maven</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/maven%E5%86%85%E7%BD%91%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">maven内网库</span><span data-lang-text="en">Maven Private Repository</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%AB%98%E7%BA%A7%E7%BC%93%E5%AD%98%E9%85%8D%E7%BD%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">高级缓存配置</span><span data-lang-text="en">Advanced Cache Config</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mongodb/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">mongodb</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mongodb%E6%9D%83%E9%99%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mongodb权限</span><span data-lang-text="en">MongoDB Permissions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">分库分表</span><span data-lang-text="en">Database Sharding</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E5%BA%94%E5%AF%B9%E5%8D%83%E4%B8%87%E7%BA%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql应对千万级</span><span data-lang-text="en">MySQL Ten-Million Rows</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E7%93%B6%E9%A2%88/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql瓶颈</span><span data-lang-text="en">MySQL Bottlenecks</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E7%93%B6%E9%A2%88%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql瓶颈解决办法</span><span data-lang-text="en">MySQL Bottleneck Solutions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数据一致性</span><span data-lang-text="en">Data Consistency</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E6%B6%88%E6%81%AF/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql消息</span><span data-lang-text="en">MySQL Messaging</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E9%98%9F%E5%88%97/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql队列</span><span data-lang-text="en">MySQL Queues</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E9%AB%98%E5%B9%B6%E5%8F%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql高并发</span><span data-lang-text="en">MySQL High Concurrency</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E7%9B%91%E6%8E%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql监控</span><span data-lang-text="en">MySQL Monitoring</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E6%80%A7%E8%83%BD/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql性能</span><span data-lang-text="en">MySQL Performance</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E5%AD%98%E5%82%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql存储</span><span data-lang-text="en">MySQL Storage</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E5%BC%95%E6%93%8E/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql引擎</span><span data-lang-text="en">MySQL Engines</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E6%95%B0%E6%8D%AE%E8%A1%A8%E8%AE%BE%E8%AE%A1%E9%80%89%E6%8B%A9/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql数据表设计选择</span><span data-lang-text="en">MySQL Table Design</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%86%85%E7%BD%91%E6%94%AF%E4%BB%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">内网支付</span><span data-lang-text="en">Intranet Payment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">内网穿透</span><span data-lang-text="en">NAT Traversal</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%94%AF%E4%BB%98%E6%8E%A5%E5%8F%A3%E6%9C%AC%E5%9C%B0%E5%8C%96%E5%BC%80%E5%8F%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">支付接口本地化开发</span><span data-lang-text="en">Payment API Localization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9C%AC%E5%9C%B0%E6%8C%82%E7%BD%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">本地挂网</span><span data-lang-text="en">Local Site Hosting</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%A9%BF%E9%80%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">穿透</span><span data-lang-text="en">Traversal</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/new%E5%92%8Cmake%E7%9A%84%E5%8C%BA%E5%88%AB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">new和make的区别</span><span data-lang-text="en">New vs Make</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%BA%A2%E5%8C%85%E7%AE%97%E6%B3%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">红包算法</span><span data-lang-text="en">Red Packet Algorithm</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E5%8A%B3%E5%8A%A8%E6%B3%95%E6%9C%8D%E5%8A%A1%E9%83%A8%E9%97%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">深圳劳动法服务部门</span><span data-lang-text="en">Shenzhen Labor Law Services</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">非关系型数据库</span><span data-lang-text="en">NoSQL Databases</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/onethink/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">onethink</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/oop/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">oop</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php管理系统</span><span data-lang-text="en">PHP Management System</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E6%94%BE%E6%8E%A5%E5%8F%A3%E5%BC%80%E5%8F%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">开放接口开发</span><span data-lang-text="en">Open API Development</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/erp/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">erp</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/open-erp/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">open erp</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E6%94%BEerp/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">开放erp</span><span data-lang-text="en">Open ERP</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E6%BA%90%E5%B7%A5%E5%85%B7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">开源工具</span><span data-lang-text="en">Open Source Tools</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%A1%8C%E9%9D%A2%E5%85%B1%E4%BA%AB%E5%B7%A5%E5%85%B7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">桌面共享工具</span><span data-lang-text="en">Desktop Sharing Tools</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/openresty/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">openresty</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/openvas/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">openvas</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/openvas%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">openvas安装</span><span data-lang-text="en">OpenVAS Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%9C%8D%E5%8A%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php服务</span><span data-lang-text="en">PHP Services</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php服务设计</span><span data-lang-text="en">PHP Service Design</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%8F%98%E9%87%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php变量</span><span data-lang-text="en">PHP Variables</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%B6%85%E7%BA%A7%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php超级全局变量</span><span data-lang-text="en">PHP Superglobals</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%B6%85%E7%BA%A7%E5%8F%98%E9%87%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php超级变量</span><span data-lang-text="en">PHP Super Variables</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php基本类型</span><span data-lang-text="en">PHP Basic Types</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php数据类型</span><span data-lang-text="en">PHP Data Types</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php设计模式</span><span data-lang-text="en">PHP Design Patterns</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%AF%B9%E6%8E%A5%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php对接微信支付</span><span data-lang-text="en">PHP WeChat Pay</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">微信支付</span><span data-lang-text="en">WeChat Pay</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E5%9B%9E%E8%B0%83/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">微信支付回调</span><span data-lang-text="en">WeChat Pay Callback</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/foreach/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">foreach</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/foreach%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">foreach报错</span><span data-lang-text="en">Foreach Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E4%B8%ADforeach%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php中foreach报错</span><span data-lang-text="en">PHP foreach Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%BF%87%E6%BB%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php过滤</span><span data-lang-text="en">PHP Filtering</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%BF%87%E6%BB%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">过滤</span><span data-lang-text="en">Filtering</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E9%9A%8F%E6%9C%BA%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php随机数</span><span data-lang-text="en">PHP Random Numbers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E7%8E%AF%E5%A2%83/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php环境</span><span data-lang-text="en">PHP Environment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E9%9B%86%E6%88%90%E7%8E%AF%E5%A2%83/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php集成环境</span><span data-lang-text="en">PHP Integrated Environment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%9B%86%E6%88%90%E7%8E%AF%E5%A2%83/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">服务器集成环境</span><span data-lang-text="en">Integrated Server Environment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E7%BB%84%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数组函数</span><span data-lang-text="en">Array Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数组排序函数</span><span data-lang-text="en">Array Sort Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php数学函数</span><span data-lang-text="en">PHP Math Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E9%9D%A2%E8%AF%95%E9%A2%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php面试题</span><span data-lang-text="en">PHP Interview Questions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php面向对象</span><span data-lang-text="en">PHP OOP</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">面向对象</span><span data-lang-text="en">Object-Oriented</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php-zookeeper/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">php-zookeeper</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/zookeeper3-5-5/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">zookeeper3.5.5</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php-zookeeper%E6%89%A9%E5%B1%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php-zookeeper扩展</span><span data-lang-text="en">PHP ZooKeeper Extension</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E4%B8%B2%E5%8F%A3%E5%BC%80%E5%8F%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php串口开发</span><span data-lang-text="en">PHP Serial Communication</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%80%92%E8%AE%A1%E6%97%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php倒计时</span><span data-lang-text="en">PHP Countdown</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%80%92%E8%AE%A1%E6%97%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">倒计时</span><span data-lang-text="en">Countdown</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">计算时间</span><span data-lang-text="en">Time Calculation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/PHP%E6%95%B0%E7%BB%84/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">PHP数组</span><span data-lang-text="en">PHP Arrays</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">字符串函数</span><span data-lang-text="en">String Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%8E%92%E5%BA%8F%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">排序函数</span><span data-lang-text="en">Sort Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E7%9A%84SPL/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php的SPL</span><span data-lang-text="en">PHP SPL</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/SPL%E6%89%8B%E5%86%8C/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">SPL手册</span><span data-lang-text="en">SPL Manual</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/PHP%E7%AE%97%E6%B3%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">PHP算法</span><span data-lang-text="en">PHP Algorithms</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E9%80%92%E5%BD%92/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php递归</span><span data-lang-text="en">PHP Recursion</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%80%92%E5%BD%92/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">递归</span><span data-lang-text="en">Recursion</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql函数</span><span data-lang-text="en">MySQL Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E4%B8%ADmysql%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php中mysql函数</span><span data-lang-text="en">PHP MySQL Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%8E%B7%E5%8F%96%E9%97%B0%E5%B9%B4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php获取闰年</span><span data-lang-text="en">PHP Leap Year</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%97%B0%E5%B9%B4-php%E6%97%B6%E9%97%B4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">闰年.php时间</span><span data-lang-text="en">Leap Year PHP Time</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E4%B8%ADif/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php中if</span><span data-lang-text="en">PHP If Syntax</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E4%B8%ADif%E5%88%A4%E6%96%AD/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php中if判断</span><span data-lang-text="en">PHP If Conditions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E7%9A%84if/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php的if</span><span data-lang-text="en">PHP If Statement</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%AD%97%E7%AC%A6%E4%B8%B2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php字符串</span><span data-lang-text="en">PHP Strings</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php7%E4%B8%ADsphinx/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php7中sphinx</span><span data-lang-text="en">PHP 7 Sphinx</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php7%E4%B8%ADsphinx%E6%89%A9%E5%B1%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php7中sphinx扩展</span><span data-lang-text="en">PHP 7 Sphinx Extension</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/sphinx%E6%89%A9%E5%B1%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">sphinx扩展</span><span data-lang-text="en">Sphinx Extension</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/phpunit/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">phpunit</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/phpunit%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">phpunit安装</span><span data-lang-text="en">PHPUnit Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/plc/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">plc</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%89%A9%E4%B8%9A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">物业管理系统</span><span data-lang-text="en">Property Management System</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/property/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">property</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">区块链</span><span data-lang-text="en">Blockchain</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/python%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">python库</span><span data-lang-text="en">Python Libraries</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/a%E6%A0%87%E7%AD%BE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">a标签</span><span data-lang-text="en">Anchor Tags</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/a%E6%A0%87%E7%AD%BE%E8%99%9A%E7%BA%BF/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">a标签虚线</span><span data-lang-text="en">Dashed Anchor Links</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%99%9A%E7%BA%BF%E6%A1%86/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">虚线框</span><span data-lang-text="en">Dashed Border</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/R%E8%AF%AD%E8%A8%80/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">R语言</span><span data-lang-text="en">R Language</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E9%9A%8F%E6%9C%BA%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数据随机化</span><span data-lang-text="en">Data Randomization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis%E6%80%BB%E7%BB%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">redis总结</span><span data-lang-text="en">Redis Summary</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis%E5%91%BD%E4%BB%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">redis命令</span><span data-lang-text="en">Redis Commands</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis%E7%9B%91%E6%8E%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">redis监控</span><span data-lang-text="en">Redis Monitoring</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis%E9%94%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">redis锁</span><span data-lang-text="en">Redis Locking</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">redis分布式锁</span><span data-lang-text="en">Redis Distributed Lock</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BB%BB%E6%84%8F%E9%87%91%E9%A2%9D%E8%BE%93%E5%85%A5/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">任意金额输入</span><span data-lang-text="en">Custom Amount Input</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/10%E5%85%83%E3%80%815%E5%85%83%E3%80%812%E5%85%83/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">10元、5元、2元</span><span data-lang-text="en">Pricing Tiers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%98%9F%E5%88%97/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">队列</span><span data-lang-text="en">Queues</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%A0%88/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">栈</span><span data-lang-text="en">Stacks</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%A1%BA%E5%BA%8F%E8%A1%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">顺序表</span><span data-lang-text="en">Sequential List</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%93%BE%E8%A1%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">链表</span><span data-lang-text="en">Linked Lists</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数据结构</span><span data-lang-text="en">Data Structures</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">线性结构</span><span data-lang-text="en">Linear Structures</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%A6%81%E6%AD%A2%E6%93%8D%E4%BD%9C%E8%A7%86%E9%A2%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">浏览器禁止操作视频</span><span data-lang-text="en">Browser Video Restrictions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%A6%81%E6%AD%A2%E8%A7%86%E9%A2%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">禁止视频</span><span data-lang-text="en">Disable Video</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/js%E7%BC%96%E8%BE%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">js编辑</span><span data-lang-text="en">JS Editing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/runjs/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">runjs</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%BE%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">在线编辑</span><span data-lang-text="en">Online Editing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rust%E9%85%8D%E7%BD%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">rust配置</span><span data-lang-text="en">Rust Configuration</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/seajs/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">seajs</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E6%94%BB%E5%87%BB%E6%A3%80%E6%B5%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go攻击检测</span><span data-lang-text="en">Go Attack Detection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rust%E6%94%BB%E5%87%BB%E6%A3%80%E6%B5%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">rust攻击检测</span><span data-lang-text="en">Rust Attack Detection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/session/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">session</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8%E7%83%A7%E5%BD%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">路由器烧录</span><span data-lang-text="en">Router Flashing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%83%A7%E5%BD%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">烧录</span><span data-lang-text="en">Firmware Flashing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9E%81%E8%B7%AF%E7%94%B12%E7%83%A7%E5%BD%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">极路由2烧录</span><span data-lang-text="en">HiWiFi 2 Flashing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%A0%96%E5%A4%B4%E7%83%A7%E5%BD%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">砖头烧录</span><span data-lang-text="en">Device Bricking</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">免费服务器</span><span data-lang-text="en">Free Servers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%A9%BA%E9%97%B4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">空间</span><span data-lang-text="en">Space</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B5%84%E6%BA%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">资源</span><span data-lang-text="en">Resources</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E6%94%BF%E5%BA%9C%E7%94%B5%E8%AF%9D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">深圳政府电话</span><span data-lang-text="en">Shenzhen Government Phone Numbers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E7%94%B5%E8%AF%9D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">深圳电话</span><span data-lang-text="en">Shenzhen Contact Numbers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%89%B9%E5%8C%BA%E7%94%B5%E8%AF%9D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">特区电话</span><span data-lang-text="en">Special Zone Phone</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%B1%85%E4%BD%8F%E8%AF%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">居住证</span><span data-lang-text="en">Residence Permit</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%B1%85%E4%BD%8F%E8%AF%81%E7%AD%BE%E6%B3%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">居住证签注</span><span data-lang-text="en">Permit Endorsement</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E6%96%B0%E5%B1%85%E4%BD%8F%E8%AF%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">深圳新居住证</span><span data-lang-text="en">Shenzhen Residence Permit</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%9B%BD%E5%BA%86%E9%AA%91%E8%A1%8C/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">国庆骑行</span><span data-lang-text="en">National Day Cycling</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E7%8F%A0%E6%B5%B7%E9%AA%91%E8%A1%8C/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">深圳珠海骑行</span><span data-lang-text="en">Shenzhen Zhuhai Cycling</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%AA%91%E8%A1%8C/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">骑行</span><span data-lang-text="en">Cycling</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%B8%96%E7%95%8C%E9%82%A3%E4%B9%88%E5%A4%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">世界那么大</span><span data-lang-text="en">Big Wide World</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/css%E5%9C%A8%E7%BA%BF%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">css在线生成工具</span><span data-lang-text="en">CSS Online Generators</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/css%E5%B7%A5%E5%85%B7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">css工具</span><span data-lang-text="en">CSS Tools</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%AD%A3%E5%88%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php正则</span><span data-lang-text="en">PHP Regex</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/shodan/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">shodan</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%BB%91%E8%B0%B7%E6%AD%8C/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">黑谷歌</span><span data-lang-text="en">Black Hat Google</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%BB%92%E5%B8%BD%E6%90%9C%E7%B4%A0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">黒帽搜素</span><span data-lang-text="en">Black Hat Search</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/shopex/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">shopex</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8F%AF%E8%A7%86%E5%8C%96%E6%95%B0%E6%8D%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">可视化数据</span><span data-lang-text="en">Data Visualization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数据</span><span data-lang-text="en">Data</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/socket%E9%80%9A%E4%BF%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">socket通信</span><span data-lang-text="en">Socket Communication</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/socket%E5%A4%9A%E8%BF%9B%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">socket多进程</span><span data-lang-text="en">Socket Multiprocessing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/socket/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">socket</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/json/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">json</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/json%E6%95%B0%E7%BB%84/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">json数组</span><span data-lang-text="en">JSON Arrays</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/json%E8%A7%A3%E6%9E%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">json解析</span><span data-lang-text="en">JSON Parsing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">大数据</span><span data-lang-text="en">Big Data</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/spark/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">spark</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hive/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">hive</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数据分析</span><span data-lang-text="en">Data Analysis</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/sql/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">sql</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/sql%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">sql优化</span><span data-lang-text="en">SQL Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%BB%93%E6%9E%84%E4%BD%93%E8%BD%ACmap/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">结构体转map</span><span data-lang-text="en">Struct to Map</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/config/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">config</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/thinkphp/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">thinkphp</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">配置文件</span><span data-lang-text="en">Config Files</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%A0%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">树</span><span data-lang-text="en">Trees</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">二叉树</span><span data-lang-text="en">Binary Trees</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/virtualbox/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">virtualbox</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hyper-v/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">hyper-v</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%B8%BF%E8%92%99%E5%BC%80%E5%8F%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">鸿蒙开发</span><span data-lang-text="en">HarmonyOS Development</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8F%AF%E7%A9%BF%E6%88%B4%E8%AE%BE%E5%A4%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">可穿戴设备</span><span data-lang-text="en">Wearable Devices</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/web%E8%87%AA%E9%80%82%E5%BA%94/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">web自适应</span><span data-lang-text="en">Responsive Web</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应式布局</span><span data-lang-text="en">Responsive Layout</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E6%89%80%E6%9C%89%E5%88%86%E8%BE%A8%E7%8E%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应式所有分辨率</span><span data-lang-text="en">All Screen Sizes</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">自适应布局</span><span data-lang-text="en">Adaptive Layout</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%87%AA%E9%80%82%E5%BA%94%E6%89%80%E6%9C%89%E5%88%86%E8%BE%A8%E7%8E%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">自适应所有分辨率</span><span data-lang-text="en">All-Resolution Responsive</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E8%AE%BE%E7%BD%AE%E8%B6%85%E6%97%B6%EF%BC%8C%E8%B6%85%E6%97%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql设置超时，超时</span><span data-lang-text="en">MySQL Timeout Settings</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/markdown/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">markdown</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wget/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">wget</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wget%E6%8A%93%E5%8F%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">wget抓取</span><span data-lang-text="en">Wget Scraping</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%BD%91%E7%AB%99%E6%8A%93%E5%8F%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">网站抓取</span><span data-lang-text="en">Web Scraping</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%88%91%E5%9C%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">我在</span><span data-lang-text="en">I Am Here</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wordpress/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">wordpress</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wordpress%E6%A0%87%E7%AD%BE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">wordpress标签</span><span data-lang-text="en">WordPress Tags</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%9F%9F%E5%90%8D%E5%90%88%E5%B9%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">域名合并</span><span data-lang-text="en">Domain Merging</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wpscan/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">wpscan</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/usbrip/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">usbrip</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%97%A0%E9%99%90%E6%9E%81%E5%88%86%E7%B1%BB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">无限极分类</span><span data-lang-text="en">Infinite Categorization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%97%A0%E9%99%90%E6%9E%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php无限极</span><span data-lang-text="en">PHP Unlimited Categories</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%88%86%E7%B1%BBtree/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">分类tree</span><span data-lang-text="en">Category Tree</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%97%A0%E9%99%90%E6%9E%81%E5%88%86%E7%B1%BB%E6%A0%91%E5%9E%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">无限极分类树型</span><span data-lang-text="en">Infinite Category Tree</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/xhprof/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">xhprof</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/laravel/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">laravel</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/composer%E6%8F%92%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">composer插件</span><span data-lang-text="en">Composer Plugins</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%90%BA%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">携程</span><span data-lang-text="en">Ctrip</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%90%BA%E7%A8%8B%E6%94%BB%E5%87%BB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">携程攻击</span><span data-lang-text="en">Ctrip Attack</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%90%BA%E7%A8%8B%E7%BD%91%E7%AB%99%E7%98%AB%E7%97%AA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">携程网站瘫痪</span><span data-lang-text="en">Ctrip Outage</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%89%A9%E7%90%86%E5%88%A0%E9%99%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">物理删除</span><span data-lang-text="en">Hard Delete</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/3D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">3D</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8A%A8%E7%94%BB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">动画</span><span data-lang-text="en">Animation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%B9%B3%E5%8F%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">平台</span><span data-lang-text="en">Platform</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%99%9A%E5%B9%BB4%E5%BC%95%E6%93%8E%E7%BC%96%E8%BE%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">虚幻4引擎编辑</span><span data-lang-text="en">Unreal Engine 4 Editing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%94%9F%E6%88%90%E5%94%AF%E4%B8%80id/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">生成唯一id</span><span data-lang-text="en">Unique ID Generation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%94%9F%E6%88%90id/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">生成id</span><span data-lang-text="en">ID Generation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%82%A8%E8%93%84%E5%8D%A1%E5%85%8D%E5%B9%B4%E8%B4%B9/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">储蓄卡免年费</span><span data-lang-text="en">Debit Card Fee Waiver</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%93%B6%E8%A1%8C%E5%8D%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">银行卡</span><span data-lang-text="en">Bank Cards</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%93%B6%E8%A1%8C%E5%8D%A1%E5%85%8D%E5%B9%B4%E8%B4%B9/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">银行卡免年费</span><span data-lang-text="en">Bank Card Fee Waiver</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/composer%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">composer安装</span><span data-lang-text="en">Composer Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/composer%E9%85%8D%E7%BD%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">composer配置</span><span data-lang-text="en">Composer Configuration</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BAcomposer/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">项目创建composer</span><span data-lang-text="en">Composer Project Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql优化</span><span data-lang-text="en">MySQL Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E8%AF%BB%E5%86%99%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql读写优化</span><span data-lang-text="en">MySQL Read-Write Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BC%98%E5%8C%96%EF%BC%8Cmysql%E8%AF%AD%E5%8F%A5%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数据库优化，mysql语句优化</span><span data-lang-text="en">Database And MySQL Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%8A%A0%E5%AF%86/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php加密</span><span data-lang-text="en">PHP Encryption</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%8A%80%E6%9C%AF/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php技术</span><span data-lang-text="en">PHP Techniques</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%A4%95%E9%98%B3/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">夕阳</span><span data-lang-text="en">Sunset</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%8A%93%E5%8F%96%E5%9B%BE%E7%89%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php抓取图片</span><span data-lang-text="en">PHP Image Scraping</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%89%B9%E9%87%8F%E6%8A%93%E5%8F%96%E9%A1%B5%E9%9D%A2%E5%9B%BE%E7%89%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php批量抓取页面图片</span><span data-lang-text="en">PHP Batch Image Scraping</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">正则表达式</span><span data-lang-text="en">Regular Expressions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%BF%BB%E5%A2%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">翻墙</span><span data-lang-text="en">Censorship Circumvention</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B0%B7%E6%AD%8C/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">谷歌</span><span data-lang-text="en">Google</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%B4%A2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">谷歌搜索</span><span data-lang-text="en">Google Search</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%89%A9%E5%B1%95/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">php扩展</span><span data-lang-text="en">PHP Extensions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BB%A3%E7%A0%81/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">代码</span><span data-lang-text="en">Code</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%BC%8F%E6%B4%9E/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">漏洞</span><span data-lang-text="en">Vulnerabilities</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%90%9C%E5%BC%95%E6%93%8Eping%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">搜引擎ping服务器</span><span data-lang-text="en">Search Engine Ping</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/http/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">http</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/seo/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">seo</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/css3/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">css3</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos%E8%BD%AF%E4%BB%B6/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">centos软件</span><span data-lang-text="en">CentOS Software</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/memcache/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">memcache</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/memcached/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">memcached</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rust/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">rust</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">快速排序</span><span data-lang-text="en">Quicksort</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">冒泡排序</span><span data-lang-text="en">Bubble Sort</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E5%8F%91/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">开发</span><span data-lang-text="en">Development</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9D%82%E8%B0%88/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">杂谈</span><span data-lang-text="en">Random Thoughts</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">微服务</span><span data-lang-text="en">Microservices</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/elasticsearch/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">elasticsearch</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%85%8D%E8%B4%B9/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">免费</span><span data-lang-text="en">Free</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">hadoop</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hyperf/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">hyperf</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%B4%A0%E6%9D%90/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">素材</span><span data-lang-text="en">Assets</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/lanmp/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">lanmp</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E9%A1%B9%E7%9B%AE/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">php项目</span><span data-lang-text="en">PHP Projects</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">php架构设计</span><span data-lang-text="en">PHP Architecture Design</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%97%B6%E9%97%B4/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">php时间</span><span data-lang-text="en">PHP Date and Time</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/python/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">python</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%94%BB%E5%87%BB%E6%A3%80%E6%B5%8B/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">攻击检测</span><span data-lang-text="en">Attack Detection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%AD%A3%E5%88%99/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">正则</span><span data-lang-text="en">Regex</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/webman/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">webman</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jquery/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title">jquery</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jquery%E6%8F%92%E4%BB%B6/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">jquery插件</span><span data-lang-text="en">jQuery Plugins</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/javascript/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title">javascript</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">数据库</span><span data-lang-text="en">Databases</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E8%A1%A8/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">数据表</span><span data-lang-text="en">Database Tables</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/kali/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title">kali</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">服务器</span><span data-lang-text="en">Servers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%BD%AF%E4%BB%B6/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">软件</span><span data-lang-text="en">Software</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos6-5/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title">centos6.5</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%89%BE%E7%91%9E%E5%8F%AFerik/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">艾瑞可erik</span><span data-lang-text="en">Erik Aerike</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B8%B8%E6%88%8F/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">游戏</span><span data-lang-text="en">Games</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%9E%B6%E6%9E%84/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">php架构</span><span data-lang-text="en">PHP Architecture</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/css/" title="4 篇" data-i18n="sidebar.posts" data-i18n-args="4" data-i18n-attr="title">css</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/composer/" title="4 篇" data-i18n="sidebar.posts" data-i18n-args="4" data-i18n-attr="title">composer</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis/" title="4 篇" data-i18n="sidebar.posts" data-i18n-args="4" data-i18n-attr="title">redis</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go/" title="4 篇" data-i18n="sidebar.posts" data-i18n-args="4" data-i18n-attr="title">go</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BC%98%E5%8C%96/" title="5 篇" data-i18n="sidebar.posts" data-i18n-args="5" data-i18n-attr="title"><span data-lang-text="zh">优化</span><span data-lang-text="en">Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/" title="5 篇" data-i18n="sidebar.posts" data-i18n-args="5" data-i18n-attr="title"><span data-lang-text="zh">生活手记</span><span data-lang-text="en">Life Notes</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/ecshop/" title="5 篇" data-i18n="sidebar.posts" data-i18n-args="5" data-i18n-attr="title">ecshop</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%A1%86%E6%9E%B6/" title="6 篇" data-i18n="sidebar.posts" data-i18n-args="6" data-i18n-attr="title"><span data-lang-text="zh">框架</span><span data-lang-text="en">Frameworks</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%BD%AC%E8%BD%BD/" title="9 篇" data-i18n="sidebar.posts" data-i18n-args="9" data-i18n-attr="title"><span data-lang-text="zh">转载</span><span data-lang-text="en">Reprints</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%87%BD%E6%95%B0/" title="9 篇" data-i18n="sidebar.posts" data-i18n-args="9" data-i18n-attr="title"><span data-lang-text="zh">php函数</span><span data-lang-text="en">PHP Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%AE%97%E6%B3%95/" title="9 篇" data-i18n="sidebar.posts" data-i18n-args="9" data-i18n-attr="title"><span data-lang-text="zh">算法</span><span data-lang-text="en">Algorithms</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/js/" title="10 篇" data-i18n="sidebar.posts" data-i18n-args="10" data-i18n-attr="title">js</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/web/" title="10 篇" data-i18n="sidebar.posts" data-i18n-args="10" data-i18n-attr="title">web</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql/" title="11 篇" data-i18n="sidebar.posts" data-i18n-args="11" data-i18n-attr="title">mysql</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%B7%A5%E5%85%B7/" title="12 篇" data-i18n="sidebar.posts" data-i18n-args="12" data-i18n-attr="title"><span data-lang-text="zh">工具</span><span data-lang-text="en">Tools</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/" title="12 篇" data-i18n="sidebar.posts" data-i18n-args="12" data-i18n-attr="title"><span data-lang-text="zh">随笔吐槽</span><span data-lang-text="en">Essays and Rants</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux/" title="13 篇" data-i18n="sidebar.posts" data-i18n-args="13" data-i18n-attr="title">linux</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos/" title="15 篇" data-i18n="sidebar.posts" data-i18n-args="15" data-i18n-attr="title">centos</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%AF%B4%E8%AF%B4/" title="18 篇" data-i18n="sidebar.posts" data-i18n-args="18" data-i18n-attr="title"><span data-lang-text="zh">说说</span><span data-lang-text="en">Status Updates</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="19 篇" data-i18n="sidebar.posts" data-i18n-args="19" data-i18n-attr="title"><span data-lang-text="zh">php服务器</span><span data-lang-text="en">PHP Servers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%9A%8F%E7%AC%94/" title="24 篇" data-i18n="sidebar.posts" data-i18n-args="24" data-i18n-attr="title"><span data-lang-text="zh">随笔</span><span data-lang-text="en">Essays</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php/" title="42 篇" data-i18n="sidebar.posts" data-i18n-args="42" data-i18n-attr="title">php</a>
+      
+    </div>
+  </section>
+  
+
+  
+  <!-- 抽屉：贴在页面左/右侧（与标题按钮同列、顶到视口底部），只覆盖侧栏列不覆盖页面主体 -->
+  <div class="sb-drawer" id="sb-drawer">
+    
+    <div class="sb-panel" id="sb-knowledge">
+      <ul class="widget-list">
+        
+          <li><a href="/docker/index.html"  data-i18n="常用命令操作">常用命令操作</a></li>
+        
+          <li><a href="/config/index.html"  data-i18n="常用配置">常用配置</a></li>
+        
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://www.skills.sh" target="_blank"  data-i18n="skills.sh">skills.sh</a></li>
+        
+          <li><a href="/swoftware/index.html"  data-i18n="软件仓库">软件仓库</a></li>
+        
+          <li><a href="/2020/06/20/redis-top/"  data-i18n="Redis性能指标监控">Redis性能指标监控</a></li>
+        
+          <li><a href="/2020/06/18/elasticsearch-ji-ben-curd-cao-zuo/"  data-i18n="Elasticsearch基本CURD">Elasticsearch基本CURD</a></li>
+        
+          <li><a href="/2020/06/20/mysql-top-sun/"  data-i18n="mysql性能">mysql性能</a></li>
+        
+          <li><a href="/fault-analusis/index.html"  data-i18n="故障分析">故障分析</a></li>
+        
+          <li><a href="/2019/03/27/zui-quan-de-zheng-ze-biao-da-shi/"  data-i18n="正则表达式">正则表达式</a></li>
+        
+          <li><a href="/file/legals.html"  data-i18n="法律知识">法律知识</a></li>
+        
+          <li><a target="_blank" href="http://xssor.io" target="_blank"  rel="nofollow noopener external nofollow noopener noreferrer"  data-i18n="XSS&#39;OR">XSS&#39;OR</a></li>
+        
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://rot13.com" target="_blank"  data-i18n="rot13">rot13</a></li>
+        
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://tool.lu" target="_blank"  data-i18n="在线工具">在线工具</a></li>
+        
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://regex101.com" target="_blank"  data-i18n="正则表达式验证">正则表达式验证</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+
+    
+    <div class="sb-panel" id="sb-friends">
+      <ul class="widget-list">
+        
+          <li><a href="https://www.chaoswork.cn" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer" data-i18n="云海鹰影博客">云海鹰影博客</a></li>
+        
+          <li><a href="https://32mb.net" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer" data-i18n="小兔博客">小兔博客</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="sb-panel" id="sb-about">
+      <div class="widget-about" data-i18n="sidebar.aboutme" data-i18n-html><p>无业游民，<a href="resume/index.html" target="_blank">求职简历</a></p>
+<p>12年开发经验发涉：PHP、Go、Python、Vue、JavaScript、Flutter、Java、Shell、Lua、C、C++、Rust、HarmonyOS、Node.js、ESP32、STM32、AI Coding。框架不是问题、项目不是问题，得看怎么运用结合技术，无奈外行卡内行的人，面试和上班终究成了奢望。</p>
+<p>站长：艾瑞可erik</p>
+<p>邮箱：erik@erik.xyz</p>
+</div>
+    </div>
+    
+
+    
+
+    <button type="button" class="sb-close" title="收起 ✕" data-i18n="sidebar.close" data-i18n-attr="title">✕</button>
+  </div>
+  
+</aside>
+
+
+</div>
+
+    </div>
+    <footer class="site-footer">
+  <div class="footer-magic">✨ 🧙‍♂️ ✨</div>
+  
+    <div class="footer-info footer-nav">
+      
+        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🛸 <span data-i18n="艾瑞可erik·导航">艾瑞可erik·导航</span></a>
+      
+        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🤝 <span data-i18n="postwoman">postwoman</span></a>
+      
+    </div>
+  
+  <div class="footer-info">
+    &copy; 2026 艾瑞可erik
+    
+      | <a href="https://beian.miit.gov.cn" target="_blank" target="_blank" rel="nofollow noopener external nofollow noopener noreferrer">粤ICP备2020136226号-1</a>
+    
+    
+      | <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030602005398" target="_blank" target="_blank" rel="nofollow noopener external nofollow noopener noreferrer">粤公网安备 44030602005398号</a>
+    
+  </div>
+  
+    <div class="footer-info" id="busuanzi">
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_pv"><span data-i18n="footer.pvA">本站总访问量</span> <b id="busuanzi_value_site_pv">0</b> <span data-i18n="footer.pvB">次 👀</span></span>
+      <span class="dot">·</span>
+      <span id="busuanzi_container_site_uv"><span data-i18n="footer.uvA">访客数</span> <b id="busuanzi_value_site_uv">0</b> <span data-i18n="footer.uvB">人次 🧑‍🚀</span></span>
+    </div>
+  
+  <div class="footer-info footer-powered">
+    Powered by <a href="https://hexo.io" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Hexo</a>
+    &amp; three.js 🚀 Theme by <a href="https://github.com/erikwang2013/erik-hexo-theme" target="_blank" rel="external nofollow noopener noreferrer" target="_blank">erik</a> 🎨
+  </div>
+</footer>
+
+  </div>
+
+  <button class="back-top" id="back-top" title="回到顶部 🚀" data-i18n="nav.backTop" data-i18n-attr="title">🚀</button>
+
+  
+  <div class="player collapsed" id="player-box">
+    <button type="button" class="player-mini" id="player-mini" title="展开播放器 🎵" data-i18n="player.expand" data-i18n-attr="title">🎵</button>
+    <div class="player-panel">
+      <div class="player-top">
+        <img class="player-cover" id="player-cover" src="/img/timg.jpeg" alt="cover">
+        <div class="player-info">
+          <div class="player-title" id="player-title"></div>
+          <div class="player-artist" id="player-artist"></div>
+        </div>
+        <button type="button" class="player-collapse" id="player-collapse" title="收起" data-i18n="player.collapse" data-i18n-attr="title">✕</button>
+      </div>
+      <div class="player-progress">
+        <input type="range" id="player-progress" min="0" max="100" step="0.1" value="0" aria-label="播放进度" data-i18n="player.progress" data-i18n-attr="aria-label">
+        <span class="player-time" id="player-time">00:00</span>
+      </div>
+      <div class="player-controls">
+        <button type="button" class="player-mode" id="player-mode" data-mode="all" title="播放模式" data-i18n="player.mode" data-i18n-attr="title">
+          <svg class="icon-mode-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10h11v2H3zm0-4h11v2H3zm0 8h7v2H3zm13-1v8l6-4z"/></svg>
+          <svg class="icon-mode-all" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/></svg>
+          <svg class="icon-mode-one" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4zm-4-2V9h-1l-2 1v1h1.5v4H13z"/></svg>
+          <svg class="icon-mode-shuffle" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
+        </button>
+        <button type="button" id="player-prev" title="上一首" data-i18n="player.prev" data-i18n-attr="title">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h2v12H6zm13.5 0L9 12l10.5 6z"/></svg>
+        </button>
+        <button type="button" class="player-play" id="player-play" title="播放/暂停" data-i18n="player.play" data-i18n-attr="title">
+          <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+        </button>
+        <button type="button" id="player-next" title="下一首" data-i18n="player.next" data-i18n-attr="title">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 6h2v12h-2zM4.5 5L15 12 4.5 19z"/></svg>
+        </button>
+      </div>
+    </div>
+    <audio id="player-audio" preload="metadata"></audio>
+  </div>
+  
+
+  
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="search-panel-box">
+      <input type="search" id="search-input" class="search-input"
+             placeholder="搜索文章…" data-i18n="搜索文章…" data-i18n-attr="placeholder" autocomplete="off">
+      <ul id="search-results" class="search-results"></ul>
+      <p class="search-empty" id="search-empty" hidden data-i18n="search.empty">没有找到匹配的文章 🙈</p>
+    </div>
+  </div>
+  
+  
+  <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog">
+    <button type="button" class="lightbox-close" aria-label="关闭" data-i18n="lightbox.close" data-i18n-attr="aria-label">✕</button>
+    <button type="button" class="lightbox-prev" aria-label="上一张" data-i18n="lightbox.prev" data-i18n-attr="aria-label">‹</button>
+    <button type="button" class="lightbox-next" aria-label="下一张" data-i18n="lightbox.next" data-i18n-attr="aria-label">›</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+  
+  <script>
+window.ERIK = {
+  root: "/",
+  three: {"enable":true,"particleCount":2600,"particleColors":["#7c3aed","#06b6d4","#f472b6","#fbbf24","#a78bfa"],"emojiCount":14,"emoji":["🔮","✨","🚀","🫣","🌟","🤔","🎯","👌","♥️","🧪","💎","😜","🪄","😴","⚡","🌈","🛸","🤣","😘","🛰️","🪐","👾","🌙","🔥","💫","🍀","🌊","🎈","⭐","🌸","🍃","🎶","🤦","😅","🤭","🤨","🤔","😫","😭","👌","👏","😘","😣","😒","😆","🍉","💪","🤓","😏","🤦","👌","🐶","🤙","6️","👀","💔","🤗","👍","👎","👉","🙏","👌","✊","🙏","🌹","🤝","💩","☀️","🎁","🧧","💰","🎆","🔄","🥶","🏃","🐷","🧧","❤️","💋"],"opacity":0.55,"parallax":true,"scrollRotate":true,"tier":"auto","always":false,"scenes":{"tunnel":true,"spectrum":true,"orbit":true},"glow":true,"gravity":true,"gyro":true,"holiday":"auto","bloom":{"enable":false,"strength":0.6,"radius":0.5,"threshold":0.65}},
+  tilt: {"enable":true,"maxAngle":12},
+  style: {"mode":"dark","toggle":true,"primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
+  mode: "dark",
+  mathjax: true,
+  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg","lrc":"/music/song/yvqingweiliao.lrc"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"},{"name":"画中仙","artist":"暴卯卯","url":"/music/song/huazhongxian.WAV","cover":"/img/timg.jpeg"},{"name":"嫁给我吧","artist":"暴卯卯","url":"/music/song/jiageiwoba.WAV","cover":"/img/timg.jpeg"}]},
+  isPost: true,
+  search: {"enable":true,"placeholder":"搜索文章…","max_results":10},
+  lightbox: {"enable":true},
+  copyBtn: {"enable":true},
+  dynamicTitle: {"enable":true,"wording":"📬 有新消息等你"},
+  quote: {"enable":false,"api":""},
+  encrypt: false,
+  i18n: {"enable":true,"default":"zh-CN","en":{"主页":"Home","归档":"Archives","分类":"Categories","开源":"Open Source","算法":"Algorithms","📚 知识":"📚 Knowledge","🚀 开源":"🚀 Open Source","🤝 友链":"🤝 Friends","🧙 关于我":"🧙 About Me","🌍 访客":"🌍 Visitors","🪐 标签":"🪐 Tags","艾瑞可erik·导航":"erik · Nav","展开全文 ✨":"Read more ✨"," 感谢投喂，法力 +1 🍬":" Thanks for the treat, +1 mana 🍬","🔗 相关文章":"🔗 Related posts","🔒 这是一篇加密文章":"🔒 This post is encrypted","📬 有新消息等你":"📬 You have a new message","搜索文章…":"Search posts…","📷 摄影集":"📷 Photography","风景":"Landscapes","常用命令操作":"Common commands","常用配置":"Common configs","软件仓库":"Software repos","Redis性能指标监控":"Redis metrics","Elasticsearch基本CURD":"Elasticsearch CURD basics","mysql性能":"MySQL performance","故障分析":"Fault analysis","正则表达式":"Regular expressions","正则表达式验证":"Regex tester","法律知识":"Legal","在线工具":"Online tools","云海鹰影博客":"Chaoswork Blog","小兔博客":"32mb Blog","sidebar.aboutme":"<p>Freelancer, <a href=\"resume/index.html\" target=\"_blank\">resume</a></p>\n<p>12 years of development experience: PHP, Go, Python, Vue, JavaScript, Flutter, Java, Shell, Lua, C, C++, Rust, HarmonyOS, Node.js, ESP32, STM32, AI Coding. Frameworks are not the problem, projects are not the problem — it depends on how you combine the technologies. Sadly, outsiders judging insiders makes interviews and employment a luxury.</p>\n<p>Author: erik</p>\n<p>Email: erik@erik.xyz</p>\n"}},
+  postLang: "en",
+  altUrl: "/2024/07/22/sql-performance-optimization/",
+  altLang: "zh-CN"
+};
+</script>
+<script src="/js/i18n.js?v=20260921e"></script>
+<script src="/js/scenes.js?v=20260921e"></script>
+<script src="/js/main.js?v=20260921e"></script>
+
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script src="/js/feats.js?v=20260921e"></script>
+<script src="/js/player.js?v=20260921e"></script>
+<script src="/js/ui.js?v=20260921e"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+</body>
+</html>

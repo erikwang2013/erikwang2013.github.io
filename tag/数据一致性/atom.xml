@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,104 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2024/11/11/mysql-redis-consistency-en/</id>
+        <title>How Do You Guarantee Data Consistency Between MySQL and Redis Cache?</title>
+        <link rel="alternate" href="https://erik.xyz/2024/11/11/mysql-redis-consistency-en/"/>
+        <content type="html">&lt;p&gt;Sometimes it feels like we understand MySQL, and we understand Redis, yet in interviews we never answer well and are constantly stumped. Where is the problem?&lt;/p&gt;
+&lt;p&gt;The answer is: what the interviewer is testing is not a single-area skill, but the ability to apply several technologies in combination.&lt;/p&gt;
+&lt;p&gt;Take the interviewer’s classic torture-test question — &lt;strong&gt;how do you guarantee MySQL and Redis cache consistency in a concurrent scenario?&lt;/strong&gt; — as an example.&lt;/p&gt;
+&lt;p&gt;For business logic that reads a lot, writes little and demands high performance, we usually add a &lt;strong&gt;Redis cache layer&lt;/strong&gt; between the application server and the MySQL database, to improve query efficiency, relieve the pressure on MySQL, and avoid a performance bottleneck in MySQL.&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;img src=&#34;/img/2024/2024111101.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;With this problem, if after the data is stored we are only in a read-only scenario, no MySQL/Redis cache consistency problem arises at all, so what really needs consideration is the data consistency problem in a &lt;strong&gt;concurrent read/write scenario&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If we do not analyse it and simply answer the question of how to guarantee MySQL and Redis cache consistency in a concurrent scenario using only our knowledge of MySQL and Redis, it is very hard to answer well, because what looks like a very simple scheme is in fact riddled with holes.&lt;/p&gt;
+&lt;h4 id=&#34;A-Simple-Scheme-Riddled-with-Holes&#34;&gt;&lt;a href=&#34;#A-Simple-Scheme-Riddled-with-Holes&#34; class=&#34;headerlink&#34; title=&#34;A Simple Scheme Riddled with Holes&#34;&gt;&lt;/a&gt;A Simple Scheme Riddled with Holes&lt;/h4&gt;&lt;p&gt;Let’s first look at the problems that arise with the simple update-database, delete-cache, and update-cache schemes.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/2024111102.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;Update-the-Cache-Then-Update-the-Database&#34;&gt;&lt;a href=&#34;#Update-the-Cache-Then-Update-the-Database&#34; class=&#34;headerlink&#34; title=&#34;Update the Cache, Then Update the Database&#34;&gt;&lt;/a&gt;Update the Cache, Then Update the Database&lt;/h4&gt;&lt;p&gt;The conclusion first: not considered.&lt;/p&gt;
+&lt;p&gt;The reason is that after the cache update succeeds, the database update may fail, leaving the database with the old value and the cache with the new value. As a result, for all subsequent read requests, as long as the cache has not expired or been correctly rewritten, the data stays completely inconsistent the whole time! And the current value in the database is the old one, while the correctness of business data should be judged by the database.&lt;/p&gt;
+&lt;p&gt;So if the cache update succeeds but the database update may fail, can we just &lt;strong&gt;re-update the cache&lt;/strong&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/2024111103.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Setting aside the performance problems caused by having to re-query data from a single table or multiple tables when re-updating the cache and then update the data again, there may also be data changes during that period that plunge you into dirty data again. In fact, concurrency consistency problems still occur.&lt;/p&gt;
+&lt;p&gt;As long as the cache has been updated, subsequent read requests — &lt;strong&gt;before the database update, and before the database update fails and the cache re-update is about to happen&lt;/strong&gt; — will basically all hit the cache, and the data returned at that moment is all dirty data that has not been persisted.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/2024111104.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;Update-the-Database-Then-Update-the-Cache&#34;&gt;&lt;a href=&#34;#Update-the-Database-Then-Update-the-Cache&#34; class=&#34;headerlink&#34; title=&#34;Update the Database, Then Update the Cache&#34;&gt;&lt;/a&gt;Update the Database, Then Update the Cache&lt;/h4&gt;&lt;p&gt;Not considered.&lt;/p&gt;
+&lt;p&gt;The reason is that when the database update succeeds but the cache update fails, the database has the latest value while the cache has the old value. As a result, for all subsequent read requests, as long as the cache has not expired or been correctly rewritten, the data stays completely inconsistent the whole time!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/2024111105.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Even when both the database update and the cache update succeed, this scheme still has consistency problems caused by concurrency, as shown in the figure below (click the image to view it full size):&lt;br&gt;&lt;img src=&#34;/img/2024/2024111106.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can see the data consistency problems that exist in concurrent multi-write multi-read scenarios.&lt;/p&gt;
+&lt;h4 id=&#34;Delete-the-Cache-First-Then-Update-the-Database&#34;&gt;&lt;a href=&#34;#Delete-the-Cache-First-Then-Update-the-Database&#34; class=&#34;headerlink&#34; title=&#34;Delete the Cache First, Then Update the Database&#34;&gt;&lt;/a&gt;Delete the Cache First, Then Update the Database&lt;/h4&gt;&lt;p&gt;Not considered, but it can be considered after using a &lt;strong&gt;delayed double-delete strategy&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Adopting the “&lt;strong&gt;delete the cache first, then update the database&lt;/strong&gt;“ scheme is a common way to try to solve this problem.&lt;/p&gt;
+&lt;p&gt;This approach is fairly simple in logic, easy to understand and implement, and in theory after the old cache is deleted, the next read fetches the latest data from the database.&lt;/p&gt;
+&lt;p&gt;But in the extreme concurrent case, after the cache deletion succeeds, if a large number of concurrent requests come in, they will go straight to the database, putting enormous pressure on it. And this scheme can still suffer from data consistency problems.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/2024111107.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;From the figure above we find that after the cache is deleted, if concurrent read request 1.1 comes in, the cache lookup definitely misses, so it reads the database; but because at this point the operation 2. update database x=10 has not yet completed, what is read is still the old value x=5, and after setting the cache, once operation 2. update database completes, the database holds the new value 10 while the cache holds the old value, causing a data inconsistency problem.&lt;/p&gt;
+&lt;p&gt;For this we can first do a small optimisation, namely the &lt;strong&gt;delayed double-delete strategy&lt;/strong&gt;. That is, after updating the database, first wait a while (the wait time is roughly the response time of that read request plus a few tens of milliseconds), and then delete the cache. The purpose is to ensure that the read request has finished (it has already read the old data at 1.2 read database, and will update the cache later within that request), so the write request can delete the dirty cache data caused by the read request, guaranteeing that all read requests after the second cache deletion read the latest value.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/2024111108.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It can be seen that the key point of this optimisation is how long to wait before deleting the cache again, but that time is judged from the response times of historical query requests and will fluctuate in practice. This also means that if the delay is too short, data inconsistency still occurs; if the delay is too long, the period during which data is inconsistent becomes longer.&lt;/p&gt;
+&lt;p&gt;In addition, the &lt;strong&gt;delayed double-delete strategy&lt;/strong&gt; also has to consider what to do if deleting the cache again fails.&lt;/p&gt;
+&lt;p&gt;Because a failed deletion will cause all subsequent read requests, as long as the cache has not expired or been correctly rewritten, to stay completely inconsistent the whole time! This will be discussed further in the technical optimisation scheme below.&lt;/p&gt;
+&lt;h4 id=&#34;Update-the-Database-First-Then-Delete-the-Cache&#34;&gt;&lt;a href=&#34;#Update-the-Database-First-Then-Delete-the-Cache&#34; class=&#34;headerlink&#34; title=&#34;Update the Database First, Then Delete the Cache&#34;&gt;&lt;/a&gt;Update the Database First, Then Delete the Cache&lt;/h4&gt;&lt;p&gt;Relatively recommended.&lt;/p&gt;
+&lt;p&gt;The adopted “update the database first, then delete the cache” strategy is basically the same as the small &lt;strong&gt;delayed double-delete strategy&lt;/strong&gt; optimisation we made for “delete the cache first, then update the database”, and it still needs to consider how to handle a failed cache deletion.&lt;/p&gt;
+&lt;p&gt;Comparing “update the database first, then delete the cache” with “delete the cache first, then update the database” purely on their own merits, in most cases “update the database first, then delete the cache” is regarded as the better choice, for the following reasons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Data consistency&lt;/strong&gt;: this method leans more towards maintaining eventual consistency of the data; even if the cache deletion fails, it guarantees that data consistency will not be damaged in the long term.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;User experience&lt;/strong&gt;: with “delete the cache first, then update the database”, if the database update fails, users may keep seeing old data until the cache expires. By contrast, “update the database first, then delete the cache” can avoid this to some degree.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;But this scheme likewise has data consistency problems, as shown in the figure below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/2024111109.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After the database data is updated, the cache is deleted too. Next, read request 3.1 and write request 3.2 come in at the same time.&lt;/p&gt;
+&lt;p&gt;The read request first reads the cache, finds a cache miss, so it queries the database; and just as it is about to update the cache, write request 3.2 has already finished updating the data and deleting the cache, and only afterwards does read request 3.1 update the cache. In the end the value in the database is the new value while the value in the cache is the old value.&lt;/p&gt;
+&lt;h4 id=&#34;The-Optimised-Scheme&#34;&gt;&lt;a href=&#34;#The-Optimised-Scheme&#34; class=&#34;headerlink&#34; title=&#34;The Optimised Scheme&#34;&gt;&lt;/a&gt;The Optimised Scheme&lt;/h4&gt;&lt;p&gt;From the simple schemes above, none of them seems to truly solve the problem of MySQL data versus Redis cache data consistency in a concurrent scenario.&lt;/p&gt;
+&lt;p&gt;One thing to explain here: if the business requires &lt;strong&gt;strong consistency&lt;/strong&gt;, then no matter how you optimise the cache strategy it cannot be satisfied, and the best approach is not to use a cache at all.&lt;/p&gt;
+&lt;p&gt;Strong consistency: it requires that whatever the system writes is what is read back; the user experience is good, but implementing it usually has a large impact on system performance.&lt;/p&gt;
+&lt;p&gt;The solution is read-write serialisation, and this scheme would greatly reduce the system’s processing efficiency and drastically lower throughput.&lt;/p&gt;
+&lt;p&gt;Also, in large distributed systems, distributed transactions are in fact mostly not used, because the maintenance cost is too high and the complexity is high as well. So in distributed systems we generally advocate eventual consistency: this consistency level constrains the system such that after a write succeeds it does not promise that the written value can be read immediately, nor does it promise how soon the data will become consistent, but it will ensure as far as possible that after some time level (say, seconds) the data reaches a consistent state.&lt;/p&gt;
+&lt;p&gt;Now let’s continue optimising…&lt;/p&gt;
+&lt;h4 id=&#34;Delayed-Double-Delete-Strategy-Retry-Mechanism&#34;&gt;&lt;a href=&#34;#Delayed-Double-Delete-Strategy-Retry-Mechanism&#34; class=&#34;headerlink&#34; title=&#34;Delayed Double-Delete Strategy + Retry Mechanism&#34;&gt;&lt;/a&gt;Delayed Double-Delete Strategy + Retry Mechanism&lt;/h4&gt;&lt;p&gt;From the “delete the cache first, then update the database” scheme in the riddled-with-holes simple schemes above, we can see that the &lt;strong&gt;delayed double-delete strategy&lt;/strong&gt; is arguably a fusion of “delete the cache first, then update the database” and “update the database first, then delete the cache”, and can solve most data consistency problems in business logic handling.&lt;/p&gt;
+&lt;p&gt;But we still left one unresolved question earlier: &lt;strong&gt;what to do if deleting the cache again fails&lt;/strong&gt;?&lt;/p&gt;
+&lt;p&gt;——-Of course, the remedy is to go on deleting this cache key, and the remedy method is &lt;strong&gt;retry&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;retry mechanism&lt;/strong&gt; can launch a new coroutine in the current process (a user-space lightweight thread in Golang) to retry; it can also be put into a message queue to retry; or it can first launch a new coroutine to retry 3 times, and after the retries fail, put it into a message queue to retry. The figure below shows retrying via a message queue.&lt;/p&gt;
+&lt;p&gt;When retrying in a new coroutine, note that you use the new context context.Background(), not the context of the current request.&lt;/p&gt;
+&lt;p&gt;Generally message queues support highly reliable queues, such as RabbitMQ, Kafka and so on. These message queues provide very strong message delivery, asynchronous processing and persistence features, and can effectively solve data synchronisation problems.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/2024111110.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This scheme still has some needs, such as: choosing a suitable delay wait time before deleting the cache; the number of retries and the interval between them when retrying the cache deletion in the coroutine; whether the message queue needs to retry after a cache deletion failure, and so on.&lt;/p&gt;
+&lt;h4 id=&#34;Reading-the-binlog-to-Delete-the-Cache-Asynchronously&#34;&gt;&lt;a href=&#34;#Reading-the-binlog-to-Delete-the-Cache-Asynchronously&#34; class=&#34;headerlink&#34; title=&#34;Reading the binlog to Delete the Cache Asynchronously&#34;&gt;&lt;/a&gt;Reading the binlog to Delete the Cache Asynchronously&lt;/h4&gt;&lt;p&gt;The retry-on-cache-deletion mechanism is not bad, it is just that it intrudes into a lot of business code.&lt;/p&gt;
+&lt;p&gt;In fact, you can also optimise it like this:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Use Canal to capture the binlog and send it to an MQ queue to evict keys asynchronously.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The application that deletes the cache confirms the handling of this update message through the ACK manual mechanism, deletes the cache, and guarantees data cache consistency.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/2024111111.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Evicting keys asynchronously is simpler than waiting to compare and update cached data, because a single piece of cached data may involve querying, aggregating and sorting data from multiple tables.&lt;/p&gt;
+&lt;p&gt;Although this scheme does not look bad either, it introduces extra components (such as Canal and a message queue) which add a fair amount of complexity: you need to maintain and monitor the running state of these components and keep them running normally.&lt;/p&gt;
+&lt;h4 id=&#34;Scheduled-Tasks&#34;&gt;&lt;a href=&#34;#Scheduled-Tasks&#34; class=&#34;headerlink&#34; title=&#34;Scheduled Tasks&#34;&gt;&lt;/a&gt;Scheduled Tasks&lt;/h4&gt;&lt;p&gt;In certain business scenarios, Redis and MySQL data can also be synchronised by means of a scheduled task.&lt;/p&gt;
+&lt;p&gt;The specific approach is to read data from Redis on a schedule, compare it with the data in MySQL, and synchronise if the data in Redis has changed.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/2024111112.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Although this method is fairly simple to implement, you need to watch the timeliness of the synchronisation: if the time interval is set improperly, it may cause the synchronised data to be lost or inaccurate.&lt;/p&gt;
+&lt;h4 id=&#34;Dual-Write-Consistency&#34;&gt;&lt;a href=&#34;#Dual-Write-Consistency&#34; class=&#34;headerlink&#34; title=&#34;Dual-Write Consistency&#34;&gt;&lt;/a&gt;Dual-Write Consistency&lt;/h4&gt;&lt;p&gt;Update the cache/delete the cache at the same time as updating the database — the so-called “&lt;strong&gt;dual write&lt;/strong&gt;“.&lt;/p&gt;
+&lt;p&gt;This ensures that after the database is updated, the data in the cache is also the latest, thereby reducing the window during which data is inconsistent.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/2024/2024111113.png&#34; alt=&#34;https://erik.xyz&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Concurrency control&lt;/strong&gt;: in high-concurrency scenarios, when multiple requests update the same piece of data at the same time, without proper concurrency control there may be data inconsistency problems. So here we introduce a distributed lock and transactional operations:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Using a distributed lock&lt;/strong&gt;: before performing the dual write, acquire a distributed lock (such as Zookeeper, Redis’s SETNX command, and so on) to ensure that only one thread/process can perform the dual write at a time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Transaction handling&lt;/strong&gt;: for cache systems that support transactions (such as Redis’s MULTI/EXEC command) and MySQL transactions, you can put the Redis cache and MySQL update operations into a transaction to ensure that either everything succeeds or everything fails.&lt;/p&gt;
+&lt;p&gt;Of course, in a “dual write” strategy, besides concurrency control, you can combine it with the retry and scheduled strategies mentioned above in order to cope with data inconsistency problems in extreme cases.&lt;/p&gt;
+&lt;p&gt;In addition, you can add an alerting mechanism to the failure-handling logic so that developers and operations staff are notified in time.&lt;/p&gt;
+&lt;p&gt;Reposted from: &lt;a href=&#34;https://mp.weixin.qq.com/s/sG7xDtLKLtlnu9ntpc5hdw&#34;&gt;皇子谈技术&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="mysql" />
+        <category term="redis" />
+        <category term="数据一致性" />
+        <updated>2024-11-11T01:58:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2024/11/11/mysql-redis-consistency/</id>
         <title>如何下保证MySQL数据库与Redis缓存数据一致性？</title>

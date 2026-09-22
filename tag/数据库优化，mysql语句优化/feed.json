@@ -5,6 +5,19 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2016/03/01/you-guan-mysql-you-hua-de-zhun-ze-en/",
+            "url": "https://erik.xyz/2016/03/01/you-guan-mysql-you-hua-de-zhun-ze-en/",
+            "title": "Guidelines for MySQL optimization",
+            "date_published": "2016-03-01T09:29:00.000Z",
+            "content_html": "<p>Experience summarized by the veterans — let’s learn from it.</p>\n<p>1.Try to avoid performing operations on columns, as this makes the index unusable.</p>\n<p>For example: SELECT <em> FROM t WHERE YEAR(d) &gt;=2011; optimized to: SELECT </em> FROM t WHERE d &gt;=’2011-01-01’;</p>\n<p>2.When using JOIN, the small result set should drive the large result set.</p>\n<p>At the same time, split complex JOIN queries into multiple QUERYs. Because joining multiple tables can lead to more locking and blocking. SELECT * FROM a JOIN b ON a.id=b.id LEFT JOIN c ON c.time=a.date LEFT JOIN d ON c.pid=d.aid LEFT JOIN e ON e.cid=a.did<br><span id=\"more\"></span></p>\n<p>3.When using LIKE fuzzy searching, avoid %%</p>\n<p>For example: SELECT <em> FROM t WHERE name LIKE ‘%de%’; optimized to: SELECT </em> FROM t WHERE name &gt;=’de’ AND name&lt;’df’;</p>\n<p>4.List only the fields that need to be queried. This won’t have an obvious effect on speed; the main consideration is saving memory.</p>\n<p>5.Use batch insert statements to save on round trips</p>\n<p>For example: INTO t (id,name) VALUES (1,’a’); INSERT INTO t (id,name) VALUES (2,’b’); INSERT INTO t (id,name) VALUES (3,’c’); Optimization: INSERT INTO t (id,name) VALUES (1,’a’),(2,’b’),(3,’c’);</p>\n<p>6.Use between when limit’s offset is relatively large</p>\n<p>SELECT <em> FROM article AS article ORDER BY id LIMIT 100000,10; Optimization: SELECT </em> FROM article AS article WHERE id BETWEEN 100000 AND 100010 ORDER BY id;</p>\n<p>7.Don’t use the rand function to fetch multiple random records</p>\n<p>SELECT <em> FROM table ORDER BY rand() LIMIT 20; Optimization: SELECT </em> FROM &#39;table&#39; AS t1 JOIN (SELECT ROUND (RAND() * ((SELECT MAX(id) FROM &#39;table&#39;)-(SELECT MIN(id) FROM &#39;table&#39; )) + (SELECT MIN(id) FROM &#39;table&#39; )) AS id) AS t2 WHERE t1.id&gt;=t2.id ORDER BY t1.id LIMIT 1;</p>\n<p>8.Avoid using NULL</p>\n<p>9.Don’t use count(id), use count(*) instead</p>\n<p>10.Don’t do pointless sorting; complete the sorting in the index as much as possible.</p>\n",
+            "tags": [
+                "mysql",
+                "mysql优化",
+                "mysql读写优化",
+                "数据库优化，mysql语句优化"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2016/03/01/you-guan-mysql-you-hua-de-zhun-ze/",
             "url": "https://erik.xyz/2016/03/01/you-guan-mysql-you-hua-de-zhun-ze/",
             "title": "有关mysql优化的准则",

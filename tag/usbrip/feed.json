@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2020/03/28/wpscan-and-usbrip-en/",
+            "url": "https://erik.xyz/2020/03/28/wpscan-and-usbrip-en/",
+            "title": "Using wpscan 3.7.11 and usbrip",
+            "date_published": "2020-03-28T06:21:00.000Z",
+            "content_html": "<p>I happened to look into wpscan, the tool for attacking WordPress, following tutorials demonstrated online, and found there are an awful lot of pitfalls.<br> Most of them are tutorials for old versions; the commands changed in the latest version — —wordlist has been dropped in favor of -P.<br>You need to register on the official site to generate a key and use it locally.<br>Also, you have to generate the password dictionary yourself with crunch; most weak passwords can be brute-forced.<span id=\"more\"></span></p>\n<hr>\n<p>Installation</p>\n<pre><code>    sudo pip3 install usbrip\n</code></pre><p><img src=\"https://erik.xyz/img/202003/2020-03-28_142919.jpg\" alt=\"\"></p>\n<p> Query the USB list</p>\n<pre><code>         sudo usbrip events history -q -n 100\n</code></pre><p><img src=\"https://erik.xyz/img/202003/2020-03-28_142845.jpg\" alt=\"\"></p>\n",
+            "tags": [
+                "wpscan",
+                "usbrip"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2020/03/28/wpscan-and-usbrip/",
             "url": "https://erik.xyz/2020/03/28/wpscan-and-usbrip/",
             "title": "wpscan版本3.7.11和usbrip的使用",

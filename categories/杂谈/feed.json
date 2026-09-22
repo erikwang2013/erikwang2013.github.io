@@ -13,6 +13,16 @@
             "tags": [
                 "go"
             ]
+        },
+        {
+            "id": "https://erik.xyz/2022/01/05/review-go-gin-framework-en/",
+            "url": "https://erik.xyz/2022/01/05/review-go-gin-framework-en/",
+            "title": "Revisiting Go's Gin Framework",
+            "date_published": "2022-01-05T07:55:00.000Z",
+            "content_html": "<p><img src=\"/img/202201/2022-01-05_161242.jpg\" alt=\"\"><br><span id=\"more\"></span><br>It’s been almost two years since I last used Go. Over the past few days I’ve been slowly getting my local environment set up. I installed the gin and beego frameworks separately. I tentatively tried using the gin framework with the directory layout of several PHP frameworks, and found that aside from differences in syntax, functions and packages, the mindset for writing a project is remarkably similar.</p>\n<p> After importing the gin framework, you can also place interfaces, middleware, controllers, models and so on in separate directories — it’s just that while writing code you need to be familiar with the syntax and functions. Mature PHP frameworks have all of this laid out for you, so you can just start coding.</p>\n<p> Comparing the two languages, PHP is quite easy to pick up. But once you know PHP, moving to Go is also quite fast (that’s my impression). The difference is that one language is a scripting language, while the other is a static, compiled language. Yet Go is easier to pick up than C, and with the ecosystem’s improvements and the ability to pull in all kinds of packages, development efficiency naturally goes up a lot. If you have a programming background, you can start by reading the Go manual, then try tinkering with the gin and beego frameworks. If you really can’t figure it out, go find some related videos on Bilibili and go through the key points.</p>\n",
+            "tags": [
+                "go"
+            ]
         }
     ]
 }

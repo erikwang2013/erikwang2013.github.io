@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,14 +502,8 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
@@ -556,6 +556,106 @@
         <updated>2025-02-13T13:35:00.000Z</updated>
     </entry>
     <entry>
+        <id>https://erik.xyz/2025/02/13/open-source-esktop-sharing-tool-en/</id>
+        <title>Open Source Desktop Sharing Tools</title>
+        <link rel="alternate" href="https://erik.xyz/2025/02/13/open-source-esktop-sharing-tool-en/"/>
+        <content type="html">&lt;h2 id=&#34;1-xrdp&#34;&gt;&lt;a href=&#34;#1-xrdp&#34; class=&#34;headerlink&#34; title=&#34;1. xrdp&#34;&gt;&lt;/a&gt;1. &lt;a href=&#34;https://github.com/neutrinolabs/xrdp&#34;&gt;xrdp&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What it does&lt;/strong&gt;: xrdp is an open source Remote Desktop Protocol (RDP) server that lets Linux systems be accessed remotely from a Windows RDP client. It is compatible with Microsoft’s RDP protocol, so you can connect from a Windows client to a Linux machine.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Install&lt;/strong&gt;: usually available through your Linux package manager, for example on Ubuntu:&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install xrdp&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-VNC-Virtual-Network-Computing&#34;&gt;&lt;a href=&#34;#2-VNC-Virtual-Network-Computing&#34; class=&#34;headerlink&#34; title=&#34;2. VNC (Virtual Network Computing)&#34;&gt;&lt;/a&gt;2. VNC (Virtual Network Computing)&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What it does&lt;/strong&gt;: VNC is a graphical desktop sharing system that supports cross-platform remote access. Common open source VNC implementations include:&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TightVNC&lt;/strong&gt;: lightweight and performance-oriented.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TigerVNC&lt;/strong&gt;: improved performance and security.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RealVNC&lt;/strong&gt;: offers both a commercial and an open source edition.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Install&lt;/strong&gt;: through your package manager (such as &lt;code&gt;apt&lt;/code&gt;), or by downloading and building the source.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-NoMachine&#34;&gt;&lt;a href=&#34;#3-NoMachine&#34; class=&#34;headerlink&#34; title=&#34;3. NoMachine&#34;&gt;&lt;/a&gt;3. &lt;a href=&#34;https://www.nomachine.com/&#34;&gt;NoMachine&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What it does&lt;/strong&gt;: NoMachine is an open source remote desktop solution that supports cross-platform remote access. It is high performance with low latency, and supports audio/video streaming and file transfer.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Install&lt;/strong&gt;: download the installer straight from the official website, or install the official open source version.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-Remmina&#34;&gt;&lt;a href=&#34;#4-Remmina&#34; class=&#34;headerlink&#34; title=&#34;4. Remmina&#34;&gt;&lt;/a&gt;4. &lt;a href=&#34;https://github.com/FreeRDP/Remmina&#34;&gt;Remmina&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What it does&lt;/strong&gt;: Remmina is a client that speaks several remote desktop protocols, including RDP, VNC and SSH. It is designed with Linux users in mind, but supports other operating systems too.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Install&lt;/strong&gt;: available through the package manager on most Linux distributions, for example:&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;sudo&lt;/span&gt; apt install remmina&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;5-FreeRDP&#34;&gt;&lt;a href=&#34;#5-FreeRDP&#34; class=&#34;headerlink&#34; title=&#34;5. FreeRDP&#34;&gt;&lt;/a&gt;5. &lt;a href=&#34;https://github.com/FreeRDP/FreeRDP&#34;&gt;FreeRDP&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What it does&lt;/strong&gt;: FreeRDP is an open source implementation of the Remote Desktop Protocol that can act as both an RDP client and a server. It supports remote access between Windows and Linux systems, and is very lightweight.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Install&lt;/strong&gt;: through your package manager, for example:&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;sudo&lt;/span&gt; apt install freerdp2-x11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;6-WayVNC&#34;&gt;&lt;a href=&#34;#6-WayVNC&#34; class=&#34;headerlink&#34; title=&#34;6. WayVNC&#34;&gt;&lt;/a&gt;6. WayVNC&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What it does&lt;/strong&gt;: WayVNC is a VNC server built specifically for Wayland-compatible Linux systems, aimed at machines running a Wayland display server.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Install&lt;/strong&gt;: build it from source, or look for a Linux package for it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;7-Guacamole&#34;&gt;&lt;a href=&#34;#7-Guacamole&#34; class=&#34;headerlink&#34; title=&#34;7. Guacamole&#34;&gt;&lt;/a&gt;7. &lt;a href=&#34;http://guacamole.apache.org/&#34;&gt;Guacamole&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What it does&lt;/strong&gt;: Guacamole is a web-based remote desktop client that supports RDP, VNC and SSH. You can reach and control a machine from your browser; setup is fairly involved and usually requires configuring a web server.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Install&lt;/strong&gt;: install Guacamole on the server side and configure the corresponding web server. It supports a variety of operating systems.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="工具" />
+        <category term="开源工具" />
+        <category term="桌面共享工具" />
+        <updated>2025-02-13T13:35:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2021/08/22/10-logs-tools-total-en/</id>
+        <title>10 Web Log Security Analysis Tools</title>
+        <link rel="alternate" href="https://erik.xyz/2021/08/22/10-logs-tools-total-en/"/>
+        <content type="html">&lt;p&gt;First of all, we should be clear that log files not only help us trace the origin of an intruder and find their attack path — in normal operations and maintenance, logs can also reveal many security attacks.&lt;/p&gt;
+&lt;p&gt;A simple, easy-to-use web log analysis tool can greatly improve efficiency. There are many log analysis tools on the market today. Here we recommend ten easy-to-use web log security analysis tools.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;ol&gt;
+&lt;li&gt;360 Starmap (360星图)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A very easy-to-use website access log analysis tool that can effectively identify web vulnerability attacks, CC attacks, malicious crawler scans, abnormal access and other behaviors. One-click automatic analysis outputs a security analysis report, supports iis / apache / nginx logs, and supports custom formats.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;LogForensics&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A log analysis tool provided by TSRC that can start from a single suspicious clue and traverse all suspicious URLs (CGI) and source IPs.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;GoAccess&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A visual web log analysis tool, accessible through a web browser or a terminal program on *nix systems. It provides system administrators with fast and valuable HTTP statistics, presented as an online visual server.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;AWStats&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A powerful open-source log analysis system that can graphically generate advanced statistics for web, streaming media, ftp or mail servers.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Logstalgia&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A very cool visual log analysis tool that can intuitively display CC attacks and website log analysis, presenting it with a visual 3D effect.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;FinderWeb&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A tool for programmers to monitor logs, supporting tail, less, grep, and large text files. Log files ranging from a few MB to tens of GB are handled smoothly, and it’s free.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;web-log-parser&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;An open-source web log analysis tool developed in Python, with flexible log format configuration.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ELK&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The ELK platform for open-source real-time log analysis consists of three open-source projects: ElasticSearch, Logstash and Kiabana. It is very common in enterprise-level log management platforms.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Splunk&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A top-tier log analysis tool. If you often use grep, awk, sed, sort, uniq, tail, head to analyze logs, you can transition to Splunk easily.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;IBM QRadar&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Qradar has a free community edition whose features are not much different from the commercial version, suitable for small-scale log and traffic analysis.&lt;/p&gt;
+&lt;p&gt;Article source: WooYun Security (乌云安全)&lt;/p&gt;
+</content>
+        <category term="日志" />
+        <category term="工具" />
+        <updated>2021-08-22T13:30:00.000Z</updated>
+    </entry>
+    <entry>
         <id>https://erik.xyz/2021/08/22/10-logs-tools-total/</id>
         <title>10个Web日志安全性分析工具</title>
         <link rel="alternate" href="https://erik.xyz/2021/08/22/10-logs-tools-total/"/>
@@ -586,6 +686,167 @@
         <category term="日志" />
         <category term="工具" />
         <updated>2021-08-22T13:30:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2021/07/15/linux-tools-system-en/</id>
+        <title>13 Practical Tools Every Linux Administrator Needs</title>
+        <link rel="alternate" href="https://erik.xyz/2021/07/15/linux-tools-system-en/"/>
+        <content type="html">&lt;ol&gt;
+&lt;li&gt;Check which processes are eating bandwidth - Nethogs&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Nethogs is a terminal-based network traffic monitoring tool that shows the bandwidth each process is using, in a visual way.&lt;br&gt;Download: &lt;a href=&#34;http://sourceforge.net/projects/nethogs/files/nethogs/0.8/nethogs-0.8.0.tar.gz/download&#34;&gt;http://sourceforge.net/projects/nethogs/files/nethogs/0.8/nethogs-0.8.0.tar.gz/download&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;yum -y install libpcap-devel ncurses-devel
+tar zxvf nethogs-0.8.0.tar.gz
+cd nethogs
+make &amp;amp;&amp;amp; make install
+nethogs eth0
+&lt;/code&gt;&lt;/pre&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;ol&gt;
+&lt;li&gt;Hard disk read performance testing - IOZone&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;IOZone is a Linux filesystem performance testing tool that can test filesystem read and write performance across different operating systems.&lt;br&gt;Download: &lt;a href=&#34;http://www.iozone.org/src/current/&#34;&gt;http://www.iozone.org/src/current/&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;tar xvf iozone3_420.tar
+cd iozone3_420/src/current/
+make linux
+./iozone -a -n 512m -g 16g -i 0 -i 1 -i 5 -f /mnt/iozone -Rb ./iozone.xls
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;a runs in fully automatic mode&lt;/li&gt;
+&lt;li&gt;n sets the minimum file size for automatic mode (Kbytes).&lt;/li&gt;
+&lt;li&gt;g sets the maximum file size available to automatic mode, in Kbytes.&lt;/li&gt;
+&lt;li&gt;i specifies which test to run.&lt;/li&gt;
+&lt;li&gt;f specifies the name of the test file, which is deleted automatically when the run finishes&lt;/li&gt;
+&lt;li&gt;R produces the Excel output on standard output&lt;/li&gt;
+&lt;li&gt;b writes the output to the specified file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Real-time disk IO monitoring - IOTop&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The IOTop command is dedicated to displaying hard disk IO, with an interface style similar to the top command.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    yum -y install iotop
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;Network traffic monitoring - IPtraf&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;IPtraf is a simple network status analysis tool that runs on Linux.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;yum -y install iptraf
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;Network traffic monitoring - IFTop&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;iftop is a real-time traffic monitoring tool similar to top on linux. It is a bit more intuitive than iptraf.&lt;br&gt;Download: &lt;a href=&#34;http://www.ex-parrot.com/~pdw/iftop/&#34;&gt;http://www.ex-parrot.com/~pdw/iftop/&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;tar zxvf iftop-0.17.tar.gz
+cd iftop-0.17
+./configure
+make &amp;amp;&amp;amp; make install
+
+iftop 
+iftop -i eth0 
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;Specify-the-network-interface-to-monitor&#34;&gt;&lt;a href=&#34;#Specify-the-network-interface-to-monitor&#34; class=&#34;headerlink&#34; title=&#34;Specify the network interface to monitor&#34;&gt;&lt;/a&gt;Specify the network interface to monitor&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;TX: traffic sent&lt;/li&gt;
+&lt;li&gt;RX: traffic received&lt;/li&gt;
+&lt;li&gt;TOTAL: total traffic&lt;/li&gt;
+&lt;li&gt;Cumm: total traffic since iftop started running&lt;/li&gt;
+&lt;li&gt;peak: peak traffic&lt;/li&gt;
+&lt;li&gt;rates: the average traffic over the last 2s, 10s and 40s respectively&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Real-time process monitoring - HTop&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;HTop is an interactive process browser for Linux that can be used in place of the top command.&lt;br&gt;rpm -ivh &lt;a href=&#34;http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm&#34;&gt;http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm&lt;/a&gt; (installs a third-party YUM repository)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;yum -y install htop
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;System resource monitoring - NMON&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;NMON is a monitoring and analysis tool widely used on AIX and various Linux operating systems&lt;br&gt;Download: &lt;a href=&#34;http://sourceforge.jp/projects/sfnet_nmon/releases/&#34;&gt;http://sourceforge.jp/projects/sfnet_nmon/releases/&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;chmod +x nmon_x86_64_rhel6
+mv nmon_x86_64_rhel6 /usr/sbin/nmon
+nmon
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;Monitoring several logs at once - MultiTail&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;MultiTail opens multiple windows in the console so you can monitor several log files at the same time, much like the tail command.&lt;br&gt;rpm -ivh &lt;a href=&#34;http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm&#34;&gt;http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm&lt;/a&gt; (installs a third-party YUM repository)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  yum -y install multitail
+  multitail -e &amp;quot;fail&amp;quot; /var/log/secure # filter by keyword to monitor
+  multitail -l &amp;quot;ping baidu.com&amp;quot; # monitor the command that follows; -l is the command to run
+  multitail -i /var/log/messages -i /var/log/secure # -i specifies a filename
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;SSH brute-force protection - Fail2ban&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Fail2ban can watch your system logs, match error messages against regular expressions, and carry out the corresponding blocking action — usually blocking at the firewall&lt;br&gt;Download: &lt;a href=&#34;http://www.fail2ban.org/wiki/index.php/Downloads&#34;&gt;http://www.fail2ban.org/wiki/index.php/Downloads&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd fail2ban-0.8.11
+python setup.py install
+cd files/
+cp ./redhat-initd /etc/init.d/fail2ban
+service fail2ban start
+chkconfig --add fail2ban
+chkconfig fail2ban on
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note: you need a working iptables setup; if you restart iptables you must restart fail2ban as well, because fail2ban works by calling iptables to block outside attacks in real time.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;grep -v &amp;quot;^#&amp;quot; /etc/fail2ban/jail.conf | grep -v &amp;quot;^$&amp;quot; [DEFAULT]
+ignoreip = 127.0.0.1/8# ignore the local machine&amp;#39;s IP
+bantime = 600   # how long to block after a rule matches
+findtime = 600  # the window in which matches trigger a block, e.g. 3 hits within 600 seconds
+maxretry = 3    # maximum number of attempts
+backend = auto # log change detection: gamin, polling or auto
+usedns = warn [ssh-iptables]
+enabled = true# disabled by default
+false filter = sshd action = iptables[name=SSH, port=ssh, protocol=tcp] # sendmail-whois[name=SSH,dest=recipient email, sender=sender email, sendername=&amp;quot;Fail2Ban&amp;quot;] logpath = /var/log/sshd.log # the corresponding error log is usually at /var/log/secure maxretry = 5 # the number of failed attempts, overriding the global maxretry
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Note: all application protections are disabled by default and have to be enabled by hand. The fail2ban.conf file holds logging information, and the jail.conf file holds the configuration for the specific services and actions being protected.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;touch /var/log/sshd.log
+service fail2ban restart
+fail2ban-client status # check that monitoring is enabled Status |- Number of jail: 1 `- Jail list: ssh-iptables
+iptables -L # the iptables filter table has one fail2ban rule fail2ban-SSH tcp -- anywhere anywhere tcp dpt:ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;Persistent terminal sessions - Tmux&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Tmux is an excellent terminal multiplexer similar to GNU Screen, but more convenient, flexible and efficient than Screen. It makes sure that a dropped SSH connection doesn’t affect your running tasks.&lt;br&gt;rpm -ivh &lt;a href=&#34;http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm&#34;&gt;http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm&lt;/a&gt; (installs a third-party YUM repository)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Showing disk space usage in a web page - Agedu&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Download: &lt;a href=&#34;http://www.chiark.greenend.org.uk/~sgtatham/agedu/&#34;&gt;http://www.chiark.greenend.org.uk/~sgtatham/agedu/&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;tar zxvf agedu-r9723.tar.gz
+cd agedu-r9723
+./configure
+make &amp;amp;&amp;amp; make install
+agedu -s / # -s scans
+agedu -w --address 192.168.0.10:80 # -w takes a web address
+agedu -w --address 192.168.0.108080 --auth none # --auth turns authentication off; without a port number a random one is generated for you to open in a browser
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;Security scanning tool - NMap&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;NMap is a network connection scanning and sniffing toolkit for Linux, used to scan the open network ports of machines on the network.&lt;br&gt;Download: &lt;a href=&#34;http://nmap.org/download.html&#34;&gt;http://nmap.org/download.html&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;tar jxvf nmap-6.40.tar.bz2
+./configure
+make &amp;amp;&amp;amp; make install
+nmap 192.168.0.10 # get basic information
+nmap -O 192.168.0.10 # get OS version information
+nmap -A 192.168.0.10 # get comprehensive system information
+nmap 192.168.0.0/24 # get basic information about the devices working on a subnet
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;-sS TCP scan&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;-sV system version detection&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Web stress testing - Httperf&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Httperf is more powerful than ab: it can measure the maximum load a web service can carry and uncover potential problems such as memory usage and stability. Its biggest advantage: you can specify a pattern for the stress test to simulate a real environment.&lt;br&gt;Download: &lt;a href=&#34;http://code.google.com/p/httperf/downloads/list&#34;&gt;http://code.google.com/p/httperf/downloads/list&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;tar zxvf httperf-0.9.0.tar.gz
+cd httperf-0.9.0
+./configure
+make &amp;amp;&amp;amp; make install
+httperf --hog --server=192.168.0.202 --uri=/index.html --num-conns=10000 --wsess=10,10,0.1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Parameter reference:    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;—hog: makes httperf create as many connections as possible; httperf generates access connections regularly according to the hardware configuration;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;—num-conns: the number of connections, 10000 requests are issued in total;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;—wsess: simulates the pattern of users opening web pages; the first 10 means 10 session connections are created, the second 10 means each session connection makes 10 requests, and 0.1 is the interval between requests within a session, in seconds.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Reposted from: &lt;a href=&#34;https://mp.weixin.qq.com/s/g7BksCQuTbwUorspGR7mcQ&#34;&gt;https://mp.weixin.qq.com/s/g7BksCQuTbwUorspGR7mcQ&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <updated>2021-07-15T13:15:00.000Z</updated>
     </entry>
     <entry>
         <id>https://erik.xyz/2021/07/15/linux-tools-system/</id>
@@ -723,6 +984,91 @@ httperf --hog --server=192.168.0.202 --uri=/index.html --num-conns=10000 --wsess
         <updated>2021-07-15T13:15:00.000Z</updated>
     </entry>
     <entry>
+        <id>https://erik.xyz/2019/10/20/jenks-install-en/</id>
+        <title>Installing and Using Jenkins</title>
+        <link rel="alternate" href="https://erik.xyz/2019/10/20/jenks-install-en/"/>
+        <content type="html">&lt;p&gt;Author: 回首笑人间, a senior Java engineer, passionate about researching open source technologies, and a partner of the Architect Community!&lt;br&gt;Contents&lt;/p&gt;
+&lt;p&gt;What Is Continuous Integration&lt;br&gt;Introduction to Jenkins&lt;br&gt;Installing and Starting Jenkins&lt;br&gt;Installing Jenkins Plugins&lt;br&gt;Global Tool Configuration&lt;br&gt;Automatic Installation&lt;br&gt;Local Installation&lt;br&gt;Uploading Code to the Git Server&lt;br&gt;Creating and Running a Job&lt;br&gt;Go Project&lt;br&gt;JAVA Project&lt;br&gt;What Is Continuous Integration&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;Continuous integration, CI for short&lt;/p&gt;
+&lt;p&gt;As software development grows ever more complex, how team members collaborate better to ensure software quality has slowly become an unavoidable issue in the development process. Especially in recent years, as Agile has become more and more popular in the software engineering field, how to adapt quickly to constantly changing requirements while guaranteeing software quality has become particularly important.&lt;/p&gt;
+&lt;p&gt;Continuous integration is exactly a software development practice aimed at this class of problem. It advocates that team members integrate their work frequently — sometimes many times a day. Each integration is verified by an automated build, including automatic compilation, release, and testing, so that integration errors are found as early as possible and the team can develop cohesive software faster.&lt;/p&gt;
+&lt;p&gt;The characteristics of continuous integration:&lt;/p&gt;
+&lt;p&gt;It is an automated, periodic integration testing process: checking out code, compiling and building, running tests, recording results, and test statistics are all done automatically without human intervention;&lt;br&gt;It requires a dedicated integration server to run the integration builds;&lt;br&gt;It requires the support of code hosting tools, such as Git and the Gogs web interface&lt;br&gt;The role of continuous integration:&lt;/p&gt;
+&lt;p&gt;It guarantees the quality of the code developers commit, and relieves the pressure when releasing software;&lt;br&gt;Every stage of continuous integration is done automatically with little human intervention, which helps cut repetitive work and save time, cost, and effort;&lt;br&gt;Introduction to Jenkins&lt;br&gt;Jenkins, originally named Hudson, took its current name in 2011. It is an open source software tool for implementing continuous integration. Official website: &lt;a href=&#34;http://jenkins-ci.org/&#34;&gt;http://jenkins-ci.org/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Jenkins can monitor errors in integration in real time, provide detailed log files and notification features, and present the trends and stability of project builds visually in chart form.&lt;/p&gt;
+&lt;p&gt;Features:&lt;/p&gt;
+&lt;p&gt;Easy to install: just two docker commands download it from the official site and run it directly, with no extra installation, let alone installing a database;&lt;br&gt;Easy to configure: friendly GUI configuration interface;&lt;br&gt;Change support: Jenkins can pull from code repositories (Subversion/CVS) and produce a list of code updates, outputting it in the build output;&lt;br&gt;Permalink support: users access Jenkins over the web, and those web page links are all permanent addresses, so you can use the link directly in all kinds of documents;&lt;br&gt;E-Mail/RSS/IM integration: when an integration finishes, these tools tell you the result in real time (as far as I know, building an integration takes some time, and with this feature you can do other things while waiting for the result);&lt;br&gt;JUnit/TestNG test reports: that is, providing detailed test reports in chart form and so on;&lt;br&gt;Distributed builds: Jenkins can distribute integration builds and other work across multiple machines;&lt;br&gt;File fingerprinting: Jenkins keeps build records of which integration build produced which jars files, and which integration build used which version of the jars files;&lt;br&gt;Third-party plugin support: this makes Jenkins more and more powerful&lt;br&gt;Installing and Starting Jenkins&lt;br&gt;(1) Run the install command to download jenkins&lt;/p&gt;
+&lt;p&gt;docker pull jenkins/jenkins&lt;br&gt;(2) Start the service&lt;/p&gt;
+&lt;p&gt;docker run -p 8080:8080 -p 50000:50000 -v /mnt/data/jenkins:/var/jenkins_home —name “jenkins” jenkins/jenkins&lt;/p&gt;
+&lt;p&gt;If you get the following error:&lt;/p&gt;
+&lt;p&gt;touch: cannot touch ‘/var/jenkins_home/copy_reference_file.log’: Permission denied&lt;br&gt;Can not write to /var/jenkins_home/copy_reference_file.log. Wrong volume permissions?&lt;br&gt;You need to fix the directory permissions, because when mapping the local data volume, the owner of the /mnt/data/jenkins directory is the root user, while the jenkins user in the container has uid 1000&lt;/p&gt;
+&lt;p&gt;sudo chown -R 1000:1000 /mnt/data/jenkins&lt;br&gt;(3) Visit the link &lt;a href=&#34;http://10.20.29.151:8080&#34;&gt;http://10.20.29.151:8080&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you forget the password, you can enter the container and run cat /var/lib/jenkins/secrets/initialAdminPassword to get the initial password string.&lt;br&gt;If the directory does not exist, you can use the find / -name “initialAdminPassword” -depth -print command to look for it.&lt;/p&gt;
+&lt;p&gt;(4) Install plugins&lt;/p&gt;
+&lt;p&gt;(5) Create a new user&lt;/p&gt;
+&lt;p&gt;The installation is complete; enter the main interface&lt;/p&gt;
+&lt;p&gt;Installing Jenkins Plugins&lt;br&gt;Let’s use installing the maven plugin as an example to demonstrate plugin installation&lt;/p&gt;
+&lt;p&gt;(1) Click the “System Management” menu on the left, then click&lt;/p&gt;
+&lt;p&gt;(2) Select the “Optional Plugins” tab, search for maven, choose Maven Integration in the list, and click the “Install directly” button&lt;/p&gt;
+&lt;p&gt;When you see the image below, it is done&lt;/p&gt;
+&lt;p&gt;Note: if your project is a GitHub, GitLib, or Go language project, then I think you will want a corresponding plugin like this to do the work for you.&lt;/p&gt;
+&lt;p&gt;Global Tool Configuration&lt;br&gt;Select System Management, then Global Tool Configuration&lt;/p&gt;
+&lt;p&gt;Automatic Installation&lt;/p&gt;
+&lt;p&gt;Jenkins provides two ways to configure tools; let’s again use maven as the example&lt;/p&gt;
+&lt;p&gt;The first is as shown above: you only need to select automatic installation and a version number. Jenkins also gives you a help button in the upper right corner, where you can see explanations and examples.&lt;/p&gt;
+&lt;p&gt;Local Installation&lt;/p&gt;
+&lt;p&gt;Compared with the first approach, the second is a bit more troublesome, but the advantage is that you don’t have to download again when packaging later, which shortens the packaging time.&lt;/p&gt;
+&lt;p&gt;Here is how to install Maven and a local repository:&lt;/p&gt;
+&lt;p&gt;(1) Upload the Maven archive to the server (virtual machine)&lt;/p&gt;
+&lt;p&gt;(2) Extract&lt;/p&gt;
+&lt;p&gt;tar zxvf apache-maven-3.5.4-bin.tar.gz&lt;br&gt;(3) Move the directory&lt;/p&gt;
+&lt;p&gt;mv apache-maven-3.5.4 /usr/local/maven&lt;br&gt;(4) Edit the settings.xml configuration file with vi /usr/local/maven/conf/settings.xml and configure the local repository directory, as follows&lt;/p&gt;
+&lt;p&gt;&lt;localRepository&gt;/usr/local/repository&lt;/localRepository&gt;&lt;br&gt;(5) Upload the local repository from your development environment to the server (virtual machine) and move it to /usr/local/repository.&lt;/p&gt;
+&lt;p&gt;mv reponsitory_boot /usr/local/repository&lt;br&gt;Other examples:&lt;/p&gt;
+&lt;p&gt;(1) JDK configuration&lt;/p&gt;
+&lt;p&gt;Set javahome to /usr/java/jdk1.8.0_171-amd64&lt;/p&gt;
+&lt;p&gt;(2) Git configuration (Git is already installed locally)&lt;/p&gt;
+&lt;p&gt;(3) Maven configuration&lt;/p&gt;
+&lt;p&gt;Uploading Code to the Git Server&lt;br&gt;Steps:&lt;/p&gt;
+&lt;p&gt;(1) Install git locally (Windows version)&lt;/p&gt;
+&lt;p&gt;(2) In IDEA select the menu: File — settings, then in the window choose Version Control — Git&lt;/p&gt;
+&lt;p&gt;(3) Select the menu VCS —&amp;gt; Enable Version Control Integration…&lt;/p&gt;
+&lt;p&gt;Select Git&lt;/p&gt;
+&lt;p&gt;(4) Set the remote address: right-click the project and select the menu Git —&amp;gt; Repository —&amp;gt;Remotes…&lt;/p&gt;
+&lt;p&gt;(5) Right-click the project and select the menu Git —&amp;gt; Add&lt;/p&gt;
+&lt;p&gt;(6) Right-click the project and select the menu Git —&amp;gt; Commit Directory…&lt;/p&gt;
+&lt;p&gt;(7) Right-click the project and select the menu Git —&amp;gt; Repository —&amp;gt; Push …&lt;/p&gt;
+&lt;p&gt;Creating and Running a Job&lt;br&gt;Using the hottest Java and Go projects as examples, we will show you respectively how to build and run a project.&lt;/p&gt;
+&lt;p&gt;Go Project&lt;/p&gt;
+&lt;p&gt;(1) Go back to the home page and click the new item button. As shown below, enter a name, choose to create a freestyle project, and click OK&lt;/p&gt;
+&lt;p&gt;(2) General management, where you can add a project description and a GitHub project path, as well as some other configuration&lt;/p&gt;
+&lt;p&gt;(3) Source Code Management, select GitHub&lt;/p&gt;
+&lt;p&gt;(4) Build Triggers, configure the trigger rules; here we take scheduled and polling as examples, with the settings as&lt;/p&gt;
+&lt;p&gt;Scheduled build: build the job once on a schedule&lt;/p&gt;
+&lt;p&gt;Poll SCM: periodically check whether the code in Source Code Management has been updated; if it has, build, otherwise don’t&lt;/p&gt;
+&lt;p&gt;As shown in the image, the scheduled build builds once every 10 minutes, and Poll SCM checks once every 5 minutes.&lt;/p&gt;
+&lt;p&gt;The rule for the time * fields is: minute hour day month week&lt;br&gt;(5) Build Environment, configure timestamps for console output and specify the Go version&lt;/p&gt;
+&lt;p&gt;(6) Build, use a Shell script to test whether the project works after the code is uploaded&lt;/p&gt;
+&lt;p&gt;The Shell is as follows:&lt;/p&gt;
+&lt;p&gt;export GOPATH=$WORKSPACE/../                    # Specify the GOPATH path; running Go requires a GOPATH path&lt;br&gt;export GOWORK=$GOPATH/src/github.com/Jenkins    # Create the directory dependency structure for running the project&lt;br&gt;cp -rf $WORKSPACE/* $GOWORK/                    # Keep the test run data isolated from the source data&lt;br&gt;cd $GOWORK &amp;amp;&amp;amp; go build                          # Enter the project directory and run&lt;br&gt;Command notes:&lt;/p&gt;
+&lt;p&gt;$GOPATH: running Go requires a GOPATH to be specified, i.e. the project run path&lt;br&gt;$WORKSPACE /var/jenkins_home/workspace/Jenkins&lt;br&gt;GOWORK: create an execution directory that matches the code dependencies&lt;br&gt;Note: the Go plugin download sets GOROOT automatically for us during the build, but does not specify GOPATH, so it needs to be specified&lt;br&gt;Finally click the “Save” button&lt;/p&gt;
+&lt;p&gt;(7) Run the build and check the output in the console&lt;/p&gt;
+&lt;p&gt;The build succeeded, and it also output the WORKSPACE, GOPATH, and GOROOT directories, meaning the configuration took effect. Enter the docker container or the mounted directory to check whether there is an executable file:&lt;/p&gt;
+&lt;p&gt;Besides the methods above, you can also build, deploy, and run the project by configuring docker through a shell, and you can configure the project to run on this or another server. I won’t go through every other configuration method one by one — dig into them yourself.&lt;/p&gt;
+&lt;p&gt;JAVA Project&lt;/p&gt;
+&lt;p&gt;(1) Go back to the home page and click the new item button. As shown below, enter a name, choose to create a Maven project, and click OK&lt;/p&gt;
+&lt;p&gt;(2) Source Code Management, select Git&lt;/p&gt;
+&lt;p&gt;(3) Build&lt;/p&gt;
+&lt;p&gt;Command:&lt;/p&gt;
+&lt;p&gt;clean package docker:build -DpushImage&lt;br&gt;Used to clean, package, and build the docker image&lt;/p&gt;
+&lt;p&gt;Finally click the “Save” button&lt;/p&gt;
+&lt;p&gt;(4) Run the job&lt;/p&gt;
+&lt;p&gt;Refer to the Go project steps from here on.&lt;br&gt;Original post: &lt;a href=&#34;https://mp.weixin.qq.com/s/PEupc5YIKuctZO1Tivy_ug&#34;&gt;https://mp.weixin.qq.com/s/PEupc5YIKuctZO1Tivy_ug&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <category term="jenkins" />
+        <updated>2019-10-20T13:54:00.000Z</updated>
+    </entry>
+    <entry>
         <id>https://erik.xyz/2019/10/20/jenks-install/</id>
         <title>Jenkins安装及使用</title>
         <link rel="alternate" href="https://erik.xyz/2019/10/20/jenks-install/"/>
@@ -807,6 +1153,44 @@ httperf --hog --server=192.168.0.202 --uri=/index.html --num-conns=10000 --wsess
         <updated>2019-10-20T13:54:00.000Z</updated>
     </entry>
     <entry>
+        <id>https://erik.xyz/2019/10/01/jetbrains-code-plugin-en/</id>
+        <title>JetBrains full lineup, activation and usage</title>
+        <link rel="alternate" href="https://erik.xyz/2019/10/01/jetbrains-code-plugin-en/"/>
+        <content type="html">&lt;p&gt;A universal permanent crack: just install the plugin, and it works with most IDEs of the 2019.2 versions&lt;/p&gt;
+&lt;p&gt;pycharm2019.2  phpstorm2019.2 intelli2019.2 gloand2019.2 clion2019.2 webstorm2019.2&lt;/p&gt;
+&lt;p&gt;Note: do not use it for commercial purposes; personal use for practice is fine.&lt;/p&gt;
+&lt;p&gt;Download the crack plugin jetbrainsCrack.jar and place it in the bin directory under the directory of the installed IDE tool&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Link: &lt;a href=&#34;https://pan.baidu.com/s/16KTQF7pOJUhEGnA9EYQbQA&#34;&gt;https://pan.baidu.com/s/16KTQF7pOJUhEGnA9EYQbQA&lt;/a&gt;  Password: 3h5e&lt;/p&gt;
+&lt;p&gt;In the bin directory, edit the &lt;em&gt;.vmoptions and &lt;/em&gt;64.vmoptions files to load the plugin&lt;br&gt;-javaagent:&lt;path to plugin&gt;&lt;/p&gt;
+&lt;p&gt;For example, on my Linux system the format is as follows:&lt;br&gt;-javaagent:/opt/phpstorm/bin/jetbrainsCrack.jar&lt;/p&gt;
+&lt;p&gt;If you have filled in an activation code before, you need to delete the activation code, and delete the hosts entry as well.&lt;br&gt;On Linux you need to directly delete the generated IDE cache files in the current user’s home directory&lt;/p&gt;
+&lt;p&gt;After starting the IDE tool, just fill in one of the activation codes below.&lt;/p&gt;
+&lt;p&gt;Activation code 1&lt;/p&gt;
+&lt;div style=&#34;overflow:scroll&#34;&gt;
+
+     KNBB2QUUR1-eyJsaWNlbnNlSWQiOiJLTkJCMlFVVVIxIiwibGljZW5zZWVOYW1lIjoiZ2hib2tlIiwiYXNzaWduZWVOYW1lIjoiIiwiYXNzaWduZWVFbWFpbCI6IiIsImxpY2Vuc2VSZXN0cmljdGlvbiI6IiIsImNoZWNrQ29uY3VycmVudFVzZSI6ZmFsc2UsInByb2R1Y3RzIjpbeyJjb2RlIjoiSUkiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiQUMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiRFBOIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IlBTIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkdPIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkRNIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkNMIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IlJTMCIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSQyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSRCIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJQQyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSTSIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJXUyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJEQiIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJEQyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSU1UiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In1dLCJoYXNoIjoiMTI3OTY4NzcvMCIsImdyYWNlUGVyaW9kRGF5cyI6NywiYXV0b1Byb2xvbmdhdGVkIjpmYWxzZSwiaXNBdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlfQ==-1iV7BA/baNqv0Q5yUnAphUmh66QhkDRX+qPL09ICuEicBqiPOBxmVLLCVUpkxhrNyfmOtat2LcHwcX/NHkYXdoW+6aS0S388xe1PV2oodiPBhFlEaOac42UQLgP4EidfGQSvKwC9tR1zL5b2CJPQKZ7iiHh/iKBQxP6OBMUP1T7j3Fe1rlxfYPc92HRZf6cO+C0+buJP5ERZkyIn5ZrVM4TEnWrRHbpL8SVNq4yqfc+NwoRzRSNC++81VDS3AXv9c91YeZJz6JXO7AokIk54wltr42FLNuKbozvB/HCxV9PA5vIiM+kZY1K0w5ytgxEYKqA87adA7R5xL/crpaMxHQ==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ndaik1GD0nyTdqkZgURQZGW+RGxCdBITPXIwpjhhaD0SXGa4XSZBEBoiPdY6XV6pOfUJeyfi9dXsY4MmT0D+sKoST3rSw96xaf9FXPvOjn4prMTdj3Ji3CyQrGWeQU2nzYqFrp1QYNLAbaViHRKuJrYHI6GCvqCbJe0LQ8qqUiVMA9wG/PQwScpNmTF9Kp2Iej+Z5OUxF33zzm+vg/nYV31HLF7fJUAplI/1nM+ZG8K+AXWgYKChtknl3sW9PCQa3a3imPL9GVToUNxc0wcuTil8mqveWcSQCHYxsIaUajWLpFzoO2AhK4mfYBSStAqEjoXRTuj17mo8Q6M2SHOcwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQBonMu8oa3vmNAa4RQP8gPGlX3SQaA3WCRUAj6Zrlk8AesKV1YSkh5D2l+yUk6njysgzfr1bIR5xF8eup5xXc4/G7NtVYRSMvrd6rfQcHOyK5UFJLm+8utmyMIDrZOzLQuTsT8NxFpbCVCfV5wNRu4rChrCuArYVGaKbmp9ymkw1PU6+HoO5i2wU3ikTmRv8IRjrlSStyNzXpnPTwt7bja19ousk56r40SmlmC04GdDHErr0ei2UbjUua5kw71Qn9g02tL9fERI2sSRjQrvPbn9INwRWl5+k05mlKekbtbu2ev2woJFZK4WEXAd/GaAdeZZdumv8T2idDFL7cAirJwcrbfpawPeXr52oKTPnXfi0l5+g9Gnt/wfiXCrPElX6ycTR6iL3GC2VR4jTz6YatT4Ntz59/THOT7NJQhr6AyLkhhJCdkzE2cob/KouVp4ivV7Q3Fc6HX7eepHAAF/DpxwgOrg9smX6coXLgfp0b1RU2u/tUNID04rpNxTMueTtrT8WSskqvaJd3RH8r7cnRj6Y2hltkja82HlpDURDxDTRvv+krbwMr26SB/40BjpMUrDRCeKuiBahC0DCoU/4+ze1l94wVUhdkCfL0GpJrMSCDEK+XEurU18Hb7WT+ThXbkdl6VpFdHsRvqAnhR2g4b+Qzgidmuky5NUZVfEaZqV/g==
+&lt;/div&gt;
+Activation code 2
+&lt;div style=&#34;overflow:scroll&#34;&gt;
+
+     3AGXEJXFK9-eyJsaWNlbnNlSWQiOiIzQUdYRUpYRks5IiwibGljZW5zZWVOYW1lIjoiaHR0cHM6Ly96aGlsZS5pbyIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkFDIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkRQTiIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJQUyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJHTyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJETSIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJDTCIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSUzAiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUkMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUkQiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUEMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUk0iLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiV1MiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiREIiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiREMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUlNVIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9XSwiaGFzaCI6IjEyNzk2ODc3LzAiLCJncmFjZVBlcmlvZERheXMiOjcsImF1dG9Qcm9sb25nYXRlZCI6ZmFsc2UsImlzQXV0b1Byb2xvbmdhdGVkIjpmYWxzZX0=-WGTHs6XpDhr+uumvbwQPOdlxWnQwgnGaL4eRnlpGKApEEkJyYvNEuPWBSrQkPmVpim/8Sab6HV04Dw3IzkJT0yTc29sPEXBf69+7y6Jv718FaJu4MWfsAk/ZGtNIUOczUQ0iGKKnSSsfQ/3UoMv0q/yJcfvj+me5Zd/gfaisCCMUaGjB/lWIPpEPzblDtVJbRexB1MALrLCEoDv3ujcPAZ7xWb54DiZwjYhQvQ+CvpNNF2jeTku7lbm5v+BoDsdeRq7YBt9ANLUKPr2DahcaZ4gctpHZXhG96IyKx232jYq9jQrFDbQMtVr3E+GsCekMEWSD//dLT+HuZdc1sAIYrw==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ndaik1GD0nyTdqkZgURQZGW+RGxCdBITPXIwpjhhaD0SXGa4XSZBEBoiPdY6XV6pOfUJeyfi9dXsY4MmT0D+sKoST3rSw96xaf9FXPvOjn4prMTdj3Ji3CyQrGWeQU2nzYqFrp1QYNLAbaViHRKuJrYHI6GCvqCbJe0LQ8qqUiVMA9wG/PQwScpNmTF9Kp2Iej+Z5OUxF33zzm+vg/nYV31HLF7fJUAplI/1nM+ZG8K+AXWgYKChtknl3sW9PCQa3a3imPL9GVToUNxc0wcuTil8mqveWcSQCHYxsIaUajWLpFzoO2AhK4mfYBSStAqEjoXRTuj17mo8Q6M2SHOcwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQBonMu8oa3vmNAa4RQP8gPGlX3SQaA3WCRUAj6Zrlk8AesKV1YSkh5D2l+yUk6njysgzfr1bIR5xF8eup5xXc4/G7NtVYRSMvrd6rfQcHOyK5UFJLm+8utmyMIDrZOzLQuTsT8NxFpbCVCfV5wNRu4rChrCuArYVGaKbmp9ymkw1PU6+HoO5i2wU3ikTmRv8IRjrlSStyNzXpnPTwt7bja19ousk56r40SmlmC04GdDHErr0ei2UbjUua5kw71Qn9g02tL9fERI2sSRjQrvPbn9INwRWl5+k05mlKekbtbu2ev2woJFZK4WEXAd/GaAdeZZdumv8T2idDFL7cAirJwcrbfpawPeXr52oKTPnXfi0l5+g9Gnt/wfiXCrPElX6ycTR6iL3GC2VR4jTz6YatT4Ntz59/THOT7NJQhr6AyLkhhJCdkzE2cob/KouVp4ivV7Q3Fc6HX7eepHAAF/DpxwgOrg9smX6coXLgfp0b1RU2u/tUNID04rpNxTMueTtrT8WSskqvaJd3RH8r7cnRj6Y2hltkja82HlpDURDxDTRvv+krbwMr26SB/40BjpMUrDRCeKuiBahC0DCoU/4+ze1l94wVUhdkCfL0GpJrMSCDEK+XEurU18Hb7WT+ThXbkdl6VpFdHsRvqAnhR2g4b+Qzgidmuky5NUZVfEaZqV/g==
+&lt;/div&gt;
+
+&lt;p&gt;Activation code 3&lt;/p&gt;
+&lt;div style=&#34;overflow:scroll&#34;&gt;
+
+    A82DEE284F-eyJsaWNlbnNlSWQiOiJBODJERUUyODRGIiwibGljZW5zZWVOYW1lIjoiaHR0cHM6Ly96aGlsZS5pbyIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiJVbmxpbWl0ZWQgbGljZW5zZSB0aWxsIGVuZCBvZiB0aGUgY2VudHVyeS4iLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUlMwIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiV1MiLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSRCIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IlJDIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiREMiLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJEQiIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IlJNIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiRE0iLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJBQyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkRQTiIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkdPIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUFMiLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJDTCIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IlBDIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUlNVIiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In1dLCJoYXNoIjoiODkwNzA3MC8wIiwiZ3JhY2VQZXJpb2REYXlzIjowLCJhdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlLCJpc0F1dG9Qcm9sb25nYXRlZCI6ZmFsc2V9-5epo90Xs7KIIBb8ckoxnB/AZQ8Ev7rFrNqwFhBAsQYsQyhvqf1FcYdmlecFWJBHSWZU9b41kvsN4bwAHT5PiznOTmfvGv1MuOzMO0VOXZlc+edepemgpt+t3GUHvfGtzWFYeKeyCk+CLA9BqUzHRTgl2uBoIMNqh5izlDmejIwUHLl39QOyzHiTYNehnVN7GW5+QUeimTr/koVUgK8xofu59Tv8rcdiwIXwTo71LcU2z2P+T3R81fwKkt34evy7kRch4NIQUQUno//Pl3V0rInm3B2oFq9YBygPUdBUbdH/KHROyohZRD8SaZJO6kUT0BNvtDPKF4mCT1saWM38jkw==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ndaik1GD0nyTdqkZgURQZGW+RGxCdBITPXIwpjhhaD0SXGa4XSZBEBoiPdY6XV6pOfUJeyfi9dXsY4MmT0D+sKoST3rSw96xaf9FXPvOjn4prMTdj3Ji3CyQrGWeQU2nzYqFrp1QYNLAbaViHRKuJrYHI6GCvqCbJe0LQ8qqUiVMA9wG/PQwScpNmTF9Kp2Iej+Z5OUxF33zzm+vg/nYV31HLF7fJUAplI/1nM+ZG8K+AXWgYKChtknl3sW9PCQa3a3imPL9GVToUNxc0wcuTil8mqveWcSQCHYxsIaUajWLpFzoO2AhK4mfYBSStAqEjoXRTuj17mo8Q6M2SHOcwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQBonMu8oa3vmNAa4RQP8gPGlX3SQaA3WCRUAj6Zrlk8AesKV1YSkh5D2l+yUk6njysgzfr1bIR5xF8eup5xXc4/G7NtVYRSMvrd6rfQcHOyK5UFJLm+8utmyMIDrZOzLQuTsT8NxFpbCVCfV5wNRu4rChrCuArYVGaKbmp9ymkw1PU6+HoO5i2wU3ikTmRv8IRjrlSStyNzXpnPTwt7bja19ousk56r40SmlmC04GdDHErr0ei2UbjUua5kw71Qn9g02tL9fERI2sSRjQrvPbn9INwRWl5+k05mlKekbtbu2ev2woJFZK4WEXAd/GaAdeZZdumv8T2idDFL7cAirJwcrbfpawPeXr52oKTPnXfi0l5+g9Gnt/wfiXCrPElX6ycTR6iL3GC2VR4jTz6YatT4Ntz59/THOT7NJQhr6AyLkhhJCdkzE2cob/KouVp4ivV7Q3Fc6HX7eepHAAF/DpxwgOrg9smX6coXLgfp0b1RU2u/tUNID04rpNxTMueTtrT8WSskqvaJd3RH8r7cnRj6Y2hltkja82HlpDURDxDTRvv+krbwMr26SB/40BjpMUrDRCeKuiBahC0DCoU/4+ze1l94wVUhdkCfL0GpJrMSCDEK+XEurU18Hb7WT+ThXbkdl6VpFdHsRvqAnhR2g4b+Qzgidmuky5NUZVfEaZqV/g==
+&lt;/div&gt;
+
+
+&lt;p&gt;The above methods are prohibited&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <category term="jetbtrains" />
+        <category term="phpstorm" />
+        <updated>2019-09-30T16:23:00.000Z</updated>
+    </entry>
+    <entry>
         <id>https://erik.xyz/2019/10/01/jetbrains-code-plugin/</id>
         <title>jetbrains全系列，激活使用</title>
         <link rel="alternate" href="https://erik.xyz/2019/10/01/jetbrains-code-plugin/"/>
@@ -845,9 +1229,48 @@ httperf --hog --server=192.168.0.202 --uri=/index.html --num-conns=10000 --wsess
         <updated>2019-09-30T16:23:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2018/03/26/6-ge-kai-yuan-de-jia-ting-zi-dong-hua-gong-ju/</id>
+        <id>https://erik.xyz/2018/03/26/6-kai-yuan-jia-ting-zi-dong-hua-en/</id>
+        <title>6 Open Source Home Automation Tools | Linux China</title>
+        <link rel="alternate" href="https://erik.xyz/2018/03/26/6-kai-yuan-jia-ting-zi-dong-hua-en/"/>
+        <content type="html">&lt;p&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_jpg/W9DqKgFsc68kmQVHxs2R2utqYWLOiaHYDEddFzdT4eicGgUKvt59X7syh7JNtwDmB0V0WUG1aNRbPhlUMBEsDkfg/640?wx_fmt=jpeg&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Build a smarter home with these open source software solutions.&lt;/p&gt;
+&lt;p&gt;— Jason Baker&lt;/p&gt;
+&lt;p&gt;Useful link to the original article&lt;/p&gt;
+&lt;p&gt;Please visit the “original article link” at the end of this post to get clickable inline links, full-size original images, and related articles.&lt;/p&gt;
+&lt;p&gt;Acknowledgements&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Compiled from | &lt;a href=&#34;https://opensource.com/life/17/12/home-automation-tools&#34;&gt;https://opensource.com/life/17/12/home-automation-tools&lt;/a&gt; Author | Jason Baker Translator | qhwdw ? ? ? ? ? Total translations: 87 articles Contribution time: 124 days&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Build a smarter home with these open source software solutions.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The Internet of Things[1] is not just a buzzword; in reality, since we published a review article about home automation tools in 2016, it has also been rapidly taking over our lives. In 2017, 26.5% of American households[2] were already using some smart home technology; that number is expected to double within five years. With the growing number of these devices, which can help you automate the management, security, and surveillance of your home, home automation has never been easier or more appealing than it is now. Whether you want to remotely control your HVAC system, integrate a home theater, protect your home from theft, fire, or other threats, or save energy, or simply control a few lights, there are now countless devices that can help you. But at the same time, many users worry about the security and privacy issues brought by the new devices installed in their homes — this is a very real and serious problem[3]. They want to control who can access this important system, which manages their applications and records every detail of their lives. This idea is understandable: after all, in a day when even your refrigerator is a smart device, don’t you want a basic guarantee? Even if you authorize a device to communicate with the outside world, is it only accessed by authorized people? Concerns about security[4] are one of the many reasons why open source is crucial to the connected devices we will use in the future. Since the source code runs on their own devices, it is entirely possible to understand the program that controls your home, which means you can look at its code and even modify it if necessary. Although connected devices usually contain their proprietary components, the first step in bringing open source into home automation is to make sure your devices and these devices can work together — that they provide you with an interface — and that it is open source. Fortunately, there are many solutions to choose from today, from PCs to Raspberry Pi, on which you can do anything. Here are a few of my favorites.&lt;/p&gt;
+&lt;p&gt;Calaos&lt;/p&gt;
+&lt;p&gt;Calaos[5] is a full-stack home automation platform designed to include a server application, a touchscreen interface, a web application, native mobile apps for iOS and Android, and a preconfigured Linux operating system running underneath. The Calaos project comes from a French company, so its support forum is mainly in French, but a large amount of introductory material and documentation has already been translated into English. Calaos uses the GPL[6] v3 license, and you can view its source code on GitHub.&lt;/p&gt;
+&lt;p&gt;Domoticz&lt;/p&gt;
+&lt;p&gt;Domoticz[8] is a home automation system with support for a large library of devices, and it has extensive documentation on its project website, from weather stations to remotely controlled smoke detectors, as well as a large number of third-party integrations[9]. It uses an HTML5 front end, which can be accessed from a desktop browser or most modern smartphones, and it is a lightweight application that can run on low-power devices like the Raspberry Pi. Domoticz is written in C++ and uses the GPLv3[10] license. Its source code[11] is on GitHub.&lt;/p&gt;
+&lt;p&gt;Home Assistant&lt;/p&gt;
+&lt;p&gt;Home Assistant[12] is an open source home automation platform that can be easily deployed on any machine capable of running Python 3, from a Raspberry Pi to network-attached storage (NAS), and can even be easily deployed to other systems using Docker containers. It integrates a large number of open source and commercial products, allowing you to connect them — for example, IFTTT, weather information, or your Amazon Echo device — to control everything from locks to lights. Home Assistant is released under the MIT license[13], and its source code can be downloaded from GitHub[14].&lt;/p&gt;
+&lt;p&gt;MisterHouse&lt;/p&gt;
+&lt;p&gt;Since 2016, MisterHouse[15] has made a lot of progress, and we have listed it on this list as “another alternative to consider.” It uses Perl scripts to monitor anything, and it can query or control anything that can be remotely controlled through a computer. It can respond to voice commands, query the current time, weather, location, and other events, such as turning on lights, waking you up, noting your favorite TV shows, announcing incoming calls, alerting you when a door opens, tracking how long your son has been online, and telling you if your daughter’s car is speeding, and so on. It can run on Linux, macOS, and Windows computers, and it can read from/write to many devices, including security systems, weather stations, caller ID, routers, vehicle location systems, and more. MisterHouse uses the GPLv2[16] license, and you can view its source code on GitHub[17].&lt;/p&gt;
+&lt;p&gt;OpenHAB&lt;/p&gt;
+&lt;p&gt;OpenHAB[18] (short for open Home Automation Bus) is a home automation tool well known among open source enthusiasts, and it has a large user community as well as support for and integration with a large number of devices. Written in Java, OpenHAB is very lightweight and can be used across most mainstream operating systems; it even runs well on a Raspberry Pi. Supporting hundreds of devices, OpenHAB is designed to be device-agnostic, which makes it easy for developers to add their devices or plugins to the system. OpenHAB also supports controlling devices through iOS and Android apps as well as design tools, so you can create your own UI for your home system. You can find OpenHAB’s source code[19] on GitHub; it uses the Eclipse Public License[20].&lt;/p&gt;
+&lt;p&gt;OpenMotics&lt;/p&gt;
+&lt;p&gt;OpenMotics[21] is an open source hardware and software home automation system. Its design goal is to provide an integrated system for controlling devices, rather than piecing together various devices from different vendors. Unlike other systems that are mainly designed for easy retrofitting, OpenMotics focuses on hardware solutions. For more information, see the full article[22] by OpenMotics backend developer Frederick Ryckbosch. OpenMotics uses the GPLv2[16] license, and its source code can be downloaded from GitHub. Of course, our choices are not limited to these. Many home automation enthusiasts use different solutions, or even build their own. Other users choose to use individual smart home devices without integrating them into a single comprehensive system. If the solutions above don’t meet your needs, here are some potential alternatives to consider:&lt;/p&gt;
+&lt;p&gt;◈ EventGhost[24] is an open source (GPL v2[25]) home theater automation tool that only runs on Microsoft Windows PCs. It allows users to control media PCs and connected hardware, using plugins or custom Python scripts that trigger macros.&lt;/p&gt;
+&lt;p&gt;◈ ioBroker[26] is a JavaScript-based IoT platform that can control lights, locks, air conditioning, multimedia, webcams, and more. It can run on any hardware that can run Node.js, including Windows, Linux, and macOS, and it uses the MIT license[27].&lt;/p&gt;
+&lt;p&gt;◈ Jeedom[28] is a home automation platform built from open source software (GPL v2[25]) that can control lights, locks, multimedia, and more. It includes a mobile app (Android and iOS) and can run on a Linux PC; the company also sells a hub, which provides an off-the-shelf solution for configuring home automation.&lt;/p&gt;
+&lt;p&gt;◈ LinuxMCE[29] bills itself as the “digital glue” between your multimedia and electronic devices. It runs on Linux (including the Raspberry Pi), is released under the Pluto open source license[30], and can be used for home security, telephony (VoIP and voicemail), A/V equipment, home automation, and playing video games.&lt;/p&gt;
+&lt;p&gt;◈ OpenNetHome[31], like other solutions in this category, is an open source piece of software for controlling lights, alarms, applications, and more. It is based on Java and Apache Maven, can run on Windows, macOS, and Linux — including the Raspberry Pi, and is released under the GPLv3[32] license.&lt;/p&gt;
+&lt;p&gt;◈ Smarthomatic[33] is an open source home automation framework focused on hardware devices and software, not just the user interface. It is based on the GPLv3[34] license and can be used to control lights, appliances, and air conditioning, detect temperature, and remind you to water the plants.&lt;/p&gt;
+&lt;p&gt;Now it’s your turn: have you already set up a home automation system? Or are you researching how to design one? What advice do you have for home automation beginners, and what system would you recommend?&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <category term="转载" />
+        <updated>2018-03-26T11:08:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2018/03/26/6-kai-yuan-jia-ting-zi-dong-hua/</id>
         <title>6 个开源的家庭自动化工具 | Linux 中国</title>
-        <link rel="alternate" href="https://erik.xyz/2018/03/26/6-ge-kai-yuan-de-jia-ting-zi-dong-hua-gong-ju/"/>
+        <link rel="alternate" href="https://erik.xyz/2018/03/26/6-kai-yuan-jia-ting-zi-dong-hua/"/>
         <content type="html">&lt;p&gt;&lt;img src=&#34;http://mmbiz.qpic.cn/mmbiz_jpg/W9DqKgFsc68kmQVHxs2R2utqYWLOiaHYDEddFzdT4eicGgUKvt59X7syh7JNtwDmB0V0WUG1aNRbPhlUMBEsDkfg/640?wx_fmt=jpeg&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;用这些开源软件解决方案构建一个更智能的家庭。&lt;/p&gt;
 &lt;p&gt;— Jason Baker&lt;/p&gt;
@@ -884,6 +1307,18 @@ httperf --hog --server=192.168.0.202 --uri=/index.html --num-conns=10000 --wsess
         <updated>2018-03-26T11:08:00.000Z</updated>
     </entry>
     <entry>
+        <id>https://erik.xyz/2014/11/27/zui-xin-ban-fan-qiang-liu-lan-qi-en/</id>
+        <title>The Latest Circumvention Browser</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/27/zui-xin-ban-fan-qiang-liu-lan-qi-en/"/>
+        <content type="html">&lt;p&gt;Lately I’ve been working on getting indexed by Google and solving the problem of my site being blocked by browsers, and I can’t help but need Google Webmaster Tools — which can’t be accessed from within China, so circumvention is the only way. With this browser you can do Google promotion, look up information on overseas websites, log into Gmail…… The latest version of the circumvention browser tool, download &lt;a href=&#34;http://sourceforge.net/projects/erik1314/files/win_all/GAEChrome.zip/download&#34; title=&#34;circumvention browser tool&#34;&gt;circumvention browser tool&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <category term="翻墙" />
+        <category term="谷歌" />
+        <category term="谷歌搜索" />
+        <updated>2014-11-27T06:58:00.000Z</updated>
+    </entry>
+    <entry>
         <id>https://erik.xyz/2014/11/27/zui-xin-ban-fan-qiang-liu-lan-qi/</id>
         <title>最新版翻墙浏览器</title>
         <link rel="alternate" href="https://erik.xyz/2014/11/27/zui-xin-ban-fan-qiang-liu-lan-qi/"/>
@@ -896,6 +1331,17 @@ httperf --hog --server=192.168.0.202 --uri=/index.html --num-conns=10000 --wsess
         <updated>2014-11-27T06:58:00.000Z</updated>
     </entry>
     <entry>
+        <id>https://erik.xyz/2014/11/15/fang-ke-tong-ji-ji-shu-qi-en/</id>
+        <title>Visitor Statistics Counter</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/15/fang-ke-tong-ji-ji-shu-qi-en/"/>
+        <content type="html">&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt; &amp;lt;html xmlns=&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html; charset=UTF-8&amp;quot; /&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;title&amp;gt;访客统计&amp;lt;/title&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;lt;?php &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  if (!@$fp=fopen(&amp;quot;count.txt&amp;quot;, &amp;quot;r&amp;quot;))&amp;#123; //open the file in read-only mode; this step is optional and depends on the actual situation.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  		echo &amp;quot;count.txt文件创建成功！&amp;lt;br /&amp;gt;&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  @$num=fgets($fp,12);//read 11 digits &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  if ($num==&amp;quot;&amp;quot;)$num=0;//if the content of count.txt is empty, initialize it to 0 $num++; //increment the view count by 1 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  @fclose($fp); $fp=fopen(&amp;quot;count.txt&amp;quot;, &amp;quot;w&amp;quot;);//open the file in read-only mode &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  fwrite($fp, $num); //write the result after adding 1 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  fclose($fp); //close the file echo &amp;quot;您是第&amp;quot;.$num.&amp;quot;位浏览者！&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ?&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/body&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+        <category term="工具" />
+        <category term="php" />
+        <category term="代码" />
+        <updated>2014-11-15T05:48:00.000Z</updated>
+    </entry>
+    <entry>
         <id>https://erik.xyz/2014/11/15/fang-ke-tong-ji-ji-shu-qi/</id>
         <title>访客统计计数器</title>
         <link rel="alternate" href="https://erik.xyz/2014/11/15/fang-ke-tong-ji-ji-shu-qi/"/>
@@ -906,44 +1352,41 @@ httperf --hog --server=192.168.0.202 --uri=/index.html --num-conns=10000 --wsess
         <updated>2014-11-15T05:48:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2014/11/10/zend-studio-11-0-0-11-0-0-10-6-1-po-jie-bu-ding/</id>
+        <id>https://erik.xyz/2014/11/10/zend-studio-po-jie-bu-ding-en/</id>
+        <title>zend studio 11.0.0/11.0.0/10.6.1 Patch</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/10/zend-studio-po-jie-bu-ding-en/"/>
+        <content type="html">&lt;p&gt;I accidentally upgraded my zend studio 10.6.1 to 11.0.2, and now I have to crack it all over again. Miserable — so I had no choice but to ask Baidu for help, and amazingly enough I found it. Sharing it here. Patch address: &lt;a href=&#34;http://download.csdn.net/download/w15875510692/8140777&#34;&gt;http://download.csdn.net/download/w15875510692/8140777&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <updated>2014-11-10T03:41:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/11/10/zend-studio-po-jie-bu-ding/</id>
         <title>zend studio 11.0.0/11.0.0/10.6.1 补丁</title>
-        <link rel="alternate" href="https://erik.xyz/2014/11/10/zend-studio-11-0-0-11-0-0-10-6-1-po-jie-bu-ding/"/>
+        <link rel="alternate" href="https://erik.xyz/2014/11/10/zend-studio-po-jie-bu-ding/"/>
         <content type="html">&lt;p&gt;无意间把我的zend studio 10.6.1升级成11.0.2了，又要重新破解。 悲催，只好百度求助，竟然让我找到了，在此分享一下。 补丁地址：&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8140777&#34;&gt;http://download.csdn.net/download/w15875510692/8140777&lt;/a&gt;&lt;/p&gt;
 </content>
         <category term="工具" />
         <updated>2014-11-10T03:41:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2014/11/01/filezilla-an-zhuang-de-wen-ti-glibcxx-3-4-15/</id>
-        <title>filezilla安装的问题GLIBCXX_3.4.15</title>
-        <link rel="alternate" href="https://erik.xyz/2014/11/01/filezilla-an-zhuang-de-wen-ti-glibcxx-3-4-15/"/>
-        <content type="html">&lt;p&gt;运行filezilla时，出现如下错误的提示信息： ./filezilla: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla) 如果是64位系统报错信息如下： ./filezilla: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla) 原因是没有GLIBCXX_3.4.15版本，或是更高的版本。&lt;br&gt;输入命令查询一下结果：&lt;br&gt;[root@localhost ~]# strings /usr/lib/libstdc++.so.6 | grep GLIBCXX GLIBCXX_3.4 GLIBCXX_3.4.1 GLIBCXX_3.4.2 GLIBCXX_3.4.3 GLIBCXX_3.4.4 GLIBCXX_3.4.5 GLIBCXX_3.4.6 GLIBCXX_3.4.7 GLIBCXX_3.4.8 GLIBCXX_3.4.9 GLIBCXX_3.4.10 GLIBCXX_3.4.11 GLIBCXX_3.4.12 GLIBCXX_3.4.13 GLIBCXX_FORCE_NEW GLIBCXX_DEBUG_MESSAGE_LENGTH 我们看到当前GCC版本中的确没有GLIBCXX_3.4.15。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;64位系统命令为： [root@localhost ~]# strings /usr/lib64/libstdc++.so.6 | grep GLIBCXX 下载新版本，地址：&lt;a href=&#34;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_i386.deb&#34;&gt;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_i386.deb&lt;/a&gt; 或&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8481469&#34;&gt;http://download.csdn.net/download/w15875510692/8481469&lt;/a&gt; 64位系统： &lt;a href=&#34;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_amd64.deb&#34;&gt;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_amd64.deb&lt;/a&gt; 或&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8471575&#34;&gt;http://download.csdn.net/download/w15875510692/8471575&lt;/a&gt;&lt;br&gt;假设下载的文件放在/data0/software/。&lt;br&gt;解压：&lt;br&gt;[root@localhost software]# ar -x libstdc++6_4.7.2-5_i386.deb &amp;amp;&amp;amp; tar xvf data.tar.gz&lt;br&gt;解压后出现/data0/software/usr目录；&lt;br&gt;[root@localhost software]# cd  /data0/software/usr/lib/i380-linux-gun&lt;br&gt;[root@localhost i386-linux-gnu]# cp libstdc++.so.6.0.17 /usr/lib&lt;br&gt;[root@localhost i386-linux-gnu]# /usr/lib&lt;br&gt;[root@localhost lib]# rm libstdc++.so.6&lt;br&gt;[root@localhost lib]# ln libstdc++.so.6.0.17 libstdc++.so.6&lt;br&gt;注意64位系统为&lt;br&gt;[root@localhost software]# cd  /data0/software/usr/lib/x86_64-linux-gnu&lt;br&gt;[root@localhost x86_64-linux-gnu]# cp libstdc++.so.6.0.17 /usr/lib64&lt;br&gt;[root@localhost x86_64-linux-gnu]#cd /usr/lib64&lt;br&gt;[root@localhost lib]# rm libstdc++.so.6&lt;br&gt;[root@localhost lib]# ln libstdc++.so.6.0.17 libstdc++.so.6&lt;br&gt;重新建立软连接，我们再输入命令查询一下结果：&lt;br&gt;[root@localhost lib]# strings /usr/lib/libstdc++.so.6 | grep GLIBCXX GLIBCXX_3.4 GLIBCXX_3.4.1 GLIBCXX_3.4.2 GLIBCXX_3.4.3 GLIBCXX_3.4.4 GLIBCXX_3.4.5 GLIBCXX_3.4.6 GLIBCXX_3.4.7 GLIBCXX_3.4.8 GLIBCXX_3.4.9 GLIBCXX_3.4.10 GLIBCXX_3.4.11 GLIBCXX_3.4.12 GLIBCXX_3.4.13 GLIBCXX_3.4.14 GLIBCXX_3.4.15 GLIBCXX_3.4.16 GLIBCXX_3.4.17 GLIBCXX_DEBUG_MESSAGE_LENGTH 已经安装好GLIBCXX_3.4.15啦。 重新切换到filezilla目录并运行，正常啦！./filezilla: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla)已经解决。&lt;/p&gt;
+        <id>https://erik.xyz/2014/11/01/filezilla-an-zhuang-glibcxx-wen-ti-en/</id>
+        <title>FileZilla Installation Problem: GLIBCXX_3.4.15</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/01/filezilla-an-zhuang-glibcxx-wen-ti-en/"/>
+        <content type="html">&lt;p&gt;When running filezilla, the following error message appears: ./filezilla: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla) On a 64-bit system the error message is as follows: ./filezilla: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla) The cause is that the GLIBCXX_3.4.15 version, or a higher version, is missing.&lt;br&gt;Enter a command to check the result:&lt;br&gt;[root@localhost ~]# strings /usr/lib/libstdc++.so.6 | grep GLIBCXX GLIBCXX_3.4 GLIBCXX_3.4.1 GLIBCXX_3.4.2 GLIBCXX_3.4.3 GLIBCXX_3.4.4 GLIBCXX_3.4.5 GLIBCXX_3.4.6 GLIBCXX_3.4.7 GLIBCXX_3.4.8 GLIBCXX_3.4.9 GLIBCXX_3.4.10 GLIBCXX_3.4.11 GLIBCXX_3.4.12 GLIBCXX_3.4.13 GLIBCXX_FORCE_NEW GLIBCXX_DEBUG_MESSAGE_LENGTH As we can see, the current GCC version indeed has no GLIBCXX_3.4.15.&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;The command for a 64-bit system is: [root@localhost ~]# strings /usr/lib64/libstdc++.so.6 | grep GLIBCXX Download a new version, address: &lt;a href=&#34;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_i386.deb&#34;&gt;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_i386.deb&lt;/a&gt; or &lt;a href=&#34;http://download.csdn.net/download/w15875510692/8481469&#34;&gt;http://download.csdn.net/download/w15875510692/8481469&lt;/a&gt; For 64-bit systems: &lt;a href=&#34;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_amd64.deb&#34;&gt;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_amd64.deb&lt;/a&gt; or &lt;a href=&#34;http://download.csdn.net/download/w15875510692/8471575&#34;&gt;http://download.csdn.net/download/w15875510692/8471575&lt;/a&gt;&lt;br&gt;Assume the downloaded file is placed in /data0/software/.&lt;br&gt;Extract it:&lt;br&gt;[root@localhost software]# ar -x libstdc++6_4.7.2-5_i386.deb &amp;amp;&amp;amp; tar xvf data.tar.gz&lt;br&gt;After extraction the /data0/software/usr directory appears;&lt;br&gt;[root@localhost software]# cd  /data0/software/usr/lib/i380-linux-gun&lt;br&gt;[root@localhost i386-linux-gnu]# cp libstdc++.so.6.0.17 /usr/lib&lt;br&gt;[root@localhost i386-linux-gnu]# /usr/lib&lt;br&gt;[root@localhost lib]# rm libstdc++.so.6&lt;br&gt;[root@localhost lib]# ln libstdc++.so.6.0.17 libstdc++.so.6&lt;br&gt;Note that on a 64-bit system it is&lt;br&gt;[root@localhost software]# cd  /data0/software/usr/lib/x86_64-linux-gnu&lt;br&gt;[root@localhost x86_64-linux-gnu]# cp libstdc++.so.6.0.17 /usr/lib64&lt;br&gt;[root@localhost x86_64-linux-gnu]#cd /usr/lib64&lt;br&gt;[root@localhost lib]# rm libstdc++.so.6&lt;br&gt;[root@localhost lib]# ln libstdc++.so.6.0.17 libstdc++.so.6&lt;br&gt;Recreate the symbolic link, and let’s enter the command again to check the result:&lt;br&gt;[root@localhost lib]# strings /usr/lib/libstdc++.so.6 | grep GLIBCXX GLIBCXX_3.4 GLIBCXX_3.4.1 GLIBCXX_3.4.2 GLIBCXX_3.4.3 GLIBCXX_3.4.4 GLIBCXX_3.4.5 GLIBCXX_3.4.6 GLIBCXX_3.4.7 GLIBCXX_3.4.8 GLIBCXX_3.4.9 GLIBCXX_3.4.10 GLIBCXX_3.4.11 GLIBCXX_3.4.12 GLIBCXX_3.4.13 GLIBCXX_3.4.14 GLIBCXX_3.4.15 GLIBCXX_3.4.16 GLIBCXX_3.4.17 GLIBCXX_DEBUG_MESSAGE_LENGTH GLIBCXX_3.4.15 is now installed. Switch back to the filezilla directory and run it — all good! ./filezilla: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla) is now fixed.&lt;/p&gt;
 </content>
         <category term="工具" />
         <category term="免费" />
         <updated>2014-11-01T04:35:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2014/10/23/fan-qiang-liu-lan-qi/</id>
-        <title>翻墙浏览器</title>
-        <link rel="alternate" href="https://erik.xyz/2014/10/23/fan-qiang-liu-lan-qi/"/>
-        <content type="html">&lt;p&gt;&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2jEpVaVXXXXbSXXXXXXXXXXXX_!!809419769.jpg&#34;&gt;&lt;img src=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2jEpVaVXXXXbSXXXXXXXXXXXX_!!809419769.jpg&#34; alt=&#34;艾瑞可erik&#34;&gt;&lt;/a&gt;最近发现老版本的ChromeGAE不能翻墙了，很郁闷，谷歌站长又不能用了。 无奈百度了一下，找到最新的翻墙软件，感觉还可以吧。在这分享一下。 效果还是不错的 O(∩&lt;em&gt;∩)O哈哈~ [![艾瑞可erik](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX&#34;&gt;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX&lt;/a&gt;&lt;/em&gt;!!809419769.jpg)](&lt;a href=&#34;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX_!!809419769.jpg&#34;&gt;http://img03.taobaocdn.com/imgextra/i3/809419769/TB2sOtWaVXXXXbmXXXXXXXXXXXX_!!809419769.jpg&lt;/a&gt;) 下载地址：&lt;a href=&#34;http://pan.baidu.com/s/1hqy1KaS&#34;&gt;http://pan.baidu.com/s/1hqy1KaS&lt;/a&gt;&lt;/p&gt;
+        <id>https://erik.xyz/2014/11/01/filezilla-an-zhuang-glibcxx-wen-ti/</id>
+        <title>filezilla安装的问题GLIBCXX_3.4.15</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/01/filezilla-an-zhuang-glibcxx-wen-ti/"/>
+        <content type="html">&lt;p&gt;运行filezilla时，出现如下错误的提示信息： ./filezilla: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla) 如果是64位系统报错信息如下： ./filezilla: /usr/lib64/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla) 原因是没有GLIBCXX_3.4.15版本，或是更高的版本。&lt;br&gt;输入命令查询一下结果：&lt;br&gt;[root@localhost ~]# strings /usr/lib/libstdc++.so.6 | grep GLIBCXX GLIBCXX_3.4 GLIBCXX_3.4.1 GLIBCXX_3.4.2 GLIBCXX_3.4.3 GLIBCXX_3.4.4 GLIBCXX_3.4.5 GLIBCXX_3.4.6 GLIBCXX_3.4.7 GLIBCXX_3.4.8 GLIBCXX_3.4.9 GLIBCXX_3.4.10 GLIBCXX_3.4.11 GLIBCXX_3.4.12 GLIBCXX_3.4.13 GLIBCXX_FORCE_NEW GLIBCXX_DEBUG_MESSAGE_LENGTH 我们看到当前GCC版本中的确没有GLIBCXX_3.4.15。&lt;br&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;64位系统命令为： [root@localhost ~]# strings /usr/lib64/libstdc++.so.6 | grep GLIBCXX 下载新版本，地址：&lt;a href=&#34;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_i386.deb&#34;&gt;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_i386.deb&lt;/a&gt; 或&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8481469&#34;&gt;http://download.csdn.net/download/w15875510692/8481469&lt;/a&gt; 64位系统： &lt;a href=&#34;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_amd64.deb&#34;&gt;http://ftp.de.debian.org/debian/pool/main/g/gcc-4.7/libstdc++6_4.7.2-5_amd64.deb&lt;/a&gt; 或&lt;a href=&#34;http://download.csdn.net/download/w15875510692/8471575&#34;&gt;http://download.csdn.net/download/w15875510692/8471575&lt;/a&gt;&lt;br&gt;假设下载的文件放在/data0/software/。&lt;br&gt;解压：&lt;br&gt;[root@localhost software]# ar -x libstdc++6_4.7.2-5_i386.deb &amp;amp;&amp;amp; tar xvf data.tar.gz&lt;br&gt;解压后出现/data0/software/usr目录；&lt;br&gt;[root@localhost software]# cd  /data0/software/usr/lib/i380-linux-gun&lt;br&gt;[root@localhost i386-linux-gnu]# cp libstdc++.so.6.0.17 /usr/lib&lt;br&gt;[root@localhost i386-linux-gnu]# /usr/lib&lt;br&gt;[root@localhost lib]# rm libstdc++.so.6&lt;br&gt;[root@localhost lib]# ln libstdc++.so.6.0.17 libstdc++.so.6&lt;br&gt;注意64位系统为&lt;br&gt;[root@localhost software]# cd  /data0/software/usr/lib/x86_64-linux-gnu&lt;br&gt;[root@localhost x86_64-linux-gnu]# cp libstdc++.so.6.0.17 /usr/lib64&lt;br&gt;[root@localhost x86_64-linux-gnu]#cd /usr/lib64&lt;br&gt;[root@localhost lib]# rm libstdc++.so.6&lt;br&gt;[root@localhost lib]# ln libstdc++.so.6.0.17 libstdc++.so.6&lt;br&gt;重新建立软连接，我们再输入命令查询一下结果：&lt;br&gt;[root@localhost lib]# strings /usr/lib/libstdc++.so.6 | grep GLIBCXX GLIBCXX_3.4 GLIBCXX_3.4.1 GLIBCXX_3.4.2 GLIBCXX_3.4.3 GLIBCXX_3.4.4 GLIBCXX_3.4.5 GLIBCXX_3.4.6 GLIBCXX_3.4.7 GLIBCXX_3.4.8 GLIBCXX_3.4.9 GLIBCXX_3.4.10 GLIBCXX_3.4.11 GLIBCXX_3.4.12 GLIBCXX_3.4.13 GLIBCXX_3.4.14 GLIBCXX_3.4.15 GLIBCXX_3.4.16 GLIBCXX_3.4.17 GLIBCXX_DEBUG_MESSAGE_LENGTH 已经安装好GLIBCXX_3.4.15啦。 重新切换到filezilla目录并运行，正常啦！./filezilla: /usr/lib/libstdc++.so.6: version `GLIBCXX_3.4.15’ not found (required by ./filezilla)已经解决。&lt;/p&gt;
 </content>
         <category term="工具" />
-        <category term="软件" />
-        <updated>2014-10-23T08:29:00.000Z</updated>
-    </entry>
-    <entry>
-        <id>https://erik.xyz/2014/10/06/chang-yong-gong-ju/</id>
-        <title>常用工具</title>
-        <link rel="alternate" href="https://erik.xyz/2014/10/06/chang-yong-gong-ju/"/>
-        <content type="html">&lt;p&gt;memcached 高速缓存工具（linux） wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&lt;/a&gt; wget &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/libevent-1.4.14b-stable.tar.gz&#34;&gt;libevent-1.4.14b-stable.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcached-1.4.20.tar.gz&#34;&gt;memcached-1.4.20.tar.gz&lt;/a&gt; &lt;a href=&#34;https://sourceforge.net/projects/erik1314/files/memcache/memcache-2.2.1.tgz&#34;&gt;memcache-2.2.1.tgz&lt;/a&gt;&lt;/p&gt;
-</content>
-        <category term="工具" />
-        <category term="软件" />
-        <category term="memcache" />
-        <category term="memcached" />
-        <updated>2014-10-06T10:12:00.000Z</updated>
+        <category term="免费" />
+        <updated>2014-11-01T04:35:00.000Z</updated>
     </entry>
 </feed>

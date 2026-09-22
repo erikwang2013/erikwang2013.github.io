@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,163 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2025/07/25/spark-hive-hadoo-combination-guide-en/</id>
+        <title>A Guide to Choosing and Combining Spark, Hive and Hadoop</title>
+        <link rel="alternate" href="https://erik.xyz/2025/07/25/spark-hive-hadoo-combination-guide-en/"/>
+        <content type="html">&lt;p&gt;When you build a big data platform, Spark, Hive and Hadoop are &lt;strong&gt;complementary collaborators&lt;/strong&gt; rather than mutually exclusive choices. Which technology you pick and how you combine them depends on your specific needs (data volume, processing speed, query complexity, cost, team skills). Here is a guide to choosing and combining them:&lt;/p&gt;
+&lt;h2 id=&#34;Core-positioning-and-differences&#34;&gt;&lt;a href=&#34;#Core-positioning-and-differences&#34; class=&#34;headerlink&#34; title=&#34;Core positioning and differences&#34;&gt;&lt;/a&gt;Core positioning and differences&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Hadoop (mainly HDFS + MapReduce/YARN):&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Positioning:&lt;/strong&gt; distributed storage (HDFS) + basic resource management and batch processing framework (MapReduce/YARN).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strengths:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Highly reliable, highly fault-tolerant distributed storage (HDFS):&lt;/strong&gt; the cornerstone for storing massive amounts of data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mature resource management (YARN):&lt;/strong&gt; coordinates cluster resources (CPU, memory) for the layers above it (Spark, MapReduce, Hive on MR/Tez).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Extreme scalability and cost efficiency:&lt;/strong&gt; lets you build large clusters on cheap hardware.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Weaknesses:&lt;/strong&gt; the MapReduce computation model is &lt;strong&gt;slow&lt;/strong&gt; (especially for iterative computation and interactive queries), and programming it is relatively complex.&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Hive:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Positioning:&lt;/strong&gt; a &lt;strong&gt;data warehouse framework&lt;/strong&gt; built on top of Hadoop.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strengths:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SQL-like interface (HiveQL):&lt;/strong&gt; dramatically lowers the bar to entry, letting analysts and engineers who already know SQL work with big data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Powerful metadata management (Metastore):&lt;/strong&gt; manages table structures, partitions, data types and so on — a key piece of data governance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Batch optimization:&lt;/strong&gt; translates SQL queries into MapReduce/Tez/Spark jobs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Weaknesses:&lt;/strong&gt; traditionally based on MapReduce/Tez, so &lt;strong&gt;latency is high&lt;/strong&gt; — not suited to low-latency interactive queries or stream processing (although LLAP and Hive on Spark improve on this).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Spark:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Positioning:&lt;/strong&gt; a unified, high-performance distributed compute engine.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strengths:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Blazing fast:&lt;/strong&gt; in-memory computation, a DAG execution engine and a highly optimized execution plan make it orders of magnitude faster than MapReduce.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unified engine:&lt;/strong&gt; supports batch (Spark SQL), stream processing (Spark Streaming, Structured Streaming), machine learning (MLlib) and graph computation (GraphX).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Easy-to-use APIs:&lt;/strong&gt; APIs in Scala, Java, Python, R and more, which means high developer productivity.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flexible deployment:&lt;/strong&gt; runs on YARN (Hadoop), Mesos, Kubernetes or in Standalone mode.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hive integration:&lt;/strong&gt; can read metadata straight from the Hive Metastore and run HiveQL queries (Spark SQL).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Weaknesses:&lt;/strong&gt; it demands a lot of memory, and pure in-memory computation can cost more than disk-based MapReduce (though the speed advantage usually outweighs the cost difference); very complex computations may need finer-grained memory tuning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;How-to-choose&#34;&gt;&lt;a href=&#34;#How-to-choose&#34; class=&#34;headerlink&#34; title=&#34;How to choose?&#34;&gt;&lt;/a&gt;How to choose?&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Storage layer:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;HDFS is usually the default and the cornerstone:&lt;/strong&gt; if you need to store petabytes or even exabytes of data with high fault tolerance, high reliability and good cost efficiency, &lt;strong&gt;HDFS is almost a given&lt;/strong&gt;. It is the most common data source and destination for both Spark and Hive.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Alternatives:&lt;/strong&gt; cloud storage (S3, GCS, ADLS) is increasingly popular — unlimited scaling, pay-as-you-go, high availability, and both Spark and Hive can read and write it directly. Choosing cloud storage usually simplifies operations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Compute engine:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Do you need maximum processing speed (batch, streaming, iterative algorithms, machine learning)?&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Spark first:&lt;/strong&gt; it is far faster than MapReduce/Tez in the vast majority of computation scenarios.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Is your main need batch analytics and reporting in familiar SQL, with a team strong in SQL?&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hive is a great starting point:&lt;/strong&gt; lean on its strong metadata management and SQL interface. But &lt;strong&gt;strongly consider configuring the execution engine as Spark (Hive on Spark)&lt;/strong&gt; instead of MapReduce or Tez for a significant performance boost.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spark SQL:&lt;/strong&gt; you can also run SQL queries directly with Spark SQL, which likewise supports HiveQL syntax (and is compatible with the Hive Metastore) and usually outperforms Hive on Spark. If you already use Spark for other things (ETL, ML), Spark SQL is the more unified choice.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Do you need sub-second interactive queries?&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hive LLAP:&lt;/strong&gt; Hive’s Live Long and Process mode provides in-memory caching and daemon processes to speed up queries.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spark Thrift Server / JDBC/ODBC Server:&lt;/strong&gt; lets BI tools connect to Spark SQL over standard interfaces for interactive queries.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dedicated interactive engines:&lt;/strong&gt; such as Presto, Impala, Druid and friends (these usually also rely on HDFS/S3 storage and the Hive Metastore).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Do you need real-time/near-real-time stream processing?&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Spark Structured Streaming:&lt;/strong&gt; the preferred unified engine option.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flink:&lt;/strong&gt; another powerful stream processing engine (Spark and Flink are today’s mainstream for stream processing).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Do you need machine learning or graph computation?&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Spark MLlib / GraphX:&lt;/strong&gt; Spark’s built-in libraries cover a rich set of functionality.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Metadata management:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hive Metastore (HMS) is the de facto standard:&lt;/strong&gt; whether you mainly use Hive, Spark SQL or another query engine (Presto, Impala), &lt;strong&gt;it is strongly recommended that you use the Hive Metastore&lt;/strong&gt; to centrally manage table structures, partitions, data types, storage locations and other metadata. It guarantees that different engines see a consistent view of the data, and it is the foundation of data governance. Spark natively reads and writes the Hive Metastore.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;Typical-combination-patterns&#34;&gt;&lt;a href=&#34;#Typical-combination-patterns&#34; class=&#34;headerlink&#34; title=&#34;Typical combination patterns&#34;&gt;&lt;/a&gt;Typical combination patterns&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Classic batch data warehouse (Hive-centric):&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Storage:&lt;/strong&gt; HDFS or S3/GCS/ADLS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Metadata:&lt;/strong&gt; Hive Metastore&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ETL/compute:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Traditional/basic:&lt;/em&gt; Hive on MapReduce/Tez (write ETL and query logic in HiveQL)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Modern/efficient:&lt;/strong&gt; &lt;strong&gt;Hive on Spark&lt;/strong&gt; (HiveQL -&amp;gt; Spark job) or &lt;strong&gt;Spark SQL&lt;/strong&gt; (Spark API/SQL -&amp;gt; Spark job)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Query:&lt;/strong&gt; Hive CLI/Beeline (running HiveQL), Spark SQL Thrift Server (for BI tool connections)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When to use:&lt;/strong&gt; traditional T+1 reporting, large-scale historical data analysis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;High-performance unified analytics platform (Spark-centric):&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Storage:&lt;/strong&gt; HDFS or S3/GCS/ADLS&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Metadata:&lt;/strong&gt; Hive Metastore (Spark SQL reads and writes HMS directly)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compute:&lt;/strong&gt; &lt;strong&gt;Spark&lt;/strong&gt; as the core engine&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Batch ETL:&lt;/em&gt; use the Spark DataFrame/Dataset API or Spark SQL to clean, transform and load data into Hive tables.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Stream processing:&lt;/em&gt; use Spark Structured Streaming to handle sources such as Kafka, writing results into Hive tables or straight to downstream consumers.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Interactive queries:&lt;/em&gt; expose Spark SQL to BI tools through the Spark Thrift Server.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Machine learning:&lt;/em&gt; train models with Spark MLlib.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resource management:&lt;/strong&gt; YARN (Hadoop) or Kubernetes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When to use:&lt;/strong&gt; modern data platforms that need to blend batch, stream processing, machine learning and interactive queries. The Hive Metastore provides a unified data catalog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Cloud-native data lake:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Storage:&lt;/strong&gt; S3, GCS, ADLS (object storage)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Metadata:&lt;/strong&gt; Hive Metastore (managed services such as the AWS Glue Data Catalog are HMS-compatible implementations)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compute:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Serverless SQL queries:&lt;/em&gt; AWS Athena, Google BigQuery (query S3/GCS data directly, using the Glue Catalog or similar metadata)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Custom processing:&lt;/em&gt; &lt;strong&gt;Spark&lt;/strong&gt; on EMR/Dataproc/Databricks/Synapse (for complex ETL, ML and stream processing, reading and writing object storage and the metadata service)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When to use:&lt;/strong&gt; when you want to exploit the elasticity and pay-as-you-go nature of cloud services and cut infrastructure operations work. Spark handles the complex jobs, Serverless SQL handles ad-hoc queries.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;Summary-and-key-recommendations&#34;&gt;&lt;a href=&#34;#Summary-and-key-recommendations&#34; class=&#34;headerlink&#34; title=&#34;Summary and key recommendations&#34;&gt;&lt;/a&gt;Summary and key recommendations&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;HDFS/object storage is the cornerstone:&lt;/strong&gt; pick the distributed storage that suits you (HDFS or cloud storage).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The Hive Metastore is the central hub:&lt;/strong&gt; &lt;strong&gt;do use&lt;/strong&gt; the Hive Metastore, or a compatible service (such as AWS Glue), to manage metadata in one place — it is the key to connecting different compute engines.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spark is the compute engine of choice:&lt;/strong&gt; for the overwhelming majority of compute tasks that &lt;strong&gt;need speed&lt;/strong&gt; (batch, streaming, ML, interactive SQL), &lt;strong&gt;prefer Spark&lt;/strong&gt; over traditional MapReduce/Tez.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hive’s value lies in its SQL interface and the Metastore:&lt;/strong&gt; even if you mostly use Spark, Hive’s Metastore is indispensable, and the HiveQL interface still has value for heavy SQL users (though the underlying execution should be configured as Spark).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hadoop YARN is an optional resource manager:&lt;/strong&gt; Spark can run on YARN, Kubernetes or Standalone. If you already have a Hadoop cluster, YARN is the natural choice; for new clusters, Kubernetes is increasingly popular.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Combining them is the norm:&lt;/strong&gt; hardly any large platform uses only one of these technologies. The typical combination is: &lt;code&gt;(HDFS/S3) + (Hive Metastore) + (Spark for Processing) + (optional Hive for SQL interface / LLAP for interactive)&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;In short:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;What do you store data in?&lt;/strong&gt; HDFS or cloud storage (S3/GCS/ADLS).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What manages table structures?&lt;/strong&gt; Hive Metastore (or a cloud service such as the Glue Catalog).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What runs ETL, stream processing, machine learning and fast SQL?&lt;/strong&gt; Spark (Spark Core, Spark SQL, Structured Streaming, MLlib).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Want to do batch analytics in familiar SQL, or speed up interactive queries?&lt;/strong&gt; You can use Hive (but configure Hive on Spark or Hive LLAP), or go straight to Spark SQL + Thrift Server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Adjust the weight and configuration of these components according to your specific situation (data scale, latency requirements, processing types, team skills, budget, cloud or on-premises). For new projects, putting Spark at the center as the compute engine together with a Hive Metastore and HDFS/cloud storage is the most common and the most efficient starting point.&lt;/p&gt;
+</content>
+        <category term="hadoop" />
+        <category term="大数据" />
+        <category term="spark" />
+        <category term="hive" />
+        <category term="数据分析" />
+        <updated>2025-07-25T13:36:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2025/07/25/spark-hive-hadoo-combination-guide/</id>
         <title>Spark、Hive、Hadoop选择与组合使用指南</title>
@@ -660,9 +811,36 @@
         <updated>2025-07-25T13:36:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2017/06/29/hadoop2-8-0-de-bu-shu-an-zhuang-jiao-cheng/</id>
+        <id>https://erik.xyz/2017/06/29/hadoop2-8-0-bu-shu-an-zhuang-en/</id>
+        <title>Hadoop 2.8.0 Deployment and Installation Tutorial</title>
+        <link rel="alternate" href="https://erik.xyz/2017/06/29/hadoop2-8-0-bu-shu-an-zhuang-en/"/>
+        <content type="html">&lt;p&gt;Hadoop deployment preparation: install Linux locally under VMware. In the Linux family, the CentOS 7 download address is &lt;a href=&#34;http://101.110.118.58/isoredirect.centos.org/centos/7/isos/x86\_64/CentOS-7-x86\_64-Minimal-1611.iso&#34;&gt;http://101.110.118.58/isoredirect.centos.org/centos/7/isos/x86\_64/CentOS-7-x86\_64-Minimal-1611.iso&lt;/a&gt;   The matching Java version is 1.8.0_121   Hadoop version 2.8.0 download address &lt;a href=&#34;http://mirror.bit.edu.cn/apache/hadoop/common/&#34;&gt;http://mirror.bit.edu.cn/apache/hadoop/common/&lt;/a&gt; you can download whichever version you like&lt;/p&gt;
+&lt;h1 id=&#34;1-Basic-configuration&#34;&gt;&lt;a href=&#34;#1-Basic-configuration&#34; class=&#34;headerlink&#34; title=&#34;1. Basic configuration&#34;&gt;&lt;/a&gt;1. Basic configuration&lt;/h1&gt;&lt;p&gt;First install a CentOS 7 and get Java configured. Java environment configuration: my Java install location is /usr/java/ jdk1.8.0_121   edit the Java environment with vi ~/.bash_profile, add or modify export JAVA_HOME=/usr/java/jdk1.8.0_121 export PATH=$JAVA_HOME/bin:$PATH then run . ~/.bash_profile to make the variables take effect  &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h1 id=&#34;2-SSH-configuration&#34;&gt;&lt;a href=&#34;#2-SSH-configuration&#34; class=&#34;headerlink&#34; title=&#34;2. SSH configuration&#34;&gt;&lt;/a&gt;2. SSH configuration&lt;/h1&gt;&lt;p&gt;First run yum install ssh to install it   then run ssh-keygen -t dsa -P ‘’ -f ~/.ssh/id_dsa to generate the key&lt;/p&gt;
+&lt;h1 id=&#34;3-Hadoop-configuration&#34;&gt;&lt;a href=&#34;#3-Hadoop-configuration&#34; class=&#34;headerlink&#34; title=&#34;3. Hadoop configuration&#34;&gt;&lt;/a&gt;3. Hadoop configuration&lt;/h1&gt;&lt;p&gt;Extract the Hadoop you downloaded. (Mine is in the /roo directory, so the full path is /root/hadoop)   Configure the environment variables: vi ~/.bash_profile export HADOOP_HOME=/root/hadoop export PATH=$JAVA_HOME/bin:$PATH:$HOME/bin:$HADOOP_HOME/bin then run . ~/.bash_profile to make the variables take effect  &lt;/p&gt;
+&lt;h1 id=&#34;4-Hadoop-file-configuration&#34;&gt;&lt;a href=&#34;#4-Hadoop-file-configuration&#34; class=&#34;headerlink&#34; title=&#34;4. Hadoop file configuration&#34;&gt;&lt;/a&gt;4. Hadoop file configuration&lt;/h1&gt;&lt;p&gt;First give this machine a name: for example mine is s204   so run hostnamectl set-hostname s204 to change the hostname   then, in the /root/hadoop directory, edit the following files in order&lt;/p&gt;
+&lt;h2 id=&#34;vim-etc-hadoop-core-site-xml&#34;&gt;&lt;a href=&#34;#vim-etc-hadoop-core-site-xml&#34; class=&#34;headerlink&#34; title=&#34;vim etc/hadoop/core-site.xml&#34;&gt;&lt;/a&gt;vim etc/hadoop/core-site.xml&lt;/h2&gt;&lt;p&gt;  In &lt;configuration&gt;&lt;/configuration&gt; add &lt;property&gt; &lt;name&gt;fs.defaultFS&lt;/name&gt; &lt;value&gt;hdfs://s204:9000&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;hadoop.tmp.dir&lt;/name&gt; &lt;value&gt;file:/root/hadoop/tmp&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;io.file.buffer.size&lt;/name&gt; &lt;value&gt;131702&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;hadoop.proxyuser.hadoop.hosts&lt;/name&gt; &lt;value&gt;*&lt;/value&gt; &lt;/property&gt;   &lt;property&gt; &lt;name&gt;hadoop.proxyuser.hadoop.groups&lt;/name&gt; &lt;value&gt;*&lt;/value&gt; &lt;/property&gt;  &lt;/p&gt;
+&lt;h2 id=&#34;vim-etc-hadoop-hdfs-site-xml&#34;&gt;&lt;a href=&#34;#vim-etc-hadoop-hdfs-site-xml&#34; class=&#34;headerlink&#34; title=&#34;vim etc/hadoop/hdfs-site.xml&#34;&gt;&lt;/a&gt;vim etc/hadoop/hdfs-site.xml&lt;/h2&gt;&lt;p&gt;In &lt;configuration&gt;&lt;/configuration&gt; add   &lt;property&gt; &lt;name&gt;dfs.namenode.name.dir&lt;/name&gt; &lt;value&gt;file:/root/hadoop/hdfs/name&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt; &lt;value&gt;file:/root/hadoop/hdfs/data&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;dfs.replication&lt;/name&gt; &lt;value&gt;3&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;dfs.namenode.secondary.http-address&lt;/name&gt; &lt;value&gt;s204:9001&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;dfs.webhdfs.enabled&lt;/name&gt; &lt;value&gt;true&lt;/value&gt; &lt;/property&gt;  &lt;/p&gt;
+&lt;h2 id=&#34;vim-etc-hadoop-mapred-site-xml&#34;&gt;&lt;a href=&#34;#vim-etc-hadoop-mapred-site-xml&#34; class=&#34;headerlink&#34; title=&#34;vim etc/hadoop/mapred-site.xml&#34;&gt;&lt;/a&gt;vim etc/hadoop/mapred-site.xml&lt;/h2&gt;&lt;p&gt;In &lt;configuration&gt;&lt;/configuration&gt; add   &lt;property&gt; &lt;name&gt;mapreduce.framework.name&lt;/name&gt; &lt;value&gt;yarn&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;mapreduce.jobhistory.address&lt;/name&gt; &lt;value&gt;s204:10020&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;mapreduce.jobhistory.webapp.address&lt;/name&gt; &lt;value&gt;s204:19888&lt;/value&gt; &lt;/property&gt;  &lt;/p&gt;
+&lt;h2 id=&#34;vim-etc-hadoop-yarn-site-xml&#34;&gt;&lt;a href=&#34;#vim-etc-hadoop-yarn-site-xml&#34; class=&#34;headerlink&#34; title=&#34;vim etc/hadoop/yarn-site.xml&#34;&gt;&lt;/a&gt;vim etc/hadoop/yarn-site.xml&lt;/h2&gt;&lt;p&gt;In &lt;configuration&gt;&lt;/configuration&gt; add &lt;property&gt; &lt;name&gt;yarn.nodemanager.aux-services&lt;/name&gt; &lt;value&gt;mapreduce_shuffle&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;yarn.nodemanager.auxservices.mapreduce.shuffle.class&lt;/name&gt; &lt;value&gt;org.apache.hadoop.mapred.ShuffleHandler&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;yarn.resourcemanager.address&lt;/name&gt; &lt;value&gt;s204:8032&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;yarn.resourcemanager.scheduler.address&lt;/name&gt; &lt;value&gt;s204:8030&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;yarn.resourcemanager.resource-tracker.address&lt;/name&gt; &lt;value&gt;s204:8031&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;yarn.resourcemanager.admin.address&lt;/name&gt; &lt;value&gt;s204:8033&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;yarn.resourcemanager.webapp.address&lt;/name&gt; &lt;value&gt;s204:8088&lt;/value&gt; &lt;/property&gt; &lt;property&gt; &lt;name&gt;yarn.nodemanager.resource.memory-mb&lt;/name&gt; &lt;value&gt;6078&lt;/value&gt; &lt;/property&gt;  &lt;/p&gt;
+&lt;h2 id=&#34;vim-etc-hadoop-yarn-env-sh&#34;&gt;&lt;a href=&#34;#vim-etc-hadoop-yarn-env-sh&#34; class=&#34;headerlink&#34; title=&#34;vim etc/hadoop/yarn-env.sh&#34;&gt;&lt;/a&gt;vim etc/hadoop/yarn-env.sh&lt;/h2&gt;&lt;p&gt;  Find export JAVA_HOME, uncomment it and edit the Java path to export JAVA_HOME=/usr/java/jdk1.8.0_121   Find JAVA_HEAP_MAX=-Xmx1000m and change it to JAVA_HEAP_MAX=-Xmx1024m  &lt;/p&gt;
+&lt;h2 id=&#34;vim-etc-hadoop-slaves&#34;&gt;&lt;a href=&#34;#vim-etc-hadoop-slaves&#34; class=&#34;headerlink&#34; title=&#34;vim etc/hadoop/slaves&#34;&gt;&lt;/a&gt;vim etc/hadoop/slaves&lt;/h2&gt;&lt;p&gt;  Clear it and add s204    &lt;/p&gt;
+&lt;h1 id=&#34;Network-configuration&#34;&gt;&lt;a href=&#34;#Network-configuration&#34; class=&#34;headerlink&#34; title=&#34;Network configuration&#34;&gt;&lt;/a&gt;Network configuration&lt;/h1&gt;&lt;p&gt;My IP is 192.168.5.9   edit the network to use a fixed IP: vim /etc/sysconfig/network-scripts/ifcfg-ens33   set the fixed IP   TYPE=”Ethernet” #BOOTPROTO=”dhcp” DEFROUTE=”yes” PEERDNS=”yes” PEERROUTES=”yes” IPV4_FAILURE_FATAL=”no” IPV6INIT=”yes” IPV6_AUTOCONF=”yes” IPV6_DEFROUTE=”yes” IPV6_PEERDNS=”yes” IPV6_PEERROUTES=”yes” IPV6_FAILURE_FATAL=”no” IPV6_ADDR_GEN_MODE=”stable-privacy” NAME=”ens33” UUID=”b9fe1e5c-be20-47f1-a2d3-e12f5ddb6aa1” DEVICE=”ens33” ONBOOT=”yes” IPADDR0=192.168.5.9 PREFIX0=24 GATEWAY0=192.168.5.2 DNS1=114.114.114.114   then restart the network with systemctl  restart  network   run ip add to check whether the network IP matches what you set  &lt;/p&gt;
+&lt;h1 id=&#34;Starting-Hadoop&#34;&gt;&lt;a href=&#34;#Starting-Hadoop&#34; class=&#34;headerlink&#34; title=&#34;Starting Hadoop&#34;&gt;&lt;/a&gt;Starting Hadoop&lt;/h1&gt;&lt;p&gt;  Go into the /root/hadoop directory   run the format command ./bin/hdfs namenode –format   if “Exiting with status 0” shows up on the fifth line from the bottom, it succeeded   then start it with ./sbin/start-all.sh   once it’s up, run ./bin/hdfs dfsadmin –report to see whether there are nodes; if it returns “cannot connect”, startup failed   run systemctl stop firewalld.service to turn off the firewall  then enter s204:8088 in a browser and you’ll see the Hadoop interface  &lt;/p&gt;
+&lt;h1 id=&#34;Configuring-the-other-nodes&#34;&gt;&lt;a href=&#34;#Configuring-the-other-nodes&#34; class=&#34;headerlink&#34; title=&#34;Configuring the other nodes&#34;&gt;&lt;/a&gt;Configuring the other nodes&lt;/h1&gt;&lt;p&gt;Once the above is configured, shut down CentOS 7 and do a full clone. In the newly cloned system, change the IP address and hostname. Note that in the Hadoop config file etc/hadoop/hdfs-site.xml  the file address in &lt;property&gt; &lt;name&gt;dfs.datanode.data.dir&lt;/name&gt; &lt;value&gt;file:/root/hadoop/hdfs/data&lt;/value&gt; &lt;/property&gt;   must not be the same. Mine are three different paths: file:/root/hadoop/hdfs/data file:/root/hadoop/hdfs/data/205 file:/root/hadoop/hdfs/data/206   After cloning, and once the config files, IP and hostname are changed, edit vim etc/hadoop/slaves on the s204 machine and add s205 s206   copy the SSH token for passwordless login, for example copy it to s205 with scp ~/.ssh/authorized_keys root@s205:~/.ssh/   do the same on the other machine   the other machines also need to be formatted   then stop Hadoop on s204 with ./sbin/stop-all.sh   start it again with ./sbin/start-all.sh   and you’ll see all three nodes in the browser.&lt;/p&gt;
+</content>
+        <category term="hadoop" />
+        <category term="hadoop2.8.0" />
+        <category term="hadoop安装教程" />
+        <category term="hadoop安装详细教程" />
+        <category term="hadoop教程" />
+        <category term="hadoop部署" />
+        <updated>2017-06-29T00:27:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2017/06/29/hadoop2-8-0-bu-shu-an-zhuang/</id>
         <title>hadoop2.8.0的部署安装教程</title>
-        <link rel="alternate" href="https://erik.xyz/2017/06/29/hadoop2-8-0-de-bu-shu-an-zhuang-jiao-cheng/"/>
+        <link rel="alternate" href="https://erik.xyz/2017/06/29/hadoop2-8-0-bu-shu-an-zhuang/"/>
         <content type="html">&lt;p&gt;Hadoop部署准备 本地vmware安装 Linux系统家族中 centos7 下载地址&lt;a href=&#34;http://101.110.118.58/isoredirect.centos.org/centos/7/isos/x86\_64/CentOS-7-x86\_64-Minimal-1611.iso&#34;&gt;http://101.110.118.58/isoredirect.centos.org/centos/7/isos/x86\_64/CentOS-7-x86\_64-Minimal-1611.iso&lt;/a&gt;   Java对应版本1.8.0_121   Hadoop版本2.8.0下载地址 &lt;a href=&#34;http://mirror.bit.edu.cn/apache/hadoop/common/&#34;&gt;http://mirror.bit.edu.cn/apache/hadoop/common/&lt;/a&gt; 可以根据自己喜好的版本下载&lt;/p&gt;
 &lt;h1 id=&#34;1-基本配置&#34;&gt;&lt;a href=&#34;#1-基本配置&#34; class=&#34;headerlink&#34; title=&#34;1.基本配置&#34;&gt;&lt;/a&gt;1.基本配置&lt;/h1&gt;&lt;p&gt;首先安装一个centos7并配置好java Java环境配置 我的java安装地址 /usr/java/ jdk1.8.0_121   编辑java环境 vi ~/.bash_profile 添加或修改 export JAVA_HOME=/usr/java/jdk1.8.0_121 export PATH=$JAVA_HOME/bin:$PATH 执行 . ~/.bash_profile 使变量生效  &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&#34;2-ssh配置&#34;&gt;&lt;a href=&#34;#2-ssh配置&#34; class=&#34;headerlink&#34; title=&#34;2.ssh配置&#34;&gt;&lt;/a&gt;2.ssh配置&lt;/h1&gt;&lt;p&gt;先 yum install ssh  安装   然后执行 ssh-keygen -t dsa -P ‘’ -f ~/.ssh/id_dsa 生成密匙&lt;/p&gt;

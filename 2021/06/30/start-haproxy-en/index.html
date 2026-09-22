@@ -1,0 +1,3109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><script>
+      (function () {
+        var m = 'dark';
+        var t = localStorage.getItem('erik-theme');
+        var dark = t ? t === 'dark' : (m === 'auto' ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) : m === 'dark');
+        if (!dark) document.documentElement.classList.add('erik-light');
+      })();
+      /* 语言防闪：先定下 <html lang>，英文模式下把 body 压住，等 i18n.js 换完文案再放出来
+         （i18n.enable 为 false 时不压，免得图标按钮都不显示却还等着 i18n.js 来摘这个类） */
+      (function () {
+        if (false) return;
+        var l;
+        try { l = localStorage.getItem('erik-lang'); } catch (e) {}
+        l = l || 'en' || 'zh-CN';
+        l = /^en/i.test(l) ? 'en' : 'zh-CN';
+        var el = document.documentElement;
+        el.setAttribute('data-lang', l);
+        if (l === 'en') { el.classList.add('lang-loading'); el.lang = 'en'; }
+      })();
+    </script>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="给我一个需求，还你一个项目——别管它是什么。这就是全栈。">
+  <meta name="keywords" content="艾瑞可erik,erik,艾瑞可Erik,艾瑞可,https://erik.xyz,erik.xyz">
+  <meta name="description" content="What is HAProxy HAProxy is a free load balancing software that can run on most mainstream Linux operating systems. HAProxy provides both L4 (TCP) and L7 (HTTP) load balancing capabilities, with a ric">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mastering the HAProxy Load Balancer from Scratch">
+<meta property="og:url" content="https://erik.xyz/2021/06/30/start-haproxy-en/index.html">
+<meta property="og:site_name" content="艾瑞可erik">
+<meta property="og:description" content="What is HAProxy HAProxy is a free load balancing software that can run on most mainstream Linux operating systems. HAProxy provides both L4 (TCP) and L7 (HTTP) load balancing capabilities, with a ric">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://erik.xyz/img/202106/20210630214823.jpg">
+<meta property="og:image" content="https://erik.xyz/img/202106/20210630215315.jpg">
+<meta property="og:image" content="https://erik.xyz/img/202106/20210630215444.jpg">
+<meta property="og:image" content="https://erik.xyz/img/202106/20210630215522.jpg">
+<meta property="og:image" content="https://erik.xyz/img/202106/20210630215607.jpg">
+<meta property="og:image" content="https://erik.xyz/img/202106/20210630215648.jpg">
+<meta property="og:image" content="https://erik.xyz/img/202106/20210630215739.jpg">
+<meta property="og:image" content="https://erik.xyz/img/202106/20210630215818.jpg">
+<meta property="og:image" content="https://erik.xyz/img/202106/20210630220514.jpg">
+<meta property="og:image" content="https://erik.xyz/img/202106/20210630220540.jpg">
+<meta property="og:image" content="https://erik.xyz/img/202106/20210630220636.jpg">
+<meta property="article:published_time" content="2021-06-30T13:34:13.000Z">
+<meta property="article:modified_time" content="2026-09-20T18:21:22.915Z">
+<meta property="article:author" content="艾瑞可erik">
+<meta property="article:tag" content="艾瑞可erik,erik,艾瑞可Erik,艾瑞可,https:&#x2F;&#x2F;erik.xyz,erik.xyz">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://erik.xyz/img/202106/20210630214823.jpg">
+  
+    <link rel="alternate" href="/rss.xml" title="艾瑞可erik" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link rel="alternate" hreflang="en" href="https://erik.xyz/2021/06/30/start-haproxy-en/">
+  
+    <link rel="alternate" hreflang="zh-CN" href="https://erik.xyz/2021/06/30/start-haproxy/">
+  
+  <title>Mastering the HAProxy Load Balancer from Scratch | 艾瑞可erik</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css?v=20260921e">
+<link rel="stylesheet" type="text/css" href="/css/effects.css?v=20260921e">
+<link rel="stylesheet" type="text/css" href="/css/mobile.css?v=20260921e">
+
+    
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"艾瑞可erik","url":"https://erik.xyz/","description":"给我一个需求，还你一个项目——别管它是什么。这就是全栈。"},{"@type":"Article","headline":"Mastering the HAProxy Load Balancer from Scratch","url":"https://erik.xyz/2021/06/30/start-haproxy-en/","datePublished":"2021-06-30","dateModified":"2026-09-21","author":{"@type":"Person","name":"艾瑞可erik"},"publisher":{"@type":"Organization","name":"艾瑞可erik"},"image":"https://erik.xyz/img/202106/20210630214823.jpg","mainEntityOfPage":"https://erik.xyz/2021/06/30/start-haproxy-en/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://erik.xyz/"},{"@type":"ListItem","position":2,"name":"Mastering the HAProxy Load Balancer from Scratch","item":"https://erik.xyz/2021/06/30/start-haproxy-en/"}]}]}
+    </script>
+    
+    
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script>
+      if (location.protocol === 'https:' && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').catch(function () {});
+      }
+    </script>
+    
+<meta name="generator" content="Hexo 6.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+<body class="erik-dark sidebar-left">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="scroll-progress" id="scroll-progress"></div>
+  <canvas id="bg3d" aria-hidden="true"></canvas>
+  <div class="bg-fallback" id="bgFallback" aria-hidden="true"></div>
+
+  <div class="page-wrap">
+    <header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <a href="/" class="brand-logo" title="艾瑞可erik">
+        <span class="logo-orbit">
+          <img src="/img/header.jpg" alt="艾瑞可erik">
+          <span class="orbit-ring"></span>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name gradient-text">艾瑞可erik</span>
+          
+            <span class="brand-subtitle"><span data-i18n="艾瑞可erik">艾瑞可erik</span> 🌟</span>
+          
+        </span>
+      </a>
+    </div>
+    <nav class="header-menu">
+      <ul>
+        
+          <li><a href="/"  data-i18n="主页">主页</a></li>
+        
+          <li><a href="/archives"  data-i18n="归档">归档</a></li>
+        
+          <li><a href="/categories"  data-i18n="分类">分类</a></li>
+        
+          <li><a href="/open-page/index.html"  target="_blank" rel="noopener"  data-i18n="开源">开源</a></li>
+        
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://visual.erik.xyz" target="_blank"  data-i18n="算法">算法</a></li>
+        
+      </ul>
+      
+      <button type="button" id="search-toggle" class="header-icon" aria-label="搜索" title="搜索" data-i18n="nav.search" data-i18n-attr="aria-label,title">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      </button>
+      
+      
+      <button type="button" id="theme-toggle" class="header-icon" aria-label="切换主题" title="切换主题" data-i18n="nav.theme" data-i18n-attr="aria-label,title">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+      
+      
+      <button type="button" id="lang-toggle" class="header-icon lang-toggle" aria-label="切换语言" title="切换语言" data-i18n="nav.lang" data-i18n-attr="aria-label,title">
+        <span class="lang-opt" data-lang="zh-CN">中</span><span class="lang-sep" aria-hidden="true">/</span><span class="lang-opt" data-lang="en">EN</span>
+      </button>
+      
+    </nav>
+    <div class="header-right">
+      <div class="social-wrap">
+        <button class="social-toggle" id="social-toggle" aria-label="社交链接" title="社交链接" data-i18n="nav.social" data-i18n-attr="aria-label,title"><span data-i18n="nav.socialText">🌐 社交</span> <span class="social-toggle-arrow">▼</span></button>
+        <div class="social-panel glass" id="social-panel">
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://github.com/erikwang2013" target="_blank" title="github" data-i18n="github" data-i18n-attr="title">
+              <span class="social-emoji">🐙</span>
+              <span class="social-name" data-i18n="github">github</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://blog.csdn.net/erik_aaron" target="_blank" title="csdn" data-i18n="csdn" data-i18n-attr="title">
+              <span class="social-emoji">💻</span>
+              <span class="social-name" data-i18n="csdn">csdn</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://wpa.qq.com/msgrd?v=3&amp;uin=407978933&amp;site=qq&amp;menu=yes" target="_blank" title="qq" data-i18n="qq" data-i18n-attr="title">
+              <span class="social-emoji">🐧</span>
+              <span class="social-name" data-i18n="qq">qq</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://500px.me/erik" target="_blank" title="500px" data-i18n="500px" data-i18n-attr="title">
+              <span class="social-emoji">📷</span>
+              <span class="social-name" data-i18n="500px">500px</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://erik.tuchong.com" target="_blank" title="tuchong" data-i18n="tuchong" data-i18n-attr="title">
+              <span class="social-emoji">🐛</span>
+              <span class="social-name" data-i18n="tuchong">tuchong</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://ycg.qq.com/person/works/2415382" target="_blank" title="web" data-i18n="web" data-i18n-attr="title">
+              <span class="social-emoji">🎨</span>
+              <span class="social-name" data-i18n="web">web</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener" href="/rss.xml" title="rss" data-i18n="rss" data-i18n-attr="title">
+              <span class="social-emoji">📡</span>
+              <span class="social-name" data-i18n="rss">rss</span>
+            </a>
+          
+            
+            <a class="social-link" target="_blank" rel="noopener" href="mailto:erik@erik.xyz" title="mail" data-i18n="mail" data-i18n-attr="title">
+              <span class="social-emoji">✉️</span>
+              <span class="social-name" data-i18n="mail">mail</span>
+            </a>
+          
+        </div>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="菜单" title="菜单" data-i18n="nav.menu" data-i18n-attr="aria-label,title">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <div id="wrapper" class="body-wrap">
+      <div class="layout">
+  <main class="layout-main">
+    <section class="page-body reveal">
+      
+<article id="post-start-haproxy-en" class="article card " data-post-lang="" data-emoji="♥️" data-hue="125" itemscope itemprop="blogPost">
+  <div class="card-emoji" aria-hidden="true">♥️</div>
+  <div class="card-glow" aria-hidden="true"></div>
+  <div class="article-inner">
+    <header class="article-header">
+      <div class="article-title-row">
+        
+        
+  
+    <h1 class="article-title gradient-text" itemprop="name">Mastering the HAProxy Load Balancer from Scratch</h1>
+  
+
+
+      </div>
+      <div class="article-meta">
+        <span class="article-date article-date">
+  <time datetime="2021-06-30T13:34:13.000Z" itemprop="datePublished">📅 2021-06-30</time>
+</span>
+
+        
+
+        
+
+        
+          <span class="article-word">
+  <span data-i18n="post.words" data-i18n-args="5.3k">📝 5.3k 字</span>
+  <span class="dot">·</span>
+  <span data-i18n="post.minutes" data-i18n-args="33">⏱️ 33 分钟</span>
+</span>
+
+        
+        
+        <span id="busuanzi_container_page_pv"><span data-i18n="post.readA">阅读</span> <b id="busuanzi_value_page_pv">0</b> <span data-i18n="post.readB">次 👀</span></span>
+        
+      </div>
+    </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>What is HAProxy</p>
+<p>HAProxy is a free load balancing software that can run on most mainstream Linux operating systems.</p>
+<p>HAProxy provides both L4 (TCP) and L7 (HTTP) load balancing capabilities, with a rich feature set.</p>
+<p>HAProxy’s community is very active and releases come quickly (the latest stable version 1.7.2 was released on 2017/01/13). Most importantly, HAProxy offers performance and stability comparable to commercial load balancers.</p>
+<p>Because of these advantages, HAProxy is not only the first choice among free load balancing software, but has almost become the only choice.</p>
+</li>
+</ul>
+<span id="more"></span>
+<ul>
+<li><p>Core features of HAProxy</p>
+<ul>
+<li>Load balancing: two modes, L4 and L7, supporting a rich set of algorithms such as RR/static RR/LC/IP Hash/URI Hash/URL_PARAM Hash/HTTP_HEADER Hash</li>
+<li>Health checks: supports both TCP and HTTP health check modes</li>
+<li>Session persistence: for application clusters that have not implemented session sharing, session persistence can be achieved via Insert Cookie/Rewrite Cookie/Prefix Cookie, as well as the various Hash methods mentioned above</li>
+<li>SSL: HAProxy can parse the HTTPS protocol and can decrypt requests into HTTP before transmitting them to the backend</li>
+<li>HTTP request rewriting and redirection</li>
+<li>Monitoring and statistics: HAProxy provides a Web-based statistics page that shows health status and traffic data. Based on this feature, users can develop monitoring programs to watch HAProxy’s status</li>
+</ul>
+</li>
+<li><p>Key characteristics of HAProxy</p>
+<p><strong> Performance </strong></p>
+<ul>
+<li>It uses a single-threaded, event-driven, non-blocking model, reducing the cost of context switching, and can handle hundreds of requests within 1ms. Each session also occupies only a few KB of memory.</li>
+<li>A large number of fine-grained performance optimizations, such as an O(1)-complexity event checker, lazy update techniques, single-buffering, zero-copy forwarding and so on. These techniques let HAProxy use extremely little CPU under moderate load.</li>
+<li>HAProxy makes heavy use of the operating system’s own features, allowing it to deliver extremely high performance when handling requests. Typically, HAProxy itself accounts for only 15% of the processing time, while the remaining 85% is completed in the system kernel.</li>
+<li>Eight years ago (2009), the author of HAProxy ran a test with version 1.4: a single HAProxy process broke through 100,000 requests/second and easily saturated 10Gbps of network bandwidth.</li>
+</ul>
+<p><strong> Stability </strong></p>
+<p>As a program recommended to run in single-process mode, HAProxy has very strict stability requirements. According to the author, HAProxy has never had a bug that would cause it to crash in 13 years. Once HAProxy starts successfully, it will not crash unless the operating system or hardware fails (I think there’s probably some exaggeration in there).</p>
+<p>As mentioned above, most of HAProxy’s work is done in the operating system kernel, so HAProxy’s stability mainly depends on the operating system. The author recommends using a 2.6 or 3.x Linux kernel, finely tuning the sysctls parameters, and making sure the host has enough memory. That way HAProxy can run continuously at full load for years.</p>
+<p>Personal suggestions:</p>
+<ul>
+<li><p>Use a Linux operating system with a 3.x kernel to run HAProxy</p>
+</li>
+<li><p>Do not deploy other applications on the host running HAProxy, so as to ensure HAProxy has exclusive use of resources and to avoid other applications causing operating system or host failures</p>
+</li>
+<li><p>Equip HAProxy with at least one standby machine to handle sudden events such as host hardware failure or power loss (how to build an active-active HAProxy setup is described later in this article)</p>
+</li>
+<li><p>Recommended sysctl settings (not a universal configuration — finer adjustments still need to be made for specific situations, but it can serve as an initial configuration when using HAProxy for the first time):</p>
+<pre><code>net.ipv4.tcp_tw_reuse = 1
+net.ipv4.ip_local_port_range = 1024 65023
+net.ipv4.tcp_max_syn_backlog = 10240
+net.ipv4.tcp_max_tw_buckets = 400000
+net.ipv4.tcp_max_orphans = 60000
+net.ipv4.tcp_synack_retries = 3
+net.core.somaxconn = 10000
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>Installing and running HAProxy</p>
+<p>  Below is how to install and run the latest stable version of HAProxy (1.7.2) on CentOS 7.</p>
+<p>  <strong><em> Installation </em></strong></p>
+<p>  Create a user and user group for HAProxy. In this example both the user and the user group are “ha”. Note that if you want HAProxy to listen on ports below 1024, it needs to be started as the root user.</p>
+<p>  Download and extract</p>
+<pre><code>  wget http://www.haproxy.org/download/1.7/src/haproxy-1.7.2.tar.gz
+  tar -xzf haproxy-1.7.2.tar.gz
+</code></pre><p>  Compile and install</p>
+<pre><code>  make PREFIX=/home/ha/haproxy TARGET=linux2628
+  make install PREFIX=/home/ha/haproxy
+</code></pre><p>  PREFIX is the specified installation path, while TARGET is specified according to the current operating system kernel version:</p>
+<pre><code>- linux22     for Linux 2.2
+- linux24     for Linux 2.4 and above (default)
+- linux24e    for Linux 2.4 with support for a working epoll (&gt; 0.21)
+- linux26     for Linux 2.6 and above
+- linux2628   for Linux 2.6.28, 3.x, and above (enables splice and tproxy)
+</code></pre><p>  In this example, our operating system kernel version is 3.10.0, so TARGET is specified as linux2628.</p>
+<p>  Create the HAProxy configuration file</p>
+<pre><code>mkdir -p /home/ha/haproxy/conf
+vi /home/ha/haproxy/conf/haproxy.cfg
+</code></pre><p>  First let’s create a minimal configuration file:</p>
+<pre><code>global #global attributes
+    daemon  #run in the background as a daemon
+    maxconn 256  #maximum of 256 simultaneous connections
+    pidfile /home/ha/haproxy/conf/haproxy.pid  #file in which to store the HAProxy process ID
+
+defaults #default parameters
+    mode http  #http mode
+    timeout connect 5000ms  #timeout for connecting to the server side: 5s
+    timeout client 50000ms  #client response timeout: 50s
+    timeout server 50000ms  #server side response timeout: 50s
+
+frontend http-in #frontend service http-in
+    bind *:8080  #listen on port 8080
+    default_backend servers  #forward requests to the backend service named &quot;servers&quot;
+
+backend servers #backend service servers
+    server server1 127.0.0.1:8000 maxconn 32  #the backend servers group has only one backend service, named server1, running on port 8000 of this machine; HAProxy opens at most 32 connections to this service at the same time
+</code></pre><p>  Note: HAProxy requires the system’s ulimit -n parameter to be greater than [maxconn*2+18]. When setting a large maxconn, remember to check and modify the ulimit -n parameter.<br>  Register HAProxy as a system service</p>
+<p>  Add a start/stop script for the HAProxy service under the /etc/init.d directory:</p>
+<pre><code>vi /etc/init.d/haproxy
+
+#! /bin/sh
+set -e
+
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/home/ha/haproxy/sbin
+PROGDIR=/home/ha/haproxy
+PROGNAME=haproxy
+DAEMON=$PROGDIR/sbin/$PROGNAME
+CONFIG=$PROGDIR/conf/$PROGNAME.cfg
+PIDFILE=$PROGDIR/conf/$PROGNAME.pid
+DESC=&quot;HAProxy daemon&quot;
+SCRIPTNAME=/etc/init.d/$PROGNAME
+
+# Gracefully exit if the package has been removed.
+test -x $DAEMON || exit 0
+
+start()
+&#123;
+       echo -e &quot;Starting $DESC: $PROGNAME\n&quot;
+       $DAEMON -f $CONFIG
+       echo &quot;.&quot;
+&#125;
+
+stop()
+&#123;
+       echo -e &quot;Stopping $DESC: $PROGNAME\n&quot;
+       haproxy_pid=&quot;$(cat $PIDFILE)&quot;
+       kill $haproxy_pid
+       echo &quot;.&quot;
+&#125;
+
+restart()
+&#123;
+       echo -e &quot;Restarting $DESC: $PROGNAME\n&quot;
+       $DAEMON -f $CONFIG -p $PIDFILE -sf $(cat $PIDFILE)
+       echo &quot;.&quot;
+&#125;
+
+case &quot;$1&quot; in
+ start)
+       start
+       ;;
+ stop)
+       stop
+       ;;
+ restart)
+       restart
+       ;;
+ *)
+       echo &quot;Usage: $SCRIPTNAME &#123;start|stop|restart&#125;&quot; &gt;&amp;2
+       exit 1
+       ;;
+esac
+
+exit 0
+</code></pre><p>  Running</p>
+<p>  Start, stop and restart</p>
+<pre><code>service haproxy start
+service haproxy stop
+service haproxy restart
+</code></pre><p>  Adding logs</p>
+<p>  HAProxy does not output file logs directly, so we need to rely on Linux’s rsyslog to make HAProxy output logs.</p>
+<p>  Modify haproxy.cfg</p>
+<p>  In the global and defaults sections, add:</p>
+<pre><code>global
+    ...
+    log 127.0.0.1 local0 info
+    log 127.0.0.1 local1 warning
+    ...
+
+defaults
+    ...
+    log global
+    ...
+</code></pre><p>  This means pushing info-level (and above) logs to rsyslog’s local0 facility, pushing warn-level (and above) logs to rsyslog’s local1 facility, and having all frontends use the log configuration from global by default.</p>
+<p>  Note: info-level logs print every request HAProxy handles, which takes up a lot of disk space. In a production environment, it is recommended to set the log level to notice.</p>
+<p>  Add the haproxy log configuration for rsyslog</p>
+<pre><code>  vi /etc/rsyslog.d/haproxy.conf
+  $ModLoad imudp
+  $UDPServerRun 514
+  $FileCreateMode 0644  #permissions of the log file
+  $FileOwner ha  #owner of the log file
+  local0.*     /var/log/haproxy.log  #log output file corresponding to the local0 facility
+  local1.*     /var/log/haproxy_warn.log  #log output file corresponding to the local1 facility
+</code></pre><p>  Modify rsyslog’s startup parameters</p>
+<pre><code>  vi /etc/sysconfig/rsyslog
+  # Options for rsyslogd
+  # Syslogd options are deprecated since rsyslog v3.
+  # If you want to use them, switch to compatibility mode 2 by &quot;-c 2&quot;
+  # See rsyslogd(8) for more details
+  SYSLOGD_OPTIONS=&quot;-c 2 -r -m 0&quot;
+</code></pre><p>  Restart rsyslog and HAProxy</p>
+<pre><code>service rsyslog restart
+service haproxy restart
+</code></pre><p>  At this point you should be able to see haproxy’s log files in the /var/log directory.</p>
+<p>  <strong> Log rotation with logrotate </strong></p>
+<p>  Logs output through rsyslog are not rotated, so we need to rely on Linux’s logrotate (see “Introduction to the Linux Logrotate Service”) to do the rotation work.</p>
+<p>  As the root user, create the haproxy log rotation configuration file:</p>
+<pre><code>  mkdir /root/logrotate
+  vi /root/logrotate/haproxy
+  /var/log/haproxy.log /var/log/haproxy_warn.log &#123;  #the two file names to rotate
+      daily        #rotate daily
+      rotate 7     #keep 7 copies
+      create 0644 ha ha  #permissions, user, user group of the newly created file
+      compress     #compress old logs
+      delaycompress  #delay compression by one day
+      missingok    #ignore errors when the file does not exist
+      dateext      #append a date suffix to old logs
+      sharedscripts  #the post-rotation restart script runs only once
+      postrotate   #after rotation, run the script to reload rsyslog so it writes logs to the new log files
+        /bin/kill -HUP $(/bin/cat /var/run/syslogd.pid 2&gt;/dev/null) &amp;&gt;/dev/null
+      endscript
+  &#125;
+</code></pre><p>  And configure it to run in crontab:</p>
+<pre><code>0 0 * * * /usr/sbin/logrotate /root/logrotate/haproxy
+</code></pre></li>
+</ul>
+<ul>
+<li>Building an L7 load balancer with HAProxy</li>
+</ul>
+<p>Overall plan</p>
+<p>In this section we will use HAProxy to build an L7 load balancer that applies the following features</p>
+<ul>
+<li>Load balancing</li>
+<li>Session persistence</li>
+<li>Health checks</li>
+<li>Forwarding to different backend clusters based on URI prefix</li>
+<li>Statistics page</li>
+</ul>
+<p>The architecture is as follows:</p>
+<p><img src="/img/202106/20210630214823.jpg" alt=""></p>
+<p>The architecture has 6 backend services in total, divided into 3 groups of 2 services each:</p>
+<ul>
+<li>ms1: serves requests whose URI prefix is ms1/</li>
+<li>ms2: serves requests whose URI prefix is ms2/</li>
+<li>def: serves all other requests</li>
+</ul>
+<p>Building the backend services</p>
+<p>Deploy 6 backend services; any Web service can be used, such as Nginx, Apache HTTPD, Tomcat, Jetty, etc. The specific installation process for the Web service is omitted.</p>
+<p>In this example, we installed 3 Nginx instances on each of the two hosts 192.168.8.111 and 192.168.8.112:</p>
+<pre><code>ms1.srv1 - 192.168.8.111:8080
+ms1.srv2 - 192.168.8.112:8080
+ms2.srv1 - 192.168.8.111:8081
+ms2.srv2 - 192.168.8.112:8081
+def.srv1 - 192.168.8.111:8082
+def.srv2 - 192.168.8.112:8082
+</code></pre><p>Deploy a health check page, healthCheck.html, on each of these 6 Nginx services; the page content can be anything. Make sure the page is reachable at <a href="http://ip:port/healthCheck.html" target="_blank" rel="external nofollow noopener noreferrer">http://ip:port/healthCheck.html</a></p>
+<p>Next, deploy the service pages on the 6 Nginx services:</p>
+<ul>
+<li>Deploy ms1/demo.html in the first group</li>
+<li>Deploy ms2/demo.html in the second group</li>
+<li>Deploy def/demo.html in the third group</li>
+</ul>
+<p>The content of demo.html, taking the one deployed on 192.168.8.111:8080 as an example:</p>
+<pre><code>Hello! This is ms1.srv1!
+</code></pre><p>The one deployed on 192.168.8.112:8080 should be</p>
+<pre><code>Hello! This is ms1.srv2!
+</code></pre><p>And so on.</p>
+<p>Building HAProxy</p>
+<p>Install HAProxy on the host 192.168.8.110. The installation and configuration steps for HAProxy are as described in the previous chapter, so they are omitted here.</p>
+<p>HAProxy configuration file:</p>
+<pre><code>global
+    daemon
+    maxconn 30000   #ulimit -n must be at least 60018
+    user ha
+    pidfile /home/ha/haproxy/conf/haproxy.pid
+    log 127.0.0.1 local0 info
+    log 127.0.0.1 local1 warning
+
+defaults
+    mode http
+    log global
+    option http-keep-alive   #use keepAlive connections
+    option forwardfor        #record the client IP in the X-Forwarded-For header
+    option httplog           #enable httplog; HAProxy will record richer request information
+    timeout connect 5000ms
+    timeout client 10000ms
+    timeout server 50000ms
+    timeout http-request 20000ms    #timeout from connection creation until a complete HTTP request has been read from the client; used to avoid DoS-like attacks
+    option httpchk GET /healthCheck.html    #define the default health check policy
+
+frontend http-in
+    bind *:9001
+    maxconn 30000                    #define the maxconn on this port
+    acl url_ms1 path_beg -i /ms1/    #define an ACL; when the uri starts with /ms1/, the ACL[url_ms1] is true
+    acl url_ms2 path_beg -i /ms2/    #same as above, url_ms2
+    use_backend ms1 if url_ms1       #when [url_ms1] is true, direct to the backend service group ms1
+    use_backend ms2 if url_ms2       #when [url_ms2] is true, direct to the backend service group ms2
+    default_backend default_servers  #in other cases, direct to the backend service group default_servers
+
+backend ms1    #define the backend service group ms1
+    balance roundrobin    #use the RR load balancing algorithm
+    cookie HA_STICKY_ms1 insert indirect nocache    #session persistence policy: insert a cookie named &quot;HA_STICKY_ms1&quot;
+    #define the backend server [ms1.srv1]; when a request is directed to this server, the cookie value [ms1.srv1] is written into the response
+    #set maxconn for this server to 300
+    #apply the default health check policy; health check interval and timeout are 2000ms, two successes mark the node as UP, three failures mark the node as DOWN
+    server ms1.srv1 192.168.8.111:8080 cookie ms1.srv1 maxconn 300 check inter 2000ms rise 2 fall 3
+    #same as above; inter 2000ms rise 2 fall 3 are the default values and can be omitted
+    server ms1.srv2 192.168.8.112:8080 cookie ms1.srv2 maxconn 300 check
+
+backend ms2    #define the backend service group ms2
+    balance roundrobin
+    cookie HA_STICKY_ms2 insert indirect nocache
+    server ms2.srv1 192.168.8.111:8081 cookie ms2.srv1 maxconn 300 check
+    server ms2.srv2 192.168.8.112:8081 cookie ms2.srv2 maxconn 300 check
+
+backend default_servers    #define the backend service group default_servers
+    balance roundrobin
+    cookie HA_STICKY_def insert indirect nocache
+    server def.srv1 192.168.8.111:8082 cookie def.srv1 maxconn 300 check
+    server def.srv2 192.168.8.112:8082 cookie def.srv2 maxconn 300 check
+
+listen stats    #define the statistics page
+    bind *:1080                   #bind port 1080
+    stats refresh 30s             #refresh the statistics every 30 seconds
+    stats uri /stats              #uri for accessing the statistics page
+    stats realm HAProxy\ Stats    #authentication prompt of the statistics page
+    stats auth admin:admin        #username and password of the statistics page
+</code></pre><p>Once the modifications are done, start HAProxy</p>
+<pre><code>  service haproxy start
+</code></pre><p><strong> Testing </strong></p>
+<p>First, visit the statistics page at <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://192.168.8.110:1080/stats" target="_blank">http://192.168.8.110:1080/stats</a> and enter the username and password when prompted.</p>
+<p>Then you can see the statistics page:</p>
+<p><img src="/img/202106/20210630215315.jpg" alt=""></p>
+<p>The statistics page lists all the frontend and backend services we configured, along with their detailed metrics. Such as connection counts, queue status, session rate, traffic, the health status of backend services, and so on.</p>
+<p>Next, let’s test the features configured in HAProxy one by one.</p>
+<p><strong> Health checks </strong></p>
+<p>Whether the health check configuration is correct can be seen directly from the statistics page. In the figure above you can see that the Status of all 6 backend services under backend ms1, ms2 and default_servers is 20h28m UP, meaning the healthy state has lasted 20 hours and 28 minutes, while LastChk showing L7OK/200 in 1ms means an L7 health check (that is, a health check via HTTP request) was performed 1ms ago and returned status code 200.</p>
+<p>Now let’s rename healthCheck.html in ms1.srv1</p>
+<pre><code>        mv healthCheck.html healthCheck.html.bak
+</code></pre><p>Then look at the statistics page again:</p>
+<p><img src="/img/202106/20210630215444.jpg" alt=""></p>
+<p>The status of ms1.srv1 becomes 2s DOWN, and LastChk shows L7STS/404 in 2ms, meaning the last health check returned 404. Restore healthCheck.html, and you will soon see ms1.srv1 return to UP status.</p>
+<p>Forwarding requests by URI prefix: visit <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://192.168.8.110:9001/ms1/demo.html" target="_blank">http://192.168.8.110:9001/ms1/demo.html</a></p>
+<p><img src="/img/202106/20210630215522.jpg" alt=""></p>
+<p>You can see it was successfully directed to ms1.srv1.</p>
+<p>Visit <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://192.168.8.110:9001/ms2/demo.html" target="_blank">http://192.168.8.110:9001/ms2/demo.html</a> :</p>
+<p><img src="/img/202106/20210630215607.jpg" alt=""></p>
+<p>Load balancing and session persistence policies</p>
+<p>After visiting ms1/demo.html, ms2/demo.html and m3/demo.html separately, look at the browser’s cookies</p>
+<p><img src="/img/202106/20210630215648.jpg" alt=""></p>
+<p>You can see that HAProxy has written back three cookies used for session persistence. If you refresh these three pages repeatedly now, you will find they are always directed to *.srv1.</p>
+<p>Next, delete the HA_STICKY_ms1 cookie, then visit ms1/demo.html again, and you will see</p>
+<p><img src="/img/202106/20210630215739.jpg" alt=""></p>
+<p>At the same time a new cookie has been written</p>
+<p><img src="/img/202106/20210630215818.jpg" alt=""></p>
+<p>If you find it is still directed to ms1.srv1 and no new HA_STICKY_ms1 cookie was written, then the browser may have cached the ms1/demo.html page and the request never reached HAProxy. Pressing F5 to refresh should fix it.</p>
+<ul>
+<li><p>Building an L4 load balancer with HAProxy</p>
+<p>When HAProxy works as an L4 load balancer, it does not parse anything related to the HTTP protocol and only processes packets at the transport layer. That is to say, HAProxy running in L4 mode cannot forward to different backends based on the URL, nor implement session persistence through cookies.</p>
+<p>At the same time, HAProxy working in L4 mode cannot provide a statistics page either.</p>
+<p>But HAProxy as an L4 load balancer can deliver higher performance, and is suitable for socket-based services (such as databases, message queues, RPC, mail services, Redis, etc.), or for HTTP services that do not need logical rule decisions and have already implemented session sharing.</p>
+<p> <strong> Overall plan </strong></p>
+<p>In this example, we use HAProxy in L4 mode to proxy two HTTP services, without session persistence.</p>
+<pre><code>global
+    daemon
+    maxconn 30000   #ulimit -n must be at least 60018
+    user ha
+    pidfile /home/ha/haproxy/conf/haproxy.pid
+    log 127.0.0.1 local0 info
+    log 127.0.0.1 local1 warning
+
+defaults
+    mode tcp
+    log global
+    option tcplog            #enable tcplog
+    timeout connect 5000ms
+    timeout client 10000ms
+    timeout server 10000ms   #in TCP mode, timeout client and timeout server should be set to the same value to prevent problems
+    option httpchk GET /healthCheck.html    #define the default health check policy
+
+frontend http-in
+    bind *:9002
+    maxconn 30000                    #define the maxconn on this port
+    default_backend default_servers  #direct requests to the backend service group default_servers
+
+backend default_servers    #define the backend service group default_servers
+    balance roundrobin
+    server def.srv1 192.168.8.111:8082 maxconn 300 check
+    server def.srv2 192.168.8.112:8082 maxconn 300 check
+</code></pre><p><strong> Session persistence in L4 mode </strong></p>
+<p>Although HAProxy in TCP mode cannot implement session persistence through HTTP cookies, it can very conveniently implement session persistence based on the client IP. You only need to change</p>
+<pre><code>  balance roundrobin
+to
+    balance source
+</code></pre><p>In addition, HAProxy provides a powerful stick-table feature: HAProxy can sample a large number of attributes from packets at the transport layer and write these attributes into the stick-table as the session persistence policy.</p>
+</li>
+<li><p>Detailed explanation of HAProxy’s key configuration</p>
+</li>
+</ul>
+<p><strong> Overview </strong></p>
+<p>HAProxy’s configuration file has 5 sections</p>
+<pre><code>global: used to configure global parameters
+default: used to configure the default attributes for all frontends and backends
+frontend: used to configure frontend service (that is, the services HAProxy itself provides) instances
+backend: used to configure groups of backend service (that is, the services behind HAProxy) instances
+listen: a combined configuration of frontend + backend, which can be understood as a more concise way of configuring
+</code></pre><p>Key configuration in the global section</p>
+<pre><code>daemon: specifies that HAProxy runs in background mode; this configuration should normally always be used
+user [username] : specifies the user the HAProxy process belongs to
+group [groupname] : specifies the user group the HAProxy process belongs to
+log [address] [device] [maxlevel] [minlevel]: log output configuration, e.g. log 127.0.0.1 local0 info warning, which outputs info to warning level logs to local0 of the local rsyslog or syslog. The [minlevel] can be omitted. HAProxy has 8 log levels in total, from high to low: emerg/alert/crit/err/warning/notice/info/debug
+pidfile : specifies the absolute path of the file that records the HAProxy process ID. Mainly used for stopping and restarting the HAProxy process.
+maxconn : the number of connections the HAProxy process handles simultaneously; when the connection count reaches this value, HAProxy stops accepting connection requests
+</code></pre><p>Key configuration in the frontend section</p>
+<pre><code>acl [name] [criterion] [flags] [operator] [value]: defines an ACL. An ACL is a true/false value computed from a specified attribute of a packet using a specified expression. For example, &quot;acl url_ms1 path_beg -i /ms1/&quot; defines an ACL named url_ms1 that is true when the request uri starts with /ms1/ (case-insensitive)
+bind [ip]:[port]: the port the frontend service listens on
+default_backend [name]: the default backend corresponding to the frontend
+disabled: disable this frontend
+http-request [operation] [condition]: policies applied to all HTTP requests arriving at this frontend; for example, you can reject them, require authentication, add headers, replace headers, define ACLs and so on.
+http-response [operation] [condition]: policies applied to all HTTP responses returned from this frontend, roughly the same as above
+log: same as the log configuration in the global section, applied only to this frontend. If you want to reuse the log configuration of the global section, configure it here as log global
+maxconn: same as maxconn in the global section, applied only to this frontend
+mode: the working mode of this frontend, mainly http and tcp, corresponding to the L7 and L4 load balancing modes
+option forwardfor: add an X-Forwarded-For Header to requests to record the client ip
+option http-keep-alive: provide services in KeepAlive mode
+option httpclose: the counterpart of http-keep-alive, turning off KeepAlive mode. If HAProxy mainly provides interface-type services, you can consider using httpclose mode to save connection resources. But if you do so, the callers of the interface will not be able to use HTTP connection pooling
+option httplog: enable httplog; HAProxy will record request logs in a format similar to Apache HTTP or Nginx
+option tcplog: enable tcplog; HAProxy will record more transport-layer attributes of packets in the logs
+stats uri [uri]: enable the statistics page on this frontend, accessed via [uri]
+stats refresh [time]: statistics data refresh interval
+stats auth [user]:[password]: authentication username and password for the statistics page
+timeout client [time]: the timeout for the client continuing not to send data after the connection is created
+timeout http-request [time]: the timeout for the client failing to send a complete HTTP request after the connection is created. Mainly used to prevent DoS-type attacks, that is, creating a connection and then sending request packets at a very slow rate, causing HAProxy connections to be occupied for a long time
+use_backend [backend] if|unless [acl]: used together with ACLs; forward to the specified backend when the ACL is satisfied/not satisfied
+</code></pre><p>Key configuration in the backend section</p>
+<pre><code>acl: same as the frontend section
+balance [algorithm]: the load balancing algorithm among all servers under this backend; the commonly used ones are roundrobin and source. For the complete algorithm description see the official documentation configuration.html#4.2-balance
+cookie: enables a cookie-based session persistence policy among the backend servers. The most commonly used is the insert method, e.g. cookie HA_STICKY_ms1 insert indirect nocache, which means HAProxy will insert a cookie named HA_STICKY_ms1 into the response, with the value specified in the corresponding server definition, and decide which server to forward to based on the value of this cookie in the request. indirect means that if the request already carries a valid HA_STICK_ms1 cookie, HAProxy will not insert this cookie into the response again; nocache means prohibiting all gateways and cache servers along the chain from caching responses that carry a Set-Cookie header.
+default-server: used to specify the default settings for all servers under this backend. See the server configuration below for details.
+disabled: disable this backend
+http-request/http-response: same as the frontend section
+log: same as the frontend section
+mode: same as the frontend section
+option forwardfor: same as the frontend section
+option http-keep-alive: same as the frontend section
+option httpclose: same as the frontend section
+option httpchk [METHOD] [URL] [VERSION]: defines a health check policy performed in the http way. E.g. option httpchk GET /healthCheck.html HTTP/1.1
+option httplog: same as the frontend section
+option tcplog: same as the frontend section
+server [name] [ip]:[port] [params]: defines a backend server in the backend. [params] is used to specify the parameters for this server; the commonly used ones include:
+check: when this parameter is specified, HAProxy will perform health checks on this server, with the check method configured in option httpchk. You can also specify the inter, rise and fall parameters after check, representing the health check period, the number of consecutive successes before the server is considered UP, and the number of consecutive failures before the server is considered DOWN; the default values are inter 2000ms rise 2 fall 3
+cookie [value]: used together with cookie-based session persistence. For example, cookie ms1.srv1 means requests handled by this server will have a cookie with the value ms1.srv1 written into the response (the specific cookie name is specified in the cookie setting in the backend section)
+maxconn: the maximum number of connections HAProxy opens to this server at the same time; when the connection count reaches maxconn, new connections to this server enter a waiting queue. The default is 0, meaning unlimited
+maxqueue: the length of the waiting queue; when the queue is full, subsequent requests will be sent to other servers under this backend. The default is 0, meaning unlimited
+weight: the weight of the server, 0-256; the larger the weight, the more requests are distributed to this server. A server with weight 0 will not be assigned any new connections. All servers default to weight 1
+
+timeout connect [time]: the timeout for HAProxy trying to establish a connection with the backend server
+timeout check [time]: by default, the health check connection + response timeout is the inter value specified in the server command. If timeout check is configured, HAProxy will use inter as the connection timeout for health check requests, and the value of timeout check as the response timeout for health check requests
+timeout server [time]: the timeout for the backend server to respond to HAProxy&#39;s requests
+</code></pre><p>The default section</p>
+<pre><code>Among the key configurations of the frontend and backend sections described above, all except acl, bind, http-request, http-response and use_backend can be configured in the default section. If an item configured in the default section is not configured in the frontend or backend section, the configuration from the default section will be used.
+</code></pre><p>The listen section</p>
+<pre><code>        The listen section is a combination of the frontend and backend sections; all configurations from the frontend and backend sections can be configured under the listen section.
+</code></pre><ul>
+<li>Implementing HAProxy high availability with Keepalived</li>
+</ul>
+<p>Although HAProxy is very stable, it still cannot avoid the risks brought by operating system failures, host hardware failures, network failures and even power loss. So a high availability solution must be implemented for HAProxy.</p>
+<p>Below we introduce a HAProxy hot standby solution implemented with Keepalived. That is, two HAProxy instances on two hosts are online at the same time; the instance with the higher weight is the MASTER, and when the MASTER has a problem, the other instance automatically takes over all traffic.</p>
+<p><strong> Principle </strong></p>
+<p>A Keepalived instance runs on each of the two HAProxy hosts. These two Keepalived instances compete for the same virtual IP address, and the two HAProxy instances also try to bind to ports on this same virtual IP address.</p>
+<p>Obviously, only one Keepalived can win this virtual IP at a time, and the HAProxy on the host whose Keepalived won the virtual IP is the current MASTER.</p>
+<p>Keepalived internally maintains a weight value; the Keepalived instance with the highest weight value can win the virtual IP. At the same time, Keepalived periodically checks the HAProxy status on its own host, and when the status is OK the weight value increases.</p>
+<ul>
+<li><p>Building a HAProxy active-standby cluster</p>
+<p><strong> Environment preparation </strong> </p>
+</li>
+</ul>
+<p>Install and configure HAProxy on two physical machines. In this example, two identical HAProxy setups will be installed on the two hosts 192.168.8.110 and 192.168.8.111. The specific steps are omitted; please refer to the section “Building an L7 load balancer with HAProxy”.</p>
+<p><strong> Installing Keepalived </strong></p>
+<p>Download, extract, compile, install:</p>
+<pre><code>wget http://www.keepalived.org/software/keepalived-1.2.19.tar.gz
+tar -xzf keepalived-1.2.19.tar.gz
+./configure --prefix=/usr/local/keepalived
+make
+make install
+</code></pre><p>Register as a system service:</p>
+<pre><code>cp /usr/local/keepalived/sbin/keepalived /usr/sbin/
+cp /usr/local/keepalived/etc/sysconfig/keepalived /etc/sysconfig/
+cp /usr/local/keepalived/etc/rc.d/init.d/keepalived /etc/init.d/
+chmod +x /etc/init.d/keepalived
+</code></pre><p>Note: Keepalived needs to be installed and configured as the root user.</p>
+<p><strong> Configuring Keepalived </strong></p>
+<p>Create and edit the configuration file</p>
+<pre><code>mkdir -p /etc/keepalived/
+cp /usr/local/keepalived/etc/keepalived/keepalived.conf /etc/keepalived/
+vi /etc/keepalived/keepalived.conf
+</code></pre><p>The content of the configuration file:</p>
+<pre><code>global_defs &#123;
+    router_id LVS_DEVEL  #virtual router name
+&#125;
+
+#HAProxy health check configuration
+vrrp_script chk_haproxy &#123;
+    script &quot;killall -0 haproxy&quot;  #use killall -0 to check whether the haproxy instance exists; better performance than the ps command
+    interval 2   #script execution period
+    weight 2   #weight added on each check
+&#125;
+
+#virtual router configuration
+vrrp_instance VI_1 &#123;
+    state MASTER           #state of this instance, MASTER/BACKUP; write BACKUP in the standby machine&#39;s configuration file
+    interface enp0s25      #network card name of this machine; check it with the ifconfig command
+    virtual_router_id 51   #virtual router number; keep it the same on the master and standby machines
+    priority 101           #initial weight of this machine; for the standby machine write a value smaller than the master&#39;s (for example 100)
+    advert_int 1           #period for competing for the virtual address, in seconds
+    virtual_ipaddress &#123;
+        192.168.8.201      #virtual address IP; keep it the same on the master and standby machines
+    &#125;
+    track_script &#123;
+        chk_haproxy        #the corresponding health check configuration
+    &#125;
+&#125;
+</code></pre><p>If the host does not have the killall command, you need to install the psmisc package:</p>
+<pre><code>        yum intall psmisc
+</code></pre><p>Start both Keepalived instances separately</p>
+<pre><code>        service keepalived start
+</code></pre><p><strong> Verification </strong></p>
+<p>After starting, first check on each of the two hosts who holds the virtual IP 192.168.8.201 by running the command:</p>
+<pre><code>ip addr sh enp0s25   (replace enp0s25 with the host&#39;s network card name)
+</code></pre><p>The output of the host holding the virtual IP will look like this:</p>
+<p><img src="/img/202106/20210630220514.jpg" alt=""></p>
+<p>The output of the other host looks like this:</p>
+<p><img src="/img/202106/20210630220540.jpg" alt=""></p>
+<p>If you start the standby machine’s Keepalived first, then it is quite likely the virtual IP will be won by the standby machine, because the standby machine’s weight configuration is only 1 lower than the master’s; a single health check is enough to raise its weight to 102, higher than the master’s 101.</p>
+<p>Now visit <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://192.168.8.201:9001/ms1/demo.html" target="_blank">http://192.168.8.201:9001/ms1/demo.html</a> and you can see the web page we deployed earlier.</p>
+<p>Now check /var/log/haproxy.log and you can see that this request landed on the host that won the virtual IP.</p>
+<p>Next, let’s stop the HAProxy instance on the current MASTER host (or the Keepalived instance, the effect is the same)</p>
+<pre><code>        service haproxy stop
+</code></pre><p>Visit <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="http://192.168.8.201:9001/ms1/demo.html" target="_blank">http://192.168.8.201:9001/ms1/demo.html</a> again and check the standby machine’s /var/log/haproxy.log; you will see the request landed on the standby machine, and the automatic master-standby switchover succeeded.</p>
+<p>You can also run the ip addr sh enp0s25 command again and see that the virtual IP has been taken over by the standby machine.</p>
+<p>In /var/log/message you can also see the switchover log output by keepalived:<br><img src="/img/202106/20210630220636.jpg" alt=""></p>
+<p>Source: <a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://blog.csdn.net/xiaoxiaole0313/article/details/113977071" target="_blank">https://blog.csdn.net/xiaoxiaole0313/article/details/113977071</a></p>
+
+      
+    </div>
+    <div class="article-footer">
+      
+      
+        <div class="declare">
+          <strong data-i18n="post.author">🧑‍💻 本文作者：</strong>艾瑞可erik<br>
+          <strong data-i18n="post.link">🔗 本文链接：</strong>https://erik.xyz/2021/06/30/start-haproxy-en/<br>
+          <strong data-i18n="post.license">📜 版权声明：</strong><span data-i18n="post.licenseA">本作品采用</span>
+          <a rel="license noopener external nofollow noopener noreferrer" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+          <span data-i18n="post.licenseB">进行许可，转载请注明出处！</span>
+        </div>
+      
+      
+        <div class="page-reward" id="reward-box">
+          <button class="reward-toggle" id="reward-toggle" aria-label="打赏" data-i18n="post.rewardAria" data-i18n-attr="aria-label"><span data-i18n="post.reward">🎁 打赏</span><span class="reward-tip" data-i18n=" 感谢投喂，法力 +1 🍬"> 感谢投喂，法力 +1 🍬</span></button>
+          <div class="reward-panel" id="reward-panel">
+            
+              <div class="reward-card"><img src="/img/alipay.jpg" alt="支付宝"><span class="reward-name" data-i18n="post.alipay">💙 支付宝</span></div>
+            
+            
+              <div class="reward-card"><img src="/img/wxpay.jpg" alt="微信"><span class="reward-name" data-i18n="post.wechat">💚 微信</span></div>
+            
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</article>
+
+  
+
+<nav id="article-nav" class="glass">
+  
+    <a href="/2021/07/15/linux-tools-system-en/" class="article-nav-link prev">
+      <span class="nav-arrow">←</span>
+      <span class="nav-body">
+        <span class="nav-label" data-i18n="post.navPrev">上一篇</span>
+        <span class="nav-title">13 Practical Tools Every Linux Administrator Needs</span>
+      </span>
+    </a>
+  
+  
+    <a href="/2021/06/22/open-admin-en/" class="article-nav-link next">
+      <span class="nav-body">
+        <span class="nav-label" data-i18n="post.navNext">下一篇</span>
+        <span class="nav-title">Planning an Open Source Management System</span>
+      </span>
+      <span class="nav-arrow">→</span>
+    </a>
+  
+</nav>
+
+
+  
+  
+    
+
+<div id="gitalk-container" class="glass gitalk-box"></div>
+<link rel="stylesheet" href="/vendor/gitalk.css?v=20260921e">
+<script src="/vendor/md5.min.js?v=20260921e"></script>
+<script src="/vendor/gitalk.min.js?v=20260921e"></script>
+<script>
+  (function () {
+    var g = new Gitalk({
+      clientID: '1f3ef16f7a5f58d435b3',
+      clientSecret: '9e444c34bd4f282e698f56ba76cd9a8d0892b762',
+      repo: 'erikwang2013.github.io',
+      owner: 'erikwang2013',
+      admin: ['erikwang2013'],
+      id: md5(location.pathname),
+      language: 'zh-CN',
+      perPage: 10,
+      distractionFreeMode: true
+    });
+    g.render('gitalk-container');
+  })();
+</script>
+
+
+  
+
+
+    </section>
+  </main>
+  
+
+
+<aside class="sidebar">
+  
+  
+  <!-- 内容标题按钮：点击抽屉式展开（抽屉从按钮下方滑出，不盖住按钮） -->
+  <section class="sb-block">
+    <div class="sb-tabs">
+      <button type="button" class="sb-tab" data-panel="sb-knowledge" data-i18n="📚 知识">📚 知识</button>
+      
+      <button type="button" class="sb-tab" data-panel="sb-friends" data-i18n="🤝 友链">🤝 友链</button>
+      <button type="button" class="sb-tab" data-panel="sb-about" data-i18n="🧙 关于我">🧙 关于我</button>
+      
+    </div>
+  </section>
+  
+
+  <!-- 标签块：纵向上下缓慢滚动 -->
+  
+  <section class="sb-block">
+    <h3 class="sb-title" data-i18n="🪐 标签">🪐 标签</h3>
+    <div class="float-tags" data-mode="flow" data-speed="24" data-maxshow="120">
+      
+      
+        
+        
+        <a class="tag-item" href="/tags/css%E4%B8%AD%E7%9A%84em/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">css中的em</span><span data-lang-text="en">CSS EM Units</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%AD%97%E4%BD%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应式字体</span><span data-lang-text="en">Responsive Typography</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80%E6%A0%B7%E5%BC%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应式布局样式</span><span data-lang-text="en">Responsive Layout Styles</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%8A%80%E5%B7%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php技巧</span><span data-lang-text="en">PHP Tips</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E7%B1%BB%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php类库</span><span data-lang-text="en">PHP Class Libraries</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%B5%84%E6%BA%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php资源</span><span data-lang-text="en">PHP Resources</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%97%A5%E5%BF%97/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">日志</span><span data-lang-text="en">Logs</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/js%E6%8F%92%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">js插件</span><span data-lang-text="en">JS Plugins</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/web%E6%A1%86%E6%9E%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">web框架</span><span data-lang-text="en">Web Frameworks</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8E%8B%E7%BC%A9/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">压缩</span><span data-lang-text="en">Compression</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%AE%9E%E4%BE%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php实例</span><span data-lang-text="en">PHP Examples</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B6%A3%E9%97%BB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">趣闻</span><span data-lang-text="en">Fun Facts</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/nginx/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">nginx</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php库</span><span data-lang-text="en">PHP Libraries</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/flash/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">flash</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%A1%A8%E5%8D%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">表单</span><span data-lang-text="en">Forms</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/phone/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">phone</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%89%8B%E6%9C%BA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">手机</span><span data-lang-text="en">Mobile</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%96%B0%E9%97%BB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">新闻</span><span data-lang-text="en">News</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BA%92%E8%81%94/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">互联</span><span data-lang-text="en">Interconnection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">项目实战</span><span data-lang-text="en">Project Practice</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%BA%94%E7%94%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php应用</span><span data-lang-text="en">PHP Applications</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B5%AE%E7%82%B9/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">浮点</span><span data-lang-text="en">Floating Point</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">搜索引擎</span><span data-lang-text="en">Search Engines</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/http%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">http服务器</span><span data-lang-text="en">HTTP Servers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">负载均衡</span><span data-lang-text="en">Load Balancing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/kali%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">kali安装</span><span data-lang-text="en">Kali Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%B9%BF%E5%91%8A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">多平台广告管理系统</span><span data-lang-text="en">Multi-Platform Ad System</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/Ads-Platform/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">Ads Platform</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%86%9C%E4%B8%9A%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">农业系统</span><span data-lang-text="en">Agriculture System</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">系统设计</span><span data-lang-text="en">System Design</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%85%8B%E8%8E%B1%E5%A7%86%E6%B3%95%E5%88%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">克莱姆法则</span><span data-lang-text="en">Cramer Rule</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%A1%8C%E5%88%97%E5%BC%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">行列式</span><span data-lang-text="en">Determinants</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/n%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">n阶行列式</span><span data-lang-text="en">Nth-Order Determinants</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%94%AF%E4%BB%98%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">支付系统</span><span data-lang-text="en">Payment Systems</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%94%AF%E4%BB%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">支付</span><span data-lang-text="en">Payment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/apache%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">apache优化</span><span data-lang-text="en">Apache Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/apache%E9%9A%90%E8%97%8Findex/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">apache隐藏index</span><span data-lang-text="en">Apache Hidden Index</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/nginx%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">nginx优化</span><span data-lang-text="en">Nginx Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/nginx%E9%9A%90%E8%97%8Findex/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">nginx隐藏index</span><span data-lang-text="en">Nginx Hide Index</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%82%AE%E7%AE%B1%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">邮箱服务器</span><span data-lang-text="en">Mail Server</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%97%A5%E5%B8%B8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">日常</span><span data-lang-text="en">Daily Life</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/Beerust/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">Beerust</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rust%E6%A1%86%E6%9E%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">rust框架</span><span data-lang-text="en">Rust Frameworks</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%91%98%E8%A6%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">摘要</span><span data-lang-text="en">Summary</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%96%87%E7%AB%A0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">文章</span><span data-lang-text="en">Articles</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/css3%E5%85%BC%E5%AE%B9360%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">css3兼容360浏览器兼容模式</span><span data-lang-text="en">CSS3 360 Browser Compatibility</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/css%E5%9C%86%E8%A7%92/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">css圆角</span><span data-lang-text="en">CSS Rounded Corners</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B8%B8%E8%AE%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">游记</span><span data-lang-text="en">Travel Notes</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/ca%E8%AF%81%E4%B9%A6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">ca证书</span><span data-lang-text="en">CA Certificate</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%AF%81%E4%B9%A6%E7%94%9F%E6%88%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">证书生成</span><span data-lang-text="en">Certificate Generation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BA%8C%E6%88%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">二战</span><span data-lang-text="en">World War II</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BA%8C%E6%88%98%E7%86%8A/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">二战熊</span><span data-lang-text="en">WWII Bear</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%A5%BF%E4%BC%AF%E5%88%A9%E4%BA%9A%E7%86%8A/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">西伯利亚熊</span><span data-lang-text="en">Siberian Bear</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/html/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">html</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%88%86%E8%BE%A8%E7%8E%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应式分辨率</span><span data-lang-text="en">Responsive Resolutions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E8%B0%83%E8%AF%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应式调试</span><span data-lang-text="en">Responsive Debugging</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%87%AA%E9%80%82%E5%BA%94%E5%B1%8F%E5%B9%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">自适应屏幕</span><span data-lang-text="en">Responsive Screen</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos%E5%AE%89%E8%A3%85chromium%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos安装chromium报错</span><span data-lang-text="en">CentOS Chromium Install Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/chromium%E5%AE%89%E8%A3%85%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">chromium安装报错</span><span data-lang-text="en">Chromium Install Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/svn/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">svn</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">代码提交</span><span data-lang-text="en">Code Commits</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/deb/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">deb</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/deb-rpm%E4%BA%92%E8%BD%AC/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">deb/rpm互转</span><span data-lang-text="en">DEB RPM Conversion</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/deb%E8%BD%ACrpm/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">deb转rpm</span><span data-lang-text="en">DEB to RPM</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rpm%E4%BA%92%E8%BD%AC/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">rpm互转</span><span data-lang-text="en">RPM Conversion</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/yum%E4%BB%93%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">yum仓库</span><span data-lang-text="en">Yum Repository</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos7%E5%AE%89%E8%A3%85steam/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos7安装steam</span><span data-lang-text="en">CentOS 7 Steam Install</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos%E5%AE%89%E8%A3%85steam/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos安装steam</span><span data-lang-text="en">CentOS Steam Install</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos%E5%AE%89%E8%A3%85%E5%90%83%E9%B8%A1steam/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos安装吃鸡steam</span><span data-lang-text="en">CentOS PUBG Steam Install</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E5%AE%89%E8%A3%85steam/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux安装steam</span><span data-lang-text="en">Steam on Linux</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/steam%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">steam安装</span><span data-lang-text="en">Steam Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos软件安装</span><span data-lang-text="en">CentOS Software Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux系统</span><span data-lang-text="en">Linux System</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos7%E5%AE%89%E8%A3%85Redis-Desktop-Manager/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos7安装Redis Desktop Manager</span><span data-lang-text="en">Redis Desktop Manager on CentOS 7</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos7%E5%AE%89%E8%A3%85redis%E6%A1%8C%E9%9D%A2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos7安装redis桌面</span><span data-lang-text="en">CentOS 7 Redis Desktop Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos%E5%AE%89%E8%A3%85redis%E6%A1%8C%E9%9D%A2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">centos安装redis桌面</span><span data-lang-text="en">CentOS Redis Desktop Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E5%AE%89%E8%A3%85centos7%E5%AE%89%E8%A3%85Redis-Desktop-Manager/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux安装centos7安装Redis Desktop Manager</span><span data-lang-text="en">Redis Desktop Manager on Linux</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/Redis-Desktop-Manager/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">Redis Desktop Manager</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis%E6%A1%8C%E9%9D%A2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">redis桌面</span><span data-lang-text="en">Redis Desktop</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">centos7</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos7-wine/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">centos7-wine</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wine/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">wine</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wine%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">wine安装</span><span data-lang-text="en">Wine Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/root%E5%AF%86%E7%A0%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">root密码</span><span data-lang-text="en">Root Password</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/root%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">root密码重置</span><span data-lang-text="en">Root Password Reset</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BF%98%E8%AE%B0root%E5%AF%86%E7%A0%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">忘记root密码</span><span data-lang-text="en">Forgot Root Password</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E6%85%A2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应慢</span><span data-lang-text="en">Slow Response</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%A1%B5%E9%9D%A2%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">页面优化</span><span data-lang-text="en">Page Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/cloud-platform/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">cloud-platform</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%A8%8B%E5%BA%8F%E5%91%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">程序员</span><span data-lang-text="en">Programmers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/skills/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">skills</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/coding/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">coding</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/Coding-to-rust/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">Coding to rust</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E6%BA%90%E4%BA%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">开源云</span><span data-lang-text="en">Open Source Cloud</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%AE%B9%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">容器</span><span data-lang-text="en">Containers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/cncf/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">cncf</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%9B%91%E6%8E%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">监控</span><span data-lang-text="en">Monitoring</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/composer%E9%83%A8%E7%BD%B2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">composer部署</span><span data-lang-text="en">Composer Deployment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%86%85%E7%BD%91%E9%83%A8%E7%BD%B2composer/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">内网部署composer</span><span data-lang-text="en">Intranet Composer Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/cphalcon/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">cphalcon</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/cphalcon%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">cphalcon报错</span><span data-lang-text="en">CPhalcon Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/proxy%E4%BB%A3%E7%90%86%E6%90%AD%E5%BB%BA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">proxy代理搭建</span><span data-lang-text="en">Proxy Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">代理服务器搭建</span><span data-lang-text="en">Proxy Server Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/proxy%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">proxy服务器</span><span data-lang-text="en">Proxy Server</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9F%A5%E6%89%BE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">查找</span><span data-lang-text="en">Lookup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%8E%92%E5%BA%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">排序</span><span data-lang-text="en">Sorting</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">二分查找</span><span data-lang-text="en">Binary Search</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/datahub/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">datahub</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/datahub%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">datahub安装</span><span data-lang-text="en">DataHub Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/deepin/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">deepin</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/emergency/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">emergency</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/emergency-mode/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">emergency mode</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/deepin%E9%BB%91%E5%B1%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">deepin黑屏</span><span data-lang-text="en">Deepin Black Screen</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">开发语言</span><span data-lang-text="en">Programming Languages</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B8%85%E7%90%86%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">清理系统</span><span data-lang-text="en">System Cleanup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B8%85%E7%90%86c%E7%9B%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">清理c盘</span><span data-lang-text="en">C Drive Cleanup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/dns/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">dns</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%9F%9F%E5%90%8D%E7%9B%91%E6%B5%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">域名监测</span><span data-lang-text="en">Domain Monitoring</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%BD%91%E7%AB%99%E7%9B%91%E6%B5%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">网站监测</span><span data-lang-text="en">Website Monitoring</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/docker/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">docker</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php安装</span><span data-lang-text="en">PHP Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/Ecat/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">Ecat</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rust%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%A1%86%E6%9E%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">rust微服务框架</span><span data-lang-text="en">Rust Microservice Framework</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/beego%E6%95%B0%E6%8D%AE%E5%88%86%E9%A1%B5/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">beego数据分页</span><span data-lang-text="en">Beego Pagination</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%88%86%E9%A1%B5/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">分页</span><span data-lang-text="en">Pagination</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/elasticsearch%E6%90%AD%E5%BB%BA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">elasticsearch搭建</span><span data-lang-text="en">Elasticsearch Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/elasticsearch%E9%9B%86%E7%BE%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">elasticsearch集群</span><span data-lang-text="en">Elasticsearch Cluster</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">系统</span><span data-lang-text="en">Systems</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/emm/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">emm</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mdm/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">mdm</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/erik-shop/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">erik shop</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B7%A8%E5%A2%83%E7%94%B5%E5%95%86%E5%B9%B3%E5%8F%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">跨境电商平台</span><span data-lang-text="en">Cross-Border E-Commerce</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8F%91%E9%82%AE%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">发邮件</span><span data-lang-text="en">Sending Email</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%82%AE%E4%BB%B6%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">邮件函数</span><span data-lang-text="en">Mail Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jenkis/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">jenkis</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jenkis%E6%95%99%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">jenkis教程</span><span data-lang-text="en">Jenkins Tutorials</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B8%B8%E6%88%8F%E8%81%9A%E5%90%88%E5%B9%B3%E5%8F%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">游戏聚合平台</span><span data-lang-text="en">Game Aggregation Platform</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B8%B8%E6%88%8F%E5%B9%B3%E5%8F%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">游戏平台</span><span data-lang-text="en">Game Platforms</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/ping/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">ping</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/ping%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">ping服务器</span><span data-lang-text="en">Server Ping</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%90%84%E5%A4%A7%E7%BD%91%E7%AB%99ping/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">各大网站ping</span><span data-lang-text="en">Website Ping Tests</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E8%8E%B7%E5%8F%96ip/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go获取ip</span><span data-lang-text="en">Go Get IP</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/im/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">im</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%8F%92%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">插件</span><span data-lang-text="en">Plugins</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E4%B8%ADpdf%E7%94%9F%E6%88%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go中pdf生成</span><span data-lang-text="en">Go PDF Generation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E4%B8%AD%E9%99%90%E6%B5%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go中限流</span><span data-lang-text="en">Go Rate Limiting</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E5%AF%B9%E6%8E%A5%E5%BF%AB%E9%80%92%E7%AD%BE%E5%90%8D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go对接快递签名</span><span data-lang-text="en">Go Courier Signing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E6%97%B6%E9%97%B4%E8%8E%B7%E5%8F%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go时间获取</span><span data-lang-text="en">Go Time Retrieval</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go类型转换</span><span data-lang-text="en">Go Type Conversion</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go-zero/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">go-zero</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rpc/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">rpc</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E5%8A%A0%E5%AF%86/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go加密</span><span data-lang-text="en">Go Encryption</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E8%A7%A3%E5%AF%86/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go解密</span><span data-lang-text="en">Go Decryption</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BD%92/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">归</span><span data-lang-text="en">Return</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%90%90%E6%A7%BD/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">吐槽</span><span data-lang-text="en">Rants</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%A4%A7%E5%85%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php大全</span><span data-lang-text="en">PHP Complete Guide</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%B5%84%E6%96%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php资料</span><span data-lang-text="en">PHP Study Materials</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop2-8-0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">hadoop2.8.0</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">hadoop安装教程</span><span data-lang-text="en">Hadoop Installation Tutorial</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop%E5%AE%89%E8%A3%85%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">hadoop安装详细教程</span><span data-lang-text="en">Hadoop Install Walkthrough</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop%E6%95%99%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">hadoop教程</span><span data-lang-text="en">Hadoop Tutorials</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop%E9%83%A8%E7%BD%B2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">hadoop部署</span><span data-lang-text="en">Hadoop Deployment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop3/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">hadoop3</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop%E9%85%8D%E7%BD%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">hadoop配置</span><span data-lang-text="en">Hadoop Configuration</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/log4j2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">log4j2</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hbase%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">hbase安装教程</span><span data-lang-text="en">HBase Installation Tutorial</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hbase/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">hbase</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/http1-1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">http1.1</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/http2-0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">http2.0</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BA%92%E8%81%94%E7%BD%91%E6%97%B6%E4%BB%A3/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">互联网时代</span><span data-lang-text="en">Internet Era</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E6%BA%90%E6%8A%80%E6%9C%AF/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">开源技术</span><span data-lang-text="en">Open Source Tech</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BC%9A%E8%AF%9D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">会话</span><span data-lang-text="en">Sessions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BC%9A%E8%AF%9D%E5%8E%9F%E7%90%86/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">会话原理</span><span data-lang-text="en">Session Mechanics</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9D%82%E5%BD%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">杂录</span><span data-lang-text="en">Miscellany</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">新冠肺炎</span><span data-lang-text="en">COVID-19</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%B7%A5%E4%B8%9A%E7%BD%91%E7%BB%9C%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE%E6%8F%92%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">工业网络通信协议插件</span><span data-lang-text="en">Industrial Protocol Plugin</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/industrial-protocols/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">industrial protocols</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%B8%BB%E6%B5%81%E5%B7%A5%E4%B8%9A%E5%8D%8F%E8%AE%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">主流工业协议</span><span data-lang-text="en">Mainstream Industrial Protocols</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/springboot/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">springboot</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/springboot%E5%86%85%E7%BD%91%E9%83%A8%E7%BD%B2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">springboot内网部署</span><span data-lang-text="en">Spring Boot Intranet Deployment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E6%81%A2%E5%A4%8D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux恢复</span><span data-lang-text="en">Linux Recovery</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E8%AF%AF%E5%88%A0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux误删</span><span data-lang-text="en">Linux Accidental Deletion</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E5%91%BD%E4%BB%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux命令</span><span data-lang-text="en">Linux Commands</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E5%91%BD%E4%BB%A4%E6%B1%87%E6%80%BB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux命令汇总</span><span data-lang-text="en">Linux Command Reference</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jenkins/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">jenkins</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jetbtrains/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">jetbtrains</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/phpstorm/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">phpstorm</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%9B%BE%E7%89%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">图片</span><span data-lang-text="en">Images</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jq/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">jq</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jq%E4%BE%A7%E8%BE%B9%E5%AF%BC%E8%88%AA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">jq侧边导航</span><span data-lang-text="en">jQuery Sidebar Navigation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BE%A7%E8%BE%B9%E5%AF%BC%E8%88%AA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">侧边导航</span><span data-lang-text="en">Sidebar Navigation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/js%E5%88%A4%E6%96%AD%E6%B5%8F%E8%A7%88%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">js判断浏览器</span><span data-lang-text="en">Browser Detection with JS</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/js%E5%88%A4%E6%96%AD%E6%B5%8F%E8%A7%88%E5%99%A8%E7%89%88%E6%9C%AC/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">js判断浏览器版本</span><span data-lang-text="en">Browser Version Detection with JS</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%88%A4%E6%96%AD%E6%B5%8F%E8%A7%88%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">判断浏览器</span><span data-lang-text="en">Browser Detection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%89%88%E6%9C%AC%E5%88%A4%E6%96%AD/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">浏览器版本判断</span><span data-lang-text="en">Browser Version Detection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%8E%B7%E5%8F%96%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BF%A1%E6%81%AF/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">获取浏览器信息</span><span data-lang-text="en">Browser Information</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/kali%E5%8F%B3%E9%94%AE%E6%B1%89%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">kali右键汉化</span><span data-lang-text="en">Kali Right-Click Chinese</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/kali%E6%A1%8C%E9%9D%A2%E5%8F%B3%E9%94%AE%E6%B1%89%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">kali桌面右键汉化</span><span data-lang-text="en">Kali Desktop Chinese</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/kali%E5%8F%B3%E9%94%AE%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">kali右键创建文件</span><span data-lang-text="en">Kali File Menu</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E7%8E%AF%E5%A2%83%E7%8B%AC%E7%AB%8B%E9%85%8D%E7%BD%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php环境独立配置</span><span data-lang-text="en">PHP Standalone Environment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8A%B3%E5%8A%A8%E7%BA%A0%E7%BA%B7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">劳动纠纷</span><span data-lang-text="en">Labor Disputes</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%BF%BD%E7%BC%B4%E5%B7%A5%E8%B5%84/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">追缴工资</span><span data-lang-text="en">Wage Recovery</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%94%B3%E8%AF%B7%E4%BB%B2%E8%A3%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">申请仲裁</span><span data-lang-text="en">Arbitration Application</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux报错</span><span data-lang-text="en">Linux Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E4%B8%ADupdate-command-not-found/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux中update-command-not-found</span><span data-lang-text="en">Linux Command Not Found</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux%E8%BF%90%E8%A1%8C%E5%91%BD%E4%BB%A4%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">linux运行命令报错</span><span data-lang-text="en">Linux Command Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/web%E5%89%8D%E7%AB%AF/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">web前端</span><span data-lang-text="en">Web Frontend</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/web%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">web优化</span><span data-lang-text="en">Web Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%93%9D%E7%89%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">蓝牙</span><span data-lang-text="en">Bluetooth</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E8%93%9D%E7%89%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">小程序蓝牙</span><span data-lang-text="en">Mini Program Bluetooth</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%93%9D%E7%89%99%E8%BF%9E%E6%8E%A5/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">蓝牙连接</span><span data-lang-text="en">Bluetooth Connection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%92%AE%E5%90%88%E7%AE%97%E6%B3%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">撮合算法</span><span data-lang-text="en">Matching Algorithms</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%92%AE%E5%90%88/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">撮合</span><span data-lang-text="en">Order Matching</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%92%AE%E5%90%88%E7%AE%97%E6%B3%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php撮合算法</span><span data-lang-text="en">PHP Matching Algorithm</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/maven%E6%90%AD%E5%BB%BA%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">maven搭建库</span><span data-lang-text="en">Maven Repository Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/maven/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">maven</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/maven%E5%86%85%E7%BD%91%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">maven内网库</span><span data-lang-text="en">Maven Private Repository</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%AB%98%E7%BA%A7%E7%BC%93%E5%AD%98%E9%85%8D%E7%BD%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">高级缓存配置</span><span data-lang-text="en">Advanced Cache Config</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mongodb/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">mongodb</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mongodb%E6%9D%83%E9%99%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mongodb权限</span><span data-lang-text="en">MongoDB Permissions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">分库分表</span><span data-lang-text="en">Database Sharding</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E5%BA%94%E5%AF%B9%E5%8D%83%E4%B8%87%E7%BA%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql应对千万级</span><span data-lang-text="en">MySQL Ten-Million Rows</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E7%93%B6%E9%A2%88/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql瓶颈</span><span data-lang-text="en">MySQL Bottlenecks</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E7%93%B6%E9%A2%88%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql瓶颈解决办法</span><span data-lang-text="en">MySQL Bottleneck Solutions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E4%B8%80%E8%87%B4%E6%80%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数据一致性</span><span data-lang-text="en">Data Consistency</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E6%B6%88%E6%81%AF/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql消息</span><span data-lang-text="en">MySQL Messaging</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E9%98%9F%E5%88%97/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql队列</span><span data-lang-text="en">MySQL Queues</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E9%AB%98%E5%B9%B6%E5%8F%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql高并发</span><span data-lang-text="en">MySQL High Concurrency</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E7%9B%91%E6%8E%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql监控</span><span data-lang-text="en">MySQL Monitoring</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E6%80%A7%E8%83%BD/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql性能</span><span data-lang-text="en">MySQL Performance</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E5%AD%98%E5%82%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql存储</span><span data-lang-text="en">MySQL Storage</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E5%BC%95%E6%93%8E/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql引擎</span><span data-lang-text="en">MySQL Engines</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E6%95%B0%E6%8D%AE%E8%A1%A8%E8%AE%BE%E8%AE%A1%E9%80%89%E6%8B%A9/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql数据表设计选择</span><span data-lang-text="en">MySQL Table Design</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%86%85%E7%BD%91%E6%94%AF%E4%BB%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">内网支付</span><span data-lang-text="en">Intranet Payment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">内网穿透</span><span data-lang-text="en">NAT Traversal</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%94%AF%E4%BB%98%E6%8E%A5%E5%8F%A3%E6%9C%AC%E5%9C%B0%E5%8C%96%E5%BC%80%E5%8F%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">支付接口本地化开发</span><span data-lang-text="en">Payment API Localization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9C%AC%E5%9C%B0%E6%8C%82%E7%BD%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">本地挂网</span><span data-lang-text="en">Local Site Hosting</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%A9%BF%E9%80%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">穿透</span><span data-lang-text="en">Traversal</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/new%E5%92%8Cmake%E7%9A%84%E5%8C%BA%E5%88%AB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">new和make的区别</span><span data-lang-text="en">New vs Make</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%BA%A2%E5%8C%85%E7%AE%97%E6%B3%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">红包算法</span><span data-lang-text="en">Red Packet Algorithm</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E5%8A%B3%E5%8A%A8%E6%B3%95%E6%9C%8D%E5%8A%A1%E9%83%A8%E9%97%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">深圳劳动法服务部门</span><span data-lang-text="en">Shenzhen Labor Law Services</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">非关系型数据库</span><span data-lang-text="en">NoSQL Databases</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/onethink/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">onethink</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/oop/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">oop</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php管理系统</span><span data-lang-text="en">PHP Management System</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E6%94%BE%E6%8E%A5%E5%8F%A3%E5%BC%80%E5%8F%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">开放接口开发</span><span data-lang-text="en">Open API Development</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/erp/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">erp</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/open-erp/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">open erp</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E6%94%BEerp/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">开放erp</span><span data-lang-text="en">Open ERP</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E6%BA%90%E5%B7%A5%E5%85%B7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">开源工具</span><span data-lang-text="en">Open Source Tools</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%A1%8C%E9%9D%A2%E5%85%B1%E4%BA%AB%E5%B7%A5%E5%85%B7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">桌面共享工具</span><span data-lang-text="en">Desktop Sharing Tools</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/openresty/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">openresty</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/openvas/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">openvas</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/openvas%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">openvas安装</span><span data-lang-text="en">OpenVAS Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%9C%8D%E5%8A%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php服务</span><span data-lang-text="en">PHP Services</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php服务设计</span><span data-lang-text="en">PHP Service Design</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%8F%98%E9%87%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php变量</span><span data-lang-text="en">PHP Variables</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%B6%85%E7%BA%A7%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php超级全局变量</span><span data-lang-text="en">PHP Superglobals</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%B6%85%E7%BA%A7%E5%8F%98%E9%87%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php超级变量</span><span data-lang-text="en">PHP Super Variables</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php基本类型</span><span data-lang-text="en">PHP Basic Types</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php数据类型</span><span data-lang-text="en">PHP Data Types</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php设计模式</span><span data-lang-text="en">PHP Design Patterns</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%AF%B9%E6%8E%A5%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php对接微信支付</span><span data-lang-text="en">PHP WeChat Pay</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">微信支付</span><span data-lang-text="en">WeChat Pay</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BE%AE%E4%BF%A1%E6%94%AF%E4%BB%98%E5%9B%9E%E8%B0%83/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">微信支付回调</span><span data-lang-text="en">WeChat Pay Callback</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/foreach/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">foreach</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/foreach%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">foreach报错</span><span data-lang-text="en">Foreach Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E4%B8%ADforeach%E6%8A%A5%E9%94%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php中foreach报错</span><span data-lang-text="en">PHP foreach Errors</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%BF%87%E6%BB%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php过滤</span><span data-lang-text="en">PHP Filtering</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%BF%87%E6%BB%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">过滤</span><span data-lang-text="en">Filtering</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E9%9A%8F%E6%9C%BA%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php随机数</span><span data-lang-text="en">PHP Random Numbers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E7%8E%AF%E5%A2%83/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php环境</span><span data-lang-text="en">PHP Environment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E9%9B%86%E6%88%90%E7%8E%AF%E5%A2%83/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php集成环境</span><span data-lang-text="en">PHP Integrated Environment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%9B%86%E6%88%90%E7%8E%AF%E5%A2%83/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">服务器集成环境</span><span data-lang-text="en">Integrated Server Environment</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E7%BB%84%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数组函数</span><span data-lang-text="en">Array Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数组排序函数</span><span data-lang-text="en">Array Sort Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%95%B0%E5%AD%A6%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php数学函数</span><span data-lang-text="en">PHP Math Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E9%9D%A2%E8%AF%95%E9%A2%98/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php面试题</span><span data-lang-text="en">PHP Interview Questions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php面向对象</span><span data-lang-text="en">PHP OOP</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">面向对象</span><span data-lang-text="en">Object-Oriented</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php-zookeeper/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">php-zookeeper</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/zookeeper3-5-5/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">zookeeper3.5.5</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php-zookeeper%E6%89%A9%E5%B1%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php-zookeeper扩展</span><span data-lang-text="en">PHP ZooKeeper Extension</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E4%B8%B2%E5%8F%A3%E5%BC%80%E5%8F%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php串口开发</span><span data-lang-text="en">PHP Serial Communication</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%80%92%E8%AE%A1%E6%97%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php倒计时</span><span data-lang-text="en">PHP Countdown</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%80%92%E8%AE%A1%E6%97%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">倒计时</span><span data-lang-text="en">Countdown</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%AE%A1%E7%AE%97%E6%97%B6%E9%97%B4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">计算时间</span><span data-lang-text="en">Time Calculation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/PHP%E6%95%B0%E7%BB%84/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">PHP数组</span><span data-lang-text="en">PHP Arrays</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">字符串函数</span><span data-lang-text="en">String Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%8E%92%E5%BA%8F%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">排序函数</span><span data-lang-text="en">Sort Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E7%9A%84SPL/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php的SPL</span><span data-lang-text="en">PHP SPL</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/SPL%E6%89%8B%E5%86%8C/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">SPL手册</span><span data-lang-text="en">SPL Manual</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/PHP%E7%AE%97%E6%B3%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">PHP算法</span><span data-lang-text="en">PHP Algorithms</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E9%80%92%E5%BD%92/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php递归</span><span data-lang-text="en">PHP Recursion</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%80%92%E5%BD%92/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">递归</span><span data-lang-text="en">Recursion</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql函数</span><span data-lang-text="en">MySQL Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E4%B8%ADmysql%E5%87%BD%E6%95%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php中mysql函数</span><span data-lang-text="en">PHP MySQL Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E8%8E%B7%E5%8F%96%E9%97%B0%E5%B9%B4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php获取闰年</span><span data-lang-text="en">PHP Leap Year</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%97%B0%E5%B9%B4-php%E6%97%B6%E9%97%B4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">闰年.php时间</span><span data-lang-text="en">Leap Year PHP Time</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E4%B8%ADif/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php中if</span><span data-lang-text="en">PHP If Syntax</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E4%B8%ADif%E5%88%A4%E6%96%AD/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php中if判断</span><span data-lang-text="en">PHP If Conditions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E7%9A%84if/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php的if</span><span data-lang-text="en">PHP If Statement</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%AD%97%E7%AC%A6%E4%B8%B2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php字符串</span><span data-lang-text="en">PHP Strings</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php7%E4%B8%ADsphinx/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php7中sphinx</span><span data-lang-text="en">PHP 7 Sphinx</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php7%E4%B8%ADsphinx%E6%89%A9%E5%B1%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php7中sphinx扩展</span><span data-lang-text="en">PHP 7 Sphinx Extension</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/sphinx%E6%89%A9%E5%B1%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">sphinx扩展</span><span data-lang-text="en">Sphinx Extension</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/phpunit/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">phpunit</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/phpunit%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">phpunit安装</span><span data-lang-text="en">PHPUnit Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/plc/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">plc</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%89%A9%E4%B8%9A%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">物业管理系统</span><span data-lang-text="en">Property Management System</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/property/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">property</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8C%BA%E5%9D%97%E9%93%BE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">区块链</span><span data-lang-text="en">Blockchain</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/python%E5%BA%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">python库</span><span data-lang-text="en">Python Libraries</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/a%E6%A0%87%E7%AD%BE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">a标签</span><span data-lang-text="en">Anchor Tags</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/a%E6%A0%87%E7%AD%BE%E8%99%9A%E7%BA%BF/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">a标签虚线</span><span data-lang-text="en">Dashed Anchor Links</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%99%9A%E7%BA%BF%E6%A1%86/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">虚线框</span><span data-lang-text="en">Dashed Border</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/R%E8%AF%AD%E8%A8%80/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">R语言</span><span data-lang-text="en">R Language</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E9%9A%8F%E6%9C%BA%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数据随机化</span><span data-lang-text="en">Data Randomization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis%E6%80%BB%E7%BB%93/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">redis总结</span><span data-lang-text="en">Redis Summary</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis%E5%91%BD%E4%BB%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">redis命令</span><span data-lang-text="en">Redis Commands</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis%E7%9B%91%E6%8E%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">redis监控</span><span data-lang-text="en">Redis Monitoring</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis%E9%94%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">redis锁</span><span data-lang-text="en">Redis Locking</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">redis分布式锁</span><span data-lang-text="en">Redis Distributed Lock</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BB%BB%E6%84%8F%E9%87%91%E9%A2%9D%E8%BE%93%E5%85%A5/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">任意金额输入</span><span data-lang-text="en">Custom Amount Input</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/10%E5%85%83%E3%80%815%E5%85%83%E3%80%812%E5%85%83/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">10元、5元、2元</span><span data-lang-text="en">Pricing Tiers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%98%9F%E5%88%97/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">队列</span><span data-lang-text="en">Queues</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%A0%88/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">栈</span><span data-lang-text="en">Stacks</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%A1%BA%E5%BA%8F%E8%A1%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">顺序表</span><span data-lang-text="en">Sequential List</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%93%BE%E8%A1%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">链表</span><span data-lang-text="en">Linked Lists</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数据结构</span><span data-lang-text="en">Data Structures</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%BA%BF%E6%80%A7%E7%BB%93%E6%9E%84/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">线性结构</span><span data-lang-text="en">Linear Structures</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%A6%81%E6%AD%A2%E6%93%8D%E4%BD%9C%E8%A7%86%E9%A2%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">浏览器禁止操作视频</span><span data-lang-text="en">Browser Video Restrictions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%A6%81%E6%AD%A2%E8%A7%86%E9%A2%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">禁止视频</span><span data-lang-text="en">Disable Video</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/js%E7%BC%96%E8%BE%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">js编辑</span><span data-lang-text="en">JS Editing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/runjs/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">runjs</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%BE%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">在线编辑</span><span data-lang-text="en">Online Editing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rust%E9%85%8D%E7%BD%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">rust配置</span><span data-lang-text="en">Rust Configuration</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/seajs/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">seajs</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go%E6%94%BB%E5%87%BB%E6%A3%80%E6%B5%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">go攻击检测</span><span data-lang-text="en">Go Attack Detection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rust%E6%94%BB%E5%87%BB%E6%A3%80%E6%B5%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">rust攻击检测</span><span data-lang-text="en">Rust Attack Detection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/session/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">session</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B7%AF%E7%94%B1%E5%99%A8%E7%83%A7%E5%BD%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">路由器烧录</span><span data-lang-text="en">Router Flashing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%83%A7%E5%BD%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">烧录</span><span data-lang-text="en">Firmware Flashing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9E%81%E8%B7%AF%E7%94%B12%E7%83%A7%E5%BD%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">极路由2烧录</span><span data-lang-text="en">HiWiFi 2 Flashing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%A0%96%E5%A4%B4%E7%83%A7%E5%BD%95/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">砖头烧录</span><span data-lang-text="en">Device Bricking</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%85%8D%E8%B4%B9%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">免费服务器</span><span data-lang-text="en">Free Servers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%A9%BA%E9%97%B4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">空间</span><span data-lang-text="en">Space</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B5%84%E6%BA%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">资源</span><span data-lang-text="en">Resources</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E6%94%BF%E5%BA%9C%E7%94%B5%E8%AF%9D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">深圳政府电话</span><span data-lang-text="en">Shenzhen Government Phone Numbers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E7%94%B5%E8%AF%9D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">深圳电话</span><span data-lang-text="en">Shenzhen Contact Numbers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%89%B9%E5%8C%BA%E7%94%B5%E8%AF%9D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">特区电话</span><span data-lang-text="en">Special Zone Phone</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%B1%85%E4%BD%8F%E8%AF%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">居住证</span><span data-lang-text="en">Residence Permit</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%B1%85%E4%BD%8F%E8%AF%81%E7%AD%BE%E6%B3%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">居住证签注</span><span data-lang-text="en">Permit Endorsement</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E6%96%B0%E5%B1%85%E4%BD%8F%E8%AF%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">深圳新居住证</span><span data-lang-text="en">Shenzhen Residence Permit</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%9B%BD%E5%BA%86%E9%AA%91%E8%A1%8C/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">国庆骑行</span><span data-lang-text="en">National Day Cycling</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B7%B1%E5%9C%B3%E7%8F%A0%E6%B5%B7%E9%AA%91%E8%A1%8C/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">深圳珠海骑行</span><span data-lang-text="en">Shenzhen Zhuhai Cycling</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%AA%91%E8%A1%8C/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">骑行</span><span data-lang-text="en">Cycling</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%B8%96%E7%95%8C%E9%82%A3%E4%B9%88%E5%A4%A7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">世界那么大</span><span data-lang-text="en">Big Wide World</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/css%E5%9C%A8%E7%BA%BF%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">css在线生成工具</span><span data-lang-text="en">CSS Online Generators</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/css%E5%B7%A5%E5%85%B7/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">css工具</span><span data-lang-text="en">CSS Tools</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%AD%A3%E5%88%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php正则</span><span data-lang-text="en">PHP Regex</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/shodan/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">shodan</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%BB%91%E8%B0%B7%E6%AD%8C/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">黑谷歌</span><span data-lang-text="en">Black Hat Google</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%BB%92%E5%B8%BD%E6%90%9C%E7%B4%A0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">黒帽搜素</span><span data-lang-text="en">Black Hat Search</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/shopex/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">shopex</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8F%AF%E8%A7%86%E5%8C%96%E6%95%B0%E6%8D%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">可视化数据</span><span data-lang-text="en">Data Visualization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数据</span><span data-lang-text="en">Data</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/socket%E9%80%9A%E4%BF%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">socket通信</span><span data-lang-text="en">Socket Communication</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/socket%E5%A4%9A%E8%BF%9B%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">socket多进程</span><span data-lang-text="en">Socket Multiprocessing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/socket/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">socket</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/json/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">json</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/json%E6%95%B0%E7%BB%84/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">json数组</span><span data-lang-text="en">JSON Arrays</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/json%E8%A7%A3%E6%9E%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">json解析</span><span data-lang-text="en">JSON Parsing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">大数据</span><span data-lang-text="en">Big Data</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/spark/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">spark</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hive/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">hive</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数据分析</span><span data-lang-text="en">Data Analysis</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/sql/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">sql</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/sql%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">sql优化</span><span data-lang-text="en">SQL Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%BB%93%E6%9E%84%E4%BD%93%E8%BD%ACmap/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">结构体转map</span><span data-lang-text="en">Struct to Map</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/config/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">config</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/thinkphp/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">thinkphp</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">配置文件</span><span data-lang-text="en">Config Files</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%A0%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">树</span><span data-lang-text="en">Trees</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">二叉树</span><span data-lang-text="en">Binary Trees</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/virtualbox/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">virtualbox</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hyper-v/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">hyper-v</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%B8%BF%E8%92%99%E5%BC%80%E5%8F%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">鸿蒙开发</span><span data-lang-text="en">HarmonyOS Development</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8F%AF%E7%A9%BF%E6%88%B4%E8%AE%BE%E5%A4%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">可穿戴设备</span><span data-lang-text="en">Wearable Devices</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/web%E8%87%AA%E9%80%82%E5%BA%94/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">web自适应</span><span data-lang-text="en">Responsive Web</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E5%B8%83%E5%B1%80/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应式布局</span><span data-lang-text="en">Responsive Layout</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E6%89%80%E6%9C%89%E5%88%86%E8%BE%A8%E7%8E%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">响应式所有分辨率</span><span data-lang-text="en">All Screen Sizes</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%87%AA%E9%80%82%E5%BA%94%E5%B8%83%E5%B1%80/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">自适应布局</span><span data-lang-text="en">Adaptive Layout</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%87%AA%E9%80%82%E5%BA%94%E6%89%80%E6%9C%89%E5%88%86%E8%BE%A8%E7%8E%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">自适应所有分辨率</span><span data-lang-text="en">All-Resolution Responsive</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E8%AE%BE%E7%BD%AE%E8%B6%85%E6%97%B6%EF%BC%8C%E8%B6%85%E6%97%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql设置超时，超时</span><span data-lang-text="en">MySQL Timeout Settings</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/markdown/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">markdown</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wget/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">wget</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wget%E6%8A%93%E5%8F%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">wget抓取</span><span data-lang-text="en">Wget Scraping</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%BD%91%E7%AB%99%E6%8A%93%E5%8F%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">网站抓取</span><span data-lang-text="en">Web Scraping</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%88%91%E5%9C%A8/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">我在</span><span data-lang-text="en">I Am Here</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wordpress/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">wordpress</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wordpress%E6%A0%87%E7%AD%BE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">wordpress标签</span><span data-lang-text="en">WordPress Tags</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%9F%9F%E5%90%8D%E5%90%88%E5%B9%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">域名合并</span><span data-lang-text="en">Domain Merging</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/wpscan/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">wpscan</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/usbrip/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">usbrip</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%97%A0%E9%99%90%E6%9E%81%E5%88%86%E7%B1%BB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">无限极分类</span><span data-lang-text="en">Infinite Categorization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%97%A0%E9%99%90%E6%9E%81/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php无限极</span><span data-lang-text="en">PHP Unlimited Categories</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%88%86%E7%B1%BBtree/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">分类tree</span><span data-lang-text="en">Category Tree</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%97%A0%E9%99%90%E6%9E%81%E5%88%86%E7%B1%BB%E6%A0%91%E5%9E%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">无限极分类树型</span><span data-lang-text="en">Infinite Category Tree</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/xhprof/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">xhprof</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/laravel/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">laravel</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/composer%E6%8F%92%E4%BB%B6/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">composer插件</span><span data-lang-text="en">Composer Plugins</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%90%BA%E7%A8%8B/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">携程</span><span data-lang-text="en">Ctrip</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%90%BA%E7%A8%8B%E6%94%BB%E5%87%BB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">携程攻击</span><span data-lang-text="en">Ctrip Attack</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%90%BA%E7%A8%8B%E7%BD%91%E7%AB%99%E7%98%AB%E7%97%AA/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">携程网站瘫痪</span><span data-lang-text="en">Ctrip Outage</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%89%A9%E7%90%86%E5%88%A0%E9%99%A4/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">物理删除</span><span data-lang-text="en">Hard Delete</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/3D/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title">3D</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%8A%A8%E7%94%BB/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">动画</span><span data-lang-text="en">Animation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%B9%B3%E5%8F%B0/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">平台</span><span data-lang-text="en">Platform</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%99%9A%E5%B9%BB4%E5%BC%95%E6%93%8E%E7%BC%96%E8%BE%91/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">虚幻4引擎编辑</span><span data-lang-text="en">Unreal Engine 4 Editing</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%94%9F%E6%88%90%E5%94%AF%E4%B8%80id/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">生成唯一id</span><span data-lang-text="en">Unique ID Generation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%94%9F%E6%88%90id/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">生成id</span><span data-lang-text="en">ID Generation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%82%A8%E8%93%84%E5%8D%A1%E5%85%8D%E5%B9%B4%E8%B4%B9/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">储蓄卡免年费</span><span data-lang-text="en">Debit Card Fee Waiver</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%93%B6%E8%A1%8C%E5%8D%A1/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">银行卡</span><span data-lang-text="en">Bank Cards</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%93%B6%E8%A1%8C%E5%8D%A1%E5%85%8D%E5%B9%B4%E8%B4%B9/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">银行卡免年费</span><span data-lang-text="en">Bank Card Fee Waiver</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/composer%E5%AE%89%E8%A3%85/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">composer安装</span><span data-lang-text="en">Composer Installation</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/composer%E9%85%8D%E7%BD%AE/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">composer配置</span><span data-lang-text="en">Composer Configuration</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%A1%B9%E7%9B%AE%E5%88%9B%E5%BB%BAcomposer/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">项目创建composer</span><span data-lang-text="en">Composer Project Setup</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql优化</span><span data-lang-text="en">MySQL Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql%E8%AF%BB%E5%86%99%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">mysql读写优化</span><span data-lang-text="en">MySQL Read-Write Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BC%98%E5%8C%96%EF%BC%8Cmysql%E8%AF%AD%E5%8F%A5%E4%BC%98%E5%8C%96/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">数据库优化，mysql语句优化</span><span data-lang-text="en">Database And MySQL Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%8A%A0%E5%AF%86/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php加密</span><span data-lang-text="en">PHP Encryption</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%8A%80%E6%9C%AF/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php技术</span><span data-lang-text="en">PHP Techniques</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%A4%95%E9%98%B3/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">夕阳</span><span data-lang-text="en">Sunset</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%8A%93%E5%8F%96%E5%9B%BE%E7%89%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php抓取图片</span><span data-lang-text="en">PHP Image Scraping</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%89%B9%E9%87%8F%E6%8A%93%E5%8F%96%E9%A1%B5%E9%9D%A2%E5%9B%BE%E7%89%87/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">php批量抓取页面图片</span><span data-lang-text="en">PHP Batch Image Scraping</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">正则表达式</span><span data-lang-text="en">Regular Expressions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%BF%BB%E5%A2%99/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">翻墙</span><span data-lang-text="en">Censorship Circumvention</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B0%B7%E6%AD%8C/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">谷歌</span><span data-lang-text="en">Google</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%B4%A2/" title="1 篇" data-i18n="sidebar.posts" data-i18n-args="1" data-i18n-attr="title"><span data-lang-text="zh">谷歌搜索</span><span data-lang-text="en">Google Search</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%89%A9%E5%B1%95/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">php扩展</span><span data-lang-text="en">PHP Extensions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BB%A3%E7%A0%81/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">代码</span><span data-lang-text="en">Code</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%BC%8F%E6%B4%9E/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">漏洞</span><span data-lang-text="en">Vulnerabilities</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%90%9C%E5%BC%95%E6%93%8Eping%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">搜引擎ping服务器</span><span data-lang-text="en">Search Engine Ping</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/http/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">http</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/seo/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">seo</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/css3/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">css3</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos%E8%BD%AF%E4%BB%B6/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">centos软件</span><span data-lang-text="en">CentOS Software</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/memcache/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">memcache</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/memcached/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">memcached</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/rust/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">rust</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">快速排序</span><span data-lang-text="en">Quicksort</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">冒泡排序</span><span data-lang-text="en">Bubble Sort</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BC%80%E5%8F%91/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">开发</span><span data-lang-text="en">Development</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9D%82%E8%B0%88/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">杂谈</span><span data-lang-text="en">Random Thoughts</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">微服务</span><span data-lang-text="en">Microservices</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/elasticsearch/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">elasticsearch</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%85%8D%E8%B4%B9/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">免费</span><span data-lang-text="en">Free</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hadoop/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">hadoop</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/hyperf/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">hyperf</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%B4%A0%E6%9D%90/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">素材</span><span data-lang-text="en">Assets</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/lanmp/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">lanmp</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E9%A1%B9%E7%9B%AE/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">php项目</span><span data-lang-text="en">PHP Projects</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">php架构设计</span><span data-lang-text="en">PHP Architecture Design</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%97%B6%E9%97%B4/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">php时间</span><span data-lang-text="en">PHP Date and Time</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/python/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">python</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%94%BB%E5%87%BB%E6%A3%80%E6%B5%8B/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">攻击检测</span><span data-lang-text="en">Attack Detection</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%AD%A3%E5%88%99/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title"><span data-lang-text="zh">正则</span><span data-lang-text="en">Regex</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/webman/" title="2 篇" data-i18n="sidebar.posts" data-i18n-args="2" data-i18n-attr="title">webman</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jquery/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title">jquery</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/jquery%E6%8F%92%E4%BB%B6/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">jquery插件</span><span data-lang-text="en">jQuery Plugins</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/javascript/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title">javascript</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">数据库</span><span data-lang-text="en">Databases</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%95%B0%E6%8D%AE%E8%A1%A8/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">数据表</span><span data-lang-text="en">Database Tables</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/kali/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title">kali</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">服务器</span><span data-lang-text="en">Servers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%BD%AF%E4%BB%B6/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">软件</span><span data-lang-text="en">Software</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos6-5/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title">centos6.5</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%89%BE%E7%91%9E%E5%8F%AFerik/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">艾瑞可erik</span><span data-lang-text="en">Erik Aerike</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%B8%B8%E6%88%8F/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">游戏</span><span data-lang-text="en">Games</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%9E%B6%E6%9E%84/" title="3 篇" data-i18n="sidebar.posts" data-i18n-args="3" data-i18n-attr="title"><span data-lang-text="zh">php架构</span><span data-lang-text="en">PHP Architecture</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/css/" title="4 篇" data-i18n="sidebar.posts" data-i18n-args="4" data-i18n-attr="title">css</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/composer/" title="4 篇" data-i18n="sidebar.posts" data-i18n-args="4" data-i18n-attr="title">composer</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/redis/" title="4 篇" data-i18n="sidebar.posts" data-i18n-args="4" data-i18n-attr="title">redis</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/go/" title="4 篇" data-i18n="sidebar.posts" data-i18n-args="4" data-i18n-attr="title">go</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E4%BC%98%E5%8C%96/" title="5 篇" data-i18n="sidebar.posts" data-i18n-args="5" data-i18n-attr="title"><span data-lang-text="zh">优化</span><span data-lang-text="en">Optimization</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%94%9F%E6%B4%BB%E6%89%8B%E8%AE%B0/" title="5 篇" data-i18n="sidebar.posts" data-i18n-args="5" data-i18n-attr="title"><span data-lang-text="zh">生活手记</span><span data-lang-text="en">Life Notes</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/ecshop/" title="5 篇" data-i18n="sidebar.posts" data-i18n-args="5" data-i18n-attr="title">ecshop</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E6%A1%86%E6%9E%B6/" title="6 篇" data-i18n="sidebar.posts" data-i18n-args="6" data-i18n-attr="title"><span data-lang-text="zh">框架</span><span data-lang-text="en">Frameworks</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%BD%AC%E8%BD%BD/" title="9 篇" data-i18n="sidebar.posts" data-i18n-args="9" data-i18n-attr="title"><span data-lang-text="zh">转载</span><span data-lang-text="en">Reprints</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E5%87%BD%E6%95%B0/" title="9 篇" data-i18n="sidebar.posts" data-i18n-args="9" data-i18n-attr="title"><span data-lang-text="zh">php函数</span><span data-lang-text="en">PHP Functions</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E7%AE%97%E6%B3%95/" title="9 篇" data-i18n="sidebar.posts" data-i18n-args="9" data-i18n-attr="title"><span data-lang-text="zh">算法</span><span data-lang-text="en">Algorithms</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/js/" title="10 篇" data-i18n="sidebar.posts" data-i18n-args="10" data-i18n-attr="title">js</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/web/" title="10 篇" data-i18n="sidebar.posts" data-i18n-args="10" data-i18n-attr="title">web</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/mysql/" title="11 篇" data-i18n="sidebar.posts" data-i18n-args="11" data-i18n-attr="title">mysql</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E5%B7%A5%E5%85%B7/" title="12 篇" data-i18n="sidebar.posts" data-i18n-args="12" data-i18n-attr="title"><span data-lang-text="zh">工具</span><span data-lang-text="en">Tools</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%9A%8F%E7%AC%94%E5%90%90%E6%A7%BD/" title="12 篇" data-i18n="sidebar.posts" data-i18n-args="12" data-i18n-attr="title"><span data-lang-text="zh">随笔吐槽</span><span data-lang-text="en">Essays and Rants</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/linux/" title="13 篇" data-i18n="sidebar.posts" data-i18n-args="13" data-i18n-attr="title">linux</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/centos/" title="15 篇" data-i18n="sidebar.posts" data-i18n-args="15" data-i18n-attr="title">centos</a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E8%AF%B4%E8%AF%B4/" title="18 篇" data-i18n="sidebar.posts" data-i18n-args="18" data-i18n-attr="title"><span data-lang-text="zh">说说</span><span data-lang-text="en">Status Updates</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="19 篇" data-i18n="sidebar.posts" data-i18n-args="19" data-i18n-attr="title"><span data-lang-text="zh">php服务器</span><span data-lang-text="en">PHP Servers</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/%E9%9A%8F%E7%AC%94/" title="24 篇" data-i18n="sidebar.posts" data-i18n-args="24" data-i18n-attr="title"><span data-lang-text="zh">随笔</span><span data-lang-text="en">Essays</span></a>
+      
+        
+        
+        <a class="tag-item" href="/tags/php/" title="42 篇" data-i18n="sidebar.posts" data-i18n-args="42" data-i18n-attr="title">php</a>
+      
+    </div>
+  </section>
+  
+
+  
+  <!-- 抽屉：贴在页面左/右侧（与标题按钮同列、顶到视口底部），只覆盖侧栏列不覆盖页面主体 -->
+  <div class="sb-drawer" id="sb-drawer">
+    
+    <div class="sb-panel" id="sb-knowledge">
+      <ul class="widget-list">
+        
+          <li><a href="/docker/index.html"  data-i18n="常用命令操作">常用命令操作</a></li>
+        
+          <li><a href="/config/index.html"  data-i18n="常用配置">常用配置</a></li>
+        
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://www.skills.sh" target="_blank"  data-i18n="skills.sh">skills.sh</a></li>
+        
+          <li><a href="/swoftware/index.html"  data-i18n="软件仓库">软件仓库</a></li>
+        
+          <li><a href="/2020/06/20/redis-top/"  data-i18n="Redis性能指标监控">Redis性能指标监控</a></li>
+        
+          <li><a href="/2020/06/18/elasticsearch-ji-ben-curd-cao-zuo/"  data-i18n="Elasticsearch基本CURD">Elasticsearch基本CURD</a></li>
+        
+          <li><a href="/2020/06/20/mysql-top-sun/"  data-i18n="mysql性能">mysql性能</a></li>
+        
+          <li><a href="/fault-analusis/index.html"  data-i18n="故障分析">故障分析</a></li>
+        
+          <li><a href="/2019/03/27/zui-quan-de-zheng-ze-biao-da-shi/"  data-i18n="正则表达式">正则表达式</a></li>
+        
+          <li><a href="/file/legals.html"  data-i18n="法律知识">法律知识</a></li>
+        
+          <li><a target="_blank" href="http://xssor.io" target="_blank"  rel="nofollow noopener external nofollow noopener noreferrer"  data-i18n="XSS&#39;OR">XSS&#39;OR</a></li>
+        
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://rot13.com" target="_blank"  data-i18n="rot13">rot13</a></li>
+        
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://tool.lu" target="_blank"  data-i18n="在线工具">在线工具</a></li>
+        
+          <li><a target="_blank" rel="noopener external nofollow noopener noreferrer" href="https://regex101.com" target="_blank"  data-i18n="正则表达式验证">正则表达式验证</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+
+    
+    <div class="sb-panel" id="sb-friends">
+      <ul class="widget-list">
+        
+          <li><a href="https://www.chaoswork.cn" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer" data-i18n="云海鹰影博客">云海鹰影博客</a></li>
+        
+          <li><a href="https://32mb.net" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer" data-i18n="小兔博客">小兔博客</a></li>
+        
+      </ul>
+    </div>
+    
+
+    
+    <div class="sb-panel" id="sb-about">
+      <div class="widget-about" data-i18n="sidebar.aboutme" data-i18n-html><p>无业游民，<a href="resume/index.html" target="_blank">求职简历</a></p>
+<p>12年开发经验发涉：PHP、Go、Python、Vue、JavaScript、Flutter、Java、Shell、Lua、C、C++、Rust、HarmonyOS、Node.js、ESP32、STM32、AI Coding。框架不是问题、项目不是问题，得看怎么运用结合技术，无奈外行卡内行的人，面试和上班终究成了奢望。</p>
+<p>站长：艾瑞可erik</p>
+<p>邮箱：erik@erik.xyz</p>
+</div>
+    </div>
+    
+
+    
+
+    <button type="button" class="sb-close" title="收起 ✕" data-i18n="sidebar.close" data-i18n-attr="title">✕</button>
+  </div>
+  
+</aside>
+
+
+</div>
+
+    </div>
+    <footer class="site-footer">
+  <div class="footer-magic">✨ 🧙‍♂️ ✨</div>
+  
+    <div class="footer-info footer-nav">
+      
+        <a href="https://www.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🛸 <span data-i18n="艾瑞可erik·导航">艾瑞可erik·导航</span></a>
+      
+        <a href="https://postwoman.erik.xyz" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">🤝 <span data-i18n="postwoman">postwoman</span></a>
+      
+    </div>
+  
+  <div class="footer-info">
+    &copy; 2026 艾瑞可erik
+    
+      | <a href="https://beian.miit.gov.cn" target="_blank" target="_blank" rel="nofollow noopener external nofollow noopener noreferrer">粤ICP备2020136226号-1</a>
+    
+    
+      | <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030602005398" target="_blank" target="_blank" rel="nofollow noopener external nofollow noopener noreferrer">粤公网安备 44030602005398号</a>
+    
+  </div>
+  
+    <div class="footer-info" id="busuanzi">
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      <span id="busuanzi_container_site_pv"><span data-i18n="footer.pvA">本站总访问量</span> <b id="busuanzi_value_site_pv">0</b> <span data-i18n="footer.pvB">次 👀</span></span>
+      <span class="dot">·</span>
+      <span id="busuanzi_container_site_uv"><span data-i18n="footer.uvA">访客数</span> <b id="busuanzi_value_site_uv">0</b> <span data-i18n="footer.uvB">人次 🧑‍🚀</span></span>
+    </div>
+  
+  <div class="footer-info footer-powered">
+    Powered by <a href="https://hexo.io" target="_blank" target="_blank" rel="noopener external nofollow noopener noreferrer">Hexo</a>
+    &amp; three.js 🚀 Theme by <a href="https://github.com/erikwang2013/erik-hexo-theme" target="_blank" rel="external nofollow noopener noreferrer" target="_blank">erik</a> 🎨
+  </div>
+</footer>
+
+  </div>
+
+  <button class="back-top" id="back-top" title="回到顶部 🚀" data-i18n="nav.backTop" data-i18n-attr="title">🚀</button>
+
+  
+  <div class="player collapsed" id="player-box">
+    <button type="button" class="player-mini" id="player-mini" title="展开播放器 🎵" data-i18n="player.expand" data-i18n-attr="title">🎵</button>
+    <div class="player-panel">
+      <div class="player-top">
+        <img class="player-cover" id="player-cover" src="/img/timg.jpeg" alt="cover">
+        <div class="player-info">
+          <div class="player-title" id="player-title"></div>
+          <div class="player-artist" id="player-artist"></div>
+        </div>
+        <button type="button" class="player-collapse" id="player-collapse" title="收起" data-i18n="player.collapse" data-i18n-attr="title">✕</button>
+      </div>
+      <div class="player-progress">
+        <input type="range" id="player-progress" min="0" max="100" step="0.1" value="0" aria-label="播放进度" data-i18n="player.progress" data-i18n-attr="aria-label">
+        <span class="player-time" id="player-time">00:00</span>
+      </div>
+      <div class="player-controls">
+        <button type="button" class="player-mode" id="player-mode" data-mode="all" title="播放模式" data-i18n="player.mode" data-i18n-attr="title">
+          <svg class="icon-mode-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10h11v2H3zm0-4h11v2H3zm0 8h7v2H3zm13-1v8l6-4z"/></svg>
+          <svg class="icon-mode-all" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/></svg>
+          <svg class="icon-mode-one" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4zm-4-2V9h-1l-2 1v1h1.5v4H13z"/></svg>
+          <svg class="icon-mode-shuffle" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
+        </button>
+        <button type="button" id="player-prev" title="上一首" data-i18n="player.prev" data-i18n-attr="title">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h2v12H6zm13.5 0L9 12l10.5 6z"/></svg>
+        </button>
+        <button type="button" class="player-play" id="player-play" title="播放/暂停" data-i18n="player.play" data-i18n-attr="title">
+          <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+        </button>
+        <button type="button" id="player-next" title="下一首" data-i18n="player.next" data-i18n-attr="title">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 6h2v12h-2zM4.5 5L15 12 4.5 19z"/></svg>
+        </button>
+      </div>
+    </div>
+    <audio id="player-audio" preload="metadata"></audio>
+  </div>
+  
+
+  
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="search-panel-box">
+      <input type="search" id="search-input" class="search-input"
+             placeholder="搜索文章…" data-i18n="搜索文章…" data-i18n-attr="placeholder" autocomplete="off">
+      <ul id="search-results" class="search-results"></ul>
+      <p class="search-empty" id="search-empty" hidden data-i18n="search.empty">没有找到匹配的文章 🙈</p>
+    </div>
+  </div>
+  
+  
+  <div class="lightbox" id="lightbox" hidden aria-modal="true" role="dialog">
+    <button type="button" class="lightbox-close" aria-label="关闭" data-i18n="lightbox.close" data-i18n-attr="aria-label">✕</button>
+    <button type="button" class="lightbox-prev" aria-label="上一张" data-i18n="lightbox.prev" data-i18n-attr="aria-label">‹</button>
+    <button type="button" class="lightbox-next" aria-label="下一张" data-i18n="lightbox.next" data-i18n-attr="aria-label">›</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+  
+  <script>
+window.ERIK = {
+  root: "/",
+  three: {"enable":true,"particleCount":2600,"particleColors":["#7c3aed","#06b6d4","#f472b6","#fbbf24","#a78bfa"],"emojiCount":14,"emoji":["🔮","✨","🚀","🫣","🌟","🤔","🎯","👌","♥️","🧪","💎","😜","🪄","😴","⚡","🌈","🛸","🤣","😘","🛰️","🪐","👾","🌙","🔥","💫","🍀","🌊","🎈","⭐","🌸","🍃","🎶","🤦","😅","🤭","🤨","🤔","😫","😭","👌","👏","😘","😣","😒","😆","🍉","💪","🤓","😏","🤦","👌","🐶","🤙","6️","👀","💔","🤗","👍","👎","👉","🙏","👌","✊","🙏","🌹","🤝","💩","☀️","🎁","🧧","💰","🎆","🔄","🥶","🏃","🐷","🧧","❤️","💋"],"opacity":0.55,"parallax":true,"scrollRotate":true,"tier":"auto","always":false,"scenes":{"tunnel":true,"spectrum":true,"orbit":true},"glow":true,"gravity":true,"gyro":true,"holiday":"auto","bloom":{"enable":false,"strength":0.6,"radius":0.5,"threshold":0.65}},
+  tilt: {"enable":true,"maxAngle":12},
+  style: {"mode":"dark","toggle":true,"primary":"#a78bfa","secondary":"#22d3ee","accent":"#f472b6","bgTop":"#0f0c29","bgBottom":"#302b63"},
+  mode: "dark",
+  mathjax: true,
+  player: {"enable":true,"autoplay":false,"loop":"all","list":[{"name":"余情未了","artist":"魏新雨","url":"/music/song/yvqingweiliao.mp3","cover":"/img/timg.jpeg","lrc":"/music/song/yvqingweiliao.lrc"},{"name":"悠殇叹","artist":"阿悠悠","url":"/music/song/youshangtan.mp3","cover":"/img/timg.jpeg"},{"name":"出山","artist":"野小马/胖胖胖","url":"/music/song/chushan.mp3","cover":"/img/img.jpeg"},{"name":"我的将军啊","artist":"叶洛洛","url":"/music/song/wodejiangjuna.flac","cover":"/img/timg.jpeg"},{"name":"一曲相思","artist":"阿悠悠","url":"/music/song/yiquxiangsi.mp3","cover":"/img/timg.jpeg"},{"name":"浪子回头","artist":"王玉萌","url":"/music/song/langzihuitou.mp3","cover":"/img/timg.jpeg"},{"name":"画中仙","artist":"暴卯卯","url":"/music/song/huazhongxian.WAV","cover":"/img/timg.jpeg"},{"name":"嫁给我吧","artist":"暴卯卯","url":"/music/song/jiageiwoba.WAV","cover":"/img/timg.jpeg"}]},
+  isPost: true,
+  search: {"enable":true,"placeholder":"搜索文章…","max_results":10},
+  lightbox: {"enable":true},
+  copyBtn: {"enable":true},
+  dynamicTitle: {"enable":true,"wording":"📬 有新消息等你"},
+  quote: {"enable":false,"api":""},
+  encrypt: false,
+  i18n: {"enable":true,"default":"zh-CN","en":{"主页":"Home","归档":"Archives","分类":"Categories","开源":"Open Source","算法":"Algorithms","📚 知识":"📚 Knowledge","🚀 开源":"🚀 Open Source","🤝 友链":"🤝 Friends","🧙 关于我":"🧙 About Me","🌍 访客":"🌍 Visitors","🪐 标签":"🪐 Tags","艾瑞可erik·导航":"erik · Nav","展开全文 ✨":"Read more ✨"," 感谢投喂，法力 +1 🍬":" Thanks for the treat, +1 mana 🍬","🔗 相关文章":"🔗 Related posts","🔒 这是一篇加密文章":"🔒 This post is encrypted","📬 有新消息等你":"📬 You have a new message","搜索文章…":"Search posts…","📷 摄影集":"📷 Photography","风景":"Landscapes","常用命令操作":"Common commands","常用配置":"Common configs","软件仓库":"Software repos","Redis性能指标监控":"Redis metrics","Elasticsearch基本CURD":"Elasticsearch CURD basics","mysql性能":"MySQL performance","故障分析":"Fault analysis","正则表达式":"Regular expressions","正则表达式验证":"Regex tester","法律知识":"Legal","在线工具":"Online tools","云海鹰影博客":"Chaoswork Blog","小兔博客":"32mb Blog","sidebar.aboutme":"<p>Freelancer, <a href=\"resume/index.html\" target=\"_blank\">resume</a></p>\n<p>12 years of development experience: PHP, Go, Python, Vue, JavaScript, Flutter, Java, Shell, Lua, C, C++, Rust, HarmonyOS, Node.js, ESP32, STM32, AI Coding. Frameworks are not the problem, projects are not the problem — it depends on how you combine the technologies. Sadly, outsiders judging insiders makes interviews and employment a luxury.</p>\n<p>Author: erik</p>\n<p>Email: erik@erik.xyz</p>\n"}},
+  postLang: "en",
+  altUrl: "/2021/06/30/start-haproxy/",
+  altLang: "zh-CN"
+};
+</script>
+<script src="/js/i18n.js?v=20260921e"></script>
+<script src="/js/scenes.js?v=20260921e"></script>
+<script src="/js/main.js?v=20260921e"></script>
+
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<script src="/js/feats.js?v=20260921e"></script>
+<script src="/js/player.js?v=20260921e"></script>
+<script src="/js/ui.js?v=20260921e"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+
+</body>
+</html>

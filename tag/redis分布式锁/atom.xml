@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,150 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2021/11/15/reids-info-lock-en/</id>
+        <title>Redis Distributed Locks in Detail</title>
+        <link rel="alternate" href="https://erik.xyz/2021/11/15/reids-info-lock-en/"/>
+        <content type="html">&lt;p&gt;When it comes to Redis locks, these three are probably the most frequently mentioned terms:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Setnx&lt;/li&gt;
+&lt;li&gt;Redlock&lt;/li&gt;
+&lt;li&gt;Redisson&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Setnx&lt;/p&gt;
+&lt;p&gt;Actually, what people usually call the Setnx command doesn’t only mean Redis’s &lt;code&gt;setnx key value&lt;/code&gt; command.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;It generally refers to using Redis’s set command with the nx parameter added. The set command now already supports all these optional parameters:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;SET key value [EX seconds|PX milliseconds] [NX|XX] [KEEPTTL]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Of course, I won’t recite the API in this article. If any of the basic parameters are still unclear, you can hop over to the official site: &lt;a href=&#34;https://redis.io/commands/set&#34;&gt;https://redis.io/commands/set&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2021/11/20211115214422.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The figure above is my rough sketch of how Setnx works. It mainly relies on the property that the set only succeeds when the key doesn’t exist: once process A holds the lock, as long as the lock’s key hasn’t been deleted, process B will naturally fail to acquire it.&lt;/p&gt;
+&lt;p&gt;So why use PX 30000 to set a timeout?&lt;/p&gt;
+&lt;p&gt;It’s because you’re afraid process A won’t play fair — if it crashes before the lock is released, it takes the lock with it, and then nobody in the system can get it.&lt;/p&gt;
+&lt;p&gt;Even so, you still can’t guarantee it’s foolproof.&lt;/p&gt;
+&lt;p&gt;If process A misbehaves again and operates on the resources inside the lock for longer than the timeout I set, other processes will end up acquiring the lock; and when process A comes back, it turns around and deletes the other process’s lock, as shown in the figure:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2021/11/20211115214716.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Same figure as before, except that at time T5 the lock times out and gets released by Redis.&lt;/p&gt;
+&lt;p&gt;Process B happily acquires the lock at T6, and shortly afterwards process A finishes its work, turns around, does a del — and releases the lock.&lt;/p&gt;
+&lt;p&gt;When process B finishes and goes to release the lock (time T8 in the figure):&lt;/p&gt;
+&lt;p&gt;Not finding the lock is actually the good outcome; if at time T7 a process C comes along and successfully acquires the lock, then process B releases process C’s lock.&lt;/p&gt;
+&lt;p&gt;And so on — process C may release process D’s lock, process D… (no nesting dolls allowed), and what exactly comes of it is anyone’s guess.&lt;/p&gt;
+&lt;p&gt;So when using Setnx, although the key does the main work, the value shouldn’t sit idle either — you can set a unique client ID, or use a random value such as a UUID.&lt;/p&gt;
+&lt;p&gt;When unlocking, first fetch the value to check whether the lock was added by the current process, and only then delete it. Pseudocode:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;String uuid = xxxx;
+// Pseudocode; the concrete implementation depends on the connection tool used in the project
+// Some provide a method named set, others call it setIfAbsent
+set Test uuid NX PX 3000
+try&amp;#123;
+// biz handle....
+&amp;#125; finally &amp;#123;
+    // unlock
+    if(uuid.equals(redisTool.get(&amp;#39;Test&amp;#39;))&amp;#123;
+        redisTool.del(&amp;#39;Test&amp;#39;);
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now that looks solid, doesn’t it.&lt;/p&gt;
+&lt;p&gt;On the contrary, this time the problem is even more obvious: inside the finally block, get and del are not atomic operations, so there are still process safety issues.&lt;/p&gt;
+&lt;p&gt;Why go on about it if it’s problematic?&lt;/p&gt;
+&lt;p&gt;First, you have to understand where the weaknesses are before you can improve things.&lt;/p&gt;
+&lt;p&gt;Second, lots of companies are in fact still using that last piece of code above.&lt;/p&gt;
+&lt;p&gt;The big project / small project paradox: big companies implement the standards, while small companies and small projects are less rigorous, but they don’t have much concurrency either, so the probability of something going wrong is as low as it is at a big company. ——Lu Xun&lt;/p&gt;
+&lt;p&gt;So one of the correct ways to delete a lock is to use a Lua script, run through Redis’s eval/evalsha command:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;-- Lua delete lock:
+-- KEYS and ARGV are the parameters passed in as sets, corresponding to Test and uuid above.
+-- If the corresponding value equals the uuid passed in.
+if redis.call(&amp;#39;get&amp;#39;, KEYS[1]) == ARGV[1] 
+    then 
+ -- perform the delete operation
+        return redis.call(&amp;#39;del&amp;#39;, KEYS[1]) 
+    else 
+ -- not successful, return 0
+        return 0 
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Put plainly, the reason a Lua script guarantees atomicity is this:&lt;/p&gt;
+&lt;p&gt;No matter how fancy the Lua you write, it is executed as a single command (eval/evalsha); until that one command finishes, other clients can’t see it.&lt;/p&gt;
+&lt;p&gt;So given how much trouble that is, is there a better tool? That brings us to Redisson.&lt;/p&gt;
+&lt;p&gt;Before introducing Redisson, let me briefly explain why Setnx nowadays by default means the set command with the nx parameter, rather than the Setnx command itself.&lt;/p&gt;
+&lt;p&gt;Because before Redis 2.6.12, set didn’t support the nx parameter, so creating a lock required two commands:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1. setnx Test uuid
+2. expire Test 30
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That is, putting in the key and setting the expiry are two separate steps, and in theory step 1 could finish and then the program crash, so atomicity can’t be guaranteed.&lt;/p&gt;
+&lt;p&gt;But back in 2013 — seven years ago — Redis released version 2.6.12, and the official site (the set command page [1]) had long since stated that “SETNX, SETEX, PSETEX may be deprecated and permanently removed in future versions”.&lt;/p&gt;
+&lt;p&gt;I once read an article by a big shot that included a little interview trick for guiding beginners. I forget the exact wording, but it went roughly like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;When talking about Redis locks, you can start with Setnx and then gradually lead into how the set command can take parameters — that shows off your breadth of knowledge.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you happen to have read that article too and learned this trick, as the author of this article I’d like to add one reminder:&lt;/p&gt;
+&lt;p&gt;Pay attention to your years of work experience! If you first answer with a command the official site says is about to be deprecated, and then bring up a “new feature” of the set command from seven years ago, an interviewer will think they’ve traveled back in time if someone who just graduated says this.&lt;/p&gt;
+&lt;p&gt;You trick the interviewer, and the interviewer tricks you. ——vt・Wozijishuode (a pun on “as I myself said”)&lt;/p&gt;
+&lt;p&gt;Redisson&lt;/p&gt;
+&lt;p&gt;Redisson is one of the Java clients for Redis, providing APIs that make operating Redis convenient.&lt;/p&gt;
+&lt;p&gt;But this Redisson client is quite something. Here’s a screenshot I took of just part of the feature list on the official site:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2021/11/20211115214952.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The feature list is honestly far too long. Do you also see some class names from the JUC package in there? Redisson made distributed versions for us — for example, with AtomicLong you can just use RedissonAtomicLong directly; you don’t even have to memorize a new class name. Very user-friendly.&lt;/p&gt;
+&lt;p&gt;Locks are just the tip of its iceberg, and as you can see from its wiki [2] page, it supports master-slave, sentinel, cluster and other modes; and of course single-node mode is definitely supported.&lt;/p&gt;
+&lt;p&gt;This article is still focused on locks, so I won’t cover the rest in detail.&lt;/p&gt;
+&lt;p&gt;The source of Redisson’s ordinary lock implementation is mainly the RedissonLock class; if you haven’t looked at its source yet, it’s worth a look.&lt;/p&gt;
+&lt;p&gt;In the source, both locking and unlocking are done with Lua scripts, packaged very thoroughly and ready to use out of the box.&lt;/p&gt;
+&lt;p&gt;There’s a small detail here: locking can be done with Setnx alone, so isn’t using a Lua script redundant? I thought about it quite rigorously: how could something this impressive contain useless code?&lt;/p&gt;
+&lt;p&gt;Actually, I looked carefully and the Lua scripts for locking and unlocking are very thorough, including lock reentrancy — that really is remarkably well thought out. I also wrote some code on the spot to test it:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2021/11/20211115215028.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It really is as smooth to use as the JDK’s ReentrantLock. So if Redisson’s implementation is already this complete, what is RedLock?&lt;/p&gt;
+&lt;p&gt;RedLock&lt;/p&gt;
+&lt;p&gt;The Chinese name for RedLock is a direct translation — it’s simply called the red lock.&lt;/p&gt;
+&lt;p&gt;The red lock isn’t a tool, but a distributed locking algorithm proposed by the Redis team.&lt;/p&gt;
+&lt;p&gt;In the Redisson we just covered, a redLock version of the lock is actually implemented. That is, besides the getLock method, there’s also a getRedLock method.&lt;/p&gt;
+&lt;p&gt;Here’s a rough sketch of my understanding of the red lock:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/2021/11/20211115215116.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you’re not familiar with Redis high-availability deployments, that’s fine. Although the RedLock algorithm requires multiple instances, those instances are all deployed independently, with no master-slave relationship.&lt;/p&gt;
+&lt;p&gt;The author of RedLock points out that the reason for using independent instances is to avoid lock loss caused by Redis asynchronous replication — for example, the master node dying before it manages to pass the data it just set to the slave node.&lt;/p&gt;
+&lt;p&gt;Some people probably think these big shots are just argumentative, always obsessing over extreme cases. But that’s high availability for you — what you’re competing over is the digits after the decimal point in 99.999…%.&lt;/p&gt;
+&lt;p&gt;Back to that crude figure above: the red lock algorithm holds that as long as (N/2) + 1 nodes successfully lock, the lock is considered acquired, and when unlocking, all instances are unlocked. The process is:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Request a lock from the five nodes in sequence&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Decide whether to skip a node based on a certain timeout&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Three nodes lock successfully and the time taken is less than the lock’s validity period&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The lock is considered acquired&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That is, if the lock expires after 30 seconds and locking three nodes takes 31 seconds, then of course the lock acquisition fails.&lt;/p&gt;
+&lt;p&gt;This is just an example; in practice you shouldn’t wait that long for each node. As the official site says, if the validity period is 10 seconds, then the operation timeout for a single Redis instance should be between 5 and 50 milliseconds (mind the units).&lt;/p&gt;
+&lt;p&gt;Still assuming we set the validity period to 30 seconds, and two Redis nodes timed out in the figure. Then the nodes that locked successfully took 3 seconds in total, so the lock’s actual validity period is less than 27 seconds.&lt;/p&gt;
+&lt;p&gt;That is, you subtract the 3 seconds for the three instances that locked successfully, and you also subtract the total time spent waiting for the timed-out Redis instances.&lt;/p&gt;
+&lt;p&gt;Reading this, you may have some doubts about the algorithm — and you’re not alone.&lt;/p&gt;
+&lt;p&gt;Take another look at the Redis official site’s description of the red lock [3].&lt;/p&gt;
+&lt;p&gt;Right at the bottom of that page you’ll find the famous “gods fighting” episode about the red lock.&lt;/p&gt;
+&lt;p&gt;Namely the RedLock debate between Martin Kleppmann and Antirez. One is a very seasoned distributed systems architect, the other is the father of Redis.&lt;/p&gt;
+&lt;p&gt;Getting publicly called out by the official site is the deadliest of all.&lt;/p&gt;
+&lt;p&gt;Just kidding — if a challenge gets posted on the official site, it clearly has value.&lt;/p&gt;
+&lt;p&gt;So if you’re going to use the red lock in a project, besides reading the introduction to it, you might want to read two more articles, namely:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Martin Kleppmann’s critique: &lt;a href=&#34;http://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html&#34;&gt;http://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Antirez’s rebuttal: &lt;a href=&#34;http://antirez.com/news/101&#34;&gt;http://antirez.com/news/101&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Summary&lt;/p&gt;
+&lt;p&gt;After all this, have you noticed that no matter how you implement it, you can’t guarantee 100% stability.&lt;/p&gt;
+&lt;p&gt;That’s just how programs are — nothing is absolutely stable, so doing a good job on the manual compensation step is also important. After all: when the tech isn’t enough, humans make up the difference ~&lt;/p&gt;
+&lt;p&gt;Related links:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://redis.io/commands/set&#34;&gt;https://redis.io/commands/set&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/redisson/redisson/wiki/Table-of-Content&#34;&gt;https://github.com/redisson/redisson/wiki/Table-of-Content&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://redis.io/topics/distlock&#34;&gt;https://redis.io/topics/distlock&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Original article: &lt;a href=&#34;https://juejin.cn/post/6844904082860146695&#34;&gt;https://juejin.cn/post/6844904082860146695&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="redis" />
+        <category term="redis锁" />
+        <category term="redis分布式锁" />
+        <updated>2021-11-15T13:43:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2021/11/15/reids-info-lock/</id>
         <title>细说Redis分布式锁</title>

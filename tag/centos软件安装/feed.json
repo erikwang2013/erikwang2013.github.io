@@ -5,6 +5,19 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2015/03/16/centos-zhong-ruan-jian-an-zhuang-en/",
+            "url": "https://erik.xyz/2015/03/16/centos-zhong-ruan-jian-an-zhuang-en/",
+            "title": "Installing Software on CentOS",
+            "date_published": "2015-03-15T23:45:00.000Z",
+            "content_html": "<p>On CentOS, when we want to install software we generally use yum. Before installing, the first step is to look up the package.<br>For example, to install samba (Windows network neighborhood):<br>Query: rpm -qa | grep -i samba<br><a href=\"http://i2.tietuku.com/a8fca0536413f0a7.png\"><img src=\"http://i2.tietuku.com/a8fca0536413f0a7.png\" alt=\"\"></a><br>Look up the related packages with yum search samba. Once found, install with yum install samba. After installation,<br>to modify the config file you need to find the file path. Run rpm -qc samba samba-common<br><a href=\"http://i2.tietuku.com/17d07aa8d4d9d680.png\"><img src=\"http://i2.tietuku.com/17d07aa8d4d9d680.png\" alt=\"\"></a><br>Next you need to start the software. First look up how it starts with rpm -ql samba | grep ‘/etc’<br><a href=\"http://i2.tietuku.com/27c9d5d59ea177a5.png\"><img src=\"http://i2.tietuku.com/27c9d5d59ea177a5.png\" alt=\"\"></a><br>The part in the red line is the startup path. Next comes the actual startup operation.<br><a href=\"http://i2.tietuku.com/80c44788d7448f95.png\"><img src=\"http://i2.tietuku.com/80c44788d7448f95.png\" alt=\"\"></a><br>To add it to the boot startup, run vi /etc/profile and press the arrow key to go to the bottom.<br>Then press i to insert /etc/init.d/smb start and /etc/init.d/nmb start, then save and exit.<br>Run source /etc/profile to make the change take effect. Reboot and the software will start on boot.</p>\n",
+            "tags": [
+                "centos",
+                "linux",
+                "centos软件",
+                "centos软件安装"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2015/03/16/centos-zhong-ruan-jian-an-zhuang/",
             "url": "https://erik.xyz/2015/03/16/centos-zhong-ruan-jian-an-zhuang/",
             "title": "centos中软件安装",

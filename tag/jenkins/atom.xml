@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,97 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2019/10/20/jenks-install-en/</id>
+        <title>Installing and Using Jenkins</title>
+        <link rel="alternate" href="https://erik.xyz/2019/10/20/jenks-install-en/"/>
+        <content type="html">&lt;p&gt;Author: 回首笑人间, a senior Java engineer, passionate about researching open source technologies, and a partner of the Architect Community!&lt;br&gt;Contents&lt;/p&gt;
+&lt;p&gt;What Is Continuous Integration&lt;br&gt;Introduction to Jenkins&lt;br&gt;Installing and Starting Jenkins&lt;br&gt;Installing Jenkins Plugins&lt;br&gt;Global Tool Configuration&lt;br&gt;Automatic Installation&lt;br&gt;Local Installation&lt;br&gt;Uploading Code to the Git Server&lt;br&gt;Creating and Running a Job&lt;br&gt;Go Project&lt;br&gt;JAVA Project&lt;br&gt;What Is Continuous Integration&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;Continuous integration, CI for short&lt;/p&gt;
+&lt;p&gt;As software development grows ever more complex, how team members collaborate better to ensure software quality has slowly become an unavoidable issue in the development process. Especially in recent years, as Agile has become more and more popular in the software engineering field, how to adapt quickly to constantly changing requirements while guaranteeing software quality has become particularly important.&lt;/p&gt;
+&lt;p&gt;Continuous integration is exactly a software development practice aimed at this class of problem. It advocates that team members integrate their work frequently — sometimes many times a day. Each integration is verified by an automated build, including automatic compilation, release, and testing, so that integration errors are found as early as possible and the team can develop cohesive software faster.&lt;/p&gt;
+&lt;p&gt;The characteristics of continuous integration:&lt;/p&gt;
+&lt;p&gt;It is an automated, periodic integration testing process: checking out code, compiling and building, running tests, recording results, and test statistics are all done automatically without human intervention;&lt;br&gt;It requires a dedicated integration server to run the integration builds;&lt;br&gt;It requires the support of code hosting tools, such as Git and the Gogs web interface&lt;br&gt;The role of continuous integration:&lt;/p&gt;
+&lt;p&gt;It guarantees the quality of the code developers commit, and relieves the pressure when releasing software;&lt;br&gt;Every stage of continuous integration is done automatically with little human intervention, which helps cut repetitive work and save time, cost, and effort;&lt;br&gt;Introduction to Jenkins&lt;br&gt;Jenkins, originally named Hudson, took its current name in 2011. It is an open source software tool for implementing continuous integration. Official website: &lt;a href=&#34;http://jenkins-ci.org/&#34;&gt;http://jenkins-ci.org/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Jenkins can monitor errors in integration in real time, provide detailed log files and notification features, and present the trends and stability of project builds visually in chart form.&lt;/p&gt;
+&lt;p&gt;Features:&lt;/p&gt;
+&lt;p&gt;Easy to install: just two docker commands download it from the official site and run it directly, with no extra installation, let alone installing a database;&lt;br&gt;Easy to configure: friendly GUI configuration interface;&lt;br&gt;Change support: Jenkins can pull from code repositories (Subversion/CVS) and produce a list of code updates, outputting it in the build output;&lt;br&gt;Permalink support: users access Jenkins over the web, and those web page links are all permanent addresses, so you can use the link directly in all kinds of documents;&lt;br&gt;E-Mail/RSS/IM integration: when an integration finishes, these tools tell you the result in real time (as far as I know, building an integration takes some time, and with this feature you can do other things while waiting for the result);&lt;br&gt;JUnit/TestNG test reports: that is, providing detailed test reports in chart form and so on;&lt;br&gt;Distributed builds: Jenkins can distribute integration builds and other work across multiple machines;&lt;br&gt;File fingerprinting: Jenkins keeps build records of which integration build produced which jars files, and which integration build used which version of the jars files;&lt;br&gt;Third-party plugin support: this makes Jenkins more and more powerful&lt;br&gt;Installing and Starting Jenkins&lt;br&gt;(1) Run the install command to download jenkins&lt;/p&gt;
+&lt;p&gt;docker pull jenkins/jenkins&lt;br&gt;(2) Start the service&lt;/p&gt;
+&lt;p&gt;docker run -p 8080:8080 -p 50000:50000 -v /mnt/data/jenkins:/var/jenkins_home —name “jenkins” jenkins/jenkins&lt;/p&gt;
+&lt;p&gt;If you get the following error:&lt;/p&gt;
+&lt;p&gt;touch: cannot touch ‘/var/jenkins_home/copy_reference_file.log’: Permission denied&lt;br&gt;Can not write to /var/jenkins_home/copy_reference_file.log. Wrong volume permissions?&lt;br&gt;You need to fix the directory permissions, because when mapping the local data volume, the owner of the /mnt/data/jenkins directory is the root user, while the jenkins user in the container has uid 1000&lt;/p&gt;
+&lt;p&gt;sudo chown -R 1000:1000 /mnt/data/jenkins&lt;br&gt;(3) Visit the link &lt;a href=&#34;http://10.20.29.151:8080&#34;&gt;http://10.20.29.151:8080&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you forget the password, you can enter the container and run cat /var/lib/jenkins/secrets/initialAdminPassword to get the initial password string.&lt;br&gt;If the directory does not exist, you can use the find / -name “initialAdminPassword” -depth -print command to look for it.&lt;/p&gt;
+&lt;p&gt;(4) Install plugins&lt;/p&gt;
+&lt;p&gt;(5) Create a new user&lt;/p&gt;
+&lt;p&gt;The installation is complete; enter the main interface&lt;/p&gt;
+&lt;p&gt;Installing Jenkins Plugins&lt;br&gt;Let’s use installing the maven plugin as an example to demonstrate plugin installation&lt;/p&gt;
+&lt;p&gt;(1) Click the “System Management” menu on the left, then click&lt;/p&gt;
+&lt;p&gt;(2) Select the “Optional Plugins” tab, search for maven, choose Maven Integration in the list, and click the “Install directly” button&lt;/p&gt;
+&lt;p&gt;When you see the image below, it is done&lt;/p&gt;
+&lt;p&gt;Note: if your project is a GitHub, GitLib, or Go language project, then I think you will want a corresponding plugin like this to do the work for you.&lt;/p&gt;
+&lt;p&gt;Global Tool Configuration&lt;br&gt;Select System Management, then Global Tool Configuration&lt;/p&gt;
+&lt;p&gt;Automatic Installation&lt;/p&gt;
+&lt;p&gt;Jenkins provides two ways to configure tools; let’s again use maven as the example&lt;/p&gt;
+&lt;p&gt;The first is as shown above: you only need to select automatic installation and a version number. Jenkins also gives you a help button in the upper right corner, where you can see explanations and examples.&lt;/p&gt;
+&lt;p&gt;Local Installation&lt;/p&gt;
+&lt;p&gt;Compared with the first approach, the second is a bit more troublesome, but the advantage is that you don’t have to download again when packaging later, which shortens the packaging time.&lt;/p&gt;
+&lt;p&gt;Here is how to install Maven and a local repository:&lt;/p&gt;
+&lt;p&gt;(1) Upload the Maven archive to the server (virtual machine)&lt;/p&gt;
+&lt;p&gt;(2) Extract&lt;/p&gt;
+&lt;p&gt;tar zxvf apache-maven-3.5.4-bin.tar.gz&lt;br&gt;(3) Move the directory&lt;/p&gt;
+&lt;p&gt;mv apache-maven-3.5.4 /usr/local/maven&lt;br&gt;(4) Edit the settings.xml configuration file with vi /usr/local/maven/conf/settings.xml and configure the local repository directory, as follows&lt;/p&gt;
+&lt;p&gt;&lt;localRepository&gt;/usr/local/repository&lt;/localRepository&gt;&lt;br&gt;(5) Upload the local repository from your development environment to the server (virtual machine) and move it to /usr/local/repository.&lt;/p&gt;
+&lt;p&gt;mv reponsitory_boot /usr/local/repository&lt;br&gt;Other examples:&lt;/p&gt;
+&lt;p&gt;(1) JDK configuration&lt;/p&gt;
+&lt;p&gt;Set javahome to /usr/java/jdk1.8.0_171-amd64&lt;/p&gt;
+&lt;p&gt;(2) Git configuration (Git is already installed locally)&lt;/p&gt;
+&lt;p&gt;(3) Maven configuration&lt;/p&gt;
+&lt;p&gt;Uploading Code to the Git Server&lt;br&gt;Steps:&lt;/p&gt;
+&lt;p&gt;(1) Install git locally (Windows version)&lt;/p&gt;
+&lt;p&gt;(2) In IDEA select the menu: File — settings, then in the window choose Version Control — Git&lt;/p&gt;
+&lt;p&gt;(3) Select the menu VCS —&amp;gt; Enable Version Control Integration…&lt;/p&gt;
+&lt;p&gt;Select Git&lt;/p&gt;
+&lt;p&gt;(4) Set the remote address: right-click the project and select the menu Git —&amp;gt; Repository —&amp;gt;Remotes…&lt;/p&gt;
+&lt;p&gt;(5) Right-click the project and select the menu Git —&amp;gt; Add&lt;/p&gt;
+&lt;p&gt;(6) Right-click the project and select the menu Git —&amp;gt; Commit Directory…&lt;/p&gt;
+&lt;p&gt;(7) Right-click the project and select the menu Git —&amp;gt; Repository —&amp;gt; Push …&lt;/p&gt;
+&lt;p&gt;Creating and Running a Job&lt;br&gt;Using the hottest Java and Go projects as examples, we will show you respectively how to build and run a project.&lt;/p&gt;
+&lt;p&gt;Go Project&lt;/p&gt;
+&lt;p&gt;(1) Go back to the home page and click the new item button. As shown below, enter a name, choose to create a freestyle project, and click OK&lt;/p&gt;
+&lt;p&gt;(2) General management, where you can add a project description and a GitHub project path, as well as some other configuration&lt;/p&gt;
+&lt;p&gt;(3) Source Code Management, select GitHub&lt;/p&gt;
+&lt;p&gt;(4) Build Triggers, configure the trigger rules; here we take scheduled and polling as examples, with the settings as&lt;/p&gt;
+&lt;p&gt;Scheduled build: build the job once on a schedule&lt;/p&gt;
+&lt;p&gt;Poll SCM: periodically check whether the code in Source Code Management has been updated; if it has, build, otherwise don’t&lt;/p&gt;
+&lt;p&gt;As shown in the image, the scheduled build builds once every 10 minutes, and Poll SCM checks once every 5 minutes.&lt;/p&gt;
+&lt;p&gt;The rule for the time * fields is: minute hour day month week&lt;br&gt;(5) Build Environment, configure timestamps for console output and specify the Go version&lt;/p&gt;
+&lt;p&gt;(6) Build, use a Shell script to test whether the project works after the code is uploaded&lt;/p&gt;
+&lt;p&gt;The Shell is as follows:&lt;/p&gt;
+&lt;p&gt;export GOPATH=$WORKSPACE/../                    # Specify the GOPATH path; running Go requires a GOPATH path&lt;br&gt;export GOWORK=$GOPATH/src/github.com/Jenkins    # Create the directory dependency structure for running the project&lt;br&gt;cp -rf $WORKSPACE/* $GOWORK/                    # Keep the test run data isolated from the source data&lt;br&gt;cd $GOWORK &amp;amp;&amp;amp; go build                          # Enter the project directory and run&lt;br&gt;Command notes:&lt;/p&gt;
+&lt;p&gt;$GOPATH: running Go requires a GOPATH to be specified, i.e. the project run path&lt;br&gt;$WORKSPACE /var/jenkins_home/workspace/Jenkins&lt;br&gt;GOWORK: create an execution directory that matches the code dependencies&lt;br&gt;Note: the Go plugin download sets GOROOT automatically for us during the build, but does not specify GOPATH, so it needs to be specified&lt;br&gt;Finally click the “Save” button&lt;/p&gt;
+&lt;p&gt;(7) Run the build and check the output in the console&lt;/p&gt;
+&lt;p&gt;The build succeeded, and it also output the WORKSPACE, GOPATH, and GOROOT directories, meaning the configuration took effect. Enter the docker container or the mounted directory to check whether there is an executable file:&lt;/p&gt;
+&lt;p&gt;Besides the methods above, you can also build, deploy, and run the project by configuring docker through a shell, and you can configure the project to run on this or another server. I won’t go through every other configuration method one by one — dig into them yourself.&lt;/p&gt;
+&lt;p&gt;JAVA Project&lt;/p&gt;
+&lt;p&gt;(1) Go back to the home page and click the new item button. As shown below, enter a name, choose to create a Maven project, and click OK&lt;/p&gt;
+&lt;p&gt;(2) Source Code Management, select Git&lt;/p&gt;
+&lt;p&gt;(3) Build&lt;/p&gt;
+&lt;p&gt;Command:&lt;/p&gt;
+&lt;p&gt;clean package docker:build -DpushImage&lt;br&gt;Used to clean, package, and build the docker image&lt;/p&gt;
+&lt;p&gt;Finally click the “Save” button&lt;/p&gt;
+&lt;p&gt;(4) Run the job&lt;/p&gt;
+&lt;p&gt;Refer to the Go project steps from here on.&lt;br&gt;Original post: &lt;a href=&#34;https://mp.weixin.qq.com/s/PEupc5YIKuctZO1Tivy_ug&#34;&gt;https://mp.weixin.qq.com/s/PEupc5YIKuctZO1Tivy_ug&lt;/a&gt;&lt;/p&gt;
+</content>
+        <category term="工具" />
+        <category term="jenkins" />
+        <updated>2019-10-20T13:54:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2019/10/20/jenks-install/</id>
         <title>Jenkins安装及使用</title>

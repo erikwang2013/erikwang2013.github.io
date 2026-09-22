@@ -5,6 +5,19 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2019/06/18/kali-zhuo-mian-you-jian-han-hua-en/",
+            "url": "https://erik.xyz/2019/06/18/kali-zhuo-mian-you-jian-han-hua-en/",
+            "title": "Localizing the Kali Desktop Context Menu into Chinese",
+            "date_published": "2019-06-18T04:28:00.000Z",
+            "content_html": "<p>My own laptop had been running kali for a long time and was configured pretty perfectly, with the old project using php5.6. On my own laptop, after all sorts of tinkering, it turned out the system simply doesn’t support php5.6. My perfect system got wrecked, and I stayed up late restoring part of it - php5.6 had to be installed with docker. Recently I quit my job - quit it completely. The problem of the kali right-click menu not showing Chinese still wasn’t solved, so today I’m dealing with it.<span id=\"more\"></span></p>\n<p> According to what the search engines turned up, there are two ways to fix the desktop icons: install desktop-icons-enhanced or the nemo plugin. I’d used nemo before and vaguely remembered solving it with nemo. So today I’ll give it a try.</p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sudo apt-get install nemo</span><br></pre></td></tr></table></figure>\n<p> Install nemo. Then create the desktop file and edit it</p>\n<p> <code>sudo leafpad  ~/.config/autostart/nemo-autostart-with-gnome.desktop</code></p>\n<p>Fill the file with</p>\n<figure class=\"highlight plaintext\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">[Desktop Entry]</span><br><span class=\"line\">Type=Application</span><br><span class=\"line\">Name=Nemo</span><br><span class=\"line\">Comment=Start Nemo desktop at log in</span><br><span class=\"line\">Exec=nemo-desktop</span><br><span class=\"line\">OnlyShowIn=GNOME;</span><br><span class=\"line\">AutostartCondition=GSettings org.nemo.desktop show-desktop-icons</span><br><span class=\"line\">X-GNOME-AutoRestart=true</span><br><span class=\"line\">NoDisplay=true</span><br></pre></td></tr></table></figure>\n<p>Save and exit.<br>Log out, log back in, and you can use the Chinese right-click menu.</p>\n",
+            "tags": [
+                "linux",
+                "kali右键汉化",
+                "kali桌面右键汉化",
+                "kali右键创建文件"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2019/06/18/kali-zhuo-mian-you-jian-han-hua/",
             "url": "https://erik.xyz/2019/06/18/kali-zhuo-mian-you-jian-han-hua/",
             "title": "kali桌面右键汉化",

@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2016/02/14/centos7-wang-ji-root-mi-ma-zhong-zhi-en/",
+            "url": "https://erik.xyz/2016/02/14/centos7-wang-ji-root-mi-ma-zhong-zhi-en/",
+            "title": "Resetting a forgotten root password on CentOS 7",
+            "date_published": "2016-02-14T03:18:00.000Z",
+            "content_html": "<h2 id=\"Linux-CentOS-7-edit\"><a href=\"#Linux-CentOS-7-edit\" class=\"headerlink\" title=\"Linux CentOS 7[edit]\"></a>Linux CentOS 7[<a href=\"http://www.ytyzx.net/index.php?title=%E5%A6%82%E4%BD%95%E6%81%A2%E5%A4%8D%E6%88%96%E9%87%8D%E7%BD%AEFreeBSD_%26_Linux%E7%9A%84root%E5%AF%86%E7%A0%81&amp;action=edit&amp;section=3\" title=\"edit section: Linux CentOS 7\">edit</a>]</h2><p>Reboot the Linux CentOS 7 system, then use the arrow keys to select the corresponding system in the screenshot below and press the “e” key.</p>\n<p><a href=\"http://www.ytyzx.net/index.php/File:CentOS1.png\"><img src=\"http://www.ytyzx.net/images/d/dc/CentOS1.png\" alt=\"CentOS1.png\"></a><span id=\"more\"></span></p>\n<p>The following screen appears; press the down arrow key to move the blue-highlighted box, and pay attention to the last part inside that box.</p>\n<p><a href=\"http://www.ytyzx.net/index.php/File:CentOS2.png\"><img src=\"http://www.ytyzx.net/images/f/f3/CentOS2.png\" alt=\"CentOS2.png\"></a></p>\n<p>Press “ctrl+e” to move to the end, delete “rhgb quiet LANG=zh_CN.UTF-8”, type “init=/bin/sh”, and press “ctrl+x” to boot the system.</p>\n<p><a href=\"http://www.ytyzx.net/index.php/File:CentOS3.png\"><img src=\"http://www.ytyzx.net/images/2/2d/CentOS3.png\" alt=\"CentOS3.png\"></a></p>\n<p>Type “mount -o remount, rw /“ and press Enter to make the filesystem writable.</p>\n<p><a href=\"http://www.ytyzx.net/index.php/File:CentOS4.png\"><img src=\"http://www.ytyzx.net/images/e/e5/CentOS4.png\" alt=\"CentOS4.png\"></a></p>\n<p>Type “passwd” to change the password (you have to enter it twice). On success you’ll see the following prompt: all authentication tokens updated successfully.</p>\n<p><a href=\"http://www.ytyzx.net/index.php/File:CentOS5.png\"><img src=\"http://www.ytyzx.net/images/b/b3/CentOS5.png\" alt=\"CentOS5.png\"></a></p>\n<p>Type “touch /.autorelabel” to make sure the system recovers correctly after the reboot.</p>\n<p><a href=\"http://www.ytyzx.net/index.php/File:CentOS6.png\"><img src=\"http://www.ytyzx.net/images/a/a6/CentOS6.png\" alt=\"CentOS6.png\"></a></p>\n<p>Type “exec /sbin/init” to reinitialize.</p>\n<p><a href=\"http://www.ytyzx.net/index.php/File:CentOS7.png\"><img src=\"http://www.ytyzx.net/images/d/d4/CentOS7.png\" alt=\"CentOS7.png\"></a></p>\n<p>The system starts initializing, and once it’s done it reboots automatically — just log in with the new password.</p>\n<p><a href=\"http://www.ytyzx.net/index.php/File:CentOS8.png\"><img src=\"http://www.ytyzx.net/images/2/28/CentOS8.png\" alt=\"CentOS8.png\"></a> Reposted from <a href=\"http://www.ytyzx.net/index.php/%E5%A6%82%E4%BD%95%E6%81%A2%E5%A4%8D%E6%88%96%E9%87%8D%E7%BD%AEFreeBSD_%26_Linux%E7%9A%84root%E5%AF%86%E7%A0%81\">http://www.ytyzx.net/index.php/%E5%A6%82%E4%BD%95%E6%81%A2%E5%A4%8D%E6%88%96%E9%87%8D%E7%BD%AEFreeBSD_%26_Linux%E7%9A%84root%E5%AF%86%E7%A0%81</a></p>\n",
+            "tags": [
+                "root密码",
+                "root密码重置",
+                "忘记root密码"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2016/02/14/centos7-wang-ji-root-mi-ma-zhong-zhi/",
             "url": "https://erik.xyz/2016/02/14/centos7-wang-ji-root-mi-ma-zhong-zhi/",
             "title": "centos7忘记root密码重置",

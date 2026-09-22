@@ -5,6 +5,18 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2017/11/10/you-guan-php-jia-mi-de-en/",
+            "url": "https://erik.xyz/2017/11/10/you-guan-php-jia-mi-de-en/",
+            "title": "About PHP Encryption",
+            "date_published": "2017-11-10T13:18:00.000Z",
+            "content_html": "<p>PHP encryption — the first thing I came across was Zend’s encryption technology back in PHP 5.3. To decrypt you also had to install an extension to run it, and the decrypted code would not run. PHP currently officially introduces several encryption extensions: the crack extension, which is currently not bundled into php by the official build, the caprng extension, which currently supports versions above 5.2, the hash extension, the mcrypt extension, which was deprecated in php7.1.0 and will be moved to pecl in php7.2.0, the mhash extension, the openssl extension, which uses the openssl library for symmetric/asymmetric encryption and decryption, as well as PBKDF2, PKCS7, PKCS12, X509 and other cryptographic operations, and the password hashing algorithm API, which provides a simple, easy-to-use wrapper around <a href=\"http://php.net/manual/zh/function.crypt.php\">crypt()</a>, creating and managing passwords in a concise, easy-to-use and secure way. Encryption techniques suggested by netizens: md5 encryption, the crypt encryption algorithm, the sha1 encryption algorithm, URL encoding encryption, and Base64 information encoding. As for the encryption extensions, their usage is explained in the official documentation, and you can go take a look for yourselves. I won’t go into detail here — refer to the official php documentation <a href=\"http://php.net/manual/zh/\">http://php.net/manual/zh/</a></p>\n",
+            "tags": [
+                "php",
+                "php加密",
+                "php技术"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2017/11/10/you-guan-php-jia-mi-de/",
             "url": "https://erik.xyz/2017/11/10/you-guan-php-jia-mi-de/",
             "title": "有关php加密的",

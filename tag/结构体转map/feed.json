@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2022/02/11/structtomap-en/",
+            "url": "https://erik.xyz/2022/02/11/structtomap-en/",
+            "title": "Converting a Struct to a map",
+            "date_published": "2022-02-11T03:55:10.000Z",
+            "content_html": "<p>When writing data to a redis hash in go, I ran into the problem that a struct array could not be written. I looked into it and the data to be written is required to be map[string]interface, while mine was a struct. Therefore, it could not be written.<br>So it’s just a matter of converting the format.</p>\n<pre><code>type order struct&#123;\n    Id int64 `json:&quot;id&quot;`\n    orderSn int64 `json:&quot;order_sn&quot;`          \n&#125;\n\norders:=order&#123;\n    Id:2022032034566\n    OrderSn:20220320122444\n&#125;\n\njsonData,_:=json.Marshal(orders)\n\nvar redisData map[string]interface&#123;&#125;\n\njson.Unmarshal([]byte(jsonData),&amp;redisData)\n\nlog.Info(redisData)\n</code></pre><p>The above is the conversion process.</p>\n",
+            "tags": [
+                "go",
+                "结构体转map"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2022/02/11/structtomap/",
             "url": "https://erik.xyz/2022/02/11/structtomap/",
             "title": "结构体转map",

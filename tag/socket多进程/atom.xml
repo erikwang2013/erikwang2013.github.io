@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,660 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2019/09/18/socket-jin-cheng-tong-xin-ji-zhi-en/</id>
+        <title>Socket Process Communication and Multiple Processes</title>
+        <link rel="alternate" href="https://erik.xyz/2019/09/18/socket-jin-cheng-tong-xin-ji-zhi-en/"/>
+        <content type="html">&lt;p&gt;socket is a set of abstract APIs provided by the operating system for the communication layer&lt;/p&gt;
+&lt;h4 id=&#34;Function-Introduction&#34;&gt;&lt;a href=&#34;#Function-Introduction&#34; class=&#34;headerlink&#34; title=&#34;Function Introduction&#34;&gt;&lt;/a&gt;Function Introduction&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;socket_create(int $domain , int $type , int $protocol)  &lt;/p&gt;
+&lt;p&gt;Returns a socket (communication endpoint) on success, and FALSE on failure. To read the error code, you can call socket_last_error(). That error code can be turned into a textual error description with socket_strerror().&lt;/p&gt;
+&lt;p&gt;Creates a communication node. socket_create contains three parameters&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$domain  specifies which protocol is used for the current socket (communication node). There are three:&lt;ul&gt;
+&lt;li&gt;AF_INET: IPv4 network protocol. Both TCP and UDP can use this protocol.&lt;/li&gt;
+&lt;li&gt;AF_INET6:    IPv6 network protocol. Both TCP and UDP can use this protocol.&lt;/li&gt;
+&lt;li&gt;AF_UNIX:        local communication protocol. High-performance, low-cost IPC (inter-process communication).&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;$type  selects the type used by the socket (communication node). There are five:&lt;ul&gt;
+&lt;li&gt;SOCK_STREAM: provides a sequential, reliable, full-duplex, connection-based byte stream. It supports data transfer flow control. The TCP protocol is based on this streaming socket.&lt;/li&gt;
+&lt;li&gt;SOCK_DGRAM: provides datagram support. (connectionless, unreliable, fixed maximum length). The UDP protocol is based on this datagram socket.&lt;/li&gt;
+&lt;li&gt;SOCK_SEQPACKET: provides sequential, reliable, full-duplex, connection-oriented, fixed maximum length data communication; the data end reads the whole packet by receiving each data segment.&lt;/li&gt;
+&lt;li&gt;SOCK_RAW: provides reading of raw network protocols. This special socket can be used to build any kind of protocol by hand. It is generally used to implement ICMP requests (such as ping).&lt;/li&gt;
+&lt;li&gt;SOCK_RDM: provides a reliable data layer, but does not guarantee the order of arrival. Most operating systems have not implemented this.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;$protocol sets the specific protocol under the $domain socket (communication node). This value can be read with the getprotobyname() function. If the required protocol is TCP or UDP, you can use the constants SOL_TCP and SOL_UDP directly.&lt;ul&gt;
+&lt;li&gt;icmp: Internet Control Message Protocol, mainly used by gateways and hosts to report erroneous data communication.&lt;/li&gt;
+&lt;li&gt;udp(SOL_UDP): User Datagram Protocol, a connectionless, unreliable message protocol with a fixed maximum length.&lt;/li&gt;
+&lt;li&gt;tcp(SOL_TCP): Transmission Control Protocol, a reliable, connection-based, data-stream-oriented full-duplex protocol&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;socket_set_option ( resource $socket , int $level , int $optname , mixed $optval ) &lt;/p&gt;
+&lt;p&gt;Returns TRUE on success, or FALSE on failure.&lt;/p&gt;
+&lt;p&gt;Sets the socket options of a socket&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$socket: socket (communication node)&lt;/li&gt;
+&lt;li&gt;$level: specifies the protocol level at which the option resides&lt;/li&gt;
+&lt;li&gt;$optname: the available socket options are the same as the socket_get_option() options&lt;/li&gt;
+&lt;li&gt;$optval: option value&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;socket_read ( resource $socket , int $length [, int $type = PHP_BINARY_READ ] ) read up to length bytes from a socket&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$socket: socket (communication node)&lt;/li&gt;
+&lt;li&gt;$length: the length of the buffer in the socket resource&lt;/li&gt;
+&lt;li&gt;$type: optional type parameter&lt;ul&gt;
+&lt;li&gt;PHP_BINARY_READ   the default value, safely reads binary data&lt;/li&gt;
+&lt;li&gt;PHP_NORMAL_READ   reading stops&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;socket_getpeername ( resource $socket , string &amp;amp;$address [, int &amp;amp;$port ] )  query the remote socket&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$socket: socket (communication node)&lt;/li&gt;
+&lt;li&gt;$address: address to query&lt;/li&gt;
+&lt;li&gt;$port: port to query (not required)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;socket_recv ( resource $socket , string &amp;amp;$buf , int $len , int $flags )  receive data from a connected socket&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$socket: socket (communication node)&lt;/li&gt;
+&lt;li&gt;$buf: the data fetched from the socket will be saved in the variable specified by buf&lt;/li&gt;
+&lt;li&gt;$len: at most len bytes of data will be received&lt;/li&gt;
+&lt;li&gt;$flags: can be any combination of the following flags:&lt;ul&gt;
+&lt;li&gt;MSG_OOB    handle out-of-band data&lt;/li&gt;
+&lt;li&gt;MSG_PEEK    receive data from the beginning of the receive queue without removing it from the receive queue.&lt;/li&gt;
+&lt;li&gt;MSG_WAITALL    block before at least len bytes of data have been received, and pause the script (block)&lt;/li&gt;
+&lt;li&gt;MSG_DONTWAIT    if this flag is specified, the function will not block, even if a blocking setting is specified globally&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;socket_select ( array &amp;amp;$read , array &amp;amp;$write , array &amp;amp;$except , int $tv_sec [, int $tv_usec = 0 ] )   system call on the given array of sockets with a specified timeout&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$read: monitors the sockets listed in the read array&lt;/li&gt;
+&lt;li&gt;$write: will monitor the sockets listed in the write array to see whether writes will not block&lt;/li&gt;
+&lt;li&gt;$except:  will watch the sockets listed in the except array for exceptions.&lt;/li&gt;
+&lt;li&gt;$tv_sec:  tv_sec and tv_usec together form the timeout parameter. The timeout is the upper bound on the amount of time that passes before socket_select() returns. tv_sec may be zero, causing socket_select() to return immediately. This is very useful for polling. If tv_sec is NULL (no timeout), socket_select() can block indefinitely.&lt;/li&gt;
+&lt;li&gt;$tv_usec  same as above&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;socket_accept ( resource $socket )  accept a connection on a socket&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;socket_write ( resource $socket , string $buffer [, int $length = 0 ] )  write to a socket&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$socket: socket (communication node)&lt;/li&gt;
+&lt;li&gt;$buffer: the buffer to write.&lt;/li&gt;
+&lt;li&gt;$length: optional parameter, length&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;socket_close&lt;/p&gt;
+&lt;p&gt;TODO: close a socket resource Function prototype: void socket_close ( resource $socket )&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;socket: a resource produced by socket_accept or socket_create; it cannot be used to close stream resources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;stream_socket_server&lt;/p&gt;
+&lt;p&gt;Since the process of creating a SOCKET is always socket, bind, listen, PHP provides a very convenient function that creates, binds the port and listens on the port all at once&lt;/p&gt;
+&lt;p&gt;Function prototype: resource stream_socket_server ( string $local_socket [, int &amp;amp;$errno [, string &amp;amp;$errstr [, int $flags = STREAM_SERVER_BIND | STREAM_SERVER_LISTEN [, resource $context ]]]] )&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;local_socket: protocol name://address:port number&lt;/li&gt;
+&lt;li&gt;errno: error code&lt;/li&gt;
+&lt;li&gt;errstr: error message&lt;/li&gt;
+&lt;li&gt;flags: use only part of the functionality of this function&lt;/li&gt;
+&lt;li&gt;context: a stream context resource created with the stream_context_create function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;socket-communication-example&#34;&gt;&lt;a href=&#34;#socket-communication-example&#34; class=&#34;headerlink&#34; title=&#34;socket communication example&#34;&gt;&lt;/a&gt;socket communication example&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+
+
+class SocketServer
+&amp;#123;
+    protected $address;
+    protected $port;
+
+    public function __construct($address = &amp;#39;127.0.0.1&amp;#39;, $port = &amp;#39;8080&amp;#39;)
+    &amp;#123;
+        $this-&amp;gt;address = $address;
+        $this-&amp;gt;port = $port;
+    &amp;#125;
+
+    public function startSocket()
+    &amp;#123;
+        $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
+        socket_bind($socket, $this-&amp;gt;address, $this-&amp;gt;port);
+        socket_listen($socket);
+        for ( ; ; ) &amp;#123;
+            $conn = socket_accept($socket);
+
+            $write_buffer = &amp;quot;HTTP/1.0 200 OK\r\nServer: my_server\r\nContent-Type: text/html; charset=utf-8\r\n\r\n&amp;#123;&amp;#39;code&amp;#39;:100020,&amp;#39;data&amp;#39;:&amp;#123;&amp;#39;name&amp;#39;:&amp;#39;艾瑞可erik&amp;#39;,&amp;#39;url&amp;#39;:&amp;#39;https://erik.xyz&amp;#39;&amp;#125;,&amp;#39;msg&amp;#39;:&amp;#39;ok&amp;#39;&amp;#125;&amp;quot;;
+
+            socket_write($conn, $write_buffer);
+
+            socket_close($conn);
+        &amp;#125;
+    &amp;#125;
+
+    public function run()&amp;#123;
+        $this-&amp;gt;startSocket();
+    &amp;#125;
+&amp;#125;
+
+$sock=new SocketServer();
+$sock-&amp;gt;run();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;   Running result:&lt;br&gt;   &lt;img src=&#34;/img/201909/2019-09-19_162558.jpg&#34; alt=&#34;socket running result&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can also use stream, that is, a stream-based implementation.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+      class StreamSocketServer
+      &amp;#123;
+          protected $address;
+          protected $port;
+
+          public function __construct($address=&amp;#39;127.0.0.1&amp;#39;,$port=8080)
+          &amp;#123;
+              $this-&amp;gt;address=$address;
+              $this-&amp;gt;port=$port;
+          &amp;#125;
+
+          public function startSocket()&amp;#123;
+              $socket=stream_socket_server(&amp;quot;tcp://&amp;quot;.$this-&amp;gt;address.&amp;quot;:&amp;quot;.$this-&amp;gt;port,$errno,$errstr);
+              $data=&amp;quot;&amp;#123;&amp;#39;code&amp;#39;:100020,&amp;#39;msg&amp;#39;:&amp;#39;ok&amp;#39;,&amp;#39;data&amp;#39;:&amp;#123;&amp;#39;name&amp;#39;:&amp;#39;艾瑞可erik&amp;#39;,&amp;#39;url&amp;#39;:&amp;#39;https://erik.xyz&amp;#39;&amp;#125;&amp;#125;&amp;quot;;
+              for ( ; ; ) &amp;#123;
+                  $conn = stream_socket_accept($socket);
+
+                  $write_buffer = &amp;quot;HTTP/1.0 200 OK\r\nServer: my_server\r\nContent-Type: text/html; charset=utf-8\r\n\r\n&amp;quot;.$data;
+
+                  fwrite($conn, $write_buffer);
+
+                  fclose($conn);
+              &amp;#125;
+          &amp;#125;
+
+          public function run()&amp;#123;
+              $this-&amp;gt;startSocket();
+          &amp;#125;
+      &amp;#125;
+
+      $socket=new StreamSocketServer();
+      $socket-&amp;gt;run();
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;Multiple-Processes&#34;&gt;&lt;a href=&#34;#Multiple-Processes&#34; class=&#34;headerlink&#34; title=&#34;Multiple Processes&#34;&gt;&lt;/a&gt;Multiple Processes&lt;/h3&gt;&lt;p&gt;Multiple process example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+header(&amp;quot;Content-type:text/html;charset=utf-8&amp;quot;);
+
+class ProcessTest
+&amp;#123;
+
+    public function add()&amp;#123;
+        $pid=pcntl_fork();
+
+        if($pid)&amp;#123;
+            echo &amp;quot;这是一个父进程\n&amp;quot;;
+            pcntl_waitpid($pid,$status);
+        &amp;#125;elseif ($pid==0)&amp;#123;
+            echo &amp;quot;这是子进程\n&amp;quot;;
+        &amp;#125;else&amp;#123;
+            die(&amp;quot;进程结束\n&amp;quot;);
+        &amp;#125;
+    &amp;#125;
+
+    public function run()&amp;#123;
+        $this-&amp;gt;add();
+    &amp;#125;
+&amp;#125;
+
+$process=new ProcessTest();
+$process-&amp;gt;run();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Running effect&lt;br&gt;&lt;img src=&#34;/img/201909/2019-09-19_170643.jpg&#34; alt=&#34;multi-process effect&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;pcntl_fork&lt;/p&gt;
+&lt;p&gt;Function prototype: int pcntl_fork ( void )&lt;/p&gt;
+&lt;p&gt;Executing this function copies the current process to produce another process, called the child process of the current process. The return value of this function differs between the parent process and the child process: in the parent process it returns the process ID of the forked child process, while in the child process the return value is 0.&lt;/p&gt;
+&lt;p&gt;Note that when a process is copied, the process’s data is copied (heap data, stack data and static data), including the file descriptors opened in the parent process, which are also open in the child process. This means that when you use a large amount of memory in the parent process, the forked child process must have an equal amount of memory resources, otherwise the fork may fail.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;pcntl_waitpid&lt;/p&gt;
+&lt;p&gt;Function prototype: int pcntl_waitpid ( int $pid , int &amp;amp;$status [, int $options = 0 ] )&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pid: process ID&lt;/li&gt;
+&lt;li&gt;status: the exit status of the child process&lt;/li&gt;
+&lt;li&gt;option: depends on whether the operating system provides the wait3 function; if it does, this option parameter takes effect.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The process above still has flaws, and isn’t very suitable for handling multiple tasks.&lt;br&gt;So use a very simple leader-follower model: create a process pool, randomly pick one process as the leader process, which listens for whether there is a new connection; if there is, another follower is promoted to leader to keep listening, while the original leader process goes off to handle the request of the new connection&lt;/p&gt;
+&lt;p&gt;socket multitask example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+
+
+class StreamSocketServer
+&amp;#123;
+    protected $address;
+    protected $port;
+
+    public function __construct($address=&amp;#39;127.0.0.1&amp;#39;,$port=8080)
+    &amp;#123;
+        $this-&amp;gt;address=$address;
+        $this-&amp;gt;port=$port;
+    &amp;#125;
+
+    public function startSocket()&amp;#123;
+        $socket=stream_socket_server(&amp;quot;tcp://&amp;quot;.$this-&amp;gt;address.&amp;quot;:&amp;quot;.$this-&amp;gt;port,$errno,$errstr);
+        $data=&amp;quot;&amp;#123;&amp;#39;code&amp;#39;:100020,&amp;#39;msg&amp;#39;:&amp;#39;ok&amp;#39;,&amp;#39;data&amp;#39;:&amp;#123;&amp;#39;name&amp;#39;:&amp;#39;艾瑞可erik&amp;#39;,&amp;#39;url&amp;#39;:&amp;#39;https://erik.xyz&amp;#39;&amp;#125;&amp;#125;&amp;quot;;
+        $pids=[];
+        for($i=0;$i&amp;lt;10;$i++)&amp;#123;
+            $pid=pcntl_fork();
+            $pids[]=$pid;
+            if($pid==0)&amp;#123;
+                for ( ; ; ) &amp;#123;
+                    $conn = stream_socket_accept($socket);
+
+                    $write_buffer = &amp;quot;HTTP/1.0 200 OK\r\nServer: my_server\r\nContent-Type: text/html; charset=utf-8\r\n\r\n&amp;quot;.$data;
+
+                    fwrite($conn, $write_buffer);
+
+                    fclose($conn);
+                &amp;#125;
+                exit(&amp;quot;结束了\n&amp;quot;);
+            &amp;#125;
+        &amp;#125;
+
+        foreach ($pids as $pid)&amp;#123;
+            pcntl_waitpid($pid,$status);
+        &amp;#125;
+    &amp;#125;
+
+    public function run()&amp;#123;
+        $this-&amp;gt;startSocket();
+    &amp;#125;
+&amp;#125;
+
+$socket=new StreamSocketServer();
+$socket-&amp;gt;run();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Running result&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/201909/2019-09-19_173231.jpg&#34; alt=&#34;multitask socket running&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Running 10 tasks is no problem, but multiple processes consume CPU resources. If there are many tasks and processes keep increasing, the server cannot bear it. At that point multiple processes are no longer suitable for handling large concurrency. So use IO multiplexing.&lt;/p&gt;
+&lt;h3 id=&#34;IO-Multiplexing&#34;&gt;&lt;a href=&#34;#IO-Multiplexing&#34; class=&#34;headerlink&#34; title=&#34;IO Multiplexing&#34;&gt;&lt;/a&gt;IO Multiplexing&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Blocking / non-blocking&lt;/p&gt;
+&lt;p&gt;These two concepts refer to the state of the process during IO: blocking IO means that before the call result is returned, the current thread is suspended; conversely, non-blocking means that before the result can be obtained immediately, the function will not block the current thread but returns immediately.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Synchronous / asynchronous&lt;/p&gt;
+&lt;p&gt;These two concepts refer to how the call returns a result: synchronous means that when a function call is issued, the call does not return until the result is obtained; conversely, after an asynchronous call is issued, the caller cannot get the result immediately — the part that actually handles the call notifies the caller through status, notification and callbacks once it is done.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Blocking and non-blocking&lt;/p&gt;
+&lt;p&gt;Before introducing IO multiplexing techniques, let’s introduce blocking and non-blocking first. In the WEB servers of the previous sections, calling the socket_accept function blocks the whole process until there is a new connection, and only then does the operating system wake the process to continue. In non-blocking mode, stream_socket_accept behaves differently: if there is no new connection, it will not block the process but return false immediately.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I/O multiplexing&lt;/p&gt;
+&lt;p&gt;Multiplexing (IO/Multiplexing): to improve the efficiency of data transmission over network communication lines, the technique of establishing multiple logical communication channels on one physical communication line and transmitting several signals at the same time is called multiplexing technology. For Sockets, any model that can handle multiple connections at the same time should be called multiplexing. The more commonly used IO models nowadays are select/poll/epoll/kqueue (there are also IO models like Apache’s, which uses a separate process/thread for each connection, but their efficiency is relatively poor and they break easily, so we won’t introduce them for now). Among these multiplexing modes, the asynchronous blocking/non-blocking modes have the best scalability and performance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;select polling &lt;/p&gt;
+&lt;p&gt;Using select polls the connection pool: when a connection is readable or writable, the select function returns the number of readable and writable connections, and then it polls the connection pool once more to find active connections and perform read and write operations&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;socket_select only supports socket-type resources, not stream-type resources, so here you need to use socket_create to create the socket resource&lt;/p&gt;
+&lt;p&gt;select polling example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+
+class SocketServer
+&amp;#123;
+    protected $address;
+    protected $port;
+
+    public function __construct($address = &amp;#39;127.0.0.1&amp;#39;, $port = &amp;#39;8080&amp;#39;)
+    &amp;#123;
+        $this-&amp;gt;address = $address;
+        $this-&amp;gt;port = $port;
+    &amp;#125;
+
+    public function startSocket()
+    &amp;#123;
+        $socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);
+        socket_bind($socket, $this-&amp;gt;address, $this-&amp;gt;port);
+        socket_listen($socket);
+        $reads = [];
+        $clients = [];
+        $writes = null;
+        $exceptions = null;
+        socket_set_nonblock($socket);
+        $write_buffer = &amp;quot;HTTP/1.0 200 OK\r\nServer: my_server\r\nContent-Type: text/html; charset=utf-8\r\n\r\n&amp;#123;&amp;#39;code&amp;#39;:100,&amp;#39;data&amp;#39;:&amp;#123;&amp;#39;name&amp;#39;:&amp;#39;艾瑞可erik&amp;#39;&amp;#125;,&amp;#39;msg&amp;#39;:&amp;#39;ok&amp;#39;&amp;#125;&amp;quot;;
+        for (; ;) &amp;#123;
+            $reads = array_merge(array($socket), $clients);
+            $activity_counts = socket_select($reads, $writes, $exceptions, 0);
+            if ($activity_counts &amp;gt; 0) &amp;#123;
+                if (($conn = socket_accept($socket)) !== false) &amp;#123;
+                    $clients[] = $conn;
+                &amp;#125;
+            &amp;#125;
+            $this-&amp;gt;client($clients,$write_buffer);
+        &amp;#125;
+    &amp;#125;
+
+    /**
+     * @param $clients
+     * @param $write_buffer
+     */
+    public function client($clients,$write_buffer)&amp;#123;
+        $length = count($clients);
+        for ($i = 0; $i &amp;lt; $length; $i++) &amp;#123;
+            $client = $clients[$i];
+            if (($read_buff = socket_read($client, 1024))!=false) &amp;#123;
+                socket_write($client, $write_buffer);
+                socket_close($client);
+                break;
+            &amp;#125;
+        &amp;#125;
+    &amp;#125;
+
+    public function run()
+    &amp;#123;
+        $this-&amp;gt;startSocket();
+    &amp;#125;
+&amp;#125;
+
+$sock = new SocketServer();
+$sock-&amp;gt;run();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Although select can monitor multiple connections, it can monitor at most 1024 connections. This was improved in poll, but select and poll both essentially monitor by polling, which means that when tens of thousands of connections are being monitored, even if only one connection is active, all tens of thousands of connections still have to be traversed. Obviously this is an enormous waste of performance, and the arrival of epoll solved this problem completely&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;epoll&lt;br&gt;epoll is not implemented by a single function, but by several functions. We won’t discuss the epoll-related functions here, because PHP does not provide them — but it does provide the libevent extension based on the libevent library, as well as the event extension based on the libevent library. The libevent library implements the Reactor model; here we only give a simple introduction to the Reactor model.&lt;/p&gt;
+&lt;p&gt;The Reactor model contains several components: handles, an event dispatcher, and event handlers.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A handle is a file descriptor; in Socket programming it is the socket resource created with socket_create.&lt;/li&gt;
+&lt;li&gt;The event dispatcher runs an event loop; the event loop is implemented through IO multiplexing techniques such as epoll&lt;code&gt;Select&lt;/code&gt;Poll, listening for whether the event a handle expects has occurred, and dispatching the event to the event handler if it has.&lt;/li&gt;
+&lt;li&gt;The event handler processes the relevant logic when the event occurs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  The libevent library already implements the Reactor model; just install the event extension.&lt;/p&gt;
+&lt;p&gt;  Example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+
+$address = &amp;#39;127.0.0.1&amp;#39;;
+$port = 8080;
+
+//创建句柄
+$data = &amp;quot;&amp;#123;&amp;#39;code&amp;#39;:100020,&amp;#39;msg&amp;#39;:&amp;#39;ok&amp;#39;,&amp;#39;data&amp;#39;:&amp;#123;&amp;#39;name&amp;#39;:&amp;#39;艾瑞可erik&amp;#39;,&amp;#39;url&amp;#39;:&amp;#39;https://erik.xyz&amp;#39;&amp;#125;&amp;#125;&amp;quot;;
+$write_buffer = &amp;quot;HTTP/1.0 200 OK\r\nServer: my_server\r\nContent-Type: text/html; charset=utf-8\r\n\r\n&amp;quot; . $data;
+$socket = @stream_socket_server(&amp;quot;tcp://&amp;quot; . $address . &amp;quot;:&amp;quot; . $port, $errno, $errstr);
+stream_set_blocking($socket, 0);
+//创建事件循环器
+$event_base = new EventBase();
+//创建事件，并指定事件监听的事件类型及注册事件处理器
+$event = new Event($event_base, $socket, Event::READ | Event::PERSIST, function ($socket) use (&amp;amp;$event_base, $write_buffer) &amp;#123;
+    $conn = stream_socket_accept($socket);
+    fwrite($conn, $write_buffer);
+    fclose($conn);
+&amp;#125;, $socket);
+//向循环器中添加事件
+$event-&amp;gt;add();
+$event_base-&amp;gt;loop();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Running a request in the browser, or checking it with a tool.&lt;/p&gt;
+&lt;p&gt;Running result&lt;br&gt;&lt;img src=&#34;/img/201909/2019-09-19_190045.jpg&#34; alt=&#34;epoll running result&#34;&gt;&lt;/p&gt;
+&lt;p&gt;At this point a question needs to be considered: what if the process dies?&lt;/p&gt;
+&lt;p&gt;Then you need process guarding.&lt;/p&gt;
+&lt;p&gt;Generally, processes with PPID 0 are kernel-mode processes. Generally, processes with PPID 1 are daemons&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The standard process for creating a daemon&lt;br&gt;To turn the WEB server process into a daemon, becoming a daemon has several standard steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set the file creation mask, generally to 0, umask(0)&lt;/li&gt;
+&lt;li&gt;pcntl_fork a child process and exit immediately; the purpose is to let the child process inherit the process group ID and obtain a new process ID, which ensures that the child process is definitely not the process group leader, because a process group leader cannot create a new session&lt;/li&gt;
+&lt;li&gt;posix_setsid creates a new session and a new process group, becomes the session leader and process group leader, and detaches from the original controlling terminal, so the process will not be interrupted by control signals from the original terminal&lt;/li&gt;
+&lt;li&gt;pcntl_fork: forking once more is not mandatory, but on System-V based systems some people suggest forking again to avoid opening terminal devices, making the program more portable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Daemon example&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; &amp;lt;?php
+  header(&amp;#39;Content-type:text/html;charset:utf-8&amp;#39;);
+  //守护进程
+  function daemon()&amp;#123;
+      umask(0);
+      //创建进程，并退出进程
+      if(pcntl_fork())&amp;#123;
+          exit(&amp;quot;退出进程\n&amp;quot;);
+      &amp;#125;
+
+      //创建新的会话和进程组,并退出原来的控制端
+      posix_setsid();
+
+      //再次创建进程，并退出
+      if(pcntl_fork())&amp;#123;
+          exit(&amp;quot;再次创建进程，并退出\n&amp;quot;);
+      &amp;#125;
+  &amp;#125;
+  daemon();
+
+  $address = &amp;#39;127.0.0.1&amp;#39;;
+  $port = 8080;
+
+  //创建句柄
+  $data = &amp;quot;&amp;#123;&amp;#39;code&amp;#39;:100020,&amp;#39;msg&amp;#39;:&amp;#39;ok&amp;#39;,&amp;#39;data&amp;#39;:&amp;#123;&amp;#39;name&amp;#39;:&amp;#39;艾瑞可erik&amp;#39;,&amp;#39;url&amp;#39;:&amp;#39;https://erik.xyz&amp;#39;&amp;#125;&amp;#125;&amp;quot;;
+  $write_buffer = &amp;quot;HTTP/1.0 200 OK\r\nServer: my_server\r\nContent-Type: text/html; charset=utf-8\r\n\r\n&amp;quot; . $data;
+  $socket = @stream_socket_server(&amp;quot;tcp://&amp;quot; . $address . &amp;quot;:&amp;quot; . $port, $errno, $errstr);
+  stream_set_blocking($socket, 0);
+  //创建事件循环器
+  $event_base = new EventBase();
+  //创建事件，并指定事件监听的事件类型及注册事件处理器
+  $event = new Event($event_base, $socket, Event::READ | Event::PERSIST, function ($socket) use (&amp;amp;$event_base, $write_buffer) &amp;#123;
+      $conn = stream_socket_accept($socket);
+      fwrite($conn, $write_buffer);
+      fclose($conn);
+  &amp;#125;, $socket);
+  //向循环器中添加事件
+  $event-&amp;gt;add();
+  $event_base-&amp;gt;loop();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;  Running result&lt;/p&gt;
+&lt;p&gt;  &lt;img src=&#34;/img/201909/2019-09-19_213853.jpg&#34; alt=&#34;daemon running result&#34;&gt;&lt;/p&gt;
+&lt;p&gt;  So now that we have a daemon, how do we restart or stop it? Call a function to send a signal&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;posix_kill&lt;br&gt;Function prototype: bool posix_kill ( int $pid , int $sig )&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pid: process ID&lt;/li&gt;
+&lt;li&gt;sig: a system-predefined signal constant&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;pcntl_signal&lt;br&gt;Function prototype: bool pcntl_signal ( int $signo , callback $handler [, bool $restart_syscalls = true ] )&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;signo: a system-predefined signal constant&lt;/li&gt;
+&lt;li&gt;handler: the signal handler, a callback function&lt;/li&gt;
+&lt;li&gt;restart_syscalls: whether the system call is re-invoked when the process is interrupted by a signal during a system call; generally defaults to true&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  So based on the steps above, let me put together an integrated version. The complete version of socket processes and multi-process control&lt;/p&gt;
+&lt;p&gt; EventServer&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; &amp;lt;?php
+
+class EventServer
+&amp;#123;
+    public $event_base;
+    public $events = [];
+
+    public function __construct()
+    &amp;#123;
+        $this-&amp;gt;event_base = new EventBase();
+    &amp;#125;
+
+    public function add($fd, $what, $callback, $callback_arg)
+    &amp;#123;
+        $event = new Event($this-&amp;gt;event_base, $fd, $what, $callback, $callback_arg);
+        $this-&amp;gt;events[intval($fd)] = $event;
+        $event-&amp;gt;add();
+    &amp;#125;
+
+    public function remove($fb)
+    &amp;#123;
+        $event = $this-&amp;gt;events[intval($fb)];
+        $event-&amp;gt;free();
+    &amp;#125;
+
+    public function loop()
+    &amp;#123;
+        $this-&amp;gt;event_base-&amp;gt;loop();
+    &amp;#125;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;StreamServer&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+
+require &amp;quot;EventServer.php&amp;quot;;
+
+class StreamServer
+&amp;#123;
+    protected $ip = &amp;#39;127.0.0.1&amp;#39;;
+    protected $port = 8080;
+    protected $path = &amp;#39;./pid.txt&amp;#39;;
+    protected $event;
+    protected $data = &amp;quot;&amp;#123;&amp;#39;code&amp;#39;:100020,&amp;#39;msg&amp;#39;:&amp;#39;ok&amp;#39;,&amp;#39;data&amp;#39;:&amp;#123;&amp;#39;name&amp;#39;:&amp;#39;艾瑞可erik&amp;#39;,&amp;#39;url&amp;#39;:&amp;#39;https://erik.xyz&amp;#39;&amp;#125;&amp;#125;&amp;quot;;
+    protected $write_buffer = &amp;quot;HTTP/1.0 200 OK\r\nServer: my_server\r\nContent-Type: text/html; charset=utf-8\r\n\r\n&amp;quot;;
+
+
+    public static function daemon()
+    &amp;#123;
+        umask(0);
+
+        $pid = pcntl_fork();
+
+        if ($pid) &amp;#123;
+            exit(0);
+        &amp;#125; elseif ($pid &amp;lt; 0) &amp;#123;
+            die(&amp;quot;进程启动失败\n&amp;quot;);
+        &amp;#125;
+
+        $sid = posix_setsid();
+
+        $pid = pcntl_fork();
+
+        if ($pid) &amp;#123;
+            exit(0);
+        &amp;#125; elseif ($pid &amp;lt; 0) &amp;#123;
+            die(&amp;quot;进程启动失败\n&amp;quot;);
+        &amp;#125;
+
+        if ($sid &amp;lt; 0) &amp;#123;
+            die(&amp;quot;创建服务失败\n&amp;quot;);
+        &amp;#125;
+    &amp;#125;
+
+    public function __construct($ip, $port = 80)
+    &amp;#123;
+        $this-&amp;gt;ip = $ip;
+        $this-&amp;gt;port = $port;
+        $this-&amp;gt;event = new EventServer();
+    &amp;#125;
+
+    /**
+     * 启动
+     */
+    public function run()
+    &amp;#123;
+        if ($GLOBALS[&amp;#39;argc&amp;#39;] &amp;gt; 1) &amp;#123;
+            $this-&amp;gt;sendSignal();
+            exit(0);
+        &amp;#125; else &amp;#123;
+            self::daemon();
+        &amp;#125;
+
+        $this-&amp;gt;installSignalHandler();
+        $this-&amp;gt;recordPid();
+        $this-&amp;gt;start();
+    &amp;#125;
+
+    //存储信号
+    public function sendSignal()
+    &amp;#123;
+        if (posix_kill($this-&amp;gt;getPid(), 0)) &amp;#123;
+            if (strpos($GLOBALS[&amp;#39;argv&amp;#39;][1], &amp;quot;stop&amp;quot;) !== false) &amp;#123;
+                posix_kill($this-&amp;gt;getPid(), SIGUSR1);
+            &amp;#125;
+        &amp;#125;
+    &amp;#125;
+
+    //启动进程
+    public function start()
+    &amp;#123;
+        $domain = sprintf(&amp;quot;tcp://%s:%d&amp;quot;, $this-&amp;gt;ip, $this-&amp;gt;port);
+
+        $fd = stream_socket_server($domain, $errno, $errstr);
+
+        if (!$fd) &amp;#123;
+            die(&amp;quot;$errno $errstr\n&amp;quot;);
+        &amp;#125;
+
+        stream_set_blocking($fd, 0);
+
+        $this-&amp;gt;event-&amp;gt;add($fd, Event::READ | Event::PERSIST, [$this, &amp;#39;requestHandler&amp;#39;], $fd);
+
+        $this-&amp;gt;event-&amp;gt;loop();
+    &amp;#125;
+
+    /**响应信息
+     * @param $fd
+     */
+    public function requestHandler($fd)
+    &amp;#123;
+        $write_buffer = $this-&amp;gt;write_buffer . $this-&amp;gt;data;
+        $conn = stream_socket_accept($fd);
+        fwrite($conn, $write_buffer);
+        fclose($conn);
+    &amp;#125;
+
+    //添加信号
+    public function installSignalHandler()
+    &amp;#123;
+        $this-&amp;gt;event-&amp;gt;add(SIGUSR1, Event::SIGNAL, [$this, &amp;quot;handler&amp;quot;], SIGUSR1);
+    &amp;#125;
+
+    /**终止信号
+     * @param $signo
+     */
+    public function handler($signo)
+    &amp;#123;
+        switch ($signo) &amp;#123;
+            default:
+            case SIGUSR1:
+                $this-&amp;gt;event-&amp;gt;remove($signo);
+                $this-&amp;gt;stop();
+                break;
+        &amp;#125;
+    &amp;#125;
+
+    public function stop()
+    &amp;#123;
+        exit(&amp;quot;终止信号\n&amp;quot;);
+    &amp;#125;
+
+    public function getPid()
+    &amp;#123;
+        return file_get_contents($this-&amp;gt;path);
+    &amp;#125;
+
+    private function recordPid()
+    &amp;#123;
+        file_put_contents($this-&amp;gt;path, posix_getpid());
+    &amp;#125;
+&amp;#125;
+
+$server = new StreamServer(&amp;quot;127.0.0.1&amp;quot;, 8080);
+$server-&amp;gt;run();
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Running result&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/201909/2019-09-19_232908.jpg&#34; alt=&#34;final execution result&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="socket通信" />
+        <category term="socket多进程" />
+        <category term="socket" />
+        <updated>2019-09-18T05:31:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2019/09/18/socket-jin-cheng-tong-xin-ji-zhi/</id>
         <title>socket进程通信及多进程</title>

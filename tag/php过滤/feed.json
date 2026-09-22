@@ -5,8 +5,19 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
-            "id": "https://erik.xyz/2015/05/06/php-zhong-ding-yi-han-shu-guo-lv-zi-fu-chuan/",
-            "url": "https://erik.xyz/2015/05/06/php-zhong-ding-yi-han-shu-guo-lv-zi-fu-chuan/",
+            "id": "https://erik.xyz/2015/05/06/php-guo-lv-zi-fu-chuan-han-shu-en/",
+            "url": "https://erik.xyz/2015/05/06/php-guo-lv-zi-fu-chuan-han-shu-en/",
+            "title": "Defining a string filtering function in PHP",
+            "date_published": "2015-05-05T23:11:00.000Z",
+            "content_html": "<p>In the course of PHP website development, you often have to filter comments or article content. It can be controlled in the backend, with the frontend calling the database, so that filtering of the submitted data can be modified in time. The principle I’ve come across here is to keep the banned phrases in an array, use a split function to break the array apart, and then use a regular expression function to test the banned phrases. <a href=\"http://www.erik.xyz/phpstr/\"><img src=\"http://i2.tietuku.com/ee70d81e2a5caeb7.png\" alt=\"php filter\"></a></p>\n",
+            "tags": [
+                "php过滤",
+                "过滤"
+            ]
+        },
+        {
+            "id": "https://erik.xyz/2015/05/06/php-guo-lv-zi-fu-chuan-han-shu/",
+            "url": "https://erik.xyz/2015/05/06/php-guo-lv-zi-fu-chuan-han-shu/",
             "title": "php中定义函数过虑字符串",
             "date_published": "2015-05-05T23:11:00.000Z",
             "content_html": "<p>在php网站开发过程中，经常会遇到过滤评论或者文章内容。在后台可控制，前台调用数据库，以便及时修改，控制提交的数据进行过滤。 这边我所接触到的原理是把禁用语句保存在数组，用分割函数来拆分数组，然后用正则表达式函数对禁用语句判断。 <a href=\"http://www.erik.xyz/phpstr/\"><img src=\"http://i2.tietuku.com/ee70d81e2a5caeb7.png\" alt=\"php过滤\"></a></p>\n",

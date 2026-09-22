@@ -5,6 +5,19 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2017/10/13/you-guan-composer-en/",
+            "url": "https://erik.xyz/2017/10/13/you-guan-composer-en/",
+            "title": "About Composer",
+            "date_published": "2017-10-13T13:19:00.000Z",
+            "content_html": "<p>Composer is a dependency management tool for PHP 5.3 and above. Simply put, in Composer you can find all kinds of excellent third-party extensions. It can enrich your project and save development time.<br>First you need to install Composer on your local Windows machine.<br>Once the installation succeeds, use a command window to install it — open the directory and run:  echo @php “%~dp0composer.phar” %*&gt;composer.bat<br>Close the command window and reopen it, then run: composer. The result is shown in the figure.<br><a href=\"http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg\"><img src=\"http://i1.cfimg.com/7078/9eee8fc4cad0e8bfs.jpg\" alt=\"About composer\"></a><br><span id=\"more\"></span><br>This means the installation succeeded. Next, switch the mirror address to a domestic one.<br>Run: composer config -g repo.packagist composer <a href=\"https://packagist.phpcomposer.com\">https://packagist.phpcomposer.com</a><br>Then run composer install for a global installation.<br><a href=\"http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg\"><img src=\"http://i1.cfimg.com/7078/a199b856c2f065e1s.jpg\" alt=\"composer install\"></a><br>By the way, run this again: composer update   to update.<br><a href=\"http://i1.cfimg.com/7078/a306c860af2fae0as.jpg\"><img src=\"http://i1.cfimg.com/7078/a306c860af2fae0as.jpg\" alt=\"composer update\"></a><br>Then go into your project directory and run: composer init   to start creating your project’s composer.json.<br><a href=\"http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg\"><img src=\"http://i1.cfimg.com/7078/5fb4bf0bc075372as.jpg\" alt=\"About composer\"></a></p>\n",
+            "tags": [
+                "composer",
+                "composer安装",
+                "composer配置",
+                "项目创建composer"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2017/10/13/you-guan-composer/",
             "url": "https://erik.xyz/2017/10/13/you-guan-composer/",
             "title": "有关composer",

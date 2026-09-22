@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2023/08/21/datahub-install-en/",
+            "url": "https://erik.xyz/2023/08/21/datahub-install-en/",
+            "title": "DataHub Installation Tutorial",
+            "date_published": "2023-08-21T13:30:00.000Z",
+            "content_html": "<p>I stumbled on DataHub and it looked pretty good, so here’s a single-node deployment.</p>\n<ol>\n<li><p>Install Docker locally, cd into the /opt or home directory, and run the following commands (blocked in China):</p>\n<pre><code> git clone https://github.com/linkedin/datahub.git\n\n cd /opt/datahub/docker\n\n datahub docker quickstart -f ./quickstart/docker-compose-without-neo4j.quickstart.yml\n\n source ./quickstart.sh\n</code></pre></li>\n</ol>\n<span id=\"more\"></span>\n<ol>\n<li><p>Run the following commands</p>\n<pre><code> python3 -m pip install --upgrade pip wheel setuptools\n python3 -m pip uninstall datahub acryl-datahub || true \n python3 -m pip install --upgrade acryl-datahub\n datahub version\n datahub docker quickstart\n</code></pre><ul>\n<li><p>Turned out pip wasn’t configured, so I just downloaded <a href=\"https://bootstrap.pypa.io/get-pip.py -o get-pip.py\">get-pip.py</a> and ran the following command to install pip</p>\n<p>  sudo python3 get-pip.py  </p>\n</li>\n<li><p>Once it installs successfully, run the commands above in order. The result is shown below</p>\n</li>\n</ul>\n</li>\n</ol>\n<p><img src=\"/img/202308/20230821213432.png\" alt=\"https://erik.xyz\"></p>\n<ol>\n<li><p>Use DataHub to import data</p>\n<pre><code>pip install pymysql\ncd /opt/datahub/docker/ingestion\n</code></pre></li>\n</ol>\n<p><img src=\"/img/202308/20230821213951.png\" alt=\"https://erik.xyz\"></p>\n<ul>\n<li><p>Copy sample_recipe.yml and edit the config file:</p>\n<pre><code>  vi recipe.yml\n</code></pre><p><img src=\"/img/202308/20230821214242.png\" alt=\"https://erik.xyz\"></p>\n</li>\n<li><p>Edit the config<br><img src=\"/img/202308/20230821214729.png\" alt=\"\"></p>\n<ul>\n<li>Specifically:</li>\n</ul>\n</li>\n</ul>\n<pre><code>source:\n  type: &quot;mysql&quot;\n  config:\n    username: &quot;root&quot;\n    password: &quot;root&quot;\n    database: &quot;games_paly&quot;\n    host_port: &quot;127.0.0.1:3306&quot;\nsink:\n  type: &quot;datahub-rest&quot;\n  config:\n    server: &#39;http://localhost:8080&#39;\n</code></pre><ol>\n<li><p>Import the data</p>\n<p>  datahub ingest -c recipe.yml</p>\n</li>\n</ol>\n",
+            "tags": [
+                "datahub",
+                "datahub安装"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2023/08/21/datahub-install/",
             "url": "https://erik.xyz/2023/08/21/datahub-install/",
             "title": "datahub安装教程",

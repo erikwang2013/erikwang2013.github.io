@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,27 +502,21 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
     <entry>
-        <id>https://erik.xyz/2015/06/18/xiang-ying-shi-bu-ju-ru-he-ce-shi-bu-tong-fen-bian-lv/</id>
-        <title>响应式布局如何测试不同分辨率</title>
-        <link rel="alternate" href="https://erik.xyz/2015/06/18/xiang-ying-shi-bu-ju-ru-he-ce-shi-bu-tong-fen-bian-lv/"/>
-        <content type="html">&lt;p&gt;最近在做响应式布局适应不同分辨率的屏幕，太痛苦了，摸着石头过河。之前没有做过这块，手机端又不是很在行，ipad/iphone/三星……一大堆不同的屏幕，如何测试呢，总不能买一大堆设备吧。&lt;/p&gt;
-&lt;p&gt;偶然间发现谷歌浏览器(最新版)可以缩小来实现，这样又有问题了，分辨率是多少呢？发现新方法了，废话不多说了，直接上教程。 1.在谷歌浏览器打开你要测试的网页按键盘F12，打开网页调试   2.点击调试工具右上角形似菜单的图标   3.这时候你会发现紧挨着浏览器底部有一排英文菜单   4.把菜单往上拉出来，点击第三个菜单   5.点击打开菜单下面的手机标示   6.如此便是手机设计效果   7.有2个地方可以选择不同的分辨率及屏幕对应的像素   8.下次打开就直接点击F12，然后左上角的手机标示就可以切换&lt;/p&gt;
+        <id>https://erik.xyz/2015/06/18/ce-shi-xiang-ying-shi-fen-bian-lv-en/</id>
+        <title>How to Test a Responsive Layout at Different Resolutions</title>
+        <link rel="alternate" href="https://erik.xyz/2015/06/18/ce-shi-xiang-ying-shi-fen-bian-lv-en/"/>
+        <content type="html">&lt;p&gt;I’ve been doing responsive layouts that adapt to screens of different resolutions lately, and it’s been really painful — crossing the river by feeling for the stones. I hadn’t done this before, and I’m not all that good with the mobile side either: iPad/iPhone/Samsung…… a whole pile of different screens. How are you supposed to test them? You can’t exactly go and buy a pile of devices.&lt;/p&gt;
+&lt;p&gt;By chance I discovered that Google Chrome (the latest version) can do it by shrinking, but then another problem came up: what resolution is it? I’ve found a new method, so without further nonsense, straight to the tutorial. 1. Open the web page you want to test in Google Chrome and press F12 on the keyboard to open the page debugger   2. Click the icon in the top-right corner of the debugging tool that looks like a menu   3. At this point you’ll notice a row of English menus right next to the bottom of the browser   4. Pull the menu up and click the third menu   5. Click the phone icon below the opened menu   6. That gives you the mobile design effect   7. There are 2 places where you can choose different resolutions and the pixels that correspond to the screen   8. Next time you open it, just press F12 and then the phone icon in the top-left corner lets you switch&lt;/p&gt;
 </content>
-        <category term="css" />
         <category term="web" />
+        <category term="css" />
         <category term="html" />
         <category term="响应式分辨率" />
         <category term="响应式调试" />
@@ -524,9 +524,125 @@
         <updated>2015-06-17T16:04:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2015/01/29/display-inline-block-text-align-justify-xia-lie-biao-de-liang-duan-dui-qi-bu-ju/</id>
+        <id>https://erik.xyz/2015/06/18/ce-shi-xiang-ying-shi-fen-bian-lv/</id>
+        <title>响应式布局如何测试不同分辨率</title>
+        <link rel="alternate" href="https://erik.xyz/2015/06/18/ce-shi-xiang-ying-shi-fen-bian-lv/"/>
+        <content type="html">&lt;p&gt;最近在做响应式布局适应不同分辨率的屏幕，太痛苦了，摸着石头过河。之前没有做过这块，手机端又不是很在行，ipad/iphone/三星……一大堆不同的屏幕，如何测试呢，总不能买一大堆设备吧。&lt;/p&gt;
+&lt;p&gt;偶然间发现谷歌浏览器(最新版)可以缩小来实现，这样又有问题了，分辨率是多少呢？发现新方法了，废话不多说了，直接上教程。 1.在谷歌浏览器打开你要测试的网页按键盘F12，打开网页调试   2.点击调试工具右上角形似菜单的图标   3.这时候你会发现紧挨着浏览器底部有一排英文菜单   4.把菜单往上拉出来，点击第三个菜单   5.点击打开菜单下面的手机标示   6.如此便是手机设计效果   7.有2个地方可以选择不同的分辨率及屏幕对应的像素   8.下次打开就直接点击F12，然后左上角的手机标示就可以切换&lt;/p&gt;
+</content>
+        <category term="web" />
+        <category term="css" />
+        <category term="html" />
+        <category term="响应式分辨率" />
+        <category term="响应式调试" />
+        <category term="自适应屏幕" />
+        <updated>2015-06-17T16:04:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2015/01/29/display-inline-block-justify-en/</id>
+        <title>Two-End Alignment Layout for Lists with display:inline-block/text-align:justify</title>
+        <link rel="alternate" href="https://erik.xyz/2015/01/29/display-inline-block-justify-en/"/>
+        <content type="html">&lt;p&gt;by &lt;a href=&#34;http://www.zhangxinxu.com/&#34;&gt;zhangxinxu&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-What-Two-End-Alignment-for-List-Elements-Means&#34;&gt;&lt;a href=&#34;#1-What-Two-End-Alignment-for-List-Elements-Means&#34; class=&#34;headerlink&#34; title=&#34;1. What Two-End Alignment for List Elements Means&#34;&gt;&lt;/a&gt;1. What Two-End Alignment for List Elements Means&lt;/h3&gt;&lt;p&gt;First, let’s talk about what two-end alignment is. The screenshot below is the right edge of a left-aligned English paragraph in Word:&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_214827.png&#34; alt=&#34;Left-aligned text in Word, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Left-aligned text in Word, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt; &lt;/p&gt;
+&lt;p&gt;As you can see, the right side is ragged. Now select the text and click the justify button at the top of Word, as shown below:&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_215036.png&#34; alt=&#34;Clicking the justify button in Word, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Clicking the justify button in Word, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt; &lt;/p&gt;
+&lt;p&gt;The right edge of the text then looks like this:&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_215318.png&#34; alt=&#34;Justified text in Word, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Justified text in Word, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt; &lt;/p&gt;
+&lt;p&gt;The right side is now perfectly aligned, meaning the whole block of text is displayed flush against both the left and the right edge. And here, “list elements” refers to repeated list elements with a similar structure, for example the image list on QQ Alumni:&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201010/2010-10-28_215059.jpg&#34; alt=&#34;List layout illustration, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;List layout illustration, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt; &lt;/p&gt;
+&lt;p&gt;Two-end alignment for list elements means that the first element of each row lines up with the left edge of the parent container, and the last element lines up with the right edge of the parent container. For example, the hot-selling items on the Taobao homepage, or the popular shares list on Renren (screenshot below):&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_221107.png&#34; alt=&#34;Two-end aligned popular shares list on Renren, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Two-end aligned popular shares list on Renren, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt; &lt;/p&gt;
+&lt;p&gt;I think that when we build pages day to day, we often get design mockups with comfortable two-end aligned list elements too.&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-How-to-Achieve-Two-End-Alignment-for-Elements&#34;&gt;&lt;a href=&#34;#2-How-to-Achieve-Two-End-Alignment-for-Elements&#34; class=&#34;headerlink&#34; title=&#34;2. How to Achieve Two-End Alignment for Elements&#34;&gt;&lt;/a&gt;2. How to Achieve Two-End Alignment for Elements&lt;/h3&gt;&lt;p&gt;In CSS2, &lt;code&gt;text-align&lt;/code&gt; has a value called &lt;code&gt;justify&lt;/code&gt;, which means “align to both edges”. What it achieves is making a line of text display aligned at both ends (the text content must exceed one line). If your browser’s address bar starts with &lt;a href=&#34;http://www.zhangxinxu.com/&#34;&gt;http://www.zhangxinxu.com/&lt;/a&gt;, you’ll find that every one of my articles is displayed justified, so sometimes the text ends up looking very sparse, as shown below.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_211400.png&#34; alt=&#34;Sparse arrangement under justified text, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Sparse arrangement under justified text, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The purpose &lt;code&gt;text-align&lt;/code&gt; was created for is controlling the alignment and display of text — you can tell that from the property name. From how it renders and parses, it is mainly used to control the alignment and display of inline-level elements or inline-block elements, such as text nested inside inline tags, images, input form controls, and so on; it has no effect on block-level elements. So, for list elements, in theory we could just make the originally block-level list elements inline or inline-block and easily achieve two-end alignment. In practice, though, making them inline is clearly impossible, because you can’t give list elements a fixed width and height or set vertical spacing — the list elements would be a puddle of mud, useless for building a house; and making them inline-block also faces obstacle after obstacle, because IE6/7 doesn’t truly support the inline-block property. So what looks simple in theory still needs careful planning in practice.&lt;/p&gt;
+&lt;h3 id=&#34;3-How-Two-End-Alignment-for-List-Elements-Is-Done-Today&#34;&gt;&lt;a href=&#34;#3-How-Two-End-Alignment-for-List-Elements-Is-Done-Today&#34; class=&#34;headerlink&#34; title=&#34;3. How Two-End Alignment for List Elements Is Done Today&#34;&gt;&lt;/a&gt;3. How Two-End Alignment for List Elements Is Done Today&lt;/h3&gt;&lt;p&gt;There are plenty of methods. ① First, look at the example of the hot-selling items on the &lt;a href=&#34;http://www.taobao.com/#J_IndexP4P&#34;&gt;Taobao homepage&lt;/a&gt;, shown in the screenshot below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_223246.png&#34; alt=&#34;Hot-selling items on the Taobao homepage, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Hot-selling items on the Taobao homepage, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt; &lt;/p&gt;
+&lt;p&gt;Its list layout uses the traditional float layout, and it forces the parent container wider via the &lt;code&gt;width&lt;/code&gt; property to produce the apparent “two-end alignment” effect.&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_223616.png&#34; alt=&#34;Widening the container on the Taobao homepage to achieve two-end alignment, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Widening the container on the Taobao homepage to achieve two-end alignment, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt; &lt;/p&gt;
+&lt;p&gt;② Next, look at how Renren’s popular shares achieve the two-end alignment effect. As I mentioned in my earlier article “&lt;a href=&#34;http://www.zhangxinxu.com/wordpress/?p=1194&#34;&gt;List layout based on display:inline-block&lt;/a&gt;“, the list layout on Renren here is an inline-block layout.&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_223940.png&#34; alt=&#34;Renren popular shares inline-block layout, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Renren popular shares inline-block layout, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt; &lt;/p&gt;
+&lt;p&gt;It also achieves the apparent “two-end alignment” effect by widening the parent tag, but it doesn’t widen it through the &lt;code&gt;width&lt;/code&gt; property — it uses a negative margin (I personally recommend a negative margin over a fixed width):&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_224432.png&#34; alt=&#34;Widening the parent container with a negative margin, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Widening the parent container with a negative margin, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt; &lt;/p&gt;
+&lt;p&gt;③ There is also a method using &lt;code&gt;white-space: nowrap&lt;/code&gt;. This method has to be used on top of an inline-block layout, and is generally used to achieve the apparent “two-end alignment” effect for single-row list elements. &lt;code&gt;white-space: nowrap&lt;/code&gt; forces list elements not to wrap, so you don’t need to set the width of the parent tag container or widen the parent container with a negative &lt;code&gt;margin&lt;/code&gt; or the like. I won’t go into detail here; someday I’d like to properly discuss &lt;code&gt;white-space: nowrap&lt;/code&gt;, a very useful CSS declaration. Those are the common methods today for achieving the apparent “two-end alignment” effect for list elements. So, isn’t each one of them a hassle — first, arranging the list elements is already troublesome in itself (fixed width, computing spacing), then you have to artificially widen the parent container, and on top of that the ancestor elements need overflow hidden (&lt;code&gt;overflow:hidden&lt;/code&gt;), oh, my lady gaga. I think that’s why there are ranting front-end engineers on the web roaring about overtime (about that picture, you can click&lt;br&gt;&lt;a href=&#34;http://ww4.sinaimg.cn/bmiddle/41718533jw6df4iuu2d6qj.jpg&#34;&gt;here&lt;/a&gt;&lt;br&gt;to view it). In fact, all this work can be done while drinking coffee and browsing Weibo — the key is to use &lt;code&gt;text-align:justify&lt;/code&gt; to do the two-end alignment layout.&lt;/p&gt;
+&lt;h3 id=&#34;4-The-Benefits-of-text-align-justify-for-Two-End-Alignment&#34;&gt;&lt;a href=&#34;#4-The-Benefits-of-text-align-justify-for-Two-End-Alignment&#34; class=&#34;headerlink&#34; title=&#34;4. The Benefits of text-align:justify for Two-End Alignment&#34;&gt;&lt;/a&gt;4. The Benefits of text-align:justify for Two-End Alignment&lt;/h3&gt;&lt;p&gt;The benefit is that it’s simple and convenient. With just one simple &lt;code&gt;text-align:justify&lt;/code&gt; declaration, the elements inside automatically lay out evenly spaced and aligned at both ends! There’s no need to calculate the margin spacing between each list element, let alone modify the parent container’s width.&lt;/p&gt;
+&lt;h3 id=&#34;5-About-display-inline-block-List-Layout&#34;&gt;&lt;a href=&#34;#5-About-display-inline-block-List-Layout&#34; class=&#34;headerlink&#34; title=&#34;5. About display:inline-block List Layout&#34;&gt;&lt;/a&gt;5. About display:inline-block List Layout&lt;/h3&gt;&lt;p&gt;The content of this article is based on &lt;code&gt;display:inline-block&lt;/code&gt; list layout, so if you only know float layout I suggest you carefully read my earlier article “&lt;a href=&#34;http://www.zhangxinxu.com/wordpress/?p=1194&#34;&gt;Goodbye, float layout – display:inline-block based list layout&lt;/a&gt;“. That article explains in great detail the past and present of &lt;code&gt;display:inline-block&lt;/code&gt; list layout, and I believe you’ll get a lot out of it. You may have noticed that at the end of that article I already briefly mentioned two-end alignment under &lt;code&gt;text-align:justify&lt;/code&gt;. However, there I only showed a simple &lt;a href=&#34;http://www.zhangxinxu.com/study/201011/inline-block-text-justify-layout.html&#34;&gt;example&lt;/a&gt;; I did not elaborate on some display issues (such as the tragic last row), nor on the caveats for implementing it in IE6/7 and IE8. This article is here to solve those problems.&lt;/p&gt;
+&lt;h3 id=&#34;6-Two-End-Alignment-Layout-for-Lists-with-display-inline-block-text-align-justify&#34;&gt;&lt;a href=&#34;#6-Two-End-Alignment-Layout-for-Lists-with-display-inline-block-text-align-justify&#34; class=&#34;headerlink&#34; title=&#34;6. Two-End Alignment Layout for Lists with display:inline-block/text-align:justify&#34;&gt;&lt;/a&gt;6. Two-End Alignment Layout for Lists with display:inline-block/text-align:justify&lt;/h3&gt;&lt;p&gt;For the sake of clear logic, let’s set IE6 and IE7 aside for now and look at how IE8+ and modern browsers achieve two-end alignment of list elements with &lt;code&gt;display:inline-block&lt;/code&gt; + &lt;code&gt;text-align:justify&lt;/code&gt;. It’s actually very simple. Let’s take the most common list tags — &lt;code&gt;ul&lt;/code&gt; and &lt;code&gt;li&lt;/code&gt; — as an example. To achieve two-end alignment of the &lt;code&gt;li&lt;/code&gt; list, this little bit of CSS is all you need:&lt;/p&gt;
+&lt;p&gt;ul{text-align:justify;}&lt;br&gt;li{display:inline-block;}&lt;/p&gt;
+&lt;p&gt;So simple it makes you spit three pints of blood on the spot. The only thing to watch out for is that the list elements must have &lt;strong&gt;whitespace (or a line break) at the start and end tags&lt;/strong&gt;, as shown below:&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-13_131033.png&#34; alt=&#34;Line break around the start and end tags, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Line break around the start and end tags, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-13_131358.png&#34; alt=&#34;Whitespace around the start and end tags, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Whitespace around the start and end tags, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt;&lt;br&gt;The closing tag of one tag group must not be joined directly to the opening tag of the next tag group, as shown below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-13_131708.png&#34; alt=&#34;Tags must not be joined together, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Tags must not be joined together, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt; &lt;/p&gt;
+&lt;p&gt;What’s more, in IE8 the list elements must not sit in a &lt;code&gt;font-size:0&lt;/code&gt; environment — at least &lt;code&gt;font-size:1px&lt;/code&gt;, because IE8 wipes out the newline whitespace or ordinary whitespace when &lt;code&gt;font-size:0&lt;/code&gt;, making two-end alignment impossible. OK, now for the main event: the tangled IE6/IE7 browsers. Clearly the &lt;code&gt;ul&lt;/code&gt;, &lt;code&gt;li&lt;/code&gt; style combination above doesn’t work in IE6/7 — even if you use a hack to give the &lt;code&gt;li&lt;/code&gt; tag inline-block-like behavior in IE6/7, it still won’t help. So how can list elements in IE6/7 also support the &lt;code&gt;text-align:justify&lt;/code&gt; property? After repeated testing and debugging, I summarized two points: &lt;strong&gt;inline tag-ification&lt;/strong&gt; and &lt;strong&gt;consecutive closing tags&lt;/strong&gt;. &lt;strong&gt;1. Inline tag-ification&lt;/strong&gt; By “inline tag-ification” I mean the list elements need to use inline-level tags, such as &lt;code&gt;span&lt;/code&gt;, &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;strong&lt;/code&gt;, &lt;code&gt;em&lt;/code&gt;, and so on; tags like &lt;code&gt;li&lt;/code&gt; and &lt;code&gt;div&lt;/code&gt; won’t do. &lt;strong&gt;2. Consecutive closing tags&lt;/strong&gt; By “consecutive closing tags” I mean the closing tags of the list elements and their inner tags need to be joined together. For example, the following won’t work:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;span&amp;gt;
+    &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;
+        &amp;lt;img src=&amp;quot;test.jpg&amp;quot; /&amp;gt;
+    &amp;lt;/a&amp;gt;
+    &amp;lt;span&amp;gt;描述&amp;lt;/span&amp;gt;
+&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It should look like this instead:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;span&amp;gt;
+    &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;
+        &amp;lt;img src=&amp;quot;test.jpg&amp;quot; /&amp;gt;
+    &amp;lt;/a&amp;gt;
+    &amp;lt;span&amp;gt;描述&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We’re used to structured indentation, so writing consecutive closing tags like that looks unnatural and a bit awkward. But there’s no way around it if you want the effect. &lt;strong&gt;Note: if the list tags are nested multiple levels deep, the closing tags at every level must be consecutive.&lt;/strong&gt; Once IE6/IE7 satisfies both &lt;strong&gt;inline tag-ification&lt;/strong&gt; and &lt;strong&gt;consecutive closing tags&lt;/strong&gt; above, plus the &lt;strong&gt;whitespace around start and end tags&lt;/strong&gt; required by modern browsers, IE6/IE7 can also achieve two-end alignment for list elements! To make it easier to see at a glance what to watch out for in each browser, I’ve made the following table:&lt;/p&gt;
+&lt;p&gt;Caveats for implementing two-end alignment layout under text-align:justify in each browser&lt;/p&gt;
+&lt;p&gt;Browser&lt;/p&gt;
+&lt;p&gt;Caveats&lt;/p&gt;
+&lt;p&gt;IE6&lt;/p&gt;
+&lt;p&gt;inline-level list tags, consecutive list closing tags, line break or whitespace between list elements&lt;/p&gt;
+&lt;p&gt;IE7&lt;/p&gt;
+&lt;p&gt;inline-level list tags, consecutive list closing tags, line break or whitespace between list elements&lt;/p&gt;
+&lt;p&gt;IE8&lt;/p&gt;
+&lt;p&gt;line break or whitespace between list elements, the font size of the list elements’ environment must not be 0&lt;/p&gt;
+&lt;p&gt;Modern browsers&lt;/p&gt;
+&lt;p&gt;line break or whitespace between list elements&lt;/p&gt;
+&lt;p&gt;  However, there’s still one tragic problem unsolved: the tragedy of when the &lt;strong&gt;last row of list elements can’t be aligned at both ends&lt;/strong&gt;. As shown below:&lt;br&gt;  &lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-13_140147.png&#34; alt=&#34;The tragic last row under text-justify, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;The tragic last row under text-justify, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt;&lt;br&gt;  Actually this problem is very easy to solve. &lt;strong&gt;How to turn tragedy into comedy?&lt;/strong&gt; For a list (or text) to be justified, the content must exceed one line. So to solve the problem of the last row not being aligned at both ends, all you need is to create a transparent inline-block tag layer at height 0 and width 100% at the end of the list (or text block), for example:&lt;/p&gt;
+&lt;p&gt;.justify_fix{display:inline-block; width:100%; height:0; overflow:hidden;}&lt;/p&gt;
+&lt;p&gt;With HTML like:&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;justify_fix&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;For example, take the earlier demo with the tragic last row: now add the &lt;code&gt;span&lt;/code&gt; element with the class name &lt;code&gt;justify_fix&lt;/code&gt; above to the end of that demo’s list, and the last row becomes justified, as the change shows below:&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-13_223453.png&#34; alt=&#34;The last row elements are justified too, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;The last row elements are justified too, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt;&lt;/p&gt;
+&lt;p&gt;No matter what version of browser you have, you can click right here:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.zhangxinxu.com/study/201103/inline-block-text-justify-fixed.html&#34;&gt;Demo of a beauty list with the last row justified too&lt;/a&gt;&lt;br&gt;Change the browser width and you can see the two-end alignment effect more directly. &lt;strong&gt;Addition on 2011-03-16:&lt;/strong&gt; Often we want the last row of the list to be left-aligned rather than justified — what do we do then? The principle is the same as the two-end alignment above. Just copy a few of the outer tags of the list elements, same width but height 0, with an &lt;code&gt;&amp;amp;nbsp;&lt;/code&gt; inside (indispensable). The number of copies is generally the number of list elements per row, which guarantees the last row of elements will be left-aligned! HTML code as below:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt;
+    &amp;lt;span class=&amp;quot;list&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://image.zhangxinxu.com/image/study/s/s128/mm9.jpg&amp;quot; /&amp;gt;
+哇哦，美女，口水，鼻血~~~&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;quot;list&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;http://image.zhangxinxu.com/image/study/s/s128/mm9.jpg&amp;quot; /&amp;gt;
+哇哦，美女，口水，鼻血，不行了，我的小兔乱撞~~&amp;lt;/span&amp;gt;
+    .
+    .
+    .
+    &amp;lt;span class=&amp;quot;list left_fix&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;quot;list left_fix&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;quot;list left_fix&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;quot;list left_fix&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;
+    &amp;lt;span class=&amp;quot;list left_fix&amp;quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The &lt;code&gt;left_fix&lt;/code&gt; style in the HTML above is as follows:&lt;/p&gt;
+&lt;p&gt;.left_fix{height:0; padding:0; overflow:hidden;}&lt;/p&gt;
+&lt;p&gt;The result is that the last three images, previously aligned with equal width, are now vertically aligned with the elements above and left-aligned! (The screenshot below is from IE7.)&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-16_204407.png&#34; alt=&#34;Achieving left-aligned elements in the last row, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Achieving left-aligned elements in the last row, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt;&lt;/p&gt;
+&lt;p&gt;You can click right here:&lt;br&gt;&lt;a href=&#34;http://www.zhangxinxu.com/study/201103/inline-block-text-justify-last-left.html&#34;&gt;Demo of last-row elements arranged left-aligned&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;So, combining everything discussed above, we can achieve a relatively perfect two-end alignment effect for list elements under text-align:justify.&lt;/p&gt;
+&lt;h3 id=&#34;7-A-Working-Example-of-Two-End-Alignment-under-text-align-justify&#34;&gt;&lt;a href=&#34;#7-A-Working-Example-of-Two-End-Alignment-under-text-align-justify&#34; class=&#34;headerlink&#34; title=&#34;7. A Working Example of Two-End Alignment under text-align:justify&#34;&gt;&lt;/a&gt;7. A Working Example of Two-End Alignment under text-align:justify&lt;/h3&gt;&lt;p&gt;Let’s take the inline-block list layout from Renren’s popular shares above as an example. You can click right here:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.zhangxinxu.com/study/201103/inline-block-text-justify-renren.html&#34;&gt;Demo of two-end alignment under text-justify for Renren’s popular shares list&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The effect is shown below (screenshot from IE7):&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-13_224718.png&#34; alt=&#34;Two-end alignment under justify for Renren&amp;#39;s popular list, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Two-end alignment under justify for Renren&amp;#39;s popular list, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt; &lt;/p&gt;
+&lt;p&gt;The CSS code is as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.video-list&amp;#123;width:540px; margin-left:auto; margin-right:auto; text-align:justify;&amp;#125; /*list parent container*/
+.text-justify-list&amp;#123;display:inline-block; width:97px; margin-bottom:15px; text-align:left; vertical-align:top;&amp;#125;/*list element*/
+
+.
+. /\* full Renren CSS code*/
+.
+
+.justify_fix&amp;#123;display:inline-block; width:100%; height:0; overflow:hidden;&amp;#125;/*last-row tragedy becomes comedy*/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As you can see, the list elements have no vertical &lt;code&gt;margin&lt;/code&gt; or &lt;code&gt;padding&lt;/code&gt; set at all — just a width — yet the list elements are indeed aligned at both ends with even spacing. No calculations, no deliberately widening the parent container; it’s implemented super simply. Comparing with the caveats mentioned above, let’s see how the HTML code in this example puts them into practice:&lt;br&gt;&lt;strong&gt;① inline-level tags&lt;/strong&gt; As shown in the screenshot:&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-13_225547.png&#34; alt=&#34;Screenshot of inline tags in use, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Screenshot of inline tags in use, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;② consecutive list closing tags&lt;/strong&gt; As shown below:&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-13_225817.png&#34; alt=&#34;Consecutive closing tags, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Consecutive closing tags, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;③ line break or whitespace between list tags&lt;/strong&gt; As shown in the screenshot:&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-13_230124.png&#34; alt=&#34;Screenshot of list tags with line breaks that are not joined, by Zhang Xinxu - Xin Space - Xin Life&#34; title=&#34;Screenshot of list tags with line breaks that are not joined, by Zhang Xinxu - Xin Space - Xin Life&#34;&gt;&lt;br&gt;That way, you too can easily achieve two-end alignment layout for list elements, without worrying about compatibility issues!! GO! Go ahead and use it!&lt;/p&gt;
+&lt;h3 id=&#34;8-A-Few-Closing-Words&#34;&gt;&lt;a href=&#34;#8-A-Few-Closing-Words&#34; class=&#34;headerlink&#34; title=&#34;8. A Few Closing Words&#34;&gt;&lt;/a&gt;8. A Few Closing Words&lt;/h3&gt;&lt;p&gt;First, about why IE6/IE7 list elements need inline-level tags and why the closing tags need to be consecutive — I don’t know the reason either. I didn’t develop the browsers; if you want to ask, go ask Mr. Gates. Second, the semantic issue. To accommodate IE6/IE7, list tags like &lt;code&gt;ul&lt;/code&gt; and &lt;code&gt;li&lt;/code&gt; become unusable, so the HTML semantics may drop in quality. The trade-off is in your hands. Finally, these are all things I found through my own testing. Maybe you have a better method, or can explain some of the weird behavior in IE6/IE7 — feel free to discuss in the comments. My experience is limited, so there are bound to be inaccurate statements in this article; corrections are welcome. Original article — please indicate the source when reprinting: &lt;a href=&#34;http://www.zhangxinxu.com/&#34;&gt;Zhang Xinxu - Xin Space - Xin Life&lt;/a&gt;[&lt;a href=&#34;http://www.zhangxinxu.com/&#34;&gt;http://www.zhangxinxu.com&lt;/a&gt;]&lt;/p&gt;
+</content>
+        <category term="js" />
+        <category term="web" />
+        <category term="css" />
+        <updated>2015-01-29T14:06:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2015/01/29/display-inline-block-justify/</id>
         <title>display:inline-block/text-align:justify下列表的两端对齐布局</title>
-        <link rel="alternate" href="https://erik.xyz/2015/01/29/display-inline-block-text-align-justify-xia-lie-biao-de-liang-duan-dui-qi-bu-ju/"/>
+        <link rel="alternate" href="https://erik.xyz/2015/01/29/display-inline-block-justify/"/>
         <content type="html">&lt;p&gt;by &lt;a href=&#34;http://www.zhangxinxu.com/&#34;&gt;zhangxinxu&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;一、何为列表元素的两端对齐布局&#34;&gt;&lt;a href=&#34;#一、何为列表元素的两端对齐布局&#34; class=&#34;headerlink&#34; title=&#34;一、何为列表元素的两端对齐布局&#34;&gt;&lt;/a&gt;一、何为列表元素的两端对齐布局&lt;/h3&gt;&lt;p&gt;首先说说何为两端对齐。下面这个截图是word中一段英文左对齐的右边缘截图：&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_214827.png&#34; alt=&#34;word中文字左对齐截图 张鑫旭-鑫空间-鑫生活&#34; title=&#34;word中文字左对齐截图 张鑫旭-鑫空间-鑫生活&#34;&gt; &lt;/p&gt;
 &lt;p&gt;可以看到右侧是参差不起的，现在，选中文字，点击word上方的两端对齐按钮，如下图：&lt;br&gt;&lt;img src=&#34;http://image.zhangxinxu.com/image/blog/201103/2011-03-12_215036.png&#34; alt=&#34;点击word中两端对齐按钮 张鑫旭-鑫空间-鑫生活&#34; title=&#34;点击word中两端对齐按钮 张鑫旭-鑫空间-鑫生活&#34;&gt; &lt;/p&gt;
@@ -620,14 +736,42 @@
 &lt;h3 id=&#34;八、一些补充的话语&#34;&gt;&lt;a href=&#34;#八、一些补充的话语&#34; class=&#34;headerlink&#34; title=&#34;八、一些补充的话语&#34;&gt;&lt;/a&gt;八、一些补充的话语&lt;/h3&gt;&lt;p&gt;首先是关于为什么IE6/IE7浏览器列表元素需使用inline水平标签，，同时结束标签需连续，这个问题我也是不知道为什么，浏览器不是我开发的，要问得去问盖茨先生了。 其次，语义化的问题。要兼顾IE6/IE7浏览器，像列表标签&lt;code&gt;ul&lt;/code&gt;, &lt;code&gt;li&lt;/code&gt;等就不能使用了，所以HTML语义上可能质量要降低了，权衡在你手。 最后，都是自己试验出来的东西，可能您有更好的方法，或者可以解释IE6/IE7下一些奇怪的行为，欢迎以评论的形式进行交流。资历有限，文中难免有表述不准确的地方，欢迎指正。 原创文章，转载请注明来自&lt;a href=&#34;http://www.zhangxinxu.com/&#34;&gt;张鑫旭-鑫空间-鑫生活&lt;/a&gt;[&lt;a href=&#34;http://www.zhangxinxu.com/&#34;&gt;http://www.zhangxinxu.com&lt;/a&gt;]&lt;/p&gt;
 </content>
         <category term="js" />
-        <category term="css" />
         <category term="web" />
+        <category term="css" />
         <updated>2015-01-29T14:06:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2015/01/12/18-ge-css-jing-jian-ya-suo-gong-ju-he-ji-qiao/</id>
+        <id>https://erik.xyz/2015/01/12/18-css-jing-jian-ya-suo-gong-ju-ji-en/</id>
+        <title>18 CSS Minification and Compression Tools and Tricks</title>
+        <link rel="alternate" href="https://erik.xyz/2015/01/12/18-css-jing-jian-ya-suo-gong-ju-ji-en/"/>
+        <content type="html">&lt;p&gt;Author: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;Posted by 帕兰&#34;&gt;帕兰&lt;/a&gt; We have already looked at &lt;a href=&#34;http://paranimage.com/8-online-css-optimizer/&#34;&gt;8 online CSS optimization tools&lt;/a&gt; and &lt;a href=&#34;http://paranimage.com/css-code-streamlined-tools-and-tricks/&#34;&gt;CSS code streamlining tricks&lt;/a&gt;; this article brings you &lt;strong&gt;18 CSS minification and compression tools and tricks&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;To-Compress-or-Not-to-Compress&#34;&gt;&lt;a href=&#34;#To-Compress-or-Not-to-Compress&#34; class=&#34;headerlink&#34; title=&#34;To Compress or Not to Compress&#34;&gt;&lt;/a&gt;To Compress or Not to Compress&lt;/h3&gt;&lt;p&gt;Before we discuss how to compress CSS, we should note that there is often a balance to be struck between compression and code readability. Many coders take pride in clearly organized CSS and do not want their code stripped of comments and line breaks by a compressor. As a designer, you should analyze the goal of the code you are writing. If you are creating a small site that needs only a few lines of CSS, extra compression may not be necessary. Likewise, if you are writing code that will be shared with an open team, inserting extra comments and line breaks can save your colleagues a great deal of time and earn their genuine thanks. However, if you are designing a large site that requires a lot of CSS, you will certainly need to watch your file size and keep it as small as you can. Finding the perfect balance between compression and readability may take some time, but both are worth exploring, and striking that balance can make your work much easier. At the same time, it is clear that compression does not necessarily reduce readability. Many of the techniques available for compressing code produce better, more organized code. With that in mind, let’s start looking at some techniques for keeping CSS files minimal.&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Empty-Style-Definitions&#34;&gt;&lt;a href=&#34;#Empty-Style-Definitions&#34; class=&#34;headerlink&#34; title=&#34;Empty Style Definitions&#34;&gt;&lt;/a&gt;Empty Style Definitions&lt;/h3&gt;&lt;p&gt;Let’s start with the obvious one. If you have an empty style, throw it away. Don’t make excuses that you might use it later — you know as well as anyone that they are just clutter. Unless you have a good reason, don’t add them.&lt;/p&gt;
+&lt;h3 id=&#34;Shorthand&#34;&gt;&lt;a href=&#34;#Shorthand&#34; class=&#34;headerlink&#34; title=&#34;Shorthand&#34;&gt;&lt;/a&gt;Shorthand&lt;/h3&gt;&lt;p&gt;CSS shorthand is a way of merging multiple lines of CSS into a single line. Getting into the habit of using every shorthand trick you know can noticeably reduce the number of lines of code you ultimately write. Here is an example: Longhand version:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#container&amp;#123;
+    padding-top:5px
+    padding-right:10px
+    padding-bottom:30px
+    padding-left:18px
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Shorthand version:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#container&amp;#123;
+    padding:5px 10px 30px 18px;
+&amp;#125;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To learn more CSS shorthand tricks, you can visit the article below: &lt;a href=&#34;http://www.dustindiaz.com/css-shorthand/&#34;&gt;&lt;img src=&#34;http://paranimage.com/img/css-compression/shorthand.jpg&#34; alt=&#34;screenshot&#34;&gt;&lt;/a&gt; Also recommended is 阿捷’s article: “&lt;a href=&#34;http://www.w3cn.org/article/tips/2005/103.html&#34;&gt;A Summary of Common CSS Shorthand Syntax&lt;/a&gt;“&lt;/p&gt;
+&lt;h3 id=&#34;CSS-Sprites&#34;&gt;&lt;a href=&#34;#CSS-Sprites&#34; class=&#34;headerlink&#34; title=&#34;CSS Sprites&#34;&gt;&lt;/a&gt;CSS Sprites&lt;/h3&gt;&lt;p&gt;The original idea behind CSS sprites is to reduce the number of HTTP requests in order to speed up page load time. Sprites achieve this by combining multiple images into a single image file, usually an image in grid format. Each individual image is displayed by shifting the background-position of the large sprite image. For CSS code, using sprite techniques can greatly improve code reuse and maintainability, which noticeably reduces the amount of CSS code.&lt;/p&gt;
+</content>
+        <category term="web" />
+        <category term="css" />
+        <category term="php" />
+        <category term="代码" />
+        <category term="压缩" />
+        <updated>2015-01-12T12:40:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2015/01/12/18-css-jing-jian-ya-suo-gong-ju-ji/</id>
         <title>18个CSS精简压缩工具和技巧</title>
-        <link rel="alternate" href="https://erik.xyz/2015/01/12/18-ge-css-jing-jian-ya-suo-gong-ju-he-ji-qiao/"/>
+        <link rel="alternate" href="https://erik.xyz/2015/01/12/18-css-jing-jian-ya-suo-gong-ju-ji/"/>
         <content type="html">&lt;p&gt;作者: &lt;a href=&#34;http://paranimage.com/author/admin/&#34; title=&#34;由帕兰发布&#34;&gt;帕兰&lt;/a&gt; 我们已看过&lt;a href=&#34;http://paranimage.com/8-online-css-optimizer/&#34;&gt;8个在线CSS优化工具&lt;/a&gt;和&lt;a href=&#34;http://paranimage.com/css-code-streamlined-tools-and-tricks/&#34;&gt;CSS代码精简技巧&lt;/a&gt;，本文则为你带来&lt;strong&gt;18个CSS精简压缩工具和技巧&lt;/strong&gt;。&lt;/p&gt;
 &lt;h3 id=&#34;压缩还是不压缩&#34;&gt;&lt;a href=&#34;#压缩还是不压缩&#34; class=&#34;headerlink&#34; title=&#34;压缩还是不压缩&#34;&gt;&lt;/a&gt;压缩还是不压缩&lt;/h3&gt;&lt;p&gt;在我们讨论如何压缩CSS之前，需要注意一下在压缩和代码的易读性上常常要有个平衡。很多编码者以其CSS组织清晰为傲，而且并不希望自己的代码被 通过压缩器去掉注释和断行。作为一个设计师，你应该分析你所编写的代码的目标。如果你要创建一个小的只需要几行CSS的网站，可能就没有必要做额外的压 缩。同样，如果你在编写需要和一个开放团队分享的代码，插入额外的注释和断行可以节省你的同事的大量时间并获得他们真心的感谢。然而，如果你在设计一个需 要大量CSS的大型网站，你肯定要注意你的文件大小并进你所能保持其最小。 可能在寻找压缩和可能性之间的完美结合上面需要花一些时间，但是它们都值得挖掘而且实现它们的平衡可以让你的工作变得容易很多。同时，很明显并不是说压缩一定会导致可读性的降低。很多可用于压缩代码的技术都能生成更好更有组织的代码。 考虑到这一点儿，让我们开始了解一些技术已保持CSS文件最小化吧。&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&#34;空白样式定义&#34;&gt;&lt;a href=&#34;#空白样式定义&#34; class=&#34;headerlink&#34; title=&#34;空白样式定义&#34;&gt;&lt;/a&gt;空白样式定义&lt;/h3&gt;&lt;p&gt;让我们从明显的开始。如果你有一个空白样式，丢掉它。不要借口稍后或许会用到，你也知道它们是杂乱的。除非你有一个合理的理由，否则不要添加它们。&lt;/p&gt;
@@ -645,17 +789,27 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;了解更多CSS缩写技巧，可以访问下面的文章： &lt;a href=&#34;http://www.dustindiaz.com/css-shorthand/&#34;&gt;&lt;img src=&#34;http://paranimage.com/img/css-compression/shorthand.jpg&#34; alt=&#34;screenshot&#34;&gt;&lt;/a&gt; 推荐阅读阿捷的文章：《&lt;a href=&#34;http://www.w3cn.org/article/tips/2005/103.html&#34;&gt;常用CSS缩写语法总结&lt;/a&gt;》&lt;/p&gt;
 &lt;h3 id=&#34;CSS-Sprites&#34;&gt;&lt;a href=&#34;#CSS-Sprites&#34; class=&#34;headerlink&#34; title=&#34;CSS Sprites&#34;&gt;&lt;/a&gt;CSS Sprites&lt;/h3&gt;&lt;p&gt;CSS sprites背后的最初想法是减少HTTP请求的数量以加快页面的加载时间。Sprite实现这个目标的途径就是拼合多张图片到一个单独的图片文件中， 通常是一个网格格式的图片。每个单独的图片通过切换大的sprite图片的background-position来显示。对于CSS代码来说，使用 sprite技术可以大大的提高代码的重用度和可维护性，这会明显的减少CSS的代码量。&lt;/p&gt;
 </content>
+        <category term="web" />
         <category term="css" />
         <category term="php" />
-        <category term="web" />
         <category term="代码" />
         <category term="压缩" />
         <updated>2015-01-12T12:40:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://erik.xyz/2014/11/26/css-shu-biao-hua-guo-dan-chu-ceng-ke-fu/</id>
+        <id>https://erik.xyz/2014/11/26/css-shu-biao-hua-guo-tan-chu-ceng-en/</id>
+        <title>CSS Mouseover Popup Layer for Customer Service</title>
+        <link rel="alternate" href="https://erik.xyz/2014/11/26/css-shu-biao-hua-guo-tan-chu-ceng-en/"/>
+        <content type="html">&lt;p&gt;shopex can’t stay compatible with js, so what do we do — the customer service panel has to pop out on mouse hover?? css to the rescue, compatible with every browser, and nothing beats writing a popup layer in pure css. Source code&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;75&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;76&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;77&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;78&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;79&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;80&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;81&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;82&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;83&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;84&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;html xmlns=&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html; charset=utf-8&amp;quot; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;title&amp;gt;无标题文档&amp;lt;/title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;style type=&amp;quot;text/css&amp;quot; &amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*&amp;#123;margin:0; padding:0;&amp;#125; /* 所有元素外边距为0 内边距为0 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/\* body中元素字体大小为12px,字体样式为:&amp;quot;Times New Roman&amp;quot;, Times, serif,背景色:#333 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;body&amp;#123;font-size:12px; font-family:&amp;quot;Times New Roman&amp;quot;, Times, serif; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/\* id为main的元素上下外边距为100px,左右外边距为自动;宽度为300px */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#main&amp;#123;margin-left:-100px auto; width:300px;z-index:10000;	position:absolute;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/\* id为main的元素中无序列表列表样式为隐藏 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#main ul&amp;#123;list-style:none;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/\* id为main的元素中的无序列表下的li块 中的a标签 颜色为#E7E7E7;关闭文本修饰;相对定位;元素当做块元素显示,前后会有换行符*/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; .sa&amp;#123;color:#E7E7E7; text-decoration:none; position:relative; display:block;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  #y1 &amp;#123;position:fixed;top:482px;left:2px;&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ul&amp;#123;list-style:none;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;span style=&amp;quot;color:#FF0000&amp;quot;&amp;gt; .sa .divs &amp;#123;display:none;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;.sa:hover&amp;#123;color:#FFF;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; .sa:hover .divs&amp;#123;position:absolute; left:280px; top:-40px; background-color:#FFF; display:block; width:300px; height:100px; color:#000; overflow:hidden;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;.sa:hover .divs dt&amp;#123;float:left; width:8px; background:url(234.gif) center no-repeat;height:100px; display:block; background-color:#333;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; .sa:hover .divs dd&amp;#123;float:right ; width:270px; height:auto; line-height:18px; padding:6px 10px;margin-left:100px;&amp;#125;&amp;lt;/span&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;script&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  if (navigator.userAgent.indexOf(&amp;quot;MSIE 6&amp;quot;) &amp;gt; -1) &amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    window.onscroll = function(e) &amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      var t = document.documentElement ? document.documentElement.scrollTop : document.body.scrollTop;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      document.getElementById(&amp;quot;y1&amp;quot;).style.top = document.getElementById(&amp;quot;y2&amp;quot;).style.top = t + 82 + &amp;quot;px&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;div id=&amp;quot;y1&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;li&amp;gt;&amp;lt;div     class=&amp;quot;sa&amp;quot; href=&amp;quot;javascript:void(0);&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;img   src=&amp;quot;images/siderim_hiddenbar.gif&amp;quot; style=&amp;quot;z-index:10000;	position:absolute;margin-top:-150px;&amp;quot; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;div     class=&amp;quot;divs&amp;quot; style=&amp;quot;margin-left:-284px;margin-top:-354px;height:440px;width:280px;background:url(images/bj01.png) no-repeat;z-index:10000;	position:absolute;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;img  src=&amp;quot;images/mhd365365.png&amp;quot; alt=&amp;quot;&amp;quot; width=&amp;quot;80&amp;quot; height=&amp;quot;65&amp;quot; style=&amp;quot;margin-top:90px;font-size:17px;width:80px;margin-left:180px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;div style=&amp;quot;margin-left:40px;margin-top:-20px;;font-size:17px;color:#8498af;&amp;quot;&amp;gt;0755—33537666&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;div style=&amp;quot;margin-left:90px;margin-top:110px;width:160px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;div style=&amp;quot;width:80px;height:20px;padding-top:5px;&amp;quot;&amp;gt;客服&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;div style=&amp;quot;width:50px;margin-left:75px;margin-top:-22px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;tencent://message/?uin=247765235&amp;amp;&amp;amp;Site=www.lanrenzhijia.com&amp;amp;&amp;amp;Menu=yes&amp;quot;&amp;gt;&amp;lt;img&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;						border=&amp;quot;0&amp;quot; src=&amp;quot;http://wpa.qq.com/pa?p=1:24776523:42&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;						&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;						&amp;lt;div style=&amp;quot;height:4px;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;li&amp;gt;&amp;lt;div style=&amp;quot;width:80px;height:20px;padding-top:5px;&amp;quot;&amp;gt;客服&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;div style=&amp;quot;width:50px;margin-left:75px;margin-top:-22px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;tencent://message/?uin=24776523&amp;amp;&amp;amp;Site=www.lanrenzhijia.com&amp;amp;&amp;amp;Menu=yes&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;img border=&amp;quot;0&amp;quot; src=&amp;quot;http://wpa.qq.com/pa?p=1:24776523:42&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;div style=&amp;quot;height:4px;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;div style=&amp;quot;width:80px;height:20px;padding-top:5px;&amp;quot;&amp;gt;客服&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;div style=&amp;quot;width:50px;margin-left:75px;margin-top:-22px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;tencent://message/?uin=24776523&amp;amp;&amp;amp;Site=www.lanrenzhijia.com&amp;amp;&amp;amp;Menu=yes&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;img border=&amp;quot;0&amp;quot; src=&amp;quot;http://wpa.qq.com/pa?p=1:24776523:42&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &amp;lt;div style=&amp;quot;height:4px;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;div style=&amp;quot;width:80px;height:20px;padding-top:5px;&amp;quot;&amp;gt;客服&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;div style=&amp;quot;width:50px;margin-left:75px;margin-top:-22px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;tencent://messag0e/?uin=24776523&amp;amp;&amp;amp;Site=www.lanrenzhijia.com&amp;amp;&amp;amp;Menu=yes&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;img border=&amp;quot;0&amp;quot; src=&amp;quot;http://wpa.qq.com/pa?p=1:24776523:42&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &amp;lt;div style=&amp;quot;height:4px;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;div style=&amp;quot;width:80px;height:20px;padding-top:5px;&amp;quot;&amp;gt;客服&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;div style=&amp;quot;width:50px;margin-left:75px;margin-top:-22px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;tencent://message/?uin=24776523&amp;amp;&amp;amp;Site=www.lanrenzhijia.com&amp;amp;&amp;amp;Menu=yes&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;img border=&amp;quot;0&amp;quot; src=&amp;quot;http://wpa.qq.com/pa?p=1:24776523:42&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &amp;lt;div style=&amp;quot;height:4px;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;				&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+        <category term="css" />
+        <category term="php" />
+        <updated>2014-11-26T14:10:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2014/11/26/css-shu-biao-hua-guo-tan-chu-ceng/</id>
         <title>css鼠标滑过弹出层客服</title>
-        <link rel="alternate" href="https://erik.xyz/2014/11/26/css-shu-biao-hua-guo-dan-chu-ceng-ke-fu/"/>
+        <link rel="alternate" href="https://erik.xyz/2014/11/26/css-shu-biao-hua-guo-tan-chu-ceng/"/>
         <content type="html">&lt;p&gt;shopex不能兼容js，怎么办呢，客服界面要鼠标滑动弹出？？ css来了，兼容所有浏览器，用纯css写弹出层在好不过了。 源码&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;75&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;76&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;77&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;78&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;79&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;80&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;81&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;82&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;83&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;84&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot; &amp;quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;html xmlns=&amp;quot;http://www.w3.org/1999/xhtml&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html; charset=utf-8&amp;quot; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;title&amp;gt;无标题文档&amp;lt;/title&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;style type=&amp;quot;text/css&amp;quot; &amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*&amp;#123;margin:0; padding:0;&amp;#125; /* 所有元素外边距为0 内边距为0 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/\* body中元素字体大小为12px,字体样式为:&amp;quot;Times New Roman&amp;quot;, Times, serif,背景色:#333 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;body&amp;#123;font-size:12px; font-family:&amp;quot;Times New Roman&amp;quot;, Times, serif; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/\* id为main的元素上下外边距为100px,左右外边距为自动;宽度为300px */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#main&amp;#123;margin-left:-100px auto; width:300px;z-index:10000;	position:absolute;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/\* id为main的元素中无序列表列表样式为隐藏 */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;#main ul&amp;#123;list-style:none;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/\* id为main的元素中的无序列表下的li块 中的a标签 颜色为#E7E7E7;关闭文本修饰;相对定位;元素当做块元素显示,前后会有换行符*/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; .sa&amp;#123;color:#E7E7E7; text-decoration:none; position:relative; display:block;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  #y1 &amp;#123;position:fixed;top:482px;left:2px;&amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  ul&amp;#123;list-style:none;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;span style=&amp;quot;color:#FF0000&amp;quot;&amp;gt; .sa .divs &amp;#123;display:none;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;.sa:hover&amp;#123;color:#FFF;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; .sa:hover .divs&amp;#123;position:absolute; left:280px; top:-40px; background-color:#FFF; display:block; width:300px; height:100px; color:#000; overflow:hidden;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;.sa:hover .divs dt&amp;#123;float:left; width:8px; background:url(234.gif) center no-repeat;height:100px; display:block; background-color:#333;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; .sa:hover .divs dd&amp;#123;float:right ; width:270px; height:auto; line-height:18px; padding:6px 10px;margin-left:100px;&amp;#125;&amp;lt;/span&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;script&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  if (navigator.userAgent.indexOf(&amp;quot;MSIE 6&amp;quot;) &amp;gt; -1) &amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    window.onscroll = function(e) &amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      var t = document.documentElement ? document.documentElement.scrollTop : document.body.scrollTop;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      document.getElementById(&amp;quot;y1&amp;quot;).style.top = document.getElementById(&amp;quot;y2&amp;quot;).style.top = t + 82 + &amp;quot;px&amp;quot;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;div id=&amp;quot;y1&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;li&amp;gt;&amp;lt;div     class=&amp;quot;sa&amp;quot; href=&amp;quot;javascript:void(0);&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;img   src=&amp;quot;images/siderim_hiddenbar.gif&amp;quot; style=&amp;quot;z-index:10000;	position:absolute;margin-top:-150px;&amp;quot; /&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;div     class=&amp;quot;divs&amp;quot; style=&amp;quot;margin-left:-284px;margin-top:-354px;height:440px;width:280px;background:url(images/bj01.png) no-repeat;z-index:10000;	position:absolute;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;img  src=&amp;quot;images/mhd365365.png&amp;quot; alt=&amp;quot;&amp;quot; width=&amp;quot;80&amp;quot; height=&amp;quot;65&amp;quot; style=&amp;quot;margin-top:90px;font-size:17px;width:80px;margin-left:180px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;div style=&amp;quot;margin-left:40px;margin-top:-20px;;font-size:17px;color:#8498af;&amp;quot;&amp;gt;0755—33537666&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;div style=&amp;quot;margin-left:90px;margin-top:110px;width:160px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;div style=&amp;quot;width:80px;height:20px;padding-top:5px;&amp;quot;&amp;gt;客服&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;div style=&amp;quot;width:50px;margin-left:75px;margin-top:-22px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;tencent://message/?uin=247765235&amp;amp;&amp;amp;Site=www.lanrenzhijia.com&amp;amp;&amp;amp;Menu=yes&amp;quot;&amp;gt;&amp;lt;img&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;						border=&amp;quot;0&amp;quot; src=&amp;quot;http://wpa.qq.com/pa?p=1:24776523:42&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;						&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;						&amp;lt;div style=&amp;quot;height:4px;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;li&amp;gt;&amp;lt;div style=&amp;quot;width:80px;height:20px;padding-top:5px;&amp;quot;&amp;gt;客服&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;div style=&amp;quot;width:50px;margin-left:75px;margin-top:-22px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;tencent://message/?uin=24776523&amp;amp;&amp;amp;Site=www.lanrenzhijia.com&amp;amp;&amp;amp;Menu=yes&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;img border=&amp;quot;0&amp;quot; src=&amp;quot;http://wpa.qq.com/pa?p=1:24776523:42&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;div style=&amp;quot;height:4px;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;div style=&amp;quot;width:80px;height:20px;padding-top:5px;&amp;quot;&amp;gt;客服&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;div style=&amp;quot;width:50px;margin-left:75px;margin-top:-22px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;tencent://message/?uin=24776523&amp;amp;&amp;amp;Site=www.lanrenzhijia.com&amp;amp;&amp;amp;Menu=yes&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;img border=&amp;quot;0&amp;quot; src=&amp;quot;http://wpa.qq.com/pa?p=1:24776523:42&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &amp;lt;div style=&amp;quot;height:4px;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;div style=&amp;quot;width:80px;height:20px;padding-top:5px;&amp;quot;&amp;gt;客服&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;div style=&amp;quot;width:50px;margin-left:75px;margin-top:-22px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;tencent://messag0e/?uin=24776523&amp;amp;&amp;amp;Site=www.lanrenzhijia.com&amp;amp;&amp;amp;Menu=yes&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;img border=&amp;quot;0&amp;quot; src=&amp;quot;http://wpa.qq.com/pa?p=1:24776523:42&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &amp;lt;div style=&amp;quot;height:4px;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;div style=&amp;quot;width:80px;height:20px;padding-top:5px;&amp;quot;&amp;gt;客服&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;					&amp;lt;div style=&amp;quot;width:50px;margin-left:75px;margin-top:-22px;&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;a target=&amp;quot;_blank&amp;quot; href=&amp;quot;tencent://message/?uin=24776523&amp;amp;&amp;amp;Site=www.lanrenzhijia.com&amp;amp;&amp;amp;Menu=yes&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;lt;img border=&amp;quot;0&amp;quot; src=&amp;quot;http://wpa.qq.com/pa?p=1:24776523:42&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &amp;lt;div style=&amp;quot;height:4px;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;				&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 </content>
         <category term="css" />

@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2019/09/25/docker-install-php-is-fail-en/",
+            "url": "https://erik.xyz/2019/09/25/docker-install-php-is-fail-en/",
+            "title": "Pitfalls of Installing PHP with Docker",
+            "date_published": "2019-09-25T10:03:00.000Z",
+            "content_html": "<p>After installing a specific version of php-fpm through docker, I went into the container and changed the php-fpm user group www-data to my own erik (because the host uses the same one, which makes debugging easier).<br>After installation, configuring nginx locally always gave an error:</p>\n<p>6239#6239: *1 FastCGI sent in stderr: “Primary script unknown” while reading response header from upstream<br><span id=\"more\"></span><br>I searched for the problem over and over and found nothing.<br>In the end I discovered that php-fpm inside docker specified the project directory as /var/www, while mine locally was /home/work. So when the local nginx maps to docker’s php for communication, it resolves the specified path, and the two paths are different. php-fpm can’t recognize the path, unless the path specified at install time is the same as the local one.</p>\n<p>Once that part was solved, accessing a standalone php file worked fine, but accessing the project framework still failed to resolve.</p>\n<p>The error was 12909#12909: *3 FastCGI sent in stderr: “Primary script unknown” while reading response header from upstream</p>\n<p>By tracing nginx and then checking the project directory in docker, I found that the local project had been symlinked to the project directory shared with docker, and docker cannot recognize a local symlink. I had to cp the project over instead.<br>At this point, the project was accessible normally.</p>\n<p>Actually, this configuration wasted a lot of time, and I was a bit panicked, my previous train of thought got tangled up.</p>\n<p>Generally speaking, php file not found is almost always about an inaccessible directory involving permissions, or the project not existing.<br>Second, a CGI that can’t resolve involves whether the permission groups of php-fpm and nginx and the project directory match up.</p>\n",
+            "tags": [
+                "docker",
+                "php安装"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2019/09/25/docker-install-php-is-fail/",
             "url": "https://erik.xyz/2019/09/25/docker-install-php-is-fail/",
             "title": "docker安装php的踩坑",

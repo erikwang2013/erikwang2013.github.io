@@ -10,12 +10,14 @@
     <category term="php资源" />
     <category term="日志" />
     <category term="工具" />
+    <category term="js" />
+    <category term="js插件" />
     <category term="jquery" />
     <category term="jquery插件" />
-    <category term="js" />
+    <category term="web" />
+    <category term="web框架" />
     <category term="css" />
     <category term="php" />
-    <category term="web" />
     <category term="代码" />
     <category term="压缩" />
     <category term="php服务器" />
@@ -26,12 +28,26 @@
     <category term="nginx" />
     <category term="转载" />
     <category term="php库" />
+    <category term="flash" />
+    <category term="表单" />
+    <category term="phone" />
+    <category term="手机" />
+    <category term="新闻" />
     <category term="互联" />
     <category term="项目实战" />
     <category term="javascript" />
+    <category term="数据库" />
+    <category term="mysql" />
+    <category term="数据表" />
     <category term="漏洞" />
+    <category term="centos" />
     <category term="php应用" />
     <category term="浮点" />
+    <category term="优化" />
+    <category term="搜引擎ping服务器" />
+    <category term="搜索引擎" />
+    <category term="随笔吐槽" />
+    <category term="php函数" />
     <category term="http" />
     <category term="http服务器" />
     <category term="负载均衡" />
@@ -46,28 +62,32 @@
     <category term="n阶行列式" />
     <category term="支付系统" />
     <category term="支付" />
-    <category term="centos" />
-    <category term="linux" />
     <category term="apache优化" />
     <category term="apache隐藏index" />
     <category term="nginx优化" />
     <category term="nginx隐藏index" />
+    <category term="linux" />
+    <category term="服务器" />
+    <category term="邮箱服务器" />
     <category term="日常" />
     <category term="seo" />
-    <category term="优化" />
     <category term="Beerust" />
     <category term="rust框架" />
     <category term="摘要" />
     <category term="文章" />
+    <category term="css3" />
+    <category term="css3兼容360浏览器兼容模式" />
+    <category term="css圆角" />
     <category term="游记" />
     <category term="ca证书" />
     <category term="证书生成" />
     <category term="二战" />
     <category term="二战熊" />
     <category term="西伯利亚熊" />
-    <category term="centos软件" />
-    <category term="yum仓库" />
-    <category term="软件" />
+    <category term="html" />
+    <category term="响应式分辨率" />
+    <category term="响应式调试" />
+    <category term="自适应屏幕" />
     <category term="centos安装chromium报错" />
     <category term="chromium安装报错" />
     <category term="svn" />
@@ -76,6 +96,9 @@
     <category term="deb/rpm互转" />
     <category term="deb转rpm" />
     <category term="rpm互转" />
+    <category term="centos软件" />
+    <category term="yum仓库" />
+    <category term="软件" />
     <category term="centos7安装steam" />
     <category term="centos安装steam" />
     <category term="centos安装吃鸡steam" />
@@ -101,6 +124,8 @@
     <category term="memcached" />
     <category term="生活手记" />
     <category term="艾瑞可erik" />
+    <category term="响应慢" />
+    <category term="页面优化" />
     <category term="cloud-platform" />
     <category term="程序员" />
     <category term="skills" />
@@ -158,13 +183,11 @@
     <category term="mdm" />
     <category term="erik shop" />
     <category term="跨境电商平台" />
-    <category term="phone" />
-    <category term="手机" />
-    <category term="新闻" />
+    <category term="发邮件" />
+    <category term="邮件函数" />
     <category term="免费" />
     <category term="jenkis" />
     <category term="jenkis教程" />
-    <category term="随笔吐槽" />
     <category term="算法" />
     <category term="游戏聚合平台" />
     <category term="游戏平台" />
@@ -172,7 +195,6 @@
     <category term="ping" />
     <category term="ping服务器" />
     <category term="各大网站ping" />
-    <category term="搜引擎ping服务器" />
     <category term="go获取ip" />
     <category term="im" />
     <category term="插件" />
@@ -198,11 +220,12 @@
     <category term="hadoop3" />
     <category term="hadoop配置" />
     <category term="log4j2" />
-    <category term="数据库" />
     <category term="hbase安装教程" />
     <category term="hbase" />
     <category term="http1.1" />
     <category term="http2.0" />
+    <category term="互联网时代" />
+    <category term="开源技术" />
     <category term="会话" />
     <category term="会话原理" />
     <category term="hyperf" />
@@ -222,7 +245,6 @@
     <category term="phpstorm" />
     <category term="图片" />
     <category term="素材" />
-    <category term="搜索引擎" />
     <category term="jq" />
     <category term="jq侧边导航" />
     <category term="侧边导航" />
@@ -234,15 +256,11 @@
     <category term="kali右键汉化" />
     <category term="kali桌面右键汉化" />
     <category term="kali右键创建文件" />
-    <category term="区块链" />
     <category term="lanmp" />
     <category term="php环境独立配置" />
-    <category term="服务器" />
     <category term="劳动纠纷" />
     <category term="追缴工资" />
     <category term="申请仲裁" />
-    <category term="flash" />
-    <category term="表单" />
     <category term="linux报错" />
     <category term="linux中update-command-not-found" />
     <category term="linux运行命令报错" />
@@ -260,8 +278,6 @@
     <category term="高级缓存配置" />
     <category term="mongodb" />
     <category term="mongodb权限" />
-    <category term="可穿戴设备" />
-    <category term="mysql" />
     <category term="分库分表" />
     <category term="mysql应对千万级" />
     <category term="mysql瓶颈" />
@@ -271,11 +287,11 @@
     <category term="mysql消息" />
     <category term="mysql队列" />
     <category term="mysql高并发" />
+    <category term="mysql监控" />
+    <category term="mysql性能" />
     <category term="mysql存储" />
     <category term="mysql引擎" />
     <category term="mysql数据表设计选择" />
-    <category term="mysql监控" />
-    <category term="mysql性能" />
     <category term="内网支付" />
     <category term="内网穿透" />
     <category term="支付接口本地化开发" />
@@ -312,10 +328,12 @@
     <category term="php对接微信支付" />
     <category term="微信支付" />
     <category term="微信支付回调" />
-    <category term="php函数" />
+    <category term="foreach" />
+    <category term="foreach报错" />
+    <category term="php中foreach报错" />
+    <category term="php过滤" />
+    <category term="过滤" />
     <category term="php随机数" />
-    <category term="php获取闰年" />
-    <category term="闰年.php时间" />
     <category term="php环境" />
     <category term="php集成环境" />
     <category term="服务器集成环境" />
@@ -341,13 +359,10 @@
     <category term="PHP算法" />
     <category term="php递归" />
     <category term="递归" />
-    <category term="phpunit" />
-    <category term="phpunit安装" />
-    <category term="php过滤" />
-    <category term="过滤" />
-    <category term="foreach" />
-    <category term="foreach报错" />
-    <category term="php中foreach报错" />
+    <category term="mysql函数" />
+    <category term="php中mysql函数" />
+    <category term="php获取闰年" />
+    <category term="闰年.php时间" />
     <category term="php中if" />
     <category term="php中if判断" />
     <category term="php的if" />
@@ -355,10 +370,13 @@
     <category term="php7中sphinx" />
     <category term="php7中sphinx扩展" />
     <category term="sphinx扩展" />
+    <category term="phpunit" />
+    <category term="phpunit安装" />
     <category term="plc" />
     <category term="物业管理系统" />
     <category term="property" />
     <category term="python" />
+    <category term="区块链" />
     <category term="python库" />
     <category term="a标签" />
     <category term="a标签虚线" />
@@ -380,8 +398,6 @@
     <category term="线性结构" />
     <category term="浏览器禁止操作视频" />
     <category term="禁止视频" />
-    <category term="响应慢" />
-    <category term="页面优化" />
     <category term="js编辑" />
     <category term="runjs" />
     <category term="在线编辑" />
@@ -408,7 +424,6 @@
     <category term="深圳珠海骑行" />
     <category term="骑行" />
     <category term="世界那么大" />
-    <category term="css3" />
     <category term="css在线生成工具" />
     <category term="css工具" />
     <category term="php正则" />
@@ -419,7 +434,6 @@
     <category term="shopex" />
     <category term="可视化数据" />
     <category term="数据" />
-    <category term="数据表" />
     <category term="socket通信" />
     <category term="socket多进程" />
     <category term="socket" />
@@ -432,18 +446,16 @@
     <category term="数据分析" />
     <category term="sql" />
     <category term="sql优化" />
-    <category term="css3兼容360浏览器兼容模式" />
-    <category term="css圆角" />
     <category term="结构体转map" />
     <category term="config" />
     <category term="thinkphp" />
     <category term="配置文件" />
     <category term="树" />
     <category term="二叉树" />
-    <category term="js插件" />
     <category term="virtualbox" />
     <category term="hyper-v" />
     <category term="鸿蒙开发" />
+    <category term="可穿戴设备" />
     <category term="web自适应" />
     <category term="响应式布局" />
     <category term="响应式所有分辨率" />
@@ -468,10 +480,6 @@
     <category term="xhprof" />
     <category term="laravel" />
     <category term="composer插件" />
-    <category term="html" />
-    <category term="响应式分辨率" />
-    <category term="响应式调试" />
-    <category term="自适应屏幕" />
     <category term="携程" />
     <category term="携程攻击" />
     <category term="携程网站瘫痪" />
@@ -482,8 +490,6 @@
     <category term="虚幻4引擎编辑" />
     <category term="生成唯一id" />
     <category term="生成id" />
-    <category term="发邮件" />
-    <category term="邮件函数" />
     <category term="储蓄卡免年费" />
     <category term="银行卡" />
     <category term="银行卡免年费" />
@@ -496,18 +502,245 @@
     <category term="php加密" />
     <category term="php技术" />
     <category term="夕阳" />
-    <category term="mysql函数" />
-    <category term="php中mysql函数" />
-    <category term="互联网时代" />
-    <category term="开源技术" />
-    <category term="web框架" />
     <category term="php抓取图片" />
     <category term="php批量抓取页面图片" />
-    <category term="邮箱服务器" />
     <category term="正则表达式" />
     <category term="翻墙" />
     <category term="谷歌" />
     <category term="谷歌搜索" />
+    <entry>
+        <id>https://erik.xyz/2025/05/26/webman-hyperf-change-en/</id>
+        <title>webman vs Hyperf: How They Work Under the Hood</title>
+        <link rel="alternate" href="https://erik.xyz/2025/05/26/webman-hyperf-change-en/"/>
+        <content type="html">&lt;p&gt;Alright, let’s take a deep dive into how &lt;code&gt;webman&lt;/code&gt; and &lt;code&gt;Hyperf&lt;/code&gt; work under the hood, and how annotations are implemented in PHP.&lt;/p&gt;
+&lt;h2 id=&#34;1-How-webman-works-under-the-hood&#34;&gt;&lt;a href=&#34;#1-How-webman-works-under-the-hood&#34; class=&#34;headerlink&#34; title=&#34;1. How webman works under the hood&#34;&gt;&lt;/a&gt;1. How webman works under the hood&lt;/h2&gt;&lt;p&gt;&lt;code&gt;webman&lt;/code&gt;‘s core design philosophy is &lt;strong&gt;lightweight, high-performance, easy to use&lt;/strong&gt;. It’s built on top of the powerful asynchronous, event-driven network library &lt;strong&gt;Workerman&lt;/strong&gt;, making full use of PHP’s CLI (command-line interface) mode and event loop mechanism, and doing away with the traditional PHP-FPM model to achieve high performance and high concurrency.&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h3 id=&#34;Core-principles&#34;&gt;&lt;a href=&#34;#Core-principles&#34; class=&#34;headerlink&#34; title=&#34;Core principles&#34;&gt;&lt;/a&gt;Core principles&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Built on Workerman:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Event-driven:&lt;/strong&gt; Workerman uses the event loop library provided by the &lt;code&gt;libevent&lt;/code&gt; (default), &lt;code&gt;event&lt;/code&gt;, or &lt;code&gt;swoole&lt;/code&gt; extension. It creates and manages one or more event loops in one or more master processes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Non-blocking I/O:&lt;/strong&gt; All network operations (TCP/UDP/Unix Socket listening and connections) are non-blocking. When data becomes readable or writable on a connection, or an error occurs, the event loop triggers the registered callback to handle it. This avoids the huge overhead of creating a thread or process per connection.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-process model:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Master process:&lt;/strong&gt; Parses the configuration, creates listening sockets, manages child processes (Worker processes), monitors child process state (e.g. restart on crash), and handles signals (e.g. reload, stop, status).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Worker process:&lt;/strong&gt; The process that actually handles business logic. The master process &lt;code&gt;fork&lt;/code&gt;s multiple Worker child processes. &lt;strong&gt;By default, these Worker processes are resident in memory&lt;/strong&gt;. Each Worker process runs its own event loop independently and handles the connection requests assigned to it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Inter-process communication (IPC):&lt;/strong&gt; Master and Worker usually communicate over a Unix Socket pipe (for example, to send a reload signal or query status).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Protocol support:&lt;/strong&gt; Workerman has built-in support for HTTP, WebSocket, TCP, UDP and other protocols, and protocols can be customized.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;What webman adds on top of Workerman:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;PSR compatibility:&lt;/strong&gt; It provides implementations that comply with PSR-7 (HTTP message interfaces), PSR-15 (HTTP middleware), PSR-11 (container) and other standards, so developers can use the familiar middleware pattern and dependency injection.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Routing:&lt;/strong&gt; It offers flexible route configuration (such as the file-based routing in &lt;code&gt;route.php&lt;/code&gt;), mapping HTTP requests to the corresponding controller method or closure.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Middleware:&lt;/strong&gt; It implements an onion-model middleware mechanism, making it easy to handle logic before and after a request (such as authentication, logging, CORS).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Controllers:&lt;/strong&gt; They organize the business logic code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Views:&lt;/strong&gt; It supports simple template rendering.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Database/Redis:&lt;/strong&gt; It offers convenient wrappers, but note that &lt;strong&gt;under the default Worker process model, database connections cannot be automatically released/reused the way they are with Swoole coroutines — the developer has to manage the connection lifecycle themselves&lt;/strong&gt; (typically creating and closing a connection within a single request-handling cycle, or using a connection pool). webman officially provides plugins such as &lt;code&gt;webman/redis-queue&lt;/code&gt; to help with this.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;File monitoring and hot reload:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;php webman start&lt;/code&gt; enables monitoring with the &lt;code&gt;-w&lt;/code&gt; flag by default.&lt;/li&gt;
+&lt;li&gt;Workerman uses the Linux kernel’s &lt;code&gt;inotify&lt;/code&gt; mechanism (or macOS’s &lt;code&gt;kqueue&lt;/code&gt;) to monitor changes to project files (&lt;code&gt;.php&lt;/code&gt;, &lt;code&gt;.env&lt;/code&gt;, etc.).&lt;/li&gt;
+&lt;li&gt;When a file change is detected, the master process sends the &lt;code&gt;SIGUSR1&lt;/code&gt; signal to all Worker processes.&lt;/li&gt;
+&lt;li&gt;On receiving the signal, a Worker process safely finishes the request it is currently handling (if any), then gracefully restarts itself (reloading the modified code), while the master process keeps running and &lt;code&gt;fork&lt;/code&gt;s new Worker processes. This process is &lt;strong&gt;extremely fast&lt;/strong&gt; — users barely notice any service interruption, which is how “hot reload” is achieved.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Key points for high performance:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Resident in memory:&lt;/strong&gt; The biggest advantage. The framework core, business code, and configuration are loaded once when the Worker process starts and stay resident in memory. Subsequent requests &lt;strong&gt;don’t need to re-initialize the framework, reload core files, or reconnect to the database (if the connection pool is managed properly)&lt;/strong&gt;, which greatly reduces overhead.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Event-driven &amp;amp; non-blocking:&lt;/strong&gt; It handles high-concurrency connections efficiently, and is especially suited to I/O-intensive scenarios.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lightweight:&lt;/strong&gt; The framework itself has little code, thin abstraction layers, and low overhead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Summary of how webman works:&lt;/strong&gt; It uses Workerman’s event-driven, non-blocking I/O and multi-process model to provide a high-performance network foundation. On top of that, webman builds a lightweight web framework that conforms to modern PHP development standards (PSR), and uses file monitoring to provide convenient hot reload. Its core strengths are the performance gain from being resident in memory and Workerman’s stability.&lt;/p&gt;
+&lt;h2 id=&#34;2-How-Hyperf-works-under-the-hood&#34;&gt;&lt;a href=&#34;#2-How-Hyperf-works-under-the-hood&#34; class=&#34;headerlink&#34; title=&#34;2. How Hyperf works under the hood&#34;&gt;&lt;/a&gt;2. How Hyperf works under the hood&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Hyperf&lt;/code&gt; is a &lt;strong&gt;high-performance, highly flexible, enterprise-grade coroutine framework&lt;/strong&gt;. Its core is built on the &lt;strong&gt;Swoole&lt;/strong&gt; extension, making deep use of the &lt;strong&gt;coroutine&lt;/strong&gt; capability Swoole provides to achieve high performance and high concurrency, and it borrows heavily from the design philosophy of frameworks like Java’s Spring Cloud (such as dependency injection, AOP, annotation-driven development).&lt;/p&gt;
+&lt;h3 id=&#34;Core-principles-1&#34;&gt;&lt;a href=&#34;#Core-principles-1&#34; class=&#34;headerlink&#34; title=&#34;Core principles&#34;&gt;&lt;/a&gt;Core principles&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Built on Swoole:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Coroutines:&lt;/strong&gt; Swoole’s core capability. Coroutines are user-space lightweight threads, scheduled by the framework or runtime itself, with extremely low switching cost (usually just the overhead of a function call). Hyperf &lt;strong&gt;embraces coroutines deeply&lt;/strong&gt; — almost every component (HTTP Server, Database Client, Redis Client, RPC Client/Server, AMQP, etc.) is designed to be &lt;strong&gt;coroutine-safe&lt;/strong&gt; or &lt;strong&gt;coroutine-friendly&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Coroutine scheduling:&lt;/strong&gt; Swoole provides a coroutine scheduler. When a coroutine hits an I/O operation (such as a database query, network request, or file read/write), it automatically suspends (&lt;code&gt;yield&lt;/code&gt;) and gives the CPU to other ready coroutines. When the I/O operation completes, the scheduler resumes that coroutine to continue execution. This means &lt;strong&gt;a single process can concurrently handle thousands of connections/tasks&lt;/strong&gt;, while the code logic is still written &lt;strong&gt;sequentially&lt;/strong&gt; (the &lt;code&gt;callback hell&lt;/code&gt; problem of async callbacks is greatly alleviated).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Event-driven:&lt;/strong&gt; The underlying layer is still event-driven (based on &lt;code&gt;epoll&lt;/code&gt;/&lt;code&gt;kqueue&lt;/code&gt;, etc.); Swoole’s event loop drives coroutine scheduling.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Server:&lt;/strong&gt; It provides high-performance HTTP Server, WebSocket Server, TCP/UDP Server, etc. Hyperf mainly uses the HTTP Server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Hyperf’s higher-level encapsulation and architecture on top of Swoole:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Powerful dependency injection container (DI Container):&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;It’s the cornerstone of the whole framework (based on the &lt;code&gt;hyperf/di&lt;/code&gt; component).&lt;/li&gt;
+&lt;li&gt;It implements &lt;code&gt;PSR-11&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;It supports autowiring, binding interfaces to implementations, constructor injection, property injection, and method injection.&lt;/li&gt;
+&lt;li&gt;It manages the lifecycle of almost every object in the application (singleton, prototype, etc.).&lt;/li&gt;
+&lt;li&gt;It’s the foundation for AOP and annotation-driven implementation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Annotation-Driven Development:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;Hyperf &lt;strong&gt;relies heavily on annotations&lt;/strong&gt; to configure routes, define middleware, declare AOP aspects, mark scheduled tasks, configure dependency injection, define RPC services, and so on.&lt;/li&gt;
+&lt;li&gt;At framework startup (or at &lt;code&gt;Worker&lt;/code&gt; process startup, depending on the annotation scope), it scans the code via &lt;strong&gt;reflection&lt;/strong&gt;, parses the annotations on classes, methods, and properties, collects metadata, and dynamically generates proxy classes or performs the corresponding configuration registration (such as registering route information into the router).&lt;/li&gt;
+&lt;li&gt;This greatly improves development efficiency and the readability and maintainability of the code (configuration sits right next to the code).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Aspect-Oriented Programming (AOP):&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;Implemented on top of the DI container and dynamic proxies.&lt;/li&gt;
+&lt;li&gt;It lets developers define “aspect” (&lt;code&gt;Aspect&lt;/code&gt;) classes containing “advice” (&lt;code&gt;Advice&lt;/code&gt; - such as &lt;code&gt;@Before&lt;/code&gt;, &lt;code&gt;@After&lt;/code&gt;, &lt;code&gt;@Around&lt;/code&gt;) and “pointcuts” (&lt;code&gt;Pointcut&lt;/code&gt; - specifying via annotation or expression which methods of which classes should be intercepted).&lt;/li&gt;
+&lt;li&gt;At runtime, the framework &lt;strong&gt;generates a proxy class&lt;/strong&gt; for the target classes matching the &lt;code&gt;Pointcut&lt;/code&gt;. When the target method is called, the proxy class’s method is actually called; the proxy executes the relevant &lt;code&gt;Advice&lt;/code&gt; logic in order (such as logging, performance monitoring, transaction management, caching, permission checks), and then calls the original target method, either directly or around it.&lt;/li&gt;
+&lt;li&gt;This decouples cross-cutting concerns from the core business logic.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Coroutine context management:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;Because coroutines are lightweight and execute concurrently, traditional global variables and singleton patterns can be unsafe in a coroutine environment (a change made by one coroutine affects the others).&lt;/li&gt;
+&lt;li&gt;Hyperf provides the &lt;code&gt;hyperf/context&lt;/code&gt; component, which uses Swoole’s coroutine API (&lt;code&gt;Swoole\Coroutine::getContext()&lt;/code&gt;) to achieve &lt;strong&gt;coroutine-level context isolation&lt;/strong&gt;. The &lt;code&gt;Context&lt;/code&gt; class lets you safely store and retrieve data within the same coroutine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Connection pools:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;They provide pooled management for expensive resources (such as database connections, Redis connections, HTTP client connections).&lt;/li&gt;
+&lt;li&gt;When a coroutine needs a resource, it takes one from the pool; when it’s done, it returns it to the pool.&lt;/li&gt;
+&lt;li&gt;This &lt;strong&gt;avoids the overhead of frequently creating and destroying connections&lt;/strong&gt;, greatly improving performance, and it &lt;strong&gt;naturally fits the coroutine model&lt;/strong&gt; (each coroutine uses its own connection, avoiding concurrency issues).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Componentization and async non-blocking clients:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;Hyperf provides a large number of out-of-the-box high-performance coroutine components: database (&lt;code&gt;hyperf/database&lt;/code&gt; - based on Eloquent/Doctrine, with connection pooling), Redis (&lt;code&gt;hyperf/redis&lt;/code&gt; - with connection pooling), cache, queue (&lt;code&gt;hyperf/async-queue&lt;/code&gt;), RPC (&lt;code&gt;hyperf/json-rpc&lt;/code&gt;), service registration and discovery (&lt;code&gt;hyperf/service-governance&lt;/code&gt;), config center (&lt;code&gt;hyperf/config&lt;/code&gt;), distributed tracing (&lt;code&gt;hyperf/tracer&lt;/code&gt;), rate limiting and circuit breaking (&lt;code&gt;hyperf/rate-limit&lt;/code&gt;, &lt;code&gt;hyperf/circuit-breaker&lt;/code&gt;), GraphQL, gRPC, AMQP, WebSocket, and more.&lt;/li&gt;
+&lt;li&gt;Under the hood, these clients all use Swoole’s coroutine Client or a self-implemented coroutine-based Client, ensuring every I/O operation is &lt;strong&gt;async and non-blocking&lt;/strong&gt; and can be suspended and resumed by the coroutine scheduler.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Process model:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Master process:&lt;/strong&gt; Manages the service lifecycle.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Manager process:&lt;/strong&gt; Manages Worker/TaskWorker processes (creation, recycling).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Worker process:&lt;/strong&gt; Handles network requests (HTTP, WebSocket, TCP, etc.). &lt;strong&gt;Each Worker process is an independent coroutine scheduling unit&lt;/strong&gt;, and can internally run a large number of concurrent coroutines to handle requests.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TaskWorker process (optional):&lt;/strong&gt; Specifically handles long-running synchronous blocking tasks (such as certain complex computations, or calling libraries that don’t support coroutines). Worker processes dispatch tasks to the TaskWorker via &lt;code&gt;task()&lt;/code&gt;. Hyperf also offers an asynchronous task processing solution based on message queues (&lt;code&gt;async-queue&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hot reload:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;The principle is similar to webman/Workerman, using &lt;code&gt;inotify&lt;/code&gt;/&lt;code&gt;kqueue&lt;/code&gt; to monitor file changes.&lt;/li&gt;
+&lt;li&gt;It sends a signal to Worker processes (&lt;code&gt;SIGUSR1&lt;/code&gt; or &lt;code&gt;SIGTERM&lt;/code&gt;) to notify them to restart gracefully (exit after finishing the current request, and the master process starts new Workers to load the new code). Hyperf’s DI container and proxy class generation mechanism make hot reload relatively reliable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Summary of how Hyperf works:&lt;/strong&gt; It integrates Swoole coroutines deeply to build a high-performance, enterprise-grade microservice framework. Its core lies in a powerful dependency injection container, annotation-based metaprogramming and configuration, AOP decoupling of cross-cutting concerns, well-developed coroutine context and connection pool management, and a large number of out-of-the-box high-performance coroutine components. It’s better suited to building complex, distributed, high-concurrency systems (such as microservice architectures).&lt;/p&gt;
+&lt;h2 id=&#34;3-How-PHP-annotations-work&#34;&gt;&lt;a href=&#34;#3-How-PHP-annotations-work&#34; class=&#34;headerlink&#34; title=&#34;3. How PHP annotations work&#34;&gt;&lt;/a&gt;3. How PHP annotations work&lt;/h2&gt;&lt;p&gt;Annotations (often called DocBlock Annotations before PHP 8; PHP 8 introduced native Attributes) are a &lt;strong&gt;metadata&lt;/strong&gt; mechanism. They let you attach structured information (metadata) to code elements (classes, methods, properties, functions, parameters). That information &lt;strong&gt;doesn’t directly affect the logical execution of the code&lt;/strong&gt;, but it can be &lt;strong&gt;read and used at runtime or compile time by external tools (such as frameworks, libraries, IDEs, documentation generators)&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;How-they’re-implemented-focusing-on-how-frameworks-use-them&#34;&gt;&lt;a href=&#34;#How-they’re-implemented-focusing-on-how-frameworks-use-them&#34; class=&#34;headerlink&#34; title=&#34;How they’re implemented (focusing on how frameworks use them)&#34;&gt;&lt;/a&gt;How they’re implemented (focusing on how frameworks use them)&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Before PHP 8 (DocBlock Annotations):&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Where they’re stored:&lt;/strong&gt; The metadata is written above the code element as a comment block in a specific format (&lt;code&gt;/** ... */&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Format:&lt;/strong&gt; It follows the PHPDoc standard, but frameworks define their own special tags (such as &lt;code&gt;@Route&lt;/code&gt;, &lt;code&gt;@Inject&lt;/code&gt;, &lt;code&gt;@Cacheable&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Parsing:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Reflection:&lt;/strong&gt; The framework uses PHP’s reflection API (&lt;code&gt;ReflectionClass&lt;/code&gt;, &lt;code&gt;ReflectionMethod&lt;/code&gt;, &lt;code&gt;ReflectionProperty&lt;/code&gt;) to get the code elements (classes, methods, properties).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Getting the DocComment:&lt;/strong&gt; It calls the reflection object’s &lt;code&gt;getDocComment()&lt;/code&gt; method to get the doc comment string on that element.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Parsing the string:&lt;/strong&gt; The framework has to write its own parser (or use a library like &lt;code&gt;doctrine/annotations&lt;/code&gt;) to parse that string. The parser:&lt;ul&gt;
+&lt;li&gt;Recognizes tags starting with &lt;code&gt;@&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Parses the arguments after the tag (which may be simple strings, key-value pairs, arrays, or even nested structures).&lt;/li&gt;
+&lt;li&gt;Converts the parse result into structured data (usually an array or a specific annotation object).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Processing:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scan at startup:&lt;/strong&gt; The framework usually scans all PHP files under a specified directory or namespace during the startup phase (or on the first request).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reflect and parse:&lt;/strong&gt; For scanned classes, methods, and properties, it uses reflection to get the DocComment and parse it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Collect metadata:&lt;/strong&gt; It collects and stores the structured annotation information obtained from parsing (for example, registering &lt;code&gt;@Route&lt;/code&gt; information into the route table, or using &lt;code&gt;@Inject&lt;/code&gt; information for the DI container’s autowiring configuration).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use at runtime:&lt;/strong&gt; When handling requests or executing specific logic, the framework guides its behavior based on the annotation metadata collected earlier (such as matching controller methods based on route annotations, or deciding whether to read data from cache based on cache annotations).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;PHP 8 and later (native Attributes):&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Language-level support:&lt;/strong&gt; PHP 8 introduced annotations as a &lt;strong&gt;first-class language feature&lt;/strong&gt;, called &lt;strong&gt;Attributes&lt;/strong&gt;. They are no longer comments but a &lt;strong&gt;formal syntax construct&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Definition:&lt;/strong&gt; They’re defined with the &lt;code&gt;#[...]&lt;/code&gt; syntax. An Attribute is itself an ordinary PHP class (usually extending &lt;code&gt;\Attribute&lt;/code&gt;), and can have its own constructor, properties, and methods, used to define and validate the structure of the metadata.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Retrieving via reflection:&lt;/strong&gt; The reflection API added a &lt;code&gt;getAttributes()&lt;/code&gt; method (for example &lt;code&gt;ReflectionClass::getAttributes()&lt;/code&gt;). This method returns an array of &lt;code&gt;ReflectionAttribute&lt;/code&gt; objects.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Instantiation:&lt;/strong&gt; You can instantiate the Attribute class object via the &lt;code&gt;ReflectionAttribute::newInstance()&lt;/code&gt; method (if the class is defined), passing in the arguments provided when the Attribute was defined. This gives you a &lt;strong&gt;strongly-typed, structured annotation object&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Advantages:&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Performance:&lt;/strong&gt; Native syntax parses far faster than parsing DocComment strings.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Validation:&lt;/strong&gt; The Attribute class can define constructor parameter types, and the PHP engine performs parameter type checking at definition time, avoiding runtime parsing errors.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Clear structure:&lt;/strong&gt; Strongly-typed objects are clearer and safer than arrays obtained by parsing strings.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;IDE support:&lt;/strong&gt; IDEs can better recognize, autocomplete, and check Attributes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Framework processing flow (similar to DocBlock, but more efficient and safer):&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;Scan directories/namespaces at startup.&lt;/li&gt;
+&lt;li&gt;Use the reflection API to get classes/methods/properties.&lt;/li&gt;
+&lt;li&gt;Call &lt;code&gt;getAttributes()&lt;/code&gt; to get the list of attached Attributes.&lt;/li&gt;
+&lt;li&gt;Use &lt;code&gt;newInstance()&lt;/code&gt; to instantiate the needed Attribute objects.&lt;/li&gt;
+&lt;li&gt;Collect the metadata contained in these Attribute objects.&lt;/li&gt;
+&lt;li&gt;Configure the framework based on that metadata (registering routes, configuring DI, defining AOP pointcuts, etc.).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Summary of how annotations work:&lt;/strong&gt; Whether it’s the old DocBlock or the new native Attribute, the essence of an annotation is &lt;strong&gt;metadata attached to a code element&lt;/strong&gt;. The framework uses &lt;strong&gt;reflection&lt;/strong&gt; to scan the code &lt;strong&gt;at startup (or on demand)&lt;/strong&gt;, &lt;strong&gt;parses&lt;/strong&gt; that metadata, converts it into &lt;strong&gt;structured information&lt;/strong&gt;, and &lt;strong&gt;uses that information to dynamically configure framework behavior, generate proxy code (AOP), or guide runtime logic&lt;/strong&gt;. Native Attributes bring a significant improvement in performance, type safety, and developer experience. Modern frameworks like Hyperf have fully switched to native Attributes.&lt;/p&gt;
+&lt;h2 id=&#34;webman-vs-Hyperf-core-principles-comparison-summary&#34;&gt;&lt;a href=&#34;#webman-vs-Hyperf-core-principles-comparison-summary&#34; class=&#34;headerlink&#34; title=&#34;webman vs Hyperf: core principles comparison summary&#34;&gt;&lt;/a&gt;webman vs Hyperf: core principles comparison summary&lt;/h2&gt;&lt;div class=&#34;table-container&#34;&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Feature&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;webman&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Hyperf&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Core engine&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Workerman (event-driven, multi-process)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Swoole (event-driven + &lt;strong&gt;coroutines&lt;/strong&gt;, multi-process)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Programming model&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Event callbacks + traditional synchronous logic (you manage blocking I/O yourself)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Coroutines&lt;/strong&gt; (write synchronously, async non-blocking I/O)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Performance key&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Resident in memory (less initialization overhead)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Resident in memory + &lt;strong&gt;coroutines&lt;/strong&gt; (high concurrency, low resource usage)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Connection management&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Must be managed manually or via plugins/connection pools&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Built-in coroutine connection pool&lt;/strong&gt; (DB, Redis, HTTP Client, etc.)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Core mechanisms&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Lightweight routing, middleware, PSR wrappers&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Powerful DI container&lt;/strong&gt;, &lt;strong&gt;annotation-driven&lt;/strong&gt;, &lt;strong&gt;AOP&lt;/strong&gt;, rich componentization&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Concurrency&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;High (multi-process)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Extremely high&lt;/strong&gt; (multi-process + high coroutine concurrency within a single process)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Complexity&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Lightweight and simple&lt;/strong&gt;, gentle learning curve&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Powerful and complex&lt;/strong&gt;, steeper learning curve (you need to understand DI, AOP, coroutines)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Positioning&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;High-performance HTTP APIs / simple real-time apps&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Enterprise-grade, microservices, distributed systems, complex high-concurrency applications&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Hot reload&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Supported (based on inotify/kqueue)&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Supported (based on inotify/kqueue)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Representative tech&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;File watching, Workerman API&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Attributes, AOP, dependency injection, connection pools, service governance&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</content>
+        <category term="php" />
+        <category term="hyperf" />
+        <category term="webman" />
+        <updated>2025-05-26T13:55:00.000Z</updated>
+    </entry>
     <entry>
         <id>https://erik.xyz/2025/05/26/webman-hyperf-change/</id>
         <title>webman和hyperf对比解析</title>
@@ -740,6 +973,20 @@
         <category term="hyperf" />
         <category term="webman" />
         <updated>2025-05-26T13:55:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://erik.xyz/2023/11/12/xhprof-plugs-en/</id>
+        <title>xhprof Plugin Development</title>
+        <link rel="alternate" href="https://erik.xyz/2023/11/12/xhprof-plugs-en/"/>
+        <content type="html">&lt;p&gt;Lately I always have to test interface performance after development to pin down interface problems, and it suddenly occurred to me that the xhprof extension could be used. I looked around and found that most of them either are no longer updated or are just too cumbersome, so I simply developed my own.&lt;/p&gt;
+&lt;p&gt;   Referring to the phacility/xhprof and phpxxb/xhprof projects, I downloaded a copy of the code myself. So first I made the webman plugin &lt;a href=&#34;https://github.com/erikwang2013/xhprof-webman&#34;&gt;xhprof-webman&lt;/a&gt;, and after dawdling for a while I made the laravel version of the plugin &lt;a href=&#34;https://github.com/erikwang2013/xhprof-laravel&#34;&gt;xhprof-laravel&lt;/a&gt;. The latest versions have been updated, so if you find them useful, go install them with composer.&lt;/p&gt;
+</content>
+        <category term="composer" />
+        <category term="webman" />
+        <category term="xhprof" />
+        <category term="laravel" />
+        <category term="composer插件" />
+        <updated>2023-11-12T13:51:00.000Z</updated>
     </entry>
     <entry>
         <id>https://erik.xyz/2023/11/12/xhprof-plugs/</id>

@@ -44,7 +44,7 @@
   function unlock(password) {
     var parts = cipherText.split(':');
     if (parts[0] !== 'erik-enc' || parts[1] !== 'v1' || parts.length !== 7) {
-      if (err) { err.textContent = '密文格式无效 😵'; err.hidden = false; }
+      if (err) { err.textContent = window.erikt ? window.erikt('encrypt.bad', null, '密文格式无效 😵') : '密文格式无效 😵'; err.hidden = false; }
       return;
     }
     var salt = Uint8Array.from(atob(parts[2]), function (c) { return c.charCodeAt(0); });

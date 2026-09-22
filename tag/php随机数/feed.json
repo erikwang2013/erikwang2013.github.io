@@ -5,6 +5,17 @@
     "home_page_url": "https://erik.xyz",
     "items": [
         {
+            "id": "https://erik.xyz/2019/03/20/php-hong-bao-suan-fa-en/",
+            "url": "https://erik.xyz/2019/03/20/php-hong-bao-suan-fa-en/",
+            "title": "The PHP red envelope algorithm",
+            "date_published": "2019-03-20T04:28:00.000Z",
+            "content_html": "<p>Today I went to an interview. At the end, the interviewer asked how random red envelope distribution is implemented. I really had never done that, and couldn’t come up with it either. Afterwards I looked into it myself and found it’s no big deal..<span id=\"more\"></span></p>\n<p>Reference article <a href=\"https://www.cnblogs.com/dreign/p/4610766.html\">https://www.cnblogs.com/dreign/p/4610766.html</a><br>It gave me a normal distribution based method; after comparing it with several others back and forth, I ended up choosing this one.<br>Let’s analyze the requirements as follows:</p>\n<blockquote>\n</blockquote>\n<p> A user sends a 100 yuan red envelope split into 100 shares. So each share has a random amount. And the sum of the 100 shares must be exactly 100 yuan. First of all, then, each user gets at least 0.01 yuan. The largest red envelope a user can get is the total amount minus the amount already handed out, averaged over the remaining users.<br> Once you see that, it’s clear. So every random amount you draw must lie between the minimum amount and the maximum amount.</p>\n<p>Let’s try some code.</p>\n<blockquote>\n</blockquote>\n<p>Suppose there are 100 yuan to be given out to 100 people, with 100 red envelopes generated randomly. The code is as follows:</p>\n<p><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_160135.jpg\" alt=\"\"></p>\n<blockquote>\n<p>Output result</p>\n</blockquote>\n<p><img src=\"https://erik.xyz/wp-content/uploads/2019/2019-04-23_162419.jpg\" alt=\"\"></p>\n",
+            "tags": [
+                "算法",
+                "php随机数"
+            ]
+        },
+        {
             "id": "https://erik.xyz/2019/03/20/php-hong-bao-suan-fa/",
             "url": "https://erik.xyz/2019/03/20/php-hong-bao-suan-fa/",
             "title": "php红包算法",
